@@ -17,7 +17,7 @@
 2.3.git clone (git local repository 생성)
 	open git perspective
 	clone a git repository
-	Destination directory (local git repo) : D:\doc\proj\202107.macrogen\workspace\si_poiret
+	Destination directory (local git repo) : D:\doc\proj\202107.macrogen\workspace\macrogenwww
 
 2.4.이클립스프로젝트 생성
 
@@ -30,7 +30,7 @@
 
 	방법2) Existing Maven Projects
 	import> Existing Maven Projects
-	root directory : D:\doc\proj\202107.macrogen\workspace\si_poiret
+	root directory : D:\doc\proj\202107.macrogen\workspace\macrogenwww
 
 2.5 브랜치 설명
 	master (작업브랜치 생성용 브랜치)
