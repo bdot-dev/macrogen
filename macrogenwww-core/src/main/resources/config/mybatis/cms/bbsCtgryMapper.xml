@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.BbsCtgryMapper">
+
+	<sql id="list_where">
+		<if test="bbsId != null and bbsId != ''">
+			and tbc.bbs_id = #{bbsId}
+		</if>
+	</sql>
+
+	<select id="count" parameterType="bbsCtgryVo" resultType="int">
+		select count(*)
+		from tb_bbs_ctgry tbc
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="bbsCtgryVo" resultType="bbsCtgryVo">
+		<include refid="paging.countTop"/>
+		select
+			tbc.bbs_ctgry_sn
+			, tbc.bbs_ctgry_nm
+			, tbc.sort_ordr
+			, tbc.bbs_id
+			, tbc.regist_dt, tbc.register_sn, tbc.updt_dt, tbc.updusr_sn
+		from tb_bbs_ctgry tbc
+		where 1=1
+		<include refid="list_where" />
+		order by
+			tbc.sort_ordr
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="view" parameterType="bbsCtgryVo" resultType="bbsCtgryVo">
+		select
+			tbc.bbs_ctgry_sn
+			, tbc.bbs_ctgry_nm
+			, tbc.sort_ordr
+			, tbc.bbs_id
+			, tbc.regist_dt, tbc.register_sn, tbc.updt_dt, tbc.updusr_sn
+		from tb_bbs_ctgry tbc
+		where tbc.bbs_ctgry_sn = #{bbsCtgrySn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_bbs_ctgry')
+	</select>
+
+	<insert id="insert" parameterType="bbsCtgryVo">
+		insert into tb_bbs_ctgry (
+			bbs_ctgry_sn
+			, bbs_id
+			, bbs_ctgry_nm
+			, sort_ordr
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{bbsCtgrySn}
+			, #{bbsId}
+			, #{bbsCtgryNm}
+			, #{sortOrdr}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="bbsCtgryVo">
+		update tb_bbs_ctgry
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    <if test="bbsId != null">, bbs_id = #{bbsId} </if>
+		    <if test="bbsCtgryNm != null">, bbs_ctgry_nm = #{bbsCtgryNm} </if>
+		    <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+		where bbs_ctgry_sn = #{bbsCtgrySn}
+	</update>
+
+	<delete id="delete" parameterType="bbsCtgryVo">
+		delete from tb_bbs_ctgry where bbs_ctgry_sn = #{bbsCtgrySn}
+	</delete>
+</mapper>

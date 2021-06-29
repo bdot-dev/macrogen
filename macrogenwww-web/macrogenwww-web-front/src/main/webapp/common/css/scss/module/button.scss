@@ -1,0 +1,195 @@
+@charset 'utf-8';
+a, button, input, span {
+	&.btn {
+		font-size: 13px;
+		line-height: 28px;
+
+		min-width: 80px;
+		height: 30px;
+		margin-right: 5px;
+		padding: 0 20px;
+
+		text-decoration: none;
+
+		color: #fff;
+		border: 1px solid #444;
+		background-color: #444;
+		@include bdrs(2px);
+		 > span {
+			font-family: $rt, $nt;
+			font-size: 13px;
+
+			display: inline-block;
+
+			vertical-align: top;
+
+			color: #aaa;
+		}
+	}
+	&.white{background-color:#fff; color:#000}
+	&.point {
+		color: #fff;
+		border-color: #e64e47;
+		background-color: #e64e47;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&.small {
+		font-size: 14px;
+		line-height: 36px;
+
+		min-width: 110px;
+		height: 38px;
+		padding: 0 16px;
+
+		color: #666;
+		border-color: #ccc;
+		&.flat_black {
+			color: #fff;
+			border-color: #333;
+			background-color: #333;
+		}
+		&.flat_red {
+			color: #fff;
+			border-color: #e50011;
+			background-color: #e50011;
+		}
+	}
+
+	&.smaller {
+		font-size: 12px;
+		line-height: 28px;
+
+		min-width: 76px;
+		height: 30px;
+		padding: 0 14px;
+
+		color: #666;
+		border-color: #cbcbcb;
+		background-color: #f8f8f8;@include bdrs(0px);
+		&.flat_red {
+			color: #fff;
+			border-color: #e50011;
+			background-color: #e50011;
+		}
+		&.line_gray {
+			color: #333;
+			border-color: #888;
+			background-color: #fff;
+		}
+		&.line_light_gray {
+			color: #666;
+			border-color: #cbcbcb;
+			background-color: #fff;
+		}
+		&.flat_gray {
+			color: #fff;
+			border-color: #777;
+			background-color: #777;
+		}
+		&.flat_black {
+			color: #fff;
+			border-color: #444;
+			background-color: #444;
+		}
+	}
+}
+
+.pagination {
+	font-size: 0;
+
+	padding-top: 40px;
+
+	text-align: center;
+
+	a {
+		font-family: $rt, $nt;
+		font-size: 14px;
+		line-height: 28px;
+
+		display: inline-block;
+		overflow: hidden;
+
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+
+		text-align: center;
+		text-decoration: none;
+
+		color: #666;
+		border: 1px solid #ccc;
+		&.active {
+			color: #fff;
+			border-color: #000;
+			background-color: #000;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&.first, &.prev, &.next, &.last {
+			position: relative;
+
+			margin-right: 0;
+
+			text-indent: -9999px;
+
+			&:before {
+				width: 10px;
+				height: 8px;
+				margin: -4px 0 0 -5px;
+
+				background: url(../../../images/spr-common.png) -100px 0 no-repeat;@include ct;@include posa_tl(50%,50%);
+			}
+		}
+		&.first {
+			margin-right: -1px;
+		}
+		&.prev {
+			margin-right: 10px;
+			&:before {
+				left: 12px;
+
+				width: 5px;
+				height: 8px;
+				margin-left: 0;
+
+				background-position: -150px 0;
+			}
+		}
+		&.next {
+			margin-right: -1px;
+			margin-left: 5px;
+			&:before {
+				left: 12px;
+
+				width: 5px;
+				height: 8px;
+				margin-left: 0;
+
+				background-position: -200px 0;
+			}
+		}
+		&.last {
+			&:before {
+				background-position: -250px 0;
+			}
+		}
+	}
+}
+.btn_del {
+	line-height: 20px;
+
+	display: inline-block;
+
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+
+	text-align: center;
+	vertical-align: middle;
+
+	color: #fff;
+	background-color: #333;
+}

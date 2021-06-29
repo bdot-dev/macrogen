@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.BbsMapper">
+	
+	<select id="list" parameterType="bbsVo" resultType="bbsVo">
+		<include refid="paging.countTop"/>
+		SELECT
+			BBS_ID
+			,BBS_NM
+			,REGIST_DT
+			,REGISTER_SN
+			,UPDT_DT
+			,UPDUSR_SN
+		FROM tb_bbs TB
+		WHERE 1=1
+		ORDER BY
+			TB.BBS_ID
+		<include refid="paging.countBottom"/>
+	</select>
+	
+	<select id="view" parameterType="bbsVo" resultType="bbsVo">
+		SELECT
+			BBS_ID
+			,BBS_NM
+			,REGIST_DT
+			,REGISTER_SN
+			,UPDT_DT
+			,UPDUSR_SN
+		FROM tb_bbs TB
+		WHERE TB.BBS_ID = #{bbsId}		
+	</select>
+	
+	<insert id="insert" parameterType="bbsVo">
+		INSERT INTO tb_bbs(
+			BBS_ID, BBS_NM
+			,REGIST_DT, REGISTER_SN
+			,UPDT_DT, UPDUSR_SN
+		) VALUES(
+			#{bbsId}, #{bbsNm}
+			,now(), #{registerSn}
+			,now(), #{updusrSn}
+		)
+	</insert>
+	
+	<update id="update" parameterType="bbsVo">
+		UPDATE
+			tb_bbs
+		SET
+			BBS_NM = #{bbsNm}
+			,UPDT_DT = now()
+			,UPDUSR_SN = #{updusrSn}
+		WHERE
+			BBS_ID = #{bbsId}
+	</update>
+	
+	<delete id="delete" parameterType="bbsVo">
+		DELETE FROM tb_bbs WHERE BBS_ID = #{bbsId} 
+	</delete>
+
+</mapper>
+	

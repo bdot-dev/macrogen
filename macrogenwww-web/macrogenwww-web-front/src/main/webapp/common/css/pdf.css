@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*대리점계약서 20190313*/
+
+*{margin:0; padding:0; font-style:normal}
+h3, h4{font-size:17px; color:#000; margin-bottom:45px; text-align:center; font-weight:700;}
+.tac{text-align:center!important}
+.tal{text-align:left!important}
+.tar{text-align:right!important}
+
+.Contract_tit{padding-bottom:20px; overflow:hidden}
+.Contract_tit p, .Contract_tit p span, p.Contract_tit{font-weight:bold;  font-size:16px; padding-bottom:10px}
+.Contract_tit p span.first{float:right}
+.Contract_con {overflow:hidden}
+.Contract_con p{font-size:13px; line-height:22px}
+.txt_Chapter{padding-top:20px; line-height:20px}
+.txt_Chapter span {font-weight:bold; padding-right:5px; font-size:15px; color:#000}
+.txt_Chapter_sub {padding:10px 0 10px 10px}
+.txt_Chapter_sub > p{padding-top:10px}
+.txt_Chapter_sub01 p, .txt_Chapter_sub02 p{line-height:25px; padding-left:10px; padding-top:10px; }
+.txt_Chapter_sub .txt_Chapter_sub02{padding-top:10px}
+.Contract_con .txt_Chapter_btm{text-align:right; font-size:15px; padding-top:10px}
+.Contract_con .txt_Chapter_btm .date{padding-left:10px}
+.Contract_btm{padding-top:20px; font-weight:bold;  font-size:16px}
+.Contract_btm .Contract_btm_sub01{padding-bottom:15px}
+.Contract_btm p{font-size:15px; line-height:25px; font-weight:bold;  }
+.Contract_btm p span{padding-left:10px}
+.Contract_tit .Contract_btm_sub02{padding-top:10px}
+.Contract_tit p span{padding-right:5px}
+
+/*테이블추가*/
+.tb_th, .tb_td {padding: 0; word-break: break-all; background-clip: padding-box; font-size:13px}
+caption { display: none }
+fieldset { border: none }
+.table_wrap { width: 100%; border-collapse: collapse}
+.table_wrap > p {text-align:right; font-size:13px; color:#999}
+.table_wrap .tb { display: table; width: 100%; table-layout: fixed; border-spacing: 0; border-collapse: collapse}
+.table_wrap .tb { width: 100%; font-size: 14px; color: #3d424d; line-height: 16px; border: 1px solid #e1e1e1 }
+.table_wrap .tb_th { padding: 10px 0; text-align: center; background-color: #f7f7f7; font-size: 15px; font-weight: 700; color: #000 }
+.table_wrap .tb_td { padding: 10px 0; text-align: center; border:1px solid #e1e1e1; line-height:25px; font-size: 13px; color: #999 }
+p > span.first{float:right}

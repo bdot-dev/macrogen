@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.CharstMapper">
+	<sql id="list_where">
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and (
+				tc.charst_id like concat('%', #{searchKeyword}, '%')
+				or tc.charst like concat('%', #{searchKeyword}, '%')
+				or tc.charst_ko like concat('%', #{searchKeyword}, '%')
+				or tc.charst_en like concat('%', #{searchKeyword}, '%')
+				or tc.charst_zh like concat('%', #{searchKeyword}, '%')
+				or tc.charst_ja like concat('%', #{searchKeyword}, '%')
+			)
+		</if>
+	</sql>
+
+	<select id="list" parameterType="charstVo" resultType="charstVo">
+		<include refid="paging.countTop"/>
+		select
+			tc.charst_id
+			, tc.charst
+			, tc.charst_ko
+			, tc.charst_en
+			, tc.charst_zh
+			, tc.charst_ja
+			, tc.regist_dt
+			, tc.register_sn
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_charst tc
+		where 1 = 1
+		<include refid="list_where" />
+		order by tc.charst_id
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="count" parameterType="charstVo" resultType="int">
+		select count(*)
+		from tb_charst tc
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="view" parameterType="charstVo" resultType="charstVo">
+		select
+			tc.charst_id
+			, tc.charst
+			, tc.charst_ko
+			, tc.charst_en
+			, tc.charst_zh
+			, tc.charst_ja
+			, tc.regist_dt
+			, tc.register_sn
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_charst tc
+		where tc.charst_id = #{charstId}
+	</select>
+
+	<insert id="insert" parameterType="charstVo">
+		insert into tb_charst (
+			charst_id
+			, charst
+			, charst_ko
+			, charst_en
+			, charst_zh
+			, charst_ja
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{charstId}
+			, #{charst}
+			, #{charstKo}
+			, #{charstEn}
+			, #{charstZh}
+			, #{charstJa}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="charstVo">
+		update
+		    tb_charst
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    <if test="charst != null">, charst = #{charst}</if>
+		    <if test="charstKo != null">, charst_ko = #{charstKo}</if>
+		    <if test="charstEn != null">, charst_en = #{charstEn}</if>
+		    <if test="charstZh != null">, charst_zh = #{charstZh}</if>
+		    <if test="charstJa != null">, charst_ja = #{charstJa}</if>
+		where charst_id = #{charstId}
+	</update>
+
+	<delete id="delete" parameterType="charstVo">
+		delete from tb_charst where charst_id = #{charstId}
+	</delete>
+
+</mapper>

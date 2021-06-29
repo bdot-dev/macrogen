@@ -1,0 +1,58 @@
+-- server.xml <GlobalNamingResources />하위에 <Resource /> 추가
+
+	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="jdbc:mysql://192.168.1.34:3306/poiretcms?autoReconnect=true"
+		username="poiretcms" password="Poiretcms123!@#"
+		initialSize="3"
+		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
+
+-- 데이터베이스 연결설정 방법
+	1. server.xml <GlobalNamingResources />하위에 <Resource /> 추가
+	2. META-INF/context.xml <Context /> 하위에 <ResourceLink /> 추가
+	3. WEB-INF/web.xml <web-app /> 하위에  <resource-ref /> 추가
+	4. spring application-context.xml 에 <jee:jndi-lookup /> 추가
+
+	<!-- mysql -->
+	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="${database.url}" username="${database.username}" password="${database.password}"
+		initialSize="3"
+		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
+
+	<!-- sqlserver -->
+	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="${database.url}" username="${database.username}" password="${database.password}"
+		initialSize="3"
+		maxActive="8" maxIdle="4" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
+
+	<!-- oracle -->
+	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.OracleDriver"
+		url="${database.url}" username="${database.username}" password="${database.password}"
+		maxTotal="20" maxIdle="10" maxWaitMillis="-1"
+		validationQuery="select 1 from dual" testOnBorrow="true" validationInterval="60000" />
+
+
+-- 혹시 서버 start 시 mysql 관련 에러가 난다면 : Unable to load class [com.mysql.jdbc.Driver]
+	mysql-connector-java-5.1.39-bin.jar 파일을 해당 tomcat lib 폴더에 복사 후 재 실행 한다.
+

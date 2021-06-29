@@ -1,0 +1,40 @@
+0.로컬프로젝트경로
+	local_home : D:\doc\proj\202107.macrogen
+	tomcat_home : local_home/apache-tomcat-8.5.59
+	tomcat_home/lib에 mysql-connector-java-5.1.39-bin.jar 추가
+	git local_repository : local_home/workspace (D:\doc\proj\202107.macrogen\workspace)
+
+1.git url
+	http://192.168.1.38:28080/kimjd72/macrogenwww.git
+
+2.이클립스 프로젝트 설정
+2.1.이클립스실행
+	workspace local_home/workspace (D:\doc\proj\202107.macrogen\workspace) 선택
+
+2.2.이클립스워크스페이스설정
+	"00.이클립스.워크스페이스.설정.txt" 참고
+
+2.3.git clone (git local repository 생성)
+	open git perspective
+	clone a git repository
+	Destination directory (local git repo) : D:\doc\proj\202107.macrogen\workspace\si_poiret
+
+2.4.이클립스프로젝트 생성
+
+	git local repository로 부터 이클립스 프로젝트 import
+
+	방법1) Projects from git
+	File>Import, git>Projects from git
+	existing local repository, import general project 선택
+	maven project로 설정 : File>Import, maven>Existing maven projects
+
+	방법2) Existing Maven Projects
+	import> Existing Maven Projects
+	root directory : D:\doc\proj\202107.macrogen\workspace\si_poiret
+
+2.5 브랜치 설명
+	master (작업브랜치 생성용 브랜치)
+	test (개발기 배포용 브랜치)
+	real (운영기 배포용 브랜치)
+	firstrel (작업브랜치)
+

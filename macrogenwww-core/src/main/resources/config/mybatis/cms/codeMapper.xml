@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.CodeMapper">
+
+	<sql id="list_where">
+		<if test="codeSe != null and codeSe != ''">
+			and TC.CODE_SE = #{codeSe}
+		</if>
+		<if test='searchKeyword != null and searchKeyword != ""'>
+			<choose>
+				<when test='searchCondition == "code_se"'>
+					and TC.CODE_SE like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "code_nm"'>
+					and TC.CODE_NM like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "code"'>
+					and TC.CODE like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+
+	</sql>
+
+	<select id="list" parameterType="codeVo" resultType="codeVo">
+		<include refid="paging.top"/>
+		select
+		    tc.code_se
+		    , tc.code
+		    , tc.code_nm
+		    , tc.sort_ordr
+		    , tc.regist_dt
+		    , tc.register_sn
+		    , tc.updt_dt
+		    , tc.updusr_sn
+		from tb_code tc
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tc.code_se, tc.sort_ordr, tc.code
+		<include refid="paging.bottom"/>
+	</select>
+
+	<select id="count" parameterType="codeVo" resultType="int">
+		select count(*)
+		from tb_code tc
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="view" parameterType="codeVo" resultType="codeVo">
+		SELECT
+		    TC.CODE_SE
+		    , TC.CODE
+		    , TC.CODE_NM
+		    , TC.SORT_ORDR
+		    , TC.REGIST_DT
+		    , TC.register_sn
+		    , TC.UPDT_DT
+		    , TC.updusr_sn
+		FROM tb_code TC
+		WHERE 1=1
+		<if test='codeSe != null and codeSe != ""'>
+		AND TC.CODE_SE = #{codeSe}
+		</if>
+		<if test='code != null and code != ""'>
+		AND TC.CODE = #{code}
+		</if>
+		<if test='codeNm != null and codeNm != ""'>
+		AND TC.CODE_NM = #{codeNm}
+		</if>
+	</select>
+
+	<insert id="insert" parameterType="codeVo">
+		INSERT INTO tb_code (
+		    CODE_SE, CODE, CODE_NM, SORT_ORDR
+		    , REGIST_DT, register_sn, UPDT_DT, updusr_sn
+		) VALUES (
+		    #{codeSe}, #{code}, #{codeNm}, #{sortOrdr}
+		    , now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="codeVo">
+		UPDATE
+			tb_code
+        SET
+			CODE_NM = #{codeNm},
+			SORT_ORDR = #{sortOrdr},
+			UPDT_DT = now(),
+			updusr_sn = #{updusrSn}
+		WHERE
+			CODE_SE = #{codeSe} AND CODE = #{code}
+	</update>
+
+	<delete id="delete" parameterType="codeVo">
+		DELETE from tb_code WHERE CODE_SE = #{codeSe} and CODE = #{code}
+	</delete>
+</mapper>

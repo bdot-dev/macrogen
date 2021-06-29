@@ -1,0 +1,268 @@
+package macrogen.www.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.service.BbsCtgryService;
+import macrogen.www.service.CodeService;
+import macrogen.www.service.NttAtchService;
+import macrogen.www.service.NttService;
+import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.NttAtchVo;
+import macrogen.www.vo.NttVo;
+
+/**
+ * <pre>
+ * macrogen.www.controller
+ *    |_ NewsController.java
+ *
+ * </pre>
+ * 1. 작성일 : 2018. 10. 19. 오후 1:01:31
+ * 2. 작성자 : eluocnc
+ * @version :
+ */
+@Controller
+public class NttController {
+
+	@Resource(name="nttService")
+	private NttService nttService;
+
+	@Resource(name="nttAtchService")
+	private NttAtchService nttAtchService;
+
+	@Resource(name="codeService")
+	private CodeService codeService;
+
+	@Resource(name="bbsCtgryService")
+	private BbsCtgryService bbsCtgryService;
+
+	/**
+	 * <pre>
+	 * list
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 목록 폼
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param bbsId
+	 * @param loginVo
+	 * @param listVo
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/list")
+	public String list(@PathVariable String bbsId,
+			@AuthenticationPrincipal MngrVo loginVo,
+			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
+		listVo.setBbsId(bbsId);
+		return bbsId+"/list";
+	}
+
+	/**
+	 * <pre>
+	 * listData
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 목록 데이터
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param bbsId
+	 * @param listVo
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/list/data")
+	@ResponseBody
+	public Map<String, Object> listData(@PathVariable String bbsId, @RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		listVo.setBbsId(bbsId);
+
+		if(StringUtils.isEmpty(listVo.getOrderBy())) listVo.setOrderBy("regist_dt_desc");
+
+		List<NttVo> resultList = nttService.list(listVo);
+
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		// 코드목록 : 페이지당레코드개수
+		resultMap.put("recordCountPerPageList", codeService.listByCodeSe("RECORD_COUNT_PER_PAGE"));
+
+		// 카테고리 목록
+		resultMap.put("bbsCtgryList", bbsCtgryService.listByBbsId(bbsId));
+
+		// 코드목록 : 노출여부
+		resultMap.put("expsrYnList", codeService.listByCodeSe("EXPSR_YN"));
+
+		return resultMap;
+	}
+
+	/**
+	 * <pre>
+	 * form
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 등록 폼
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param listVo
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/form/")
+	public String form(Model model, @ModelAttribute("listVo") NttVo listVo,
+			@PathVariable String bbsId) throws Exception {
+
+		return bbsId+"/form";
+	}
+
+	/**
+	 * <pre>
+	 * updateForm
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 수정 폼
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param listVo
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/form/{nttSn}")
+	public String updateForm(@PathVariable String bbsId, @PathVariable Long nttSn,
+			Model model, @ModelAttribute("listVo") NttVo listVo) throws Exception {
+
+		return bbsId+"/form";
+	}
+
+	/**
+	 * <pre>
+	 * formData
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 상세 데이터
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param bbsId
+	 * @param loginVo
+	 * @param nttVo
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/form/data")
+	@ResponseBody
+	public Map<String, Object> formData(@PathVariable String bbsId,
+			@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody NttVo nttVo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		// 검색결과
+		NttVo resultVo = new NttVo();
+		if (!StringUtils.isEmpty(nttVo.getNttSn())) {
+			resultVo.setNttSn(nttVo.getNttSn());
+			resultVo = nttService.view(resultVo);
+
+			NttAtchVo nttAtchVo = new NttAtchVo();
+			nttAtchVo.setNttSn(nttVo.getNttSn());
+			nttAtchVo.setFirstIndex(-1);
+			resultVo.setAtchList(nttAtchService.list(nttAtchVo));
+		} else {
+			resultVo.setBbsId(bbsId);
+			resultVo.setExpsrYn("Y");
+		}
+		resultMap.put("resultVo", resultVo);
+
+		// 뉴스게시판분류목록
+		resultMap.put("bbsCtgryList", bbsCtgryService.listByBbsId(bbsId));
+
+		// 코드목록 : 노출여부
+		resultMap.put("expsrYnList", codeService.listByCodeSe("EXPSR_YN"));
+
+
+		return resultMap;
+	}
+
+	/**
+	 * <pre>
+	 * submit
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 등록&수정 처리
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param loginVo
+	 * @param nttVo
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/form/submit")
+	@ResponseBody
+	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody NttVo nttVo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		if (StringUtils.isEmpty(nttVo.getNttSn())) {
+			nttVo.setRegisterSn(loginVo.getUserSn());
+			nttVo.setUpdusrSn(loginVo.getUserSn());
+			nttVo.setWrterSn(loginVo.getUserSn());
+			nttService.insert(nttVo);
+
+		} else {
+			nttVo.setUpdusrSn(loginVo.getUserSn());
+			nttService.update(nttVo);
+		}
+
+		resultMap.put("result", "success");
+		return resultMap;
+	}
+
+	/**
+	 * <pre>
+	 * delete
+	 * 1. 개요   : 각 게시판(공지사항/1:1문의/자유게시판/자료실) 삭제
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param loginVo
+	 * @param nttVo
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("{bbsId}/form/delete")
+	@ResponseBody
+	public Map<String, Object> delete(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody NttVo nttVo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		nttVo.setUpdusrSn(loginVo.getUserSn());
+		nttService.delete(nttVo);
+
+		resultMap.put("result", "success");
+		return resultMap;
+	}
+}

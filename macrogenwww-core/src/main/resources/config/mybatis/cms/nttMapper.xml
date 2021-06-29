@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.NttMapper">
+
+	<sql id="list_where">
+		<if test="bbsId != null and bbsId != ''">
+			and tn.bbs_id = #{bbsId}
+		</if>
+		<if test="wrterSn != null and wrterSn != '' " >
+			AND tn.wrter_sn = #{wrterSn}
+		</if>
+		<if test="searchExpsrYn != null and searchExpsrYn != '' " >
+			AND tn.expsr_yn = #{searchExpsrYn}
+		</if>
+		<if test="searchBbsCtgrySn != null and searchBbsCtgrySn != ''">
+			and tn.bbs_ctgry_sn = #{searchBbsCtgrySn}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<choose>
+				<when test="searchCondition == 'TITLE'">
+					and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test="searchCondition == 'WRTER'">
+					and exists (
+					    select 1 from tb_user
+					    where user_nm like concat('%', #{searchKeyword}, '%')
+					    and user_sn = tn.wrter_sn
+					)
+				</when>
+			</choose>
+		</if>
+		<if test='upendFixingYn == "Y"'>
+			and tn.upend_fixing_yn = 'Y'
+		</if>
+	</sql>
+
+	<select id="count" parameterType="nttVo" resultType="int">
+		select count(*)
+		from tb_ntt tn
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="nttVo" resultType="nttVo">
+		<include refid="paging.countTop"/>
+		select
+			tn.ntt_sn
+			, tn.bbs_id
+			, tn.bbs_ctgry_sn
+			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
+			, tn.ntt_sj
+			, tn.ntt_cn
+			, tn.expsr_yn
+			, tn.rdcnt
+			, tn.upend_fixing_yn
+			, tn.wrter_sn
+			, ( select user_nm from tb_user where user_sn = tn.wrter_sn ) wrter_nm
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		from tb_ntt tn
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tn.regist_dt desc, tn.ntt_sn desc
+			</when>
+			<when test='orderBy == "regist_dt_asc"'>
+				order by tn.regist_dt asc, tn.ntt_sn asc
+			</when>
+			<when test='orderBy == "rdcnt_desc"'>
+				order by tn.rdcnt desc, tn.ntt_sn desc
+			</when>
+			<when test='orderBy == "rdcnt_asc"'>
+				order by tn.rdcnt asc, tn.ntt_sn desc
+			</when>
+			<otherwise>
+				order by tn.ntt_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="view" parameterType="nttVo" resultType="nttVo">
+		select
+			tn.ntt_sn
+			, tn.bbs_id
+			, tn.bbs_ctgry_sn
+			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
+			, tn.ntt_sj
+			, tn.ntt_cn
+			, tn.expsr_yn
+			, tn.rdcnt
+			, tn.upend_fixing_yn
+			, tn.wrter_sn
+			, ( select user_nm from tb_user where user_sn = tn.wrter_sn ) wrter_nm
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		from tb_ntt tn
+		where tn.ntt_sn = #{nttSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_ntt')
+	</select>
+
+	<insert id="insert" parameterType="nttVo">
+		insert into tb_ntt (
+			ntt_sn
+			, bbs_id
+			, bbs_ctgry_sn
+			, ntt_sj
+			, ntt_cn
+			, expsr_yn
+			, rdcnt
+			, upend_fixing_yn
+			, wrter_sn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{nttSn}
+			, #{bbsId}
+			, #{bbsCtgrySn}
+			, #{nttSj}
+			, #{nttCn}
+		    , ifnull(#{expsrYn}, 'Y')
+		    , 0
+			, ifnull(#{upendFixingYn}, 'N')
+			, #{wrterSn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="nttVo">
+		update tb_ntt
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    <if test="bbsId != null">, bbs_id = #{bbsId} </if>
+		    <if test="bbsCtgrySn != null">, bbs_ctgry_sn = #{bbsCtgrySn} </if>
+		    <if test="nttSj != null">, ntt_sj = #{nttSj} </if>
+		    <if test="nttCn != null">, ntt_cn = #{nttCn} </if>
+		    <if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
+		    <if test="rdcnt != null">, rdcnt = #{rdcnt} </if>
+		    <if test="upendFixingYn != null">, upend_fixing_yn = #{upendFixingYn} </if>
+		where ntt_sn = #{nttSn}
+	</update>
+
+	<delete id="delete" parameterType="nttVo">
+		delete from tb_ntt where ntt_sn = #{nttSn}
+	</delete>
+
+    <update id="increaseRdcnt" parameterType="nttVo">
+    	UPDATE tb_ntt SET
+    		rdcnt = ifnull(rdcnt, 0) + 1
+    	WHERE
+    		ntt_sn = #{nttSn}
+    </update>
+
+</mapper>

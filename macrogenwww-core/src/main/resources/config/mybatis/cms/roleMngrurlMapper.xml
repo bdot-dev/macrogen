@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.RoleMngrurlMapper">
+
+	<select id="list" parameterType="roleMngrurlVo" resultType="roleMngrurlVo">
+		SELECT
+			role_id, url
+		FROM
+			tb_role_mngrurl trm
+		WHERE 1 = 1
+			<if test="roleId != null and roleId != '' ">
+				AND trm.role_id = #{roleId}
+			</if>
+			<if test="url != null and url != ''">
+				AND trm.url = #{url}
+			</if>
+	</select>
+
+	<select id="count" parameterType="roleMngrurlVo" resultType="int">
+		SELECT
+			count(*)
+		FROM
+			tb_role_mngrurl trm
+		WHERE 1 = 1
+			<if test="roleId != null and roleId != '' ">
+				AND trm.role_id = #{roleId}
+			</if>
+			<if test="url != null and url != ''">
+				AND trm.url = #{url}
+			</if>
+	</select>
+
+	<select id="likeView" parameterType="roleMngrurlVo" resultType="roleMngrurlVo">
+		select
+			trm.role_id
+			, trm.url
+		from tb_role_mngrurl trm
+		where trm.role_id = #{roleId}
+		and #{url} like concat(trm.url, '%')
+		limit 1 offset 0
+	</select>
+
+	<insert id="insert" parameterType="roleMngrurlVo" >
+		INSERT INTO tb_role_mngrurl(
+			role_id, url
+		) VALUES (
+			#{roleId}, #{url}
+		)
+	</insert>
+
+	<delete id="deleteByRoleId" parameterType="roleMngrurlVo">
+		DELETE FROM
+			tb_role_mngrurl
+		WHERE
+			role_id = #{roleId}
+	</delete>
+
+	<delete id="deleteByUrl" parameterType="roleMngrurlVo">
+		DELETE FROM
+			tb_role_mngrurl
+		WHERE
+			url = #{url}
+	</delete>
+</mapper>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.NttAtchMapper">
+	<sql id="list_where">
+		<if test="nttSn != null">
+			and tna.ntt_sn = #{nttSn}
+		</if>
+	</sql>
+
+	<select id="list" parameterType="nttAtchVo" resultType="nttAtchVo">
+		<include refid="paging.countTop"/>
+		select
+		  tna.ntt_sn
+		  , tna.atch_id
+		  , tna.sort_ordr
+		  , ta.physicl_flpth
+		  , ta.logic_nm
+		  , ta.file_size
+		from tb_ntt_atch tna
+		join tb_atch ta on ta.atch_id = tna.atch_id
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tna.sort_ordr
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<insert id="insert" parameterType="nttAtchVo">
+		insert into tb_ntt_atch (
+		    ntt_sn
+		    , atch_id
+		    , sort_ordr
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		) values (
+		    #{nttSn}
+		    , #{atchId}
+		    , #{sortOrdr}
+		    , now()
+		    , #{registerSn}
+		    , now()
+		    , #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="nttAtchVo">
+		delete
+		from tb_ntt_atch
+		where ntt_sn = #{nttSn}
+		and atch_id = #{atchId}
+	</delete>
+
+	<delete id="deleteByNttSn" parameterType="nttAtchVo">
+		delete
+		from tb_ntt_atch
+		where ntt_sn = #{nttSn}
+	</delete>
+</mapper>

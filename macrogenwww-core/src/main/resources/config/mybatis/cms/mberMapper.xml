@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MberMapper">
+
+	<resultMap type="mberVo" id="mberMap">
+		<result property="email" column="email" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="telno" column="telno" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="mbtlnum" column="mbtlnum" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="adresDetail" column="adres_detail" javaType="string" typeHandler="aesCipherTypeHandler"/>
+	</resultMap>
+
+	<sql id="list_where">
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<choose>
+				<when test='searchCondition == "login_id"'>
+					and tu.login_id = #{searchKeyword}
+				</when>
+				<when test='searchCondition == "user_nm"'>
+					and tu.user_nm = #{searchKeyword}
+				</when>
+			</choose>
+		</if>
+	</sql>
+
+	<select id="count" parameterType="mberVo" resultType="int">
+		select count(*)
+		from tb_mber tm
+		inner join tb_user tu on tu.user_sn = tm.user_sn
+		where 1=1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="mberVo" resultMap="mberMap">
+		<include refid="paging.countTop"/>
+		select
+		    tm.user_sn
+		    , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+		    , tm.brthdy
+		    , tm.zip
+		    , tm.adres
+		    , tm.adres_detail
+		    , tu.email
+		    , tu.telno
+		    , tu.mbtlnum
+		    , tu.login_id
+		    , tu.login_password
+		    , tu.user_nm
+	        , tu.last_password_change_dt
+	        , tu.password_input_error_co
+	        , tu.login_co
+	        , tu.last_login_dt
+		from tb_mber tm
+		inner join tb_user tu on tu.user_sn = tm.user_sn
+		where 1=1
+		<include refid="list_where" />
+		order by
+		    tm.user_sn
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="view" parameterType="mberVo" resultMap="mberMap">
+		select
+		    tm.user_sn
+		    , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+		    , tm.brthdy
+		    , tm.zip
+		    , tm.adres
+		    , tm.adres_detail
+		    , tu.email
+		    , tu.telno
+		    , tu.mbtlnum
+		    , tu.login_id
+		    , tu.login_password
+		    , tu.user_nm
+	        , tu.last_password_change_dt
+	        , tu.password_input_error_co
+	        , tu.login_co
+	        , tu.last_login_dt
+		from tb_mber tm
+		inner join tb_user tu on tu.user_sn = tm.user_sn
+		where tm.user_sn = #{userSn}
+	</select>
+
+	<select id="viewByLoginId" parameterType="mberVo" resultMap="mberMap">
+		select
+		    tm.user_sn
+		    , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+		    , tm.brthdy
+		    , tm.zip
+		    , tm.adres
+		    , tm.adres_detail
+		    , tu.email
+		    , tu.telno
+		    , tu.mbtlnum
+		    , tu.login_id
+		    , tu.login_password
+		    , tu.user_nm
+	        , tu.last_password_change_dt
+	        , tu.password_input_error_co
+	        , tu.login_co
+	        , tu.last_login_dt
+		from tb_mber tm
+		inner join tb_user tu on tu.user_sn = tm.user_sn
+		where tu.login_id = #{loginId}
+	</select>
+
+	<insert id="insert" parameterType="mberVo">
+		insert into tb_mber (
+		    user_sn, brthdy, zip, adres, adres_detail
+		    , regist_dt, register_sn, updt_dt, updusr_sn
+		) values (
+		    #{userSn}, #{brthdy}, #{zip}, #{adres}, #{adresDetail, typeHandler=aesCipherTypeHandler}
+		    , now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="mberVo">
+		update tb_mber
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    <if test="brthdy != null">, brthdy = #{brthdy} </if>
+		    <if test="zip != null">, zip = #{zip} </if>
+			<if test="adres != null">, adres + #{adres} </if>
+			<if test="adresDetail != null">, adres_detail = #{adresDetail, typeHandler=aesCipherTypeHandler} </if>
+		where user_sn = #{userSn}
+	</update>
+
+	<delete id="delete" parameterType="mberVo">
+		delete from tb_mber where user_sn = #{userSn}
+	</delete>
+
+</mapper>

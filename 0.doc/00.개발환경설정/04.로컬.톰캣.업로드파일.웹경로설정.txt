@@ -1,0 +1,9 @@
+-- 외부에서 네트워크드라이브로 연결이 안될때,
+	- server.xml <Service/Engine/Host> 하위에 <Context /> 추가
+		<Context docBase="C:\data\atch\public_poiret" path="/public" reloadable="false" />
+
+-- 네트워크드라이브로 설정할때,
+	- \\192.168.1.34\share\ (tomcat / tomcat123!@#) 를 Z:드라이브로 설정
+	- server.xml <Service/Engine/Host> 하위에 <Context /> 추가
+		<Context docBase="Z:\data\atch\public_poiret" path="/public" reloadable="false" />
+

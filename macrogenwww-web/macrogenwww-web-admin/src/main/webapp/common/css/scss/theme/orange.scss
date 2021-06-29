@@ -1,0 +1,52 @@
+@charset 'utf-8';
+.theme_orange {
+	header {
+		&:after {
+			background-color: #f47847;
+		}
+		.gnb_wrap {
+			ul {
+				li {
+					&.active {
+						background-color: #f47847;
+					}
+				}
+			}
+		}
+	}
+	#container {
+		.lnb {
+			> ul {
+				> li {
+					&.active {
+						> a, > span {
+							color: #f47847;
+						}
+					}
+				}
+				ul {
+					li {
+						a {
+							&.active {
+								color: #f47847;
+							}
+						}
+					}
+				}
+			}
+		}
+		.tab_wrap {
+			li {
+				&.active {
+					border-top-color: #f47847;
+				}
+			}
+		}
+	}
+	a, button, input, span {
+		&.point {
+			background-color: #f47847;
+			border-color: #f47847;
+		}
+	}
+}

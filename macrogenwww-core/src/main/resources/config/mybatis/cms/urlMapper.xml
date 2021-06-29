@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.UrlMapper">
+
+	<sql id="list_where">
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<choose>
+				<when test='searchCondition == "url"'>
+				and tu.url like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+	</sql>
+	
+	<select id="count" parameterType="urlVo" resultType="int">
+		select count(*)
+		from 
+		    tb_url tu
+		    , vw_menu vm
+		where vm.menu_sn = tu.menu_sn
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="urlVo" resultType="urlVo">
+		<include refid="paging.countTop"/>
+		select 
+		    tu.url
+		    , tu.menu_sn
+		    , vm.menu_nm_path
+		    , tu.regist_dt
+		    , tu.register_sn
+		    , tu.updt_dt
+		    , tu.updusr_sn
+		from 
+		    tb_url tu
+		    , vw_menu vm
+		where vm.menu_sn = tu.menu_sn
+		<include refid="list_where" />
+		order by tu.url
+		<include refid="paging.countBottom"/>
+	</select>
+	
+	<select id="view" parameterType="urlVo" resultType="urlVo">
+		select
+			tu.url
+			, tu.menu_sn
+		    , tu.regist_dt
+		    , tu.register_sn
+		    , tu.updt_dt
+		    , tu.updusr_sn
+		    , vm.menu_nm_path
+		from 
+			tb_url tu
+		    , vw_menu vm
+		where vm.menu_sn = tu.menu_sn
+		and tu.url = #{url}
+	</select>
+	
+	<select id="likeView" parameterType="urlVo" resultType="urlVo">
+		select
+			tu.url
+			, tu.menu_sn
+		    , tu.regist_dt
+		    , tu.register_sn
+		    , tu.updt_dt
+		    , tu.updusr_sn
+		from tb_url tu
+		where #{url} like concat(tu.url, '%')  
+		limit 1 offset 0
+	</select>
+
+	<insert id="insert" parameterType="urlVo">
+		insert into tb_url (
+		    url, menu_sn , regist_dt, register_sn, updt_dt, updusr_sn
+		) values (
+		    #{url}, #{menuSn}, now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+	
+	<update id="update" parameterType="urlVo">
+		update 
+		    tb_url
+		set    
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    , menu_sn = #{menuSn}
+		where url = #{url}
+	</update>
+	
+	<delete id="delete" parameterType="urlVo">
+		delete from tb_url where url = #{url}
+	</delete>
+	
+</mapper>

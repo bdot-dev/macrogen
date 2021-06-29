@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.RoleMngrmenuMapper">
+
+	<select id="list" parameterType="roleMngrmenuVo" resultType="roleMngrmenuVo">
+		<include refid="paging.countTop"/>
+		select
+		    trmr.role_id
+		    , trmr.menu_sn
+		    , trmr.regist_dt
+		    , trmr.register_sn
+		    , trmr.updt_dt
+		    , trmr.updusr_sn
+		    , tm.upper_menu_sn
+		    , tm.menu_nm
+		    , tm.menu_url
+		    , tm.sort_ordr
+		from
+		    tb_role_mngrmenu trmr
+		    , tb_mngrmenu tm
+		where tm.menu_sn = trmr.menu_sn
+		<if test="roleId != null and roleId != ''">
+			and trmr.role_id = #{roleId}
+		</if>
+		<if test='topmostYn == "Y"'>
+			and nullif(tm.upper_menu_sn, '') is null
+		</if>
+		order by
+		    tm.sort_ordr
+		<include refid="paging.countBottom"/>
+	</select>
+	<select id="view" parameterType="roleMngrmenuVo" resultType="roleMngrmenuVo">
+		select
+			trmr.role_id,trmr.menu_sn,trmr.regist_dt,trmr.register_sn,trmr.updt_dt,trmr.updusr_sn
+		from tb_role_mngrmenu trmr
+		where trmr.role_id = #{roleId}
+		and trmr.menu_sn = #{menuSn}
+	</select>
+	<insert id="insert" parameterType="roleMngrmenuVo">
+		insert into tb_role_mngrmenu (
+			role_id,menu_sn,pendncy_yn,regist_dt,register_sn,updt_dt,updusr_sn
+		) values (
+			#{roleId}, #{menuSn}, #{pendncyYn}, now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+	<update id="update" parameterType="roleMngrmenuVo">
+	</update>
+	<delete id="delete" parameterType="roleMngrmenuVo">
+	</delete>
+
+	<delete id="deleteByRoleId" parameterType="roleMngrmenuVo">
+		delete from tb_role_mngrmenu where role_id = #{roleId}
+	</delete>
+
+	<delete id="deleteByMenuSn" parameterType="roleMngrmenuVo">
+		delete from tb_role_mngrmenu where menu_sn = #{menuSn}
+	</delete>
+
+</mapper>

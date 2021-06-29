@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MngrMapper">
+
+  <resultMap type="mngrVo" id="mngrMap">
+    <result property="email" column="email" javaType="string" typeHandler="aesCipherTypeHandler"/>
+    <result property="telno" column="telno" javaType="string" typeHandler="aesCipherTypeHandler"/>
+    <result property="mbtlnum" column="mbtlnum" javaType="string" typeHandler="aesCipherTypeHandler"/>
+  </resultMap>
+
+  <sql id="list_where">
+    <if test="searchKeyword != null and searchKeyword != ''">
+      <choose>
+        <when test='searchCondition == "login_id"'>
+          and tu.login_id = #{searchKeyword}
+        </when>
+        <when test='searchCondition == "user_nm"'>
+          and tu.user_nm = #{searchKeyword}
+        </when>
+      </choose>
+    </if>
+    <if test="userSn != null and userSn != ''">
+    	and t2.user_sn = #{userSn}
+    </if>
+    <if test="roleId != null and roleId != '' ">
+    	and tm.role_id = #{roleId}
+    </if>
+  </sql>
+
+  <select id="count" parameterType="mngrVo" resultType="int">
+    select count(*)
+    from tb_mngr tm
+    inner join tb_user tu on tu.user_sn = tm.user_sn
+    where 1=1
+    <include refid="list_where" />
+  </select>
+
+  <select id="list" parameterType="mngrVo" resultMap="mngrMap">
+    <include refid="paging.countTop"/>
+    select
+        tm.user_sn
+        , tm.role_id
+        , (select role_nm from tb_role where role_id = tm.role_id) role_nm
+        , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+        , tu.email
+        , tu.telno
+        , tu.mbtlnum
+        , tu.login_id
+        , tu.login_password
+        , tu.user_nm
+        , tu.last_password_change_dt
+        , tu.password_input_error_co
+        , tu.login_co
+        , tu.last_login_dt
+    from tb_mngr tm
+    inner join tb_user tu on tu.user_sn = tm.user_sn
+    where 1=1
+    <include refid="list_where" />
+    order by
+        tm.user_sn desc
+    <include refid="paging.countBottom"/>
+  </select>
+
+  <select id="view" parameterType="mngrVo" resultMap="mngrMap">
+    select
+        tm.user_sn
+        , tm.role_id
+        , (select role_nm from tb_role where role_id = tm.role_id) role_nm
+        , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+        , tu.email
+        , tu.telno
+        , tu.mbtlnum
+        , tu.login_id
+        , tu.login_password
+        , tu.user_nm
+        , tu.last_password_change_dt
+        , tu.password_input_error_co
+        , tu.login_co
+        , tu.last_login_dt
+    from tb_mngr tm
+    inner join tb_user tu on tu.user_sn = tm.user_sn
+    where tm.user_sn = #{userSn}
+  </select>
+
+  <select id="viewByLoginId" parameterType="mngrVo" resultMap="mngrMap">
+    select
+        tm.user_sn
+        , tm.role_id
+        , (select role_nm from tb_role where role_id = tm.role_id) role_nm
+        , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+        , tu.email
+        , tu.telno
+        , tu.mbtlnum
+        , tu.login_id
+        , tu.login_password
+        , tu.user_nm
+        , tu.last_password_change_dt
+        , tu.password_input_error_co
+        , tu.login_co
+        , tu.last_login_dt
+    from tb_mngr tm
+    inner join tb_user tu on tu.user_sn = tm.user_sn
+    where tu.login_id = #{loginId}
+  </select>
+
+  <insert id="insert" parameterType="mngrVo">
+    insert into tb_mngr (
+        user_sn
+        , role_id
+        , regist_dt, register_sn, updt_dt, updusr_sn
+    ) values (
+        #{userSn}
+        , #{roleId}
+        , now(), #{registerSn}, now(), #{updusrSn}
+    )
+  </insert>
+
+  <update id="update" parameterType="mngrVo">
+    update tb_mngr
+    set
+        updt_dt = now()
+        , updusr_sn = #{updusrSn}
+      <if test="roleId != null">, role_id = #{roleId}</if>
+    where user_sn = #{userSn}
+  </update>
+
+  <delete id="delete" parameterType="mngrVo">
+    delete from tb_mngr where user_sn = #{userSn}
+  </delete>
+
+</mapper>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MngrurlMapper">
+
+	<sql id="list_where">
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<choose>
+				<when test='searchCondition == "url"'>
+				and tm.url like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+		<if test="menuSn != null and menuSn != '' ">
+			AND tm.menu_sn = #{menuSn}
+		</if>
+	</sql>
+
+	<select id="count" parameterType="mngrurlVo" resultType="int">
+		select count(*)
+		from
+		    tb_mngrurl tm
+		    , vw_mngrmenu vmm
+		where vmm.menu_sn = tm.menu_sn
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="mngrurlVo" resultType="mngrurlVo">
+		<include refid="paging.countTop"/>
+		select
+		    tm.url
+		    , tm.menu_sn
+		    , vmm.menu_nm_path
+		    , tm.regist_dt
+		    , tm.register_sn
+		    , tm.updt_dt
+		    , tm.updusr_sn
+		     <if test="roleId != null and roleId != ''">
+		    , if( (select count(*) from tb_role_mngrurl trm where tm.url = trm.url and trm.role_id = #{roleId}) > 0, 'Y', 'N') accFlag
+		    </if>
+		from
+		    tb_mngrurl tm
+		    , vw_mngrmenu vmm
+		where vmm.menu_sn = tm.menu_sn
+		<include refid="list_where" />
+		order by tm.url
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="view" parameterType="mngrurlVo" resultType="mngrurlVo">
+		select
+			tm.url
+			, tm.menu_sn
+		    , tm.regist_dt
+		    , tm.register_sn
+		    , tm.updt_dt
+		    , tm.updusr_sn
+		    , vmm.menu_nm_path
+		from
+			tb_mngrurl tm
+		    , vw_mngrmenu vmm
+		where vmm.menu_sn = tm.menu_sn
+		and tm.url = #{url}
+	</select>
+
+	<select id="menuSnView" parameterType="mngrurlVo" resultType="mngrurlVo">
+		select
+			tm.url
+			, tm.menu_sn
+		    , tm.regist_dt
+		    , tm.register_sn
+		    , tm.updt_dt
+		    , tm.updusr_sn
+		    , vmm.menu_nm_path
+		from
+			tb_mngrurl tm
+		    , vw_mngrmenu vmm
+		where vmm.menu_sn = tm.menu_sn
+		and tm.menu_sn = #{menuSn}
+	</select>
+
+	<select id="likeView" parameterType="mngrurlVo" resultType="mngrurlVo">
+		select
+			tm.url
+			, tm.menu_sn
+		    , tm.regist_dt
+		    , tm.register_sn
+		    , tm.updt_dt
+		    , tm.updusr_sn
+		from tb_mngrurl tm
+		where #{url} like concat(tm.url, '%')
+		limit 1 offset 0
+	</select>
+
+	<insert id="insert" parameterType="mngrurlVo">
+		insert into tb_mngrurl (
+		    url, menu_sn , regist_dt, register_sn, updt_dt, updusr_sn
+		) values (
+		    #{url}, #{menuSn}, now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="mngrurlVo">
+		update
+		    tb_mngrurl
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    , menu_sn = #{menuSn}
+		where url = #{url}
+	</update>
+
+	<delete id="delete" parameterType="mngrurlVo">
+		delete from tb_mngrurl where url = #{url}
+	</delete>
+
+</mapper>

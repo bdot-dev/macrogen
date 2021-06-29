@@ -1,0 +1,52 @@
+@charset 'utf-8';
+.theme_red {
+	header {
+		&:after {
+			background-color: #e64e47;
+		}
+		.gnb_wrap {
+			ul {
+				li {
+					&.active {
+						background-color: #e64e47;
+					}
+				}
+			}
+		}
+	}
+	#container {
+		.lnb {
+			> ul {
+				> li {
+					&.active {
+						> a, > span {
+							color: #e64e47;
+						}
+					}
+				}
+				ul {
+					li {
+						a {
+							&.active {
+								color: #e64e47;
+							}
+						}
+					}
+				}
+			}
+		}
+		.tab_wrap {
+			li {
+				&.active {
+					border-top-color: #e64e47;
+				}
+			}
+		}
+	}
+	a, button, input, span {
+		&.point {
+			background-color: #e64e47;
+			border-color: #e64e47;
+		}
+	}
+}

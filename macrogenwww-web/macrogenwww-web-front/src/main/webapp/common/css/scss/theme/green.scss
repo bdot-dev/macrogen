@@ -1,0 +1,52 @@
+@charset 'utf-8';
+.theme_green {
+	header {
+		&:after {
+			background-color: #40b37a;
+		}
+		.gnb_wrap {
+			ul {
+				li {
+					&.active {
+						background-color: #40b37a;
+					}
+				}
+			}
+		}
+	}
+	#container {
+		.lnb {
+			> ul {
+				> li {
+					&.active {
+						> a, > span {
+							color: #40b37a;
+						}
+					}
+				}
+				ul {
+					li {
+						a {
+							&.active {
+								color: #40b37a;
+							}
+						}
+					}
+				}
+			}
+		}
+		.tab_wrap {
+			li {
+				&.active {
+					border-top-color: #40b37a;
+				}
+			}
+		}
+	}
+	a, button, input, span {
+		&.point {
+			background-color: #40b37a;
+			border-color: #40b37a;
+		}
+	}
+}

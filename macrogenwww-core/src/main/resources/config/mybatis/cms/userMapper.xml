@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.UserMapper">
+
+	<resultMap type="userVo" id="userMap">
+		<result property="email" column="email" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="telno" column="telno" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="mbtlnum" column="mbtlnum" javaType="string" typeHandler="aesCipherTypeHandler"/>
+	</resultMap>
+
+	<select id="view" parameterType="userVo" resultMap="userMap">
+		select
+			tu.user_sn
+			, tu.user_nm
+			, tu.login_id
+			, tu.login_password
+			, tu.email
+			, tu.mbtlnum
+			, tu.telno
+			, tu.last_password_change_dt
+			, tu.password_input_error_co
+			, tu.login_co
+			, tu.last_login_dt
+			, tu.user_se_code
+			, tu.regist_dt
+			, tu.register_sn
+			, tu.updt_dt
+			, tu.updusr_sn
+		from tb_user tu
+		where tu.user_sn = #{userSn}
+	</select>
+
+	<select id="viewByLoginId" parameterType="string" resultMap="userMap">
+		select
+			tu.user_sn
+			, tu.user_nm
+			, tu.login_id
+			, tu.login_password
+			, tu.email
+			, tu.mbtlnum
+			, tu.telno
+			, tu.last_password_change_dt
+			, tu.password_input_error_co
+			, tu.login_co
+			, tu.last_login_dt
+			, tu.user_se_code
+			, tu.regist_dt
+			, tu.register_sn
+			, tu.updt_dt
+			, tu.updusr_sn
+		from tb_user tu
+		where tu.login_id = #{loginId}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_user')
+	</select>
+
+	<insert id="insert" parameterType="userVo">
+		insert into tb_user (
+			user_sn
+		    , user_nm
+		    , login_id
+		    , login_password
+		    , email
+		    , telno
+		    , mbtlnum
+		    , last_password_change_dt
+		    , password_input_error_co
+		    , login_co
+		    , last_login_dt
+		    , user_se_code
+		    , regist_dt, register_sn, updt_dt, updusr_sn
+		) values (
+			#{userSn}
+		    , #{userNm}
+		    , #{loginId}
+		    , #{loginPassword}
+		    , #{email, typeHandler=aesCipherTypeHandler}
+		    , #{telno, typeHandler=aesCipherTypeHandler}
+		    , #{mbtlnum, typeHandler=aesCipherTypeHandler}
+		    , now()
+		    , 0
+		    , 0
+		    , null
+		    , #{userSeCode}
+		    , now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="userVo">
+		update
+			tb_user
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="userNm != null"> , user_nm = #{userNm} </if>
+			<if test="email != null"> , email = #{email, typeHandler=aesCipherTypeHandler} </if>
+			<if test="telno != null"> , telno = #{telno, typeHandler=aesCipherTypeHandler} </if>
+			<if test="mbtlnum != null"> , mbtlnum = #{mbtlnum, typeHandler=aesCipherTypeHandler} </if>
+			<if test="userSeCode != null"> , user_se_code = #{userSeCode} </if>
+			<if test="loginPassword != null and loginPassword != ''">
+			, login_password = #{loginPassword}
+			, last_password_change_dt = now()
+			</if>
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<update id="increasePasswordInputErrorCo" parameterType="userVo">
+		update
+			tb_user
+		set
+			password_input_error_co = ifnull(password_input_error_co, 0) + 1
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<update id="initPasswordInputErrorCo" parameterType="userVo">
+		update
+			tb_user
+		set
+			password_input_error_co = 0
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<update id="increaseLoginCo" parameterType="userVo">
+		update
+			tb_user
+		set
+			login_co = ifnull(login_co, 0) + 1
+			, last_login_dt = now()
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<delete id="delete" parameterType="userVo">
+		delete from tb_user where user_sn = #{userSn}
+	</delete>
+
+</mapper>

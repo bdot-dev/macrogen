@@ -1,0 +1,127 @@
+@charset 'utf-8';
+
+* {
+	word-break: break-all !important;
+
+	outline: none;
+
+	font-style: normal;
+
+	@include bxzb;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font: {
+		family: $nt, $rt;
+		size: 12px;
+		weight: 400;
+	};
+
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	text-decoration: underline;
+
+	color: #333;
+}
+address, em {
+	font-style: normal;
+}
+hr {
+	display: none;
+}
+
+form{
+	margin:0;
+}
+
+/* table */
+table {
+	width: 100%;
+
+	table-layout: fixed;
+
+	border-collapse: separate;
+}
+th, td {
+	word-break: break-all;
+
+	background-clip: padding-box;
+	&.posr {
+		position: relative;
+	}
+}
+caption {
+	display: inline-block;
+	overflow: hidden;
+
+	width: 0px;
+	height: 0;
+
+	text-indent: -9999px;
+}
+fieldset {
+	border: none;
+}
+
+/*  form */
+input[type=radio], input[type=checkbox] {
+	padding: 0;
+}
+input[type=text], input[type=password], input[type=number] {
+}
+input[type=text]:-ms-clear, input[type=password]:-ms-clear, input[type=number]:-ms-clear {
+	display: none;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+
+	-webkit-appearance: none;
+}
+button {
+	width: auto;
+	padding: 0;
+
+	border: 0;
+	background: none;
+
+	font-weight: normal;
+}
+textarea {
+	resize: none;
+}
+a, img, input, button, select, textarea {
+	vertical-align: middle;
+}
+a, button {
+	display: inline-block;
+
+	text-align: center;
+	&:focus, &:active, &:hover {
+	}
+}
+ul, ol, dl {
+	margin: 0;
+	padding: 0;
+}
+li, dl {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+p {
+	margin: 0;
+}
+strong, b {
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+
+	font-family: $nt, $rt;
+	font-weight: normal;
+}

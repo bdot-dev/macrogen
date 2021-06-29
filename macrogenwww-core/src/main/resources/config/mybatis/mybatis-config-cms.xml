@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+	<typeAliases>
+		<typeAlias alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+		<typeAlias alias="aesCipherTypeHandler" type="macrogen.www.typeHandler.AesCipherTypeHandler"/>
+
+		<typeAlias alias="atchVo" type="macrogen.www.vo.AtchVo"/>
+		<typeAlias alias="bbsVo" type="macrogen.www.vo.BbsVo"/>
+		<typeAlias alias="bbsCtgryVo" type="macrogen.www.vo.BbsCtgryVo"/>
+		<typeAlias alias="charstVo" type="macrogen.www.vo.CharstVo"/>
+		<typeAlias alias="codeVo" type="macrogen.www.vo.CodeVo"/>
+		<typeAlias alias="intrstPrductVo" type="macrogen.www.vo.IntrstPrductVo"/>
+		<typeAlias alias="mberVo" type="macrogen.www.vo.MberVo"/>
+		<typeAlias alias="menuVo" type="macrogen.www.vo.MenuVo"/>
+		<typeAlias alias="mngrVo" type="macrogen.www.vo.MngrVo"/>
+		<typeAlias alias="mngrmenuVo" type="macrogen.www.vo.MngrmenuVo"/>
+		<typeAlias alias="mngrurlVo" type="macrogen.www.vo.MngrurlVo"/>
+		<typeAlias alias="nttVo" type="macrogen.www.vo.NttVo"/>
+		<typeAlias alias="nttAtchVo" type="macrogen.www.vo.NttAtchVo"/>
+		<typeAlias alias="popupVo" type="macrogen.www.vo.PopupVo"/>
+		<typeAlias alias="prductVo" type="macrogen.www.vo.PrductVo"/>
+		<typeAlias alias="prductImageVo" type="macrogen.www.vo.PrductImageVo"/>
+		<typeAlias alias="prductPrductctgryVo" type="macrogen.www.vo.PrductPrductctgryVo"/>
+		<typeAlias alias="prductctgryVo" type="macrogen.www.vo.PrductctgryVo"/>
+		<typeAlias alias="relatePrductVo" type="macrogen.www.vo.RelatePrductVo"/>
+		<typeAlias alias="roleVo" type="macrogen.www.vo.RoleVo"/>
+		<typeAlias alias="roleMngrmenuVo" type="macrogen.www.vo.RoleMngrmenuVo"/>
+		<typeAlias alias="roleMngrurlVo" type="macrogen.www.vo.RoleMngrurlVo"/>
+		<typeAlias alias="schedulerErrorVo" type="macrogen.www.vo.SchedulerErrorVo"/>
+		<typeAlias alias="urlVo" type="macrogen.www.vo.UrlVo"/>
+		<typeAlias alias="userVo" type="macrogen.www.vo.UserVo"/>
+
+	</typeAliases>
+</configuration>

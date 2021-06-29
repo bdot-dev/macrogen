@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MngrmenuMapper">
+
+	<select id="list" parameterType="mngrmenuVo" resultType="mngrmenuVo">
+		<include refid="paging.countTop"/>
+		select
+		    t1.*
+			<if test="roleId != null and roleId != ''">
+		    , ( select pendncy_yn from TB_ROLE_MNGRMENU where menu_sn = t1.menu_sn and role_id = #{roleId} ) pendncy_yn
+			</if>
+		from
+		    vw_mngrmenu t1
+		where 1 = 1
+		<if test="menuSnPath != null and menuSnPath != ''">
+			and t1.menu_sn_path like concat(#{menuSnPath}, '%')
+		</if>
+		<if test="roleId != null and roleId != ''">
+			and exists (
+			    select * from TB_ROLE_MNGRMENU where menu_sn = t1.menu_sn and role_id = #{roleId}
+			)
+		</if>
+		<if test='notEmptyUrlYn == "Y"'>
+			and t1.menu_url > ''
+		</if>
+		<if test='topmostYn == "Y"'>
+			AND nullif(t1.upper_menu_sn, '') is null
+		</if>
+		<if test='upperMenuSn != null and upperMenuSn > 0'>
+			AND t1.upper_menu_sn = #{upperMenuSn}
+		</if>
+		order by t1.sort_ordr_path
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="view" parameterType="mngrmenuVo" resultType="mngrmenuVo">
+		select
+			vm.menu_sn, vm.upper_menu_sn, vm.menu_nm, vm.menu_url, vm.sort_ordr
+			, vm.regist_dt, vm.register_sn, vm.updt_dt, vm.updusr_sn
+			, vm.menu_sn_path
+            , vm.menu_nm_path
+			, vm.sort_ordr_path
+			, vm.top_menu_sn
+		from vw_mngrmenu vm
+		where vm.menu_sn = #{menuSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_mngrmenu')
+	</select>
+
+	<insert id="insert" parameterType="mngrmenuVo">
+		INSERT INTO tb_mngrmenu (
+			menu_sn, upper_menu_sn, menu_nm, menu_url, sort_ordr
+			, regist_dt, register_sn, updt_dt, updusr_sn
+		) VALUES (
+			#{menuSn}, #{upperMenuSn}, #{menuNm}, #{menuUrl}, #{sortOrdr}
+			, now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="mngrmenuVo">
+		update tb_mngrmenu
+		set
+			updt_dt = now()
+			, UPDUSR_SN = #{updusrSn}
+			<if test="upperMenuSn != null">, UPPER_MENU_SN = #{upperMenuSn}</if>
+			<if test="menuNm != null">, menu_nm = #{menuNm}</if>
+			<if test="menuUrl != null">, MENU_URL = #{menuUrl}</if>
+			<if test="sortOrdr != null">, sort_ordr = #{sortOrdr}</if>
+		where menu_sn = #{menuSn}
+	</update>
+
+	<update id="updateSortOrdr" parameterType="mngrmenuVo">
+		update tb_mngrmenu
+		set
+			sort_ordr = #{sortOrdr}
+			, UPPER_MENU_SN = #{upperMenuSn}
+		where menu_sn = #{menuSn}
+	</update>
+
+	<delete id="delete" parameterType="mngrmenuVo">
+		delete from tb_mngrmenu where menu_sn = #{menuSn}
+	</delete>
+
+</mapper>

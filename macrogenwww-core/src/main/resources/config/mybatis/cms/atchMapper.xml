@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.AtchMapper">
+
+	<insert id="insert" parameterType="atchVo">
+		insert into tb_atch(
+			atch_id
+			, logic_nm
+			, physicl_flpth
+			, file_size
+			, thumb_flpth
+			, image_width
+			, image_hg
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{atchId}
+			, #{logicNm}
+			, #{physiclFlpth}
+			, #{fileSize}
+			, #{thumbFlpth}
+			, #{imageWidth}
+			, #{imageHg}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="atchVo">
+		DELETE FROM tb_atch WHERE ATCH_ID = #{atchId}
+	</delete>
+
+	<select id="view" parameterType="atchVo" resultType="atchVo">
+		SELECT
+			ta.*
+		FROM
+			tb_atch ta
+		WHERE
+			ta.atch_id = #{atchId}
+	</select>
+
+</mapper>

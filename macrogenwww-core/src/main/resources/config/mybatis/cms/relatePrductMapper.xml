@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.RelatePrductMapper">
+
+	<sql id="list_where">
+		<if test="prductSn != null">
+			and trp.prduct_sn = #{prductSn}
+		</if>
+	</sql>
+
+	<select id="count" parameterType="relatePrductVo" resultType="int">
+		select count(*)
+		from tb_relate_prduct trp
+		inner join tb_prduct tp on tp.prduct_sn = trp.relate_prduct_sn
+		where 1=1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="relatePrductVo" resultType="relatePrductVo">
+		<include refid="paging.countTop"/>
+			select
+				trp.prduct_sn
+				, trp.relate_prduct_sn
+				, trp.sort_ordr
+				, trp.regist_dt
+				, trp.register_sn
+				, trp.updt_dt
+				, trp.updusr_sn
+				, tp.prduct_nm relate_prduct_nm
+				, tp.reprsnt_image_atch_id relate_reprsnt_image_atch_id
+				, ( select physicl_flpth from tb_atch
+				    where atch_id = tp.reprsnt_image_atch_id ) relate_reprsnt_image_flpth
+			from tb_relate_prduct trp
+			inner join tb_prduct tp on tp.prduct_sn = trp.relate_prduct_sn
+			where 1=1
+			<include refid="list_where" />
+			order by trp.regist_dt
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<insert id="insert" parameterType="relatePrductVo">
+		insert into tb_relate_prduct (
+			prduct_sn, relate_prduct_sn, sort_ordr
+			, regist_dt, register_sn, updt_dt, updusr_sn
+		) values (
+			#{prductSn}, #{relatePrductSn}, #{sortOrdr}
+			, now(), #{registerSn}, now(), #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="relatePrductVo">
+		update tb_relate_prduct
+		set
+			updt_dt = now()
+			, updusr_sn = #{updusrSn}
+			, sort_ordr = #{sortOrdr}
+		where prduct_sn = #{prductSn} and relate_prduct_sn = #{relatePrductSn}
+	</update>
+
+	<delete id="delete" parameterType="relatePrductVo">
+		delete from tb_relate_prduct where prduct_sn = #{prductSn} and relate_prduct_sn = #{relatePrductSn}
+	</delete>
+
+	<delete id="deleteByPrductSn" parameterType="relatePrductVo">
+		delete from tb_relate_prduct where prduct_sn = #{prductSn}
+	</delete>
+</mapper>

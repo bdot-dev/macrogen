@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.PopupMapper">
+
+	<sql id="list_where">
+		<if test="searchExpsrYn != null and searchExpsrYn != '' ">
+			AND tp.expsr_yn = #{searchExpsrYn}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != '' ">
+			AND tp.popup_nm like concat('%', #{searchKeyword}, '%')
+		</if>
+		<if test="searchBeginDt != null">
+			AND #{searchBeginDt} between tp.popup_begin_dt and tp.popup_end_dt
+			<!-- AND tp.popup_begin_dt <![CDATA[<=]]> #{searchBeginDt} and tp.popup_end_dt <![CDATA[>=]]> #{searchBeginDt} -->
+		</if>
+		<if test="searchEndDt != null">
+			AND #{searchEndDt} between tp.popup_begin_dt and tp.popup_end_dt
+			<!-- AND tp.popup_begin_dt <![CDATA[<=]]> #{searchEndDt} and tp.popup_end_dt <![CDATA[>=]]> #{searchEndDt} -->
+		</if>
+	</sql>
+	<select id="list" parameterType="popupVo" resultType="popupVo">
+		<include refid="paging.countTop"/>
+		SELECT
+			tp.popup_sn
+			, tp.popup_nm
+			, tp.popup_begin_dt
+			, tp.popup_end_dt
+			, tp.popup_image_atch_id
+			, ( select physicl_flpth from tb_atch
+				where atch_id = tp.popup_image_atch_id) popup_image_flpth
+			, tp.popup_image_dc
+			, tp.popup_link_url
+			, tp.popup_link_trgt_code
+			, tp.click_co
+			, tp.expsr_yn
+			, tp.sort_ordr
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		FROM
+			tb_popup tp
+		WHERE 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test="orderBy == 'reg_asc' ">
+				order by tp.regist_dt ASC
+			</when>
+			<when test="orderBy == 'sort_asc' ">
+				order by tp.sort_ordr ASC
+			</when>
+			<otherwise>
+				order by tp.regist_dt DESC
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom"/>
+	</select>
+
+	<select id="count" parameterType="popupVo" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_popup tp
+		WHERE 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="view" parameterType="popupVo" resultType="popupVo">
+		SELECT
+			tp.popup_sn
+			, tp.popup_nm
+			, tp.popup_begin_dt
+			, tp.popup_end_dt
+			, tp.popup_image_atch_id
+			, ( select physicl_flpth from tb_atch
+				where atch_id = tp.popup_image_atch_id) popup_image_flpth
+			, tp.popup_image_dc
+			, tp.popup_link_url
+			, tp.popup_link_trgt_code
+			, tp.click_co
+			, tp.expsr_yn
+			, tp.sort_ordr
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		FROM
+			tb_popup tp
+		WHERE
+			tp.popup_sn = #{popupSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_popup')
+	</select>
+
+	<insert id="insert" parameterType="popupVo">
+		INSERT INTO tb_popup(
+			popup_sn
+			, popup_nm
+			, popup_begin_dt
+			, popup_end_dt
+			, popup_image_atch_id
+			, popup_image_dc
+			, popup_link_url
+			, popup_link_trgt_code
+			, click_co
+			, expsr_yn
+			, sort_ordr
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) VALUES (
+			#{popupSn}
+			, #{popupNm}
+			, #{popupBeginDt}
+			, #{popupEndDt}
+			, #{popupImageAtchId}
+			, #{popupImageDc}
+			, #{popupLinkUrl}
+			, #{popupLinkTrgtCode}
+			, 0
+			, #{expsrYn}
+			, #{sortOrdr}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="popupVo">
+		UPDATE tb_popup	SET
+			updt_dt = now()
+			, updusr_sn = #{updusrSn}
+			<if test="popupNm != null">, popup_nm = #{popupNm} </if>
+			<if test="popupBeginDt != null">, popup_begin_dt = #{popupBeginDt} </if>
+			<if test="popupEndDt != null">, popup_end_dt = #{popupEndDt} </if>
+			<if test="popupImageAtchId != null">, popup_image_atch_id = #{popupImageAtchId} </if>
+			<if test="popupImageDc != null">, popup_image_dc = #{popupImageDc} </if>
+			<if test="popupLinkUrl != null">, popup_link_url = #{popupLinkUrl} </if>
+			<if test="popupLinkTrgtCode != null">, popup_link_trgt_code = #{popupLinkTrgtCode} </if>
+			<if test="clickCo != null">, click_co = #{clickCo} </if>
+			<if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
+			<if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+		WHERE
+			popup_sn = #{popupSn}
+	</update>
+
+	<delete id="delete" parameterType="popupVo">
+		DELETE FROM tb_popup where popup_sn = #{popupSn}
+	</delete>
+
+	<update id="updateSortOrdr" parameterType="popupVo">
+		UPDATE tb_popup SET
+			sort_ordr = #{sortOrdr}
+		WHERE
+			popup_sn = #{popupSn}
+	</update>
+
+	<update id="increaseClickCo" parameterType="popupVo">
+		UPDATE tb_popup SET
+			click_co = ifnull(click_co, 0) + 1
+		where
+			popup_sn = #{popupSn}
+	</update>
+
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="paging">
+
+	<sql id="countTop">
+		<if test="firstIndex > -1">
+		<![CDATA[
+		]]>
+		</if>
+	</sql>
+	
+	<sql id="countBottom">
+		<if test="firstIndex > -1">
+		<![CDATA[
+			LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
+		]]>
+		</if>
+	</sql>
+
+	<sql id="top">
+		<if test="firstIndex > -1">
+		<![CDATA[
+		]]>
+		</if>
+	</sql>
+	
+	<sql id="bottom">
+		<if test="firstIndex > -1">
+		<![CDATA[
+			LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
+		]]>
+		</if>
+	</sql>
+
+</mapper>
