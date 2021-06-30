@@ -1,0 +1,217 @@
+-- tb_seq 의 Engine을 MyISAM으로 변경할 것
+	ALTER TABLE tb_seq ENGINE = MyISAM;
+
+-- function 생성확인
+CREATE FUNCTION fn_nextval(p_SEQ_NM VARCHAR(50) CHARSET UTF8) RETURNS bigint
+BEGIN
+ INSERT INTO tb_seq
+  SET SEQ_NM=IFNULL(p_SEQ_NM,'DEFAULT'), SEQ_CURVAL=(@v_current_value:=1)
+ ON DUPLICATE KEY
+  UPDATE SEQ_CURVAL=(@v_current_value:=seq_curval+1);
+ RETURN @v_current_value;
+END;
+
+-- 게시판 등록
+	insert into tb_bbs(bbs_id,bbs_nm) values ('data','자료실');
+	insert into tb_bbs(bbs_id,bbs_nm) values ('notice','공지사항');
+	insert into tb_bbs(bbs_id,bbs_nm) values ('qna','1:1문의');
+
+-- 게시판_카테고리 등록
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000000,'data','자료실분류1',1);
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000001,'data','자료실분류2',2);
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000002,'qna','문의분류1',1);
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000003,'qna','문의분류2',2);
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000004,'notice','공지분류1',1);
+	insert into tb_bbs_ctgry(bbs_ctgry_sn,bbs_id,bbs_ctgry_nm,sort_ordr) values (100000005,'notice','공지분류2',2);
+
+-- 시퀀스 등록
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_bbs_ctgry', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_menu', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_mngrmenu', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_ntt', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_popup', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_prduct', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_prductctgry', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_scheduler_error', '20000000000');
+    insert into tb_seq (seq_nm, seq_curval) values ('sq_user', '20000000000');
+
+-- 코드 등록
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('EXPSR_YN','Y','노출',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('EXPSR_YN','N','비노출',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('EXPSR_STTUS_CODE','Y','노출',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('EXPSR_STTUS_CODE','N','비노출',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('EXPSR_STTUS_CODE','P','기간노출',3);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('POPUP_LINK_TRGT_CODE','CURRENT','현재창',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('POPUP_LINK_TRGT_CODE','NEW','새창',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MENU_SE_CODE','EMPTY','빈메뉴',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MENU_SE_CODE','URL','URL입력',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','010','010',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','011','011',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','016','016',3);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','017','017',4);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','018','018',5);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('MOBILE_PREFIX','019','019',6);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('PRDUCT_KND_CODE','SINGLE','단일제품',5);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('RECORD_COUNT_PER_PAGE','10','10개씩 보기',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('RECORD_COUNT_PER_PAGE','100','100개씩 보기',4);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('RECORD_COUNT_PER_PAGE','20','20개씩 보기',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('RECORD_COUNT_PER_PAGE','50','50개씩 보기',3);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('SITE_CONFIG','MAX_PASSWORD_INPUT_ERROR_CO','5',2);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('SITE_CONFIG','PASSWORD_CHANGE_MONTH','3',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('USER_SE_CODE','MNGR','관리자',1);
+	insert into tb_code(code_se,code,code_nm,sort_ordr) values ('USER_SE_CODE','MBER','회원',2);
+
+-- ROLE 등록
+	insert into tb_role(role_id, role_nm, regist_dt, register_sn, updt_dt, updusr_sn)
+	values ('ROLE_DEVELOPER', '개발자', now(), null, now(), null)
+	;
+	insert into tb_role(role_id, role_nm, regist_dt, register_sn, updt_dt, updusr_sn)
+	values ('ROLE_ADMIN', '관리자', now(), null, now(), null)
+	;
+
+-- 관리자 등록
+	insert into tb_user(
+	  user_sn, user_nm, login_id, login_password
+	  , email, telno, last_password_change_dt, password_input_error_co, login_co
+	  , last_login_dt, user_se_code, regist_dt, register_sn, updt_dt, updusr_sn
+	) values (
+	  10000000000, '개발자', 'developer', '+V53NP8Jn3vSjcfTb1M+I9gocQXhQY1t3wZj4Cu3Nsc='
+	  , '5ncKJtaIeCVYB1yiEA/ImNTmJvOEdvX4g5Ds3UgoANc=', null, now(), 0, 0
+	  , now(), 'admin', now(), null, now(), null
+	)
+	;
+	insert into tb_mngr(user_sn, role_id, regist_dt, register_sn, updt_dt, updusr_sn)
+	values (10000000000, 'ROLE_DEVELOPER', now(), null, now(), null)
+	;
+
+-- 사용자메뉴 등록
+	insert into tb_menu(menu_sn,upper_menu_sn,menu_se_code,menu_nm,menu_url,sort_ordr,expsr_yn) values (10000000000,null,'EMPTY','프론트메뉴',null,1,'Y');
+
+-- 제품카테고리 등록
+	insert into tb_prductctgry(ctgry_sn, upper_ctgry_sn, ctgry_nm, expsr_yn, sort_ordr) values (10000000000, null, '제품카테고리1', 'Y', 1);
+
+-- 프로그램 목록
+	-- 회원관리
+		-- 회원관리 : /mber/list
+	-- 상품관리
+		-- 상품관리 : /prduct/list
+		-- 상품카테고리관리 : /prductctgry/list
+	-- 게시글관리
+		-- 공지사항관리 : /notice/list
+		-- 자료실관리 : /data/list
+		-- qna관리 : /qna/list
+	-- 관리자관리
+		-- 관리자관리 : /mngr/list
+	-- 사이트관리
+		-- 팝업관리 : /popup/list
+	-- 시스템관리
+		-- 코드관리 : /code/list
+		-- 다국어문자열관리 : /charst/list
+		-- 관리자권한관리 : /role/list
+		-- 관리자메뉴관리 : /mngrmenu/list
+		-- 관리자URL관리 : /mngrurl/list
+		-- 사용자메뉴관리 : /menu/list
+		-- 사용자URL관리 : /url/list
+		
+-- 관리자 메뉴 등록
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000001,null,'회원 관리',null,1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000002,null,'상품 관리',null,2);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000003,null,'게시글 관리',null,3);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000004,null,'관리자 관리',null,4);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000005,null,'사이트 관리',null,5);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (100000006,null,'시스템 관리',null,6);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000001,100000001,'회원관리','/mber/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000002,100000002,'상품관리','/prduct/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000003,100000002,'상품카테고리관리','/prductctgry/list',2);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000004,100000003,'공지사항관리','/notice/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000005,100000003,'자료실관리','/data/list',2);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000006,100000003,'QNA관리','/qna/list',3);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000007,100000004,'관리자관리','/mngr/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000008,100000005,'팝업관리','/popup/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000009,100000006,'코드관리','/code/list',1);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000010,100000006,'다국어문자열관리','/charst/list',2);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000011,100000006,'관리자권한관리','/role/list',3);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000012,100000006,'관리자메뉴관리','/mngrmenu/list',4);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000013,100000006,'관리자URL관리','/mngrurl/list',5);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000014,100000006,'사용자메뉴관리','/menu/list',6);
+	insert into `tb_mngrmenu`(`menu_sn`,`upper_menu_sn`,`menu_nm`,`menu_url`,`sort_ordr`) values (20000000015,100000006,'사용자URL관리','/url/list',7);
+
+-- 권한_메뉴 등록
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',100000001,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',100000002,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',100000003,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',100000004,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',100000005,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000001,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000002,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000003,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000004,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000005,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000006,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000007,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_ADMIN',20000000008,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000001,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000002,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000003,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000004,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000005,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',100000006,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000001,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000002,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000003,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000004,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000005,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000006,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000007,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000008,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000009,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000010,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000011,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000012,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000013,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000014,'N');
+	insert into `tb_role_mngrmenu`(`role_id`,`menu_sn`,`pendncy_yn`) values ('ROLE_DEVELOPER',20000000015,'N');
+
+-- 관리자 URL 등록
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/charst/',20000000010);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/code/',20000000009);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/data/',20000000005);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/mber/',20000000001);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/menu/',20000000014);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/mngr/',20000000007);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/mngrmenu/',20000000012);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/mngrurl/',20000000013);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/notice/',20000000004);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/popup/',20000000008);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/prduct/',20000000002);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/prductctgry/',20000000003);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/qna/',20000000006);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/role/',20000000011);
+	insert into `tb_mngrurl`(`url`,`menu_sn`) values ('/url/',20000000015);
+
+-- 권한_관리자URL 등록
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/charst/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/code/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/data/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/data/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/mber/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/mber/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/menu/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/mngr/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/mngr/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/mngrmenu/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/mngrurl/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/notice/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/notice/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/popup/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/popup/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/prduct/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/prduct/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/prductctgry/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/prductctgry/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_ADMIN','/qna/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/qna/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/role/');
+	insert into `tb_role_mngrurl`(`role_id`,`url`) values ('ROLE_DEVELOPER','/url/');
+
+

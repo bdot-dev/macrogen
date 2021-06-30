@@ -18,7 +18,7 @@
 		</property>
 	</bean>
 
-	<context:component-scan base-package="eluo">
+	<context:component-scan base-package="macrogen">
 		<context:include-filter expression="org.springframework.stereotype.Controller" type="annotation" />
 		<context:include-filter expression="org.springframework.web.bind.annotation.ControllerAdvice" type="annotation" />
 		<context:exclude-filter expression="org.springframework.stereotype.Service" type="annotation" />

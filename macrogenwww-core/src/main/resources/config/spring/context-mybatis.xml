@@ -5,11 +5,11 @@
 
 	<!-- SqlSession setup for MyBatis Database Layer -->
 	<bean id="sqlSessionCms" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource-cms" />
+		<property name="dataSource" ref="dataSource-macrogenwww" />
 		<property name="configLocation" value="classpath:/config/mybatis/mybatis-config-cms.xml" />
 		<property name="mapperLocations">
 			<list>
-				<value>classpath:/config/mybatis/cms/*.xml</value>
+				<value>classpath:/config/mybatis/www/*.xml</value>
 			</list>
 		</property>
 	</bean>

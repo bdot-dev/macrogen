@@ -15,13 +15,13 @@
     </bean>
 
 	<!-- DataSource -->
-	<bean id="dataSource-cms" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	<bean id="dataSource-macrogenwww" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 		<property name="url" value="jdbc:mysql://192.168.1.34:3306/macrogenwww" />
 		<property name="username" value="macrogenwww"/>
-		<property name="password" value="Eluocms123!@#"/>
+		<property name="password" value="Macrogenwww123!@#"/>
 	</bean>
-	<alias name="dataSource-cms" alias="egov.dataSource"/>
-    <alias name="dataSource-cms" alias="dataSource"/>
+	<alias name="dataSource-macrogenwww" alias="egov.dataSource"/>
+    <alias name="dataSource-macrogenwww" alias="dataSource"/>
 
 </beans>

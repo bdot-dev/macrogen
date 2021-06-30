@@ -18,7 +18,7 @@
         <Logger name="java.sql" level="INFO" additivity="false">
             <AppenderRef ref="console" />
         </Logger>
-        <Logger name="eluo" level="DEBUG" additivity="false">
+        <Logger name="macrogen" level="DEBUG" additivity="false">
             <AppenderRef ref="console" />
         </Logger>
 	    <Logger name="jdbc.sqltiming" level="INFO" additivity="false">

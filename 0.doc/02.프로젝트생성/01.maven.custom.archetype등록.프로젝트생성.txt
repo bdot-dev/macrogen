@@ -1,0 +1,61 @@
+**** maven custom archetype 등록 및 생성
+
+	** 참고
+		https://www.lesstif.com/pages/viewpage.action?pageId=16744469
+
+	** 요약
+		* custom archetype 생성 테스트
+
+	** custom archetype 생성 테스트 - 기존 프로젝트로부터 생성하기
+		- 기존 mvn 프로젝트로 이동
+			> cd D:\doc\proj\202107.macrogen\workspace\macrogenwww
+	        ($ cd /d/doc/proj/202107.macrogen/workspace/macrogenwww/)
+
+		- archetype 등록 (from 기존 프로젝트)
+			> mvn clean archetype:create-from-project -X
+		- maven archetype 프로젝트는 target/generated-sources/archetype 로 이동
+			> cd target/generated-sources/archetype
+		- mvn install 로 local repository 에 추가
+			> mvn install
+
+	** 추가한 local maven archetype 으로 부터 프로젝트 생성 (이클립스에서...)
+		. New > Maven > Maven Project
+		. Select an Archetype
+
+		. 프로젝트 정보 입력후 실행
+			groupId: : macrogen ({회사도메인역순})
+			artifactId: : macrogenwww ({회사약어}{프로젝트약어})
+			version:  1.0.0 (디폴트)
+			package:  macrogen.www (({회사약어}))
+
+		. 문자열 변경
+			eluocms -> macrogenwww
+			Eluocms -> Macrogenwww
+			eluo.cms -> macrogen.www
+			eluo" -> macrogen"
+
+	** 원격 archetype 타입으로 부터 생성
+		. 참고 : https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/
+		. Remote archetype-catalog.xml 등록
+			- Windows -> Preferences -> Maven -> Archetypes, click "Add Remote Catalog..."
+			- Catalog File : http://192.168.1.34:8080/maven_repo/archetype-catalog.xml
+			- Desciption : jenkins_maven_repo
+
+		. 프로젝트 생성 : New > Maven > Maven Project
+		. Select an Archetype
+
+		. 프로젝트 정보 입력후 실행
+			groupId: : macrogen ({회사도메인역순})
+			artifactId: : macrogenwww ({회사약어}{프로젝트약어})
+			version:  1.0.0 (디폴트)
+			package:  macrogen.www  ({회사약어}.{프로젝트약어})
+
+		. 문자열 변경
+			. 문자열 변경 전에는 컴포넌트 스캔이 안된다. datasource 연결이 안된다.
+			eluocms -> macrogen (예 context-datasource.xml : <jee:jndi-lookup id="dataSource-cms" jndi-name="jdbc/eluocms" resource-ref="true" />)
+			Eluocms -> Macrogenwww
+			eluo.cms -> macrogen.www
+			eluo" -> macrogen" (예 context-common.xml : <context:component-scan base-package="eluo"> -> <context:component-scan base-package="eluo">)
+
+
+

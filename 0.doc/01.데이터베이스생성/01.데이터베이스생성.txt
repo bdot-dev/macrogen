@@ -1,0 +1,10 @@
+** DB, 계정생성, 권한부여
+	[root@yunjacdev ~]# mysql -uroot -p
+	Enter password: Mysql123!@#
+
+    mysql> create database macrogenwww DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    mysql> create user 'macrogenwww'@'%' identified by 'Macrogenwww123!@#';
+    mysql> grant all privileges on macrogenwww.* to 'macrogenwww'@'%';
+    mysql> show grants for 'macrogenwww'@'%';
+
+

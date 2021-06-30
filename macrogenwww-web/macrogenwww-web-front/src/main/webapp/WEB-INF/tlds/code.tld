@@ -12,7 +12,7 @@
 
 	<tag>
 		<name>text</name>
-		<tag-class>eluo.cms.tag.CodeTextTag</tag-class>
+		<tag-class>macrogen.www.tag.CodeTextTag</tag-class>
 		<description>code text</description>
 		<body-content>JSP</body-content>
         <attribute>

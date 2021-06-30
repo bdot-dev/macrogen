@@ -1,0 +1,805 @@
+-- 첨부
+create table tb_atch (
+	atch_id       varchar(50)  not null comment '첨부_아이디', -- 첨부_아이디
+	logic_nm      varchar(200) null     comment '논리_명', -- 논리_명
+	physicl_flpth varchar(100) null     comment '물리파일_경로', -- 물리파일_경로
+	file_size     varchar(10)  null     comment '파일_사이즈', -- 파일_사이즈
+	thumb_flpth   varchar(100) null     comment '썸네일_파일경로', -- 썸네일_파일경로
+	image_width   int          null     comment '이미지_가로', -- 이미지_가로
+	image_hg      int          null     comment '이미지_높이', -- 이미지_높이
+	regist_dt     datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn   bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt       datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn     bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '첨부';
+
+-- 첨부
+alter table tb_atch
+	add constraint pk_tb_atch -- 첨부 기본키
+		primary key (
+			atch_id -- 첨부_아이디
+		);
+
+-- 게시판
+create table tb_bbs (
+	bbs_id      varchar(50)  not null comment '게시판_id', -- 게시판_id
+	bbs_nm      varchar(100) null     comment '게시판_이름', -- 게시판_이름
+	regist_dt   datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '게시판';
+
+-- 게시판
+alter table tb_bbs
+	add constraint pk_tb_bbs -- 게시판 기본키
+		primary key (
+			bbs_id -- 게시판_id
+		);
+
+-- 게시판카테고리
+create table tb_bbs_ctgry (
+	bbs_ctgry_sn bigint       not null comment '게시판카테고리순번', -- 게시판카테고리순번
+	bbs_id       varchar(50)  null     comment '게시판_id', -- 게시판_id
+	bbs_ctgry_nm varchar(100) null     comment '게시판카테고리명', -- 게시판카테고리명
+	sort_ordr    smallint     null     comment '정렬_순서', -- 정렬_순서
+	regist_dt    datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn  bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt      datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn    bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '게시판카테고리';
+
+-- 게시판카테고리
+alter table tb_bbs_ctgry
+	add constraint pk_tb_bbs_ctgry -- 게시판카테고리 기본키
+		primary key (
+			bbs_ctgry_sn -- 게시판카테고리순번
+		);
+
+-- 문자열
+create table tb_charst (
+	charst_id   varchar(50) not null comment '문자열_아이디', -- 문자열_아이디
+	charst      text        null     comment '문자열', -- 문자열
+	charst_ko   text        null     comment '문자열_한글', -- 문자열_한글
+	charst_en   text        null     comment '문자열_영어', -- 문자열_영어
+	charst_zh   text        null     comment '문자열_중국어', -- 문자열_중국어
+	charst_ja   text        null     comment '문자열_일본어', -- 문자열_일본어
+	regist_dt   datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '문자열';
+
+-- 문자열
+alter table tb_charst
+	add constraint pk_tb_charst -- 문자열 기본키
+		primary key (
+			charst_id -- 문자열_아이디
+		);
+
+-- 코드
+create table tb_code (
+	code_se     varchar(50)  not null comment '코드구분', -- 코드구분
+	code        varchar(50)  not null comment '코드', -- 코드
+	code_nm     varchar(200) null     comment '코드명', -- 코드명
+	sort_ordr   smallint     null     comment '정렬순서', -- 정렬순서
+	regist_dt   datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '코드';
+
+-- 코드
+alter table tb_code
+	add constraint pk_tb_code -- 코드 기본키
+		primary key (
+			code_se, -- 코드구분
+			code     -- 코드
+		);
+
+-- 메뉴
+create table tb_menu (
+	menu_sn       bigint       not null comment '메뉴_순번', -- 메뉴_순번
+	upper_menu_sn bigint       null     comment '상위_메뉴_순번', -- 상위_메뉴_순번
+	menu_se_code  varchar(50)  null     comment '메뉴_구분_코드', -- 메뉴_구분_코드
+	menu_nm       varchar(100) null     comment '메뉴_이름', -- 메뉴_이름
+	menu_url      varchar(200) null     comment '메뉴_url', -- 메뉴_url
+	sort_ordr     smallint     null     comment '정렬_순서', -- 정렬_순서
+	expsr_yn      varchar(1)   null     comment '노출_가부', -- 노출_가부
+	meta_tag_kwrd varchar(300) null     comment '메타태그_키워드', -- 메타태그_키워드
+	meta_tag_dc   varchar(600) null     comment '메타태그_설명', -- 메타태그_설명
+	class_nm      varchar(50)  null     comment '클래스_이름', -- 클래스_이름
+	regist_dt     datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn   bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt       datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn     bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '메뉴';
+
+-- 메뉴
+alter table tb_menu
+	add constraint pk_tb_menu -- 메뉴 기본키
+		primary key (
+			menu_sn -- 메뉴_순번
+		);
+
+-- 관리자
+create table tb_mngr (
+	user_sn     bigint      not null comment '사용자_순번', -- 사용자_순번
+	role_id     varchar(50) null     comment '역할_id', -- 역할_id
+	regist_dt   datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '관리자';
+
+-- 관리자
+alter table tb_mngr
+	add constraint pk_tb_mngr -- 관리자 기본키
+		primary key (
+			user_sn -- 사용자_순번
+		);
+
+-- 관리자메뉴
+create table tb_mngrmenu (
+	menu_sn       bigint       not null comment '메뉴_순번', -- 메뉴_순번
+	upper_menu_sn bigint       null     comment '상위_메뉴_순번', -- 상위_메뉴_순번
+	menu_nm       varchar(100) null     comment '메뉴_이름', -- 메뉴_이름
+	menu_url      varchar(100) null     comment '메뉴_url', -- 메뉴_url
+	sort_ordr     smallint     null     comment '정렬_순서', -- 정렬_순서
+	regist_dt     datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn   bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt       datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn     bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '관리자메뉴';
+
+-- 관리자메뉴
+alter table tb_mngrmenu
+	add constraint pk_tb_mngrmenu -- 관리자메뉴 기본키
+		primary key (
+			menu_sn -- 메뉴_순번
+		);
+
+-- 관리자url
+create table tb_mngrurl (
+	url         varchar(100) not null comment 'url', -- url
+	menu_sn     bigint       not null comment '메뉴_순번', -- 메뉴_순번
+	regist_dt   datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '관리자url';
+
+-- 관리자url
+alter table tb_mngrurl
+	add constraint pk_tb_mngrurl -- 관리자url 기본키
+		primary key (
+			url -- url
+		);
+
+-- 게시물
+create table tb_ntt (
+	ntt_sn          bigint       not null comment '게시물_순번', -- 게시물_순번
+	bbs_id          varchar(50)  null     comment '게시판_id', -- 게시판_id
+	bbs_ctgry_sn    bigint       null     comment '게시판카테고리순번', -- 게시판카테고리순번
+	ntt_sj          varchar(500) null     comment '게시물_제목', -- 게시물_제목
+	ntt_cn          text         null     comment '게시물_내용', -- 게시물_내용
+	expsr_yn        varchar(1)   null     comment '노출_가부', -- 노출_가부
+	rdcnt           int          null     comment '조회수', -- 조회수
+	upend_fixing_yn varchar(1)   null     comment '상단_고정_가부', -- 상단_고정_가부
+	wrter_sn        bigint       null     comment '작성자_순번', -- 작성자_순번
+	regist_dt       datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn     bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt         datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn       bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '게시물';
+
+-- 게시물
+alter table tb_ntt
+	add constraint pk_tb_ntt -- 게시물 기본키
+		primary key (
+			ntt_sn -- 게시물_순번
+		);
+
+-- 게시물_첨부
+create table tb_ntt_atch (
+	ntt_sn      bigint      not null comment '게시물_순번', -- 게시물_순번
+	atch_id     varchar(50) not null comment '첨부_아이디', -- 첨부_아이디
+	sort_ordr   smallint    null     comment '정렬_순서', -- 정렬_순서
+	regist_dt   datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '게시물_첨부';
+
+-- 게시물_첨부
+alter table tb_ntt_atch
+	add constraint pk_tb_ntt_atch -- 게시물_첨부 기본키
+		primary key (
+			ntt_sn,  -- 게시물_순번
+			atch_id  -- 첨부_아이디
+		);
+
+-- 역할
+create table tb_role (
+	role_id     varchar(50)  not null comment '역할_id', -- 역할_id
+	role_nm     varchar(100) null     comment '역할_이름', -- 역할_이름
+	regist_dt   datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '역할';
+
+-- 역할
+alter table tb_role
+	add constraint pk_tb_role -- 역할 기본키
+		primary key (
+			role_id -- 역할_id
+		);
+
+-- 역할_관리자메뉴
+create table tb_role_mngrmenu (
+	role_id     varchar(50) not null comment '역할_id', -- 역할_id
+	menu_sn     bigint      not null comment '메뉴_순번', -- 메뉴_순번
+	pendncy_yn  varchar(1)  null     comment '미결정가부', -- 미결정가부
+	regist_dt   datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '역할_관리자메뉴';
+
+-- 역할_관리자메뉴
+alter table tb_role_mngrmenu
+	add constraint pk_tb_role_mngrmenu -- 역할_관리자메뉴 기본키
+		primary key (
+			role_id, -- 역할_id
+			menu_sn  -- 메뉴_순번
+		);
+
+-- 프론트url
+create table tb_url (
+	url         varchar(100) not null comment 'url', -- url
+	menu_sn     bigint       null     comment '메뉴_순번', -- 메뉴_순번
+	regist_dt   datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '프론트url';
+
+-- 프론트url
+alter table tb_url
+	add constraint pk_tb_url -- 프론트url 기본키
+		primary key (
+			url -- url
+		);
+
+-- 사용자
+create table tb_user (
+	user_sn                 bigint       not null comment '사용자_순번', -- 사용자_순번
+	user_nm                 varchar(50)  null     comment '사용자_이름', -- 사용자_이름
+	login_id                varchar(50)  null     comment '로그인_아이디', -- 로그인_아이디
+	login_password          varchar(200) null     comment '로그인_비밀번호', -- 로그인_비밀번호
+	email                   varchar(100) null     comment '이메일', -- 이메일
+	mbtlnum                 varchar(100) null     comment '휴대폰번호', -- 휴대폰번호
+	telno                   varchar(100) null     comment '전화번호', -- 전화번호
+	last_password_change_dt datetime     null     comment '최종_비밀번호_변경_일시', -- 최종_비밀번호_변경_일시
+	password_input_error_co int          null     comment '비밀번호_입력오류_수', -- 비밀번호_입력오류_수
+	login_co                int          null     comment '로그인_횟수', -- 로그인_횟수
+	last_login_dt           datetime     null     comment '최종_로그인_일시', -- 최종_로그인_일시
+	user_se_code            varchar(50)  null     comment '사용자_구분_코드', -- 사용자_구분_코드
+	regist_dt               datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn             bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt                 datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn               bigint       null     comment '수정자_순번', -- 수정자_순번
+	device_id               varchar(250) null     comment '디바이스_아이디', -- 디바이스_아이디
+	uuid                    varchar(250) null     comment 'uuid' -- uuid
+)
+comment '사용자';
+
+-- 사용자
+alter table tb_user
+	add constraint pk_tb_user -- 사용자 기본키
+		primary key (
+			user_sn -- 사용자_순번
+		);
+
+-- 사용자 유니크 인덱스
+create unique index uix_tb_user
+	on tb_user ( -- 사용자
+		login_id asc -- 로그인_아이디
+	);
+
+-- 제품
+create table tb_prduct (
+	prduct_sn             bigint       not null comment '제품_순번', -- 제품_순번
+	prduct_knd_code       varchar(50)  null     comment '제품_종류_코드', -- 제품_종류_코드
+	prduct_nm             varchar(200) null     comment '제품명', -- 제품명
+	prduct_pc             numeric(20)  null     comment '제품 가격', -- 제품 가격
+	reprsnt_ctgry_sn      bigint       null     comment '대표_카테고리_순번', -- 대표_카테고리_순번
+	reprsnt_image_atch_id varchar(50)  null     comment '대표이미지첨부아이디', -- 대표이미지첨부아이디
+	prduct_intrcn         text         null     comment '제품 소개', -- 제품 소개
+	expsr_yn              varchar(1)   null     comment '노출_가부', -- 노출_가부
+	sort_ordr             smallint     null     comment '정렬_순서', -- 정렬_순서
+	regist_dt             datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn           bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt               datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn             bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '제품';
+
+-- 제품
+alter table tb_prduct
+	add constraint pk_tb_prduct -- 제품 기본키
+		primary key (
+			prduct_sn -- 제품_순번
+		);
+
+-- 제품카테고리
+create table tb_prductctgry (
+	ctgry_sn       bigint      not null comment '카테고리_순번', -- 카테고리_순번
+	upper_ctgry_sn bigint      null     comment '상위_카테고리_순번', -- 상위_카테고리_순번
+	ctgry_nm       varchar(50) null     comment '카테고리명', -- 카테고리명
+	expsr_yn       varchar(1)  null     comment '노출_가부', -- 노출_가부
+	sort_ordr      smallint    null     comment '정렬_순서', -- 정렬_순서
+	regist_dt      datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn    bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt        datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn      bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '제품카테고리';
+
+-- 제품카테고리
+alter table tb_prductctgry
+	add constraint pk_tb_prductctgry -- 제품카테고리 기본키
+		primary key (
+			ctgry_sn -- 카테고리_순번
+		);
+
+-- 제품_이미지
+create table tb_prduct_image (
+	prduct_sn   bigint      not null comment '제품_순번', -- 제품_순번
+	atch_id     varchar(50) not null comment '첨부_아이디', -- 첨부_아이디
+	sort_ordr   smallint    null     comment '정렬_순서', -- 정렬_순서
+	regist_dt   datetime    null     comment '등록_일시', -- 등록_일시
+	register_sn bigint      null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime    null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint      null     comment '수정자_순번' -- 수정자_순번
+)
+comment '제품_이미지';
+
+-- 제품_이미지
+alter table tb_prduct_image
+	add constraint pk_tb_prduct_image -- 제품_이미지 기본키
+		primary key (
+			prduct_sn, -- 제품_순번
+			atch_id    -- 첨부_아이디
+		);
+
+-- 역할_관리자url
+create table tb_role_mngrurl (
+	role_id varchar(50)  not null comment '역할_id', -- 역할_id
+	url     varchar(100) not null comment 'url' -- url
+)
+comment '역할_관리자url';
+
+-- 역할_관리자url
+alter table tb_role_mngrurl
+	add constraint pk_tb_role_mngrurl -- 역할_관리자url 기본키
+		primary key (
+			role_id, -- 역할_id
+			url      -- url
+		);
+
+-- 제품_제품카테고리
+create table tb_prduct_prductctgry (
+	prduct_sn   bigint   not null comment '제품_순번', -- 제품_순번
+	ctgry_sn    bigint   not null comment '카테고리_순번', -- 카테고리_순번
+	sort_ordr   smallint null     comment '정렬_순서', -- 정렬_순서
+	regist_dt   datetime null     comment '등록_일시', -- 등록_일시
+	register_sn bigint   null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint   null     comment '수정자_순번' -- 수정자_순번
+)
+comment '제품_제품카테고리';
+
+-- 제품_제품카테고리
+alter table tb_prduct_prductctgry
+	add constraint pk_tb_prduct_prductctgry -- 제품_제품카테고리 기본키
+		primary key (
+			prduct_sn, -- 제품_순번
+			ctgry_sn   -- 카테고리_순번
+		);
+
+-- 관심제품
+create table tb_intrstprduct (
+	user_sn     bigint   not null comment '사용자_순번', -- 사용자_순번
+	prduct_sn   bigint   not null comment '제품_순번', -- 제품_순번
+	regist_dt   datetime null     comment '등록_일시', -- 등록_일시
+	register_sn bigint   null     comment '등록자_순번', -- 등록자_순번
+	updt_dt     datetime null     comment '수정_일시', -- 수정_일시
+	updusr_sn   bigint   null     comment '수정자_순번' -- 수정자_순번
+)
+comment '관심제품';
+
+-- 관심제품
+alter table tb_intrstprduct
+	add constraint pk_tb_intrstprduct -- 관심제품 기본키
+		primary key (
+			user_sn,   -- 사용자_순번
+			prduct_sn  -- 제품_순번
+		);
+
+-- 팝업관리
+create table tb_popup (
+	popup_sn             bigint       not null comment '팝업_순번', -- 팝업_순번
+	popup_nm             varchar(50)  null     comment '팝업명', -- 팝업명
+	popup_begin_dt       datetime     null     comment '팝업_시작_일시', -- 팝업_시작_일시
+	popup_end_dt         datetime     null     comment '팝업_종료_일시', -- 팝업_종료_일시
+	popup_image_atch_id  varchar(50)  null     comment '팝업_이미지_첨부_아이디', -- 팝업_이미지_첨부_아이디
+	popup_image_dc       text         null     comment '팝업_이미지_설명', -- 팝업_이미지_설명
+	popup_link_url       varchar(255) null     comment '팝업_링크_url', -- 팝업_링크_url
+	popup_link_trgt_code varchar(50)  null     comment '팝업_링크_타겟_코드', -- 팝업_링크_타겟_코드
+	click_co             int          null     comment '클릭수', -- 클릭수
+	expsr_yn             varchar(1)   null     comment '노출_가부', -- 노출_가부
+	sort_ordr            smallint     null     comment '정렬_순서', -- 정렬_순서
+	regist_dt            datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn          bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt              datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn            bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '팝업관리';
+
+-- 팝업관리
+alter table tb_popup
+	add constraint pk_tb_popup -- 팝업관리 기본키
+		primary key (
+			popup_sn -- 팝업_순번
+		);
+
+-- 스케줄러_오류
+create table tb_scheduler_error (
+	error_sn     bigint       not null comment '오류_순번', -- 오류_순번
+	scheduler_id varchar(100) not null comment '스케줄러_아이디', -- 스케줄러_아이디
+	error_cn     text         null     comment '오류_내용', -- 오류_내용
+	refrn_id     varchar(100) null     comment '참조_아이디', -- 참조_아이디
+	regist_dt    datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn  bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt      datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn    bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '스케줄러_오류';
+
+-- 스케줄러_오류
+alter table tb_scheduler_error
+	add constraint pk_tb_scheduler_error -- 스케줄러_오류 기본키
+		primary key (
+			error_sn -- 오류_순번
+		);
+
+-- 시퀀스
+create table tb_seq (
+	seq_nm     varchar(50) not null comment '시퀀스_이름', -- 시퀀스_이름
+	seq_curval bigint      not null comment '시퀀스_현재값' -- 시퀀스_현재값
+)
+comment '시퀀스';
+
+-- 시퀀스
+alter table tb_seq
+	add constraint pk_tb_seq -- 시퀀스 기본키
+		primary key (
+			seq_nm -- 시퀀스_이름
+		);
+
+-- 회원
+create table tb_mber (
+	user_sn      bigint       not null comment '사용자_순번', -- 사용자_순번
+	brthdy       datetime     null     comment '생년월일', -- 생년월일
+	zip          varchar(7)   null     comment '우편번호', -- 우편번호
+	adres        varchar(100) null     comment '주소', -- 주소
+	adres_detail varchar(100) null     comment '주소_상세', -- 주소_상세
+	regist_dt    datetime     null     comment '등록_일시', -- 등록_일시
+	register_sn  bigint       null     comment '등록자_순번', -- 등록자_순번
+	updt_dt      datetime     null     comment '수정_일시', -- 수정_일시
+	updusr_sn    bigint       null     comment '수정자_순번' -- 수정자_순번
+)
+comment '회원';
+
+-- 회원
+alter table tb_mber
+	add constraint pk_tb_mber -- 회원 기본키
+		primary key (
+			user_sn -- 사용자_순번
+		);
+
+-- 관련제품
+create table tb_relate_prduct (
+	prduct_sn        bigint   not null comment '제품_순번', -- 제품_순번
+	relate_prduct_sn bigint   not null comment '관련_제품_순번', -- 관련_제품_순번
+	sort_ordr        smallint null     comment '정렬_순서', -- 정렬_순서
+	regist_dt        datetime null     comment '등록_일시', -- 등록_일시
+	register_sn      bigint   null     comment '등록자_순번', -- 등록자_순번
+	updt_dt          datetime null     comment '수정_일시', -- 수정_일시
+	updusr_sn        bigint   null     comment '수정자_순번' -- 수정자_순번
+)
+comment '관련제품';
+
+-- 관련제품
+alter table tb_relate_prduct
+	add constraint pk_tb_relate_prduct -- 관련제품 기본키
+		primary key (
+			prduct_sn,        -- 제품_순번
+			relate_prduct_sn  -- 관련_제품_순번
+		);
+
+-- 게시판카테고리
+alter table tb_bbs_ctgry
+	add constraint fk_tb_bbs_ctgry_01 -- 게시판 -> 게시판카테고리
+		foreign key (
+			bbs_id -- 게시판_id
+		)
+		references tb_bbs ( -- 게시판
+			bbs_id -- 게시판_id
+		);
+
+-- 메뉴
+alter table tb_menu
+	add constraint fk_tb_menu_01 -- 메뉴 -> 메뉴
+		foreign key (
+			upper_menu_sn -- 상위_메뉴_순번
+		)
+		references tb_menu ( -- 메뉴
+			menu_sn -- 메뉴_순번
+		);
+
+-- 관리자
+alter table tb_mngr
+	add constraint fk_tb_user_to_tb_mngr -- 사용자 -> 관리자
+		foreign key (
+			user_sn -- 사용자_순번
+		)
+		references tb_user ( -- 사용자
+			user_sn -- 사용자_순번
+		);
+
+-- 관리자
+alter table tb_mngr
+	add constraint fk_tb_role_to_tb_mngr -- 역할 -> 관리자
+		foreign key (
+			role_id -- 역할_id
+		)
+		references tb_role ( -- 역할
+			role_id -- 역할_id
+		);
+
+-- 관리자메뉴
+alter table tb_mngrmenu
+	add constraint fk_tb_mngrmenu_01 -- 관리자메뉴 -> 관리자메뉴
+		foreign key (
+			upper_menu_sn -- 상위_메뉴_순번
+		)
+		references tb_mngrmenu ( -- 관리자메뉴
+			menu_sn -- 메뉴_순번
+		);
+
+-- 관리자url
+alter table tb_mngrurl
+	add constraint fk_url_01 -- 관리자메뉴 -> 관리자url
+		foreign key (
+			menu_sn -- 메뉴_순번
+		)
+		references tb_mngrmenu ( -- 관리자메뉴
+			menu_sn -- 메뉴_순번
+		);
+
+-- 게시물
+alter table tb_ntt
+	add constraint fk_tb_ntt_01 -- 게시판 -> 게시물
+		foreign key (
+			bbs_id -- 게시판_id
+		)
+		references tb_bbs ( -- 게시판
+			bbs_id -- 게시판_id
+		);
+
+-- 게시물
+alter table tb_ntt
+	add constraint fk_tb_ntt_02 -- 게시판카테고리 -> 게시물
+		foreign key (
+			bbs_ctgry_sn -- 게시판카테고리순번
+		)
+		references tb_bbs_ctgry ( -- 게시판카테고리
+			bbs_ctgry_sn -- 게시판카테고리순번
+		);
+
+-- 게시물
+alter table tb_ntt
+	add constraint fk_tb_user_to_tb_ntt -- 사용자 -> 게시물
+		foreign key (
+			wrter_sn -- 작성자_순번
+		)
+		references tb_user ( -- 사용자
+			user_sn -- 사용자_순번
+		);
+
+-- 게시물_첨부
+alter table tb_ntt_atch
+	add constraint fk_tb_ntt_atch_01 -- 게시물 -> 게시물_첨부
+		foreign key (
+			ntt_sn -- 게시물_순번
+		)
+		references tb_ntt ( -- 게시물
+			ntt_sn -- 게시물_순번
+		);
+
+-- 역할_관리자메뉴
+alter table tb_role_mngrmenu
+	add constraint fk_mngrmenu_role_rl_01 -- 역할 -> 역할_관리자메뉴
+		foreign key (
+			role_id -- 역할_id
+		)
+		references tb_role ( -- 역할
+			role_id -- 역할_id
+		);
+
+-- 역할_관리자메뉴
+alter table tb_role_mngrmenu
+	add constraint fk_mngrmenu_role_rl_02 -- 관리자메뉴 -> 역할_관리자메뉴
+		foreign key (
+			menu_sn -- 메뉴_순번
+		)
+		references tb_mngrmenu ( -- 관리자메뉴
+			menu_sn -- 메뉴_순번
+		);
+
+-- 프론트url
+alter table tb_url
+	add constraint fk_tb_url_01 -- 메뉴 -> 프론트url
+		foreign key (
+			menu_sn -- 메뉴_순번
+		)
+		references tb_menu ( -- 메뉴
+			menu_sn -- 메뉴_순번
+		);
+
+-- 제품
+alter table tb_prduct
+	add constraint fk_tb_prductctgry_to_tb_prduct -- 제품카테고리 -> 제품
+		foreign key (
+			reprsnt_ctgry_sn -- 대표_카테고리_순번
+		)
+		references tb_prductctgry ( -- 제품카테고리
+			ctgry_sn -- 카테고리_순번
+		);
+
+-- 제품카테고리
+alter table tb_prductctgry
+	add constraint fk_tb_prductctgry_to_tb_prductctgry -- 제품카테고리 -> 제품카테고리
+		foreign key (
+			upper_ctgry_sn -- 상위_카테고리_순번
+		)
+		references tb_prductctgry ( -- 제품카테고리
+			ctgry_sn -- 카테고리_순번
+		);
+
+-- 제품_이미지
+alter table tb_prduct_image
+	add constraint fk_tb_prduct_to_tb_prduct_image -- 제품 -> 제품_이미지
+		foreign key (
+			prduct_sn -- 제품_순번
+		)
+		references tb_prduct ( -- 제품
+			prduct_sn -- 제품_순번
+		);
+
+-- 제품_이미지
+alter table tb_prduct_image
+	add constraint fk_tb_atch_to_tb_prduct_image -- 첨부 -> 제품_이미지
+		foreign key (
+			atch_id -- 첨부_아이디
+		)
+		references tb_atch ( -- 첨부
+			atch_id -- 첨부_아이디
+		);
+
+-- 역할_관리자url
+alter table tb_role_mngrurl
+	add constraint fk_tb_role_to_tb_role_mngrurl -- 역할 -> 역할_관리자url
+		foreign key (
+			role_id -- 역할_id
+		)
+		references tb_role ( -- 역할
+			role_id -- 역할_id
+		);
+
+-- 역할_관리자url
+alter table tb_role_mngrurl
+	add constraint fk_tb_mngrurl_to_tb_role_mngrurl -- 관리자url -> 역할_관리자url
+		foreign key (
+			url -- url
+		)
+		references tb_mngrurl ( -- 관리자url
+			url -- url
+		);
+
+-- 제품_제품카테고리
+alter table tb_prduct_prductctgry
+	add constraint fk_tb_prduct_to_tb_prduct_prductctgry -- 제품 -> 제품_제품카테고리
+		foreign key (
+			prduct_sn -- 제품_순번
+		)
+		references tb_prduct ( -- 제품
+			prduct_sn -- 제품_순번
+		);
+
+-- 제품_제품카테고리
+alter table tb_prduct_prductctgry
+	add constraint fk_tb_prductctgry_to_tb_prduct_prductctgry -- 제품카테고리 -> 제품_제품카테고리
+		foreign key (
+			ctgry_sn -- 카테고리_순번
+		)
+		references tb_prductctgry ( -- 제품카테고리
+			ctgry_sn -- 카테고리_순번
+		);
+
+-- 관심제품
+alter table tb_intrstprduct
+	add constraint fk_tb_prduct_to_tb_intrstprduct -- 제품 -> 관심제품
+		foreign key (
+			prduct_sn -- 제품_순번
+		)
+		references tb_prduct ( -- 제품
+			prduct_sn -- 제품_순번
+		);
+
+-- 관심제품
+alter table tb_intrstprduct
+	add constraint fk_tb_user_to_tb_intrstprduct -- 사용자 -> 관심제품
+		foreign key (
+			user_sn -- 사용자_순번
+		)
+		references tb_user ( -- 사용자
+			user_sn -- 사용자_순번
+		);
+
+-- 회원
+alter table tb_mber
+	add constraint fk_tb_user_to_tb_mber -- 사용자 -> 회원
+		foreign key (
+			user_sn -- 사용자_순번
+		)
+		references tb_user ( -- 사용자
+			user_sn -- 사용자_순번
+		);
+
+-- 관련제품
+alter table tb_relate_prduct
+	add constraint fk_tb_prduct_to_tb_relate_prduct -- 제품 -> 관련제품
+		foreign key (
+			prduct_sn -- 제품_순번
+		)
+		references tb_prduct ( -- 제품
+			prduct_sn -- 제품_순번
+		);
+
+-- 관련제품
+alter table tb_relate_prduct
+	add constraint fk_tb_prduct_to_tb_relate_prduct2 -- 제품 -> 관련제품2
+		foreign key (
+			relate_prduct_sn -- 관련_제품_순번
+		)
+		references tb_prduct ( -- 제품
+			prduct_sn -- 제품_순번
+		);

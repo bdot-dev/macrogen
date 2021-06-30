@@ -1,0 +1,147 @@
+-- vw_mngrmenu
+create or replace view vw_mngrmenu as
+select
+  1 level
+  , convert(lv1.menu_sn using utf8) menu_sn_path
+  , lv1.menu_nm menu_nm_path
+  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv1.*
+from tb_mngrmenu lv1
+where lv1.upper_menu_sn is null
+union all
+select
+  2 level
+  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn) using utf8) menu_sn_path
+  , convert(concat(lv1.menu_nm, '>', lv2.menu_nm) using utf8) menu_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv2.*
+from tb_mngrmenu lv1
+join tb_mngrmenu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+where lv1.upper_menu_sn is null
+union all
+select
+  3 level
+  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn) using utf8) menu_sn_path
+  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm) menu_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv3.*
+from tb_mngrmenu lv1
+join tb_mngrmenu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+join tb_mngrmenu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+where lv1.upper_menu_sn is null
+;
+
+-- vw_menu
+create or replace view vw_menu as
+select
+  1 level
+  , convert(lv1.menu_sn using utf8) menu_sn_path
+  , lv1.menu_nm menu_nm_path
+  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv1.*
+from tb_menu lv1
+where lv1.upper_menu_sn is null
+union all
+select
+  2 level
+  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn) using utf8) menu_sn_path
+  , concat(lv1.menu_nm, '>', lv2.menu_nm) menu_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv2.*
+from tb_menu lv1
+join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+where lv1.upper_menu_sn is null
+union all
+select
+  3 level
+  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn) using utf8) menu_sn_path
+  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm) menu_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv3.*
+from tb_menu lv1
+join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+join tb_menu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+where lv1.upper_menu_sn is null
+union all
+select
+  4 level
+  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn, '>', lv4.menu_sn) using utf8) menu_sn_path
+  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm, '>', lv4.menu_nm) menu_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr, '>', lv4.sort_ordr) using utf8) sort_ordr_path
+  , lv1.menu_sn top_menu_sn
+  , lv4.*
+from tb_menu lv1
+join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+join tb_menu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+join tb_menu lv4 on lv4.upper_menu_sn = lv3.menu_sn
+where lv1.upper_menu_sn is null
+;
+
+-- vw_prductctgry
+create or replace view vw_prductctgry as
+select
+  1 level
+  , convert(lv1.ctgry_sn using utf8) ctgry_sn_path
+  , lv1.ctgry_nm ctgry_nm_path
+  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+  , lv1.ctgry_sn top_ctgry_sn
+  , lv1.*
+from tb_prductctgry lv1
+where lv1.upper_ctgry_sn is null
+union all
+select
+  2 level
+  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn) using utf8) ctgry_sn_path
+  , concat(lv1.ctgry_nm, '>', lv2.ctgry_nm) ctgry_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+  , lv1.ctgry_sn top_ctgry_sn
+  , lv2.*
+from tb_prductctgry lv1
+join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+where lv1.upper_ctgry_sn is null
+union all
+select
+  3 level
+  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn, '>', lv3.ctgry_sn) using utf8) ctgry_sn_path
+  , concat(lv1.ctgry_nm, '>', lv2.ctgry_nm, '>', lv3.ctgry_nm) ctgry_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+  , lv1.ctgry_sn top_ctgry_sn
+  , lv3.*
+from tb_prductctgry lv1
+join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+join tb_prductctgry lv3 on lv3.upper_ctgry_sn = lv2.ctgry_sn
+where lv1.upper_ctgry_sn is null
+union all
+select
+  4 level
+  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn, '>', lv3.ctgry_sn, '>', lv4.ctgry_sn) using utf8) ctgry_sn_path
+  , concat(lv1.ctgry_nm, '>', lv2.ctgry_nm, '>', lv3.ctgry_nm, '>', lv4.ctgry_nm) ctgry_nm_path
+  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr, '>', lv4.sort_ordr) using utf8) sort_ordr_path
+  , lv1.ctgry_sn top_ctgry_sn
+  , lv4.*
+from tb_prductctgry lv1
+join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+join tb_prductctgry lv3 on lv3.upper_ctgry_sn = lv2.ctgry_sn
+join tb_prductctgry lv4 on lv4.upper_ctgry_sn = lv3.ctgry_sn
+where lv1.upper_ctgry_sn is null
+;
+
+-- fn_nextval
+create function fn_nextval(p_seq_nm varchar(50) charset utf8) returns bigint
+begin
+ insert into tb_seq
+  set seq_nm=ifnull(p_seq_nm,'default'), seq_curval=(@v_current_value:=1)
+ on duplicate key
+  update seq_curval=(@v_current_value:=seq_curval+1);
+ return @v_current_value;
+end;
+
+-- tb_seq 의 Engine을 MyISAM으로 변경할 것
+	ALTER TABLE tb_seq ENGINE = MyISAM;
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="" reloadable="false">
-	<ResourceLink name="jdbc/eluocms"
-		global="jdbc/eluocms"
+	<ResourceLink name="jdbc/macrogenwww"
+		global="jdbc/macrogenwww"
 		type="javax.sql.DataSource" />
 </Context>

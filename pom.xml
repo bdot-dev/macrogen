@@ -12,15 +12,15 @@
 		<egovframework.rte.version>3.7.0</egovframework.rte.version>
 		<junit.version>4.11</junit.version>
 
-		<core.atch.private.path>C:/data/atch/private_eluocms</core.atch.private.path>
-		<core.atch.public.path>C:/data/atch/public_eluocms</core.atch.public.path>
+		<core.atch.private.path>C:/data/atch/private_macrogenwww</core.atch.private.path>
+		<core.atch.public.path>C:/data/atch/public_macrogenwww</core.atch.public.path>
 		<core.atch.public.url>/public</core.atch.public.url>
 
 		<core.domain.www>http://localhost:9080</core.domain.www>
 
-		<database.url>jdbc:mysql://192.168.1.34:3306/eluocms?autoReconnect=true</database.url>
-		<database.username>eluocms</database.username>
-		<database.password>Eluocms123!@#</database.password>
+		<database.url>jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true</database.url>
+		<database.username>macrogenwww</database.username>
+		<database.password>Macrogenwww123!@#</database.password>
 
 	</properties>
 
@@ -41,8 +41,8 @@
 			<properties>
 				<environment>test</environment>
 
-				<core.atch.private.path>/share/data/atch/private_eluocms</core.atch.private.path>
-				<core.atch.public.path>/share/data/atch/public_eluocms</core.atch.public.path>
+				<core.atch.private.path>/share/data/atch/private_macrogenwww</core.atch.private.path>
+				<core.atch.public.path>/share/data/atch/public_macrogenwww</core.atch.public.path>
 				<core.atch.public.url>/public</core.atch.public.url>
 
 				<core.domain.www>http://localhost:9080</core.domain.www>
@@ -55,8 +55,8 @@
 			<properties>
 				<environment>real</environment>
 
-				<core.atch.private.path>/share/data/atch/private_eluocms</core.atch.private.path>
-				<core.atch.public.path>/share/data/atch/public_eluocms</core.atch.public.path>
+				<core.atch.private.path>/share/data/atch/private_macrogenwww</core.atch.private.path>
+				<core.atch.public.path>/share/data/atch/public_macrogenwww</core.atch.public.path>
 				<core.atch.public.url>/public</core.atch.public.url>
 
 				<core.domain.www>http://localhost:9080</core.domain.www>
@@ -74,7 +74,7 @@
 			<build>
 				<defaultGoal>package</defaultGoal>
 				<directory>${basedir}/target</directory>
-				<finalName>eluocms-web</finalName>
+				<finalName>macrogenwww-web</finalName>
 
 				<plugins>
 					<plugin>
@@ -487,7 +487,7 @@
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<directory>${basedir}/target</directory>
-		<finalName>eluocms-${environment}</finalName>
+		<finalName>macrogenwww-${environment}</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>

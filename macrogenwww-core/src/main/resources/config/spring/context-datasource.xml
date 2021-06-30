@@ -15,8 +15,8 @@
     </bean>
 
 	<!-- DataSource -->
-    <jee:jndi-lookup id="dataSource-cms" jndi-name="jdbc/macrogenwww" resource-ref="true" />
-	<alias name="dataSource-cms" alias="egov.dataSource"/>
-    <alias name="dataSource-cms" alias="dataSource"/>
+    <jee:jndi-lookup id="dataSource-macrogenwww" jndi-name="jdbc/macrogenwww" resource-ref="true" />
+	<alias name="dataSource-macrogenwww" alias="egov.dataSource"/>
+    <alias name="dataSource-macrogenwww" alias="dataSource"/>
 
 </beans>

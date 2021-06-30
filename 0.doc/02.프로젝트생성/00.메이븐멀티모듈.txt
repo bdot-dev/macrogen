@@ -1,0 +1,36 @@
+**** 메이븐 모듈을 이용한 프로젝트 구성
+	** group id : macrogen
+	** pom.xml 구조 (artifactId, version : 1.0.0)
+		macrogenwww (pom, Maven Project)
+			-> macrogenwww-core (jar, Maven Module)
+			-> macrogenwww-web (pom, macrogenwww-core 의존, Maven Module)
+				-> macrogenwww-web-admin (war)
+				-> macrogenwww-web-front (war)
+				-> macrogenwww-web-scheduler (war)
+
+	** dependency on macrogenwww-core (in pom.xml of macrogenwww-web )
+		<dependency>
+			<groupId>com.eluocnc</groupId>
+			<artifactId>macrogenwww-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+	** 프로젝트 생성
+		. https://lng1982.tistory.com/135
+		. New > Maven Project
+			- check "Create a simple project (skip archetype selection)"
+		. New > Maven Module - check "Create a simple project (skip archetype selection)",
+			- select Parent Project
+
+	** pom.xml 설정
+
+	** packages 생성 (src/main/java)
+	    - core
+	        macrogen.www
+	    - admin, front, scheduler
+	        macrogen.www
+
+	** resource 생성
+		- config/spring
+		- config/mybatis/www
+

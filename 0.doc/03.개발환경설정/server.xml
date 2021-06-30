@@ -38,11 +38,11 @@
     -->
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
 
-	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="com.mysql.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
-		url="jdbc:mysql://192.168.1.34:3306/poiretcms?autoReconnect=true"
-		username="poiretcms" password="Poiretcms123!@#"
+		url="jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true"
+		username="macrogenwww" password="Macrogenwww123!@#"
 		initialSize="3"
 		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
 		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
@@ -163,8 +163,8 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-	      <Context docBase="poiretcms-web-admin" path="/poiretcms-local" reloadable="true" source="org.eclipse.jst.jee.server:poiretcms-web-admin"/>
-		  <Context docBase="Z:\data\atch\public_poiret" path="/public" reloadable="false" />
+	      <Context docBase="macrogenwww-web-admin" path="/macrogenwww-local" reloadable="true" source="org.eclipse.jst.jee.server:macrogenwww-web-admin"/>
+		  <Context docBase="Z:\data\atch\public_macrogenwww" path="/public" reloadable="false" />
       </Host>
     </Engine>
   </Service>

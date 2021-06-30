@@ -1,10 +1,10 @@
 -- server.xml <GlobalNamingResources />하위에 <Resource /> 추가
 
-	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="com.mysql.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
-		url="jdbc:mysql://192.168.1.34:3306/poiretcms?autoReconnect=true"
-		username="poiretcms" password="Poiretcms123!@#"
+		url="jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true"
+		username="macrogenwww" password="Macrogenwww123!@#"
 		initialSize="3"
 		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
 		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
@@ -20,7 +20,7 @@
 	4. spring application-context.xml 에 <jee:jndi-lookup /> 추가
 
 	<!-- mysql -->
-	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="com.mysql.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="${database.url}" username="${database.username}" password="${database.password}"
@@ -33,7 +33,7 @@
 	/>
 
 	<!-- sqlserver -->
-	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="${database.url}" username="${database.username}" password="${database.password}"
@@ -46,7 +46,7 @@
 	/>
 
 	<!-- oracle -->
-	<Resource name="jdbc/poiretcms" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="oracle.jdbc.OracleDriver"
 		url="${database.url}" username="${database.username}" password="${database.password}"
 		maxTotal="20" maxIdle="10" maxWaitMillis="-1"
