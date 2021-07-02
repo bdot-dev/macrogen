@@ -1,0 +1,137 @@
+[사전작업]
+*** server.xml 공통수정사항 적용
+  . URIEncoding="utf-8"
+  . <Host> 설정에서 unpackWars=false, autodeploy=false 로 설정하여 자동 Unpack 및 배포와 톰캣재시작의 타이밍문제를 없앤다.
+
+[tomcat85 설치 - admin/front]
+*** 컨테이너별 환경 설정 : admin
+# 복사
+$ mkdir -p /app/macrogenwww/admin
+$ cd /app/macrogenwww/admin
+$ cp -R ../../tomcat85/* .
+$ rm -rf ./bin ./lib ./logs/* ./webapps/*; mkdir -p ./webapps/ROOT/
+
+# 포트변경, 설정추가
+$ vi ./conf/server.xml
+  #포트변경 :%s/"8/"29/gc
+
+  # jndi datasource 추가
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true"
+		username="macrogenwww" password="Macrogenwww123!@#"
+		initialSize="3"
+		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
+
+  # mysql jdbc 추가
+  	cp /app/macrogenwww/admin/webapps/ROOT/WEB-INF/lib/mysql-connector-java-5.1.31.jar /app/tomcat85/lib/
+
+# 인스턴스별 기동/중지 쉘 만들기
+vi ./startcon.sh
+--- startcon.sh -----------------------------------------------
+#!/usr/bin/env bash
+. /etc/profile
+. ~/.bash_profile
+export CATALINA_BASE=/app/macrogenwww/admin
+#export CATALINA_OPTS="-javaagent:/home/app/agent-suidc/agent.java/scouter.agent.jar -Dobj_name=WAS1-admin -Dscouter.config=/home/app/agent-suidc/agent.java/conf/scouter.front.conf"
+export JAVA_OPTS="-Djava.awt.headless=true -server -Xms512m -Xmx1024m -XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m -XX:MaxPermSize=512m -XX:+DisableExplicitGC"
+#export CATALINA_OPTS="-Denv=product -Denv.servername=instance1"
+cd $CATALINA_HOME/bin
+./startup.sh
+--- // startcon.sh -----------------------------------------------
+$ chmod 775 ./startcon.sh
+
+$ vi ./downcon.sh
+--- downcon.sh -----------------------------------------------
+#!/usr/bin/env bash
+. /etc/profile
+. ~/.bash_profile
+export CATALINA_BASE=/app/macrogenwww/admin
+cd $CATALINA_HOME/bin
+./shutdown.sh
+
+# waiting until process terminated.
+processCnt=$(ps -ef | grep java | grep -v grep | grep "Dcatalina.base=$CATALINA_BASE" | wc -l)
+processId=$(ps -ef | grep java | grep -v grep | grep "Dcatalina.base=$CATALINA_BASE" | awk '{ printf $2 }')
+if [ "$processCnt" == "0" ]
+then
+        echo "process not started."
+elif [ "$processCnt" == "1" ]
+then
+        echo "waiting until process terminated."
+        while true
+        do
+                sleep 5
+                processCnt=$(ps -ef | grep java | grep -v grep | grep "Dcatalina.base=$CATALINA_BASE" | wc -l)
+                if [ "$processCnt" == "0" ]
+                then
+                        break
+                fi
+                echo "waiting until process terminated..."
+        done
+        echo "process is terminated"
+else
+        echo "abnormal. process more than one"
+fi
+--- // downcon.sh -----------------------------------------------
+$ chmod 775 ./downcon.sh
+
+
+*** 컨테이너별 환경 복사 : front
+# 복사
+$ mkdir -p /app/macrogenwww/front
+$ cd /app/macrogenwww/front
+$ cp -R ../../tomcat85/* .
+$ rm -rf ./bin ./lib ./logs/* ./webapps/*; mkdir -p ./webapps/ROOT/
+
+# 포트변경, 설정추가
+$ vi ./conf/server.xml
+  #포트변경 :%s/"8/"30/gc
+  #설정추가 URIEncoding="UTF-8"
+
+  # jndi datasource 추가
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true"
+		username="macrogenwww" password="Macrogenwww123!@#"
+		initialSize="3"
+		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
+
+# 인스턴스별 기동/중지 쉘 만들기
+vi ./startcon.sh
+--- startcon.sh -----------------------------------------------
+#!/usr/bin/env bash
+. /etc/profile
+. ~/.bash_profile
+export CATALINA_BASE=/app/macrogenwww/front
+#export CATALINA_OPTS="-javaagent:/home/app/agent-suidc/agent.java/scouter.agent.jar -Dobj_name=WAS1-admin -Dscouter.config=/home/app/agent-suidc/agent.java/conf/scouter.front.conf"
+export JAVA_OPTS="-Djava.awt.headless=true -server -Xms512m -Xmx1024m -XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m -XX:MaxPermSize=512m -XX:+DisableExplicitGC"
+#export CATALINA_OPTS="-Denv=product -Denv.servername=instance1"
+cd $CATALINA_HOME/bin
+./startup.sh
+--- // startcon.sh -----------------------------------------------
+$ chmod 775 ./startcon.sh
+
+$ vi ./downcon.sh
+--- downcon.sh -----------------------------------------------
+#!/usr/bin/env bash
+. /etc/profile
+. ~/.bash_profile
+export CATALINA_BASE=/app/macrogenwww/front
+cd $CATALINA_HOME/bin
+./shutdown.sh
+--- // downcon.sh -----------------------------------------------
+$ chmod 775 ./downcon.sh
+
