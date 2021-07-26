@@ -3,7 +3,7 @@
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
 		driverClassName="com.mysql.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
-		url="jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true"
+		url="jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true"
 		username="macrogenwww" password="Macrogenwww123!@#"
 		initialSize="3"
 		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"

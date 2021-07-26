@@ -18,7 +18,7 @@
 
 		<core.domain.www>http://localhost:9080</core.domain.www>
 
-		<database.url>jdbc:mysql://192.168.1.34:3306/macrogenwww?autoReconnect=true</database.url>
+		<database.url>jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true</database.url>
 		<database.username>macrogenwww</database.username>
 		<database.password>Macrogenwww123!@#</database.password>
 
