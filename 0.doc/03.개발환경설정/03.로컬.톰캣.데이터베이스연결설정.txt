@@ -1,7 +1,7 @@
 -- server.xml <GlobalNamingResources />하위에 <Resource /> 추가
 
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
-		driverClassName="com.mysql.jdbc.Driver"
+		driverClassName="com.mysql.cj.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true"
 		username="macrogenwww" password="Macrogenwww123!@#"
@@ -21,7 +21,7 @@
 
 	<!-- mysql -->
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
-		driverClassName="com.mysql.jdbc.Driver"
+		driverClassName="com.mysql.cj.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="${database.url}" username="${database.username}" password="${database.password}"
 		initialSize="3"
@@ -53,6 +53,6 @@
 		validationQuery="select 1 from dual" testOnBorrow="true" validationInterval="60000" />
 
 
--- 혹시 서버 start 시 mysql 관련 에러가 난다면 : Unable to load class [com.mysql.jdbc.Driver]
+-- 혹시 서버 start 시 mysql 관련 에러가 난다면 : Unable to load class [com.mysql.cj.jdbc.Driver]
 	mysql-connector-java-5.1.39-bin.jar 파일을 해당 tomcat lib 폴더에 복사 후 재 실행 한다.
 

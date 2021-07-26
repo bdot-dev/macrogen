@@ -18,7 +18,7 @@
 
 		<core.domain.www>http://localhost:9080</core.domain.www>
 
-		<database.url>jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true</database.url>
+		<database.url>jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true&amp;serverTimezone=Asia/Seoul</database.url>
 		<database.username>macrogenwww</database.username>
 		<database.password>Macrogenwww123!@#</database.password>
 
@@ -414,7 +414,8 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.31</version>
+			<!--<version>5.1.31</version>-->
+			<version>8.0.11</version>
 		</dependency>
 
 		<!-- for test -->
