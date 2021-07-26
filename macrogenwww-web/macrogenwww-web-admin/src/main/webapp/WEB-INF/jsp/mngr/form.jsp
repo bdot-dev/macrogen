@@ -50,7 +50,7 @@
 								<input type="hidden" name="userSn" v-model="resultVo.userSn" />
 							</td>
 						</tr>
-						<tr>
+						<tr v-if="resultVo.userSn">
 							<th>비밀번호 <span>*</span></th>
 							<td>
 								<input id="loginPassword" name="loginPassword" type="password" maxlength="20" placeholder="비밀번호 입력" class="w100p" />
