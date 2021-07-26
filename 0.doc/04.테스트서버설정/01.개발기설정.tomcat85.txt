@@ -17,7 +17,7 @@ $ vi ./conf/server.xml
 
   # jndi datasource 추가
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
-		driverClassName="com.mysql.jdbc.Driver"
+		driverClassName="com.mysql.cj.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true"
 		username="macrogenwww" password="Macrogenwww123!@#"
@@ -97,7 +97,7 @@ $ vi ./conf/server.xml
 
   # jndi datasource 추가
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
-		driverClassName="com.mysql.jdbc.Driver"
+		driverClassName="com.mysql.cj.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true"
 		username="macrogenwww" password="Macrogenwww123!@#"

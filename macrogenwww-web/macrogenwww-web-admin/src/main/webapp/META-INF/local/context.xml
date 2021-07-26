@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="" reloadable="false">
 	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
-		driverClassName="com.mysql.jdbc.Driver"
+		driverClassName="com.mysql.cj.jdbc.Driver"
 		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		url="${database.url}" username="${database.username}" password="${database.password}"
 		initialSize="3"
