@@ -115,6 +115,8 @@
 					<button type="button" name="button" class="btn btnSave" v-on:click="onSubmit">저장</button>
 					<button v-if="resultVo.userSn" type="button" name="button" class="btn btnDelete" v-on:click="onDelete">삭제</button>
                     <button v-if="resultVo.userSn" type="button" name="button" class="btn btnInitErrCnt" v-on:click="onInitErrCnt">비밀번호 입력 오류 회수 초기화</button>
+                    <!-- <button v-if="resultVo.userSn && resultVo.passwordInitlYn != 'Y'" type="button" name="button" class="btn" v-on:click="onInitPasswordInitlYn">비밀번호 초기화</button> -->
+                    <button v-if="resultVo.userSn" type="button" name="button" class="btn" v-on:click="onInitPasswordInitlYn">비밀번호 초기화</button>
 					<button type="button" name="button" class="btn btnList" v-on:click="onList">목록</button>
 				</div>
 			</div>

@@ -81,4 +81,6 @@ public interface UserMapper {
 	void updatePasswordInitlYn(UserVo vo);
 
 	void updateInitPassword(UserVo vo);
+
+	void initPassword(UserVo vo);
 }

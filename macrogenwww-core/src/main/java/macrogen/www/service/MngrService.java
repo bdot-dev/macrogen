@@ -130,4 +130,6 @@ public interface MngrService {
 	 */
 	void increaseLoginCo(MngrVo mngrVo) throws Exception;
 
+	void initPassword(MngrVo mngrVo) throws Exception;
+
 }

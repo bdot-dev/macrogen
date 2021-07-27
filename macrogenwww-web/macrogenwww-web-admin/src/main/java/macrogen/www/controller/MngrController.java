@@ -312,4 +312,19 @@ public class MngrController {
 		resultMap.put("result", "success");
 		return resultMap;
 	}
+
+	@RequestMapping("/initPasswordInitlYn")
+	@ResponseBody
+	public Map<String, Object> initPasswordInitlYn(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody MngrVo mngrVo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		mngrVo.setUpdusrSn(loginVo.getUserSn());
+
+		mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
+		mngrService.initPassword(mngrVo);
+
+		resultMap.put("result", "success");
+		return resultMap;
+	}
 }
