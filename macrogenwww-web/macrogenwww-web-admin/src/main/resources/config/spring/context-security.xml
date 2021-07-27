@@ -19,6 +19,9 @@
         <intercept-url pattern="/error/**" access="permitAll" />
         <intercept-url pattern="/public/**" access="permitAll" />
         <intercept-url pattern="/manageT/**" access="permitAll" />
+        <intercept-url pattern="/change-initial-password" access="permitAll" />
+        <intercept-url pattern="/change-initial-password/submit" access="permitAll" />
+        <intercept-url pattern="/error.jsp" access="permitAll" />
 
         <intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 

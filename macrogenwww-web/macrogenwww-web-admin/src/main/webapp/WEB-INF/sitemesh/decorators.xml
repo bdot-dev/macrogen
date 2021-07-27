@@ -26,6 +26,7 @@
 	<!-- empty layout -->
 	<decorator name="empty" page="/WEB-INF/jsp/layout/layoutEmpty.jsp">
 		<pattern>/login</pattern>
+		<pattern>/change-initial-password</pattern>
 		<pattern>/upload/ck</pattern>
 		
 	</decorator>

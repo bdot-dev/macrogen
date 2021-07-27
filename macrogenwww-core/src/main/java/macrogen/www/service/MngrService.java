@@ -132,4 +132,6 @@ public interface MngrService {
 
 	void initPassword(MngrVo mngrVo) throws Exception;
 
+	void updateInitPassword(MngrVo mngrVo) throws Exception;
+
 }

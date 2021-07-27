@@ -146,4 +146,12 @@ public class MngrServiceImpl extends EgovAbstractServiceImpl implements MngrServ
 		userMapper.initPassword(vo);
 	}
 
+	@Override
+	public void updateInitPassword(MngrVo mngrVo) throws Exception {
+		UserVo vo = new UserVo();
+		vo.setUserSn(mngrVo.getUserSn());
+		vo.setLoginPassword(mngrVo.getLoginPassword());
+		userMapper.updateInitPassword(vo);
+	}
+
 }

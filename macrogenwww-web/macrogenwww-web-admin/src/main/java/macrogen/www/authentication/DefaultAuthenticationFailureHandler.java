@@ -48,6 +48,9 @@ public class DefaultAuthenticationFailureHandler implements AuthenticationFailur
 			if ("password_input_error_count_exceed".equals(exception.getMessage())) {
 				response.sendRedirect("/login?err=2");
 				return;
+			} else if ("necessary_to_change_password".equals(exception.getMessage())) {
+				response.sendRedirect("/change-initial-password");
+				return;
 			}
 		}
 		
