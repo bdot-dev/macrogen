@@ -116,6 +116,7 @@ var MngrForm = (function($) {
 						url : '/mngr/initPasswordInputErrorCo',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
+						vm.fetchData();
 						alert("처리 되었습니다.");
 					});
 				},
