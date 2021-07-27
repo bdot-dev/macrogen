@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
@@ -8,8 +7,8 @@
 	<!-- 내용// -->
 	<div class="page_wrap">
 		<div class="title_h4_wrap">
-			<h4>&nbsp;</h4>
-			<span>초기 비밀 번호 변경</span>
+			<h4>&nbsp;비밀번호 변경</h4>
+			<span>마크로젠 관리자 사이트에서 사용할 새로운 비밀번호를 설정해주세요.</span>
 		</div>
 
 		<div class="board_wrap mb20">
