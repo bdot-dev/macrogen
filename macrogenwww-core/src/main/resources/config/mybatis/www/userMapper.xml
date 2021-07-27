@@ -87,7 +87,7 @@
 		    , 0
 		    , null
 		    , #{userSeCode}
-		    , passwordInitlYn
+		    , #{passwordInitlYn}
 		    , now(), #{registerSn}, now(), #{updusrSn}
 		)
 	</insert>

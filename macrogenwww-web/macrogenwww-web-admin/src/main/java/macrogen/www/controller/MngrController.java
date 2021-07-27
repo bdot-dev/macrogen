@@ -40,6 +40,8 @@ import macrogen.www.vo.UserVo;
 @Controller
 @RequestMapping("/mngr")
 public class MngrController {
+	private static final String INITIAL_PASSWORD = "macrogen@admin";
+	
 	@Resource(name="mngrService")
 	private MngrService mngrService;
 
@@ -226,6 +228,10 @@ public class MngrController {
 		if (!StringUtils.isEmpty(mngrVo.getUserSn())) {
 			mngrService.update(mngrVo);
 		} else {
+			// 관리자 등록시, 초기비밀번호(macrogen@admin) 설정, 비밀번호_초기화_여부 'Y' 로 설정
+			mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
+			mngrVo.setPasswordInitlYn("Y");
+			
 			mngrService.insert(mngrVo);
 		}
 

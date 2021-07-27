@@ -19,7 +19,8 @@
 			</div>
 			<ul>
 				<li>* 아이디는 영문 또는 숫자를 조합하여 5~20자로 입력해주세요.</li>
-				<li>* 비밀번호는 영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.</li>
+				<li v-if="resultVo.userSn">* 비밀번호는 영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.</li>
+				<li v-else>* 초기비밀번호는 macrogen@admin 입니다.</li>
 			</ul>
 
 			<div class="board_wrap mb20">

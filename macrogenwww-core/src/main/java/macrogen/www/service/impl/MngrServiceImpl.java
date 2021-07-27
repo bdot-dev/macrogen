@@ -59,6 +59,7 @@ public class MngrServiceImpl extends EgovAbstractServiceImpl implements MngrServ
 		userVo.setUserSeCode(UserSeCode.MNGR);
 		userVo.setRegisterSn(mngrVo.getRegisterSn());
 		userVo.setUpdusrSn(mngrVo.getUpdusrSn());
+		userVo.setPasswordInitlYn(mngrVo.getPasswordInitlYn());
 		userMapper.insert(userVo);
 
 		MngrVo insertVo = new MngrVo();
