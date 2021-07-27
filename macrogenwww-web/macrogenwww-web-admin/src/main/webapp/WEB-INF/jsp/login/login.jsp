@@ -6,7 +6,7 @@
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 			<input type="hidden" value="${returnUrl }" name="returnUrl" />
 			<div class="login_Area">
-				<h1>Eluo CMS</h1>
+				<h1>Macrogen CMS</h1>
 				<div class="login_frm">
 					<ul>
 						<li><label for="">CMS ID</label> <input type="text"
@@ -26,7 +26,7 @@
 						for="saveId">아이디 저장</label>
 				</div>
 				<div class="admin_copy">
-					<address>copyright &copy; Since 2018 By. Eluocnc. All rights reserved.</address>
+					<address>copyright &copy; Since 2018 By. Macrogen. All rights reserved.</address>
 				</div>
 			</div>
 		</form>
