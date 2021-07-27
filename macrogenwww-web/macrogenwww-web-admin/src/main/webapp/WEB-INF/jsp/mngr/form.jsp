@@ -102,6 +102,13 @@
 
                         </tr>
 						<tr v-if="resultVo.userSn">
+							<th>비밀번호 변경필요 여부</th>
+							<td colspan="3" class="tal">
+								{{ resultVo.passwordInitlYn ? resultVo.passwordInitlYn : 'N' }}<br>
+								(<span>* 'Y' 일 경우, 로그인시 비밀번호 변경이 필요함.</span>)
+							</td>
+						</tr>
+						<tr v-if="resultVo.userSn">
 							<th>등록일시</th>
 							<td class="tal">{{ resultVo.registDt | timeToDate('YYYY-MM-DD HH:mm:ss') }}</td>
 							<th>수정일시</th>
