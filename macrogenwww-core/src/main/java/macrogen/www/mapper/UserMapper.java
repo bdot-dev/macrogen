@@ -77,4 +77,8 @@ public interface UserMapper {
 	UserVo view(UserVo userVo);
 
 	UserVo viewByLoginId(String loginId);
+
+	void updatePasswordInitlYn(UserVo vo);
+
+	void updateInitPassword(UserVo vo);
 }

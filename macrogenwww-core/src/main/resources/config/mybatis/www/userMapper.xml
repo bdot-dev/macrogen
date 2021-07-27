@@ -26,6 +26,7 @@
 			, tu.register_sn
 			, tu.updt_dt
 			, tu.updusr_sn
+			, tu.password_initl_yn
 		from tb_user tu
 		where tu.user_sn = #{userSn}
 	</select>
@@ -48,6 +49,7 @@
 			, tu.register_sn
 			, tu.updt_dt
 			, tu.updusr_sn
+			, tu.password_initl_yn
 		from tb_user tu
 		where tu.login_id = #{loginId}
 	</select>
@@ -70,6 +72,7 @@
 		    , login_co
 		    , last_login_dt
 		    , user_se_code
+			, password_initl_yn
 		    , regist_dt, register_sn, updt_dt, updusr_sn
 		) values (
 			#{userSn}
@@ -84,6 +87,7 @@
 		    , 0
 		    , null
 		    , #{userSeCode}
+		    , passwordInitlYn
 		    , now(), #{registerSn}, now(), #{updusrSn}
 		)
 	</insert>
@@ -99,6 +103,7 @@
 			<if test="telno != null"> , telno = #{telno, typeHandler=aesCipherTypeHandler} </if>
 			<if test="mbtlnum != null"> , mbtlnum = #{mbtlnum, typeHandler=aesCipherTypeHandler} </if>
 			<if test="userSeCode != null"> , user_se_code = #{userSeCode} </if>
+			<if test="passwordInitlYn != null"> , password_initl_yn = #{passwordInitlYn} </if>
 			<if test="loginPassword != null and loginPassword != ''">
 			, login_password = #{loginPassword}
 			, last_password_change_dt = now()
@@ -121,6 +126,26 @@
 			tb_user
 		set
 			password_input_error_co = 0
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<update id="updatePasswordInitlYn" parameterType="userVo">
+		update
+			tb_user
+		set
+			password_initl_yn = #{passwordInitlYn}
+		where
+			user_sn = #{userSn}
+	</update>
+
+	<update id="updateInitPassword" parameterType="userVo">
+		update
+			tb_user
+		set
+			password_initl_yn = 'N'
+		  , login_password = #{loginPassword}
+		  , last_password_change_dt = now()
 		where
 			user_sn = #{userSn}
 	</update>

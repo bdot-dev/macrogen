@@ -185,7 +185,7 @@ public class MngrController {
 			resultMap.put("resultVo", resultVo);
 
 			// 기본값 설정
-			resultVo.setRoleId(Roles.ROLE_ADMIN.name());
+			resultVo.setRoleId(Roles.ROLE_GENERAL.name());
 		}
 
 		RoleVo param = new RoleVo();

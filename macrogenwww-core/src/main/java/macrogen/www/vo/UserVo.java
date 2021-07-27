@@ -18,6 +18,7 @@ public class UserVo extends DefaultVo {
 	private Integer loginCo;
 	private Date lastLoginDt;
 	private UserSeCode userSeCode;
+	private String passwordInitlYn;
 
 	public Long getUserSn() {
 		return userSn;
@@ -90,6 +91,12 @@ public class UserVo extends DefaultVo {
 	}
 	public void setMbtlnum(String mbtlnum) {
 		this.mbtlnum = mbtlnum;
+	}
+	public String getPasswordInitlYn() {
+		return passwordInitlYn;
+	}
+	public void setPasswordInitlYn(String passwordInitlYn) {
+		this.passwordInitlYn = passwordInitlYn;
 	}
 
 }
