@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.ThesisMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="thesisVo" resultType="int">
+		select count(*)
+		from tb_thesis tt
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="thesisVo" resultType="thesisVo">
+		<include refid="paging.countTop" />
+		select
+			tt.thesis_sn
+			, tt.lang_code
+			, tt.thesis_sj
+			, tt.jrnl
+			, tt.link_url
+			, tt.regist_year
+			, tt.regist_mt
+			, tt.regist_dt
+			, tt.register_sn
+			, tt.updt_dt
+			, tt.updusr_sn
+		from tb_thesis tt
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tt.regist_dt desc, tt.thesis_sn desc
+			</when>
+			<otherwise>
+				order by tt.thesis_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="thesisVo" resultType="thesisVo">
+		select
+			tt.thesis_sn
+			, tt.lang_code
+			, tt.thesis_sj
+			, tt.jrnl
+			, tt.link_url
+			, tt.regist_year
+			, tt.regist_mt
+			, tt.regist_dt
+			, tt.register_sn
+			, tt.updt_dt
+			, tt.updusr_sn
+		from tb_thesis tt
+		where tt.thesis_sn = #{thesisSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_thesis')
+	</select>
+
+	<insert id="insert" parameterType="thesisVo">
+		insert into tb_thesis (
+			thesis_sn
+			, lang_code
+			, thesis_sj
+			, jrnl
+			, link_url
+			, regist_year
+			, regist_mt
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{thesisSn}
+			, #{langCode}
+			, #{thesisSj}
+			, #{jrnl}
+			, #{linkUrl}
+			, #{registYear}
+			, #{registMt}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="thesisVo">
+		delete from tb_thesis where thesis_sn = #{thesisSn}
+	</delete>
+
+	<update id="update" parameterType="thesisVo">
+		update tb_thesis
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="thesisSj != null">, thesis_sj = #{thesisSj} </if>
+			<if test="jrnl != null">, jrnl = #{jrnl} </if>
+			<if test="linkUrl != null">, link_url = #{linkUrl} </if>
+			<if test="registYear != null">, regist_year = #{registYear} </if>
+			<if test="registMt != null">, regist_mt = #{registMt} </if>
+		where thesis_sn = #{thesisSn}
+	</update>
+
+</mapper>

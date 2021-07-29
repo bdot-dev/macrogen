@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.PatentMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="patentVo" resultType="int">
+		select count(*)
+		from tb_patent tp
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="patentVo" resultType="patentVo">
+		<include refid="paging.countTop" />
+		select
+			tp.patent_sn
+			, tp.lang_code
+			, tp.ctgry_code
+			, tp.nation_code
+			, tp.patent_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_patent tp
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tp.regist_dt desc, tp.patent_sn desc
+			</when>
+			<otherwise>
+				order by tp.patent_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="patentVo" resultType="patentVo">
+		select
+			tp.patent_sn
+			, tp.lang_code
+			, tp.ctgry_code
+			, tp.nation_code
+			, tp.patent_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_patent tp
+		where tp.patent_sn = #{patentSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_patent')
+	</select>
+
+	<insert id="insert" parameterType="patentVo">
+		insert into tb_patent (
+			patent_sn
+			, lang_code
+			, ctgry_code
+			, nation_code
+			, patent_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{patentSn}
+			, #{langCode}
+			, #{ctgryCode}
+			, #{nationCode}
+			, #{patentCn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="patentVo">
+		delete from tb_patent where patent_sn = #{patentSn}
+	</delete>
+
+	<update id="update" parameterType="patentVo">
+		update tb_patent
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="ctgryCode != null">, ctgry_code = #{ctgryCode} </if>
+			<if test="nationCode != null">, nation_code = #{nationCode} </if>
+			<if test="patentCn != null">, patent_cn = #{patentCn} </if>
+		where patent_sn = #{patentSn}
+	</update>
+
+</mapper>

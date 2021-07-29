@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.CmpnyhistMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="cmpnyhistVo" resultType="int">
+		select count(*)
+		from tb_cmpnyhist tc
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="cmpnyhistVo" resultType="cmpnyhistVo">
+		<include refid="paging.countTop" />
+		select
+			tc.cmpnyhist_sn
+			, tc.lang_code
+			, tc.year
+			, tc.mt
+			, tc.cn
+			, tc.regist_dt
+			, tc.register_sn
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_cmpnyhist tc
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tc.regist_dt desc, tc.cmpnyhist_sn desc
+			</when>
+			<otherwise>
+				order by tc.cmpnyhist_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="cmpnyhistVo" resultType="cmpnyhistVo">
+		select
+			tc.cmpnyhist_sn
+			, tc.lang_code
+			, tc.year
+			, tc.mt
+			, tc.cn
+			, tc.regist_dt
+			, tc.register_sn
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_cmpnyhist tc
+		where tc.cmpnyhist_sn = #{cmpnyhistSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_cmpnyhist')
+	</select>
+
+	<insert id="insert" parameterType="cmpnyhistVo">
+		insert into tb_cmpnyhist (
+			cmpnyhist_sn
+			, lang_code
+			, year
+			, mt
+			, cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{cmpnyhistSn}
+			, #{langCode}
+			, #{year}
+			, #{mt}
+			, #{cn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="cmpnyhistVo">
+		delete from tb_cmpnyhist where cmpnyhist_sn = #{cmpnyhistSn}
+	</delete>
+
+	<update id="update" parameterType="cmpnyhistVo">
+		update tb_cmpnyhist
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="year != null">, year = #{year} </if>
+			<if test="mt != null">, mt = #{mt} </if>
+			<if test="cn != null">, cn = #{cn} </if>
+		where cmpnyhist_sn = #{cmpnyhistSn}
+	</update>
+
+</mapper>
