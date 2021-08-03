@@ -42,7 +42,7 @@
 		    , vw_mngrmenu vmm
 		where vmm.menu_sn = tm.menu_sn
 		<include refid="list_where" />
-		order by tm.url
+		order by vmm.menu_nm_path, tm.url
 		<include refid="paging.countBottom"/>
 	</select>
 

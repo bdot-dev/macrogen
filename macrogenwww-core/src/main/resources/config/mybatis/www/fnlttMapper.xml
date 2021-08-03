@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.FnlttMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="fnlttVo" resultType="int">
+		select count(*)
+		from tb_fnltt tf
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="fnlttVo" resultType="fnlttVo">
+		<include refid="paging.countTop" />
+		select
+			tf.fnltt_sn
+			, tf.updt_de
+			, tf.iem_odr_ko
+			, tf.iem_odr_en
+			, tf.iem_de
+			, tf.cur_assets
+			, tf.noncur_assets
+			, tf.cur_liabil
+			, tf.noncur_liabil
+			, tf.capl
+			, tf.capital_surplus
+			, tf.acc_other_comp_income
+			, tf.other_comp_of_equity
+			, tf.retained_earnings
+			, tf.noncontr_interest
+			, tf.regist_dt
+			, tf.register_sn
+			, tf.updt_dt
+			, tf.updusr_sn
+		from tb_fnltt tf
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tf.regist_dt desc, tf.fnltt_sn desc
+			</when>
+			<otherwise>
+				order by tf.fnltt_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="fnlttVo" resultType="fnlttVo">
+		select
+			tf.fnltt_sn
+			, tf.updt_de
+			, tf.iem_odr_ko
+			, tf.iem_odr_en
+			, tf.iem_de
+			, tf.cur_assets
+			, tf.noncur_assets
+			, tf.cur_liabil
+			, tf.noncur_liabil
+			, tf.capl
+			, tf.capital_surplus
+			, tf.acc_other_comp_income
+			, tf.other_comp_of_equity
+			, tf.retained_earnings
+			, tf.noncontr_interest
+			, tf.regist_dt
+			, tf.register_sn
+			, tf.updt_dt
+			, tf.updusr_sn
+		from tb_fnltt tf
+		where tf.fnltt_sn = #{fnlttSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_fnltt')
+	</select>
+
+	<insert id="insert" parameterType="fnlttVo">
+		insert into tb_fnltt (
+			fnltt_sn
+			, updt_de
+			, iem_odr_ko
+			, iem_odr_en
+			, iem_de
+			, cur_assets
+			, noncur_assets
+			, cur_liabil
+			, noncur_liabil
+			, capl
+			, capital_surplus
+			, acc_other_comp_income
+			, other_comp_of_equity
+			, retained_earnings
+			, noncontr_interest
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{fnlttSn}
+			, #{updtDe}
+			, #{iemOdrKo}
+			, #{iemOdrEn}
+			, #{iemDe}
+			, #{curAssets}
+			, #{noncurAssets}
+			, #{curLiabil}
+			, #{noncurLiabil}
+			, #{capl}
+			, #{capitalSurplus}
+			, #{accOtherCompIncome}
+			, #{otherCompOfEquity}
+			, #{retainedEarnings}
+			, #{noncontrInterest}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="fnlttVo">
+		delete from tb_fnltt where fnltt_sn = #{fnlttSn}
+	</delete>
+
+	<update id="update" parameterType="fnlttVo">
+		update tb_fnltt
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="updtDe != null">, updt_de = #{updtDe} </if>
+			<if test="iemOdrKo != null">, iem_odr_ko = #{iemOdrKo} </if>
+			<if test="iemOdrEn != null">, iem_odr_en = #{iemOdrEn} </if>
+			<if test="iemDe != null">, iem_de = #{iemDe} </if>
+			<if test="curAssets != null">, cur_assets = #{curAssets} </if>
+			<if test="noncurAssets != null">, noncur_assets = #{noncurAssets} </if>
+			<if test="curLiabil != null">, cur_liabil = #{curLiabil} </if>
+			<if test="noncurLiabil != null">, noncur_liabil = #{noncurLiabil} </if>
+			<if test="capl != null">, capl = #{capl} </if>
+			<if test="capitalSurplus != null">, capital_surplus = #{capitalSurplus} </if>
+			<if test="accOtherCompIncome != null">, acc_other_comp_income = #{accOtherCompIncome} </if>
+			<if test="otherCompOfEquity != null">, other_comp_of_equity = #{otherCompOfEquity} </if>
+			<if test="retainedEarnings != null">, retained_earnings = #{retainedEarnings} </if>
+			<if test="noncontrInterest != null">, noncontr_interest = #{noncontrInterest} </if>
+		where fnltt_sn = #{fnlttSn}
+	</update>
+</mapper>

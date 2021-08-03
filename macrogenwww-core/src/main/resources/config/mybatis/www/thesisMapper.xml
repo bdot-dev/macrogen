@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.ThesisMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tt.lang_code = #{langCode}
+		</if>
+		<if test="searchBeginDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND tt.updt_dt <![CDATA[>=]]> DATE(#{searchEndDt})
+			</if>
+			<if test='periodSearchCondition == "thesis_year"'>
+				AND DATE_FORMAT(#{searchBeginDt}, '%Y%m') <![CDATA[<=]]> concat(regist_year, regist_mt)
+			</if>
+		</if>
+		<if test="searchEndDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND tt.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+			</if>
+			<if test='periodSearchCondition == "thesis_year"'>
+				AND DATE_FORMAT(#{searchEndDt}, '%Y%m') <![CDATA[>=]]> concat(regist_year, regist_mt)
+			</if>
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<if test='searchCondition == "thesis_sj"'>
+				and tt.thesis_sj like concat('%', #{searchKeyword}, '%')
+			</if>
+			<if test='searchCondition == "jrnl"'>
+				and tt.jrnl like concat('%', #{searchKeyword}, '%')
+			</if>
+		</if>
+
+	</sql>
+
+	<select id="count" parameterType="thesisVo" resultType="int">
+		select count(*)
+		from tb_thesis tt
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="thesisVo" resultType="thesisVo">
+		<include refid="paging.countTop" />
+		select
+			tt.thesis_sn
+			, tt.lang_code
+			, tt.thesis_sj
+			, tt.jrnl
+			, tt.link_url
+			, tt.regist_year
+			, tt.regist_mt
+			, tt.regist_dt
+			, tt.register_sn
+			, ( select user_nm from tb_user where user_sn = tt.register_sn ) register_nm
+			, tt.updt_dt
+			, tt.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tt.updusr_sn ) updusr_nm
+		from tb_thesis tt
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tt.regist_dt desc, tt.thesis_sn desc
+			</when>
+			<otherwise>
+				order by tt.thesis_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="thesisVo" resultType="thesisVo">
+		select
+			tt.thesis_sn
+			, tt.lang_code
+			, tt.thesis_sj
+			, tt.jrnl
+			, tt.link_url
+			, tt.regist_year
+			, tt.regist_mt
+			, tt.regist_dt
+			, tt.register_sn
+			, ( select user_nm from tb_user where user_sn = tt.register_sn ) register_nm
+			, tt.updt_dt
+			, tt.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tt.updusr_sn ) updusr_nm
+		from tb_thesis tt
+		where tt.thesis_sn = #{thesisSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_thesis')
+	</select>
+
+	<insert id="insert" parameterType="thesisVo">
+		insert into tb_thesis (
+			thesis_sn
+			, lang_code
+			, thesis_sj
+			, jrnl
+			, link_url
+			, regist_year
+			, regist_mt
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{thesisSn}
+			, #{langCode}
+			, #{thesisSj}
+			, #{jrnl}
+			, #{linkUrl}
+			, #{registYear}
+			, #{registMt}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="thesisVo">
+		delete from tb_thesis where thesis_sn = #{thesisSn}
+	</delete>
+
+	<update id="update" parameterType="thesisVo">
+		update tb_thesis
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="thesisSj != null">, thesis_sj = #{thesisSj} </if>
+			<if test="jrnl != null">, jrnl = #{jrnl} </if>
+			<if test="linkUrl != null">, link_url = #{linkUrl} </if>
+			<if test="registYear != null">, regist_year = #{registYear} </if>
+			<if test="registMt != null">, regist_mt = #{registMt} </if>
+		where thesis_sn = #{thesisSn}
+	</update>
+
+</mapper>

@@ -147,7 +147,13 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 				&& encryptedLoginPw.equals(mngrVo.getLoginPassword())) {
 			LOGGER.info("login success...");
 
-			//
+			// 초기비밀번호 변경 화면으로 이동
+			if ("Y".equals(mngrVo.getPasswordInitlYn())) {
+				request.getSession().setAttribute("PASSWORD_CHANGE_USER_SN", mngrVo.getUserSn());
+				throw new BadCredentialsException("necessary_to_change_password");
+			}
+			
+			// 비밀번호입력오류회수 초기화
 			try {
 				UserVo userVo = new UserVo();
 				userVo.setUserSn(mngrVo.getUserSn());

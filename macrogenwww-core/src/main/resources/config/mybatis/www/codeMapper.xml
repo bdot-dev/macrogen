@@ -28,6 +28,8 @@
 		    tc.code_se
 		    , tc.code
 		    , tc.code_nm
+		    , tc.code_nm_ko
+		    , tc.code_nm_en
 		    , tc.sort_ordr
 		    , tc.regist_dt
 		    , tc.register_sn
@@ -53,6 +55,8 @@
 		    TC.CODE_SE
 		    , TC.CODE
 		    , TC.CODE_NM
+		    , TC.CODE_NM_KO
+		    , TC.CODE_NM_EN
 		    , TC.SORT_ORDR
 		    , TC.REGIST_DT
 		    , TC.register_sn
@@ -73,10 +77,10 @@
 
 	<insert id="insert" parameterType="codeVo">
 		INSERT INTO tb_code (
-		    CODE_SE, CODE, CODE_NM, SORT_ORDR
+		    CODE_SE, CODE, CODE_NM, CODE_NM_KO, CODE_NM_EN, SORT_ORDR
 		    , REGIST_DT, register_sn, UPDT_DT, updusr_sn
 		) VALUES (
-		    #{codeSe}, #{code}, #{codeNm}, #{sortOrdr}
+		    #{codeSe}, #{code}, #{codeNm}, #{codeNmKo}, #{codeNmEn}, #{sortOrdr}
 		    , now(), #{registerSn}, now(), #{updusrSn}
 		)
 	</insert>
@@ -86,6 +90,8 @@
 			tb_code
         SET
 			CODE_NM = #{codeNm},
+			CODE_NM_KO = #{codeNmKo},
+			CODE_NM_EN = #{codeNmEn},
 			SORT_ORDR = #{sortOrdr},
 			UPDT_DT = now(),
 			updusr_sn = #{updusrSn}

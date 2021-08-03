@@ -47,6 +47,18 @@
 						</td>
 					</tr>
 					<tr>
+						<th>코드명(국문)<span>*</span></th>
+						<td colspan="3">
+							<form:input path="codeNmKo" maxlength="50" placeholder="코드명(국문)" class="w100p" />
+						</td>
+					</tr>
+					<tr>
+						<th>코드명(영문)<span>*</span></th>
+						<td colspan="3">
+							<form:input path="codeNmEn" maxlength="50" placeholder="코드명(영문)" class="w100p" />
+						</td>
+					</tr>
+					<tr>
 						<th>정렬순서<span>*</span></th>
 						<td colspan="3">
 							<form:input path="sortOrdr" maxlength="5" placeholder="정렬순서(숫자)" class="w100p" />

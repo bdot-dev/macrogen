@@ -36,5 +36,12 @@
 		<typeAlias alias="urlVo" type="macrogen.www.vo.UrlVo"/>
 		<typeAlias alias="userVo" type="macrogen.www.vo.UserVo"/>
 
+		<typeAlias alias="cmpnyhistVo" type="macrogen.www.vo.CmpnyhistVo"/>
+		<typeAlias alias="patentVo" type="macrogen.www.vo.PatentVo"/>
+		<typeAlias alias="thesisVo" type="macrogen.www.vo.ThesisVo"/>
+		<typeAlias alias="wnpzVo" type="macrogen.www.vo.WnpzVo"/>
+		<typeAlias alias="fnlttVo" type="macrogen.www.vo.FnlttVo"/>
+		<typeAlias alias="plosdocVo" type="macrogen.www.vo.PlosdocVo"/>
+
 	</typeAliases>
 </configuration>

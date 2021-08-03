@@ -5,6 +5,8 @@ public class CodeVo extends DefaultVo {
 	private String codeSe;
 	private String code;
 	private String codeNm;
+	private String codeNmKo;
+	private String codeNmEn;
 	private Integer sortOrdr;
 
 	public String getCodeSe() {
@@ -30,6 +32,18 @@ public class CodeVo extends DefaultVo {
 	}
 	public void setCodeNm(String codeNm) {
 		this.codeNm = codeNm;
+	}
+	public String getCodeNmKo() {
+		return codeNmKo;
+	}
+	public void setCodeNmKo(String codeNmKo) {
+		this.codeNmKo = codeNmKo;
+	}
+	public String getCodeNmEn() {
+		return codeNmEn;
+	}
+	public void setCodeNmEn(String codeNmEn) {
+		this.codeNmEn = codeNmEn;
 	}
 
 }

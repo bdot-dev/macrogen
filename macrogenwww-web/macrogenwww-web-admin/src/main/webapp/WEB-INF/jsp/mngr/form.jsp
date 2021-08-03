@@ -19,7 +19,8 @@
 			</div>
 			<ul>
 				<li>* 아이디는 영문 또는 숫자를 조합하여 5~20자로 입력해주세요.</li>
-				<li>* 비밀번호는 영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.</li>
+				<li v-if="resultVo.userSn">* 비밀번호는 영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.</li>
+				<li v-else>* 초기비밀번호는 macrogen@admin 입니다.</li>
 			</ul>
 
 			<div class="board_wrap mb20">
@@ -50,7 +51,7 @@
 								<input type="hidden" name="userSn" v-model="resultVo.userSn" />
 							</td>
 						</tr>
-						<tr>
+						<tr v-if="resultVo.userSn">
 							<th>비밀번호 <span>*</span></th>
 							<td>
 								<input id="loginPassword" name="loginPassword" type="password" maxlength="20" placeholder="비밀번호 입력" class="w100p" />
@@ -101,6 +102,13 @@
 
                         </tr>
 						<tr v-if="resultVo.userSn">
+							<th>비밀번호 변경필요 여부</th>
+							<td colspan="3" class="tal">
+								{{ resultVo.passwordInitlYn ? resultVo.passwordInitlYn : 'N' }}<br>
+								(<span>* 'Y' 일 경우, 로그인시 비밀번호 변경이 필요함.</span>)
+							</td>
+						</tr>
+						<tr v-if="resultVo.userSn">
 							<th>등록일시</th>
 							<td class="tal">{{ resultVo.registDt | timeToDate('YYYY-MM-DD HH:mm:ss') }}</td>
 							<th>수정일시</th>
@@ -114,6 +122,8 @@
 					<button type="button" name="button" class="btn btnSave" v-on:click="onSubmit">저장</button>
 					<button v-if="resultVo.userSn" type="button" name="button" class="btn btnDelete" v-on:click="onDelete">삭제</button>
                     <button v-if="resultVo.userSn" type="button" name="button" class="btn btnInitErrCnt" v-on:click="onInitErrCnt">비밀번호 입력 오류 회수 초기화</button>
+                    <!-- <button v-if="resultVo.userSn && resultVo.passwordInitlYn != 'Y'" type="button" name="button" class="btn" v-on:click="onInitPasswordInitlYn">비밀번호 초기화</button> -->
+                    <button v-if="resultVo.userSn" type="button" name="button" class="btn" v-on:click="onInitPasswordInitlYn">비밀번호 초기화</button>
 					<button type="button" name="button" class="btn btnList" v-on:click="onList">목록</button>
 				</div>
 			</div>

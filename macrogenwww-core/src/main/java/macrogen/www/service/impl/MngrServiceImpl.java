@@ -59,6 +59,7 @@ public class MngrServiceImpl extends EgovAbstractServiceImpl implements MngrServ
 		userVo.setUserSeCode(UserSeCode.MNGR);
 		userVo.setRegisterSn(mngrVo.getRegisterSn());
 		userVo.setUpdusrSn(mngrVo.getUpdusrSn());
+		userVo.setPasswordInitlYn(mngrVo.getPasswordInitlYn());
 		userMapper.insert(userVo);
 
 		MngrVo insertVo = new MngrVo();
@@ -134,6 +135,23 @@ public class MngrServiceImpl extends EgovAbstractServiceImpl implements MngrServ
 		UserVo userVo = new UserVo();
 		userVo.setUserSn(mngrVo.getUserSn());
 		userMapper.increaseLoginCo(userVo);
+	}
+
+	@Override
+	public void initPassword(MngrVo mngrVo) throws Exception {
+		UserVo vo = new UserVo();
+		vo.setUpdusrSn(mngrVo.getUpdusrSn());
+		vo.setUserSn(mngrVo.getUserSn());
+		vo.setLoginPassword(mngrVo.getLoginPassword());
+		userMapper.initPassword(vo);
+	}
+
+	@Override
+	public void updateInitPassword(MngrVo mngrVo) throws Exception {
+		UserVo vo = new UserVo();
+		vo.setUserSn(mngrVo.getUserSn());
+		vo.setLoginPassword(mngrVo.getLoginPassword());
+		userMapper.updateInitPassword(vo);
 	}
 
 }

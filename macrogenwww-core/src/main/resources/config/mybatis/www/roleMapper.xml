@@ -27,7 +27,7 @@
 		WHERE 1=1
 		<include refid="list_where" />
 		ORDER BY
-			TR.ROLE_ID
+			TR.REGIST_DT DESC
 		<include refid="paging.countBottom"/>
 	</select>
 	
