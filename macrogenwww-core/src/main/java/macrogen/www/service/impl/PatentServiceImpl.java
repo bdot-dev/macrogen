@@ -57,4 +57,11 @@ public class PatentServiceImpl extends EgovAbstractServiceImpl implements Patent
 		patentMapper.update(vo);
 	}
 
+	@Override
+	public PatentVo viewByPk(Long patentSn) throws Exception {
+		PatentVo vo = new PatentVo();
+		vo.setPatentSn(patentSn);
+		return view(vo);
+	}
+
 }

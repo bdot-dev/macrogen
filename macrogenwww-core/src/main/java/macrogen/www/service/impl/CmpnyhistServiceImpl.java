@@ -57,4 +57,11 @@ public class CmpnyhistServiceImpl extends EgovAbstractServiceImpl implements Cmp
 		cmpnyhistMapper.update(vo);
 	}
 
+	@Override
+	public CmpnyhistVo viewByPk(Long cmpnyhistSn) throws Exception {
+		CmpnyhistVo vo = new CmpnyhistVo();
+		vo.setCmpnyhistSn(cmpnyhistSn);
+		return view(vo);
+	}
+
 }

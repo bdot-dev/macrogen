@@ -1,5 +1,7 @@
 package macrogen.www.vo;
 
+import java.util.List;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -16,8 +18,19 @@ public class PatentVo extends DefaultVo {
 	private Long patentSn;
 	private String langCode;
 	private String ctgryCode;
+	private String ctgryCodeNm;
+	private String ctgryCodeNmKo;
+	private String ctgryCodeNmEn;
 	private String nationCode;
+	private String nationCodeNm;
+	private String nationCodeNmKo;
+	private String nationCodeNmEn;
 	private String patentCn;
+
+	private String searchCtgryCode;
+	private String searchNationCode;
+
+	private List<Long> patentSnList;
 
 	public Long getPatentSn() {
 		return patentSn;
@@ -48,5 +61,59 @@ public class PatentVo extends DefaultVo {
 	}
 	public void setPatentCn(String patentCn) {
 		this.patentCn = patentCn;
+	}
+	public List<Long> getPatentSnList() {
+		return patentSnList;
+	}
+	public void setPatentSnList(List<Long> patentSnList) {
+		this.patentSnList = patentSnList;
+	}
+	public String getSearchCtgryCode() {
+		return searchCtgryCode;
+	}
+	public void setSearchCtgryCode(String searchCtgryCode) {
+		this.searchCtgryCode = searchCtgryCode;
+	}
+	public String getSearchNationCode() {
+		return searchNationCode;
+	}
+	public void setSearchNationCode(String searchNationCode) {
+		this.searchNationCode = searchNationCode;
+	}
+	public String getCtgryCodeNm() {
+		return ctgryCodeNm;
+	}
+	public void setCtgryCodeNm(String ctgryCodeNm) {
+		this.ctgryCodeNm = ctgryCodeNm;
+	}
+	public String getNationCodeNm() {
+		return nationCodeNm;
+	}
+	public void setNationCodeNm(String nationCodeNm) {
+		this.nationCodeNm = nationCodeNm;
+	}
+	public String getCtgryCodeNmKo() {
+		return ctgryCodeNmKo;
+	}
+	public void setCtgryCodeNmKo(String ctgryCodeNmKo) {
+		this.ctgryCodeNmKo = ctgryCodeNmKo;
+	}
+	public String getCtgryCodeNmEn() {
+		return ctgryCodeNmEn;
+	}
+	public void setCtgryCodeNmEn(String ctgryCodeNmEn) {
+		this.ctgryCodeNmEn = ctgryCodeNmEn;
+	}
+	public String getNationCodeNmKo() {
+		return nationCodeNmKo;
+	}
+	public void setNationCodeNmKo(String nationCodeNmKo) {
+		this.nationCodeNmKo = nationCodeNmKo;
+	}
+	public String getNationCodeNmEn() {
+		return nationCodeNmEn;
+	}
+	public void setNationCodeNmEn(String nationCodeNmEn) {
+		this.nationCodeNmEn = nationCodeNmEn;
 	}
 }

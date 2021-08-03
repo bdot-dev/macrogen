@@ -1,5 +1,7 @@
 package macrogen.www.vo;
 
+import java.util.List;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -16,7 +18,12 @@ public class CmpnyhistVo extends DefaultVo {
 	private String langCode;
 	private String year;
 	private String mt;
-	private String cm;
+	private String cn;
+
+	private String searchYear;
+	private String searchMt;
+
+	private List<Long> cmpnyhistSnList;
 
 	public Long getCmpnyhistSn() {
 		return cmpnyhistSn;
@@ -42,11 +49,29 @@ public class CmpnyhistVo extends DefaultVo {
 	public void setMt(String mt) {
 		this.mt = mt;
 	}
-	public String getCm() {
-		return cm;
+	public String getSearchYear() {
+		return searchYear;
 	}
-	public void setCm(String cm) {
-		this.cm = cm;
+	public void setSearchYear(String searchYear) {
+		this.searchYear = searchYear;
+	}
+	public String getSearchMt() {
+		return searchMt;
+	}
+	public void setSearchMt(String searchMt) {
+		this.searchMt = searchMt;
+	}
+	public String getCn() {
+		return cn;
+	}
+	public void setCn(String cn) {
+		this.cn = cn;
+	}
+	public List<Long> getCmpnyhistSnList() {
+		return cmpnyhistSnList;
+	}
+	public void setCmpnyhistSnList(List<Long> cmpnyhistSnList) {
+		this.cmpnyhistSnList = cmpnyhistSnList;
 	}
 
 }

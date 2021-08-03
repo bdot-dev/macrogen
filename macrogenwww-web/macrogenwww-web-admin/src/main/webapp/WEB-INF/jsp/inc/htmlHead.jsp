@@ -43,7 +43,9 @@
 <script src="/js/ckeditor/ckeditor.js"></script>
 <script src="/common/js/common.js"></script>
 
-<script type="text/javascript" src="/js/vueComponent/vue-filter.js" ></script>
+<script src="/js/vueComponent/vue-filter.js" ></script>
+<script src="/js/vueComponent/vue-datepicker.js"></script>
+
 <script src="/js/app/App.js"></script>
 <script>
 	$(function() {

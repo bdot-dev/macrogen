@@ -27,4 +27,6 @@ public interface CmpnyhistService {
 	void delete(CmpnyhistVo vo) throws Exception;
 
 	void update(CmpnyhistVo vo) throws Exception;
+
+	CmpnyhistVo viewByPk(Long cmpnyhistSn) throws Exception;
 }

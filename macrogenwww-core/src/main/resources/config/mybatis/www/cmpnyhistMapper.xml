@@ -3,6 +3,19 @@
 <mapper namespace="macrogen.www.mapper.CmpnyhistMapper">
 
 	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tc.lang_code = #{langCode}
+		</if>
+		<if test="searchYear != null and searchYear != ''">
+			and tc.year = #{searchYear}
+		</if>
+		<if test="searchMt != null and searchMt != ''">
+			and tc.mt = #{searchMt}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tc.cn like concat('%', #{searchKeyword}, '%')
+		</if>
+
 	</sql>
 
 	<select id="count" parameterType="cmpnyhistVo" resultType="int">
@@ -22,14 +35,19 @@
 			, tc.cn
 			, tc.regist_dt
 			, tc.register_sn
+			, ( select user_nm from tb_user where user_sn = tc.register_sn ) register_nm
 			, tc.updt_dt
 			, tc.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tc.updusr_sn ) updusr_nm
 		from tb_cmpnyhist tc
 		where 1 = 1
 		<include refid="list_where" />
 		<choose>
 			<when test='orderBy == "regist_dt_desc"'>
 				order by tc.regist_dt desc, tc.cmpnyhist_sn desc
+			</when>
+			<when test='orderBy == "hist_desc"'>
+				order by tc.year desc, tc.mt desc
 			</when>
 			<otherwise>
 				order by tc.cmpnyhist_sn desc
@@ -47,8 +65,10 @@
 			, tc.cn
 			, tc.regist_dt
 			, tc.register_sn
+			, ( select user_nm from tb_user where user_sn = tc.register_sn ) register_nm
 			, tc.updt_dt
 			, tc.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tc.updusr_sn ) updusr_nm
 		from tb_cmpnyhist tc
 		where tc.cmpnyhist_sn = #{cmpnyhistSn}
 	</select>

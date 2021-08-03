@@ -27,4 +27,6 @@ public interface PatentService {
 	void delete(PatentVo vo) throws Exception;
 
 	void update(PatentVo vo) throws Exception;
+
+	PatentVo viewByPk(Long patentSn) throws Exception;
 }
