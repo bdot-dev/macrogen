@@ -7,10 +7,10 @@
 			and tp.lang_code = #{langCode}
 		</if>
 		<if test="searchBeginDt != null">
-			AND tp.updt_dt <![CDATA[>=]]> #{searchBeginDt}
+			AND tp.updt_dt <![CDATA[>=]]> DATE(#{searchEndDt})
 		</if>
 		<if test="searchEndDt != null">
-			AND tp.updt_dt <![CDATA[<=]]> #{searchEndDt}
+			AND tp.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
 		</if>
 		<if test="searchCtgryCode != null and searchCtgryCode != ''">
 			and tp.ctgry_code = #{searchCtgryCode}

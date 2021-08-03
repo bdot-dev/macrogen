@@ -1,5 +1,7 @@
 package macrogen.www.vo;
 
+import java.util.List;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -19,6 +21,10 @@ public class ThesisVo extends DefaultVo {
 	private String linkUrl;
 	private String registYear;
 	private String registMt;
+
+	private String periodSearchCondition;
+
+	private List<Long> thesisSnList;
 
 	public Long getThesisSn() {
 		return thesisSn;
@@ -61,5 +67,17 @@ public class ThesisVo extends DefaultVo {
 	}
 	public void setRegistMt(String registMt) {
 		this.registMt = registMt;
+	}
+	public List<Long> getThesisSnList() {
+		return thesisSnList;
+	}
+	public void setThesisSnList(List<Long> thesisSnList) {
+		this.thesisSnList = thesisSnList;
+	}
+	public String getPeriodSearchCondition() {
+		return periodSearchCondition;
+	}
+	public void setPeriodSearchCondition(String periodSearchCondition) {
+		this.periodSearchCondition = periodSearchCondition;
 	}
 }

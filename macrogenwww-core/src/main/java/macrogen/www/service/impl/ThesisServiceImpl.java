@@ -57,5 +57,12 @@ public class ThesisServiceImpl extends EgovAbstractServiceImpl implements Thesis
 		thesisMapper.update(vo);
 	}
 
+	@Override
+	public ThesisVo viewByPk(Long thesisSn) throws Exception {
+		ThesisVo vo = new ThesisVo();
+		vo.setThesisSn(thesisSn);
+		return view(vo);
+	}
+
 
 }

@@ -27,4 +27,6 @@ public interface ThesisService {
 	void delete(ThesisVo vo) throws Exception;
 
 	void update(ThesisVo vo) throws Exception;
+
+	ThesisVo viewByPk(Long thesisSn) throws Exception;
 }
