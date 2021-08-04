@@ -85,6 +85,7 @@ var PatentList =(function($) {
 						data : JSON.stringify({ patentSnList : vm.checkedPkList }),
 					}).done(function(data) {
 						vm.fetchData();
+						vm.checkedPkList = [];
 					});
 
 				},

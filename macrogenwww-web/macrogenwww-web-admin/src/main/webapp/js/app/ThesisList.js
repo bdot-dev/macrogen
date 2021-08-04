@@ -82,6 +82,7 @@ var ThesisList = (function($) {
 						data : JSON.stringify({ thesisSnList : vm.checkedPkList }),
 					}).done(function(data) {
 						vm.fetchData();
+						vm.checkedPkList = [];
 					});
 
 				},

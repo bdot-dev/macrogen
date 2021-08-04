@@ -3,6 +3,22 @@
 <mapper namespace="macrogen.www.mapper.WnpzMapper">
 
 	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tw.lang_code = #{langCode}
+		</if>
+		<if test="searchWnpzClCodeList != null and searchWnpzClCodeList.isEmpty != true">
+			and tw.wnpz_cl_code in (
+				<foreach collection="searchWnpzClCodeList" item="code" separator=", ">
+					#{code}
+				</foreach>
+			)
+		</if>
+		<if test="searchWnpzTmeCode != null and searchWnpzTmeCode != ''">
+			and tw.wnpz_tme_code = #{searchWnpzTmeCode}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tw.wnpz_nm like concat('%', #{searchKeyword}, '%')
+		</if>
 	</sql>
 
 	<select id="count" parameterType="wnpzVo" resultType="int">
@@ -18,15 +34,23 @@
 			tw.wnpz_sn
 			, tw.lang_code
 			, tw.wnpz_cl_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
 			, tw.wnpz_tme_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
 			, tw.photo_atch_id
 			, tw.wnpz_nm
 			, tw.rm
 			, tw.wnpz_cn
 			, tw.regist_dt
 			, tw.register_sn
+			, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
 			, tw.updt_dt
 			, tw.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
 		from tb_wnpz tw
 		where 1 = 1
 		<include refid="list_where" />
@@ -46,15 +70,23 @@
 			tw.wnpz_sn
 			, tw.lang_code
 			, tw.wnpz_cl_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
 			, tw.wnpz_tme_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
 			, tw.photo_atch_id
 			, tw.wnpz_nm
 			, tw.rm
 			, tw.wnpz_cn
 			, tw.regist_dt
 			, tw.register_sn
+			, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
 			, tw.updt_dt
 			, tw.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
 		from tb_wnpz tw
 		where tw.wnpz_sn = #{wnpzSn}
 	</select>

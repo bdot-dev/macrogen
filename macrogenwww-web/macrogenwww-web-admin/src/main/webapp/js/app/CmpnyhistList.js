@@ -98,7 +98,7 @@ var CmpnyhistList = (function($) {
 						data : JSON.stringify({ cmpnyhistSnList : vm.checkedPkList }),
 					}).done(function(data) {
 						vm.fetchData();
-					});
+						vm.checkedPkList = [];					});
 
 				},
 			},
