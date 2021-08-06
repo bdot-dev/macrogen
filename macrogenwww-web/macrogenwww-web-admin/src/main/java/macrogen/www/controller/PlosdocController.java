@@ -1,5 +1,7 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.service.PlosdocService;
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.PlosdocListVo;
 import macrogen.www.vo.PlosdocVo;
 
 /**
@@ -37,30 +40,52 @@ public class PlosdocController {
 
 	@RequestMapping("/list")
 	public String list(@AuthenticationPrincipal MngrVo mngrVo,
-			@ModelAttribute PlosdocVo plosdocVo, Model model) throws Exception {
+			@ModelAttribute("listVo") PlosdocVo listVo, Model model) throws Exception {
 
 		return "plosdoc/list";
 	}
 
 	@RequestMapping("/list/data")
 	@ResponseBody
-	public Map<String, Object> listData(@RequestBody PlosdocVo listVo) throws Exception {
+	public Map<String, Object> listData(@RequestBody PlosdocVo vo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
 		PaginationInfo paginationInfo = new PaginationInfo();
-		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
-		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
-		paginationInfo.setPageSize(listVo.getPageSize());
+		paginationInfo.setCurrentPageNo(vo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(vo.getRecordCountPerPage());
+		paginationInfo.setPageSize(vo.getPageSize());
 
-		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
-		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+		vo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		vo.setLastIndex(paginationInfo.getLastRecordIndex());
 
-		List<PlosdocVo> resultList = plosdocService.list(listVo);
-		paginationInfo.setTotalRecordCount(plosdocService.count(listVo));
+		List<PlosdocVo> resultList = plosdocService.list(vo);
+		paginationInfo.setTotalRecordCount(plosdocService.count(vo));
 
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
+		if (null != resultList && !resultList.isEmpty()) {
+			resultMap.put("listUpdtDe", resultList.get(0).getUpdtDe());
+		} else {
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+			resultMap.put("listUpdtDe", format.format(new Date()));
+		}
+
 		return resultMap;
 	}
+
+	@RequestMapping("/submit")
+	@ResponseBody
+	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody PlosdocListVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRegisterSn(loginVo.getUserSn());
+		listVo.setUpdusrSn(loginVo.getUserSn());
+
+		plosdocService.insertList(listVo);
+
+		return resultMap;
+	}
+
 }

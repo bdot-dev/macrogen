@@ -3,6 +3,8 @@ package macrogen.www.vo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 
 /**
  * <pre>
@@ -17,9 +19,11 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class PlosdocVo extends DefaultVo {
 	private Long plosdocSn;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updtDe;
 	private String iemOdrKo;
 	private String iemOdrEn;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date iemDe;
 	private BigDecimal sales;
 	private BigDecimal costSales;

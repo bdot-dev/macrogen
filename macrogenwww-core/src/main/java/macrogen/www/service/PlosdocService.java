@@ -2,6 +2,7 @@ package macrogen.www.service;
 
 import java.util.List;
 
+import macrogen.www.vo.PlosdocListVo;
 import macrogen.www.vo.PlosdocVo;
 
 /**
@@ -27,4 +28,8 @@ public interface PlosdocService {
 	void delete(PlosdocVo vo) throws Exception;
 
 	void update(PlosdocVo vo) throws Exception;
+
+	void insertList(PlosdocListVo listVo) throws Exception;
+
+	void deleteAll() throws Exception;
 }

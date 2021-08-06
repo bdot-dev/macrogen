@@ -57,4 +57,11 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 		wnpzMapper.update(vo);
 	}
 
+	@Override
+	public WnpzVo viewByPk(Long wnpzSn) throws Exception {
+		WnpzVo vo = new WnpzVo();
+		vo.setWnpzSn(wnpzSn);
+		return view(vo);
+	}
+
 }

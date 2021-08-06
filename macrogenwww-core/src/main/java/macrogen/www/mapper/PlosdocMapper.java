@@ -31,4 +31,6 @@ public interface PlosdocMapper {
 	void delete(PlosdocVo vo);
 
 	void update(PlosdocVo vo);
+
+	void deleteAll();
 }

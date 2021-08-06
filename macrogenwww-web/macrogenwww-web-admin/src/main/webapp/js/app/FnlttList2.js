@@ -21,6 +21,17 @@ var FnlttList = (function($) {
 				vm.listVo = options.listVo;
 				vm.fetchData();
 			},
+			watch: {
+				resultList: {
+					handler(val, oldVal) {
+						console.log('resultList changed',
+								JSON.stringify(val), JSON.stringify(oldVal));
+						console.log('JSON.stringify(val) == JSON.stringify(oldVal)',
+								JSON.stringify(val) == JSON.stringify(oldVal));
+					},
+					deep: true,
+				},
+			},
 			methods : {
 				fetchData : function() {
 					var vm = this;
@@ -65,6 +76,8 @@ var FnlttList = (function($) {
 						return false;
 					}
 
+					debugger;
+
 					if (!confirm('저장하시겠습니까?')) {
 						return false;
 					} else {
@@ -81,11 +94,37 @@ var FnlttList = (function($) {
 					});
 
 				},
+				formatNumber: function(index, propNm) {
+					var vm = this;
+					var propVal = vm.resultList[index][propNm];
+					if (!propVal) return 0;
+
+					propVal = propVal.replace(/[^0-9-]/g, '');
+					if (!propVal) return 0;
+
+					propVal = propVal.replace(/^0+/, '');
+					if (!propVal) return 0;
+
+					vm.resultList[index][propNm] = numberWithCommas(propVal);
+				},
 				totalAssets : function(result) {
-					return Number(result.curAssets) + Number(result.noncurAssets);
+					var curAssets = result.curAssets.replace(/[^0-9-]/g, '');
+					if (!curAssets) curAssets = 0;
+					var noncurAssets = result.noncurAssets.replace(/[^0-9-]/g, '');
+					if (!noncurAssets) noncurAssets = 0;
+
+					return Number(curAssets) + Number(noncurAssets);
 				},
 				totalLiabil : function(result) {
-					return Number(result.curLiabil) + Number(result.noncurLiabil);
+					var curLiabil = result.curLiabil.replace(/[^0-9-]/g, '');
+					if (!curLiabil)
+						curLiabil = 0;
+
+					var noncurLiabil = result.noncurLiabil.replace(/[^0-9-]/g, '');
+					if (!noncurLiabil)
+						noncurLiabil = 0;
+
+					return Number(curLiabil) + Number(noncurLiabil);
 				},
 				totalEquity : function(result) {
 					var vm = this;
@@ -93,7 +132,10 @@ var FnlttList = (function($) {
 				},
 				ownersOfParentEquity : function(result) {
 					var vm = this;
-					return Number(vm.totalEquity(result)) - Number(result.noncontrInterest);
+					var noncontrInterest = result.noncontrInterest.replace(/[^0-9-]/g, '');
+					if (!noncontrInterest) noncontrInterest = 0;
+
+					return Number(vm.totalEquity(result)) - Number(noncontrInterest);
 				},
 				validate: function() {
 					var vm = this;
@@ -122,7 +164,7 @@ var FnlttList = (function($) {
 							ret = false;
 							break;
 						}
-						if (!vm.resultList[i].iemDe) {
+						if (!vm.resultList[i].updtDe) {
 							alert('필수입력 - 항목일자');
 							ret = false;
 							break;
@@ -140,7 +182,6 @@ var FnlttList = (function($) {
 							ret = false;
 							break;
 						}
-
 						if (!vm.resultList[i].curLiabil) {
 							vm.$refs.curLiabil[i].focus();
 							alert('필수입력 - 유동부채');
@@ -200,6 +241,8 @@ var FnlttList = (function($) {
 					}
 
 					return ret;
+
+
 				},
 
 			},
