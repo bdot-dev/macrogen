@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import macrogen.www.mapper.PlosdocMapper;
 import macrogen.www.service.PlosdocService;
+import macrogen.www.vo.PlosdocListVo;
 import macrogen.www.vo.PlosdocVo;
 
 /**
@@ -57,4 +58,25 @@ public class PlosdocServiceImpl extends EgovAbstractServiceImpl implements Plosd
 		plosdocMapper.update(vo);
 	}
 
+	@Override
+	public void insertList(PlosdocListVo listVo) throws Exception {
+		// 목록 전체 삭제
+		deleteAll();
+
+		// 목록 등록
+		if (null != listVo.getPlosdocList() && !listVo.getPlosdocList().isEmpty()) {
+			for (PlosdocVo vo : listVo.getPlosdocList()) {
+				vo.setUpdtDe(listVo.getListUpdtDe());
+				vo.setRegisterSn(listVo.getRegisterSn());
+				vo.setUpdusrSn(listVo.getUpdusrSn());
+				insert(vo);
+			}
+		}
+
+	}
+
+	@Override
+	public void deleteAll() throws Exception {
+		plosdocMapper.deleteAll();
+	}
 }

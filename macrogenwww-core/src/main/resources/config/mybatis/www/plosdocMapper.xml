@@ -132,4 +132,7 @@
 		where plosdoc_sn = #{plosdocSn}
 	</update>
 
+	<delete id="deleteAll">
+		delete from tb_plosdoc
+	</delete>
 </mapper>

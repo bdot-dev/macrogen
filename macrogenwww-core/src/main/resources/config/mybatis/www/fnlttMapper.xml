@@ -39,10 +39,10 @@
 		<include refid="list_where" />
 		<choose>
 			<when test='orderBy == "regist_dt_desc"'>
-				order by tf.regist_dt desc, tf.fnltt_sn desc
+				order by tf.fnltt_sn desc
 			</when>
 			<otherwise>
-				order by tf.fnltt_sn desc
+				order by tf.iem_de desc
 			</otherwise>
 		</choose>
 		<include refid="paging.countBottom" />
@@ -146,4 +146,8 @@
 			<if test="noncontrInterest != null">, noncontr_interest = #{noncontrInterest} </if>
 		where fnltt_sn = #{fnlttSn}
 	</update>
+
+	<delete id="deleteAll">
+		delete from tb_fnltt
+	</delete>
 </mapper>

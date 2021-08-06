@@ -2,6 +2,7 @@ package macrogen.www.service;
 
 import java.util.List;
 
+import macrogen.www.vo.FnlttListVo;
 import macrogen.www.vo.FnlttVo;
 
 /**
@@ -27,4 +28,8 @@ public interface FnlttService {
 	void delete(FnlttVo vo) throws Exception;
 
 	void update(FnlttVo vo) throws Exception;
+
+	void insertList(FnlttListVo listVo) throws Exception;
+
+	void deleteAll() throws Exception;
 }

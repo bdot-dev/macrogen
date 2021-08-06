@@ -3,6 +3,8 @@ package macrogen.www.vo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -16,9 +18,11 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class FnlttVo extends DefaultVo {
 	private Long fnlttSn;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date updtDe;
 	private String iemOdrKo;
 	private String iemOdrEn;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date iemDe;
 	private BigDecimal curAssets;
 	private BigDecimal noncurAssets;
@@ -121,5 +125,4 @@ public class FnlttVo extends DefaultVo {
 	public void setNoncontrInterest(BigDecimal noncontrInterest) {
 		this.noncontrInterest = noncontrInterest;
 	}
-
 }

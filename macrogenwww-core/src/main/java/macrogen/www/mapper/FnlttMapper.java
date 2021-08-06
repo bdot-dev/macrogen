@@ -31,4 +31,6 @@ public interface FnlttMapper {
 	void delete(FnlttVo vo);
 
 	void update(FnlttVo vo);
+
+	void deleteAll();
 }
