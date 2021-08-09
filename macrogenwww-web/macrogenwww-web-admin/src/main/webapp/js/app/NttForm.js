@@ -73,7 +73,7 @@ var nttForm = (function($) {
 					if (CKEDITOR) {
 						for (var key in CKEDITOR.instances) {
 							if (CKEDITOR.instances.hasOwnProperty(key)) {
-								vm.resultVo.nttCn = CKEDITOR.instances[key].getData();
+								vm.resultVo[key] = CKEDITOR.instances[key].getData();
 							}
 						}
 					}

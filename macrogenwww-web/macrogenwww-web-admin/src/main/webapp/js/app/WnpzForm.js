@@ -46,6 +46,14 @@ var WnpzForm = (function($) {
 						return false;
 					}
 
+					if (CKEDITOR) {
+						for (var key in CKEDITOR.instances) {
+							if (CKEDITOR.instances.hasOwnProperty(key)) {
+								vm.resultVo[key] = CKEDITOR.instances[key].getData();
+							}
+						}
+					}
+
 					if (!confirm('저장하시겠습니까?')) {
 						return false;
 					} else {
@@ -87,11 +95,10 @@ var WnpzForm = (function($) {
 						vm.$refs.wnpzTmeCode.focus();
 						return false;
 					}
-					/*if (!vm.resultVo.nationCode) {
+					if (!vm.resultVo.photoAtchId) {
 						alert('필수입력 - 사진');
-						vm.$refs.nationCode.focus();
 						return false;
-					}*/
+					}
 					if (!vm.resultVo.wnpzNm) {
 						alert('필수입력 - 수상자명');
 						vm.$refs.wnpzNm.focus();
@@ -104,10 +111,23 @@ var WnpzForm = (function($) {
 					}
 					return true;
 				},
-
 				onList : function() {
 					goList();
 				},
+				onchangePhotoFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.photoAtchId = data.resultVo.atchId;
+						vm.resultVo.photoFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeletePhoto : function() {
+					var vm = this;
+					vm.resultVo.photoAtchId = null;
+					vm.resultVo.photoFlpth = null;
+				},
+
 			},
 			updated : function() {
 				var vm = this;

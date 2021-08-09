@@ -12,9 +12,13 @@
 		<egovframework.rte.version>3.7.0</egovframework.rte.version>
 		<junit.version>4.11</junit.version>
 
-		<core.atch.private.path>C:/data/atch/private_macrogenwww</core.atch.private.path>
+		<!-- <core.atch.private.path>C:/data/atch/private_macrogenwww</core.atch.private.path>
 		<core.atch.public.path>C:/data/atch/public_macrogenwww</core.atch.public.path>
+		<core.atch.public.url>/public</core.atch.public.url> -->
+		<core.atch.private.path>Z:/data/atch/private_macrogenwww</core.atch.private.path>
+		<core.atch.public.path>Z:/data/atch/public_macrogenwww</core.atch.public.path>
 		<core.atch.public.url>/public</core.atch.public.url>
+
 
 		<core.domain.www>http://localhost:9080</core.domain.www>
 
