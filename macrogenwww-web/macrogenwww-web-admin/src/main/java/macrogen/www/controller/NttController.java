@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.enums.LangId;
 import macrogen.www.service.BbsCtgryService;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.NttAtchService;
@@ -36,6 +37,7 @@ import macrogen.www.vo.NttVo;
  * @version :
  */
 @Controller
+@RequestMapping("/{langId}/{bbsId}")
 public class NttController {
 
 	@Resource(name="nttService")
@@ -64,8 +66,8 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/list")
-	public String list(@PathVariable String bbsId,
+	@RequestMapping("/list")
+	public String list(@PathVariable LangId langId, @PathVariable String bbsId,
 			@AuthenticationPrincipal MngrVo loginVo,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 		listVo.setBbsId(bbsId);
@@ -84,9 +86,10 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/list/data")
+	@RequestMapping("/list/data")
 	@ResponseBody
-	public Map<String, Object> listData(@PathVariable String bbsId, @RequestBody NttVo listVo) throws Exception {
+	public Map<String, Object> listData(@PathVariable LangId langId, @PathVariable String bbsId,
+			@RequestBody NttVo listVo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
 		PaginationInfo paginationInfo = new PaginationInfo();
@@ -97,6 +100,7 @@ public class NttController {
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
 
+		listVo.setLangCode(langId.name());
 		listVo.setBbsId(bbsId);
 
 		if(StringUtils.isEmpty(listVo.getOrderBy())) listVo.setOrderBy("regist_dt_desc");
@@ -136,9 +140,9 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/form/")
-	public String form(Model model, @ModelAttribute("listVo") NttVo listVo,
-			@PathVariable String bbsId) throws Exception {
+	@RequestMapping("/form/")
+	public String form(@PathVariable LangId langId, @PathVariable String bbsId,
+			Model model, @ModelAttribute("listVo") NttVo listVo) throws Exception {
 
 		return bbsId+"/form";
 	}
@@ -155,8 +159,8 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/form/{nttSn}")
-	public String updateForm(@PathVariable String bbsId, @PathVariable Long nttSn,
+	@RequestMapping("/form/{nttSn}")
+	public String updateForm(@PathVariable LangId langId, @PathVariable String bbsId, @PathVariable Long nttSn,
 			Model model, @ModelAttribute("listVo") NttVo listVo) throws Exception {
 
 		return bbsId+"/form";
@@ -175,9 +179,9 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/form/data")
+	@RequestMapping("/form/data")
 	@ResponseBody
-	public Map<String, Object> formData(@PathVariable String bbsId,
+	public Map<String, Object> formData(@PathVariable LangId langId, @PathVariable String bbsId,
 			@AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody NttVo nttVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
@@ -216,25 +220,27 @@ public class NttController {
 	 * </pre>
 	 *
 	 * @param loginVo
-	 * @param nttVo
+	 * @param vo
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/form/submit")
+	@RequestMapping("/form/submit")
 	@ResponseBody
-	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody NttVo nttVo) throws Exception {
+	public Map<String, Object> submit(@PathVariable LangId langId, @PathVariable String bbsId, @AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody NttVo vo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
-		if (StringUtils.isEmpty(nttVo.getNttSn())) {
-			nttVo.setRegisterSn(loginVo.getUserSn());
-			nttVo.setUpdusrSn(loginVo.getUserSn());
-			nttVo.setWrterSn(loginVo.getUserSn());
-			nttService.insert(nttVo);
+		vo.setLangCode(langId.name());
+
+		if (StringUtils.isEmpty(vo.getNttSn())) {
+			vo.setRegisterSn(loginVo.getUserSn());
+			vo.setUpdusrSn(loginVo.getUserSn());
+			vo.setWrterSn(loginVo.getUserSn());
+			nttService.insert(vo);
 
 		} else {
-			nttVo.setUpdusrSn(loginVo.getUserSn());
-			nttService.update(nttVo);
+			vo.setUpdusrSn(loginVo.getUserSn());
+			nttService.update(vo);
 		}
 
 		resultMap.put("result", "success");
@@ -253,14 +259,32 @@ public class NttController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("{bbsId}/form/delete")
+	@RequestMapping("/form/delete")
 	@ResponseBody
-	public Map<String, Object> delete(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> delete(@PathVariable LangId langId, @PathVariable String bbsId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody NttVo nttVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		nttVo.setUpdusrSn(loginVo.getUserSn());
 		nttService.delete(nttVo);
+
+		resultMap.put("result", "success");
+		return resultMap;
+	}
+
+	@RequestMapping("/deleteList")
+	@ResponseBody
+	public Map<String, Object> deleteList(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody NttVo vo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		if (null != vo.getNttSnList()) {
+			for (Long nttSn : vo.getNttSnList()) {
+				NttVo deleteVo = new NttVo();
+				deleteVo.setNttSn(nttSn);
+				nttService.delete(deleteVo);
+			}
+		}
 
 		resultMap.put("result", "success");
 		return resultMap;

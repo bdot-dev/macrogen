@@ -28,7 +28,7 @@ var nttForm = (function($) {
 					$.ajax({
 						dataType : 'json',
 						type : 'POST',
-						url : '/' + options.bbsId + '/form/data',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/data',
 						contentType : 'application/json',
 						data : JSON.stringify(vm.nttVo)
 					}).done(function (data){
@@ -88,7 +88,7 @@ var nttForm = (function($) {
 						dataType : 'json',
 						type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.bbsId + '/form/submit',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/submit',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -116,7 +116,7 @@ var nttForm = (function($) {
 						dataType : 'json',
 						type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.bbsId + '/form/delete',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/delete',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -137,7 +137,7 @@ var nttForm = (function($) {
 
 	var goList = function (){
 		var $listForm = $('#listForm');
-		$listForm.attr('action', '/' + options.bbsId + '/list');
+		$listForm.attr('action', '/' + options.lang + '/' + options.bbsId + '/list');
 		$listForm.submit();
 	};
 

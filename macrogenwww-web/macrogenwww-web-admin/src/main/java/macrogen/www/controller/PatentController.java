@@ -125,8 +125,9 @@ public class PatentController {
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
 
+		vo.setLangCode(langId.name());
+
 		if (StringUtils.isEmpty(vo.getPatentSn())) {
-			vo.setLangCode(langId.name());
 			patentService.insert(vo);
 		} else {
 			patentService.update(vo);

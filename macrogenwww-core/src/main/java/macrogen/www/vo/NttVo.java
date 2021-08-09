@@ -25,8 +25,10 @@ public class NttVo extends DefaultVo {
 	private String upendFixingYn;
 	private Long wrterSn;
 	private String wrterNm;
+	private String langCode;
 
 	private List<NttAtchVo> atchList;
+	private List<Long> nttSnList;
 
 	private Integer searchBbsCtgrySn;
 	private String searchExpsrYn;
@@ -114,5 +116,17 @@ public class NttVo extends DefaultVo {
 	}
 	public void setWrterNm(String wrterNm) {
 		this.wrterNm = wrterNm;
+	}
+	public String getLangCode() {
+		return langCode;
+	}
+	public void setLangCode(String langCode) {
+		this.langCode = langCode;
+	}
+	public List<Long> getNttSnList() {
+		return nttSnList;
+	}
+	public void setNttSnList(List<Long> nttSnList) {
+		this.nttSnList = nttSnList;
 	}
 }
