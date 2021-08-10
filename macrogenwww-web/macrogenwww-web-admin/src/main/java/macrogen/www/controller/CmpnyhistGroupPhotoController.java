@@ -19,42 +19,42 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.LangId;
+import macrogen.www.service.CmpnyhistGroupPhotoService;
 import macrogen.www.service.CmpnyhistGroupService;
-import macrogen.www.service.CmpnyhistService;
+import macrogen.www.vo.CmpnyhistGroupPhotoVo;
 import macrogen.www.vo.CmpnyhistGroupVo;
-import macrogen.www.vo.CmpnyhistVo;
 import macrogen.www.vo.MngrVo;
 
 /**
  * <pre>
  * macrogen.www.controller
- *    |_ CmpnyhistController.java
+ *    |_ CmpnyhistGroupPhotoController.java
  * 개요 :
  * </pre>
- * 1. 작성일 : 2021. 7. 30. 오후 12:55:28
+ * 1. 작성일 : 2021. 8. 9. 오후 6:37:25
  * 2. 작성자 : eluocnc
  * @version :
  */
 @Controller
-@RequestMapping("/{langId}/cmpnyhist")
-public class CmpnyhistController {
+@RequestMapping("/{langId}/cmpnyhist/group/photo")
+public class CmpnyhistGroupPhotoController {
 
 	@Autowired
-	private CmpnyhistService cmpnyhistService;
+	private CmpnyhistGroupPhotoService cmpnyhistGroupPhotoService;
 
 	@Autowired
 	private CmpnyhistGroupService cmpnyhistGroupService;
 
 	@RequestMapping("/list")
 	public String list(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo mngrVo,
-			@ModelAttribute("listVo") CmpnyhistVo listVo, Model model) throws Exception {
+			@ModelAttribute("listVo") CmpnyhistGroupPhotoVo listVo, Model model) throws Exception {
 
-		return "cmpnyhist/list";
+		return "cmpnyhist-group-photo/list";
 	}
 
 	@RequestMapping("/list/data")
 	@ResponseBody
-	public Map<String, Object> listData(@PathVariable LangId langId, @RequestBody CmpnyhistVo listVo) throws Exception {
+	public Map<String, Object> listData(@PathVariable LangId langId, @RequestBody CmpnyhistGroupPhotoVo listVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 
 		PaginationInfo paginationInfo = new PaginationInfo();
@@ -65,48 +65,43 @@ public class CmpnyhistController {
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
 
-		listVo.setLangCode(langId.toString());
-
-		List<CmpnyhistVo> resultList = cmpnyhistService.list(listVo);
-		paginationInfo.setTotalRecordCount(cmpnyhistService.count(listVo));
+		List<CmpnyhistGroupPhotoVo> resultList = cmpnyhistGroupPhotoService.list(listVo);
+		paginationInfo.setTotalRecordCount(cmpnyhistGroupPhotoService.count(listVo));
 
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
-		SimpleDateFormat format = new SimpleDateFormat("YYYY");
-		resultMap.put("currYear", format.format(new Date()));
+		List<CmpnyhistGroupVo> cmpnyhistGroupList =  cmpnyhistGroupService.allList();
+		resultMap.put("cmpnyhistGroupList", cmpnyhistGroupList);
 
 		return resultMap;
 	}
 
 	@RequestMapping("/form")
 	public String form(@PathVariable LangId langId,
-			@ModelAttribute("listVo") CmpnyhistVo listVo, Model model) throws Exception {
-		return "cmpnyhist/form";
+			@ModelAttribute("listVo") CmpnyhistGroupPhotoVo listVo, Model model) throws Exception {
+		return "cmpnyhist-group-photo/form";
 	}
 
-	@RequestMapping("/form/{cmpnyhistSn}")
-	public String form(@PathVariable LangId langId, @PathVariable Long cmpnyhistSn,
-			@ModelAttribute("listVo") CmpnyhistVo listVo, Model model) throws Exception {
-		return "cmpnyhist/form";
+	@RequestMapping("/form/{cmpnyhistGroupPhotoSn}")
+	public String form(@PathVariable LangId langId, @PathVariable Long cmpnyhistGroupPhotoSn,
+			@ModelAttribute("listVo") CmpnyhistGroupPhotoVo listVo, Model model) throws Exception {
+		return "cmpnyhist-group-photo/form";
 	}
 
 	@RequestMapping("/form/data")
 	@ResponseBody
 	public Map<String, Object> formData(@PathVariable LangId langId,
-			@RequestBody CmpnyhistVo vo) throws Exception {
+			@RequestBody CmpnyhistGroupPhotoVo vo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 
-		if (StringUtils.isEmpty(vo.getCmpnyhistSn())) {
-			CmpnyhistVo resultVo = new CmpnyhistVo();
+		if (StringUtils.isEmpty(vo.getCmpnyhistGroupPhotoSn())) {
+			CmpnyhistGroupPhotoVo resultVo = new CmpnyhistGroupPhotoVo();
 			resultMap.put("resultVo", resultVo);
 		} else {
-			CmpnyhistVo resultVo = cmpnyhistService.viewByPk(vo.getCmpnyhistSn());
+			CmpnyhistGroupPhotoVo resultVo = cmpnyhistGroupPhotoService.viewByPk(vo.getCmpnyhistGroupPhotoSn());
 			resultMap.put("resultVo", resultVo);
 		}
-
-		SimpleDateFormat format = new SimpleDateFormat("YYYY");
-		resultMap.put("currYear", format.format(new Date()));
 
 		List<CmpnyhistGroupVo> cmpnyhistGroupList =  cmpnyhistGroupService.allList();
 		resultMap.put("cmpnyhistGroupList", cmpnyhistGroupList);
@@ -118,17 +113,16 @@ public class CmpnyhistController {
 	@ResponseBody
 	public Map<String, Object> submit(@PathVariable LangId langId,
 			@AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody CmpnyhistVo vo) throws Exception {
+			@RequestBody CmpnyhistGroupPhotoVo vo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
 
-		if (StringUtils.isEmpty(vo.getCmpnyhistSn())) {
-			vo.setLangCode(langId.name());
-			cmpnyhistService.insert(vo);
+		if (StringUtils.isEmpty(vo.getCmpnyhistGroupPhotoSn())) {
+			cmpnyhistGroupPhotoService.insert(vo);
 		} else {
-			cmpnyhistService.update(vo);
+			cmpnyhistGroupPhotoService.update(vo);
 		}
 
 		return resultMap;
@@ -138,27 +132,24 @@ public class CmpnyhistController {
 	@ResponseBody
 	public Map<String, Object> delete(@PathVariable LangId langId,
 			@AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody CmpnyhistVo vo) throws Exception {
+			@RequestBody CmpnyhistGroupPhotoVo vo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
-		cmpnyhistService.delete(vo);
+		cmpnyhistGroupPhotoService.delete(vo);
 
 		resultMap.put("result", "success");
 		return resultMap;
 	}
 
-	@RequestMapping("/deleteList")
+	@RequestMapping("/saveSortOrders")
 	@ResponseBody
-	public Map<String, Object> deleteList(@AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody CmpnyhistVo vo) throws Exception {
-		Map<String, Object> resultMap = new HashMap<>();
+	public Map<String, Object> saveSortOrders(@PathVariable LangId langId,
+			@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody List<CmpnyhistGroupPhotoVo> resultList) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
-		if (null != vo.getCmpnyhistSnList()) {
-			for (Long cmpnyhistSn : vo.getCmpnyhistSnList()) {
-				CmpnyhistVo deleteVo = new CmpnyhistVo();
-				deleteVo.setCmpnyhistSn(cmpnyhistSn);
-				cmpnyhistService.delete(deleteVo);
-			}
+		for (CmpnyhistGroupPhotoVo result : resultList) {
+			cmpnyhistGroupPhotoService.updateSortOrder(result);
 		}
 
 		resultMap.put("result", "success");

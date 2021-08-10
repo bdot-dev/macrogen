@@ -29,6 +29,8 @@
 		<include refid="paging.countTop" />
 		select
 			tc.cmpnyhist_sn
+			, tc.cmpnyhist_group_sn
+			, '' cmpnyhist_group_disp_nm
 			, tc.lang_code
 			, tc.year
 			, tc.mt
@@ -46,11 +48,8 @@
 			<when test='orderBy == "regist_dt_desc"'>
 				order by tc.regist_dt desc, tc.cmpnyhist_sn desc
 			</when>
-			<when test='orderBy == "hist_desc"'>
-				order by tc.year desc, tc.mt desc
-			</when>
 			<otherwise>
-				order by tc.cmpnyhist_sn desc
+				order by tc.year desc, tc.mt desc
 			</otherwise>
 		</choose>
 		<include refid="paging.countBottom" />
@@ -59,6 +58,8 @@
 	<select id="view" parameterType="cmpnyhistVo" resultType="cmpnyhistVo">
 		select
 			tc.cmpnyhist_sn
+			, tc.cmpnyhist_group_sn
+			, '' cmpnyhist_group_disp_nm
 			, tc.lang_code
 			, tc.year
 			, tc.mt
@@ -80,6 +81,7 @@
 	<insert id="insert" parameterType="cmpnyhistVo">
 		insert into tb_cmpnyhist (
 			cmpnyhist_sn
+			, cmpnyhist_group_sn
 			, lang_code
 			, year
 			, mt
@@ -90,6 +92,7 @@
 			, updusr_sn
 		) values (
 			#{cmpnyhistSn}
+			, #{cmpnyhistGroupSn}
 			, #{langCode}
 			, #{year}
 			, #{mt}
@@ -110,6 +113,7 @@
 		set
 		    updt_dt = now()
 		    , updusr_sn = #{updusrSn}
+			<if test="cmpnyhistGroupSn != null">, cmpnyhist_group_sn = #{cmpnyhistGroupSn} </if>
 			<if test="langCode != null">, lang_code = #{langCode} </if>
 			<if test="year != null">, year = #{year} </if>
 			<if test="mt != null">, mt = #{mt} </if>

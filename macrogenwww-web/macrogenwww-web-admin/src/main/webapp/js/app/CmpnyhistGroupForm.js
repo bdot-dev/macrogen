@@ -1,4 +1,4 @@
-var CmpnyhistForm = (function($) {
+var CmpnyhistGroupForm = (function($) {
 	var options, $form;
 
 	var init = function(_options) {
@@ -11,12 +11,10 @@ var CmpnyhistForm = (function($) {
 		vue = new Vue({
 			el : '.vuelayer',
 			data : {
-				cmpnyhistSn : options.cmpnyhistSn,
+				cmpnyhistGroupSn : options.cmpnyhistGroupSn,
 				resultVo : {},
 				submitFlag : false,
-				mtList: ['01','02','03','04','05','06','07','08','09','10','11','12'],
 				currYear: '2021',
-				cmpnyhistGroupList: [],
 			},
 			computed: {
 				yearList: function() {
@@ -39,12 +37,11 @@ var CmpnyhistForm = (function($) {
 					var vm = this;
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/form/data',
-						data : JSON.stringify({ cmpnyhistSn : vm.cmpnyhistSn }),
+						url : '/' + options.lang + '/cmpnyhist/group/form/data',
+						data : JSON.stringify({ cmpnyhistGroupSn : vm.cmpnyhistGroupSn }),
 					}).done(function(data) {
 						vm.resultVo = data.resultVo;
 						vm.currYear = data.currYear;
-						vm.cmpnyhistGroupList = data.cmpnyhistGroupList;
 					});
 				},
 				onSubmit : function() {
@@ -67,7 +64,7 @@ var CmpnyhistForm = (function($) {
 
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/submit',
+						url : '/' + options.lang + '/cmpnyhist/group/submit',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -82,7 +79,7 @@ var CmpnyhistForm = (function($) {
 					}
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/delete',
+						url : '/' + options.lang + '/cmpnyhist/group/delete',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						goList();
@@ -90,35 +87,30 @@ var CmpnyhistForm = (function($) {
 				},
 				validate: function() {
 					var vm = this;
-					if (!vm.resultVo.cmpnyhistGroupSn) {
-						alert('필수입력 - 연혁 그룹');
-						vm.$refs.cmpnyhistGroupSn.focus();
+					if (!vm.resultVo.beginYear) {
+						alert('필수입력 - 시작연도');
+						vm.$refs.beginYear.focus();
 						return false;
 					}
-					if (!vm.resultVo.year) {
-						alert('필수입력 - 연도');
-						vm.$refs.year.focus();
+					if (!vm.resultVo.endYear) {
+						alert('필수입력 - 종료연도');
+						vm.$refs.endYear.focus();
 						return false;
 					}
-					if (!vm.resultVo.mt) {
-						alert('필수입력 - 월');
-						vm.$refs.mt.focus();
+					if (!vm.resultVo.groupnmKo) {
+						alert('필수입력 - 그룹명 국문');
+						vm.$refs.groupnmKo.focus();
 						return false;
 					}
-					if (!vm.resultVo.cn) {
-						alert('필수입력 - 내용');
-						vm.$refs.cn.focus();
+					if (!vm.resultVo.groupnmEn) {
+						alert('필수입력 - 그룹명 영문');
+						vm.$refs.groupnmEn.focus();
 						return false;
 					}
 					return true;
 				},
 				onList : function() {
 					goList();
-				},
-				groupDisplayNm: function(result) {
-					return "[" + result.beginYear + "-" +
-						(result.endYear == 'present' ? '현재' : result.endYear) + "] " +
-						result.groupnmKo;
 				},
 			},
 			updated : function() {
@@ -133,7 +125,7 @@ var CmpnyhistForm = (function($) {
 
 	var goList = function() {
 		var $listForm = $('#listForm');
-		$listForm.attr('action', '/' + options.lang + '/cmpnyhist/list');
+		$listForm.attr('action', '/' + options.lang + '/cmpnyhist/group/list');
 		$listForm.submit();
 	};
 

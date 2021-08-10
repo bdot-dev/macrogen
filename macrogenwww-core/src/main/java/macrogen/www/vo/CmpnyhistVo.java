@@ -15,6 +15,9 @@ import java.util.List;
 @SuppressWarnings("serial")
 public class CmpnyhistVo extends DefaultVo {
 	private Long cmpnyhistSn;
+	private Long cmpnyhistGroupSn;
+	private String cmpnyhistGroupDispNmKo;
+	private String cmpnyhistGroupDispNmEn;
 	private String langCode;
 	private String year;
 	private String mt;
@@ -73,5 +76,22 @@ public class CmpnyhistVo extends DefaultVo {
 	public void setCmpnyhistSnList(List<Long> cmpnyhistSnList) {
 		this.cmpnyhistSnList = cmpnyhistSnList;
 	}
-
+	public Long getCmpnyhistGroupSn() {
+		return cmpnyhistGroupSn;
+	}
+	public void setCmpnyhistGroupSn(Long cmpnyhistGroupSn) {
+		this.cmpnyhistGroupSn = cmpnyhistGroupSn;
+	}
+	public String getCmpnyhistGroupDispNmKo() {
+		return cmpnyhistGroupDispNmKo;
+	}
+	public void setCmpnyhistGroupDispNmKo(String cmpnyhistGroupDispNmKo) {
+		this.cmpnyhistGroupDispNmKo = cmpnyhistGroupDispNmKo;
+	}
+	public String getCmpnyhistGroupDispNmEn() {
+		return cmpnyhistGroupDispNmEn;
+	}
+	public void setCmpnyhistGroupDispNmEn(String cmpnyhistGroupDispNmEn) {
+		this.cmpnyhistGroupDispNmEn = cmpnyhistGroupDispNmEn;
+	}
 }

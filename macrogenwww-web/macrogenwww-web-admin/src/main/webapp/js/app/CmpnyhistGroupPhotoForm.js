@@ -1,4 +1,4 @@
-var CmpnyhistForm = (function($) {
+var CmpnyhistGroupPhotoForm = (function($) {
 	var options, $form;
 
 	var init = function(_options) {
@@ -11,24 +11,10 @@ var CmpnyhistForm = (function($) {
 		vue = new Vue({
 			el : '.vuelayer',
 			data : {
-				cmpnyhistSn : options.cmpnyhistSn,
+				cmpnyhistGroupPhotoSn : options.cmpnyhistGroupPhotoSn,
 				resultVo : {},
 				submitFlag : false,
-				mtList: ['01','02','03','04','05','06','07','08','09','10','11','12'],
-				currYear: '2021',
 				cmpnyhistGroupList: [],
-			},
-			computed: {
-				yearList: function() {
-					var vm = this;
-					var ret = [];
-					var i = 0;
-					while (1997 <= vm.currYear - i) {
-						ret.push(vm.currYear - i);
-						i ++;
-					}
-					return ret;
-				},
 			},
 			created : function() {
 				var vm = this;
@@ -39,11 +25,12 @@ var CmpnyhistForm = (function($) {
 					var vm = this;
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/form/data',
-						data : JSON.stringify({ cmpnyhistSn : vm.cmpnyhistSn }),
+						url : '/' + options.lang + '/cmpnyhist/group/photo/form/data',
+						data : JSON.stringify({
+							cmpnyhistGroupPhotoSn : vm.cmpnyhistGroupPhotoSn,
+						}),
 					}).done(function(data) {
 						vm.resultVo = data.resultVo;
-						vm.currYear = data.currYear;
 						vm.cmpnyhistGroupList = data.cmpnyhistGroupList;
 					});
 				},
@@ -67,7 +54,7 @@ var CmpnyhistForm = (function($) {
 
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/submit',
+						url : '/' + options.lang + '/cmpnyhist/group/photo/submit',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -82,7 +69,7 @@ var CmpnyhistForm = (function($) {
 					}
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.lang + '/cmpnyhist/delete',
+						url : '/' + options.lang + '/cmpnyhist/group/photo/delete',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						goList();
@@ -95,25 +82,38 @@ var CmpnyhistForm = (function($) {
 						vm.$refs.cmpnyhistGroupSn.focus();
 						return false;
 					}
-					if (!vm.resultVo.year) {
-						alert('필수입력 - 연도');
-						vm.$refs.year.focus();
+					if (!vm.resultVo.photoAtchId) {
+						alert('필수입력 - 사진');
 						return false;
 					}
-					if (!vm.resultVo.mt) {
-						alert('필수입력 - 월');
-						vm.$refs.mt.focus();
+					if (!vm.resultVo.photoSjKo) {
+						alert('필수입력 - 이미지 제목 국문');
+						vm.$refs.photoSjKo.focus();
 						return false;
 					}
-					if (!vm.resultVo.cn) {
-						alert('필수입력 - 내용');
-						vm.$refs.cn.focus();
+					if (!vm.resultVo.photoSjEn) {
+						alert('필수입력 - 이미지 제목 영문');
+						vm.$refs.photoSjEn.focus();
 						return false;
 					}
 					return true;
 				},
 				onList : function() {
 					goList();
+				},
+
+				onchangePhotoFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.photoAtchId = data.resultVo.atchId;
+						vm.resultVo.photoFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeletePhoto : function() {
+					var vm = this;
+					vm.resultVo.photoAtchId = null;
+					vm.resultVo.photoFlpth = null;
 				},
 				groupDisplayNm: function(result) {
 					return "[" + result.beginYear + "-" +
@@ -133,7 +133,7 @@ var CmpnyhistForm = (function($) {
 
 	var goList = function() {
 		var $listForm = $('#listForm');
-		$listForm.attr('action', '/' + options.lang + '/cmpnyhist/list');
+		$listForm.attr('action', '/' + options.lang + '/cmpnyhist/group/photo/list');
 		$listForm.submit();
 	};
 
