@@ -46,5 +46,6 @@
 		<typeAlias alias="cmpnyhistGroupPhotoVo" type="macrogen.www.vo.CmpnyhistGroupPhotoVo"/>
 
 		<typeAlias alias="policyVo" type="macrogen.www.vo.PolicyVo"/>
+		<typeAlias alias="empaVo" type="macrogen.www.vo.EmpaVo"/>
 	</typeAliases>
 </configuration>

@@ -28,5 +28,5 @@ public interface WnpzService {
 
 	void update(WnpzVo vo) throws Exception;
 
-	WnpzVo viewByPk(Long wnpzSn) throws Exception;
+	WnpzVo viewByPk(Long sn) throws Exception;
 }

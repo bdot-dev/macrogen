@@ -10,18 +10,26 @@
 		<div class="search_wrap">
 			<fieldset>
 				<div class="list_wrap">
-					<span v-for="(result, index) in wnpzClCodeList">
-						<input type="checkbox" v-model="listVo.searchWnpzClCodeList" :value="result.code"
-							name="searchWnpzClCodeList" :id="'wnpzClCode' + index">
-							<label :for="'wnpzClCode' + index">{{ result.codeNm${lang} }}</label>
-					</span>
+					<strong>기간</strong>
+					<select v-model="listVo.periodSearchCondition" style="width:200px;">
+						<option :value="'updt_dt'" v-text="'최종수정일'" />
+						<option :value="'thesis_year'" v-text="'접수기간'" />
+					</select>
+					<vue-datepicker v-model="listVo.searchBeginDt" buttonimage="/images/calendar.png"
+						id="searchBeginDt" name="searchBeginDt"></vue-datepicker> -
+					<vue-datepicker v-model="listVo.searchEndDt" buttonimage="/images/calendar.png"
+						id="searchEndDt" name="searchEndDt"></vue-datepicker>
 				</div>
 				<div class="list_wrap">
-					<select v-model="listVo.searchWnpzTmeCode" name="searchWnpzTmeCode" style="width:200px;">
-						<option :value="null">전체 회차</option>
-						<option v-for="(result, index) in wnpzTmeCodeList"
-							:value="result.code" v-text="result.codeNm${lang }"/>
+					<strong>접수상태</strong>
+					<select v-model="listVo.searchRceptSttusCode" name="searchRceptSttusCode" style="width:200px;">
+						<option :value="null">전체</option>
+						<option v-for="(result, index) in rceptSttusCodeList"
+							:value="result.code" v-text="result.codeNm"/>
 					</select>
+				</div>
+				<div class="list_wrap">
+					<strong>검색어</strong>
 					<input type="text" name="searchKeyword" id="searchKeyword" class="mr5" style="width:200px;"
 						maxlength="50" v-model="listVo.searchKeyword" v-on:keydown.enter="onSearch" />
 					<input type="text" style="display: none;">
@@ -66,12 +74,12 @@
 						<td>
 							<input type="checkbox" v-model="checkedPkList"
 								name="pkList" :id="'pkList_' + index"
-								:value="result.wnpzSn">
+								:value="result.empaSn">
 						</td>
-						<td>{{ result.wnpzClCodeNm${lang} }}</td>
-						<td>{{ result.wnpzTmeCodeNm${lang} }}</td>
-						<td class="tal"><a v-on:click="onViewLink(result.wnpzSn)"
-							href="javascript:;">{{ result.wnpzNm }}</a></td>
+						<td>{{ result.empaClCodeNm${lang} }}</td>
+						<td>{{ result.empaTmeCodeNm${lang} }}</td>
+						<td class="tal"><a v-on:click="onViewLink(result.empaSn)"
+							href="javascript:;">{{ result.empaNm }}</a></td>
 						<td>{{ result.updusrNm }}</td>
 						<td>{{ result.updtDt | timeToDate('YYYY-MM-DD HH:mm') }}</td>
 					</tr>
@@ -101,25 +109,26 @@
 
 
 	<script src="/js/vueComponent/vue-pagination.js"></script>
-	<script src="/js/app/WnpzList.js"></script>
+	<script src="/js/app/EmpaList.js"></script>
 	<script>
 	$(function () {
-		var searchWnpzClCodeList = [];
-		<c:forEach var="result" items="${listVo.searchWnpzClCodeList }">
-			searchWnpzClCodeList.push('${result }')
-		</c:forEach>
-
 		var listVo = {
 			pageIndex : ${ listVo.pageIndex },
 			recordCountPerPage : 10,
-			searchWnpzClCodeList: searchWnpzClCodeList,
-			searchWnpzTmeCode: ${ empty listVo.searchWnpzTmeCode ? 'null' : "'".concat(listVo.searchWnpzTmeCode).concat("'") },
+			periodSearchCondition: '${ empty listVo.periodSearchCondition ? "thesis_year" : listVo.periodSearchCondition }',
+			<c:if test="${!empty listVo.searchBeginDt}">
+				searchBeginDt : '<fmt:formatDate value="${listVo.searchBeginDt}" pattern="yyyy-MM-dd"/>',
+			</c:if>
+			<c:if test="${!empty listVo.searchEndDt}">
+				searchEndDt: '<fmt:formatDate value="${listVo.searchEndDt}" pattern="yyyy-MM-dd"/>',
+			</c:if>
+			searchRceptSttusCode: ${ empty listVo.searchRceptSttusCode ? 'null' : "'".concat(listVo.searchRceptSttusCode).concat("'") },
 			searchKeyword : '${ listVo.searchKeyword }',
 		}
 		var options = { listVo: listVo };
 		options.lang = '${langId}';
 		options.Lang = '${lang}';
-		WnpzList.init(options);
+		EmpaList.init(options);
 	});
 	function vueUpdated(vm) {
 		console.log('vueUpdated')

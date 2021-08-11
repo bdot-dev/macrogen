@@ -58,9 +58,9 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 	}
 
 	@Override
-	public WnpzVo viewByPk(Long wnpzSn) throws Exception {
+	public WnpzVo viewByPk(Long sn) throws Exception {
 		WnpzVo vo = new WnpzVo();
-		vo.setWnpzSn(wnpzSn);
+		vo.setWnpzSn(sn);
 		return view(vo);
 	}
 
