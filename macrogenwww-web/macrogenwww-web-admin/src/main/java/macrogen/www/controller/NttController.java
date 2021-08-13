@@ -125,6 +125,10 @@ public class NttController {
 		// 코드목록 : 노출여부
 		resultMap.put("expsrYnList", codeService.listByCodeSe("EXPSR_YN"));
 
+		// 상단고정 목록
+		List<NttVo> upendFixingList = nttService.upendFixingList(langId.name(), bbsId);
+		resultMap.put("upendFixingList", upendFixingList);
+
 		return resultMap;
 	}
 
@@ -208,6 +212,8 @@ public class NttController {
 		// 코드목록 : 노출여부
 		resultMap.put("expsrYnList", codeService.listByCodeSe("EXPSR_YN"));
 
+		// 코드목록 : 기본이미지 목록
+		resultMap.put("thumbBassImageCodeList", codeService.listByCodeSe("THUMB_BASS_IMAGE_CODE"));
 
 		return resultMap;
 	}

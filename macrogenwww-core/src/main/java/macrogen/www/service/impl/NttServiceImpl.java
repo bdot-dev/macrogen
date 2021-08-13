@@ -94,4 +94,14 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 		nttMapper.increaseRdcnt(nttVo);
 	}
 
+	@Override
+	public List<NttVo> upendFixingList(String langCode, String bbsId) throws Exception {
+		NttVo nttVo = new NttVo();
+		nttVo.setFirstIndex(-1);
+		nttVo.setLangCode(langCode);
+		nttVo.setBbsId(bbsId);
+		nttVo.setUpendFixingYn("Y");
+		return nttMapper.list(nttVo);
+	}
+
 }

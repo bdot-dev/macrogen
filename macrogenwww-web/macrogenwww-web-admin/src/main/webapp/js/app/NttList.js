@@ -19,6 +19,7 @@ var nttList = (function($) {
 				bbsCtgryList : [],
 				expsrYnList : [],
 				checkedPkList: [],
+				upendFixingList: [],
 			},
 			created : function (){
 				var vm = this;
@@ -40,6 +41,7 @@ var nttList = (function($) {
 						vm.recordCountPerPageList = data.recordCountPerPageList;
 						vm.bbsCtgryList = data.bbsCtgryList;
 						vm.expsrYnList = data.expsrYnList;
+						vm.upendFixingList = data.upendFixingList;
 					});
 				},
 				onSearch : function() {

@@ -16,7 +16,8 @@ var nttForm = (function($) {
 				resultVo : {},
 				bbsCtgryList: [],
 				expsrYnList: [],
-				submitFlag : false
+				submitFlag : false,
+				thumbBassImageCodeList: [],
 			},
 			created : function (){
 				var vm = this;
@@ -35,6 +36,7 @@ var nttForm = (function($) {
 						vm.resultVo = data.resultVo;
 						vm.bbsCtgryList = data.bbsCtgryList;
 						vm.expsrYnList = data.expsrYnList;
+						vm.thumbBassImageCodeList = data.thumbBassImageCodeList;
 					});
 				},
 				onList : function() {
@@ -68,6 +70,20 @@ var nttForm = (function($) {
 					$form.validate(options.validateOptions);
 					if (!$form.valid()) {
 						return false;
+					}
+
+					if (vm.$refs.thumbBassImageUseYn) {
+						if ('Y' == vm.resultVo.thumbBassImageUseYn) {
+							if (!vm.resultVo.thumbBassImageCode) {
+								alert('필수 입력 - 리스트이미지');
+								return false;
+							}
+						} else {
+							if (!vm.resultVo.thumbAtchId) {
+								alert('필수 입력 - 리스트이미지');
+								return false;
+							}
+						}
 					}
 
 					if (CKEDITOR) {
@@ -124,7 +140,20 @@ var nttForm = (function($) {
 						alert('삭제되었습니다.');
 						goList();
 					});
-				}
+				},
+				onchangeThumbFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.thumbAtchId = data.resultVo.atchId;
+						vm.resultVo.thumbFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeleteThumb : function() {
+					var vm = this;
+					vm.resultVo.thumbAtchId = null;
+					vm.resultVo.thumbFlpth = null;
+				},
 			},
 			updated : function () {
 				var vm = this;

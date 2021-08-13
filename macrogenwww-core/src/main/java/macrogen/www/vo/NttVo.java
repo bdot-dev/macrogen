@@ -27,6 +27,15 @@ public class NttVo extends DefaultVo {
 	private String wrterNm;
 	private String langCode;
 
+	private String nmbrWrterNm;
+	private String mbtlnum;
+	private String thumbBassImageUseYn;
+	private String thumbAtchId;
+	private String thumbFlpth;
+	private String thumbBassImageCode;
+	private String thumbBassImageCodeNm;
+	private String mvpUrl;
+
 	private List<NttAtchVo> atchList;
 	private List<Long> nttSnList;
 
@@ -129,4 +138,53 @@ public class NttVo extends DefaultVo {
 	public void setNttSnList(List<Long> nttSnList) {
 		this.nttSnList = nttSnList;
 	}
+	public String getMbtlnum() {
+		return mbtlnum;
+	}
+	public void setMbtlnum(String mbtlnum) {
+		this.mbtlnum = mbtlnum;
+	}
+	public String getThumbBassImageUseYn() {
+		return thumbBassImageUseYn;
+	}
+	public void setThumbBassImageUseYn(String thumbBassImageUseYn) {
+		this.thumbBassImageUseYn = thumbBassImageUseYn;
+	}
+	public String getThumbAtchId() {
+		return thumbAtchId;
+	}
+	public void setThumbAtchId(String thumbAtchId) {
+		this.thumbAtchId = thumbAtchId;
+	}
+	public String getThumbFlpth() {
+		return thumbFlpth;
+	}
+	public void setThumbFlpth(String thumbFlpth) {
+		this.thumbFlpth = thumbFlpth;
+	}
+	public String getThumbBassImageCode() {
+		return thumbBassImageCode;
+	}
+	public void setThumbBassImageCode(String thumbBassImageCode) {
+		this.thumbBassImageCode = thumbBassImageCode;
+	}
+	public String getThumbBassImageCodeNm() {
+		return thumbBassImageCodeNm;
+	}
+	public void setThumbBassImageCodeNm(String thumbBassImageCodeNm) {
+		this.thumbBassImageCodeNm = thumbBassImageCodeNm;
+	}
+	public String getMvpUrl() {
+		return mvpUrl;
+	}
+	public void setMvpUrl(String mvpUrl) {
+		this.mvpUrl = mvpUrl;
+	}
+	public String getNmbrWrterNm() {
+		return nmbrWrterNm;
+	}
+	public void setNmbrWrterNm(String nmbrWrterNm) {
+		this.nmbrWrterNm = nmbrWrterNm;
+	}
+
 }
