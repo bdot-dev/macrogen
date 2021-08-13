@@ -8,7 +8,7 @@
 		</if>
 		<if test="searchBeginDt != null">
 			<if test='periodSearchCondition == "updt_dt"'>
-				AND tt.updt_dt <![CDATA[>=]]> DATE(#{searchEndDt})
+				AND tt.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
 			</if>
 			<if test='periodSearchCondition == "thesis_year"'>
 				AND DATE_FORMAT(#{searchBeginDt}, '%Y%m') <![CDATA[<=]]> concat(regist_year, regist_mt)

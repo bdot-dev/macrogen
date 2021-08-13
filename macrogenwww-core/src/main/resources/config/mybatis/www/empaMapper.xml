@@ -6,6 +6,32 @@
 		<if test="langCode != null and langCode != ''">
 			and te.lang_code = #{langCode}
 		</if>
+		<if test="searchRceptSttusCode != null and searchRceptSttusCode != ''">
+			and te.rcept_sttus_code = #{searchRceptSttusCode}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and te.empa_sj like concat('%', #{searchKeyword}, '%')
+		</if>
+
+		<if test="searchBeginDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND te.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+			</if>
+			<if test='periodSearchCondition == "rcept_period"'>
+				AND ( te.rcept_begin_de <![CDATA[>=]]> DATE(#{searchBeginDt}) OR
+						te.rcept_end_de <![CDATA[>=]]> DATE(#{searchBeginDt}) )
+			</if>
+		</if>
+		<if test="searchEndDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND te.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+			</if>
+			<if test='periodSearchCondition == "rcept_period"'>
+				AND ( te.rcept_begin_de <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY) OR
+						te.rcept_end_de <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY) )
+			</if>
+		</if>
+
 	</sql>
 
 	<select id="count" parameterType="empaVo" resultType="int">
@@ -81,6 +107,7 @@
 	<insert id="insert" parameterType="empaVo">
 		insert into tb_empa (
 			empa_sn
+			, lang_code
 			, empa_sj
 			, rcept_begin_de
 			, rcept_end_de
@@ -94,6 +121,7 @@
 			, updusr_sn
 		) values (
 			#{empaSn}
+			, #{langCode}
 			, #{empaSj}
 			, #{rceptBeginDe}
 			, #{rceptEndDe}

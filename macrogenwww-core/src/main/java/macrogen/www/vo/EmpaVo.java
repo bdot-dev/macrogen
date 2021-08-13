@@ -27,7 +27,7 @@ public class EmpaVo extends DefaultVo {
 	private String rceptSttusCode;
 	private String rceptSttusCodeNm;
 	private String sportSeCode;
-	private String sportSeNm;
+	private String sportSeCodeNm;
 	private String atchId;
 	private String logicNm;
 	private String empaCn;
@@ -79,11 +79,11 @@ public class EmpaVo extends DefaultVo {
 	public void setSportSeCode(String sportSeCode) {
 		this.sportSeCode = sportSeCode;
 	}
-	public String getSportSeNm() {
-		return sportSeNm;
+	public String getSportSeCodeNm() {
+		return sportSeCodeNm;
 	}
-	public void setSportSeNm(String sportSeNm) {
-		this.sportSeNm = sportSeNm;
+	public void setSportSeCodeNm(String sportSeCodeNm) {
+		this.sportSeCodeNm = sportSeCodeNm;
 	}
 	public String getAtchId() {
 		return atchId;

@@ -16,6 +16,7 @@ var EmpaList = (function($) {
 				paginationInfo : {},
 				rceptSttusCodeList: [],
 				checkedPkList: [],
+				applFormVo: [],
 			},
 			created : function() {
 				var vm = this;
@@ -33,6 +34,7 @@ var EmpaList = (function($) {
 						vm.resultList = data.resultList;
 						vm.paginationInfo = data.paginationInfo;
 						vm.rceptSttusCodeList = data.rceptSttusCodeList;
+						vm.applFormVo = data.applFormVo;
 					});
 				},
 				onSearch : function() {
@@ -86,6 +88,70 @@ var EmpaList = (function($) {
 						vm.checkedPkList = [];
 					});
 
+				},
+				onchangeApplFormWordFile: function(e) {
+					var vm = this;
+					uploadFile($form, $(e.target), function(data) {
+						vm.applFormVo.applFormWordAtchId = data.resultVo.atchId;
+						vm.applFormVo.applFormWordLogicNm = data.resultVo.logicNm;
+					});
+				},
+				onchangeApplFormHwpFile: function(e) {
+					var vm = this;
+					uploadFile($form, $(e.target), function(data) {
+						vm.applFormVo.applFormHwpAtchId = data.resultVo.atchId;
+						vm.applFormVo.applFormHwpLogicNm = data.resultVo.logicNm;
+					});
+				},
+
+				onSaveApplForm: function() {
+					var vm = this;
+					if (vm.submitFlag) {
+						alert('처리중입니다....');
+						return false;
+					}
+
+					// validate
+					if (!vm.validate()) {
+						return false;
+					}
+
+					if (!confirm('저장하시겠습니까?')) {
+						return false;
+					} else {
+						vm.submitFlag = true;
+					}
+
+					$.ajax({dataType : 'json', type : 'post',
+						contentType : 'application/json',
+						url : '/' + options.lang + '/empa/save-appl-form',
+						data : JSON.stringify(vm.applFormVo),
+					}).done(function(data) {
+						vm.submitFlag = false;
+						alert('저장되었습니다.');
+					});
+				},
+				validate: function() {
+					return true;
+				},
+
+				onDownloadApplFormWord: function() {
+					var vm = this;
+					location.href = '/download/file/' + vm.applFormVo.applFormWordAtchId;
+				},
+				onDeleteApplFormWord: function() {
+					var vm = this;
+						vm.applFormVo.applFormWordAtchId = null;
+						vm.applFormVo.applFormWordLogicNm = null;
+				},
+				onDownloadApplFormHwp: function() {
+					var vm = this;
+					location.href = '/download/file/' + vm.applFormVo.applFormHwpAtchId;
+				},
+				onDeleteApplFormHwp: function() {
+					var vm = this;
+					vm.applFormVo.applFormHwpAtchId = null;
+					vm.applFormVo.applFormHwpLogicNm = null;
 				},
 			},
 			updated : function() {

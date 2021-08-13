@@ -19,9 +19,13 @@ import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
+import macrogen.www.service.SetupService;
+import macrogen.www.vo.ApplFormVo;
+import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.EmpaVo;
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.SetupVo;
 
 /**
  * <pre>
@@ -42,6 +46,9 @@ public class EmpaController {
 
 	@Autowired
 	private CodeService codeService;
+
+	@Autowired
+	private SetupService setupService;
 
 	@RequestMapping("/list")
 	public String list(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo mngrVo,
@@ -78,6 +85,20 @@ public class EmpaController {
 		// 지원구분목록
 		List<CodeVo> sportSeCodeList = codeService.listByCodeSe("SPORT_SE_CODE");
 		resultMap.put("sportSeCodeList", sportSeCodeList);
+
+		// 지원양식
+		ApplFormVo applFormVo = new ApplFormVo();
+		AtchVo wordAtchVo = setupService.getApplFormWordAtchVo();
+		if (null != wordAtchVo) {
+			applFormVo.setApplFormWordAtchId(wordAtchVo.getAtchId());
+			applFormVo.setApplFormWordLogicNm(wordAtchVo.getLogicNm());
+		}
+		AtchVo hwpAtchVo = setupService.getApplFormHwpAtchVo();
+		if (null != hwpAtchVo) {
+			applFormVo.setApplFormHwpAtchId(hwpAtchVo.getAtchId());
+			applFormVo.setApplFormHwpLogicNm(hwpAtchVo.getLogicNm());
+		}
+		resultMap.put("applFormVo", applFormVo);
 
 		return resultMap;
 	}
@@ -167,6 +188,19 @@ public class EmpaController {
 		}
 
 		resultMap.put("result", "success");
+		return resultMap;
+	}
+
+	@RequestMapping("/save-appl-form")
+	@ResponseBody
+	public Map<String, Object> saveApplForm(@PathVariable LangId langId,
+			@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody ApplFormVo applFormVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		setupService.update("APPL_FORM_WORD", applFormVo.getApplFormWordAtchId());
+		setupService.update("APPL_FORM_HWP", applFormVo.getApplFormHwpAtchId());
+
 		return resultMap;
 	}
 

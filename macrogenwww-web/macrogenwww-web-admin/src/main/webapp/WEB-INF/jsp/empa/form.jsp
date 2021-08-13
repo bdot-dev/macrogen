@@ -67,7 +67,7 @@
 						</tr>
 
 						<tr>
-							<th>첨부파일 <span>*</span></th>
+							<th>첨부파일 </th>
 							<td colspan="3" class="tal">
 								<div>
 									<input type="file" name="atchFile" v-on:change="onchangeAtchFile" />

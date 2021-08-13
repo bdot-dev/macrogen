@@ -85,28 +85,21 @@ var EmpaForm = (function($) {
 				},
 				validate: function() {
 					var vm = this;
-					if (!vm.resultVo.empaClCode) {
-						alert('필수입력 - 수상분류');
-						vm.$refs.empaClCode.focus();
+					if (!vm.resultVo.empaSj) {
+						alert('필수입력 - 제목');
+						vm.$refs.empaSj.focus();
 						return false;
 					}
-					if (!vm.resultVo.empaTmeCode) {
-						alert('필수입력 - 수상회차');
-						vm.$refs.empaTmeCode.focus();
+					if (!vm.resultVo.rceptBeginDe || !vm.resultVo.rceptEndDe) {
+						alert('필수입력 - 접수기간');
 						return false;
 					}
-					if (!vm.resultVo.photoAtchId) {
-						alert('필수입력 - 사진');
+					if (!vm.resultVo.rceptSttusCode) {
+						alert('필수입력 - 접수상태');
 						return false;
 					}
-					if (!vm.resultVo.empaNm) {
-						alert('필수입력 - 수상자명');
-						vm.$refs.empaNm.focus();
-						return false;
-					}
-					if (!vm.resultVo.rm) {
-						alert('필수입력 - 간단설명');
-						vm.$refs.rm.focus();
+					if (!vm.resultVo.sportSeCode) {
+						alert('필수입력 - 지원구분');
 						return false;
 					}
 					return true;
@@ -129,7 +122,7 @@ var EmpaForm = (function($) {
 				},
 				onDownloadAtch: function(){
 					var vm = this;
-					console.log(vm.resultVo.atchId, vm.resultVo.logicNm);
+					location.href = '/download/file/' + vm.resultVo.atchId;
 				}
 
 			},
