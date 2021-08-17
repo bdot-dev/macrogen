@@ -15,6 +15,8 @@ public class BbsCtgryVo extends DefaultVo {
 
 	private Long bbsCtgrySn;
 	private String bbsCtgryNm;
+	private String bbsCtgryNmKo;
+	private String bbsCtgryNmEn;
 	private Integer sortOrdr;
 	private String bbsId;
 
@@ -42,6 +44,16 @@ public class BbsCtgryVo extends DefaultVo {
 	public void setBbsId(String bbsId) {
 		this.bbsId = bbsId;
 	}
-
-
+	public String getBbsCtgryNmKo() {
+		return bbsCtgryNmKo;
+	}
+	public void setBbsCtgryNmKo(String bbsCtgryNmKo) {
+		this.bbsCtgryNmKo = bbsCtgryNmKo;
+	}
+	public String getBbsCtgryNmEn() {
+		return bbsCtgryNmEn;
+	}
+	public void setBbsCtgryNmEn(String bbsCtgryNmEn) {
+		this.bbsCtgryNmEn = bbsCtgryNmEn;
+	}
 }
