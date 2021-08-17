@@ -17,7 +17,7 @@
 	<!-- DataSource -->
 	<bean id="dataSource-macrogenwww" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://192.168.1.38:3306/macrogenwww" />
+		<property name="url" value="jdbc:mysql://211.110.58.242:23306/macrogenwww" />
 		<property name="username" value="macrogenwww"/>
 		<property name="password" value="Macrogenwww123!@#"/>
 	</bean>
