@@ -18,6 +18,7 @@ import org.springframework.util.StringUtils;
 @SuppressWarnings("serial")
 public class PopupVo extends DefaultVo {
 	private Long popupSn;
+	private String langCode;
 	private String popupNm;
 	private Date popupBeginDt;
 	private Date popupEndDt;
@@ -199,5 +200,11 @@ public class PopupVo extends DefaultVo {
 	}
 	public void setPopupEndHour(String popupEndHour) {
 		this.popupEndHour = popupEndHour;
+	}
+	public String getLangCode() {
+		return langCode;
+	}
+	public void setLangCode(String langCode) {
+		this.langCode = langCode;
 	}
 }

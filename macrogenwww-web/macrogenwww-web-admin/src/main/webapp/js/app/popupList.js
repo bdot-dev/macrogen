@@ -30,7 +30,7 @@ var popupList = (function($) {
 						dataType : 'json',
 						type : 'POST',
 						contentType : 'application/json',
-						url : '/popup/list/data',
+						url : '/' + options.lang + '/popup/list/data',
 						data : JSON.stringify(vm.listVo)
 					}).done(function (data){
 						vm.resultList = data.resultList;
@@ -61,17 +61,19 @@ var popupList = (function($) {
 				},
 				onAdd : function (){
 					$form.attr({
-						action: '/popup/form',
+						action: '/' + options.lang + '/popup/form',
 						method : 'POST'
 					}).submit();
 				},
 				onSaveSort : function (){
 					var vm = this;
+					if (!vm.resultList || vm.resultList.length <= 0) return;
+
 					$.ajax({
 						dataType : 'json',
 						type : 'POST',
 						contentType : 'application/json',
-						url : '/popup/sortSave',
+						url : '/' + options.lang + '/popup/sortSave',
 						data : JSON.stringify(vm.resultList)
 					}).done(function (data){
 						alert('노출순서가 저장되었습니다.');
@@ -79,7 +81,7 @@ var popupList = (function($) {
 				},
 				onClickView : function (sn){
 					$form.attr({
-						action: '/popup/form/' + sn,
+						action: '/' + options.lang + '/popup/form/' + sn,
 						method : 'POST'
 					}).submit();
 				},

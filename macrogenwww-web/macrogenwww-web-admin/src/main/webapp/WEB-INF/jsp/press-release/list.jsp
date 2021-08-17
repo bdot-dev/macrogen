@@ -41,6 +41,7 @@
 			<table class="table_col">
 				<colgroup>
 					<col width="60px">
+					<col width="150px">
 					<col width="">
 					<col width="150px">
 					<col width="150px">

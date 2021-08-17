@@ -32,34 +32,30 @@
 						<tr>
 							<th>이름</th>
 							<td class="tal">
-								{{ resultVo.nmbrWrterNm }}
-								<%-- <div class="lbMaxlenPrnt">
+								<div class="lbMaxlenPrnt">
 									<input type="text" v-model="resultVo.nmbrWrterNm" class="mr5 txtMaxlen" maxlength="80" style="width:100%;"/>
-								</div> --%>
+								</div>
 							</td>
 							<th>휴대폰 번호</th>
 							<td class="tal">
-								{{ resultVo.mbtlnum }}
-								<%-- <div class="lbMaxlenPrnt">
+								<div class="lbMaxlenPrnt">
 									<input type="text" v-model="resultVo.mbtlnum" class="mr5 txtMaxlen" maxlength="80" style="width:100%;"/>
-								</div> --%>
+								</div>
 							</td>
 						</tr>
 						<tr>
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
-								{{ resultVo.nttSj }}
-								<%-- <div class="lbMaxlenPrnt">
+								<div class="lbMaxlenPrnt">
 									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="80" placeholder="제목" style="width:100%;"/>
-								</div> --%>
+								</div>
 							</td>
 						</tr>
 						<tr>
 							<th>내용 <span>*</span></th>
 							<td colspan="3" class="tal">
-								<span v-html="enterToBr(resultVo.nttCn)" />
-								<%-- <div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttCn" name="nttCn"
-									placeholder="내용" class="w100p" style="height:250px;"></textarea></div> --%>
+								<div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttCn" name="nttCn"
+									placeholder="내용" class="w100p" style="height:250px;"></textarea></div>
 							</td>
 						</tr>
 					</tbody>

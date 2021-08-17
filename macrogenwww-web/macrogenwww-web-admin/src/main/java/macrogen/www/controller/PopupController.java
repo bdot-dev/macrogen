@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.PopupService;
 import macrogen.www.vo.MngrVo;
@@ -32,7 +33,7 @@ import macrogen.www.vo.PopupVo;
  * @version :
  */
 @Controller
-@RequestMapping("/popup")
+@RequestMapping("/{langId}/popup")
 public class PopupController {
 
 	@Resource(name="popupService")
@@ -55,7 +56,7 @@ public class PopupController {
 	 * @throws Exception
 	 */
 	@RequestMapping("/list")
-	public String list(@AuthenticationPrincipal MngrVo loginVo,
+	public String list(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@ModelAttribute("listVo") PopupVo listVo, Model model) throws Exception{
 //		model.addAttribute("listVo", listVo);
 		return "popup/list";
@@ -75,7 +76,7 @@ public class PopupController {
 	 */
 	@RequestMapping("/list/data")
 	@ResponseBody
-	public Map<String, Object> listData(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> listData(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody PopupVo listVo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
@@ -87,6 +88,7 @@ public class PopupController {
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
 
+		listVo.setLangCode(langId.name());
 		List<PopupVo> resultList = popupService.list(listVo);
 		if( null != resultList && resultList.size() > 0 ) {
 			paginationInfo.setTotalRecordCount(popupService.count(listVo));
@@ -121,7 +123,7 @@ public class PopupController {
 	 */
 	@RequestMapping("/sortSave")
 	@ResponseBody
-	public Map<String, Object> sortSave(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> sortSave(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody List<PopupVo> popupList) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
@@ -146,7 +148,7 @@ public class PopupController {
 	 * @throws Exception
 	 */
 	@RequestMapping("/form")
-	public String form(@AuthenticationPrincipal MngrVo loginVo,
+	public String form(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@ModelAttribute("listVo") PopupVo listVo, Model model) throws Exception{
 		return "popup/form";
 	}
@@ -165,7 +167,7 @@ public class PopupController {
 	 * @throws Exception
 	 */
 	@RequestMapping("/form/{popupSn}")
-	public String formUpdate(@AuthenticationPrincipal MngrVo loginVo,
+	public String formUpdate(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@PathVariable Long popupSn, Model model, @ModelAttribute("listVo") PopupVo listVo) throws Exception{
 		model.addAttribute("popupSn", popupSn);
 		return "popup/form";
@@ -185,7 +187,7 @@ public class PopupController {
 	 */
 	@RequestMapping("/form/data")
 	@ResponseBody
-	public Map<String, Object> viewData(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> viewData(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody PopupVo popupVo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
@@ -220,17 +222,18 @@ public class PopupController {
 	 */
 	@RequestMapping("/submit")
 	@ResponseBody
-	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> submit(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody PopupVo popupVo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
 		popupVo.setUpdusrSn(loginVo.getUserSn());
+		popupVo.setRegisterSn(loginVo.getUserSn());
 
-		if (null != popupVo.getPopupSn()) {
-			popupService.update(popupVo);
-		} else {
-			popupVo.setRegisterSn(loginVo.getUserSn());
+		if (null == popupVo.getPopupSn()) {
+			popupVo.setLangCode(langId.name());
 			popupService.insert(popupVo);
+		} else {
+			popupService.update(popupVo);
 		}
 		return resultMap;
 	}
@@ -249,7 +252,7 @@ public class PopupController {
 	 */
 	@RequestMapping("/delete")
 	@ResponseBody
-	public Map<String, Object> delete(@AuthenticationPrincipal MngrVo loginVo,
+	public Map<String, Object> delete(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo loginVo,
 			@RequestBody PopupVo popupVo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 

@@ -11,16 +11,14 @@
 		<div class="search_wrap">
 			<fieldset>
 				<div class="list_wrap">
-					<strong>노출여부</strong>
-					<label><input type="radio" name="searchExpsrYn" v-model="listVo.searchExpsrYn" :value="''">전체</label>
-					<label v-for="result in expsrYnList"><input type="radio" name="searchExpsrYn" v-model="listVo.searchExpsrYn" :value="result.code" />{{result.codeNm}}</label>
+					<strong>최종수정일</strong>
+					<vue-datepicker v-model="listVo.searchBeginDt" buttonimage="/images/calendar.png"
+						id="searchBeginDt" name="searchBeginDt"></vue-datepicker> -
+					<vue-datepicker v-model="listVo.searchEndDt" buttonimage="/images/calendar.png"
+						id="searchEndDt" name="searchEndDt"></vue-datepicker>
 				</div>
 				<div class="list_wrap">
 					<strong>검색어</strong>
-					<select id="searchCondition" name="searchCondition" style="width:150px;" class="mr5" v-model="listVo.searchCondition">
-						<option value="TITLE">제목</option>
-						<option value="WRTER">작성자</option>
-					</select>
 					<input type="text" name="searchKeyword" id="searchKeyword" class="mr5" style="width:400px;" v-model="listVo.searchKeyword" v-on:keyup.enter="onSearch" />
 				</div>
 				<div class="list_wrap">
@@ -35,16 +33,7 @@
 		<div class="result_wrap">
 			<p><span>검색</span> <em>{{ paginationInfo.totalRecordCount }}</em></p>
 			<div class="flr">
-				<select name="recordCountPerPage" v-model="listVo.recordCountPerPage" v-on:change="onRecordCountPerPage">
-					<option v-for="option in recordCountPerPageList" v-bind:value="option.code">
-						{{ option.codeNm }}
-					</option>
-				</select>
-
-				<select name="orderBy" v-model="listVo.orderBy" v-on:change="onOrderBy">
-					<option value="regist_dt_desc">등록일 ↓</option>
-					<option value="regist_dt_asc">등록일 ↑</option>
-				</select>
+				<button type="button" class="btn" v-on:click="onDeleteChecked">선택목록삭제</button>
 			</div>
 		</div>
 
@@ -52,31 +41,56 @@
 			<table class="table_col">
 				<colgroup>
 					<col width="60px">
+					<col width="150px">
 					<col width="">
-					<col width="150">
 					<col width="150px">
 					<col width="150px">
 					<col width="150px">
 				</colgroup>
 				<thead>
 					<tr>
-						<th>NO</th>
+						<th><input type="checkbox" v-on:click="checkAll"></th>
+						<th>썸네일</th>
 						<th>제목</th>
-						<th>작성자</th>
-						<th>등록일</th>
 						<th>조회수</th>
-						<th>노출여부</th>
+						<th>작성자</th>
+						<th>최종수정일</th>
 					</tr>
 				</thead>
 				<tbody v-if="resultList.length > 0">
-					<tr v-for="(result, index) in resultList" >
-						<td>{{paginationInfo.totalRecordCount + 1 - ((paginationInfo.currentPageNo-1) * paginationInfo.recordCountPerPage + (index + 1)) }}</td>
+					<tr v-for="(result, index) in upendFixingList" style="background: #eee;">
+						<td>공지</td>
+						<td>
+							<img v-if="result.thumbBassImageUseYn != 'Y'"
+								:src="'${publicUrl }' + result.thumbFlpth"
+								style="width:100px; vertical-align: bottom;" />
+							<img v-else :src="result.thumbBassImageCodeNm"
+								style="width:100px; vertical-align: bottom;" />
+						</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
-								href="javascript:;">{{result.nttSj }}</a></td>
-						<td>{{result.wrterNm }}</td>
-						<td>{{result.registDt | timeToDate('YYYY-MM-DD')}}</td>
+							href="javascript:;">{{result.nttSj }}</a></td>
 						<td>{{result.rdcnt }}</td>
-						<td><span v-if="result.expsrYn == 'Y'">노출</span><span v-else>비노출</span></td>
+						<td>{{result.wrterNm }}</td>
+						<td>{{result.updtDt | timeToDate('YYYY-MM-DD HH:mm')}}</td>
+					</tr>
+					<tr v-for="(result, index) in resultList" >
+						<td>
+							<input type="checkbox" v-model="checkedPkList"
+								name="pkList" :id="'pkList_' + index"
+								:value="result.nttSn">
+						</td>
+						<td>
+							<img v-if="result.thumbBassImageUseYn != 'Y'"
+								:src="'${publicUrl }' + result.thumbFlpth"
+								style="width:100px; vertical-align: bottom;" />
+							<img v-else :src="result.thumbBassImageCodeNm"
+								style="width:100px; vertical-align: bottom;" />
+						</td>
+						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
+							href="javascript:;">{{result.nttSj }}</a></td>
+						<td>{{result.rdcnt | numberWithCommas }}</td>
+						<td>{{result.wrterNm }}</td>
+						<td>{{result.updtDt | timeToDate('YYYY-MM-DD HH:mm')}}</td>
 					</tr>
 					</tbody>
 				<tbody v-if="resultList.length == 0">
@@ -108,12 +122,17 @@
 		var listVo = {
 			pageIndex : ${ listVo.pageIndex },
 			recordCountPerPage : ${ listVo.recordCountPerPage },
-			orderBy : '${ empty listVo.orderBy ? "regist_dt_desc" : listVo.orderBy }',
-			searchCondition : '${ empty listVo.searchCondition ? "TITLE" : listVo.searchCondition }',
 			searchKeyword : '${ listVo.searchKeyword }',
-			searchExpsrYn : '${ listVo.searchExpsrYn }',
+			searchCondition : '${ empty listVo.searchCondition ? "TITLE" : listVo.searchCondition }',
+			<c:if test="${!empty listVo.searchBeginDt}">
+				searchBeginDt : '<fmt:formatDate value="${listVo.searchBeginDt}" pattern="yyyy-MM-dd"/>',
+			</c:if>
+			<c:if test="${!empty listVo.searchEndDt}">
+				searchEndDt: '<fmt:formatDate value="${listVo.searchEndDt}" pattern="yyyy-MM-dd"/>',
+			</c:if>
 		}
 		var options = {
+			lang: '${langId}',
 			bbsId: '${bbsId}',
 			listVo: listVo,
 		};

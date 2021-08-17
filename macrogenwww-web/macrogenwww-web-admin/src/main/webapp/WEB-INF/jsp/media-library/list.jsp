@@ -49,6 +49,8 @@
 			<table class="table_col">
 				<colgroup>
 					<col width="60px">
+					<col width="150px">
+					<col width="150px">
 					<col width="">
 					<col width="150px">
 					<col width="150px">
@@ -58,6 +60,7 @@
 					<tr>
 						<th><input type="checkbox" v-on:click="checkAll"></th>
 						<th>썸네일</th>
+						<th>카테고리</th>
 						<th>제목</th>
 						<th>조회수</th>
 						<th>작성자</th>
@@ -74,6 +77,7 @@
 							<img v-else :src="result.thumbBassImageCodeNm"
 								style="width:100px; vertical-align: bottom;" />
 						</td>
+						<td>{{result.bbsCtgryNm }}</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
 							href="javascript:;">{{result.nttSj }}</a></td>
 						<td>{{result.rdcnt }}</td>
@@ -93,6 +97,7 @@
 							<img v-else :src="result.thumbBassImageCodeNm"
 								style="width:100px; vertical-align: bottom;" />
 						</td>
+						<td>{{result.bbsCtgryNm }}</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
 							href="javascript:;">{{result.nttSj }}</a></td>
 						<td>{{result.rdcnt | numberWithCommas }}</td>
@@ -102,7 +107,7 @@
 					</tbody>
 				<tbody v-if="resultList.length == 0">
 					<tr >
-						<td nowrap colspan="6" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
+						<td nowrap colspan="7" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
 					</tr>
 				</tbody>
 			</table>

@@ -154,6 +154,10 @@ var nttForm = (function($) {
 					vm.resultVo.thumbAtchId = null;
 					vm.resultVo.thumbFlpth = null;
 				},
+				enterToBr: function(val) {
+					if (!val) return val;
+					return val.split('\n').join('<br />');
+				},
 			},
 			updated : function () {
 				var vm = this;

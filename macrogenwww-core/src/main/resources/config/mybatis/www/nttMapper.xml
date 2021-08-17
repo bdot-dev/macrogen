@@ -35,6 +35,16 @@
 					    and user_sn = tn.wrter_sn
 					)
 				</when>
+				<when test="searchCondition == 'NMBR_WRTER'">
+					and tn.nmbr_wrter_nm = #{searchKeyword, typeHandler=aesCipherTypeHandler}
+				</when>
+				<when test="searchCondition == 'MBTLNUM'">
+					and tn.mbtlnum = #{searchKeyword, typeHandler=aesCipherTypeHandler}
+				</when>
+				<when test="searchCondition == 'TITLE_CN'">
+					and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+							OR tn.ntt_cn like concat('%', #{searchKeyword}, '%') )
+				</when>
 			</choose>
 		</if>
 		<if test='upendFixingYn == "Y"'>

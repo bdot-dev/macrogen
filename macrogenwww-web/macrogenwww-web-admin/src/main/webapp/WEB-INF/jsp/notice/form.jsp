@@ -29,16 +29,6 @@
 						<col width="35%">
 					</colgroup>
 					<tbody>
-						<tr v-if="resultVo.wrterNm">
-							<th>등록자</th>
-							<td class="tal">
-								{{resultVo.wrterNm }}
-							</td>
-							<th>등록일</th>
-							<td class="tal">
-								{{resultVo.registDt | timeToDate('YYYY-MM-DD')}}
-							</td>
-						</tr>
 						<tr>
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
@@ -48,38 +38,36 @@
 							</td>
 						</tr>
 						<tr>
-							<th>상단노출설정</th>
+							<th>
+								리스트이미지
+							</th>
 							<td colspan="3" class="tal">
-								<div class="lbMaxlenPrnt">
-									<input type="checkbox" id="upendFixingYn" name="upendFixingYn" v-model="resultVo.upendFixingYn" true-value="Y" false-value="N"/>
-									최상단 리스트로 노출하시려면 체크해주세요.
+								<div class="lbMaxlenPrnt" style="padding-bottom: 20px;">
+									<label>
+										<input type="checkbox" v-model="resultVo.thumbBassImageUseYn" true-value="Y" false-value="N"
+											ref="thumbBassImageUseYn" id="thumbBassImageUseYn" name="thumbBassImageUseYn" />
+										기본이미지를 사용하시려면 체크해주세요.
+									</label>
 								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>게시글 분류 </th>
-							<td colspan="3" class="tal">
-								<select v-model="resultVo.bbsCtgrySn">
-									<option :value="null">선택</option>
-									<option v-for="(result, index) in bbsCtgryList" :value="result.bbsCtgrySn" v-text="result.bbsCtgryNm" />
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th>노출여부 <span>*</span></th>
-							<td colspan="3" class="tal">
-   								<label v-for="(result, index) in expsrYnList">
-   									<input type="radio" v-model="resultVo.expsrYn"
-   										:value="result.code" name="expsrYns" :id="'expsrYns' + index">
-   									{{result.codeNm}}
-   								</label>
-							</td>
-						</tr>
-						<tr>
-							<th>내용 <span>*</span></th>
-							<td colspan="3" class="tal">
-								<div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttCn" name="nttCn"
-									placeholder="내용" class="w100p devck" style="height:250px;"></textarea></div>
+								<div v-if="'Y' != resultVo.thumbBassImageUseYn">
+									<div>
+										<input type="file" name="thumbFile" v-on:change="onchangeThumbFile" />
+										<span>(사이즈 : 가로사이즈 기준 400(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
+									</div>
+									<div v-if="resultVo.thumbAtchId">
+										<img :src="'${publicUrl }' + resultVo.thumbFlpth"
+											style="width:100px; vertical-align: bottom;" />
+					                    <a href="javascript:;" v-on:click="onDeleteThumb">삭제</a>
+									</div>
+								</div>
+								<div v-if="'Y' == resultVo.thumbBassImageUseYn">
+	   								<label v-for="(result, index) in thumbBassImageCodeList">
+	   									<input type="radio" v-model="resultVo.thumbBassImageCode"
+	   										:value="result.code" name="thumbBassImageCodes" :id="'thumbBassImageCodes' + index">
+	   									<img :src="result.codeNm"
+											style="width:100px; vertical-align: bottom;" />
+	   								</label>
+								</div>
 							</td>
 						</tr>
 						<tr>
@@ -90,7 +78,7 @@
 								<div class="attchList" >
 									<div class="lbMaxlenPrnt">
 										<input type="file" name="thumbFile" v-on:change="onchangeAddFile" />
-										<!-- <span>(사이즈 : 1000X1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span> -->
+										<span>(사이즈 : 1000X1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
 
 									</div>
 									<div class="lbMaxlenPrnt" v-for="(item, index) in resultVo.atchList">
@@ -100,6 +88,47 @@
 										</div>
 									</div>
 								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>상단고정</th>
+							<td colspan="3" class="tal">
+								<div class="lbMaxlenPrnt">
+									<label>
+										<input type="checkbox" id="upendFixingYn" name="upendFixingYn" v-model="resultVo.upendFixingYn" true-value="Y" false-value="N"/>
+										최상단 리스트로 노출하시려면 체크해주세요.
+									</label>
+								</div>
+							</td>
+						</tr>
+						<!--
+						<tr>
+							<th>게시글 분류 </th>
+							<td colspan="3" class="tal">
+								<select v-model="resultVo.bbsCtgrySn">
+									<option :value="null">선택</option>
+									<option v-for="(result, index) in bbsCtgryList" :value="result.bbsCtgrySn" v-text="result.bbsCtgryNm" />
+								</select>
+							</td>
+						</tr>
+						-->
+						<!--
+						<tr>
+							<th>노출여부 <span>*</span></th>
+							<td colspan="3" class="tal">
+   								<label v-for="(result, index) in expsrYnList">
+   									<input type="radio" v-model="resultVo.expsrYn"
+   										:value="result.code" name="expsrYns" :id="'expsrYns' + index">
+   									{{result.codeNm}}
+   								</label>
+							</td>
+						</tr>
+						 -->
+						<tr>
+							<th>내용 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttCn" name="nttCn"
+									placeholder="내용" class="w100p devck" style="height:250px;"></textarea></div>
 							</td>
 						</tr>
 					</tbody>
@@ -132,6 +161,7 @@
 						expsrYn: { required: '필수선택 입니다.(노출여부)' },
 					}
 				},
+				lang: '${langId}',
 				bbsId: '${bbsId}',
 			};
 			nttForm.init(options);

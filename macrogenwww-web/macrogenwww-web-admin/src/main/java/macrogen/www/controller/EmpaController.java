@@ -25,7 +25,6 @@ import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.EmpaVo;
 import macrogen.www.vo.MngrVo;
-import macrogen.www.vo.SetupVo;
 
 /**
  * <pre>
