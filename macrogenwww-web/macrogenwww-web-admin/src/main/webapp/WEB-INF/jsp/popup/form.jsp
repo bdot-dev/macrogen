@@ -42,7 +42,7 @@
 							<th>노출순서<span>*</span></th>
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
-									<input type="text" ref="sortOrdr" maxlength="3" placeholder="노출순서" v-model="resultVo.sortOrdr" class="w100p" />
+									<input type="number" ref="sortOrdr" maxlength="3" placeholder="노출순서" v-model="resultVo.sortOrdr" class="w100p" />
 								</div>
 							</td>
 						</tr>
@@ -74,7 +74,7 @@
 									<select name="endTime" v-model="resultVo.popupEndHour">
 										<option :value="null">선택</option>
 										<option v-for="result in 23"
-											:value="result" v-text="result" />
+											:value="result" v-text="lpad(result, 2)" />
 									</select>시 까지
 								</div>
 							</td>
@@ -127,7 +127,8 @@
 			var options = {
 				popupVo : {
 					popupSn : ${ empty popupSn ? 'null' : popupSn },
-				}
+				},
+				lang: '${langId}',
 			}
 			popupForm.init(options);
 		});

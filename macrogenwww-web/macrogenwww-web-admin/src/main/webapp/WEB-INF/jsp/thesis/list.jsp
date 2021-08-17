@@ -10,6 +10,7 @@
 		<div class="search_wrap">
 			<fieldset>
 				<div class="list_wrap">
+					<strong>기간</strong>
 					<select v-model="listVo.periodSearchCondition" style="width:200px;">
 						<option :value="'thesis_year'" v-text="'논문 연도'" />
 						<option :value="'updt_dt'" v-text="'최종수정일'" />
@@ -20,6 +21,7 @@
 						id="searchEndDt" name="searchEndDt"></vue-datepicker>
 				</div>
 				<div class="list_wrap">
+					<strong>검색어</strong>
 					<select v-model="listVo.searchCondition" style="width:200px;">
 						<option :value="'thesis_sj'" v-text="'논문 제목'" />
 						<option :value="'jrnl'" v-text="'저널'" />

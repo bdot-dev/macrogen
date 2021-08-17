@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
+	<c:import url="/WEB-INF/jsp/inc/cmpnyhistTab.jsp">
+		<c:param name="current" value="cmpnyhist"/>
+	</c:import>
+
 	<!-- 검색조건 저장용 -->
 	<form:form commandName="listVo" id="listForm" name="listForm">
 		<form:hidden path="pageIndex" />
@@ -25,6 +29,16 @@
 						<col width="35%">
 					</colgroup>
 					<tbody>
+						<tr>
+							<th>연혁 그룹 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<select v-model="resultVo.cmpnyhistGroupSn" ref="cmpnyhistGroupSn" style="width:200px;">
+									<option :value="null">연혁 그룹 선택</option>
+									<option v-for="(result, index) in cmpnyhistGroupList"
+										:value="result.cmpnyhistGroupSn" v-text="groupDisplayNm(result)"/>
+								</select>
+							</td>
+						</tr>
 						<tr>
 							<th>연도/월 <span>*</span></th>
 							<td colspan="3" class="tal">

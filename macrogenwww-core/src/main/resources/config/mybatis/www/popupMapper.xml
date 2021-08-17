@@ -3,6 +3,9 @@
 <mapper namespace="macrogen.www.mapper.PopupMapper">
 
 	<sql id="list_where">
+		<if test="langCode != null and langCode != '' ">
+			AND tp.lang_code = #{langCode}
+		</if>
 		<if test="searchExpsrYn != null and searchExpsrYn != '' ">
 			AND tp.expsr_yn = #{searchExpsrYn}
 		</if>
@@ -22,6 +25,7 @@
 		<include refid="paging.countTop"/>
 		SELECT
 			tp.popup_sn
+			, tp.lang_code
 			, tp.popup_nm
 			, tp.popup_begin_dt
 			, tp.popup_end_dt
@@ -68,6 +72,7 @@
 	<select id="view" parameterType="popupVo" resultType="popupVo">
 		SELECT
 			tp.popup_sn
+			, tp.lang_code
 			, tp.popup_nm
 			, tp.popup_begin_dt
 			, tp.popup_end_dt
@@ -97,6 +102,7 @@
 	<insert id="insert" parameterType="popupVo">
 		INSERT INTO tb_popup(
 			popup_sn
+			, lang_code
 			, popup_nm
 			, popup_begin_dt
 			, popup_end_dt
@@ -113,6 +119,7 @@
 			, updusr_sn
 		) VALUES (
 			#{popupSn}
+			, #{langCode}
 			, #{popupNm}
 			, #{popupBeginDt}
 			, #{popupEndDt}
@@ -134,6 +141,7 @@
 		UPDATE tb_popup	SET
 			updt_dt = now()
 			, updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
 			<if test="popupNm != null">, popup_nm = #{popupNm} </if>
 			<if test="popupBeginDt != null">, popup_begin_dt = #{popupBeginDt} </if>
 			<if test="popupEndDt != null">, popup_end_dt = #{popupEndDt} </if>

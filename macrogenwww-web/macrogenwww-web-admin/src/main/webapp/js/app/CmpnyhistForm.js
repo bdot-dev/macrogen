@@ -16,6 +16,7 @@ var CmpnyhistForm = (function($) {
 				submitFlag : false,
 				mtList: ['01','02','03','04','05','06','07','08','09','10','11','12'],
 				currYear: '2021',
+				cmpnyhistGroupList: [],
 			},
 			computed: {
 				yearList: function() {
@@ -43,6 +44,7 @@ var CmpnyhistForm = (function($) {
 					}).done(function(data) {
 						vm.resultVo = data.resultVo;
 						vm.currYear = data.currYear;
+						vm.cmpnyhistGroupList = data.cmpnyhistGroupList;
 					});
 				},
 				onSubmit : function() {
@@ -88,6 +90,11 @@ var CmpnyhistForm = (function($) {
 				},
 				validate: function() {
 					var vm = this;
+					if (!vm.resultVo.cmpnyhistGroupSn) {
+						alert('필수입력 - 연혁 그룹');
+						vm.$refs.cmpnyhistGroupSn.focus();
+						return false;
+					}
 					if (!vm.resultVo.year) {
 						alert('필수입력 - 연도');
 						vm.$refs.year.focus();
@@ -107,6 +114,11 @@ var CmpnyhistForm = (function($) {
 				},
 				onList : function() {
 					goList();
+				},
+				groupDisplayNm: function(result) {
+					return "[" + result.beginYear + "-" +
+						(result.endYear == 'present' ? '현재' : result.endYear) + "] " +
+						result.groupnmKo;
 				},
 			},
 			updated : function() {

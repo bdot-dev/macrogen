@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.LangId;
+import macrogen.www.service.CmpnyhistGroupService;
 import macrogen.www.service.CmpnyhistService;
+import macrogen.www.vo.CmpnyhistGroupVo;
 import macrogen.www.vo.CmpnyhistVo;
 import macrogen.www.vo.MngrVo;
 
@@ -39,6 +41,9 @@ public class CmpnyhistController {
 
 	@Autowired
 	private CmpnyhistService cmpnyhistService;
+
+	@Autowired
+	private CmpnyhistGroupService cmpnyhistGroupService;
 
 	@RequestMapping("/list")
 	public String list(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo mngrVo,
@@ -102,6 +107,9 @@ public class CmpnyhistController {
 
 		SimpleDateFormat format = new SimpleDateFormat("YYYY");
 		resultMap.put("currYear", format.format(new Date()));
+
+		List<CmpnyhistGroupVo> cmpnyhistGroupList =  cmpnyhistGroupService.allList();
+		resultMap.put("cmpnyhistGroupList", cmpnyhistGroupList);
 
 		return resultMap;
 	}

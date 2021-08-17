@@ -38,7 +38,7 @@ public class StorageServiceImpl implements StorageService {
 
 	@Value("${globals.atch.public.url}")
 	private String atchPublicUrl;
-	
+
 	@Value("${globals.domain.www}")
 	private String wwwDomain;
 
@@ -143,7 +143,7 @@ public class StorageServiceImpl implements StorageService {
 			if("sign.png".equals(saveAsName)) {
 				response.setContentType("image/png");
 			} else {
-				response.setContentType("application/x-msdownload");
+				response.setContentType("application/octet-stream");
 			}
 			response.setContentLength((int) filesize);
 			setDisposition(StringUtils.getFilename(saveAsName), request, response);
@@ -315,10 +315,10 @@ public class StorageServiceImpl implements StorageService {
 			BufferedImage bufferedImage = ImageIO.read(url);
 			BufferedImage resized = bufferedImage;
 			if (bufferedImage.getWidth() > 250) {
-				resized = Scalr.resize(bufferedImage, 
+				resized = Scalr.resize(bufferedImage,
 						Scalr.Method.AUTOMATIC, Scalr.Mode.FIT_TO_WIDTH, 250);
 			}
-			
+
 			ImageIO.write(resized, extension, outputFile);
 			LOGGER.debug(outputFile.getAbsolutePath());
 			return atchPublicUrl + relativePath;

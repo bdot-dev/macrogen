@@ -47,6 +47,15 @@
 						<tr>
 							<th>사진 <span>*</span></th>
 							<td colspan="3" class="tal">
+								<div>
+									<input type="file" name="photoFile" v-on:change="onchangePhotoFile" />
+									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
+								</div>
+								<div v-if="resultVo.photoAtchId">
+									<img :src="'${publicUrl }' + resultVo.photoFlpth"
+										style="width:100px; vertical-align: bottom;" />
+				                    <a href="javascript:;" v-on:click="onDeletePhoto">삭제</a>
+								</div>
 							</td>
 						</tr>
 
@@ -146,7 +155,12 @@
 		});
 
 		function vueUpdated(vm) {
-			console.log('vueUpdated');
+			$("textarea.devck").each(function(){
+				var instanceNm = $(this).attr('name');
+				if (!CKEDITOR.instances[instanceNm]) {
+					CKEDITOR.replace(instanceNm);
+				}
+			});
 		}
 
 	</script>

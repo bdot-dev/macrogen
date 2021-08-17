@@ -41,8 +41,10 @@
 		</div>
 
 		<div class="result_wrap">
-			<button type="button" class="btn" v-on:click="onDeleteChecked">선택목록삭제</button>
 			<span>검색결과</span> <em>{{ paginationInfo.totalRecordCount }}</em>
+			<div class="flr">
+				<button type="button" class="btn" v-on:click="onDeleteChecked">선택목록삭제</button>
+			</div>
 		</div>
 
 		<div class="board_wrap mb20">

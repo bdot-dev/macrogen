@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
+	<c:import url="/WEB-INF/jsp/inc/cmpnyhistTab.jsp">
+		<c:param name="current" value="cmpnyhist"/>
+	</c:import>
+
 	<form id="listForm" name="listForm">
 
 	<div class="page_wrap vuelayer" v-cloak>

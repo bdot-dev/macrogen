@@ -29,7 +29,7 @@ var popupForm = (function($) {
 						type : "POST",
 						contentType : 'application/json',
 						data : JSON.stringify(vm.popupVo),
-						url : "/popup/form/data"
+						url : '/' + options.lang + '/popup/form/data'
 					}).done(function (data){
 						vm.resultVo = data.resultVo;
 						vm.popupLinkTrgtList = data.popupLinkTrgtList;
@@ -66,7 +66,7 @@ var popupForm = (function($) {
 
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
-						url : '/popup/submit',
+						url : '/' + options.lang + '/popup/submit',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						goList();
@@ -86,7 +86,7 @@ var popupForm = (function($) {
 	goList = function (){
 		var $listForm = $('#listForm');
 		$listForm.attr({
-			'action' : '/popup/list',
+			'action' : '/' + options.lang + '/popup/list',
 			"method" : "GET"
 		}).submit();
 	};

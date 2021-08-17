@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.SetupMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="setupVo" resultType="int">
+		select count(*)
+		from tb_setup ts
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="setupVo" resultType="setupVo">
+		<include refid="paging.countTop" />
+		select
+			ts.setup_id
+			, ts.setup_value
+		from tb_setup ts
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by ts.setup_id
+			</when>
+			<otherwise>
+				order by ts.setup_id
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="setupVo" resultType="setupVo">
+		select
+			ts.setup_id
+			, ts.setup_value
+		from tb_setup ts
+		where ts.setup_id = #{setupId}
+	</select>
+
+	<insert id="insert" parameterType="setupVo">
+		insert into tb_setup (
+			setup_id
+			, setup_value
+		) values (
+			#{setupId}
+			, #{setupValue}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="setupVo">
+		delete from tb_setup where setup_id = #{setupId}
+	</delete>
+
+	<update id="update" parameterType="setupVo">
+		update tb_setup
+		set
+			setup_value = #{setupValue}
+		where setup_id = #{setupId}
+	</update>
+
+</mapper>

@@ -18,6 +18,8 @@ var nttList = (function($) {
 				recordCountPerPageList : [],
 				bbsCtgryList : [],
 				expsrYnList : [],
+				checkedPkList: [],
+				upendFixingList: [],
 			},
 			created : function (){
 				var vm = this;
@@ -31,7 +33,7 @@ var nttList = (function($) {
 						dataType : 'json',
 						type : 'POST',
 						contentType : 'application/json',
-						url : '/' + options.bbsId + '/list/data',
+						url : '/' + options.lang + '/' + options.bbsId + '/list/data',
 						data : JSON.stringify(vm.listVo)
 					}).done(function (data){
 						vm.resultList = data.resultList;
@@ -39,6 +41,7 @@ var nttList = (function($) {
 						vm.recordCountPerPageList = data.recordCountPerPageList;
 						vm.bbsCtgryList = data.bbsCtgryList;
 						vm.expsrYnList = data.expsrYnList;
+						vm.upendFixingList = data.upendFixingList;
 					});
 				},
 				onSearch : function() {
@@ -58,7 +61,7 @@ var nttList = (function($) {
 				},
 				onViewLink : function (nttSn){
 					$form.attr({
-						action: '/' + options.bbsId + '/form/' + nttSn ,
+						action: '/' + options.lang + '/' + options.bbsId + '/form/' + nttSn ,
 						method : 'POST'
 					}).submit();
 				},
@@ -71,10 +74,40 @@ var nttList = (function($) {
 					var vm = this;
 					vm.listVo.nttSn = '';
 					$form.attr({
-						action: '/' + options.bbsId + '/form/' ,
+						action: '/' + options.lang + '/' + options.bbsId + '/form/' ,
 						method : 'POST'
 					}).submit();
-				}
+				},
+				checkAll: function(e) {
+					var vm = this;
+					vm.checkedPkList = [];
+					if (e.target.checked) {
+						vm.resultList.forEach(function(result) {
+							vm.checkedPkList.push(result.nttSn);
+						});
+					}
+				},
+				onDeleteChecked : function() {
+					var vm = this;
+					if (vm.checkedPkList.length <= 0) {
+						alert('삭제할 항목을 선택해 주세요.');
+						return false;
+					}
+
+					if (vm.checkedPkList.length > 0 &&
+							!confirm('삭제된 데이터는 복구할 수 없습니다.\n삭제하시겠습니까?')) {
+						return false;
+					}
+					$.ajax({dataType : 'json', type : 'post',
+						contentType : 'application/json',
+						url : '/' + options.lang + '/' + options.bbsId + '/deleteList',
+						data : JSON.stringify({ nttSnList : vm.checkedPkList }),
+					}).done(function(data) {
+						vm.fetchData();
+						vm.checkedPkList = [];
+					});
+
+				},
 			}
 		});
 	};

@@ -42,6 +42,7 @@
 			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
 			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
 			, tw.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
 			, tw.wnpz_nm
 			, tw.rm
 			, tw.wnpz_cn
@@ -78,6 +79,7 @@
 			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
 			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
 			, tw.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
 			, tw.wnpz_nm
 			, tw.rm
 			, tw.wnpz_cn

@@ -2,7 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="macrogen.www.mapper.NttMapper">
 
+	<resultMap type="nttVo" id="nttMap">
+		<result property="nmbrWrterNm" column="nmbr_wrter_nm" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="mbtlnum" column="mbtlnum" javaType="string" typeHandler="aesCipherTypeHandler"/>
+	</resultMap>
+
 	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tn.lang_code = #{langCode}
+		</if>
 		<if test="bbsId != null and bbsId != ''">
 			and tn.bbs_id = #{bbsId}
 		</if>
@@ -27,10 +35,26 @@
 					    and user_sn = tn.wrter_sn
 					)
 				</when>
+				<when test="searchCondition == 'NMBR_WRTER'">
+					and tn.nmbr_wrter_nm = #{searchKeyword, typeHandler=aesCipherTypeHandler}
+				</when>
+				<when test="searchCondition == 'MBTLNUM'">
+					and tn.mbtlnum = #{searchKeyword, typeHandler=aesCipherTypeHandler}
+				</when>
+				<when test="searchCondition == 'TITLE_CN'">
+					and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+							OR tn.ntt_cn like concat('%', #{searchKeyword}, '%') )
+				</when>
 			</choose>
 		</if>
 		<if test='upendFixingYn == "Y"'>
 			and tn.upend_fixing_yn = 'Y'
+		</if>
+		<if test="searchBeginDt != null">
+			AND tn.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+		</if>
+		<if test="searchEndDt != null">
+			AND tn.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
 		</if>
 	</sql>
 
@@ -41,10 +65,11 @@
 		<include refid="list_where" />
 	</select>
 
-	<select id="list" parameterType="nttVo" resultType="nttVo">
+	<select id="list" parameterType="nttVo" resultMap="nttMap">
 		<include refid="paging.countTop"/>
 		select
 			tn.ntt_sn
+			, tn.lang_code
 			, tn.bbs_id
 			, tn.bbs_ctgry_sn
 			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
@@ -55,10 +80,18 @@
 			, tn.upend_fixing_yn
 			, tn.wrter_sn
 			, ( select user_nm from tb_user where user_sn = tn.wrter_sn ) wrter_nm
-			, regist_dt
-			, register_sn
-			, updt_dt
-			, updusr_sn
+			, tn.regist_dt
+			, tn.register_sn
+			, tn.updt_dt
+			, tn.updusr_sn
+			, tn.nmbr_wrter_nm
+			, tn.mbtlnum
+			, tn.thumb_bass_image_use_yn
+			, tn.thumb_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tn.thumb_atch_id ) thumb_flpth
+			, tn.thumb_bass_image_code
+			, ( select code_nm from tb_code where code_se = 'THUMB_BASS_IMAGE_CODE' and code = tn.thumb_bass_image_code ) thumb_bass_image_code_nm
+			, tn.mvp_url
 		from tb_ntt tn
 		where 1 = 1
 		<include refid="list_where" />
@@ -82,9 +115,10 @@
 		<include refid="paging.countBottom"/>
 	</select>
 
-	<select id="view" parameterType="nttVo" resultType="nttVo">
+	<select id="view" parameterType="nttVo" resultMap="nttMap">
 		select
 			tn.ntt_sn
+			, tn.lang_code
 			, tn.bbs_id
 			, tn.bbs_ctgry_sn
 			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
@@ -95,10 +129,17 @@
 			, tn.upend_fixing_yn
 			, tn.wrter_sn
 			, ( select user_nm from tb_user where user_sn = tn.wrter_sn ) wrter_nm
-			, regist_dt
-			, register_sn
-			, updt_dt
-			, updusr_sn
+			, tn.regist_dt
+			, tn.register_sn
+			, tn.updt_dt
+			, tn.updusr_sn
+			, tn.nmbr_wrter_nm
+			, tn.mbtlnum
+			, tn.thumb_bass_image_use_yn
+			, tn.thumb_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tn.thumb_atch_id ) thumb_flpth
+			, tn.thumb_bass_image_code
+			, tn.mvp_url
 		from tb_ntt tn
 		where tn.ntt_sn = #{nttSn}
 	</select>
@@ -110,6 +151,7 @@
 	<insert id="insert" parameterType="nttVo">
 		insert into tb_ntt (
 			ntt_sn
+			, lang_code
 			, bbs_id
 			, bbs_ctgry_sn
 			, ntt_sj
@@ -122,8 +164,15 @@
 			, register_sn
 			, updt_dt
 			, updusr_sn
+			, nmbr_wrter_nm
+			, mbtlnum
+			, thumb_bass_image_use_yn
+			, thumb_atch_id
+			, thumb_bass_image_code
+			, mvp_url
 		) values (
 			#{nttSn}
+			, #{langCode}
 			, #{bbsId}
 			, #{bbsCtgrySn}
 			, #{nttSj}
@@ -136,6 +185,12 @@
 			, #{registerSn}
 			, now()
 			, #{updusrSn}
+			, #{nmbrWrterNm, typeHandler=aesCipherTypeHandler}
+			, #{mbtlnum, typeHandler=aesCipherTypeHandler}
+			, #{thumbBassImageUseYn}
+			, #{thumbAtchId}
+			, #{thumbBassImageCode}
+			, #{mvpUrl}
 		)
 	</insert>
 
@@ -144,6 +199,7 @@
 		set
 		    updt_dt = now()
 		    , updusr_sn = #{updusrSn}
+		    <if test="langCode != null">, lang_code = #{langCode} </if>
 		    <if test="bbsId != null">, bbs_id = #{bbsId} </if>
 		    <if test="bbsCtgrySn != null">, bbs_ctgry_sn = #{bbsCtgrySn} </if>
 		    <if test="nttSj != null">, ntt_sj = #{nttSj} </if>
@@ -151,6 +207,12 @@
 		    <if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
 		    <if test="rdcnt != null">, rdcnt = #{rdcnt} </if>
 		    <if test="upendFixingYn != null">, upend_fixing_yn = #{upendFixingYn} </if>
+		    <if test="nmbrWrterNm != null">, nmbr_wrter_nm = #{nmbrWrterNm} </if>
+		    <if test="mbtlnum != null">, mbtlnum = #{mbtlnum} </if>
+		    <if test="thumbBassImageUseYn != null">, thumb_bass_image_use_yn = #{thumbBassImageUseYn} </if>
+		    <if test="thumbAtchId != null">, thumb_atch_id = #{thumbAtchId} </if>
+		    <if test="thumbBassImageCode != null">, thumb_bass_image_code = #{thumbBassImageCode} </if>
+		    <if test="mvpUrl != null">, mvp_url = #{mvpUrl} </if>
 		where ntt_sn = #{nttSn}
 	</update>
 
