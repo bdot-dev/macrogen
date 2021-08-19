@@ -227,4 +227,59 @@
     		ntt_sn = #{nttSn}
     </update>
 
+	<delete id="deletePressReleaseMigration">
+		delete from tb_ntt where bbs_id = 'press-release' and ntt_sn <![CDATA[<]]> 20000000000
+	</delete>
+
+	<insert id="migratePressRelease">
+		insert into tb_ntt (
+			ntt_sn
+			, lang_code
+			, bbs_id
+			, bbs_ctgry_sn
+			, ntt_sj
+			, ntt_cn
+			, expsr_yn
+			, rdcnt
+			, upend_fixing_yn
+			, wrter_sn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+			, nmbr_wrter_nm
+			, mbtlnum
+			, thumb_bass_image_use_yn
+			, thumb_atch_id
+			, thumb_bass_image_code
+			, mvp_url
+		)
+		select
+			ntt_sn
+			, lang_code
+			, bbs_id
+			, bbs_ctgry_sn
+			, ntt_sj
+			, ntt_cn
+			, expsr_yn
+			, rdcnt
+			, upend_fixing_yn
+			, wrter_sn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+			, nmbr_wrter_nm
+			, mbtlnum
+			, thumb_bass_image_use_yn
+			, thumb_atch_id
+			, thumb_bass_image_code
+			, mvp_url
+		from macrogenwww.tb_ntt
+		where bbs_id = 'press-release'
+		and ntt_sn <![CDATA[<]]> 0
+		order by ntt_sn desc
+	</insert>
+
+
 </mapper>
