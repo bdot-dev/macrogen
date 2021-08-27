@@ -1,0 +1,292 @@
+[접속정보]
+- asis 운영기 (ssh)
+	. ip/port : ??
+	. id/pwd : ??
+
+- tobe 개발기 (ssh)
+	. ip/port : 192.168.1.34 /22
+	. id/pwd : root/ ???
+				tomcat/ ???
+
+- tobe 운영기 (ssh)
+	[web/was]
+	. ip/port : 211.110.34.200/22
+	. id/pwd :
+		eluo / mg!Q2w3e4r
+	    macrogen / Macrogen0)  => 실행계정 su - macrogen 으로 접근
+	    root => macrogen 계정에서 sudo su - 접근
+
+	[db]
+	. ip/port : 211.110.34.201/22
+	. id/pwd :
+		eluo / mg!Q2w3e4r
+	    mysql / Macrogen0)  => 실행계정 su - mysql 으로 접근
+
+[설정]
+. web
+	apache 2.4.48
+	install path : /home/macrogen/apache2.4
+	documentRoot
+		www : /data/www_data/ROOT
+		cms : /data/cms_data/ROOT
+
+. was
+	tomcat 8.5.59
+	install path : catalina.home (변경없음)
+		/home/macrogen/tomcat
+	application path : catalina.base (추가)
+		www : /home/macrogen/tomcat_www
+			시작 : ./startcon.sh
+			종료 : ./downcon.sh
+		cms : /home/macrogen/tomcat_cms
+			시작 : ./startcon.sh
+			종료 : ./downcon.sh
+	appBase
+		www : /data/www_data/
+		cms : /data/cms_data/
+	접속 URL
+		www : https://new.macrogen.com
+		cms : https://cms.macrogen.com
+
+. 첨부파일
+	/data/atch/public_macrogenwww
+	/data/atch/private_macrogenwww
+
+
+
+
+* 데이터베이스 생성
+	- DB생성, 계정생성, 권한부여
+		# cd /home/mysql/mysql/bin
+		# ./mysql -uroot -p
+		Enter password: Macrogen0)
+	    mysql> create database macrogenwww DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+	    mysql> create user 'macrogenwww'@'%' identified by 'Macrogenwww123!@#';
+	    mysql> grant all privileges on macrogenwww.* to 'macrogenwww'@'%';
+	    mysql> show grants for 'macrogenwww'@'%';
+
+	- db 백업 : 개발DB
+		. root 접속
+		# mysqldump -uroot -p macrogenwww > macrogenwww.20210826.sql
+		Mysql123!@#
+
+	- 복구:운영DB
+		# su - mysql  #  Macrogen0)
+		# sudo su -
+		# cd /home/mysql/mysql/bin
+		# ./mysql -u macrogenwww -p macrogenwww < /home/eluo/macrogenwww.20210826.sql
+		Macrogenwww123!@#
+
+	- poiretcms db 접속 후, view/function 생성
+			-- vw_mngrmenu
+			create or replace view vw_mngrmenu as
+			select
+			  1 level
+			  , convert(lv1.menu_sn using utf8) menu_sn_path
+			  , lv1.menu_nm menu_nm_path
+			  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv1.*
+			from tb_mngrmenu lv1
+			where lv1.upper_menu_sn is null
+			union all
+			select
+			  2 level
+			  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn) using utf8) menu_sn_path
+			  , convert(concat(lv1.menu_nm, '>', lv2.menu_nm) using utf8) menu_nm_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv2.*
+			from tb_mngrmenu lv1
+			join tb_mngrmenu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+			where lv1.upper_menu_sn is null
+			union all
+			select
+			  3 level
+			  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn) using utf8) menu_sn_path
+			  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm) menu_nm_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv3.*
+			from tb_mngrmenu lv1
+			join tb_mngrmenu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+			join tb_mngrmenu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+			where lv1.upper_menu_sn is null
+			;
+
+			-- vw_menu
+			create or replace view vw_menu as
+			select
+			  1 level
+			  , convert(lv1.menu_sn using utf8) menu_sn_path
+			  , lv1.menu_nm menu_nm_path
+			  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv1.*
+			from tb_menu lv1
+			where lv1.upper_menu_sn is null
+			union all
+			select
+			  2 level
+			  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn) using utf8) menu_sn_path
+			  , concat(lv1.menu_nm, '>', lv2.menu_nm) menu_nm_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv2.*
+			from tb_menu lv1
+			join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+			where lv1.upper_menu_sn is null
+			union all
+			select
+			  3 level
+			  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn) using utf8) menu_sn_path
+			  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm) menu_nm_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv3.*
+			from tb_menu lv1
+			join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+			join tb_menu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+			where lv1.upper_menu_sn is null
+			union all
+			select
+			  4 level
+			  , convert(concat(lv1.menu_sn, '>', lv2.menu_sn, '>', lv3.menu_sn, '>', lv4.menu_sn) using utf8) menu_sn_path
+			  , concat(lv1.menu_nm, '>', lv2.menu_nm, '>', lv3.menu_nm, '>', lv4.menu_nm) menu_nm_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr, '>', lv4.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.menu_sn top_menu_sn
+			  , lv4.*
+			from tb_menu lv1
+			join tb_menu lv2 on lv2.upper_menu_sn = lv1.menu_sn
+			join tb_menu lv3 on lv3.upper_menu_sn = lv2.menu_sn
+			join tb_menu lv4 on lv4.upper_menu_sn = lv3.menu_sn
+			where lv1.upper_menu_sn is null
+			;
+
+			-- vw_prductctgry
+			create or replace view vw_prductctgry as
+			select
+			  1 level
+			  , convert(lv1.ctgry_sn using utf8) ctgry_sn_path
+			  , lv1.ctgry_nm_ko ctgry_nm_ko_path
+			  , lv1.ctgry_nm_en ctgry_nm_en_path
+			  , lv1.ctgry_nm_zh ctgry_nm_zh_path
+			  , lv1.ctgry_nm_fr ctgry_nm_fr_path
+			  , convert(concat(lv1.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.ctgry_sn top_ctgry_sn
+			  , lv1.*
+			from tb_prductctgry lv1
+			where lv1.upper_ctgry_sn is null
+			union all
+			select
+			  2 level
+			  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn) using utf8) ctgry_sn_path
+			  , concat(lv1.ctgry_nm_ko, '>', lv2.ctgry_nm_ko) ctgry_nm_ko_path
+			  , concat(lv1.ctgry_nm_en, '>', lv2.ctgry_nm_en) ctgry_nm_en_path
+			  , concat(lv1.ctgry_nm_zh, '>', lv2.ctgry_nm_zh) ctgry_nm_zh_path
+			  , concat(lv1.ctgry_nm_fr, '>', lv2.ctgry_nm_fr) ctgry_nm_fr_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.ctgry_sn top_ctgry_sn
+			  , lv2.*
+			from tb_prductctgry lv1
+			join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+			where lv1.upper_ctgry_sn is null
+			union all
+			select
+			  3 level
+			  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn, '>', lv3.ctgry_sn) using utf8) ctgry_sn_path
+			  , concat(lv1.ctgry_nm_ko, '>', lv2.ctgry_nm_ko, '>', lv3.ctgry_nm_ko) ctgry_nm_ko_path
+			  , concat(lv1.ctgry_nm_en, '>', lv2.ctgry_nm_en, '>', lv3.ctgry_nm_en) ctgry_nm_en_path
+			  , concat(lv1.ctgry_nm_zh, '>', lv2.ctgry_nm_zh, '>', lv3.ctgry_nm_zh) ctgry_nm_zh_path
+			  , concat(lv1.ctgry_nm_fr, '>', lv2.ctgry_nm_fr, '>', lv3.ctgry_nm_fr) ctgry_nm_fr_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.ctgry_sn top_ctgry_sn
+			  , lv3.*
+			from tb_prductctgry lv1
+			join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+			join tb_prductctgry lv3 on lv3.upper_ctgry_sn = lv2.ctgry_sn
+			where lv1.upper_ctgry_sn is null
+			union all
+			select
+			  4 level
+			  , convert(concat(lv1.ctgry_sn, '>', lv2.ctgry_sn, '>', lv3.ctgry_sn, '>', lv4.ctgry_sn) using utf8) ctgry_sn_path
+			  , concat(lv1.ctgry_nm_ko, '>', lv2.ctgry_nm_ko, '>', lv3.ctgry_nm_ko, '>', lv4.ctgry_nm_ko) ctgry_nm_ko_path
+			  , concat(lv1.ctgry_nm_en, '>', lv2.ctgry_nm_en, '>', lv3.ctgry_nm_en, '>', lv4.ctgry_nm_en) ctgry_nm_en_path
+			  , concat(lv1.ctgry_nm_zh, '>', lv2.ctgry_nm_zh, '>', lv3.ctgry_nm_zh, '>', lv4.ctgry_nm_zh) ctgry_nm_zh_path
+			  , concat(lv1.ctgry_nm_fr, '>', lv2.ctgry_nm_fr, '>', lv3.ctgry_nm_fr, '>', lv4.ctgry_nm_fr) ctgry_nm_fr_path
+			  , convert(concat(lv1.sort_ordr, '>', lv2.sort_ordr, '>', lv3.sort_ordr, '>', lv4.sort_ordr) using utf8) sort_ordr_path
+			  , lv1.ctgry_sn top_ctgry_sn
+			  , lv4.*
+			from tb_prductctgry lv1
+			join tb_prductctgry lv2 on lv2.upper_ctgry_sn = lv1.ctgry_sn
+			join tb_prductctgry lv3 on lv3.upper_ctgry_sn = lv2.ctgry_sn
+			join tb_prductctgry lv4 on lv4.upper_ctgry_sn = lv3.ctgry_sn
+			where lv1.upper_ctgry_sn is null
+			;
+
+			-- fn_nextval
+			create function fn_nextval(p_seq_nm varchar(50) charset utf8) returns bigint
+			begin
+			 insert into tb_seq
+			  set seq_nm=ifnull(p_seq_nm,'default'), seq_curval=(@v_current_value:=1)
+			 on duplicate key
+			  update seq_curval=(@v_current_value:=seq_curval+1);
+			 return @v_current_value;
+			end;
+
+			-- 생성 후 확인
+			select fn_nextval('sq_ntt');
+			select * from vw_menu;
+			select * from vw_mngrmenu;
+			select * from vw_prductctgry;
+
+
+* application 용 폴더 생성
+	/app/poiret/
+
+* datasource 추가
+	- jdbc/poiretcms
+	- 10.103.16.91 1521 poiretcms / Poiretcms123!@#
+
+* 웹서버 설정
+	- 도메인에 대한 분기 처리
+	- was로 포워딩하지 않는 패턴 추가 (/assets/**, /html/**, /mobile/**)
+	- 포워딩 처리
+		. http://poiret.com -> https://www.poiret.com
+		. http://www.poiret.com -> https://www.poiret.com
+
+* SSL 인증서 설정
+	- 웹서버, 와일드카드 형
+	- 웹투비용
+
+* 배포경로 - webtob (/DATA/deploy/*.*)
+	ftp 업로드 : /DATA/deploy/poiretcms-web.war
+	cd /DATA/websrc_poiret
+	jar xvf ../deploy/poiretcms-web.war
+	rm -rf WEB-INF
+
+* 배포경로 - jeus
+	. 관리자 - /app/poiret/poiretcms-web-admin-real.war
+	. 프론트 - /app/poiret/poiretcms-web-front-real.war
+
+
+[이관]
+# poiretcms db 백업
+mysqldump -upoiretcms -p poiretcms > poiretcms.20210406.1649.sql
+Poiretcms123!@#
+
+# poiretcms 복구
+10.103.16.92 (db1)
+		svradm4 / WER1$$ihp(또는 @we2@@692), root(su -) / WER1$$ihp(또는 @we2@@692)
+		# mysql -u root -p poiretcms < poiretcms.2021xxxx.sql
+		tlstprP1@#
+
+#전체백업
+cd /share/data/atch/public_poiret/
+tar cvfz public_poiret.tar.gz .
+
+find . -type f -mtime -9 -exec tar cvf public_poiret.added.20210406.1609.tar {} +
+find . -type f -mtime -9 -exec ls -l {} \;
+
+
+
