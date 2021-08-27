@@ -1,0 +1,41 @@
+** 개요
+	- 이관대상 : 파일, 데이터
+	- [개발기] galleryhyundai 백업, 파일백업
+	- [운영기] galleryhyundai 복구, 파일복구
+
+** 접속정보
+	- 개발기 (ssh)
+		. ip/port : 192.168.1.34 /22
+		. id/pwd : root/ ???
+					tomcat/ ???
+
+	- 운영기 (ssh)
+		. ip/port : 211.239.150.60/22
+		. id/pwd : root/ 갤러리현대2019@)!(
+					tomcat/ tomcat1234!@#$
+
+---------------------------------------------------------------------------------------------------------
+[개발기] galleryhyundai 백업, 파일백업
+
+# galleryhyundai 백업
+mysqldump -ugalleryhyundai -p galleryhyundai > galleryhyundai.20191213.sql
+Galleryhyundai123!@#
+
+#파일 증분 백업
+cd /share/data/atch/public_galleryhyundai/
+find . -type f -mtime -20 -exec tar cvf public_galleryhyundai.added.tar {} +
+#find . -type f -mtime -20 -exec ls -l {} \;
+
+---------------------------------------------------------------
+[운영기] galleryhyundai 복구, 파일복구
+# galleryhyundai 복구
+mysql -u root -p galleryhyundai < galleryhyundai.20191213.sql
+Mysql1234!@#$
+
+# 프로시져, 함수, 뷰 생성 확인
+
+# 테이블 개수, 레코드 개수 비교
+
+#파일 증분 복구
+cd /appdata/atch/public_galleryhyundai/
+tar xvf public_galleryhyundai.added.tar

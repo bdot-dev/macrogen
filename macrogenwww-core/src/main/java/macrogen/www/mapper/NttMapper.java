@@ -99,4 +99,8 @@ public interface NttMapper {
 	void increaseRdcnt(NttVo nttVo);
 
 	Long seq();
+
+	void deletePressReleaseMigration();
+
+	void migratePressRelease();
 }

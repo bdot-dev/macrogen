@@ -1,0 +1,97 @@
+[접속정보]
+* ip : 192.168.1.38
+* id : root
+* pw : Dpffndh7501#
+
+[설치]
+* 참고 : https://akageun.github.io/2019/11/18/centos7-mysql80.html
+* OS : CentOS Linux release 7.5.1804 (Core)
+* MySQL Yum Repository 확인
+  https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+* 레포지토리 설치 및 확인
+  # sudo yum install -y https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+  # yum repolist enabled | grep "mysql.*"
+* mysql 설치
+  # yum install -y mysql-server
+  # mysqld -V
+* Start
+  # sudo systemctl start mysqld
+  # systemctl stop mysqld
+  # systemctl status mysqld
+
+* 임시비밀번호를 알아둔다.
+sudo cat /var/log/mysqld.log | grep -i 'temporary password'
+  JWRLF>J4cqX(
+
+* mysql_secure_installation
+  해당 명령어를 실행하면 새로운 root 비밀번호 설정 등을 편하게 처리 할 수 있게 해준다.
+  https://dev.mysql.com/doc/refman/5.6/en/mysql-secure-installation.html
+  mysql root password : Mysql123!@#
+
+    Estimated strength of the password: 100 
+    Change the password for root ? ((Press y|Y for Yes, any other key for No) : y
+    Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+    Success.
+    Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
+    Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
+     - Dropping test database...
+    Success.
+    Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+    Success.
+
+
+
+* mysql 에 접속해보자
+  mysql -u root -p
+
+* 설치버전 확인
+  select version();
+
+* my.cnf 설정 변경 
+  [mysqld]
+  ...
+
+  #추가
+  lower_case_table_names=1
+  default-time-zone='+9:00'
+
+  => 재시작시 오류 발생
+
+* my.cnf 설정 변경 방법 (mysql 8.0)
+  참고 : https://atl.kr/dokuwiki/doku.php/mysql_8_%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90_%EA%B5%AC%EB%B6%84%EC%84%A4%EC%A0%95
+
+* DB, 계정생성, 권한부여
+	[root@yunjacdev ~]# mysql -uroot -p
+	Enter password: Mysql123!@#
+
+    mysql> create database macrogenwww DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    mysql> create user 'macrogenwww'@'%' identified by 'Macrogenwww123!@#';
+    mysql> grant all privileges on macrogenwww.* to 'macrogenwww'@'%';
+    mysql> show grants for 'macrogenwww'@'%';
+
+* OS 방화벽 허용 (mysql)
+  firewall-cmd --permanent --list-all
+  firewall-cmd --permanent --zone=public --add-port=3306/tcp
+  firewall-cmd --reload
+  firewall-cmd --permanent --list-all
+
+* DB 백업 (5.7)
+mysqldump -umacrogenwww -p macrogenwww > macrogenwww.20210723.sql
+Macrogenwww123!@#
+
+* db 복구 (8.0)
+mysql -u root -p macrogenwww < macrogenwww.20210723.sql
+Mysql123!@#
+
+*함수생성
+CREATE FUNCTION fn_nextval(p_seq_nm varchar(50) charset utf8) 
+RETURNS bigint
+BEGIN
+ insert into tb_seq
+  set seq_nm=ifnull(p_seq_nm,'default'), seq_curval=(@v_current_value:=1)
+ on duplicate key
+  update seq_curval=(@v_current_value:=seq_curval+1);
+ RETURN @v_current_value;
+END
+;
+

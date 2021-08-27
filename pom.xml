@@ -22,7 +22,7 @@
 
 		<core.domain.www>http://localhost:9080</core.domain.www>
 
-		<database.url>jdbc:mysql://192.168.1.38:3306/macrogenwww?autoReconnect=true</database.url>
+		<database.url>jdbc:mysql://211.110.58.242:23306/macrogenwww?autoReconnect=true</database.url>
 		<database.username>macrogenwww</database.username>
 		<database.password>Macrogenwww123!@#</database.password>
 
@@ -59,12 +59,16 @@
 			<properties>
 				<environment>real</environment>
 
-				<core.atch.private.path>/share/data/atch/private_macrogenwww</core.atch.private.path>
-				<core.atch.public.path>/share/data/atch/public_macrogenwww</core.atch.public.path>
+				<core.atch.private.path>/data/atch/private_macrogenwww</core.atch.private.path>
+				<core.atch.public.path>/data/atch/public_macrogenwww</core.atch.public.path>
 				<core.atch.public.url>/public</core.atch.public.url>
 
-				<core.domain.www>http://localhost:9080</core.domain.www>
+				<core.domain.www>https://new.macrogen.com</core.domain.www>
 				<js.path.min>.min</js.path.min>
+
+				<database.url>jdbc:mysql://172.20.0.200:3306/macrogenwww?autoReconnect=true</database.url>
+				<database.username>macrogenwww</database.username>
+				<database.password>Macrogenwww123!@#</database.password>
 
 			</properties>
 

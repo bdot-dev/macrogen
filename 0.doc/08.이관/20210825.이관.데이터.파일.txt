@@ -1,0 +1,121 @@
+** 개요
+	- 이관대상 : 파일, 데이터
+	- [asis 개발기] asis 백업 다운로드
+	- [tobe 개발기] 복구 (db_gh)
+	- [tobe 개발기] db 마이그레이션(db_gh->galleryhyundai), 파일 마이그레이션
+	- [tobe 개발기] galleryhyundai 백업, 파일백업
+	- [tobe 운영기] galleryhyundai 복구, 파일복구
+
+** 접속정보
+	- asis 운영기 (ssh)
+		. ip/port : ??
+		. id/pwd : ??
+
+	- tobe 개발기 (ssh)
+		. ip/port : 192.168.1.34 /22
+		. id/pwd : root/ ???
+					tomcat/ ???
+
+	- tobe 운영기 (ssh)
+		[web/was]
+		. ip/port : 211.110.34.200/22
+		. id/pwd :
+			eluo / mg!Q2w3e4r
+		    macrogen / Macrogen0)  => 실행계정 su - macrogen 으로 접근
+
+		[db]
+		. ip/port : 211.110.34.201/22
+		. id/pwd :
+			eluo / mg!Q2w3e4r
+		    mysql / Macrogen0)  => 실행계정 su - mysql 으로 접근
+
+** [asis 개발기] asis 백업 다운로드
+/home/backup/db_backup/20191104-db.tar.gz (당일, 1GB)
+/home/backup/src_backup/20191104-web_src.tar.gz (당일, 3GB)
+
+** [tobe 개발기]
+	- 경로 : /app/galleryhyundai/mig/
+
+** [tobe 개발기] db_gh 복구
+	$ cd /app/galleryhyundai/mig/
+	$ tar xvfz 20191104-db.tar.gz
+	$ cd ./20191104
+	$ ll
+	-rw-r--r--. 1 root root 2384538788 11월  4 00:11 20191104-all.sql
+	-rw-r--r--. 1 root root 1413720357 11월  4 00:12 20191104-db_gh.sql ===> 복구대상
+	-rw-r--r--. 1 root root  970345104 11월  4 00:12 20191104-db_hh.sql
+	# mysql -u root -p db_gh < 20191104-db_gh.sql
+	Mysql123!@#
+
+	-- 복구 확인 (db_gh 운영기 vs db_gh 개발기)
+	select count(*) from db_gh.tblwork
+	;
+	-- 2391
+	select * from db_gh.tblwork order by w_idx desc
+	;
+	-- 2611	LK3ZUDC379	Y	JOP0FA9470	Y	Y	A Thermodynamic Imaginary	2018				Installation view at ON AIR, carte blanche exhibition to Tomás Saraceno, Palais de Tokyo, Paris, 2018.
+
+
+** [tobe 개발기] 파일복구
+	$ cd /app/galleryhyundai/mig/
+	$ tar xvfz 20191104-web_src.tar.gz
+	$ cd 20191104
+	$ ll
+	-rw-r--r--. 1 tomcat tomcat 1471954861 11월  4 00:02 20191104-galleryhyundai.tar.gz ===> 복구대상
+	-rw-r--r--. 1 tomcat tomcat 1321806562 11월  4 00:04 20191104-hyundaihwarang.tar.gz
+	$ tar xvfz 20191104-galleryhyundai.tar.gz
+	$ cd /app/galleryhyundai/mig/20191104/galleryhyundai/public_html/upload => 복사대상 (이미지=>public, 문서=>private)
+	$ ll => 복사대상
+		합계 568
+		-rw-r--r--.  1 tomcat tomcat  97226  1월 23  2018 Gallery_Hyundai_Internship.pdf
+		drwx---r-x.  3 tomcat tomcat   8192 10월 30 10:25 artist
+		drwx---r-x.  3 tomcat tomcat   8192 10월 30 11:59 banner
+		drwx---r-x.  3 tomcat tomcat   8192  8월  3 13:47 catalog
+		drwx---r-x.  3 tomcat tomcat  20480 10월 30 10:12 exhibition
+		drwx---r-x.  3 tomcat tomcat   4096 10월  1 11:45 fair
+		drwx---r-x.  3 tomcat tomcat   4096 10월  6  2014 gallery
+		drwx---r-x.  4 tomcat tomcat   8192  5월 29 10:55 news
+		drwx---r-x. 12 tomcat tomcat    207 12월 28  2018 popup
+		drwx---r-x.  2 tomcat tomcat      6  6월 12 17:57 temp
+		drwx---r-x.  3 tomcat tomcat   8192 10월 10  2014 work
+		drwx---r-x.  3 tomcat tomcat 253952 10월 30 10:24 works
+		-rw-r--r--.  1 tomcat tomcat  52224  1월 15  2015 인사_채용_기획팀_인턴_14.doc
+	 /app/galleryhyundai/mig/20191104/galleryhyundai/public_html/upload/*
+	 	=> /share/data/atch/public_galleryhyundai/asis/upload
+	 	=> /share/data/atch/private_galleryhyundai/asis/upload
+	# 이미지복사
+	$ cd /share/data/atch/public_galleryhyundai/asis
+	$ rm -rf ./upload
+	$ mkdir -p ./upload
+	$ cd ./upload
+	$ cp -r /app/galleryhyundai/mig/20191104/galleryhyundai/public_html/upload/* ./
+
+	# 문서복사 (이미지는 삭제:확장자jpg)
+	$ cd /share/data/atch/private_galleryhyundai/asis
+	$ rm -rf ./upload
+	$ mkdir -p ./upload
+	$ cd ./upload
+	$ cp -r /app/galleryhyundai/mig/20191104/galleryhyundai/public_html/upload/* ./
+	$ find . -type f -name "*.jpg" -exec rm -rf {} \;  #이미지 삭제
+
+	-- 복사 확인 (/app/galleryhyundai/mig/20191104/galleryhyundai/public_html/upload vs /share/data/atch/public_galleryhyundai/asis)
+	$ du -sh ./*
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+# db_gh 생성 (usr_gh/GelqldhH)
+[root]# mysql -uroot -p
+Enter password: Mysql123!@#
+mysql> create database db_gh DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+mysql> create user 'usr_gh'@'%' identified by 'Usrgh123!@#';
+mysql> grant all privileges on db_gh.* to 'usr_gh'@'%';
+mysql> show grants for 'usr_gh'@'%';
+mysql> grant all privileges on db_gh.* to 'galleryhyundai'@'%';
+
+
+# db_gh 복구
+mysql -u root -p db_gh < 20191104-db_gh.sql
+Mysql123!@#
+

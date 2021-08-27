@@ -104,4 +104,10 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 		return nttMapper.list(nttVo);
 	}
 
+	@Override
+	public void migratePressRelease() throws Exception {
+		nttMapper.deletePressReleaseMigration();
+		nttMapper.migratePressRelease();
+	}
+
 }

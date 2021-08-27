@@ -85,9 +85,9 @@
 					</div>
 			</div>
 
-			<div class="btn_wrap tar">
+			<%-- <div class="btn_wrap tar">
 				<button type="button" class="btn btnAdd" v-on:click="onAdd">등록</button>
-			</div>
+			</div> --%>
 		</div>
 	</div>
 	<!-- //내용 -->
