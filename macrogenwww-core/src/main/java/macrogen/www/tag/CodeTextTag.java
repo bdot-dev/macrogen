@@ -11,7 +11,8 @@ import macrogen.www.vo.CodeVo;
 public class CodeTextTag extends RequestContextAwareTag {
 	private String group;
 	private String code;
-	
+	private String lang;
+
 	@Override
 	protected int doStartTagInternal() throws Exception {
 		CodeService codeService = (CodeService) getRequestContext().getWebApplicationContext().getBean("codeService");
@@ -20,7 +21,13 @@ public class CodeTextTag extends RequestContextAwareTag {
 
 		CodeVo codeVo = allCodeMap.get(String.format("%s:%s", group, code));
 		if (null != codeVo) {
-			pageContext.getOut().print(codeVo.getCodeNm());
+			if ("ko".equals(lang)) {
+				pageContext.getOut().print(codeVo.getCodeNmKo());
+			} else if ("en".equals(lang)) {
+				pageContext.getOut().print(codeVo.getCodeNmEn());
+			} else {
+				pageContext.getOut().print(codeVo.getCodeNm());
+			}
 		} else {
 			pageContext.getOut().print("");
 		}
@@ -32,6 +39,9 @@ public class CodeTextTag extends RequestContextAwareTag {
 	}
 	public void setCode(String code) {
 		this.code = code;
+	}
+	public void setLang(String lang) {
+		this.lang = lang;
 	}
 
 }

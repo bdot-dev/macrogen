@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><decorator:title />Eluo CMS</title>
+	<title><decorator:title />Macrogen CMS</title>
 	<%@ include file="/WEB-INF/jsp/inc/htmlHead.jsp" %>
 	<decorator:head />
 </head>

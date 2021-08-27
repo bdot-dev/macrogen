@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.EmpaMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and te.lang_code = #{langCode}
+		</if>
+		<if test="searchRceptSttusCode != null and searchRceptSttusCode != ''">
+			and te.rcept_sttus_code = #{searchRceptSttusCode}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and te.empa_sj like concat('%', #{searchKeyword}, '%')
+		</if>
+
+		<if test="searchBeginDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND te.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+			</if>
+			<if test='periodSearchCondition == "rcept_period"'>
+				AND ( te.rcept_begin_de <![CDATA[>=]]> DATE(#{searchBeginDt}) OR
+						te.rcept_end_de <![CDATA[>=]]> DATE(#{searchBeginDt}) )
+			</if>
+		</if>
+		<if test="searchEndDt != null">
+			<if test='periodSearchCondition == "updt_dt"'>
+				AND te.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+			</if>
+			<if test='periodSearchCondition == "rcept_period"'>
+				AND ( te.rcept_begin_de <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY) OR
+						te.rcept_end_de <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY) )
+			</if>
+		</if>
+
+	</sql>
+
+	<select id="count" parameterType="empaVo" resultType="int">
+		select count(*)
+		from tb_empa te
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="empaVo" resultType="empaVo">
+		<include refid="paging.countTop" />
+		select
+			te.empa_sn
+			, te.lang_code
+			, te.empa_sj
+			, te.rcept_begin_de
+			, te.rcept_end_de
+			, te.rcept_sttus_code
+			, ( select code_nm from tb_code where code_se = 'RCEPT_STTUS_CODE' and code = te.rcept_sttus_code ) rcept_sttus_code_nm
+			, te.sport_se_code
+			, ( select code_nm from tb_code where code_se = 'sport_se_code' and code = te.sport_se_code ) sport_se_code_nm
+			, te.atch_id
+			, ( select logic_nm from tb_atch where atch_id = te.atch_id ) logic_nm
+			, te.empa_cn
+			, te.regist_dt
+			, te.register_sn
+			, ( select user_nm from tb_user where user_sn = te.register_sn ) register_nm
+			, te.updt_dt
+			, te.updusr_sn
+			, ( select user_nm from tb_user where user_sn = te.updusr_sn ) updusr_nm
+		from tb_empa te
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by te.regist_dt desc, te.empa_sn desc
+			</when>
+			<otherwise>
+				order by te.empa_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="empaVo" resultType="empaVo">
+		select
+			te.empa_sn
+			, te.lang_code
+			, te.empa_sj
+			, te.rcept_begin_de
+			, te.rcept_end_de
+			, te.rcept_sttus_code
+			, ( select code_nm from tb_code where code_se = 'RCEPT_STTUS_CODE' and code = te.rcept_sttus_code ) rcept_sttus_code_nm
+			, te.sport_se_code
+			, ( select code_nm from tb_code where code_se = 'sport_se_code' and code = te.sport_se_code ) sport_se_code_nm
+			, te.atch_id
+			, ( select logic_nm from tb_atch where atch_id = te.atch_id ) logic_nm
+			, te.empa_cn
+			, te.regist_dt
+			, te.register_sn
+			, ( select user_nm from tb_user where user_sn = te.register_sn ) register_nm
+			, te.updt_dt
+			, te.updusr_sn
+			, ( select user_nm from tb_user where user_sn = te.updusr_sn ) updusr_nm
+		from tb_empa te
+		where te.empa_sn = #{empaSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_empa')
+	</select>
+
+	<insert id="insert" parameterType="empaVo">
+		insert into tb_empa (
+			empa_sn
+			, lang_code
+			, empa_sj
+			, rcept_begin_de
+			, rcept_end_de
+			, rcept_sttus_code
+			, sport_se_code
+			, atch_id
+			, empa_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{empaSn}
+			, #{langCode}
+			, #{empaSj}
+			, #{rceptBeginDe}
+			, #{rceptEndDe}
+			, #{rceptSttusCode}
+			, #{sportSeCode}
+			, #{atchId}
+			, #{empaCn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="empaVo">
+		delete from tb_empa where empa_sn = #{empaSn}
+	</delete>
+
+	<update id="update" parameterType="empaVo">
+		update tb_empa
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="empaSj != null">, empa_sj = #{empaSj} </if>
+			<if test="rceptBeginDe != null">, rcept_begin_de = #{rceptBeginDe} </if>
+			<if test="rceptEndDe != null">, rcept_end_de = #{rceptEndDe} </if>
+			<if test="rceptSttusCode != null">, rcept_sttus_code = #{rceptSttusCode} </if>
+			<if test="sportSeCode != null">, sport_se_code = #{sportSeCode} </if>
+			<if test="atchId != null">, atch_id = #{atchId} </if>
+			<if test="empaCn != null">, empa_cn = #{empaCn} </if>
+		where empa_sn = #{empaSn}
+	</update>
+
+</mapper>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.PolicyMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tp.lang_code = #{langCode}
+		</if>
+		<if test="policyCode != null and policyCode != ''">
+			AND tp.policy_code = #{policyCode}
+		</if>
+	</sql>
+
+	<select id="count" parameterType="policyVo" resultType="int">
+		select count(*)
+		from tb_policy tp
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="policyVo" resultType="policyVo">
+		<include refid="paging.countTop" />
+		select
+			tp.policy_sn
+			, tp.lang_code
+			, tp.policy_code
+			, tp.policy_ver
+			, tp.expsr_yn
+			, tp.applc_de
+			, tp.policy_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_policy tp
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tp.policy_sn desc
+			</when>
+			<otherwise>
+				order by tp.policy_code, tp.policy_ver desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="policyVo" resultType="policyVo">
+		select
+			tp.policy_sn
+			, tp.lang_code
+			, tp.policy_code
+			, tp.policy_ver
+			, tp.expsr_yn
+			, tp.applc_de
+			, tp.policy_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_policy tp
+		where tp.policy_sn = #{policySn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_policy')
+	</select>
+
+	<insert id="insert" parameterType="policyVo">
+		insert into tb_policy (
+			policy_sn
+			, lang_code
+			, policy_code
+			, policy_ver
+			, expsr_yn
+			, applc_de
+			, policy_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{policySn}
+			, #{langCode}
+			, #{policyCode}
+			, #{policyVer}
+			, #{expsrYn}
+			, #{applcDe}
+			, #{policyCn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="policyVo">
+		delete from tb_policy where policy_sn = #{policySn}
+	</delete>
+
+	<update id="update" parameterType="policyVo">
+		update tb_policy
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="policyCode != null">, policy_code = #{policyCode} </if>
+			<if test="policyVer != null">, policy_ver = #{policyVer} </if>
+			<if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
+			<if test="applcDe != null">, applc_de = #{applcDe} </if>
+			<if test="policyCn != null">, policy_cn = #{policyCn} </if>
+		where policy_sn = #{policySn}
+	</update>
+
+	<select id="viewByLangCodeAndPolicyCodeAndPolicyVer" parameterType="policyVo" resultType="policyVo">
+		select
+			tp.policy_sn
+			, tp.lang_code
+			, tp.policy_code
+			, tp.policy_ver
+			, tp.expsr_yn
+			, tp.applc_de
+			, tp.policy_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_policy tp
+		where tp.lang_code = #{langCode}
+		and tp.policy_code = #{policyCode}
+		and tp.policy_ver = #{policyVer}
+	</select>
+	
+	<select id="maxVersion" parameterType="policyVo" resultType="int">
+		select ifnull(max(policy_ver), 0) 
+		from tb_policy tp 
+		where tp.lang_code = #{langCode}
+		and tp.policy_code = #{policyCode}
+	</select>
+
+</mapper>

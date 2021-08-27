@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.CmpnyhistGroupPhotoMapper">
+
+	<sql id="list_where">
+		<if test="searchCmpnyhistGroupSn != null">
+			and tcgp.cmpnyhist_group_sn = #{searchCmpnyhistGroupSn}
+		</if>
+	</sql>
+
+	<select id="count" parameterType="cmpnyhistGroupPhotoVo" resultType="int">
+		select count(*)
+		from tb_cmpnyhist_group_photo tcgp
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="cmpnyhistGroupPhotoVo" resultType="cmpnyhistGroupPhotoVo">
+		<include refid="paging.countTop" />
+		select
+			tcgp.cmpnyhist_group_photo_sn
+			, tcgp.cmpnyhist_group_sn
+			, tcgp.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
+			, tcgp.photo_sj_ko
+			, tcgp.photo_sj_en
+			, tcgp.sort_ordr
+			, tcgp.regist_dt
+			, tcgp.register_sn
+			, ( select user_nm from tb_user where user_sn = tcgp.register_sn ) register_nm
+			, tcgp.updt_dt
+			, tcgp.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tcgp.updusr_sn ) updusr_nm
+			, tcg.begin_year
+			, tcg.end_year
+		from tb_cmpnyhist_group_photo tcgp
+		left join tb_cmpnyhist_group tcg on tcg.cmpnyhist_group_sn = tcgp.cmpnyhist_group_sn
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tcgp.regist_dt desc, tcgp.cmpnyhist_group_sn desc
+			</when>
+			<otherwise>
+				order by tcgp.sort_ordr
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="cmpnyhistGroupPhotoVo" resultType="cmpnyhistGroupPhotoVo">
+		select
+			tcgp.cmpnyhist_group_photo_sn
+			, tcgp.cmpnyhist_group_sn
+			, tcgp.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
+			, tcgp.photo_sj_ko
+			, tcgp.photo_sj_en
+			, tcgp.sort_ordr
+			, tcgp.regist_dt
+			, tcgp.register_sn
+			, ( select user_nm from tb_user where user_sn = tcgp.register_sn ) register_nm
+			, tcgp.updt_dt
+			, tcgp.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tcgp.updusr_sn ) updusr_nm
+		from tb_cmpnyhist_group_photo tcgp
+		where tcgp.cmpnyhist_group_photo_sn = #{cmpnyhistGroupPhotoSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_cmpnyhist_group_photo')
+	</select>
+
+	<insert id="insert" parameterType="cmpnyhistGroupPhotoVo">
+		insert into tb_cmpnyhist_group_photo (
+			cmpnyhist_group_photo_sn
+			, cmpnyhist_group_sn
+			, photo_atch_id
+			, photo_sj_ko
+			, photo_sj_en
+			, sort_ordr
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{cmpnyhistGroupPhotoSn}
+			, #{cmpnyhistGroupSn}
+			, #{photoAtchId}
+			, #{photoSjKo}
+			, #{photoSjEn}
+			, #{sortOrdr}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="cmpnyhistGroupPhotoVo">
+		delete from tb_cmpnyhist_group_photo
+		where cmpnyhist_group_photo_sn = #{cmpnyhistGroupPhotoSn}
+	</delete>
+
+	<update id="update" parameterType="cmpnyhistGroupPhotoVo">
+		update tb_cmpnyhist_group_photo
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+		    <if test="cmpnyhistGroupSn != null">, cmpnyhist_group_sn = #{cmpnyhistGroupSn} </if>
+			<if test="photoAtchId != null">, photo_atch_id = #{photoAtchId} </if>
+			<if test="photoSjKo != null">, photo_sj_ko = #{photoSjKo} </if>
+			<if test="photoSjEn != null">, photo_sj_en = #{photoSjEn} </if>
+			<if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+		where cmpnyhist_group_photo_sn = #{cmpnyhistGroupPhotoSn}
+	</update>
+
+	<update id="updateSortOrder" parameterType="cmpnyhistGroupPhotoVo">
+		update tb_cmpnyhist_group_photo
+		set
+			sort_ordr = #{sortOrdr}
+		where cmpnyhist_group_photo_sn = #{cmpnyhistGroupPhotoSn}
+	</update>
+</mapper>

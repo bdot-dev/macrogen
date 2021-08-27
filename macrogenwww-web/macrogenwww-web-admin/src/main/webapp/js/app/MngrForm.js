@@ -116,6 +116,23 @@ var MngrForm = (function($) {
 						url : '/mngr/initPasswordInputErrorCo',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
+						vm.fetchData();
+						alert("처리 되었습니다.");
+					});
+				},
+				onInitPasswordInitlYn : function() {
+					var vm = this;
+
+					if (!confirm('해당계정에 대해, 비밀번호를 초기 상태로 변경하시겠습니까?')) {
+						return false;
+					}
+
+					$.ajax({dataType : 'json', type : 'post',
+						contentType : 'application/json',
+						url : '/mngr/initPasswordInitlYn',
+						data : JSON.stringify(vm.resultVo),
+					}).done(function(data) {
+						vm.fetchData();
 						alert("처리 되었습니다.");
 					});
 				},

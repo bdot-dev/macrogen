@@ -97,7 +97,7 @@
 				</div>
 
 				<div class="btn_wrap tar">
-					<button type="button" class="btn btnAdd" v-on:click="onSaveSort">노출순서 저장</button>
+					<button v-if="resultList || resultList.length > 0" type="button" class="btn btnAdd" v-on:click="onSaveSort">노출순서 저장</button>
 					<button type="button" class="btn btnAdd" v-on:click="onAdd">등록</button>
 				</div>
 
@@ -124,7 +124,10 @@
 				searchEndDt: '<fmt:formatDate value="${listVo.searchEndDt}" pattern="yyyy-MM-dd"/>',
 			</c:if>
 		}
-		var options = { listVo: listVo };
+		var options = {
+			lang: '${langId}',
+			listVo: listVo,
+		};
 		popupList.init(options);
 	});
 

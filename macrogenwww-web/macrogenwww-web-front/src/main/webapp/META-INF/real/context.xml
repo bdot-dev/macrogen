@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="" reloadable="false">
-	<ResourceLink name="jdbc/macrogenwww"
-		global="jdbc/macrogenwww"
-		type="javax.sql.DataSource" />
+	<Resource name="jdbc/macrogenwww" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="${database.url}" username="${database.username}" password="${database.password}"
+		initialSize="3"
+		maxActive="30" maxIdle="10" minIdle="2" maxWaitMillis="60000"
+		validationQuery="SELECT 1" testOnBorrow="true" testWhileIdle="true"
+		timeBetweenEvictionRunsMillis="1800000" logAbandoned="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		loginTimeout="10" cachingAllowed="true" cacheMaxSize="100000"
+	/>
 </Context>

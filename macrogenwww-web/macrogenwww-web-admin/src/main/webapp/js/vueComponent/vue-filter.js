@@ -13,9 +13,11 @@ Vue.filter('timeToDate' , function (stmp, returnType){
 });
 /** yyyymmdd to yyyy년 mm월 **/
 Vue.filter('yyyymmToStr' , function (value){
-
 	if (!value) return ''
 	value = value.toString();
 	return value.substring(0,4) + "년 " + value.substring(4,6) + "월";
-
+});
+Vue.filter('enterToBr' , function (value){
+	if (!value) return value;
+	return value.split('\n').join('<br />');
 });

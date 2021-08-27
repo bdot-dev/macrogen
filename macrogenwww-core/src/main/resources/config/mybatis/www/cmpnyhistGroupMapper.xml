@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.CmpnyhistGroupMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="cmpnyhistGroupVo" resultType="int">
+		select count(*)
+		from tb_cmpnyhist_group tcg
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="cmpnyhistGroupVo" resultType="cmpnyhistGroupVo">
+		<include refid="paging.countTop" />
+		select
+			tcg.cmpnyhist_group_sn
+			, tcg.begin_year
+			, tcg.end_year
+			, tcg.groupnm_ko
+			, tcg.groupnm_en
+			, tcg.sort_ordr
+			, tcg.regist_dt
+			, tcg.register_sn
+			, ( select user_nm from tb_user where user_sn = tcg.register_sn ) register_nm
+			, tcg.updt_dt
+			, tcg.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tcg.updusr_sn ) updusr_nm
+		from tb_cmpnyhist_group tcg
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tcg.regist_dt desc, tcg.cmpnyhist_group_sn desc
+			</when>
+			<otherwise>
+				order by tcg.begin_year desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="cmpnyhistGroupVo" resultType="cmpnyhistGroupVo">
+		select
+			tcg.cmpnyhist_group_sn
+			, tcg.begin_year
+			, tcg.end_year
+			, tcg.groupnm_ko
+			, tcg.groupnm_en
+			, tcg.sort_ordr
+			, tcg.regist_dt
+			, tcg.register_sn
+			, ( select user_nm from tb_user where user_sn = tcg.register_sn ) register_nm
+			, tcg.updt_dt
+			, tcg.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tcg.updusr_sn ) updusr_nm
+		from tb_cmpnyhist_group tcg
+		where tcg.cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_cmpnyhist_group')
+	</select>
+
+	<insert id="insert" parameterType="cmpnyhistGroupVo">
+		insert into tb_cmpnyhist_group (
+			cmpnyhist_group_sn
+			, begin_year
+			, end_year
+			, groupnm_ko
+			, groupnm_en
+			, sort_ordr
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{cmpnyhistGroupSn}
+			, #{beginYear}
+			, #{endYear}
+			, #{groupnmKo}
+			, #{groupnmEn}
+			, #{sortOrdr}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="cmpnyhistGroupVo">
+		delete from tb_cmpnyhist_group where cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+	</delete>
+
+	<update id="update" parameterType="cmpnyhistGroupVo">
+		update tb_cmpnyhist_group
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="beginYear != null">, begin_year = #{beginYear} </if>
+			<if test="endYear != null">, end_year = #{endYear} </if>
+			<if test="groupnmKo != null">, groupnm_ko = #{groupnmKo} </if>
+			<if test="groupnmEn != null">, groupnm_en = #{groupnmEn} </if>
+			<if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+		where cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+	</update>
+
+</mapper>

@@ -11,7 +11,7 @@
 
 	<form:form commandName="resultVo" id="editForm" name="editForm">
 	<form:hidden path="mode" />
-	
+
 	<!-- 내용// -->
 	<div class="page_wrap">
 		<div class="title_h4_wrap">
@@ -43,7 +43,19 @@
 					<tr>
 						<th>코드명<span>*</span></th>
 						<td colspan="3">
-							<form:input path="codeNm" maxlength="50" placeholder="코드명" class="w100p" />
+							<form:input path="codeNm" maxlength="200" placeholder="코드명" class="w100p" />
+						</td>
+					</tr>
+					<tr>
+						<th>코드명(국문)<span>*</span></th>
+						<td colspan="3">
+							<form:input path="codeNmKo" maxlength="200" placeholder="코드명(국문)" class="w100p" />
+						</td>
+					</tr>
+					<tr>
+						<th>코드명(영문)<span>*</span></th>
+						<td colspan="3">
+							<form:input path="codeNmEn" maxlength="200" placeholder="코드명(영문)" class="w100p" />
 						</td>
 					</tr>
 					<tr>
@@ -52,7 +64,7 @@
 							<form:input path="sortOrdr" maxlength="5" placeholder="정렬순서(숫자)" class="w100p" />
 						</td>
 					</tr>
-					
+
 					<c:if test="${resultVo.mode eq 'UPDATE' }">
 					<tr>
 						<th>등록일시</th>
@@ -61,7 +73,7 @@
 						<td class="tal"><fmt:formatDate value="${resultVo.updtDt }" pattern="yyyy-MM-dd HH:mm" /></td>
 					</tr>
 					</c:if>
-					
+
 				</tbody>
 			</table>
 		</div>
@@ -78,10 +90,10 @@
 	<!-- //내용 -->
 
 	</form:form>
-	
+
 	<script>
 	var $form = $('#editForm');
-	
+
 	$(function() {
 		var validateOptions = {
 			rules: {
@@ -94,7 +106,7 @@
 				codeSe: { required: '필수입력입니다' },
 				code: { required: '필수입력입니다' },
 				codeNm: { required: '필수입력입니다' },
-				sortOrdr: { 
+				sortOrdr: {
 					required: '필수입력입니다',
 					number: '숫자를 입력하세요.'
 				},
@@ -108,7 +120,7 @@
 			if (!$form.valid()) {
 				return false;
 			}
-			
+
 			if (!confirm('저장하시겠습니까?')) {
 				return false;
 			}
@@ -133,7 +145,7 @@
 				alert('비정상접근입니다.');
 				return false;
 			}
-			
+
 			if (!confirm('삭제하시겠습니까?')) {
 				return false;
 			}
@@ -159,7 +171,7 @@
 
 
 	});
-	
+
 	function goList() {
 		var $listForm = $('#listForm');
 		$listForm.attr('action', '/code/list');

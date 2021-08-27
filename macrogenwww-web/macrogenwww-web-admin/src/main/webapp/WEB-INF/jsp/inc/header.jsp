@@ -11,10 +11,18 @@
 	</ul>
 </div>
 <div class="gnb_wrap">
-	<h1><a href="/">Eluocnc</a></h1>
+	<h1><a href="/">Macrogen</a></h1>
 	<ul class="gnb">
 		<c:forEach var="result" items="${topmenuList }" varStatus="status">
-			<li ${result.menuSn eq selected_menu_vo.topMenuSn ? 'class="active"' : ''}><a href="/mngrmenu/forward/${result.menuSn}">${result.menuNm }</a></li>
+			<c:choose>
+				<c:when test="${fn:startsWith(result.menuUrl, 'http') }">
+					<li><a style="font-size: 17px;" href="${result.menuUrl }" target="blank">${result.menuNm }</a></li>
+				</c:when>
+				<c:otherwise>
+					<li ${result.menuSn eq selected_menu_vo.topMenuSn ? 'class="active"' : ''}><a style="font-size: 17px;"
+						href="/mngrmenu/forward/${result.menuSn}">${result.menuNm }</a></li>
+				</c:otherwise>
+			</c:choose>
 		</c:forEach>
 	</ul>
 </div>

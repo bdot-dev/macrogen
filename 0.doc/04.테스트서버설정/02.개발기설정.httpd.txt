@@ -1,0 +1,49 @@
+****worker 추가 (vi /app/apache_2.4.33/conf/workers.properties)
+
+workers.tomcat_home 에 , /app/macrogenwww/admin/, /app/macrogenwww/front/ 추가
+worker.list 에 ,worker_macrogenwww_admin,worker_macrogenwww_front 추가
+
+worker.worker_macrogenwww_admin.port=29009
+worker.worker_macrogenwww_admin.host=localhost
+worker.worker_macrogenwww_admin.type=ajp13
+
+worker.worker_macrogenwww_front.port=30009
+worker.worker_macrogenwww_front.host=localhost
+worker.worker_macrogenwww_front.type=ajp13
+
+	
+****VirtualHost 추가(vi /app/apache_2.4.33/conf/extra/httpd-vhosts.conf)
+
+<VirtualHost *:9001>
+        DocumentRoot "/app/macrogenwww/admin/webapps/ROOT"
+        ServerName cms.macrogen.eluocnc.com
+
+        Alias /public/ /share/data/atch/public_macrogenwww/
+
+        SetEnvIf Request_URI "/public/" no-jk
+
+        jkMount /* worker_macrogenwww_admin
+
+        ErrorLog "/app/apache_2.4.33/logs/macrogenwww_admin_error_log"
+        CustomLog "/app/apache_2.4.33/logs/macrogenwww_admin_access_log" common
+</VirtualHost>
+
+<VirtualHost *:9001>
+        DocumentRoot "/app/macrogenwww/front/webapps/ROOT"
+        ServerName www.macrogen.eluocnc.com
+
+        Alias /public/ /share/data/atch/public_macrogenwww/
+
+        SetEnvIf Request_URI "/css/" no-jk
+        SetEnvIf Request_URI "/font/" no-jk
+        SetEnvIf Request_URI "/html/" no-jk
+        SetEnvIf Request_URI "/images/" no-jk
+        SetEnvIf Request_URI "/public/" no-jk
+
+        jkMount /* worker_macrogenwww_front
+
+        ErrorLog "/app/apache_2.4.33/logs/macrogenwww_front_error_log"
+        CustomLog "/app/apache_2.4.33/logs/macrogenwww_front_access_log" common
+</VirtualHost>
+
+	

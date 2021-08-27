@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.PlosdocMapper">
+
+	<sql id="list_where">
+	</sql>
+
+	<select id="count" parameterType="plosdocVo" resultType="int">
+		select count(*)
+		from tb_plosdoc tp
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="plosdocVo" resultType="plosdocVo">
+		<include refid="paging.countTop" />
+		select
+			tp.plosdoc_sn
+			, tp.updt_de
+			, tp.iem_odr_ko
+			, tp.iem_odr_en
+			, tp.iem_de
+			, tp.sales
+			, tp.cost_sales
+			, tp.sell_admin_expenses
+			, tp.income_loss_bef_incometax
+			, tp.incometax_expenses
+			, tp.discont_oper_income
+			, tp.other_comp_income
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_plosdoc tp
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tp.regist_dt desc, tp.plosdoc_sn desc
+			</when>
+			<otherwise>
+				order by tp.plosdoc_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="plosdocVo" resultType="plosdocVo">
+		select
+			tp.plosdoc_sn
+			, tp.updt_de
+			, tp.iem_odr_ko
+			, tp.iem_odr_en
+			, tp.iem_de
+			, tp.sales
+			, tp.cost_sales
+			, tp.sell_admin_expenses
+			, tp.income_loss_bef_incometax
+			, tp.incometax_expenses
+			, tp.discont_oper_income
+			, tp.other_comp_income
+			, tp.regist_dt
+			, tp.register_sn
+			, tp.updt_dt
+			, tp.updusr_sn
+		from tb_plosdoc tp
+		where tp.plosdoc_sn = #{plosdocSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_plosdoc')
+	</select>
+
+	<insert id="insert" parameterType="plosdocVo">
+		insert into tb_plosdoc (
+			plosdoc_sn
+			, updt_de
+			, iem_odr_ko
+			, iem_odr_en
+			, iem_de
+			, sales
+			, cost_sales
+			, sell_admin_expenses
+			, income_loss_bef_incometax
+			, incometax_expenses
+			, discont_oper_income
+			, other_comp_income
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{plosdocSn}
+			, #{updtDe}
+			, #{iemOdrKo}
+			, #{iemOdrEn}
+			, #{iemDe}
+			, #{sales}
+			, #{costSales}
+			, #{sellAdminExpenses}
+			, #{incomeLossBefIncometax}
+			, #{incometaxExpenses}
+			, #{discontOperIncome}
+			, #{otherCompIncome}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="plosdocVo">
+		delete from tb_plosdoc where plosdoc_sn = #{plosdocSn}
+	</delete>
+
+	<update id="update" parameterType="plosdocVo">
+		update tb_plosdoc
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="updtDe != null">, updt_de = #{updtDe} </if>
+			<if test="iemOdrKo != null">, iem_odr_ko = #{iemOdrKo} </if>
+			<if test="iemOdrEn != null">, iem_odr_en = #{iemOdrEn} </if>
+			<if test="iemDe != null">, iem_de = #{iemDe} </if>
+			<if test="sales != null">, sales = #{sales} </if>
+			<if test="costSales != null">, cost_sales = #{costSales} </if>
+			<if test="sellAdminExpenses != null">, sell_admin_expenses = #{sellAdminExpenses} </if>
+			<if test="incomeLossBefIncometax != null">, income_loss_bef_incometax = #{incomeLossBefIncometax} </if>
+			<if test="incometaxExpenses != null">, incometax_expenses = #{incometaxExpenses} </if>
+			<if test="discontOperIncome != null">, discont_oper_income = #{discontOperIncome} </if>
+			<if test="otherCompIncome != null">, other_comp_income = #{otherCompIncome} </if>
+		where plosdoc_sn = #{plosdocSn}
+	</update>
+
+	<delete id="deleteAll">
+		delete from tb_plosdoc
+	</delete>
+</mapper>

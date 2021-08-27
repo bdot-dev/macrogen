@@ -1,0 +1,79 @@
+[item 생성 : 복제를 이용]
+macrogen_real_admin_was
+macrogen_real_front_was
+
+[repository : git]
+url : http://192.168.1.38:28080/kimjd72/macrogenwww.git
+branch : master
+
+[빌드유발 : Poll scm]
+schedule : H/5 * * * *
+
+[build - maven]
+maven version : /app/maven354
+maven goals : clean package -Preal
+
+******************* jenkins items
+[macrogen_real_admin_was]
+      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git
+      Poll SCM: H/5 * * * *
+      Maven Version: maven354
+      Maven Goals: clean package -Ptest
+      Execute shell Command
+----- start of Execute shell Command -----------
+# was shutdown
+ssh appuser@211.110.34.200 /app/drgmall/admin/downcon.sh
+
+# sleep 10 second
+ssh appuser@211.110.34.200 sleep 10
+
+# ROOT delete
+ssh appuser@211.110.34.200 "cd /data/cms_data/ROOT; rm -rf ./*"
+
+# upload war file to real server
+scp /home/tomcat/.jenkins/workspace/macrogen_real_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-real.war appuser@211.110.34.200:/home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war
+
+# war file backup
+ssh appuser@211.110.34.200 "cp /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real_`date +%Y%m%d`_`date +%H%M%S`.war"
+
+# war file jar xf
+ssh appuser@211.110.34.200 "cd /data/cms_data/ROOT; jar xf /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war"
+
+# was startup
+ssh appuser@211.110.34.200 /app/drgmall/admin/startcon.sh
+
+# before war file delete
+ssh appuser@211.110.34.200 find /home/macrogen/tomcat_cms/backup -type f -mtime +1 -exec "rm -f {} \;"
+
+----- end of Execute shell Command -----------
+
+
+/app/macrogenwww/admin/downcon.sh
+sleep 10
+cd /app/macrogenwww/admin/webapps/ROOT
+rm -rf *
+jar xf /home/tomcat/.jenkins/workspace/macrogen_test_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-test.war
+cp /home/tomcat/.jenkins/workspace/macrogen_test_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-test.war /app/macrogenwww/admin/backup/macrogenwww_admin-1.0.0_`date +%Y%m%d`_`date +%H%M%S`.war
+find /app/macrogenwww/admin/backup -type f -mtime +1 -exec rm {} \;
+BUILD_ID=dontKillMe /app/macrogenwww/admin/startcon.sh
+
+
+
+[macrogen_real_front_was]
+      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git
+      Poll SCM: H/5 * * * *
+      Maven Version: maven354
+      Maven Goals: clean package -Ptest
+      Execute shell Command
+----- start of Execute shell Command -----------
+/app/macrogenwww/front/downcon.sh
+sleep 10
+cd /app/macrogenwww/front/webapps/ROOT
+rm -rf *
+jar xf /home/tomcat/.jenkins/workspace/macrogen_test_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-test.war
+cp /home/tomcat/.jenkins/workspace/macrogen_test_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-test.war /app/macrogenwww/front/backup/macrogenwww_front-1.0.0_`date +%Y%m%d`_`date +%H%M%S`.war
+find /app/macrogenwww/front/backup -type f -mtime +1 -exec rm {} \;
+BUILD_ID=dontKillMe /app/macrogenwww/front/startcon.sh
+----- end of Execute shell Command -----------
+
+

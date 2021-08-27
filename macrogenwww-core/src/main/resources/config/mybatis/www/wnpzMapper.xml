@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.WnpzMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tw.lang_code = #{langCode}
+		</if>
+		<if test="searchWnpzClCodeList != null and searchWnpzClCodeList.isEmpty != true">
+			and tw.wnpz_cl_code in (
+				<foreach collection="searchWnpzClCodeList" item="code" separator=", ">
+					#{code}
+				</foreach>
+			)
+		</if>
+		<if test="searchWnpzTmeCode != null and searchWnpzTmeCode != ''">
+			and tw.wnpz_tme_code = #{searchWnpzTmeCode}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tw.wnpz_nm like concat('%', #{searchKeyword}, '%')
+		</if>
+	</sql>
+
+	<select id="count" parameterType="wnpzVo" resultType="int">
+		select count(*)
+		from tb_wnpz tw
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="wnpzVo" resultType="wnpzVo">
+		<include refid="paging.countTop" />
+		select
+			tw.wnpz_sn
+			, tw.lang_code
+			, tw.wnpz_cl_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
+			, tw.wnpz_tme_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
+			, tw.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
+			, tw.wnpz_nm
+			, tw.rm
+			, tw.wnpz_cn
+			, tw.regist_dt
+			, tw.register_sn
+			, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
+			, tw.updt_dt
+			, tw.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
+		from tb_wnpz tw
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tw.regist_dt desc, tw.wnpz_sn desc
+			</when>
+			<otherwise>
+				order by tw.wnpz_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="wnpzVo" resultType="wnpzVo">
+		select
+			tw.wnpz_sn
+			, tw.lang_code
+			, tw.wnpz_cl_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
+			, tw.wnpz_tme_code
+			, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
+			, tw.photo_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
+			, tw.wnpz_nm
+			, tw.rm
+			, tw.wnpz_cn
+			, tw.regist_dt
+			, tw.register_sn
+			, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
+			, tw.updt_dt
+			, tw.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
+		from tb_wnpz tw
+		where tw.wnpz_sn = #{wnpzSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_wnpz')
+	</select>
+
+	<insert id="insert" parameterType="wnpzVo">
+		insert into tb_wnpz (
+			wnpz_sn
+			, lang_code
+			, wnpz_cl_code
+			, wnpz_tme_code
+			, photo_atch_id
+			, wnpz_nm
+			, rm
+			, wnpz_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{wnpzSn}
+			, #{langCode}
+			, #{wnpzClCode}
+			, #{wnpzTmeCode}
+			, #{photoAtchId}
+			, #{wnpzNm}
+			, #{rm}
+			, #{wnpzCn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="wnpzVo">
+		delete from tb_wnpz where wnpz_sn = #{wnpzSn}
+	</delete>
+
+	<update id="update" parameterType="wnpzVo">
+		update tb_wnpz
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="wnpzClCode != null">, wnpz_cl_code = #{wnpzClCode} </if>
+			<if test="wnpzTmeCode != null">, wnpz_tme_code = #{wnpzTmeCode} </if>
+			<if test="photoAtchId != null">, photo_atch_id = #{photoAtchId} </if>
+			<if test="wnpzNm != null">, wnpz_nm = #{wnpzNm} </if>
+			<if test="rm != null">, rm = #{rm} </if>
+			<if test="wnpzCn != null">, wnpz_cn = #{wnpzCn} </if>
+		where wnpz_sn = #{wnpzSn}
+	</update>
+
+</mapper>

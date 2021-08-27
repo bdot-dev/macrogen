@@ -19,7 +19,7 @@
 						<form:option value="code_nm">코드명</form:option>
 						<form:option value="code">코드</form:option>
 					</form:select>
-					
+
 					<form:input path="searchKeyword" style="width:200px;" class="mr5" />
 				</div>
 				<div class="list_wrap">
@@ -48,6 +48,8 @@
 					<col width="150px">
 					<col width="150px">
 					<col width="">
+					<col width="">
+					<col width="">
 					<col width="60px">
 					<col width="100px">
 				</colgroup>
@@ -58,6 +60,8 @@
 						<th>코드구분</th>
 						<th>코드</th>
 						<th>코드명</th>
+						<th>코드명(국문)</th>
+						<th>코드명(영문)</th>
 						<th>정렬순서</th>
 						<th>수정일자</th>
 					</tr>
@@ -70,6 +74,8 @@
 						<td><a href="javascript:linkView('${result.codeSe }', '${result.code }')">${result.codeSe }</a></td>
 						<td><a href="javascript:linkView('${result.codeSe }', '${result.code }')">${result.code }</a></td>
 						<td>${result.codeNm }</td>
+						<td>${result.codeNmKo }</td>
+						<td>${result.codeNmEn }</td>
 						<td>${result.sortOrdr }</td>
 						<td><fmt:formatDate value="${result.updtDt }" pattern="yyyy-MM-dd" /></td>
 					</tr>
@@ -77,12 +83,12 @@
 
 					<c:if test="${fn:length(resultList) == 0}">
 					<tr>
-						<td nowrap colspan="7">검색결과가 없습니다.</td>
+						<td nowrap colspan="9">검색결과가 없습니다.</td>
 					</tr>
 					</c:if>
 				</tbody>
 			</table>
-			
+
 			<div class="pagination_wrap">
 				<div class="pagination">
 					<ui:pagination paginationInfo="${paginationInfo}" type="image" jsFunction="linkPage" />
@@ -100,7 +106,7 @@
 
 	<script>
 		var $form = $("#listForm");
-		
+
 		$(function() {
 			$form.find(".btnSearch").on('click', function(e){
 				linkPage(1);
@@ -122,14 +128,14 @@
 				$form.find('[name=codePkList]').prop('checked', checked);
 		    });
 		});
-		
+
 	    function linkView(codeSe, code) {
 			$form.find('#codeSe').val(codeSe);
 			$form.find('#code').val(code);
 			$form.attr('action', '/code/form');
 			$form.submit();
 	    }
-	
+
 	    function linkPage(pageNo) {
 			$form.find('#pageIndex').val(pageNo);
 			$form.attr('action', '/code/list');

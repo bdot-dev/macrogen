@@ -102,4 +102,8 @@ public interface NttService {
      * @throws Exception
      */
     void increaseRdcnt(NttVo nttVo) throws Exception;
+
+	List<NttVo> upendFixingList(String langCode, String bbsId) throws Exception;
+
+	void migratePressRelease() throws Exception;
 }

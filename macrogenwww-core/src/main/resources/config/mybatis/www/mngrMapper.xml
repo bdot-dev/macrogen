@@ -52,6 +52,7 @@
         , tu.password_input_error_co
         , tu.login_co
         , tu.last_login_dt
+        , tu.password_initl_yn
     from tb_mngr tm
     inner join tb_user tu on tu.user_sn = tm.user_sn
     where 1=1
@@ -77,6 +78,7 @@
         , tu.password_input_error_co
         , tu.login_co
         , tu.last_login_dt
+        , tu.password_initl_yn
     from tb_mngr tm
     inner join tb_user tu on tu.user_sn = tm.user_sn
     where tm.user_sn = #{userSn}
@@ -98,6 +100,7 @@
         , tu.password_input_error_co
         , tu.login_co
         , tu.last_login_dt
+        , tu.password_initl_yn
     from tb_mngr tm
     inner join tb_user tu on tu.user_sn = tm.user_sn
     where tu.login_id = #{loginId}

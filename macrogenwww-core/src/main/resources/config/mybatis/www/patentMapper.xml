@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.PatentMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			and tp.lang_code = #{langCode}
+		</if>
+		<if test="searchBeginDt != null">
+			AND tp.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+		</if>
+		<if test="searchEndDt != null">
+			AND tp.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+		</if>
+		<if test="searchCtgryCode != null and searchCtgryCode != ''">
+			and tp.ctgry_code = #{searchCtgryCode}
+		</if>
+		<if test="searchNationCode != null and searchNationCode != ''">
+			and tp.nation_code = #{searchNationCode}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tp.patent_cn like concat('%', #{searchKeyword}, '%')
+		</if>
+	</sql>
+
+	<select id="count" parameterType="patentVo" resultType="int">
+		select count(*)
+		from tb_patent tp
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="patentVo" resultType="patentVo">
+		<include refid="paging.countTop" />
+		select
+			tp.patent_sn
+			, tp.lang_code
+			, tp.ctgry_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_CTGRY_CODE' and code = tp.ctgry_code ) ctgry_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'PATENT_CTGRY_CODE' and code = tp.ctgry_code ) ctgry_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'PATENT_CTGRY_CODE' and code = tp.ctgry_code ) ctgry_code_nm_en
+			, tp.nation_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tp.nation_code ) nation_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'PATENT_NATION_CODE' and code = tp.nation_code ) nation_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'PATENT_NATION_CODE' and code = tp.nation_code ) nation_code_nm_en
+			, tp.patent_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, ( select user_nm from tb_user where user_sn = tp.register_sn ) register_nm
+			, tp.updt_dt
+			, tp.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tp.updusr_sn ) updusr_nm
+		from tb_patent tp
+		where 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tp.regist_dt desc, tp.patent_sn desc
+			</when>
+			<otherwise>
+				order by tp.patent_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom" />
+	</select>
+
+	<select id="view" parameterType="patentVo" resultType="patentVo">
+		select
+			tp.patent_sn
+			, tp.lang_code
+			, tp.ctgry_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_CTGRY_CODE' and code = tp.ctgry_code ) ctgry_code_nm
+			, tp.nation_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tp.nation_code ) nation_code_nm
+			, tp.patent_cn
+			, tp.regist_dt
+			, tp.register_sn
+			, ( select user_nm from tb_user where user_sn = tp.register_sn ) register_nm
+			, tp.updt_dt
+			, tp.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tp.updusr_sn ) updusr_nm
+		from tb_patent tp
+		where tp.patent_sn = #{patentSn}
+	</select>
+
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_patent')
+	</select>
+
+	<insert id="insert" parameterType="patentVo">
+		insert into tb_patent (
+			patent_sn
+			, lang_code
+			, ctgry_code
+			, nation_code
+			, patent_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{patentSn}
+			, #{langCode}
+			, #{ctgryCode}
+			, #{nationCode}
+			, #{patentCn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<delete id="delete" parameterType="patentVo">
+		delete from tb_patent where patent_sn = #{patentSn}
+	</delete>
+
+	<update id="update" parameterType="patentVo">
+		update tb_patent
+		set
+		    updt_dt = now()
+		    , updusr_sn = #{updusrSn}
+			<if test="langCode != null">, lang_code = #{langCode} </if>
+			<if test="ctgryCode != null">, ctgry_code = #{ctgryCode} </if>
+			<if test="nationCode != null">, nation_code = #{nationCode} </if>
+			<if test="patentCn != null">, patent_cn = #{patentCn} </if>
+		where patent_sn = #{patentSn}
+	</update>
+
+</mapper>

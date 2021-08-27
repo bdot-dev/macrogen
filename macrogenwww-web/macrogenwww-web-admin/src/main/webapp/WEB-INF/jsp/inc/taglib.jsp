@@ -9,6 +9,14 @@
 %><%@ taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator"
 %><%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"
 %><%@ taglib prefix="code" uri="/WEB-INF/tlds/code.tld"
-%><% pageContext.setAttribute("newline", "\n"); 
+%><% pageContext.setAttribute("newline", "\n");
 %>
 <spring:eval var="publicUrl" expression="@propConf.getProperty('globals.atch.public.url')"/>
+<c:choose>
+	<c:when test="${langId eq 'en' }">
+		<c:set var="lang" value="En" />
+	</c:when>
+	<c:otherwise>
+		<c:set var="lang" value="Ko" />
+	</c:otherwise>
+</c:choose>

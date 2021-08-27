@@ -11,7 +11,7 @@ package macrogen.www.enums;
  * @version :
  */
 public enum Roles {
-	ROLE_ADMIN, ROLE_USER;
+	ROLE_GENERAL, ROLE_ADMIN, ROLE_USER;
 
 	private Roles() {
 	}

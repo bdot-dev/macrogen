@@ -16,7 +16,8 @@ var nttForm = (function($) {
 				resultVo : {},
 				bbsCtgryList: [],
 				expsrYnList: [],
-				submitFlag : false
+				submitFlag : false,
+				thumbBassImageCodeList: [],
 			},
 			created : function (){
 				var vm = this;
@@ -28,13 +29,14 @@ var nttForm = (function($) {
 					$.ajax({
 						dataType : 'json',
 						type : 'POST',
-						url : '/' + options.bbsId + '/form/data',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/data',
 						contentType : 'application/json',
 						data : JSON.stringify(vm.nttVo)
 					}).done(function (data){
 						vm.resultVo = data.resultVo;
 						vm.bbsCtgryList = data.bbsCtgryList;
 						vm.expsrYnList = data.expsrYnList;
+						vm.thumbBassImageCodeList = data.thumbBassImageCodeList;
 					});
 				},
 				onList : function() {
@@ -70,10 +72,24 @@ var nttForm = (function($) {
 						return false;
 					}
 
+					if (vm.$refs.thumbBassImageUseYn) {
+						if ('Y' == vm.resultVo.thumbBassImageUseYn) {
+							if (!vm.resultVo.thumbBassImageCode) {
+								alert('필수 입력 - 리스트이미지');
+								return false;
+							}
+						} else {
+							if (!vm.resultVo.thumbAtchId) {
+								alert('필수 입력 - 리스트이미지');
+								return false;
+							}
+						}
+					}
+
 					if (CKEDITOR) {
 						for (var key in CKEDITOR.instances) {
 							if (CKEDITOR.instances.hasOwnProperty(key)) {
-								vm.resultVo.nttCn = CKEDITOR.instances[key].getData();
+								vm.resultVo[key] = CKEDITOR.instances[key].getData();
 							}
 						}
 					}
@@ -88,7 +104,7 @@ var nttForm = (function($) {
 						dataType : 'json',
 						type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.bbsId + '/form/submit',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/submit',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -116,7 +132,7 @@ var nttForm = (function($) {
 						dataType : 'json',
 						type : 'post',
 						contentType : 'application/json',
-						url : '/' + options.bbsId + '/form/delete',
+						url : '/' + options.lang + '/' + options.bbsId + '/form/delete',
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
@@ -124,7 +140,24 @@ var nttForm = (function($) {
 						alert('삭제되었습니다.');
 						goList();
 					});
-				}
+				},
+				onchangeThumbFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.thumbAtchId = data.resultVo.atchId;
+						vm.resultVo.thumbFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeleteThumb : function() {
+					var vm = this;
+					vm.resultVo.thumbAtchId = null;
+					vm.resultVo.thumbFlpth = null;
+				},
+				enterToBr: function(val) {
+					if (!val) return val;
+					return val.split('\n').join('<br />');
+				},
 			},
 			updated : function () {
 				var vm = this;
@@ -137,7 +170,7 @@ var nttForm = (function($) {
 
 	var goList = function (){
 		var $listForm = $('#listForm');
-		$listForm.attr('action', '/' + options.bbsId + '/list');
+		$listForm.attr('action', '/' + options.lang + '/' + options.bbsId + '/list');
 		$listForm.submit();
 	};
 

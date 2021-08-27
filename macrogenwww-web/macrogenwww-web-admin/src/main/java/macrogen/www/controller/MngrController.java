@@ -40,6 +40,8 @@ import macrogen.www.vo.UserVo;
 @Controller
 @RequestMapping("/mngr")
 public class MngrController {
+	private static final String INITIAL_PASSWORD = "macrogen@admin";
+	
 	@Resource(name="mngrService")
 	private MngrService mngrService;
 
@@ -185,7 +187,7 @@ public class MngrController {
 			resultMap.put("resultVo", resultVo);
 
 			// 기본값 설정
-			resultVo.setRoleId(Roles.ROLE_ADMIN.name());
+			resultVo.setRoleId(Roles.ROLE_GENERAL.name());
 		}
 
 		RoleVo param = new RoleVo();
@@ -226,6 +228,10 @@ public class MngrController {
 		if (!StringUtils.isEmpty(mngrVo.getUserSn())) {
 			mngrService.update(mngrVo);
 		} else {
+			// 관리자 등록시, 초기비밀번호(macrogen@admin) 설정, 비밀번호_초기화_여부 'Y' 로 설정
+			mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
+			mngrVo.setPasswordInitlYn("Y");
+			
 			mngrService.insert(mngrVo);
 		}
 
@@ -302,6 +308,21 @@ public class MngrController {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		mngrService.initPasswordInputErrorCo(mngrVo);
+
+		resultMap.put("result", "success");
+		return resultMap;
+	}
+
+	@RequestMapping("/initPasswordInitlYn")
+	@ResponseBody
+	public Map<String, Object> initPasswordInitlYn(@AuthenticationPrincipal MngrVo loginVo,
+			@RequestBody MngrVo mngrVo) throws Exception {
+		Map<String, Object> resultMap = new HashMap<>();
+
+		mngrVo.setUpdusrSn(loginVo.getUserSn());
+
+		mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
+		mngrService.initPassword(mngrVo);
 
 		resultMap.put("result", "success");
 		return resultMap;

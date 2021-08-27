@@ -11,13 +11,13 @@
 		<property name="dataSource" ref="egov.dataSource"/>
 	</bean>
 	<tx:advice id="txAdvice" transaction-manager="txManager">
-	   <tx:attributes>	 
+	   <tx:attributes>
 	       <tx:method name="*" propagation="REQUIRED" rollback-for="Exception"/>
 	   </tx:attributes>
 	</tx:advice>
-    
+
 	<aop:config>
-		<aop:pointcut id="requiredTx" expression="execution(* eluo..*Impl.*(..)) or
+		<aop:pointcut id="requiredTx" expression="execution(* macrogen..*Impl.*(..)) or
 												  execution(* egovframework.rte.fdl.excel.impl.*Impl.*(..))"/>
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="requiredTx" />
 	</aop:config>
