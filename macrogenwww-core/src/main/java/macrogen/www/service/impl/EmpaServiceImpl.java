@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.EmpaMapper;
 import macrogen.www.service.EmpaService;
 import macrogen.www.vo.EmpaVo;
@@ -62,4 +63,20 @@ public class EmpaServiceImpl extends EgovAbstractServiceImpl implements EmpaServ
 		EmpaVo vo = new EmpaVo();
 		vo.setEmpaSn(sn);
 		return view(vo);
-	}}
+	}
+
+	@Override
+	public void migrateEmpBoard() throws Exception {
+		empaMapper.deleteMigratedEmpBoard();
+
+		EmpaVo vo = new EmpaVo();
+
+		vo.setLangCode(LangId.ko.name());
+		empaMapper.migrateEmpBoard(vo);
+
+		vo.setLangCode(LangId.en.name());
+		empaMapper.migrateEmpBoard(vo);
+
+	}
+
+}

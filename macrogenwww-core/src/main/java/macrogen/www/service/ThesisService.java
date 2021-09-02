@@ -29,4 +29,6 @@ public interface ThesisService {
 	void update(ThesisVo vo) throws Exception;
 
 	ThesisVo viewByPk(Long thesisSn) throws Exception;
+
+	void migrateThesis() throws Exception;
 }

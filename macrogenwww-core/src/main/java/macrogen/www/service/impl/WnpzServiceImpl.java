@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.Codes;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.WnpzMapper;
 import macrogen.www.service.WnpzService;
 import macrogen.www.vo.WnpzVo;
@@ -62,6 +64,37 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 		WnpzVo vo = new WnpzVo();
 		vo.setWnpzSn(sn);
 		return view(vo);
+	}
+
+	@Override
+	public void migrateAward() throws Exception {
+		wnpzMapper.deleteMigratedAward();
+
+		WnpzVo vo = new WnpzVo();
+
+		vo.setLangCode(LangId.ko.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.msa.name());
+		wnpzMapper.migrateAward(vo);
+
+		vo.setLangCode(LangId.en.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.msa.name());
+		wnpzMapper.migrateAward(vo);
+
+		vo.setLangCode(LangId.ko.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.wsa.name());
+		wnpzMapper.migrateAward(vo);
+
+		vo.setLangCode(LangId.en.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.wsa.name());
+		wnpzMapper.migrateAward(vo);
+
+		vo.setLangCode(LangId.ko.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.yba.name());
+		wnpzMapper.migrateAward(vo);
+
+		vo.setLangCode(LangId.en.name());
+		vo.setWnpzClCode(Codes.WnpzClCode.yba.name());
+		wnpzMapper.migrateAward(vo);
 	}
 
 }

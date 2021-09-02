@@ -146,4 +146,80 @@
 		where wnpz_sn = #{wnpzSn}
 	</update>
 
+	<delete id="deleteMigratedAward" parameterType="wnpzVo">
+		delete from tb_wnpz
+		where wnpz_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateAward" parameterType="wnpzVo">
+		insert into tb_wnpz (
+			wnpz_sn
+			, lang_code
+			, wnpz_cl_code
+			, wnpz_tme_code
+			, photo_atch_id
+			, wnpz_nm
+			, rm
+			, wnpz_cn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		)
+		select
+			<choose>
+				<when test='langCode == "ko" and wnpzClCode == "msa"'>
+				a_no + 10000000000
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "msa"'>
+				a_no + 11000000000
+				</when>
+				<when test='langCode == "ko" and wnpzClCode == "wsa"'>
+				a_no + 12000000000
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "wsa"'>
+				a_no + 13000000000
+				</when>
+				<when test='langCode == "ko" and wnpzClCode == "yba"'>
+				a_no + 14000000000
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "yba"'>
+				a_no + 15000000000
+				</when>
+			</choose>
+
+			, #{langCode}
+			, #{wnpzClCode}
+			, regexp_replace(a_award,'[^0-9]','')
+			, null
+			, a_title
+			, a_basic
+			, a_content
+			, a_regdate
+			, null
+			, a_regdate
+			, null
+
+			<choose>
+				<when test='langCode == "ko" and wnpzClCode == "msa"'>
+				from macrogenasis.award_science
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "msa"'>
+				from macrogenasis.award_science_en
+				</when>
+				<when test='langCode == "ko" and wnpzClCode == "wsa"'>
+				from macrogenasis.award_wscience
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "wsa"'>
+				from macrogenasis.award_wscience_en
+				</when>
+				<when test='langCode == "ko" and wnpzClCode == "yba"'>
+				from macrogenasis.award_life
+				</when>
+				<when test='langCode == "en" and wnpzClCode == "yba"'>
+				from macrogenasis.award_life_en
+				</when>
+			</choose>
+	</insert>
+
 </mapper>

@@ -1,0 +1,20 @@
+* asis db생성
+	[root@yunjacdev ~]# mysql -uroot -p
+	Enter password: Mysql123!@#
+
+    mysql> create database macrogenasis DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+    mysql> create user 'macrogenasis'@'%' identified by 'Macrogenasis123!@#';
+    mysql> grant all privileges on macrogenasis.* to 'macrogenasis'@'%';
+    mysql> show grants for 'macrogenasis'@'%';
+
+* asis dump 복구
+	mysql -u root -p macrogenasis < asis_www20210827.sql
+	Mysql123!@#
+
+* 테스트DB에서 macrogenwww에 macrogenasis.* 접근 권한 부여
+	[root@yunjacdev ~]# mysql -uroot -p
+	Enter password: Mysql123!@#
+
+	mysql> grant all privileges on macrogenasis.* to 'macrogenwww'@'%';
+    mysql> show grants for 'macrogenwww'@'%';
+

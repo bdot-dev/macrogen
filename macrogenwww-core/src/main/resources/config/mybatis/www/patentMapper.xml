@@ -127,4 +127,60 @@
 		where patent_sn = #{patentSn}
 	</update>
 
+	<delete id="deleteMigratedPatent" parameterType="patentVo">
+		delete from tb_patent where patent_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migratePatent" parameterType="patentVo">
+		insert into tb_patent (
+		    patent_sn
+		    , lang_code
+		    , ctgry_code
+		    , nation_code
+		    , patent_cn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		)
+		select
+			<choose>
+				<when test='langCode == "ko"'>
+				p_no + 10000000000
+				</when>
+				<when test='langCode == "en"'>
+				p_no + 11000000000
+				</when>
+			</choose>
+		    , #{langCode}
+		    , p_gubun
+		    , case
+		    	when p_country in ('한국', 'Korea') then 'KR'
+		    	when p_country in ('네덜란드', 'Netherlands') then 'NL'
+		    	when p_country in ('독일', 'Germany') then 'DE'
+		    	when p_country in ('미국', 'USA') then 'US'
+		    	when p_country in ('벨기에', 'Belgium') then 'BE'
+		    	when p_country in ('스위스', 'Swiss') then 'CH'
+		    	when p_country in ('스페인', 'Spain') then 'ES'
+		    	when p_country in ('영국', 'UK') then 'UK'
+		    	when p_country in ('이탈리아', 'Italy') then 'IT'
+		    	when p_country in ('일본', 'Japan') then 'JP'
+		    	when p_country in ('프랑스', 'France') then 'FR'
+		    	else null
+		      end
+		    , p_content
+		    , p_regdate
+		    , null
+		    , p_regdate
+		    , null
+			<choose>
+				<when test='langCode == "ko"'>
+				from macrogenasis.patent
+				</when>
+				<when test='langCode == "en"'>
+				from macrogenasis.patent_en
+				</when>
+			</choose>
+	</insert>
+
 </mapper>

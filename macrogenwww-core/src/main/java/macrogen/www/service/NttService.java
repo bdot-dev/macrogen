@@ -105,5 +105,16 @@ public interface NttService {
 
 	List<NttVo> upendFixingList(String langCode, String bbsId) throws Exception;
 
-	void migratePressRelease() throws Exception;
+	void migrateMedia() throws Exception;
+
+	void migrateNoticeBoard() throws Exception;
+
+	void migratePressReleaseBoard() throws Exception;
+
+	void migrateIrdislosBoard() throws Exception;
+
+	void migrateIrnewsBoard() throws Exception;
+
+	void migrateOnlineInquiry() throws Exception;
+
 }

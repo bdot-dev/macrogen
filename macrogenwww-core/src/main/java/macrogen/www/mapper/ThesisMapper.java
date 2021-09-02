@@ -31,4 +31,8 @@ public interface ThesisMapper {
 
 	void update(ThesisVo vo);
 
+	void deleteMigratedThesis();
+
+	void migrateThesis(ThesisVo vo);
+
 }
