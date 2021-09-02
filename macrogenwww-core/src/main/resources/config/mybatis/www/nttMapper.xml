@@ -5,6 +5,7 @@
 	<resultMap type="nttVo" id="nttMap">
 		<result property="nmbrWrterNm" column="nmbr_wrter_nm" javaType="string" typeHandler="aesCipherTypeHandler"/>
 		<result property="mbtlnum" column="mbtlnum" javaType="string" typeHandler="aesCipherTypeHandler"/>
+		<result property="email" column="email" javaType="string" typeHandler="aesCipherTypeHandler"/>
 	</resultMap>
 
 	<sql id="list_where">
@@ -166,6 +167,8 @@
 			, updusr_sn
 			, nmbr_wrter_nm
 			, mbtlnum
+			, email
+			, regist_ip
 			, thumb_bass_image_use_yn
 			, thumb_atch_id
 			, thumb_bass_image_code
@@ -181,12 +184,14 @@
 		    , 0
 			, ifnull(#{upendFixingYn}, 'N')
 			, #{wrterSn}
-			, now()
+			, ifnull(#{registDt}, now())
 			, #{registerSn}
-			, now()
+			, ifnull(#{updtDt}, now())
 			, #{updusrSn}
 			, #{nmbrWrterNm, typeHandler=aesCipherTypeHandler}
 			, #{mbtlnum, typeHandler=aesCipherTypeHandler}
+			, #{email, typeHandler=aesCipherTypeHandler}
+			, #{registIp}
 			, #{thumbBassImageUseYn}
 			, #{thumbAtchId}
 			, #{thumbBassImageCode}
@@ -207,8 +212,10 @@
 		    <if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
 		    <if test="rdcnt != null">, rdcnt = #{rdcnt} </if>
 		    <if test="upendFixingYn != null">, upend_fixing_yn = #{upendFixingYn} </if>
-		    <if test="nmbrWrterNm != null">, nmbr_wrter_nm = #{nmbrWrterNm} </if>
-		    <if test="mbtlnum != null">, mbtlnum = #{mbtlnum} </if>
+		    <if test="nmbrWrterNm != null">, nmbr_wrter_nm = #{nmbrWrterNm, typeHandler=aesCipherTypeHandler} </if>
+		    <if test="mbtlnum != null">, mbtlnum = #{mbtlnum, typeHandler=aesCipherTypeHandler} </if>
+		    <if test="email != null">, email = #{email, typeHandler=aesCipherTypeHandler} </if>
+		    <if test="registIp != null">, regist_ip = #{registIp} </if>
 		    <if test="thumbBassImageUseYn != null">, thumb_bass_image_use_yn = #{thumbBassImageUseYn} </if>
 		    <if test="thumbAtchId != null">, thumb_atch_id = #{thumbAtchId} </if>
 		    <if test="thumbBassImageCode != null">, thumb_bass_image_code = #{thumbBassImageCode} </if>
@@ -227,59 +234,351 @@
     		ntt_sn = #{nttSn}
     </update>
 
-	<delete id="deletePressReleaseMigration">
-		delete from tb_ntt where bbs_id = 'press-release' and ntt_sn <![CDATA[<]]> 20000000000
+	<delete id="deleteMigratedMedia" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'media-library' and ntt_sn <![CDATA[ < ]]> 20000000000
 	</delete>
 
-	<insert id="migratePressRelease">
+	<insert id="migrateMedia" parameterType="nttVo">
 		insert into tb_ntt (
-			ntt_sn
-			, lang_code
-			, bbs_id
-			, bbs_ctgry_sn
-			, ntt_sj
-			, ntt_cn
-			, expsr_yn
-			, rdcnt
-			, upend_fixing_yn
-			, wrter_sn
-			, regist_dt
-			, register_sn
-			, updt_dt
-			, updusr_sn
-			, nmbr_wrter_nm
-			, mbtlnum
-			, thumb_bass_image_use_yn
-			, thumb_atch_id
-			, thumb_bass_image_code
-			, mvp_url
+		    ntt_sn
+		    , bbs_id
+		    , bbs_ctgry_sn
+		    , ntt_sj
+		    , ntt_cn
+		    , expsr_yn
+		    , rdcnt
+		    , upend_fixing_yn
+		    , wrter_sn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		    , lang_code
+		    , mbtlnum
+		    , thumb_bass_image_use_yn
+		    , thumb_atch_id
+		    , thumb_bass_image_code
+		    , mvp_url
+		    , nmbr_wrter_nm
 		)
 		select
-			ntt_sn
-			, lang_code
-			, bbs_id
-			, bbs_ctgry_sn
-			, ntt_sj
-			, ntt_cn
-			, expsr_yn
-			, rdcnt
-			, upend_fixing_yn
-			, wrter_sn
-			, regist_dt
-			, register_sn
-			, updt_dt
-			, updusr_sn
-			, nmbr_wrter_nm
-			, mbtlnum
-			, thumb_bass_image_use_yn
-			, thumb_atch_id
-			, thumb_bass_image_code
-			, mvp_url
-		from macrogenwww.tb_ntt
-		where bbs_id = 'press-release'
-		and ntt_sn <![CDATA[<]]> 0
-		order by ntt_sn desc
+			<choose>
+				<when test='langCode == "ko"'>
+				m_no + 10000000000
+				</when>
+				<when test='langCode == "en"'>
+				m_no + 11000000000
+				</when>
+			</choose>
+		    , 'media-library'
+		    , null
+		    , m_title
+		    , m_content
+		    , null
+		    , null
+		    , null
+		    , null
+		    , m_regdate
+		    , null
+		    , m_regdate
+		    , null
+		    , #{langCode}
+		    , null
+		    , null
+		    , null
+		    , null
+		    , m_source
+		    , null
+			<choose>
+				<when test='langCode == "ko"'>
+				from macrogenasis.media
+				</when>
+				<when test='langCode == "en"'>
+				from macrogenasis.media_en
+				</when>
+			</choose>
 	</insert>
 
+	<delete id="deleteMigratedNoticeBoard" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'notice' and ntt_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateNoticeBoard" parameterType="nttVo">
+		insert into tb_ntt (
+		    ntt_sn
+		    , bbs_id
+		    , bbs_ctgry_sn
+		    , ntt_sj
+		    , ntt_cn
+		    , expsr_yn
+		    , rdcnt
+		    , upend_fixing_yn
+		    , wrter_sn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		    , lang_code
+		    , mbtlnum
+		    , thumb_bass_image_use_yn
+		    , thumb_atch_id
+		    , thumb_bass_image_code
+		    , mvp_url
+		    , nmbr_wrter_nm
+		)
+		select
+		    <choose>
+		      <when test='langCode == "ko"'>
+		      b_no + 12100000000
+		      </when>
+		      <when test='langCode == "en"'>
+		      b_no + 12200000000
+		      </when>
+		    </choose>
+		    , 'notice'
+		    , null
+		    , b_title
+		    , b_content
+		    , 'Y'
+		    , b_cnt
+		    , case when b_notice = 1 then 'Y' else null end
+		    , null
+		    , b_regdate
+		    , null
+		    , b_regdate
+		    , null
+		    , #{langCode}
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		from macrogenasis.board
+		<choose>
+		  <when test='langCode == "ko"'>
+		    where b_class = 4
+		  </when>
+		  <when test='langCode == "en"'>
+		    where b_class = 14
+		  </when>
+		</choose>
+	</insert>
+
+	<delete id="deleteMigratedPressReleaseBoard" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'press-release' and ntt_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migratePressReleaseBoard" parameterType="nttVo">
+		insert into tb_ntt (
+		    ntt_sn
+		    , bbs_id
+		    , bbs_ctgry_sn
+		    , ntt_sj
+		    , ntt_cn
+		    , expsr_yn
+		    , rdcnt
+		    , upend_fixing_yn
+		    , wrter_sn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		    , lang_code
+		    , mbtlnum
+		    , thumb_bass_image_use_yn
+		    , thumb_atch_id
+		    , thumb_bass_image_code
+		    , mvp_url
+		    , nmbr_wrter_nm
+		)
+		select
+		    <choose>
+		      <when test='langCode == "ko"'>
+		      b_no + 13000000000
+		      </when>
+		      <when test='langCode == "en"'>
+		      b_no + 13100000000
+		      </when>
+		    </choose>
+		    , 'press-release'
+		    , null
+		    , b_title
+		    , b_content
+		    , 'Y'
+		    , b_cnt
+		    , case when b_notice = 1 then 'Y' else null end
+		    , null
+		    , b_regdate
+		    , null
+		    , b_regdate
+		    , null
+		    , #{langCode}
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		from macrogenasis.board
+		<choose>
+		  <when test='langCode == "ko"'>
+		    where b_class = 5
+		  </when>
+		  <when test='langCode == "en"'>
+		    where b_class = 15
+		  </when>
+		</choose>
+	</insert>
+
+	<delete id="deleteMigratedIrdislosBoard" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'irdislos' and ntt_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateIrdislosBoard" parameterType="nttVo">
+		insert into tb_ntt (
+		    ntt_sn
+		    , bbs_id
+		    , bbs_ctgry_sn
+		    , ntt_sj
+		    , ntt_cn
+		    , expsr_yn
+		    , rdcnt
+		    , upend_fixing_yn
+		    , wrter_sn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		    , lang_code
+		    , mbtlnum
+		    , thumb_bass_image_use_yn
+		    , thumb_atch_id
+		    , thumb_bass_image_code
+		    , mvp_url
+		    , nmbr_wrter_nm
+		)
+		select
+		    <choose>
+		      <when test='langCode == "ko"'>
+		      b_no + 14000000000
+		      </when>
+		      <when test='langCode == "en"'>
+		      b_no + 14100000000
+		      </when>
+		    </choose>
+		    , 'irdislos'
+		    , null
+		    , b_title
+		    , b_content
+		    , 'Y'
+		    , b_cnt
+		    , case when b_notice = 1 then 'Y' else null end
+		    , null
+		    , b_regdate
+		    , null
+		    , b_regdate
+		    , null
+		    , #{langCode}
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		from macrogenasis.board
+		<choose>
+		  <when test='langCode == "ko"'>
+		    where b_class = 7
+		  </when>
+		  <when test='langCode == "en"'>
+		    where b_class = 17
+		  </when>
+		</choose>
+	</insert>
+
+	<delete id="deleteMigratedIrnewsBoard" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'irnews' and ntt_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateIrnewsBoard" parameterType="nttVo">
+		insert into tb_ntt (
+		    ntt_sn
+		    , bbs_id
+		    , bbs_ctgry_sn
+		    , ntt_sj
+		    , ntt_cn
+		    , expsr_yn
+		    , rdcnt
+		    , upend_fixing_yn
+		    , wrter_sn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		    , lang_code
+		    , mbtlnum
+		    , thumb_bass_image_use_yn
+		    , thumb_atch_id
+		    , thumb_bass_image_code
+		    , mvp_url
+		    , nmbr_wrter_nm
+		)
+		select
+		    <choose>
+		      <when test='langCode == "ko"'>
+		      b_no + 15000000000
+		      </when>
+		      <when test='langCode == "en"'>
+		      b_no + 15100000000
+		      </when>
+		    </choose>
+		    , 'irnews'
+		    , null
+		    , b_title
+		    , b_content
+		    , 'Y'
+		    , b_cnt
+		    , case when b_notice = 1 then 'Y' else null end
+		    , null
+		    , b_regdate
+		    , null
+		    , b_regdate
+		    , null
+		    , #{langCode}
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		    , null
+		from macrogenasis.board
+		<choose>
+		  <when test='langCode == "ko"'>
+		    where b_class = 8
+		  </when>
+		  <when test='langCode == "en"'>
+		    where b_class = 18
+		  </when>
+		</choose>
+	</insert>
+
+	<delete id="deleteMigratedOnlineInquiry" parameterType="nttVo">
+		delete from tb_ntt where bbs_id = 'investor-inquiries' and ntt_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<select id="allOnlineInquiryList" resultType="macrogen.www.vo.OnlineInquiryVo">
+		select
+		    o_no + 16000000000 o_no, 'ko' lang_code
+		    , o_name, o_hp, o_email, o_ip
+		    , o_title, o_content, o_regdate
+		from macrogenasis.online_inquiry
+		union all
+		select
+		    o_no + 16100000000 o_no, 'en' lang_code
+		    , o_name, o_hp, o_email, o_ip
+		    , o_title, o_content, o_regdate
+		from macrogenasis.online_inquiry_en
+	</select>
 
 </mapper>

@@ -35,6 +35,8 @@ public class NttVo extends DefaultVo {
 	private String thumbBassImageCode;
 	private String thumbBassImageCodeNm;
 	private String mvpUrl;
+	private String email;
+	private String registIp;
 
 	private List<NttAtchVo> atchList;
 	private List<Long> nttSnList;
@@ -185,6 +187,18 @@ public class NttVo extends DefaultVo {
 	}
 	public void setNmbrWrterNm(String nmbrWrterNm) {
 		this.nmbrWrterNm = nmbrWrterNm;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getRegistIp() {
+		return registIp;
+	}
+	public void setRegistIp(String registIp) {
+		this.registIp = registIp;
 	}
 
 }

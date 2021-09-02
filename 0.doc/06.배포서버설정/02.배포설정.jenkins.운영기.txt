@@ -1,40 +1,112 @@
-[item 생성 : 복제를 이용]
-poiret_test_admin_was->macrogen_test_admin_was
-poiret_test_front_was->macrogen_test_front_was
+0) 선행 작업 ssh 비밀번호 없이 로그인할 수 있도록 처리
+	*참고 : https://arsviator.blogspot.com/2015/04/ssh-ssh-key.html
 
+	*ssh client : private key, ssh server : public key
+
+	*key 생성 (ssh client 에서):
+	su - tomcat
+	ssh-keygen -t rsa
+	  Generating public/private rsa key pair.
+	  Enter file in which to save the key (/home/tomcat/.ssh/id_rsa): /home/tomcat/.ssh/id_rsa<enter>
+	  Enter passphrase (empty for no passphrase): <enter>
+	  Enter same passphrase again: <enter>
+
+	    Your identification has been saved in /home/tomcat/.ssh/eluo_192.168.1.34_gen/id_rsa.
+	    Your public key has been saved in /home/tomcat/.ssh/eluo_192.168.1.34_gen/id_rsa.pub.
+	    The key fingerprint is:
+	    SHA256:nvo4mAACSfsEuIeRtO7LDd05Df+y1FZpCdysiq8hGAY tomcat@web02
+
+	*ssh 서버에 공개키(id_rsa.pub) 업로드 (ssh 클라이언트에서
+	# su - tomcat
+	# ssh-copy-id macrogen@211.110.34.200
+		Macrogen0)
+
+	[tomcat@web02 .ssh]$ cat id_rsa.pub #클라이언트에서...
+
+	[macrogen@web .ssh]$ cat authorized_keys  #### 서버에서...
+
+	ssh macrogen@211.110.34.200
+
+	ssh macrogen@211.110.34.200 /home/macrogen/tomcat_cms/startcon.sh
+
+	######################################
+	ssh macrogen@211.110.34.200 ls -al /data/cms_data/ROOT/*;
+
+
+[jenkins item 생성 : 복제를 이용]
+macrogen_real_admin_was
+macrogen_real_front_was
+
+[repository : git]
+url : http://192.168.1.38:28080/kimjd72/macrogenwww.git
+
+
+[build - maven]
 ******************* jenkins items
-[macrogen_test_admin_was]
-      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git
+[macrogen_real_admin_was]
+      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git (branch : master)
       Poll SCM: H/5 * * * *
-      Maven Version: maven354
-      Maven Goals: clean package -Ptest
+      Maven Version: /app/maven354
+      Maven Goals: clean package -Preal
       Execute shell Command
 ----- start of Execute shell Command -----------
-/app/macrogenwww/admin/downcon.sh
-sleep 10
-cd /app/macrogenwww/admin/webapps/ROOT
-rm -rf *
-jar xf /home/tomcat/.jenkins/workspace/macrogen_test_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-test.war
-cp /home/tomcat/.jenkins/workspace/macrogen_test_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-test.war /app/macrogenwww/admin/backup/macrogenwww_admin-1.0.0_`date +%Y%m%d`_`date +%H%M%S`.war
-find /app/macrogenwww/admin/backup -type f -mtime +1 -exec rm {} \;
-BUILD_ID=dontKillMe /app/macrogenwww/admin/startcon.sh
+# was shutdown
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_cms/downcon.sh
+
+# sleep 10 second
+ssh macrogen@211.110.34.200 sleep 10
+
+# ROOT delete
+ssh macrogen@211.110.34.200 "cd /data/cms_data/ROOT; rm -rf ./*"
+
+# upload war file to real server
+scp /home/tomcat/.jenkins/workspace/macrogen_real_admin_was/macrogenwww-web/macrogenwww-web-admin/target/macrogenwww-web-admin-real.war macrogen@211.110.34.200:/home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war
+
+# war file backup
+ssh macrogen@211.110.34.200 "cp /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real_`date +%Y%m%d`_`date +%H%M%S`.war"
+
+# war file jar xf
+ssh macrogen@211.110.34.200 "cd /data/cms_data/ROOT; /home/macrogen/java/bin/jar xf /home/macrogen/tomcat_cms/backup/macrogenwww-web-admin-real.war"
+
+# was startup
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_cms/startcon.sh
+
+# before war file delete
+ssh macrogen@211.110.34.200 find /home/macrogen/tomcat_cms/backup -type f -mtime +1 -exec "rm -f {} \;"
+
 ----- end of Execute shell Command -----------
 
-[macrogen_test_front_was]
-      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git
+
+[macrogen_real_front_was]
+      SVN: http://192.168.1.38:28080/kimjd72/macrogenwww.git (branch : master)
       Poll SCM: H/5 * * * *
-      Maven Version: maven354
-      Maven Goals: clean package -Ptest
+      Maven Version: /app/maven354
+      Maven Goals: clean package -Preal
       Execute shell Command
 ----- start of Execute shell Command -----------
-/app/macrogenwww/front/downcon.sh
-sleep 10
-cd /app/macrogenwww/front/webapps/ROOT
-rm -rf *
-jar xf /home/tomcat/.jenkins/workspace/macrogen_test_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-test.war
-cp /home/tomcat/.jenkins/workspace/macrogen_test_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-test.war /app/macrogenwww/front/backup/macrogenwww_front-1.0.0_`date +%Y%m%d`_`date +%H%M%S`.war
-find /app/macrogenwww/front/backup -type f -mtime +1 -exec rm {} \;
-BUILD_ID=dontKillMe /app/macrogenwww/front/startcon.sh
------ end of Execute shell Command -----------
+# was shutdown
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_www/downcon.sh
 
+# sleep 10 second
+ssh macrogen@211.110.34.200 sleep 10
+
+# ROOT delete
+ssh macrogen@211.110.34.200 "cd /data/www_data/ROOT; rm -rf ./*"
+
+# upload war file to real server
+scp /home/tomcat/.jenkins/workspace/macrogen_real_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-real.war macrogen@211.110.34.200:/home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war
+
+# war file backup
+ssh macrogen@211.110.34.200 "cp /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real_`date +%Y%m%d`_`date +%H%M%S`.war"
+
+# war file jar xf
+ssh macrogen@211.110.34.200 "cd /data/www_data/ROOT; /home/macrogen/java/bin/jar xf /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war"
+
+# was startup
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_www/startcon.sh
+
+# before war file delete
+ssh macrogen@211.110.34.200 find /home/macrogen/tomcat_www/backup -type f -mtime +1 -exec "rm -f {} \;"
+
+----- end of Execute shell Command -----------
 

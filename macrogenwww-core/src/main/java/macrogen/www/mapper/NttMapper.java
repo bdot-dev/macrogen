@@ -4,6 +4,7 @@ import java.util.List;
 
 import egovframework.rte.psl.dataaccess.mapper.Mapper;
 import macrogen.www.vo.NttVo;
+import macrogen.www.vo.OnlineInquiryVo;
 
 /**
  * <pre>
@@ -100,7 +101,27 @@ public interface NttMapper {
 
 	Long seq();
 
-	void deletePressReleaseMigration();
+	void deleteMigratedMedia();
 
-	void migratePressRelease();
+	void migrateMedia(NttVo vo);
+
+	void deleteMigratedNoticeBoard();
+
+	void migrateNoticeBoard(NttVo vo);
+
+	void deleteMigratedPressReleaseBoard();
+
+	void migratePressReleaseBoard(NttVo vo);
+
+	void deleteMigratedIrdislosBoard();
+
+	void migrateIrdislosBoard(NttVo vo);
+
+	void deleteMigratedIrnewsBoard();
+
+	void migrateIrnewsBoard(NttVo vo);
+
+	void deleteMigratedOnlineInquiry();
+
+	List<OnlineInquiryVo> allOnlineInquiryList();
 }

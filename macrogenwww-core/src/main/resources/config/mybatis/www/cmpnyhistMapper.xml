@@ -121,4 +121,49 @@
 		where cmpnyhist_sn = #{cmpnyhistSn}
 	</update>
 
+	<delete id="deleteMigratedHistory" parameterType="cmpnyhistVo">
+		delete from tb_cmpnyhist where cmpnyhist_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateHistory" parameterType="cmpnyhistVo">
+		insert into tb_cmpnyhist (
+		    cmpnyhist_sn
+		    , cmpnyhist_group_sn
+		    , lang_code
+		    , year
+		    , mt
+		    , cn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		)
+		select
+			<choose>
+				<when test='langCode == "ko"'>
+				h_no + 10000000000
+				</when>
+				<when test='langCode == "en"'>
+				h_no + 11000000000
+				</when>
+			</choose>
+		    , null
+		    , #{langCode}
+		    , h_year
+		    , regexp_replace(h_title,'[^0-9]','')
+		    , h_content
+		    , h_regdate
+		    , null
+		    , h_regdate
+		    , null
+			<choose>
+				<when test='langCode == "ko"'>
+				from macrogenasis.history
+				</when>
+				<when test='langCode == "en"'>
+				from macrogenasis.history_en
+				</when>
+			</choose>
+	</insert>
+
 </mapper>

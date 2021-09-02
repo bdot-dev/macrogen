@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.PatentMapper;
 import macrogen.www.service.PatentService;
 import macrogen.www.vo.PatentVo;
@@ -62,6 +63,19 @@ public class PatentServiceImpl extends EgovAbstractServiceImpl implements Patent
 		PatentVo vo = new PatentVo();
 		vo.setPatentSn(patentSn);
 		return view(vo);
+	}
+
+	@Override
+	public void migratePatent() throws Exception {
+		patentMapper.deleteMigratedPatent();
+
+		PatentVo vo = new PatentVo();
+
+		vo.setLangCode(LangId.ko.name());
+		patentMapper.migratePatent(vo);
+
+		vo.setLangCode(LangId.en.name());
+		patentMapper.migratePatent(vo);
 	}
 
 }

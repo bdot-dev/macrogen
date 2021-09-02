@@ -23,4 +23,7 @@ public class Codes {
 	public enum SetleMthdCode {
 		CREDIT_CARD, MOBILE_PHONE, BANK_TRANSFER, VIRTUAL_ACCOUNT
 	}
+	public enum WnpzClCode {
+		msa, wsa, yba
+	}
 }

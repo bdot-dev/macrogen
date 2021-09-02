@@ -31,5 +31,8 @@ public interface WnpzMapper {
 
 	void update(WnpzVo vo);
 
+	void deleteMigratedAward();
+
+	void migrateAward(WnpzVo migParam);
 
 }

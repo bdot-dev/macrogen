@@ -30,6 +30,8 @@
 		www : /data/www_data/ROOT
 		cms : /data/cms_data/ROOT
 
+
+
 . was
 	tomcat 8.5.59
 	install path : catalina.home (변경없음)
