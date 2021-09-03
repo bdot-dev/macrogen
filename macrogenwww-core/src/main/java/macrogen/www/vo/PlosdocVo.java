@@ -28,6 +28,8 @@ public class PlosdocVo extends DefaultVo {
 	private BigDecimal sales;
 	private BigDecimal costSales;
 	private BigDecimal sellAdminExpenses;
+	private BigDecimal etcErn;
+	private BigDecimal etcCt;
 	private BigDecimal incomeLossBefIncometax;
 	private BigDecimal incometaxExpenses;
 	private BigDecimal discontOperIncome;
@@ -104,6 +106,18 @@ public class PlosdocVo extends DefaultVo {
 	}
 	public void setOtherCompIncome(BigDecimal otherCompIncome) {
 		this.otherCompIncome = otherCompIncome;
+	}
+	public BigDecimal getEtcErn() {
+		return etcErn;
+	}
+	public void setEtcErn(BigDecimal etcErn) {
+		this.etcErn = etcErn;
+	}
+	public BigDecimal getEtcCt() {
+		return etcCt;
+	}
+	public void setEtcCt(BigDecimal etcCt) {
+		this.etcCt = etcCt;
 	}
 
 }

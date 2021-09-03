@@ -60,6 +60,8 @@
                 <div class="bg_gray">매출총이익</div>
                 <div>판매비와 관리비</div>
                 <div class="bg_gray">영업이익</div>
+                <div>기타수익</div>
+                <div>기타비용</div>
                 <div class="bg_gray type1">법인세비용차감전순이익</div>
                 <div>법인세비용</div>
                 <div>중단영업이익</div>
@@ -92,8 +94,14 @@
 							ref="sellAdminExpenses" maxlength="15">{{ result.sellAdminExpenses | numberWithCommas }}</div>
 	                <div class="bg_gray">{{ operatingIncome(result) | numberWithCommas }}</div>
 
-	                <div class="bg_gray type1"><input type="number" v-model.number="result.incomeLossBefIncometax"
-							ref="incomeLossBefIncometax" maxlength="15">{{ result.incomeLossBefIncometax | numberWithCommas }}</div>
+	                <div><input type="number" v-model.number="result.etcErn"
+							ref="etcErn" maxlength="15">{{ result.etcErn | numberWithCommas }}</div>
+	                <div><input type="number" v-model.number="result.etcCt"
+							ref="etcCt" maxlength="15">{{ result.etcCt | numberWithCommas }}</div>
+
+	                <%-- <div class="bg_gray type1"><input type="number" v-model.number="result.incomeLossBefIncometax"
+							ref="incomeLossBefIncometax" maxlength="15">{{ result.incomeLossBefIncometax | numberWithCommas }}</div> --%>
+	                <div class="bg_gray type1">{{ incomeLossBefIncometax(result) | numberWithCommas }}</div>
 	                <div><input type="number" v-model.number="result.incometaxExpenses"
 							ref="incometaxExpenses" maxlength="15">{{ result.incometaxExpenses | numberWithCommas }}</div>
 	                <div><input type="number" v-model.number="result.discontOperIncome"
