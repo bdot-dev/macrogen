@@ -32,4 +32,8 @@ public interface CmpnyhistMapper {
 
 	void update(CmpnyhistVo vo);
 
+	void deleteMigratedHistory();
+
+	void migrateHistory(CmpnyhistVo vo);
+
 }

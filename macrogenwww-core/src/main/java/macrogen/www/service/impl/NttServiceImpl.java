@@ -7,12 +7,14 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.NttAtchMapper;
 import macrogen.www.mapper.NttMapper;
 import macrogen.www.service.NttAtchService;
 import macrogen.www.service.NttService;
 import macrogen.www.vo.NttAtchVo;
 import macrogen.www.vo.NttVo;
+import macrogen.www.vo.OnlineInquiryVo;
 
 @Service("nttService")
 public class NttServiceImpl extends EgovAbstractServiceImpl implements NttService {
@@ -105,9 +107,114 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 	}
 
 	@Override
-	public void migratePressRelease() throws Exception {
-		nttMapper.deletePressReleaseMigration();
-		nttMapper.migratePressRelease();
+	public NttVo viewByPk(long nttSn) throws Exception {
+		NttVo vo = new NttVo();
+		vo.setNttSn(nttSn);
+		return view(vo);
+	}
+
+	@Override
+	public NttVo prev(NttVo listVo) throws Exception {
+		return nttMapper.prev(listVo);
+	}
+
+	@Override
+	public NttVo next(NttVo listVo) throws Exception {
+		return nttMapper.next(listVo);
+	}
+
+	@Override
+	public void migrateMedia() throws Exception {
+		nttMapper.deleteMigratedMedia();
+
+		NttVo vo = new NttVo();
+
+		vo.setLangCode(LangId.ko.name());
+		nttMapper.migrateMedia(vo);
+
+		vo.setLangCode(LangId.en.name());
+		nttMapper.migrateMedia(vo);
+	}
+
+	@Override
+	public void migrateNoticeBoard() throws Exception {
+		nttMapper.deleteMigratedNoticeBoard();
+
+		NttVo vo = new NttVo();
+
+		vo.setLangCode(LangId.ko.name());
+		nttMapper.migrateNoticeBoard(vo);
+
+		vo.setLangCode(LangId.en.name());
+		nttMapper.migrateNoticeBoard(vo);
+	}
+
+	@Override
+	public void migratePressReleaseBoard() throws Exception {
+		nttMapper.deleteMigratedPressReleaseBoard();
+
+		NttVo vo = new NttVo();
+
+		vo.setLangCode(LangId.ko.name());
+		nttMapper.migratePressReleaseBoard(vo);
+
+		vo.setLangCode(LangId.en.name());
+		nttMapper.migratePressReleaseBoard(vo);
+	}
+
+	@Override
+	public void migrateIrdislosBoard() throws Exception {
+		nttMapper.deleteMigratedIrdislosBoard();
+
+		NttVo vo = new NttVo();
+
+		vo.setLangCode(LangId.ko.name());
+		nttMapper.migrateIrdislosBoard(vo);
+
+		vo.setLangCode(LangId.en.name());
+		nttMapper.migrateIrdislosBoard(vo);
+	}
+
+	@Override
+	public void migrateIrnewsBoard() throws Exception {
+		nttMapper.deleteMigratedIrnewsBoard();
+
+		NttVo vo = new NttVo();
+
+		vo.setLangCode(LangId.ko.name());
+		nttMapper.migrateIrnewsBoard(vo);
+
+		vo.setLangCode(LangId.en.name());
+		nttMapper.migrateIrnewsBoard(vo);
+	}
+
+	@Override
+	public void migrateOnlineInquiry() throws Exception {
+		nttMapper.deleteMigratedOnlineInquiry();
+
+		// 이관대상 전체 목록
+		List<OnlineInquiryVo> resultList = nttMapper.allOnlineInquiryList();
+		if (null == resultList || resultList.isEmpty()) {
+			return;
+		}
+
+		for (OnlineInquiryVo result : resultList) {
+			NttVo vo = new NttVo();
+			vo.setNttSn(result.getoNo());
+			vo.setBbsId("investor-inquiries");
+			vo.setLangCode(result.getLangCode());
+			vo.setNttSj(result.getoTitle());
+			vo.setNttCn(result.getoContent());
+			vo.setExpsrYn("Y");
+			vo.setRegistDt(result.getoRegdate());
+			vo.setUpdtDt(result.getoRegdate());
+			vo.setMbtlnum(result.getoHp());
+			vo.setNmbrWrterNm(result.getoName());
+			vo.setEmail(result.getoEmail());
+			vo.setRegistIp(result.getoIp());
+			nttMapper.insert(vo);
+		}
+
 	}
 
 }

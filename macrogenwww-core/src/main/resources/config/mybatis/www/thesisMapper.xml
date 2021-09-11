@@ -29,6 +29,9 @@
 			<if test='searchCondition == "jrnl"'>
 				and tt.jrnl like concat('%', #{searchKeyword}, '%')
 			</if>
+			<if test='searchCondition == ""'>
+				and tt.thesis_sj like concat('%', #{searchKeyword}, '%')
+			</if>
 		</if>
 
 	</sql>
@@ -138,5 +141,52 @@
 			<if test="registMt != null">, regist_mt = #{registMt} </if>
 		where thesis_sn = #{thesisSn}
 	</update>
+
+	<delete id="deleteMigratedThesis" parameterType="thesisVo">
+		delete from tb_thesis where thesis_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateThesis" parameterType="thesisVo">
+		insert into tb_thesis (
+		    thesis_sn
+		    , lang_code
+		    , thesis_sj
+		    , jrnl
+		    , link_url
+		    , regist_year
+		    , regist_mt
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		)
+		select
+			<choose>
+				<when test='langCode == "ko"'>
+				t_no + 10000000000
+				</when>
+				<when test='langCode == "en"'>
+				t_no + 11000000000
+				</when>
+			</choose>
+		    , #{langCode}
+		    , t_title
+		    , t_journal
+		    , t_link
+		    , substr(t_year, 1, 4)
+		    , substr(t_year, 6, 2)
+		    , t_regdate
+		    , null
+		    , t_regdate
+		    , null
+			<choose>
+				<when test='langCode == "ko"'>
+				from macrogenasis.thesis
+				</when>
+				<when test='langCode == "en"'>
+				from macrogenasis.thesis_en
+				</when>
+			</choose>
+	</insert>
 
 </mapper>

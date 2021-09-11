@@ -29,4 +29,7 @@ public interface WnpzService {
 	void update(WnpzVo vo) throws Exception;
 
 	WnpzVo viewByPk(Long sn) throws Exception;
+
+	void migrateAward() throws Exception;
+
 }

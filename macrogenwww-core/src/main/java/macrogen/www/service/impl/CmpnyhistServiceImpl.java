@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.CmpnyhistMapper;
 import macrogen.www.service.CmpnyhistService;
 import macrogen.www.vo.CmpnyhistVo;
@@ -62,6 +63,19 @@ public class CmpnyhistServiceImpl extends EgovAbstractServiceImpl implements Cmp
 		CmpnyhistVo vo = new CmpnyhistVo();
 		vo.setCmpnyhistSn(cmpnyhistSn);
 		return view(vo);
+	}
+
+	@Override
+	public void migrateHistory() throws Exception {
+		cmpnyhistMapper.deleteMigratedHistory();
+
+		CmpnyhistVo vo = new CmpnyhistVo();
+
+		vo.setLangCode(LangId.ko.name());
+		cmpnyhistMapper.migrateHistory(vo);
+
+		vo.setLangCode(LangId.en.name());
+		cmpnyhistMapper.migrateHistory(vo);
 	}
 
 }

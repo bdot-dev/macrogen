@@ -156,4 +156,56 @@
 		where empa_sn = #{empaSn}
 	</update>
 
+	<delete id="deleteMigratedEmpBoard" parameterType="empaVo">
+		delete from tb_empa where empa_sn <![CDATA[ < ]]> 20000000000
+	</delete>
+
+	<insert id="migrateEmpBoard" parameterType="empaVo">
+		insert into tb_empa (
+		    empa_sn
+		    , lang_code
+		    , empa_sj
+		    , rcept_begin_de
+		    , rcept_end_de
+		    , rcept_sttus_code
+		    , sport_se_code
+		    , atch_id
+		    , empa_cn
+		    , regist_dt
+		    , register_sn
+		    , updt_dt
+		    , updusr_sn
+		)
+		select
+		    <choose>
+		      <when test='langCode == "ko"'>
+		      b_no + 10000000000
+		      </when>
+		      <when test='langCode == "en"'>
+		      b_no + 11000000000
+		      </when>
+		    </choose>
+		    , #{langCode}
+		    , b_title
+		    , null
+		    , b_etc1
+		    , null
+		    , 'NC'
+		    , null
+		    , b_content
+		    , b_regdate
+		    , null
+		    , b_regdate
+		    , null
+		from macrogenasis.board
+		<choose>
+		  <when test='langCode == "ko"'>
+		    where b_class = 9
+		  </when>
+		  <when test='langCode == "en"'>
+		    where b_class = 19
+		  </when>
+		</choose>
+	</insert>
+
 </mapper>

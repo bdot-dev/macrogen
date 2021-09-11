@@ -29,4 +29,6 @@ public interface CmpnyhistService {
 	void update(CmpnyhistVo vo) throws Exception;
 
 	CmpnyhistVo viewByPk(Long cmpnyhistSn) throws Exception;
+
+	void migrateHistory() throws Exception;
 }

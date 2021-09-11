@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
+import macrogen.www.enums.LangId;
 import macrogen.www.mapper.ThesisMapper;
 import macrogen.www.service.ThesisService;
 import macrogen.www.vo.ThesisVo;
@@ -62,6 +63,19 @@ public class ThesisServiceImpl extends EgovAbstractServiceImpl implements Thesis
 		ThesisVo vo = new ThesisVo();
 		vo.setThesisSn(thesisSn);
 		return view(vo);
+	}
+
+	@Override
+	public void migrateThesis() throws Exception {
+		thesisMapper.deleteMigratedThesis();
+
+		ThesisVo vo = new ThesisVo();
+
+		vo.setLangCode(LangId.ko.name());
+		thesisMapper.migrateThesis(vo);
+
+		vo.setLangCode(LangId.en.name());
+		thesisMapper.migrateThesis(vo);
 	}
 
 

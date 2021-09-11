@@ -31,4 +31,8 @@ public interface PatentMapper {
 	void delete(PatentVo vo);
 
 	void update(PatentVo vo);
+
+	void deleteMigratedPatent();
+
+	void migratePatent(PatentVo vo);
 }

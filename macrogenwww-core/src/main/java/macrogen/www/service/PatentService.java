@@ -29,4 +29,6 @@ public interface PatentService {
 	void update(PatentVo vo) throws Exception;
 
 	PatentVo viewByPk(Long patentSn) throws Exception;
+
+	void migratePatent() throws Exception;
 }

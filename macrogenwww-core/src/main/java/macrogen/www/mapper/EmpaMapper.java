@@ -32,4 +32,8 @@ public interface EmpaMapper {
 
 	void update(EmpaVo vo);
 
+	void deleteMigratedEmpBoard();
+
+	void migrateEmpBoard(EmpaVo vo);
+
 }

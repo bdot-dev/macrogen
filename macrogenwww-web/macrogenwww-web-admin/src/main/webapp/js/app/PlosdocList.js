@@ -40,7 +40,9 @@ var PlosdocList = (function($) {
 						sales : 0,
 						costSales : 0,
 						sellAdminExpenses : 0,
-						incomeLossBefIncometax : 0,
+						etcErn: 0,
+						etcCt: 0,
+						// incomeLossBefIncometax : 0,
 						incometaxExpenses : 0,
 						discontOperIncome : 0,
 						otherCompIncome : 0,
@@ -57,8 +59,11 @@ var PlosdocList = (function($) {
 				operatingIncome: function(result) {
 					return this.grossProfit(result) - result.sellAdminExpenses;
 				},
+				incomeLossBefIncometax: function(result) {
+					return this.operatingIncome(result) + result.etcErn - result.etcCt;
+				},
 				netIncome: function(result) {
-					return result.incomeLossBefIncometax - result.incometaxExpenses
+					return this.incomeLossBefIncometax(result) - result.incometaxExpenses
 						+ result.discontOperIncome;
 				},
 				totalComprehensiveIncome: function(result) {
@@ -147,13 +152,30 @@ var PlosdocList = (function($) {
 							ret = false;
 							break;
 						}
+
+						// 기타수익 etcErn
+						if (vm.resultList[i].etcErn != 0 && !vm.resultList[i].etcErn) {
+							vm.$refs.etcErn[i].focus();
+							alert('필수입력 - 판매비와관리지');
+							ret = false;
+							break;
+						}
+						// 기타비용 etcCt
+						if (vm.resultList[i].etcCt != 0 && !vm.resultList[i].etcCt) {
+							vm.$refs.etcCt[i].focus();
+							alert('필수입력 - 판매비와관리지');
+							ret = false;
+							break;
+						}
+
 						// 법인세비용차감전순이익 incomeLossBefIncometax
-						if (vm.resultList[i].incomeLossBefIncometax != 0 && !vm.resultList[i].incomeLossBefIncometax) {
+						/*if (vm.resultList[i].incomeLossBefIncometax != 0 && !vm.resultList[i].incomeLossBefIncometax) {
 							vm.$refs.incomeLossBefIncometax[i].focus();
 							alert('필수입력 - 법인세비용차감전순이익');
 							ret = false;
 							break;
-						}
+						}*/
+
 						// 법인세비용 incometaxExpenses
 						if (vm.resultList[i].incometaxExpenses != 0 && !vm.resultList[i].incometaxExpenses) {
 							vm.$refs.incometaxExpenses[i].focus();

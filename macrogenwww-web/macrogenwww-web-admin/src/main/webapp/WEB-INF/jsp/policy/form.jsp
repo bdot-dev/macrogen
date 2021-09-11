@@ -55,7 +55,9 @@
 							<th>적용일자 <span>*</span></th>
 							<td class="tal">
 								<vue-datepicker v-model="resultVo.applcDe" buttonimage="/images/calendar.png"
-									ref="applcDe"></vue-datepicker>
+									ref="applcDe" style="width: 100px;"></vue-datepicker>&nbsp; ~ &nbsp;
+								<vue-datepicker v-model="resultVo.endDe" buttonimage="/images/calendar.png"
+									ref="endDe" style="width: 100px;"></vue-datepicker>
 							</td>
 						</tr>
 
