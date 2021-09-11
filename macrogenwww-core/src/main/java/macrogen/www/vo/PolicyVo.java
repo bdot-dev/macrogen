@@ -23,6 +23,7 @@ public class PolicyVo extends DefaultVo {
 	private String expsrYn;
     @DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date applcDe;
+    private Date endDe;
 	private String policyCn;
 
 	public Long getPolicySn() {
@@ -66,5 +67,11 @@ public class PolicyVo extends DefaultVo {
 	}
 	public void setLangCode(String langCode) {
 		this.langCode = langCode;
+	}
+	public Date getEndDe() {
+		return endDe;
+	}
+	public void setEndDe(Date endDe) {
+		this.endDe = endDe;
 	}
 }

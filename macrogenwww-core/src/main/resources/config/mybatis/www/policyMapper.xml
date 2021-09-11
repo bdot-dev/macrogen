@@ -9,6 +9,9 @@
 		<if test="policyCode != null and policyCode != ''">
 			AND tp.policy_code = #{policyCode}
 		</if>
+		<if test="expsrYn != null and expsrYn != ''">
+			and tp.expsr_yn = #{expsrYn}
+		</if>
 	</sql>
 
 	<select id="count" parameterType="policyVo" resultType="int">
@@ -27,6 +30,7 @@
 			, tp.policy_ver
 			, tp.expsr_yn
 			, tp.applc_de
+			, tp.end_de
 			, tp.policy_cn
 			, tp.regist_dt
 			, tp.register_sn
@@ -54,6 +58,7 @@
 			, tp.policy_ver
 			, tp.expsr_yn
 			, tp.applc_de
+			, tp.end_de
 			, tp.policy_cn
 			, tp.regist_dt
 			, tp.register_sn
@@ -75,6 +80,7 @@
 			, policy_ver
 			, expsr_yn
 			, applc_de
+			, end_de
 			, policy_cn
 			, regist_dt
 			, register_sn
@@ -87,6 +93,7 @@
 			, #{policyVer}
 			, #{expsrYn}
 			, #{applcDe}
+			, #{endDe}
 			, #{policyCn}
 			, now()
 			, #{registerSn}
@@ -109,6 +116,7 @@
 			<if test="policyVer != null">, policy_ver = #{policyVer} </if>
 			<if test="expsrYn != null">, expsr_yn = #{expsrYn} </if>
 			<if test="applcDe != null">, applc_de = #{applcDe} </if>
+			<if test="endDe != null">, end_de = #{endDe} </if>
 			<if test="policyCn != null">, policy_cn = #{policyCn} </if>
 		where policy_sn = #{policySn}
 	</update>
@@ -121,6 +129,7 @@
 			, tp.policy_ver
 			, tp.expsr_yn
 			, tp.applc_de
+			, tp.end_de
 			, tp.policy_cn
 			, tp.regist_dt
 			, tp.register_sn
@@ -131,10 +140,10 @@
 		and tp.policy_code = #{policyCode}
 		and tp.policy_ver = #{policyVer}
 	</select>
-	
+
 	<select id="maxVersion" parameterType="policyVo" resultType="int">
-		select ifnull(max(policy_ver), 0) 
-		from tb_policy tp 
+		select ifnull(max(policy_ver), 0)
+		from tb_policy tp
 		where tp.lang_code = #{langCode}
 		and tp.policy_code = #{policyCode}
 	</select>
