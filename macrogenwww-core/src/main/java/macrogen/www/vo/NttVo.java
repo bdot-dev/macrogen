@@ -2,6 +2,9 @@ package macrogen.www.vo;
 
 import java.util.List;
 
+import org.jsoup.Jsoup;
+import org.springframework.util.StringUtils;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -44,6 +47,8 @@ public class NttVo extends DefaultVo {
 	private Integer searchBbsCtgrySn;
 	private String searchExpsrYn;
 
+	private String captchaString;
+
 	public Long getNttSn() {
 		return nttSn;
 	}
@@ -73,6 +78,12 @@ public class NttVo extends DefaultVo {
 	}
 	public void setNttCn(String nttCn) {
 		this.nttCn = nttCn;
+	}
+	public String getNttCnBrief() {
+		if (StringUtils.isEmpty(this.nttCn)) {
+			return this.nttCn;
+		}
+		return Jsoup.parse(this.nttCn).text();
 	}
 	public String getExpsrYn() {
 		return expsrYn;
@@ -199,6 +210,12 @@ public class NttVo extends DefaultVo {
 	}
 	public void setRegistIp(String registIp) {
 		this.registIp = registIp;
+	}
+	public String getCaptchaString() {
+		return captchaString;
+	}
+	public void setCaptchaString(String captchaString) {
+		this.captchaString = captchaString;
 	}
 
 }

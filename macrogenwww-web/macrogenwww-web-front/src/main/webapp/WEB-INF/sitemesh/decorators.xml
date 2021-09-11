@@ -27,7 +27,7 @@
 	<decorator name="empty" page="/WEB-INF/jsp/layout/layoutEmpty.jsp">
 		<pattern>/login</pattern>
 		<pattern>/upload/ck</pattern>
-		
+
 	</decorator>
 
 </decorators>

@@ -107,6 +107,23 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 	}
 
 	@Override
+	public NttVo viewByPk(long nttSn) throws Exception {
+		NttVo vo = new NttVo();
+		vo.setNttSn(nttSn);
+		return view(vo);
+	}
+
+	@Override
+	public NttVo prev(NttVo listVo) throws Exception {
+		return nttMapper.prev(listVo);
+	}
+
+	@Override
+	public NttVo next(NttVo listVo) throws Exception {
+		return nttMapper.next(listVo);
+	}
+
+	@Override
 	public void migrateMedia() throws Exception {
 		nttMapper.deleteMigratedMedia();
 

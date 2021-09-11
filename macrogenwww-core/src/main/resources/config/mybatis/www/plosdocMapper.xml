@@ -23,6 +23,8 @@
 			, tp.sales
 			, tp.cost_sales
 			, tp.sell_admin_expenses
+			, tp.etc_ern
+			, tp.etc_ct
 			, tp.income_loss_bef_incometax
 			, tp.incometax_expenses
 			, tp.discont_oper_income
@@ -55,6 +57,8 @@
 			, tp.sales
 			, tp.cost_sales
 			, tp.sell_admin_expenses
+			, tp.etc_ern
+			, tp.etc_ct
 			, tp.income_loss_bef_incometax
 			, tp.incometax_expenses
 			, tp.discont_oper_income
@@ -81,6 +85,8 @@
 			, sales
 			, cost_sales
 			, sell_admin_expenses
+			, etc_ern
+			, etc_ct
 			, income_loss_bef_incometax
 			, incometax_expenses
 			, discont_oper_income
@@ -98,6 +104,8 @@
 			, #{sales}
 			, #{costSales}
 			, #{sellAdminExpenses}
+			, #{etcErn}
+			, #{etcCt}
 			, #{incomeLossBefIncometax}
 			, #{incometaxExpenses}
 			, #{discontOperIncome}
@@ -125,6 +133,8 @@
 			<if test="sales != null">, sales = #{sales} </if>
 			<if test="costSales != null">, cost_sales = #{costSales} </if>
 			<if test="sellAdminExpenses != null">, sell_admin_expenses = #{sellAdminExpenses} </if>
+			<if test="etcErn != null">, etc_ern = #{etcErn} </if>
+			<if test="etcCt != null">, etc_ct = #{etcCt} </if>
 			<if test="incomeLossBefIncometax != null">, income_loss_bef_incometax = #{incomeLossBefIncometax} </if>
 			<if test="incometaxExpenses != null">, incometax_expenses = #{incometaxExpenses} </if>
 			<if test="discontOperIncome != null">, discont_oper_income = #{discontOperIncome} </if>

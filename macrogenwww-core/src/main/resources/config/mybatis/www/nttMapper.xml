@@ -46,6 +46,9 @@
 					and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%')
 							OR tn.ntt_cn like concat('%', #{searchKeyword}, '%') )
 				</when>
+				<otherwise>
+					and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+				</otherwise>
 			</choose>
 		</if>
 		<if test='upendFixingYn == "Y"'>
@@ -233,6 +236,34 @@
     	WHERE
     		ntt_sn = #{nttSn}
     </update>
+
+	<select id="prev" parameterType="nttVo" resultMap="nttMap">
+		select tn.*
+		from tb_ntt tn
+		where 1= 1
+		and tn.lang_code = #{langCode}
+		and bbs_id = #{bbsId}
+		and tn.ntt_sn <![CDATA[ > ]]> #{nttSn}
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+		</if>
+		order by ntt_sn asc
+		limit 0, 1
+	</select>
+
+	<select id="next" parameterType="nttVo" resultMap="nttMap">
+		select tn.*
+		from tb_ntt tn
+		where 1= 1
+		and tn.lang_code = #{langCode}
+		and bbs_id = #{bbsId}
+		and tn.ntt_sn <![CDATA[ < ]]> #{nttSn}
+		<if test="searchKeyword != null and searchKeyword != ''">
+			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+		</if>
+		order by ntt_sn desc
+		limit 0, 1
+	</select>
 
 	<delete id="deleteMigratedMedia" parameterType="nttVo">
 		delete from tb_ntt where bbs_id = 'media-library' and ntt_sn <![CDATA[ < ]]> 20000000000

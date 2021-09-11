@@ -29,6 +29,9 @@
 			<if test='searchCondition == "jrnl"'>
 				and tt.jrnl like concat('%', #{searchKeyword}, '%')
 			</if>
+			<if test='searchCondition == ""'>
+				and tt.thesis_sj like concat('%', #{searchKeyword}, '%')
+			</if>
 		</if>
 
 	</sql>

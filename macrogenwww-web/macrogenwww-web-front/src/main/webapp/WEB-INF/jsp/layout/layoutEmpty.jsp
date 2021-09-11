@@ -1,15 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<title><decorator:title />Eluo Front</title>
-	<%@ include file="/WEB-INF/jsp/inc/htmlHead.jsp" %>
-	<decorator:head />
-</head>
-<body>
-
-	<decorator:body />
-
-</body>
-</html>
+<c:if test="${DEVICE_TYPE eq 'pc' }">
+	<%@ include file="layoutEmptyPc.jsp"%>
+</c:if>
+<c:if test="${DEVICE_TYPE eq 'mobl' }">
+	<%@ include file="layoutEmptyMobl.jsp"%>
+</c:if>

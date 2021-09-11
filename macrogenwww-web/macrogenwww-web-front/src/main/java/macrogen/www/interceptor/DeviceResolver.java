@@ -26,7 +26,7 @@ public class DeviceResolver extends HandlerInterceptorAdapter  {
 				} else if (device.isMobile()) {
 					session.setAttribute("DEVICE_TYPE", "mobl");
 				} else if (device.isTablet()) {
-					session.setAttribute("DEVICE_TYPE", "tblt");
+					session.setAttribute("DEVICE_TYPE", "mobl");
 				} else {
 					session.setAttribute("DEVICE_TYPE", "pc");
 				}
