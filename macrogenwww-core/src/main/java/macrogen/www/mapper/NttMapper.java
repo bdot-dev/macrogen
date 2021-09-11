@@ -101,6 +101,10 @@ public interface NttMapper {
 
 	Long seq();
 
+	NttVo prev(NttVo listVo);
+
+	NttVo next(NttVo listVo);
+
 	void deleteMigratedMedia();
 
 	void migrateMedia(NttVo vo);
@@ -124,4 +128,5 @@ public interface NttMapper {
 	void deleteMigratedOnlineInquiry();
 
 	List<OnlineInquiryVo> allOnlineInquiryList();
+
 }
