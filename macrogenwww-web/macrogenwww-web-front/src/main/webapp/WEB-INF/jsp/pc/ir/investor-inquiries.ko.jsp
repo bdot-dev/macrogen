@@ -11,6 +11,8 @@
 		    </ol>
 		</nav>
 
+		<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
+
         <div class="section_IR">
             <div class="font-h1">투자자 문의</div>
             <div style="width: 1323px;height: 520px;background-color:#d9d9d9;"></div>
@@ -57,7 +59,9 @@
                 <!-- input / text-->
                 <div class="input-group">
                     <span class="input-group-text" id="automatic">자동등록방지</span>
-                    <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
+                    <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;">
+                    	<img src="/${rc.locale.language }/ir/investor-inquiries/captcha-image" alt="캡차이미지">
+                    </span>
                     <input type="text" id="captchaString" name="captchaString" maxlength="10"
                     	placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
@@ -80,11 +84,15 @@
                 <a href="javascript:;" class="btn btn-white disabled btn-cancel"><span>취소</span></a>
                 <a href="javascript:;" class="btn btn-primary btn-primary btn-save"><i class="icon"></i><span>문의하기</span></a>
             </div>
-       </div>
+        </div>
+
+		</form>
+
     </div>
 
     <script>
 	var submitting = false;
+	var $form = $('#editForm');
 	var $nmbrWrterNm = $('#nmbrWrterNm');
 	var $mbtlnum1 = $('#mbtlnum1');
 	var $mbtlnum2 = $('#mbtlnum2');
@@ -118,20 +126,26 @@
 			$.ajax({
 				dataType : 'json',
 				type : 'post',
-				contentType : 'application/json',
+				// contentType : 'application/json',
 				url : '/${rc.locale.language }/ir/investor-inquiries/submit',
-				data : JSON.stringify({
+				/* data : JSON.stringify({
 					nttSj : $nttSj.val(),
 					nttCn : $nttCn.val(),
 					nmbrWrterNm : $nmbrWrterNm.val(),
 					mbtlnum : $mbtlnum1.val() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val(),
 					captchaString : $captchaString.val(),
-				}),
+				}), */
+				data: $('#editForm').serialize(),
 			}).done(function(data) {
 				submitting = false;
-				if(data.result == 'success') {
+				if (data.result == 'success') {
 					alert('저장되었습니다.');
 					location.href = '/${rc.locale.language }/ir/investor-inquiries';
+				} else if (data.result == 'fail') {
+					if (data.message == 'invalid_captcha') {
+						alert('자동등록방지 문자열을 확인해 주세요.');
+						$captchaString.focus();
+					}
 				}
 
 			});

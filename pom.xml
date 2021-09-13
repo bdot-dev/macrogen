@@ -136,6 +136,23 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+
+		<!-- <repository>
+			<id>3rd-jars-lv0</id>
+			<url>file://${project.basedir}/repo</url>
+		</repository>
+		<repository>
+			<id>3rd-jars-lv1</id>
+			<url>file://${project.basedir}/../repo</url>
+		</repository>
+		<repository>
+			<id>3rd-jars-lv2</id>
+			<url>file://${project.basedir}/../../repo</url>
+		</repository>
+		<repository>
+			<id>3rd-jars-lv3</id>
+			<url>file://${project.basedir}/../../../repo</url>
+		</repository> -->
 	</repositories>
 
 	<dependencies>
@@ -486,6 +503,7 @@
 		</dependency>
 
 		<dependency>
+			<!-- \repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar -->
 			<groupId>org.imgscalr</groupId>
 			<artifactId>imgscalr-lib</artifactId>
 			<version>4.2</version>
@@ -495,6 +513,12 @@
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
 			<version>1.13.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.navercorp.lucy</groupId>
+			<artifactId>lucy-xss-servlet</artifactId>
+			<version>2.0.1</version>
 		</dependency>
 
 	</dependencies>

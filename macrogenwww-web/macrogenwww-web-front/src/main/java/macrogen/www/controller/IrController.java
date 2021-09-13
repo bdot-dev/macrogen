@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +23,11 @@ import macrogen.www.service.CodeService;
 import macrogen.www.service.FnlttService;
 import macrogen.www.service.NttService;
 import macrogen.www.service.PlosdocService;
+import macrogen.www.utils.CaptchaUtil;
 import macrogen.www.vo.FnlttVo;
 import macrogen.www.vo.NttVo;
 import macrogen.www.vo.PlosdocVo;
+import nl.captcha.Captcha;
 
 /**
  * <pre>
@@ -190,13 +194,27 @@ public class IrController extends DefaultController {
 		return getDev() + "/ir/investor-inquiries." + getLang();
 	}
 
+	@RequestMapping("/investor-inquiries/captcha-image")
+	@ResponseBody
+	public void captchaImage(@PathVariable LangId langId, Model model,
+			HttpServletRequest request, HttpServletResponse response) throws Exception {
+		new CaptchaUtil().getImgCaptcha(request, response);
+	}
+
 	@RequestMapping("/investor-inquiries/submit")
 	@ResponseBody
-	public Map<String, Object> investorInquiriesSubmit(@PathVariable LangId langId,
-			@RequestBody NttVo vo, HttpServletRequest request) throws Exception {
+	public Map<String, Object> investorInquiriesSubmit(@PathVariable LangId langId, NttVo vo,
+			HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
-		// TODO validate captcha string (vo.getCaptchaString())
+		// validate captcha string (vo.getCaptchaString())
+		Captcha captcha = (Captcha) request.getSession().getAttribute(Captcha.NAME);
+		if (StringUtils.isEmpty(vo.getCaptchaString()) ||
+				!captcha.isCorrect(vo.getCaptchaString())) {
+			resultMap.put("result", "fail");
+ 			resultMap.put("message", "invalid_captcha");
+			return resultMap;
+		}
 
 		vo.setLangCode(langId.name());
 		vo.setBbsId("investor-inquiries");

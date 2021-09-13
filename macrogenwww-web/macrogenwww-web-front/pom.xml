@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>macrogen</groupId>
-    <artifactId>macrogenwww-web</artifactId>
-    <version>1.0.0</version>
-  </parent>
-  <artifactId>macrogenwww-web-front</artifactId>
-  <packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>macrogen</groupId>
+		<artifactId>macrogenwww-web</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>macrogenwww-web-front</artifactId>
+	<packaging>war</packaging>
+
+	<!--
+	<dependencies>
+		<dependency>
+			<groupId>nl.captcha</groupId>
+			<artifactId>simplecaptcha</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+	</dependencies>
+	 -->
+
+	<dependencies>
+		<dependency>
+			<groupId>captcha</groupId>
+			<artifactId>simplecaptcha</artifactId>
+			<version>1.2.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/simplecaptcha-1.2.1.jar</systemPath>
+		</dependency>
+	</dependencies>
+
 </project>
