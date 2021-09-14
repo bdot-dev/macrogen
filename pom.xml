@@ -20,7 +20,7 @@
 		<core.atch.public.url>/public</core.atch.public.url>
 
 
-		<core.domain.www>http://localhost:9080</core.domain.www>
+		<core.domain.www>http://www.macrogen.eluocnc.com:9001</core.domain.www>
 
 		<database.url>jdbc:mysql://211.110.58.242:23306/macrogenwww?autoReconnect=true</database.url>
 		<database.username>macrogenwww</database.username>
@@ -49,12 +49,13 @@
 				<core.atch.public.path>/share/data/atch/public_macrogenwww</core.atch.public.path>
 				<core.atch.public.url>/public</core.atch.public.url>
 
-				<core.domain.www>http://localhost:9080</core.domain.www>
+				<core.domain.www>http://www.macrogen.eluocnc.com:9001</core.domain.www>
 
 			</properties>
 
 		</profile>
 		<profile>
+		
 			<id>real</id>
 			<properties>
 				<environment>real</environment>

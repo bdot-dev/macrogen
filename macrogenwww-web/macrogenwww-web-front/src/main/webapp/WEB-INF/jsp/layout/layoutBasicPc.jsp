@@ -37,6 +37,7 @@
 		            $('html,body').animate( { scrollTop:0 },{duration : 100});
 		            return false;
 		        });
+
 		        $(window).on('scroll', function (){
 		            var scrollTop = $(window).scrollTop()
 		            if (scrollTop > 150) {
@@ -45,6 +46,13 @@
 		                $('.btn-totop').css({'opacity' : 0})
 		            }
 		        })
+		    });
+
+			$(function() {
+				$('.icon-share').on('click', function(e) {
+					copyUrlToClipboard();
+					alert('링크 복사가 완료되었습니다.');
+				});
 		    });
 		</script>
 

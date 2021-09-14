@@ -1,5 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<c:choose>
+	<c:when test="${resultVo.thumbBassImageUseYn eq 'Y' }">
+		<c:set var="imgUrl" value="${resultVo.thumbBassImageCodeNm }" />
+	</c:when>
+	<c:otherwise>
+		<c:set var="imgUrl" value="${publicUrl }${resultVo.thumbFlpth }" />
+	</c:otherwise>
+</c:choose>
+<head>
+	<title><c:out value="${resultVo.nttSj }" /> - </title>
+	<meta name="description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
+	<meta property="og:title" content="<c:out value="${resultVo.nttSj }" /> - MACROGEN" />
+	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
+	<meta property="og:image" content="${frontDomain }${imgUrl }" />
+</head>
 <body>
 
 	<!-- 검색조건 저장용 -->
@@ -30,15 +45,6 @@
                     </div>
                     <hr class="divider"/>
                     <div class="content">
-                  		<c:choose>
-                  			<c:when test="${resultVo.thumbBassImageUseYn eq 'Y' }">
-                  				<c:set var="imgUrl" value="${resultVo.thumbBassImageCodeNm }" />
-                  			</c:when>
-                  			<c:otherwise>
-                  				<c:set var="imgUrl" value="${publicUrl }${resultVo.thumbFlpth }" />
-                  			</c:otherwise>
-                  		</c:choose>
-
                         <div class="img"><img src="${imgUrl }" alt=""></div>
                         <div class="text">
                         	${resultVo.nttCn }

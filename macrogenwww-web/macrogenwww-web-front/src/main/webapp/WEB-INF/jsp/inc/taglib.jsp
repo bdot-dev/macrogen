@@ -9,6 +9,7 @@
 %><%@ taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator"
 %><%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"
 %><%@ taglib prefix="code" uri="/WEB-INF/tlds/code.tld"
-%><% pageContext.setAttribute("newline", "\n"); 
+%><% pageContext.setAttribute("newline", "\n");
 %>
 <spring:eval var="publicUrl" expression="@propConf.getProperty('globals.atch.public.url')"/>
+<spring:eval var="frontDomain" expression="@propConf.getProperty('globals.domain.www')"/>
