@@ -1,6 +1,7 @@
 package macrogen.www.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -21,7 +22,11 @@ import macrogen.www.enums.LangId;
 public class CompanyController extends DefaultController {
 
 	@RequestMapping("/introduction/overview")
-	public String introductionOverview(@PathVariable LangId langId) throws Exception {
+	public String introductionOverview(@PathVariable LangId langId,
+			Model model) throws Exception {
+
+		model.addAttribute("layout_type", "company");
+
 		return getDev() + "/company/introduction/overview." + getLang();
 	}
 
