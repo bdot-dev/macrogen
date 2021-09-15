@@ -32,8 +32,8 @@
                 <div class="box">
                     <p class="font-bold title">FAMILY SITE</p>
                     <ul class="text">
-                        <li><span>마이지놈스토리</span><span>마이펫진</span><span>소마젠(Psomagen)</span></li>
-                        <li><span>마크로젠 일본</span><span>마크로젠 싱가폴</span></li>
+                        <li><span>더 바이옴</span><span>마이지놈스토리</span><span>마이펫진</span></li>
+                        <li><span>소마젠(Psomagen)</span><span>마크로젠 일본</span><span>마크로젠 싱가포르</span></li>
                         <li><span>유전체의학연구소</span><span>공우생명정보재단</span></li>
                         <li><span>Order site</span></li>
                     </ul>

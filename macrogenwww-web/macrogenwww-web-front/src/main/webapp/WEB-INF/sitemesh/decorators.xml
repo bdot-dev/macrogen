@@ -6,6 +6,7 @@
 		<pattern>/inc/*</pattern>
 		<pattern>/nice/*</pattern>
 		<pattern>/rest/*</pattern>
+		<pattern>/app</pattern>
 
 		<pattern>*.jsp*</pattern>
 		<pattern>*.htm*</pattern>
