@@ -2,6 +2,11 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 	<div style="padding: 20px;">
+		<div>Macrogen</div>
+		<div><a target="blank" href="/ko/company/history">연혁</a></div>
+		<div><a target="blank" href="/ko/company/winner">수상</a></div>
+		<div><a target="blank" href="/ko/company/recruit">채용</a></div>
+
 		<div>IR</div>
 		<div><a target="blank" href="/ko/ir/announcement">IR공고</a></div>
 		<div><a target="blank" href="/ko/ir/news">IR소식</a> </div>

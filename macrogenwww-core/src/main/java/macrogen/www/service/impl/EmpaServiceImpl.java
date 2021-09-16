@@ -66,6 +66,16 @@ public class EmpaServiceImpl extends EgovAbstractServiceImpl implements EmpaServ
 	}
 
 	@Override
+	public EmpaVo prev(EmpaVo listVo) throws Exception {
+		return empaMapper.prev(listVo);
+	}
+
+	@Override
+	public EmpaVo next(EmpaVo listVo) throws Exception {
+		return empaMapper.next(listVo);
+	}
+
+	@Override
 	public void migrateEmpBoard() throws Exception {
 		empaMapper.deleteMigratedEmpBoard();
 
