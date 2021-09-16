@@ -20,6 +20,8 @@ public interface WnpzService {
 
 	List<WnpzVo> list(WnpzVo vo) throws Exception;
 
+	List<WnpzVo> allListByWnpzClCode(String langCode, String wnpzClCode) throws Exception;
+
 	WnpzVo view (WnpzVo vo) throws Exception;
 
 	void insert(WnpzVo vo) throws Exception;

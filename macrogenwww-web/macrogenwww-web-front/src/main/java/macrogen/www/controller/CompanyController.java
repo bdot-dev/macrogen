@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.common.storage.StorageService;
+import macrogen.www.enums.Codes.WnpzClCode;
 import macrogen.www.enums.LangId;
 import macrogen.www.exception.BaseException;
 import macrogen.www.service.AtchService;
@@ -24,10 +25,12 @@ import macrogen.www.service.CmpnyhistService;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
 import macrogen.www.service.SetupService;
+import macrogen.www.service.WnpzService;
 import macrogen.www.vo.ApplFormVo;
 import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CmpnyhistGroupVo;
 import macrogen.www.vo.EmpaVo;
+import macrogen.www.vo.WnpzVo;
 import macrogen.www.vo.YearCmpnyhistVo;
 
 /**
@@ -67,6 +70,9 @@ public class CompanyController extends DefaultController {
 
 	@Autowired
 	private CmpnyhistGroupPhotoService cmpnyhistGroupPhotoService;
+
+	@Autowired
+	private WnpzService wnpzService;
 
 	@Value("${globals.atch.private.path}")
 	private String atchPrivatePath;
@@ -109,7 +115,34 @@ public class CompanyController extends DefaultController {
 	@RequestMapping("/winner")
 	public String winner(@PathVariable LangId langId,
 			Model model) throws Exception {
+
+		// 마크로젠 과학자상 수상자 목록
+		List<WnpzVo> msaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.msa.name());
+		model.addAttribute("msaResultList", msaResultList);
+
+		// 마크로젠 여성과학자상 수상자 목록
+		List<WnpzVo> wsaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.wsa.name());
+		model.addAttribute("wsaResultList", wsaResultList);
+
+		// 마크로젠 젊은 생명정보 학자상 수상자 목록
+		List<WnpzVo> ybaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.yba.name());
+		model.addAttribute("ybaResultList", ybaResultList);
+
 		return getDev() + "/company/winner." + getLang();
+	}
+
+	@RequestMapping("/winner/viewAjaxHtml/{wnpzSn}")
+	public String winnerViewAjaxHtml(@PathVariable LangId langId, @PathVariable Long wnpzSn,
+			@ModelAttribute WnpzVo wnpzVo, Model model) throws Exception {
+
+		return getDev() + "/company/winner-viewAjaxHtml." + getLang();
+	}
+
+	@RequestMapping("/winner/listAjaxHtml")
+	public String winnerListAjaxHtml(@PathVariable LangId langId,
+			@ModelAttribute WnpzVo wnpzVo, Model model) throws Exception {
+
+		return getDev() + "/company/winner-listAjaxHtml." + getLang();
 	}
 
 

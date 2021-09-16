@@ -45,6 +45,9 @@ public class DecoratorMapper extends AbstractDecoratorMapper {
 
 				}
 
+				if (path.startsWith("/ko/company/winner") || path.startsWith("/en/company/winner")) {
+					request.setAttribute("modal_winner_use", true);
+				}
 
 			} catch (Exception e) {
 				LOGGER.debug(e.getMessage());

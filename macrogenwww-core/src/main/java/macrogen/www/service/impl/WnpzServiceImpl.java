@@ -39,6 +39,14 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 	}
 
 	@Override
+	public List<WnpzVo> allListByWnpzClCode(String langCode, String wnpzClCode) throws Exception {
+		WnpzVo vo = new WnpzVo();
+		vo.setLangCode(langCode);
+		vo.setWnpzClCode(wnpzClCode);
+		return wnpzMapper.list(vo);
+	}
+
+	@Override
 	public WnpzVo view(WnpzVo vo) throws Exception {
 		return wnpzMapper.view(vo);
 	}

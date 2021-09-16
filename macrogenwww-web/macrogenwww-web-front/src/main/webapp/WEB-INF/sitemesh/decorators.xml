@@ -14,6 +14,7 @@
 
 		<!-- 개별 페이지 -->
 		<pattern>/*/*AjaxHtml</pattern>
+		<pattern>/*/*AjaxHtml/*</pattern>
 
 		<pattern>/*/*Xls</pattern>
 

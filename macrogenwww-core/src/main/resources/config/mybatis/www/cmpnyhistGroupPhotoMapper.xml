@@ -24,6 +24,7 @@
 			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
 			, tcgp.photo_sj_ko
 			, tcgp.photo_sj_en
+			, tcgp.photo_year
 			, tcgp.sort_ordr
 			, tcgp.regist_dt
 			, tcgp.register_sn
@@ -56,6 +57,7 @@
 			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
 			, tcgp.photo_sj_ko
 			, tcgp.photo_sj_en
+			, tcgp.photo_year
 			, tcgp.sort_ordr
 			, tcgp.regist_dt
 			, tcgp.register_sn
@@ -78,6 +80,7 @@
 			, photo_atch_id
 			, photo_sj_ko
 			, photo_sj_en
+			, photo_year
 			, sort_ordr
 			, regist_dt
 			, register_sn
@@ -89,6 +92,7 @@
 			, #{photoAtchId}
 			, #{photoSjKo}
 			, #{photoSjEn}
+			, #{photoYear}
 			, #{sortOrdr}
 			, now()
 			, #{registerSn}
@@ -111,6 +115,7 @@
 			<if test="photoAtchId != null">, photo_atch_id = #{photoAtchId} </if>
 			<if test="photoSjKo != null">, photo_sj_ko = #{photoSjKo} </if>
 			<if test="photoSjEn != null">, photo_sj_en = #{photoSjEn} </if>
+			<if test="photoYear != null">, photo_year = #{photoYear} </if>
 			<if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
 		where cmpnyhist_group_photo_sn = #{cmpnyhistGroupPhotoSn}
 	</update>

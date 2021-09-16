@@ -68,6 +68,15 @@
 								</div>
 							</td>
 						</tr>
+						<tr>
+							<th>직업 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<div class="lbMaxlenPrnt">
+									<input type="text" v-model="resultVo.occp" ref="occp"
+										maxlength="100" placeholder="직업" class="w100p" />
+								</div>
+							</td>
+						</tr>
 
 						<tr>
 							<th>간단설명 <span>*</span></th>
