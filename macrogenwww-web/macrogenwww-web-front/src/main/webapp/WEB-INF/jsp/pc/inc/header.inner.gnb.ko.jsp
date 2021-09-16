@@ -14,17 +14,16 @@
     </nav>
 </div>
 <c:choose>
-	<c:when test="${layout_type eq 'company' or
-					layout_type eq 'business' }">
+	<c:when test="${ layout_type eq 'company' or layout_type eq 'business' }">
 		<c:set var="snsIconColor" value="-white" />
 	</c:when>
 </c:choose>
-<div class="section_btn">
+<div class="section_btn" data-layout-type="${layout_type }">
     <ul class="sns">
-        <li><a href="#"><i class="icon icon-facebook-circle${snsIconColor }"></i></a></li>
-        <li><a href="#"><i class="icon icon-youtube-circle${snsIconColor }"></i></a></li>
-        <li><a href="#"><i class="icon icon-blog-circle${snsIconColor }"></i></a></li>
-        <li><a href="#"><i class="icon icon-linkedin-circle${snsIconColor }"></i></a></li>
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-circle${snsIconColor }"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube-circle${snsIconColor }"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog-circle${snsIconColor }"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-circle${snsIconColor }"></i></a></li>
     </ul>
     <div class="btn_eng">
         <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>

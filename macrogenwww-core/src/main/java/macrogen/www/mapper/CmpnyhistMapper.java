@@ -34,6 +34,8 @@ public interface CmpnyhistMapper {
 
 	void deleteMigratedHistory();
 
+	List<String> distinctYearList(CmpnyhistVo vo);
+
 	void migrateHistory(CmpnyhistVo vo);
 
 }

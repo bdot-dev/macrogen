@@ -11,10 +11,10 @@
             </div>
             <ul class="sns">
                 <ul class="sns">
-                    <li><a href="#"><i class="icon icon-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="icon icon-youtube-square"></i></a></li>
-                    <li><a href="#"><i class="icon icon-blog-square"></i></a></li>
-                    <li><a href="#"><i class="icon icon-linkedin-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube-square"></i></a></li>
+                    <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-square"></i></a></li>
                 </ul>
             </ul>
         </div>

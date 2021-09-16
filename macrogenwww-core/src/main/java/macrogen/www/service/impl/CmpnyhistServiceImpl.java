@@ -38,6 +38,26 @@ public class CmpnyhistServiceImpl extends EgovAbstractServiceImpl implements Cmp
 	}
 
 	@Override
+	public List<CmpnyhistVo> listByCmpnyhistGroupSn(String langCode, Long cmpnyhistGroupSn) throws Exception {
+		CmpnyhistVo vo = new CmpnyhistVo();
+		vo.setLangCode(langCode);
+		vo.setCmpnyhistGroupSn(cmpnyhistGroupSn);
+		vo.setFirstIndex(-1);
+		return cmpnyhistMapper.list(vo);
+	}
+
+	@Override
+	public List<CmpnyhistVo> listByYearAndCmpnyhistGroupSn(String langCode, String year, Long cmpnyhistGroupSn)
+			throws Exception {
+		CmpnyhistVo vo = new CmpnyhistVo();
+		vo.setLangCode(langCode);
+		vo.setSearchYear(year);
+		vo.setCmpnyhistGroupSn(cmpnyhistGroupSn);
+		vo.setFirstIndex(-1);
+		return cmpnyhistMapper.list(vo);
+	}
+
+	@Override
 	public CmpnyhistVo view(CmpnyhistVo vo) throws Exception {
 		return cmpnyhistMapper.view(vo);
 	}
@@ -63,6 +83,14 @@ public class CmpnyhistServiceImpl extends EgovAbstractServiceImpl implements Cmp
 		CmpnyhistVo vo = new CmpnyhistVo();
 		vo.setCmpnyhistSn(cmpnyhistSn);
 		return view(vo);
+	}
+
+	@Override
+	public List<String> distinctYearList(String langCode, Long cmpnyhistGroupSn) throws Exception {
+		CmpnyhistVo vo = new CmpnyhistVo();
+		vo.setLangCode(langCode);
+		vo.setCmpnyhistGroupSn(cmpnyhistGroupSn);
+		return cmpnyhistMapper.distinctYearList(vo);
 	}
 
 	@Override

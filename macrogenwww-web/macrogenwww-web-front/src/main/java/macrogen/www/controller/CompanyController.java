@@ -18,12 +18,17 @@ import macrogen.www.common.storage.StorageService;
 import macrogen.www.enums.LangId;
 import macrogen.www.exception.BaseException;
 import macrogen.www.service.AtchService;
+import macrogen.www.service.CmpnyhistGroupPhotoService;
+import macrogen.www.service.CmpnyhistGroupService;
+import macrogen.www.service.CmpnyhistService;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
 import macrogen.www.service.SetupService;
 import macrogen.www.vo.ApplFormVo;
 import macrogen.www.vo.AtchVo;
+import macrogen.www.vo.CmpnyhistGroupVo;
 import macrogen.www.vo.EmpaVo;
+import macrogen.www.vo.YearCmpnyhistVo;
 
 /**
  * <pre>
@@ -54,21 +59,49 @@ public class CompanyController extends DefaultController {
 	@Autowired
 	private EmpaService empaService;
 
+	@Autowired
+	private CmpnyhistService cmpnyhistService;
+
+	@Autowired
+	private CmpnyhistGroupService cmpnyhistGroupService;
+
+	@Autowired
+	private CmpnyhistGroupPhotoService cmpnyhistGroupPhotoService;
+
 	@Value("${globals.atch.private.path}")
 	private String atchPrivatePath;
 
 	@RequestMapping("/introduction/overview")
 	public String introductionOverview(@PathVariable LangId langId,
 			Model model) throws Exception {
-
-		model.addAttribute("layout_type", "company");
-
 		return getDev() + "/company/introduction/overview." + getLang();
 	}
 
 	@RequestMapping("/history")
 	public String history(@PathVariable LangId langId,
 			Model model) throws Exception {
+
+		// 이력그룹 목록
+		List<CmpnyhistGroupVo> resultList = cmpnyhistGroupService.allList();
+		for (CmpnyhistGroupVo result : resultList) {
+			// 연도 목록
+			List<String> yearList = cmpnyhistService.distinctYearList(langId.name(), result.getCmpnyhistGroupSn());
+			for (String year : yearList) {
+				YearCmpnyhistVo yearCmpnyhistVo = new YearCmpnyhistVo();
+				yearCmpnyhistVo.setYear(year);
+				yearCmpnyhistVo.setCmpnyhistList(cmpnyhistService.listByYearAndCmpnyhistGroupSn(
+						langId.name(), year, result.getCmpnyhistGroupSn()));
+				result.getYearCmpnyhistList().add(yearCmpnyhistVo);
+			}
+
+			// 연혁 목록
+			result.setCmpnyhistList(cmpnyhistService.listByCmpnyhistGroupSn(langId.name(), result.getCmpnyhistGroupSn()));
+
+			// 그룹사진 목록
+			result.setCmpnyhistGroupPhotoList(cmpnyhistGroupPhotoService.listByCmpnyhistGroupSn(result.getCmpnyhistGroupSn()));
+		}
+		model.addAttribute("resultList", resultList);
+
 		return getDev() + "/company/history." + getLang();
 	}
 
