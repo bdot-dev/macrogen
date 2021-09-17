@@ -18,6 +18,7 @@ public class CmpnyhistGroupPhotoVo extends DefaultVo {
 	private String photoFlpth;
 	private String photoSjKo;
 	private String photoSjEn;
+	private String photoYear;
 	private Integer sortOrdr;
 	private String beginYear;
 	private String endYear;
@@ -83,5 +84,11 @@ public class CmpnyhistGroupPhotoVo extends DefaultVo {
 	}
 	public void setCmpnyhistGroupPhotoSn(Long cmpnyhistGroupPhotoSn) {
 		this.cmpnyhistGroupPhotoSn = cmpnyhistGroupPhotoSn;
+	}
+	public String getPhotoYear() {
+		return photoYear;
+	}
+	public void setPhotoYear(String photoYear) {
+		this.photoYear = photoYear;
 	}
 }

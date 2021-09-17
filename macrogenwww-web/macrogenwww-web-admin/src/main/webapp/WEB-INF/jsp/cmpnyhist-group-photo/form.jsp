@@ -72,6 +72,15 @@
 							</td>
 						</tr>
 						<tr>
+							<th>이미지 연도 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<div class="lbMaxlenPrnt">
+									<input type="text" v-model="resultVo.photoYear" ref="photoYear"
+										maxlength="10" placeholder="이미지 연도" class="w100p" />
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<th>정렬순서</th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">

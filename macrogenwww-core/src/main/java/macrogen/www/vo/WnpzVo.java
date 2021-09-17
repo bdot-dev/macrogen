@@ -27,6 +27,7 @@ public class WnpzVo extends DefaultVo {
 	private String photoAtchId;
 	private String photoFlpth;
 	private String wnpzNm;
+	private String occp;
 	private String rm;
 	private String wnpzCn;
 
@@ -142,5 +143,11 @@ public class WnpzVo extends DefaultVo {
 	}
 	public void setPhotoFlpth(String photoFlpth) {
 		this.photoFlpth = photoFlpth;
+	}
+	public String getOccp() {
+		return occp;
+	}
+	public void setOccp(String occp) {
+		this.occp = occp;
 	}
 }

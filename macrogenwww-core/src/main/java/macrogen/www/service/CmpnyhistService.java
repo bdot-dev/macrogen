@@ -31,4 +31,10 @@ public interface CmpnyhistService {
 	CmpnyhistVo viewByPk(Long cmpnyhistSn) throws Exception;
 
 	void migrateHistory() throws Exception;
+
+	List<CmpnyhistVo> listByCmpnyhistGroupSn(String langCode, Long cmpnyhistGroupSn) throws Exception;
+
+	List<String> distinctYearList(String langCode, Long cmpnyhistGroupSn) throws Exception;
+
+	List<CmpnyhistVo> listByYearAndCmpnyhistGroupSn(String langCode, String year, Long cmpnyhistGroupSn) throws Exception;
 }

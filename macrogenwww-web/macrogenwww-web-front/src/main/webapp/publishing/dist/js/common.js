@@ -15,6 +15,7 @@ front.common = (function () {
     this.a();
     this.commonHandler();
     this.scrollHeader();
+
   };
 
   var a = function () {
@@ -35,7 +36,9 @@ front.common = (function () {
         } else {
           $('.header').show()
               .css({'position': 'relative'})
-              .removeClass('header-sm')
+              .removeClass('header-sm');
+          $('.header-main').show()
+              .css({'position': 'absolute'})
         }
       } else {
         // console.log('Down');
@@ -53,9 +56,16 @@ front.common = (function () {
     }
   }
 
-
   var commonHandler = function () {
     // $(".header").sticky({topSpacing:0});
+
+      $('._btnTooltip').on('click',function (){
+        $(this).siblings().show();
+      })
+
+      $('._btnTooltipClose').on('click',function (){
+        $(this).parent().hide();
+      })
 
     $('._fileUpload .form-control-file').on('change', function(){
       var target = $(this).parent().find('.file-box');
@@ -67,7 +77,7 @@ front.common = (function () {
           var file = this.files[0];
           var name = file.name;
           target.parent().addClass('withFile');
-          target.html(`<span>${name}</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>`);
+          target.html('<span>'+ name +'</span><a href="#" class="btn-delete"><em class="sr-only">file delete</em></a>');
         }
       }
       return false;
@@ -78,7 +88,7 @@ front.common = (function () {
     a : a,
     commonHandler : commonHandler,
     scrollHeader : scrollHeader,
-    init : init
+    init : init,
   }
 })();
 

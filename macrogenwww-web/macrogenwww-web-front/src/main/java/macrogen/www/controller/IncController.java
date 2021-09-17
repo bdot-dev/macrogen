@@ -23,6 +23,11 @@ public class IncController extends DefaultController {
 		return getDev() + "/inc/header." + getLang();
 	}
 
+	@RequestMapping("/header-inner-gnb")
+	public String headerInnerGnb(Model model, Locale locale, HttpSession session, HttpServletRequest request) throws Exception {
+		return getDev() + "/inc/header.inner.gnb." + getLang();
+	}
+
 	@RequestMapping("/footer")
 	public String footer() throws Exception {
 		return getDev() + "/inc/footer." + getLang();

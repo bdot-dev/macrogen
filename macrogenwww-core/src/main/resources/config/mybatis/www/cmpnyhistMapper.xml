@@ -15,6 +15,9 @@
 		<if test="searchKeyword != null and searchKeyword != ''">
 			and tc.cn like concat('%', #{searchKeyword}, '%')
 		</if>
+		<if test="cmpnyhistGroupSn != null and cmpnyhistGroupSn != ''">
+			and tc.cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+		</if>
 
 	</sql>
 
@@ -124,6 +127,14 @@
 	<delete id="deleteMigratedHistory" parameterType="cmpnyhistVo">
 		delete from tb_cmpnyhist where cmpnyhist_sn <![CDATA[ < ]]> 20000000000
 	</delete>
+
+	<select id="distinctYearList" parameterType="cmpnyhistVo" resultType="string">
+		select distinct year
+		from tb_cmpnyhist
+		where lang_code = #{langCode}
+		and cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+		order by year desc
+	</select>
 
 	<insert id="migrateHistory" parameterType="cmpnyhistVo">
 		insert into tb_cmpnyhist (

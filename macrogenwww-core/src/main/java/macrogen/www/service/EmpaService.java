@@ -31,4 +31,8 @@ public interface EmpaService {
 	EmpaVo viewByPk(Long Sn) throws Exception;
 
 	void migrateEmpBoard() throws Exception;
+
+	EmpaVo prev(EmpaVo listVo) throws Exception;
+
+	EmpaVo next(EmpaVo listVo) throws Exception;
 }
