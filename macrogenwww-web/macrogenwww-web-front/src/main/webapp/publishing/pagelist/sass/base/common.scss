@@ -118,12 +118,12 @@ caption.visually_hidden {
 }
 
 .waiting {
-  background: #bdbdbd !important;;
+  background: #E50050 !important;;
   color: #ffffff !important;;
 }
 
 .waiting::after {
-  content: '대기중';
+  content: '디자인대기';
 }
 
 .working {
@@ -136,7 +136,7 @@ caption.visually_hidden {
 }
 
 .complete {
-  background-color: rgba(0,0,0,.2);
+  background-color: #377EF9;
   color: #ffffff !important;
 }
 

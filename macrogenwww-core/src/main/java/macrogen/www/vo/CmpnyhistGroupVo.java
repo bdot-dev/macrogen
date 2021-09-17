@@ -1,5 +1,8 @@
 package macrogen.www.vo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -18,6 +21,10 @@ public class CmpnyhistGroupVo extends DefaultVo {
 	private String groupnmKo;
 	private String groupnmEn;
 	private Integer sortOrdr;
+
+	private List<CmpnyhistVo> cmpnyhistList = new ArrayList<CmpnyhistVo>();
+	private List<CmpnyhistGroupPhotoVo> cmpnyhistGroupPhotoList = new ArrayList<CmpnyhistGroupPhotoVo>();
+	private List<YearCmpnyhistVo> yearCmpnyhistList = new ArrayList<YearCmpnyhistVo>();
 
 	public Long getCmpnyhistGroupSn() {
 		return cmpnyhistGroupSn;
@@ -54,5 +61,23 @@ public class CmpnyhistGroupVo extends DefaultVo {
 	}
 	public void setSortOrdr(Integer sortOrdr) {
 		this.sortOrdr = sortOrdr;
+	}
+	public List<CmpnyhistVo> getCmpnyhistList() {
+		return cmpnyhistList;
+	}
+	public void setCmpnyhistList(List<CmpnyhistVo> cmpnyhistList) {
+		this.cmpnyhistList = cmpnyhistList;
+	}
+	public List<CmpnyhistGroupPhotoVo> getCmpnyhistGroupPhotoList() {
+		return cmpnyhistGroupPhotoList;
+	}
+	public void setCmpnyhistGroupPhotoList(List<CmpnyhistGroupPhotoVo> cmpnyhistGroupPhotoList) {
+		this.cmpnyhistGroupPhotoList = cmpnyhistGroupPhotoList;
+	}
+	public List<YearCmpnyhistVo> getYearCmpnyhistList() {
+		return yearCmpnyhistList;
+	}
+	public void setYearCmpnyhistList(List<YearCmpnyhistVo> yearCmpnyhistList) {
+		this.yearCmpnyhistList = yearCmpnyhistList;
 	}
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Macrogen v0.2 / 0907</title>
+  <title>Macrogen-PC v0.4 / 0914</title>
   <script type="text/javascript" src="../pagelist/js/lib/jquery.js"></script>
   <script type="text/javascript" src="../pagelist/js/lib/handlebars.js"></script>
   <link rel="stylesheet" href="../pagelist/css/style.css">
@@ -23,10 +23,10 @@
 </div>
 <div class="nav_depth_2">
   <div class="title">
-<!--    <ul class="navi_site">-->
-<!--      <li><a href="#" class="active">Git Link 01</a></li>-->
-<!--      <li><a href="#">Git Link 02</a></li>-->
-<!--    </ul>-->
+    <ul class="navi_site">
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/pc-ko/dist/index.html" class="active">PC-KO</a></li>
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-ko/dist/index.html">모바일</a></li>
+    </ul>
     <h2>Page List</h2>
     <a href="#" class="btn_control_all close"></a>
 <!--    <p><a href="#" class=""><i class="far fa-square"></i><i class="far fa-check-square"></i> 진척률 보기</a></p>-->
@@ -44,7 +44,7 @@
     <h3><span>{{title}}</span> <a class="icon_dropdown close" href="#"><i class="fas fa-angle-down"></i></a></h3>
     <div class="ing" style="display:none">
       <span><strong class="percent">{{countCompletePercent}}%</strong></span>
-      <span><em class="circle circle_waiting" title="대기중">{{countWaiting}}</em></span>
+      <span><em class="circle circle_waiting" title="디자인대기">{{countWaiting}}</em></span>
       <span><em class="circle circle_working" title="작업중">{{countWorking}}</em></span>
       <span><em class="circle circle_complete" title="완료">{{countComplete}}</em></span>
     </div>
@@ -76,7 +76,8 @@
 <script>
   Handlebars.registerHelper('fnStateClass', function (options) {
     // console.log(options)
-    if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    // if (options.data.root.list[options.data.index].stateClass == 'waiting') {
+    if (options.data.root.list[options.data.index].stateClass == 'disabled') {
       return options.inverse(this)
     } else {
       return options.fn(this)
@@ -117,14 +118,13 @@
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
           .append(template(data.guide))
-          .append(template(data.main))
+         /* .append(template(data.main))*/
+          .append(template(data.macrogen))
           .append(template(data.business))
           .append(template(data.RD))
           .append(template(data.newsroom))
           .append(template(data.IR))
           .append(template(data.etc))
-
-
 </script>
 <script>
   $('.link').on('click', function () {
@@ -203,7 +203,7 @@
   })
   // sum = sum - 20;
   var total = (comp / sum) * 100
-  $('.nav_depth_2 .title h2').html('Macrogen')
+  $('.nav_depth_2 .title h2').html('Macrogen-PC(KO)')
   // .html('페이지 목록 : 완료' + total.toFixed(0) + '%')
 </script>
 </body>

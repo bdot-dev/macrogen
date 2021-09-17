@@ -1,5 +1,297 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-	pc/company/introduction/overview.ko.jsp
+    <div class="full-bg macrogen" style="background-image: url(/publishing/dist/img/@temp/macrogen/macrogen_bg_1.png);">
+        <header class="header">
+		    <div class="inner">
+		    	<c:import url="/inc/header-inner-gnb" />
+		    </div>
+		</header>
+
+        <div class="frame">
+            <div class="hero-title">기업개요</div>
+            <div class="slogan">Humanizing<br/>Genomics</div>
+            <div class= "slogan-sub">모두가 건강한 세상을 꿈꾸는 기업 마크로젠입니다</div>
+            <nav aria-label="breadcrumb">
+			    <ol class="breadcrumb breadcrumb-white">
+			        <li class="breadcrumb-item">Home</li>
+			        <li class="breadcrumb-item">MACROGEN</li>
+			        <li class="breadcrumb-item">회사소개</li>
+			        <li class="breadcrumb-item">기업개요</li>
+			    </ol>
+			</nav>
+
+            <div class="scroll-wrap">
+                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+        <div class="macrogen company-overview">
+            <!-- s  기업 설명 -->
+            <div class="section-info">
+                <div class="title">Humanizing<br/>Genomics</div>
+                <div class="title-sm">모두가 건강한 세상을 꿈꾸는 기업 마크로젠입니다</div>
+                <div class="text-box">
+                    <div class="text">
+                        정밀의학 생명공학기업 마크로젠은 1997년 6월 5일 서울대학교 의과대학 유전체 의학연구소를 모태로 설립되었으며, 2000년 2월 한국 바이오 벤처기업 최초로 코스닥에 상장했습니다.<br/><br/>
+                        이후 유전자 및 유전체 분석 분야에서 꾸준한 연구개발 활동을 하고 있으며 주요 사업 이외에도 다양한 사회공헌 활동을 통해 바이오 산업 발전에 기여하고 있습니다.
+                    </div>
+                    <div class="text">
+                        마크로젠은 유전체 정보에 기반한 개인별 맞춤 의료 정보를 제공함으로써 21세기 정밀의학 실현에 앞장설 뿐 아니라 탁월한 기술력을 바탕으로  다양한 사업분야에서 전 세계 유전체 분석 시장을 선도합니다.
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="bg">
+<!--                        <ul class="list">-->
+<!--                            <li>글로벌 정밀의학 선도기업</li>-->
+<!--                            <li>인간중심의 인본주의 경영</li>-->
+<!--                            <li>빅데이터 기반의 헬스케어 토털 솔루션</li>-->
+<!--                        </ul>-->
+                    </div>
+                </div>
+            </div>
+            <!-- e  기업 설명 -->
+
+            <!-- s  기업현황 -->
+            <div class="section-overview">
+                <div class="inner">
+                    <div class="title-sm">기업현황</div>
+                    <div class="year">1997</div>
+                    <div class="desc">마크로젠은 언제나 능동적으로 환경 변화에 대처하며 지속 성장을 이뤄왔습니다.<br/>
+                        바이오 생태계를 좌우하는 영향력을 갖춘 선도기업으로서 마크로젠의 도전은 계속될 것입니다.
+                    </div>
+                    <div class="overview-list">
+                        <ul>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_1.png"
+                                                       alt="유전체 분석 건수"></span>
+                                <span class="val">30m</span>
+                                <span class="desc">유전체 분석 건수</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_2.png"
+                                                       alt="바이오벤처 최초 코스닥 상장"></span>
+                                <span class="val">1st</span>
+                                <span class="desc">바이오벤처 최초 코스닥 상장</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_3.png"
+                                                       alt="매출 1,000억 돌파"></span>
+                                <span class="val">$100M</span>
+                                <span class="desc">매출 1,000억 돌파</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_4.png"
+                                                       alt="해외 매출"></span>
+                                <span class="val">70%</span>
+                                <span class="desc">해외 매출</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_5.png"
+                                                       alt="리서치 시퀀싱 분야 점유율"></span>
+                                <span class="val">No.1</span>
+                                <span class="desc">리서치 시퀀싱 분야 점유율</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_6.png"
+                                                       alt="153개국 18,000여 고객"></span>
+                                <span class="val">153</span>
+                                <span class="desc">153개국 18,000여 고객</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_7.png"
+                                                       alt="SCI급 네이처지 논문 148편"></span>
+                                <span class="val">19</span>
+                                <span class="desc">SCI급 네이처지 논문 148편</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/dist/img/@temp/macrogen/thumb_circle_8.png"
+                                                       alt="바이오벤처 기업 지원"></span>
+                                <span class="val">18</span>
+                                <span class="desc">바이오벤처 기업 지원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- e  기업현황 -->
+
+            <!-- s  사업분야 -->
+            <div class="section-business">
+                <div class="inner">
+                    <div class="title-sm">사업분야</div>
+                    <div class="title">연구분야</div>
+                    <div class="desc">다양한 사업 분야에서 탁월한 기술력을 바탕으로 전 세계 유전체 분석 시장을 선도하고 있으며<br/>유전체 정보에 기반한 개인별 맞춤의료 정보를 제공함으로써 21세기 정밀의학 실현에 앞장서고 있습니다.</div>
+                    <div class="category-list">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-atom.svg" alt="NGS"></div>
+                                <div class="tit">NGS</div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-molecule.svg" alt="CES"></div>
+                                <div class="tit">CES</div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-molecule2.svg" alt="OlIGO"></div>
+                                <div class="tit">OlIGO</div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-chip.svg" alt="MICROARRAY"></div>
+                                <div class="tit">MICROARRAY</div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-rat.svg" alt="GEM"></div>
+                                <div class="tit">GEM</div>
+                            </li>
+                            <li>
+                                <div class="img"><img src="/publishing/dist/img/macrogen/ic-laptop.svg" alt="BIOINFORMATICS"></div>
+                                <div class="tit">BIOINFORMATICS</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- e  사업분야 -->
+
+            <!-- s  사업분야 상세 -->
+            <div class="section-business-detail">
+                <div class="item item-1">
+                    <div class="img">
+                        <img src="/publishing/dist/img/@temp/macrogen/sample_thumb_1.png" alt="RESEARCH">
+                        <span class="title-sm">RESEARCH</span>
+                        <span class="title">연구</span>
+                    </div>
+                    <div class="desc">정부기관, 대학교, 연구소 등</div>
+                    <div class="desc-sm">마크로젠의 근간이 되는 사업으로, 해당 분야에서는 염기서열 분석(CES, NGS), 바이오칩 분석(Microarray), 올리고 합성(Oligo), 유전자 변형 마우스(GEM), 바이오인포매틱스(Bioinformatics) 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다.</div>
+                </div>
+                <div class="item item-2">
+                    <div class="img">
+                        <img src="/publishing/dist/img/@temp/macrogen/sample_thumb_2.png" alt="임상진단">
+                        <span class="title-sm">CLINICAL DIAGNOSTICS</span>
+                        <span class="title">임상진단 </span>
+                    </div>
+                    <div class="desc">환자 및 의료진 대상</div>
+                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체, 산전 유전체, 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료, 건강관리 방법 등을 제시하는 데 주력하고 있습니다.</div>
+                </div>
+                <div class="item item-3">
+                    <div class="img">
+                        <img src="/publishing/dist/img/@temp/macrogen/sample_thumb_3.png" alt="개인 유전체 ">
+                        <span class="title-sm">PGS</span>
+                        <span class="title">개인 유전체 </span>
+                    </div>
+                    <div class="desc">일반인 대상</div>
+                    <div class="desc-sm">미래 의료 패러다임의 핵심 요소로 주목 받고 있는 분야입니다. 마크로젠에서는 개인유전체분석 서비스 ‘마이지놈스토리’, 장내미생물 분석 서비스 ‘마이크로브앤미’ 등의 브랜드를 통해 전문 헬스케어 솔루션과 접목함으로써 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다.</div>
+                </div>
+                <div class="item item-4">
+                    <div class="img">
+                        <img src="/publishing/dist/img/@temp/macrogen/sample_thumb_4.png" alt="응용 ">
+                        <span class="title-sm">APPLICATION</span>
+                        <span class="title">응용 </span>
+                    </div>
+                    <div class="desc">법의유전학, 반려동물 등 관련</div>
+                    <div class="desc-sm">혈연관계 및 개인식별 유전자 검사 서비스(iD4U™), 반려동물을 위한 유전자 검사 서비스(myPETGENE™) 등이 진행되고 있습니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다.</div>
+                </div>
+
+            </div>
+            <!-- e  사업분야 상세 -->
+
+            <!-- s  CI -->
+            <div class="section-ci">
+                <div class="inner">
+                    <div class="title-sm">CI</div>
+                    <div class="text">인류의 건강한 삶을 소망하는<br/>마크로젠의 상징입니다</div>
+                </div>
+            </div>
+            <!-- e  CI -->
+
+            <!-- s  기업상징  -->
+            <div class="section-symbol">
+                <div class="inner">
+                    <div class="item">
+                        <div class="title">LOGO TYPE</div>
+                        <div class="desc">
+                            <div class="bg-logo"><img src="/publishing/dist/img/macrogen/logo-lg.svg" alt="macrogen"></div>
+                            <div class="content">
+                                마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다.<br/><br/>
+                                유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다.
+                            </div>
+                            <div class="download-area"><a class="btn-download" href="#"><span>CI Download</span><i class="icon icon-download"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">COLOR SYSTEM</div>
+                        <div class="desc">
+                            <ul class="color-list">
+                                <li>
+                                    <div class="color color-1"></div>
+                                    <div class="value">
+                                        <span>RGB</span>
+                                        <span>0  30  98</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>CMYK</span>
+                                        <span>100  80  0  50</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>HEX</span>
+                                        <span>001E62</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="color color-2"></div>
+                                    <div class="value">
+                                        <span>RGB</span>
+                                        <span>0  191  178</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>CMYK</span>
+                                        <span>80  0  40  0</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>HEX</span>
+                                        <span>00BFB2</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="color color-3"></div>
+                                    <div class="value">
+                                        <span>RGB</span>
+                                        <span>132  189  0</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>CMYK</span>
+                                        <span>50  0  100  0</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>HEX</span>
+                                        <span>84BD00</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="color color-4"></div>
+                                    <div class="value">
+                                        <span>RGB</span>
+                                        <span>224  0  77</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>CMYK</span>
+                                        <span>0  100  50  0</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>HEX</span>
+                                        <span>E50050</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- e  기업상징 -->
+        </div>
+    </div>
+
 </body>

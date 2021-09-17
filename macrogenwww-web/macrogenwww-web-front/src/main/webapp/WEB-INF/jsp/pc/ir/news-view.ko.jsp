@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<head>
+	<title><c:out value="${resultVo.nttSj }" /> - </title>
+	<meta name="description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
+	<meta property="og:title" content="<c:out value="${resultVo.nttSj }" /> - MACROGEN" />
+	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
+	<!-- <meta property="og:image" content="${frontDomain }${artfairImageUrl}" /> -->
+</head>
 <body>
 
 	<!-- 검색조건 저장용 -->
@@ -33,7 +40,7 @@
                         <div class="text">
                             ${resultVo.nttSj }
                         </div>
-                        <div class="chips-share-box"><a href="#" class="btn btn-circle btn-white btn-lg"><i class="icon icon-share"></i></a></div>
+                        <div class="chips-share-box"><a href="javascript:;" class="btn btn-circle btn-white btn-lg"><i class="icon icon-share"></i></a></div>
                     </div>
                     <hr class="divider"/>
                     <div class="board">

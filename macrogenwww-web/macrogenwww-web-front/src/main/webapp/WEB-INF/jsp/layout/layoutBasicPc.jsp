@@ -8,13 +8,15 @@
 	<decorator:head />
 </head>
 
-<body class="<decorator:getProperty property="body.class" />"
-	data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc">
+<body bgurl="<decorator:getProperty property="body.bgurl" />"
+	data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
 
 	<div class="wrap">
 
-		<header>
-			<c:import url="/inc/header" />
+		<header class="header header-bg-white">
+		    <div class="inner">
+		    	<c:import url="/inc/header-inner-gnb" />
+		    </div>
 		</header>
 
 		<!-- 내용// -->
@@ -35,6 +37,7 @@
 		            $('html,body').animate( { scrollTop:0 },{duration : 100});
 		            return false;
 		        });
+
 		        $(window).on('scroll', function (){
 		            var scrollTop = $(window).scrollTop()
 		            if (scrollTop > 150) {
@@ -43,6 +46,13 @@
 		                $('.btn-totop').css({'opacity' : 0})
 		            }
 		        })
+		    });
+
+			$(function() {
+				$('.icon-share').on('click', function(e) {
+					copyUrlToClipboard();
+					alert('링크 복사가 완료되었습니다.');
+				});
 		    });
 		</script>
 

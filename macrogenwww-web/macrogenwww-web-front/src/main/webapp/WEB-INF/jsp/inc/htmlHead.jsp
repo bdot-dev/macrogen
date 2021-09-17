@@ -10,10 +10,13 @@
 <meta name="description" content="macrogen"/>
 <meta name="keywords" content="macrogen"/>
 <!--  <link rel="shortcut icon" href="/publishing/dist//img/favicon.ico">-->
-<link type="text/css" rel="stylesheet" href="/publishing/dist/css/macrogen_component_pc.css?0907"/>
-<link type="text/css" rel="stylesheet" href="/publishing/dist/css/macrogen_page_pc_ko.css?0907"/>
-<script src="/publishing/dist//js/bundle.js?0907"></script>
-<script src="/publishing/dist//js/common.js?0907"></script>
+<link type="text/css" rel="stylesheet" href="/publishing/dist/css/macrogen_component_pc.css?0914"/>
+<link type="text/css" rel="stylesheet" href="/publishing/dist/css/macrogen_page_pc_ko.css?0914"/>
+<link type="text/css" rel="stylesheet" href="/publishing/dist/css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+<script src="/publishing/dist/js/bundle.js?0914"></script>
+<![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
+<script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/publishing/dist/css/bootstrap-ie11.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+<script src="/publishing/dist/js/common.js?0914"></script>
 
 <style>
 	[v-cloak] { display: none; }

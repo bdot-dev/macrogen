@@ -36,4 +36,8 @@ public interface EmpaMapper {
 
 	void migrateEmpBoard(EmpaVo vo);
 
+	EmpaVo prev(EmpaVo listVo);
+
+	EmpaVo next(EmpaVo listVo);
+
 }
