@@ -133,14 +133,51 @@ public class CompanyController extends DefaultController {
 
 	@RequestMapping("/winner/viewAjaxHtml/{wnpzSn}")
 	public String winnerViewAjaxHtml(@PathVariable LangId langId, @PathVariable Long wnpzSn,
-			@ModelAttribute WnpzVo wnpzVo, Model model) throws Exception {
+			@ModelAttribute("listVo") WnpzVo listVo, Model model) throws Exception {
+
+		WnpzVo resultVo = wnpzService.viewByPk(wnpzSn);
+		model.addAttribute("resultVo", resultVo);
+
+		// 이전글, 다음글
+		listVo.setLangCode(langId.name());
+		listVo.setWnpzClCode(listVo.getWnpzClCode());
+		listVo.setWnpzSn(wnpzSn);
+
+		WnpzVo prevVo = wnpzService.prev(listVo);
+		model.addAttribute("prevVo", prevVo);
+
+		WnpzVo nextVo = wnpzService.next(listVo);
+		model.addAttribute("nextVo", nextVo);
 
 		return getDev() + "/company/winner-viewAjaxHtml." + getLang();
 	}
 
 	@RequestMapping("/winner/listAjaxHtml")
 	public String winnerListAjaxHtml(@PathVariable LangId langId,
-			@ModelAttribute WnpzVo wnpzVo, Model model) throws Exception {
+			@ModelAttribute("listVo") WnpzVo listVo, Model model) throws Exception {
+
+		listVo.setRecordCountPerPage(8);
+		listVo.setPageSize(5);
+		listVo.setLangCode(langId.name());
+		listVo.setWnpzClCode(listVo.getWnpzClCode());
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<WnpzVo> resultList = wnpzService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(wnpzService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		model.addAttribute("paginationInfo", paginationInfo);
+		model.addAttribute("resultList", resultList);
 
 		return getDev() + "/company/winner-listAjaxHtml." + getLang();
 	}

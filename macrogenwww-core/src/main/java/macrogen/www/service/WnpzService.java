@@ -34,4 +34,8 @@ public interface WnpzService {
 
 	void migrateAward() throws Exception;
 
+	WnpzVo prev(WnpzVo vo) throws Exception;
+
+	WnpzVo next(WnpzVo vo) throws Exception;
+
 }
