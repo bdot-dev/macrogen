@@ -37,6 +37,14 @@ public class CmpnyhistGroupPhotoServiceImpl extends EgovAbstractServiceImpl impl
 	}
 
 	@Override
+	public List<CmpnyhistGroupPhotoVo> listByCmpnyhistGroupSn(Long cmpnyhistGroupSn) throws Exception {
+		CmpnyhistGroupPhotoVo vo = new CmpnyhistGroupPhotoVo();
+		vo.setCmpnyhistGroupSn(cmpnyhistGroupSn);
+		vo.setFirstIndex(-1);
+		return cmpnyhistGroupPhotoMapper.list(vo);
+	}
+
+	@Override
 	public CmpnyhistGroupPhotoVo view(CmpnyhistGroupPhotoVo vo) throws Exception {
 		return cmpnyhistGroupPhotoMapper.view(vo);
 	}

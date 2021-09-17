@@ -34,6 +34,7 @@ public class EmpaVo extends DefaultVo {
 
 	private String periodSearchCondition;
 	private String searchRceptSttusCode;
+	private String searchSportSeCode;
 
 	private List<Long> empaSnList;
 
@@ -126,5 +127,11 @@ public class EmpaVo extends DefaultVo {
 	}
 	public void setSearchRceptSttusCode(String searchRceptSttusCode) {
 		this.searchRceptSttusCode = searchRceptSttusCode;
+	}
+	public String getSearchSportSeCode() {
+		return searchSportSeCode;
+	}
+	public void setSearchSportSeCode(String searchSportSeCode) {
+		this.searchSportSeCode = searchSportSeCode;
 	}
 }

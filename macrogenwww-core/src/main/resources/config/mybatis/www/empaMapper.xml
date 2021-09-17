@@ -31,6 +31,9 @@
 						te.rcept_end_de <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY) )
 			</if>
 		</if>
+		<if test="searchSportSeCode != null and searchSportSeCode != ''">
+			and te.sport_se_code = #{searchSportSeCode}
+		</if>
 
 	</sql>
 
@@ -155,6 +158,33 @@
 			<if test="empaCn != null">, empa_cn = #{empaCn} </if>
 		where empa_sn = #{empaSn}
 	</update>
+
+	<select id="prev" parameterType="empaVo" resultType="empaVo">
+		select te.*
+		from tb_empa te
+		where 1= 1
+		and te.lang_code = #{langCode}
+		and te.empa_sn <![CDATA[ > ]]> #{empaSn}
+		<if test="searchSportSeCode != null and searchSportSeCode != ''">
+			and te.sport_se_code = #{searchSportSeCode}
+		</if>
+		order by empa_sn asc
+		limit 0, 1
+	</select>
+
+	<select id="next" parameterType="empaVo" resultType="empaVo">
+		select te.*
+		from tb_empa te
+		where 1= 1
+		and te.lang_code = #{langCode}
+		and te.empa_sn <![CDATA[ < ]]> #{empaSn}
+		<if test="searchSportSeCode != null and searchSportSeCode != ''">
+			and te.sport_se_code = #{searchSportSeCode}
+		</if>
+		order by empa_sn desc
+		limit 0, 1
+	</select>
+
 
 	<delete id="deleteMigratedEmpBoard" parameterType="empaVo">
 		delete from tb_empa where empa_sn <![CDATA[ < ]]> 20000000000

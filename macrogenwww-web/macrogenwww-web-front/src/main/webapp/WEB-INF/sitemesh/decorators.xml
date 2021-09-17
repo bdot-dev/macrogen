@@ -6,6 +6,7 @@
 		<pattern>/inc/*</pattern>
 		<pattern>/nice/*</pattern>
 		<pattern>/rest/*</pattern>
+		<pattern>/app</pattern>
 
 		<pattern>*.jsp*</pattern>
 		<pattern>*.htm*</pattern>
@@ -13,6 +14,7 @@
 
 		<!-- 개별 페이지 -->
 		<pattern>/*/*AjaxHtml</pattern>
+		<pattern>/*/*AjaxHtml/*</pattern>
 
 		<pattern>/*/*Xls</pattern>
 

@@ -44,5 +44,17 @@
 
 	</div>
 
+	<c:if test="${modal_winner_use eq true }">
+		<%-- 수상자목록/상세 모달 --%>
+		<div class="modal macrogen" tabindex="-1" id="modalListOfWinners" data-bs-backdrop="static">
+		    <div class="modal-dialog modal-dialog-centered modal-lg">
+		        <div class="modal-content"></div>
+		    </div>
+		</div>
+		<script>
+		    var modalListOfWinners = new bootstrap.Modal(document.getElementById('modalListOfWinners'));
+		    console.log('new bootstrap.Modal()', modalListOfWinners);
+		</script>
+	</c:if>
 </body>
 </html>

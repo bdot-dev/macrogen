@@ -31,4 +31,6 @@ public interface CmpnyhistGroupPhotoService {
 	CmpnyhistGroupPhotoVo viewByPk(Long cmpnyhistGroupPhotoSn) throws Exception;
 
 	void updateSortOrder(CmpnyhistGroupPhotoVo vo) throws Exception;
+
+	List<CmpnyhistGroupPhotoVo> listByCmpnyhistGroupSn(Long cmpnyhistGroupSn) throws Exception;
 }

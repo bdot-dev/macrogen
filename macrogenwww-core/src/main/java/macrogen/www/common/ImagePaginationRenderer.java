@@ -42,33 +42,33 @@ public class ImagePaginationRenderer extends AbstractPaginationRenderer implemen
 
 		firstPageLabel = "" +
 				"<li class=\"page-item first\">" +
-				"    <a class=\"page-link\" href=\"?pageIndex={1}\" onclick=\"{0}({1});return false;\">" +
+				"    <a class=\"page-link\" href=\"javascript:;\" onclick=\"{0}({1});return false;\">" +
 				"        <span class=\"sr-only\">맨 앞</span>" +
 				"    </a>" +
 				"</li>";
 		previousPageLabel = "" +
 				"<li class=\"page-item prev\">" +
-				"    <a class=\"page-link\" href=\"?pageIndex={1}\" onclick=\"{0}({1});return false;\">" +
+				"    <a class=\"page-link\" href=\"javascript:;\" onclick=\"{0}({1});return false;\">" +
 				"        <span class=\"sr-only\">이전</span>" +
 				"    </a>" +
 				"</li>";
 
 		nextPageLabel = "" +
 				"<li class=\"page-item next\">" +
-				"    <a class=\"page-link\" href=\"?pageIndex={1}\" onclick=\"{0}({1});return false;\">" +
+				"    <a class=\"page-link\" href=\"javascript:;\" onclick=\"{0}({1});return false;\">" +
 				"        <span class=\"sr-only\">다음</span>" +
 				"    </a>" +
 				"</li>";
 		lastPageLabel = "" +
 				"<li class=\"page-item last\">" +
-				"    <a class=\"page-link\" href=\"?pageIndex={1}\" onclick=\"{0}({1});return false;\">" +
+				"    <a class=\"page-link\" href=\"javascript:;\" onclick=\"{0}({1});return false;\">" +
 				"        <span class=\"sr-only\">맨 뒤</span>" +
 				"    </a>" +
 				"</li>";
 
 
 		currentPageLabel = "<li class=\"page-item active\"><a class=\"page-link\" href=\"javascript:;\">{0}</a></li>";
-		otherPageLabel = "<li class=\"page-item\"><a class=\"page-link\" href=\"?pageIndex={1}\" onclick=\"{0}({1});return false; \">{2}</a></li>";
+		otherPageLabel = "<li class=\"page-item\"><a class=\"page-link\" href=\"javascript:;\" onclick=\"{0}({1});return false; \">{2}</a></li>";
 	}
 
 	@Override
