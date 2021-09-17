@@ -316,6 +316,7 @@
         				data: { wnpzClCode: wnpzClCode },
         			}).done(function(html) {
         				$modalContent.empty().html(html);
+    				    console.log('modalListOfWinners.show', modalListOfWinners);
         			    modalListOfWinners.show();
         			});
 
@@ -328,6 +329,7 @@
         				data: { wnpzClCode: wnpzClCode },
     				}).done(function(html) {
     					$modalContent.empty().html(html);
+    				    console.log('modalListOfWinners.show', modalListOfWinners);
         			    modalListOfWinners.show();
     				});
 

@@ -43,6 +43,7 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 		WnpzVo vo = new WnpzVo();
 		vo.setLangCode(langCode);
 		vo.setWnpzClCode(wnpzClCode);
+		vo.setFirstIndex(-1);
 		return wnpzMapper.list(vo);
 	}
 
@@ -72,6 +73,16 @@ public class WnpzServiceImpl extends EgovAbstractServiceImpl implements WnpzServ
 		WnpzVo vo = new WnpzVo();
 		vo.setWnpzSn(sn);
 		return view(vo);
+	}
+
+	@Override
+	public WnpzVo prev(WnpzVo vo) throws Exception {
+		return wnpzMapper.prev(vo);
+	}
+
+	@Override
+	public WnpzVo next(WnpzVo vo) throws Exception {
+		return wnpzMapper.next(vo);
 	}
 
 	@Override

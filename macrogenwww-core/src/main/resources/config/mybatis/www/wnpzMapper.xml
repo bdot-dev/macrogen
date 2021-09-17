@@ -155,6 +155,72 @@
 		where wnpz_sn = #{wnpzSn}
 	</update>
 
+	<select id="prev" parameterType="wnpzVo" resultType="wnpzVo">
+select
+	tw.wnpz_sn
+	, tw.lang_code
+	, tw.wnpz_cl_code
+	, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+	, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+	, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
+	, tw.wnpz_tme_code
+	, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+	, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+	, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
+	, tw.photo_atch_id
+	, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
+	, tw.wnpz_nm
+	, tw.occp
+	, tw.rm
+	, tw.wnpz_cn
+	, tw.regist_dt
+	, tw.register_sn
+	, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
+	, tw.updt_dt
+	, tw.updusr_sn
+	, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
+from tb_wnpz tw
+where 1 = 1
+and tw.lang_code = #{langCode}
+and tw.wnpz_cl_code = #{wnpzClCode}
+and tw.wnpz_sn <![CDATA[ > ]]> #{wnpzSn}
+order by wnpz_sn asc
+limit 0, 1
+	</select>
+
+	<select id="next" parameterType="wnpzVo" resultType="wnpzVo">
+select
+	tw.wnpz_sn
+	, tw.lang_code
+	, tw.wnpz_cl_code
+	, ( select code_nm from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm
+	, ( select code_nm_ko from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_ko
+	, ( select code_nm_en from tb_code where code_se = 'WNPZ_CL_CODE' and code = tw.wnpz_cl_code ) wnpz_cl_code_nm_en
+	, tw.wnpz_tme_code
+	, ( select code_nm from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm
+	, ( select code_nm_ko from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_ko
+	, ( select code_nm_en from tb_code where code_se = 'WNPZ_TME_CODE' and code = tw.wnpz_tme_code ) wnpz_tme_code_nm_en
+	, tw.photo_atch_id
+	, ( select physicl_flpth from tb_atch where atch_id = tw.photo_atch_id ) photo_flpth
+	, tw.wnpz_nm
+	, tw.occp
+	, tw.rm
+	, tw.wnpz_cn
+	, tw.regist_dt
+	, tw.register_sn
+	, ( select user_nm from tb_user where user_sn = tw.register_sn ) register_nm
+	, tw.updt_dt
+	, tw.updusr_sn
+	, ( select user_nm from tb_user where user_sn = tw.updusr_sn ) updusr_nm
+from tb_wnpz tw
+where 1 = 1
+and tw.lang_code = #{langCode}
+and tw.wnpz_cl_code = #{wnpzClCode}
+and tw.wnpz_sn <![CDATA[ < ]]> #{wnpzSn}
+order by wnpz_sn desc
+limit 0, 1
+	</select>
+
 	<delete id="deleteMigratedAward" parameterType="wnpzVo">
 		delete from tb_wnpz
 		where wnpz_sn <![CDATA[ < ]]> 20000000000
