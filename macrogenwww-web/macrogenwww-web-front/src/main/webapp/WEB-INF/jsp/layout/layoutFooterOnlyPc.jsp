@@ -8,14 +8,9 @@
 	<decorator:head />
 </head>
 
-<body bgurl="<decorator:getProperty property="body.bgurl" />"
-	data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
+<body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
 
 	<div class="wrap">
-
-		<header class="header header-bg-white">
-	    	<c:import url="/inc/header-inner-gnb" />
-		</header>
 
 		<!-- 내용// -->
 		<decorator:body />
@@ -35,7 +30,6 @@
 		            $('html,body').animate( { scrollTop:0 },{duration : 100});
 		            return false;
 		        });
-
 		        $(window).on('scroll', function (){
 		            var scrollTop = $(window).scrollTop()
 		            if (scrollTop > 150) {
@@ -45,16 +39,21 @@
 		            }
 		        })
 		    });
-
-			$(function() {
-				$('.icon-share').on('click', function(e) {
-					copyUrlToClipboard();
-					alert('링크 복사가 완료되었습니다.');
-				});
-		    });
 		</script>
 
 	</div>
 
+	<c:if test="${modal_winner_use eq true }">
+		<%-- 수상자목록/상세 모달 --%>
+		<div class="modal macrogen" tabindex="-1" id="modalListOfWinners" data-bs-backdrop="static">
+		    <div class="modal-dialog modal-dialog-centered modal-lg">
+		        <div class="modal-content"></div>
+		    </div>
+		</div>
+		<script>
+		    var modalListOfWinners = new bootstrap.Modal(document.getElementById('modalListOfWinners'));
+		    console.log('new bootstrap.Modal()', modalListOfWinners);
+		</script>
+	</c:if>
 </body>
 </html>

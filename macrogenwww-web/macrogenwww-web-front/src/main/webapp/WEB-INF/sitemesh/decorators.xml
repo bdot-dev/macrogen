@@ -25,14 +25,19 @@
 		<pattern>/*</pattern>
 	</decorator>
 
-	<!-- empty layout -->
-	<decorator name="empty" page="/WEB-INF/jsp/layout/layoutEmpty.jsp">
-		<pattern>/login</pattern>
-		<pattern>/upload/ck</pattern>
+	<!-- footerOnly layout -->
+	<decorator name="footerOnly" page="/WEB-INF/jsp/layout/layoutFooterOnly.jsp">
 		<pattern>/ko/company/*</pattern>
 		<pattern>/en/company/*</pattern>
 		<pattern>/ko/business/*</pattern>
 		<pattern>/en/business/*</pattern>
+
+	</decorator>
+
+	<!-- empty layout -->
+	<decorator name="empty" page="/WEB-INF/jsp/layout/layoutEmpty.jsp">
+		<pattern>/login</pattern>
+		<pattern>/upload/ck</pattern>
 
 	</decorator>
 

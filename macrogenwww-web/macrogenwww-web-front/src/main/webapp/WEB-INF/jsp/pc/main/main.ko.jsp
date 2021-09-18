@@ -4,8 +4,20 @@
 	<div style="padding: 20px;">
 		<div>Macrogen</div>
 		<div><a target="blank" href="/ko/company/history">연혁</a></div>
-		<div><a target="blank" href="/ko/company/winner">수상</a></div>
+		<div><a target="blank" href="/ko/company/winner">수상(지속가능경영-사회공헌)</a></div>
 		<div><a target="blank" href="/ko/company/recruit">채용</a></div>
+
+		<div><a target="blank" href="/ko/company/overview">기업개요</a></div>
+		<div><a target="blank" href="/ko/company/bod">경영진</a></div>
+		<div><a target="blank" href="/ko/company/ethical-management">지속가능경영-윤리경영</a></div>
+		<div><a target="blank" href="/ko/company/vision">비전</a></div>
+
+		<div><a target="blank" href="/ko/company/qualified-image">인재상</a></div>
+		<div><a target="blank" href="/ko/company/hrm">인사제도</a></div>
+		<div><a target="blank" href="/ko/company/certification">인증</a></div>
+		<div><a target="blank" href="/ko/company/contact-us">ContactUs</a></div>
+		<div><a target="blank" href="/ko/company/esg-management">ESG경영</a></div>
+		<div><a target="blank" href="/ko/company/global-network">글로벌네트워크</a></div>
 
 		<div>IR</div>
 		<div><a target="blank" href="/ko/ir/announcement">IR공고</a></div>
@@ -27,7 +39,8 @@
 		<div><a target="blank" href="/ko/policy/image">영상정보_운영_관리: </a></div>
 		<div><a target="blank" href="/ko/policy/inside">내부정보관리규정: </a></div>
 
-		<div><a target="blank" href="/publishing/dist/index.html">퍼블리싱 메인</a></div>
+		<br><br>
+		<div><a target="blank" href="/publishing/pc-ko/dist/index.html">퍼블리싱 메인</a></div>
 
 	</div>
 </body>

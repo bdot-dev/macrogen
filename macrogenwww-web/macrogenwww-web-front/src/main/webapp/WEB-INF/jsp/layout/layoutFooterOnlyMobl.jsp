@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><decorator:title />MACROGEN</title>
+	<title><decorator:title />Eluo Front</title>
 	<%@ include file="/WEB-INF/jsp/inc/htmlHead.jsp" %>
 	<decorator:head />
 </head>
-
-<body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
+<body>
 
 	<decorator:body />
 
