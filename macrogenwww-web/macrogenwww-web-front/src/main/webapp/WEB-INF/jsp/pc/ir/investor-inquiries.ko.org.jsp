@@ -2,30 +2,21 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-	<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+		    <ol class="breadcrumb">
+		        <li class="breadcrumb-item">Home</li>
+		        <li class="breadcrumb-item">IR</li>
+		        <li class="breadcrumb-item active">투자자 문의</li>
+		    </ol>
+		</nav>
 
-    <div class="container container-fluid">
+		<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
+
         <div class="section_IR">
-            <div class="question_box">
-                <div class="text-area">
-                    <nav aria-label="breadcrumb">
-					    <ol class="breadcrumb">
-					        <li class="breadcrumb-item">Home</li>
-					        <li class="breadcrumb-item">IR</li>
-					        <li class="breadcrumb-item active">투자자 문의</li>
-					    </ol>
-					</nav>
-
-                    <div class="font-h1">투자자 문의</div>
-                    <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
-                    <span class="number">Tel. 02-3489-7558</span>
-                    <a href="#write-form" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
-
-                </div>
-                <div class="img-area"></div>
-
-            </div>
-            <div class="privacy_box" id="write-form">
+            <div class="font-h1">투자자 문의</div>
+            <div style="width: 1323px;height: 520px;background-color:#d9d9d9;"></div>
+            <div class="privacy_box">
                 <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">
@@ -42,23 +33,15 @@
 	                            <option value="${result.code }">${result.code }</option>
                         	</c:forEach>
                         </select>
-                        <input type="number" type="number" id="mbtlnum2" name="mbtlnum2"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
-                        <input type="number" type="number" id="mbtlnum3" name="mbtlnum3"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
-                        <script>
-                            /*숫자 글자수 제한*/
-                            function lengthLimit4(e){
-                                if(e.value.length > 4){
-                                    e.value = e.value.slice(0, 4)
-                                }
-                            }
-                        </script>
+                        <input type="number" id="mbtlnum2" name="mbtlnum2" maxlength="4"
+                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리">
+                        <input type="number" id="mbtlnum3" name="mbtlnum3" maxlength="4"
+                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리">
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
                 </div>
-                <hr class="divider"/>
             </div>
+            <hr class="divider"/>
             <div class="privacy_box">
                 <div class="font-h5"><span>02.</span>문의하실 내용을 작성해주세요</div>
                 <!-- input / text-->
@@ -74,8 +57,6 @@
                               aria-describedby="faq"></textarea>
                 </div>
                 <!-- input / text-->
-
-                <!--s 개발영역-->
                 <div class="input-group">
                     <span class="input-group-text" id="automatic">자동등록방지</span>
                     <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;">
@@ -84,11 +65,8 @@
                     <input type="text" id="captchaString" name="captchaString" maxlength="10"
                     	placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
-                <!--e 개발영역-->
-
-                <hr class="divider"/>
             </div>
-
+            <hr class="divider"/>
             <div class="privacy_box">
                 <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
                 <div class="agreement">
@@ -103,20 +81,14 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="javascript:;" class="btn btn-white btn-cancel"><span>취소</span></a>
-                <a href="javascript:;" class="btn btn-primary btn-save"><i class="icon icon-pen"></i><span>문의하기</span></a>
+                <a href="javascript:;" class="btn btn-white disabled btn-cancel"><span>취소</span></a>
+                <a href="javascript:;" class="btn btn-primary btn-primary btn-save"><i class="icon"></i><span>문의하기</span></a>
             </div>
-
-            <script>
-                $('.form-check').on('click',function (){
-                    // $(this).parent().next('.btn-box').children('.btn').toggleClass('disabled')
-                });
-            </script>
         </div>
 
-    </div>
+		</form>
 
-	</form>
+    </div>
 
     <script>
 	var submitting = false;
@@ -132,7 +104,7 @@
 
     $(function() {
     	$('.btn-cancel').on('click', function() {
-    		$form[0].reset();
+
     	});
 
     	$('.btn-save').on('click', function() {

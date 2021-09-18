@@ -42,58 +42,34 @@
 						</div>
 						<!--클릭시 select box on-->
 						<script>
-					    /*드롭다운 클릭시 이벤트*/
-					    $(".select_default").click(function() {
-					      var select = $(this);
-					      //드롭다운 열기
-					      select.addClass("open").next('._dropdown').slideDown(100).addClass("open");
-					      //다른영역 클릭 시 닫기
-					      $(document).mouseup(function(e) {
-					        var seting = $("._dropdown");
-					        if (seting.has(e.target).length === 0) {
-					          seting.removeClass("open").slideUp(100);
-					          select.removeClass("open");
-					        }
-					      });
-					      $("._dropdown a").click(function() {
-					        var option = $(this).text();
+						    /*드롭다운 클릭시 이벤트*/
+						    var selectBox = $(".select_default");
 
-					        //클릭 시 드롭다운 닫기
-					        $("._dropdown a").removeClass('selected');
-					        $("._dropdown").removeClass("open").slideUp(100);
-					        select.removeClass("open");
-					        $(this).addClass('selected');
+						    selectBox.on('click',function() {
+						      var select = $(this);
+						      //드롭다운 닫기
+						      if(select.hasClass('open')) {
+						        select.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+						      }
+						      //드롭다운 열기
+						      else {
+						        select.addClass("open").next('._dropdown').slideDown(200).addClass("open");
+						        $('body').on('click',function (e){
+						          if(selectBox.hasClass('open')) {
+						            if(!selectBox.has(e.target).length) {
+						              selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+						            }
+						          }
+						          // e.preventDefault()
+						        })
+						      }
+						    });
 
-					        //select에  text 넣기
-					        select.text(option);
-					      });
-					    });
-
-					    /*버튼 클릭시 이벤트*/
-					    $("._lookup").click(function() {
-					      var select = $(this);
-
-					      //드롭다운 열기
-					      select.addClass("open").parent().find('._dropdown').slideDown(100).addClass("open");
-
-					      //다른영역 클릭 시 닫기
-					      $(document).mouseup(function(e) {
-					        var seting = $("._dropdown");
-					        if (seting.has(e.target).length === 0) {
-					          seting.removeClass("open").slideUp(100);
-					          select.removeClass("open");
-					        }
-					      });
-					      $("._dropdown a").click(function() {
-					        var option = $(this).text();
-
-					        //클릭 시 드롭다운 닫기
-					        $("._dropdown a").removeClass('selected');
-					        $("._dropdown").removeClass("open").slideUp(100);
-					        select.removeClass("open");
-					        $(this).addClass('selected');
-					      });
-					    });
+						    $("._dropdown a").on('click',function() {
+						      var option = $(this).find('span').text();
+						      console.log(option)
+						      $('._select_box .select_default').find('span').text(option);
+						    });
 						</script>
 					</div>
 					</c:if>
