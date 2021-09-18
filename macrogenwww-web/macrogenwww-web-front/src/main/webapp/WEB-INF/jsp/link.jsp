@@ -21,19 +21,19 @@
 
 		<br>
 		<div>Business</div>
-		<div><a target="blank" href="/ko/business/research/ngs">NGS</a></div>
-		<div><a target="blank" href="/ko/business/research/ces">CES</a></div>
-		<div><a target="blank" href="/ko/business/research/oligo">OLIGO</a></div>
-		<div><a target="blank" href="/ko/business/research/microarray">MICROARRAY</a></div>
+		<div><a target="blank" href="/ko/business/announcement">NGS</a></div>
+		<div><a target="blank" href="/ko/business/announcement">CES</a></div>
+		<div><a target="blank" href="/ko/business/announcement">OLIGO</a></div>
+		<div><a target="blank" href="/ko/business/announcement">MICROARRAY</a></div>
 
-		<div><a target="blank" href="/ko/business/research/model">동물모델사업부</a></div>
-		<div><a target="blank" href="/ko/business/diagnosis/cancer">암유전체검사</a></div>
-		<div><a target="blank" href="/ko/business/diagnosis/newborn">신생아유전자</a></div>
-		<div><a target="blank" href="/ko/business/diagnosis/covid">COVID</a></div>
+		<div><a target="blank" href="/ko/business/announcement">동물모델사업부</a></div>
+		<div><a target="blank" href="/ko/business/announcement">암유전체검사</a></div>
+		<div><a target="blank" href="/ko/business/announcement">신생아유전자</a></div>
+		<div><a target="blank" href="/ko/business/announcement">COVID</a></div>
 
-		<div><a target="blank" href="/ko/business/healthcare/personal-genetic">개인유전체분석</a></div>
-		<div><a target="blank" href="/ko/business/healthcare/intestinal-microbiome">마이크로바이옴 분석</a></div>
-		<div><a target="blank" href="/ko/business/healthcare/pet-genetic">반려동물 유전자 분석</a></div>
+		<div><a target="blank" href="/ko/business/announcement">개인유전체분석</a></div>
+		<div><a target="blank" href="/ko/business/announcement">마이크로바이옴 분석</a></div>
+		<div><a target="blank" href="/ko/business/announcement">반려동물 유전자 분석</a></div>
 
 		<br>
 		<div>IR</div>
@@ -53,20 +53,11 @@
 		<div><a target="blank" href="/ko/rnd/patent">특허: </a></div>
 		<div><a target="blank" href="/ko/rnd/thesis">논문: </a></div>
 
-		<div><a target="blank" href="/ko/rnd/institute/precision-medicine">정밀의학연구소: </a></div>
-		<div><a target="blank" href="/ko/rnd/institute/bioinformatics">생명정보학연구소: </a></div>
-		<div><a target="blank" href="/ko/rnd/institute/biome">더바이옴연구소: </a></div>
-		<div><a target="blank" href="/ko/rnd/institute/sync-genes">싱크진연구소: </a></div>
-		<div><a target="blank" href="/ko/rnd/institute/bigdata">빅데이터연구소: </a></div>
-
 		<br>
 		<div>기타</div>
 		<div><a target="blank" href="/ko/policy/privacy">개인정보처리방침: </a></div>
 		<div><a target="blank" href="/ko/policy/image">영상정보_운영_관리: </a></div>
 		<div><a target="blank" href="/ko/policy/inside">내부정보관리규정: </a></div>
-
-		<div><a target="blank" href="/app">앱용 임시페이지: </a></div>
-		<div><a target="blank" href="/error.jsp">오류 페이지: </a></div>
 
 		<br>
 		<div><a target="blank" href="/publishing/pc-ko/dist/index.html">퍼블리싱 메인</a></div>

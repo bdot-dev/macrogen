@@ -58,7 +58,7 @@
 				              selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
 				            }
 				          }
-				          e.preventDefault();
+				          // e.preventDefault();
 				        })
 				      }
 				 	});

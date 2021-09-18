@@ -10,7 +10,7 @@
 
 <body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
 
-	<div class="wrap">
+	<div class="wrap <decorator:getProperty property="body.class" />">
 
 		<!-- 내용// -->
 		<decorator:body />
@@ -20,7 +20,7 @@
 			<c:import url="/inc/footer" />
 		</footer>
 
-	    <a href="#" class="btn btn-text btn-totop">
+	    <a href="javascript:;" class="btn btn-text btn-totop">
 		    <i class="icon icon-arrow-top-long"></i>
 		    <span>TOP</span>
 		</a>

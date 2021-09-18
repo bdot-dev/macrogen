@@ -15,7 +15,7 @@
 	    </nav>
 	</div>
 	<c:choose>
-		<c:when test="${ layout_type eq 'company' or layout_type eq 'business' }">
+		<c:when test="${ layout_type eq 'company' or layout_type eq 'business' or layout_type eq 'main' or layout_type eq 'rnd_institute' }">
 			<c:set var="snsIconColor" value="-white" />
 		</c:when>
 	</c:choose>

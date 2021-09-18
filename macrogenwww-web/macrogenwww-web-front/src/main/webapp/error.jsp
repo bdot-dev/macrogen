@@ -1,36 +1,116 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="format-detection" content="telephone=no"/>
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/layout.css">
-<link rel="stylesheet" href="/css/content.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="macrogen" />
+    <meta name="viewport" content="width=1244"/>
+    <!-- IE 10 이하 -->
+    <link rel="shortcut icon" href="/publishing/pc-ko/dist/favicon/favicon.ico">
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="36x36" href="/publishing/pc-ko/dist/favicon/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/publishing/pc-ko/dist/favicon/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="/publishing/pc-ko/dist/favicon/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-ko/dist/favicon/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/publishing/pc-ko/dist/favicon/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/publishing/pc-ko/dist/favicon/android-icon-192x192.png">
+    <!-- apple -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/publishing/pc-ko/dist/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/publishing/pc-ko/dist/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/publishing/pc-ko/dist/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/publishing/pc-ko/dist/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/publishing/pc-ko/dist/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/publishing/pc-ko/dist/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/publishing/pc-ko/dist/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/publishing/pc-ko/dist/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/publishing/pc-ko/dist/favicon/apple-icon-180x180.png">
+    <!-- 브라우저용 표준 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/publishing/pc-ko/dist/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/publishing/pc-ko/dist/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-ko/dist/favicon/favicon-96x96.png">
+    <!-- ms -->
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-310x310.png">
+    <!-- manifest -->
+    <link rel="manifest" href="/publishing/pc-ko/dist/favicon/manifest.json">
+    <!-- Windows 8.1 + IE11 이상 -->
+    <meta name="msapplication-config" content="/publishing/pc-ko/dist/favicon/browserconfig.xml">
 
-<title>에러페이지_오류</title>
-
-</head>
+    <meta name="robots" content="ALL">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마크로젠">
+    <meta property="og:description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+    <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
+    <meta property="og:url" content="www.macrogen.co.kr">
+    <link rel="canonical" href="http://www.macrogen.co.kr">
+    <title>마크로젠</title>
+    <meta name="keywords" content="마크로젠 키워드">
+    <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+    <script src="/publishing/pc-ko/dist/js/bundle.js?0914"></script>
+    <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+    <script src="/publishing/pc-ko/dist/js/common.js?0917"></script>
 <body>
-<div id="wrap">
-	<div class="err_box">
-		<div class="err_img"></div>
-		<div class="err_txt">
-			<h1 class="logo"><a href="#"></a></h1>
-			<h2>페이지를 찾을 수 없습니다.</h2>
-			<p class="err_btm2">재방문하시려는 페이지의 주소가 잘못 입력되었거나,<br>
-				페이지의 주소가 변경 혹은 삭제되어 요청하신 페이지를 찾을 수 없습니다.<br>
-				입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다.</p>
-			<div class="btn_wrap">
-				<button type="button" name="button" class="btn flat_red" onclick="history.back(-1);">이전페이지</button>
-				<button type="button" name="button" class="btn line_red" onclick="location.href='/';">메인페이지</button>
-			</div>
-		</div>
-	</div>
+<style>
+    .title{
+        font-family: Noto Sans KR;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.75px;
+        text-align: center;
+    }
+    .desc{
+        font-family: Noto Sans KR;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.75px;
+        text-align: center;
+    }
+    .mail{
+        font-family: Proxima Nova;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #454545;
+    }
+    .mail:hover{
+        color: #454545;
+    }
+    .img.logo{margin-top: 50px; text-align: center;}
+    .img.error{margin-top: 180px; text-align: center;}
+
+</style>
+<div class="wrap">
+    <div class="img logo">
+        <img src="/publishing/pc-ko/dist/img/@temp/error/logo.png" alt="로고">
+    </div>
+    <div class="img error">
+        <img src="/publishing/pc-ko/dist/img/@temp/error/error.png" alt="에러이미지">
+    </div>
+    <p class="title">
+        현재 마크로젠 사이트 접속이 원활하지 않습니다<br>
+        잠시 후에 다시 시도해주세요
+    </p>
+    <p class="desc">장시간 접속이 지연되는 경우 관리자 메일로 연락주시기 바랍니다.</p>
+    <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
 </body>
 </html>
+

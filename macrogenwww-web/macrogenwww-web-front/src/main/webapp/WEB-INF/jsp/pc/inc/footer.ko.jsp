@@ -39,9 +39,9 @@
             </div>
             <div class="link">
                 <ul class="terms">
-                    <li><span class="font-medium">개인정보취급방침</span></li>
-                    <li><span class="font-medium">영상정보처리기기 운영.관리방침</span></li>
-                    <li><span class="font-medium">내부정보관리규정</span></li>
+                    <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보취급방침</a></span></li>
+                    <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영.관리방침</a></span></li>
+                    <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
                 </ul>
             </div>
         </div>
