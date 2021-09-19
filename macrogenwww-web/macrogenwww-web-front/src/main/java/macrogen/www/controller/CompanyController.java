@@ -77,10 +77,56 @@ public class CompanyController extends DefaultController {
 	@Value("${globals.atch.private.path}")
 	private String atchPrivatePath;
 
-	@RequestMapping("/introduction/overview")
-	public String introductionOverview(@PathVariable LangId langId,
+	@RequestMapping("/overview")
+	public String overview(@PathVariable LangId langId,
 			Model model) throws Exception {
-		return getDev() + "/company/introduction/overview." + getLang();
+		return getDev() + "/company/overview." + getLang();
+	}
+
+	@RequestMapping("/bod")
+	public String bod(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/bod." + getLang();
+	}
+
+	@RequestMapping("/ethical-management")
+	public String ethicalManagement(@PathVariable LangId langId,
+			Model model) throws Exception {
+		return getDev() + "/company/ethical-management." + getLang();
+	}
+
+	@RequestMapping("/vision")
+	public String vision(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/vision." + getLang();
+	}
+
+	@RequestMapping("/qualified-image")
+	public String qualifiedImage(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/qualified-image." + getLang();
+	}
+
+	@RequestMapping("/hrm")
+	public String hrm(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/hrm." + getLang();
+	}
+
+	@RequestMapping("/certification")
+	public String certification(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/certification." + getLang();
+	}
+
+	@RequestMapping("/contact-us")
+	public String contactUs(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/contact-us." + getLang();
+	}
+
+	@RequestMapping("/esg-management")
+	public String esgManagement(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/esg-management." + getLang();
+	}
+
+	@RequestMapping("/global-network")
+	public String globalNetwork(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/global-network." + getLang();
 	}
 
 	@RequestMapping("/history")

@@ -28,7 +28,7 @@
                 <div class="list list-border hover">
                     <c:forEach var="result" items="${resultList }" varStatus="status">
 	                    <div class="item">
-	                        <div class="tit">${result.nttSj }</div>
+	                        <div class="tit"><a href="javascript:linkView(${result.nttSn })">${result.nttSj }</a></div>
 	                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
 	                        <a href="javascript:linkView(${result.nttSn })" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>

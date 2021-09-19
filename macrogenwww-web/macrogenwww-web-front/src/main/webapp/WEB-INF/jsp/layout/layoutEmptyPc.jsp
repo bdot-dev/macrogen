@@ -8,53 +8,9 @@
 	<decorator:head />
 </head>
 
-<body bgurl="<decorator:getProperty property="body.bgurl" />"
-	data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
+<body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
 
-	<div class="wrap">
+	<decorator:body />
 
-		<!-- 내용// -->
-		<decorator:body />
-		<!-- //내용 -->
-
-		<footer>
-			<c:import url="/inc/footer" />
-		</footer>
-
-	    <a href="#" class="btn btn-text btn-totop">
-		    <i class="icon icon-arrow-top-long"></i>
-		    <span>TOP</span>
-		</a>
-		<script>
-		    $(document).ready(function(){
-		        $('.btn-totop').click(function(){
-		            $('html,body').animate( { scrollTop:0 },{duration : 100});
-		            return false;
-		        });
-		        $(window).on('scroll', function (){
-		            var scrollTop = $(window).scrollTop()
-		            if (scrollTop > 150) {
-		                $('.btn-totop').css({'opacity' : 1})
-		            } else {
-		                $('.btn-totop').css({'opacity' : 0})
-		            }
-		        })
-		    });
-		</script>
-
-	</div>
-
-	<c:if test="${modal_winner_use eq true }">
-		<%-- 수상자목록/상세 모달 --%>
-		<div class="modal macrogen" tabindex="-1" id="modalListOfWinners" data-bs-backdrop="static">
-		    <div class="modal-dialog modal-dialog-centered modal-lg">
-		        <div class="modal-content"></div>
-		    </div>
-		</div>
-		<script>
-		    var modalListOfWinners = new bootstrap.Modal(document.getElementById('modalListOfWinners'));
-		    console.log('new bootstrap.Modal()', modalListOfWinners);
-		</script>
-	</c:if>
 </body>
 </html>

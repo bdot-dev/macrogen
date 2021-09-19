@@ -1,12 +1,390 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
+    <div class="full-bg business_bg">
+        <!--
+<header class="header" id="header">
+    <div class="inner">
+        <div class="section_gnb">
+            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#" class="font-bold">macrogen</a></li> &lt;!&ndash; active 시, 활성화 &ndash;&gt;
+                    <li><a href="#" class="font-bold">business</a></li>
+                    <li><a href="#" class="font-bold">r&d</a></li>
+                    <li><a href="#" class="font-bold">newsroom</a></li>
+                    <li><a href="#" class="font-bold">ir</a></li>
+                    <li><a href="#" class="font-bold">esg</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section_btn">
+            <ul class="sns">
+                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
+            </ul>
+            <div class="btn_eng">
+                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="gnb-2depth" id="gnb2Depth">
+        <div class="box">
+            <div class="item">
+                <div class="title"><a href="#">회사소개</a></div>
+                <ul>
+                    <li><a href="#">기업개요</a></li>
+                    <li><a href="#">경영진</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">비전</a></li>
+                    <li><a href="#">마크로젠 CI</a></li>
+                    <li><a href="#">인증</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">글로벌 네트워크</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">지속가능경영</a></div>
+                <ul>
+                    <li><a href="#">ESG경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">채용</a></div>
+                <ul>
+                    <li><a href="#">인재상</a></li>
+                    <li><a href="#">직무소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    $('#gnb2Depth').hide();
+    $('#gnb li a').on({
+        "mouseenter focusin" : function () {
+            $('#header').addClass('active header-bg-white');
+            $('#gnb2Depth').slideDown('500','linear');
+            $('body, html').scroll(function(){
+                $('#header').removeClass('active');
+                $('#gnb2Depth').slideUp('500','linear');
+            });
+        },
+    })
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            setTimeout(function() {
+                $('#header').removeClass('active header-bg-white');
+                }, 300);
+            $('#gnb2Depth').slideUp('400','linear');
+        }
+    })
+</script>
+-->
+
+
+<header class="header">
+<c:import url="/inc/header-inner-gnb" />
+</header>
+
+        <div class="frame frameB">
+            <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">Business</li>
+        <li class="breadcrumb-item">임상진단서비스</li>
+        <li class="breadcrumb-item">MICROARRAY</li>
+    </ol>
+</nav>
+
+            <div class="hero-title">COVID-19</div>
+            <div class="slogan-sub">감염성 질환 전달을 위한 검사</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_business">
+            <!--탭 링크-->
+            <div class="tab-box">
+                <p class="font-h4 title">SERVICE</p>
+                <div class="slide-tab-wrap">
+                    <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+                        <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+                            <div class="swiper-slide active"><a href="#">Axen™ COVID-19 RT 진단키트</a></div>
+                            <div class="swiper-slide "><a href="#">스마트 모바일 랩</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--스크립트-->
+            <script>
+                $('._swiperTab .swiper-slide').on('click', function(){
+                    var idx = $(this).index();
+                    $(this).addClass('active').siblings().removeClass('active');
+
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                });
+            </script>
+            <div class="info-box-wrap tab-content">
+                <!--Axen™ COVID-19 RT 진단키트-->
+                <div class="info-box show">
+                    <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
+                    <p class="subject">코로나바이러스감염증-19(COVID-19)의 감염 여부를 2시간 내 확인할 수 있는 체외진단 의료기기입니다.</p>
+                    <p class="desc img_bottom">해당 제품은 실시간 유전자 증폭(Real Time-PCR, RT-PCR) 방식을 활용해 미량의 신종 코로나바이러스를 가진 환자를 정확하게 선별합니다.<br>
+                        Axen™ COVID-19 RT 진단키트는 식품의약품안전처의 수출 허가를 승인받았으며, 유럽 체외진단시약 인증(CE-IVD)을 획득해 해외 고객을 대상으로 신뢰도 높은 진단 서비스를 제공하고 있습니다.</p>
+                    <div class="img">
+                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-h8 title img">Brochure</p>
+                            <div class="file-download">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <i class="icon icon-pdf"></i>
+                                            <span class="title">Axen™ COVID-19 RT 진단키트Brochure.pdf</span>
+                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title figure_bottom">Specifications</p>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:50%;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Specification</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Detection target</td>
+                                    <td>2019-nCoV (COVID-19)</td>
+                                </tr>
+                                <tr>
+                                    <td>Target region</td>
+                                    <td>ORF1ab / E gene</td>
+                                </tr>
+                                <tr>
+                                    <td>Detection technology</td>
+                                    <td>Real-Time RT-PCR</td>
+                                </tr>
+                                <tr>
+                                    <td>Specimen type</td>
+                                    <td>Nasal swab / Sputum</td>
+                                </tr>
+                                <tr>
+                                    <td>PCR run time</td>
+                                    <td>2 hrs</td>
+                                </tr>
+                                <tr>
+                                    <td>Compatible PCR device</td>
+                                    <td>CFX96™ Real-Time PCR</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title img">Detection Target Region</p>
+                            <ul class="list-circle-dot">
+                                <li>ORF1ab</li>
+                                <li>E gene</li>
+                            </ul>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title figure_bottom">Process</p>
+                            <div class="img">
+                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level5_row.png" alt="workflow">
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title figure_bottom">Process</p>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:40%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>ORF1ab</th>
+                                    <th>E gene</th>
+                                    <th>RNase P</th>
+                                    <th>Status</th>
+                                    <th>Results</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Positive</td>
+                                </tr>
+                                <tr>
+                                    <td>Positive</td>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Positive (Repeat test, If the repeat result remains inconclusive, additional confirmation testiong should be conducted if clinically indicated.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">Near-source SARS-CoV-2 (Sample should be retested. If the result is still invalid,
+                                        a new specimen should be obtained.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Negative</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Invalid</td>
+                                    <td class="text-start">Repeat test, If the repeat result remains invalid, consider collecting a new specimen.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="border-gray-box-wrap">
+                        <div class="border-gray-box">
+                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
+                        </div>
+                        <div class="border-gray-box">
+                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
+                        </div>
+                        <div class="border-gray-box">
+                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_clinicaltrialtest.png" alt="flow">
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="board">
+                        <div class="navigation">
+                            <div class="content clearfix">
+                                <a href="#" class="item next">
+                                    <div class="title">암 발생 원인 발굴</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+
+                    </script>
+                </div>
+                <!--스마트 모바일 랩-->
+                <div class="info-box">
+                    <p class="font-h4 main-title">스마트 모바일 랩</p>
+                    <p class="subject">스마트 모바일 랩(Smart Mobile Lab)은 마크로젠이 전 세계 코로나19 대응을 위해 국내 최초로 구축한 ‘코로나19 현장 검사 시스템’입니다.</p>
+                    <p class="desc img_bottom">코로나 현장 검사를 위한 이동형 소형 검사실로, 바이러스 핵산 추출, 유전자 검사 및 분석 결과 도출까지 전 과정을 진행할 수 있는 올인원(all-in-one) 시스템으로 구성되어 있습니다.</p>
+                    <div class="img">
+                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-smartmobile-intro.png" alt="스마트모바일랩">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-h8 title img">Brochure</p>
+                            <div class="file-download">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item">
+                                            <i class="icon icon-pdf"></i>
+                                            <span class="title">Smart Mobile Lab Brochure.pdf</span>
+                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title img">Detection Target Region</p>
+                            <ul class="list-circle-dot">
+                                <li>K-방역모델 사용</li>
+                                <li>실험 및 예산에 따른 브랜드별 장비 선택 가능</li>
+                                <li>전원 공급 방식 선택 가능 (외부전원 / 태양열 발전 선택 가능)</li>
+                                <li>유지/보수 서비스 제공</li>
+                                <li>검사자 교육 제공 (온라인/오프라인)</li>
+                                <li>설치/이동 용이</li>
+                                <li>이동식 실험 / 음압병동 전문 설계 /시공 업체 협력</li>
+                            </ul>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title figure_bottom">Specifications</p>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:33.3333%;">
+                                    <col style="width:33.3333%;">
+                                    <col style="width:33.3333%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Name of Kit</th>
+                                    <th>Cat.No.</th>
+                                    <th>BSL-Level</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Smart Mobile Lab(40ft)</td>
+                                    <td>SML01-100</td>
+                                    <td>BSL- 2 Level</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-h8 title img_bottom">Process</p>
+                            <div class="img">
+                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow-level7.png" alt="workflow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="board">
+                        <div class="navigation">
+                            <div class="content clearfix">
+                                <a href="#" class="item prev">
+                                    <div class="title">Axen™ COVID-19 RT 진단키트</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+
+                    </script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
-</html>
