@@ -94,29 +94,29 @@ public class RndController extends DefaultController {
 		return getDev() + "/rnd/thesis." + getLang();
 	}
 
-	@RequestMapping("/precision-medicine")
+	@RequestMapping("/institute/precision-medicine")
 	public String precisionMedicine() throws Exception {
-		return getDev() + "/rnd/precision-medicine." + getLang();
+		return getDev() + "/rnd/institute/precision-medicine." + getLang();
 	}
 
-	@RequestMapping("/bioinformatics")
+	@RequestMapping("/institute/bioinformatics")
 	public String bioinformatics() throws Exception {
-		return getDev() + "/rnd/bioinformatics." + getLang();
+		return getDev() + "/rnd/institute/bioinformatics." + getLang();
 	}
 
-	@RequestMapping("/biome")
+	@RequestMapping("/institute/biome")
 	public String biome() throws Exception {
-		return getDev() + "/rnd/biome." + getLang();
+		return getDev() + "/rnd/institute/biome." + getLang();
 	}
 
-	@RequestMapping("/sync-genes")
+	@RequestMapping("/institute/sync-genes")
 	public String syncGenes() throws Exception {
-		return getDev() + "/rnd/sync-genes." + getLang();
+		return getDev() + "/rnd/institute/sync-genes." + getLang();
 	}
 
-	@RequestMapping("/bigdata")
+	@RequestMapping("/institute/bigdata")
 	public String bigdata() throws Exception {
-		return getDev() + "/rnd/bigdata." + getLang();
+		return getDev() + "/rnd/institute/bigdata." + getLang();
 	}
 
 }

@@ -46,6 +46,9 @@ public class MenuResolver extends HandlerInterceptorAdapter  {
 			} else if (path.startsWith("/ko/business") || path.startsWith("/en/business")) {
 				request.setAttribute("layout_type", "business");
 
+			} else if (path.startsWith("/ko/rnd/institute") || path.startsWith("/en/rnd/institute")) {
+				request.setAttribute("layout_type", "rnd_institute");
+
 			} else if (path.startsWith("/ko/esg") || path.startsWith("/en/esg")) {
 				request.setAttribute("layout_type", "basic");
 

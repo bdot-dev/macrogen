@@ -13,9 +13,18 @@
 
         <div class="section_IR">
             <div class="font-h1">공시정보</div>
-            <!--  <iframe src="" frameborder="0"></iframe>-->
-            <iframe src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=038290"
-            	name="IR" scrolling="no" frameborder="0" width="750" height="920" marginheight="0" marginwidth="0"></iframe>
+            <div class="iframe-box">
+                <iframe
+                        src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=038290"
+                        name="공시자료"
+                        scrolling="no">
+
+                    iframe를 지원하지 않는 브라우저인 경우 대체정보를 제공
+                </iframe>
+            </div>
+            <!-- <div class="iframe_box">
+                <iframe src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=038290" width="100%" height="100%"></iframe>
+            </div>-->
        </div>
     </div>
 

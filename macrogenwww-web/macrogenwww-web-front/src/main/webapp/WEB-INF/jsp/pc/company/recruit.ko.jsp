@@ -7,9 +7,7 @@
 
     <div class="full-bg macrogen no-bg">
         <header class="header header-bg-white">
-		    <div class="inner">
-		    	<c:import url="/inc/header-inner-gnb" />
-		    </div>
+	    	<c:import url="/inc/header-inner-gnb" />
 		</header>
 
         <div class="frame frameC">
