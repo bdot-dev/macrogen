@@ -26,33 +26,32 @@ front.common = (function () {
   var scrollHeader = function () {
     var scrollableElement = document.body; //document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', checkScrollDirection);
-    function checkScrollDirection(event) {
-      if (checkScrollDirectionIsUp(event)) {
-        // console.log('UP');
-        if (window.scrollY > 124){
-          $('.header').show()
-              .css({'position': 'fixed','top':'0'})
-              .addClass('header-sm')
-        } else {
-          $('.header').show()
-              .css({'position': 'relative'})
-              .removeClass('header-sm');
-          $('.header-main').show()
-              .css({'position': 'absolute'})
-        }
+    console.log(scrollableElement);
+  }
+
+  function checkScrollDirection(event) {
+    // console.log('scrollableElement');
+    // console.log(event.deltaY < 0);
+    // console.log(window.pageYOffset);
+    if (event.deltaY < 0) {
+      // console.log('UP');
+      if (window.pageYOffset > 124){
+        $('.header').show()
+            .css({'position': 'fixed','top':'0'})
+            .addClass('header-sm')
       } else {
-        // console.log('Down');
-        // console.log(window.scrollY);
-        if (window.scrollY > 124){
-          $('.header').hide()
-        }
+        $('.header').show()
+            .css({'position': 'relative'})
+            .removeClass('header-sm');
+        $('.header-main').show()
+            .css({'position': 'absolute'})
       }
-    }
-    function checkScrollDirectionIsUp(event) {
-      if (event.wheelDelta) {
-        return event.wheelDelta > 0;
+    } else {
+      // console.log('Down');
+      // console.log(window.scrollY);
+      if (window.pageYOffset > 124){
+        $('.header').hide()
       }
-      return event.deltaY < 0;
     }
   }
 
