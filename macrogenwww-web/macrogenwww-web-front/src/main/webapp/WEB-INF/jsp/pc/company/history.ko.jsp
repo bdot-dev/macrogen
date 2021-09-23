@@ -141,58 +141,62 @@
 		                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? 'TODAY' : result.endYear }</div>
 		                    <div class="title">${result['groupnm'.concat(lang)] }</div>
 		                </div>
-		                <div class="history-slider">
-		                    <div class="swiper-container _historySlider${status.count }">
-		                        <div class="swiper-wrapper">
-		                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="status">
-			                            <div class="swiper-slide">
-			                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
-			                                <div class="inner">
-			                                    <div class="year">${ photo.photoYear }</div>
-			                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
-			                                </div>
-			                            </div>
-			                        </c:forEach>
 
-		                        </div>
-		                    </div>
-		                    <div class="inner">
-		                        <div class="pagination-wrap">
-		                            <ul class="navigation">
-		                                <li class="page-item prev">
-		                                    <a class="page-link" href="#">
-		                                        <span class="sr-only">이전</span>
-		                                    </a>
-		                                </li>
-		                                <li class="page-item next">
-		                                    <a class="page-link" href="#">
-		                                        <span class="sr-only">다음</span>
-		                                    </a>
-		                                </li>
-		                            </ul>
-		                        </div>
-		                        <div class="swiper-pagination"></div>
-		                    </div>
-		                    <script>
-		                        var imageSwiper = new Swiper("._historySlider${status.count }", {
-		                            pagination: {
-		                                el: "._historySlider${status.count } + .inner .swiper-pagination",
-		                                clickable : true,
-		                            },
-		                            navigation: {
-		                                nextEl: '._historySlider${status.count } + .inner .page-item.next',
-		                                prevEl: '._historySlider${status.count } + .inner .page-item.prev',
-		                            },
-		                            touchRatio: 0
-		                        });
-		                    </script>
-		                </div>
+		                <c:if test="${fn:length(result.cmpnyhistGroupPhotoList) gt 0 }">
+			                <div class="history-slider ${fn:length(result.cmpnyhistGroupPhotoList)}" >
+			                    <div class="swiper-container _historySlider${status.count }">
+			                        <div class="swiper-wrapper">
+			                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="photoStatus">
+				                            <div class="swiper-slide">
+				                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
+				                                <div class="inner">
+				                                    <div class="year">${ photo.photoYear }</div>
+				                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
+				                                </div>
+				                            </div>
+				                        </c:forEach>
+
+			                        </div>
+			                    </div>
+			                    <div class="inner">
+			                        <div class="pagination-wrap">
+			                            <ul class="navigation">
+			                                <li class="page-item prev">
+			                                    <a class="page-link" href="#">
+			                                        <span class="sr-only">이전</span>
+			                                    </a>
+			                                </li>
+			                                <li class="page-item next">
+			                                    <a class="page-link" href="#">
+			                                        <span class="sr-only">다음</span>
+			                                    </a>
+			                                </li>
+			                            </ul>
+			                        </div>
+			                        <div class="swiper-pagination"></div>
+			                    </div>
+			                    <script>
+			                        var imageSwiper = new Swiper("._historySlider${status.count }", {
+			                            pagination: {
+			                                el: "._historySlider${status.count } + .inner .swiper-pagination",
+			                                clickable : true,
+			                            },
+			                            navigation: {
+			                                nextEl: '._historySlider${status.count } + .inner .page-item.next',
+			                                prevEl: '._historySlider${status.count } + .inner .page-item.prev',
+			                            },
+			                            touchRatio: 0
+			                        });
+			                    </script>
+			                </div>
+		                </c:if>
+
 		                <div class="inner">
 		                	<c:if test="${fn:length(result.yearCmpnyhistList) gt 0 }">
 			                    <div class="history-list">
 			                        <div class="year-info">
 			                            <ul>
-			                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList }" varStatus="status">
+			                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList }" varStatus="yearCmpnyhistStatus">
 			                                <li><span>${yearCmpnyhist.year }</span></li>
 			                               	</c:forEach>
 			                            </ul>

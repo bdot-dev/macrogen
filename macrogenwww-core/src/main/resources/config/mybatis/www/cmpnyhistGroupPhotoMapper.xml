@@ -6,6 +6,9 @@
 		<if test="searchCmpnyhistGroupSn != null">
 			and tcgp.cmpnyhist_group_sn = #{searchCmpnyhistGroupSn}
 		</if>
+		<if test="cmpnyhistGroupSn != null">
+			and tcgp.cmpnyhist_group_sn = #{cmpnyhistGroupSn}
+		</if>
 	</sql>
 
 	<select id="count" parameterType="cmpnyhistGroupPhotoVo" resultType="int">
