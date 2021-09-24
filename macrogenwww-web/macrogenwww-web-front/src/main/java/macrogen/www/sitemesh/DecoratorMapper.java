@@ -45,8 +45,15 @@ public class DecoratorMapper extends AbstractDecoratorMapper {
 
 				}
 
-				if (path.startsWith("/ko/company/winner") || path.startsWith("/en/company/winner")) {
+				// modal_winner_use
+				if (path.startsWith("/ko/company/social-contribution") || path.startsWith("/en/company/social-contribution")) {
 					request.setAttribute("modal_winner_use", true);
+				}
+
+				// remove_header_bg_white_unuse
+				if (path.startsWith("/ko/company/recruit") || path.startsWith("/en/company/recruit") ||
+						path.startsWith("/ko/company/contact-us") || path.startsWith("/en/company/contact-us")) {
+					request.setAttribute("remove_header_bg_white_unuse", "Y");
 				}
 
 			} catch (Exception e) {

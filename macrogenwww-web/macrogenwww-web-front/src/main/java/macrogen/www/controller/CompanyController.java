@@ -158,7 +158,7 @@ public class CompanyController extends DefaultController {
 	}
 
 
-	@RequestMapping("/winner")
+	@RequestMapping("/social-contribution")
 	public String winner(@PathVariable LangId langId,
 			Model model) throws Exception {
 
@@ -174,7 +174,7 @@ public class CompanyController extends DefaultController {
 		List<WnpzVo> ybaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.yba.name());
 		model.addAttribute("ybaResultList", ybaResultList);
 
-		return getDev() + "/company/winner." + getLang();
+		return getDev() + "/company/social-contribution." + getLang();
 	}
 
 	@RequestMapping("/winner/viewAjaxHtml/{wnpzSn}")
