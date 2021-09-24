@@ -8,7 +8,7 @@
 	<decorator:head />
 </head>
 
-<body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="pc" data-layout-type="${layout_type }">
+<body data-device-type="${DEVICE_TYPE }" data-language="${rc.locale.language}" data-layout="empty" data-layout-type="${layout_type }">
 
 	<decorator:body />
 
