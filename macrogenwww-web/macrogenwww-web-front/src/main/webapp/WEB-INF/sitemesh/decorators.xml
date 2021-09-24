@@ -27,7 +27,6 @@
 
 	<!-- footerOnly layout -->
 	<decorator name="footerOnly" page="/WEB-INF/jsp/layout/layoutFooterOnly.jsp">
-		<pattern>/*/main/*</pattern>
 		<pattern>/*/company/*</pattern>
 		<pattern>/*/business/*</pattern>
 		<pattern>/*/rnd/institute/*</pattern>
@@ -36,6 +35,7 @@
 
 	<!-- empty layout -->
 	<decorator name="empty" page="/WEB-INF/jsp/layout/layoutEmpty.jsp">
+		<pattern>/*/main</pattern>
 		<pattern>/login</pattern>
 		<pattern>/upload/ck</pattern>
 

@@ -5,10 +5,9 @@
     <div class="container">
         <div class="section_agreement">
             <p class="main-title font-h2">내부정보관리규정</p>
-            <div class="terms">
-                <div class="content_area">
-                	<c:if test="${fn:length(resultList) > 0 }">
-                    <div class="dropdown_area">
+
+            <c:if test="${fn:length(resultList) > 0 }">
+            <div class="dropdown_area">
 						<div class="select_box _select_box">
 							<div class="select_default">
 								<c:choose>
@@ -71,11 +70,11 @@
 						      $('._select_box .select_default').find('span').text(option);
 						    });
 						</script>
-					</div>
-                	</c:if>
+			</div>
+            </c:if>
 
-                    ${resultVo.policyCn }
-                </div>
+		    <div class="content_area">
+            ${resultVo.policyCn }
             </div>
         </div>
     </div>

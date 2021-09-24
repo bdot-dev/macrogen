@@ -6,8 +6,8 @@
 	<form:hidden path="pageIndex" />
 
     <div class="full-bg macrogen no-bg">
-        <header class="header header-bg-white">
-	    	<c:import url="/inc/header-inner-gnb" />
+        <header class="header header-bg-white" id="header">
+	    	<c:import url="/inc/header-inner-gnb?removeHeaderBgWhite=Y" />
 		</header>
 
         <div class="frame frameC">
@@ -31,7 +31,7 @@
             <div class="section">
                 <div class="title">전형절차</div>
                 <div class="img-recruitment-info">
-                    <img src="/publishing/dist/img/macrogen/img-recruitment-info.png" alt="전형절차">
+                    <img src="/publishing/pc-ko/dist/img/macrogen/img-recruitment-info.png" alt="전형절차">
                 </div>
             </div>
             <!-- e 전형절차 -->

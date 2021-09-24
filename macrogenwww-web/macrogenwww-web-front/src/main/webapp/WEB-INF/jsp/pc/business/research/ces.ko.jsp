@@ -3,106 +3,20 @@
 <body>
 
     <div class="full-bg business_bg">
-        <!--
+        <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
-    <div class="inner">
-        <div class="section_gnb">
-            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
-            <nav>
-                <ul id="gnb">
-                    <li><a href="#" class="font-bold">macrogen</a></li> &lt;!&ndash; active 시, 활성화 &ndash;&gt;
-                    <li><a href="#" class="font-bold">business</a></li>
-                    <li><a href="#" class="font-bold">r&d</a></li>
-                    <li><a href="#" class="font-bold">newsroom</a></li>
-                    <li><a href="#" class="font-bold">ir</a></li>
-                    <li><a href="#" class="font-bold">esg</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="section_btn">
-            <ul class="sns">
-                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
-            </ul>
-            <div class="btn_eng">
-                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="gnb-2depth" id="gnb2Depth">
-        <div class="box">
-            <div class="item">
-                <div class="title"><a href="#">회사소개</a></div>
-                <ul>
-                    <li><a href="#">기업개요</a></li>
-                    <li><a href="#">경영진</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">비전</a></li>
-                    <li><a href="#">마크로젠 CI</a></li>
-                    <li><a href="#">인증</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">글로벌 네트워크</a></div>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">지속가능경영</a></div>
-                <ul>
-                    <li><a href="#">ESG경영</a></li>
-                    <li><a href="#">윤리경영</a></li>
-                    <li><a href="#">사회공헌</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">채용</a></div>
-                <ul>
-                    <li><a href="#">인재상</a></li>
-                    <li><a href="#">직무소개</a></li>
-                    <li><a href="#">채용안내</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<c:import url="/inc/header-inner-gnb" />
 </header>
-<script>
-    $('#gnb2Depth').hide();
-    $('#gnb li a').on({
-        "mouseenter focusin" : function () {
-            $('#header').addClass('active header-bg-white');
-            $('#gnb2Depth').slideDown('500','linear');
-            $('body, html').scroll(function(){
-                $('#header').removeClass('active');
-                $('#gnb2Depth').slideUp('500','linear');
-            });
-        },
-    })
-    $('#header').on({
-        "mouseleave focusout" : function () {
-            setTimeout(function() {
-                $('#header').removeClass('active header-bg-white');
-                }, 300);
-            $('#gnb2Depth').slideUp('400','linear');
-        }
-    })
-</script>
--->
-
-
-		<header class="header">
-			<c:import url="/inc/header-inner-gnb" />
-		</header>
 
         <div class="frame frameB">
             <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb breadcrumb-white">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">Business</li>
-			        <li class="breadcrumb-item">연구서비스</li>
-			        <li class="breadcrumb-item">CES</li>
-			    </ol>
-			</nav>
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">Business</li>
+        <li class="breadcrumb-item">연구서비스</li>
+        <li class="breadcrumb-item">CES</li>
+    </ol>
+</nav>
 
             <div class="hero-title">CES</div>
             <div class="slogan-sub">Capillary Electrophoresis Sequencing</div>
@@ -122,8 +36,8 @@
   <div class="img">
     <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-intro.png" alt="CESIntro">
   </div>
-  <p class="desc">마크로젠은 축적된 경험과 노하우를 바탕으로 뛰어난 품질과 합리적인 가격으로 Sanger Sequencing 베이스의 폭넓은 서비스를 제공하는 기업입니다. CES 서비스는 가장 보편화된 서비스인 Standard Sequencing,  Identification, Fragment 분석서비스, 기존 Sequencing 방식에서 새롭게 응용된 Customized Sequencing서비스까지 다양한 제품군을 통해 고객 만족을 극대화합니다.
-    일반 Sequencing 서비스 뿐만 아니라, 고객 요청에 따른 맞춤형 서비스(gDNA추출, Primer 합성, PCR 증폭 및 정제 등)를 통해 고객 만족을 극대화합니다. 온라인 주문 시스템으로 원하는 서비스를 간편하게 의뢰할 수 있으며 주문샘플에 대한 프로세스 모니터링과 최종결과에 따른 사후관리를 진행합니다.</p>
+  <p class="desc">CES 서비스는 가장 보편화된 서비스인 Standard Sequencing,  Identification, Fragment 분석서비스, 기존 Sequencing 방식에서 새롭게 응용된 Customized Sequencing서비스까지 다양한 제품군을 통해 고객 만족을 극대화합니다. 일반 Sequencing 서비스 뿐만 아니라, 고객 요청에 따른 맞춤형 서비스(gDNA추출, Primer 합성, PCR 증폭 및 정제 등)를 통해 고객 만족을 극대화합니다. 온라인 주문 시스템으로 원하는 서비스를 간편하게 의뢰할 수 있으며 주문샘플에 대한 프로세스 모니터링과 최종결과에 따른 사후관리를 진행합니다.
+  </p>
 </div>
 
             <!--탭 슬라이드-->
@@ -137,7 +51,8 @@
                             <div class="swiper-slide"><a href="#">Fragment</a></div>
                             <div class="swiper-slide"><a href="#">Customized Sequencing</a></div>
                             <div class="swiper-slide"><a href="#">Human ID</a></div>
-                            <div class="swiper-slide"><a href="#">Gene Sythesis</a></div>
+                            <!--<div class="swiper-slide"><a href="#">Gene Sythesis</a></div>-->
+                            <!--09.23 3depth로 변경예정이여서 주석처리하겠습니다.-->
                         </div>
                     </div>
                 </div>
@@ -182,14 +97,6 @@
                             <ul class="list-circle-dot">
                                 <li>샘플을 Individual tube에 준비하여 의뢰하는 서비스</li>
                                 <li>무료 재반응 서비스 제공</li>
-                            </ul>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-h8 title">96well Plate Sequencing</p>
-                            <ul class="list-circle-dot">
-                                <li>샘플을 96well plate에 준비하여 의뢰하는 서비스</li>
-                                <li>1 plate에 최대 6가지의 Primer 사용 가능</li>
-                                <li>경쟁력있는 가격</li>
                             </ul>
                         </div>
                         <div class="list-area">
@@ -258,50 +165,6 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">Animal/Plant Identification</p>
-                    <p class="desc list_bottom">생물체의 유전자 중에서 종(Species) 판별에 사용되는 특정 유전자 Region인 'DNABarcode' 부위를 Sequencing하여 해당 생물의 종을 판별하는 서비스 입니다. 샘플을 보내주시면 gDNA추출부터 각
-                        Barcode 부위의 Sequencing 결과, 그리고 분석 리포트까지 진행해 드립니다. 동식물의 종을 구별하여 이를 통해 생물 자원 종판별, 생물자원 검증, 원재료 검증, 생물오염 검증 등에 활용하거나 신종 예측 등
-                        감별 및 연구 분야에 다양하게 사용됩니다. </p>
-                    <div class="list-area figure_bottom">
-                        <p class="title font-h8">Features</p>
-                        <ul class="list-circle-dot">
-                            <li>식물의 잎, 동물의 조직, 깃털, 곤충다리 등 생물체의 작은 부분으로도 종을 구별할 수 있습니다.</li>
-                            <li>형태적으로 구별이 어려운 생물이나 생물의 발달단계에 관계없이 Barcode는 항상 동일한 정보로 판별이 가능합니다.</li>
-                            <li>표준화된 Barcode 기법을 사용하여 기존의 생물종 데이터와 비교하여 판별할 수 있으며 신종 예측 및 미등록종의 동정도 가능합니다.</li>
-                            <li>생물자원 종판별, 생물자원 검증, 원재료 검증, 생물오염 검증 등에 활용될 수 있습니다.</li>
-                            <li>특정 표준유전자 또는 특이샘플에 대한 고객맞춤서비스도 가능합니다.</li>
-                        </ul>
-                    </div>
-                    <table class="table">
-                        <colgroup>
-                            <col style="width:25%;">
-                            <col style="width:25%;">
-                            <col style="width:25%;">
-                            <col style="width:25%;">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>구분</th>
-                            <th>샘플종류</th>
-                            <th>분석 유전자</th>
-                            <th>추가 분석</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="text-center">Animal Barcoding</td>
-                            <td class="text-center">동물, 곤충, 조류, 물고기 등</td>
-                            <td class="text-center">COI</td>
-                            <td class="text-center">12S/16S rRNA, ITS</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Plant Barcoding</td>
-                            <td class="text-center">식물</td>
-                            <td class="text-center">matK, rbcL</td>
-                            <td class="text-center">rpoB, rpoC1, atpF-atpH, <br>psbK-psbI. psbA-trnH</td>
-                        </tr>
-                        </tbody>
-                    </table>
                     <p class="sub-title font-h5">Rapid-ID</p>
                     <p class="desc list_bottom">MALDI-TOF 단백질 분석 기술을 이용한 미생물질량분석동정 서비스로 세계 최초 FDA Clearance 획득 및 AOAC 인증된 시스템을 사용합니다. 기존 염기서열 동정서비스에 비해 소요시간이 짧으며 정확한
                         미생물 동정을 원하는 고객에게 적합한 서비스입니다. 미생물을 식별하고 종 또는 속을 분류 및 식별합니다. 정확성과 즉시성 때문에 대다수 의학, 제약, 화장품 제조의 미생물 식별, 오염 감별에 주로
@@ -343,8 +206,9 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Fragment 분석 (Genescan)</p>
-                    <p class="desc list_bottom">Bacteria 및 Fungi(사상균, 효모)의 riboFluorescent label로 표지 된 Primer를 이용하여 증폭된 PCR product를 Fragment에 따라 분리 및 분석하는 서비스입니다. Genotyping, DNA profiling과<br>
-                        의학적 Mutation detection, Agricultural research 등에 널리 이용됩니다.  마크로젠에서는 고객이 원할 경우 PCR optimization부터 분석까지 실험 디자인부터 서비스를 제공합니다. </p>
+                    <p class="desc list_bottom">Fluorescent label로 표지된 Primer를 이용하여 증폭된 PCR product를 Fragment에 따라 분리 및 분석하는 서비스입니다.<br>
+                        Genotyping, DNA profiling과 의학적 Mutation detection, Agricultural research 등에 이용됩니다.  고객이 원할 경우 PCR optimization부터 분석까지 실험 디자인 서비스를 제공합니다.
+                    </p>
                     <div class="list-area-group">
                         <div class="list-area">
                             <p class="font-h8 title">Service types</p>
@@ -365,68 +229,6 @@
                                 <li>샘플 도착 후 영업일 기준 3~7일 내 결과제공</li>
                                 <li>PCR Optimization에서부터 Fragment 분석까지 고객 맞춤서비스 가능</li>
                             </ul>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-h8 title figure_bottom">Standard Marker Types</p>
-                            <table class="table">
-                                <colgroup>
-                                    <col style="width:25%;">
-                                    <col style="width:25%;">
-                                    <col style="width:25%;">
-                                    <col style="width:25%;">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th>Dye Set</th>
-                                    <th>DS-30</th>
-                                    <th>DS-33</th>
-                                    <th>-</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-center">Blue</td>
-                                    <td class="text-center">6-FAM</td>
-                                    <td class="text-center">6-FAM</td>
-                                    <td rowspan="8" class="text-center">Sample Labeling Dyes</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">Green</td>
-                                    <td class="text-center">HEX</td>
-                                    <td class="text-center">VIC</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">Yellow</td>
-                                    <td class="text-center">NED</td>
-                                    <td class="text-center">NED</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">Red</td>
-                                    <td class="text-center">-</td>
-                                    <td class="text-center">PET</td>
-
-                                </tr>
-                                <tr>
-                                    <td rowspan="4" class="text-center">Internal Standard Size Marker<br>(Maximum detection size)</td>
-                                    <td class="text-center">350 ROX (350bp)</td>
-                                    <td class="text-center">120 LIZ (120bp)</td>
-
-                                </tr>
-                                <tr>
-                                    <td class="text-center">400HD(400bp)</td>
-                                    <td class="text-center">500 LIZ(500bp)</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">-</td>
-                                    <td class="text-center">600 LIZ(600bp)</td>
-
-                                </tr>
-                                <tr>
-                                    <td class="text-center">-</td>
-                                    <td class="text-center">600 LIZ(600bp)</td>
-                                </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                     <div class="btn-area">
@@ -451,7 +253,7 @@
                 <!--Customized Sequencing-->
                 <div class="info-box">
                     <p class="main-title font-h4">Customized Sequencing</p>
-                    <p class="subject">동일 조건 하의 Sanger Sequencing 실험 외, Prep, PCR, Cloning, Pyrosequencing 등 고객이 원하는 실험을 맞춤형으로 다양하게 제공합니다. </p>
+                    <p class="subject">Customized Sequencing은 동일 조건 하의 sanger sequencing 실험, prep, PCR, Cloning, Pyrosequencing 등을 제공합니다.</p>
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-customized.png" alt="Customized Sequencing">
                     </div>
@@ -495,14 +297,15 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">NGS Validation</p>
-                    <p class="desc list_bottom">NGS(Next Generation Sequencing) 서비스 이용 후 해당 데이터의 정확도와 신뢰도를 높이기 위하여 Sanger Sequencing 방법을 이용하여 이를 검증하는 서비스 입니다. Chromosome position 또는
-                        Reference sequence를 알려주시면 특정 부위의 SNP와 Mutation 결과를 분석합니다. 마크로젠에서 제공하는 NGS 서비스와 연계하여 one-step으로 사용이 가능합니다. </p>
+                    <p class="desc list_bottom">NGS 서비스 이용 후 해당 데이터의 정확도와 신뢰도를 높이기 위해 Sanger Sequencing 방법을 이용하는 검증 서비스입니다.<br>
+                        제공 받은 Chromosome position 또는 Reference sequence를 통해 특정 부위의 SNP와 변이(Mutation) 결과를 분석합니다.<br> 마크로젠에서 제공하는 NGS 서비스와 연계하여 원스탑 서비스로 이용 가능합니다.
+                    </p>
                     <div class="list-area">
                         <p class="font-h8 title">Features</p>
                         <ul class="list-circle-dot">
                             <li>마크로젠의 NGS 서비스를 이용한 고객의 경우 해당샘플을 바로 전달 받아 더욱 빠르고 정확한 실험이 가능</li>
                             <li>Chromosome position과 Reference sequence가 확인되면 전체 Primer 디자인부터 Sequencing 결과확인, Variant 비교분석까지One-stop 서비스진행으로 편리한 이용이 가능</li>
-                            <li>보다 정확한 결과전달을 위하여 필요 시 Normal control의 비교데이터 확인이 가능하며 동일부위에 대하여 두 가지 Primer set를 이용한 데이터 확인도 가능</li>
+                            <li>보다 정확한 결과전달을 위하여 필요 시 Normal control의 비교 데이터 확인이 가능</li>
                             <li>동일 부위에 대하여 두 가지 Primer set를 이용한 데이터 확인도 가능</li>
                         </ul>
                     </div>
@@ -526,19 +329,15 @@
                         Primer Walking
                     </p>
                     <p class="desc">
-                        Single primer extension으로 한번에 읽어낼 수 없는 Plasmid나 PCR product의 염기서열을 분석하는 서비스이며 보통 2~10kb 정도의 시퀀스 정보를 얻고자 할 때 이용하는 방법입니다. 고객이 직접
-                        제공하거나 지정한 Primer로 End sequenceing을 수행한 후 얻은 결과물로부터 Internal primer를 디자인하여 제작합니다. 이는 새로운 Primer로 같은 Template를 반응하여 얻은 결과로부터 또 다시
-                        적정한 위치에서 Internal primer를 디자인하여 계속 연장하며 1회 Walking 수행에 4일정도 소요, 한 방향 당 약 500~800bp 연장이 가능합니다. Sequencing 결과는 분자생물학 기초연구, 육종연구,
-                        유전질환연구 등 다양한 분야에 사용되며 마크로젠의 Primer Design, Synthesis, Sequencing까지 진행함으로 TAT가 단축됩니다.
+                        Single primer extension으로 한 번에 읽을 수 없는 Plasmid나 PCR product의 염기서열을 분석하는 서비스이며 보통 2~10kb 정도의 시퀀스 정보를 얻고자 할 때 이용하는 방법입니다. 고객이 직접 제공하거나 지정한 Primer로 End sequencing을 수행한 후 얻은 결과물로부터 Internal primer를 디자인하여 제작합니다.
+                        이는 새로운 Primer로 같은 Template에 반응하여 얻은 결과로부터 적정한 위치에서 Internal primer를 디자인하여 연장하며, 한 방향 당 약 500~800bp 연장이 가능하고 1회 Walking 수행에 4일가량 소요됩니다. Sequencing 결과는 분자생물학 기초연구, 육종연구, 유전질환 연구 등에 사용되며 Primer Design, Synthesis, Sequencing까지 진행함으로 실험기간이 단축됩니다.
                     </p>
                     <hr class="divider">
                     <p class="sub-title font-h5">
                         Cloning
                     </p>
                     <p class="desc">
-                        유전체에서 특정유전자 또는 특정 DNA절편을 분리한 후 원하는 Cell을 이용하여 대량으로 복제시키는 방법으로 PCR Product를 마크로젠에서 제공하는 Vector(T-vector or Blunt-vector)에 삽입하거나
-                        고객의 Vector(Sub-cloning)를 통해 해당 서비스를 제공합니다. PCR product의 경우 여러 가지 원인에 의해 한 종류 이상의 PCR product가 존재할 수 있는데 이러한 경우 정상적인 Sequencing 결과를
-                        얻을 수 없지만 Cloning을 통해 이를 개선할 수 있습니다. DNA를 대량으로 복제하거나, 안정적으로 보관할 수 있으며 마크로젠의 다년간의 경험과 노하우로 신속하고 정확한 서비스를 제공합니다.
+                        유전체에서 특정 유전자 또는 특정 DNA 절편을 분리한 뒤 원하는 Cell을 이용한 대량 복제 방법으로 PCR Product를 마크로젠에서 제공하는 Vector(T-vector or Blunt-vector)에 삽입하거나 고객의 Vector(Sub-cloning)로 제공하는 서비스입니다. PCR product의 경우 다양한 원인에 의해 한 종류 이상의 PCR product가 존재할 수 있습니다.  이럴 때 정상적인 Sequencing 결과를 얻을 수 없지만Cloning을 통해 이를 개선할 수 있으며 DNA 대량 복제나 안정적인 보관이 가능합니다.
                     </p>
                     <div class="btn-area">
                         <a href="#" class="btn btn-white"><span>서비스문의</span></a>
@@ -696,5 +495,7 @@
 
         </div>
     </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
 
 </body>

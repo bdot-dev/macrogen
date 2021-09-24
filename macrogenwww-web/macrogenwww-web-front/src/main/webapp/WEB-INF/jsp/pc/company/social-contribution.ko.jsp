@@ -2,15 +2,15 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/dist/img/@temp/macrogen/macrogen_bg_1.png);">
-        <header class="header">
-	    	<c:import url="/inc/header-inner-gnb" />
+    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-management-2.png);">
+        <!--header 수정시 메인 header 같이 수정해주세요-->
+		<header class="header" id="header">
+			<c:import url="/inc/header-inner-gnb" />
 		</header>
-
         <div class="frame">
             <div class="hero-title">사회공헌</div>
-            <div class="slogan ko">생명공학 분야 연구자의<br/>든든한 후원자입니다</div>
-            <div class= "slogan-sub">대한민국의 과학자를 응원하고 지원합니다</div>
+            <div class="slogan ko">함께하는 미래를 위해<br/>사회적 책임을 실천합니다</div>
+            <div class= "slogan-sub">대한민국의 과학자를 응원하고 인류의 건강한 삶을 위해 후원합니다.</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -26,12 +26,13 @@
 
         </div>
     </div>
+
     <div class="container container-fluid">
         <div class="macrogen ethical-management">
             <!-- s  문구 -->
             <div class="section-description">
-                <div class="inner">
-                    <div class="text-lg">마크로젠은 대한민국의 과학자를<br/>응원하고 지원합니다</div>
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="text-lg">마크로젠은 대한민국의 미래를<br/>응원하고 지원합니다</div>
                     <div class="desc">강한 책임감과 소명의식을 지닌 마크로젠은 앞으로 생명공학 분야의 연구자들을 위한 든든한 후원자이자<br/>
                         국가 기술경쟁력 강화의 중심축 역할로서 맡은바 사회적 책임을 다할 것입니다.</div>
                 </div>
@@ -39,8 +40,8 @@
             <!-- e  문구 -->
 
             <!-- s  하나 -->
-            <div class="section-banner" style="background-image: url(/publishing/dist/img/macrogen/bg-ethical-banner-1.svg);">
-                <div class="inner">
+            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-1.png);">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-slogan color-white">하나.</div>
                     <div class="desc color-white">마크로젠이 후원하는<br/>과학자상</div>
                 </div>
@@ -52,15 +53,15 @@
                 <div class="inner">
                     <div class="list">
                         <!-- 마크로젠 과학자상 -->
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
                                 <div class="title">마크로젠<br/>과학자상</div>
                                 <div class="btn-wrap"><a href="#cl=msa" class="btn btn-sm btn-white"><span>역대 수상자 전체보기</span></a></div>
                             </div>
                             <div class="list-body">
                                 <div class="desc">
-                                    현재 생명공학은 IT분야와 함께 미래 국가경제를 견인할 신성장동력으로 새롭게 자리매김하고 있습니다.
-                                    특히 생명공학은 생물체를 이용하여 새로운 혁신기술을 개발하는 응용과학으로서 의약, 농업, 에너지, 환경 등 다양한 산업 분야에 활용되어 향후 미래의 고부가가치 산업으로 성장하는 데 없어서는 안될 중요한 역할을 담당하고 있습니다. 앞으로 우리 국가경제의 미래는 자신의 분야에서 끊임없이 정진하고 있는 우수한 생명과학도의 손에 달려 있다고 해도 과언이 아닙니다.
+                                    현재 생명공학은 IT분야와 함께 미래 국가경제를 견인할 신성장동력으로 새롭게 자리매김하고 있습니다.<br/>
+                                    특히 생명공학은 생물체를 이용하여 새로운 혁신기술을 개발하는 응용과학으로서 의약, 농업, 에너지, 환경 등 다양한 산업 분야에 활용되어 향후 미래의 고부가가치 산업으로 성장하는 데 없어서는 안될 중요한 역할을 담당하고 있습니다. 앞으로 우리 국가경제의 미래는 자신의 분야에서 끊임없이 정진하고 있는 우수한 생명과학도의 손에 달려 있다고 해도 과언이 아닙니다.<br/>
                                     마크로젠 과학자상은 기초 생명공학 분야에서 탁월한 업적을 이룬 국내 과학자를 격려하고 지원하기 위해 마련된 상입니다.
                                 </div>
                                 <div class="swiper reward _reward1">
@@ -85,6 +86,7 @@
 	                                            </div>
 	                                        </div>
                                     	</c:forEach>
+
 
                                     </div>
                                 </div>
@@ -118,7 +120,7 @@
                         </div>
 
                         <!-- 마크로젠 여성과학자상 -->
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
                                 <div class="title">마크로젠<br/>여성과학자상</div>
                                 <div class="btn-wrap"><a href="#cl=wsa" class="btn btn-sm btn-white"><span>역대 수상자 전체보기</span></a></div>
@@ -185,7 +187,7 @@
                         </div>
 
                         <!-- 마크로젠 젊은 생명정보학자상 -->
-                        <div class="item">
+                        <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
                                 <div class="title">마크로젠<br/>젊은 생명정보<br/>학자상</div>
                                 <div class="btn-wrap"><a href="#cl=yba" class="btn btn-sm btn-white"><span>역대 수상자 전체보기</span></a></div>
@@ -197,6 +199,7 @@
                                 </div>
                                 <div class="swiper reward _reward3">
                                     <div class="swiper-wrapper">
+
                                     	<c:forEach var="result" items="${ ybaResultList }" varStatus="status">
 	                                        <div class="swiper-slide">
 	                                            <div class="box">
@@ -215,7 +218,7 @@
 	                                                </div>
 	                                            </div>
 	                                        </div>
-                                    	</c:forEach>
+	                                    </c:forEach>
                                     </div>
                                 </div>
                                 <div class="pagination-wrap">
@@ -252,8 +255,8 @@
             <!-- e 과학자 상 -->
 
             <!-- s 둘 -->
-            <div class="section-banner" style="background-image: url(/publishing/dist/img/macrogen/bg-ethical-banner-2.svg);">
-                <div class="inner">
+            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-2.png);">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-slogan color-white">둘.</div>
                     <div class="desc color-white">마크로젠의 사회적<br/>후원활동</div>
                 </div>
@@ -261,14 +264,14 @@
             <!-- e 둘 -->
 
             <div class="section-activity">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title">근보회 활동후원</div>
                     <div class="desc">‘근보회’는 유전자 이상에 의해 발생하는 근육질환인 근이영양증을 앓고 있는 환우와 가족들의 모임으로서<br/>1999년 11월 발족한 비영리 민간단체입니다. </div>
                 </div>
-                <div class="main-img">
-                    <img src="/publishing/dist/img/@temp/macrogen/ethical-thumb-1.png" alt="근보회 활동후원">
+                <div class="main-img" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="/publishing/pc-ko/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="multi-stage">
                         <div class="row">
                             <div class="col">
@@ -276,10 +279,10 @@
                                     <div class="tit">마크로젠은 근보회 활동을 후원합니다</div>
                                     <div class="desc">근보회는 근보회 환우를 위한 복지혜택, 오프라인 정기모임, 근이영양증 환우 진단 및 간병을 위한 상담서비스 제공 등 근이영양증을 알리는 활동과 함께 그 치료법 등을 찾는 데 도움을 줄 수 있도록 다양한 활동들을 지속하고 있습니다. <br/>마크로젠은 근이영양증 연구자들을 물색하여 이들이 희귀질환을 연구할 수 있도록 지원하고 있으며 환우들과 회사임직원이 함께하는 봄나들이, 작은 음악회 등 정기적인 근보회 활동을 통해 친목 도모 및 상호교류의 장을 만들어 가고 있습니다.</div>
                                 </div>
-                                <div class="item item-img"><img src="/publishing/dist/img/@temp/macrogen/ethical-thumb-2.png" alt="마크로젠은 근보회 활동을 후원합니다"></div>
+                                <div class="item item-img"><img src="/publishing/pc-ko/dist/img/macrogen/ethical-activity-thumb-2.png" alt="마크로젠은 근보회 활동을 후원합니다"></div>
                             </div>
                             <div class="col">
-                                <div class="item item-img"><img src="/publishing/dist/img/@temp/macrogen/ethical-thumb-3.png" alt="근이영양증 (Muscular dystrophy)이란?"></div>
+                                <div class="item item-img"><img src="/publishing/pc-ko/dist/img/macrogen/ethical-activity-thumb-3.png" alt="근이영양증 (Muscular dystrophy)이란?"></div>
                                 <div class="item item-txt">
                                     <div class="tit">근이영양증 (Muscular dystrophy)이란?</div>
                                     <div class="desc">유전적인 요인으로 진행성 근력저하 및 위축을 보이고 병리학적으로 근육섬유의 괴사 및 재생을 특징으로 하는 퇴행성 근육병증을 말합니다. 이는 디스트로핀(dystrophin) 유전자 등 유전자 돌연변이에 의해 특정 단백이 소실되어 근세포막의 손상으로 근육섬유의 괴사와 퇴행 과정을 거쳐 결국 근력저하 및 위축이 발생하게 되는 질환입니다. 해당 질환이 발생하는 유전적 원인으로는 50-60%가 유전자 결실에 의하여 발생하며 나머지 40-50%는 점 돌연변이, 미세 결손, 중복 등이 그 원인으로 알려져 있습니다.</div>
@@ -291,6 +294,7 @@
             </div>
         </div>
     </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 	<script src="/js/util/Hash.js"></script>
     <script>

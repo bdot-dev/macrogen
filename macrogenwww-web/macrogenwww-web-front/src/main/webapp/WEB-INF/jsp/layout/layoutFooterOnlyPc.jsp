@@ -14,6 +14,36 @@
 
 		<!-- 내용// -->
 		<decorator:body />
+		<script>
+		    var gnb2depth = $('#gnb2Depth .box')
+		    let gnbIndex = $('#gnb li')
+
+		    $('#gnb li').mouseover(function () {
+		        $(this).parents('#header').addClass('header-bg-white')
+		        gnbIndex.removeClass('active');
+		        $(this).addClass('active');
+		        gnb2depth.removeClass('active');
+		        let idx = $(this).index();
+		        gnb2depth.eq(idx).addClass('active');
+		    });
+
+		    gnb2depth.mouseover(function () {
+		        gnbIndex.removeClass('active');
+		        let idx = $(this).index();
+		        gnbIndex.eq(idx).addClass('active');
+
+		    });
+
+		    $('#header').on({
+		        "mouseleave focusout" : function () {
+		            gnb2depth.removeClass('active')
+		            gnbIndex.removeClass('active')
+					<c:if test="${remove_header_bg_white_unuse ne 'Y' }">
+			            $('#header').removeClass('header-bg-white')
+					</c:if>
+		        }
+		    })
+		</script>
 		<!-- //내용 -->
 
 		<footer>
