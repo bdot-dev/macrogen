@@ -46,7 +46,7 @@
                   			</c:otherwise>
                   		</c:choose>
                   		<c:if test="${ not empty resultVo.thumbBassImageCodeNm or not empty resultVo.thumbFlpth }">
-	                        <div class="img"><img src="${imgUrl }" alt=""></div>
+	                        <%-- <div class="img"><img src="${imgUrl }" alt=""></div> --%>
                   		</c:if>
                         <div class="text">
                             ${resultVo.nttCn }

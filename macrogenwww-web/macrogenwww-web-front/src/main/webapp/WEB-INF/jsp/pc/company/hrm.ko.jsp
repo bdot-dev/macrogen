@@ -77,7 +77,7 @@
                     <div class="font-h3">마크로젠은 직원들의<br/>일도 생활도 소중히 여깁니다</div>
                     <div class="click-area">
                         <div class="font-body-h">모두가 일과 일상에서 안정과 성장을 누릴 수 있도록<br/>다양한 복지혜택을 제공합니다.</div>
-                        <div class="btn-wrap"><a href="#" class="btn btn-text"><span>채용안내</span><i class="icon icon-arrow-right-long"></i></a></div>
+                        <div class="btn-wrap"><a href="/${rc.locale.language }/company/recruit" class="btn btn-text"><span>채용안내</span><i class="icon icon-arrow-right-long"></i></a></div>
                     </div>
                 </div>
                 <div class="item item-1">
