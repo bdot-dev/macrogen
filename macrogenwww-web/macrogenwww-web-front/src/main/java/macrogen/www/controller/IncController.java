@@ -25,7 +25,7 @@ public class IncController extends DefaultController {
 
 	@RequestMapping("/header-inner-gnb")
 	public String headerInnerGnb(Model model, Locale locale, HttpSession session, HttpServletRequest request) throws Exception {
-		return getDev() + "/inc/header.inner.gnb." + getLang();
+		return getDev() + "/inc/header-inner-gnb." + getLang();
 	}
 
 	@RequestMapping("/footer")

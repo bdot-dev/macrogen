@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <footer class="footer">
-    <div class="inner clearfix">
-        <div class="section_copy">
+    <div class="inner clearfix" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="2000"' : '' }>
+        <div class="section_copy" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="1000"' : '' }>
             <div class="text font-bold">
                 <p>humanizing<br>genomics</p>
             </div>
@@ -16,7 +16,7 @@
                 <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-square"></i></a></li>
             </ul>
         </div>
-        <div class="section_information">
+        <div class="section_information" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="1000"' : '' }>
             <div class="info">
                 <div class="box">
                     <p class="font-bold title">MACROGEN</p>

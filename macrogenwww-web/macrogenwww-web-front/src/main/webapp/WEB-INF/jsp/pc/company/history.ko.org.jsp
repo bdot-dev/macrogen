@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/dist/img/@temp/macrogen/macrogen_bg_1.png);">
+    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/@temp/macrogen/macrogen_bg_1.png);">
         <header class="header">
 	    	<c:import url="/inc/header-inner-gnb" />
 		</header>

@@ -3,106 +3,20 @@
 <body>
 
     <div class="full-bg business_bg">
-        <!--
+        <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
-    <div class="inner">
-        <div class="section_gnb">
-            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
-            <nav>
-                <ul id="gnb">
-                    <li><a href="#" class="font-bold">macrogen</a></li> &lt;!&ndash; active 시, 활성화 &ndash;&gt;
-                    <li><a href="#" class="font-bold">business</a></li>
-                    <li><a href="#" class="font-bold">r&d</a></li>
-                    <li><a href="#" class="font-bold">newsroom</a></li>
-                    <li><a href="#" class="font-bold">ir</a></li>
-                    <li><a href="#" class="font-bold">esg</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="section_btn">
-            <ul class="sns">
-                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
-            </ul>
-            <div class="btn_eng">
-                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="gnb-2depth" id="gnb2Depth">
-        <div class="box">
-            <div class="item">
-                <div class="title"><a href="#">회사소개</a></div>
-                <ul>
-                    <li><a href="#">기업개요</a></li>
-                    <li><a href="#">경영진</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">비전</a></li>
-                    <li><a href="#">마크로젠 CI</a></li>
-                    <li><a href="#">인증</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">글로벌 네트워크</a></div>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">지속가능경영</a></div>
-                <ul>
-                    <li><a href="#">ESG경영</a></li>
-                    <li><a href="#">윤리경영</a></li>
-                    <li><a href="#">사회공헌</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">채용</a></div>
-                <ul>
-                    <li><a href="#">인재상</a></li>
-                    <li><a href="#">직무소개</a></li>
-                    <li><a href="#">채용안내</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<c:import url="/inc/header-inner-gnb" />
 </header>
-<script>
-    $('#gnb2Depth').hide();
-    $('#gnb li a').on({
-        "mouseenter focusin" : function () {
-            $('#header').addClass('active header-bg-white');
-            $('#gnb2Depth').slideDown('500','linear');
-            $('body, html').scroll(function(){
-                $('#header').removeClass('active');
-                $('#gnb2Depth').slideUp('500','linear');
-            });
-        },
-    })
-    $('#header').on({
-        "mouseleave focusout" : function () {
-            setTimeout(function() {
-                $('#header').removeClass('active header-bg-white');
-                }, 300);
-            $('#gnb2Depth').slideUp('400','linear');
-        }
-    })
-</script>
--->
-
-
-		<header class="header">
-			<c:import url="/inc/header-inner-gnb" />
-		</header>
 
         <div class="frame frameB">
             <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb breadcrumb-white">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">Business</li>
-			        <li class="breadcrumb-item">연구서비스</li>
-			        <li class="breadcrumb-item">NGS</li>
-			    </ol>
-			</nav>
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">Business</li>
+        <li class="breadcrumb-item">연구서비스</li>
+        <li class="breadcrumb-item">NGS</li>
+    </ol>
+</nav>
 
             <div class="hero-title">NGS</div>
             <div class="slogan-sub">Next Generation Sequencing</div>
@@ -116,19 +30,20 @@
         <div class="section_business">
             <!--메인 컨텐츠-->
             <div class="subject-box">
-    <p class="title font-h4">글로벌 톱 수준의 분석 인프라를 통해 빠르고 정확한<br>
-        NGS서비스를 합리적인 비용으로 제공합니다
+    <p class="title font-h4">글로벌 수준의 분석 인프라를 통해 빠르고 정확한<br>
+        NGS서비스의 경쟁력을 갖추고 있습니다
     </p>
-    <p class="subject">NGS 정보를 기반으로 끊임없는 연구개발 및 다양한 의료기관과의 협업을 통해 환자 개인의 질병을 예측하고 진단하며,<br>
-        환자의 유전적 특성에 따른 맞춤치료의 방안을 제시하는 정밀의학 분야의 글로벌 선도기업이 되고자 합니다</p>
+    <p class="subject">NGS(Next  Generation Sequencing)는 유전체를 무수한 조각으로 나누어 읽고,<br>
+        이를 통해 얻은 염기서열을 조립하여 유전체 서열을 분석하는 차세대 염기서열 분석 방법입니다.</p>
     <div class="img">
         <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-intro.png" alt="NgsIntro">
     </div>
     <p class="desc">
-        마크로젠은 NGS 정보 기반 연구개발 및 의료기관 협업을 통해 개인의 질병을 예측하고 진단하며, 유전적 특성에 따른 맞춤치료 방안을 제시하는 정밀의학 분야 글로벌 선도기업입니다.
+        마크로젠은 NGS 정보 기반 연구개발 및 의료기관 협업을 통해 개인의 질병을 예측하고 진단하며, 유전적 특성에 따른 맞춤치료 방안을 제시하는 정밀의학 분야 글로벌 선도기업입니다.<br>
         해당 기술은 2000년 이후 상용화되며 관련 기술의 비약적 발전을 이루어냈습니다. 이에 따라 단기간 내 많은 양의 유전체 정보를 얻을 수 있게 되었고, 유전체 분석의 시간과 비용이 감소하게 되었습니다. 따라서 인간을 비롯한 다양한 생명체의 유전체 분석 수요가 증가했고, 이를 다양한 연구 분야에 활용할 수 있게 되었습니다. 최근 의학 분야를 중심으로 NGS 기반 임상 연구가 활발해지면서 해당 기술을 통한 유전자 변이 확인 및 새로운 유전자의 기능을 밝히기 위한 연구가 진행되고 있습니다. 이는 유전체 정보를 바탕으로 환자 개인에게 최적화된 치료가 가능한 정밀의학 실현을 앞당길 것입니다.
         <br><br>
-        마크로젠은 다양한 장비를 통해 매년 대량의 유전체 데이터를 생산해내고 있습니다. 빠르고 정확한 유전체 분석 서비스를 제공하여 연구자의 리서치에 도움을 드리며, 일반인 대상 진단 서비스도 제공하고 있습니다.  또한 Whole Genome, Exome, Transcriptome, Epigenome, Metagenome, Single Cell Multi-Omics Sequencing 등 연구목적에 맞는 유전체 분석 서비스와 해당 데이터를 기반으로 바이오인포메틱스 결과를 제공하고 있습니다. 마크로젠은 오랜 기간 축적된 경험과 노하우를 바탕으로 전 세계 연구자들에게 Total Genomic Solution을 제시함으로써 NGS 기술을 활용한 정밀의학 분야를 선도합니다.</p>
+        마크로젠은 다양한 장비를 통해 매년 대량의 유전체 데이터를 생산해내고 있습니다. 빠르고 정확한 유전체 분석 서비스를 제공하여 연구자의 리서치에 도움을 드리며, 일반인 대상 진단 서비스도 제공하고 있습니다.  또한 Whole Genome, Exome, Transcriptome, Epigenome, Metagenome, Single Cell Multi-Omics Sequencing 등 연구목적에 맞는 유전체 분석 서비스와 해당 데이터를 기반으로 바이오인포메틱스 결과를 제공하고 있습니다. 마크로젠은 오랜 기간 축적된 경험과 노하우를 바탕으로 전 세계 연구자들에게 Total Genomic Solution을 제시함으로써 NGS 기술을 활용한 정밀의학 분야를 선도합니다.
+    </p>
 </div>
 
             <!--탭 슬라이드-->
@@ -151,6 +66,33 @@
                         <a href="#" class="btn btn-circle btn-white btn-sm _slideRight swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-disabled="true"><i class="icon icon-arrow-right-sm"></i></a>
                         <a href="#" class="btn btn-circle btn-black btn-sm _btnMenu"><i class="icon icon-menu-white"></i></a>
                     </div>
+                    <div class="tab-modal">
+                        <div class="tab-modal-header">
+                            <div class="close-btn _closebtn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="tab-modal-body">
+                            <li><a href="#">Whole Genome Sequencing</a></li>
+                            <li><a href="#">Whole Exome Sequencing</a></li>
+                            <li><a href="#">Transcriptome Sequencing</a></li>
+                            <li><a href="#">Epigenome Sequencing</a></li>
+                            <li><a href="#">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="#">ATAC analysis</a></li>
+                            <li><a href="#">Spatial Gene Expression analysis</a></li>
+                        </ul>
+                    </div>
+
+                    <!--탭모달 스크립트-->
+                    <script>
+                        $("._btnMenu").click(function() {
+                            $(".tab-modal").show();
+                        });
+                        $("._closebtn").click(function() {
+                            $(".tab-modal").hide();
+                        });
+                    </script>
                 </div>
             </div>
             <!--슬라이드 스크립트-->
@@ -199,7 +141,7 @@
                 <!--Genome-->
                 <div class="info-box show">
                     <p class="main-title font-h4">Whole Genome Sequencing</p>
-                    <p class="subject">WGS(Whole Genome Sequencing)은 유전체 전체를 한 번에 읽어내어 관련 유전정보를 분석하는 방법입니다.</p>
+                    <p class="subject">WGS는 유전체 전체를 한 번에 읽어 유전정보를 분석하는 방법입니다.</p>
                     <p class="desc img_bottom">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계 153개국 1만
                         8천여 연구기관 고객을 보유하고 있으며, 연간 30만 명의 WGS 분석 시설, 총 30PB를 저장할 수 있는 컴퓨팅 시설 등 글로벌 톱 수준의 분석 인프라를 통해 유전체
                         정보 기반 정밀의학 빅데이터 시대를 만들어 가고 있습니다.</p>
@@ -208,9 +150,8 @@
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">Whole Genome Resequencing</p>
-                    <p class="desc list_bottom">이미 알려진 참조 유전체 (Reference Genome)를 활용하여 SNP(Single Nucleotide
-                        Polymorphism), InDel(Insertion & Deletion), CNV(Copy Number Variation), 그리고 SV(Structural
-                        Variation) 등 다방면의 변이 분석이 가능한 방법입니다.</p>
+                    <p class="desc list_bottom">참조 유전체(Reference Genome)를 활용하여 SNP(Single Nucleotide Polymorphism), InDel(Insertion & Deletion), CNV(Copy Number Variation), SV(Structural Variation) 등 다방면의 변이 분석이 가능한 방법입니다.
+                    </p>
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
@@ -220,8 +161,7 @@
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">Whole Genome De novo Sequencing</p>
-                    <p class="desc list_bottom">참조 유전체 정보가 없는 새로운 생물종의 유전체정보를 새로이 밝히는 방법으로, 지금까지 밝혀지지 않은 미생물이나 동식물의 전체
-                        유전체 정보를 알아내는 방법입니다.</p>
+                    <p class="desc list_bottom">참조 유전체(Reference Genome) 정보가 없는 미생물이나 동식물 등 새로운 생물 종의 전체 유전체 정보를 알아내는 방법입니다.</p>
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
@@ -249,13 +189,11 @@
                 </div>
                 <!--Exome-->
                 <div class="info-box">
-                    <p class="font-h4 main-title">Whole Exsome Sequencing</p>
+                    <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을 선택적으로 분석하는
                         방법입니다. </p>
-                    <p class="desc img_bottom">기존의 연구를 통해 얻은 유전자들만을 선택적으로 분석함으로써 WGS보다 효율적, 경제적으로 연구할 수 있는 방법입니다. 여러
-                        Capture Kit (Agilent SureSelect Exome Capture kit, Truseq Exome<br>
-                        Enrichment Kit, Twist Human Core Exome Kit)을 사용하여 전체 Exome 부분에 대한 분석이 가능하며 SNP 및 InDel 등의 변이 분석을
-                        함께 제공해 드리고 있습니다. </p>
+                    <p class="desc img_bottom">기존 연구를 통해 얻은 유전자를 선택적으로 분석함으로써 WGS보다 효율적이고 경제적인 연구 방법입니다. Capture Kit(Agilent SureSelect Exome Capture kit, Truseq Exome Enrichment Kit,<br> Twist Human Core Exome Kit)을 사용한 전체 Exome 분석이 가능하며 SNP 및 InDel 등의 변이 분석을 함께 제공합니다.
+                    </p>
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-wes.png" alt="Whole Exsome Sequencing">
                     </div>
@@ -463,19 +401,20 @@
                     <div class="box-gray-6">
                         <div>
                             <p class="title">single cell RNA sequencing</p>
-                            <p class="desc">단일 세포 유전자 발현 분석</p>
+                            <p class="desc">싱글셀 유전자 발현 분석</p>
                         </div>
                         <div>
                             <p class="title">single nucleus RNA sequencing</p>
-                            <p class="desc">단일 세포로 진행하기 어려운 샘플에서 핵을 분리한 후 유전자 발현 분석</p>
+                            <p class="desc">싱글셀로 진행하기 어려운 샘플에서<br> 핵을 분리한 후 유전자 발현 분석</p>
                         </div>
                         <div>
                             <p class="title">single cell immune profiling</p>
-                            <p class="desc">단일 세포 TCR, BCR 유전자 발현 분석</p>
+                            <p class="desc">싱글셀 TCR, BCR 발현 분석</p>
                         </div>
                         <div>
                             <p class="title">single cell surface protein profiling</p>
-                            <p class="desc">단일 세포 표면에 위치하는 단백질 분석</p>
+                            <p class="desc">싱글셀 표면에 위치하는<br> 단백질 분석
+                            </p>
                         </div>
                         <div>
                             <p class="title">single cell ATAC sequencing</p>
@@ -557,11 +496,8 @@
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
                     </div>
-                    <p class="desc">마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을
-                        받았으며, 국내 최대이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,
-                        NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게
-                        도입함으로써 공간 유전체 분석 서비스를
-                        다양화하며 시장을 선도하고 있습니다. </p>
+                    <p class="desc">마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게 도입함으로써 공간 유전체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
+                    </p>
                     <div class="btn-area">
                         <a href="#" class="btn btn-white"><span>서비스문의</span></a>
                         <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
@@ -584,5 +520,6 @@
             </div>
         </div>
     </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 </body>

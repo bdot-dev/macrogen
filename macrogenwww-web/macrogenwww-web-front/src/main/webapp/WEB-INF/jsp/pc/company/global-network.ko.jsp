@@ -3,112 +3,26 @@
 <body>
 
     <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-global-network.png);">
-        <!--
+        <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
-    <div class="inner">
-        <div class="section_gnb">
-            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
-            <nav>
-                <ul id="gnb">
-                    <li><a href="#" class="font-bold">macrogen</a></li> &lt;!&ndash; active 시, 활성화 &ndash;&gt;
-                    <li><a href="#" class="font-bold">business</a></li>
-                    <li><a href="#" class="font-bold">r&d</a></li>
-                    <li><a href="#" class="font-bold">newsroom</a></li>
-                    <li><a href="#" class="font-bold">ir</a></li>
-                    <li><a href="#" class="font-bold">esg</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="section_btn">
-            <ul class="sns">
-                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
-                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
-            </ul>
-            <div class="btn_eng">
-                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="gnb-2depth" id="gnb2Depth">
-        <div class="box">
-            <div class="item">
-                <div class="title"><a href="#">회사소개</a></div>
-                <ul>
-                    <li><a href="#">기업개요</a></li>
-                    <li><a href="#">경영진</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">비전</a></li>
-                    <li><a href="#">마크로젠 CI</a></li>
-                    <li><a href="#">인증</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">글로벌 네트워크</a></div>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">지속가능경영</a></div>
-                <ul>
-                    <li><a href="#">ESG경영</a></li>
-                    <li><a href="#">윤리경영</a></li>
-                    <li><a href="#">사회공헌</a></li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="title"><a href="#">채용</a></div>
-                <ul>
-                    <li><a href="#">인재상</a></li>
-                    <li><a href="#">직무소개</a></li>
-                    <li><a href="#">채용안내</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<c:import url="/inc/header-inner-gnb" />
 </header>
-<script>
-    $('#gnb2Depth').hide();
-    $('#gnb li a').on({
-        "mouseenter focusin" : function () {
-            $('#header').addClass('active header-bg-white');
-            $('#gnb2Depth').slideDown('500','linear');
-            $('body, html').scroll(function(){
-                $('#header').removeClass('active');
-                $('#gnb2Depth').slideUp('500','linear');
-            });
-        },
-    })
-    $('#header').on({
-        "mouseleave focusout" : function () {
-            setTimeout(function() {
-                $('#header').removeClass('active header-bg-white');
-                }, 300);
-            $('#gnb2Depth').slideUp('400','linear');
-        }
-    })
-</script>
--->
-
-
-		<header class="header">
-			<c:import url="/inc/header-inner-gnb" />
-		</header>
 
         <div class="frame">
             <div class="hero-title">글로벌 네트워크</div>
             <div class="slogan">GLOBAL<br/>MACROGEN</div>
             <div class= "slogan-sub">글로벌 정밀의학 선도기업 마크로젠입니다</div>
             <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb breadcrumb-white">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">MACROGEN</li>
-			        <li class="breadcrumb-item">글로벌 네트워크</li>
-			    </ol>
-			</nav>
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">MACROGEN</li>
+        <li class="breadcrumb-item">글로벌 네트워크</li>
+    </ol>
+</nav>
 
             <div class="scroll-wrap">
-			    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-			</div>
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
 
         </div>
     </div>
@@ -311,5 +225,6 @@
             <!-- e  map 상세 -->
         </div>
     </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 </body>

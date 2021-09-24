@@ -9,7 +9,7 @@
 	</form:form>
 
     <div class="full-bg macrogen no-bg">
-        <header class="header header-bg-white">
+        <header class="header header-bg-white" id="header">
 	    	<c:import url="/inc/header-inner-gnb" />
 		</header>
         <div class="frame frameC">
