@@ -21,8 +21,7 @@
 
 <body>
 <div class="wrap">
-    <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header header-bg-white" id="header">
+    <header class="header header-bg-white" id="header">
     <div class="inner">
         <div class="section_gnb">
             <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
@@ -189,6 +188,7 @@
         gnb2depth.removeClass('active');
         let idx = $(this).index();
         gnb2depth.eq(idx).addClass('active');
+        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
     });
 
     gnb2depth.mouseover(function () {
@@ -202,9 +202,68 @@
         "mouseleave focusout" : function () {
             gnb2depth.removeClass('active')
             gnbIndex.removeClass('active')
+            $('#gnb2Depth').css('border','none')
         }
     })
 </script>
+
+
+
+
+
+<!--
+
+<header class="header">
+    <div class="inner">
+        <div class="section_gnb">
+            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="font-bold">macrogen</a></li>
+                    <li><a href="#" class="font-bold">business</a></li>
+                    <li><a href="#" class="font-bold">r&d</a></li>
+                    <li><a href="#" class="font-bold">newsroom</a></li>
+                    <li><a href="#" class="font-bold">ir</a></li>
+                    <li><a href="#" class="font-bold">esg</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section_btn">
+            <ul class="sns">
+                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
+            </ul>
+            <div class="btn_eng">
+                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+-->
+
+<!--<script>
+    $('#gnb2Depth').hide();
+    $('#gnb li a').on({
+        "mouseenter focusin" : function () {
+            $('#header').addClass('active header-bg-white');
+            $('#gnb2Depth').slideDown('500','linear');
+            $('body, html').scroll(function(){
+                $('#header').removeClass('active');
+                $('#gnb2Depth').slideUp('500','linear');
+            });
+        },
+    })
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            setTimeout(function() {
+                $('#header').removeClass('active header-bg-white');
+                }, 300);
+            $('#gnb2Depth').slideUp('400','linear');
+        }
+    })
+</script>-->
 
 
     <div class="container">
@@ -463,10 +522,10 @@
                 <div class="box">
                     <p class="font-bold title">MACROGEN</p>
                     <ul class="text">
-                      <li>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</li>
-                      <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
-                      <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
-                      <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
+                        <li><span><span class="font-bold">본사</span> : 서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span></li>
+                        <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
+                        <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
+                        <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
                     </ul>
                 </div>
                 <div class="box">
