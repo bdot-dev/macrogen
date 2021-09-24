@@ -179,7 +179,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="btn-wrap"><a href="#" class="btn btn-text"><span>마크로젠 글로벌 네트워크</span><i class="icon icon-arrow-right-long"></i></a></div>
+                    <div class="btn-wrap"><a href="/${rc.locale.language }/company/global-network" class="btn btn-text"><span>마크로젠 글로벌 네트워크</span><i class="icon icon-arrow-right-long"></i></a></div>
                 </div>
             </div>
             <!-- e 연구·사업 분야별 문의 -->

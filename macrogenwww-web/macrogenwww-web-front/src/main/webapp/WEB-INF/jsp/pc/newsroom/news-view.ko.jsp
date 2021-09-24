@@ -45,7 +45,7 @@
                     </div>
                     <hr class="divider"/>
                     <div class="content">
-                        <div class="img"><img src="${imgUrl }" alt=""></div>
+                        <%-- <div class="img"><img src="${imgUrl }" alt=""></div> --%>
                         <div class="text">
                         	${resultVo.nttCn }
                         </div>
