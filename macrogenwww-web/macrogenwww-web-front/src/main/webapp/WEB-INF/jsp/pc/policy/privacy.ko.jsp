@@ -69,7 +69,7 @@
 				      $('._select_box .select_	efault').find('span').text(option);
 				    });
 				</script>
-			</d	v>
+			</div>
 			</c:if>
 
             <div class="content_area">
