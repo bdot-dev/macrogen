@@ -25,6 +25,7 @@
 		        gnb2depth.removeClass('active');
 		        let idx = $(this).index();
 		        gnb2depth.eq(idx).addClass('active');
+		        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
 		    });
 
 		    gnb2depth.mouseover(function () {
@@ -41,6 +42,7 @@
 					<c:if test="${remove_header_bg_white_unuse ne 'Y' }">
 			            $('#header').removeClass('header-bg-white')
 					</c:if>
+		            $('#gnb2Depth').css('border','none')
 		        }
 		    })
 		</script>

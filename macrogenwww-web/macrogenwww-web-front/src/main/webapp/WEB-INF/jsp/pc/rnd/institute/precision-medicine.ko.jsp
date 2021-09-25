@@ -3,10 +3,9 @@
 <body class="research-wrap">
 
     <div class="full-bg research_bg">
-        <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
-	<c:import url="/inc/header-inner-gnb" />
-</header>
+        <header class="header" id="header">
+			<c:import url="/inc/header-inner-gnb" />
+		</header>
 
         <div class="frame frameB">
             <nav aria-label="breadcrumb">
@@ -87,60 +86,46 @@
                             <div class="swiper-container _Slider01 ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img_Institute_01.png" alt="WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암 WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암">
                                             </span>
                                             <span class="txt"><span>WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암 WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                <img src="/publishing/pc-ko/dist/img/RD/img_Institute_02.png" alt="Hi-C(3D chromosome confor mation capture) 기술">
                                             </span>
                                             <span class="txt"><span>Hi-C(3D chromosome confor mation capture) 기술</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                <img src="/publishing/pc-ko/dist/img/RD/img_Institute_03.png" alt="한국인 산모 및 신생아 마이크로바이옴 연구 한국인 산모 및 신생아 마이크로바이옴 연구">
                                             </span>
                                             <span class="txt"><span>한국인 산모 및 신생아 마이크로바이옴 연구 한국인 산모 및 신생아 마이크로바이옴 연구</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img_Institute_04.png" alt="KF1 항암 맞춤형 다중 동반진단 시스템 연구">
                                             </span>
                                             <span class="txt"><span>KF1 항암 맞춤형 다중 동반진단 시스템 연구</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                <img src="/publishing/pc-ko/dist/img/RD/img_Institute_05.png" alt="게놈아시아 100K 이니셔티브 주도">
                                             </span>
                                             <span class="txt"><span>게놈아시아 100K 이니셔티브 주도</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                               <img src="/publishing/pc-ko/dist/img/RD/img_Institute_06.png" alt="아시안 게놈 로드 참여">
                                             </span>
                                             <span class="txt"><span>아시안 게놈 로드 참여</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                               <img src="/publishing/pc-ko/dist/img/RD/img_Institute_07.png" alt="폐 선암 원인 유전자 발굴">
                                             </span>
                                             <span class="txt"><span>폐 선암 원인 유전자 발굴</span></span>
-                                        </a>
                                     </div>
                                 </div>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -164,44 +149,34 @@
                             <div class="swiper-container _Slider02">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-platform_01.png" alt="Oxford Nanopore 플랫폼 구축">
                                             </span>
                                             <span class="txt"><span>Oxford Nanopore 플랫폼 구축</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-platform_02.png" alt="MGI 플랫폼 구축">
                                             </span>
                                             <span class="txt"><span>MGI 플랫폼 구축</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-platform_03.png" alt="10xGenomics single-cell RNA-seq 플랫폼 구축">
                                             </span>
                                             <span class="txt"><span>10xGenomics single-cell RNA-seq 플랫폼 구축</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-platform_04.png" alt="약물유전자 검사 NGS 플랫폼 구축">
                                             </span>
                                             <span class="txt"><span>약물유전자 검사 NGS 플랫폼 구축</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-platform_05.png" alt="Hi-C (3D chromosome conformation capture) 기술 Hi-C (3D chromosome conformation capture) 기술">
                                             </span>
                                             <span class="txt"><span>Hi-C (3D chromosome conformation capture) 기술 Hi-C (3D chromosome conformation capture) 기술</span></span>
-                                        </a>
                                     </div>
 
                                 </div>
@@ -222,52 +197,40 @@
                             <div class="swiper-container _Slider03">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                                 <img src="/publishing/pc-ko/dist/img/RD/img-development_01.png" alt="COVID-19 진단 키트 개발">
                                             </span>
                                             <span class="txt"><span>COVID-19 진단 키트 개발</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                             <img src="/publishing/pc-ko/dist/img/RD/img-development_02.png" alt="동북아시아 DB (NARD) 구축">
                                             </span>
                                             <span class="txt"><span>동북아시아 DB (NARD) 구축</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
-                                         <img src="/publishing/pc-ko/dist/img/RD/img-development_03.png" alt="APOE 알츠하이머 PCR 진단 개발">
+                                            <img src="/publishing/pc-ko/dist/img/RD/img-development_03.png" alt="APOE 알츠하이머 PCR 진단 개발">
                                             </span>
                                             <span class="txt"><span>APOE 알츠하이머 PCR 진단 개발</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
-                                     <img src="/publishing/pc-ko/dist/img/RD/img-development_04.png" alt="AK1 한국인 표준유전체 작성">
+                                            <img src="/publishing/pc-ko/dist/img/RD/img-development_04.png" alt="AK1 한국인 표준유전체 작성">
                                             </span>
                                             <span class="txt"><span>AK1 한국인 표준유전체 작성</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
-                                                 <img src="/publishing/pc-ko/dist/img/RD/img-development_05.png" alt="한국인 유전체 지도 초안 완성">
+                                                <img src="/publishing/pc-ko/dist/img/RD/img-development_05.png" alt="한국인 유전체 지도 초안 완성">
                                             </span>
                                             <span class="txt"><span>한국인 유전체 지도 초안 완성</span></span>
-                                        </a>
                                     </div>
                                     <div class="swiper-slide item">
-                                        <a href="#">
                                             <span class="img">
                                        <img src="/publishing/pc-ko/dist/img/RD/img-development_06.png" alt="알코올 생산 박테리아인 자이모모나스 모빌리스 유전체 분석">
                                             </span>
                                             <span class="txt"><span>알코올 생산 박테리아인 자이모모나스 모빌리스 유전체 분석</span></span>
-                                        </a>
                                     </div>
                                 </div>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -318,6 +281,5 @@
         })
 
     </script>
-
 
 </body>

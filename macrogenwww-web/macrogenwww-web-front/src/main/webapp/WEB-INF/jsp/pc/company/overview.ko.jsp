@@ -11,7 +11,7 @@
         <div class="frame">
             <div class="hero-title">기업개요</div>
             <div class="slogan">Humanizing<br/>Genomics</div>
-            <div class= "slogan-sub">모두가 건강한 세상을 꿈꾸는 기업 마크로젠입니다</div>
+            <div class= "slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -51,7 +51,7 @@
                         <ul class="list" data-aos="fade-up" data-aos-duration="2000">
                             <li>글로벌 정밀의학 선도기업</li>
                             <li>인간중심의 인본주의 경영</li>
-                            <li>빅데이터 기반의 헬스케어 토털 솔루션</li>
+                            <li>빅데이터와 AI 기반의 헬스케어 솔루션</li>
                         </ul>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                         <span class="title">연구</span>
                     </div>
                     <div class="desc">정부기관, 대학교, 연구소 등</div>
-                    <div class="desc-sm">마크로젠의 근간이 되는 사업으로, 해당 분야에서는 염기서열 분석(CES, NGS), 바이오칩 분석(Microarray), 올리고 합성(Oligo), 유전자 변형 마우스(GEM), 바이오인포매틱스(Bioinformatics) 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다.</div>
+                    <div class="desc-sm">마크로젠의 핵심 사업으로, 해당 분야에서는 염기서열 분석(NGS, CES), 바이오칩 분석(Microarray), 올리고 합성(Oligo), 유전자 변형 마우스(GEM), 바이오인포매틱스(Bioinformatics) 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다.</div>
                 </div>
                 <div class="item item-2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
@@ -172,7 +172,7 @@
                         <span class="title">임상진단 </span>
                     </div>
                     <div class="desc">환자 및 의료진 대상</div>
-                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체, 산전 유전체, 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료, 건강관리 방법 등을 제시하는 데 주력하고 있습니다.</div>
+                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체, 산전 유전체, 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료, 건강관리 방법 등을 제시에 주력하고 있습니다.</div>
                 </div>
                 <div class="item item-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
@@ -190,7 +190,7 @@
                         <span class="title">응용 </span>
                     </div>
                     <div class="desc">법의유전학, 반려동물 등 관련</div>
-                    <div class="desc-sm">혈연관계 및 개인식별 유전자 검사 서비스(iD4U™), 반려동물을 위한 유전자 검사 서비스(myPETGENE™) 등이 진행되고 있습니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다.</div>
+                    <div class="desc-sm">혈연관계 및 개인식별 유전자 검사 서비스(Human ID), 반려동물을 위한 유전자 검사 서비스(myPETGENE™) 등이 진행되고 있습니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다.</div>
                 </div>
             </div>
             <!-- e  사업분야 상세 -->

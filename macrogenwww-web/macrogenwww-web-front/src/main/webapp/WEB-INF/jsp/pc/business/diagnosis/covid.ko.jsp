@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg business_bg">
+    <div class="full-bg business_bg covid">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
@@ -196,6 +196,7 @@
                             <img src="/publishing/pc-ko/dist/img/@temp/business/img_clinicaltrialtest.png" alt="flow">
                         </div>
                     </div>
+                    <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
                         <a href="#" class="btn btn-white"><span>서비스문의</span></a>
                     </div>
@@ -279,6 +280,7 @@
                             </div>
                         </div>
                     </div>
+                    <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
                         <a href="#" class="btn btn-white"><span>서비스문의</span></a>
                     </div>

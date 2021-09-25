@@ -85,7 +85,7 @@
                         <div class="font-h5">일과 삶의 즐거움</div>
                         <ul class="clearfix">
                             <li>정기<br/>건강검진</li>
-                            <li>복지수당<br/>지급</li>
+                            <li>명절상여/선물<br>지급</li>
                             <li>사내동호회<br/>지원</li>
                             <li>부서회식비<br/>지원</li>
                             <li>사내휴게실<br/>운영</li>
@@ -109,8 +109,8 @@
                         <div class="font-h5">일과 삶의 조화</div>
                         <ul class="clearfix">
                             <li>주 5일<br/>근무제</li>
-                            <li>선택적<br/>보상휴가제</li>
-                            <li>탄력적<br/>근로시간제</li>
+                            <li>대체휴무<br>제도</li>
+                            <li>시차<br>출퇴근제</li>
                             <li>경조휴가/경조금<br/>지급</li>
                             <li>Family-day제도<br/>운영</li>
                         </ul>
