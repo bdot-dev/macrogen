@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">인증</div>
-            <div class="slogan ko">슬로건 정리 필요</div>
-            <div class= "slogan-sub">질병을 예측하고 진단하며, 맞춤 치료의 방안을 제시합니다.</div>
+            <div class="slogan ko">유전체 분석의<br>글로벌 스탠다드</div>
+            <div class= "slogan-sub">마크로젠의 기술은 세계에서 인정받고 있습니다</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

@@ -136,6 +136,7 @@
           <div class="border-gray-box">
             <img src="/publishing/pc-ko/dist/img/@temp/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
           </div>
+          <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
           <div class="btn-area">
             <a href="#" class="btn btn-white"><span>서비스문의</span></a>
           </div>
@@ -171,6 +172,7 @@
             </div>
           </div>
           <p class="caption">※ 출처 : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet Oncol. 2011 Feb; 12(2): 175-80.</p>
+          <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
           <div class="btn-area">
             <a href="#" class="btn btn-white"><span>서비스문의</span></a>
           </div>
@@ -208,6 +210,7 @@
               <img src="/publishing/pc-ko/dist/img/@temp/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
             </div>
           </div>
+          <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
           <div class="btn-area">
             <a href="#" class="btn btn-white"><span>서비스문의</span></a>
           </div>

@@ -48,7 +48,7 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v.0.7 / 0924</title>
+  <title>Macrogen v.0.8 / 09.24</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?0924"/>
@@ -65,8 +65,7 @@
 <div class="wrap research-wrap">
 
     <div class="full-bg research_bg">
-        <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+        <header class="header" id="header">
     <div class="inner">
         <div class="section_gnb">
             <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
@@ -83,10 +82,10 @@
         </div>
         <div class="section_btn">
             <ul class="sns">
-                <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-circle"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube-circle"></i></a></li>
-                <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog-circle"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-facebook-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
             </ul>
             <div class="btn_eng">
                 <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
@@ -233,6 +232,7 @@
         gnb2depth.removeClass('active');
         let idx = $(this).index();
         gnb2depth.eq(idx).addClass('active');
+        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
     });
 
      gnb2depth.mouseover(function () {
@@ -246,9 +246,66 @@
             gnb2depth.removeClass('active')
             gnbIndex.removeClass('active')
             $('#header').removeClass('header-bg-white')
+            $('#gnb2Depth').css('border','none')
         }
     })
 </script>
+
+
+<!--기존 코드-->
+<!--
+
+<header class="header">
+    <div class="inner">
+        <div class="section_gnb">
+            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="font-bold">macrogen</a></li>
+                    <li><a href="#" class="font-bold">business</a></li>
+                    <li><a href="#" class="font-bold">r&d</a></li>
+                    <li><a href="#" class="font-bold">newsroom</a></li>
+                    <li><a href="#" class="font-bold">ir</a></li>
+                    <li><a href="#" class="font-bold">esg</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section_btn">
+            <ul class="sns">
+                <li><a href="#"><i class="icon icon-facebook-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle-white"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle-white"></i></a></li>
+            </ul>
+            <div class="btn_eng">
+                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+-->
+<!--<script>
+    $('#gnb2Depth').hide();
+    $('#gnb li a').on({
+        "mouseenter focusin" : function () {
+            $('#header').addClass('active header-bg-white');
+            $('#gnb2Depth').slideDown('500','linear');
+            $('body, html').scroll(function(){
+                $('#header').removeClass('active');
+                $('#gnb2Depth').slideUp('500','linear');
+            });
+        },
+    })
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            setTimeout(function() {
+                $('#header').removeClass('active header-bg-white');
+                }, 300);
+            $('#gnb2Depth').slideUp('400','linear');
+        }
+    })
+</script>-->
+<!---------->
 
         <div class="frame frameB">
             <nav aria-label="breadcrumb">
@@ -270,7 +327,7 @@
                 <div class="title">다양한 헬스 정보를 분석해<br>삶의 질을 높입니다</div>
                 <div class="desc">개인별 맞춤형 건강관리 서비스를 제공합니다</div>
             </div>
-            <div class="img"><img src="../../img/RD/img-bigData.svg" alt="방대한 양의 데이터"></div>
+            <div class="img"><img src="../../img/RD/img-bigData.png" alt="방대한 양의 데이터"></div>
             <div class="desc-box">
                 <p class="sub-title">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다.</p>
                 <p>우리 몸의 모든 정보를 담고 있는 유전체 분석 및 예측을 통해 발생 가능성이 높은 질병들에 대해 개인별 맞춤형 건강 관리 서비스를 제공해 선제적으로 질병을 예방하거나 발병 위험을 낮추는 것이 마크로젠 빅데이터연구소의 목적입니다.</p>
@@ -320,10 +377,10 @@
                 <div class="box">
                     <p class="font-bold title">MACROGEN</p>
                     <ul class="text">
-                      <li>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</li>
-                      <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
-                      <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
-                      <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
+                        <li><span><span class="font-bold">본사</span> : 서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span></li>
+                        <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
+                        <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
+                        <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
                     </ul>
                 </div>
                 <div class="box">

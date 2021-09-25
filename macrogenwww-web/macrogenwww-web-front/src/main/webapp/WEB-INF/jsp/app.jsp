@@ -23,7 +23,7 @@
 <body>
 <div class="wrap">
     <div class="full-bg">
-        <div class="bg"><img src="/publishing/mobile-ko/dist/img/@temp/main-bg.png" alt="Humanizing Genomics"></div>
+        <div class="bg"></div>
         <div class="inner">
             <h1 class="logo">
                <img src="/publishing/mobile-ko/dist/img/common/logo.svg" alt="macrogen 로고">

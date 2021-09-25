@@ -19,27 +19,31 @@
 
             $('#gnb li').mouseover(function () {
                 $('.header-main').css('background','#fff');
-
                 $(this).parents('#header').addClass('header-bg-white')
                 gnbIndex.removeClass('active');
                 $(this).addClass('active');
-                gnb2depth.removeClass('active').css('border','1px solid #e9e9e9');
+                gnb2depth.removeClass('active');
                 let idx = $(this).index();
                 gnb2depth.eq(idx).addClass('active');
+                $('#gnb2Depth').css({
+                    borderBottom:"1px solid #e9e9e9",
+                    borderTop:"1px solid #e9e9e9"
+                })
             });
 
             gnb2depth.mouseover(function () {
                 gnbIndex.removeClass('active');
                 let idx = $(this).index();
                 gnbIndex.eq(idx).addClass('active');
+
             });
 
             $('#header').on({
                 "mouseleave focusout" : function () {
-                    $('.header-main').css('background','none');
                     gnb2depth.removeClass('active')
                     gnbIndex.removeClass('active')
-
+                    $('.header-main').css('background','none');
+                    $('#gnb2Depth').css('border','none')
                     if ($('html').is('.animated')) {
                         $('#header').removeClass('header-bg-white')
                     }
@@ -119,6 +123,7 @@
                     height: "100%"
                 }, 1000, function () {
                     $('.swiper-wrapper').css({'overflow': 'visible'})
+                    $pagination.show()
                     setSlider()
 
                     $('html').addClass('animated')
@@ -133,7 +138,6 @@
                 $wrapper.css({'overflow': 'visible'})
                 $('.text-box').fadeIn()
                 $('.scroll-wrap').delay(1000).fadeIn()
-                $pagination.delay(1000).fadeIn()
                 $('.swiper_btn').delay(1000).fadeIn()
                 $('.stock_information').delay(1500).fadeIn()
             }
@@ -161,11 +165,11 @@
                         clickable: true,
 
                            renderBullet: function (index, className) {
-                        var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="47" height="47" viewBox="0 0 25 25">' +
-                            '<circle class="path" cx="8" cy="8" r="5" fill="none" transform="rotate(-90 8 8)" stroke="#FFF"' +
-                            'stroke-opacity="1" stroke-width="0.3px"></circle>' +
-                            '<circle cx="8" cy="8" r="1" fill="#FFF"></circle>' +
-                            '</svg></span>'
+                               var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
+                               '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
+                               'stroke-opacity="1" stroke-width="1px"></circle>' +
+                               '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
+                               '</svg></span>';
                         return bu;
 
                         },
@@ -182,6 +186,7 @@
         <!-- e 메인비주얼 영역 -->
 
         <!-- s 주가 영역 -->
+        <%--
         <div class="stock_information">
 
             <span class="close_btn"></span>
@@ -208,6 +213,7 @@
                 })
             })
         </script>
+         --%>
         <!-- e 주가 영역 -->
     </div>
 
@@ -236,25 +242,25 @@
                 <div class="shortcuts-box" data-aos="fade-up" data-aos-duration="500">
                     <ul class="btn-list clearfix">
                         <li>
-                            <a href="#">
-                                <p>연구서비스</p>
-                                <p class="sub-text">다양한 유전자 연구로<br>인류 건강에 이바지 합니다</p>
+                            <a href="/${rc.locale.language }/company/overview">
+                                <p>기업개요</p>
+                                <p class="sub-text">대한민국 바이오 벤처 대표기업<br>마크로젠 입니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <p>임상진단서비스</p>
-                                <p class="sub-text">빅데이터를 기반으로<br>정밀의학의 실현하고 있습니다</p>
+                            <a href="/${rc.locale.language }/company/global-network">
+                                <p>글로벌 마크로젠</p>
+                                <p class="sub-text">유전체  분석 연구를 이끄는<br>글로벌 파트너와 함께 합니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <p>헬스케어서비스</p>
-                                <p class="sub-text">건강 관리에 도움을 주는<br>개인 맞춤형 헬스케어 서비스입니다</p>
+                            <a href="/${rc.locale.language }/company/esg-management">
+                                <p>ESG</p>
+                                <p class="sub-text">인류의 건강한 미래가<br>지속가능한 세계를 만들어갑니다</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -301,54 +307,70 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
                     <div class="text-area" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
                             <div class="title">
-                                <span>GEM</span>
+                                <span>퍼스널 헬스케어</span>
                                 <a href="#" class="btn btn-circle btn-white btn-md"><i
                                         class="icon icon-arrow-right-short"></i></a>
                             </div>
                             <div class="desc">
-                                인간 유전자의 기능을 밝히기 위한 목적으로 유전자 편집 기술을 이용해<br/>
-                                특정 유전자를 삽입 또는 제거하거나 변형한 실험용 마우스를 생산 및 공급하는 서비스입니다
+                                유전자 특성에 따라 건강관리에 도움을 주는<br/>
+                                개인 맞춤형 헬스케어 솔루션입니다
                             </div>
                     </div>
                 </div>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>NGS</span>
+                            <span>더바이옴</span>
                             <a href="#" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a></div>
                         <div class="desc">
-                            모든 유전자의 집합체인 유전체를 무수히 많은 조각으로 나눠서 읽은 후,<br/>
-                            얻어진 염기서열 조각을 조립하여 전체 유전체의 서열을 분석하는 방법입니다
+                            마이크로바이옴을 분석하여<br/>
+                            나에게 가장 잘 맞는 맞춤형 솔루션을 제공합니다
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>CES</span>
+                            <span>임상진단/치료</span>
                             <a href="#" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a>
                         </div>
                         <div class="desc">
-                            생화학적 방법을 이용하여 DNA염기서열을 분석하는 서비스로서<br/>
-                            다양한 연구목적으로 활용됨으로써 생명공학산업 발전에 주요한 밑거름이 되고 있습니다
+                            COVID19, 암 유전체 검사 등 질병 발생원인 연구로<br/>
+                            맞춤치료에 도움이 될 수 있습니다
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>Microarray</span>
+                            <span>반려동물</span>
                             <a href="#" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a>
                         </div>
                         <div class="desc">
-                            눈에 보이지 않는 미세한 probe들을 chip에 배열시킨 후 여기에 DNA, RNA, 단백질 등을 반응시킴으로써<br/>
-                            유전자의 발현패턴을 측정하고 변이여부 등을 확인할 수 있는 기술입니다
+                            소중한 가족인 반려동물의 건강한 삶을 위해<br/>
+                            유전질환예측, 질병 예방 등 맞춤 관리 솔루션을 제공합니다
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
+                    <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
+                        <div class="title">
+                            <span>연구서비스</span>
+                            <a href="#" class="btn btn-circle btn-white btn-md"><i
+                                    class="icon icon-arrow-right-short"></i></a>
+                        </div>
+                        <div class="desc">
+                            글로벌 스탠다드 인프라 기반의<br/>
+                            빠른 염기서열 분석 연구데이터로 경쟁력을 갖추고 있습니다
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -397,13 +419,11 @@
 	                </div>
 	                <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 	                    <div class="info-box">
-	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Clinical
-	                            Diagnostics
-	                        </div>
-	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">개개인의 건강한 삶을 위한 다양한 솔루션을 제공하는 임상진단 서비스를 영상으로 만나보세요</div>
-	                        <a href="#" class="btn-play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span class="sr-only">재생 버튼</span></a>
+	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
+	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
+	                        <a href="#" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
-	                    <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a>
+	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
 	                </div>
 	            </div>
             </c:if>
@@ -514,7 +534,7 @@
                         </div>
                     </div>
                     <div class="map">
-                        <a class="pin amsterdam active" href="#"><i></i><span>Amsterdam, The Netherlands</span></a>
+                        <a class="pin amsterdam" href="#"><i></i><span>Amsterdam, The Netherlands</span></a>
                         <a class="pin seoul" href="#"><i></i><span>Seoul, Korea</span></a>
                         <a class="pin boston" href="#"><i></i><span>Boston, USA</span></a>
                         <a class="pin tokyo" href="#"><i></i><span>Tokyo, japan</span></a>

@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-  <div class="full-bg business_bg">
+  <div class="full-bg business_bg oligo">
     <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
@@ -19,7 +19,7 @@
 </nav>
 
       <div class="hero-title">OLIGO</div>
-      <a href="#" class="btn btn-round btn-service">
+      <a href="#_tab-box" class="btn btn-round btn-service">
         <span>SERVICE</span>
         <i class="icon icon-arrow-bottom-short-white"></i>
       </a>
@@ -44,7 +44,7 @@
 </div>
 
       <!--탭 링크-->
-      <div class="tab-box">
+      <div class="tab-box" id="_tab-box">
         <p class="font-h4 title">DNA Synthesis SERVICE</p>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">

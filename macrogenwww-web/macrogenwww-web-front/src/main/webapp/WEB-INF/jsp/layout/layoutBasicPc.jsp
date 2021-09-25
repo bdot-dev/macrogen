@@ -27,6 +27,7 @@
 		        gnb2depth.removeClass('active');
 		        let idx = $(this).index();
 		        gnb2depth.eq(idx).addClass('active');
+		        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
 		    });
 
 		     gnb2depth.mouseover(function () {
@@ -39,6 +40,7 @@
 		        "mouseleave focusout" : function () {
 		            gnb2depth.removeClass('active')
 		            gnbIndex.removeClass('active')
+		            $('#gnb2Depth').css('border','none')
 		        }
 		    })
 		</script>
