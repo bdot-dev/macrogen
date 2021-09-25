@@ -233,6 +233,8 @@ public class CompanyController extends DefaultController {
 	public String recruit(@PathVariable LangId langId,
 			@ModelAttribute("listVo") EmpaVo listVo, Model model) throws Exception {
 
+		model.addAttribute("remove_header_bg_white_unuse", "Y");
+
 		listVo.setRecordCountPerPage(3);
 		listVo.setPageSize(5);
 		listVo.setLangCode(langId.name());
@@ -278,6 +280,8 @@ public class CompanyController extends DefaultController {
 	@RequestMapping("/recruit/{empaSn}")
 	public String recruitView(@PathVariable LangId langId,
 			@PathVariable Long empaSn, @ModelAttribute("listVo") EmpaVo listVo, Model model) throws Exception {
+
+		model.addAttribute("remove_header_bg_white_unuse", "Y");
 
 		EmpaVo resultVo = empaService.viewByPk(empaSn);
 		model.addAttribute("resultVo", resultVo);

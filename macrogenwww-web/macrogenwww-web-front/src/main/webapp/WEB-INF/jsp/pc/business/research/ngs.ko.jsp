@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg business_bg">
+    <div class="full-bg business_bg ngs">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
@@ -20,7 +20,7 @@
 
             <div class="hero-title">NGS</div>
             <div class="slogan-sub">Next Generation Sequencing</div>
-            <a href="#" class="btn btn-round btn-service">
+            <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>
             </a>
@@ -47,7 +47,7 @@
 </div>
 
             <!--탭 슬라이드-->
-            <div class="tab-box">
+            <div class="tab-box" id="_tab-box">
                 <p class="font-h4 title">SERVICE</p>
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
@@ -200,7 +200,7 @@
                     <hr class="divider">
                     <div class="list-area-group">
                         <div class="list-area">
-                            <p class="title font-h8">Sequencing Platform</p>
+                            <p class="title font-h8">Main Capture Kit</p>
                             <ul class="list-circle-dot">
                                 <li>Agilent SureSelect Exome Capture kit</li>
                                 <li>Truseq Exome Enrichment Kit</li>
@@ -476,10 +476,10 @@
                         <div class="navigation">
                             <div class="content clearfix">
                                 <a href="#" class="item prev">
-                                    <div class="title">Transcriptome Sequencing</div>
+                                    <div class="title">Single Cell Multi-omics analysis</div>
                                 </a>
                                 <a href="#" class="item next">
-                                    <div class="title">Single Cell Multi-Omics analysis</div>
+                                    <div class="title">Spatial Gene Expression analysis</div>
                                 </a>
                             </div>
                         </div>
@@ -508,7 +508,7 @@
                         <div class="navigation">
                             <div class="content clearfix">
                                 <a href="#" class="item prev">
-                                    <div class="title">Single Cell Multi-omics analysis</div>
+                                    <div class="title">ATAC analysis</div>
                                 </a>
                             </div>
                         </div>

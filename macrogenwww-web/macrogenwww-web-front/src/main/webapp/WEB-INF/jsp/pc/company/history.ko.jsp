@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">연혁</div>
-            <div class="slogan ko">슬로건정리필요</div>
-            <div class= "slogan-sub">‘홍익인간’의 가치를 실현하기 위해 오늘도 밤을 밝힙니다</div>
+            <div class="slogan ko">유전체 분석 기술로<br>미래를 열어갑니다</div>
+            <div class= "slogan-sub">마크로젠은 인류 건강의 새 역사를 만들고 있습니다</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
