@@ -106,9 +106,9 @@
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-crisper_kiko_mouse.png" alt="CRISPR KI/KO Mouse">
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -213,9 +213,9 @@
                     </div>
 
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -252,9 +252,9 @@
                     </div>
 
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -313,9 +313,9 @@
                         세 달에 한 번씩 마우스 관리 내용을 상세히 안내하고 있어 안심하고 서비스 이용이 가능합니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="mailto:mouse@macrogen.com" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">

@@ -42,7 +42,7 @@
                 <li><a href="/${rc.locale.language }/company/history">연혁</a></li>
                 <li><a href="/${rc.locale.language }/company/vision">비전</a></li>
                 <li><a href="/${rc.locale.language }/company/certification">인증</a></li>
-                <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li>
+                <%-- <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li> --%>
             </ul>
         </div>
         <div class="item">
@@ -154,8 +154,8 @@
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></div>
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <div class="title"><a href="#">ESG평가</a></div>
-        </div>
+        </div> -->
     </div>
 </div>

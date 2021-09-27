@@ -62,11 +62,17 @@
 		$('#modalListOfWinners .btn-close').on('click', function() {
 			window.history.replaceState({}, document.title, ' ');
 		});
+
+	    $('.btn-close').on('click',function (){
+	    	modalListOfWinners.hide();
+	    })
+
 	});
 </script>
 
 <script>
 	var $form = $('#listForm');
+    var $modalContent = $('#modalListOfWinners .modal-content');
 
 	$(function() {
 		$('.btn-list').on('click', function(e) {
