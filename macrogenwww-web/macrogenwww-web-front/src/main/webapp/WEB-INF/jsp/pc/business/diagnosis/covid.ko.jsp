@@ -36,15 +36,24 @@
                     </div>
                 </div>
             </div>
-            <!--스크립트-->
+            <!--탭메뉴 스크립트-->
             <script>
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
-                    $(this).addClass('active').siblings().removeClass('active');
 
+                    $(this).addClass('active').siblings().removeClass('active');
+                    <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                 });
+
+                function setTabContent(idx){
+                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                }
             </script>
             <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
@@ -204,7 +213,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(1)">
                                     <div class="title">스마트 모바일 랩</div>
                                 </a>
                             </div>
@@ -288,7 +297,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(0)">
                                     <div class="title">Axen™ COVID-19 RT 진단키트</div>
                                 </a>
                             </div>

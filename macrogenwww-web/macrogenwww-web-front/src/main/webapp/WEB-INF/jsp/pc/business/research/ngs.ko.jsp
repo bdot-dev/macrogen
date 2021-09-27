@@ -74,77 +74,28 @@
                             </div>
                         </div>
                         <ul class="tab-modal-body">
-                            <li><a href="#">Whole Genome Sequencing</a></li>
-                            <li><a href="#">Whole Exome Sequencing</a></li>
-                            <li><a href="#">Transcriptome Sequencing</a></li>
-                            <li><a href="#">Epigenome Sequencing</a></li>
-                            <li><a href="#">Single Cell Multi-omics analysis</a></li>
-                            <li><a href="#">ATAC analysis</a></li>
-                            <li><a href="#">Spatial Gene Expression analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(0)">Whole Genome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(1)">Whole Exome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(2)">Transcriptome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(3)">Epigenome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
                         </ul>
                     </div>
 
                     <!--탭모달 스크립트-->
                     <script>
-                        $("._btnMenu").click(function() {
+                        $("._btnMenu").on('click',function() {
                             $(".tab-modal").show();
                         });
-                        $("._closebtn").click(function() {
+                        $("._closebtn").on('click',function() {
                             $(".tab-modal").hide();
                         });
                     </script>
                 </div>
             </div>
             <!--슬라이드 스크립트-->
-            <script>
-                var swiper = new Swiper("._swiperTab", {
-                    slidesPerView: "auto",
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                    watchActiveIndex: true,
-                    slideToClickedSlide: true,
-                    navigation: {
-                        nextEl: "._slideRight",
-                        prevEl: "._slideLeft",
-                    },
-                });
-
-                $(document).ready(function (){
-                    var idx = $('._swiperTab .swiper-slide').length;
-                    var sum= 0;
-
-                    // slide wrap width
-                    for (var j = 0; j < idx; j++) {
-                        sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-                    }
-                    $('.swiper-wrapper').css('width',sum)
-
-                    // slide width
-                    for (var i = 0; i <= idx; i++) {
-                        var target = $(`.swiper-slide:eq(${i})`);
-                        var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
-                        target.css('width',idxWidth)
-                    }
-                })
-
-                function setTabContent (idx){
-                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-                    swiper[0].slideTo(idx);
-
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                }
-
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    setTabContent(idx)
-                });
-
-
-
-                $('.swiper-notification').remove();
-            </script>
             <div class="info-box-wrap tab-content">
                 <!--Genome-->
                 <div class="info-box show">
@@ -430,9 +381,9 @@
                     <p class="desc">싱글셀 유전자 분석 기술의 등장으로 기존 유전자 분석에서는 알 수 없던 극미량의 세포 유전자 분석과 소량으로 발현되는 유전자 분석이 가능합니다. 이를 통해 개인의 환경, 유전, 생물학적 특성을 세밀히 이해할 수 있으며 질병 예측과 예방, 맞춤 진단이 가능한 초정밀의학 실현에 한 단계 다가가게 되었습니다. 마크로젠은 국내 싱글셀 유전자 분석 프로젝트를 가장 많이 진행했으며, 싱글셀 전사체 분석(single Cell Gene Expression)과 공간 전사체 분석(Spatial Gene Expression) 서비스의 CSP(Certified Service Provider) 동시 인증을 가진 국내 유일의 업체입니다.  또한 새로 등장하는 싱글셀 유전체 분석 신기술을 빠르게 도입함으로써 싱글셀 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -466,9 +417,9 @@
                         Chromatin)서비스를 제공하는국내 기업은 마크로젠이 유일합니다. ATAC 분석을 통해 응축되어 있던 DNA가 RNA 전사 과정을 위해 풀려 있는 부분의 서열을 알게
                         됨으로써 DNA의 염기 서열이 동일할지라도 RNA로 어떻게 전사가 조절되는지 확인 가능합니다. </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -513,6 +464,55 @@
             </div>
         </div>
     </div>
+    <script>
+        var swiper = new Swiper("._swiperTab", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            centeredSlides: false,
+            watchActiveIndex: true,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: "._slideRight",
+                prevEl: "._slideLeft",
+            },
+        });
+
+        $(document).ready(function (){
+            var idx = $('._swiperTab .swiper-slide').length;
+            var sum= 0;
+
+            // slide wrap width
+            for (var j = 0; j < idx; j++) {
+                sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
+            }
+            $('.swiper-wrapper').css('width',sum)
+
+            // slide width
+            for (var i = 0; i <= idx; i++) {
+                var target = $(".swiper-slide:eq("+"i"+")");
+                var idxWidth = $(".swiper-slide:eq("+"i"+")").outerWidth(true) - 40;
+                target.css('width',idxWidth)
+            }
+        })
+
+        function setTabContent (idx){
+            $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+            swiper[0].slideTo(idx);
+
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        }
+
+        $('._swiperTab .swiper-slide').on('click', function(){
+            var idx = $(this).index();
+            console.log(idx)
+            console.log('dfsdfdsfds')
+            setTabContent(idx)
+        });
+
+        $('.swiper-notification').remove();
+    </script>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 </body>

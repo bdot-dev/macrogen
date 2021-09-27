@@ -37,7 +37,7 @@
             <!-- e text -->
 
             <!-- s bg banner -->
-            <div class="section-banner">
+            <!-- <div class="section-banner">
                 <div class="banner banner-1">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                         <div class="font-h6">MISSION</div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- e bg banner -->
 
             <!-- s ESG 경영목표 -->

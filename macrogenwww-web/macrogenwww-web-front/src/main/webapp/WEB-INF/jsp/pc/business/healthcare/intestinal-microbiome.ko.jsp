@@ -45,8 +45,8 @@
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="https://www.my-genomestory.com/service_detail?service_code=mbs&selectLang=ko" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://smartstore.naver.com/mygenomestory/products/4448724880" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                 </div>
             </div>

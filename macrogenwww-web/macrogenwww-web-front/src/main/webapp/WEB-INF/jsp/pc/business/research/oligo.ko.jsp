@@ -59,14 +59,24 @@
           </div>
         </div>
       </div>
-      <!--탭 스크립트-->
+      <!--탭메뉴 스크립트-->
       <script>
         $('._swiperTab .swiper-slide').on('click', function(){
           var idx = $(this).index();
+
           $(this).addClass('active').siblings().removeClass('active');
+          <!--탭메뉴 클릭시 페이지 변경-->
           $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
         });
+
+        function setTabContent(idx){
+          $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+          <!--탭메뉴 클릭시 페이지 변경-->
+          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        }
       </script>
 
       <div class="info-box-wrap tab-content">
@@ -98,7 +108,7 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item next">
+                <a href="#" class="item next" onclick="setTabContent(1)">
                   <div class="title">Identification 서비스</div>
                 </a>
               </div>
@@ -128,10 +138,10 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev" onclick="setTabContent(0)">
                   <div class="title">Standard Oligo</div>
                 </a>
-                <a href="#" class="item next">
+                <a href="#" class="item next"onclick="setTabContent(2)">
                   <div class="title">Premade Oligo</div>
                 </a>
               </div>
@@ -171,11 +181,11 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
-                  <div class="title">Standard Oligo</div>
+                <a href="#" class="item prev" onclick="setTabContent(1)">
+                  <div class="title">Modified Oligo</div>
                 </a>
-                <a href="#" class="item next">
-                  <div class="title">Premade Oligo</div>
+                <a href="#" class="item next" onclick="setTabContent(3)">
+                  <div class="title">Plate Oligo</div>
                 </a>
               </div>
             </div>
@@ -214,10 +224,10 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev" onclick="setTabContent(2)">
                   <div class="title">Premade Oligo</div>
                 </a>
-                <a href="#" class="item next">
+                <a href="#" class="item next" onclick="setTabContent(4)">
                   <div class="title">Duplex Oligo</div>
                 </a>
               </div>
@@ -258,10 +268,10 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev" onclick="setTabContent(3)">
                   <div class="title">Plate Oligo</div>
                 </a>
-                <a href="#" class="item next">
+                <a href="#" class="item next" onclick="setTabContent(5)">
                   <div class="title">RAPD Kits</div>
                 </a>
               </div>
@@ -304,7 +314,7 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev" onclick="setTabContent(4)">
                   <div class="title">Duplex Oligo</div>
                 </a>
               </div>

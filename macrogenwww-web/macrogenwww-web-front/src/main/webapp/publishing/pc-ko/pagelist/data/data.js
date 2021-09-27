@@ -135,7 +135,7 @@ data.macrogen = {
   title: 'Macrogen',
   list: [
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: 'Main',
       category: 'macrogen',
       page: 'Main'

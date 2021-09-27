@@ -235,7 +235,7 @@
                                 맞춤의학으로 세계를 이끄는</p>
                             <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">생명공학기업 마크로젠 입니다</p>
                         </div>
-                        <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
+                        <a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
                            data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -305,10 +305,10 @@
         <div class="swiper-container _businessSlider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
-                    <div class="text-area" data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
+                    <div class="text-area">
                             <div class="title">
                                 <span>퍼스널 헬스케어</span>
-                                <a href="#" class="btn btn-circle btn-white btn-md"><i
+                                <a href="/ko/business/healthcare/personal-genetic" class="btn btn-circle btn-white btn-md"><i
                                         class="icon icon-arrow-right-short"></i></a>
                             </div>
                             <div class="desc">
@@ -318,10 +318,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
-                    <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
+                    <div class="text-area">
                         <div class="title">
                             <span>더바이옴</span>
-                            <a href="#" class="btn btn-circle btn-white btn-md"><i
+                            <a href="/ko/business/healthcare/intestinal-microbiome" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a></div>
                         <div class="desc">
                             마이크로바이옴을 분석하여<br/>
@@ -331,10 +331,10 @@
                 </div>
 
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
-                    <div class="text-area" data-aos="fade-left" data-aos-duration="500">
+                    <div class="text-area">
                         <div class="title">
                             <span>임상진단/치료</span>
-                            <a href="#" class="btn btn-circle btn-white btn-md"><i
+                            <a href="/ko/business/diagnosis/cancer" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a>
                         </div>
                         <div class="desc">
@@ -344,10 +344,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
-                    <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
+                    <div class="text-area">
                         <div class="title">
                             <span>반려동물</span>
-                            <a href="#" class="btn btn-circle btn-white btn-md"><i
+                            <a href="/ko/business/healthcare/pet-genetic" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a>
                         </div>
                         <div class="desc">
@@ -360,7 +360,7 @@
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
                             <span>연구서비스</span>
-                            <a href="#" class="btn btn-circle btn-white btn-md"><i
+                            <a href="/ko/business/research/ngs" class="btn btn-circle btn-white btn-md"><i
                                     class="icon icon-arrow-right-short"></i></a>
                         </div>
                         <div class="desc">
@@ -384,12 +384,6 @@
                 spaceBetween: 20,
             });
 
-            /*내부 텍스트 slide*/
-            if ($('.swiper-slide').hasClass('swiper-slide-active')) {
-                $(this).find().addClass('text_animate')
-            } else {
-                $(this).find().removeClass('text_animate')
-            }
         })
     </script>
 </div>
@@ -421,7 +415,7 @@
 	                    <div class="info-box">
 	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
 	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
-	                        <a href="#" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
+	                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
 	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
 	                </div>
