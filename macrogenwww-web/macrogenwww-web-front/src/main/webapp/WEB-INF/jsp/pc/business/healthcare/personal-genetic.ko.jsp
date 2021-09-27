@@ -158,7 +158,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -206,8 +206,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                        <a href="#" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/4150226329" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
