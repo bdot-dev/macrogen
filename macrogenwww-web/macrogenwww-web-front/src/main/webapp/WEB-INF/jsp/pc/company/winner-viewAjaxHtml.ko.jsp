@@ -67,6 +67,7 @@
 
 <script>
 	var $form = $('#listForm');
+    var $modalContent = $('#modalListOfWinners .modal-content');
 
 	$(function() {
 		$('.btn-list').on('click', function(e) {
