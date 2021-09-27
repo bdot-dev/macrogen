@@ -36,7 +36,7 @@
                     <div class="caption">※ 본 검사는 검사 결과가 갖는 임상적 의미가 확립되지 않았으며,  이에 따르는 건강에 관련한 행위가 유용하다는 객관적 타당성이 아직 부족합니다.</div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                     </div>
                 </div>
             </div>

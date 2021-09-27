@@ -84,7 +84,6 @@
 		</div>
 		<script>
 		    var modalListOfWinners = new bootstrap.Modal(document.getElementById('modalListOfWinners'));
-		    console.log('new bootstrap.Modal()', modalListOfWinners);
 		</script>
 	</c:if>
 </body>

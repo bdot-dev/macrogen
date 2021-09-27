@@ -140,4 +140,21 @@
     </div>
     <!--footer 수정사항 있을시 메인 footer 별도 확인-->
 
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
 </body>

@@ -136,7 +136,6 @@
                         <iframe width="1180" height="664" src="https://www.youtube.com/embed/kU6SGSdnqTI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="btn-area">
                             <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
                             <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                         </div>
                     </div>

@@ -24,11 +24,13 @@
 	                        <div class="swiper-wrapper">
 	                        	<c:forEach var="result" items="${upendFixingList }" varStatus="status">
 		                            <div class="swiper-slide">
-		                                <div class="info">
-		                                    <div class="tit">${result.nttSj }</div>
-		                                    <div class="cont">${fn:substring(result.nttCnBrief, 0, 200) }</div>
-		                                    <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
-		                                </div>
+		                            	<a href="javascript:linkView(${result.nttSn })">
+			                                <div class="info">
+			                                    <div class="tit">${result.nttSj }</div>
+			                                    <div class="cont">${fn:substring(result.nttCnBrief, 0, 200) }</div>
+			                                    <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+			                                </div>
+		                                </a>
 		                            </div>
 	                        	</c:forEach>
 	                        </div>
@@ -58,17 +60,21 @@
 	                        				<c:set var="imgUrl" value="${publicUrl }${result.thumbFlpth }" />
 	                        			</c:otherwise>
 	                        		</c:choose>
-		                            <div class="swiper-slide"><img src="${imgUrl }" alt="보도자료"></div>
+		                            <div class="swiper-slide">
+		                            	<a href="javascript:linkView(${result.nttSn })">
+		                            		<img src="${imgUrl }" alt="${result.nttSj }">
+		                            	</a>
+		                            </div>
 		                        </c:forEach>
 	                        </div>
-	                        <div class="swiper-pagination"></div>
+	                        <!-- <div class="swiper-pagination"></div> -->
 	                    </div>
 	                    <script>
 	                        var imageSwiper = new Swiper("._imageSlider", {
-	                            pagination: {
+	                            /* pagination: {
 	                                el: ".swiper-pagination",
 	                                clickable : true,
-	                            },
+	                            }, */
 	                            navigation: {
 	                                nextEl: '.page-item.next',
 	                                prevEl: '.page-item.prev',

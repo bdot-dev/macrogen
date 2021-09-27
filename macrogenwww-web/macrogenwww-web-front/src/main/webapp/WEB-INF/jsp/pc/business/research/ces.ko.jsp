@@ -126,9 +126,9 @@
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img_sequencingchart.png" alt="Difficult Template Sequencing">
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -178,9 +178,9 @@
                         </ul>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -231,9 +231,9 @@
                         </div>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">

@@ -90,9 +90,9 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -120,9 +120,9 @@
             또한, 주문 페이지를 통하여 Oligo 제작의 모든 상황을 확인할 수 있으며, 합성되는 모든 Modified oligo는 MALDI-TOF를 이용한 100% QC과정을 거쳐 믿을 수 있는 품질의 Modified oligo를 제공합니다.
           </p>
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -163,9 +163,9 @@
           </div>
 
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -206,9 +206,9 @@
 
           </div>
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -250,9 +250,9 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -296,9 +296,9 @@
           </div>
 
           <div class="btn-area">
-            <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">

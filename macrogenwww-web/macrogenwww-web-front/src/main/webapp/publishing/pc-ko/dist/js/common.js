@@ -59,6 +59,7 @@ front.common = (function () {
     // $(".header").sticky({topSpacing:0});
 
       $('._btnTooltip').on('click',function (){
+        $('.text-box').hide();
         $(this).siblings().show();
       })
 
