@@ -230,27 +230,27 @@
                         <div class="img-wrap">
                             <div class="img">
                                 <span class="tit">Illumina</span>
-                                <img src="../../img/macrogen/img-authorization-8.png" alt="Illumina">
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-8.png" alt="Illumina">
                                 <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Pacific Biosciences</span>
-                                <img src="../../img/macrogen/img-authorization-9.png" alt="Pacific Biosciences">
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-9.png" alt="Pacific Biosciences">
                                 <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Agilent Technologies</span>
-                                <img src="../../img/macrogen/img-authorization-10.png" alt="Agilent Technologies">
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-10.png" alt="Agilent Technologies">
                                 <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Life Technologies</span>
-                                <img src="../../img/macrogen/img-authorization-11.png" alt="Life Technologies">
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-11.png" alt="Life Technologies">
                                 <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Thermo Fisher Scientific</span>
-                                <img src="../../img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
                                 <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                         </div>
