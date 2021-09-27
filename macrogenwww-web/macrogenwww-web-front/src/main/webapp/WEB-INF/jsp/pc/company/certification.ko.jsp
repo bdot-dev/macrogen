@@ -67,7 +67,7 @@
                             인증을 획득하여 관리·운영을 하고 있습니다. 전사적인 품질 보장 방침 및 목표, 업무 프로세스 상세 규정을 수립함으로써 경영 효율성을 제고함과 동시에 원가절감,
                             이익개선, 경쟁력 향상 등 긍정적인 성과를 내고 있습니다.
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1Oy-xTWs2j3z0Da6ouKD_oIaG7rEV7p4i">ISO 9001 : 2005 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1Oy-xTWs2j3z0Da6ouKD_oIaG7rEV7p4i" target="_blank">ISO 9001 : 2005 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 2019년 2월 식품의약품안전처로부터 NGS 기반 체외진단 시약 GMP 인정을 획득했습니다.  이를 통해 체외진단 시약 제조기술의 안전성과 유효성을 검증 받아 자체 개발한 임상 진단 시약을 직접 시장에 출시 및 판매할 수 있습니다. </div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh">GMP인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">GMP인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 2019년 5월 식품의약품안전처가 공인한 임상검체분석기관으로 지정되었습니다. 국내 최초로 NGS 기술을 통한 검체 분석이 가능한 기관으로써 신뢰성 높은 분석 서비스를 제공하여 국내 임상시험의 경쟁력 강화에 기여합니다.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh">임상시험검체분석기관 지정서 GCLP  보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">임상시험검체분석기관 지정서 GCLP  보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠 본사 및 분당 정밀의학센터와 소마젠(미주법인), 싱가포르법인은 NGS 기술을 이용한 임상진단 시퀀싱 분야에서 CAP 인증을 획득했습니다.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh">CAP 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">CAP 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 국내외 임상진단 시장의 진출을 위해 한국 본사 및 분당 정밀의학센터와 소마젠(미주법인) 임상검사실에 대해 CLIA 인증을 획득했습니다. 이를 통해 국내외 의료기관의 환자 시료를 검사하는 것은 물론, 다양한 임상진단 서비스를 제공하고 있습니다.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh">CLIA인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">CLIA인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-4.png" alt="CLIA 인증"></div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 본사에서 수행하는 분자유전검사 서비스와 관련하여 매년 A등급(보험 미등재 항목 포함 시, P등급)을 획득했습니다. 고객에게 더욱 신뢰할 수 있는 결과를 제공함으로써 국민건강 및 생명과학 분야의 발전에 기여합니다.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
@@ -201,11 +201,11 @@
                         <div class="img-wrap">
                             <div class="img">
                                 <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-6.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM">공평성 선언문 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM" target="_blank">공평성 선언문 보기</a>
                             </div>
                             <div class="img">
                                 <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-7.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM">KOLAS인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM" target="_blank">KOLAS인증서 보기</a>
                             </div>
                         </div>
                     </div>
@@ -231,27 +231,27 @@
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="../../img/macrogen/img-authorization-8.png" alt="Illumina">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN">인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Pacific Biosciences</span>
                                 <img src="../../img/macrogen/img-authorization-9.png" alt="Pacific Biosciences">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN">인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Agilent Technologies</span>
                                 <img src="../../img/macrogen/img-authorization-10.png" alt="Agilent Technologies">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN">인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Life Technologies</span>
                                 <img src="../../img/macrogen/img-authorization-11.png" alt="Life Technologies">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN">인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Thermo Fisher Scientific</span>
                                 <img src="../../img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
-                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN">인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">인증서 보기</a>
                             </div>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                         </div>
                         <div class="desc with-date">마크로젠은 국제표준화기구(ISO)가 2019년 8월 제정한 가장 권위 있는 국제 표준 개인정보보호 인증 ISO27701(국제표준 개인정보보호)을 획득하여 국내·국제 최고 수준의 정보보호 인증 3종을 모두 취득한 유일한 기업입니다.</div>
                         <div class="date">※ 유효기간 : 2021.06.22 ~ 2024.06.21</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH">ISO27701 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">ISO27701 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-13.png" alt="ISO27701 (국제표준 개인정보보호)"></div>
@@ -289,7 +289,7 @@
                         </div>
                         <div class="desc with-date">마크로젠은 정밀의학에 필요한 정보의 철저한 관리 체계를 구축하기 위해 ISMS-P 인증을 획득했습니다.  고객 정보 및 유전체 데이터를 안전하게 보호한다는 것을 입증하는 객관적인 지표입니다. 마크로젠이 업계 최초로 획득한 ISMS-P는 과학기술정보통신부와 개인정보보호위원회가 공동으로 고시한 국내 최고 수준의 보안 관리 체계입니다. </div>
                         <div class="date">※ 유효기간 : 2021.03.03 ~ 2024.03.02</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH">ISMS-P 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">ISMS-P 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-14.png" alt="ISMS-P (정보보호 및 개인정보보호 관리체계)"></div>
@@ -302,14 +302,14 @@
                             <div class="tooltip-box">
                                 <a class="btn-tooltip _btnTooltip" href="#"><i class="icon-tooltip"></i></a>
                                 <div class="text-box">
-                                    <a class="btn-tooltip-close _btnTooltipClose" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH"><i class="icon-tooltip-close"></i></a>
+                                    <a class="btn-tooltip-close _btnTooltipClose" href="#" ><i class="icon-tooltip-close"></i></a>
                                     <span>ISO/IEC 27001은 국제표준화기구 ISO와 국제전기기술위원회 IEC에서 제정한 것으로, 정보보호 분야 내 최고 권위의 국제 표준 인증입니다. ISO/IEC 27001 인증을 획득하기 위해서는 정보보호 정책, 물리적 보안, 정보접근 통제 등 정보보호 관리 영역 총 14개 분야 114개 세부 항목에 대한 엄격한 심사를 통과해야 합니다.</span>
                                 </div>
                             </div>
                         </div>
                         <div class="desc with-date">마크로젠은 업계 최초 국내 개인정보보호(PIMS) 및 국제 정보보호(ISO/IEC 27001) 인증을 획득했습니다. </div>
                         <div class="date">※ 유효기간 : 2021.03.03 ~ 2024.03.02</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="#">ISO/IEC 27001:2013 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">ISO/IEC 27001:2013 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-15.png" alt="ISO/IEC 27001:2013 인증"></div>

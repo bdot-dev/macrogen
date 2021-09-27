@@ -49,13 +49,7 @@
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/company/global-network">글로벌 네트워크</a></div>
         </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/company/ethical-management">지속가능경영</a></div>
-            <ul>
-                <li><a href="/${rc.locale.language }/company/ethical-management">윤리경영</a></li>
-                <li><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></li>
-            </ul>
-        </div>
+
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/company/qualified-image">채용</a></div>
             <ul>
@@ -154,6 +148,12 @@
     <div class="box clearfix">
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></div>
+        </div>
+        <div class="item">
+            <div class="title"><a href="/${rc.locale.language }/company/ethical-management">윤리경영</a></div>
+        </div>
+        <div class="item">
+            <div class="title"><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></div>
         </div>
         <!-- <div class="item">
             <div class="title"><a href="#">ESG평가</a></div>
