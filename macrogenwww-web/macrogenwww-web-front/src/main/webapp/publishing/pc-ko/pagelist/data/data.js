@@ -184,30 +184,6 @@ data.macrogen = {
     },
     {
       stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_01윤리경영',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_01윤리경영'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_01소개',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_02사회공헌_01소개'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_02사회공헌_02과학자상목록'
-    },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세',
-      category: 'macrogen',
-      page: '01Macrogen_03지속가능경영_02사회공헌_03과학자상상세'
-    },
-    {
-      stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
       category: 'macrogen',
       page: '01Macrogen_04채용_01인재상'
@@ -505,6 +481,30 @@ data.esg = {
       url: '06ESG_01ESG경영',
       category: 'ESG',
       page: '06ESG_01ESG경영'
+    },
+    {
+      stateClass: 'complete',
+      url: '06ESG_02윤리경영',
+      category: 'ESG',
+      page: '06ESG_02윤리경영'
+    },
+    {
+      stateClass: 'complete',
+      url: '06ESG_03사회공헌_01소개',
+      category: 'ESG',
+      page: '06ESG_03사회공헌_01소개'
+    },
+    {
+      stateClass: 'complete',
+      url: '06ESG_03사회공헌_02과학자상목록',
+      category: 'ESG',
+      page: '06ESG_03사회공헌_02과학자상목록'
+    },
+    {
+      stateClass: 'complete',
+      url: '06ESG_03사회공헌_03과학자상상세',
+      category: 'ESG',
+      page: '06ESG_03사회공헌_03과학자상상세'
     },
   ]
 }
