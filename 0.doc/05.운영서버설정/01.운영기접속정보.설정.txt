@@ -79,7 +79,7 @@
 		# ./mysql -u macrogenwww -p macrogenwww < /home/eluo/macrogenwww.20210826.sql
 		Macrogenwww123!@#
 
-	- poiretcms db 접속 후, view/function 생성
+	- db 접속 후, view/function 생성
 			-- vw_mngrmenu
 			create or replace view vw_mngrmenu as
 			select
@@ -243,52 +243,35 @@
 			select * from vw_prductctgry;
 
 
-* application 용 폴더 생성
-	/app/poiret/
+#파일 백업
+cd /share/data/atch/public_macrogenwww/
+tar cvfz public_macrogenwww.tar.gz .
 
-* datasource 추가
-	- jdbc/poiretcms
-	- 10.103.16.91 1521 poiretcms / Poiretcms123!@#
+cd /share/data/atch/private_macrogenwww/
+tar cvfz private_macrogenwww.tar.gz .
 
-* 웹서버 설정
-	- 도메인에 대한 분기 처리
-	- was로 포워딩하지 않는 패턴 추가 (/assets/**, /html/**, /mobile/**)
-	- 포워딩 처리
-		. http://poiret.com -> https://www.poiret.com
-		. http://www.poiret.com -> https://www.poiret.com
+#파일 복구
+cd /data/atch/public_macrogenwww
+tar xvfz public_macrogenwww.tar.gz
+find . -type f -exec ls -l {} \;
 
-* SSL 인증서 설정
-	- 웹서버, 와일드카드 형
-	- 웹투비용
+cd /data/atch/private_macrogenwww
+tar xvfz private_macrogenwww.tar.gz
+find . -type f -exec ls -l {} \;
 
-* 배포경로 - webtob (/DATA/deploy/*.*)
-	ftp 업로드 : /DATA/deploy/poiretcms-web.war
-	cd /DATA/websrc_poiret
-	jar xvf ../deploy/poiretcms-web.war
-	rm -rf WEB-INF
+- db 백업 : 개발DB - 엘루오_개발기2 (192.168.1.38)
+  . root 접속
+  # mysqldump -uroot -p macrogenwww > macrogenwww.20210927.1355.sql
+  Mysql123!@#
 
-* 배포경로 - jeus
-	. 관리자 - /app/poiret/poiretcms-web-admin-real.war
-	. 프론트 - /app/poiret/poiretcms-web-front-real.war
+- 복구:운영DB - 마크로젠 운영 DB 211.110.34.201 eluo
+  # su - mysql  #  Macrogen0)
+  # sudo su -
+  # cd /home/mysql/mysql/bin
+  # ./mysql -u macrogenwww -p macrogenwww < /home/eluo/macrogenwww.20210927.1355.sql
+  Macrogenwww123!@#
 
 
-[이관]
-# poiretcms db 백업
-mysqldump -upoiretcms -p poiretcms > poiretcms.20210406.1649.sql
-Poiretcms123!@#
-
-# poiretcms 복구
-10.103.16.92 (db1)
-		svradm4 / WER1$$ihp(또는 @we2@@692), root(su -) / WER1$$ihp(또는 @we2@@692)
-		# mysql -u root -p poiretcms < poiretcms.2021xxxx.sql
-		tlstprP1@#
-
-#전체백업
-cd /share/data/atch/public_poiret/
-tar cvfz public_poiret.tar.gz .
-
-find . -type f -mtime -9 -exec tar cvf public_poiret.added.20210406.1609.tar {} +
-find . -type f -mtime -9 -exec ls -l {} \;
 
 
 

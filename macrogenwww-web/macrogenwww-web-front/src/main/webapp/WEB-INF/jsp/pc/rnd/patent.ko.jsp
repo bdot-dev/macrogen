@@ -28,7 +28,7 @@
                     <c:forEach var="result" items="${resultList }" varStatus="status">
 	                    <div class="item">
 	                        <span class="tit-sub">${result.nationCodeNm }</span>
-	                        <a href="javascript:;" class="tit">${result.patentCn }</a>
+	                        <span class="tit">${result.patentCn }</span>
 	                        <span class="cont">${result.ctgryCodeNmKo }</span>
 	                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
 	                    </div>

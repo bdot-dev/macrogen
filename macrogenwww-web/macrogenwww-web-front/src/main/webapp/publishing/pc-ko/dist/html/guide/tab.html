@@ -338,8 +338,8 @@
 
         // slide width
         for (var i = 0; i <= idx; i++) {
-            var target = $(`.swiper-slide:eq(${i})`);
-            var idxWidth = $(`.swiper-slide:eq(${i})`).outerWidth(true) - 40;
+            var target = $(".swiper-slide:eq("+"i"+")");
+            var idxWidth = $(".swiper-slide:eq("+"i"+")").outerWidth(true) - 40;
             target.css('width',idxWidth)
         }
     })

@@ -48,7 +48,7 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v.0.9 / 09.27</title>
+  <title>Macrogen v.0.10 / 09.27</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?0927"/>
@@ -360,11 +360,20 @@
             <script>
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
+
                     $(this).addClass('active').siblings().removeClass('active');
                     <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                 });
+
+                function setTabContent(idx){
+                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                }
             </script>
 
             <div class="info-box-wrap tab-content">
@@ -435,7 +444,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(1)">
                                     <div class="title">Identification 서비스</div>
                                 </a>
                             </div>
@@ -487,10 +496,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(0)">
                                     <div class="title">Standard Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(2)">
                                     <div class="title">Fragment</div>
                                 </a>
                             </div>
@@ -540,10 +549,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(1)">
                                     <div class="title">Identification</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(3)">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
                             </div>
@@ -640,18 +649,18 @@
                         유전체에서 특정 유전자 또는 특정 DNA 절편을 분리한 뒤 원하는 Cell을 이용한 대량 복제 방법으로 PCR Product를 마크로젠에서 제공하는 Vector(T-vector or Blunt-vector)에 삽입하거나 고객의 Vector(Sub-cloning)로 제공하는 서비스입니다. PCR product의 경우 다양한 원인에 의해 한 종류 이상의 PCR product가 존재할 수 있습니다.  이럴 때 정상적인 Sequencing 결과를 얻을 수 없지만Cloning을 통해 이를 개선할 수 있으며 DNA 대량 복제나 안정적인 보관이 가능합니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(2)">
                                     <div class="title">Fragment</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(4)">
                                     <div class="title">Human ID</div>
                                 </a>
                             </div>
@@ -736,61 +745,61 @@
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
-                            <div class="content clearfix">
+                            <div class="content clearfix" onclick="setTabContent(3)">
                                 <a href="#" class="item prev">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
-                                    <div class="title">Gene Sythesis</div>
-                                </a>
+<!--                                <a href="#" class="item next">-->
+<!--                                    <div class="title">Gene Sythesis</div>-->
+<!--                                </a>-->
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Gene Synthesis-->
-                <div class="info-box">
-                    <p class="main-title font-h4">Gene Synthesis</p>
-                    <p class="subject">유전자합성(Gene Synthesis) 서비스는 고객의 유전자 서열주문에 따라 해당 유전자들을 합성하여 제공하는 서비스로서 백신제조, 유전자치료, 형질발현 등<br>
-                        재조합 DNA를 연구하는 분야에서 널리 활용되고 있습니다.  </p>
-                    <p class="desc img_bottom">마크로젠의 Gene Synthesis 서비스는 DNA Sequencing 뿐만 아니라 무료 Cloning 서비스를 통해 Plasmid DNA상태의 유전자합성 서비스를 제공하고 있으며 Mutagenesis 서비스를 통해 더욱 다양한 범위의 합성서비스를 이용하실 수 있습니다. 또한 ABI 3730xl 시퀀싱 장비를 기반으로 100% 염기서열을 보장해드리며 LIMS(Laboratory Information Management System)를 통해 편리한 주문 및 견적문의가 가능합니다.</p>
-                    <div class="img">
-                        <img src="../../img/@temp/business/img-ces-genesynthesis.png" alt="Gene Synthesis">
-                    </div>
-                    <div class="list-area-group">
-                        <div class="list-area">
-                            <p class="font-h8 title">Features</p>
-                            <ul class="list-circle-dot">
-                                <li>Cloning 서비스 무료(Macrogen standard vector)</li>
-                                <li>ABI 3730xl를 이용한 100% 염기서열 보장</li>
-                                <li>Mutagenesis 서비스 가능</li>
-                                <li>Plasmid DNA로 제공</li>
-                                <li>Sequencing 무료 제공</li>
-                                <li>LIMS(Laboratory Information Management System)를 기반으로 견적문의 및 주문가능</li>
-                            </ul>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-h8 title figure_bottom">Workflow</p>
-                            <div class="img">
-                                <img src="../../img/@temp/business/img_workflow_level5.png" alt="워크플로우">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev">
-                                    <div class="title">Human ID</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="info-box">-->
+<!--                    <p class="main-title font-h4">Gene Synthesis</p>-->
+<!--                    <p class="subject">유전자합성(Gene Synthesis) 서비스는 고객의 유전자 서열주문에 따라 해당 유전자들을 합성하여 제공하는 서비스로서 백신제조, 유전자치료, 형질발현 등<br>-->
+<!--                        재조합 DNA를 연구하는 분야에서 널리 활용되고 있습니다.  </p>-->
+<!--                    <p class="desc img_bottom">마크로젠의 Gene Synthesis 서비스는 DNA Sequencing 뿐만 아니라 무료 Cloning 서비스를 통해 Plasmid DNA상태의 유전자합성 서비스를 제공하고 있으며 Mutagenesis 서비스를 통해 더욱 다양한 범위의 합성서비스를 이용하실 수 있습니다. 또한 ABI 3730xl 시퀀싱 장비를 기반으로 100% 염기서열을 보장해드리며 LIMS(Laboratory Information Management System)를 통해 편리한 주문 및 견적문의가 가능합니다.</p>-->
+<!--                    <div class="img">-->
+<!--                        <img src="../../img/@temp/business/img-ces-genesynthesis.png" alt="Gene Synthesis">-->
+<!--                    </div>-->
+<!--                    <div class="list-area-group">-->
+<!--                        <div class="list-area">-->
+<!--                            <p class="font-h8 title">Features</p>-->
+<!--                            <ul class="list-circle-dot">-->
+<!--                                <li>Cloning 서비스 무료(Macrogen standard vector)</li>-->
+<!--                                <li>ABI 3730xl를 이용한 100% 염기서열 보장</li>-->
+<!--                                <li>Mutagenesis 서비스 가능</li>-->
+<!--                                <li>Plasmid DNA로 제공</li>-->
+<!--                                <li>Sequencing 무료 제공</li>-->
+<!--                                <li>LIMS(Laboratory Information Management System)를 기반으로 견적문의 및 주문가능</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="list-area">-->
+<!--                            <p class="font-h8 title figure_bottom">Workflow</p>-->
+<!--                            <div class="img">-->
+<!--                                <img src="../../img/@temp/business/img_workflow_level5.png" alt="워크플로우">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="btn-area">-->
+<!--                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>-->
+<!--                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>-->
+<!--                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>-->
+<!--                    </div>-->
+<!--                    <hr class="divider">-->
+<!--                    <div class="board">-->
+<!--                        <div class="navigation">-->
+<!--                            <div class="content clearfix">-->
+<!--                                <a href="#" class="item prev">-->
+<!--                                    <div class="title">Human ID</div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
         </div>

@@ -148,7 +148,7 @@
                                         <span>FAX.</span>
                                         <a href="tel:+1-301-251-4006">+1-301-251-4006</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.psomagen.com">http://www.psomagen.com</a>
+                                        <a href="http://www.psomagen.com" target="_blank">http://www.psomagen.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -165,7 +165,7 @@
                                         <span>TEL.</span>
                                         <a href="tel:+81-3-5962-1124">+81-3-5962-1124</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.macrogen-japan.co.jp">http://www.macrogen-japan.co.jp</a>
+                                        <a href="http://www.macrogen-japan.co.jp" target="_blank">http://www.macrogen-japan.co.jp</a>
                                     </div>
                                 </div>
                             </li>
@@ -182,7 +182,7 @@
                                         <span>TEL.</span>
                                         <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.psomagen.com">http://www.psomagen.com</a>
+                                        <a href="http://www.psomagen.com" target="_blank">http://www.psomagen.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -199,7 +199,7 @@
                                         <span>TEL.</span>
                                         <a href="tel:+65-6339-0927">+65-6339-0927</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.macrogen-apac.com">http://www.macrogen-apac.com</a>
+                                        <a href="http://www.macrogen-apac.com" target="_blank">http://www.macrogen-apac.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -214,7 +214,7 @@
                                     <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
                                     <div class="tel">
                                         <span>TEL.</span>
-                                        <a href="tel:+34-911-138-378">	+34-911-138-378</a>
+                                        <a href="tel:+34-911-138-378">+34-911-138-378</a>
                                     </div>
                                 </div>
                             </li>

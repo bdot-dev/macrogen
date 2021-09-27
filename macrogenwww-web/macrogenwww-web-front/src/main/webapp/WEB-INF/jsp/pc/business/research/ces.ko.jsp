@@ -60,10 +60,19 @@
             <script>
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
+
                     $(this).addClass('active').siblings().removeClass('active');
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                 });
+
+                function setTabContent(idx){
+                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                }
             </script>
 
             <div class="info-box-wrap tab-content">
@@ -134,7 +143,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(1)">
                                     <div class="title">Identification 서비스</div>
                                 </a>
                             </div>
@@ -186,10 +195,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(0)">
                                     <div class="title">Standard Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(2)">
                                     <div class="title">Fragment</div>
                                 </a>
                             </div>
@@ -239,10 +248,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(1)">
                                     <div class="title">Identification</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(3)">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
                             </div>
@@ -347,10 +356,10 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(2)">
                                     <div class="title">Fragment</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(4)">
                                     <div class="title">Human ID</div>
                                 </a>
                             </div>
@@ -436,18 +445,19 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                            <div class="content clearfix" onclick="setTabContent(3)">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
-                                    <div class="title">Gene Sythesis</div>
-                                </a>
+
+                               <!-- <a href="#" class="item next">
+                                   <div class="title">Gene Sythesis</div>
+                               </a> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Gene Synthesis-->
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <p class="main-title font-h4">Gene Synthesis</p>
                     <p class="subject">유전자합성(Gene Synthesis) 서비스는 고객의 유전자 서열주문에 따라 해당 유전자들을 합성하여 제공하는 서비스로서 백신제조, 유전자치료, 형질발현 등<br>
                         재조합 DNA를 연구하는 분야에서 널리 활용되고 있습니다.  </p>
@@ -489,7 +499,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
