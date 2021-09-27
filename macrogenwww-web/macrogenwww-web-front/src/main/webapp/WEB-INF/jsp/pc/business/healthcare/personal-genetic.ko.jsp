@@ -35,15 +35,15 @@
                     <img src="/publishing/pc-ko/dist/img/@temp/business/img_health_intro.png" alt="마이지놈스토리인트로">
                 </div>
                 <div class="btn-wrap">
-                    <a href="#" class="btn btn-white btn-round btn-round-big"><span>질병예측 & 웰니스 유전자검사</span><i class="icon icon-arrow-bottom-short"></i></a>
-                    <a href="#" class="btn btn-white btn-round btn-round-big"><span>헬스&뷰티 유전자 검사</span><i class="icon icon-arrow-bottom-short"></i></a>
-                    <a href="#" class="btn btn-white btn-round btn-round-big"><span>약물 반응성 분석 서비스</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a href="#disease_anchor" class="btn btn-white btn-round btn-round-big"><span>질병예측 & 웰니스 유전자검사</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a href="#health_anchor" class="btn btn-white btn-round btn-round-big"><span>헬스&뷰티 유전자 검사</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a href="#drug_anchor" class="btn btn-white btn-round btn-round-big"><span>약물 반응성 분석 서비스</span><i class="icon icon-arrow-bottom-short"></i></a>
                 </div>
             </div>
             <div class="info-box-wrap">
                 <!--질병예측 & 웰니스 유전자검사-->
-                <div class="info-box subject-box">
-                    <p class="font-h4 main-title" id="disease_title">질병예측 & 웰니스 유전자검사</p>
+                <div class="info-box subject-box" id="disease_anchor">
+                    <p class="font-h4 main-title">질병예측 & 웰니스 유전자검사</p>
                     <p class="subject">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img_disease.png" alt="질병예측 & 웰니스 유전자검사">
@@ -65,7 +65,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="#" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
+                                        <a href="mailto:gentok@macrogen.com"  class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                 </div>
                 <!--헬스&뷰티 유전자 검사-->
                 <div class="info-box subject-box">
-                    <p class="font-h4 main-title">헬스&뷰티 유전자 검사</p>
+                    <p class="font-h4 main-title" id="health_anchor">헬스&뷰티 유전자 검사</p>
                     <p class="subject">‘마이지놈스토리 더플러스’는 의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 DTC(Direct-To-Customer) 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다.
                         <br>마이지놈스토리 더플러스는 개인의 유전적 특성을 분석 후 그에 따른 맞춤 생활 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.</p>
                     <div class="img">
@@ -159,7 +159,7 @@
                                     </div>
                                     <div class="btn-wrap">
                                         <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                        <a href="#" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="btn-wrap">
                                         <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                        <a href="#" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                        <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                                     </div>
                                     <div class="btn-wrap">
                                         <a href="#" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                        <a href="#" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                        <a href="https://smartstore.naver.com/mygenomestory/products/4150226329" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@
                 </div>
                 <!--약물 반응성 분석 서비스-->
                 <div class="info-box">
-                    <p class="font-h4 main-title">약물 반응성 분석 서비스</p>
+                    <p class="font-h4 main-title" id="drug_anchor">약물 반응성 분석 서비스</p>
                     <p class="subject">개인의 유전형에 따른 약물반응(치료효과, 대사, 부작용)을 예측하여 약물 용량 조절, 대체약물 처방 등 최적의 맞춤 약물 치료 계획을 수립하도록 돕는 유전자검사입니다.</p>
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img_druganalysis.png" alt="약물반응성분석서비스">

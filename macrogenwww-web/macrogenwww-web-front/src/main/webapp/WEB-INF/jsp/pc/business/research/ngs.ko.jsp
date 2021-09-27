@@ -127,13 +127,21 @@
                     }
                 })
 
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    $(this).addClass('active').siblings().removeClass('active');
+                function setTabContent (idx){
+                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+                    swiper[0].slideTo(idx);
 
+                    <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                }
+
+                $('._swiperTab .swiper-slide').on('click', function(){
+                    var idx = $(this).index();
+                    setTabContent(idx)
                 });
+
+
 
                 $('.swiper-notification').remove();
             </script>
@@ -172,15 +180,15 @@
                         </ul>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item next">
+                                <a href="#" onclick="setTabContent(1)" class="item next">
                                     <div class="title">Whole Exome Sequencing</div>
                                 </a>
                             </div>
@@ -216,18 +224,18 @@
                         </div>
                     </div>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" onclick="setTabContent(0)" class="item prev">
                                     <div class="title">Whole Genome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" onclick="setTabContent(2)" class="item next">
                                     <div class="title">Transcriptome Sequencing</div>
                                 </a>
                             </div>
@@ -327,26 +335,23 @@
                         바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 증 적용 분야를 넓혀가고 있습니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(1)">
                                     <div class="title">Whole Exome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(3)">
                                     <div class="title">Epigenome Sequencing</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--Epigenome-->
                 <div class="info-box">
@@ -364,26 +369,23 @@
                         않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소<br>
                         나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(2)">
                                     <div class="title">Transcriptome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(4)">
                                     <div class="title">Single Cell Multi-Omics analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--Cell-->
                 <div class="info-box">
@@ -436,18 +438,15 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(3)">
                                     <div class="title">Epigenome Sequencing</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--ATAC-->
                 <div class="info-box">
@@ -475,18 +474,15 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(4)">
                                     <div class="title">Single Cell Multi-omics analysis</div>
                                 </a>
-                                <a href="#" class="item next">
+                                <a href="#" class="item next" onclick="setTabContent(6)">
                                     <div class="title">Spatial Gene Expression analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
                 <!--Spatial-->
                 <div class="info-box">
@@ -499,23 +495,20 @@
                     <p class="desc">마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게 도입함으로써 공간 유전체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev">
+                                <a href="#" class="item prev" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <script>
-
-                    </script>
                 </div>
             </div>
         </div>

@@ -57,7 +57,7 @@
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
                     </div>
                     <div class="list-area-group">
-                        <div class="list-area">
+                        <!-- <div class="list-area">
                             <p class="font-h8 title img">Brochure</p>
                             <div class="file-download">
                                 <div class="row">
@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="list-area">
                             <p class="font-h8 title figure_bottom">Specifications</p>
                             <table class="table">
@@ -198,7 +198,7 @@
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -223,7 +223,7 @@
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-smartmobile-intro.png" alt="스마트모바일랩">
                     </div>
                     <div class="list-area-group">
-                        <div class="list-area">
+                        <!-- <div class="list-area">
                             <p class="font-h8 title img">Brochure</p>
                             <div class="file-download">
                                 <div class="row">
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="list-area">
                             <p class="font-h8 title img">Specifications</p>
                             <ul class="list-circle-dot">
@@ -282,7 +282,7 @@
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
