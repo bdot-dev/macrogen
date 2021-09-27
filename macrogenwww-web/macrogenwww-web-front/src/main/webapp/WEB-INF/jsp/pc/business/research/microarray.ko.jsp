@@ -257,7 +257,7 @@
 
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_quotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+           <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
@@ -517,7 +517,7 @@
           </div>
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_quotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
@@ -623,7 +623,7 @@
           </div>
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_quotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+           <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">

@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="btn-wrap">
-                    <a href="javascript:;" class="btn btn-sm btn-primary"><span>채용담당자 메일접수</span></a>
+                    <a href="mailto:hire@macrogen.com" target="_blank" class="btn btn-sm btn-primary"><span>채용담당자 메일접수</span></a>
                 </div>
             </div>
             <!-- e 상시채용 -->

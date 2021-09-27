@@ -37,15 +37,24 @@
           </div>
         </div>
       </div>
-      <!--슬라이드 스크립트-->
+      <!--탭메뉴 스크립트-->
       <script>
         $('._swiperTab .swiper-slide').on('click', function(){
           var idx = $(this).index();
-          $(this).addClass('active').siblings().removeClass('active');
 
+          $(this).addClass('active').siblings().removeClass('active');
+          <!--탭메뉴 클릭시 페이지 변경-->
           $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
         });
+
+        function setTabContent(idx){
+          $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+          <!--탭메뉴 클릭시 페이지 변경-->
+          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        }
       </script>
 
       <div class="info-box-wrap tab-content">
@@ -144,7 +153,7 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item next">
+                <a href="#" class="item next"  onclick="setTabContent(1)">
                   <div class="title">암 발생 원인 분석</div>
                 </a>
               </div>
@@ -180,10 +189,10 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev" onclick="setTabContent(0)">
                   <div class="title">암 발생 위험 예측</div>
                 </a>
-                <a href="#" class="item next">
+                <a href="#" class="item next" onclick="setTabContent(2)">
                   <div class="title">암 발생 모니터링</div>
                 </a>
               </div>
@@ -218,7 +227,7 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item prev">
+                <a href="#" class="item prev"  onclick="setTabContent(1)">
                   <div class="title">암 발생 원인 발굴</div>
                 </a>
               </div>
