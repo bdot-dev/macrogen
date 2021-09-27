@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:/config/spring/context-*-test.xml"})
 @Transactional
-@Rollback(false)
+// @Rollback(false)
 public class MigrationServiceTest {
 	private static final Logger LOGGER = LoggerFactory.getLogger(MigrationServiceTest.class);
 
