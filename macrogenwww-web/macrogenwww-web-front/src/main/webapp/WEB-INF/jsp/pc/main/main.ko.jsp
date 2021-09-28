@@ -644,6 +644,7 @@
 					}
 					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
 				}
+				layerPopupModal.hide();
 			});
 		});
 	</script>
