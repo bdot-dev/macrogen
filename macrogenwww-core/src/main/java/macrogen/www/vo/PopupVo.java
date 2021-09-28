@@ -38,6 +38,8 @@ public class PopupVo extends DefaultVo {
 	private String popupEndDe;
 	private String popupEndHour;
 
+	private Boolean exposed;
+
 	public Date getPopupBeginDt() throws Exception {
 		if (null == popupBeginDe) {
 			return popupBeginDt;
@@ -206,5 +208,11 @@ public class PopupVo extends DefaultVo {
 	}
 	public void setLangCode(String langCode) {
 		this.langCode = langCode;
+	}
+	public Boolean getExposed() {
+		return exposed;
+	}
+	public void setExposed(Boolean exposed) {
+		this.exposed = exposed;
 	}
 }
