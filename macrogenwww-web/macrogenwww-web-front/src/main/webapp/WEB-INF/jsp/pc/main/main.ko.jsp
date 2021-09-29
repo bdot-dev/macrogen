@@ -307,9 +307,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
                     <div class="text-area">
                             <div class="title">
-                                <span>퍼스널 헬스케어</span>
-                                <a href="/ko/business/healthcare/personal-genetic" class="btn btn-circle btn-white btn-md"><i
-                                        class="icon icon-arrow-right-short"></i></a>
+                                <span>퍼스널 헬스케어</span><a href="/ko/business/healthcare/personal-genetic">
+                                    <span class="btn btn-circle btn-white btn-md">
+                                        <i class="icon icon-arrow-right-short"></i>
+                                    </span>
+                                </a>
                             </div>
                             <div class="desc">
                                 유전자 특성에 따라 건강관리에 도움을 주는<br/>
@@ -320,9 +322,12 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>더바이옴</span>
-                            <a href="/ko/business/healthcare/intestinal-microbiome" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a></div>
+                            <span>더바이옴</span><a href="/ko/business/healthcare/intestinal-microbiome">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
+                        </div>
                         <div class="desc">
                             마이크로바이옴을 분석하여<br/>
                             나에게 가장 잘 맞는 맞춤형 솔루션을 제공합니다
@@ -333,9 +338,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>임상진단/치료</span>
-                            <a href="/ko/business/diagnosis/cancer" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>임상진단/치료</span><a href="/ko/business/diagnosis/cancer">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+	                        </a>
                         </div>
                         <div class="desc">
                             COVID19, 암 유전체 검사 등 질병 발생원인 연구로<br/>
@@ -346,9 +353,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>반려동물</span>
-                            <a href="/ko/business/healthcare/pet-genetic" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>반려동물</span><a href="/ko/business/healthcare/pet-genetic">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
                         </div>
                         <div class="desc">
                             소중한 가족인 반려동물의 건강한 삶을 위해<br/>
@@ -359,9 +368,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_05.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>연구서비스</span>
-                            <a href="/ko/business/research/ngs" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>연구서비스</span><a href="/ko/business/research/ngs">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
                         </div>
                         <div class="desc">
                             글로벌 스탠다드 인프라 기반의<br/>
@@ -585,5 +596,70 @@
 </script>
 
 </div>
+
+<%-- 팝업 --%>
+<c:if test="${not empty popupVo  }">
+	<div class="modal" tabindex="-1" id="layerPopup" data-bs-backdrop="static">
+	    <div class="modal-dialog modal-dialog-centered layer-modal">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <div class="blue-circle">
+	                    <i class="icon icon-union"></i>
+	                </div>
+	            </div>
+	            <div class="modal-body">
+	                <%-- <p class="title">${popupVo.popupNm }</p>
+	                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
+	                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
+	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
+	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
+	                    <br>908억 원을 달성했습니다.
+	                </p>
+	                <div class="btn-area">
+	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
+	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
+	                </div> --%>
+	            </div>
+	            <div class="modal-footer">
+	                <div class="form-check">
+	                    <input class="form-check-input" type="checkbox" id="popup-sn"
+	                    	value="${ popupVo.popupSn }" >
+	                    <label class="form-check-label" for="popup-sn">오늘 하루 이 창 열지 않기</label>
+	                </div>
+	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close">
+	                    <span>Close</span>
+	                    <i class="icon ico-close-white"></i>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<script>
+	    var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+	    layerPopupModal.show();
+	</script>
+	<script>
+		$(function() {
+			var $btnPopupClose = $('#layerPopup .close-box');
+			var $chkPopupSn = $('#layerPopup #popup-sn');
+			$btnPopupClose.on('click', function() {
+				if ($chkPopupSn.is(':checked')) {
+					var sn = $chkPopupSn.val();
+					if (!sn) return;
+
+					var snListStr = $.cookie('popup-sn-list');
+					if (!snListStr) {
+						snListStr = sn;
+					} else if (snListStr.indexOf(sn) < 0) {
+						snListStr += ',' + sn;
+					}
+					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+				}
+				layerPopupModal.hide();
+			});
+		});
+	</script>
+
+</c:if>
 
 </body>

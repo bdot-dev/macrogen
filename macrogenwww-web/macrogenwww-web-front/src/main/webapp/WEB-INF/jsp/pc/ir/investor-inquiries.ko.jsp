@@ -109,7 +109,11 @@
 
             <script>
                 $('.form-check').on('click',function (){
-                    // $(this).parent().next('.btn-box').children('.btn').toggleClass('disabled')
+                    /* if($(this).is(":checked") ==  true){
+                        $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                    }else{
+                        $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                    } */
                 });
             </script>
         </div>

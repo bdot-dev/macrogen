@@ -26,7 +26,7 @@ front.common = (function () {
   var scrollHeader = function () {
     var scrollableElement = document.body; //document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', checkScrollDirection);
-    console.log(scrollableElement);
+    // console.log(scrollableElement);
   }
 
   function checkScrollDirection(event) {
@@ -56,18 +56,16 @@ front.common = (function () {
   }
 
   var commonHandler = function () {
-    // $(".header").sticky({topSpacing:0});
-
-      $('._btnTooltip').on('click',function (){
+    $('._btnTooltip').on('click',function (){
         $('.text-box').hide();
         $(this).siblings().show();
       })
 
-      $('._btnTooltipClose').on('click',function (){
+    $('._btnTooltipClose').on('click',function (){
         $(this).parent().hide();
       })
 
-      $('._fileUpload .form-control-file').on('change', function(){
+    $('._fileUpload .form-control-file').on('change', function(){
       var target = $(this).parent().find('.file-box');
       if(typeof(this.files) !='undefined'){
         if(this.files.length == 0){
@@ -88,7 +86,7 @@ front.common = (function () {
         if($('html, body').scrollTop() === 0) {
           // 서브 배경 애니메이션
           var sub = setTimeout(function() {
-            console.log($('html, body').scrollTop())
+            // console.log($('html, body').scrollTop())
             if($('html, body').scrollTop() !== 0) clearTimeout(sub)
             else $('html, body').animate({scrollTop: 980}, 200);
           }, 3000);

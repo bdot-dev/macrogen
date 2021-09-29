@@ -1,16 +1,23 @@
 package macrogen.www.controller;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import macrogen.www.common.CookieUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.NttService;
+import macrogen.www.service.PopupService;
 import macrogen.www.vo.NttVo;
+import macrogen.www.vo.PopupVo;
 
 @Controller
 @RequestMapping("/{langId}/main")
@@ -19,8 +26,12 @@ public class MainController extends DefaultController {
 	@Autowired
 	private NttService nttService;
 
+	@Autowired
+	private PopupService popupService;
+
 	@RequestMapping("")
-	public String main(@PathVariable LangId langId, Model model) throws Exception {
+	public String main(@PathVariable LangId langId, Model model,
+			HttpServletRequest request) throws Exception {
 
 		NttVo nttVo = new NttVo();
 		nttVo.setLangCode(langId.name());
@@ -32,7 +43,43 @@ public class MainController extends DefaultController {
 
 		model.addAttribute("main_yn", "Y");
 
+		// 메인화면 공지사항
+		PopupVo popupVo = new PopupVo();
+		popupVo.setLangCode(langId.name());
+		popupVo.setFirstIndex(-1);
+		popupVo.setExposed(true);
+		popupVo.setOrderBy("sort_asc");
+
+		List<PopupVo> popupList = popupService.list(popupVo);
+		if (null != popupList && !popupList.isEmpty()) {
+			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
+			for (PopupVo popup : popupList) {
+				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
+					model.addAttribute("popupVo", popup);
+				}
+			}
+		}
+
 		return getDev() + "/main/main." + getLang();
+	}
+
+	private List<Long> getExceptPopupSnList(HttpServletRequest request) {
+		try {
+			List<Long> snList = new ArrayList<>();
+
+			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-sn-list");
+			if (StringUtils.isEmpty(exceptPopupSnStr)) {
+				return snList;
+			}
+
+			String[] snArr = exceptPopupSnStr.split(",");
+			for (String sn : snArr) {
+				snList.add(Long.parseLong(sn));
+			}
+			return snList;
+		} catch (Exception e) {
+			return new ArrayList<Long>();
+		}
 	}
 
 }

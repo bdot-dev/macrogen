@@ -24,7 +24,7 @@
                         <li><span><span class="font-bold">본사</span> : 서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span></li>
                         <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
                         <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
-                        <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
+                        <li><span><span class="font-bold">E-mail</span> : <a href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a></span></li>
                     </ul>
                 </div>
                 <div class="box">

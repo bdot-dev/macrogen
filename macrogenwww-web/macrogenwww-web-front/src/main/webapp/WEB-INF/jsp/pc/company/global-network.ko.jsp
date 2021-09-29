@@ -33,7 +33,7 @@
                 <div class="title">GLOBAL MACROGEN</div>
                 <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다. </div>
                 <div class="map">
-                    <a class="pin amsterdam active" href="#amsterdam"><span>Amsterdam, The Netherlands</span></a>
+                    <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam, The Netherlands</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul, Korea</span></a>
                     <a class="pin boston" href="#rockville"><span>Boston, USA</span></a>
                     <a class="pin tokyo" href="#tokyo"><span>Tokyo, japan</span></a>
@@ -148,7 +148,7 @@
                                         <span>FAX.</span>
                                         <a href="tel:+1-301-251-4006">+1-301-251-4006</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.psomagen.com" target="_blank">http://www.psomagen.com</a>
+                                        <a href="https://www.macrogen-europe.com" target="_blank">https://www.macrogen-europe.com</a>
                                     </div>
                                 </div>
                             </li>
