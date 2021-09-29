@@ -37,7 +37,7 @@
   <meta name="msapplication-TileImage" content="../../favicon/ms-icon-150x150.png">
   <meta name="msapplication-TileImage" content="../../favicon/ms-icon-310x310.png">
   <!-- manifest -->
-  <link rel="manifest" href="../../favicon/manifest.json">
+<!--  <link rel="manifest" href="../../favicon/manifest.json">-->
   <!-- Windows 8.1 + IE11 이상 -->
   <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
 
@@ -48,17 +48,17 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v.0.11 / 09.27</title>
+  <title>Macrogen v.0.12 / 09.29</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?0927"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?0927"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?0929"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?0929"/>
   <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
-  <script src="../../js/bundle.js?0927"></script>
+  <script src="../../js/bundle.js?0929"></script>
   <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-  <script src="../../js/common.js?0927"></script>
+  <script src="../../js/common.js?0929"></script>
 </head>
 
 <body>
@@ -277,15 +277,27 @@
                 <div class="img">
                     <img src="../../img/@temp/business/img_health_intro.png" alt="마이지놈스토리인트로">
                 </div>
+
+                <!--09.29 header 링크 이슈로 인한 스크립트 추가-->
+                <script>
+                    function fnMove(seq){
+                        var offset = $("#anchor" + seq).offset();
+                        $('html, body').animate({scrollTop : offset.top - 95}, 400);
+                    }
+                </script>
+
+                <!--09.29 header 링크 이슈로 인한 onlink 추가-->
                 <div class="btn-wrap">
-                    <a href="#disease_anchor" class="btn btn-white btn-round btn-round-big"><span>질병예측 & 웰니스 유전자검사</span><i class="icon icon-arrow-bottom-short"></i></a>
-                    <a href="#health_anchor" class="btn btn-white btn-round btn-round-big"><span>헬스&뷰티 유전자 검사</span><i class="icon icon-arrow-bottom-short"></i></a>
-                    <a href="#drug_anchor" class="btn btn-white btn-round btn-round-big"><span>약물 반응성 분석 서비스</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a onclick="fnMove(1)" class="btn btn-white btn-round btn-round-big"><span>질병예측 & 웰니스 유전자검사</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a onclick="fnMove(2)" class="btn btn-white btn-round btn-round-big"><span>헬스&뷰티 유전자 검사</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a onclick="fnMove(3)" class="btn btn-white btn-round btn-round-big"><span>약물 반응성 분석 서비스</span><i class="icon icon-arrow-bottom-short"></i></a>
                 </div>
+
             </div>
             <div class="info-box-wrap">
                 <!--질병예측 & 웰니스 유전자검사-->
-                <div class="info-box subject-box" id="disease_anchor">
+                <!--09.29 header 링크 이슈로 인한 id 변경 추가-->
+                <div class="info-box subject-box" id="anchor1">
                     <p class="font-h4 main-title">질병예측 & 웰니스 유전자검사</p>
                     <p class="subject">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
                     <div class="img">
@@ -372,7 +384,7 @@
                 </div>
                 <!--헬스&뷰티 유전자 검사-->
                 <div class="info-box subject-box">
-                    <p class="font-h4 main-title" id="health_anchor">헬스&뷰티 유전자 검사</p>
+                    <p class="font-h4 main-title" id="anchor2">헬스&뷰티 유전자 검사</p>
                     <p class="subject">‘마이지놈스토리 더플러스’는 의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 DTC(Direct-To-Customer) 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다.
                         <br>마이지놈스토리 더플러스는 개인의 유전적 특성을 분석 후 그에 따른 맞춤 생활 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.</p>
                     <div class="img">
@@ -401,7 +413,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -425,7 +438,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -449,7 +463,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -472,7 +487,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn-wrap">
-                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
+                                        <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                         <a href="https://smartstore.naver.com/mygenomestory/products/4150226329" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
                                     </div>
                                 </div>
@@ -482,7 +498,8 @@
                 </div>
                 <!--약물 반응성 분석 서비스-->
                 <div class="info-box">
-                    <p class="font-h4 main-title" id="drug_anchor">약물 반응성 분석 서비스</p>
+                    <!--09.29 header 링크 이슈로 인한 id 변경 추가-->
+                    <p class="font-h4 main-title" id="anchor3">약물 반응성 분석 서비스</p>
                     <p class="subject">개인의 유전형에 따른 약물반응(치료효과, 대사, 부작용)을 예측하여 약물 용량 조절, 대체약물 처방 등 최적의 맞춤 약물 치료 계획을 수립하도록 돕는 유전자검사입니다.</p>
                     <div class="img">
                         <img src="../../img/@temp/business/img_druganalysis.png" alt="약물반응성분석서비스">
@@ -522,7 +539,7 @@
                         <li><span><span class="font-bold">본사</span> : 서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span></li>
                         <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
                         <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
-                        <li><span><span class="font-bold">E-mail</span> : webmaster@macrogen.com</span></li>
+                        <li><span><span class="font-bold">E-mail</span> : <a href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a></span></li>
                     </ul>
                 </div>
                 <div class="box">
