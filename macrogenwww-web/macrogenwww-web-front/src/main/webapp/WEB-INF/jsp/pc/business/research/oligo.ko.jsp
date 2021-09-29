@@ -109,7 +109,7 @@
             <div class="navigation">
               <div class="content clearfix">
                 <a href="#" class="item next" onclick="setTabContent(1)">
-                  <div class="title">Identification 서비스</div>
+                  <div class="title">Modified Oligo</div>
                 </a>
               </div>
             </div>

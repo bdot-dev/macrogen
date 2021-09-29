@@ -156,7 +156,7 @@
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-wes.png" alt="Whole Exsome Sequencing">
                     </div>
-                    <hr class="divider">
+                    <!-- <hr class="divider"> -->
                     <div class="list-area-group">
                         <div class="list-area">
                             <p class="title font-h8">Main Capture Kit</p>

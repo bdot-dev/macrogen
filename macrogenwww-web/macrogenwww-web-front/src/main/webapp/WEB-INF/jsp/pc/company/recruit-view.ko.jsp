@@ -43,7 +43,6 @@
                         </div>
                         <hr class="divider">
                         <div class="content">
-                            <!-- <div class="img"><img src="../../img/@temp/big-thumb2.png" alt="뉴스"></div> -->
                             <div class="text">
                             	${ resultVo.empaCn }
                             </div>
