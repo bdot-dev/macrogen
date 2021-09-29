@@ -15,7 +15,7 @@
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
 			        <li class="breadcrumb-item">MACROGEN</li>
-			        <li class="breadcrumb-item">지속가능경영</li>
+			        <li class="breadcrumb-item">ESG</li>
 			        <li class="breadcrumb-item">사회공헌</li>
 			    </ol>
 			</nav>

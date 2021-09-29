@@ -228,7 +228,7 @@
             <div class="navigation">
               <div class="content clearfix">
                 <a href="#" class="item prev"  onclick="setTabContent(1)">
-                  <div class="title">암 발생 원인 발굴</div>
+                  <div class="title">암 발생 원인 분석</div>
                 </a>
               </div>
             </div>

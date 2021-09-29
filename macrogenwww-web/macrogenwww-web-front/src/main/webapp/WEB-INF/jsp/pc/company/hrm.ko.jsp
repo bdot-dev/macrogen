@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">인사제도</div>
-            <div class="slogan ko">새로운 내일을<br/>함께 만들고 싶습니다</div>
-            <div class= "slogan-sub">인류를 위한 마크로젠의 여정에 함께 하시겠습니까?</div>
+            <div class="slogan ko">더 나은 미래를 위해<br/>함께 성장해갑니다</div>
+            <div class= "slogan-sub">직원들의 더 나은 미래를 위해 노력합니다</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

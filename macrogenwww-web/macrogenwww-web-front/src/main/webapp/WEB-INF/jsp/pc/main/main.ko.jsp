@@ -307,9 +307,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
                     <div class="text-area">
                             <div class="title">
-                                <span>퍼스널 헬스케어</span>
-                                <a href="/ko/business/healthcare/personal-genetic" class="btn btn-circle btn-white btn-md"><i
-                                        class="icon icon-arrow-right-short"></i></a>
+                                <span>퍼스널 헬스케어</span><a href="/ko/business/healthcare/personal-genetic">
+                                    <span class="btn btn-circle btn-white btn-md">
+                                        <i class="icon icon-arrow-right-short"></i>
+                                    </span>
+                                </a>
                             </div>
                             <div class="desc">
                                 유전자 특성에 따라 건강관리에 도움을 주는<br/>
@@ -320,9 +322,12 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>더바이옴</span>
-                            <a href="/ko/business/healthcare/intestinal-microbiome" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a></div>
+                            <span>더바이옴</span><a href="/ko/business/healthcare/intestinal-microbiome">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
+                        </div>
                         <div class="desc">
                             마이크로바이옴을 분석하여<br/>
                             나에게 가장 잘 맞는 맞춤형 솔루션을 제공합니다
@@ -333,9 +338,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>임상진단/치료</span>
-                            <a href="/ko/business/diagnosis/cancer" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>임상진단/치료</span><a href="/ko/business/diagnosis/cancer">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+	                        </a>
                         </div>
                         <div class="desc">
                             COVID19, 암 유전체 검사 등 질병 발생원인 연구로<br/>
@@ -346,9 +353,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>반려동물</span>
-                            <a href="/ko/business/healthcare/pet-genetic" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>반려동물</span><a href="/ko/business/healthcare/pet-genetic">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
                         </div>
                         <div class="desc">
                             소중한 가족인 반려동물의 건강한 삶을 위해<br/>
@@ -359,9 +368,11 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_05.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>연구서비스</span>
-                            <a href="/ko/business/research/ngs" class="btn btn-circle btn-white btn-md"><i
-                                    class="icon icon-arrow-right-short"></i></a>
+                            <span>연구서비스</span><a href="/ko/business/research/ngs">
+                             <span class="btn btn-circle btn-white btn-md">
+                                 <i class="icon icon-arrow-right-short"></i>
+                             </span>
+                            </a>
                         </div>
                         <div class="desc">
                             글로벌 스탠다드 인프라 기반의<br/>

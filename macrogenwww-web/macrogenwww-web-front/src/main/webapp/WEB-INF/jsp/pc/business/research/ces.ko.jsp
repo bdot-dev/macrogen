@@ -445,61 +445,16 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                            <div class="content clearfix" onclick="setTabContent(3)">
+                            <div class="content clearfix">
+                                <a href="#" class="item prev" onclick="setTabContent(3)">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
 
-                               <!-- <a href="#" class="item next">
-                                   <div class="title">Gene Sythesis</div>
-                               </a> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Gene Synthesis-->
-                <!-- <div class="info-box">
-                    <p class="main-title font-h4">Gene Synthesis</p>
-                    <p class="subject">유전자합성(Gene Synthesis) 서비스는 고객의 유전자 서열주문에 따라 해당 유전자들을 합성하여 제공하는 서비스로서 백신제조, 유전자치료, 형질발현 등<br>
-                        재조합 DNA를 연구하는 분야에서 널리 활용되고 있습니다.  </p>
-                    <p class="desc img_bottom">마크로젠의 Gene Synthesis 서비스는 DNA Sequencing 뿐만 아니라 무료 Cloning 서비스를 통해 Plasmid DNA상태의 유전자합성 서비스를 제공하고 있으며 Mutagenesis 서비스를 통해 더욱 다양한 범위의 합성서비스를 이용하실 수 있습니다. 또한 ABI 3730xl 시퀀싱 장비를 기반으로 100% 염기서열을 보장해드리며 LIMS(Laboratory Information Management System)를 통해 편리한 주문 및 견적문의가 가능합니다.</p>
-                    <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-genesynthesis.png" alt="Gene Synthesis">
-                    </div>
-                    <div class="list-area-group">
-                        <div class="list-area">
-                            <p class="font-h8 title">Features</p>
-                            <ul class="list-circle-dot">
-                                <li>Cloning 서비스 무료(Macrogen standard vector)</li>
-                                <li>ABI 3730xl를 이용한 100% 염기서열 보장</li>
-                                <li>Mutagenesis 서비스 가능</li>
-                                <li>Plasmid DNA로 제공</li>
-                                <li>Sequencing 무료 제공</li>
-                                <li>LIMS(Laboratory Information Management System)를 기반으로 견적문의 및 주문가능</li>
-                            </ul>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-h8 title figure_bottom">Workflow</p>
-                            <div class="img">
-                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level5.png" alt="워크플로우">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev">
-                                    <div class="title">Human ID</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
         </div>
