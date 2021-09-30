@@ -235,7 +235,7 @@ public class CompanyController extends DefaultController {
 
 		model.addAttribute("remove_header_bg_white_unuse", "Y");
 
-		listVo.setRecordCountPerPage(3);
+		listVo.setRecordCountPerPage(10);
 		listVo.setPageSize(5);
 		listVo.setLangCode(langId.name());
 

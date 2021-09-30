@@ -131,7 +131,7 @@ public class IrController extends DefaultController {
 	public String news(@PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
-		listVo.setRecordCountPerPage(6);
+		listVo.setRecordCountPerPage(10);
 		listVo.setPageSize(5);
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irnews");
