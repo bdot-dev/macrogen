@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <footer class="footer">
-    <div class="inner clearfix" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="2000"' : '' }>
+    <div class="inner clearfix">
         <div class="section_copy" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="1000"' : '' }>
             <div class="text font-bold">
                 <p>humanizing<br>genomics</p>
@@ -30,9 +30,10 @@
                 <div class="box">
                     <p class="font-bold title">FAMILY SITE</p>
                     <ul class="text">
-                        <li><span><a href="https://thebiome.life/" target="_blank">더 바이옴</a></span><span><a href="https://www.my-genomestory.com/" target="_blank">마이지놈스토리</a></span><span><a href="https://www.mypetgene.com/main/main.php" target="_blank">마이펫진</a></span></li>
-                        <li><span><a href="https://psomagen.com/" target="_blank">소마젠(Psomagen)</a></span><span><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></span><span><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 싱가포르</a></span></li>
-                        <li><span><a href="http://gmi.ac.kr/index.php" target="_blank">유전체의학연구소</a></span><span><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></span></li>
+                        <li><span>더바이옴</span><span><a href="https://www.my-genomestory.com/" target="_blank">마이지놈스토리</a></span><span><a href="https://www.mypetgene.com/main/main.php" target="_blank">마이펫진</a></span></li>
+                        <li><span><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></span><span><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 싱가포르</a></span><span><a href="https://www.macrogen-europe.com" target="_blank">마크로젠 유럽</a></span></li>
+                        <li><span><a href="https://psomagen.com/" target="_blank">소마젠(Psomagen)</a></span><span><a href="http://gmi.ac.kr/index.php" target="_blank">유전체의학연구소</a></span></li>
+                        <li><span><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></span></li>
                         <li><span><a href="https://dna.macrogen.com/" target="_blank">Order site</a></span></li>
                     </ul>
                 </div>
@@ -44,7 +45,6 @@
                     <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
                     <%--
                     <li><span class="font-medium"><a href="/download/filename/공공기관의 데이터베이스 표준화 지침 일부개정(안) 전문.hwp">다운로드 테스트</a></span></li>
-                    <li><span class="font-medium"><a href="/pdf/붙임.중동덕유1단지임대상가입점자모집공고문(추첨)_20210129.pdf" target="_blank">PDF 테스트</a></span></li>
                     --%>
                 </ul>
             </div>

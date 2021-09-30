@@ -281,6 +281,7 @@
                                                     <span>2003 - 2016</span>
                                                     <span>LG CNS 상무</span>
                                                 </li>
+                                                <%--
                                                 <li>
                                                     <span>2002 - 2003</span>
                                                     <span>Descartes Systems Group 이사</span>
@@ -297,6 +298,7 @@
                                                     <span>1992 - 1999</span>
                                                     <span>대우자동차 과장</span>
                                                 </li>
+                                                 --%>
                                                 <li>
                                                     <span>1992</span>
                                                     <span>서울대학교 산업공학 석사</span>
