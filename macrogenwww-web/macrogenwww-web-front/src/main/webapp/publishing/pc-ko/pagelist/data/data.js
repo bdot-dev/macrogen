@@ -212,12 +212,6 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
     },
-    {
-      stateClass: 'waiting',
-      url: '01Macrogen_06ESG경영',
-      category: 'macrogen',
-      page: '01Macrogen_06ESG경영'
-    },
   ]
 }
 data.business ={
