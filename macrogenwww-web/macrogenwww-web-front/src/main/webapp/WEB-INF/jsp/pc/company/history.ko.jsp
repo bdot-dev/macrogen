@@ -54,7 +54,7 @@
 			            <!-- s 글로벌 유전체 정보 구축 -->
 			            <div class="section _historySection" id="group-${result.cmpnyhistGroupSn }" data-aos="fade-up" data-aos-duration="2000">
 			                <div class="inner">
-			                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? 'TODAY' : result.endYear }</div>
+			                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? '현재' : result.endYear }</div>
 			                    <div class="title">${result['groupnm'.concat(lang)] }</div>
 			                </div>
 
