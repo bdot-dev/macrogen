@@ -253,7 +253,7 @@
                     </div>
                     <p class="caption img-caption">※ 해당 서비스는 현재 준비 중 입니다.</p>
                     <div class="btn-wrap">
-                        <a href="#" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
+                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                     </div>
                 </div>
             </div>
