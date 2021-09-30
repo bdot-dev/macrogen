@@ -182,7 +182,7 @@
                                         <span>TEL.</span>
                                         <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
                                         <span>WEB.</span>
-                                        <a href="https://www.macrogen-europe.com/" target="_blank">https://https://www.macrogen-europe.com/</a>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">https://www.macrogen-europe.com/</a>
                                     </div>
                                 </div>
                             </li>
