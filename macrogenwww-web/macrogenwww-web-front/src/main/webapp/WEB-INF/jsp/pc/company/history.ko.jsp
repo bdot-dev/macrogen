@@ -37,7 +37,7 @@
 	                    <div class="swiper-wrapper _swiperTab">
 	                    	<c:forEach var="result" items="${ resultList }" varStatus="status">
 		                        <div class="swiper-slide ${ status.index eq 0 ? 'active' : '' }"><a
-		                        	href="#group-${result.cmpnyhistGroupSn }">${result.beginYear } - ${result.endYear eq 'present' ? 'TODAY' : result.endYear }</a></div>
+		                        	href="javascript:;" onclick="fnMove('group-${result.cmpnyhistGroupSn }')">${result.beginYear } - ${result.endYear eq 'present' ? '현재' : result.endYear }</a></div>
 		                    </c:forEach>
 	                    </div>
 	                </div>
@@ -49,112 +49,150 @@
 	            </script>
 	            <!-- e tab -->
 
-               	<c:forEach var="result" items="${ resultList }" varStatus="status">
-		            <!-- s 글로벌 유전체 정보 구축 -->
-		            <div class="section" id="group-${result.cmpnyhistGroupSn }" data-aos="fade-up" data-aos-duration="2000">
-		                <div class="inner">
-		                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? 'TODAY' : result.endYear }</div>
-		                    <div class="title">${result['groupnm'.concat(lang)] }</div>
-		                </div>
-
-		                <c:if test="${fn:length(result.cmpnyhistGroupPhotoList) gt 0 }">
-			                <div class="history-slider ${fn:length(result.cmpnyhistGroupPhotoList)}" >
-			                    <div class="swiper-container _historySlider${status.count }">
-			                        <div class="swiper-wrapper">
-			                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="photoStatus">
-				                            <div class="swiper-slide">
-				                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
-				                                <div class="inner">
-				                                    <div class="year">${ photo.photoYear }</div>
-				                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
-				                                </div>
-				                            </div>
-				                        </c:forEach>
-
-			                        </div>
-			                    </div>
-			                    <div class="inner">
-			                        <div class="pagination-wrap">
-			                            <ul class="navigation">
-			                                <li class="page-item prev">
-			                                    <a class="page-link" href="#">
-			                                        <span class="sr-only">이전</span>
-			                                    </a>
-			                                </li>
-			                                <li class="page-item next">
-			                                    <a class="page-link" href="#">
-			                                        <span class="sr-only">다음</span>
-			                                    </a>
-			                                </li>
-			                            </ul>
-			                        </div>
-			                        <div class="swiper-pagination"></div>
-			                    </div>
-			                    <script>
-			                        var imageSwiper = new Swiper("._historySlider${status.count }", {
-			                            pagination: {
-			                                el: "._historySlider${status.count } + .inner .swiper-pagination",
-			                                clickable : true,
-			                            },
-			                            navigation: {
-			                                nextEl: '._historySlider${status.count } + .inner .page-item.next',
-			                                prevEl: '._historySlider${status.count } + .inner .page-item.prev',
-			                            },
-			                            touchRatio: 0
-			                        });
-			                    </script>
+	            <div class="section-wrap">
+	               	<c:forEach var="result" items="${ resultList }" varStatus="status">
+			            <!-- s 글로벌 유전체 정보 구축 -->
+			            <div class="section _historySection" id="group-${result.cmpnyhistGroupSn }" data-aos="fade-up" data-aos-duration="2000">
+			                <div class="inner">
+			                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? 'TODAY' : result.endYear }</div>
+			                    <div class="title">${result['groupnm'.concat(lang)] }</div>
 			                </div>
-		                </c:if>
 
-		                <div class="inner">
-		                	<c:if test="${fn:length(result.yearCmpnyhistList) gt 0 }">
-			                    <div class="history-list">
-			                        <div class="year-info">
-			                            <ul>
-			                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList }" varStatus="yearCmpnyhistStatus">
-			                                <li><span>${yearCmpnyhist.year }</span></li>
-			                               	</c:forEach>
-			                            </ul>
-			                        </div>
-			                        <div class="desc-info">
-		                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList}">
-				                            <ul data-year="${yearCmpnyhist.year }">
-				                            	<c:forEach var="cmpnyhist" items="${yearCmpnyhist.cmpnyhistList }">
-					                                <li>
-					                                    <span class="num">${cmpnyhist.mt }.</span>
-					                                    <span class="desc">${cmpnyhist.cn }</span>
-					                                </li>
-				                            	</c:forEach>
+			                <c:if test="${fn:length(result.cmpnyhistGroupPhotoList) gt 0 }">
+				                <div class="history-slider ${fn:length(result.cmpnyhistGroupPhotoList)}" >
+				                    <div class="swiper-container _historySlider${status.count }">
+				                        <div class="swiper-wrapper">
+				                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="photoStatus">
+					                            <div class="swiper-slide">
+					                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
+					                                <div class="inner">
+					                                    <div class="year">${ photo.photoYear }</div>
+					                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
+					                                </div>
+					                            </div>
+					                        </c:forEach>
+
+				                        </div>
+				                    </div>
+				                    <div class="inner">
+				                        <div class="pagination-wrap">
+				                            <ul class="navigation">
+				                                <li class="page-item prev">
+				                                    <a class="page-link" href="#">
+				                                        <span class="sr-only">이전</span>
+				                                    </a>
+				                                </li>
+				                                <li class="page-item next">
+				                                    <a class="page-link" href="#">
+				                                        <span class="sr-only">다음</span>
+				                                    </a>
+				                                </li>
 				                            </ul>
-			                            </c:forEach>
-			                        </div>
-			                    </div>
-		                	</c:if>
-		                </div>
-		            </div>
-		            <!-- e 글로벌 유전체 정보 구축 -->
-		        </c:forEach>
+				                        </div>
+				                        <div class="swiper-pagination"></div>
+				                    </div>
+				                    <script>
+				                        var imageSwiper = new Swiper("._historySlider${status.count }", {
+				                            pagination: {
+				                                el: "._historySlider${status.count } + .inner .swiper-pagination",
+				                                clickable : true,
+				                            },
+				                            navigation: {
+				                                nextEl: '._historySlider${status.count } + .inner .page-item.next',
+				                                prevEl: '._historySlider${status.count } + .inner .page-item.prev',
+				                            },
+				                            touchRatio: 0
+				                        });
+				                    </script>
+				                </div>
+			                </c:if>
+
+			                <div class="inner">
+			                	<c:if test="${fn:length(result.yearCmpnyhistList) gt 0 }">
+				                    <div class="history-list">
+				                        <div class="year-info" ${ status.index eq 0 ? 'id="informationYear"' : '' }>
+				                            <ul>
+				                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList }" varStatus="yearCmpnyhistStatus">
+				                                <li class="${ yearCmpnyhistStatus.index eq 0 ? 'active' : '' }"><span>${yearCmpnyhist.year }</span></li>
+				                               	</c:forEach>
+				                            </ul>
+				                        </div>
+				                        <div class="desc-info">
+			                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList}">
+					                            <ul data-year="${yearCmpnyhist.year }">
+					                            	<c:forEach var="cmpnyhist" items="${yearCmpnyhist.cmpnyhistList }">
+						                                <li>
+						                                    <span class="num">${cmpnyhist.mt }.</span>
+						                                    <span class="desc">${cmpnyhist.cn }</span>
+						                                </li>
+					                            	</c:forEach>
+					                            </ul>
+				                            </c:forEach>
+				                        </div>
+				                    </div>
+			                	</c:if>
+			                </div>
+			            </div>
+			            <!-- e 글로벌 유전체 정보 구축 -->
+			        </c:forEach>
+	            </div>
 
 	        </div>
     	</c:if>
     </div>
     <!--footer 수정사항 있을시 메인 footer 별도 확인-->
 
-<script>
-    $(document).ready(function(){
-        $('.btn-totop').click(function(){
-            $('html,body').animate( { scrollTop:0 },{duration : 100});
-            return false;
-        });
-        $(window).on('scroll', function (){
-            var scrollTop = $(window).scrollTop()
-            if (scrollTop > 150) {
-                $('.btn-totop').css({'opacity' : 1})
-            } else {
-                $('.btn-totop').css({'opacity' : 0})
-            }
-        })
-    });
-</script>
+	<script>
+	    $('#tab a').on('click', function (event) {
+	        event.preventDefault()
+	        $(this).tab('show')
+	    })
+
+	    function fnMove(seq){
+	        var id = $('#'+ seq);
+	        var offset = id.offset();
+	        $('html, body').animate({scrollTop : offset.top - 95}, 400);
+	    }
+
+	    // 연혁 인터랙션
+	    $(document).ready(function () {
+	        var section = $('._historySection');
+	        var sectionLength = section.length;
+
+	        $(window).on('resize scroll', function () {
+	            for (var i = 0; i < sectionLength; i++) {
+	                setHistoryScroll(section.eq(i));
+	            }
+	        })
+	        function setHistoryScroll($information) {
+	            var gap = 50;
+	            var gapYear = 79;
+	            var currentPosition = $(window).scrollTop();
+	            var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
+	            var scrollStart = currentPosition - sectionOffset + 150;
+	            var size = $information.find('.year-info li').length;
+
+	            $information.find('.year-info li').each(function (index) {
+	                if (currentPosition < $information.find('.desc-info ul').eq(0).offset().top - gap) {
+	                    //섹션 이전 화면에서는 absolute상태
+	                    $information.find('.year-info').css({'top' : 'auto'}, {'position' : 'absolute'});
+	                } else {
+	                    //섹션 안으로 들어오면 fixed 상태
+	                    if (size !== index + 1) {
+	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top - gap && currentPosition < $information.find('.desc-info ul').eq(index + 1).offset().top - gap) {
+	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
+	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
+	                        }
+	                    } else {
+	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top) {
+	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
+	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
+	                        }
+	                    }
+	                }
+	            })
+	        }
+	    })
+	</script>
 
 </body>
