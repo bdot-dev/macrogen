@@ -159,17 +159,32 @@
 	        var section = $('._historySection');
 	        var sectionLength = section.length;
 
+	        section.find('.desc-info').each(function (idx) {
+	            var sectionHeight = section.eq(idx).find('.desc-info').height();
+	            section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
+	        })
+
 	        $(window).on('resize scroll', function () {
+	            var currentPosition = $(window).scrollTop();
+
 	            for (var i = 0; i < sectionLength; i++) {
 	                setHistoryScroll(section.eq(i));
 	            }
+
+	            if($(window).scrollTop() == $(document).height() - $(window).height()) {
+	                $('.section .year-info').find('li').removeClass('active')
+	                $('.section:last-child .year-info').find('li:last-child').addClass('active')
+	            }
+	            else {
+	                $('.section:last-child .year-info').find('li:last-child').removeClass('active')
+	            }
 	        })
 	        function setHistoryScroll($information) {
-	            var gap = 50;
+	            var gap = 0;/*50*/
 	            var gapYear = 79;
-	            var currentPosition = $(window).scrollTop();
+	            var currentPosition = $(window).scrollTop() +95; /*+95 X*/
 	            var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
-	            var scrollStart = currentPosition - sectionOffset + 150;
+	            var scrollStart = currentPosition - sectionOffset + 123;
 	            var size = $information.find('.year-info li').length;
 
 	            $information.find('.year-info li').each(function (index) {
@@ -194,5 +209,6 @@
 	        }
 	    })
 	</script>
+
 
 </body>
