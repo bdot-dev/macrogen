@@ -319,6 +319,7 @@
                             </div>
                     </div>
                 </div>
+                <%--
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
@@ -334,7 +335,7 @@
                         </div>
                     </div>
                 </div>
-
+                 --%>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">

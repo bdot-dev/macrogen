@@ -11,7 +11,7 @@
         <div class="frame">
             <div class="hero-title">글로벌 네트워크</div>
             <div class="slogan">GLOBAL<br/>MACROGEN</div>
-            <div class= "slogan-sub">글로벌 정밀의학 선도기업 마크로젠입니다</div>
+            <div class= "slogan-sub">글로벌 정밀의학을 선도합니다.</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -148,7 +148,7 @@
                                         <span>FAX.</span>
                                         <a href="tel:+1-301-251-4006">+1-301-251-4006</a>
                                         <span>WEB.</span>
-                                        <a href="https://www.macrogen-europe.com" target="_blank">https://www.macrogen-europe.com</a>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">https://https://www.macrogen-europe.com/</a>
                                     </div>
                                 </div>
                             </li>
