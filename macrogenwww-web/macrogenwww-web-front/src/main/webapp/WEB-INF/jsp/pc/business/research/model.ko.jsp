@@ -192,28 +192,28 @@
                                         <div class="item">
                                             <i class="icon icon-pdf"></i>
                                             <span class="title">Construction of expression vector.pdf</span>
-                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                            <a href="/pdf/Construction of expression vector.pdf" target="_blank" class="btn-download"><i class="icon icon-download"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="item">
                                             <i class="icon icon-pdf"></i>
                                             <span class="title">Purification of Expression vector for microinjection.pdf</span>
-                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                            <a href="/pdf/Purification of Expression vector for microinjection.pdf" target="_blank" class="btn-download"><i class="icon icon-download"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="item">
                                             <i class="icon icon-pdf"></i>
                                             <span class="title">Microinjection/Production of founder mouse.pdf</span>
-                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                            <a href="/pdf/Microinjection_Production of founder mouse.pdf" target="_blank" class="btn-download"><i class="icon icon-download"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="item">
                                             <i class="icon icon-pdf"></i>
                                             <span class="title">Indentification of the founder(FO).pdf</span>
-                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                            <a href="/pdf/Indentification of the founder(FO).pdf" target="_blank" class="btn-download"><i class="icon icon-download"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -303,7 +303,7 @@
                                     <div class="item">
                                         <i class="icon icon-pdf"></i>
                                         <span class="title">마우스 사육 및 계통유지</span>
-                                        <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
+                                        <a href="/pdf/마우스 사육 및 계통유지.pdf" target="_blank" class="btn-download"><i class="icon icon-download"></i></a>
                                     </div>
                                 </div>
                             </div>
