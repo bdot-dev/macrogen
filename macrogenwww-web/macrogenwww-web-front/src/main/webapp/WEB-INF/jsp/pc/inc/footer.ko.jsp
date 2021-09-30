@@ -43,9 +43,6 @@
                     <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보취급방침</a></span></li>
                     <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영.관리방침</a></span></li>
                     <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
-                    <%--
-                    <li><span class="font-medium"><a href="/download/filename/공공기관의 데이터베이스 표준화 지침 일부개정(안) 전문.hwp">다운로드 테스트</a></span></li>
-                    --%>
                 </ul>
             </div>
         </div>
