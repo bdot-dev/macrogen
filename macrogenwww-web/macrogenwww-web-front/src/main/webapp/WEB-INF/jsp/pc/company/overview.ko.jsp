@@ -97,7 +97,7 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_6.png" alt="153개국 18,000여 고객"></span>
-                                <span class="val">153국</span>
+                                <span class="val">153<span class="ko">국</span></span>
                                 <span class="desc">18,000 글로벌파트너</span>
                             </li>
                             <li class="item">
@@ -160,8 +160,10 @@
                             <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">임상진단/치료</div>
-                                <div class="desc">78억 인류의 건강한 내일을 위한 다양한 임상진단 및 치료 서비스를 제공합니다.<br/>
-                                    단순한 치료만의 목적이 아닌 질병의 예측과 원인 분석이 가능하도록 체계적인 임상진단 시스템을 구축하고 있습니다.</div>
+                                <div class="desc">
+                                    78억 인류의 건강한 내일을 위한 다양한 임상진단 및 치료를 위한 정보를 제공합니다. <br/>
+                                    단순한 치료만의 목적이 아닌 질병의 예측과 원인 분석이 가능하도록 체계적인 임상진단 시스템을 구축하고 있습니다.
+                                </div>
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
@@ -268,7 +270,7 @@
                         <span class="title">퍼스널 헬스케어</span>
                     </div>
                     <div class="desc">일반인 대상</div>
-                    <div class="desc-sm">미래 의료 패러다임의 핵심 요소로 주목 받고 있는 분야입니다. 마크로젠에서는 개인유전체분석 서비스 ‘마이지놈스토리’, 마이크로바이옴 분석 서비스 ‘마이크로브앤미’ 등의 브랜드를 통해 전문 헬스케어 솔루션과 접목함으로써 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다.</div>
+                    <div class="desc-sm">퍼스널 헬스케어의 핵심 요소로 주목 받고 있는 분야입니다. 마크로젠에서는 개인유전체분석 서비스 ‘마이지놈스토리’, 마이크로바이옴 테스트와 분석에 기반한 맞춤형 헬스케어 솔루션 ‘더바이옴’ 등을 통해 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다. </div>
                 </div>
                 <div class="item item-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
