@@ -148,7 +148,7 @@
                                         <span>FAX.</span>
                                         <a href="tel:+1-301-251-4006">+1-301-251-4006</a>
                                         <span>WEB.</span>
-                                        <a href="https://www.macrogen-europe.com/" target="_blank">https://https://www.macrogen-europe.com/</a>
+                                        <a href="http://www.psomagen.com" target="_blank">http://www.psomagen.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -182,7 +182,7 @@
                                         <span>TEL.</span>
                                         <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
                                         <span>WEB.</span>
-                                        <a href="http://www.psomagen.com" target="_blank">http://www.psomagen.com</a>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">https://www.macrogen-europe.com/</a>
                                     </div>
                                 </div>
                             </li>

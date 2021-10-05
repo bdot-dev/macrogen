@@ -72,6 +72,13 @@ var nttForm = (function($) {
 						return false;
 					}
 
+					if (options && options.thumbAtchIdRequired) {
+						if (!vm.resultVo.thumbAtchId) {
+							alert('필수 입력 (리스트이미지)');
+							return false;
+						}
+					}
+
 					if (vm.$refs.thumbBassImageUseYn) {
 						if ('Y' == vm.resultVo.thumbBassImageUseYn) {
 							if (!vm.resultVo.thumbBassImageCode) {
