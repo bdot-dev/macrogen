@@ -136,6 +136,7 @@
                     .addClass('header-main')
                     .removeClass('header-bg-white')
                 $wrapper.css({'overflow': 'visible'})
+                $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
                 $('.scroll-wrap').delay(1000).fadeIn()
                 $('.swiper_btn').delay(1000).fadeIn()

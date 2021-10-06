@@ -33,7 +33,7 @@
     유전자 편집을 위한 혁신기술(CRISPR)을 제공합니다.</p>
   <p class="subject">CRISPR 시스템을 바탕으로 유전자 변형 마우스를 생산 및 공급하는 GEM 서비스를 제공합니다.</p>
   <div class="img">
-    <img src="/publishing/pc-ko/dist/img/@temp/business/img-animal-intro.png" alt="모델동물사업부intro">
+    <img src="/publishing/pc-ko/dist/img/business/img-animal-intro.png" alt="모델동물사업부intro">
   </div>
   <p class="desc">유전자 변형 마우스(GEM : Genetically Engineered Mouse)란 유전자 편집 기술을 이용해 특정 유전자를 삽입/제거/변형한 실험용 쥐를 말하며 인간 유전자의 기능을 밝히기 위한 목적으로 바이오 및 의학 연구 분야에 활용되고 있습니다. GEM 서비스는 Transgenic Mouse와 Knock-Out/Knock-In Mouse입니다. Transgenic Mouse는 유전자의 기능을 연구하기 위해 특정 유전자를 삽입한 형질 전환 마우스입니다. Knock-Out Mouse는 특정 유전자를 제거함으로써  목표 유전자 발현을 억제한 유전자 변형 마우스이며, Knock-In Mouse는 특정 유전자를 변형함으로써 목표 유전자 발현을 조절 및 탐색할 수 있는 유전자 변형 마우스입니다. 이 밖에도 대량증식, 마우스 계통, 수정란 동결 및 복원, KO/TG 마우스 사육 및 선별 등 GEM과 관련된 다양한 부가 서비스를 제공하고 있습니다. 고객의 다양한 요구를 충족할 수 있도록 맞춤형 부분 공정 서비스를 제공하며, 효율적 공정을 위해 충분한 실험 설계 과정을 거친 후 유전자 변형 마우스를 제작하고 있습니다. 철저한 검역 시스템을 통해 모든 마우스를 SPF(Specific Pathogen Free) 상태로 유지∙공급하고 있습니다.
       <br><br>
@@ -80,7 +80,7 @@
                     <p class="font-h4 main-title">CRISPR Knock-In/Out</p>
                     <p class="subject">CRISPR(Clustered Regularly Interspaced Short Palindromic Repeats)시스템을 바탕으로  짧은 시간과 적은 비용으로 KI/KO 마우스 제작 및 Product를 공급합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-animal-crispr.png" alt="CRISPR Knock-In/Out">
+                        <img src="/publishing/pc-ko/dist/img/business/img-animal-crispr.png" alt="CRISPR Knock-In/Out">
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">CRISPR gRNA Synthesis</p>
@@ -112,7 +112,7 @@
                         </ul>
                     </div>
                     <div class="border-gray-box">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-crisper_kiko_mouse.png" alt="CRISPR KI/KO Mouse">
+                        <img src="/publishing/pc-ko/dist/img/business/img-crisper_kiko_mouse.png" alt="CRISPR KI/KO Mouse">
                     </div>
                     <div class="btn-area">
                         <a href="mailto:mouse@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
@@ -138,7 +138,7 @@
                     <p class="font-h4 main-title">Genetically Engineered Mouse</p>
                     <p class="subject">유전자 변형 마우스를 생산 및 공급하는 GEM(Genetically Engineered Mouse) 서비스를 제공합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-animal-genetically.png" alt="Genetically Engineered Mouse">
+                        <img src="/publishing/pc-ko/dist/img/business/img-animal-genetically.png" alt="Genetically Engineered Mouse">
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">Knock-out (KO)</p>
@@ -180,7 +180,7 @@
                         <div class="list-area">
                             <p class="font-h8 title img_bottom">Workflow</p>
                             <div class="img">
-                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level4.png" alt="workflow">
+                                <img src="/publishing/pc-ko/dist/img/business/img_workflow_level4.png" alt="workflow">
                             </div>
                             <p class="caption">※ 디자인에 따라 conventional, inducible, conditional expression vector 등 자유롭게 제작 가능 </p>
                         </div>
@@ -250,13 +250,13 @@
                     <p class="desc img_bottom">자연 교배 및 체외수정을 통해 단기간에 원하는 수량의 마우스 확보가 가능합니다. 마크로젠의 대량증식 서비스는 IVF 기술을 통해 대량의 동일 주령 개체 수를 확보하여 비 임상 실험에 필요한 마우스를 제작합니다. 이를 바탕으로 의약 연구소 및 국가 연구 기관 등 다양한 실험에 필요한 마우스를 효율적으로 제공하여 고객이 빠른 시간 내 비임상시험 결과를 도출할 수 있도록 지원하고 있습니다. 안정적인 수정란 이식(Embryo transfer) 기술과 높은 효율의 IVF 방법을 활용하여 고객이 원하는 주령 및 수량에 맞춰 단기간에 대량으로 마우스를 제공합니다.</p>
                     <div class="border-gray-box">
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img-breeding.png" alt="Mass Reproduction">
+                            <img src="/publishing/pc-ko/dist/img/business/img-breeding.png" alt="Mass Reproduction">
                         </div>
                     </div>
                     <div class="list-area">
                         <p class="font-h8 title img_bottom">Workflow</p>
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level6.png" alt="workflow">
+                            <img src="/publishing/pc-ko/dist/img/business/img_workflow_level6.png" alt="workflow">
                         </div>
                     </div>
 
@@ -287,7 +287,7 @@
                     <p class="font-h4 main-title">Additional</p>
                     <p class="subject">고객의 실험 목적에 맞는 부가서비스 실험을 다양한 규모로 제공합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-animal-additional.png" alt="Additional">
+                        <img src="/publishing/pc-ko/dist/img/business/img-animal-additional.png" alt="Additional">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">마우스 사육 및 선별 (Mouse Maintenance)</p>

@@ -34,7 +34,7 @@
     </p>
     <p class="subject">고객 맞춤형 DNA 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
     <div class="img">
-        <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-intro.png" alt="oligoIntro">
+        <img src="/publishing/pc-ko/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
     </div>
     <p class="desc">마크로젠은 고품질 원료와 최적화된 자동화 시스템을 이용하여 다양한 Oligo 합성서비스를 제공합니다. 실험에 사용되는 다양한 Oligo를 원하는 염기서열로 합성하여 제공하는 고객맞춤 서비스입니다.
         합성된 Oligo는 DNA  Sequencing, PCR, SNP 연구, Gene Synthesis, NGS 서비스, qPCR 서비스, Biochip, siRNA 발현 등 생물학 및 의학분야에서 다양하게 활용되고 있습니다. 마크로젠은 고품질의
@@ -86,7 +86,7 @@
           <p class="subject">Standard Oligo 서비스는 각종 실험에 사용되는 Oligo를 고객이 원하는 서열로 합성하여 제공하는 서비스입니다.</p>
           <p class="desc img_bottom">마크로젠의 Oligo 합성 서비스는 합성부터 정제, 분주 등 전 과정을 신속하게 제공하기 위해 자체 개발한 최상의 자동화 시스템을 이용하며, 주문부터 배송까지 모든 프로세스를 모니터링할 수 있는  온라인 주문 시스템 LIMS를 지원합니다.  또한 MALDI-TOF mess spectrometry를 통해 모든 올리고의 품질을 관리합니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-standard.png" alt="Standard Oligo cffnb">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-standard.png" alt="Standard Oligo cffnb">
           </div>
           <div class="list-area-group">
             <div class="list-area">
@@ -123,7 +123,7 @@
           <p class="font-h4 main-title">Modified Oligo</p>
           <p class="subject">Modified Oligo는 Standard oligo의 3'과 5', Internal 또는 양쪽 말단에 특수 물질이 결합하여 있는 형태로 제공되는 Oligo 서비스입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-modified.png" alt="Modified Oligo">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-modified.png" alt="Modified Oligo">
           </div>
           <p class="desc">마크로젠의 Modified Oligo 서비스는 자체적으로 제작이 이루어 집니다.
             Fluorescent Dyes, Non-fluorescent modifications, Dark quenchers, Internal modification 등의 Modified oligo를 매일 합성을 진행하여 신속한 실험 여건을 제공합니다.
@@ -153,7 +153,7 @@
           <p class="font-h4 main-title">Premade Oligo</p>
           <p class="subject">Premade Oligo는 자주 사용되는 Universal Oligo를 PAGE 정제로 미리 제작하여, 주문 시 곧바로 제공할 수 있도록 준비된 올리고 입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-premade.png" alt="Premade Oligo">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-premade.png" alt="Premade Oligo">
           </div>
           <div class="list-area-group">
             <div class="list-area">
@@ -196,7 +196,7 @@
           <p class="font-h4 main-title">Plate Oligo</p>
           <p class="subject">플레이트 올리고(Plate Oligo)는 올리고를 96-well plate 형태로 제공하는 서비스입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-plate.png" alt="Plate Oligo">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-plate.png" alt="Plate Oligo">
           </div>
           <div class="list-area-group">
             <div class="list-area">
@@ -242,7 +242,7 @@
           <p class="font-h4 main-title">Duplex Oligo</p>
           <p class="subject">Duplex Oligo(Annealing service)는 상보적인 두 개의 Single Strand DNA를 하나의 Double Strand DNA 형태로 제공하는 서비스입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-duplex.png" alt="Duplex Oligo">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-duplex.png" alt="Duplex Oligo">
           </div>
           <div class="list-area-group">
             <div class="list-area">
@@ -287,7 +287,7 @@
           <p class="subject">RAPD Kits는 유전자 지도 작성 및 DNA 지문 채취 등 다양한 연구목적에 적합한 20개의 개별 10 mer Oligo를 제공하는 서비스입니다.
           </p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-oligo-rapdkit.png" alt="RAPD Kits">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-rapdkit.png" alt="RAPD Kits">
           </div>
           <div class="list-area-group">
             <div class="list-area">

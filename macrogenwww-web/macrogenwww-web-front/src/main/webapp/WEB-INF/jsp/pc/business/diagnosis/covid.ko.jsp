@@ -63,7 +63,7 @@
                     <p class="desc img_bottom">해당 제품은 실시간 유전자 증폭(Real Time-PCR, RT-PCR) 방식을 활용해 미량의 신종 코로나바이러스를 가진 환자를 정확하게 선별합니다.<br>
                         Axen™ COVID-19 RT 진단키트는 식품의약품안전처의 수출 허가를 승인받았으며, 유럽 체외진단시약 인증(CE-IVD)을 획득해 해외 고객을 대상으로 신뢰도 높은 진단 서비스를 제공하고 있습니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
+                        <img src="/publishing/pc-ko/dist/img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
                     </div>
                     <div class="list-area-group">
                         <!-- <div class="list-area">
@@ -131,7 +131,7 @@
                         <div class="list-area">
                             <p class="font-h8 title figure_bottom">Process</p>
                             <div class="img">
-                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level5_row.png" alt="workflow">
+                                <img src="/publishing/pc-ko/dist/img/business/img_workflow_level5_row.png" alt="workflow">
                             </div>
                         </div>
                         <div class="list-area">
@@ -196,13 +196,13 @@
                     </div>
                     <div class="border-gray-box-wrap">
                         <div class="border-gray-box">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
+                            <img src="/publishing/pc-ko/dist/img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
                         </div>
                         <div class="border-gray-box">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
+                            <img src="/publishing/pc-ko/dist/img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
                         </div>
                         <div class="border-gray-box">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_clinicaltrialtest.png" alt="flow">
+                            <img src="/publishing/pc-ko/dist/img/business/img_clinicaltrialtest.png" alt="flow">
                         </div>
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
@@ -229,7 +229,7 @@
                     <p class="subject">스마트 모바일 랩(Smart Mobile Lab)은 마크로젠이 전 세계 코로나19 대응을 위해 국내 최초로 구축한 ‘코로나19 현장 검사 시스템’입니다.</p>
                     <p class="desc img_bottom">코로나 현장 검사를 위한 이동형 소형 검사실로, 바이러스 핵산 추출, 유전자 검사 및 분석 결과 도출까지 전 과정을 진행할 수 있는 올인원(all-in-one) 시스템으로 구성되어 있습니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-smartmobile-intro.png" alt="스마트모바일랩">
+                        <img src="/publishing/pc-ko/dist/img/business/img-smartmobile-intro.png" alt="스마트모바일랩">
                     </div>
                     <div class="list-area-group">
                         <!-- <div class="list-area">
@@ -285,7 +285,7 @@
                         <div class="list-area">
                             <p class="font-h8 title img_bottom">Process</p>
                             <div class="img">
-                                <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow-level7.png" alt="workflow">
+                                <img src="/publishing/pc-ko/dist/img/business/img_workflow-level7.png" alt="workflow">
                             </div>
                         </div>
                     </div>

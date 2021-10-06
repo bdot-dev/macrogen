@@ -36,7 +36,7 @@
     <p class="subject">NGS(Next  Generation Sequencing)는 유전체를 무수한 조각으로 나누어 읽고,<br>
         이를 통해 얻은 염기서열을 조립하여 유전체 서열을 분석하는 차세대 염기서열 분석 방법입니다.</p>
     <div class="img">
-        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-intro.png" alt="NgsIntro">
+        <img src="/publishing/pc-ko/dist/img/business/img-ngs-intro.png" alt="NgsIntro">
     </div>
     <p class="desc">
         마크로젠은 NGS 정보 기반 연구개발 및 의료기관 협업을 통해 개인의 질병을 예측하고 진단하며, 유전적 특성에 따른 맞춤치료 방안을 제시하는 정밀의학 분야 글로벌 선도기업입니다.<br>
@@ -92,6 +92,14 @@
                         $("._closebtn").on('click',function() {
                             $(".tab-modal").hide();
                         });
+                        <!--10.05 스크립트 추가-->
+                        $(document).mouseup(function (e){
+                            var LayerPopup = $(".tab-modal");
+                            if(LayerPopup.has(e.target).length === 0){
+                                LayerPopup.hide();
+                            }
+                        });
+
                     </script>
                 </div>
             </div>
@@ -104,8 +112,8 @@
                     <p class="desc img_bottom">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계 153개국 1만
                         8천여 연구기관 고객을 보유하고 있으며, 연간 30만 명의 WGS 분석 시설, 총 30PB를 저장할 수 있는 컴퓨팅 시설 등 글로벌 톱 수준의 분석 인프라를 통해 유전체
                         정보 기반 정밀의학 빅데이터 시대를 만들어 가고 있습니다.</p>
-                    <div class="bacgrkound">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-genome.png" alt="Whole Genome Sequencing">
+                    <div class="img">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-genome.png" alt="Whole Genome Sequencing">
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">Whole Genome Resequencing</p>
@@ -154,7 +162,7 @@
                     <p class="desc img_bottom">기존 연구를 통해 얻은 유전자를 선택적으로 분석함으로써 WGS보다 효율적이고 경제적인 연구 방법입니다. Capture Kit(Agilent SureSelect Exome Capture kit, Truseq Exome Enrichment Kit,<br> Twist Human Core Exome Kit)을 사용한 전체 Exome 분석이 가능하며 SNP 및 InDel 등의 변이 분석을 함께 제공합니다.
                     </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-wes.png" alt="Whole Exsome Sequencing">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-wes.png" alt="Whole Exsome Sequencing">
                     </div>
                     <!-- <hr class="divider"> -->
                     <div class="list-area-group">
@@ -203,7 +211,7 @@
                         마크로젠은 다년간의 연구 경험을 통해 연구자의 Transcriptome Sequencing 관련 니즈를 충족시키기 위한  각종 library kit 및 NGS 장비, 컴퓨팅 시설 등을 갖추고 있습니다.
                     </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-test1.png" alt="TranscriptomeSequencing소개이미지">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-test1.png" alt="TranscriptomeSequencing소개이미지">
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5 ">mRNA / Total RNA Sequencing</p>
@@ -312,7 +320,7 @@
                         효과적으로 분석할 수 있습니다. Bisulfite 등의 물질로 DNA시료의 변형을 통해 분석을 진행함에 따라 Whole Genome Sequencing에 비해 그 품질이 저하될 가능성이 높은 서비스 입니다. 마크로젠은 국내
                         1위, 세계 5위 수준의 NGS 수행능력을 기반으로 높은 품질의 분석 데이터를 제공할 수 있으며 또한 ATAC Sequencing은 현재 국내 유일하게 서비스가 가능합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-test2.png" alt="Epigenome Sequencing">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-test2.png" alt="Epigenome Sequencing">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
@@ -349,7 +357,7 @@
                         기반으로 높은 수준의 유전자 분석 데이터를 빠르게 제공합니다. 또한 24년간 축적한 업계 1위의 유전체 분석 기술력과 빅데이터 및 미개척 분야 연구 투자를 기반으로 싱글셀
                         분석 서비스를 다양화하며 시장을 선도하고 있습니다. </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-cell.png" alt="Single Cell Muti-omics analysis소개이미지">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-cell.png" alt="Single Cell Muti-omics analysis소개이미지">
                     </div>
                     <div class="box-gray-6">
                         <div>
@@ -411,7 +419,7 @@
                         조절되지만, DNA 염기서열의 변화 없이 나선 구조의 변화나 주변 단백질의 변화를 통해서도 조절할 수 있습니다. DNA 염기서열의 변화 없이 구조의 변화나 주변 단백질의
                         변화를 통한 유전자 기능의 변화를 연구하는 학문을 후성유전학(Epigenetics)이라 합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-atac.png" alt="ATAC analysis">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-atac.png" alt="ATAC analysis">
                     </div>
                     <p class="desc">이를 분석하는 여러 방법 중 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 ATAC(Assay for Transposase-Accessible
                         Chromatin)서비스를 제공하는국내 기업은 마크로젠이 유일합니다. ATAC 분석을 통해 응축되어 있던 DNA가 RNA 전사 과정을 위해 풀려 있는 부분의 서열을 알게
@@ -441,7 +449,7 @@
                     <p class="subject">조직의 공간 정보와 유전체 발현 정보를 동시에 확인 할 수 있는 최신 연구 분석 방법입니다. </p>
                     <p class="desc img_bottom">위치 기반 전사체 분석은 가장 최신의 유전자 분석 기술로, 세포들의 유전자 정보와 세포들이 어느 위치에 존재하는지를 동시에 분석하는 기술입니다.  단일 세포로의 분리나 RNA 추출 없이 조직 자체의 유전자 발현을 바로 분석할 수 있는 기술이며, 이를 통해 유전자 발현 정보뿐만 아니라 조직이 가지고 있는 세포의 고유한 위치 정보까지 같이 얻을 수 있어 조직이질성(tissue heterogeneity)을 동시에 이해 할 수 있습니다. 또한 수술로 얻은 fresh 조직과 조직을 보관하기 위해 포르말린으로 고정시켜 저장해놓은 FFPE 조직 모두에 해당 분석 방법을 적용할 수 있다는 장점이 있습니다.  유전자 정보와 조직 위치 정보를 한번에 분석함으로써 질병의 치료 방향을 설정하거나 약효 예측 등에 활용 할 수 있습니다. 예를 들어 암 환자의 면역세포와 암세포의 유전자 정보와 위치를 확인함으로써 어떤 방법으로 치료를 해야 효과적일지, 암 세포의 전이가 진행되지는 않았는지, 약물 치료 후의 예후는 어떻게 예상되는지 등에 활용될 수 있습니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
                     </div>
                     <p class="desc">마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게 도입함으로써 공간 유전체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
                     </p>
