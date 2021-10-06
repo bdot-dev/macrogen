@@ -34,7 +34,7 @@
     </p>
     <p class="subject">다양한 연구 목적으로 제작된 Microarray를 활용하여 유용한 유전체 정보를 해석하는 서비스입니다. </p>
     <div class="img">
-        <img src="/publishing/pc-ko/dist/img/@temp/business/img-microarray-intro.png" alt="MicroarrayIntro">
+        <img src="/publishing/pc-ko/dist/img/business/img-microarray-intro.png" alt="MicroarrayIntro">
     </div>
     <p class="desc">
         마크로젠은 정밀한 DNA Microarray 기술을 활용해 유전자분석 서비스를 제공합니다. DNA chip, Biochip, gene-array 등 다양한 용어로 불리는 Microarray는 눈에 보이지 않는 미세한 탐침(Probe)를 칩에 배열시킨 뒤 DNA, RNA, 단백질 등의 반응을 통해 유전자의 발현패턴을 측정하고 변이 여부 등을 확인하는 기술입니다. Microarray 분석은 탐침(Probe) 고밀도로 집적하여 작은 칩 형태로 제작할 수 있는 기술과 실험수행 및 결과로부터 유의미한 유전학적 정보들을 정확하게 선별해낼 수 있는 능력이 필수적입니다.
@@ -80,7 +80,7 @@
           <p class="font-h4 main-title">Expression Microarray</p>
           <p class="subject">생물학적 환경에 따라 발현 정도가 달라지는 특징을 가진 유전체를 분석하는 방법입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-microarray-expression.png" alt="Expression Microarray">
+            <img src="/publishing/pc-ko/dist/img/business/img-microarray-expression.png" alt="Expression Microarray">
           </div>
           <hr class="divider">
           <p class="font-h5 sub-title">mRNA Expression Microarray</p>
@@ -280,7 +280,7 @@
           <p class="font-h4 main-title">Genome Microarray</p>
           <p class="subject">DNA상의 다양한 염기서열 변이나 구조적 변화에 대해 분석하는 방법입니다.</p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-microarray-genome.png" alt="Genome Microarray">
+            <img src="/publishing/pc-ko/dist/img/business/img-microarray-genome.png" alt="Genome Microarray">
           </div>
           <hr class="divider">
           <p class="font-h5 sub-title">SNP Genotyping Microarray</p>
@@ -543,7 +543,7 @@
           <p class="font-h4 main-title">Epigenome Microarray</p>
           <p class="subject">수많은 DNA 부위의 메틸화 정도를 동시에 수치화하여 분석하는 방법입니다. </p>
           <div class="img">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-microarray-epigenome.png" alt="EpigenomeMicroarray">
+            <img src="/publishing/pc-ko/dist/img/business/img-microarray-epigenome.png" alt="EpigenomeMicroarray">
           </div>
           <hr class="divider">
           <p class="font-h4 main-title">DNA Methylation Microarray</p>

@@ -99,10 +99,10 @@
 </style>
 <div class="wrap">
     <div class="img logo">
-        <img src="/publishing/pc-ko/dist/img/@temp/error/logo.png" alt="로고">
+        <img src="/publishing/pc-ko/dist/img/error/logo.png" alt="로고">
     </div>
     <div class="img error">
-        <img src="/publishing/pc-ko/dist/img/@temp/error/error.png" alt="에러이미지">
+        <img src="/publishing/pc-ko/dist/img/error/error.png" alt="에러이미지">
     </div>
     <p class="title">
         현재 마크로젠 사이트 접속이 원활하지 않습니다<br>

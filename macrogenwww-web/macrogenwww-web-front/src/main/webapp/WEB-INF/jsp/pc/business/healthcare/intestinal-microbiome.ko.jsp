@@ -19,7 +19,7 @@
 </nav>
 
             <div class="hero-title">마이크로바이옴 분석</div>
-            <div class="slogan-sub">더 바이옴 마이크로브앤미</div>
+            <div class="slogan-sub">더바이옴/마이크로브앤미</div>
         </div>
     </div>
     <div class="container">
@@ -33,7 +33,7 @@
                     웰니스까지 포괄적인 범위의 개인유전체 서비스라인을 갖추게 되었습니다. 마크로젠 개인유전체 사업부는 고객의 인생 여정에 언제나 함께할 수 있는 건강 관리 멘토이자 동반자가
                     되는 것을 목표로 계속해서 마이지놈스토리를 연구하고 발전시켜 나갈 것이며, 이를 통해 고객들에게 끊임없이 새로운 서비스를 제시할 것입니다.</p>
                 <div class="img">
-                    <img src="/publishing/pc-ko/dist/img/@temp/business/img_microbiome_intro.png" alt="마이지놈스토리인트로">
+                    <img src="/publishing/pc-ko/dist/img/business/img_microbiome_intro.png" alt="마이지놈스토리인트로">
                 </div>
             </div>
             <div class="info-box-wrap">
@@ -42,7 +42,7 @@
                     <p class="font-h4 main-title" id="disease_title">마이크로바이옴 검사</p>
                     <p class="subject img_bottom">우리의 장 속에 존재하는 ‘미생물’은 제2의 유전체라고 불릴 만큼 많은 양일뿐만 아니라 면역, 비만, 암 등 다양한 질병에 관여하는 중요한 존재입니다.  마크로젠이 자체 개발한 장내 미생물 분석 서비스 ‘마이크로브앤미’는 장 속 유익균과 유해균을 분석하여 장내 환경을 파악하고 건강한 장을 만들 수 있도록 돕습니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
+                        <img src="/publishing/pc-ko/dist/img/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                     </div>
                     <div class="btn-area">
                         <a href="https://www.my-genomestory.com/service_detail?service_code=mbs&selectLang=ko" target="_blank" class="btn btn-white"><span>서비스문의</span></a>

@@ -33,7 +33,7 @@
   </p>
   <p class="subject">CES는 Sanger Sequencing 베이스로 진행되며 생화학적 방법을 이용하는 DNA 염기서열 분석 방법입니다.</p>
   <div class="img">
-    <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-intro.png" alt="CESIntro">
+    <img src="/publishing/pc-ko/dist/img/business/img-ces-intro.png" alt="CESIntro">
   </div>
   <p class="desc">CES 서비스는 가장 보편화된 서비스인 Standard Sequencing,  Identification, Fragment 분석서비스, 기존 Sequencing 방식에서 새롭게 응용된 Customized Sequencing서비스까지 다양한 제품군을 통해 고객 만족을 극대화합니다. 일반 Sequencing 서비스 뿐만 아니라, 고객 요청에 따른 맞춤형 서비스(gDNA추출, Primer 합성, PCR 증폭 및 정제 등)를 통해 고객 만족을 극대화합니다. 온라인 주문 시스템으로 원하는 서비스를 간편하게 의뢰할 수 있으며 주문샘플에 대한 프로세스 모니터링과 최종결과에 따른 사후관리를 진행합니다.
   </p>
@@ -83,7 +83,7 @@
                     <p class="desc img_bottom">CES 자동화 시스템과 풍부한 경험을 바탕으로 빠르고 정확한 서비스를 제공합니다. 결과 발송 후에는 전문관리자가 사후관리를 도와드립니다.
                     </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-standard.png" alt="Standard Sequencing">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ces-standard.png" alt="Standard Sequencing">
                     </div>
                     <div class="list-area">
                         <p class="font-h8 title">Features</p>
@@ -132,7 +132,7 @@
                         </ul>
                     </div>
                     <div class="border-gray-box">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_sequencingchart.png" alt="Difficult Template Sequencing">
+                        <img src="/publishing/pc-ko/dist/img/business/img_sequencingchart.png" alt="Difficult Template Sequencing">
                     </div>
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
@@ -155,7 +155,7 @@
                     <p class="font-h4 main-title">Identification</p>
                     <p class="subject">범용적으로 사용되는 미생물/생물체의 종을 판별하는 실험을 prep부터 분석까지 패키지로 제공하는 서비스입니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-identification.png" alt="Identification">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ces-identification.png" alt="Identification">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">16S/18S/26S rRNA&ITS Region Full Sequencing</p>
@@ -210,7 +210,7 @@
                     <p class="main-title font-h4">Fragment</p>
                     <p class="subject">Fregment 서비스는 Genotyping, DNA profiling과 의학적 Mutation detection, Agricultural research 등 매우 다양한 서비스를 포함 하고 있습니다.<br>마크로젠은 다양한 경험과 노하우를 바탕으로 Microsatellite 분석(VNTRs)서비스를 제공합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-fragment.png" alt="Fragment">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ces-fragment.png" alt="Fragment">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Fragment 분석 (Genescan)</p>
@@ -263,7 +263,7 @@
                     <p class="main-title font-h4">Customized Sequencing</p>
                     <p class="subject">Customized Sequencing은 동일 조건 하의 sanger sequencing 실험, prep, PCR, Cloning, Pyrosequencing 등을 제공합니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-customized.png" alt="Customized Sequencing">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ces-customized.png" alt="Customized Sequencing">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">PCR Optimization/Amplification</p>
@@ -321,7 +321,7 @@
                     <p class="font-h5 sub-title">MLST 분석</p>
                     <p class="desc figure_bottom">MLST(Multilocus Sequence Typing) 분석은 Bacteria, Fungi 등 동일 종 내의 균주를 분류하는 분석 방법으로 특이 균종 5~7개 Housekeeping gene을 Sequencing 하여  각각의Sequence Type(ST) 연관 관계를 분석하고, 동일 균종 내 균주별 대립유전자의 조합을 통해 유전적/분자적 진화 관계를 확인합니다. </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_mslt.png" alt="MLST 분석">
+                        <img src="/publishing/pc-ko/dist/img/business/img_mslt.png" alt="MLST 분석">
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5 ">
@@ -372,7 +372,7 @@
                     <p class="subject">휴먼아이디(Human ID)는 연구 개발 목적의 개인 유전자 감식 서비스를 제공하고 있습니다.</p>
                     <p class="desc img_bottom">해당 서비스는 개인의 고유한 DNA 패턴을 비교 분석함으로써 직계존속 관계를 확인할 수 있는 친자 확인 검사, 8촌 이내의 부계혈연 관계를 증명할 수 있는 부계 확인 검사, 여성의 모계혈연 관계를 증명하는 모계 확인 검사, 그리고 전사자 유골 등 신원 확인을 위해 수행되는 유골 DNA 검사와 개인식별 검사를 제공하고 있습니다. Human ID는 머리카락, 구강상피세포, 유골, 타액 등 다양한 검사 가능 검체를 통하여 유전자 분석 실험을 진행하고 있으며 검사 결과에 대한 99.99%의 정확도를 통해 신뢰할 수 있는 서비스를 제공하고 있습니다.</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-human.png" alt="Human ID">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ces-human.png" alt="Human ID">
                     </div>
                     <div class="list-area">
                         <p class="font-h8 title">검사목적</p>
@@ -390,7 +390,7 @@
                             <p class="title font-h5">친자확인 검사</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-test1.png" alt="친자확인검사">
+                                    <img src="/publishing/pc-ko/dist/img/business/img-ces-test1.png" alt="친자확인검사">
                                 </div>
                                 <p class="desc">혈연 관계를 확인하기 위해 성염색체를 포함한 총 16개의 STR (Short Tandem Repeat) 유전자를 유전자 증폭을 통해 검사합니다. STR (Short Tandem Repeat)은 인간의 DNA 염기서열 중 2~7개의 염기가 연속적으로 반복되는 구간을 의미합니다. ATG 염기서열
                                     반복 횟수를 확인해 친자 확인 여부를 증명할 수 있습니다. 16개의 STR 유전자 좌위를 조사하여 부, 모, 자녀 3인의 친자 검사확률이 99.999% 이상, 부(모), 자 2인의 검사확률이 99.9% 이상이면 친부(모)로 인정합니다.</p></div>
@@ -400,7 +400,7 @@
                             <p class="title font-h5">부계확인 검사</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-test2.png" alt="부계확인검사">
+                                    <img src="/publishing/pc-ko/dist/img/business/img-ces-test2.png" alt="부계확인검사">
                                 </div>
                                 <p class="desc">성염색체의 경우 남성은 XY, 여성은 XX를 가지고 있습니다. Y염색체는 남성에게만 존재하며, 아버지로부터 받은 Y염색체는 아들에게만
                                     전달됩니다. 따라서 부모의 DNA와 비교하면 반은 아버지, 나머지 반은 어머니와 일치하게 됩니다.
@@ -413,7 +413,7 @@
                             <p class="title font-h5">모계확인 검사</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-test3.png" alt="모계확인검사">
+                                    <img src="/publishing/pc-ko/dist/img/business/img-ces-test3.png" alt="모계확인검사">
                                 </div>
                                 <p class="desc">사람의 세포에는 핵 속에 존재하는 DNA와 함께 핵 바깥 쪽에 적은 양의 미토콘드리아 DNA를 포함하고 있습니다.
                                     세포수정 시 정자는 핵 속 DNA만 난자에 전달하기 때문에 미토콘드리아의 DNA는 수정란에 들어가지 못하게 됩니다.
@@ -428,7 +428,7 @@
                             <p class="title font-h5">개인식별 검사</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img-ces-test4.png" alt="개인식별검사">
+                                    <img src="/publishing/pc-ko/dist/img/business/img-ces-test4.png" alt="개인식별검사">
                                 </div>
                                 <p class="desc">개인식별 검사 또는 DNA 프로파일링(DNA profiling)은 범죄수사 시 유전자 검사 방법으로 이용되고 있습니다. Human ID는
                                     국제표준화 분석 기법(미국 FBI에서 사용하는 CODIS의 유전자 좌위)을 기반으로 16개의 STR 유전자 좌위를 분석해 개인식별 검사를 진행하고 있습니다.
