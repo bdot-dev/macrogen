@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.LangId;
+import macrogen.www.service.BbsCtgryService;
+import macrogen.www.service.NttService;
 import macrogen.www.service.PatentService;
 import macrogen.www.service.ThesisService;
+import macrogen.www.vo.BbsCtgryVo;
+import macrogen.www.vo.NttVo;
 import macrogen.www.vo.PatentVo;
 import macrogen.www.vo.ThesisVo;
 
@@ -35,6 +39,12 @@ public class RndController extends DefaultController {
 
 	@Autowired
 	private ThesisService thesisService;
+
+	@Autowired
+	private NttService nttService;
+
+	@Autowired
+	private BbsCtgryService bbsCtgryService;
 
 	@RequestMapping("/patent")
 	public String patent(@PathVariable LangId langId,
@@ -95,8 +105,50 @@ public class RndController extends DefaultController {
 	}
 
 	@RequestMapping("/institute/precision-medicine")
-	public String precisionMedicine() throws Exception {
+	public String precisionMedicine(@PathVariable LangId langId, Model model) throws Exception {
+
+		// 연구성과 카테고리 목록 (하위목록 : 게시글 목록) bbs_id = 'research-result'
+		String bbsId = "research-result";
+		BbsCtgryVo ctgryVo = new BbsCtgryVo();
+		ctgryVo.setBbsId(bbsId);
+		ctgryVo.setFirstIndex(-1);
+		List<BbsCtgryVo> resultList = bbsCtgryService.list(ctgryVo);
+		if (null != resultList && !resultList.isEmpty()) {
+			for (BbsCtgryVo result : resultList) {
+				NttVo vo = new NttVo();
+				vo.setLangCode(langId.name());
+				vo.setBbsId(result.getBbsId());
+				vo.setBbsCtgrySn(result.getBbsCtgrySn());
+				vo.setFirstIndex(-1);
+				result.setNttList(nttService.list(vo));
+			}
+		}
+		model.addAttribute("resultList", resultList);
+
 		return getDev() + "/rnd/institute/precision-medicine." + getLang();
+	}
+
+	@RequestMapping("/research-result/viewAjaxHtml/{nttSn}")
+	public String winnerViewAjaxHtml(@PathVariable LangId langId, @PathVariable Long nttSn,
+			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
+
+		NttVo resultVo = nttService.viewByPk(nttSn);
+		model.addAttribute("resultVo", resultVo);
+
+		// 이전글, 다음글
+		String bbsId = "research-result";
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId(bbsId);
+		listVo.setBbsCtgrySn(listVo.getBbsCtgrySn());
+		listVo.setNttSn(nttSn);
+
+		NttVo prevVo = nttService.prev(listVo);
+		model.addAttribute("prevVo", prevVo);
+
+		NttVo nextVo = nttService.next(listVo);
+		model.addAttribute("nextVo", nextVo);
+
+		return getDev() + "/rnd/research-result-viewAjaxHtml." + getLang();
 	}
 
 	@RequestMapping("/institute/bioinformatics")

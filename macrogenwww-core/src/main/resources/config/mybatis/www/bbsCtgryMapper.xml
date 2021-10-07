@@ -20,6 +20,8 @@
 		select
 			tbc.bbs_ctgry_sn
 			, tbc.bbs_ctgry_nm
+			, tbc.bbs_ctgry_nm_ko
+			, tbc.bbs_ctgry_nm_en
 			, tbc.sort_ordr
 			, tbc.bbs_id
 			, tbc.regist_dt, tbc.register_sn, tbc.updt_dt, tbc.updusr_sn
