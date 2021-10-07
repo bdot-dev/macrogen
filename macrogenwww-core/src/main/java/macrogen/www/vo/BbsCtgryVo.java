@@ -1,5 +1,7 @@
 package macrogen.www.vo;
 
+import java.util.List;
+
 /**
  * <pre>
  * macrogen.www.vo
@@ -19,6 +21,8 @@ public class BbsCtgryVo extends DefaultVo {
 	private String bbsCtgryNmEn;
 	private Integer sortOrdr;
 	private String bbsId;
+
+	private List<NttVo> nttList;
 
 	public Long getBbsCtgrySn() {
 		return bbsCtgrySn;
@@ -55,5 +59,11 @@ public class BbsCtgryVo extends DefaultVo {
 	}
 	public void setBbsCtgryNmEn(String bbsCtgryNmEn) {
 		this.bbsCtgryNmEn = bbsCtgryNmEn;
+	}
+	public List<NttVo> getNttList() {
+		return nttList;
+	}
+	public void setNttList(List<NttVo> nttList) {
+		this.nttList = nttList;
 	}
 }

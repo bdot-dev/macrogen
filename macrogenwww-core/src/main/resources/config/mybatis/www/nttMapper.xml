@@ -24,6 +24,9 @@
 		<if test="searchBbsCtgrySn != null and searchBbsCtgrySn != ''">
 			and tn.bbs_ctgry_sn = #{searchBbsCtgrySn}
 		</if>
+		<if test="bbsCtgrySn != null and bbsCtgrySn != ''">
+			and tn.bbs_ctgry_sn = #{bbsCtgrySn}
+		</if>
 		<if test="searchKeyword != null and searchKeyword != ''">
 			<choose>
 				<when test="searchCondition == 'TITLE'">
@@ -77,6 +80,8 @@
 			, tn.bbs_id
 			, tn.bbs_ctgry_sn
 			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
+			, ( select bbs_ctgry_nm_ko from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm_ko
+			, ( select bbs_ctgry_nm_en from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm_en
 			, tn.ntt_sj
 			, tn.ntt_cn
 			, tn.expsr_yn
@@ -126,6 +131,8 @@
 			, tn.bbs_id
 			, tn.bbs_ctgry_sn
 			, ( select bbs_ctgry_nm from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm
+			, ( select bbs_ctgry_nm_ko from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm_ko
+			, ( select bbs_ctgry_nm_en from tb_bbs_ctgry where bbs_ctgry_sn = tn.bbs_ctgry_sn ) bbs_ctgry_nm_en
 			, tn.ntt_sj
 			, tn.ntt_cn
 			, tn.expsr_yn
@@ -247,6 +254,9 @@
 		<if test="searchKeyword != null and searchKeyword != ''">
 			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
 		</if>
+		<if test="bbsCtgrySn != null and bbsCtgrySn != ''">
+			and tn.bbs_ctgry_sn = #{bbsCtgrySn}
+		</if>
 		order by ntt_sn asc
 		limit 0, 1
 	</select>
@@ -260,6 +270,9 @@
 		and tn.ntt_sn <![CDATA[ < ]]> #{nttSn}
 		<if test="searchKeyword != null and searchKeyword != ''">
 			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+		</if>
+		<if test="bbsCtgrySn != null and bbsCtgrySn != ''">
+			and tn.bbs_ctgry_sn = #{bbsCtgrySn}
 		</if>
 		order by ntt_sn desc
 		limit 0, 1

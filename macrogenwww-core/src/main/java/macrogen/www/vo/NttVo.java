@@ -21,6 +21,8 @@ public class NttVo extends DefaultVo {
 	private String bbsId;
 	private Long bbsCtgrySn;
 	private String bbsCtgryNm;
+	private String bbsCtgryNmKo;
+	private String bbsCtgryNmEn;
 	private String nttSj;
 	private String nttCn;
 	private String expsrYn;
@@ -216,6 +218,18 @@ public class NttVo extends DefaultVo {
 	}
 	public void setCaptchaString(String captchaString) {
 		this.captchaString = captchaString;
+	}
+	public String getBbsCtgryNmKo() {
+		return bbsCtgryNmKo;
+	}
+	public void setBbsCtgryNmKo(String bbsCtgryNmKo) {
+		this.bbsCtgryNmKo = bbsCtgryNmKo;
+	}
+	public String getBbsCtgryNmEn() {
+		return bbsCtgryNmEn;
+	}
+	public void setBbsCtgryNmEn(String bbsCtgryNmEn) {
+		this.bbsCtgryNmEn = bbsCtgryNmEn;
 	}
 
 }

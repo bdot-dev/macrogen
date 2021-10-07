@@ -50,6 +50,11 @@ public class DecoratorMapper extends AbstractDecoratorMapper {
 					request.setAttribute("modal_winner_use", true);
 				}
 
+				// modal_research_result_use
+				if (path.startsWith("/ko/rnd/institute/precision-medicine") || path.startsWith("/en/rnd/institute/precision-medicine")) {
+					request.setAttribute("modal_research_result_use", true);
+				}
+
 				// remove_header_bg_white_unuse
 				if (path.startsWith("/ko/company/recruit") || path.startsWith("/en/company/recruit") ||
 						path.startsWith("/ko/company/contact-us") || path.startsWith("/en/company/contact-us")) {

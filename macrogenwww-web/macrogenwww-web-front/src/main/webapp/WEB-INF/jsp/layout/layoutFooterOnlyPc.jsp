@@ -86,5 +86,15 @@
 		    var modalListOfWinners = new bootstrap.Modal(document.getElementById('modalListOfWinners'));
 		</script>
 	</c:if>
+	<c:if test="${modal_research_result_use eq true }">
+		<div class="modal fade" tabindex="-1" id="Institute_01" data-bs-backdrop="static">
+		    <div class="modal-dialog modal-dialog-centered modal-lg research">
+		        <div class="modal-content"></div>
+		    </div>
+		</div>
+		<script>
+		    var modalResearchResult = new bootstrap.Modal(document.getElementById('Institute_01'));
+		</script>
+	</c:if>
 </body>
 </html>
