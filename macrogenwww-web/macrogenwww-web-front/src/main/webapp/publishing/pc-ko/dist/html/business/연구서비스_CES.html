@@ -50,7 +50,7 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v1.1 / 10.07</title>
+  <title>Macrogen v1.2 / 10.08</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1007"/>
@@ -320,6 +320,17 @@
                     <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                    /*페이지 변경후 상단 이동*/
+                    fnMove();
+                }
+
+
+
+                /*탭메뉴 상단으로 이동*/
+                function fnMove(){
+                    var offset = $("#_tab-box").offset();
+                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }
             </script>
 

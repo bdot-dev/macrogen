@@ -296,12 +296,6 @@ data.RD = {
     },
     {
       stateClass: 'complete',
-      url: '03R&D_01정밀의학연구소_02연구성과',
-      category: 'RD',
-      page: '03R&D_01정밀의학연구소_02연구성과'
-    },
-    {
-      stateClass: 'complete',
       url: '03R&D_02생명정보학연구소',
       category: 'RD',
       page: '03R&D_02생명정보학연구소'
