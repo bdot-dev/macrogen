@@ -25,7 +25,7 @@
     <div class="container">
         <div class="section_business">
             <!--탭 링크-->
-            <div class="tab-box">
+            <div class="tab-box" id="_tab-box">
                 <p class="font-h4 title">SERVICE</p>
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
@@ -53,6 +53,15 @@
                     <!--탭메뉴 클릭시 페이지 변경-->
                     $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
                     $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                    /*페이지 변경후 상단 이동*/
+                    fnMove();
+                }
+
+                /*탭메뉴 상단으로 이동*/
+                function fnMove(){
+                    var offset = $("#_tab-box").offset();
+                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }
             </script>
             <div class="info-box-wrap tab-content">
