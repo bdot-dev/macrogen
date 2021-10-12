@@ -62,10 +62,10 @@
                                 <div class="name">마크로젠 강남본사</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_1.png" alt="마크로젠 강남본사"></div>
                                 <div class="info">
-                                    <ul>
+                                    <!-- <ul>
                                         <li><span>설립일자</span><span>2019년 6월</span></li>
                                         <li><span>주요사업</span><span>개인유전체 분석 및 장내 미생물 분석 서비스</span></li>
-                                    </ul>
+                                    </ul> -->
                                     <div class="address">서울특별시 강남구 테헤란로 238 (마크로젠빌딩) </div>
                                     <div class="tel">
                                         <span>TEL.</span>
@@ -81,7 +81,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>1997년 6월</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">서울특별시 금천구 벚꽃로 254, 10층 (가산동, 월드메르디앙1차)</div>
                                     <div class="tel">
@@ -98,7 +98,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2002년 2월</span></li>
-                                        <li><span>주요사업</span><span>유전자 변형 마우스 제작 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전자 변형 마우스 제작 서비스</span></li> -->
                                     </ul>
                                     <div class="address">서울특별시 강서구 강서로 466, 3층 (등촌동, 우리벤처타운)</div>
                                     <div class="tel">
@@ -115,7 +115,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2008년 2월</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">대전광역시 유성구 테크노3로 65, 323호 (관평동, 한신에스메카)</div>
                                     <div class="tel">
@@ -139,7 +139,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2004년 12월</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA</div>
                                     <div class="tel">
@@ -158,7 +158,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2007년 11월</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN</div>
                                     <div class="tel">
@@ -175,7 +175,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2017년 9월(지사 오픈: 2008년 6월)</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
                                     <div class="tel">
@@ -192,7 +192,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2018년 3월 (지사 오픈: 2016년 11월)</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
                                     <div class="tel">
@@ -209,7 +209,7 @@
                                 <div class="info">
                                     <ul>
                                         <li><span>설립일자</span><span>2016년 12월</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
                                     <div class="tel">
