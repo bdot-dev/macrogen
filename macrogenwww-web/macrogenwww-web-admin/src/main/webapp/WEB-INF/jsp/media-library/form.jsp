@@ -29,15 +29,15 @@
 						<col width="35%">
 					</colgroup>
 					<tbody>
-						<tr>
+						<!-- <tr>
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">
 									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="80" placeholder="제목" style="width:100%;"/>
 								</div>
 							</td>
-						</tr>
-						<tr>
+						</tr> -->
+						<!-- <tr>
 							<th>카테고리 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<select v-model="resultVo.bbsCtgrySn" style="width:200px;" name="bbsCtgrySn" id="bbsCtgrySn" >
@@ -47,13 +47,13 @@
 								</select>
 
 							</td>
-						</tr>
+						</tr> -->
 						<tr>
 							<th>
-								리스트이미지
+								대표 이미지 <span>*</span>
 							</th>
 							<td colspan="3" class="tal">
-								<div class="lbMaxlenPrnt" style="padding-bottom: 20px;">
+								<%-- <div class="lbMaxlenPrnt" style="padding-bottom: 20px;">
 									<label>
 										<input type="checkbox" v-model="resultVo.thumbBassImageUseYn" true-value="Y" false-value="N"
 											ref="thumbBassImageUseYn" id="thumbBassImageUseYn" name="thumbBassImageUseYn" />
@@ -78,18 +78,76 @@
 	   									<img :src="result.codeNm"
 											style="width:100px; vertical-align: bottom;" />
 	   								</label>
+								</div> --%>
+								<div>
+									<input type="file" name="thumbFile" v-on:change="onchangeThumbFile" />
+									<span>(사이즈 : 용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
+								</div>
+								<div v-if="resultVo.thumbAtchId">
+									<img :src="'${publicUrl }' + resultVo.thumbFlpth"
+										style="width:100px; vertical-align: bottom;" />
+				                    <a href="javascript:;" v-on:click="onDeleteThumb">삭제</a>
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th>동영상URL</th>
+							<th>내용 <span>*</span></th>
 							<td colspan="3" class="tal">
-								<div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.mvpUrl" name="mvpUrl" id="mvpUrl"
-										class="mr5 txtMaxlen" maxlength="200" placeholder="동영상URL" style="width:100%;"/>
+								<div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttSumry" name="nttSumry"
+									placeholder="내용" class="w100p" style="height:250px;"></textarea></div>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								사진 <span>*</span>
+							</th>
+							<td colspan="3" class="tal">
+								<div class="attchList" >
+									<div class="lbMaxlenPrnt">
+										<input type="file" name="imageFile" v-on:change="onchangeImageListFile" />
+										<span>(용량 : 3MB 이하  |  형식 : jpg, png, gif | 최소1개 이상, 10개 이하)</span>
+
+									</div>
+									<div class="lbMaxlenPrnt" v-for="(item, index) in resultVo.imageList">
+										<div>
+											<img :src="'${publicUrl }' + item.physiclFlpth"
+												style="width:100px; vertical-align: bottom;" />
+						                    <a href="javascript:;" v-on:click="onDeleteImageList(index)">삭제</a>
+										</div>
+									</div>
 								</div>
 							</td>
 						</tr>
+						<tr>
+							<th>링크</th>
+							<td colspan="3" class="tal">
+								<input type="text" v-model="resultVo.linkSj" name="linkSj" id="linkSj"
+									class="mr5 txtMaxlen" maxlength="200" placeholder="링크 제목을입력하세요." style="width:100%;"/>
+								<input type="text" v-model="resultVo.linkUrl" name="linkUrl" id="linkUrl"
+									class="mr5 txtMaxlen" maxlength="200" placeholder="URL을 입력하세요." style="width:100%;"/>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								다운로드
+							</th>
+							<td colspan="3" class="tal">
+								<div class="attchList" >
+									<div class="lbMaxlenPrnt">
+										<input type="file" name="atchFile" v-on:change="onchangeAtch" />
+										<span>(용량 : 3MB 이하  |  형식 : jpg, png, gif | 1개만 등록 가능)</span>
+
+									</div>
+									<div class="lbMaxlenPrnt" v-for="(item, index) in resultVo.atchList">
+										<div>
+						                    &nbsp;{{item.logicNm}}
+						                    &nbsp;&nbsp;&nbsp;<a href="javascript:;" v-on:click="onDeleteAtch(index)">삭제</a>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<!--
 						<tr>
 							<th>상단고정</th>
 							<td colspan="3" class="tal">
@@ -99,16 +157,6 @@
 										최상단 리스트로 노출하시려면 체크해주세요.
 									</label>
 								</div>
-							</td>
-						</tr>
-						<!--
-						<tr>
-							<th>게시글 분류 </th>
-							<td colspan="3" class="tal">
-								<select v-model="resultVo.bbsCtgrySn">
-									<option :value="null">선택</option>
-									<option v-for="(result, index) in bbsCtgryList" :value="result.bbsCtgrySn" v-text="result.bbsCtgryNm" />
-								</select>
 							</td>
 						</tr>
 						-->
@@ -124,6 +172,7 @@
 							</td>
 						</tr>
 						 -->
+						<!--
 						<tr>
 							<th>내용 <span>*</span></th>
 							<td colspan="3" class="tal">
@@ -131,28 +180,7 @@
 									placeholder="내용" class="w100p devck" style="height:250px;"></textarea></div>
 							</td>
 						</tr>
-						<!--
-						<tr>
-							<th>
-								첨부파일
-							</th>
-							<td colspan="3" class="tal">
-								<div class="attchList" >
-									<div class="lbMaxlenPrnt">
-										<input type="file" name="thumbFile" v-on:change="onchangeAddFile" />
-										<span>(사이즈 : 1000X1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
-
-									</div>
-									<div class="lbMaxlenPrnt" v-for="(item, index) in resultVo.atchList">
-										<div>
-						                    &nbsp;{{item.logicNm}}
-						                    &nbsp;&nbsp;&nbsp;<a href="javascript:;" v-on:click="onDeleteAtch(index)">삭제</a>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-						 -->
+						-->
 					</tbody>
 				</table>
 			</div>
@@ -175,18 +203,18 @@
 				nttSn : ${ empty nttSn ? 'null' : nttSn },
 				validateOptions: {
 					rules: {
-						nttSj: { required: true, maxlength: 80 },
-						bbsCtgrySn: { required: true },
-						expsrYn: { required: true },
+						nttSumry: { required: true },
 					},
 					messages: {
-						nttSj: { required: '필수입력 입니다.(제목)', maxlength: '최대길이 초과 (내용, 최대 80자)' },
-						bbsCtgrySn: { required: '필수선택 입니다.(카테고리)' },
-						expsrYn: { required: '필수선택 입니다.(노출여부)' },
+						nttSumry: { required: '필수선택 입니다.(내용)' },
 					}
 				},
 				lang: '${langId}',
 				bbsId: '${bbsId}',
+				thumbAtchIdRequired: true,
+				thumbAtchIdRequiredMessage: '필수 입력 입니다. (대표이미지)',
+				imageListRequired: true,
+				imageListRequiredMessage: '필수 입력 입니다. (사진)',
 			};
 			nttForm.init(options);
 		});

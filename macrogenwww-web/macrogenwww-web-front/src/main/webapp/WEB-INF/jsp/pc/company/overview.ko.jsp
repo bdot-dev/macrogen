@@ -118,10 +118,10 @@
 
             <!-- s  사업분야 -->
             <div class="section-business">
-                <div class="swiper-container _slider">
+                <div class="swiper-container _slider" data-aos="fade-up" data-aos-duration="2000">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="inner">
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">연구서비스</div>
                                 <div class="desc">글로벌 유전체 분석기술의 성장을 위한 다양한 연구 서비스를 제공합니다.<br>
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="inner">
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">임상진단/치료</div>
                                 <div class="desc">
@@ -183,7 +183,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="inner">
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">퍼스널 헬스케어 및 반려동물</div>
                                 <div class="desc">마크로젠의 연구로 구축된 빅데이터와 AI 분석을 기반으로<br/>
