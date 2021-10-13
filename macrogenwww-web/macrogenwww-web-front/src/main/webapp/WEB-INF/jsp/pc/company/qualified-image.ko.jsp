@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">인재상</div>
-            <div class="slogan ko">새로운 내일을<br/>함께 만들고 싶습니다</div>
-            <div class= "slogan-sub">인류를 위한 마크로젠의 여정에 함께 하시겠습니까?</div>
+            <div class="slogan ko">새로운 내일을<br/>당신과 함께 꿈꿉니다</div>
+            <div class= "slogan-sub">건강한 미래를 만들어 갈 마크로젠 구성원을 찾습니다</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

@@ -28,7 +28,8 @@
 	    </ul>
 	    <div class="btn_eng">
 	        <%-- <a href="/en/locale/change" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a> --%>
-	        <a href="javascript:alert('We are preparing an English version of the site.\nPlease check it again later.')" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+	        <a href="https://glo.macrogen.com/en/main/index.php" target="_blank" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+	        <%-- <a href="javascript:alert('We are preparing an English version of the site.\nPlease check it again later.')" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a> --%>
 	    </div>
 	</div>
 </div>

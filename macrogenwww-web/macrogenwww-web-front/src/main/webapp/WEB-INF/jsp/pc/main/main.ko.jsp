@@ -136,6 +136,7 @@
                     .addClass('header-main')
                     .removeClass('header-bg-white')
                 $wrapper.css({'overflow': 'visible'})
+                $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
                 $('.scroll-wrap').delay(1000).fadeIn()
                 $('.swiper_btn').delay(1000).fadeIn()
@@ -319,7 +320,6 @@
                             </div>
                     </div>
                 </div>
-                <%--
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
@@ -335,7 +335,6 @@
                         </div>
                     </div>
                 </div>
-                 --%>
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">

@@ -34,21 +34,21 @@
                 <div class="img-wrap">
                     <div class="content">
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_preventivecare.png" alt="유전질환 조기예측 및 예방관리">
+                            <img src="/publishing/pc-ko/dist/img/business/img_preventivecare.png" alt="유전질환 조기예측 및 예방관리">
                         </div>
                         <p class="desc">유전질환 조기예측 및<br>
                             예방관리</p>
                     </div>
                     <div class="content">
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_breeding.png" alt="건강한 반려동물 번식">
+                            <img src="/publishing/pc-ko/dist/img/business/img_breeding.png" alt="건강한 반려동물 번식">
                         </div>
                         <p class="desc">건강한<br>
                             반려동물 번식</p>
                     </div>
                     <div class="content">
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/@temp/business/img_identification.png" alt="개체식별 통한 분실방지">
+                            <img src="/publishing/pc-ko/dist/img/business/img_identification.png" alt="개체식별 통한 분실방지">
                         </div>
                         <p class="desc">개체식별 통한<br>
                             분실방지</p>
@@ -60,7 +60,7 @@
                 <div class="info-box">
                     <p class="font-h4 main-title no-desc">마이펫진 검사</p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/@temp/business/img_workflow_level6_row.png" alt="마이펫진검사워크플로우">
+                        <img src="/publishing/pc-ko/dist/img/business/img_workflow_level6_row.png" alt="마이펫진검사워크플로우">
                     </div>
                     <hr class="divider">
                     <div class="list-gallery">
@@ -68,7 +68,7 @@
                             <p class="title font-h5">질병확인서</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img_diseaseconfirmation.png" alt="질병확인서관련이미지">
+                                    <img src="/publishing/pc-ko/dist/img/business/img_diseaseconfirmation.png" alt="질병확인서관련이미지">
                                 </div>
                                 <div class="cont">
                                     <p class="desc">마이펫진의 유전질환검사는 반려동물로부터 의심되는 유전질환을 확진 하거나 예측하기 위해 수행되며 현재 해당 증상을 보이지 않더라도  유전질환의 가족력이 있거나 증상이 의심되는 경우 검사를 통해 조기진단 및 예방, 치료, 건강관리에 도움을 줄 수 있습니다.
@@ -85,7 +85,7 @@
                             <p class="title font-h5">DNA인증서</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img_dnacertification.png" alt="염기서열이미지">
+                                    <img src="/publishing/pc-ko/dist/img/business/img_dnacertification.png" alt="염기서열이미지">
                                 </div>
                                 <div class="cont">
                                     <p class="desc">마이펫진은 특정 유전자 좌위의 염기서열에서 반복 횟수 차이를 보이는 STR(Short Tandem Repeat) 분석법을 통해 각 개체의 유전자형을 식별합니다.  DNA인증서는 반려동물의 시료로부터 DNA를 추출해 고유한 유전적 패턴을 나타내는 방법으로 DNA profiling이라고도 불립니다.
@@ -102,7 +102,7 @@
                             <p class="title font-h5">혈연확인서</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img_kinship.png" alt="혈연확인서이미지">
+                                    <img src="/publishing/pc-ko/dist/img/business/img_kinship.png" alt="혈연확인서이미지">
                                 </div>
                                 <div class="cont">
                                     <p class="desc">마이펫진의 혈연관계검사는 반려동물 DNA의 고유한 유전자형을 비교 분석하여 부/모/자 간의 혈연관계를 입증하는 검사입니다.
@@ -118,7 +118,7 @@
                             <p class="title font-h5">성별확인서</p>
                             <div class="content">
                                 <div class="picture">
-                                    <img src="/publishing/pc-ko/dist/img/@temp/business/img_genderconfirmation.png" alt="성별확인서이미지">
+                                    <img src="/publishing/pc-ko/dist/img/business/img_genderconfirmation.png" alt="성별확인서이미지">
                                 </div>
                                 <div class="cont">
                                     <p class="desc">전 세계 조류의 50% 이상이 수컷과 암컷의 외형이 유사하여 단순 식별로는 성별을 판별하기 어렵습니다.

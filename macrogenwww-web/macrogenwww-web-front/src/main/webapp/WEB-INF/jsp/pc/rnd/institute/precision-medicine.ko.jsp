@@ -54,232 +54,140 @@
             </div>
 
         </div>
-        <div class="section_status">
+        <div class="section_status" id="section_status">
             <div class="font-h4">연구성과 및 현황</div>
             <nav class="tab-basic">
                 <div class="nav tab-list" id="tab" role="tablist">
-                    <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#nav-1" role="tab"
-                       aria-controls="nav-1" aria-selected="true">
-                        <span>연구진행</span>
-                    </a>
-                    <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2"
-                       aria-selected="false">
-                        <span>플랫폼 구축</span>
-                    </a>
-                    <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3"
-                       aria-selected="false">
-                        <span>개발</span>
-                    </a>
+                	<c:forEach var="result" items="${resultList }" varStatus="status">
+	                    <a class="nav-link ${ status.index eq 0 ? 'active' : '' }" id="nav-tab-${status.count }" data-toggle="tab" href="#section_status" role="tab"
+	                       aria-controls="nav-${status.count }" aria-selected="${ status.index eq 0 ? 'true' : 'false' }">
+	                        <span>${result['bbsCtgryNm'.concat(lang)] }</span>
+	                    </a>
+                	</c:forEach>
                 </div>
             </nav>
-            <script>
-                $('#tab a').on('click', function (event) {
-                    event.preventDefault()
-                    $(this).tab('show')
-                })
-            </script>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
-                    <!-- s  연구진행 -->
-                    <div class="slide-box">
-                        <div class="slider">
-                            <div class="swiper-container _Slider01 ">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img_Institute_01.png" alt="WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암 WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암">
-                                            </span>
-                                            <span class="txt"><span>WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암 WC300 한국인 소화기암 정밀 진단 시스템 및 기술 개발 한국인 소화기암</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                               <img src="/publishing/pc-ko/dist/img/RD/img_Institute_02.png" alt="Hi-C(3D chromosome confor mation capture) 기술">
-                                            </span>
-                                            <span class="txt"><span>Hi-C(3D chromosome confor mation capture) 기술</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                               <img src="/publishing/pc-ko/dist/img/RD/img_Institute_03.png" alt="한국인 산모 및 신생아 마이크로바이옴 연구 한국인 산모 및 신생아 마이크로바이옴 연구">
-                                            </span>
-                                            <span class="txt"><span>한국인 산모 및 신생아 마이크로바이옴 연구 한국인 산모 및 신생아 마이크로바이옴 연구</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img_Institute_04.png" alt="KF1 항암 맞춤형 다중 동반진단 시스템 연구">
-                                            </span>
-                                            <span class="txt"><span>KF1 항암 맞춤형 다중 동반진단 시스템 연구</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                               <img src="/publishing/pc-ko/dist/img/RD/img_Institute_05.png" alt="게놈아시아 100K 이니셔티브 주도">
-                                            </span>
-                                            <span class="txt"><span>게놈아시아 100K 이니셔티브 주도</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                              <img src="/publishing/pc-ko/dist/img/RD/img_Institute_06.png" alt="아시안 게놈 로드 참여">
-                                            </span>
-                                            <span class="txt"><span>아시안 게놈 로드 참여</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                              <img src="/publishing/pc-ko/dist/img/RD/img_Institute_07.png" alt="폐 선암 원인 유전자 발굴">
-                                            </span>
-                                            <span class="txt"><span>폐 선암 원인 유전자 발굴</span></span>
-                                    </div>
-                                </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                            </div>
-                            <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev01 swiper-button-disabled"
-                                   tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i
-                                        class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext01" tabindex="0"
-                                   role="button" aria-label="Next slide" aria-disabled="false"><i
-                                        class="icon icon-arrow-right-md-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- e  연구진행 -->
-                </div>
-                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
-                    <!-- s  플랫폼 구축-->
-                    <div class="slide-box">
-                        <div class="slider">
-                            <div class="swiper-container _Slider02">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-platform_01.png" alt="Oxford Nanopore 플랫폼 구축">
-                                            </span>
-                                            <span class="txt"><span>Oxford Nanopore 플랫폼 구축</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-platform_02.png" alt="MGI 플랫폼 구축">
-                                            </span>
-                                            <span class="txt"><span>MGI 플랫폼 구축</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-platform_03.png" alt="10xGenomics single-cell RNA-seq 플랫폼 구축">
-                                            </span>
-                                            <span class="txt"><span>10xGenomics single-cell RNA-seq 플랫폼 구축</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-platform_04.png" alt="약물유전자 검사 NGS 플랫폼 구축">
-                                            </span>
-                                            <span class="txt"><span>약물유전자 검사 NGS 플랫폼 구축</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-platform_05.png" alt="Hi-C (3D chromosome conformation capture) 기술 Hi-C (3D chromosome conformation capture) 기술">
-                                            </span>
-                                            <span class="txt"><span>Hi-C (3D chromosome conformation capture) 기술 Hi-C (3D chromosome conformation capture) 기술</span></span>
-                                    </div>
+               	<c:forEach var="result" items="${resultList }" varStatus="status">
+	                <div class="tab-pane fade ${ status.index eq 0 ? 'show active' : '' }" id="nav-${status.count }" role="tabpanel" aria-labelledby="nav-tab-${status.count }">
+	                    <!-- s  연구진행 -->
+	                    <div class="slide-box">
+	                        <div class="slider">
+	                            <!--10.07 _Slider00 -> _Slider로 변경-->
+	                            <div class="swiper-container _Slider">
+	                                <div class="swiper-wrapper">
+	                                	<c:forEach var="subresult" items="${result.nttList }" varStatus="substatus">
+		                                    <div class="swiper-slide item">
+		                                        <a href="#ct=${subresult.bbsCtgrySn }&sn=${subresult.nttSn }" class="_popupOpen">
+		                                            <span class="img">
+		                                                <img src="${publicUrl }${subresult.thumbFlpth }" alt="${subresult.nttSj }">
+		                                            </span>
+		                                            <span class="txt"><span>${subresult.nttSj }</span></span>
+		                                        </a>
+		                                    </div>
+	                                	</c:forEach>
 
-                                </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                            </div>
-                            <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev02 swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext02" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><i class="icon icon-arrow-right-md-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- e  플랫폼 구축-->
-                </div>
-                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-tab-3">
-                    <!-- s  개발-->
-                    <div class="slide-box">
-                        <div class="slider">
-                            <div class="swiper-container _Slider03">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-development_01.png" alt="COVID-19 진단 키트 개발">
-                                            </span>
-                                            <span class="txt"><span>COVID-19 진단 키트 개발</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                            <img src="/publishing/pc-ko/dist/img/RD/img-development_02.png" alt="동북아시아 DB (NARD) 구축">
-                                            </span>
-                                            <span class="txt"><span>동북아시아 DB (NARD) 구축</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                            <img src="/publishing/pc-ko/dist/img/RD/img-development_03.png" alt="APOE 알츠하이머 PCR 진단 개발">
-                                            </span>
-                                            <span class="txt"><span>APOE 알츠하이머 PCR 진단 개발</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                            <img src="/publishing/pc-ko/dist/img/RD/img-development_04.png" alt="AK1 한국인 표준유전체 작성">
-                                            </span>
-                                            <span class="txt"><span>AK1 한국인 표준유전체 작성</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                                <img src="/publishing/pc-ko/dist/img/RD/img-development_05.png" alt="한국인 유전체 지도 초안 완성">
-                                            </span>
-                                            <span class="txt"><span>한국인 유전체 지도 초안 완성</span></span>
-                                    </div>
-                                    <div class="swiper-slide item">
-                                            <span class="img">
-                                       <img src="/publishing/pc-ko/dist/img/RD/img-development_06.png" alt="알코올 생산 박테리아인 자이모모나스 모빌리스 유전체 분석">
-                                            </span>
-                                            <span class="txt"><span>알코올 생산 박테리아인 자이모모나스 모빌리스 유전체 분석</span></span>
-                                    </div>
-                                </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                            </div>
-                            <div class="slider-navigation">
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev03 swiper-button-disabled"
-                                   tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i
-                                        class="icon icon-arrow-left-md-white"></i></a>
-                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext03" tabindex="0"
-                                   role="button" aria-label="Next slide" aria-disabled="false"><i
-                                        class="icon icon-arrow-right-md-white"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- e  개발-->
-                </div>
+	                                </div>
+	                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+	                            </div>
+	                            <div class="slider-navigation">
+	                                <a href="#" class="btn btn-circle btn-black btn-md _btnPrev swiper-button-disabled"
+	                                   tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><i
+	                                        class="icon icon-arrow-left-md-white"></i></a>
+	                                <a href="#" class="btn btn-circle btn-black btn-md _btnNext" tabindex="0"
+	                                   role="button" aria-label="Next slide" aria-disabled="false"><i
+	                                        class="icon icon-arrow-right-md-white"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- e  연구진행 -->
+	                </div>
+               	</c:forEach>
             </div>
+
         </div>
 
     </div>
-    <script>
 
-        function setSlider(index){
-            new Swiper("._Slider0" + index, {
+    <!--10.07 스크립트 변경-->
+    <script>
+        //슬라이드 함수
+        function setSlider(){
+            new Swiper('._Slider', {
                 slidesPerView: 4,
                 spaceBetween: 20,
                 slidesPerGroup: 4,
                 loopFillGroupWithBlank: true,
                 grabCursor: true,
+                observer: true,
+                observeParents: true,
                 navigation: {
-                    nextEl: "._btnNext0" + index,
-                    prevEl: "._btnPrev0" + index,
+                    nextEl: "._btnNext",
+                    prevEl: "._btnPrev",
                 },
             });
         }
-        setSlider(1)
+        //슬라이드 함수 실행
+        setSlider();
 
-        var tabEl = $('[data-toggle="tab"]')
-        tabEl.on('shown.bs.tab', function (event) {
-            console.log(event.target) // newly activated tab
-            console.log(event.relatedTarget) // previous active tab
-            if (event.target.id.indexOf('tab-2') !== -1) {
-                setSlider(2)
-            }else if (event.target.id.indexOf('tab-3') !== -1) {
-                setSlider(3)
-            }
-        })
 
+        function setTabContent (idx){
+            //탭메뉴 변경후 슬라이드 초기화를 위한 함수 실행
+            setSlider();
+
+            var tab = $(".tab-content > .tab-pane").eq(idx)
+            $('.tab-list > .nav-link').eq(idx).addClass('active').siblings().removeClass('active');
+
+            tab.addClass('show').siblings().removeClass('show');
+            tab.addClass('active').siblings().removeClass('active');
+        }
+
+
+
+        $('.tab-list .nav-link').on('click', function(){
+            var idx = $(this).index();
+            setTabContent(idx);
+        });
+     </script>
+
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
+	<script>
+	    $(function (){
+	        $(".swiper-container ._popupOpen").click(function () {
+	        	console.log('_popupOpen click');
+	            const idx = $(this).index();
+	            $('.modal').eq(idx).modal('show')
+	        })
+	    })
+	</script>
+
+	<script src="/js/util/Hash.js"></script>
+    <script>
+    	$(function() {
+    		$(window).on('hashchange', function() {
+    			console.log(location.hash);
+    		    var bbsCtgrySn = Hash.getParam('ct');
+    		    var sn = Hash.getParam('sn');
+    		    console.log('bbsCtgrySn:', bbsCtgrySn);
+    		    console.log('sn:', sn);
+
+    		    if (!bbsCtgrySn || !sn) return;
+
+    		    var $modalContent = $('#Institute_01 .modal-content');
+       			$.ajax({
+       				dataType: 'html', type : 'post',
+       				url: '/${rc.locale.language}/rnd/research-result/viewAjaxHtml/' + sn,
+       				data: { bbsCtgrySn: bbsCtgrySn },
+       			}).done(function(html) {
+       				$modalContent.empty().html(html);
+   				    console.log('modalResearchResult.show', modalResearchResult);
+   				 	modalResearchResult.show();
+       			});
+
+    		});
+
+    		$(window).trigger('hashchange');
+    	});
     </script>
 
 </body>

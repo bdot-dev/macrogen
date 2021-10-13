@@ -25,7 +25,7 @@
   <div class="container">
     <div class="section_business">
       <!--탭 링크-->
-      <div class="tab-box">
+      <div class="tab-box" id="_tab-box">
         <p class="font-h4 title">SERVICE</p>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
@@ -54,6 +54,14 @@
           <!--탭메뉴 클릭시 페이지 변경-->
           $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+          fnMove();
+        }
+
+        /*탭메뉴 상단으로 이동*/
+        function fnMove(){
+          var offset = $("#_tab-box").offset();
+          $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
       </script>
 
@@ -65,7 +73,7 @@
           <p class="desc img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10%가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
           <div class="border-gray-box">
             <div class="img">
-              <img src="/publishing/pc-ko/dist/img/@temp/business/img_familyline.png" alt="암 발생 위험 예측">
+              <img src="/publishing/pc-ko/dist/img/business/img_familyline.png" alt="암 발생 위험 예측">
             </div>
           </div>
           <hr class="divider">
@@ -143,7 +151,7 @@
           <p class="desc data_bottom">유전성 유방암의 대표적 원인이 되는 BRCA1/2 유전자의 전 영역을 분석해 유방암 발생 위험을 진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
           </p>
           <div class="border-gray-box">
-            <img src="/publishing/pc-ko/dist/img/@temp/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+            <img src="/publishing/pc-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
           </div>
           <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
           <div class="btn-area">
@@ -172,12 +180,12 @@
             이는 동일한 항암제를 처방했을 때 75% 정도가 각기 다른 효과를 보이는 현상을 개선하는 데 기여하여 암 환자의 맞춤 치료 및 부작용 최소화에 도움을 주고 있습니다.</p>
           <div class="border-gray-box">
             <div class="img">
-              <img src="/publishing/pc-ko/dist/img/@temp/business/img_cancer.png" alt="암 발생 원인 분석">
+              <img src="/publishing/pc-ko/dist/img/business/img_cancer.png" alt="암 발생 원인 분석">
             </div>
           </div>
           <div class="border-gray-box">
             <div class="img">
-              <img src="/publishing/pc-ko/dist/img/@temp/business/img_cancer2.png" alt="암 발생 원인 분석 그래프">
+              <img src="/publishing/pc-ko/dist/img/business/img_cancer2.png" alt="암 발생 원인 분석 그래프">
             </div>
           </div>
           <p class="caption">※ 출처 : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet Oncol. 2011 Feb; 12(2): 175-80.</p>
@@ -211,12 +219,12 @@
             아직 암 종별 및 개인별 ctDNA의 수준 차이와 까다로운 검출 과정 때문에 적용 범위가 넓지 않지만 추후 지속적인 기술 향상을 통해 이를 확대해나갈 예정입니다.</p>
           <div class="border-gray-box">
             <div class="img">
-              <img src="/publishing/pc-ko/dist/img/@temp/business/img_monitoring.png" alt="CTDNA분석">
+              <img src="/publishing/pc-ko/dist/img/business/img_monitoring.png" alt="CTDNA분석">
             </div>
           </div>
           <div class="border-gray-box no-caption">
             <div class="img">
-              <img src="/publishing/pc-ko/dist/img/@temp/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
+              <img src="/publishing/pc-ko/dist/img/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
             </div>
           </div>
           <p class="notice-text"><i class="icon icon-attention"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
