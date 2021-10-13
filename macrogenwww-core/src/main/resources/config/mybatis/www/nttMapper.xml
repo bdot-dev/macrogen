@@ -101,6 +101,9 @@
 			, tn.thumb_bass_image_code
 			, ( select code_nm from tb_code where code_se = 'THUMB_BASS_IMAGE_CODE' and code = tn.thumb_bass_image_code ) thumb_bass_image_code_nm
 			, tn.mvp_url
+			, tn.ntt_sumry
+			, tn.link_sj
+			, tn.link_url
 		from tb_ntt tn
 		where 1 = 1
 		<include refid="list_where" />
@@ -151,6 +154,9 @@
 			, ( select physicl_flpth from tb_atch where atch_id = tn.thumb_atch_id ) thumb_flpth
 			, tn.thumb_bass_image_code
 			, tn.mvp_url
+			, tn.ntt_sumry
+			, tn.link_sj
+			, tn.link_url
 		from tb_ntt tn
 		where tn.ntt_sn = #{nttSn}
 	</select>
@@ -183,6 +189,9 @@
 			, thumb_atch_id
 			, thumb_bass_image_code
 			, mvp_url
+			, ntt_sumry
+			, link_sj
+			, link_url
 		) values (
 			#{nttSn}
 			, #{langCode}
@@ -206,6 +215,9 @@
 			, #{thumbAtchId}
 			, #{thumbBassImageCode}
 			, #{mvpUrl}
+			, #{nttSumry}
+			, #{linkSj}
+			, #{linkUrl}
 		)
 	</insert>
 
@@ -230,6 +242,9 @@
 		    <if test="thumbAtchId != null">, thumb_atch_id = #{thumbAtchId} </if>
 		    <if test="thumbBassImageCode != null">, thumb_bass_image_code = #{thumbBassImageCode} </if>
 		    <if test="mvpUrl != null">, mvp_url = #{mvpUrl} </if>
+		    <if test="nttSumry != null">, ntt_sumry = #{nttSumry} </if>
+		    <if test="linkSj != null">, link_sj = #{linkSj} </if>
+		    <if test="linkUrl != null">, link_url = #{linkUrl} </if>
 		where ntt_sn = #{nttSn}
 	</update>
 

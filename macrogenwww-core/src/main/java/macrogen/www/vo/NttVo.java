@@ -42,8 +42,12 @@ public class NttVo extends DefaultVo {
 	private String mvpUrl;
 	private String email;
 	private String registIp;
+	private String nttSumry;
+	private String linkSj;
+	private String linkUrl;
 
 	private List<NttAtchVo> atchList;
+	private List<NttImageVo> imageList;
 	private List<Long> nttSnList;
 
 	private Integer searchBbsCtgrySn;
@@ -230,6 +234,30 @@ public class NttVo extends DefaultVo {
 	}
 	public void setBbsCtgryNmEn(String bbsCtgryNmEn) {
 		this.bbsCtgryNmEn = bbsCtgryNmEn;
+	}
+	public String getNttSumry() {
+		return nttSumry;
+	}
+	public void setNttSumry(String nttSumry) {
+		this.nttSumry = nttSumry;
+	}
+	public String getLinkSj() {
+		return linkSj;
+	}
+	public void setLinkSj(String linkSj) {
+		this.linkSj = linkSj;
+	}
+	public String getLinkUrl() {
+		return linkUrl;
+	}
+	public void setLinkUrl(String linkUrl) {
+		this.linkUrl = linkUrl;
+	}
+	public List<NttImageVo> getImageList() {
+		return imageList;
+	}
+	public void setImageList(List<NttImageVo> imageList) {
+		this.imageList = imageList;
 	}
 
 }

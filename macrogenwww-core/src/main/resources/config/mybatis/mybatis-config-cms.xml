@@ -23,6 +23,7 @@
 		<typeAlias alias="mngrurlVo" type="macrogen.www.vo.MngrurlVo"/>
 		<typeAlias alias="nttVo" type="macrogen.www.vo.NttVo"/>
 		<typeAlias alias="nttAtchVo" type="macrogen.www.vo.NttAtchVo"/>
+		<typeAlias alias="nttImageVo" type="macrogen.www.vo.NttImageVo"/>
 		<typeAlias alias="popupVo" type="macrogen.www.vo.PopupVo"/>
 		<typeAlias alias="prductVo" type="macrogen.www.vo.PrductVo"/>
 		<typeAlias alias="prductImageVo" type="macrogen.www.vo.PrductImageVo"/>

@@ -57,8 +57,8 @@
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title">국내</div>
                     <div class="detail">
-                        <ul id="seoul">
-                            <li class="item">
+                        <ul>
+                            <li class="item" id="seoul">
                                 <div class="name">마크로젠 강남본사</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_1.png" alt="마크로젠 강남본사"></div>
                                 <div class="info">
