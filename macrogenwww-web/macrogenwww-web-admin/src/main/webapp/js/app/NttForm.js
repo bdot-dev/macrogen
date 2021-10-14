@@ -59,6 +59,47 @@ var nttForm = (function($) {
 					var vm = this;
 					vm.resultVo.atchList.splice(index, 1);
 				},
+				onchangeAtch: function(e) {
+					var vm = this;
+					uploadFile($form, $(e.target), function(data) {
+						var atchData = {
+							physiclFlpth : data.resultVo.physiclFlpth,
+							atchId : data.resultVo.atchId,
+							logicNm : data.resultVo.logicNm
+						};
+						vm.resultVo.atchList = [];
+						vm.resultVo.atchList.push(atchData);
+					});
+				},
+				onchangeThumbFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.thumbAtchId = data.resultVo.atchId;
+						vm.resultVo.thumbFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeleteThumb : function() {
+					var vm = this;
+					vm.resultVo.thumbAtchId = null;
+					vm.resultVo.thumbFlpth = null;
+				},
+				onchangeImageListFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						if(!vm.resultVo.imageList)
+							vm.resultVo.imageList = [];
+						vm.resultVo.imageList.push({
+							atchId : data.resultVo.atchId,
+							physiclFlpth : data.resultVo.physiclFlpth,
+						});
+					});
+
+				},
+				onDeleteImageList : function(index) {
+					var vm = this;
+					vm.resultVo.imageList.splice(index, 1);
+				},
 				onSubmit : function() {
 					var vm = this;
 					if (vm.submitFlag) {
@@ -74,7 +115,13 @@ var nttForm = (function($) {
 
 					if (options && options.thumbAtchIdRequired) {
 						if (!vm.resultVo.thumbAtchId) {
-							alert('필수 입력 (리스트이미지)');
+							alert(!options.thumbAtchIdRequiredMessage ? '필수 입력 (리스트이미지)' : options.thumbAtchIdRequiredMessage);
+							return false;
+						}
+					}
+					if (options && options.imageListRequired) {
+						if (!vm.resultVo.imageList || vm.resultVo.imageList.length < 1) {
+							alert(options.imageListRequiredMessage);
 							return false;
 						}
 					}
@@ -147,19 +194,6 @@ var nttForm = (function($) {
 						alert('삭제되었습니다.');
 						goList();
 					});
-				},
-				onchangeThumbFile : function(e) {
-					var vm = this;
-					uploadImage($form, $(e.target), function(data) {
-						vm.resultVo.thumbAtchId = data.resultVo.atchId;
-						vm.resultVo.thumbFlpth = data.resultVo.physiclFlpth;
-
-					});
-				},
-				onDeleteThumb : function() {
-					var vm = this;
-					vm.resultVo.thumbAtchId = null;
-					vm.resultVo.thumbFlpth = null;
 				},
 				enterToBr: function(val) {
 					if (!val) return val;

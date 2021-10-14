@@ -9,10 +9,13 @@ import org.springframework.stereotype.Service;
 import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import macrogen.www.enums.LangId;
 import macrogen.www.mapper.NttAtchMapper;
+import macrogen.www.mapper.NttImageMapper;
 import macrogen.www.mapper.NttMapper;
 import macrogen.www.service.NttAtchService;
+import macrogen.www.service.NttImageService;
 import macrogen.www.service.NttService;
 import macrogen.www.vo.NttAtchVo;
+import macrogen.www.vo.NttImageVo;
 import macrogen.www.vo.NttVo;
 import macrogen.www.vo.OnlineInquiryVo;
 
@@ -25,8 +28,14 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 	@Resource(name="nttAtchService")
 	private NttAtchService nttAtchService;
 
+	@Resource(name="nttImageService")
+	private NttImageService nttImageService;
+
 	@Resource(name="nttAtchMapper")
 	private NttAtchMapper nttAtchMapper;
+
+	@Resource(name="nttImageMapper")
+	private NttImageMapper nttImageMapper;
 
 	@Override
 	public List<NttVo> list(NttVo nttVo) throws Exception{
@@ -37,6 +46,11 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 			nttAtchVo.setNttSn(resultVo.getNttSn());
 			List<NttAtchVo> atchList = nttAtchMapper.list(nttAtchVo);
 			resultVo.setAtchList(atchList);
+
+			NttImageVo nttImageVo = new NttImageVo();
+			nttImageVo.setFirstIndex(-1);
+			nttImageVo.setNttSn(resultVo.getNttSn());
+			resultVo.setImageList(nttImageMapper.list(nttImageVo));
 		}
 		return resultList;
 
@@ -58,6 +72,11 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 		List<NttAtchVo> atchList = nttAtchMapper.list(nttAtchVo);
 		resultVo.setAtchList(atchList);
 
+		NttImageVo nttImageVo = new NttImageVo();
+		nttImageVo.setFirstIndex(-1);
+		nttImageVo.setNttSn(nttVo.getNttSn());
+		resultVo.setImageList(nttImageMapper.list(nttImageVo));
+
 		return resultVo;
 	}
 
@@ -70,6 +89,8 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 		// 재등록 : 게시물_첨부 목록
 		nttAtchService.updateList(nttVo);
 
+		// 재등록 : 게시물_이미지 목록
+		nttImageService.updateList(nttVo);
 	}
 
 	@Override
@@ -78,6 +99,9 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 
 		// 재등록 : 게시물_첨부 목록
 		nttAtchService.updateList(nttVo);
+
+		// 재등록 : 게시물_이미지 목록
+		nttImageService.updateList(nttVo);
 	}
 
 	@Override
@@ -86,6 +110,11 @@ public class NttServiceImpl extends EgovAbstractServiceImpl implements NttServic
 		NttAtchVo nttAtchVo = new NttAtchVo();
 		nttAtchVo.setNttSn(nttVo.getNttSn());
 		nttAtchService.deleteByNttSn(nttAtchVo);
+
+		// 게시물 이미지 삭제
+		NttImageVo nttImageVo = new NttImageVo();
+		nttImageVo.setNttSn(nttVo.getNttSn());
+		nttImageService.deleteByNttSn(nttImageVo);
 
 		// 게시물 삭제
 		nttMapper.delete(nttVo);

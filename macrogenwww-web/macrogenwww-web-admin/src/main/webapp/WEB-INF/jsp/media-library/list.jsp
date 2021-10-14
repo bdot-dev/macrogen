@@ -17,14 +17,14 @@
 					<vue-datepicker v-model="listVo.searchEndDt" buttonimage="/images/calendar.png"
 						id="searchEndDt" name="searchEndDt"></vue-datepicker>
 				</div>
-				<div class="list_wrap">
+				<%-- <div class="list_wrap">
 					<strong>카테고리</strong>
 					<select v-model="listVo.searchBbsCtgrySn" style="width:200px;">
 						<option :value="null">전체</option>
 						<option v-for="(result, index) in bbsCtgryList"
 							:value="result.bbsCtgrySn" v-text="result.bbsCtgryNm"/>
 					</select>
-				</div>
+				</div> --%>
 				<div class="list_wrap">
 					<strong>검색어</strong>
 					<input type="text" name="searchKeyword" id="searchKeyword" class="mr5" style="width:400px;" v-model="listVo.searchKeyword" v-on:keyup.enter="onSearch" />
@@ -50,7 +50,6 @@
 				<colgroup>
 					<col width="60px">
 					<col width="150px">
-					<col width="150px">
 					<col width="">
 					<col width="150px">
 					<col width="150px">
@@ -59,31 +58,14 @@
 				<thead>
 					<tr>
 						<th><input type="checkbox" v-on:click="checkAll"></th>
-						<th>썸네일</th>
-						<th>카테고리</th>
-						<th>제목</th>
+						<th>대표사진</th>
+						<th>내용</th>
 						<th>조회수</th>
 						<th>작성자</th>
 						<th>최종수정일</th>
 					</tr>
 				</thead>
 				<tbody v-if="resultList.length > 0">
-					<tr v-for="(result, index) in upendFixingList" style="background: #eee;">
-						<td>공지</td>
-						<td>
-							<img v-if="result.thumbBassImageUseYn != 'Y'"
-								:src="'${publicUrl }' + result.thumbFlpth"
-								style="width:100px; vertical-align: bottom;" />
-							<img v-else :src="result.thumbBassImageCodeNm"
-								style="width:100px; vertical-align: bottom;" />
-						</td>
-						<td>{{result.bbsCtgryNm }}</td>
-						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
-							href="javascript:;">{{result.nttSj }}</a></td>
-						<td>{{result.rdcnt }}</td>
-						<td>{{result.wrterNm }}</td>
-						<td>{{result.updtDt | timeToDate('YYYY-MM-DD HH:mm')}}</td>
-					</tr>
 					<tr v-for="(result, index) in resultList" >
 						<td>
 							<input type="checkbox" v-model="checkedPkList"
@@ -97,9 +79,11 @@
 							<img v-else :src="result.thumbBassImageCodeNm"
 								style="width:100px; vertical-align: bottom;" />
 						</td>
-						<td>{{result.bbsCtgryNm }}</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
-							href="javascript:;">{{result.nttSj }}</a></td>
+							href="javascript:;">{{result.nttSumry ? result.nttSumry : '제목없음' }}</a>
+							<br>
+							(사진:{{ result.imageList ? result.imageList.length : 0 }}개, 다운로드:{{ result.atchList ? result.atchList.length : 0 }}개, {{ result.linkUrl ? '링크등록' : '링크미등록' }})
+						</td>
 						<td>{{result.rdcnt | numberWithCommas }}</td>
 						<td>{{result.wrterNm }}</td>
 						<td>{{result.updtDt | timeToDate('YYYY-MM-DD HH:mm')}}</td>
@@ -107,7 +91,7 @@
 					</tbody>
 				<tbody v-if="resultList.length == 0">
 					<tr >
-						<td nowrap colspan="7" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
+						<td nowrap colspan="6" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
 					</tr>
 				</tbody>
 			</table>
