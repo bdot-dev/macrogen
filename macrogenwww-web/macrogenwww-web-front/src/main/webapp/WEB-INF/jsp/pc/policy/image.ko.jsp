@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h2">영상정보처리기기 운영&#183;관리 방침</p>
+            <p class="main-title font-h1">영상정보처리기기 운영&#183;관리 방침</p>
             <div class="terms">
                 <div class="content_area">
                 	<c:if test="${fn:length(resultList) > 0 }">

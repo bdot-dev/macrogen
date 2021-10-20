@@ -26,7 +26,6 @@
         <div class="section_business">
             <!--탭 링크-->
             <div class="tab-box" id="_tab-box">
-                <p class="font-h4 title">SERVICE</p>
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">

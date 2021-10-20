@@ -49,13 +49,14 @@
 <link rel="canonical" href="http://www.macrogen.co.kr">
 <meta name="keywords" content="마크로젠 키워드">
 <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-<link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_component_pc.css?1013"/>
-<link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_page_pc_ko.css?1013"/>
+<link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_component_pc.css?1020"/>
+<link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_page_pc_ko.css?1020"/>
 <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
-<script src="/publishing/pc-ko/dist/js/bundle.js?1013"></script>
+<script src="/publishing/pc-ko/dist/js/bundle.js?1020"></script>
 <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
 <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-<script src="/publishing/pc-ko/dist/js/common.js?1013"></script>
+<script src="/publishing/pc-ko/dist/js/common.js?1020"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
 <style>
 	[v-cloak] { display: none; }

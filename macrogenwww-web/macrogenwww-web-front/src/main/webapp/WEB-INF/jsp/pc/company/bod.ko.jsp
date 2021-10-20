@@ -57,9 +57,9 @@
                             <div class="chairman-info">
                                 <div class="info">
                                     <div class="font-h7">
-                                        21세기 인류가 게놈 프로젝트를 통해 이룩한<br/>
-                                        ‘인간 게놈지도의 완성’이라는 성과 이후,<br/>
-                                        의료 패러다임은 치료 중심에서<br/>
+                                        21세기 인류가 게놈 프로젝트를 통해 이룩한
+                                        ‘인간 게놈지도의 완성’이라는 성과 이후,
+                                        의료 패러다임은 치료 중심에서
                                         질병 예방과 건강 관리로 급변해왔습니다.
                                     </div>
                                     <div class="font-body">
@@ -224,8 +224,8 @@
                             <div class="info">
                                 <div class="item">
                                     <div class="font-h7">
-                                        마크로젠은 ‘글로벌 유전체 분석<br/>
-                                        전문 기업’이자 ‘대한민국을 대표하는<br/>
+                                        마크로젠은 ‘글로벌 유전체 분석
+                                        전문 기업’이자 ‘대한민국을 대표하는
                                         생명공학 기업’입니다.
                                     </div>
                                     <div class="font-body">
@@ -236,8 +236,8 @@
                                 </div>
                                 <div class="item">
                                     <div class="font-h7">
-                                        이제 마크로젠은 기술 중심 기업에서<br/>
-                                        고객 중심 기업으로<br/>
+                                        이제 마크로젠은 기술 중심 기업에서
+                                        고객 중심 기업으로
                                         제2의 도약을 꿈꾸고 있습니다.
                                     </div>
                                     <div class="font-body">
