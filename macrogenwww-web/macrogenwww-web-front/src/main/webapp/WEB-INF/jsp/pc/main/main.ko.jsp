@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
-	<script src="/publishing/pc-ko/dist//js/jquery-ui.min.js"></script>
+	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -569,9 +569,10 @@
 
         </div>
     </div>
-    <footer class="footer">
+    <%-- <footer class="footer">
 		<c:import url="/inc/footer" />
-    </footer>
+    </footer> --%>
+	<c:import url="/inc/footer" />
     <a href="#" class="btn btn-text btn-totop">
     <i class="icon icon-arrow-top-long"></i>
     <span>TOP</span>
