@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="container container-fluid">
-        <div class="macrogen macrogen-vision">
+        <div class="macrogen macrogen-vision clearfix">
             <!-- s vision -->
             <div class="section-vision">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
@@ -57,13 +57,20 @@
             </div>
             <!-- e vision -->
 
+           <!-- DNA-1 위치변경 - 21.10.19 변경 전
             <div class="parallax-DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
             <script>
                 var rellax1 = new Rellax('._DNA1');
-            </script>
+            </script> -->
 
             <!-- s vision -->
             <div class="section-slogan">
+                <!-- DNA-1 위치변경 - 21.10.19 변경 후-->
+                <div class="parallax-DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
+                <script>
+                    var rellax1 = new Rellax('._DNA1');
+                </script>
+
                 <div class="bg">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                         <div class="font-h7">슬로건</div>
@@ -83,16 +90,26 @@
             </div>
             <!-- e vision -->
 
+            <!--DNA-2 위치변경 - 21.10.19 변경 전
             <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
             <script>
                 var rellax2 = new Rellax('._DNA2');
                 var rellax3 = new Rellax('.img-1');
                 var rellax4 = new Rellax('.img-2');
                 var rellax5 = new Rellax('.img-3');
-            </script>
+            </script>-->
 
             <!-- s 경영이념 -->
             <div class="section-management-philosophy" data-aos="fade-up" data-aos-duration="2000">
+               <!-- DNA-2 위치변경 - 21.10.19 변경 후-->
+              <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
+              <script>
+                  var rellax2 = new Rellax('._DNA2');
+                  var rellax3 = new Rellax('.img-1');
+                  var rellax4 = new Rellax('.img-2');
+                  var rellax5 = new Rellax('.img-3');
+              </script>
+
                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-management-philosophy.png" alt="경영이념"></div>
                 <div class="info">
                     <div class="font-h7">경영이념</div>
@@ -112,13 +129,20 @@
             </div>
             <!-- e 경영이념 -->
 
+            <!--DNA-3 위치변경 - 21.10.19 변경 전
             <div class="parallax-DNA DNA-3 _DNA3" data-rellax-speed="10"></div>
             <script>
                 var rellax6 = new Rellax('._DNA3');
-            </script>
+            </script>-->
 
             <!-- s 핵심가치 -->
             <div class="section-core-values" data-aos="fade-up" data-aos-duration="2000">
+               <!-- DNA-3 위치변경 - 21.10.19 변경 후-->
+                <div class="parallax-DNA DNA-3 _DNA3" data-rellax-speed="10"></div>
+                <script>
+                    var rellax6 = new Rellax('._DNA3');
+                </script>
+
                 <div class="inner">
                     <div class="font-h7">핵심가치</div>
                     <div class="values">

@@ -11,7 +11,7 @@
         <div class="frame">
             <div class="hero-title">기업개요</div>
             <div class="slogan">Humanizing<br/>Genomics</div>
-            <div class= "slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
+            <div class="slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -36,7 +36,7 @@
                     <div class="title-sm">모두가 건강한 세상을 꿈꾸는 기업 마크로젠입니다</div>
                     <div class="text-box">
                         <div class="font-body-h">
-                            정밀의학 생명공학기업 마크로젠은 1997년 6월 5일 서울대학교 의과대학 유전체 의학연구소를 모태로 설립되었으며, 2000년 2월 한국 바이오 벤처기업 최초로
+                            정밀의학 생명공학기업 마크로젠은 1997년 6월 5일 서울대학교 의과대학 유전체 의학연구소를 모태로 설립되었으며,<br> 2000년 2월 한국 바이오 벤처기업 최초로
                             코스닥에 상장했습니다.<br/><br/>
                             이후 유전자 및 유전체 분석 분야에서 꾸준한 연구개발 활동을 하고 있으며 주요 사업 이외에도 다양한 사회공헌 활동을 통해 바이오 산업 발전에 기여하고
                             있습니다.<br/>
@@ -47,7 +47,9 @@
                 </div>
                 <div class="img-box">
                     <div class="inner">
-                        <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_lg_1.png" alt="글로벌 정밀의학 선도기업"></div>
+                        <div class="img">
+                            <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_lg_1.png" alt="글로벌 정밀의학 선도기업">
+                        </div>
                         <ul class="list" data-aos="fade-up" data-aos-duration="2000">
                             <li>글로벌 정밀의학 선도기업</li>
                             <li>인간중심의 인본주의 경영</li>
@@ -368,7 +370,7 @@
                                     </div>
                                     <div class="value">
                                         <span>HEX</span>
-                                        <span>E50050</span>
+                                        <span>E0004D</span>
                                     </div>
                                 </li>
                             </ul>

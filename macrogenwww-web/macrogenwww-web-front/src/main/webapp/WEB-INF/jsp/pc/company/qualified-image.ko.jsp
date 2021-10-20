@@ -102,15 +102,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
+                <div class="DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
+                <script>
+                    var rellax1 = new Rellax('._DNA1');
+                    var rellax2 = new Rellax('._DNA2');
+                </script>
+
             </div>
             <!-- e  배너 -->
 
-            <div class="DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
-            <div class="DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
-            <script>
-                var rellax1 = new Rellax('._DNA1');
-                var rellax2 = new Rellax('._DNA2');
-            </script>
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
