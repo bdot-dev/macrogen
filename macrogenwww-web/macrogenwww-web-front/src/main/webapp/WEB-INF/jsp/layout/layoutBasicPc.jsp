@@ -49,9 +49,7 @@
 		<decorator:body />
 		<!-- //내용 -->
 
-		<footer>
-			<c:import url="/inc/footer" />
-		</footer>
+		<c:import url="/inc/footer" />
 
 	    <a href="#" class="btn btn-text btn-totop">
 		    <i class="icon icon-arrow-top-long"></i>
