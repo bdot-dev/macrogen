@@ -297,6 +297,7 @@
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('html,body').animate( { scrollTop:0 },{duration : 100});
+            $('.header').css({'display' : 'block'});
             return false;
         });
         $(window).on('scroll', function (){
