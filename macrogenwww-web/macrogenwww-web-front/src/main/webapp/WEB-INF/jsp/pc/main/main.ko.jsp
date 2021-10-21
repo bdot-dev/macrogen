@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
-	<script src="/publishing/pc-ko/dist//js/jquery-ui.min.js"></script>
+	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -54,8 +54,8 @@
         <!-- s intro -->
         <div class="intro">
             <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="2000">유전체 맞춤 의학으로</p>
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="2400">
+                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
+                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
                     <img src="/publishing/pc-ko/dist/img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
             </div>
         </div>
@@ -392,7 +392,6 @@
                 slidesPerView: "auto",
                 centeredSlides: true,
                 loop: true,
-                spaceBetween: 20,
             });
 
         })
@@ -570,9 +569,10 @@
 
         </div>
     </div>
-    <footer class="footer">
+    <%-- <footer class="footer">
 		<c:import url="/inc/footer" />
-    </footer>
+    </footer> --%>
+	<c:import url="/inc/footer" />
     <a href="#" class="btn btn-text btn-totop">
     <i class="icon icon-arrow-top-long"></i>
     <span>TOP</span>
@@ -582,6 +582,7 @@
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('html,body').animate( { scrollTop:0 },{duration : 100});
+            $('.header').css({'display' : 'block'});
             return false;
         });
         $(window).on('scroll', function (){

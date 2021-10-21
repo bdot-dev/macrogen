@@ -206,12 +206,6 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_04채용_03채용안내_02조회'
     },
-    {
-      stateClass: 'complete',
-      url: '01Macrogen_04채용_03채용안내_02조회',
-      category: 'macrogen',
-      page: '01Macrogen_04채용_03채용안내_02조회'
-    },
   ]
 }
 data.business ={

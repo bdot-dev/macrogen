@@ -50,17 +50,18 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v1.5 / 10.13</title>
+  <title>Macrogen v1.7 / 10.20</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1013"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1013"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1020"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1020"/>
   <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
-  <script src="../../js/bundle.js?1013"></script>
+  <script src="../../js/bundle.js?1020"></script>
   <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-  <script src="../../js/common.js?1013"></script>
+  <script src="../../js/common.js?1020"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </head>
 
 <body>
@@ -73,12 +74,12 @@
             <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
             <nav>
                 <ul id="gnb">
-                    <li><a href="#" class="font-bold">macrogen</a></li> <!-- active 시, 활성화 -->
-                    <li><a href="#" class="font-bold">business</a></li>
-                    <li><a href="#" class="font-bold">r&d</a></li>
-                    <li><a href="#" class="font-bold">newsroom</a></li>
-                    <li><a href="#" class="font-bold">ir</a></li>
-                    <li><a href="#" class="font-bold">esg</a></li>
+                    <li><span class="font-bold">macrogen</span></li> <!-- active 시, 활성화 -->
+                    <li><span class="font-bold">business</span></li>
+                    <li><span class="font-bold">r&#38d</span></li>
+                    <li><span class="font-bold">newsroom</span></li>
+                    <li><span class="font-bold">ir</span></li>
+                    <li><span class="font-bold">esg</span></li>
                 </ul>
             </nav>
         </div>
@@ -178,7 +179,7 @@
         <!--Newsroom-->
         <div class="box clearfix">
             <div class="item">
-                <div class="title"><a href="#">NEWS</a></div>
+                <div class="title"><a href="#">뉴스</a></div>
             </div>
             <div class="item">
                 <div class="title"><a href="#">미디어라이브러리</a></div>
@@ -290,51 +291,66 @@
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
 <footer class="footer">
-    <div class="inner clearfix">
-        <div class="section_copy">
-            <div class="text font-bold">
-                <p>humanizing<br>genomics</p>
-            </div>
-            <div class="copyright font-medium">
-                <p>ⓒMacrogen, Inc.<br>All Rights Reserved.</p>
-            </div>
-            <ul class="sns">
-                <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-square"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube-square"></i></a></li>
-                <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog-square"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-square"></i></a></li>
-            </ul>
-        </div>
+    <div class="inner">
         <div class="section_information">
-            <div class="info">
-                <div class="box">
-                    <p class="font-bold title">MACROGEN</p>
-                    <ul class="text">
-                        <li><span><span class="font-bold">본사</span> : 서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span></li>
-                        <li><span><span class="font-bold">대표이사</span> : 이수강</span><span><span class="font-bold">사업자등록번호</span> : 208-81-24115</span></li>
-                        <li><span><span class="font-bold">Tel</span> : 02-2180-7000</span><span><span class="font-bold">Fax</span> : 02-2180-7100</span></li>
-                        <li><span><span class="font-bold">E-mail</span> : <a href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a></span></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <p class="font-bold title">FAMILY SITE</p>
-                    <ul class="text">
-                        <li><span><a href="https://thebiome.life/" target="_blank">더바이옴</a></span><span><a href="https://www.my-genomestory.com/" target="_blank">마이지놈스토리</a></span><span><a href="https://www.mypetgene.com/main/main.php" target="_blank">마이펫진</a></span></li>
-                        <li><span><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></span><span><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 싱가포르</a></span><span><a href="https://www.macrogen-europe.com" target="_blank">마크로젠 유럽</a></span></li>
-                        <li><span><a href="https://psomagen.com/" target="_blank">소마젠(Psomagen)</a></span><span><a href="http://gmi.ac.kr/index.php" target="_blank">유전체의학연구소</a></span></li>
-                        <li><span><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></span></li>
-                        <li><span><a href="https://dna.macrogen.com/" target="_blank">Order site</a></span></li>
-                    </ul>
-                </div>
+            <div class="title font-bold">
+                <p>MACROGEN</p>
             </div>
-            <div class="link">
-                <ul class="terms">
-                    <li><span class="font-medium"><a href="#">개인정보취급방침</a></span></li>
-                    <li><span class="font-medium"><a href="#">영상정보처리기기 운영.관리방침</a></span></li>
-                    <li><span class="font-medium"><a href="#">내부정보관리규정</a></span></li>
+            <div class="info">
+                <ul class="text">
+                    <li>
+                        <ul class="terms clearfix">
+                            <li><span class="font-medium"><a href="#">서비스 신청&#47;견적 문의</a></span></li>
+                            <li><span class="font-medium"><a href="#">개인정보취급방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">내부정보관리규정</a></span></li>
+                            <li><span class="font-medium"><a href="#">영상정보처리기기 운영&#46;관리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">Contact us</a></span></li>
+                        </ul>
+                    </li>
+                    <li><span>서울특별시 금천구 벚꽃로 254 10층&#40;가산동&#44; 월드메르디앙1차&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>
+                    <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
                 </ul>
             </div>
+        </div>
+
+        <div class="section_familysite">
+            <div class="family-box">
+                <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
+                <div class="popup_box _popup_box">
+                    <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>
+                    <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">마이지놈스토리</span></a>
+                    <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">마이펫진</span></a>
+                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠(Psomagen)</span></a>
+                    <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
+                    <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
+                    <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
+                    <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">유전체의학연구소</span></a>
+                    <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
+                </div>
+            </div>
+            <script>
+                $('.popup_box').hide();
+                $('._select_site').click(function(){
+                    if ($(this).hasClass('open') == true){
+                        $(this).removeClass('open');
+                        $(this).next().slideUp(200);
+                    }else {
+                        $(this).addClass('open');
+                        $(this).next().slideDown(200);
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="section_sns">
+            <ul class="sns clearfix">
+                <li class="facebook"><a href="https://www.facebook.com/macrogenkr/" target="_blank"></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"></a></li>
+                <li class="blog"><a href="https://blog.naver.com/macrogen_official" target="_blank"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/company/macrogen" target="_blank"></a></li>
+            </ul>
         </div>
     </div>
 </footer>
@@ -348,6 +364,7 @@
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('html,body').animate( { scrollTop:0 },{duration : 100});
+            $('.header').css({'display' : 'block'});
             return false;
         });
         $(window).on('scroll', function (){

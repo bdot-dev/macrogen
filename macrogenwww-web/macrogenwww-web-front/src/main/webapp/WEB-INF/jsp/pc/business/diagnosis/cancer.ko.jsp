@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-      <div class="hero-title">임상진단서비스</div>
+      <div class="hero-title">암 유전체 검사</div>
       <div class="slogan-sub">FFPE, Tissue, Liquid Biopsy(액체생검)등을 이용한 암유전체 검사</div>
     </div>
   </div>
@@ -26,7 +26,7 @@
     <div class="section_business">
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
-        <p class="font-h4 title">SERVICE</p>
+
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">

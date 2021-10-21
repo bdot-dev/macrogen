@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h2">내부정보관리규정</p>
+            <p class="main-title font-h1">내부정보관리규정</p>
 
             <c:if test="${fn:length(resultList) > 0 }">
             <div class="dropdown_area">

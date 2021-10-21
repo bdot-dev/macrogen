@@ -164,7 +164,7 @@
 	            section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
 	        })
 
-	        $(window).on('resize scroll', function () {
+	        $(window).on('resize scroll', _.throttle(function (){
 	            var currentPosition = $(window).scrollTop();
 
 	            for (var i = 0; i < sectionLength; i++) {
@@ -178,7 +178,8 @@
 	            else {
 	                $('.section:last-child .year-info').find('li:last-child').removeClass('active')
 	            }
-	        })
+	        }, 100));
+
 	        function setHistoryScroll($information) {
 	            var gap = 0;/*50*/
 	            var gapYear = 79;

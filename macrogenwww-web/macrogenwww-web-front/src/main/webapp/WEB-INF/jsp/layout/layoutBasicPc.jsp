@@ -49,9 +49,7 @@
 		<decorator:body />
 		<!-- //내용 -->
 
-		<footer>
-			<c:import url="/inc/footer" />
-		</footer>
+		<c:import url="/inc/footer" />
 
 	    <a href="#" class="btn btn-text btn-totop">
 		    <i class="icon icon-arrow-top-long"></i>
@@ -61,6 +59,7 @@
 		    $(document).ready(function(){
 		        $('.btn-totop').click(function(){
 		            $('html,body').animate( { scrollTop:0 },{duration : 100});
+		            $('.header').css({'display' : 'block'});
 		            return false;
 		        });
 

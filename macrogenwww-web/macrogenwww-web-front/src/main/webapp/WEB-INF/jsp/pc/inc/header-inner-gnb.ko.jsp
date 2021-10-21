@@ -5,12 +5,12 @@
 	    <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 	    <nav>
 	        <ul id="gnb">
-	            <li><a href="/${rc.locale.language }/company/overview" class="font-bold">macrogen</a></li>
-	            <li><a href="/${rc.locale.language }/business/research/ngs" class="font-bold">business</a></li>
-	            <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine" class="font-bold">r&d</a></li>
-	            <li><a href="/${rc.locale.language }/newsroom/news" class="font-bold">newsroom</a></li>
-	            <li><a href="/${rc.locale.language }/ir/financial" class="font-bold">ir</a></li>
-	            <li><a href="/${rc.locale.language }/company/esg-management" class="font-bold">esg</a></li>
+                <li><span class="font-bold">macrogen</span></li>
+                <li><span class="font-bold">business</span></li>
+                <li><span class="font-bold">r&#38d</span></li>
+                <li><span class="font-bold">newsroom</span></li>
+                <li><span class="font-bold">ir</span></li>
+                <li><span class="font-bold">esg</span></li>
 	        </ul>
 	    </nav>
 	</div>
@@ -44,7 +44,7 @@
                 <li><a href="/${rc.locale.language }/company/history">연혁</a></li>
                 <li><a href="/${rc.locale.language }/company/vision">비전</a></li>
                 <li><a href="/${rc.locale.language }/company/certification">인증</a></li>
-                <%-- <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li> --%>
+                <!-- <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li> -->
             </ul>
         </div>
         <div class="item">
@@ -117,7 +117,7 @@
     <!--Newsroom-->
     <div class="box clearfix">
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/newsroom/news">NEWS</a></div>
+            <div class="title"><a href="/${rc.locale.language }/newsroom/news">뉴스</a></div>
         </div>
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/newsroom/media-library">미디어라이브러리</a></div>
