@@ -38,7 +38,7 @@
                     <hr class="divider"/>
                     <div class="content">
                         <div class="text">
-                            ${resultVo.nttSj }
+                            ${resultVo.nttCn }
                         </div>
                         <div class="chips-share-box"><a href="javascript:;" class="btn btn-circle btn-white btn-lg"><i class="icon icon-share"></i></a></div>
                     </div>
