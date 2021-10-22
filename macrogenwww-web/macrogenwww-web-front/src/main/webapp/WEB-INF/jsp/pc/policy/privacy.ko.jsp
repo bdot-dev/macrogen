@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h1">개인정보 처리방침</p>
+            <p class="main-title font-h1">마크로젠 개인정보 처리방침</p>
             <c:if test="${fn:length(resultList) > 0 }">
 			<div class="dropdown_area">
 				<div class="select_box _select_box">

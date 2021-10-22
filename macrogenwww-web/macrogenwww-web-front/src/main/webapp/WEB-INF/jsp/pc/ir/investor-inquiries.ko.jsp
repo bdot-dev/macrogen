@@ -3,6 +3,7 @@
 <body>
 
 	<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
+	<input type="hidden" id="mbtlnum" name="mbtlnum" />
 
     <div class="container container-fluid">
         <div class="section_IR">
@@ -93,7 +94,7 @@
                 <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
                 <div class="agreement">
                     <p><span class="font-bold">개인정보 수집 목적 :</span> 투자 문의 및 상담 문의 대응</p>
-                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호, 문의 제목, 문의 내용</p>
+                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호</p>
                     <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
                     <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
                 </div>
@@ -126,6 +127,7 @@
 	var submitting = false;
 	var $form = $('#editForm');
 	var $nmbrWrterNm = $('#nmbrWrterNm');
+	var $mbtlnum = $('#mbtlnum');
 	var $mbtlnum1 = $('#mbtlnum1');
 	var $mbtlnum2 = $('#mbtlnum2');
 	var $mbtlnum3 = $('#mbtlnum3');
@@ -154,6 +156,8 @@
 			} else {
 				submitting = true;
 			}
+
+			$mbtlnum.val($mbtlnum1.val() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
 
 			$.ajax({
 				dataType : 'json',
