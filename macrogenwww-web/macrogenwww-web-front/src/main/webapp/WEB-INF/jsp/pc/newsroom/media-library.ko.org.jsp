@@ -30,25 +30,20 @@
 	                    <div class="thumbnail thumbnail-only-title">
 	                        <ul class="clearfix">
 			                    <c:forEach var="result" items="${resultList }" varStatus="status">
-			                    	<li class="item">
-		                                <span class="img img-wrap">
-		                                    <a href="#sn=${result.nttSn }"><img src="${publicUrl }${result.thumbFlpth }" alt=""></a>
-		                                    <!-- 이미지 , 다운로드 버튼 있는경우 -->
-		                                    <span class="btn-box clearfix">
-		                                    	<c:if test="${fn:length(result.imageList) gt 0 }">
-			                                        <a href="#sn=${result.nttSn }" class="img-list"><i class="icon icon-list_box"></i><span class="num">${fn:length(result.imageList) }</span></a>
-		                                    	</c:if>
-		                                    	<c:if test="${fn:length(result.atchList) gt 0 }">
-			                                        <a href="#sn=${result.nttSn }" class="download"><i class="icon icon-download-white"></i></a>
-			                                    </c:if>
-		                                    </span>
-		                                </span>
-		                                <div class="text-wrap">
-		                                    <a href="#sn=${result.nttSn }">
-		                                        <span class="tit">${result.nttSumry }</span>
-		                                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
-		                                    </a>
-		                                </div>
+	                        		<c:choose>
+	                        			<c:when test="${result.thumbBassImageUseYn eq 'Y' }">
+	                        				<c:set var="imgUrl" value="${result.thumbBassImageCodeNm }" />
+	                        			</c:when>
+	                        			<c:otherwise>
+	                        				<c:set var="imgUrl" value="${publicUrl }${result.thumbFlpth }" />
+	                        			</c:otherwise>
+	                        		</c:choose>
+		                            <li class="item">
+		                                <a href="javascript:linkView(${result.nttSn })">
+		                                    <span class="img"><img src="${imgUrl }" alt="${result.nttSj }"></span>
+		                                    <span class="tit">${result.nttSj }</span>
+		                                    <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+		                                </a>
 		                            </li>
 				                </c:forEach>
 	                        </ul>
@@ -76,7 +71,6 @@
 
 	</form:form>
 
-	<script src="/js/util/Hash.js"></script>
 	<script>
 		var $form = $("#listForm");
 
@@ -108,29 +102,6 @@
 			$form.submit();
 		}
 
-    	$(function() {
-    		$(window).on('hashchange', function() {
-    			console.log(location.hash);
-    		    var sn = Hash.getParam('sn');
-    		    console.log('sn:', sn);
-
-    		    if (!sn) return;
-
-    		    var $modalContent = $('#modalMediaLibrary .modal-content');
-       			$.ajax({
-       				dataType: 'html', type : 'post',
-       				url: '/${rc.locale.language}/newsroom/media-library/viewAjaxHtml/' + sn,
-       				data: { },
-       			}).done(function(html) {
-   				 	modalMediaLibrary.show();
-       				$modalContent.empty().html(html);
-       			});
-
-    		});
-
-    		$(window).trigger('hashchange');
-    	});
-
-	</script>
+</script>
 
 </body>

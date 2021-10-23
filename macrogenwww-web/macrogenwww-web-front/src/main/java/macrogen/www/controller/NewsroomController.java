@@ -115,6 +115,28 @@ public class NewsroomController extends DefaultController {
 		return getDev() + "/newsroom/media-library." + getLang();
 	}
 
+	@RequestMapping("/media-library/viewAjaxHtml/{nttSn}")
+	public String mediaLibraryViewAjaxHtml(@PathVariable LangId langId, @PathVariable Long nttSn,
+			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
+
+		NttVo resultVo = nttService.viewByPk(nttSn);
+		model.addAttribute("resultVo", resultVo);
+
+		// 이전글, 다음글
+		String bbsId = "media-library";
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId(bbsId);
+		listVo.setNttSn(nttSn);
+
+		NttVo prevVo = nttService.prev(listVo);
+		model.addAttribute("prevVo", prevVo);
+
+		NttVo nextVo = nttService.next(listVo);
+		model.addAttribute("nextVo", nextVo);
+
+		return getDev() + "/newsroom/media-library-viewAjaxHtml." + getLang();
+	}
+
 	@RequestMapping("/media-library/{nttSn}")
 	public String mediaLibraryView(@PathVariable long nttSn, @PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {

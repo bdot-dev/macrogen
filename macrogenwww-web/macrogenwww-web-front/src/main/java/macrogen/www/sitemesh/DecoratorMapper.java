@@ -55,6 +55,11 @@ public class DecoratorMapper extends AbstractDecoratorMapper {
 					request.setAttribute("modal_research_result_use", true);
 				}
 
+				// modal_media_library 모달 사용여부
+				if (path.startsWith("/ko/newsroom/media-library") || path.startsWith("/en/newsroom/media-library")) {
+					request.setAttribute("modal_media_library", true);
+				}
+
 				// remove_header_bg_white_unuse
 				if (path.startsWith("/ko/company/recruit") || path.startsWith("/en/company/recruit") ||
 						path.startsWith("/ko/company/contact-us") || path.startsWith("/en/company/contact-us")) {

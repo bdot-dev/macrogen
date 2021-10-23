@@ -367,6 +367,12 @@ data.newsroom = {
     },
     {
       stateClass: 'complete',
+      url: '02미디어라이브러리_02조회팝업',
+      category: 'newsroom',
+      page: '02미디어라이브러리_02조회팝업'
+    },
+    {
+      stateClass: 'complete',
       url: '03공지사항_01목록',
       category: 'newsroom',
       page: '03공지사항_01목록'

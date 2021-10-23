@@ -150,6 +150,7 @@
                 }
                 console.log('setSlider');
                 mainSwiper = new Swiper($container, {
+                    effect : 'fade', // 페이드 효과
                     loop: true, //반복
                     speed: 1200,//속도
                     autoplay: {
