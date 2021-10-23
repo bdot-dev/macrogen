@@ -17,7 +17,7 @@
                             <!-- <li><span class="font-medium"><a href="/${rc.locale.language }/company/contact-us">Contact us</a></span></li> -->
                         </ul>
                     </li>
-                    <li><span>서울특별시 강남구 테헤란로 238 (마크로젠빌딩)</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>
+                    <li><span>서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>
                     <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
                 </ul>
             </div>

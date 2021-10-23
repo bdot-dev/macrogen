@@ -199,6 +199,10 @@ var nttForm = (function($) {
 					if (!val) return val;
 					return val.split('\n').join('<br />');
 				},
+				stripHtml: function(html) {
+					if (!html) return html;
+					return $(html).text();
+				},
 			},
 			updated : function () {
 				var vm = this;
