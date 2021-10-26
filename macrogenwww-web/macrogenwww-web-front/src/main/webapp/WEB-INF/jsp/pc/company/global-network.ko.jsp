@@ -58,7 +58,7 @@
                     <div class="title">국내</div>
                     <div class="detail">
                         <ul>
-                            <li class="item" id="seoul">
+                            <li class="item height_fix" id="seoul">
                                 <div class="name">마크로젠 강남본사</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_1.png" alt="마크로젠 강남본사"></div>
                                 <div class="info">
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item height_fix">
                                 <div class="name">마크로젠 지놈센터</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_2.png" alt="마크로젠 지놈센터"></div>
                                 <div class="info">
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item height_fix">
                                 <div class="name">마크로젠 모델동물센터</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_3.png" alt="마크로젠 모델동물센터"></div>
                                 <div class="info">
@@ -109,7 +109,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
+                            <li class="item height_fix">
                                 <div class="name">마크로젠 대전 지놈센터</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_4.png" alt="마크로젠 대전 지놈센터"></div>
                                 <div class="info">
@@ -133,7 +133,7 @@
                     <div class="title">글로벌</div>
                     <div class="detail">
                         <ul>
-                            <li class="item" id="rockville">
+                            <li class="item height_fix" id="rockville">
                                 <div class="name">소마젠 (Psomagen) <span class="badge">관계사</span></div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_5.png" alt="소마젠 (Psomagen)"></div>
                                 <div class="info">
@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item" id="tokyo">
+                            <li class="item height_fix" id="tokyo">
                                 <div class="name">일본법인</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_6.png" alt="일본법인"></div>
                                 <div class="info">
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item" id="amsterdam">
+                            <li class="item height_fix" id="amsterdam">
                                 <div class="name">유럽법인</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_7.png" alt="유럽법인"></div>
                                 <div class="info">
@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item" id="synapse">
+                            <li class="item height_fix" id="synapse">
                                 <div class="name">싱가포르법인</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_8.png" alt="싱가포르법인"></div>
                                 <div class="info">
@@ -203,7 +203,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item" id="madrid">
+                            <li class="item height_fix" id="madrid">
                                 <div class="name">스페인지사</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_9.png" alt="스페인지사"></div>
                                 <div class="info">

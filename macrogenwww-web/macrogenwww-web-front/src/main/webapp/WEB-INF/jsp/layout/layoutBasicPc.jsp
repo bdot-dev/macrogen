@@ -83,5 +83,17 @@
 
 	</div>
 
+	<c:if test="${modal_media_library eq true }">
+        <div class="modal" tabindex="-1" id="modalMediaLibrary" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content modal-slider">modalMediaLibrary</div>
+		    </div>
+		</div>
+		<script>
+		    var modalMediaLibrary = new bootstrap.Modal(document.getElementById('modalMediaLibrary'));
+		</script>
+
+	</c:if>
+
 </body>
 </html>

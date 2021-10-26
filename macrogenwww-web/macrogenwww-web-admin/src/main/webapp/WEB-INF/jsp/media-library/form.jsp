@@ -103,7 +103,7 @@
 							</th>
 							<td colspan="3" class="tal">
 								<div class="attchList" >
-									<div class="lbMaxlenPrnt">
+									<div v-if="!resultVo.imageList || resultVo.imageList.length < 10" class="lbMaxlenPrnt">
 										<input type="file" name="imageFile" v-on:change="onchangeImageListFile" />
 										<span>(용량 : 3MB 이하  |  형식 : jpg, png, gif | 최소1개 이상, 10개 이하)</span>
 
@@ -147,6 +147,20 @@
 								</div>
 							</td>
 						</tr>
+
+						<tr>
+							<th>제목 (이전입력내용)</th>
+							<td colspan="3" class="tal">
+								{{resultVo.nttSj }}
+							</td>
+						</tr>
+						<tr>
+							<th>내용 (이전입력내용)</th>
+							<td colspan="3" class="tal">
+								{{ stripHtml(resultVo.nttCn) }}
+							</td>
+						</tr>
+
 						<!--
 						<tr>
 							<th>상단고정</th>
@@ -172,15 +186,6 @@
 							</td>
 						</tr>
 						 -->
-						<!--
-						<tr>
-							<th>내용 <span>*</span></th>
-							<td colspan="3" class="tal">
-								<div class="lbMaxlenPrnt"><textarea v-model="resultVo.nttCn" name="nttCn"
-									placeholder="내용" class="w100p devck" style="height:250px;"></textarea></div>
-							</td>
-						</tr>
-						-->
 					</tbody>
 				</table>
 			</div>
