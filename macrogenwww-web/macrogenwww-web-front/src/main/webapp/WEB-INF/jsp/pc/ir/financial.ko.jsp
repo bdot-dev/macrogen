@@ -37,14 +37,12 @@
                             <td>이익잉여금</td>
                             <td class="font-medium">비지배지분</td>
                             <td class="table-bg">자본 총계</td>
-                        </tr>
-                        <c:forEach var="result" items="${fnlttList }" varStatus="status">
-                        	<c:set var="totalAssets" value="${result.curAssets + result.noncurAssets }" />
-                        	<c:set var="totalLiabil" value="${result.curLiabil + result.noncurLiabil }" />
-                        	<c:set var="totalEquity" value="${totalAssets - totalLiabil }" />
-                        	<c:set var="ownersOfParentEquity" value="${totalEquity - result.noncontrInterest }" />
-
-	                        <tr>
+                        </tr><c:forEach var="result" items="${fnlttList }" varStatus="status"
+                        	><c:set var="totalAssets" value="${result.curAssets + result.noncurAssets }"
+                        	/><c:set var="totalLiabil" value="${result.curLiabil + result.noncurLiabil }"
+                        	/><c:set var="totalEquity" value="${totalAssets - totalLiabil }"
+                        	/><c:set var="ownersOfParentEquity" value="${totalEquity - result.noncontrInterest }"
+                        	/><tr>
 	                            <th>${result.iemOdrKo }<span class="additional">(<fmt:formatDate value="${result.iemDe }" pattern="yyyy.MM.dd" />)</span></th>
 	                            <td class="text-end"><fmt:formatNumber value="${result.curAssets }" /></td>
 	                            <td class="text-end"><fmt:formatNumber value="${result.noncurAssets }" /></td>
@@ -60,8 +58,7 @@
 	                            <td class="text-end"><fmt:formatNumber value="${result.retainedEarnings }" /></td>
 	                            <td class="text-end font-medium"><fmt:formatNumber value="${result.noncontrInterest }" /></td>
 	                            <td class="text-end table-bg"><fmt:formatNumber value="${totalEquity }" /></td>
-	                        </tr>
-                        </c:forEach>
+	                        </tr></c:forEach>
                     </tbody>
                 </table>
             </div>
@@ -87,15 +84,13 @@
                             <td class="table-bg">당기순이익</td>
                             <td>기타포괄손익</td>
                             <td class="table-bg">총포괄손익</td>
-                        </tr>
-                        <c:forEach var="result" items="${ plosdocList }" varStatus="status">
-                        	<c:set var="grossProfit" value="${ result.sales - result.costSales }" />
-                        	<c:set var="operatingIncome" value="${ grossProfit - result.sellAdminExpenses }" />
-                        	<c:set var="incomeLossBefIncometax" value="${ operatingIncome  + result.etcErn - result.etcCt}" />
-                        	<c:set var="netIncome" value="${ incomeLossBefIncometax - result.incometaxExpenses + result.discontOperIncome }" />
-                        	<c:set var="totalComprehensiveIncome" value="${ netIncome + result.otherCompIncome }" />
-
-	                        <tr>
+                        </tr><c:forEach var="result" items="${ plosdocList }" varStatus="status"
+                        	><c:set var="grossProfit" value="${ result.sales - result.costSales }"
+                        	/><c:set var="operatingIncome" value="${ grossProfit - result.sellAdminExpenses }"
+                        	/><c:set var="incomeLossBefIncometax" value="${ operatingIncome  + result.etcErn - result.etcCt}"
+                        	/><c:set var="netIncome" value="${ incomeLossBefIncometax - result.incometaxExpenses + result.discontOperIncome }"
+                        	/><c:set var="totalComprehensiveIncome" value="${ netIncome + result.otherCompIncome }"
+                        	/><tr>
 	                            <th>${result.iemOdrKo }<span class="additional">(<fmt:formatDate value="${result.iemDe }" pattern="yyyy.MM.dd" />)</span></th>
 	                            <td class="text-end table-bg"><fmt:formatNumber value="${result.sales }" /></td>
 	                            <td class="text-end"><fmt:formatNumber value="${result.costSales }" /></td>
@@ -113,8 +108,7 @@
 	                            <td class="text-end table-bg"><fmt:formatNumber value="${netIncome }" /></td>
 	                            <td class="text-end"><fmt:formatNumber value="${result.otherCompIncome }" /></td>
 	                            <td class="text-end table-bg"><fmt:formatNumber value="${totalComprehensiveIncome }" /></td>
-	                        </tr>
-                        </c:forEach>
+	                        </tr></c:forEach>
                     </tbody>
                 </table>
             </div>
