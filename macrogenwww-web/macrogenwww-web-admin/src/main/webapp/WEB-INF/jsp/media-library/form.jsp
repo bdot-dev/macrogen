@@ -103,7 +103,7 @@
 							</th>
 							<td colspan="3" class="tal">
 								<div class="attchList" >
-									<div class="lbMaxlenPrnt">
+									<div v-if="!resultVo.imageList || resultVo.imageList.length < 10" class="lbMaxlenPrnt">
 										<input type="file" name="imageFile" v-on:change="onchangeImageListFile" />
 										<span>(용량 : 3MB 이하  |  형식 : jpg, png, gif | 최소1개 이상, 10개 이하)</span>
 

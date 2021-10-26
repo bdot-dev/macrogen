@@ -35,7 +35,7 @@
 		                                    <a href="#sn=${result.nttSn }"><img src="${publicUrl }${result.thumbFlpth }" alt=""></a>
 		                                    <!-- 이미지 , 다운로드 버튼 있는경우 -->
 		                                    <span class="btn-box clearfix">
-		                                    	<c:if test="${fn:length(result.imageList) gt 0 }">
+		                                    	<c:if test="${fn:length(result.imageList) gt 1 }">
 			                                        <a href="#sn=${result.nttSn }" class="img-list"><i class="icon icon-list_box"></i><span class="num">${fn:length(result.imageList) }</span></a>
 		                                    	</c:if>
 		                                    	<c:if test="${fn:length(result.atchList) gt 0 }">
