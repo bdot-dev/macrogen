@@ -50,17 +50,17 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v1.8 / 10.22</title>
+  <title>Macrogen v1.9 / 10.28</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1022"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1022"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1028"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1028"/>
   <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
-  <script src="../../js/bundle.js?1022"></script>
+  <script src="../../js/bundle.js?1028"></script>
   <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-  <script src="../../js/common.js?1022"></script>
+  <script src="../../js/common.js?1028"></script>
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </head>
 
@@ -266,7 +266,7 @@
 
                     <div class="font-h1">투자자 문의</div>
                     <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
-                    <span class="number">Tel. 02-3489-7558</span>
+                    <span class="number">Tel&#46; 02&#45;3489&#45;7558</span>
                     <a href="#" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
 
                 </div>
@@ -274,7 +274,7 @@
 
             </div>
             <div class="privacy_box">
-                <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
+                <div class="font-h5"><span>01&#46;</span>정보를 입력해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">
                     <span class="input-group-text" id="name">이름</span>
@@ -284,11 +284,18 @@
                 <div class="input-group input-phone-box">
                     <span class="input-group-text" id="num1">휴대폰 번호</span>
                     <div class="input-group-phone">
-                        <select class="form-select" title="휴대폰번호 앞세자리 선택">
-                            <option selected>010</option>
-                            <option value="1">011</option>
-                            <option value="2">019</option>
-                        </select>
+                        <div class="select-box ">
+                            <a href="#" class="select_default _select_default"><span class="text">010</span></a>
+                            <ul class="select_list _select_list">
+                                <li><span>010</span></li>
+                                <li><span>011</span></li>
+                                <li><span>016</span></li>
+                                <li><span>017</span></li>
+                                <li><span>018</span></li>
+                                <li><span>019</span></li>
+                            </ul>
+                        </div>
+
                         <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
                         <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
                         <script>
@@ -300,12 +307,12 @@
                             }
                         </script>
                     </div>
-                    <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
+                    <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다&#46;</span></p>
                 </div>
                 <hr class="divider"/>
             </div>
             <div class="privacy_box">
-                <div class="font-h5"><span>02.</span>문의하실 내용을 작성해주세요</div>
+                <div class="font-h5"><span>02&#46;</span>문의하실 내용을 작성해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">
                     <span class="input-group-text" id="title">제목</span>
@@ -331,12 +338,12 @@
             </div>
 
             <div class="privacy_box">
-                <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
+                <div class="font-h5"><span>03&#46;</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
                 <div class="agreement">
-                    <p><span class="font-bold">개인정보 수집 목적 :</span> 투자 문의 및 상담 문의 대응</p>
-                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호</p>
-                    <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
-                    <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
+                    <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
+                    <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                    <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
+                    <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" checked type="checkbox" value="" id="check">
@@ -393,7 +400,7 @@
                     <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>
                     <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">마이지놈스토리</span></a>
                     <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">마이펫진</span></a>
-                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠(Psomagen)</span></a>
+                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
                     <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
                     <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
                     <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
@@ -401,18 +408,6 @@
                     <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
                 </div>
             </div>
-            <script>
-                $('.popup_box').hide();
-                $('._select_site').click(function(){
-                    if ($(this).hasClass('open') == true){
-                        $(this).removeClass('open');
-                        $(this).next().slideUp(200);
-                    }else {
-                        $(this).addClass('open');
-                        $(this).next().slideDown(200);
-                    }
-                });
-            </script>
         </div>
 
         <div class="section_sns">
