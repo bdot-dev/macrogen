@@ -13964,6 +13964,7 @@
   <term name="중단영업이익" physicalName="DISCONT_OPER_INCOME" physicalDescription="DISCONTINUED OPERATIONS INCOME"/>
   <term name="기타포괄손익" physicalName="OTHER_COMP_INCOME" physicalDescription="OTHER COMPREHENSIVE INCOME"/>
   <term name="채용공고" description="채용공고" physicalName="EMPA" physicalDescription="employment public announcement"/>
+  <term name="소셜미디어링크" description="소셜미디어링크" physicalName="SOMLNK" physicalDescription="SOCIAL MEDIA LINK"/>
   <tag name="기록물관리"/>
   <tag name="교육인적자원 행정지원"/>
   <tag name="재난예방 관리"/>

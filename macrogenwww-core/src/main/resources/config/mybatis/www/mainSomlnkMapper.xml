@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MainSomlnkMapper">
+  <sql id="list_where">
+    <if test="langCode != null and langCode != ''">
+      and tms.lang_code = #{langCode}
+    </if>
+    <if test="searchKeyword != null and searchKeyword != ''">
+    	and tms.somlnk_sj like concat('%', #{searchKeyword}, '%')
+    </if>
+    <if test="searchSomlnkCtgryCode != null and searchSomlnkCtgryCode != ''">
+    	and tms.somlnk_ctgry_code = #{searchSomlnkCtgryCode}
+    </if>
+	<if test="searchBeginDt != null">
+		AND tms.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+	</if>
+	<if test="searchEndDt != null">
+		AND tms.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+	</if>
+  </sql>
+
+  <select id="count" parameterType="mainSomlnkVo" resultType="int">
+    select count(*)
+    from tb_main_somlnk tms
+    where 1 = 1
+    <include refid="list_where" />
+  </select>
+
+  <select id="list" parameterType="mainSomlnkVo" resultType="mainSomlnkVo">
+    <include refid="paging.countTop" />
+	select
+		tms.main_somlnk_sn
+		, tms.lang_code
+		, tms.somlnk_ctgry_code
+		, ( select code_nm from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		, tms.image_atch_id
+		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
+		, tms.somlnk_sj
+		, tms.somlnk_url
+		, tms.sort_ordr
+		, tms.regist_dt
+		, tms.register_sn
+			, ( select user_nm from tb_user where user_sn = tms.register_sn ) register_nm
+		, tms.updt_dt
+		, tms.updusr_sn
+		, ( select user_nm from tb_user where user_sn = tms.updusr_sn ) updusr_nm
+	from tb_main_somlnk tms
+	where 1 = 1
+    <include refid="list_where" />
+    <choose>
+      <when test='orderBy == "regist_dt_desc"'>
+        order by tms.regist_dt desc, tms.main_somlnk_sn desc
+      </when>
+      <otherwise>
+        order by tms.main_somlnk_sn desc
+      </otherwise>
+    </choose>
+    <include refid="paging.countBottom" />
+  </select>
+
+  <select id="view" parameterType="mainSomlnkVo" resultType="mainSomlnkVo">
+    select
+		tms.main_somlnk_sn
+		, tms.lang_code
+		, tms.somlnk_ctgry_code
+		, ( select code_nm from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		, tms.image_atch_id
+		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
+		, tms.somlnk_sj
+		, tms.somlnk_url
+		, tms.sort_ordr
+		, tms.regist_dt
+		, tms.register_sn
+			, ( select user_nm from tb_user where user_sn = tms.register_sn ) register_nm
+		, tms.updt_dt
+		, tms.updusr_sn
+		, ( select user_nm from tb_user where user_sn = tms.updusr_sn ) updusr_nm
+    from tb_main_somlnk tms
+    where tms.main_somlnk_sn = #{mainSomlnkSn}
+  </select>
+
+  <select id="seq" resultType="long">
+    select fn_nextval('sq_main_somlnk')
+  </select>
+
+  <insert id="insert" parameterType="mainSomlnkVo">
+    insert into tb_main_somlnk (
+      main_somlnk_sn
+      , lang_code
+      , somlnk_ctgry_code
+      , image_atch_id
+      , somlnk_sj
+      , somlnk_url
+      , sort_ordr
+      , regist_dt
+      , register_sn
+      , updt_dt
+      , updusr_sn
+    ) values (
+      #{mainSomlnkSn}
+      , #{langCode}
+      , #{somlnkCtgryCode}
+      , #{imageAtchId}
+      , #{somlnkSj}
+      , #{somlnkUrl}
+      , #{sortOrdr}
+      , now()
+      , #{registerSn}
+      , now()
+      , #{updusrSn}
+    )
+  </insert>
+
+  <delete id="delete" parameterType="mainSomlnkVo">
+    delete from tb_main_somlnk where main_somlnk_sn = #{mainSomlnkSn}
+  </delete>
+
+  <update id="update" parameterType="mainSomlnkVo">
+    update tb_main_somlnk
+    set
+        updt_dt = now()
+        , updusr_sn = #{updusrSn}
+      <if test="langCode != null">, lang_code = #{langCode} </if>
+      <if test="somlnkCtgryCode != null">, somlnk_ctgry_code = #{somlnkCtgryCode} </if>
+      <if test="imageAtchId != null">, image_atch_id = #{imageAtchId} </if>
+      <if test="somlnkSj != null">, somlnk_sj = #{somlnkSj} </if>
+      <if test="somlnkUrl != null">, somlnk_url = #{somlnkUrl} </if>
+      <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+    where main_somlnk_sn = #{mainSomlnkSn}
+  </update>
+
+</mapper>
