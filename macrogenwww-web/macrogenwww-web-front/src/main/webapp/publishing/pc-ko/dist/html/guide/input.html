@@ -211,12 +211,15 @@
             <div class="font-h2">Input</div>
             <div class="box">
                 <div class="search-wrap mb-5">
-                    <select class="form-select" title="카테고리">
-                        <option selected>제목</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <div class="select-box">
+                        <a href="#" class="select_default _select_default"><span class="text">제목</span></a>
+                        <ul class="select_list _select_list">
+                           <li><span>제목</span></li>
+                           <li><span>One</span></li>
+                           <li><span>Two</span></li>
+                           <li><span>Three</span></li>
+                        </ul>
+                    </div>
                     <div class="input-search">
                         <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요"
                                aria-describedby="search">
@@ -240,12 +243,17 @@
                 <div class="input-group">
                     <span class="input-group-text" id="num1">휴대폰 번호</span>
                     <div class="input-group-phone">
-                        <select class="form-select" title="카테고리">
-                            <option selected="">제목</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                        <div class="select-box">
+                            <a href="#" class="select_default _select_default"><span class="text">010</span></a>
+                            <ul class="select_list _select_list">
+                                <li><span>010</span></li>
+                                <li><span>011</span></li>
+                                <li><span>016</span></li>
+                                <li><span>017</span></li>
+                                <li><span>018</span></li>
+                                <li><span>019</span></li>
+                            </ul>
+                        </div>
                         <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input"
                                aria-describedby="num2">
                         <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input"
@@ -405,6 +413,27 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="title">Dropdown</div>
+            <div class="box">
+                <div class="mb-5">
+                    <div class="dropdown_area">
+                    <div class="select-box">
+                        <div class="select_default _select_default">
+                            <span>2020. 03. 31 ~ 현재</span>
+                        </div>
+                        <ul class="select_list _select_list">
+                            <li><span>2020. 03. 31 ~ 현재</span></li>
+                            <li><span>2019. 10. 21 - 2020. 03 .31</span></li>
+                            <li><span>2018. 10. 26 - 2019. 10 .20</span></li>
+                            <li><span>2017. 03. 31 - 2018. 10 .25</span></li>
+                            <li><span>2012. 12. 03 - 2017. 03 .31</span></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
@@ -439,7 +468,7 @@
                     <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>
                     <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">마이지놈스토리</span></a>
                     <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">마이펫진</span></a>
-                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠(Psomagen)</span></a>
+                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
                     <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
                     <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
                     <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
@@ -447,18 +476,6 @@
                     <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
                 </div>
             </div>
-            <script>
-                $('.popup_box').hide();
-                $('._select_site').click(function(){
-                    if ($(this).hasClass('open') == true){
-                        $(this).removeClass('open');
-                        $(this).next().slideUp(200);
-                    }else {
-                        $(this).addClass('open');
-                        $(this).next().slideDown(200);
-                    }
-                });
-            </script>
         </div>
 
         <div class="section_sns">

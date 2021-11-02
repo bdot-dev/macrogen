@@ -471,7 +471,7 @@ data.esg = {
   title: 'ESG',
   list: [
     {
-      stateClass: 'waiting',
+      stateClass: 'complete',
       url: '06ESG_01ESG경영',
       category: 'ESG',
       page: '06ESG_01ESG경영'
