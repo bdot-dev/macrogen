@@ -26,7 +26,7 @@
         <div class="section_syncgenes">
             <div class="info-box">
                 <div class="title">데이터 통합 &#183; 분석을 통해<br>정밀의료를 완성합니다 </div>
-                <div class="desc">유전체 정보를 이용한 무병장수의 꿈을 실현을 위한 연구를 수행합니다.  </div>
+                <div class="desc">유전체 정보를 이용한 무병장수의 꿈을 실현을 위한 연구를 수행합니다&#46;</div>
             </div>
             <div class="img img_analysis"><img src="/publishing/pc-ko/dist/img/RD/img-analysis.png" alt="정밀분석"></div>
             <div class="desc-box">
@@ -34,9 +34,9 @@
                     마크로젠싱크진 연구소는
                 </p>
                 <p>
-                    마크로젠 싱크진연구소는 데이터 통합(integration), 분석(analysis), 결과적용(synchronization) 을 위한 연구를 통해 누구나<br>
-                    자신의 유전체 정보를 이용한 무병장수의 꿈이 실현되는 세상에 기여하기 위하여 설립되었습니다.<br>
-                    이 같은 설립 목적을 달성하기 위해 다양한 연구를 수행하고 있습니다.<br>
+                    마크로젠 싱크진연구소는 데이터 통합&#40;integration&#41;&#44; 분석&#40;analysis&#41;&#44; 결과적용&#40;synchronization&#41; 을 위한 연구를 통해 누구나<br>
+                    자신의 유전체 정보를 이용한 무병장수의 꿈이 실현되는 세상에 기여하기 위하여 설립되었습니다&#46;<br>
+                    이 같은 설립 목적을 달성하기 위해 다양한 연구를 수행하고 있습니다&#46;<br>
                 </p>
                 <hr class="divider">
             </div>
@@ -44,7 +44,7 @@
 
         <div class="section_info_list syncgenes-area">
             <div class="box clearfix">
-                <div class="sub_title">연구<span>유전체(genetic) 데이터, 임상(clinical) 데이터,<br>건강관련 생활 (health-related lifestyle) 데이터의<br>통합(문제를 해결하기)을 위한 연구</span></div>
+                <div class="sub_title">연구<span>유전체&#40;genetic&#41; 데이터&#44; 임상&#40;clinical&#41; 데이터&#44;<br>건강관련 생활 &#40;health-related lifestyle&#41; 데이터의<br>통합&#40;문제를 해결하기&#41;을 위한 연구</span></div>
                 <div class="sub_desc">
                     <img src="/publishing/pc-ko/dist/img/RD/img-syncgenes_research.png" alt="인간 게놈 염기서열">
                 </div>

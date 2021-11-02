@@ -33,7 +33,7 @@
                             <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
                         </div>
                         <div class="title">${resultVo.nttSj }</div>
-                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy.MM.dd" /></div>
+                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy&#46;MM&#46;dd" /></div>
                     </div>
                     <hr class="divider"/>
                     <div class="content">

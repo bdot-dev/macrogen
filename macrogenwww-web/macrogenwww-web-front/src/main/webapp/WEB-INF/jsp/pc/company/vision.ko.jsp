@@ -75,7 +75,7 @@
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                         <div class="font-h7">슬로건</div>
                         <div class="title">Humanizing<br/>Genomics</div>
-                        <div class="font-body-h">인간의 유전체 정보 및 데이터 분석 기술을 통해<br/>환자 개개인의 유전적 특성에 따른<br/>맞춤 의학을 제시한다는 뜻을 담고 있습니다.<br/>널리 인간 세계를 이롭게 한다는<br/>‘홍익인간(弘益人間)’의 사상이 바탕 되었습니다.</div>
+                        <div class="font-body-h">인간의 유전체 정보 및 데이터 분석 기술을 통해<br/>환자 개개인의 유전적 특성에 따른<br/>맞춤 의학을 제시한다는 뜻을 담고 있습니다&#46;<br/>널리 인간 세계를 이롭게 한다는<br/>&#39;홍익인간&#40;弘益人間&#41;&#39;의 사상이 바탕 되었습니다&#46;</div>
                     </div>
                     <div class="img img-1" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
                         <img src="/publishing/pc-ko/dist/img/macrogen/img-vision-parallax-1.png" alt="dna">
@@ -117,13 +117,13 @@
                         누구나 자신의<br/>
                         유전체 정보를 이용하여<br/>
                         무병장수의 꿈을<br/>
-                        이룰 수 있도록 돕는다.
+                        이룰 수 있도록 돕는다&#46;
                     </div>
                     <div class="font-body">
                         마크로젠의 경영이념은 인류가 질병 및 고통에서 벗어나<br/>
-                        행복하고 건강한 삶을 영위할 수 있도록 돕는 것입니다.<br/>
+                        행복하고 건강한 삶을 영위할 수 있도록 돕는 것입니다&#46;<br/>
                         깊이 있는 지식을 탐구하고 관련된 기술을 개발함으로써<br/>
-                        완벽하게 밝혀지지 않은 질병의 유전자 원인 규명을 목표로 합니다.
+                        완벽하게 밝혀지지 않은 질병의 유전자 원인 규명을 목표로 합니다&#46;
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                             <div class="font-body">
                                 탁월한 생각을 통해<br/>
                                 세상을 변화시킬 수 있는<br/>
-                                새로운 가치를 발견한다.
+                                새로운 가치를 발견한다&#46;
                             </div>
                         </div>
                         <div class="item">
@@ -161,16 +161,16 @@
                             <div class="font-body">
                                 고객의 기대를 뛰어 넘는<br/>
                                 가치와 서비스를 창출하기 위한<br/>
-                                도전을 멈추지 않는다.
+                                도전을 멈추지 않는다&#46;
                             </div>
                         </div>
                         <div class="item">
                             <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-vision-core-3.png" alt="초일류 리더"></div>
                             <div class="font-h5">초일류 <span class="color-point-primary">리더</span></div>
                             <div class="font-body">
-                                탁월한 생각, 멈추지 않는 도전으로<br/>
+                                탁월한 생각&#44; 멈추지 않는 도전으로<br/>
                                 미래를 선도하는<br/>
-                                초일류 리더로 성장한다.
+                                초일류 리더로 성장한다&#46;
                             </div>
                         </div>
                     </div>

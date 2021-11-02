@@ -7,8 +7,8 @@
             <p class="main-title font-h1">마크로젠 개인정보 처리방침</p>
             <c:if test="${fn:length(resultList) > 0 }">
 			<div class="dropdown_area">
-				<div class="select_box _select_box">
-					<div class="select_default">
+				<div class="select-box">
+					<div class="select_default _select_default">
 						<c:choose>
 							<c:when test="${ empty resultVo.endDe }">
 								<c:set var="currentEndDe" value="현재" />
@@ -18,10 +18,10 @@
 							</c:otherwise>
 						</c:choose>
 
-						<span><fmt:formatDate value="${resultVo.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ currentEndDe }</span>
+						<span class="text"><fmt:formatDate value="${resultVo.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ currentEndDe }</span>
 					</div>
 					<div class="select_dropdown _dropdown">
-						<ul>
+						<ul class="select_list _select_list">
                           	<c:forEach  var="result" items="${resultList }" varStatus="status" >
 								<c:choose>
 									<c:when test="${ empty result.endDe }">
@@ -32,44 +32,11 @@
 									</c:otherwise>
 								</c:choose>
 
-								<li><a href="/${rc.locale.language}/policy/privacy/${result.policySn }"
-										role="button"><span><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</span></a></li>
+								<li><span><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</span></li>
 							</c:forEach>
 						</ul>
 					</div>
 				</div>
-				<!--클릭시 select box on-->
-				<script>
-				    /*드롭다운 클릭시 이벤트*/
-				    var selectBox = $(".select_default");
-
-				    selectBox.on('click',function() {
-				      var select = $(this);
-				      //드롭다운 닫기
-				      if(select.hasClass('open')) {
-				        select.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-				      }
-				      //드롭다운 열기
-				      else {
-				        select.addClass("open").next('._dropdown').slideDown(200).addClass("open");
-				        $('body').on('click',function (e){
-				          if(selectBox.hasClass('open')) {
-				            if(!selectBox.has(e.target).length) {
-				              selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-				            }
-				          }
-				          // e.preventDefault();
-				        })
-				      }
-				 	});
-
-				  	$("._dropdo	n a").on('cl	ic	',function() {
-				      var option = $(this).fin	('span').text();
-				      console.log(option)
-				      $('._select_box .select_	efault').find('span').text(option);
-				    });
-				</script>
-			</div>
 			</c:if>
 
             <div class="content_area">

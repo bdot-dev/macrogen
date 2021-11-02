@@ -75,7 +75,7 @@
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
                         <p class="slogan-sub">정밀맞춤의학</p>
-                        <p class="desc">인공지능을 통해 분석된 빅데이터를  기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
+                        <p class="desc">인공지능을 통해 분석된 빅데이터를 기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_03">
@@ -88,7 +88,7 @@
                 <div class="swiper-slide visual_04">
                     <div class="text-box phrase">
                         <p>DNA가 세상을 구할 것이다<br>나의 DNA에는 과거와 미래가 공존한다</p>
-                        <span class="name">마크로젠 창립자/회장<span>서정선</span></span>
+                        <span class="name">마크로젠 창립자&#47;회장<span>서정선</span></span>
                     </div>
                 </div>
             </div>
@@ -339,14 +339,14 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>임상진단/치료</span><a href="/ko/business/diagnosis/cancer">
+                            <span>임상진단&#47;치료</span><a href="/ko/business/diagnosis/cancer">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
 	                        </a>
                         </div>
                         <div class="desc">
-                            COVID19, 암 유전체 검사 등 질병 발생원인 연구로<br/>
+                            COVID19&#44; 암 유전체 검사 등 질병 발생원인 연구로<br/>
                             맞춤치료에 도움이 될 수 있습니다
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                         </div>
                         <div class="desc">
                             소중한 가족인 반려동물의 건강한 삶을 위해<br/>
-                            유전질환예측, 질병 예방 등 맞춤 관리 솔루션을 제공합니다
+                            유전질환예측&#44; 질병 예방 등 맞춤 관리 솔루션을 제공합니다
                         </div>
                     </div>
                 </div>
@@ -400,7 +400,14 @@
 </div>
 
             </div>
-            <!-- e  s  business slide -->
+            <script>
+                $(document).ready(function(){
+                  $('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor_3.cur'), auto");
+                });
+            </script>
+
+
+            <!-- e  business slide -->
 
             <!-- s  news -->
             <c:if test="${ fn:length(newsList) gt 0 }">
@@ -471,9 +478,10 @@
     <script>
         new Swiper("._mediaSlider", {
             slidesPerView: "auto",
-            spaceBetween: 40,
             slidesPerGroup: 3,
             grabCursor: true,
+            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+            loop : true, // 무한 반복
             navigation: {
                 nextEl: "._btnNext",
                 prevEl: "._btnPrev",

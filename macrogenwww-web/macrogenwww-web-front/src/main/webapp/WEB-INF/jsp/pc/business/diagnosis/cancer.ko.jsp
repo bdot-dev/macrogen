@@ -27,6 +27,11 @@
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
 
+        <div class="subject-box">
+          <p class="font-h4 title">타고난 유전자 특징을 분석하여<br>건강한 삶을 위한 당신만의 솔루션을 제공합니다</p>
+          <p class="subject info">개인 유전체 분석을 통해 유전적 요인으로 발생할 수 있는 암에 대한 발생 위험을 예측하고, 암 발생 원인 유전자의 변이 분석으로 개인 맞춤형 치료 정보를 제공합니다.</p>
+        </div>
+        <p class="font-h4 title">SERVICE</p>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
@@ -70,7 +75,7 @@
         <div class="info-box show">
           <p class="font-h4 main-title">암 발생 위험 예측</p>
           <p class="subject">암은 다양한 원인에 의해 발생하지만, 일부 암은 타고난 특정 유전자의 변이 때문에 발생합니다. </p>
-          <p class="desc img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10%가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
+          <p class="desc img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10&#37;가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
           <div class="border-gray-box">
             <div class="img">
               <img src="/publishing/pc-ko/dist/img/business/img_familyline.png" alt="암 발생 위험 예측">
@@ -177,7 +182,7 @@
           <p class="subject">암 환자의 종양 샘플에서 추출한 DNA를 이용해 암 발생에 관여하는 주요 유전자의 변이를 분석함으로써<br>
             암 발생 원인을 추적하고 개인별 맞춤 치료에 중요한 정보를 제공하는 서비스입니다.</p>
           <p class="desc img_bottom">지금까지는 조직병리학적으로 암을 구분해 치료해 왔으나 최근에는 암 조직 유전체 분석을 통한 유전자 변이에 따라 세부적으로 암을 구분하고 있습니다.<br>
-            이는 동일한 항암제를 처방했을 때 75% 정도가 각기 다른 효과를 보이는 현상을 개선하는 데 기여하여 암 환자의 맞춤 치료 및 부작용 최소화에 도움을 주고 있습니다.</p>
+            이는 동일한 항암제를 처방했을 때 75&#37; 정도가 각기 다른 효과를 보이는 현상을 개선하는 데 기여하여 암 환자의 맞춤 치료 및 부작용 최소화에 도움을 주고 있습니다.</p>
           <div class="border-gray-box">
             <div class="img">
               <img src="/publishing/pc-ko/dist/img/business/img_cancer.png" alt="암 발생 원인 분석">

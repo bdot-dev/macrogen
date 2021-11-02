@@ -29,7 +29,7 @@
                     <c:forEach var="result" items="${resultList }" varStatus="status">
 	                    <div class="item">
 	                        <a href="javascript:linkView(${result.nttSn })" class="tit">${result.nttSj }</a>
-	                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+	                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 	                        <a href="javascript:linkView(${result.nttSn })" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
 	                </c:forEach>
