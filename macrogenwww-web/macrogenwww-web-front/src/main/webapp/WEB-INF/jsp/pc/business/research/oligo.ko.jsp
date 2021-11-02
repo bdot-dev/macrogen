@@ -136,7 +136,7 @@
           </div>
           <p class="desc">마크로젠의 Modified Oligo 서비스는 자체적으로 제작이 이루어 집니다.
             Fluorescent Dyes, Non-fluorescent modifications, Dark quenchers, Internal modification 등의 Modified oligo를 매일 합성을 진행하여 신속한 실험 여건을 제공합니다.
-            또한, 주문 페이지를 통하여 Oligo 제작의 모든 상황을 확인할 수 있으며, 합성되는 모든 Modified oligo는 MALDI-TOF를 이용한 100% QC과정을 거쳐 믿을 수 있는 품질의 Modified oligo를 제공합니다.
+            또한, 주문 페이지를 통하여 Oligo 제작의 모든 상황을 확인할 수 있으며, 합성되는 모든 Modified oligo는 MALDI-TOF를 이용한 100&#37; QC과정을 거쳐 믿을 수 있는 품질의 Modified oligo를 제공합니다.
           </p>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
@@ -168,7 +168,7 @@
             <div class="list-area">
               <p class="font-h8 title">Features</p>
               <ul class="list-circle-dot">
-                <li>5nmol of ≥ 95% pure primer(PAGE Purification).</li>
+                <li>5nmol of ≥ 95&#37; pure primer(PAGE Purification).</li>
                 <li>MALDI-TOF QC</li>
                 <li>HPLC로 purify 확인</li>
                 <li>Sequencing용 primer 70종, 미생물동정용 primer 17종, Random Primer 5종</li>
@@ -219,7 +219,7 @@
             </div>
             <div class="list-area">
             <p class="desc">Plate Oligo 서비스는 Deep-well plate에 Oligo가 담겨진 상태에서 건조가 이루어지기 때문에 Plate 그대로 제공되어 연구자들이 손쉽게 실험에 사용할 수 있습니다.
-              올리고 건조 시에는 자체 개발한 건조 시스템이 사용되며, 합성된 모든 oligo는 MALDI-TOF를 이용한 100% QC과정을 거쳐 믿을 수 있는 품질의 oligo를 제공합니다.
+              올리고 건조 시에는 자체 개발한 건조 시스템이 사용되며, 합성된 모든 oligo는 MALDI-TOF를 이용한 100&#37; QC과정을 거쳐 믿을 수 있는 품질의 oligo를 제공합니다.
             </p>
             </div>
 
@@ -302,14 +302,14 @@
             <div class="list-area">
               <p class="font-h8 title">Features</p>
               <ul class="list-circle-dot">
-                <li>10nmol of ≥ 95% pure primer(PAGE Purification)</li>
+                <li>10nmol of ≥ 95&#37; pure primer(PAGE Purification)</li>
                 <li>MALDI TOF QC</li>
                 <li>RAPD 10mer KIT 60종</li>
               </ul>
             </div>
             <div class="list-area">
             <p class="desc">RAPD(Random Amplified Polymorphic DNAs) Kits는 약 10bp의 작은 oligo를 이용하여 2개의 유전자 서열에 의해 맞추어 지는 게놈 부위만을 증폭시키는 기법에 활용되는 Oligo입니다. 마크로젠은 총 60set의 RAPD Kits가 준비되어 있으며, PAGE 정제를 통해 순도높은 Oligo를 제공합니다.
-              또한, 합성된 모든 Oligo의 100% MALDI QC를 진행하여 믿을 수 있는 품질의 Oligo를 생산합니다.
+              또한, 합성된 모든 Oligo의 100&#37; MALDI QC를 진행하여 믿을 수 있는 품질의 Oligo를 생산합니다.
             </p>
             </div>
           </div>

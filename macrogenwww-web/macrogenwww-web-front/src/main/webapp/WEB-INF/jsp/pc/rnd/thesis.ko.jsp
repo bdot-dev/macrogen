@@ -30,7 +30,7 @@
 	                    <div class="item">
 	                        <span class="tit-sub">${result.jrnl }</span>
 	                        <a href="${result.linkUrl }" target="blank" class="tit">${result.thesisSj }</a>
-	                        <span class="date">${result.registYear }.${result.registMt }</span>
+	                        <span class="date">${result.registYear }&#46;${result.registMt }</span>
 	                        <a href="${result.linkUrl }" target="blank" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
                     </c:forEach>

@@ -41,7 +41,7 @@
                 <div class="detail">
                     <div class="heading">
                         <div class="title">${resultVo.nttSj }</div>
-                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy.MM.dd" /></div>
+                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy&#46;MM&#46;dd" /></div>
                     </div>
                     <hr class="divider"/>
                     <div class="content">

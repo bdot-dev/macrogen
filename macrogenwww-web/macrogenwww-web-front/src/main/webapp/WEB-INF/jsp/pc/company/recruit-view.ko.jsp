@@ -38,7 +38,7 @@
                         <div class="heading with-badge">
                             <div class="department">${ resultVo.sportSeCodeNm }</div>
                             <div class="title">${ resultVo.empaSj }</div>
-                            <div class="date"><fmt:formatDate value="${resultVo.rceptBeginDe }" pattern="yyyy.MM.dd" /> - <fmt:formatDate value="${resultVo.rceptEndDe }" pattern="yyyy.MM.dd" /></div>
+                            <div class="date"><fmt:formatDate value="${resultVo.rceptBeginDe }" pattern="yyyy&#46;MM&#46;dd" /> &#45; <fmt:formatDate value="${resultVo.rceptEndDe }" pattern="yyyy&#46;MM&#46;dd" /></div>
                             <div class="badge-recruit ${ resultVo.rceptSttusCode eq 'P' ? 'ongoing' : '' }"><span class="sr-only">${ resultVo.rceptSttusCodeNm }</span></div>
                         </div>
                         <hr class="divider">

@@ -59,6 +59,7 @@
                             <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
                             <div class="swiper-slide"><a href="#">ATAC analysis</a></div>
                             <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div>
+                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
                         </div>
                     </div>
                     <div class="btn-box">
@@ -81,6 +82,7 @@
                             <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
                             <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
                             <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(7)">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
 
@@ -117,7 +119,7 @@
                     </div>
                     <hr class="divider">
                     <p class="sub-title font-h5">Whole Genome Resequencing</p>
-                    <p class="desc list_bottom">참조 유전체(Reference Genome)를 활용하여 SNP(Single Nucleotide Polymorphism), InDel(Insertion & Deletion), CNV(Copy Number Variation), SV(Structural Variation) 등 다방면의 변이 분석이 가능한 방법입니다.
+                    <p class="desc list_bottom">참조 유전체(Reference Genome)를 활용하여 SNP(Single Nucleotide Polymorphism), InDel(Insertion &#38; Deletion), CNV(Copy Number Variation), SV(Structural Variation) 등 다방면의 변이 분석이 가능한 방법입니다.
                     </p>
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
@@ -134,7 +136,7 @@
                         <ul class="list-circle-dot">
                             <li>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</li>
                             <li>NextSeq 500 / MiSeq</li>
-                            <li>PacBio Sequel I & Sequel II</li>
+                            <li>PacBio Sequel I &#38; Sequel II</li>
                             <li>PromethION</li>
                         </ul>
                     </div>
@@ -465,10 +467,62 @@
                                 <a href="#" class="item prev" onclick="setTabContent(5)">
                                     <div class="title">ATAC analysis</div>
                                 </a>
+                                <a href="#" class="item next" onclick="setTabContent(7)">
+                                    <div class="title">Metagenome Sequencing</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!--Metagenome-->
+                <div class="info-box">
+                    <p class="font-h4 main-title">Metagenome Sequencing</p>
+                    <p class="subject">다양한 환경에 존재하는 유전체 집합을 한 번에 시퀀싱하여, 환경 내 서식하는 생물 종의 다양성을 확인할 수 있는 군집유전체 분석 서비스 입니다.</p>
+                    <p class="desc img_bottom">분변, 토양, 해수, 식품 등 여러 유전체가 섞여있는 상태의 Meta시료 내에  특정 분류군이 어떤 종과 분포로 구성되어 있는지 알 수 있으며 이들의 상호작용과 역할까지 확인할 수 있습니다.  다양한 환경에 존재하는 미생물 군집(Microbial community)을 확인하는 방법으로 활용되며 주로 박테리아, 사상균, 효모(Fungi)의 다양성 및 분포도에 대한 분석을 할 수 있습니다.  이외에도 마커 유전자를 타겟하는 동일한 원리를 사용하여 진핵생물(Eukaryote) 에 대한 분석도 가능 합니다.<Br>
+                        마크로젠은 다양한 장비를 사용한 NGS기술과 바이오인포매틱스(Bioinformatics) 전문팀을 통하여 고객의 연구 목적과 요청에 맞는 결과물을 제공해 드리고 있습니다.</p>
+                    <div class="img">
+                        <img src="/publishing/pc-ko/dist/img/business/img_ngs_metagenome.png" alt="Metagenome Sequencing">
+                    </div>
+                    <hr class="divider">
+                    <p class="sub-title font-h5">Metagenome Amplicon Sequencing</p>
+                    <p class="desc list_bottom">16S rRNA나 ITS gene 등 마커 유전자의 특정 영역을 증폭하여 Amplicon library제작 후 Sequencing을 통한 분포도 및 다양성 분석을 수행 합니다.<br>
+                        마커 유전자를 타겟하는 동일한 원리를 사용하여 진핵생물(Eukaryote)에 대한 분석도 가능 합니다.  마크로젠은 바이오인포매틱스(Bioinformatics) 전문 인력이 직접 분석을 수행하며, ASV 분석을 통한 높은 정확도 및 재현성이 보장되는 Taxonomic assignment 및 Diversity 분석이 가능하며  통계분석 및 트렌드에 맞는 Advanced 분석도 가능합니다. </p>
+                    <div class="list-area">
+                        <p class="font-h8 title">Sequencing Platform</p>
+                        <ul class="list-circle-dot">
+                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina Miseq / Hiseq2500 platform</li>
+                            <li>16S rRNA Full length → PacBio Sequel / Sequel2 platform </li>
+                        </ul>
+                    </div>
+                    <hr class="divider">
+                    <p class="sub-title font-h5">Metagenome Shotgun Sequencing</p>
+                    <p class="desc list_bottom">마커 유전자뿐만 아니라 전장유전체를 타겟하여 시퀀싱함으로써 균총분포도 및 다양성과 더불어 assembly, gene prediction &#38; funtional annotation 까지 가능한 분석 방법 입니다.<br>
+                        바이오인포매틱스(Bioinformatics) 전문 인력이 직접 분석을 수행하며  Taxonomic assignment 분석 시 target taxon의 genome size를 이용한 normalized abundance 값을 계산하여
+                        제공함으로써 보다 정밀한 분석이 가능합니다. </p>
+                    <div class="list-area">
+                        <p class="font-h8 title">Sequencing Platform</p>
+                        <ul class="list-circle-dot">
+                            <li>Illumina Hiseq XTen / Hiseq 4000 / NovaSeq6000 platform</li>
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                    </div>
+                    <hr class="divider">
+                    <div class="board">
+                        <div class="navigation">
+                            <div class="content clearfix">
+                                <a href="#" class="item prev" onclick="setTabContent(6)">
+                                    <div class="title">Spatial Gene Expression analysis</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="text-lg">모두가 함께 행복한 세상<span class="underline"></span><br/>같은 꿈을 꾸는 마크로젠人을 찾습니다</div>
-                    <div class="desc">더 나은 미래를 만들어가는 가능성에 더 높은 가치를 두고 도전하는 인재를 선발합니다.</div>
+                    <div class="desc">더 나은 미래를 만들어가는 가능성에 더 높은 가치를 두고 도전하는 인재를 선발합니다&#46;</div>
                 </div>
             </div>
             <!-- e  문구 -->
@@ -60,12 +60,12 @@
                     <div class="list" data-aos="fade-up" data-aos-duration="2000">
                         <div class="item">
                             <div class="desc-area">
-                                <div class="font-h3">하나. 혁신인</div>
+                                <div class="font-h3">하나&#46; 혁신인</div>
                                 <div class="font-body-h">창의와 혁신</div>
                                 <div class="font-h8">
-                                    자신의 창의력과 잠재력을 최대한 발휘할 수 있도록 기회를 부여 받고,<br/>
+                                    자신의 창의력과 잠재력을 최대한 발휘할 수 있도록 기회를 부여 받고&#44;<br/>
                                     새로운 발상과 관점의 전환으로<br/>
-                                    고객의 기대를 뛰어넘는 혁신적인 제품과 서비스를 제공합니다.
+                                    고객의 기대를 뛰어넘는 혁신적인 제품과 서비스를 제공합니다&#46;
                                 </div>
                             </div>
                             <div class="img">
@@ -77,23 +77,23 @@
                                 <img src="/publishing/pc-ko/dist/img/macrogen/talent-thumb-2.png" alt="전문인">
                             </div>
                             <div class="desc-area">
-                                <div class="font-h3">둘. 전문인</div>
+                                <div class="font-h3">둘&#46; 전문인</div>
                                 <div class="font-body-h">책임과 성과</div>
                                 <div class="font-h8">
                                     맡은 바 역할과 업무에 책임을 다하여 성실히 완수하고<br/>
                                     도전적인 목표를 통해<br/>
-                                    지속적으로 성과를 창출하며 전문성을 강화합니다.
+                                    지속적으로 성과를 창출하며 전문성을 강화합니다&#46;
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="desc-area">
-                                <div class="font-h3">셋. 학습인</div>
+                                <div class="font-h3">셋&#46; 학습인</div>
                                 <div class="font-body-h">열정과 도전</div>
                                 <div class="font-h8">
                                     스스로 최고가 되겠다는 열정과 신념으로<br/>
                                     현실에 안주하지 않고<br/>
-                                    새로운 가능성에 대해 끊임없이 도전하고 학습하여 목표를 달성한다.
+                                    새로운 가능성에 대해 끊임없이 도전하고 학습하여 목표를 달성한다&#46;
                                 </div>
                             </div>
                             <div class="img">

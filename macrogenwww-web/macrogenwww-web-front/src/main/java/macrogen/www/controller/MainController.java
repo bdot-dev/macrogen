@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import macrogen.www.common.CookieUtil;
 import macrogen.www.enums.LangId;
+import macrogen.www.service.MainSomlnkService;
 import macrogen.www.service.NttService;
 import macrogen.www.service.PopupService;
+import macrogen.www.vo.MainSomlnkVo;
 import macrogen.www.vo.NttVo;
 import macrogen.www.vo.PopupVo;
 
@@ -25,6 +27,9 @@ public class MainController extends DefaultController {
 
 	@Autowired
 	private NttService nttService;
+
+	@Autowired
+	private MainSomlnkService mainSomlnkService;
 
 	@Autowired
 	private PopupService popupService;
@@ -40,6 +45,14 @@ public class MainController extends DefaultController {
 		nttVo.setRecordCountPerPage(3);
 		List<NttVo> newsList = nttService.list(nttVo);
 		model.addAttribute("newsList", newsList);
+
+		// Social Media 목록
+		MainSomlnkVo somlnkVo = new MainSomlnkVo();
+		somlnkVo.setLangCode(langId.name());
+		somlnkVo.setFirstIndex(0);
+		somlnkVo.setRecordCountPerPage(20);
+		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
+		model.addAttribute("mainSomlnkList", mainSomlnkList);
 
 		model.addAttribute("main_yn", "Y");
 

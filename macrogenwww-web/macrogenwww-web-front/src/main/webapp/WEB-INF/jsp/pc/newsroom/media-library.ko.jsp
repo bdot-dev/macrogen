@@ -46,7 +46,7 @@
 		                                <div class="text-wrap">
 		                                    <a href="#sn=${result.nttSn }">
 		                                        <span class="tit">${result.nttSumry }</span>
-		                                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+		                                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 		                                    </a>
 		                                </div>
 		                            </li>

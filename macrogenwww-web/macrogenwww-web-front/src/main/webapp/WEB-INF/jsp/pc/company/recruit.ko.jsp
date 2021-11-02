@@ -39,7 +39,7 @@
             <!-- s 상시채용 -->
             <div class="section">
                 <div class="title">상시채용</div>
-                <div class="desc">지원양식을 다운로드하여 작성한 후 채용 담당자의 메일로 송부해주시기 바랍니다. </div>
+                <div class="desc">지원양식을 다운로드하여 작성한 후 채용 담당자의 메일로 송부해주시기 바랍니다&#46;</div>
                 <div class="file-download">
                     <div class="row">
                     	<c:if test="${not empty applFormVo.applFormWordAtchId }">
@@ -72,10 +72,26 @@
             <div class="section">
                 <div class="title">채용공고</div>
                 <div class="select-box">
+                	<%--
 					<form:select path="searchSportSeCode" cssClass="form-select">
 						<form:option value="">지원구분</form:option>
 						<form:options items="${sportSeCodeList }" itemValue="code" itemLabel="codeNm" />
 					</form:select>
+					 --%>
+					<form:hidden path="searchSportSeCode" />
+					<c:set var="selectedSportSeCodeNm" value="지원구분" />
+					<c:forEach var="result" items="${sportSeCodeList }">
+						<c:if test="${result.code eq  listVo.searchSportSeCode}">
+							<c:set var="selectedSportSeCodeNm" value="${result['codeNm'.concat(lang)] }" />
+						</c:if>
+					</c:forEach>
+                    <a href="javascript:;" class="select_default _select_default"><span class="text">${selectedSportSeCodeNm }</span></a>
+                    <ul class="select_list _select_list">
+                       	<li><span>지원구분</span></li>
+                    	<c:forEach var="result" items="${sportSeCodeList }" varStatus="status">
+                        	<li><span onclick="onclickSportSe('${result.code }')">${result['codeNm'.concat(lang)] }</span></li>
+                    	</c:forEach>
+                    </ul>
                 </div>
                 <div class="board">
                     <div class="list list-card">
@@ -83,7 +99,7 @@
 	                        <div class="item with-badge">
 	                            <span class="tit-sub">${ result.sportSeCodeNm }</span>
 	                            <a href="javascript:linkView(${result.empaSn })" class="tit">${result.empaSj }</a>
-	                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+	                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 	                            <div class="badge-recruit ${ result.rceptSttusCode eq 'P' ? 'ongoing' : '' }"><span class="sr-only">${result.rceptSttusCodeNm }</span></div>
 	                        </div>
 	                    </c:forEach>
@@ -120,6 +136,11 @@
 				location.href = '/${rc.locale.language}/company/recruit/download/file/${ applFormVo.applFormHwpAtchId }';
 			});
 		});
+
+		function onclickSportSe(se) {
+			$form.find('#searchSportSeCode').val(se);
+			linkPage(1);
+		}
 
 	    function linkPage(pageNo) {
 			$form.find('#pageIndex').val(pageNo);

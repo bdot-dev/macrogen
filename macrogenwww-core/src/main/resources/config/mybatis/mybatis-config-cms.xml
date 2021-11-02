@@ -49,5 +49,6 @@
 		<typeAlias alias="policyVo" type="macrogen.www.vo.PolicyVo"/>
 		<typeAlias alias="empaVo" type="macrogen.www.vo.EmpaVo"/>
 		<typeAlias alias="setupVo" type="macrogen.www.vo.SetupVo"/>
+		<typeAlias alias="mainSomlnkVo" type="macrogen.www.vo.MainSomlnkVo"/>
 	</typeAliases>
 </configuration>

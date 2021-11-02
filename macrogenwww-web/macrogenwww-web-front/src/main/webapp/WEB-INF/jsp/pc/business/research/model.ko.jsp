@@ -319,7 +319,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">수정란 동결 및 마우스 복원 (Embryo freezing & Reproduction to Live)</p>
+                    <p class="font-h5 sub-title">수정란 동결 및 마우스 복원 (Embryo freezing &#38; Reproduction to Live)</p>
                     <p class="desc">마크로젠은 GEM Bank System 운영과 냉동정자(Cryo-sperm)와 배아(Embryo)를 이용한 수정란 동결 및 마우스 복원 서비스를 제공합니다.<br>
                         질환모델마우스 관리가 어려울 경우 수정란 동결 서비스를 제공하며 질환모델마우스의 수정란을 동결하면 이동이 자유로워 원하는 연구자에게 분양도 가능합니다.<br>
                         마크로젠은 최적의 기술력을 바탕으로 고객의 GEM을 장기 보존합니다.

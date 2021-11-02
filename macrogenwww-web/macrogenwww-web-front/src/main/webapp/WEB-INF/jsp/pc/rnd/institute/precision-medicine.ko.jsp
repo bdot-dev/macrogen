@@ -25,7 +25,7 @@
         <div class="section_customMedicine">
             <div class="info-box">
                 <div class="title">환자 맞춤형 정밀의료 기반의<br>개인별 맞춤의학을 선도합니다</div>
-                <div class="desc">다양한 데이터를 수집 및 분석해 개인에 맞도록 질병 예방과 치료에 대한 연구를 진행합니다.</div>
+                <div class="desc">다양한 데이터를 수집 및 분석해 개인에 맞도록 질병 예방과 치료에 대한 연구를 진행합니다&#46;</div>
             </div>
             <div class="img"><img src="/publishing/pc-ko/dist/img/RD/img-person_research.png" alt="연구하는 사람 사진"></div>
         </div>
@@ -33,11 +33,11 @@
             <div class="box clearfix">
                 <div class="sub_title">정밀의학 연구활성화를 위해<br>설립했습니다</div>
                 <div class="sub_desc">
-                    <p>마크로젠은 2016년 정밀의학 연구 활성화를 위해 ‘정밀의학연구소’를 설립했습니다.<br>
-                        국내외 최고 수준의 의료진 및 연구진과 파트너십을 강화하고, 첨단 유전체 분석 기술 및 병원 임상 연구 체계를 활용하여 환자에게 필요한 맞춤 의학 서비스 개발과 기초 연구에
-                        전념하고 있습니다.<br>
-                        Next Generation Sequencing(NGS) 기반의 항암 진단 시스템 개발, circulating tumor DNA 분석 등 연구에 박차를 가하고 있으며
-                        정확하고 신속한 정밀의학 검사서비스를 개발해 임상 현장에 제공할 예정입니다.</p>
+                    <p>마크로젠은 2016년 정밀의학 연구 활성화를 위해 &#39;정밀의학연구소&#39;를 설립했습니다&#46;<br>
+                        국내외 최고 수준의 의료진 및 연구진과 파트너십을 강화하고&#44; 첨단 유전체 분석 기술 및 병원 임상 연구 체계를 활용하여 환자에게 필요한 맞춤 의학 서비스 개발과 기초 연구에
+                        전념하고 있습니다&#46;<br>
+                        Next Generation Sequencing&#40;NGS&#41; 기반의 항암 진단 시스템 개발&#44; circulating tumor DNA 분석 등 연구에 박차를 가하고 있으며
+                        정확하고 신속한 정밀의학 검사서비스를 개발해 임상 현장에 제공할 예정입니다&#46;</p>
                     <img src="/publishing/pc-ko/dist/img/RD/img-research_activation.png" alt="정밀의학 연구활성화 스포이드 사진">
                 </div>
             </div>
@@ -45,10 +45,10 @@
             <div class="box clearfix">
                 <div class="sub_title">정밀의학은 미래형<br>의료 패러다임입니다</div>
                 <div class="sub_desc">
-                    <p>정밀의학(Precision medicine)은 개인의 유전체 정보, 생활습관, 의료 정보 등 데이터를 기반으로 개인별 특성에 따라 질병 예측 및 예방, 맞춤 진단, 치료법을
-                        제공하는 미래형 의료 패러다임입니다.<br>
-                        특히 유전체 분석을 통해 개인의 유전적 차이점을 정확히 인식하고, 이를 개인별 맞춤 진단 및 치료에 활용합니다.<br>
-                        향후 마크로젠 정밀의학연구소는 대규모 유전체 분석을 통해 얻은 아시아인의 유전적 변이 DB를 활용해 한국과 아시아 정밀의학 실현에 기여할 예정입니다.</p>
+                    <p>정밀의학&#40;Precision medicine&#41;은 개인의 유전체 정보&#44; 생활습관&#44; 의료 정보 등 데이터를 기반으로 개인별 특성에 따라 질병 예측 및 예방&#44; 맞춤 진단&#44; 치료법을
+                        제공하는 미래형 의료 패러다임입니다&#46;<br>
+                        특히 유전체 분석을 통해 개인의 유전적 차이점을 정확히 인식하고&#44; 이를 개인별 맞춤 진단 및 치료에 활용합니다&#46;<br>
+                        향후 마크로젠 정밀의학연구소는 대규모 유전체 분석을 통해 얻은 아시아인의 유전적 변이 DB를 활용해 한국과 아시아 정밀의학 실현에 기여할 예정입니다&#46;</p>
                     <img src="/publishing/pc-ko/dist/img/RD/img-medical_paradigm.png" alt="정밀의학 의료 패러다임 모니터 만지는 사람 사진 ">
                 </div>
             </div>

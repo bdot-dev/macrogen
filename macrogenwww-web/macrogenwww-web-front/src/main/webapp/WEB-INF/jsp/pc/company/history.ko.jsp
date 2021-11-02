@@ -37,7 +37,7 @@
 	                    <div class="swiper-wrapper _swiperTab">
 	                    	<c:forEach var="result" items="${ resultList }" varStatus="status">
 		                        <div class="swiper-slide ${ status.index eq 0 ? 'active' : '' }"><a
-		                        	href="javascript:;" onclick="fnMove('group-${result.cmpnyhistGroupSn }')">${result.beginYear } - ${result.endYear eq 'present' ? '현재' : result.endYear }</a></div>
+		                        	href="javascript:;" onclick="fnMove('group-${result.cmpnyhistGroupSn }')">${result.beginYear } &#45; ${result.endYear eq 'present' ? '현재' : result.endYear }</a></div>
 		                    </c:forEach>
 	                    </div>
 	                </div>
@@ -54,7 +54,7 @@
 			            <!-- s 글로벌 유전체 정보 구축 -->
 			            <div class="section _historySection" id="group-${result.cmpnyhistGroupSn }" data-aos="fade-up" data-aos-duration="2000">
 			                <div class="inner">
-			                    <div class="year">${result.beginYear } - ${result.endYear eq 'present' ? '현재' : result.endYear }</div>
+			                    <div class="year">${result.beginYear } &#45; ${result.endYear eq 'present' ? '현재' : result.endYear }</div>
 			                    <div class="title">${result['groupnm'.concat(lang)] }</div>
 			                </div>
 
@@ -122,7 +122,7 @@
 					                            <ul data-year="${yearCmpnyhist.year }">
 					                            	<c:forEach var="cmpnyhist" items="${yearCmpnyhist.cmpnyhistList }">
 						                                <li>
-						                                    <span class="num">${cmpnyhist.mt }.</span>
+						                                    <span class="num">${cmpnyhist.mt }&#46;</span>
 						                                    <span class="desc">${cmpnyhist.cn }</span>
 						                                </li>
 					                            	</c:forEach>
@@ -164,7 +164,7 @@
 	            section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
 	        })
 
-	        $(window).on('resize scroll', _.throttle(function (){
+	         $(window).on('resize scroll', function () {
 	            var currentPosition = $(window).scrollTop();
 
 	            for (var i = 0; i < sectionLength; i++) {
@@ -178,7 +178,7 @@
 	            else {
 	                $('.section:last-child .year-info').find('li:last-child').removeClass('active')
 	            }
-	        }, 100));
+	         })
 
 	        function setHistoryScroll($information) {
 	            var gap = 0;/*50*/
