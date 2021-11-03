@@ -123,6 +123,8 @@
 		                    </c:forEach>
 	                    </ul>
 	                </div>
+
+	                <hr class="divider"/>
 				</c:if>
 
 				<c:if test="${fn:length(resultList) <= 0}">
@@ -131,7 +133,6 @@
 	                </div>
 	            </c:if>
 
-                <hr class="divider"/>
 
 				<c:if test="${fn:length(resultList) > 0}">
 			        <div class="pagination-wrap">

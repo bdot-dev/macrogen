@@ -34,11 +34,6 @@
 	                    </div>
 	                </c:forEach>
 
-					<c:if test="${fn:length(resultList) == 0}">
-	                    <div class="item no-data">
-	                        <p>검색결과가 없습니다</p>
-	                    </div>
-					</c:if>
                 </div>
             </div>
         </div>
@@ -47,6 +42,12 @@
 	        <div class="pagination-wrap">
 				<ui:pagination paginationInfo="${paginationInfo}" type="image" jsFunction="linkPage" />
 			</div>
+		</c:if>
+
+		<c:if test="${fn:length(resultList) == 0}">
+            <div class="item no-data">
+                <p>검색결과가 없습니다</p>
+            </div>
 		</c:if>
 
     </div>
