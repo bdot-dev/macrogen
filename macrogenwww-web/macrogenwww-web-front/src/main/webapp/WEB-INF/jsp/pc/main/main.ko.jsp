@@ -463,7 +463,7 @@
 	                    <a href="${result.somlnkUrl }" target="_blank">
 	                        <div class="img">
 	                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-	                            <span class="sns">Youtube</span>
+	                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                        </div>
 	                        <div class="content">${result.somlnkSj }
 	                        </div>
