@@ -450,7 +450,7 @@
               <p class="font-h8 title figure_bottom">CGH Microarray Platforms </p>
               <p class="sub-list-title">Agilent CGH</p>
               <ul class="list-circle-dot figure_bottom">
-                <li>High resolution(60mer) & Sensitivity CGH/CNV chip 제공</li>
+                <li>High resolution(60mer) &#38; Sensitivity CGH/CNV chip 제공</li>
                 <li>Human 이외에 organism과 관련된 CGH/CNV chip을 제공하고 있으며 Custom 제작도 가능</li>
                 <li>FFPE 샘플을 이용한 CGH 실험가능</li>
               </ul>

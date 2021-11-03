@@ -30,7 +30,7 @@
 	                        <span class="tit-sub">${result.nationCodeNm }</span>
 	                        <span class="tit">${result.patentCn }</span>
 	                        <span class="cont">${result.ctgryCodeNmKo }</span>
-	                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+	                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 	                    </div>
 	                </c:forEach>
 

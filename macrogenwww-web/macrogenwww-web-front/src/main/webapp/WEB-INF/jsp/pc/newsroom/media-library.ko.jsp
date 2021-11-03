@@ -46,13 +46,15 @@
 		                                <div class="text-wrap">
 		                                    <a href="#sn=${result.nttSn }">
 		                                        <span class="tit">${result.nttSumry }</span>
-		                                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+		                                        <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 		                                    </a>
 		                                </div>
 		                            </li>
 				                </c:forEach>
 	                        </ul>
 	                    </div>
+
+		                <hr class="divider"/>
 					</c:if>
 
 					<c:if test="${fn:length(resultList) <= 0}">
@@ -60,8 +62,6 @@
 		                    <p>등록된 게시물이 없습니다.</p>
 		                </div>
 		            </c:if>
-
-	                <hr class="divider"/>
 
 					<c:if test="${fn:length(resultList) > 0}">
 				        <div class="pagination-wrap">

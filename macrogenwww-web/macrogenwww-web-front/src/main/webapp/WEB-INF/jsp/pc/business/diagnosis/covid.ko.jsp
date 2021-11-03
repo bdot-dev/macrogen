@@ -24,6 +24,13 @@
     </div>
     <div class="container">
         <div class="section_business">
+            <div class="subject-box">
+                <p class="font-h4 title">감염병 진단을 위한 분자진단 솔루션을 제공합니다</p>
+
+                <p class="subject info">전세계 코로나 대유행으로 최적의 검사 환경에서 시행되는 신속, 정확한 진단이 필수인 시대입니다.<br>
+                    이에 마크로젠은 높은 정확도의 진단 키트와 함께 이동성 및 안전성, 편의성을 갖춘 현장 진단 시스템을 구성하여 환자와 의료진 모두에게 친화적인 통합 솔루션을 제안합니다.</p>
+            </div>
+
             <!--탭 링크-->
             <div class="tab-box" id="_tab-box">
                 <div class="slide-tab-wrap">
@@ -74,20 +81,6 @@
                         <img src="/publishing/pc-ko/dist/img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
                     </div>
                     <div class="list-area-group">
-                        <!-- <div class="list-area">
-                            <p class="font-h8 title img">Brochure</p>
-                            <div class="file-download">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="item">
-                                            <i class="icon icon-pdf"></i>
-                                            <span class="title">Axen™ COVID-19 RT 진단키트Brochure.pdf</span>
-                                            <a href="#" class="btn-download"><i class="icon icon-download"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="list-area">
                             <p class="font-h8 title figure_bottom">Specifications</p>
                             <table class="table">

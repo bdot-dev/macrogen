@@ -121,7 +121,7 @@
                             <ul class="list-circle-dot">
                                 <li>PCR product 정제 (Single/Plate 모두가능)</li>
                                 <li>Gel extraction</li>
-                                <li>Clones 채취 &Plasmid 추출 (Single/Plate/Agar plate 모두가능)</li>
+                                <li>Clones 채취 &#38;Plasmid 추출 (Single/Plate/Agar plate 모두가능)</li>
                                 <li>BAC/Fosmid/Cosmid 추출</li>
                                 <li>Gel running을 통한 농도확인</li>
                             </ul>
@@ -167,7 +167,7 @@
                         <img src="/publishing/pc-ko/dist/img/business/img-ces-identification.png" alt="Identification">
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">16S/18S/26S rRNA&ITS Region Full Sequencing</p>
+                    <p class="font-h5 sub-title">16S/18S/26S rRNA&#38;ITS Region Full Sequencing</p>
                     <p class="desc list_bottom">16S rRNA gene 27F, 1492R primer를 이용하여 PCR을 진행한 뒤 Inter-primer인 785F, 907R primer로 Sequencing 하여 균을 동정하는 서비스입니다. 고객이 원하는 경우 Primer를 추가 선택/변경하여 약 1,350bp 이상의 염기서열을 제공합니다.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -296,10 +296,10 @@
                         <p class="font-h8 title">Features</p>
                         <ul class="list-circle-dot">
                             <li>Methylation studies</li>
-                            <li>SNP & InDel 분석</li>
+                            <li>SNP &#38; InDel 분석</li>
                             <li>Cancer 연구에 활용
                                 <ul class="list-hypen">
-                                    <li>- 5% 이하의 low allele frequency도 발견가능</li>
+                                    <li>- 5&#37; 이하의 low allele frequency도 발견가능</li>
                                     <li>- Somatic mutation 분석에 적합</li>
                                     <li>- Di-, tri-, tetra allelic mutation 분석 가능</li>
                                 </ul>
@@ -307,7 +307,7 @@
                             <li>NGS결과에 대한 Validation 가능
                                 <ul class="list-hypen">
                                     <li>- Biomarker verification</li>
-                                    <li>- Validation & verification of GWAS & NGS data</li>
+                                    <li>- Validation &#38; verification of GWAS &#38; NGS data</li>
                                 </ul>
                             </li>
                         </ul>
@@ -379,7 +379,7 @@
                 <div class="info-box">
                     <p class="font-h4 main-title">Human ID</p>
                     <p class="subject">휴먼아이디(Human ID)는 연구 개발 목적의 개인 유전자 감식 서비스를 제공하고 있습니다.</p>
-                    <p class="desc img_bottom">해당 서비스는 개인의 고유한 DNA 패턴을 비교 분석함으로써 직계존속 관계를 확인할 수 있는 친자 확인 검사, 8촌 이내의 부계혈연 관계를 증명할 수 있는 부계 확인 검사, 여성의 모계혈연 관계를 증명하는 모계 확인 검사, 그리고 전사자 유골 등 신원 확인을 위해 수행되는 유골 DNA 검사와 개인식별 검사를 제공하고 있습니다. Human ID는 머리카락, 구강상피세포, 유골, 타액 등 다양한 검사 가능 검체를 통하여 유전자 분석 실험을 진행하고 있으며 검사 결과에 대한 99.99%의 정확도를 통해 신뢰할 수 있는 서비스를 제공하고 있습니다.</p>
+                    <p class="desc img_bottom">해당 서비스는 개인의 고유한 DNA 패턴을 비교 분석함으로써 직계존속 관계를 확인할 수 있는 친자 확인 검사, 8촌 이내의 부계혈연 관계를 증명할 수 있는 부계 확인 검사, 여성의 모계혈연 관계를 증명하는 모계 확인 검사, 그리고 전사자 유골 등 신원 확인을 위해 수행되는 유골 DNA 검사와 개인식별 검사를 제공하고 있습니다. Human ID는 머리카락, 구강상피세포, 유골, 타액 등 다양한 검사 가능 검체를통하여 유전자 분석 실험을 진행하고 있으며 검사 결과에 대한 99.99&#37;의 정확도를 통해 신뢰할 수 있는 서비스를 제공하고 있습니다.</p>
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/business/img-ces-human.png" alt="Human ID">
                     </div>
@@ -402,7 +402,7 @@
                                     <img src="/publishing/pc-ko/dist/img/business/img-ces-test1.png" alt="친자확인검사">
                                 </div>
                                 <p class="desc">혈연 관계를 확인하기 위해 성염색체를 포함한 총 16개의 STR (Short Tandem Repeat) 유전자를 유전자 증폭을 통해 검사합니다. STR (Short Tandem Repeat)은 인간의 DNA 염기서열 중 2~7개의 염기가 연속적으로 반복되는 구간을 의미합니다. ATG 염기서열
-                                    반복 횟수를 확인해 친자 확인 여부를 증명할 수 있습니다. 16개의 STR 유전자 좌위를 조사하여 부, 모, 자녀 3인의 친자 검사확률이 99.999% 이상, 부(모), 자 2인의 검사확률이 99.9% 이상이면 친부(모)로 인정합니다.</p></div>
+                                    반복 횟수를 확인해 친자 확인 여부를 증명할 수 있습니다. 16개의 STR 유전자 좌위를 조사하여 부, 모, 자녀 3인의 친자 검사확률이 99.999&#37; 이상, 부(모), 자 2인의 검사확률이 99.9&#37; 이상이면 친부(모)로 인정합니다.</p></div>
                         </div>
                         <hr class="divider">
                         <div class="list">
@@ -413,7 +413,7 @@
                                 </div>
                                 <p class="desc">성염색체의 경우 남성은 XY, 여성은 XX를 가지고 있습니다. Y염색체는 남성에게만 존재하며, 아버지로부터 받은 Y염색체는 아들에게만
                                     전달됩니다. 따라서 부모의 DNA와 비교하면 반은 아버지, 나머지 반은 어머니와 일치하게 됩니다.
-                                    친부확인 검사는 Y염색체에 존재하는 15개의 STR 유전자 좌위를 검사하여 그 확률이 99.9% 이상일 때 친자라고 볼 수 있습니다.</p>
+                                    친부확인 검사는 Y염색체에 존재하는 15개의 STR 유전자 좌위를 검사하여 그 확률이 99.9&#37; 이상일 때 친자라고 볼 수 있습니다.</p>
                             </div>
 
                         </div>

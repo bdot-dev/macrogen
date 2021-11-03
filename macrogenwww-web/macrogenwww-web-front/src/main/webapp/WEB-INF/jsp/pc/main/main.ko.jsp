@@ -75,7 +75,7 @@
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
                         <p class="slogan-sub">정밀맞춤의학</p>
-                        <p class="desc">인공지능을 통해 분석된 빅데이터를  기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
+                        <p class="desc">인공지능을 통해 분석된 빅데이터를 기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_03">
@@ -88,7 +88,7 @@
                 <div class="swiper-slide visual_04">
                     <div class="text-box phrase">
                         <p>DNA가 세상을 구할 것이다<br>나의 DNA에는 과거와 미래가 공존한다</p>
-                        <span class="name">마크로젠 창립자/회장<span>서정선</span></span>
+                        <span class="name">마크로젠 창립자&#47;회장<span>서정선</span></span>
                     </div>
                 </div>
             </div>
@@ -339,14 +339,14 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>임상진단/치료</span><a href="/ko/business/diagnosis/cancer">
+                            <span>임상진단&#47;치료</span><a href="/ko/business/diagnosis/cancer">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
 	                        </a>
                         </div>
                         <div class="desc">
-                            COVID19, 암 유전체 검사 등 질병 발생원인 연구로<br/>
+                            COVID19&#44; 암 유전체 검사 등 질병 발생원인 연구로<br/>
                             맞춤치료에 도움이 될 수 있습니다
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                         </div>
                         <div class="desc">
                             소중한 가족인 반려동물의 건강한 삶을 위해<br/>
-                            유전질환예측, 질병 예방 등 맞춤 관리 솔루션을 제공합니다
+                            유전질환예측&#44; 질병 예방 등 맞춤 관리 솔루션을 제공합니다
                         </div>
                     </div>
                 </div>
@@ -400,7 +400,14 @@
 </div>
 
             </div>
-            <!-- e  s  business slide -->
+            <script>
+                $(document).ready(function(){
+                  $('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor_3.cur'), auto");
+                });
+            </script>
+
+
+            <!-- e  business slide -->
 
             <!-- s  news -->
             <c:if test="${ fn:length(newsList) gt 0 }">
@@ -450,81 +457,31 @@
         </div>
         <div class="swiper-container _mediaSlider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="https://youtu.be/2BHy_3FxjUk" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_01.png" alt="물만 마셔도 살찌는 유전자가 있을까?">
-                            <span class="sns">Youtube</span>
-                        </div>
-                        <div class="content">물만 마셔도 살이 찐다구?! 체중이 변하는 이유가 나의 유전자와 관련이 있다는 사실! 알고계셨나요? 유.잘.알 마크로젠 전문가들이
-                            확실히 알려드립니다.
-                        </div>
-                        <div class="date">2021.09.09</div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://blog.naver.com/macrogen_official/222481324813" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_02.png" alt="미래의학의 새로운 패러다임 정밀의학의 모든 것">
-                            <span class="sns">blog</span>
-                        </div>
-                        <div class="content">유전체 데이터로 질병 극복을 꿈꾸는 미래, 정밀의학! 질병 예측 및 예방, 맞춤 진단, 치료를 제공하는 미래의학의 새로운 패러다임,
-                            정밀의학에 대해 알아보아요.
-                        </div>
-                        <div class="date">2021.08.23</div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://blog.naver.com/macrogen_official/222462577508" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_03.png" alt="함께하는 건강한 세상 ESG경영으로 실천합니다">
-                            <span class="sns">blog</span>
-                        </div>
-                        <div class="content">환경보호, 사회적 책임 그리고 투명한 지배구조로 마크로젠이 실천하고 있는 ESG 경영 활동 내역을 소개합니다.</div>
-                        <div class="date">2021.08.09</div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://youtu.be/1GxtiISWwTg" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_04.png" alt="마크로젠 NGS 영업부문 인터뷰">
-                            <span class="sns">Youtube</span></div>
-                        <div class="content">유전체 분석 기업 직원들은 어떻게 일할까?<br>마크로젠 직원들의 찐(gene) 이야기! 유튜브 마크로젠 채널의 찐톡에서 만나보세요.
-                        </div>
-                        <div class="date">2021.07.29</div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://www.facebook.com/macrogenkr/posts/4139457679509293" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_05.png" alt="장미남 / 장미녀 체크리스트">
-                            <span class="sns">Facebook</span>
-                        </div>
-                        <div class="content">오늘의 장은 안녕하신가요?<br>생활 습관과 장의 건강상태를 체크해보세요. 장 건강이우리 몸 건강의 시작이랍니다.</div>
-                        <div class="date">2021.07.22</div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://www.facebook.com/macrogenkr/posts/4081205675334494" target="_blank">
-                        <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/main/img-media_06.png" alt="반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있는 방법">
-                            <span class="sns">Facebook</span>
-                        </div>
-                        <div class="content">반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있다면 좋겠죠. 마크로젠이 견종별, 묘종별 주의해야 할 유전질환의
-                            종류를 알려드릴게요!
-                        </div>
-                        <div class="date">2021.07.21</div>
-                    </a>
-                </div>
+
+				<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+	                <div class="swiper-slide">
+	                    <a href="${result.somlnkUrl }" target="_blank">
+	                        <div class="img">
+	                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
+	                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+	                        </div>
+	                        <div class="content">${result.somlnkSj }
+	                        </div>
+	                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                    </a>
+	                </div>
+				</c:forEach>
+
             </div>
         </div>
     </div>
     <script>
         new Swiper("._mediaSlider", {
             slidesPerView: "auto",
-            spaceBetween: 40,
             slidesPerGroup: 3,
             grabCursor: true,
+            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+            loop : true, // 무한 반복
             navigation: {
                 nextEl: "._btnNext",
                 prevEl: "._btnPrev",

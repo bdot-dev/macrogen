@@ -11,7 +11,7 @@
         <div class="frame">
             <div class="hero-title">ESG경영</div>
             <div class="slogan ko">더불어 사는 건강한<br/>세상을 만들어갑니다</div>
-            <div class= "slogan-sub">보다 나은 세상을 만드는데 힘을 보태겠습니다.</div>
+            <div class= "slogan-sub">보다 나은 세상을 만드는데 힘을 보태겠습니다&#46;</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -31,7 +31,7 @@
             <!-- s text -->
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">함께하는 미래,<br/>지속가능한 미래를 만들겠습니다</div>
+                    <div class="font-h3">함께하는 미래&#44;<br/>지속가능한 미래를 만들겠습니다</div>
                 </div>
             </div>
             <!-- e text -->
@@ -91,7 +91,7 @@
                                 <div class="font-h3">투자자가 신뢰하는<br/>마크로젠</div>
                                 <div class="font-body-h">
                                     <ul>
-                                        <li>준법성·투명성·공정성을 준수하고 신뢰받는 정직한 기업문화 정착</li>
+                                        <li>준법성&#183;투명성&#183;공정성을 준수하고 신뢰받는 정직한 기업문화 정착</li>
                                         <li>윤리경영의 효율적 실현을 통한 건실한 재무구조 지속 구현</li>
                                         <li>주주의 이익을 위한 최선의 노력과 의사소통</li>
                                     </ul>
@@ -103,7 +103,7 @@
                         <div class="box">
                             <div class="item text">
                                 <div class="font-h7">임직원</div>
-                                <div class="font-h3">글로벌 바이오·헬스<br/>케어 산업을 선도하는<br/>마크로젠</div>
+                                <div class="font-h3">글로벌 바이오&#183;헬스<br/>케어 산업을 선도하는<br/>마크로젠</div>
                                 <div class="font-body-h">
                                     <ul>
                                         <li>끊임없이 도전하고 성장하는 마크로젠人</li>

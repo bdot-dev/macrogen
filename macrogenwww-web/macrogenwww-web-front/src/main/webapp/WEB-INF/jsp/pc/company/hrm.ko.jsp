@@ -38,19 +38,19 @@
                         <div class="row">
                             <div class="col">
                                 <div class="item item-1">
-                                    <div class="tit">모집/선발</div>
+                                    <div class="tit">모집&#47;선발</div>
                                     <div class="desc">마크로젠의 인재상에 부합하는<br/>우수인력 모집 및 선발 프로세스</div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="item item-2">
-                                    <div class="tit">인사평가/보상체계</div>
-                                    <div class="desc">MBO 식 성과평가를 반영한<br/>승진 및 보상(호봉+연봉) 시스템</div>
+                                    <div class="tit">인사평가&#47;보상체계</div>
+                                    <div class="desc">MBO 식 성과평가를 반영한<br/>승진 및 보상&#40;호봉&#43;연봉&#41; 시스템</div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="item item-3">
-                                    <div class="tit">교육훈련/경력개발</div>
+                                    <div class="tit">교육훈련&#47;경력개발</div>
                                     <div class="desc">직무 위주 교육훈련 실시 및 <br/>체계적인 경력개발 프로그램</div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                     <div class="font-h7">복리후생</div>
                     <div class="font-h3">마크로젠은 직원들의<br/>일도 생활도 소중히 여깁니다</div>
                     <div class="click-area">
-                        <div class="font-body-h">모두가 일과 일상에서 안정과 성장을 누릴 수 있도록<br/>다양한 복지혜택을 제공합니다.</div>
+                        <div class="font-body-h">모두가 일과 일상에서 안정과 성장을 누릴 수 있도록<br/>다양한 복지혜택을 제공합니다&#46;</div>
                         <div class="btn-wrap"><a href="/${rc.locale.language }/company/recruit" class="btn btn-text"><span>채용안내</span><i class="icon icon-arrow-right-long"></i></a></div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         <div class="font-h5">일과 삶의 즐거움</div>
                         <ul class="clearfix">
                             <li>정기<br/>건강검진</li>
-                            <li>명절상여/선물<br>지급</li>
+                            <li>명절상여&#47;선물<br>지급</li>
                             <li>사내동호회<br/>지원</li>
                             <li>부서회식비<br/>지원</li>
                             <li>사내휴게실<br/>운영</li>
@@ -100,7 +100,7 @@
                             <li>우리사주조합<br/>운영</li>
                             <li>주식매수선택권<br/>부여</li>
                             <li>생활안정자금<br/>대출</li>
-                            <li>장기근속/우수사원<br/>포상</li>
+                            <li>장기근속&#47;우수사원<br/>포상</li>
                         </ul>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
                             <li>주 5일<br/>근무제</li>
                             <li>대체휴무<br>제도</li>
                             <li>시차<br>출퇴근제</li>
-                            <li>경조휴가/경조금<br/>지급</li>
-                            <li>Family-day제도<br/>운영</li>
+                            <li>경조휴가&#47;경조금<br/>지급</li>
+                            <li>Family&#45;day제도<br/>운영</li>
                         </ul>
                     </div>
                 </div>

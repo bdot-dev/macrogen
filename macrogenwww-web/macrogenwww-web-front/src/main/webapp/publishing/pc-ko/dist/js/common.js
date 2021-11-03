@@ -1,6 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  *  common.js
+ *  v0.1 - footerSelect / selectDefault 추가 - 선미 ( 21.10.28 )
  * --------------------------------------------------------------------------
  */
 
@@ -15,7 +16,8 @@ front.common = (function () {
     this.a();
     this.commonHandler();
     this.scrollHeader();
-
+    this.footerSelect();
+    this.selectDefault();
   };
 
   var a = function () {
@@ -97,12 +99,70 @@ front.common = (function () {
     }
   }
 
+  var footerSelect = function () {
+    var selectSite = $(".family-box ._select_site");
+    $('._popup_box').hide();
+
+    selectSite.on('click',function() {
+      //드롭다운 닫기
+      if(selectSite.hasClass('open')) {
+        selectSite.removeClass("open").next('._popup_box').slideUp(200);
+      }
+      //드롭다운 열기
+      else {
+        selectSite.addClass("open").next('._popup_box').slideDown(200);
+        $('body').on('click',function (e){
+          if(selectSite.hasClass('open')) {
+            if(!selectSite.has(e.target).length) {
+              selectSite.removeClass("open").next('._popup_box').slideUp(200);
+            }
+          }
+          e.preventDefault()
+        })
+      }
+    });
+    $("._popup_box a").on('click',function() {
+      var option = $(this).find('span').text();
+      console.log(option)
+      $('._select_box ._select_site').find('span').text(option);
+    });
+  }
+
+  var selectDefault = function () {
+    var selectDefault = $('.select-box ._select_default');
+    $('._select_list').hide();
+
+    selectDefault.on('click',function() {
+      var select = $(this);
+      //드롭다운 닫기
+      if(select.hasClass('open')) {
+        select.removeClass('open').next('._select_list').slideUp(200);
+      }
+      //드롭다운 열기
+      else {
+        select.addClass("open").next('._select_list').slideDown(200);
+      /*  $(document).click(function(event) {
+          if ( !$(event.target).hasClass('open')) {
+            select.removeClass('open');
+            $('._select_list').removeClass('open').slideUp(200);
+          }
+        });*/
+      }
+      $(this).next().find('span').on('click',function() {
+        var option = $(this).text();
+        console.log(option)
+        $(this).parents('.select-box').find('._select_default .text').text(option);
+      });
+    });
+  }
 
 
   return {
     a : a,
     commonHandler : commonHandler,
     scrollHeader : scrollHeader,
+    footerSelect : footerSelect,
+    selectDefault : selectDefault,
     init : init,
   }
 })();

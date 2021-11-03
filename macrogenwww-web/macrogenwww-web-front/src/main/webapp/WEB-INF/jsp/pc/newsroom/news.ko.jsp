@@ -28,7 +28,7 @@
 			                                <div class="info">
 			                                    <div class="tit">${result.nttSj }</div>
 			                                    <div class="cont">${fn:substring(result.nttCnBrief, 0, 200) }</div>
-			                                    <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+			                                    <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></div>
 			                                </div>
 		                                </a>
 		                            </div>
@@ -117,7 +117,7 @@
 		                                <span class="img"><img src="${imgUrl }" alt="${result.nttSj }"></span>
 		                                <span class="tit">${result.nttSj }</span>
 		                                <span class="cont">${fn:substring(result.nttCnBrief, 0, 200) }</span>
-		                                <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
+		                                <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy&#46;MM&#46;dd" /></span>
 		                            </a>
 		                        </li>
 		                    </c:forEach>
@@ -127,7 +127,7 @@
 
 				<c:if test="${fn:length(resultList) <= 0}">
 	                <div class="no-data">
-	                    <p>등록된 게시물이 없습니다.</p>
+	                    <p>등록된 게시물이 없습니다&#46;</p>
 	                </div>
 	            </c:if>
 

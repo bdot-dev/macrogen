@@ -37,11 +37,11 @@
                     <div class="text-box">
                         <div class="font-body-h">
                             정밀의학 생명공학기업 마크로젠은 1997년 6월 5일 서울대학교 의과대학 유전체 의학연구소를 모태로 설립되었으며,<br> 2000년 2월 한국 바이오 벤처기업 최초로
-                            코스닥에 상장했습니다.<br/><br/>
+                            코스닥에 상장했습니다&#46;<br/><br/>
                             이후 유전자 및 유전체 분석 분야에서 꾸준한 연구개발 활동을 하고 있으며 주요 사업 이외에도 다양한 사회공헌 활동을 통해 바이오 산업 발전에 기여하고
-                            있습니다.<br/>
+                            있습니다&#46;<br/>
                             마크로젠은 유전체 정보에 기반한 개인별 맞춤 의료 정보를 제공함으로써 21세기 정밀의학 실현에 앞장설 뿐 아니라 탁월한 기술력을 바탕으로 다양한 사업분야에서 전 세계
-                            유전체 분석 시장을 선도합니다.
+                            유전체 분석 시장을 선도합니다&#46;
                         </div>
                     </div>
                 </div>
@@ -66,8 +66,8 @@
                     <div data-aos="fade-up" data-aos-duration="2000">
                         <div class="title-sm">기업현황</div>
                         <div class="year">EST 1997</div>
-                        <div class="desc">마크로젠은 언제나 능동적으로 환경 변화에 대처하며 지속 성장을 이뤄왔습니다.<br/>
-                            바이오 생태계를 좌우하는 영향력을 갖춘 선도기업으로서 마크로젠의 도전은 계속될 것입니다.
+                        <div class="desc">마크로젠은 언제나 능동적으로 환경 변화에 대처하며 지속 성장을 이뤄왔습니다&#46;<br/>
+                            바이오 생태계를 좌우하는 영향력을 갖춘 선도기업으로서 마크로젠의 도전은 계속될 것입니다&#46;
                         </div>
                     </div>
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
@@ -84,23 +84,23 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_3.png" alt="매출 1,000억 돌파"></span>
-                                <span class="val">$100M</span>
-                                <span class="desc">매출 1,000억 돌파</span>
+                                <span class="val">&#36;100M</span>
+                                <span class="desc">매출 1&#44;000억 돌파</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_4.png" alt="해외 매출"></span>
-                                <span class="val">70%</span>
+                                <span class="val">70&#37;</span>
                                 <span class="desc">해외 매출</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_5.png" alt="리서치 시퀀싱 분야 점유율"></span>
-                                <span class="val">No.1</span>
+                                <span class="val">No&#46;1</span>
                                 <span class="desc">리서치 시퀀싱 분야 점유율</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_6.png" alt="153개국 18,000여 고객"></span>
                                 <span class="val">153<span class="ko">국</span></span>
-                                <span class="desc">18,000 글로벌파트너</span>
+                                <span class="desc">18&#44;000 글로벌파트너</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_7.png" alt="SCI급 네이처지 논문 148편"></span>
@@ -126,8 +126,8 @@
                             <div class="inner">
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">연구서비스</div>
-                                <div class="desc">글로벌 유전체 분석기술의 성장을 위한 다양한 연구 서비스를 제공합니다.<br>
-                                    마크로젠만의 연구결과로 축척된 빅데이터와 고도화된  AI 분석으로 새로운 인류 건강의 역사를 만들어 가고 있습니다.</div>
+                                <div class="desc">글로벌 유전체 분석기술의 성장을 위한 다양한 연구 서비스를 제공합니다&#46;<br>
+                                    마크로젠만의 연구결과로 축척된 빅데이터와 고도화된  AI 분석으로 새로운 인류 건강의 역사를 만들어 가고 있습니다&#46;</div>
                                 <div class="category-list">
                                     <ul class="clearfix">
                                         <li>
@@ -161,10 +161,10 @@
                         <div class="swiper-slide">
                             <div class="inner">
                                 <div class="title-sm">사업영역</div>
-                                <div class="title">임상진단/치료</div>
+                                <div class="title">임상진단&#47;치료</div>
                                 <div class="desc">
-                                    78억 인류의 건강한 내일을 위한 다양한 임상진단 및 치료를 위한 정보를 제공합니다. <br/>
-                                    단순한 치료만의 목적이 아닌 질병의 예측과 원인 분석이 가능하도록 체계적인 임상진단 시스템을 구축하고 있습니다.
+                                    78억 인류의 건강한 내일을 위한 다양한 임상진단 및 치료를 위한 정보를 제공합니다&#46; <br/>
+                                    단순한 치료만의 목적이 아닌 질병의 예측과 원인 분석이 가능하도록 체계적인 임상진단 시스템을 구축하고 있습니다&#46;
                                 </div>
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
@@ -178,7 +178,7 @@
                                         </li>
                                         <li>
                                             <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology2.svg" alt="COVID-19"></div>
-                                            <div class="tit">COVID-19</div>
+                                            <div class="tit">COVID&#45;19</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -189,7 +189,7 @@
                                 <div class="title-sm">사업영역</div>
                                 <div class="title">퍼스널 헬스케어 및 반려동물</div>
                                 <div class="desc">마크로젠의 연구로 구축된 빅데이터와 AI 분석을 기반으로<br/>
-                                    DNA 특성에 맞는 개인 맞춤형 헬스케어서비스와 소중한 반려동물의 건강 관리 솔루션을 제공합니다.</div>
+                                    DNA 특성에 맞는 개인 맞춤형 헬스케어서비스와 소중한 반려동물의 건강 관리 솔루션을 제공합니다&#46;</div>
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
@@ -253,17 +253,17 @@
                         <span class="title-sm">Research Sequencing</span>
                         <span class="title">연구서비스</span>
                     </div>
-                    <div class="desc">정부기관, 대학교, 연구소 등</div>
-                    <div class="desc-sm">마크로젠의 핵심 사업으로, 해당 분야에서는 염기서열 분석(NGS, CES), 바이오칩 분석(Microarray), 올리고 합성(Oligo), 유전자 변형 마우스(GEM), 바이오인포매틱스(Bioinformatics) 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다.</div>
+                    <div class="desc">정부기관&#44; 대학교&#44; 연구소 등</div>
+                    <div class="desc-sm">마크로젠의 핵심 사업으로&#44; 해당 분야에서는 염기서열 분석&#40;NGS&#44; CES&#41;&#44; 바이오칩 분석&#40;Microarray&#41;&#44; 올리고 합성&#40;Oligo&#41;&#44; 유전자 변형 마우스&#40;GEM&#41;&#44; 바이오인포매틱스&#40;Bioinformatics&#41; 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다&#46;</div>
                 </div>
                 <div class="item item-2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
                         <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_2.png" alt="임상진단">
-                        <span class="title-sm">Clinical Diagnostics & Treatments</span>
-                        <span class="title">임상진단/치료</span>
+                        <span class="title-sm">Clinical Diagnostics &#38; Treatments</span>
+                        <span class="title">임상진단&#47;치료</span>
                     </div>
                     <div class="desc">환자 및 의료진 대상</div>
-                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체, 산전 유전체, 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료, 건강관리 방법 등을 제시에 주력하고 있습니다.</div>
+                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다&#46; 암 유전체&#44; 산전 유전체&#44; 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료&#44; 건강관리 방법 등을 제시에 주력하고 있습니다&#46;</div>
                 </div>
                 <div class="item item-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
@@ -272,7 +272,7 @@
                         <span class="title">퍼스널 헬스케어</span>
                     </div>
                     <div class="desc">일반인 대상</div>
-                    <div class="desc-sm">퍼스널 헬스케어의 핵심 요소로 주목 받고 있는 분야입니다. 마크로젠에서는 개인유전체분석 서비스 ‘마이지놈스토리’, 마이크로바이옴 테스트와 분석에 기반한 맞춤형 헬스케어 솔루션 ‘더바이옴’ 등을 통해 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다. </div>
+                    <div class="desc-sm">퍼스널 헬스케어의 핵심 요소로 주목 받고 있는 분야입니다&#46; 마크로젠에서는 개인유전체분석 서비스 &#39;마이지놈스토리&#39;&#44; 마이크로바이옴 테스트와 분석에 기반한 맞춤형 헬스케어 솔루션 &#39;더바이옴&#39; 등을 통해 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다&#46; </div>
                 </div>
                 <div class="item item-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
@@ -281,7 +281,7 @@
                         <span class="title">반려동물</span>
                     </div>
                     <div class="desc">반려동물 대상</div>
-                    <div class="desc-sm">반려동물을 위한 유전자 검사 서비스(myPETGENE™) 등이 진행되고 있습니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다.</div>
+                    <div class="desc-sm">반려동물을 위한 유전자 검사 서비스&#40;myPETGENE&#8482;&#41; 등이 진행되고 있습니다&#46; 이외에도 마크로젠은 Human에서 Non&#45;human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다&#46;</div>
                 </div>
             </div>
             <!-- e  사업분야 상세 -->
@@ -303,8 +303,8 @@
                         <div class="desc">
                             <div class="bg-logo"><img src="/publishing/pc-ko/dist/img/macrogen/logo-lg.png" alt="macrogen"></div>
                             <div class="content">
-                                마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다.<br/><br/>
-                                유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다.
+                                마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다&#46;<br/><br/>
+                                유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다&#46;
                             </div>
                             <div class="download-area"><a class="btn-download" href="https://drive.google.com/file/d/11sq3mpDWyBFkULGRPHu9ckUqk_oB11IC/view?usp=sharing" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a></div>
                         </div>

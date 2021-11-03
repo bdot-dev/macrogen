@@ -7,7 +7,7 @@
 	        <ul id="gnb">
                 <li><span class="font-bold">macrogen</span></li>
                 <li><span class="font-bold">business</span></li>
-                <li><span class="font-bold">r&#38d</span></li>
+                <li><span class="font-bold">r&#38;d</span></li>
                 <li><span class="font-bold">newsroom</span></li>
                 <li><span class="font-bold">ir</span></li>
                 <li><span class="font-bold">esg</span></li>
@@ -77,7 +77,7 @@
             <ul>
                 <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 유전체 검사</a></li>
                 <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 신생아 유전질환</a></li>
-                <li><a href="/${rc.locale.language }/business/diagnosis/covid">COVID-19</a></li>
+                <li><a href="/${rc.locale.language }/business/diagnosis/covid">COVID&#45;19</a></li>
             </ul>
         </div>
         <div class="item">
@@ -107,7 +107,7 @@
             <div class="title"><a href="/${rc.locale.language }/rnd/institute/bigdata">빅데이터연구소</a></div>
         </div>
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/patent">특허/논문</a></div>
+            <div class="title"><a href="/${rc.locale.language }/rnd/patent">특허&#47;논문</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/patent">특허</a></li>
                 <li><a href="/${rc.locale.language }/rnd/thesis">논문</a></li>
