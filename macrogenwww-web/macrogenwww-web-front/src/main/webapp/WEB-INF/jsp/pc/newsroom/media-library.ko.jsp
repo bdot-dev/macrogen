@@ -53,6 +53,8 @@
 				                </c:forEach>
 	                        </ul>
 	                    </div>
+
+		                <hr class="divider"/>
 					</c:if>
 
 					<c:if test="${fn:length(resultList) <= 0}">
@@ -60,8 +62,6 @@
 		                    <p>등록된 게시물이 없습니다.</p>
 		                </div>
 		            </c:if>
-
-	                <hr class="divider"/>
 
 					<c:if test="${fn:length(resultList) > 0}">
 				        <div class="pagination-wrap">
