@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "AppleSDGothicNeo.css",
+	"sources": [
+		"../../../scss/fonts/AppleSDGothicNeo.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\r\n  font-family: \"Apple SD Gothic Neo Bold\";\r\n  src: url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.eot\"); /* IE9*/\r\n  src: url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.eot?#iefix\") format(\"embedded-opentype\"), /* IE6-IE8 */\r\n  url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.woff2\") format(\"woff2\"), /* chrome、firefox */\r\n  url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.woff\") format(\"woff\"), /* chrome、firefox */\r\n  url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.ttf\") format(\"truetype\"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/\r\n  url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.svg#Apple SD Gothic Neo Bold\") format(\"svg\"); /* iOS 4.1- */\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Apple SD Gothic Neo Regular\";\r\n  src: url(\"../fonts/AppleSDGothicNeo/AppleSDGothicNeoRegular.ttf\") format(\"truetype\"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,UAAU;EACR,WAAW,EAAE,0BAA0B;EACvC,GAAG,EAAE,yDAAyD;EAAE,QAAQ;EACxE,GAAG,EAAE,gEAAgE,CAAC,2BAA2B,EACjG,2DAA2D,CAAC,eAAe,EAC3E,0DAA0D,CAAC,cAAc,EACzE,yDAAyD,CAAC,kBAAkB,EAC5E,kFAAkF,CAAC,aAAa;EAAE,cAAc;;;AAGlH,UAAU;EACR,WAAW,EAAE,6BAA6B;EAC1C,GAAG,EAAE,4DAA4D,CAAC,kBAAkB;EAAE,sDAAsD"
+}
