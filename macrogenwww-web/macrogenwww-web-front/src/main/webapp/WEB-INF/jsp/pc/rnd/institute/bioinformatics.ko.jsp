@@ -28,7 +28,8 @@
                 <div class="title">유전체 정보를 기반으로<br>생명의 비밀을 밝혀냅니다 </div>
                 <div class="desc">유전체 분석 분야에서 다양한 연구를 진행해 나갑니다</div>
             </div>
-            <div class="img"><img src="/publishing/pc-ko/dist/img/RD/img-microscope.png" alt="현미경사진"></div>
+            <div class="img">
+            </div>
         </div>
         <div class="section_info_list">
             <div class="box clearfix">

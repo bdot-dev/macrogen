@@ -181,8 +181,8 @@
           <p class="font-h4 main-title">암 발생 원인 분석</p>
           <p class="subject">암 환자의 종양 샘플에서 추출한 DNA를 이용해 암 발생에 관여하는 주요 유전자의 변이를 분석함으로써<br>
             암 발생 원인을 추적하고 개인별 맞춤 치료에 중요한 정보를 제공하는 서비스입니다.</p>
-          <p class="desc img_bottom">지금까지는 조직병리학적으로 암을 구분해 치료해 왔으나 최근에는 암 조직 유전체 분석을 통한 유전자 변이에 따라 세부적으로 암을 구분하고 있습니다.<br>
-            이는 동일한 항암제를 처방했을 때 75&#37; 정도가 각기 다른 효과를 보이는 현상을 개선하는 데 기여하여 암 환자의 맞춤 치료 및 부작용 최소화에 도움을 주고 있습니다.</p>
+          <p class="desc img_bottom">지금까지는 종양 샘플의 조직 및 세포의 변화를 육안으로 판별하여 암을 치료해 왔으나, 최근에는암 조직의 유전체 분석을 통해 얻어진 유전 정보를 치료에 활용하고 있습니다.
+            이러한 유전정보의 활용으로 암 발생 원인을 밝혀내고, 적절한 치료 방법 및 약물을 처방하여 효과적인 맞춤형 치료에 도움을 주고 있습니다.</p>
           <div class="border-gray-box">
             <div class="img">
               <img src="/publishing/pc-ko/dist/img/business/img_cancer.png" alt="암 발생 원인 분석">
@@ -219,9 +219,8 @@
         <div class="info-box">
           <p class="font-h4 main-title">암 발생 모니터링</p>
           <p class="subject"> 체내에 암이 발생한 경우 암세포로부터 떨어져 나온 DNA 조각이 혈액 내에도 존재합니다.</p>
-          <p class="desc img_bottom">이를 혈중 종양 DNA(ctDNA; circulating tumor DNA)라 부르며 정기적인 ctDNA 확인을 통해 암세포 발생 여부를 조기에 발견함으로써 빠른 대처가 가능합니다.<br>
-            이는 기존 조직 검사와 달리 혈액 채취만으로 검사를 진행할 수 있어 효율적인 정기적인 검진이 이루어질 수 있습니다.<br>
-            아직 암 종별 및 개인별 ctDNA의 수준 차이와 까다로운 검출 과정 때문에 적용 범위가 넓지 않지만 추후 지속적인 기술 향상을 통해 이를 확대해나갈 예정입니다.</p>
+          <p class="desc img_bottom">이를 혈중 종양 DNA(ctDNA; circulating tumor DNA)라 부르며, 혈액 채취만으로 검사를 진행할 수 있어 정기검진으로 조기암 발견이 가능합니다.
+            개인별 ctDNA의 양 차이와 민감한 ctDNA 추출 및 검사과정은 전문적인 기술을 필요로 하기 때문에, 지속적인 기술 향상을 통해 적용 범위를확대해 나갈 예정입니다.</p>
           <div class="border-gray-box">
             <div class="img">
               <img src="/publishing/pc-ko/dist/img/business/img_monitoring.png" alt="CTDNA분석">

@@ -57,9 +57,9 @@
                             <div class="chairman-info">
                                 <div class="info">
                                     <div class="font-h7">
-                                        21세기 인류가 게놈 프로젝트를 통해 이룩한
-                                        &#39;인간 게놈지도의 완성&#39;이라는 성과 이후&#44;
-                                        의료 패러다임은 치료 중심에서
+                                        21세기 인류가 게놈 프로젝트를 통해 이룩한<br/>
+                                        &#39;인간 게놈지도의 완성&#39;이라는 성과 이후&#44;<br/>
+                                        의료 패러다임은 치료 중심에서<br/>
                                         질병 예방과 건강 관리로 급변해왔습니다&#46;
                                     </div>
                                     <div class="font-body">
@@ -69,9 +69,6 @@
                                         <span class="font-body-h">마크로젠 회장</span>
                                         <span class="font-h6">서정선</span>
                                     </div>
-                                </div>
-                                <div class="img">
-                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-chairman.png" alt="마크로젠 회장 서정선">
                                 </div>
                             </div>
                         </div>
@@ -218,7 +215,6 @@
                             </div>
                         </div>
                         <div class="img" data-aos="fade-up" data-aos-duration="2000">
-                            <img src="/publishing/pc-ko/dist/img/macrogen/img-ceo.png" alt="대표이사 이수강">
                         </div>
                         <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                             <div class="info">

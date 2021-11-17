@@ -110,7 +110,6 @@
                   var rellax5 = new Rellax('.img-3');
               </script>
 
-                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-management-philosophy.png" alt="경영이념"></div>
                 <div class="info">
                     <div class="font-h7">경영이념</div>
                     <div class="font-h4">
