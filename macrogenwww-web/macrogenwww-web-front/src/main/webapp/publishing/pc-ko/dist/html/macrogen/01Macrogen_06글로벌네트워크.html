@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+
+  <meta name="apple-mobile-web-app-title" content="macrogen" />
+  <meta name="viewport" content="width=1244"/>
+  <!-- IE 10 이하 -->
+  <link rel="shortcut icon" href="../../favicon/favicon.ico">
+  <!-- Android -->
+  <link rel="icon" type="image/png" sizes="36x36" href="../../favicon/android-icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../../favicon/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="../../favicon/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="../../favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png">
+  <!-- apple -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png">
+  <!-- 브라우저용 표준 -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+  <!-- ms -->
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-150x150.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-310x310.png">
+  <!-- manifest -->
+<!--  <link rel="manifest" href="../../favicon/manifest.json">-->
+  <!-- Windows 8.1 + IE11 이상 -->
+  <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+
+  <meta name="robots" content="ALL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="마크로젠">
+  <meta property="og:description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+<!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
+  <meta property="og:url" content="www.macrogen.co.kr">
+  <link rel="canonical" href="http://www.macrogen.co.kr">
+  <title>Macrogen v1.12 / 11.16</title>
+  <meta name="keywords" content="마크로젠 키워드">
+  <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1116"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1116"/>
+  <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+
+  <script src="../../js/bundle.js?1116"></script>
+  <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+  <script src="../../js/common.js?1116"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="full-bg macrogen" style="background-image: url(../../img/macrogen/bg-global-network.png);">
+        <header class="header" id="header">
+    <div class="inner">
+        <div class="section_gnb">
+            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><span class="font-bold">macrogen</span></li> <!-- active 시, 활성화 -->
+                    <li><span class="font-bold">business</span></li>
+                    <li><span class="font-bold">r&#38;d</span></li>
+                    <li><span class="font-bold">newsroom</span></li>
+                    <li><span class="font-bold">ir</span></li>
+                    <li><span class="font-bold">esg</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section_btn">
+            <ul class="sns">
+                <li><a href="#"><i class="icon icon-facebook-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
+            </ul>
+            <div class="btn_eng">
+                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="gnb-2depth" id="gnb2Depth">
+        <!--Macrogen-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">회사소개</a></div>
+                <ul>
+                    <li><a href="#">기업개요</a></li>
+                    <li><a href="#">경영진</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">비전</a></li>
+                    <li><a href="#">인증</a></li>
+                   <!-- <li><a href="#">Contact us</a></li>-->
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">글로벌 네트워크</a></div>
+            </div>
+
+            <div class="item">
+                <div class="title"><a href="#">채용</a></div>
+                <ul>
+                    <li><a href="#">인재상</a></li>
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">채용안내</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Business-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">연구서비스</a></div>
+                <ul>
+                    <li><a href="#">NGS</a></li>
+                    <li><a href="#">CES</a></li>
+                    <li><a href="#">Oligo</a></li>
+                    <li><a href="#">Microarray</a></li>
+                    <li><a href="#">모델동물사업부</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">임상진단서비스</a></div>
+                <ul>
+                    <li><a href="#">암 유전체 검사</a></li>
+                    <li><a href="#">태아 및 희귀질환 검사</a></li>
+                    <li><a href="#">COVID&#45;19</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">헬스케어서비스</a></div>
+                <ul>
+                    <li><a href="#">개인유전체분석</a></li>
+                    <li><a href="#">마이크로바이옴분석</a></li>
+                    <li><a href="#">반려동물유전자분석</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--R&D-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">정밀의학연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">생명정보학연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">더바이옴연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">싱크진연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">빅데이터연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">특허&#47;논문</a></div>
+                <ul>
+                    <li><a href="#">특허</a></li>
+                    <li><a href="#">논문</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Newsroom-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">뉴스</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">미디어라이브러리</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">공지사항</a></div>
+            </div>
+        </div>
+        <!--IR-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">재무정보</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">공시정보</a></div>
+                <ul>
+                    <li><a href="#">공고</a></li>
+                    <li><a href="#">공시정보</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">IR소식</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">투자자 문의</a></div>
+            </div>
+        </div>
+        <!--ESG-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">ESG경영</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">윤리경영</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">사회공헌</a></div>
+            </div>
+           <!-- <div class="item">
+                <div class="title"><a href="#">ESG평가</a></div>
+            </div>-->
+        </div>
+    </div>
+</header>
+<script>
+    var gnb2depth = $('#gnb2Depth .box')
+    let gnbIndex = $('#gnb li')
+
+    $('#gnb li').mouseover(function () {
+        $(this).parents('#header').addClass('header-bg-white')
+        gnbIndex.removeClass('active');
+        $(this).addClass('active');
+        gnb2depth.removeClass('active');
+        let idx = $(this).index();
+        gnb2depth.eq(idx).addClass('active');
+        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
+    });
+
+     gnb2depth.mouseover(function () {
+         gnbIndex.removeClass('active');
+        let idx = $(this).index();
+         gnbIndex.eq(idx).addClass('active');
+     });
+
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            gnb2depth.removeClass('active')
+            gnbIndex.removeClass('active')
+            $('#header').removeClass('header-bg-white')
+            $('#gnb2Depth').css('border','none')
+        }
+    })
+</script>
+
+        <div class="frame">
+                <div class="hero-title">글로벌 네트워크</div>
+                <div class="slogan">GLOBAL<br/>MACROGEN</div>
+                <div class="slogan-sub">글로벌 정밀의학을 선도합니다.</div>
+                <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">MACROGEN</li>
+        <li class="breadcrumb-item">글로벌 네트워크</li>
+    </ol>
+</nav>
+
+                <div class="scroll-wrap">
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="macrogen global-macrogen">
+            <!-- s  map -->
+            <div class="section-map" data-aos="fade-up" data-aos-duration="2000">
+                <div class="title">GLOBAL MACROGEN</div>
+                <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다&#46;</div>
+                <div class="map">
+                    <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; The Netherlands</span></a>
+                    <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
+                    <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
+                    <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
+                    <a class="pin virginia" href="#rockville"><span>Virginia&#44; USA</span></a>
+                    <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
+                    <a class="pin kyoto" href="#tokyo"><span>Kyoto&#44; japan</span></a>
+                    <a class="pin newyork" href="#rockville"><span>New york&#44; USA</span></a>
+                    <a class="pin synapse" href="#synapse"><span>Synapse&#44; Singapore</span></a>
+                    <a class="pin rockville" href="#rockville"><span>Rockville&#44; USA</span></a>
+                </div>
+            </div>
+            <script>
+                $('.map .pin').on('click',function (){
+                    $(this).addClass('active').siblings().removeClass('active')
+                })
+            </script>
+            <!-- e  map -->
+
+            <!-- s  map 상세 -->
+            <div class="section-map-detail">
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="title">국내</div>
+                    <div class="detail">
+                        <ul>
+                            <li class="item height_fix" id="seoul">
+                                <div class="name">마크로젠 강남본사</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_1.png" alt="마크로젠 강남본사"></div>
+                                <div class="info">
+                                  <!--  <ul>
+                                        <li><span>설립일자</span><span>2019년 6월</span></li>
+                                        <li><span>주요사업</span><span>개인유전체 분석 및 장내 미생물 분석 서비스</span></li>
+                                    </ul>-->
+                                    <div class="address">서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41; </div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-2-2180-7000">&#43;82&#45;2&#45;2180&#45;7000</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-2-2180-7100">&#43;82&#45;2&#45;2180&#45;7100</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix">
+                                <div class="name">마크로젠 지놈센터</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_2.png" alt="마크로젠 지놈센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>1997년 6월</span></li>
+                                        <!--<li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">서울특별시 금천구 벚꽃로 254&#44; 10층 &#40;가산동&#44; 월드메르디앙1차&#41;</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-2-2180-7000">&#43;82&#45;2&#45;2180&#45;7000</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-2-2180-7100">&#43;82&#45;2&#45;2180&#45;7100</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix">
+                                <div class="name">마크로젠 모델동물센터</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_3.png" alt="마크로젠 모델동물센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2002년 2월</span></li>
+                                       <!-- <li><span>주요사업</span><span>유전자 변형 마우스 제작 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">서울특별시 강서구 강서로 466&#44; 3층 &#40;등촌동&#44; 우리벤처타운&#41;</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-2-3663-5990">&#43;82&#45;2&#45;3663&#45;5990</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-2-3663-5179">&#43;82&#45;2&#45;3663&#45;5179</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix">
+                                <div class="name">마크로젠 대전 지놈센터</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_4.png" alt="마크로젠 대전 지놈센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2008년 2월</span></li>
+                                       <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">대전광역시 유성구 테크노3로 65&#44; 323호 &#40;관평동&#44; 한신에스메카&#41;</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="title">글로벌</div>
+                    <div class="detail">
+                        <ul>
+                            <li class="item height_fix" id="rockville" >
+                                <div class="name">소마젠 &#40;Psomagen&#41; <span class="badge">관계사</span></div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_5.png" alt="소마젠 (Psomagen)"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2004년 12월</span></li>
+                                       <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">1330 Piccard Drive&#44; Suite 205&#44; Rockville&#44; MD 20850 USA</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+1-301-251-1007">&#43;1&#45;301&#45;251&#45;1007</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+1-301-251-4006">&#43;1&#45;301&#45;251&#45;4006</a>
+                                        <span>WEB&#46;</span>
+                                        <a href="http://www.psomagen.com" target="_blank">www&#46;psomagen&#46;com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="tokyo">
+                                <div class="name">일본법인</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_6.png" alt="일본법인"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2007년 11월</span></li>
+                                       <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">16F Time24 Building&#44; 2&#45;4&#45;32 Aomi&#44; Koto-ku&#44; Tokyo 135&#45;0064&#44; JAPAN</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+81-3-5962-1124">+81&#45;3&#45;5962&#45;1124</a>
+                                        <span>WEB&#46;</span>
+                                        <a href="http://www.macrogen-japan.co.jp" target="_blank">www&#46;macrogen&#45;japan&#46;co&#46;jp</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="amsterdam">
+                                <div class="name">유럽법인</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_7.png" alt="유럽법인"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2017년 9월&#40;지사 오픈&#58; 2008년 6월&#41;</span></li>
+                                       <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">Meibergdreef 57&#44; Amsterdam&#44; The Netherlands</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+31-20-333-7563">+31&#45;20&#45;333&#45;7563</a>
+                                        <span>WEB&#46;</span>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="synapse">
+                                <div class="name">싱가포르법인</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_8.png" alt="싱가포르법인"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2018년 3월 &#40;지사 오픈&#58; 2016년 11월&#41;</span></li>
+                                    <!--    <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">3 Biopolis Drive &#35;05&#45;18&#44; Synapse&#44; Singapore 138623</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+65-6339-0927">&#43;65&#45;6339&#45;0927</a>
+                                        <span>WEB&#46;</span>
+                                        <a href="http://www.macrogen-apac.com" target="_blank">www&#46;macrogen&#45;apac&#46;com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="madrid">
+                                <div class="name">스페인지사</div>
+                                <div class="img"><img src="../../img/macrogen/global_thumb_9.png" alt="스페인지사"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>설립일자</span><span>2016년 12월</span></li>
+                                     <!--   <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>-->
+                                    </ul>
+                                    <div class="address">Calle Martinez Villergas&#44; 52&#46; Edificio B&#46; Planta Baja&#46; Oficina 1&#47;Izquierda&#46; Madrid&#46; 28027&#44; Spain</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- e  map 상세 -->
+        </div>
+    </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
+<footer class="footer">
+    <div class="inner">
+        <div class="section_information">
+            <div class="title font-bold">
+                <p>MACROGEN</p>
+            </div>
+            <div class="info">
+                <ul class="text">
+                    <li>
+                        <ul class="terms clearfix">
+                            <li><span class="font-medium"><a href="#">서비스 신청&#47;견적 문의</a></span></li>
+                            <li><span class="font-medium"><a href="#">개인정보 처리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">내부정보관리규정</a></span></li>
+                            <li><span class="font-medium"><a href="#">영상정보처리기기 운영&#46;관리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">Contact us</a></span></li>
+                        </ul>
+                    </li>
+                    <li><span>서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>
+                    <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_familysite">
+            <div class="family-box">
+                <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
+                <div class="popup_box _popup_box">
+                    <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>
+                    <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">마이지놈스토리</span></a>
+                    <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">마이펫진</span></a>
+                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
+                    <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
+                    <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
+                    <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
+                    <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">유전체의학연구소</span></a>
+                    <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_sns">
+            <ul class="sns clearfix">
+                <li class="facebook"><a href="https://www.facebook.com/macrogenkr/" target="_blank"></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"></a></li>
+                <li class="blog"><a href="https://blog.naver.com/macrogen_official" target="_blank"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/company/macrogen" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <a href="#" class="btn btn-text btn-totop">
+    <i class="icon icon-arrow-top-long"></i>
+    <span>TOP</span>
+</a>
+
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            $('.header').css({'display' : 'block'});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
+</div>
+</body>
+</html>

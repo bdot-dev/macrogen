@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+
+  <meta name="apple-mobile-web-app-title" content="macrogen" />
+  <meta name="viewport" content="width=1244"/>
+  <!-- IE 10 이하 -->
+  <link rel="shortcut icon" href="../../favicon/favicon.ico">
+  <!-- Android -->
+  <link rel="icon" type="image/png" sizes="36x36" href="../../favicon/android-icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../../favicon/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="../../favicon/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="../../favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png">
+  <!-- apple -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png">
+  <!-- 브라우저용 표준 -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+  <!-- ms -->
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-150x150.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-310x310.png">
+  <!-- manifest -->
+<!--  <link rel="manifest" href="../../favicon/manifest.json">-->
+  <!-- Windows 8.1 + IE11 이상 -->
+  <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+
+  <meta name="robots" content="ALL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="마크로젠">
+  <meta property="og:description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+<!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
+  <meta property="og:url" content="www.macrogen.co.kr">
+  <link rel="canonical" href="http://www.macrogen.co.kr">
+  <title>Macrogen v1.12 / 11.16</title>
+  <meta name="keywords" content="마크로젠 키워드">
+  <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1116"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1116"/>
+  <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+
+  <script src="../../js/bundle.js?1116"></script>
+  <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+  <script src="../../js/common.js?1116"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+    <div class="full-bg macrogen" style="background-image: url(../../img/macrogen/bg-management.png);">
+        <header class="header" id="header">
+    <div class="inner">
+        <div class="section_gnb">
+            <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><span class="font-bold">macrogen</span></li> <!-- active 시, 활성화 -->
+                    <li><span class="font-bold">business</span></li>
+                    <li><span class="font-bold">r&#38;d</span></li>
+                    <li><span class="font-bold">newsroom</span></li>
+                    <li><span class="font-bold">ir</span></li>
+                    <li><span class="font-bold">esg</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section_btn">
+            <ul class="sns">
+                <li><a href="#"><i class="icon icon-facebook-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-blog-circle"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
+            </ul>
+            <div class="btn_eng">
+                <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="gnb-2depth" id="gnb2Depth">
+        <!--Macrogen-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">회사소개</a></div>
+                <ul>
+                    <li><a href="#">기업개요</a></li>
+                    <li><a href="#">경영진</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">비전</a></li>
+                    <li><a href="#">인증</a></li>
+                   <!-- <li><a href="#">Contact us</a></li>-->
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">글로벌 네트워크</a></div>
+            </div>
+
+            <div class="item">
+                <div class="title"><a href="#">채용</a></div>
+                <ul>
+                    <li><a href="#">인재상</a></li>
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">채용안내</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Business-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">연구서비스</a></div>
+                <ul>
+                    <li><a href="#">NGS</a></li>
+                    <li><a href="#">CES</a></li>
+                    <li><a href="#">Oligo</a></li>
+                    <li><a href="#">Microarray</a></li>
+                    <li><a href="#">모델동물사업부</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">임상진단서비스</a></div>
+                <ul>
+                    <li><a href="#">암 유전체 검사</a></li>
+                    <li><a href="#">태아 및 희귀질환 검사</a></li>
+                    <li><a href="#">COVID&#45;19</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">헬스케어서비스</a></div>
+                <ul>
+                    <li><a href="#">개인유전체분석</a></li>
+                    <li><a href="#">마이크로바이옴분석</a></li>
+                    <li><a href="#">반려동물유전자분석</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--R&D-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">정밀의학연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">생명정보학연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">더바이옴연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">싱크진연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">빅데이터연구소</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">특허&#47;논문</a></div>
+                <ul>
+                    <li><a href="#">특허</a></li>
+                    <li><a href="#">논문</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Newsroom-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">뉴스</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">미디어라이브러리</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">공지사항</a></div>
+            </div>
+        </div>
+        <!--IR-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">재무정보</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">공시정보</a></div>
+                <ul>
+                    <li><a href="#">공고</a></li>
+                    <li><a href="#">공시정보</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">IR소식</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">투자자 문의</a></div>
+            </div>
+        </div>
+        <!--ESG-->
+        <div class="box clearfix">
+            <div class="item">
+                <div class="title"><a href="#">ESG경영</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">윤리경영</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">사회공헌</a></div>
+            </div>
+           <!-- <div class="item">
+                <div class="title"><a href="#">ESG평가</a></div>
+            </div>-->
+        </div>
+    </div>
+</header>
+<script>
+    var gnb2depth = $('#gnb2Depth .box')
+    let gnbIndex = $('#gnb li')
+
+    $('#gnb li').mouseover(function () {
+        $(this).parents('#header').addClass('header-bg-white')
+        gnbIndex.removeClass('active');
+        $(this).addClass('active');
+        gnb2depth.removeClass('active');
+        let idx = $(this).index();
+        gnb2depth.eq(idx).addClass('active');
+        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
+    });
+
+     gnb2depth.mouseover(function () {
+         gnbIndex.removeClass('active');
+        let idx = $(this).index();
+         gnbIndex.eq(idx).addClass('active');
+     });
+
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            gnb2depth.removeClass('active')
+            gnbIndex.removeClass('active')
+            $('#header').removeClass('header-bg-white')
+            $('#gnb2Depth').css('border','none')
+        }
+    })
+</script>
+
+        <div class="frame">
+                <div class="hero-title">경영진</div>
+                <div class="slogan ko">널리 인간을<br/>이롭게 하다</div>
+                <div class="slogan-sub">‘홍익인간’의 가치를 실현하기 위해 오늘도 밤을 밝힙니다</div>
+                <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">MACROGEN</li>
+        <li class="breadcrumb-item">회사소개</li>
+        <li class="breadcrumb-item">경영진</li>
+    </ol>
+</nav>
+
+                <div class="scroll-wrap">
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
+
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="macrogen macrogen-management">
+            <nav class="tab-wrap">
+                <div class="nav nav-tabs" id="tab" role="tablist">
+                    <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">
+                        <span>회장</span>
+                    </a>
+                    <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">
+                        <span>대표이사</span>
+                    </a>
+                </div>
+            </nav>
+            <script>
+                $('#tab a').on('click', function (event) {
+                    event.preventDefault()
+                    $(this).tab('show')
+                })
+            </script>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
+                    <!-- s  회장 -->
+                    <div class="section-chairman">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="font-h3">
+                                마크로젠의 목표는 전세계 모두에게<br/>
+                                DNA 설계도를 드리는 것입니다&#46;
+                            </div>
+                            <div class="chairman-info">
+                                <div class="info">
+                                    <div class="font-h7">
+                                        21세기 인류가 게놈 프로젝트를 통해 이룩한<br/>
+                                        &#39;인간 게놈지도의 완성&#39;이라는 성과 이후&#44;<br/>
+                                        의료 패러다임은 치료 중심에서<br/>
+                                        질병 예방과 건강 관리로 급변해왔습니다&#46;
+                                    </div>
+                                    <div class="font-body">
+                                        또한&#44; 1&#44;000달러 게놈이 실현됨에 따라 인류 사회는 의료 정보와 인간 유전체 정보가 통합된 빅데이터를 기반으로 질병을 예측&#44; 진단&#44; 치료하는 정밀의학&#40;Precision Medicine&#41;의 시대로 빠르게 나아가고 있습니다&#46; 마크로젠은 이러한 의료 패러다임의 변화와 정밀의학 실현의 핵심인 유전체 의학&#44; 즉 Genomics Medicine의 중요성을 일찍부터 인식하고 인간 유전체 분석 분야에서 탁월한 연구 성과들을 달성해 왔습니다&#46; 특히 마크로젠은 2009년 세계 4번째 개인 유전체 분석 결과이자 세계 최초의 북방계 아시아인 유전체 분석 결과로서 한국인의 전장 유전체를 분석하였으며 2016년에는 기존 국제 표준 유전체의 한계를 극복하고 미래 정밀의학에 적용 가능한 세계 최고 완성도의 아시아인 표준 유전체를 구축하는 연구 성과를 달성했습니다&#46;
+                                    </div>
+                                    <div class="sign">
+                                        <span class="font-body-h">마크로젠 회장</span>
+                                        <span class="font-h6">서정선</span>
+                                    </div>
+                                </div>
+                                <!-- s 제거 -- 2021.11.15 -->
+<!--                                <div class="img">-->
+<!--                                    <img src="../../img/macrogen/img-chairman.png" alt="마크로젠 회장 서정선">-->
+<!--                                </div>-->
+                                <!-- s 제거 -- 2021.11.15 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e  회장 -->
+
+                    <!-- s  회장 경력-->
+                    <div class="section-chairman-career">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="item">
+                                <div class="title"><span>학력</span></div>
+                                <div class="list">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul>
+                                                <li>
+                                                    <span>1980</span>
+                                                    <span>서울대학교 대학원 졸업&#44; 의학박사 학위 취득</span>
+                                                </li>
+                                                <li>
+                                                    <span>1976</span>
+                                                    <span>서울대학교 의과대학 의학과 졸업</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title"><span>약력</span></div>
+                                <div class="list">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul>
+                                                <li>
+                                                    <span>1997 <em class="ko">&#45; 현재</em></span>
+                                                    <span>㈜마크로젠 회장 &#38; 창업자</span>
+                                                </li>
+                                                <li>
+                                                    <span>2017 <em class="ko">&#45; 현재</em></span>
+                                                    <span>분당서울대학교병원 석좌교수</span>
+                                                </li>
+                                                <li>
+                                                    <span>2017 <em class="ko">&#45; 현재</em></span>
+                                                    <span>공우생명정보재단 이사장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2018 <em class="ko">&#45; 현재</em></span>
+                                                    <span>마크로젠 의료재단 이사장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2012 <em class="ko">&#45; 현재</em></span>
+                                                    <span>미국 PLOS One Journal Editor</span>
+                                                </li>
+                                                <li>
+                                                    <span>2009 &#45; 2020</span>
+                                                    <span>한국바이오협회 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2005 <em class="ko">&#45; 현재</em></span>
+                                                    <span>인천경제자유구역 바이오메디컬허브 자문위원장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2005 <em class="ko">&#45; 현재</em></span>
+                                                    <span>미국생화학분자생물학회&#40;ASBMB&#41; 정회원</span>
+                                                </li>
+                                                <li>
+                                                    <span>2004 <em class="ko">&#45; 현재</em></span>
+                                                    <span>㈜마크로젠 이사회의장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2003 <em class="ko">&#45; 현재</em></span>
+                                                    <span>한국과학기술한림원&#40;KAST&#41; 정회원</span>
+                                                </li>
+                                                <li>
+                                                    <span>1997 <em class="ko">&#45; 현재</em></span>
+                                                    <span>EMM Journal Editor</span>
+                                                </li>
+                                                <li>
+                                                    <span>1997 <em class="ko">&#45; 현재</em></span>
+                                                    <span>국제분자생물네트워크&#40;IMBN&#41; 창립회원</span>
+                                                </li>
+                                             </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul>
+                                                <li>
+                                                    <span>1997 <em class="ko">&#45; 현재</em></span>
+                                                    <span>미국 New York Academy of Science 정회원</span>
+                                                </li>
+                                                <li>
+                                                    <span>1997 &#45; 2017</span>
+                                                    <span>서울대학교 의학연구원 유전체의학연구소&#40;GMI&#41; 소장</span>
+                                                </li>
+                                                <li>
+                                                    <span>1983 &#45; 2017</span>
+                                                    <span>서울대학교 의과대학 교수</span>
+                                                </li>
+                                                <li>
+                                                    <span>2009</span>
+                                                    <span>&#40;사&#41;통합생화학분자생물학회&#40;KSBMB&#41; 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2009</span>
+                                                    <span>대한생화학분자생물학회 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2008</span>
+                                                    <span>한국생화학분자생물학회 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2007 &#45; 2009</span>
+                                                    <span>한국바이오벤처협회 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2005</span>
+                                                    <span>한국유전체학회&#40;KOGO&#41; 회장</span>
+                                                </li>
+                                                <li>
+                                                    <span>2001 &#45; 2002</span>
+                                                    <span>보건복지부장관 자문관</span>
+                                                </li>
+                                                <li>
+                                                    <span>2000 &#45; 2004</span>
+                                                    <span>㈜마크로젠 대표이사</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- s  회장 경력-->
+                </div>
+                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
+                    <!-- s  CEO -->
+                    <div class="section-ceo">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="font-h3">
+                                대한민국 대표 생명공학 기업 마크로젠<br/>
+                                대표이사 이수강입니다&#46;
+                            </div>
+                        </div>
+                        <div class="img" data-aos="fade-up" data-aos-duration="2000">
+                            <!-- s 2021.11.15 제거 -->
+<!--                            <img src="../../img/macrogen/img-ceo.png" alt="대표이사 이수강">-->
+                            <!-- e 2021.11.15 제거 -->
+                        </div>
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="info">
+                                <div class="item">
+                                    <div class="font-h7">
+                                        마크로젠은 &#39;글로벌 유전체 분석
+                                        전문 기업&#39;이자 &#39;대한민국을 대표하는
+                                        생명공학 기업&#39;입니다&#46;
+                                    </div>
+                                    <div class="font-body">
+                                        1997년 6월 5일 설립된 마크로젠은 급변하는 생명공학 시장에서 끊임없는 연구와 혁신 활동을 해왔으며&#44; 현재 전 세계 153개국 1만 8천여 연구기관 고객을 보유한 &#39;글로벌 No&#46;1 정밀의학 선도기업&#39;으로 성장했습니다&#46; 우수한 인력과 오랜 서비스 수행 경험에서 우러난 탁월한 기술력을 갖추고 있으며&#44; 세계 최고 수준의 유전체 분석 수행 인프라를 구축하여 글로벌 생명공학 토털 솔루션을 제공하고 있습니다&#46;<br/>
+                                        또한&#44; 고품질의 서비스를 안정적으로 제공하기 위해 ISO9001 국제 품질경영시스템 인증을 보유하고 있으며&#44; 다양한 유전체 분석 플랫폼 공급업체로부터 CSP&#40;Certified Service Provider&#41; 인증을 획득하였습니다&#46;<br/>
+                                        또한 업계 최초로 PIMS&#40;Personal Information Management System&#44; 개인정보보호 관리체계&#41; 인증을 획득하는 등 정보보안 및 개인정보보호 강화를 위해 꾸준히 노력하고 있습니다&#46; 뿐만 아니라 유전체 분석 기술 분야의 선도기업과 지속적인 기술협력을 통해 최신기술 보급에 최선을 다하고 있습니다&#46;
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="font-h7">
+                                        이제 마크로젠은 기술 중심 기업에서
+                                        고객 중심 기업으로
+                                        제2의 도약을 꿈꾸고 있습니다&#46;
+                                    </div>
+                                    <div class="font-body">
+                                        연구자 시장에서 인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성하고자 합니다&#46; 국제적 수준의 임상진단 실험실을 갖춘 정밀의학센터 네트워크를 구축하고&#44; 암 진단을 포함한 최신 유전체 분석 기술 기반의 임상진단 서비스를 지속적으로 개발&#183;출시해 나가고 있습니다&#46;<br/>
+                                        또한&#44; 국내뿐만 아니라 미국 소마젠&#44; 유럽법인&#44; 일본법인 등 해외 거점별 현지화 전략으로 DTC 유전자 검사와 마이크로바이옴 분석 서비스를 출시하고 글로벌 시장을 적극적으로 공략해 나가고 있습니다&#46;<br/>
+                                        앞으로도 마크로젠은 고객 감동을 실현하기 위해 끊임없는 연구개발과 고객 친화적 서비스 개선을 지속하는 것은 물론&#44; 투명한 기업경영과 경영효율 극대화를 추진하면서 글로벌 생명공학 선도기업으로서 최선을 다할 것을 약속드립니다&#46;<br/>
+                                        감사합니다&#46;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign">
+                                <span class="font-body-h">마크로젠 대표</span>
+                                <span class="font-h6">이수강</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e  회장 -->
+
+                    <!-- s  CEO 경력-->
+                    <div class="section-ceo-career">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="item">
+                                <div class="title"><span>학력 및 약력</span></div>
+                                <div class="list">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul>
+                                                <li>
+                                                    <span>2020 &#45; 현재</span>
+                                                    <span>마크로젠 대표이사</span>
+                                                </li>
+                                                <li>
+                                                    <span>2016 &#45; 2020</span>
+                                                    <span>마크로젠 최고운영책임자</span>
+                                                </li>
+                                                <li>
+                                                    <span>2015 &#45; 2016</span>
+                                                    <span>LG CNS 자문</span>
+                                                </li>
+                                                <li>
+                                                    <span>2003 &#45; 2016</span>
+                                                    <span>LG CNS 상무</span>
+                                                </li>
+<!--                                                <li>-->
+<!--                                                    <span>2002 - 2003</span>-->
+<!--                                                    <span>Descartes Systems Group 이사</span>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <span>2000 - 2002</span>-->
+<!--                                                    <span>Ariba 수석컨설턴트</span>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <span>2000 - 2000</span>-->
+<!--                                                    <span>i2 Technologies 컨설턴트</span>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <span>1992 - 1999</span>-->
+<!--                                                    <span>대우자동차 과장</span>-->
+<!--                                                </li>-->
+                                                <li>
+                                                    <span>1992</span>
+                                                    <span>서울대학교 산업공학 석사</span>
+                                                </li>
+                                                <li>
+                                                    <span>1990</span>
+                                                    <span>서울대학교 산업공학 학사</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- s  회장 경력-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
+<footer class="footer">
+    <div class="inner">
+        <div class="section_information">
+            <div class="title font-bold">
+                <p>MACROGEN</p>
+            </div>
+            <div class="info">
+                <ul class="text">
+                    <li>
+                        <ul class="terms clearfix">
+                            <li><span class="font-medium"><a href="#">서비스 신청&#47;견적 문의</a></span></li>
+                            <li><span class="font-medium"><a href="#">개인정보 처리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">내부정보관리규정</a></span></li>
+                            <li><span class="font-medium"><a href="#">영상정보처리기기 운영&#46;관리방침</a></span></li>
+                            <li><span class="font-medium"><a href="#">Contact us</a></span></li>
+                        </ul>
+                    </li>
+                    <li><span>서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>
+                    <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_familysite">
+            <div class="family-box">
+                <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
+                <div class="popup_box _popup_box">
+                    <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>
+                    <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">마이지놈스토리</span></a>
+                    <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">마이펫진</span></a>
+                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
+                    <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
+                    <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
+                    <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
+                    <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">유전체의학연구소</span></a>
+                    <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_sns">
+            <ul class="sns clearfix">
+                <li class="facebook"><a href="https://www.facebook.com/macrogenkr/" target="_blank"></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"></a></li>
+                <li class="blog"><a href="https://blog.naver.com/macrogen_official" target="_blank"></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/company/macrogen" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <a href="#" class="btn btn-text btn-totop">
+    <i class="icon icon-arrow-top-long"></i>
+    <span>TOP</span>
+</a>
+
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            $('.header').css({'display' : 'block'});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
+</div>
+</body>
+</html>
