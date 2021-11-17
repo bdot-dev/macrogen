@@ -225,6 +225,12 @@ data.business ={
     },
     {
       stateClass: 'complete',
+      url: '연구서비스_genesynthesis',
+      category: 'business',
+      page: '연구서비스_genesynthesis'
+    },
+    {
+      stateClass: 'complete',
       url: '연구서비스_Oligo',
       category: 'business',
       page: '연구서비스_Oligo'

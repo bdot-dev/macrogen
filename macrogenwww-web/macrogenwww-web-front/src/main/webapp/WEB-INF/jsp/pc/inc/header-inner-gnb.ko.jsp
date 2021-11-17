@@ -76,7 +76,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">임상진단서비스</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 유전체 검사</a></li>
-                <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 신생아 유전질환</a></li>
+                <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li>
                 <li><a href="/${rc.locale.language }/business/diagnosis/covid">COVID&#45;19</a></li>
             </ul>
         </div>

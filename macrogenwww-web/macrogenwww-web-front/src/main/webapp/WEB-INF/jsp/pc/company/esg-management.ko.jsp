@@ -80,12 +80,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-1.png" alt="고객"></div>
+                            <!-- <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-1.png" alt="고객"></div> -->
                         </div>
                     </div>
                     <div class="goal" data-aos="fade-up" data-aos-duration="2000">
                         <div class="box">
-                            <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-2.png" alt="투자자"></div>
+                            <!-- <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-2.png" alt="투자자"></div> -->
                             <div class="item text">
                                 <div class="font-h7">투자자</div>
                                 <div class="font-h3">투자자가 신뢰하는<br/>마크로젠</div>
@@ -112,12 +112,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-3.png" alt="임직원"></div>
+                            <!-- <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-3.png" alt="임직원"></div> -->
                         </div>
                     </div>
                     <div class="goal" data-aos="fade-up" data-aos-duration="2000">
                         <div class="box">
-                            <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-4.png" alt="사회적 책임"></div>
+                            <!-- <div class="item bg"><img src="/publishing/pc-ko/dist/img/macrogen/bg-esg-thumb-sm-4.png" alt="사회적 책임"></div> -->
                             <div class="item text">
                                 <div class="font-h7">사회적 책임</div>
                                 <div class="font-h3">인류의 건강<br/>증진을 위해 함께하는<br/>마크로젠</div>

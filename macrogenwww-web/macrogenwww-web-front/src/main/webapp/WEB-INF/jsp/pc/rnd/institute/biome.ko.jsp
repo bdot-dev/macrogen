@@ -28,7 +28,7 @@
                 <div class="title">마이크로바이옴 연구를 통해<br>인류의 건강과 삶의 질을 개선합니다</div>
                 <div class="desc">마이크로바이옴의 원리를 이해하고 궁극적으로 인간의 건강을 개선합니다&#46;</div>
             </div>
-            <div class="img"><img src="/publishing/pc-ko/dist/img/RD/img-pincette.png" alt="핀셋으로 집는 사진"></div>
+            <div class="img"></div>
         </div>
         <div class="section_info_list">
             <div class="box clearfix">

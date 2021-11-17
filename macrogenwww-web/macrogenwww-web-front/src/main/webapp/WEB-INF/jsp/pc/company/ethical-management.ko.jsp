@@ -16,7 +16,7 @@
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
 			        <li class="breadcrumb-item">ESG</li>
-			        <li class="breadcrumb-item">운리경영</li>
+			        <li class="breadcrumb-item">윤리경영</li>
 			    </ol>
 			</nav>
 
