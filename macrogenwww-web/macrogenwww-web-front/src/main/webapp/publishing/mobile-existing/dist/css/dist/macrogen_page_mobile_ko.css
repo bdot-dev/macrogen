@@ -1,0 +1,3187 @@
+@charset "UTF-8";
+/*
+|----------------------------------|
+ v.0.1 주연 : 최초 작업 -- 2021.11.2
+|----------------------------------|
+*/
+/*
+|----------------------------------|
+ v.0.1 주연 : 최초 작업 -- 2021.11.2
+|----------------------------------|
+*/
+/* point */
+/*common*/
+/* text */
+/* line */
+/* icon */
+/* bg */
+/* pagination */
+/* modal */
+/*
+|----------------------------------|
+*/
+/*
+|----------------------------------|
+ v.0.1 주연 : 최초 작업 -- 2021.08.31
+|----------------------------------|
+*/
+@keyframes scrollMove {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.11.9
+|----------------------------------|
+*/
+.macrogen {
+  /* s 공통 */
+  /* e 공통 */
+}
+
+.macrogen .badge {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 12px;
+  height: 29px;
+  line-height: 27px;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #909090;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+.macrogen .color-white {
+  color: #FFFFFF !important;
+}
+
+.macrogen .swiper-container {
+  position: relative;
+  height: 100%;
+}
+
+.macrogen .pagination-wrap {
+  position: absolute;
+  width: 100%;
+  top: 368px;
+  left: 0;
+  z-index: 2;
+}
+
+.macrogen .pagination-wrap .navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.macrogen .pagination-wrap .navigation .page-item {
+  position: static;
+}
+
+.macrogen .pagination-wrap .navigation .page-item .page-link {
+  padding: 0;
+}
+
+.macrogen .pagination-wrap .navigation .page-item.prev {
+  margin-right: 8px;
+}
+
+.macrogen .pagination-wrap .navigation .page-item.prev .page-link {
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/common/ico-left-dark.svg");
+  background-size: cover;
+}
+
+.macrogen .pagination-wrap .navigation .page-item.next .page-link {
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/common/ico-left-dark.svg");
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+.macrogen .swiper-pagination {
+  bottom: 164px;
+  text-align: center;
+}
+
+.macrogen .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  margin: 0 7.5px;
+}
+
+.macrogen .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+
+.macrogen.company-overview .section-info {
+  margin-bottom: 80px;
+}
+
+.macrogen.company-overview .section-info .inner {
+  padding: 0 20px;
+}
+
+.macrogen.company-overview .section-info .font-slogan-en {
+  margin-bottom: 24px;
+}
+
+.macrogen.company-overview .section-info .font-h7 {
+  margin-bottom: 56px;
+}
+
+.macrogen.company-overview .section-info .text-box {
+  margin-bottom: 40px;
+}
+
+.macrogen.company-overview .section-info .img-box .inner {
+  padding: 0;
+}
+
+.macrogen.company-overview .section-info .img-box .inner .img {
+  text-align: right;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.macrogen.company-overview .section-info .img-box .inner .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.company-overview .section-info .img-box .inner .list {
+  padding-left: 20px;
+}
+
+.macrogen.company-overview .section-info .img-box .inner .list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+.macrogen.company-overview .section-info .img-box .inner .list li::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.macrogen.company-overview .section-info .img-box .inner .list li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.company-overview .section-overview {
+  width: 100%;
+  background-color: #F7F7F7;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.macrogen.company-overview .section-overview .inner {
+  padding: 0 20px;
+}
+
+.macrogen.company-overview .section-overview .box {
+  margin-bottom: 48px;
+}
+
+.macrogen.company-overview .section-overview .box .font-h7 {
+  margin-bottom: 56px;
+}
+
+.macrogen.company-overview .section-overview .box .year {
+  position: relative;
+  display: inline-block;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 72px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.macrogen.company-overview .section-overview .box .year::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  right: -60px;
+  bottom: 14px;
+}
+
+.macrogen.company-overview .section-overview .overview-list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.macrogen.company-overview .section-overview .overview-list .item .img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 16px;
+}
+
+.macrogen.company-overview .section-overview .overview-list .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.company-overview .section-overview .overview-list .item .font-h4 {
+  display: block;
+}
+
+.macrogen.company-overview .section-overview .overview-list .item .font-body-h {
+  display: block;
+  text-align: center;
+}
+
+.macrogen.company-overview .section-business {
+  position: relative;
+  width: auto;
+  height: 900px;
+  background-image: url("../img/macrogen/macrogen_thumb_lg_2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+.macrogen.company-overview .section-business .swiper-container {
+  position: relative;
+  height: 100%;
+}
+
+.macrogen.company-overview .section-business .inner {
+  padding: 0 20px;
+}
+
+.macrogen.company-overview .section-business .font-h7 {
+  color: #FFFFFF;
+  margin-bottom: 56px;
+}
+
+.macrogen.company-overview .section-business .font-h3 {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.macrogen.company-overview .section-business .font-body-h {
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.macrogen.company-overview .section-business .category-list li {
+  position: relative;
+  padding: 0 4px;
+  margin-bottom: 32px;
+}
+
+.macrogen.company-overview .section-business .category-list li .img {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+}
+
+.macrogen.company-overview .section-business .category-list li .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.company-overview .section-business .category-list li .tit {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.macrogen.company-overview .section-business .category-list li:first-child {
+  padding-left: 0;
+}
+
+.macrogen.company-overview .section-business .category-list li:last-child {
+  padding-right: 0;
+}
+
+.macrogen.company-overview .section-business .category-list li:last-child::after {
+  content: none;
+}
+
+.macrogen.company-overview .section-business .category-list.category-list-lg li {
+  width: 274px;
+  padding: 0 40px;
+}
+
+.macrogen.company-overview .section-business-detail {
+  position: relative;
+  padding: 0 20px;
+  margin-top: -100px;
+}
+
+.macrogen.company-overview .section-business-detail .item {
+  margin-bottom: 64px;
+}
+
+.macrogen.company-overview .section-business-detail .item .img {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.macrogen.company-overview .section-business-detail .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.company-overview .section-business-detail .item .img .title-sm {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Apple SD Gothic Neo Bold";
+  color: #FFFFFF;
+  bottom: 68px;
+  left: 30px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.macrogen.company-overview .section-business-detail .item .img .title-sm::after {
+  content: '';
+  position: absolute;
+  width: calc(100vw - 105px);
+  height: 1px;
+  left: 0;
+  top: -16px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.macrogen.company-overview .section-business-detail .item .img .title {
+  position: absolute;
+  display: block;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 28px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  bottom: 30px;
+  left: 30px;
+}
+
+.macrogen.company-overview .section-business-detail .item .desc {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.macrogen.company-overview .section-business-detail .item .desc-sm {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+}
+
+.macrogen.company-overview .section-ci {
+  position: relative;
+  height: 480px;
+}
+
+.macrogen.company-overview .section-ci::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 480px;
+  background-image: url("../img/macrogen/macrogen_thumb03.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.macrogen.company-overview .section-ci .inner {
+  position: relative;
+  padding: 118px 20px 0;
+}
+
+.macrogen.company-overview .section-ci .title-sm {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  margin-bottom: 56px;
+}
+
+.macrogen.company-overview .section-ci .text {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -3px;
+  color: #FFFFFF;
+}
+
+.macrogen.company-overview .section-symbol {
+  margin-top: 64px;
+}
+
+.macrogen.company-overview .section-symbol .inner {
+  padding: 0 20px;
+}
+
+.macrogen.company-overview .section-symbol .item {
+  overflow: hidden;
+  margin-bottom: 64px;
+}
+
+.macrogen.company-overview .section-symbol .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.company-overview .section-symbol .item .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  margin-bottom: 48px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc {
+  width: 100%;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .bg-logo {
+  width: 100%;
+  height: 49.555555vw;
+  background-image: url("../img/macrogen/box-logo.png");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .content {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #454545;
+  margin-bottom: 40px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .download-area .btn-download {
+  display: inline-block;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span:first-child {
+  margin-right: 15px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li:first-child, .macrogen.company-overview .section-symbol .item .desc .color-list li:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .color {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .color.color-1 {
+  background-color: #001E62;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .color.color-2 {
+  background-color: #00BFB2;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .color.color-3 {
+  background-color: #84BD00;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .color.color-4 {
+  background-color: #E50050;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .value {
+  padding-left: 19px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .value span:first-child {
+  display: inline-block;
+  width: 36px;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #454545;
+  margin-right: 12px;
+}
+
+.macrogen.company-overview .section-symbol .item .desc .color-list li .value span:nth-child(2) {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #454545;
+}
+
+.macrogen.macrogen-management .section-chairman, .macrogen.macrogen-management .section-ceo {
+  padding-top: 80px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .font-h3, .macrogen.macrogen-management .section-ceo .inner .font-h3 {
+  margin-bottom: 64px;
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap, .macrogen.macrogen-management .section-ceo .inner .info-wrap {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info .font-h7, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .font-h7 {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info .font-body, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .font-body {
+  word-break: keep-all;
+  margin-bottom: 56px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info .sign, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .sign {
+  text-align: right;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info .sign .font-body-h, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .sign .font-body-h {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .info .sign .font-h6, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .sign .font-h6 {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .img, .macrogen.macrogen-management .section-ceo .inner .info-wrap .img {
+  text-align: right;
+  margin-bottom: 48px;
+  padding-left: 20px;
+}
+
+.macrogen.macrogen-management .section-chairman .inner .info-wrap .img img, .macrogen.macrogen-management .section-ceo .inner .info-wrap .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-management .section-chairman-career, .macrogen.macrogen-management .section-ceo-career {
+  padding-top: 80px;
+  width: auto;
+  height: 760px;
+  background-image: url("../img/macrogen/bg-chairman-career.png");
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0 auto;
+}
+
+.macrogen.macrogen-management .section-chairman-career .pagination-wrap, .macrogen.macrogen-management .section-ceo-career .pagination-wrap {
+  top: 214px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner, .macrogen.macrogen-management .section-ceo-career .inner {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item, .macrogen.macrogen-management .section-ceo-career .inner .item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item.line-bottom, .macrogen.macrogen-management .section-ceo-career .inner .item.line-bottom {
+  padding-bottom: 40px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item.line-bottom::after, .macrogen.macrogen-management .section-ceo-career .inner .item.line-bottom::after {
+  content: '';
+  position: absolute;
+  background-repeat: repeat-x;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-image: url("../img/macrogen/img-line-lg.png");
+  background-size: cover;
+  left: 15px;
+  bottom: 0;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item:last-child, .macrogen.macrogen-management .section-ceo-career .inner .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .font-h5, .macrogen.macrogen-management .section-ceo-career .inner .item .font-h5 {
+  color: #FFFFFF;
+  padding-left: 15px;
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list .row, .macrogen.macrogen-management .section-ceo-career .inner .item .list .row {
+  padding: 0;
+  margin: 0;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list .row .col, .macrogen.macrogen-management .section-ceo-career .inner .item .list .row .col {
+  padding: 0;
+  margin: 0;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li, .macrogen.macrogen-management .section-ceo-career .inner .item .list li {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li:last-child, .macrogen.macrogen-management .section-ceo-career .inner .item .list li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li span, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span {
+  display: inline-block;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li span em, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span em {
+  font-style: normal;
+  letter-spacing: -0.75px;
+  font-size: 18px;
+  font-family: "Apple SD Gothic Neo Bold";
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child {
+  float: left;
+  position: relative;
+  width: 116px;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  padding-left: 28px;
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li span:first-child::before, .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.macrogen.macrogen-management .section-chairman-career .inner .item .list li span:nth-child(2), .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:nth-child(2) {
+  float: left;
+  width: calc(100% - 104px - 12px);
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  padding-right: 15px;
+  padding-left: 6px;
+}
+
+.macrogen.macrogen-management .section-ceo .inner .info-wrap {
+  padding-right: 0;
+}
+
+.macrogen.macrogen-management .section-ceo-career {
+  padding-top: 80px;
+  width: auto;
+  height: 640px;
+  background-image: url("../img/macrogen/bg-ceo-career.png");
+  background-size: cover;
+}
+
+.macrogen.macrogen-management .section-ceo-career .inner .item .font-h5 {
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-authorization {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-authorization .section {
+  padding-top: 80px;
+  margin-bottom: 80px;
+  border-top: 10px solid #f5f5f5;
+}
+
+.macrogen.macrogen-authorization .section:nth-child(2) {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.macrogen.macrogen-authorization .section:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.macrogen.macrogen-authorization .section > .title {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-authorization .section > .title .tooltip-box .btn-tooltip .icon-tooltip::after {
+  bottom: -13px;
+}
+
+.macrogen.macrogen-authorization .section > .title .tooltip-box .text-box {
+  top: 50px;
+}
+
+.macrogen.macrogen-authorization .section .tooltip-box {
+  display: inline-block;
+  position: static;
+}
+
+.macrogen.macrogen-authorization .section .tooltip-box .btn-tooltip .icon-tooltip::after {
+  bottom: -14px;
+}
+
+.macrogen.macrogen-authorization .section .tooltip-box .text-box {
+  width: calc(100vw - 40px);
+  left: 0;
+  top: 43px;
+}
+
+.macrogen.macrogen-authorization .section .box {
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+}
+
+.macrogen.macrogen-authorization .section .box:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.macrogen.macrogen-authorization .section .box .title-box .title-sm {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-authorization .section .box .title-box .title-sm span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.macrogen.macrogen-authorization .section .box .title-box .desc {
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #454545;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-authorization .section .box .title-box .desc.with-date {
+  margin-bottom: 10px;
+}
+
+.macrogen.macrogen-authorization .section .box .title-box .date {
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #909090;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-authorization .section .box .img-box {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-authorization .section .box .img-box .img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-authorization .section .box .img-box .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img:first-child .tit {
+  padding-top: 0;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img .tit {
+  display: block;
+  width: 100%;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 23px;
+}
+
+.macrogen.macrogen-authorization .section .img-wrap .img:nth-child(3n) {
+  margin-right: 0;
+}
+
+.macrogen.recruitment-info {
+  padding: 0 20px;
+}
+
+.macrogen.recruitment-info .section {
+  border-bottom: 10px solid #f5f5f5;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
+.macrogen.recruitment-info .section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.macrogen.recruitment-info .section .font-body {
+  color: #707070;
+  margin-bottom: 56px;
+  margin-top: 16px;
+}
+
+.macrogen.recruitment-info .section .file-download {
+  margin-bottom: 48px;
+}
+
+.macrogen.recruitment-info .section .img-recruitment-info {
+  margin-top: 24px;
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.recruitment-info .section .img-recruitment-info img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.recruitment-info .section .board {
+  margin-top: 56px;
+}
+
+.macrogen.recruitment-info-list {
+  padding: 0 20px;
+}
+
+.macrogen.recruitment-info-list .view-body {
+  padding-bottom: 65px;
+}
+
+.macrogen.recruitment-info-list .font-body {
+  margin-bottom: 40px;
+}
+
+.macrogen.global-macrogen {
+  padding: 0 20px;
+}
+
+.macrogen.global-macrogen .section-map {
+  margin-bottom: 80px;
+}
+
+.macrogen.global-macrogen .section-map > .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.macrogen.global-macrogen .section-map > .desc {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  margin-bottom: 40px;
+}
+
+.macrogen.global-macrogen .section-map .map {
+  position: relative;
+  width: 100%;
+  height: 48.955224vw;
+  background-image: url("../img/macrogen/bg-map.png");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.macrogen.global-macrogen .section-map .map .pin {
+  position: absolute;
+  padding: 0 16px 0 40px;
+  height: 38px;
+  line-height: 36px;
+  background-color: #FFFFFF;
+  border: 1px solid #C9C9C9;
+  box-sizing: border-box;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  background-image: url(../img/macrogen/ic-pin.svg);
+  background-size: 16px 16px;
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+}
+
+.macrogen.global-macrogen .section-map .map .pin:hover, .macrogen.global-macrogen .section-map .map .pin.active {
+  background-color: #E50050;
+  border-color: #E50050;
+  box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  background-image: url(../img/macrogen/ic-pin-foc.svg);
+}
+
+.macrogen.global-macrogen .section-map .map .pin.amsterdam {
+  top: 76px;
+  left: 71px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.seoul {
+  top: 76px;
+  left: 512px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.boston {
+  top: 76px;
+  left: 854.5px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.tokyo {
+  top: 134px;
+  left: 587.5px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.virginia {
+  top: 134px;
+  left: 794px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.madrid {
+  top: 192px;
+  left: 5.5px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.kyoto {
+  top: 192px;
+  left: 492.5px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.newyork {
+  top: 192px;
+  left: 932.5px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.synapse {
+  top: 250px;
+  left: 358px;
+}
+
+.macrogen.global-macrogen .section-map .map .pin.rockville {
+  top: 250px;
+  left: 846px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box {
+  position: relative;
+  margin-bottom: 280px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  margin-bottom: 56px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item {
+  position: relative;
+  padding-bottom: 65px;
+  margin-bottom: 64px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item:last-child::after {
+  content: none;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #E9E9E9;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .name {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul {
+  margin-bottom: 20px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:first-child {
+  position: relative;
+  width: 98px;
+  vertical-align: middle;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  letter-spacing: -0.75px;
+  padding-left: 13px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:first-child::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  vertical-align: middle;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:nth-child(2) {
+  width: calc(100% - 98px);
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info .address {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #707070;
+  margin-bottom: 8px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel > div span {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 16px;
+  line-height: 32px;
+  color: #707070;
+  margin-right: 8px;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel > div a {
+  font-size: 16px;
+  line-height: 32px;
+  color: #707070;
+}
+
+.macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel > div + div {
+  margin-top: 8px;
+}
+
+.macrogen.ethical-management .btn-sm {
+  padding: 7px 25px 5px;
+  min-width: 124px;
+}
+
+.macrogen.ethical-management .section-description {
+  padding: 150px 0;
+}
+
+.macrogen.ethical-management .section-description:last-child {
+  padding-bottom: 0;
+}
+
+.macrogen.ethical-management .section-description .inner {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.macrogen.ethical-management .section-description .text-lg {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 81px;
+  letter-spacing: -3px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.macrogen.ethical-management .section-description .desc {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+  color: #000000;
+}
+
+.macrogen.ethical-management .section-bg {
+  padding: 150px 0;
+  position: relative;
+  width: 100%;
+  height: 1180px;
+  background-image: url("../img/macrogen/bg-sub-ethical-management.png");
+  background-size: cover;
+  background-size: 1920px 1180px;
+  background-repeat: no-repeat;
+  /* 딤드제거
+       &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(100, 109, 118, 0.35) 0%, rgba(42, 76, 83, 0.7) 100%);
+        }*/
+}
+
+.macrogen.ethical-management .section-bg .inner {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.macrogen.ethical-management .section-bg .text-lg {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 81px;
+  letter-spacing: -3px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.macrogen.ethical-management .section-bg .content {
+  margin-top: 150px;
+  width: 1137px;
+}
+
+.macrogen.ethical-management .section-bg .content li {
+  float: left;
+  width: 281px;
+  height: 186px;
+  margin-right: 147px;
+  margin-bottom: 100px;
+}
+
+.macrogen.ethical-management .section-bg .content li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.macrogen.ethical-management .section-bg .content li .tit {
+  margin-bottom: 20px;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+.macrogen.ethical-management .section-bg .content li .desc {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #FFFFFF;
+}
+
+.macrogen.ethical-management .section-tip {
+  padding: 150px 0;
+}
+
+.macrogen.ethical-management .section-tip:last-child {
+  padding-bottom: 0;
+}
+
+.macrogen.ethical-management .section-tip .inner {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.macrogen.ethical-management .section-tip .row {
+  margin-left: 0;
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+
+.macrogen.ethical-management .section-tip .row > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.macrogen.ethical-management .section-tip .text-md {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 44px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.macrogen.ethical-management .section-tip .desc {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+  color: #000000;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report {
+  padding-bottom: 120px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .tit {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 20px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .row:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .col .desc {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #666666;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report .col .item {
+  background-color: #F7F7F7;
+  height: 160px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  padding: 40px 0 40px 40px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item {
+  display: flex;
+  height: 261px;
+  margin-bottom: 120px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item:last-child .img:after {
+  border: none;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .img {
+  position: relative;
+  width: 261px;
+  height: 261px;
+  border-radius: 50%;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .img:after {
+  content: '';
+  display: inline-block;
+  border-right: 1px dashed #909090;
+  width: 1px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .img .label {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 41px;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .img .tit {
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info {
+  display: flex;
+  width: calc(100% - 261px);
+  height: 261px;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .desc {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: -2px;
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .tip {
+  position: relative;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+  color: #909090;
+  padding-left: 27px;
+  margin-top: 21px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .tip::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/macrogen/ic-tip.svg");
+  background-size: cover;
+  left: 0;
+  top: 8px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .link {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #2E87EF;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .desc-sm {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.75px;
+  color: #2E87EF;
+  margin-top: 40px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info .desc-xs {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  margin-top: 10px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul {
+  margin-top: 40px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li {
+  margin-bottom: 10px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span {
+  display: inline-block;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:first-child {
+  position: relative;
+  width: 174px;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #000000;
+  padding-left: 15px;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:first-child::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0;
+  top: 11px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.macrogen.ethical-management .section-tip .subject-to-report-step .item .info ul li span:nth-child(2) {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+}
+
+.macrogen.ethical-management .section-banner {
+  width: 100%;
+  height: 560px;
+  background-image: url("../img/macrogen/bg-ethical-banner-1.png");
+  background-size: cover;
+  background-size: 1920px 560px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 240px;
+}
+
+.macrogen.ethical-management .section-banner .inner {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.macrogen.ethical-management .section-banner .font-slogan {
+  line-height: 98px;
+  margin-bottom: 30px;
+}
+
+.macrogen.ethical-management .section-banner .desc {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.macrogen.ethical-management .section-reward {
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.macrogen.ethical-management .section-reward .inner {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.macrogen.ethical-management .section-reward .list .item {
+  padding: 100px 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.macrogen.ethical-management .section-reward .list .item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.macrogen.ethical-management .section-reward .list .item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.macrogen.ethical-management .section-reward .list .item:first-child {
+  padding-top: 0;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-header {
+  float: left;
+  width: calc(100% - 816px);
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-header .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 81px;
+  letter-spacing: -3px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body {
+  float: left;
+  width: 816px;
+  overflow: hidden;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .pagination-wrap {
+  margin: 20px 0 0;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .pagination-wrap .navigation {
+  position: static;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .pagination-wrap .navigation .page-item {
+  position: static;
+  margin-right: 8px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .pagination-wrap .navigation .page-item:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .pagination-wrap .navigation .page-item:last-child {
+  margin-right: 0;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .desc {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  margin-bottom: 50px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward {
+  width: 816px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide {
+  width: 816px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box {
+  padding: 40px;
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .img {
+  float: left;
+  width: 280px;
+  height: 346px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .img:after {
+  content: '';
+  display: inline-block;
+  width: 61px;
+  height: 54px;
+  background-image: url("../img/macrogen/img-trophy.png");
+  background-size: cover;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info {
+  float: left;
+  width: calc(100% - 280px - 40px);
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .sub {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.75px;
+  color: #2E87EF;
+  margin-bottom: 15px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .name {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .job {
+  position: relative;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.75px;
+  color: #707070;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .job::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 416px;
+  height: 1px;
+  background-image: url("../img/macrogen/bg-line.png");
+  background-size: cover;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .career {
+  margin-bottom: 50px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .career .tit {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.75px;
+  margin-bottom: 10px;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .career ul li {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .career ul li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-reward .list .item .list-body .reward .swiper-slide .box .info .career ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #454545;
+  vertical-align: middle;
+}
+
+.macrogen.ethical-management .section-activity {
+  padding: 150px 0 30px;
+}
+
+.macrogen.ethical-management .section-activity .main-img {
+  text-align: right;
+  margin-bottom: 120px;
+}
+
+.macrogen.ethical-management .section-activity .main-img img {
+  width: 1582px;
+  height: 610px;
+}
+
+.macrogen.ethical-management .section-activity .box {
+  position: relative;
+  width: 1244px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.macrogen.ethical-management .section-activity .box > .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 81px;
+  letter-spacing: -3px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.macrogen.ethical-management .section-activity .box > .desc {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  margin-bottom: 80px;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage {
+  width: 100%;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col {
+  padding: 0;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col:first-child {
+  margin-right: 84px;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col:first-child .item.item-img {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col .item .tit {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col .item .desc {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+}
+
+.macrogen.ethical-management .section-activity .box .multi-stage .row .col .item.item-img {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-talent .section-description {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-talent .section-description .inner {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-talent .section-description .underline {
+  display: inline-block;
+  width: 22px;
+  height: 3px;
+  background-color: #000000;
+  margin-right: 12px;
+}
+
+.macrogen.macrogen-talent .section-description .font-h3 {
+  margin-bottom: 28px;
+}
+
+.macrogen.macrogen-talent .section-description .font-body-h {
+  color: #000000;
+}
+
+.macrogen.macrogen-talent .section-bg {
+  position: relative;
+}
+
+.macrogen.macrogen-talent .section-bg .img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-talent .section-bg .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-talent .section-bg .txt-box {
+  padding: 0 20px 80px;
+}
+
+.macrogen.macrogen-talent .section-bg .txt-box li {
+  position: relative;
+  display: block;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 8px;
+  padding-left: 24px;
+}
+
+.macrogen.macrogen-talent .section-bg .txt-box li::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.macrogen.macrogen-talent .section-bg .txt-box li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-talent .section-core-talent {
+  padding-top: 80px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .inner {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .font-h7 {
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list {
+  text-align: center;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item {
+  margin-bottom: 72px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item .desc-area .font-h3 {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item .desc-area .font-body-h {
+  color: #2E87EF;
+  margin-bottom: 16px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item .img {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 40px;
+}
+
+.macrogen.macrogen-talent .section-core-talent .list .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.macrogen-history .section {
+  display: none;
+}
+
+.macrogen.macrogen-history .section.show {
+  display: block;
+}
+
+.macrogen.macrogen-history .section .history-heading {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-history .section .history-heading .year {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.macrogen.macrogen-history .section .history-heading .title {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #2E87EF;
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-history .section .history-slider {
+  position: relative;
+  width: 100%;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide {
+  position: relative;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide .img {
+  position: relative;
+  width: 100%;
+  height: 80vw;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide .img::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 80vw;
+  background-image: url("../img/macrogen/bg-history-circle.png");
+  background-size: cover;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide .img .year {
+  position: absolute;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  bottom: 20px;
+  left: 20px;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container .swiper-slide .desc {
+  display: block;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #454545;
+  padding: 0 20px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-container + .inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.macrogen.macrogen-history .section .history-slider .pagination-wrap {
+  top: 143px;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-pagination {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: -58px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-pagination .swiper-pagination-bullet {
+  background-color: #000000;
+  opacity: .2;
+}
+
+.macrogen.macrogen-history .section .history-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #000000;
+  opacity: 1;
+}
+
+.macrogen.macrogen-history .section .history-slider .divider {
+  margin: 80px 0;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap {
+  padding: 0 20px 0;
+  margin-top: 138px;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list {
+  position: relative;
+  padding-top: 80px;
+  border-top: 10px solid #f5f5f5;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .year {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  margin-bottom: 48px;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .year-info li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .year-info li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .year-info li span {
+  position: relative;
+  display: block;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 23px;
+  line-height: 39px;
+  letter-spacing: 0.5px;
+  color: #D9D9D9;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .year-info li.active span {
+  font-size: 58px;
+  line-height: 1;
+  color: #000000;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul li {
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul li .num {
+  float: left;
+  display: inline-block;
+  width: 48px;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul li .desc {
+  float: left;
+  display: inline-block;
+  width: calc(100% - 48px);
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.75px;
+  color: #454545;
+}
+
+.macrogen.macrogen-history .section .history-list-wrap .history-list .desc-info ul li .desc.desc-lg {
+  line-height: 30px;
+}
+
+.macrogen.macrogen-history .section:last-child {
+  padding-bottom: 0;
+}
+
+.macrogen.macrogen-human-resource .section-management {
+  position: relative;
+  padding: 0 20px 138px;
+}
+
+.macrogen.macrogen-human-resource .section-management .font-h7 {
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-human-resource .section-management .font-h3 {
+  margin-bottom: 56px;
+}
+
+.macrogen.macrogen-human-resource .section-management .item-2 .item {
+  background-image: url(../img/macrogen/thumb-human-resource-2.png);
+}
+
+.macrogen.macrogen-human-resource .section-management .item-3 .item {
+  background-image: url(../img/macrogen/thumb-human-resource-3.png);
+}
+
+.macrogen.macrogen-human-resource .section-management .item {
+  padding: 40px;
+  width: auto;
+  height: 133.4vw;
+  background-image: url("../img/macrogen/thumb-human-resource-1.png");
+  background-size: cover;
+}
+
+.macrogen.macrogen-human-resource .section-management .item .font-h5 {
+  margin-bottom: 16px;
+}
+
+.macrogen.macrogen-human-resource .section-management .pagination-wrap {
+  top: 501px;
+}
+
+.macrogen.macrogen-human-resource .section-management .swiper-pagination {
+  bottom: 80px;
+  width: calc(100% - 40px);
+}
+
+.macrogen.macrogen-human-resource .section-management .swiper-pagination .swiper-pagination-bullet {
+  background-color: #222;
+  opacity: .2;
+}
+
+.macrogen.macrogen-human-resource .section-management .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #222;
+  opacity: 1;
+}
+
+.macrogen.macrogen-human-resource .section-rank-system {
+  width: auto;
+  height: 265.6vw;
+  background-image: url("../img/macrogen/bg-human-resource-2.png");
+  background-size: cover;
+  padding: 80px 20px 0;
+}
+
+.macrogen.macrogen-human-resource .section-rank-system .font-h7 {
+  margin-bottom: 64px;
+  color: #FFFFFF;
+}
+
+.macrogen.macrogen-human-resource .section-rank-system .font-h3 {
+  margin-bottom: 56px;
+  color: #FFFFFF;
+}
+
+.macrogen.macrogen-human-resource .section-rank-system .flow-bg {
+  width: auto;
+  height: 143.59701vw;
+  background-image: url("../img/macrogen/human-resource-flow.png");
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.macrogen.macrogen-human-resource .section-welfare {
+  padding-top: 80px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .inner {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .font-h7 {
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .font-h3 {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .click-area {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .click-area .font-body-h {
+  margin-bottom: 48px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .click-area .font-body-b span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  color: #000000;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .click-area .font-body-b i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item {
+  width: auto;
+  height: 151.466667vw;
+  background-image: url("../img/macrogen/banner-human-resource-1.png");
+  background-size: cover;
+  margin-bottom: 40px;
+  padding: 80px 0 0;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item .font-h5 {
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item .row .col {
+  margin-right: 3.5px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item .row .col:nth-child(2n) {
+  margin-left: 3.5px;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  font-family: "Apple SD Gothic Neo Bold";
+  color: #000000;
+  width: 50%;
+  height: auto;
+  background-image: url("../img/macrogen/bg-human-resource-rect.png");
+  background-size: cover;
+  width: calc(50% - 5.5px);
+  border-radius: 5px;
+  margin-bottom: 7px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item li:last-child {
+  margin-right: 0;
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item.item-2 {
+  background-image: url(../img/macrogen/banner-human-resource-2.png);
+}
+
+.macrogen.macrogen-human-resource .section-welfare .item.item-3 {
+  background-image: url(../img/macrogen/banner-human-resource-3.png);
+}
+
+.macrogen.macrogen-vision {
+  position: relative;
+}
+
+.macrogen.macrogen-vision .section-vision {
+  padding: 0 20px 80px;
+}
+
+.macrogen.macrogen-vision .section-vision .title {
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-vision .section-vision .diagram .img {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.macrogen.macrogen-vision .section-vision .diagram .img img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg {
+  position: relative;
+  width: auto;
+  height: 1042px;
+  background-image: url("../img/macrogen/bg-humanizing-genomics.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .inner {
+  position: relative;
+  z-index: 5;
+  color: #FFFFFF;
+  padding: 80px 20px 0;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .inner .font-h7 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .inner .font-h7::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  right: -45px;
+  bottom: 12px;
+  background-color: #FFFFFF;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .inner .title {
+  position: relative;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .inner .font-body-h {
+  color: #FFFFFF;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .img-wrap {
+  position: relative;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .img-wrap .img {
+  position: absolute;
+  z-index: 3;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .img-wrap .img.img-1 {
+  top: 56px;
+  right: 8px;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .img-wrap .img.img-2 {
+  top: 143px;
+  right: 41px;
+}
+
+.macrogen.macrogen-vision .section-slogan .bg .img-wrap .img.img-3 {
+  top: 355px;
+  right: 30px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy {
+  padding-top: 80px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .img {
+  margin-bottom: 55px;
+  padding-right: 20px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .img img {
+  width: 100%;
+  height: auto;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .info {
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .font-h7 {
+  padding-left: 20px;
+  margin-bottom: 56px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .font-body {
+  padding-bottom: 80px;
+}
+
+.macrogen.macrogen-vision .section-management-philosophy .font-h4 {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-vision .section-core-values {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-vision .section-core-values .font-h7 {
+  margin-bottom: 64px;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item .img {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 40px;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item .font-h5 {
+  margin-bottom: 16px;
+}
+
+.macrogen.macrogen-vision .section-core-values .values .item .font-body {
+  padding: 0 45px;
+}
+
+.macrogen.macrogen-contact-us {
+  /* 아이콘 */
+}
+
+.macrogen.macrogen-contact-us .inner {
+  padding: 0 20px;
+}
+
+.macrogen.macrogen-contact-us .ic-mail {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/macrogen/ic-mail.svg");
+  background-size: cover;
+  margin-right: 10px;
+  transform: translateY(5px);
+}
+
+.macrogen.macrogen-contact-us .ic-fax {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/macrogen/ic-fax.svg");
+  background-size: cover;
+  margin-right: 10px;
+  transform: translateY(4px);
+}
+
+.macrogen.macrogen-contact-us .ic-call {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/macrogen/ic-call.svg");
+  background-size: cover;
+  margin-right: 10px;
+  transform: translateY(5px);
+}
+
+.macrogen.macrogen-contact-us .font-h4 {
+  margin-bottom: 56px;
+}
+
+.macrogen.macrogen-contact-us .font-h5 {
+  margin-bottom: 60px;
+}
+
+.macrogen.macrogen-contact-us .section-map {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-contact-us .section-map .map {
+  margin-bottom: 32px;
+}
+
+.macrogen.macrogen-contact-us .section-map .map-info {
+  margin-bottom: 72px;
+}
+
+.macrogen.macrogen-contact-us .section-map .map-info .address-wrap .pin {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/macrogen/ic-pin.svg");
+  background-size: cover;
+  margin-right: 6px;
+  transform: translateY(-2px);
+}
+
+.macrogen.macrogen-contact-us .section-map .map-info .address-wrap .tit {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+}
+
+.macrogen.macrogen-contact-us .section-map .map-info .address-wrap .address {
+  display: block;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #454545;
+  margin-bottom: 32px;
+}
+
+.macrogen.macrogen-contact-us .section-map .map-info .pin-btn-wrap .google-pin {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 17px;
+  background-image: url("../img/macrogen/ic-pin-google.svg");
+  background-size: cover;
+  margin-right: 8px;
+  transform: translateY(-2px);
+}
+
+.macrogen.macrogen-contact-us .section-map .info {
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item .font-h7 {
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item .desc li {
+  margin-bottom: 8px;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item .desc li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item .desc li a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+  font-size: 16px;
+  color: #454545;
+}
+
+.macrogen.macrogen-contact-us .section-map .info .item .desc li span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+  font-size: 16px;
+  color: #454545;
+  margin-right: 4px;
+}
+
+.macrogen.macrogen-contact-us .category {
+  border-top: 1px solid #E9E9E9;
+}
+
+.macrogen.macrogen-contact-us .category .item {
+  position: relative;
+  width: 100%;
+  padding: 30px 0 30px 30px;
+  border-bottom: 1px solid #E9E9E9;
+  border-left: 1px solid #E9E9E9;
+  border-right: 1px solid #E9E9E9;
+}
+
+.macrogen.macrogen-contact-us .category .item .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc .name {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.75px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc .name:nth-child(3) {
+  margin-top: 24px;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc li {
+  margin-bottom: 4px;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc li span {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 16px;
+  line-height: 30px;
+  color: #454545;
+  margin-right: 4px;
+}
+
+.macrogen.macrogen-contact-us .category .item .desc li a {
+  font-size: 16px;
+  line-height: 32px;
+  color: #454545;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.macrogen.macrogen-contact-us .btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.macrogen.macrogen-esg .inner {
+  width: 1244px;
+  margin: 0 auto;
+}
+
+.macrogen.macrogen-esg .section-phrase {
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.macrogen.macrogen-esg .section-phrase .font-h3 {
+  line-height: 81px;
+}
+
+.macrogen.macrogen-esg .section-banner {
+  padding: 0 50px;
+}
+
+.macrogen.macrogen-esg .section-banner .banner {
+  width: 1920px;
+  height: 820px;
+  background-image: url("../img/macrogen/bg-esg-thumb-1.png");
+  background-size: cover;
+  width: auto;
+  padding-top: 150px;
+}
+
+.macrogen.macrogen-esg .section-banner .banner .font-h6 {
+  display: inline-block;
+  position: relative;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+
+.macrogen.macrogen-esg .section-banner .banner .font-h6::after {
+  content: '';
+  position: absolute;
+  right: -58px;
+  bottom: 12px;
+  width: 50px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.macrogen.macrogen-esg .section-banner .banner .font-h4 {
+  color: #FFFFFF;
+  line-height: 63px;
+}
+
+.macrogen.macrogen-esg .section-banner .banner.banner-1 {
+  margin-bottom: 50px;
+}
+
+.macrogen.macrogen-esg .section-banner .banner.banner-2 {
+  background-image: url(../img/macrogen/bg-esg-thumb-2.png);
+}
+
+.macrogen.macrogen-esg .section-management-goals {
+  padding-top: 150px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .font-h6 {
+  display: inline-block;
+  position: relative;
+  line-height: 46px;
+  margin-bottom: 150px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .font-h6::after {
+  content: '';
+  position: absolute;
+  right: -58px;
+  bottom: 12px;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal {
+  margin-bottom: 150px;
+  text-align: right;
+  height: 600px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .box {
+  display: inline-block;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal:nth-child(2n) {
+  text-align: left;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item {
+  float: left;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:first-child.text {
+  margin-right: 40px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item:nth-child(2).text {
+  margin-left: 147px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text {
+  width: 495px;
+  padding-top: 100px;
+  text-align: left;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-h7 {
+  line-height: 38px;
+  color: #2E87EF;
+  margin-bottom: 60px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-h3 {
+  line-height: 81px;
+  margin-bottom: 40px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-body-h ul li {
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 30px;
+  line-height: 40px;
+  color: #454545;
+  white-space: nowrap;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.text .font-body-h ul li::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: #454545;
+  top: 18px;
+  left: 0;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg {
+  width: 940px;
+  height: 600px;
+}
+
+.macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners > .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li {
+  float: left;
+  width: 220px;
+  padding: 0 20px;
+  margin-bottom: 58px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li:nth-child(5), .macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li:nth-child(6), .macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li:nth-child(7), .macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li:nth-child(8) {
+  margin-bottom: 0;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li .img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li .name {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.75px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000000;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners ul li .desc {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.75px;
+  color: #666666;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header {
+  padding: 50px 0 62px;
+  overflow: hidden;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 60px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .img {
+  float: left;
+  width: 220px;
+  height: 272px;
+  margin-right: 50px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .img img {
+  width: 100%;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info {
+  float: left;
+  width: calc(100% - 220px - 50px);
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .sub {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.75px;
+  color: #2E87EF;
+  margin-bottom: 20px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .name {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 44px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .name a {
+  color: #000000;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .job {
+  position: relative;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.75px;
+  color: #707070;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .job::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #909090;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .career .tit {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.75px;
+  margin-bottom: 10px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .career ul li {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  padding-left: 15px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .career ul li:last-child {
+  margin-bottom: 0;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-header .info .career ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #454545;
+  vertical-align: middle;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-body .title {
+  font-family: "Apple SD Gothic Neo Bold";
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.75px;
+  margin-bottom: 30px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-body .desc {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  color: #454545;
+  margin-bottom: 30px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-body .list-of-winners-detail .list-body .desc:last-of-type {
+  margin-bottom: 0;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer {
+  display: block;
+  padding: 24px 60px 25px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board {
+  margin: 0;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item {
+  padding: 0;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item::before {
+  width: 12px;
+  height: 25px;
+  background-size: 12px 25px;
+  background-repeat: no-repeat;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item.prev {
+  padding-left: 36px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item.prev .title {
+  text-align: left;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item.next {
+  padding-right: 36px;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .item.next .title {
+  text-align: right;
+}
+
+.macrogen .modal-dialog .modal-content .modal-footer .board .navigation .content .title {
+  display: block;
+  width: 354px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.75px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@keyframes subAnimation {
+  from {
+    opacity: 0;
+    background-size: 3840px 1960px;
+  }
+  to {
+    opacity: 1;
+    background-size: 1920px 980px;
+  }
+}
+
+/*
+|----------------------------------|
+ v.0.1 (주연) 최초 작업 -- 2021.11.12
+|----------------------------------|
+*/
+.newsroom {
+  padding: 0 20px;
+}
+
+.newsroom .board .empty {
+  padding-top: 34px;
+  min-height: 150px;
+  text-align: center;
+}
+
+.newsroom .board .empty .img {
+  width: 83px;
+  height: 50px;
+  margin: 0 auto 16px;
+}
+
+.newsroom .board .empty .img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=macrogen_page_mobile_ko.css.map */
