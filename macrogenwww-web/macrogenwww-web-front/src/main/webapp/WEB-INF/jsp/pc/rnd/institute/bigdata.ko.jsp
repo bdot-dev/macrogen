@@ -28,7 +28,7 @@
                 <div class="title">다양한 헬스 정보를 분석해<br>삶의 질을 높입니다</div>
                 <div class="desc">개인별 맞춤형 건강관리 서비스를 제공합니다</div>
             </div>
-            <div class="img"><img src="/publishing/pc-ko/dist/img/RD/img-bigData.png" alt="방대한 양의 데이터"></div>
+            <div class="img"></div>
             <div class="desc-box">
                 <p class="sub-title">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다&#46;</p>
                 <p>우리 몸의 모든 정보를 담고 있는 유전체 분석 및 예측을 통해 발생 가능성이 높은 질병들에 대해 개인별 맞춤형 건강 관리 서비스를 제공해 선제적으로 질병을 예방하거나 발병 위험을 낮추는 것이 마크로젠 빅데이터연구소의 목적입니다&#46;</p>

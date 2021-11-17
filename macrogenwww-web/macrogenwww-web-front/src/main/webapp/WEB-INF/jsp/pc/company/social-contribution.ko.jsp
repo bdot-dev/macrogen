@@ -268,7 +268,7 @@
                     <div class="desc">&#39;근보회&#39;는 유전자 이상에 의해 발생하는 근육질환인 근이영양증을 앓고 있는 환우와 가족들의 모임으로서<br/>1999년 11월 발족한 비영리 민간단체입니다&#46;</div>
                 </div>
                 <div class="main-img" data-aos="fade-up" data-aos-duration="2000">
-                    <img src="/publishing/pc-ko/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원">
+                    <!-- <img src="/publishing/pc-ko/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원"> -->
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="multi-stage">

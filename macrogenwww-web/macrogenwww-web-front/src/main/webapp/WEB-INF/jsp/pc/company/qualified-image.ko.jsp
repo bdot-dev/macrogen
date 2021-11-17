@@ -41,15 +41,6 @@
             <!-- s  배너 -->
             <div class="section-bg">
                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/bg-talent-banner.png" alt="도전과 창의가 넘치는 인재"></div>
-                <div class="inner">
-                    <div class="txt-box" data-aos="fade-up" data-aos-duration="2000">
-                        <ul>
-                            <li>도전과 창의가 넘치는 인재</li>
-                            <li>기술력과 사업감각을 겸비한 인재</li>
-                            <li>끊임없이 배움을 추구하는 인재</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <!-- e  배너 -->
 
@@ -93,7 +84,7 @@
                                 <div class="font-h8">
                                     스스로 최고가 되겠다는 열정과 신념으로<br/>
                                     현실에 안주하지 않고<br/>
-                                    새로운 가능성에 대해 끊임없이 도전하고 학습하여 목표를 달성한다&#46;
+                                    새로운 가능성에 대해 끊임없이 도전하고 학습하여 목표를 달성합니다&#46;
                                 </div>
                             </div>
                             <div class="img">
