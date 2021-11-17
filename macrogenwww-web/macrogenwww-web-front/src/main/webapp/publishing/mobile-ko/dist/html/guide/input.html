@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css"/>
+    <script src="../../js/bundle.js"></script>
+    <![if !IE]>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <![endif]>
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="../../css/bootstrap-ie11.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+    <script src="../../js/common.js"></script>
+    <title>MACROGEN MOBILE</title>
+</head>
+
+<body>
+<div class="wrap">
+    <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
+
+    <div class="container">
+        <div class="box">
+            <div class="font-h7 mb-3">Input</div>
+            <div class="mb-5">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check">
+                    <label class="form-check-label" for="check">동의합니다</label>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-search">
+                    <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                    <a href="#" class="btn-search"></a>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>선택하세요</span>
+                        <i class="ico-select-nor"></i>
+                    </div>
+                    <input type="hidden" title="select">
+                    <ul class="dropdown-menu">
+                        <li>제목</li>
+                        <li>내용</li>
+                        <li>글쓴이</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-group">
+                    <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="input-group">
+                    <textarea title="textarea" class="form-control" placeholder="안내문구"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="box mb-5">
+            <div class="font-h7 mb-3">Combination</div>
+            <label class="label">제목</label>
+            <div class="input-group">
+                <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                <input type="text" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+            </div>
+            <label class="label">휴대폰 번호</label>
+            <div class="input-group input-group-phone">
+                <div class="dropdown">
+                    <div class="select">
+                        <span>010</span>
+                        <i class="ico-select-nor"></i>
+                    </div>
+                    <input type="hidden" name="phone">
+                    <ul class="dropdown-menu">
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                        <li>010</li>
+                        <li>011</li>
+                        <li>080</li>
+                    </ul>
+                </div>
+                <input type="number" title="phone" class="form-control">
+                <input type="number" title="phone" class="form-control">
+            </div>
+            <div class="input-tip">
+                <i class="icon ico-info-blue"></i>
+                <span>안내문구 안내문구 안내문구 안내문구 안내문구 안내문구 안내문구 안내문구</span>
+            </div>
+            <label class="label">제목</label>
+            <div class="input-group">
+                <textarea title="textarea" class="form-control" placeholder="안내문구"></textarea>
+            </div>
+        </div>
+        <div class="box mb-5">
+            <div class="font-h7 mb-3">Attach File</div>
+            <div class="attach-file">
+                <a href="#" class="file">
+                    <i class="icon ico-attach"></i>
+                    <span>[자사양식]입사지원서_마크로젠.zip</span>
+                </a>
+                <a href="#" class="file">
+                    <i class="icon ico-attach"></i>
+                    <span>[자사양식]입사지원서_마크로젠_파일명긴경우.zip</span>
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="font-h7 mb-3">File Download</div>
+            <div class="file-download">
+                <div class="item">
+                    <i class="icon ico-file-doc"></i>
+                    <span class="font-body-b">마크로젠 입사지원양식.doc</span>
+                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                </div>
+                <div class="item">
+                    <i class="icon ico-file-hwp"></i>
+                    <span class="font-body-b">[자사양식]마크로젠_상시채용_입사지원양식.hwp</span>
+                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer main">
+    <div class="font-h5">Macrogen</div>
+    <div class="info">
+        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+    </div>
+    <div class="link-list">
+        <ul>
+            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option value="https://thebiome.life/">더바이옴</option>
+                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <ul class="sns">
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    </ul>
+</footer>
+
+</div>
+</body>
+</html>
