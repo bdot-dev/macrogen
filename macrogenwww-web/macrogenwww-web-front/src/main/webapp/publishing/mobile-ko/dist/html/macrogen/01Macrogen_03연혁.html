@@ -5,13 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="Referrer" content="origin"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
   <meta name="apple-mobile-web-app-title" content="macrogen" />
   <meta name="robots" content="index,nofollow"/>
   <meta name="description" content="macrogen"/>
   <meta name="keywords" content="macrogen"/>
 <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.1 / 11.16</title>
+  <title>Mobile-KO v0.2 / 11.18</title>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1116"/>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1116"/>
   <script src="../../js/bundle.js?1116"></script>
@@ -62,14 +62,12 @@
     <div class="container">
         <div class="macrogen macrogen-history">
             <!-- s tab -->
-            <div class="slide-tab-wrap">
-                <div class="swiper-container tab-slide-box _swiperTab">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide active"><a href="#">2021 - 현재</a></div>
-                        <div class="swiper-slide"><a href="#">2011 - 2020</a></div>
-                        <div class="swiper-slide"><a href="#">2001 - 2010</a></div>
-                        <div class="swiper-slide"><a href="#">1997 - 2000</a></div>
-                    </div>
+            <div class="swiper-container snbSwiper slide-tab-wrap _swiperTab" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide on"><a href="#"><span class="text">2021 - 현재</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">2011 - 2020</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">2001 - 2010</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">1997 - 2000</span></a></div>
                 </div>
                 <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
                 <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
@@ -771,6 +769,7 @@
             <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
@@ -815,39 +814,62 @@
     /**
      * swiper
      */
-    new Swiper("._swiperTab", {
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        centeredSlides: true,
-        watchActiveIndex: true,
-        slideToClickedSlide: true,
+    new Swiper('.snbSwiper', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
         navigation: {
             nextEl: "._slideRight",
             prevEl: "._slideLeft",
         }
     });
 
+    var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+    $snbSwiperItem.click(function () {
+        var target = $(this).parent();
+        $snbSwiperItem.parent().removeClass('on')
+        target.addClass('on');
+        muCenter(target);
+    })
+
+    function muCenter(target) {
+        var snbwrap = $('.snbSwiper .swiper-wrapper');
+        var targetPos = target.position();
+        var box = $('.snbSwiper');
+        var boxHarf = box.width() / 2;
+        var pos;
+        var listWidth = 0;
+
+        snbwrap.find('.swiper-slide').each(function () {
+            listWidth += $(this).outerWidth();
+        })
+
+        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+        if (selectTargetPos <= boxHarf) { // left
+            pos = 0;
+        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+            pos = listWidth - box.width();
+        } else {
+            pos = selectTargetPos - boxHarf;
+        }
+
+        setTimeout(function () {
+            snbwrap.css({
+                "transform": "translate3d(" + (pos * -1) + "px, 0, 0)",
+                "transition-duration": "500ms"
+            })
+        }, 200);
+    }
+
     var slide = $('._swiperTab').find('.swiper-slide')
-    var idx = slide.length;
-    var sum = 0;
-
-    for (var i = 0; i <= idx; i++) {
-        var target = slide.eq(i);
-        var idxWidth = target.outerWidth(true) - 24;
-        target.css('width', idxWidth);
-    }
-
-    for (var j = 0; j < idx; j++) {
-        sum = sum + slide.eq(j).outerWidth(true);
-    }
-
-    $('.swiper-wrapper').css('width', sum);
 
     $(".section-wrap .swiper-container").each(function(index){
         var $this = $(this);
         $this.addClass('slider-' + index);
 
-        var swiper = new Swiper('.slider-' + index, {
+        new Swiper('.slider-' + index, {
             observer: true,
             observeParents: true,
             navigation: {
@@ -942,20 +964,15 @@
      * fnMousewheel
      */
     function fnMousewheel(){
-        $(window).on('mousewheel',function(e){
+        var lastScroll = 0;
+
+        $(window).on('scroll',function(e){
             let listPos = $('.section.show .history-list.active').offset().top;
             let selectBox = $('.section.show .select-box');
             let offset = $(this).scrollTop();
-            let wheel = e.originalEvent.wheelDelta;
 
-            if(wheel > 0){
-                if (offset > listPos) {
-                    selectBox.show().css({'position': 'fixed','top':'70px'});
-                }
-                else {
-                    selectBox.hide();
-                }
-            } else {
+            if (offset > lastScroll){
+                // console.log('down')
                 if (offset > listPos) {
                     selectBox.show().css({'position': 'fixed','top':'0'});
                 }
@@ -963,6 +980,16 @@
                     selectBox.hide();
                 }
             }
+            else {
+                // console.log('up')
+                if (offset > listPos) {
+                    selectBox.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    selectBox.hide();
+                }
+            }
+            lastScroll = offset;
         });
     }
 
@@ -1045,7 +1072,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#none">IR</a>
+                    <li><a href="#none">NEWSROOM</a>
                         <ul>
                             <li><a href="#none">- 뉴스</a></li>
                             <li><a href="#none">- 미디어라이브러리</a></li>

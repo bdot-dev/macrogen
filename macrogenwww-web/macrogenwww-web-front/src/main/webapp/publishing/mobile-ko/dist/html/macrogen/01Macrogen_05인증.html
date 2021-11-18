@@ -5,13 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="Referrer" content="origin"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
   <meta name="apple-mobile-web-app-title" content="macrogen" />
   <meta name="robots" content="index,nofollow"/>
   <meta name="description" content="macrogen"/>
   <meta name="keywords" content="macrogen"/>
 <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.1 / 11.16</title>
+  <title>Mobile-KO v0.2 / 11.18</title>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1116"/>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1116"/>
   <script src="../../js/bundle.js?1116"></script>
@@ -62,20 +62,18 @@
     <div class="container">
         <div class="macrogen macrogen-authorization">
             <!-- s tab -->
-            <div class="slide-tab-wrap">
-                <div class="swiper-container tab-slide-box _swiperTab">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide active"><a href="#" onclick="fnMove('qualityManagementSystem')">품질경영시스템</a></div>
-                        <div class="swiper-slide"><a href="#" onclick="fnMove('clinicalDiagnosisQualityManagementSystem')">임상진단 품질경영시스템</a></div>
-                        <div class="swiper-slide"><a href="#" onclick="fnMove('internationallyAccreditedTestingInstitute')">국제공인시험기관</a></div>
-                        <div class="swiper-slide"><a href="#" onclick="fnMove('CSPCertificationProgram')">CSP 인증 프로그램</a></div>
-                        <div class="swiper-slide"><a href="#" onclick="fnMove('informationSecurityManagementSystem')">정보보호 관리체계</a></div>
-                    </div>
+            <div class="swiper-container snbSwiper slide-tab-wrap _swiperTab" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide on"><a href="#" onclick="fnMove('qualityManagementSystem')"><span class="text">품질경영시스템</span></a></div>
+                    <div class="swiper-slide"><a href="#" onclick="fnMove('clinicalDiagnosisQualityManagementSystem')"><span class="text">임상진단 품질경영시스템</span></a></div>
+                    <div class="swiper-slide"><a href="#" onclick="fnMove('internationallyAccreditedTestingInstitute')"><span class="text">국제공인시험기관</span></a></div>
+                    <div class="swiper-slide"><a href="#" onclick="fnMove('CSPCertificationProgram')"><span class="text">CSP 인증 프로그램</span></a></div>
+                    <div class="swiper-slide"><a href="#" onclick="fnMove('informationSecurityManagementSystem')"><span class="text">정보보호 관리체계</span></a></div>
                 </div>
                 <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
                 <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
             </div>
-            <!-- e tab -->
+            <!-- e tab-->
 
             <!-- s 품질경영시스템 -->
             <div class="section" id="qualityManagementSystem" data-aos="fade-up" data-aos-duration="2000">
@@ -366,6 +364,7 @@
             <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
@@ -478,7 +477,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#none">IR</a>
+                    <li><a href="#none">NEWSROOM</a>
                         <ul>
                             <li><a href="#none">- 뉴스</a></li>
                             <li><a href="#none">- 미디어라이브러리</a></li>

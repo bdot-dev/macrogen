@@ -5,13 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="Referrer" content="origin"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
   <meta name="apple-mobile-web-app-title" content="macrogen" />
   <meta name="robots" content="index,nofollow"/>
   <meta name="description" content="macrogen"/>
   <meta name="keywords" content="macrogen"/>
 <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.1 / 11.16</title>
+  <title>Mobile-KO v0.2 / 11.18</title>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1116"/>
   <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1116"/>
   <script src="../../js/bundle.js?1116"></script>
@@ -153,7 +153,7 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <script>
-                                    var swiper = new Swiper("._reward1", {
+                                    new Swiper("._reward1", {
                                         slidesPerView: 1,
                                         centeredSlides: false,
                                         spaceBetween: 10,
@@ -244,7 +244,7 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <script>
-                                    var swiper = new Swiper("._reward2", {
+                                    new Swiper("._reward2", {
                                         slidesPerView: 1,
                                         centeredSlides: false,
                                         spaceBetween: 10,
@@ -332,7 +332,7 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <script>
-                                    var swiper = new Swiper("._reward3", {
+                                    Swiper("._reward3", {
                                         slidesPerView: 1,
                                         centeredSlides: false,
                                         spaceBetween: 10,
@@ -388,6 +388,7 @@
             <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
@@ -500,7 +501,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#none">IR</a>
+                    <li><a href="#none">NEWSROOM</a>
                         <ul>
                             <li><a href="#none">- 뉴스</a></li>
                             <li><a href="#none">- 미디어라이브러리</a></li>

@@ -56,6 +56,7 @@
             <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
@@ -100,8 +101,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
+            <div class="parent">
+                <div class="panzoom">
+                    <img id="q123" src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
             </div>
         </div>
     </div>
@@ -114,10 +117,6 @@
     var modalImageViewer = new bootstrap.Modal(document.getElementById('modalImageViewer'))
     modalImageViewer.show();
 
-    // zoom
-    var el = document.querySelector('.pinch-zoom');
-    new PinchZoom.default(el, {});
-
     // modal close
     $('.btn-close').on('click', function () {
         modal.hide();
@@ -128,12 +127,13 @@
         modalImageViewer.show();
     })
 
-    // toast popup
+    // show toast popup
     function showToastPopup() {
         $('.toast-popup').addClass('active');
         setTimeout(hideToastPopup, 2000);
     }
 
+    // hide toast popup
     function hideToastPopup() {
         $('.toast-popup').removeClass('active');
     }
