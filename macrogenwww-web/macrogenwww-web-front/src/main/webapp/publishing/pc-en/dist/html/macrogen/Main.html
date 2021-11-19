@@ -50,17 +50,17 @@
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
   <meta property="og:url" content="www.macrogen.co.kr">
   <link rel="canonical" href="http://www.macrogen.co.kr">
-  <title>Macrogen v1.12 / 11.16</title>
+  <title>Macrogen v1.13 / 11.18</title>
   <meta name="keywords" content="마크로젠 키워드">
   <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1116"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1116"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?1118"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?1118"/>
   <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
 
-  <script src="../../js/bundle.js?1116"></script>
+  <script src="../../js/bundle.js?1118"></script>
   <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-  <script src="../../js/common.js?1116"></script>
+  <script src="../../js/common.js?1118"></script>
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 </head>
 
@@ -266,7 +266,7 @@
         <!-- s intro -->
         <div class="intro">
             <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
+                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">Personalized genomic medicine</p>
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
                     <img src="../../img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
             </div>
@@ -279,21 +279,21 @@
                 <div class="swiper-slide visual_01">
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
                         <p class="text-gradient"><img src="../../img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
-                        <p class="slogan-sub">글로벌 리더</p>
+                        <p class="slogan-sub">in genome analysis</p>
                         <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_02">
                     <div class="text-box">
                         <p class="text-gradient"><img src="../../img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
-                        <p class="slogan-sub">정밀맞춤의학</p>
+                        <p class="slogan-sub">big data and AI</p>
                         <p class="desc">Paving the way to a better future with<br/>precision medicine based on big data powered by AI</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_03">
                     <div class="text-box">
                         <p class="text-gradient"><img src="../../img/main/txt-main_03.png" alt="희망과 함께하는"></p>
-                        <p class="slogan-sub">건강한 미래</p>
+                        <p class="slogan-sub">future</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
@@ -456,7 +456,7 @@
                         <li>
                             <a href="#">
                                 <p>About MACROGEN</p>
-                                <p class="sub-text">Macrogen iss a leading<br>bio venture in Korea.</p>
+                                <p class="sub-text">Macrogen is a leading<br>bio venture in Korea.</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -479,9 +479,22 @@
                         </li>
                     </ul>
                     <div class="bg_section bg0"></div>
-                    <div class="bg_section bg1 active"></div>
-                    <div class="bg_section bg2"></div>
-                    <div class="bg_section bg3"></div>
+
+                    <div class="bg_section bg1 active">
+                        <video class="video" autoplay muted loop>
+                            <source src="../../img/video/main_기업개요.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg2">
+                        <video class="video" autoplay muted loop>
+                            <source src="../../img/video/main_글로벌마크로젠.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg3">
+                        <video class="video" autoplay muted loop>
+                            <source src="../../img/video/main_ESG.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <script>
                         var currentIdx = 1;
                         $('.shortcuts-box .btn-list li').mouseover(function () {
@@ -492,10 +505,13 @@
                                 console.log('wun')
                                 $('.bg_section').eq(index).addClass('active')
                                     .siblings().removeClass('active')
-
-
                                 currentIdx = index
                             }
+
+                            $('.bg_section .video').play().currentTime()
+
+                        }).mouseout(function(){
+                            $('.bg_section .video').pause()
                         });
                     </script>
                 </div>

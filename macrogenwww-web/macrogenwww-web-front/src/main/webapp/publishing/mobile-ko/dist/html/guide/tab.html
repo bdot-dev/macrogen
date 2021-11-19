@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css"/>
+    <script src="../../js/bundle.js"></script>
+    <![if !IE]>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <![endif]>
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="../../css/bootstrap-ie11.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+    <script src="../../js/common.js"></script>
+    <title>MACROGEN MOBILE</title>
+</head>
+
+<body>
+<div class="wrap">
+    <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
+
+    <div class="guide px-0">
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Tab Primary</p>
+                <nav class="tab-primary">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">
+                            <span>Home</span></button>
+                        <button class="nav-link" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false">
+                            <span>Profile</span></button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">1</div>
+                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">2</div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Tab Secondary</p>
+                <!-- s -->
+                <nav class="tab-secondary">
+                    <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+                        <button class="nav-link active" id="nav-tab-3" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3" aria-selected="true"><span>국내</span></button>
+                        <button class="nav-link" id="nav-tab-4" data-bs-toggle="tab" data-bs-target="#nav-4" type="button" role="tab" aria-controls="nav-4" aria-selected="false"><span>글로벌</span></button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent2">
+                    <div class="tab-pane fade show active" id="nav-3" role="tabpanel" aria-labelledby="nav-tab-3">
+                        1
+                    </div>
+                    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-tab-4">
+                        2
+                    </div>
+                </div>
+                <!-- e -->
+            </div>
+        </div>
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Tab Secondary/Swipe</p>
+                <!-- s -->
+                <div class="swiper-container snbSwiper slide-tab-wrap" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><span class="text">품질경영시스템</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">임상진단 품질경영시스템</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Transcriptome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Metagenome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Whole Genome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Exome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">품질경영시스템</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">임상진단 품질경영시스템</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Transcriptome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Metagenome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Whole Genome Sequencing</span></a></div>
+                        <div class="swiper-slide"><a href="#"><span class="text">Exome Sequencing</span></a></div>
+                    </div>
+                    <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
+                    <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
+                </div>
+                <!-- e -->
+            </div>
+        </div>
+
+        <script>
+            new Swiper('.snbSwiper', {
+                slidesPerView: 'auto',
+                preventClicks: true,
+                preventClicksPropagation: false,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: "._slideRight",
+                    prevEl: "._slideLeft",
+                }
+            });
+
+            var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+            $snbSwiperItem.click(function () {
+                var target = $(this).parent();
+                $snbSwiperItem.parent().removeClass('on')
+                target.addClass('on');
+                muCenter(target);
+            })
+
+            function muCenter(target) {
+                var snbwrap = $('.snbSwiper .swiper-wrapper');
+                var targetPos = target.position();
+                var box = $('.snbSwiper');
+                var boxHarf = box.width() / 2;
+                var pos;
+                var listWidth = 0;
+
+                snbwrap.find('.swiper-slide').each(function () {
+                    listWidth += $(this).outerWidth();
+                })
+
+                var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+                if (selectTargetPos <= boxHarf) { // left
+                    pos = 0;
+                } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                    pos = listWidth - box.width();
+                } else {
+                    pos = selectTargetPos - boxHarf;
+                }
+
+                setTimeout(function () {
+                    snbwrap.css({
+                        "transform": "translate3d(" + (pos * -1) + "px, 0, 0)",
+                        "transition-duration": "500ms"
+                    })
+                }, 200);
+            }
+        </script>
+        <div class="mb-5 macrogen-authorization">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Secondary/Select</p>
+                <!-- s -->
+                    <div class="select-box">
+                        <div class="selected-value _selected-value">
+                            <span class="text">tab</span>
+                        </div>
+                        <ul class="select-option _select-option">
+                            <li class="option-value"><a href="#">tab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menutab-menutab-menutab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menu</a></li>
+                            <li class="option-value"><a href="#">tab-menutab-menutab-menutab-menutab-menu</a></li>
+                        </ul>
+                    </div>
+                <script>
+                    /*변수*/
+                    var selectBox = $(".select-box");
+                    var option = $(".option-value");
+
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click',function() {
+                        var select = $(this);
+                        if(select.hasClass('open')) {
+                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                        }
+                        else {
+                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                            $('body').on('click',function (e){
+                                if(selectBox.hasClass('open')) {
+                                    if(!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+                                e.preventDefault()
+                            })
+                        }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    function textChange(){
+                        option.on('click',function() {
+                            var select = $(this).find('a').text();
+                            $('._selected-value').find('span').text(select);
+                        });
+                    }
+                    textChange();
+
+                    /*클릭시 탭메뉴 변경*/
+                    option.on('click',function(){
+                        var idx =$(this).index();
+                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        textChange();
+                    })
+
+                    /*이전 다음 이동*/
+                    function setTabContent(idx){
+                        $('._selected-value').text($('._select-option li').eq(idx).text());
+                        <!--탭메뉴 클릭시 페이지 변경-->
+                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                        /*페이지 변경후 상단 이동*/
+                        fnMove();
+
+                        /*클릭시 텍스트 변경*/
+                        console.log(idx);
+
+                    }
+
+                    /*탭메뉴 상단으로 이동*/
+                    function fnMove(){
+                        var offset = $("._content-anchor").offset();
+                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
+                    }
+
+                    /*외부클릭시 셀렉트박스 초기화*/
+                    $("body").click(function(e){
+                        if(!selectBox.has(e.target).length){
+                            selectBox.removeClass("open").children('.select-option').slideUp(200);
+                        }
+                    });
+
+                </script>
+                <!-- e -->
+            </div>
+
+        </div>
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4">Accordion</p>
+                <!-- s -->
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- e -->
+            </div>
+
+        </div>
+        <div class="mb-5">
+            <div class="box">
+                <p class="font-h7 mb-5 px-2 mb-4 _anchor">contents Anchor</p>
+                <!-- s -->
+                <div class="content-anchor">
+                    <div class="selected-value _anchor-value">
+                        <span class="text">Whole Genome Resequencing</span>
+                    </div>
+                    <ul class="anchor-option">
+                        <li class="anchor-value"><a href="#">Whole Genome De novo Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">수정란 동결 및 마우스 복원 (Embryo freezing & Reproduction to Live)</a></li>
+                        <li class="anchor-value"><a href="#">마우스 계통유지 (Mouse Line Recovery)</a></li>
+                        <li class="anchor-value"><a href="#">Whole Genome Resequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                        <li class="anchor-value"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                    </ul>
+                </div>
+                <script>
+                    /*변수*/
+                    var selectBox = $(".content-anchor");
+                    var option = $(".anchor-value");
+                    var anchor = $( "._anchor" );
+                    var offset = anchor.offset();
+                    console.log(offset);
+
+
+                    /*특정 위치에서 show & hide*/
+                    $(window).on('scroll', function() {
+                            if ($(window).scrollTop() >= offset)
+                            {$('.content-anchor').addClass("fixed");}
+                            else { $('.content-anchor').removeClass("fixed");
+                        }
+                    })
+
+
+
+
+
+
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click',function() {
+                        var select = $(this);
+                        if(select.hasClass('open')) {
+                            select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                        }
+                        else {
+                            select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                            $('body').on('click',function (e){
+                                if(selectBox.hasClass('open')) {
+                                    if(!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+                                e.preventDefault()
+                            })
+                        }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    option.on('click',function() {
+                        var select = $(this).find('a').text();
+                        $('._anchor-value').find('span').text(select);
+                    });
+
+
+
+                </script>
+                <!-- e -->
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer main">
+    <div class="font-h5">Macrogen</div>
+    <div class="info">
+        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+    </div>
+    <div class="link-list">
+        <ul>
+            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
+                    <option value="https://thebiome.life/">더바이옴</option>
+                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <ul class="sns">
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    </ul>
+</footer>
+
+</div>
+</body>
+</html>

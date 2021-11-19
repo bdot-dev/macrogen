@@ -1,25 +1,53 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <!DOCTYPE html>
-<html>
+<html lang="${rc.locale.language}">
 <head>
-	<title><decorator:title />마크로젠</title>
-	<%@ include file="/WEB-INF/jsp/inc/htmlHead.jsp" %>
+	<title><decorator:title />MACROGEN</title>
+	<c:import url="/inc/htmlHead" />
 	<decorator:head />
 </head>
 
 <body>
-	<header>
-		<c:import url="/inc/header" />
-	</header>
+	<div class="wrap">
+		<%--
+			/*/company/*, /*/business/*, /*/rnd/institute/*, /*/main 제외
+			non-bg
+			container
+		--%>
+		<decorator:body />
 
-	<!-- 내용// -->
-	<decorator:body />
-	<!-- //내용 -->
+		<%-- <footer class="footer" --%>
+		<c:if test="${ empty MOBILE_NO_FOOTER or not MOBILE_NO_FOOTER }">
+			<c:import url="/inc/footer" />
+		</c:if>
 
-	<footer>
-		<c:import url="/inc/footer" />
-	</footer>
+	    <a href="#" class="btn-totop"></a>
+		<script>
+		    $(document).ready(function(){
+		        $('.btn-totop').click(function(){
+		            $('html,body').animate( { scrollTop:0 },{duration : 100});
+		            return false;
+		        });
+		        $(window).on('scroll', function (){
+		            var scrollTop = $(window).scrollTop()
+		            if (scrollTop > 150) {
+		                $('.btn-totop').css({'opacity' : 1})
+		            } else {
+		                $('.btn-totop').css({'opacity' : 0})
+		            }
+		        })
+		    });
 
+			$(function() {
+				$('.btn-share').on('click', function(e) {
+					copyUrlToClipboard();
+					alert('링크 복사가 완료되었습니다.');
+				});
+		    });
+		</script>
+	</div>
+	<%-- modal gnb --%>
+	<c:import url="/inc/header-inner-gnb" />
 </body>
 </html>
