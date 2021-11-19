@@ -12,11 +12,11 @@
   <meta name="robots" content="index,nofollow"/>
   <meta name="description" content="macrogen"/>
   <meta name="keywords" content="macrogen"/>
-<!--  <link rel="shortcut icon" href="/publishing/mobile-ko/dist/img/favicon.ico">-->
+<!--  <link rel="shortcut icon" href="/publishing/mobile-existing/dist/img/favicon.ico">-->
   <title>MACROGEN</title>
-  <link type="text/css" rel="stylesheet" href="/publishing/mobile-ko/dist/css/macrogen_page_mobile_ko.css"/>
-  <script src="/publishing/mobile-ko/dist/js/bundle.js"></script>
-  <script src="/publishing/mobile-ko/dist/js/common.js"></script>
+  <link type="text/css" rel="stylesheet" href="/publishing/mobile-existing/dist/css/macrogen_page_mobile_ko.css"/>
+  <script src="/publishing/mobile-existing/dist/js/bundle.js"></script>
+  <script src="/publishing/mobile-existing/dist/js/common.js"></script>
 </head>
 
 
@@ -26,7 +26,7 @@
         <div class="bg"></div>
         <div class="inner">
             <h1 class="logo">
-               <img src="/publishing/mobile-ko/dist/img/common/logo.svg" alt="macrogen 로고">
+               <img src="/publishing/mobile-existing/dist/img/common/logo.svg" alt="macrogen 로고">
             </h1>
             <div class="font-slogan">Humanizing<br/>Genomics</div>
             <div class="font-desc">모두가 건강한 세상을 꿈꾸는 기업<br/>마크로젠입니다</div>
@@ -43,7 +43,7 @@
         </div>
         <div class="section-banner">
             <div class="img">
-                <img src="/publishing/mobile-ko/dist/img/@temp/GettyImages-8996928621.png" alt="글로벌 정밀의학 선도기업">
+                <img src="/publishing/mobile-existing/dist/img/@temp/GettyImages-8996928621.png" alt="글로벌 정밀의학 선도기업">
             </div>
             <div class="list">
                 <div class="item">글로벌 정밀의학 선도기업</div>
@@ -58,14 +58,14 @@
                 바이오 생태계를 좌우하는 영향력을 갖춘 선도기업으로서 마크로젠의 도전은 계속될 것입니다.
             </div>
             <div class="list">
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round1.svg" alt=""></div><div class="txt-lg">30m</div><div class="txt">유전체 분석 건수</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round2.svg" alt=""></div><div class="txt-lg">1st</div><div class="txt">바이오벤처 최초<br>코스닥 상장</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round3.svg" alt=""></div><div class="txt-lg">$100M</div><div class="txt">매출 1,000억 돌파</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round4.svg" alt=""></div><div class="txt-lg">70%</div><div class="txt">해외 매출</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round5.svg" alt=""></div><div class="txt-lg">No.1</div><div class="txt">리서치 시퀀싱 분야<br>점유율</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round6.svg" alt=""></div><div class="txt-lg">153</div><div class="txt">153개국 18,000여<br>글로벌 파트너</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round7.svg" alt=""></div><div class="txt-lg">18</div><div class="txt">바이오벤처<br>기업 지원</div></div>
-                <div class="item"><div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/img-round8.svg" alt=""></div><div class="txt-lg">19</div><div class="txt">SCI급 네이처지<br>눈문 148편</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round1.svg" alt=""></div><div class="txt-lg">30m</div><div class="txt">유전체 분석 건수</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round2.svg" alt=""></div><div class="txt-lg">1st</div><div class="txt">바이오벤처 최초<br>코스닥 상장</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round3.svg" alt=""></div><div class="txt-lg">$100M</div><div class="txt">매출 1,000억 돌파</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round4.svg" alt=""></div><div class="txt-lg">70%</div><div class="txt">해외 매출</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round5.svg" alt=""></div><div class="txt-lg">No.1</div><div class="txt">리서치 시퀀싱 분야<br>점유율</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round6.svg" alt=""></div><div class="txt-lg">153</div><div class="txt">153개국 18,000여<br>글로벌 파트너</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round7.svg" alt=""></div><div class="txt-lg">18</div><div class="txt">바이오벤처<br>기업 지원</div></div>
+                <div class="item"><div class="img"><img src="/publishing/mobile-existing/dist/img/@temp/img-round8.svg" alt=""></div><div class="txt-lg">19</div><div class="txt">SCI급 네이처지<br>눈문 148편</div></div>
             </div>
         </div>
         <div class="section-businessArea">

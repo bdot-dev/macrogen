@@ -39,9 +39,7 @@
             <!-- e  문구 -->
 
             <!-- s  배너 -->
-            <div class="section-bg">
-                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/bg-talent-banner.png" alt="도전과 창의가 넘치는 인재"></div>
-            </div>
+            <div class="section-bg" data-aos="fade-up" data-aos-duration="2000"></div>
             <!-- e  배너 -->
 
             <!-- s  배너 -->

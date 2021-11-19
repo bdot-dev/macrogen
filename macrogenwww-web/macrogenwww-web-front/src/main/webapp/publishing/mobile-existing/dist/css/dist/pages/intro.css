@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*
+|----------------------------------|
+ v.0.1 선미 : 최초 작업 -- 2021.09.08
+|----------------------------------|
+*/
+.intro .section-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #454545;
+  padding: 80px 30px 60px;
+  letter-spacing: -1.3px;
+}
+
+.intro .section-banner {
+  padding-left: 8%;
+  /*30px*/
+  padding-bottom: 100px;
+}
+
+.intro .section-banner .img {
+  margin-bottom: 55px;
+}
+
+.intro .section-banner .img img {
+  width: 100%;
+}
+
+.intro .section-banner .list .item {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  letter-spacing: -1.3px;
+}
+
+.intro .section-banner .list .item:last-child {
+  margin-bottom: 0;
+}
+
+.intro .section-banner .list .item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+}
+
+.intro .section-list {
+  background: #F7F7F7;
+  padding: 107px 30px 50px;
+}
+
+.intro .section-list .title {
+  background: url(../img/common/img-1997.svg) no-repeat center center;
+  width: 151px;
+  height: 49px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.intro .section-list .title::after {
+  content: '';
+  position: absolute;
+  right: -71px;
+  bottom: -1px;
+  width: 60px;
+  height: 5px;
+  background-color: #000;
+}
+
+.intro .section-list .desc {
+  font-size: 18px;
+  line-height: 32px;
+  color: #454545;
+  margin-bottom: 60px;
+  letter-spacing: -1.3px;
+}
+
+.intro .section-list .list {
+  width: 313px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.intro .section-list .list .item {
+  float: left;
+  margin-right: 33px;
+  margin-bottom: 48px;
+}
+
+.intro .section-list .list .item .txt-lg {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.intro .section-list .list .item .txt {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.intro .section-list .list .item .img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 18px;
+}
+
+.intro .section-list .list .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro .section-list .list .item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.intro .section-businessArea .info-box {
+  margin-bottom: 39px;
+}
+
+.intro .section-businessArea .info-box:nth-of-type(1) .title-area {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%), url("../img/@temp/bg-01.png") no-repeat center center/cover;
+}
+
+.intro .section-businessArea .info-box:nth-of-type(2) .title-area {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%), url("../img/@temp/bg-02.png") no-repeat center center/cover;
+}
+
+.intro .section-businessArea .info-box:nth-of-type(3) .title-area {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%), url("../img/@temp/bg-03.png") no-repeat center center/cover;
+}
+
+.intro .section-businessArea .info-box:nth-of-type(4) {
+  margin-bottom: 56px;
+}
+
+.intro .section-businessArea .info-box:nth-of-type(4) .title-area {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.5) 100%), url("../img/@temp/bg-04.png") no-repeat center center/cover;
+}
+
+.intro .section-businessArea .info-box .title-area {
+  width: 100%;
+  height: 392px;
+  position: relative;
+}
+
+.intro .section-businessArea .info-box .title-area > div {
+  position: absolute;
+  bottom: 26px;
+  display: block;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.intro .section-businessArea .info-box .title-area > div:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  border-top: 1px solid #ffffff;
+  margin-bottom: 23px;
+}
+
+.intro .section-businessArea .info-box .title-area p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 55px;
+}
+
+.intro .section-businessArea .info-box .title-area p.text-en {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.intro .section-businessArea .info-box .desc-area {
+  font-size: 22px;
+  padding: 40px 30px;
+}
+
+.intro .section-businessArea .info-box .desc-area .sub-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 34px;
+  margin-bottom: 20px;
+  letter-spacing: -1.3px;
+}
+
+.intro .section-businessArea .info-box .desc-area .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+/*# sourceMappingURL=intro.css.map */

@@ -15,7 +15,7 @@ public class IncController extends DefaultController {
 
 	@RequestMapping("/htmlHead")
 	public String htmlHead(Model model) throws Exception {
-		return getDev() + "/inc/htmlHead";
+		return getDev() + "/inc/htmlHead." + getLang();
 	}
 
 	@RequestMapping("/header")

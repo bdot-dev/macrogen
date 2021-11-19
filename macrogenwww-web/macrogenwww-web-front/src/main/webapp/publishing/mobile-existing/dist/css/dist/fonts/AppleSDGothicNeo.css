@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Apple SD Gothic Neo Bold";
+  src: url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.eot");
+  /* IE9*/
+  src: url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.woff2") format("woff2"), url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.woff") format("woff"), url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.ttf") format("truetype"), url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoBold.svg#Apple SD Gothic Neo Bold") format("svg");
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Apple SD Gothic Neo Regular";
+  src: url("../fonts/AppleSDGothicNeo/AppleSDGothicNeoRegular.ttf") format("truetype");
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+/*# sourceMappingURL=AppleSDGothicNeo.css.map */

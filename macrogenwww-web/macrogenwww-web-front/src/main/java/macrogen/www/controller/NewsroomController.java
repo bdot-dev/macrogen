@@ -1,13 +1,17 @@
 package macrogen.www.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.LangId;
@@ -40,6 +44,10 @@ public class NewsroomController extends DefaultController {
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("press-release");
 
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/newsroom/news." + getLang();
+		}
+
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
@@ -64,6 +72,37 @@ public class NewsroomController extends DefaultController {
 		return getDev() + "/newsroom/news." + getLang();
 	}
 
+	@RequestMapping("/news/data")
+	@ResponseBody
+	public Map<String, Object> newsListAjaxHtml(@PathVariable LangId langId,
+			@RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId("press-release");
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<NttVo> resultList = nttService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
+	}
+
 	@RequestMapping("/news/{nttSn}")
 	public String newsView(@PathVariable long nttSn, @PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
@@ -82,6 +121,8 @@ public class NewsroomController extends DefaultController {
 		NttVo nextVo = nttService.next(listVo);
 		model.addAttribute("nextVo", nextVo);
 
+		model.addAttribute("MOBILE_NO_FOOTER", true);
+
 		return getDev() + "/newsroom/news-view." + getLang();
 	}
 
@@ -93,6 +134,10 @@ public class NewsroomController extends DefaultController {
 		listVo.setPageSize(5);
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("media-library");
+
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/newsroom/media-library." + getLang();
+		}
 
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
@@ -113,6 +158,37 @@ public class NewsroomController extends DefaultController {
 		model.addAttribute("resultList", resultList);
 
 		return getDev() + "/newsroom/media-library." + getLang();
+	}
+
+	@RequestMapping("/media-library/data")
+	@ResponseBody
+	public Map<String, Object> mediaLibraryListAjaxHtml(@PathVariable LangId langId,
+			@RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId("media-library");
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<NttVo> resultList = nttService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
 	}
 
 	@RequestMapping("/media-library/viewAjaxHtml/{nttSn}")
@@ -167,6 +243,11 @@ public class NewsroomController extends DefaultController {
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("notice");
 
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/newsroom/notice." + getLang();
+		}
+
+
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
@@ -188,6 +269,37 @@ public class NewsroomController extends DefaultController {
 		return getDev() + "/newsroom/notice." + getLang();
 	}
 
+	@RequestMapping("/notice/data")
+	@ResponseBody
+	public Map<String, Object> noticeListAjaxHtml(@PathVariable LangId langId,
+			@RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId("notice");
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<NttVo> resultList = nttService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
+	}
+
 	@RequestMapping("/notice/{nttSn}")
 	public String noticeView(@PathVariable long nttSn, @PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
@@ -205,6 +317,8 @@ public class NewsroomController extends DefaultController {
 
 		NttVo nextVo = nttService.next(listVo);
 		model.addAttribute("nextVo", nextVo);
+
+		model.addAttribute("MOBILE_NO_FOOTER", true);
 
 		return getDev() + "/newsroom/notice-view." + getLang();
 	}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css"/>
+    <script src="../../js/bundle.js"></script>
+    <![if !IE]>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <![endif]>
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="../../css/bootstrap-ie11.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+    <script src="../../js/common.js"></script>
+    <title>MACROGEN MOBILE</title>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        <header class="header">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+
+        <div class="frame"></div>
+    </div>
+    <div class="container pt-0">
+        <button class="_btn btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modal">popup</button>
+    </div>
+    <footer class="footer main">
+    <div class="font-h5">Macrogen</div>
+    <div class="info">
+        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+    </div>
+    <div class="link-list">
+        <ul>
+            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
+                    <option value="https://thebiome.life/">더바이옴</option>
+                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <ul class="sns">
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    </ul>
+</footer>
+
+    <a href="#" class="btn-totop"></a>
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
+</div>
+<div class="modal fade modal-notice" tabindex="-1" id="modal" data-bs-backdrop="static" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="ico-notice icon"></div>
+            </div>
+            <div class="modal-body">
+                <div class="scroll">
+                    <div class="font-h7">팝업 제목 텍스트</div>
+                    <div class="font-body">팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트 팝업 내용 텍스트</div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-light btn-round">버튼1</a>
+                        <a href="#" class="btn btn-light btn-round">버튼2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn-footer"><span>오늘은 그만 보기</span></a>
+                <a href="#" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modalEl = document.getElementById('modal')
+    var modal = new bootstrap.Modal(modalEl)
+
+    // modal.show();
+
+    $(document).ready(function (){
+        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
+    })
+
+    modalEl.addEventListener('shown.bs.modal', function () {
+        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
+    })
+
+    modalEl.addEventListener('hide.bs.modal', function () {
+        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
+    })
+
+    // modal close
+    // $('._close').on('click', function () {
+    //     myModal.hide();
+    // })
+
+    // modal open
+    // $('._btnZoom').on('click', function () {
+    //     modalEl.show();
+    // })
+</script>
+</body>
+</html>
