@@ -24,7 +24,7 @@
     <div class="container container-fluid">
         <div class="section_customMedicine">
             <div class="info-box">
-                <div class="title">환자 맞춤형 정밀의료 기반의<br>개인별 맞춤의학을 선도합니다</div>
+                <div class="title">환자 맞춤형 정밀의료 기반의 개인별 맞춤의학을 선도합니다</div>
                 <div class="desc">다양한 데이터를 수집 및 분석해 개인에 맞도록 질병 예방과 치료에 대한 연구를 진행합니다&#46;</div>
             </div>
         </div>

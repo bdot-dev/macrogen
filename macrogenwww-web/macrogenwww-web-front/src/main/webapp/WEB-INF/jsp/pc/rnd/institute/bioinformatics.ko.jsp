@@ -25,7 +25,7 @@
     <div class="container container-fluid">
         <div class="section_lifeInformation">
             <div class="info-box">
-                <div class="title">유전체 정보를 기반으로<br>생명의 비밀을 밝혀냅니다 </div>
+                <div class="title">유전체 정보를 기반으로 생명의 비밀을 밝혀냅니다 </div>
                 <div class="desc">유전체 분석 분야에서 다양한 연구를 진행해 나갑니다</div>
             </div>
             <div class="img">
