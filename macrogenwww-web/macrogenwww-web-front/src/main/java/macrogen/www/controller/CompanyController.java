@@ -1,6 +1,8 @@
 package macrogen.www.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +13,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.common.storage.StorageService;
@@ -207,6 +211,10 @@ public class CompanyController extends DefaultController {
 		listVo.setLangCode(langId.name());
 		listVo.setWnpzClCode(listVo.getWnpzClCode());
 
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/company/winner-listAjaxHtml." + getLang();
+		}
+
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
@@ -226,6 +234,39 @@ public class CompanyController extends DefaultController {
 		model.addAttribute("resultList", resultList);
 
 		return getDev() + "/company/winner-listAjaxHtml." + getLang();
+	}
+
+	@RequestMapping("/winner/list/data")
+	@ResponseBody
+	public Map<String, Object> winnerListData(@PathVariable LangId langId,
+			@RequestBody WnpzVo listVo) throws Exception {
+
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setPageSize(5);
+		listVo.setLangCode(langId.name());
+		listVo.setWnpzClCode(listVo.getWnpzClCode());
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<WnpzVo> resultList = wnpzService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(wnpzService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
 	}
 
 

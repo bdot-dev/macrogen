@@ -72,7 +72,7 @@
 				paginationInfo : {},
 				resultList : [],
 			},
-			created : function (){
+			created: function() {
 				var vm = this;
 				vm.fetchData();
 			},
