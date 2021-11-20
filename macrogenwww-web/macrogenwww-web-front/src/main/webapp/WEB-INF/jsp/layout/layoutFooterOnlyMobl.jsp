@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<div class="wrap">
+	<div class="wrap <decorator:getProperty property="body.class" />">
 		<%--
 			/*/company/*, /*/business/*, /*/rnd/institute/*
 			full-bg
