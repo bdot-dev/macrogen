@@ -8,76 +8,70 @@
 		<form:hidden path="searchSportSeCode"/>
 	</form:form>
 
-    <div class="full-bg macrogen no-bg">
-        <header class="header header-bg-white" id="header">
-	    	<c:import url="/inc/header-inner-gnb" />
+    <div class="non-bg">
+        <header class="header">
+		    <div class="inner">
+		        <a href="javascript:history.back()" class="btn-back"><span class="sr-only">뒤로가기</span></a>
+		        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+		    </div>
 		</header>
-        <div class="frame frameC">
-            <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">MACROGEN</li>
-			        <li class="breadcrumb-item">채용</li>
-			        <li class="breadcrumb-item active">채용안내</li>
-			    </ol>
-			</nav>
 
-            <div class="hero-title">채용안내</div>
-        </div>
+        <div class="frame non-title"></div>
     </div>
-
-    <div class="container">
-        <div class="macrogen recruitment-info">
+    <div class="container pt-0">
+        <div class="macrogen recruitment-info-list">
             <!-- s 채용안내 -->
             <div class="section">
-                <div class="btn-indicator-box">
-                    <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
-                </div>
                 <div class="board">
-                    <div class="detail">
-                        <div class="heading with-badge">
-                            <div class="department">${ resultVo.sportSeCodeNm }</div>
-                            <div class="title">${ resultVo.empaSj }</div>
-                            <div class="date"><fmt:formatDate value="${resultVo.rceptBeginDe }" pattern="yyyy&#46;MM&#46;dd" /> &#45; <fmt:formatDate value="${resultVo.rceptEndDe }" pattern="yyyy&#46;MM&#46;dd" /></div>
-                            <div class="badge-recruit ${ resultVo.rceptSttusCode eq 'P' ? 'ongoing' : '' }"><span class="sr-only">${ resultVo.rceptSttusCodeNm }</span></div>
+                    <div class="view">
+                        <div class="view-header">
+                            <div class="category">
+                                <span class="font-body-h-b">${ resultVo.sportSeCodeNm }</span>
+                                <div class="badge-recruit ${ resultVo.rceptSttusCode eq 'P' ? 'ongoing' : '' }"><span class="sr-only">${ resultVo.rceptSttusCodeNm }</span></div>
+                            </div>
+                            <div class="font-h4">${ resultVo.empaSj }</div>
+                            <div class="font-date"><fmt:formatDate value="${resultVo.rceptBeginDe }" pattern="yyyy.MM.dd" /> - <fmt:formatDate value="${resultVo.rceptEndDe }" pattern="yyyy.MM.dd" /></div>
                         </div>
-                        <hr class="divider">
-                        <div class="content">
-                            <div class="text">
+                        <div class="view-body">
+                            <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-1.png" alt="제목 텍스트 제목 텍스트 제목 텍스트 제목 텍스트"></div> -->
+                            <div class="font-body">
                             	${ resultVo.empaCn }
                             </div>
                             <c:if test="${ not empty resultVo.atchId }">
-	                            <div class="attachment-box">
-	                                <a class="file btn-download-atch" href="javascript:;">${ resultVo.logicNm }</a>
-	                                <%--
-	                                <a class="file" href="javascript:;">[자사양식]입사지원서_마크로젠.zip</a>
-	                                <a class="file" href="javascript:;">[자사양식]입사지원서_마크로젠2.zip</a>
-	                                --%>
+	                            <div class="attach-file">
+	                                <a href="javascript:;" class="file btn-download-atch">
+	                                    <i class="icon ico-attach"></i>
+	                                    <span>${ resultVo.logicNm }</span>
+	                                </a>
 	                            </div>
-                            </c:if>
+	                        </c:if>
                         </div>
-                        <hr class="divider">
+                        <div class="view-footer">
+                            <div class="navigation">
+                                <div class="row g-0">
+                                    <div class="col">
+                                    	<c:if test="${ not empty prevVo }">
+                                    	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">이전글</span>
+                                    	</c:if>
+                                    </div>
+                                    <div class="col">
+                                    	<c:if test="${ not empty nextVo }">
+                                    	<span class="font-body-h-b btn-next">다음글</span><i class="icon ico-left-black btn-next"></i>
+                                    	</c:if>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="btn btn-black btn-list">목록</a>
+                        </div>
                     </div>
-                    <div class="indicator">
-                        <div class="content">
-                            <a href="javascript:;" class="item prev btn-prev ${ empty prevVo ? 'disabled' : '' }">
-                                <div class="sub">이전글</div>
-                                <div class="title">${ empty prevVo ? '첫글입니다' : prevVo.empaSj }</div>
-                            </a>
-                            <a href="javascript:;" class="item next btn-next ${ empty nextVo ? 'disabled' : '' }">
-                                <div class="sub">다음글</div>
-                                <div class="title">${ empty nextVo ? '마지막 글입니다' : nextVo.empaSj }</div>
-                            </a>
-                        </div>
-                        <div class="btn-box">
-                            <a href="javascript:;" class="btn btn-black btn-list"><span>목록</span></a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <!-- e 채용안내 -->
         </div>
     </div>
+
+
 
 	<script>
 	$(function() {

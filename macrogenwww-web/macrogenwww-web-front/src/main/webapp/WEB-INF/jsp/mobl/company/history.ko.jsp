@@ -2,214 +2,932 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/@temp/macrogen/macrogen_bg_1.png);">
-        <!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
-			<c:import url="/inc/header-inner-gnb" />
-		</header>
+    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/macrogen-history-bg.png);">
+        <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
 
         <div class="frame">
-            <div class="hero-title">연혁</div>
-            <div class="slogan ko">유전체 분석 기술로<br>미래를 열어갑니다</div>
-            <div class= "slogan-sub">마크로젠은 인류 건강의 새 역사를 만들고 있습니다</div>
-            <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb breadcrumb-white">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">MACROGEN</li>
-			        <li class="breadcrumb-item">회사소개</li>
-			        <li class="breadcrumb-item">연혁</li>
-			    </ol>
-			</nav>
-
+            <div class="font-h4">연혁</div>
+            <div class="font-slogan">유전체 분석 기술로<br>미래를 열어갑니다</div>
+            <div class="font-h7-r">마크로젠은 인류 건강의 새 역사를 <br/>만들고 있습니다</div>
             <div class="scroll-wrap">
-			    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-			</div>
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
 
         </div>
     </div>
-
-    <div class="container container-fluid">
-    	<c:if test="${fn:length(resultList) gt 0 }">
-	        <div class="macrogen macrogen-history">
-	            <!-- s tab -->
-	            <div class="slide-tab-wrap">
-	                <div class="swiper-container tab-slide-box _swiperTab">
-	                    <div class="swiper-wrapper _swiperTab">
-	                    	<c:forEach var="result" items="${ resultList }" varStatus="status">
-		                        <div class="swiper-slide ${ status.index eq 0 ? 'active' : '' }"><a
-		                        	href="javascript:;" onclick="fnMove('group-${result.cmpnyhistGroupSn }')">${result.beginYear } &#45; ${result.endYear eq 'present' ? '현재' : result.endYear }</a></div>
-		                    </c:forEach>
-	                    </div>
-	                </div>
-	            </div>
-	            <script>
-	                $('._swiperTab .swiper-slide').on('click', function(){
-	                    $(this).addClass('active').siblings().removeClass('active');
-	                });
-	            </script>
-	            <!-- e tab -->
-
-	            <div class="section-wrap">
-	               	<c:forEach var="result" items="${ resultList }" varStatus="status">
-			            <!-- s 글로벌 유전체 정보 구축 -->
-			            <div class="section _historySection" id="group-${result.cmpnyhistGroupSn }" data-aos="fade-up" data-aos-duration="2000">
-			                <div class="inner">
-			                    <div class="year">${result.beginYear } &#45; ${result.endYear eq 'present' ? '현재' : result.endYear }</div>
-			                    <div class="title">${result['groupnm'.concat(lang)] }</div>
-			                </div>
-
-			                <c:if test="${fn:length(result.cmpnyhistGroupPhotoList) gt 0 }">
-				                <div class="history-slider ${fn:length(result.cmpnyhistGroupPhotoList)}" >
-				                    <div class="swiper-container _historySlider${status.count }">
-				                        <div class="swiper-wrapper">
-				                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="photoStatus">
-					                            <div class="swiper-slide">
-					                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
-					                                <div class="inner">
-					                                    <div class="year">${ photo.photoYear }</div>
-					                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
-					                                </div>
-					                            </div>
-					                        </c:forEach>
-
-				                        </div>
-				                    </div>
-				                    <div class="inner">
-				                        <div class="pagination-wrap">
-				                            <ul class="navigation">
-				                                <li class="page-item prev">
-				                                    <a class="page-link" href="#">
-				                                        <span class="sr-only">이전</span>
-				                                    </a>
-				                                </li>
-				                                <li class="page-item next">
-				                                    <a class="page-link" href="#">
-				                                        <span class="sr-only">다음</span>
-				                                    </a>
-				                                </li>
-				                            </ul>
-				                        </div>
-				                        <div class="swiper-pagination"></div>
-				                    </div>
-				                    <script>
-				                        var imageSwiper = new Swiper("._historySlider${status.count }", {
-				                            pagination: {
-				                                el: "._historySlider${status.count } + .inner .swiper-pagination",
-				                                clickable : true,
-				                            },
-				                            navigation: {
-				                                nextEl: '._historySlider${status.count } + .inner .page-item.next',
-				                                prevEl: '._historySlider${status.count } + .inner .page-item.prev',
-				                            },
-				                            touchRatio: 0
-				                        });
-				                    </script>
-				                </div>
-			                </c:if>
-
-			                <div class="inner">
-			                	<c:if test="${fn:length(result.yearCmpnyhistList) gt 0 }">
-				                    <div class="history-list">
-				                        <div class="year-info" ${ status.index eq 0 ? 'id="informationYear"' : '' }>
-				                            <ul>
-				                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList }" varStatus="yearCmpnyhistStatus">
-				                                <li class="${ yearCmpnyhistStatus.index eq 0 ? 'active' : '' }"><span>${yearCmpnyhist.year }</span></li>
-				                               	</c:forEach>
-				                            </ul>
-				                        </div>
-				                        <div class="desc-info">
-			                            	<c:forEach var="yearCmpnyhist" items="${result.yearCmpnyhistList}">
-					                            <ul data-year="${yearCmpnyhist.year }">
-					                            	<c:forEach var="cmpnyhist" items="${yearCmpnyhist.cmpnyhistList }">
-						                                <li>
-						                                    <span class="num">${cmpnyhist.mt }&#46;</span>
-						                                    <span class="desc">${cmpnyhist.cn }</span>
-						                                </li>
-					                            	</c:forEach>
-					                            </ul>
-				                            </c:forEach>
-				                        </div>
-				                    </div>
-			                	</c:if>
-			                </div>
-			            </div>
-			            <!-- e 글로벌 유전체 정보 구축 -->
-			        </c:forEach>
-	            </div>
-
-	        </div>
-    	</c:if>
+    <div class="container">
+        <div class="macrogen macrogen-history">
+            <!-- s tab -->
+            <div class="swiper-container snbSwiper slide-tab-wrap _swiperTab" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide on"><a href="#"><span class="text">2021 - 현재</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">2011 - 2020</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">2001 - 2010</span></a></div>
+                    <div class="swiper-slide"><a href="#"><span class="text">1997 - 2000</span></a></div>
+                </div>
+                <a href="#" class="btn-navi btn-navi-prev _slideLeft"></a>
+                <a href="#" class="btn-navi btn-navi-next _slideRight"></a>
+            </div>
+            <!-- e tab-->
+            <div class="section-wrap">
+                <div class="section show _section">
+                    <div class="select-box">
+                        <div class="selected-value _selectedValue">
+                            <span class="text">2021</span>
+                        </div>
+                        <ul class="select-option">
+                            <li class="option-value"><a href="#">2021</a></li>
+                            <li class="option-value"><a href="#">2020</a></li>
+                            <li class="option-value"><a href="#">2019</a></li>
+                        </ul>
+                    </div>
+                    <div class="history-heading" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="year">2011 - 현재</div>
+                        <div class="title">유전체 분석의 리더</div>
+                    </div>
+                    <div class="history-slider" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="swiper-container _Slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="pagination-wrap">
+                                <ul class="navigation">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">이전</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">다음</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="history-list-wrap _listWrap" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="history-list active">
+                            <div class="year">2021</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">1</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">국가 바이오 빅데이터 구축 2차 시범사업 유전체 생산기관 용역과제 본격 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작<br/><br/>국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">03.</span>
+                                        <span class="desc">코로나19 신속 항체진단키트 유럽 CE-IVD 인증 획득<br/><br/>다중유전자위험점수(PRS) 이용한 질병 예측 서비스 상용화 계획</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">이뮨메드, 코로나19 신속 면역진단키트 사업권 계약 체결<br/><br/>라이펙스 바이오랩과 파킨슨병 치료제 개발 위한 공동연구 진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2020</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">11.</span>
+                                        <span class="desc">2</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-아바타메드&#44; 개인별 맞춤 암 정밀의료 공동 사업 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">마크로젠&#44; LG상사와 &#39;스마트 모바일 랩&#39; 공급 계약 체결 및 인도네시아에 K-방역 시스템 공급</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">마크로젠-SK텔레콤-인바이츠헬스케어&#44; 국내 최초 유전자검사 기반 구독형 헬스케어 서비스 &#39;care8 DNA&#39; 출시</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2019</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">3</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국제 표준 정보보호 인증 &#39;ISO	&#47;IEC 27001&#39; 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-에이뉴힐&#44; 개인 맞춤형 헬스케어 서비스 업무협약 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-빅스터 블록체인 기반 데이터 유통 기술 특허 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">코로나19 진단키트 &#39;Axen&#8482; COVID-19 RT&#39; 수출허가 승인 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">NGS 기반 유방암 체외진단시약 임상시험 성공</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-성균관대학교&#44; 과학수사 분야 연구개발 위한 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">뉴시스 &#39;대한민국 일자리대상&#39; 고용노동부 장관상 수상</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-서울대병원&#44; NGS 기반 &#39;신종 코로나 바이러스&#39; 전장 유전체 분석 논문 발표</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">악성 뇌종양 &#39;암 줄기세포 바이오마커&#39; 국내 특허 획득</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section _section">
+                    <div class="select-box">
+                        <div class="selected-value _selectedValue">
+                            <span class="text">2021</span>
+                        </div>
+                        <ul class="select-option">
+                            <li class="option-value" data-id="2021"><a href="#">2021</a></li>
+                            <li class="option-value" data-id="2020"><a href="#">2020</a></li>
+                            <li class="option-value" data-id="2019"><a href="#">2019</a></li>
+                        </ul>
+                    </div>
+                    <div class="history-heading" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="year">2011 - 2020</div>
+                        <div class="title">정밀의학의 실현</div>
+                    </div>
+                    <div class="history-slider" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="swiper-container _Slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-2.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="pagination-wrap">
+                                <ul class="navigation">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">이전</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">다음</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="history-list-wrap _listWrap" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="history-list active">
+                            <div class="year">2021</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">1</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">국가 바이오 빅데이터 구축 2차 시범사업 유전체 생산기관 용역과제 본격 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작<br/><br/>국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">03.</span>
+                                        <span class="desc">코로나19 신속 항체진단키트 유럽 CE-IVD 인증 획득<br/><br/>다중유전자위험점수(PRS) 이용한 질병 예측 서비스 상용화 계획</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">이뮨메드, 코로나19 신속 면역진단키트 사업권 계약 체결<br/><br/>라이펙스 바이오랩과 파킨슨병 치료제 개발 위한 공동연구 진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2020</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">11.</span>
+                                        <span class="desc">2</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-아바타메드&#44; 개인별 맞춤 암 정밀의료 공동 사업 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">마크로젠&#44; LG상사와 &#39;스마트 모바일 랩&#39; 공급 계약 체결 및 인도네시아에 K-방역 시스템 공급</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">마크로젠-SK텔레콤-인바이츠헬스케어&#44; 국내 최초 유전자검사 기반 구독형 헬스케어 서비스 &#39;care8 DNA&#39; 출시</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2019</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">3</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국제 표준 정보보호 인증 &#39;ISO	&#47;IEC 27001&#39; 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-에이뉴힐&#44; 개인 맞춤형 헬스케어 서비스 업무협약 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-빅스터 블록체인 기반 데이터 유통 기술 특허 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">코로나19 진단키트 &#39;Axen&#8482; COVID-19 RT&#39; 수출허가 승인 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">NGS 기반 유방암 체외진단시약 임상시험 성공</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-성균관대학교&#44; 과학수사 분야 연구개발 위한 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">뉴시스 &#39;대한민국 일자리대상&#39; 고용노동부 장관상 수상</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-서울대병원&#44; NGS 기반 &#39;신종 코로나 바이러스&#39; 전장 유전체 분석 논문 발표</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">악성 뇌종양 &#39;암 줄기세포 바이오마커&#39; 국내 특허 획득</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section _section">
+                    <div class="select-box">
+                        <div class="selected-value _selectedValue">
+                            <span class="text">2021</span>
+                        </div>
+                        <ul class="select-option">
+                            <li class="option-value" data-id="2021"><a href="#">2021</a></li>
+                            <li class="option-value" data-id="2020"><a href="#">2020</a></li>
+                            <li class="option-value" data-id="2019"><a href="#">2019</a></li>
+                        </ul>
+                    </div>
+                    <div class="history-heading" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="year">2001 - 2010</div>
+                        <div class="title">글로벌 유전체 정보 구축</div>
+                    </div>
+                    <div class="history-slider" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="swiper-container _Slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-3.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="pagination-wrap">
+                                <ul class="navigation">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">이전</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">다음</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="history-list-wrap _listWrap" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="history-list active">
+                            <div class="year">2021</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">1</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">국가 바이오 빅데이터 구축 2차 시범사업 유전체 생산기관 용역과제 본격 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작<br/><br/>국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">03.</span>
+                                        <span class="desc">코로나19 신속 항체진단키트 유럽 CE-IVD 인증 획득<br/><br/>다중유전자위험점수(PRS) 이용한 질병 예측 서비스 상용화 계획</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">이뮨메드, 코로나19 신속 면역진단키트 사업권 계약 체결<br/><br/>라이펙스 바이오랩과 파킨슨병 치료제 개발 위한 공동연구 진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2020</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">11.</span>
+                                        <span class="desc">2</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-아바타메드&#44; 개인별 맞춤 암 정밀의료 공동 사업 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">마크로젠&#44; LG상사와 &#39;스마트 모바일 랩&#39; 공급 계약 체결 및 인도네시아에 K-방역 시스템 공급</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">마크로젠-SK텔레콤-인바이츠헬스케어&#44; 국내 최초 유전자검사 기반 구독형 헬스케어 서비스 &#39;care8 DNA&#39; 출시</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2019</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">3</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국제 표준 정보보호 인증 &#39;ISO	&#47;IEC 27001&#39; 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-에이뉴힐&#44; 개인 맞춤형 헬스케어 서비스 업무협약 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-빅스터 블록체인 기반 데이터 유통 기술 특허 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">코로나19 진단키트 &#39;Axen&#8482; COVID-19 RT&#39; 수출허가 승인 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">NGS 기반 유방암 체외진단시약 임상시험 성공</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-성균관대학교&#44; 과학수사 분야 연구개발 위한 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">뉴시스 &#39;대한민국 일자리대상&#39; 고용노동부 장관상 수상</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-서울대병원&#44; NGS 기반 &#39;신종 코로나 바이러스&#39; 전장 유전체 분석 논문 발표</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">악성 뇌종양 &#39;암 줄기세포 바이오마커&#39; 국내 특허 획득</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section _section">
+                    <div class="select-box">
+                        <div class="selected-value _selectedValue">
+                            <span class="text">2021</span>
+                        </div>
+                        <ul class="select-option">
+                            <li class="option-value" data-id="2021"><a href="#">2021</a></li>
+                            <li class="option-value" data-id="2020"><a href="#">2020</a></li>
+                            <li class="option-value" data-id="2019"><a href="#">2019</a></li>
+                        </ul>
+                    </div>
+                    <div class="history-heading" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="year">2001 - 2010</div>
+                        <div class="title">벤처기업 창업</div>
+                    </div>
+                    <div class="history-slider" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="swiper-container _Slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">1997</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="/publishing/mobile-ko/dist/img/@temp/macrogen/bg-history-thumb-1.png"
+                                             alt="마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포">
+                                        <div class="year">2013</div>
+                                    </div>
+                                    <div class="desc">마크로젠 창립 20주년 기념행사 및 미래 20년 비전 선포</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="pagination-wrap">
+                                <ul class="navigation">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">이전</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <span class="sr-only">다음</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="history-list-wrap _listWrap" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="history-list active">
+                            <div class="year">2021</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">1</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">국가 바이오 빅데이터 구축 2차 시범사업 유전체 생산기관 용역과제 본격 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작<br/><br/>국내 최초로 질병 관련 DTC 유전자검사 실증특례 연구 시작</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">03.</span>
+                                        <span class="desc">코로나19 신속 항체진단키트 유럽 CE-IVD 인증 획득<br/><br/>다중유전자위험점수(PRS) 이용한 질병 예측 서비스 상용화 계획</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">이뮨메드, 코로나19 신속 면역진단키트 사업권 계약 체결<br/><br/>라이펙스 바이오랩과 파킨슨병 치료제 개발 위한 공동연구 진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2020</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">11.</span>
+                                        <span class="desc">2</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-아바타메드&#44; 개인별 맞춤 암 정밀의료 공동 사업 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">10.</span>
+                                        <span class="desc">마크로젠-디엔에이링크-테라젠바이오 컨소시엄&#44;&#39;국가 바이오 빅데이터 구축 시범사업&#39; 착수</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">09.</span>
+                                        <span class="desc">마크로젠&#44; LG상사와 &#39;스마트 모바일 랩&#39; 공급 계약 체결 및 인도네시아에 K-방역 시스템 공급</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">마크로젠-SK텔레콤-인바이츠헬스케어&#44; 국내 최초 유전자검사 기반 구독형 헬스케어 서비스 &#39;care8 DNA&#39; 출시</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="year">2019</div>
+                            <div class="desc-info">
+                                <ul>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">3</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">06.</span>
+                                        <span class="desc">국제 표준 정보보호 인증 &#39;ISO	&#47;IEC 27001&#39; 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-에이뉴힐&#44; 개인 맞춤형 헬스케어 서비스 업무협약 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">05.</span>
+                                        <span class="desc">마크로젠-빅스터 블록체인 기반 데이터 유통 기술 특허 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">코로나19 진단키트 &#39;Axen&#8482; COVID-19 RT&#39; 수출허가 승인 획득</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">04.</span>
+                                        <span class="desc">NGS 기반 유방암 체외진단시약 임상시험 성공</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-성균관대학교&#44; 과학수사 분야 연구개발 위한 MOU 체결</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">뉴시스 &#39;대한민국 일자리대상&#39; 고용노동부 장관상 수상</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">02.</span>
+                                        <span class="desc">마크로젠-서울대병원&#44; NGS 기반 &#39;신종 코로나 바이러스&#39; 전장 유전체 분석 논문 발표</span>
+                                    </li>
+                                    <li>
+                                        <span class="num">08.</span>
+                                        <span class="desc">악성 뇌종양 &#39;암 줄기세포 바이오마커&#39; 국내 특허 획득</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--footer 수정사항 있을시 메인 footer 별도 확인-->
 
 	<script>
-	    $('#tab a').on('click', function (event) {
-	        event.preventDefault()
-	        $(this).tab('show')
+	    /**
+	     * swiper
+	     */
+	    new Swiper('.snbSwiper', {
+	        slidesPerView: 'auto',
+	        preventClicks: true,
+	        preventClicksPropagation: false,
+	        observer: true,
+	        observeParents: true,
+	        navigation: {
+	            nextEl: "._slideRight",
+	            prevEl: "._slideLeft",
+	        }
+	    });
+
+	    var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+	    $snbSwiperItem.click(function () {
+	        var target = $(this).parent();
+	        $snbSwiperItem.parent().removeClass('on')
+	        target.addClass('on');
+	        muCenter(target);
 	    })
 
-	    function fnMove(seq){
-	        var id = $('#'+ seq);
-	        var offset = id.offset();
-	        $('html, body').animate({scrollTop : offset.top - 95}, 400);
-	    }
+	    function muCenter(target) {
+	        var snbwrap = $('.snbSwiper .swiper-wrapper');
+	        var targetPos = target.position();
+	        var box = $('.snbSwiper');
+	        var boxHarf = box.width() / 2;
+	        var pos;
+	        var listWidth = 0;
 
-	    // 연혁 인터랙션
-	    $(document).ready(function () {
-	        var section = $('._historySection');
-	        var sectionLength = section.length;
-
-	        section.find('.desc-info').each(function (idx) {
-	            var sectionHeight = section.eq(idx).find('.desc-info').height();
-	            section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
+	        snbwrap.find('.swiper-slide').each(function () {
+	            listWidth += $(this).outerWidth();
 	        })
 
-	         $(window).on('resize scroll', function () {
-	            var currentPosition = $(window).scrollTop();
+	        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+	        if (selectTargetPos <= boxHarf) { // left
+	            pos = 0;
+	        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+	            pos = listWidth - box.width();
+	        } else {
+	            pos = selectTargetPos - boxHarf;
+	        }
 
-	            for (var i = 0; i < sectionLength; i++) {
-	                setHistoryScroll(section.eq(i));
+	        setTimeout(function () {
+	            snbwrap.css({
+	                "transform": "translate3d(" + (pos * -1) + "px, 0, 0)",
+	                "transition-duration": "500ms"
+	            })
+	        }, 200);
+	    }
+
+	    var slide = $('._swiperTab').find('.swiper-slide')
+
+	    $(".section-wrap .swiper-container").each(function(index){
+	        var $this = $(this);
+	        $this.addClass('slider-' + index);
+
+	        new Swiper('.slider-' + index, {
+	            observer: true,
+	            observeParents: true,
+	            navigation: {
+	                nextEl: $('.slider-' + index).siblings().find('.next'),
+	                prevEl: $('.slider-' + index).siblings().find('.prev'),
+	            },
+	            pagination: {
+	                el : $('.slider-' + index).siblings().find('.swiper-pagination'),
+	                clickable : true
 	            }
+	        });
+	    });
 
-	            if($(window).scrollTop() == $(document).height() - $(window).height()) {
-	                $('.section .year-info').find('li').removeClass('active')
-	                $('.section:last-child .year-info').find('li:last-child').addClass('active')
+	    /**
+	     * tab
+	     */
+	    function setTabContent (idx){
+	        var slide =  $('._swiperTab').find('.swiper-slide');
+	        var section =  $(".section-wrap").find('.section');
+
+	        slide.eq(idx).addClass('active').siblings().removeClass('active');
+	        section.addClass('show').siblings().removeClass('show');
+	        section.eq(idx).addClass('show').siblings().removeClass('show');
+	    }
+
+	    slide.on('click', function(){
+	        var idx = $(this).index();
+	        setTabContent(idx)
+	    });
+
+	    /**
+	     * fnSelectBox
+	     * @param selectBox
+	     */
+	    function fnSelectBox (selectBox){
+	        selectBox.on('click', function () {
+	            let select = $(this);
+	            if (select.hasClass('open')) {
+	                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+	            } else {
+	                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+	            }
+	        });
+	    }
+
+	    /**
+	     * fnOptionBox
+	     * @param section
+	     * @param option
+	     * @param selectBox
+	     */
+	    function fnOptionBox (section, option ,selectBox){
+	        option.on('click', function () {
+	            let select = $(this).find('a').text();
+	            let thisOption = $(this);
+	            let thisIndex = thisOption.index();
+	            selectBox.find('._selectedValue').find('span').text(select);
+	            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
+	        });
+	    }
+
+	    /**
+	     * selectInit
+	     * @param section
+	     */
+	    function selectInit (section) {
+	        $('._section').each(function (){
+	            let target = $(this);
+	            let selectBox = target.find(".select-box");
+	            let option = target.find(".option-value");
+	            fnSelectBox(selectBox);
+	            fnOptionBox(target, option, selectBox);
+	        })
+	    }
+
+	    /**
+	     * fnBodyEvent
+	     */
+	    function fnBodyEvent(){
+	        $('body').on('click', function (e) {
+	            var $select = $(".select-box");
+	            if ($select.hasClass('open')) {
+	                if (!$select.has(e.target).length) {
+	                    $select.removeClass("open").next('.select-option').slideUp(200).removeClass("open");
+	                }
+	            }
+	            e.preventDefault()
+	        })
+	    }
+
+	    /**
+	     * fnMousewheel
+	     */
+	    function fnMousewheel(){
+	        var lastScroll = 0;
+
+	        $(window).on('scroll',function(e){
+	            let listPos = $('.section.show .history-list.active').offset().top;
+	            let selectBox = $('.section.show .select-box');
+	            let offset = $(this).scrollTop();
+
+	            if (offset > lastScroll){
+	                // console.log('down')
+	                if (offset > listPos) {
+	                    selectBox.show().css({'position': 'fixed','top':'0'});
+	                }
+	                else {
+	                    selectBox.hide();
+	                }
 	            }
 	            else {
-	                $('.section:last-child .year-info').find('li:last-child').removeClass('active')
-	            }
-	         })
-
-	        function setHistoryScroll($information) {
-	            var gap = 0;/*50*/
-	            var gapYear = 79;
-	            var currentPosition = $(window).scrollTop() +95; /*+95 X*/
-	            var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
-	            var scrollStart = currentPosition - sectionOffset + 123;
-	            var size = $information.find('.year-info li').length;
-
-	            $information.find('.year-info li').each(function (index) {
-	                if (currentPosition < $information.find('.desc-info ul').eq(0).offset().top - gap) {
-	                    //섹션 이전 화면에서는 absolute상태
-	                    $information.find('.year-info').css({'top' : 'auto'}, {'position' : 'absolute'});
-	                } else {
-	                    //섹션 안으로 들어오면 fixed 상태
-	                    if (size !== index + 1) {
-	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top - gap && currentPosition < $information.find('.desc-info ul').eq(index + 1).offset().top - gap) {
-	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
-	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
-	                        }
-	                    } else {
-	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top) {
-	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
-	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
-	                        }
-	                    }
+	                // console.log('up')
+	                if (offset > listPos) {
+	                    selectBox.show().css({'position': 'fixed','top':'70px'});
 	                }
-	            })
-	        }
-	    })
+	                else {
+	                    selectBox.hide();
+	                }
+	            }
+	            lastScroll = offset;
+	        });
+	    }
+
+	    /**
+	     * 함수 실행
+	     */
+	    selectInit();
+	    fnBodyEvent();
+	    fnMousewheel();
 	</script>
-
-
 </body>
