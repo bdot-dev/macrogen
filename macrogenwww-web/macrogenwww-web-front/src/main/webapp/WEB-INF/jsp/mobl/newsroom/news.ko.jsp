@@ -25,7 +25,8 @@
                 <div class="thumbnail-list">
                     <div class="input-search">
                         <input type="text" v-model="listVo.searchKeyword" @keydown.enter="onSearch"
-                        	name="searchKeyword" id="searchKeyword" maxlength="50" title="검색" class="form-control" placeholder="검색어를 입력해주세요">
+                        	name="searchKeyword" id="searchKeyword" maxlength="50"
+                        	title="검색" class="form-control" placeholder="검색어를 입력해주세요">
 						<input type="text" style="display: none;">
                         <a href="javascript:;" class="btn-search" @click="onSearch"></a>
                     </div>
@@ -46,7 +47,8 @@
                     </div>
 
                     <%-- 목록 없을경우 --%>
-                    <div v-if="resultList.length == 0" class="empty">
+                    <div class="empty"
+                    	v-if="resultList.length == 0 && paginationInfo.currentPageNo">
                         <div class="img"><img src="/publishing/mobile-ko/dist/img/newsroom/img-empty.png" alt="등록된 게시물이 없습니다"></div>
                         <div class="font-body">등록된 게시물이 없습니다</div>
                     </div>
