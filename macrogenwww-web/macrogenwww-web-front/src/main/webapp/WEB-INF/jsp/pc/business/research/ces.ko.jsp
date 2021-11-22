@@ -357,9 +357,9 @@
                         유전체에서 특정 유전자 또는 특정 DNA 절편을 분리한 뒤 원하는 Cell을 이용한 대량 복제 방법으로 PCR Product를 마크로젠에서 제공하는 Vector(T-vector or Blunt-vector)에 삽입하거나 고객의 Vector(Sub-cloning)로 제공하는 서비스입니다. PCR product의 경우 다양한 원인에 의해 한 종류 이상의 PCR product가 존재할 수 있습니다.  이럴 때 정상적인 Sequencing 결과를 얻을 수 없지만Cloning을 통해 이를 개선할 수 있으며 DNA 대량 복제나 안정적인 보관이 가능합니다.
                     </p>
                     <div class="btn-area">
-                        <a href="#" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="#" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -454,21 +454,17 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                            <div class="content clearfix">
                                 <a href="#" class="item prev" onclick="setTabContent(3)">
                                     <div class="title">Customized Sequencing</div>
                                 </a>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--Gene Synthesis-->
             </div>
 
-	        </div>
-	    </div>
-	</div>
+        </div>
+    </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 
