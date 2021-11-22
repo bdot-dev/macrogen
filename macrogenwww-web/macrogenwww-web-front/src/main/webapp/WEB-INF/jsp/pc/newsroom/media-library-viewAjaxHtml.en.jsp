@@ -61,12 +61,12 @@
             <div class="content clearfix">
             	<c:if test="${not empty prevVo }">
 	                <a href="javascript:;" class="item prev btn-prev">
-	                    <div class="title">이전글</div>
+	                    <div class="title">Previous</div>
 	                </a>
                 </c:if>
             	<c:if test="${not empty nextVo }">
 	                <a href="javascript:;" class="item next btn-next">
-	                    <div class="title">다음글</div>
+	                    <div class="title">Next</div>
 	                </a>
                 </c:if>
             </div>

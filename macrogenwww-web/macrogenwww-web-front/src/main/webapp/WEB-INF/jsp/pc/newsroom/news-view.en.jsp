@@ -28,12 +28,12 @@
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
-		        <li class="breadcrumb-item active">뉴스</li>
+		        <li class="breadcrumb-item active">NEWS</li>
 		    </ol>
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">뉴스</div>
+            <div class="font-h1">News</div>
             <div class="btn-indicator-box">
                 <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
             </div>
@@ -56,16 +56,16 @@
                 <div class="indicator">
                     <div class="content">
                         <a href="javascript:;" class="item prev btn-prev ${ empty prevVo ? 'disabled' : '' }">
-                            <div class="sub">이전글</div>
-                            <div class="title">${ empty prevVo ? '첫글입니다' : prevVo.nttSj }</div>
+                            <div class="sub">Previous</div>
+                            <div class="title">${ empty prevVo ? 'No more' : prevVo.nttSj }</div>
                         </a>
                         <a href="javascript:;" class="item next btn-next ${ empty nextVo ? 'disabled' : '' }">
-                            <div class="sub">다음글</div>
-                            <div class="title">${ empty nextVo ? '마지막 글입니다' : nextVo.nttSj }</div>
+                            <div class="sub">Next</div>
+                            <div class="title">${ empty nextVo ? 'No more' : nextVo.nttSj }</div>
                         </a>
                     </div>
                     <div class="btn-box">
-                        <a href="javascript:;" class="btn btn-black btn-list"><span>목록</span></a>
+                        <a href="javascript:;" class="btn btn-black btn-list"><span>Go list</span></a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
 
 		$(".btn-prev").on('click', function(e) {
 			<c:if test="${ empty prevVo }">
-				alert('첫글입니다.');
+				alert('No more article');
 			</c:if>
 			<c:if test="${ not empty prevVo }">
 				var $listForm = $('#listForm');
@@ -95,7 +95,7 @@
 
 		$(".btn-next").on('click', function(e) {
 			<c:if test="${ empty nextVo }">
-				alert('마지막 글입니다.');
+				alert('No more article');
 			</c:if>
 			<c:if test="${ not empty nextVo }">
 				var $listForm = $('#listForm');

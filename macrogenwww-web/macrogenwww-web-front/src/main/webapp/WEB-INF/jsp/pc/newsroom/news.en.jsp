@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-<body>
+<body class="en">
 
 	<form:form commandName="listVo" id="listForm" name="listForm">
 	<form:hidden path="pageIndex" />
@@ -10,12 +10,12 @@
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
-		        <li class="breadcrumb-item active">뉴스</li>
+		        <li class="breadcrumb-item active">NEWS</li>
 		    </ol>
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">뉴스</div>
+            <div class="font-h1">News</div>
             <div class="board">
 
 				<c:if test="${fn:length(upendFixingList) > 0}">
@@ -94,7 +94,7 @@
                 <div class="search-wrap">
                     <div class="input-search">
 	                    <form:input path="searchKeyword" maxlength="100"
-	                    	class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요" aria-describedby="search2" />
+	                    	class="form-control" placeholder="Enter a search term" aria-label="Enter a search term" aria-describedby="search2" />
 						<input type="text" style="display: none;">
                         <button class="btn-search" type="button" id="search2"><span class="sr-only">검색</span></button>
                     </div>
@@ -129,7 +129,7 @@
 
 				<c:if test="${fn:length(resultList) <= 0}">
 	                <div class="no-data">
-	                    <p>등록된 게시물이 없습니다&#46;</p>
+	                    <p>No article</p>
 	                </div>
 	            </c:if>
 
