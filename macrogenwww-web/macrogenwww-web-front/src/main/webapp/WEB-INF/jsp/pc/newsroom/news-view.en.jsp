@@ -1,11 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<c:choose>
+	<c:when test="${resultVo.thumbBassImageUseYn eq 'Y' }">
+		<c:set var="imgUrl" value="${resultVo.thumbBassImageCodeNm }" />
+	</c:when>
+	<c:otherwise>
+		<c:set var="imgUrl" value="${publicUrl }${resultVo.thumbFlpth }" />
+	</c:otherwise>
+</c:choose>
 <head>
 	<title><c:out value="${resultVo.nttSj }" /> - </title>
 	<meta name="description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
 	<meta property="og:title" content="<c:out value="${resultVo.nttSj }" /> - MACROGEN" />
 	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
-	<!-- <meta property="og:image" content="${frontDomain }${artfairImageUrl}" /> -->
+	<meta property="og:image" content="${frontDomain }${imgUrl }" />
 </head>
 <body>
 
@@ -20,12 +28,12 @@
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
-		        <li class="breadcrumb-item active">미디어라이브러리</li>
+		        <li class="breadcrumb-item active">뉴스</li>
 		    </ol>
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">미디어라이브러리</div>
+            <div class="font-h1">뉴스</div>
             <div class="btn-indicator-box">
                 <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
             </div>
@@ -33,15 +41,11 @@
                 <div class="detail">
                     <div class="heading">
                         <div class="title">${resultVo.nttSj }</div>
-                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy&#46;MM&#46;dd" /></div>
                     </div>
                     <hr class="divider"/>
                     <div class="content">
-                    	<c:if test="${not empty resultVo.mvpUrl }">
-	                        <div class="video" style="background-color: rgba(255,0,0,.4); display: flex; justify-content: center; align-items: center; font-size: 50px; font-weight: 700">
-	                        	${resultVo.mvpUrl }
-	                        </div>
-                    	</c:if>
+                        <%-- <div class="img"><img src="${imgUrl }" alt=""></div> --%>
                         <div class="text">
                         	${resultVo.nttCn }
                         </div>
@@ -72,7 +76,7 @@
 	$(function() {
 		$(".btn-list").on('click', function(e) {
 			var $listForm = $('#listForm');
-			$listForm.attr('action', '/${rc.locale.language }/newsroom/media-library');
+			$listForm.attr('action', '/${rc.locale.language }/newsroom/news');
 			$listForm.attr('method', 'get');
 			$listForm.submit();
 	    });
@@ -83,7 +87,7 @@
 			</c:if>
 			<c:if test="${ not empty prevVo }">
 				var $listForm = $('#listForm');
-				$listForm.attr('action', '/${rc.locale.language }/newsroom/media-library/${prevVo.nttSn}');
+				$listForm.attr('action', '/${rc.locale.language }/newsroom/news/${prevVo.nttSn}');
 				$listForm.attr('method', 'get');
 				$listForm.submit();
 			</c:if>
@@ -95,7 +99,7 @@
 			</c:if>
 			<c:if test="${ not empty nextVo }">
 				var $listForm = $('#listForm');
-				$listForm.attr('action', '/${rc.locale.language }/newsroom/media-library/${nextVo.nttSn}');
+				$listForm.attr('action', '/${rc.locale.language }/newsroom/news/${nextVo.nttSn}');
 				$listForm.attr('method', 'get');
 				$listForm.submit();
 			</c:if>

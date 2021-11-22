@@ -2,21 +2,31 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-		    <ol class="breadcrumb">
-		        <li class="breadcrumb-item">Home</li>
-		        <li class="breadcrumb-item">IR</li>
-		        <li class="breadcrumb-item active">투자자 문의</li>
-		    </ol>
-		</nav>
+	<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
+	<input type="hidden" id="mbtlnum" name="mbtlnum" />
 
-		<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
-
+    <div class="container container-fluid">
         <div class="section_IR">
-            <div class="font-h1">투자자 문의</div>
-            <div style="width: 1323px;height: 520px;background-color:#d9d9d9;"></div>
-            <div class="privacy_box">
+            <div class="question_box">
+                <div class="text-area">
+                    <nav aria-label="breadcrumb">
+					    <ol class="breadcrumb">
+					        <li class="breadcrumb-item">Home</li>
+					        <li class="breadcrumb-item">IR</li>
+					        <li class="breadcrumb-item active">투자자 문의</li>
+					    </ol>
+					</nav>
+
+                    <div class="font-h1">투자자 문의</div>
+                    <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
+                    <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
+                    <a href="#write-form" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
+
+                </div>
+                <div class="img-area"></div>
+
+            </div>
+            <div class="privacy_box" id="write-form">
                 <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">
@@ -33,15 +43,23 @@
 	                            <option value="${result.code }">${result.code }</option>
                         	</c:forEach>
                         </select>
-                        <input type="number" id="mbtlnum2" name="mbtlnum2" maxlength="4"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리">
-                        <input type="number" id="mbtlnum3" name="mbtlnum3" maxlength="4"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리">
+                        <input type="number" type="number" id="mbtlnum2" name="mbtlnum2"
+                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <input type="number" type="number" id="mbtlnum3" name="mbtlnum3"
+                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                        <script>
+                            /*숫자 글자수 제한*/
+                            function lengthLimit4(e){
+                                if(e.value.length > 4){
+                                    e.value = e.value.slice(0, 4)
+                                }
+                            }
+                        </script>
                     </div>
                     <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
                 </div>
+                <hr class="divider"/>
             </div>
-            <hr class="divider"/>
             <div class="privacy_box">
                 <div class="font-h5"><span>02.</span>문의하실 내용을 작성해주세요</div>
                 <!-- input / text-->
@@ -57,6 +75,8 @@
                               aria-describedby="faq"></textarea>
                 </div>
                 <!-- input / text-->
+
+                <!--s 개발영역-->
                 <div class="input-group">
                     <span class="input-group-text" id="automatic">자동등록방지</span>
                     <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;">
@@ -65,13 +85,16 @@
                     <input type="text" id="captchaString" name="captchaString" maxlength="10"
                     	placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
+                <!--e 개발영역-->
+
+                <hr class="divider"/>
             </div>
-            <hr class="divider"/>
+
             <div class="privacy_box">
                 <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
                 <div class="agreement">
                     <p><span class="font-bold">개인정보 수집 목적 :</span> 투자 문의 및 상담 문의 대응</p>
-                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호, 문의 제목, 문의 내용</p>
+                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호</p>
                     <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
                     <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
                 </div>
@@ -81,19 +104,30 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="javascript:;" class="btn btn-white disabled btn-cancel"><span>취소</span></a>
-                <a href="javascript:;" class="btn btn-primary btn-primary btn-save"><i class="icon"></i><span>문의하기</span></a>
+                <a href="javascript:;" class="btn btn-white btn-cancel"><span>취소</span></a>
+                <a href="javascript:;" class="btn btn-primary btn-save"><i class="icon icon-pen"></i><span>문의하기</span></a>
             </div>
+
+            <script>
+                $('.form-check').on('click',function (){
+                    /* if($(this).is(":checked") ==  true){
+                        $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                    }else{
+                        $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                    } */
+                });
+            </script>
         </div>
 
-		</form>
-
     </div>
+
+	</form>
 
     <script>
 	var submitting = false;
 	var $form = $('#editForm');
 	var $nmbrWrterNm = $('#nmbrWrterNm');
+	var $mbtlnum = $('#mbtlnum');
 	var $mbtlnum1 = $('#mbtlnum1');
 	var $mbtlnum2 = $('#mbtlnum2');
 	var $mbtlnum3 = $('#mbtlnum3');
@@ -104,7 +138,7 @@
 
     $(function() {
     	$('.btn-cancel').on('click', function() {
-
+    		$form[0].reset();
     	});
 
     	$('.btn-save').on('click', function() {
@@ -122,6 +156,8 @@
 			} else {
 				submitting = true;
 			}
+
+			$mbtlnum.val($mbtlnum1.val() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
 
 			$.ajax({
 				dataType : 'json',
