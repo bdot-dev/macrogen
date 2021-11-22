@@ -161,6 +161,6 @@
 
     // btn-lang
     $('.btn-lang').on('click',function (){
-        $(this).addClass('on').siblings().removeClass('on')
+        // $(this).addClass('on').siblings().removeClass('on')
     })
 </script>

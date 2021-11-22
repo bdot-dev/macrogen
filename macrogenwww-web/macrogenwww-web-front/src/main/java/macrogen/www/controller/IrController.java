@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -82,6 +83,10 @@ public class IrController extends DefaultController {
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irdislos");
 
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/ir/announcement." + getLang();
+		}
+
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
@@ -106,6 +111,38 @@ public class IrController extends DefaultController {
 		return getDev() + "/ir/announcement." + getLang();
 	}
 
+	@RequestMapping("/announcement/data")
+	@ResponseBody
+	public Map<String, Object> announcementData(@PathVariable LangId langId,
+			@RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setPageSize(5);
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId("irdislos");
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<NttVo> resultList = nttService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
+	}
+
 	@RequestMapping("/announcement/{nttSn}")
 	public String announcementView(@PathVariable long nttSn, @PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
@@ -124,6 +161,8 @@ public class IrController extends DefaultController {
 		NttVo nextVo = nttService.next(listVo);
 		model.addAttribute("nextVo", nextVo);
 
+		model.addAttribute("MOBILE_NO_FOOTER", true);
+
 		return getDev() + "/ir/announcement-view." + getLang();
 	}
 
@@ -135,6 +174,10 @@ public class IrController extends DefaultController {
 		listVo.setPageSize(5);
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irnews");
+
+		if ("mobl".equals(getDev())) {
+			return getDev() + "/ir/news." + getLang();
+		}
 
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
@@ -160,6 +203,38 @@ public class IrController extends DefaultController {
 		return getDev() + "/ir/news." + getLang();
 	}
 
+	@RequestMapping("/news/data")
+	@ResponseBody
+	public Map<String, Object>  newsData(@PathVariable LangId langId,
+			@RequestBody NttVo listVo) throws Exception {
+		HashMap<String, Object> resultMap = new HashMap<String, Object>();
+
+		listVo.setRecordCountPerPage(10);
+		listVo.setPageSize(5);
+		listVo.setLangCode(langId.name());
+		listVo.setBbsId("irnews");
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
+		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
+		paginationInfo.setPageSize(listVo.getPageSize());
+
+		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
+		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
+
+		List<NttVo> resultList = nttService.list(listVo);
+		if (null != resultList && resultList.size() > 0) {
+			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+		} else {
+			paginationInfo.setTotalRecordCount(0);
+		}
+
+		resultMap.put("paginationInfo", paginationInfo);
+		resultMap.put("resultList", resultList);
+
+		return resultMap;
+	}
+
 	@RequestMapping("/news/{nttSn}")
 	public String newsView(@PathVariable long nttSn, @PathVariable LangId langId,
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
@@ -177,6 +252,8 @@ public class IrController extends DefaultController {
 
 		NttVo nextVo = nttService.next(listVo);
 		model.addAttribute("nextVo", nextVo);
+
+		model.addAttribute("MOBILE_NO_FOOTER", true);
 
 		return getDev() + "/ir/news-view." + getLang();
 	}

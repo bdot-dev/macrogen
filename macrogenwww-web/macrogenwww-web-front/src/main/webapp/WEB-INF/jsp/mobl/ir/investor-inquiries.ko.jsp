@@ -5,120 +5,126 @@
 	<form id="editForm" name="editForm" action="/${rc.locale.language }/ir/investor-inquiries/submit" method="post">
 	<input type="hidden" id="mbtlnum" name="mbtlnum" />
 
-    <div class="container container-fluid">
-        <div class="section_IR">
-            <div class="question_box">
-                <div class="text-area">
-                    <nav aria-label="breadcrumb">
-					    <ol class="breadcrumb">
-					        <li class="breadcrumb-item">Home</li>
-					        <li class="breadcrumb-item">IR</li>
-					        <li class="breadcrumb-item active">투자자 문의</li>
-					    </ol>
-					</nav>
+    <div class="non-bg">
+        <header class="header">
+		    <div class="inner">
+		        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+		        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+		    </div>
+		</header>
 
-                    <div class="font-h1">투자자 문의</div>
+        <div class="frame">
+            <div class="font-h1">투자자 문의</div>
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_IR">
+            <div class="question">
+                <div class="text-area">
                     <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
                     <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
-                    <a href="#write-form" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
-
-                </div>
+                 </div>
                 <div class="img-area"></div>
-
             </div>
-            <div class="privacy_box" id="write-form">
-                <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
-                <!-- input / text-->
-                <div class="input-group">
-                    <span class="input-group-text" id="name">이름</span>
-                    <input type="text" id="nmbrWrterNm" name="nmbrWrterNm" maxlength="10"
-                    	placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
-                </div>
-                <!-- input / phone-->
-                <div class="input-group input-phone-box">
-                    <span class="input-group-text" id="num1">휴대폰 번호</span>
-                    <div class="input-group-phone">
-                        <select id="mbtlnum1" name="mbtlnum1" class="form-select" title="휴대폰번호 앞세자리 선택">
-                        	<c:forEach items="${mobilePrefixList }" var="result" varStatus="status">
-	                            <option value="${result.code }">${result.code }</option>
-                        	</c:forEach>
-                        </select>
-                        <input type="number" type="number" id="mbtlnum2" name="mbtlnum2"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
-                        <input type="number" type="number" id="mbtlnum3" name="mbtlnum3"
-                        	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
-                        <script>
-                            /*숫자 글자수 제한*/
-                            function lengthLimit4(e){
-                                if(e.value.length > 4){
-                                    e.value = e.value.slice(0, 4)
-                                }
-                            }
-                        </script>
+
+            <div class="privacy_list">
+                <div class="box">
+                    <div class="font-h5">01. 정보를 입력해주세요</div>
+                    <label class="label">이름</label>
+                    <div class="input-group">
+                        <input type="text" id="nmbrWrterNm" name="nmbrWrterNm" maxlength="10"
+                        	title="검색" class="form-control" placeholder="이름을 입력해주세요">
                     </div>
-                    <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span></p>
+                    <label class="label">휴대폰 번호</label>
+                    <div class="input-group input-group-phone">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span id="mbtlnum1">010</span>
+                                <i class="ico-select-nor"></i>
+                            </div>
+                            <input type="hidden" name="phone">
+                            <ul class="dropdown-menu">
+	                        	<c:forEach items="${mobilePrefixList }" var="result" varStatus="status">
+	                                <li>${result.code }</li>
+	                        	</c:forEach>
+                            </ul>
+                        </div>
+                        <input type="number" id="mbtlnum2" name="mbtlnum2"
+                        	title="phone" class="form-control">
+                        <input type="number" id="mbtlnum3" name="mbtlnum3"
+                        	title="phone" class="form-control">
+                    </div>
+                    <div class="input-tip">
+                        <i class="icon ico-info-blue"></i>
+                        <span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다.</span>
+                    </div>
                 </div>
-                <hr class="divider"/>
-            </div>
-            <div class="privacy_box">
-                <div class="font-h5"><span>02.</span>문의하실 내용을 작성해주세요</div>
-                <!-- input / text-->
-                <div class="input-group">
-                    <span class="input-group-text" id="title">제목</span>
-                    <input type="text" id="nttSj" name="nttSj" maxlength="200"
-                    	placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
-                </div>
-                <!-- textarea -->
-                <div class="input-group">
-                    <span class="input-group-text" id="faq">문의내용</span>
-                    <textarea id="nttCn" name="nttCn" type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
-                              aria-describedby="faq"></textarea>
-                </div>
-                <!-- input / text-->
 
-                <!--s 개발영역-->
-                <div class="input-group">
-                    <span class="input-group-text" id="automatic">자동등록방지</span>
-                    <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;">
-                    	<img src="/${rc.locale.language }/ir/investor-inquiries/captcha-image" alt="캡차이미지">
-                    </span>
-                    <input type="text" id="captchaString" name="captchaString" maxlength="10"
-                    	placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
-                </div>
-                <!--e 개발영역-->
+                <hr class="M-divider">
 
-                <hr class="divider"/>
+                <div class="box">
+                    <div class="font-h5">02. 문의하실 내용을 작성해주세요</div>
+
+                    <label class="label">제목</label>
+                    <div class="input-group">
+                        <input type="text" id="nttSj" name="nttSj" maxlength="200"
+                        	title="검색" class="form-control" placeholder="제목을 입력해주세요">
+                    </div>
+
+                    <label class="label">문의내용</label>
+                    <div class="input-group">
+                        <textarea id="nttCn" name="nttCn"
+                        	title="textarea" class="form-control" placeholder="문의하실 내용을 입력하세요"></textarea>
+                    </div>
+
+                    <!--s 개발영역-->
+                    <div class="input-group">
+                        <span class="input-group-text" id="automatic">자동등록방지</span>
+                        <span class="security" style="width: 160px; height: 60px; background: #E9E9E9;">
+                    		<img src="/${rc.locale.language }/ir/investor-inquiries/captcha-image" alt="캡차이미지">
+                        </span>
+                        <input type="text" id="captchaString" name="captchaString" maxlength="10"
+                        	placeholder="위의 문자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
+                    </div>
+                    <!--e 개발영역-->
+                </div>
+
+                <hr class="M-divider"/>
+
+                <div class="box">
+                    <div class="font-h5">03. 투자 및 상담을 위한 개인정보 수집·이용에 동의해주세요</div>
+
+                    <div class="agreement">
+                        <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
+                        <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                        <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
+                        <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="checkAgree"
+                        	class="form-check-input">
+                        <label class="form-check-label" for="checkAgree">동의합니다</label>
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="javascript:;" class="btn btn-light btn-cancel"><span>취소</span></a>
+                        <a href="javascript:;" class="btn btn-primary btn-save"><i class="icon-pen"></i><span>문의하기</span></a>
+                    </div>
+                </div>
+
+                <script>
+                    /* $('.form-check-input').on('click',function (){
+                        if($(this).is(":checked") ==  true){
+                            $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
+                        }else{
+                            $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
+                        }
+                    }); */
+                </script>
             </div>
 
-            <div class="privacy_box">
-                <div class="font-h5"><span>03.</span>투자 및 상담을 위한 개인정보 수집&#183;이용에 동의해주세요</div>
-                <div class="agreement">
-                    <p><span class="font-bold">개인정보 수집 목적 :</span> 투자 문의 및 상담 문의 대응</p>
-                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호</p>
-                    <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
-                    <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="checkAgree">
-                    <label class="form-check-label" for="checkAgree">동의합니다</label>
-                </div>
-            </div>
-            <div class="btn-box">
-                <a href="javascript:;" class="btn btn-white btn-cancel"><span>취소</span></a>
-                <a href="javascript:;" class="btn btn-primary btn-save"><i class="icon icon-pen"></i><span>문의하기</span></a>
-            </div>
-
-            <script>
-                $('.form-check').on('click',function (){
-                    /* if($(this).is(":checked") ==  true){
-                        $(this).parents().next('.btn-box').children('.btn').removeClass('disabled')
-                    }else{
-                        $(this).parents().next('.btn-box').children('.btn').addClass('disabled')
-                    } */
-                });
-            </script>
         </div>
-
     </div>
 
 	</form>
@@ -157,7 +163,7 @@
 				submitting = true;
 			}
 
-			$mbtlnum.val($mbtlnum1.val() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
+			$mbtlnum.val($mbtlnum1.text() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
 
 			$.ajax({
 				dataType : 'json',
@@ -195,7 +201,7 @@
     		$nmbrWrterNm.focus();
     		return false;
     	}
-    	if (!$mbtlnum1.val()) {
+    	if (!$mbtlnum1.text()) {
     		alert('휴대폰번호를 입력해 주세요.');
     		$mbtlnum1.focus();
     		return false;
