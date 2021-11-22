@@ -5,7 +5,7 @@
     <div class="non-bg">
         <header class="header">
 		    <div class="inner">
-		        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+		        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 		        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 		    </div>
 		</header>
@@ -40,7 +40,7 @@
                     <a href="javascript:;" class="btn-more" @click="onMore"><span class="sr-only">더보기</span></a>
                 </div>
 
-                <div v-if="resultList.length == 0" class="btn-wrapper">
+                <div v-if="resultList.length == 0 && paginationInfo.currentPageNo" class="btn-wrapper">
 	                <div class="empty">
 	                    <div class="img"><img src="/publishing/mobile-ko/dist/img/newsroom/img-empty.png" alt="등록된 게시물이 없습니다"></div>
 	                    <div class="font-body">등록된 게시물이 없습니다</div>
