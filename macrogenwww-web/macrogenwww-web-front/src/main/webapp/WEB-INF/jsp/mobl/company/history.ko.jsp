@@ -84,7 +84,7 @@
 				                        	<c:forEach var="photo" items="${result.cmpnyhistGroupPhotoList }" varStatus="photoStatus">
 				                                <div class="swiper-slide">
 				                                    <div class="img">
-						                                <img src="${publicUrl }${ photo.photoFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
+						                                <img src="${publicUrl }${ photo.photoMoblFlpth }" alt="${ photo['photoSj'.concat(lang)] }">
 				                                        <div class="year">${ photo.photoYear }</div>
 				                                    </div>
 				                                    <div class="desc">${ photo['photoSj'.concat(lang)] }</div>
