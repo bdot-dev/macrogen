@@ -27,7 +27,7 @@
 
 <body>
 <div class="wrap">
-    <div class="top-bg" style="background-image: url(../../img/business/ngs-bg.png);">
+    <div class="top-bg" style="background-image: url(../../img/business/test-bg.png);">
         <header class="header header-white">
     <div class="inner">
         <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
@@ -59,7 +59,7 @@
         <div class="frame">
             <div class="font-h1">COVID-19</div>
             <div class="font-body-h">감염성 질환 진단을 위한 검사</div>
-            <div class="btn-wrap"><a href="#" class="btn-service"><span class="sr-only">service</span></a></div>
+            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
         </div>
     </div>
     <div class="container">
@@ -77,7 +77,7 @@
 
             <!--covid19 탭 네비 s-->
             <div class="select-nav-box _content-anchor">
-                <p class="title font-h4">SERVICE</p>
+                <p class="title font-h4" id="tab_anchor">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
                         <span class="text">Axen™ COVID-19 RT 진단키트</span>
@@ -124,8 +124,8 @@
                     /*클릭시 탭메뉴 변경*/
                     option.on('click',function(){
                         var idx =$(this).index();
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                         textChange();
                     })
 
@@ -133,8 +133,8 @@
                     function setTabContent(idx){
                         $('._selected-value').text($('._select-option li').eq(idx).text());
                         <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
                         /*페이지 변경후 상단 이동*/
                         fnMove();
@@ -162,7 +162,7 @@
             <!--covid19 탭 네비 e-->
 
             <!--covid19 탭 메뉴 s-->
-            <div class="info-box-area tab-content">
+            <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
@@ -296,7 +296,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                              <img src="../../img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
-                                <span class="_btnZoom-1">
+                                <span class="btnZoom-1">
                                     <i class="icon ico-zoom-white"></i>
                                 </span>
                             </div>
@@ -304,7 +304,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
-                                <span class="_btnZoom-2">
+                                <span class="btnZoom-2">
                                     <i class="icon ico-zoom-white _btnZoom2"></i>
                                 </span>
                             </div>
@@ -312,7 +312,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_clinicaltrialtest.png" alt="flow">
-                                <span class="_btnZoom-3">
+                                <span class="btnZoom-3">
                                     <i class="icon ico-zoom-white _btnZoom3"></i>
                                 </span>
                             </div>
@@ -404,7 +404,8 @@
             <!--covid19 탭 메뉴 e-->
         </div>
     </div>
-    <footer class="footer main">
+    <!--footer 수정사항 있을시 메인페이지에 있는 footer도 같이변경해주세요-->
+<footer class="footer main">
     <div class="font-h5">Macrogen</div>
     <div class="info">
         <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
@@ -621,35 +622,76 @@
     })
 </script>
 
-<!--1번이미지 모달 s-->
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<!--modalImageViewer1 s-->
 <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="graph1"></div>
             </div>
         </div>
     </div>
 </div>
 <script>
     // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-    // zoom
-    var el = document.querySelector('.pinch-zoom');
-    new PinchZoom.default(el, {});
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
 
     // modal close
     $('.btn-close').on('click', function () {
-        modal.hide();
+        modalImageViewer1.hide();
+        hideToastPopup();
     })
 
     // modal open
-    $('._btnZoom-1').on('click', function () {
-        modal.show();
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
+        showToastPopup();
     })
 
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
 
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
 
     // toast popup
     function showToastPopup() {
@@ -659,8 +701,45 @@
     function hideToastPopup() {
         $('.toast-popup').removeClass('active');
     }
-    setTimeout(showToastPopup, 1500);
 </script>
-<!--1번이미지 모달 e-->
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
 </body>
 </html>

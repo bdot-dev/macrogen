@@ -13,6 +13,7 @@ front.common = (function () {
         this.a();
         this.swiperTab();
         this.commonHandler();
+        this.scrollHorizon();
     }
 
     var a = function () {
@@ -241,14 +242,48 @@ front.common = (function () {
         $('._btnTooltipClose').on('click',function (){
             $(this).parent().parent().removeClass('active');
         })
+
+        $(window).bind("load", function() {
+            $('._btnTooltip').each(function () {
+                var left = $(this).offset().left * -1 + 20;
+                $(this).siblings().css('left', left + 'px')
+            })
+        });
         /* e tooltip */
+
+        /* s accordion */
+        $('.accordion-button').on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('.accordion-content').slideUp(500);
+            } else {
+                $('.accordion-button').removeClass('active');
+                $(this).addClass('active');
+                $('.accordion-content').slideUp(500);
+                $(this).siblings('.accordion-content').slideDown(500);
+            }
+        });
+        /* s accordion */
+
+
     }
+
+    var scrollHorizon = function(){
+        $(window).on("load",function(){
+            $(".table-scroll").mCustomScrollbar({
+                axis:"x",
+                theme:"dark"
+            });
+        });
+    };
+
 
     return {
         a: a,
         swiperTab : swiperTab,
         commonHandler: commonHandler,
-        init: init
+        init: init,
+        scrollHorizon : scrollHorizon
     }
 })();
 

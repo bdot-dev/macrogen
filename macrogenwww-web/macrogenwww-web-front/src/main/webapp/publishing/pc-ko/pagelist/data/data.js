@@ -208,6 +208,7 @@ data.macrogen = {
     },
   ]
 }
+
 data.business ={
   title: 'BUSINESS',
   list: [
@@ -285,6 +286,7 @@ data.business ={
     },
   ]
 }
+
 data.RD = {
   title: 'R&D',
   list: [
@@ -338,6 +340,7 @@ data.RD = {
     },
   ]
 }
+
 data.newsroom = {
   title: 'NEWSROOM',
   list: [
@@ -391,6 +394,7 @@ data.newsroom = {
     }
   ]
 }
+
 data.IR = {
   title: 'IR',
   list: [
@@ -438,6 +442,7 @@ data.IR = {
     }
   ]
 }
+
 data.etc = {
   title: 'Etc',
   list: [
@@ -473,6 +478,7 @@ data.etc = {
     },
   ]
 }
+
 data.esg = {
   title: 'ESG',
   list: [
