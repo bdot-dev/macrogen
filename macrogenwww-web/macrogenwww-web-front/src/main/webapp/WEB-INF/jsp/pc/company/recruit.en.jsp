@@ -31,7 +31,7 @@
             <div class="section">
                 <div class="title">전형절차</div>
                 <div class="img-recruitment-info">
-                    <img src="/publishing/pc-ko/dist/img/macrogen/img-recruitment-info.png" alt="전형절차">
+                    <img src="/publishing/pc-en/dist/img/macrogen/img-recruitment-info.png" alt="전형절차">
                 </div>
             </div>
             <!-- e 전형절차 -->

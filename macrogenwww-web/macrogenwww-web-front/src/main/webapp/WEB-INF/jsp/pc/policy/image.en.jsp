@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h1">영상정보처리기기 운영&#183;관리 방침</p>
+            <p class="main-title font-h1">Image Information Processing Policy</p>
             <div class="terms">
                 <div class="content_area">
                 	<c:if test="${fn:length(resultList) > 0 }">
@@ -13,7 +13,7 @@
 							<div class="select_default _select_default">
 								<c:choose>
 									<c:when test="${ empty resultVo.endDe }">
-										<c:set var="currentEndDe" value="현재" />
+										<c:set var="currentEndDe" value="Present" />
 									</c:when>
 									<c:otherwise>
 										<fmt:formatDate var="currentEndDe" value="${resultVo.endDe }" pattern="yyyy.MM.dd" />
@@ -27,7 +27,7 @@
                                 	<c:forEach  var="result" items="${resultList }" varStatus="status" >
 										<c:choose>
 											<c:when test="${ empty result.endDe }">
-												<c:set var="endDe" value="현재" />
+												<c:set var="endDe" value="Present" />
 											</c:when>
 											<c:otherwise>
 												<fmt:formatDate var="endDe" value="${result.endDe }" pattern="yyyy.MM.dd" />

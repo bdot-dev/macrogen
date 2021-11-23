@@ -31,27 +31,24 @@
 					<tbody>
 						<tr>
 							<th>이름</th>
-							<td class="tal">
+							<td colspan="3" class="tal">
 								{{ resultVo.nmbrWrterNm }}
-								<%-- <div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.nmbrWrterNm" class="mr5 txtMaxlen" maxlength="80" style="width:100%;"/>
-								</div> --%>
 							</td>
+						</tr>
+						<tr>
 							<th>휴대폰 번호</th>
 							<td class="tal">
 								{{ resultVo.mbtlnum }}
-								<%-- <div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.mbtlnum" class="mr5 txtMaxlen" maxlength="80" style="width:100%;"/>
-								</div> --%>
+							</td>
+							<th>이메일</th>
+							<td class="tal">
+								{{ resultVo.email }}
 							</td>
 						</tr>
 						<tr>
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
 								{{ resultVo.nttSj }}
-								<%-- <div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="80" placeholder="제목" style="width:100%;"/>
-								</div> --%>
 							</td>
 						</tr>
 						<tr>
