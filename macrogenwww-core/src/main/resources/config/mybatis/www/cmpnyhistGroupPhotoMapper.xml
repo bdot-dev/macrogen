@@ -25,6 +25,8 @@
 			, tcgp.cmpnyhist_group_sn
 			, tcgp.photo_atch_id
 			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
+			, tcgp.photo_mobl_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_mobl_atch_id ) photo_mobl_flpth
 			, tcgp.photo_sj_ko
 			, tcgp.photo_sj_en
 			, tcgp.photo_year
@@ -58,6 +60,8 @@
 			, tcgp.cmpnyhist_group_sn
 			, tcgp.photo_atch_id
 			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_atch_id ) photo_flpth
+			, tcgp.photo_mobl_atch_id
+			, ( select physicl_flpth from tb_atch where atch_id = tcgp.photo_mobl_atch_id ) photo_mobl_flpth
 			, tcgp.photo_sj_ko
 			, tcgp.photo_sj_en
 			, tcgp.photo_year
@@ -81,6 +85,7 @@
 			cmpnyhist_group_photo_sn
 			, cmpnyhist_group_sn
 			, photo_atch_id
+			, photo_mobl_atch_id
 			, photo_sj_ko
 			, photo_sj_en
 			, photo_year
@@ -93,6 +98,7 @@
 			#{cmpnyhistGroupPhotoSn}
 			, #{cmpnyhistGroupSn}
 			, #{photoAtchId}
+			, #{photoMoblAtchId}
 			, #{photoSjKo}
 			, #{photoSjEn}
 			, #{photoYear}
@@ -116,6 +122,7 @@
 		    , updusr_sn = #{updusrSn}
 		    <if test="cmpnyhistGroupSn != null">, cmpnyhist_group_sn = #{cmpnyhistGroupSn} </if>
 			<if test="photoAtchId != null">, photo_atch_id = #{photoAtchId} </if>
+			<if test="photoMoblAtchId != null">, photo_mobl_atch_id = #{photoMoblAtchId} </if>
 			<if test="photoSjKo != null">, photo_sj_ko = #{photoSjKo} </if>
 			<if test="photoSjEn != null">, photo_sj_en = #{photoSjEn} </if>
 			<if test="photoYear != null">, photo_year = #{photoYear} </if>
