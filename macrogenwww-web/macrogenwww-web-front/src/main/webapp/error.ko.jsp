@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -12,37 +12,37 @@
     <meta name="apple-mobile-web-app-title" content="macrogen" />
     <meta name="viewport" content="width=1244"/>
     <!-- IE 10 이하 -->
-    <link rel="shortcut icon" href="/publishing/pc-en/dist/favicon/favicon.ico">
+    <link rel="shortcut icon" href="/publishing/pc-ko/dist/favicon/favicon.ico">
     <!-- Android -->
-    <link rel="icon" type="image/png" sizes="36x36" href="/publishing/pc-en/dist/favicon/android-icon-36x36.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/publishing/pc-en/dist/favicon/android-icon-48x48.png">
-    <link rel="icon" type="image/png" sizes="72x72" href="/publishing/pc-en/dist/favicon/android-icon-72x72.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-en/dist/favicon/android-icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="/publishing/pc-en/dist/favicon/android-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/publishing/pc-en/dist/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="/publishing/pc-ko/dist/favicon/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/publishing/pc-ko/dist/favicon/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="/publishing/pc-ko/dist/favicon/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-ko/dist/favicon/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/publishing/pc-ko/dist/favicon/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/publishing/pc-ko/dist/favicon/android-icon-192x192.png">
     <!-- apple -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/publishing/pc-en/dist/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/publishing/pc-en/dist/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/publishing/pc-en/dist/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/publishing/pc-en/dist/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/publishing/pc-en/dist/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/publishing/pc-en/dist/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/publishing/pc-en/dist/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/publishing/pc-en/dist/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/publishing/pc-en/dist/favicon/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/publishing/pc-ko/dist/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/publishing/pc-ko/dist/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/publishing/pc-ko/dist/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/publishing/pc-ko/dist/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/publishing/pc-ko/dist/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/publishing/pc-ko/dist/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/publishing/pc-ko/dist/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/publishing/pc-ko/dist/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/publishing/pc-ko/dist/favicon/apple-icon-180x180.png">
     <!-- 브라우저용 표준 -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/publishing/pc-en/dist/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/publishing/pc-en/dist/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-en/dist/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/publishing/pc-ko/dist/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/publishing/pc-ko/dist/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/publishing/pc-ko/dist/favicon/favicon-96x96.png">
     <!-- ms -->
-    <meta name="msapplication-TileImage" content="/publishing/pc-en/dist/favicon/ms-icon-70x70.png">
-    <meta name="msapplication-TileImage" content="/publishing/pc-en/dist/favicon/ms-icon-144x144.png">
-    <meta name="msapplication-TileImage" content="/publishing/pc-en/dist/favicon/ms-icon-150x150.png">
-    <meta name="msapplication-TileImage" content="/publishing/pc-en/dist/favicon/ms-icon-310x310.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="/publishing/pc-ko/dist/favicon/ms-icon-310x310.png">
     <!-- manifest -->
-    <link rel="manifest" href="/publishing/pc-en/dist/favicon/manifest.json">
+    <link rel="manifest" href="/publishing/pc-ko/dist/favicon/manifest.json">
     <!-- Windows 8.1 + IE11 이상 -->
-    <meta name="msapplication-config" content="/publishing/pc-en/dist/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="/publishing/pc-ko/dist/favicon/browserconfig.xml">
 
     <meta name="robots" content="ALL">
     <meta property="og:type" content="website">
@@ -54,10 +54,10 @@
     <title>마크로젠</title>
     <meta name="keywords" content="마크로젠 키워드">
     <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
-    <script src="/publishing/pc-en/dist/js/bundle.js?0914"></script>
+    <script src="/publishing/pc-ko/dist/js/bundle.js?0914"></script>
     <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
     <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
-    <script src="/publishing/pc-en/dist/js/common.js?0917"></script>
+    <script src="/publishing/pc-ko/dist/js/common.js?0917"></script>
 <body>
 <style>
     .title{
@@ -98,20 +98,19 @@
 
 </style>
 <div class="wrap">
-    <!--10.05 이미지 경로 변경-->
     <div class="img logo">
-        <img src="/publishing/pc-en/dist/img/error/logo.png" alt="로고">
+        <img src="/publishing/pc-ko/dist/img/error/logo.png" alt="로고">
     </div>
-    <!--10.05 이미지 경로 변경-->
     <div class="img error">
-        <img src="/publishing/pc-en/dist/img/error/error.png" alt="에러이미지">
+        <img src="/publishing/pc-ko/dist/img/error/error.png" alt="에러이미지">
     </div>
     <p class="title">
-        Access to the Macrogen site is being delayed now.<br>
-        Try again in a little while.
+        현재 마크로젠 사이트 접속이 원활하지 않습니다<br>
+        잠시 후에 다시 시도해주세요
     </p>
-    <p class="desc">※ If access is delayed for a long time, please contact the manager's email.</p>
+    <p class="desc">장시간 접속이 지연되는 경우 관리자 메일로 연락주시기 바랍니다.</p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
 </body>
 </html>
+

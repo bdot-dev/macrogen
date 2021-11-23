@@ -33,6 +33,7 @@ import macrogen.www.service.WnpzService;
 import macrogen.www.vo.ApplFormVo;
 import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CmpnyhistGroupVo;
+import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.EmpaVo;
 import macrogen.www.vo.WnpzVo;
 import macrogen.www.vo.YearCmpnyhistVo;
@@ -199,6 +200,9 @@ public class CompanyController extends DefaultController {
 		WnpzVo nextVo = wnpzService.next(listVo);
 		model.addAttribute("nextVo", nextVo);
 
+		CodeVo wnpzClCodeVo = codeService.view("WNPZ_CL_CODE", listVo.getWnpzClCode());
+		model.addAttribute("wnpzClCodeVo", wnpzClCodeVo);
+
 		return getDev() + "/company/winner-viewAjaxHtml." + getLang();
 	}
 
@@ -232,6 +236,9 @@ public class CompanyController extends DefaultController {
 
 		model.addAttribute("paginationInfo", paginationInfo);
 		model.addAttribute("resultList", resultList);
+
+		CodeVo wnpzClCodeVo = codeService.view("WNPZ_CL_CODE", listVo.getWnpzClCode());
+		model.addAttribute("wnpzClCodeVo", wnpzClCodeVo);
 
 		return getDev() + "/company/winner-listAjaxHtml." + getLang();
 	}

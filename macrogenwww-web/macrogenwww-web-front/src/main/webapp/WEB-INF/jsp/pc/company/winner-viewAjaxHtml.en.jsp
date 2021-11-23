@@ -8,13 +8,13 @@
 </form:form>
 
 <div class="modal-header">
-    <h5 class="modal-title">마크로젠 ${ wnpzClCodeVo['codeNm'.concat(lang)] }</h5>
+    <h5 class="modal-title">Macrogen ${ wnpzClCodeVo['codeNm'.concat(lang)] }</h5>
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
     <div class="list-of-winners-detail">
         <div class="btn-wrap">
-            <a href="javascript:;" class="btn btn-text btn-list"><i class="icon icon-arrow-left-long"></i><span>목록으로</span></a>
+            <a href="javascript:;" class="btn btn-text btn-list"><i class="icon icon-arrow-left-long"></i><span>List</span></a>
         </div>
         <div class="list-header">
             <div class="img"><img src="${publicUrl }${ resultVo.photoFlpth }" alt="${ resultVo.wnpzNm }"></div>
@@ -23,7 +23,7 @@
                 <div class="name">${ resultVo.wnpzNm }</div>
                 <div class="job">${ resultVo.occp }</div>
                 <div class="career">
-                    <div class="tit">주요 연구 업적</div>
+                    <div class="tit">Major Accomplishments in Research</div>
                     <ul>
                         <li>${ resultVo.rm }</li>
                     </ul>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="list-body">
-            <div class="title">수상자 및 연구업적 소개</div>
+            <div class="title">Introduction of winner and research accomplishments</div>
             <div class="desc">
             	${ resultVo.wnpzCn }
             </div>
