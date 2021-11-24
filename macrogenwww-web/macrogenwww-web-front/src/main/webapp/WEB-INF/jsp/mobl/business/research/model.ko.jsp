@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -323,22 +323,22 @@
                                 <div class="item">
                                     <i class="icon ico-file-pdf"></i>
                                     <span class="font-body-b">Construction of expression vector.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    <a href="/pdf/Construction of expression vector.pdf" target="_blank" class="download"><i class="icon ico-download-black"></i></a>
                                 </div>
                                 <div class="item">
                                     <i class="icon ico-file-pdf"></i>
                                     <span class="font-body-b">Purification of Expression vector for microinjection.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    <a href="/pdf/Purification of Expression vector for microinjection.pdf" target="_blank" class="download"><i class="icon ico-download-black"></i></a>
                                 </div>
                                 <div class="item">
                                     <i class="icon ico-file-pdf"></i>
                                     <span class="font-body-b">Microinjection/Production of founder mouse.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    <a href="/pdf/Microinjection_Production of founder mouse.pdf" target="_blank" class="download"><i class="icon ico-download-black"></i></a>
                                 </div>
                                 <div class="item">
                                     <i class="icon ico-file-pdf"></i>
                                     <span class="font-body-b">Indentification of the founder(FO).pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    <a href="/pdf/Indentification of the founder(FO).pdf" target="_blank" class="download"><i class="icon ico-download-black"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +437,7 @@
                             <div class="item">
                                 <i class="icon ico-file-pdf"></i>
                                 <span class="font-body-b">마우스 사육 및 계통유지</span>
-                                <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                <a href="/pdf/마우스 사육 및 계통유지.pdf" target="_blank" class="download"><i class="icon ico-download-black"></i></a>
                             </div>
                         </div>
                     </div>
