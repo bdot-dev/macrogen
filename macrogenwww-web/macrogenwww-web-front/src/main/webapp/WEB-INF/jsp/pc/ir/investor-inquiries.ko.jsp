@@ -38,11 +38,21 @@
                 <div class="input-group input-phone-box">
                     <span class="input-group-text" id="num1">휴대폰 번호</span>
                     <div class="input-group-phone">
-                        <select id="mbtlnum1" name="mbtlnum1" class="form-select" title="휴대폰번호 앞세자리 선택">
+                        <%-- <select id="mbtlnum1" name="mbtlnum1" class="form-select" title="휴대폰번호 앞세자리 선택">
                         	<c:forEach items="${mobilePrefixList }" var="result" varStatus="status">
 	                            <option value="${result.code }">${result.code }</option>
                         	</c:forEach>
-                        </select>
+                        </select> --%>
+
+                        <div class="select-box ">
+                            <a href="javascript:;" class="select_default _select_default"><span class="text" id="mbtlnum1">010</span></a>
+                            <ul class="select_list _select_list">
+	                        	<c:forEach items="${mobilePrefixList }" var="result" varStatus="status">
+	                                <li><span>${result.code }</span></li>
+	                        	</c:forEach>
+                            </ul>
+                        </div>
+
                         <input type="number" type="number" id="mbtlnum2" name="mbtlnum2"
                         	placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
                         <input type="number" type="number" id="mbtlnum3" name="mbtlnum3"
@@ -157,7 +167,7 @@
 				submitting = true;
 			}
 
-			$mbtlnum.val($mbtlnum1.val() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
+			$mbtlnum.val($mbtlnum1.text() + '-' + $mbtlnum2.val() + '-' + $mbtlnum3.val());
 
 			$.ajax({
 				dataType : 'json',
@@ -195,7 +205,7 @@
     		$nmbrWrterNm.focus();
     		return false;
     	}
-    	if (!$mbtlnum1.val()) {
+    	if (!$mbtlnum1.text()) {
     		alert('휴대폰번호를 입력해 주세요.');
     		$mbtlnum1.focus();
     		return false;
