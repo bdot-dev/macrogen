@@ -196,16 +196,6 @@
 
 	    });
 
-        /* $('#modalImageViewer').on('shown.bs.modal', function () {
-        	var src = '';
-        	if ($('#modal ._slider .swiper-slide-active img').length > 0) {
-        		src = $('#modal ._slider .swiper-slide-active img').attr('src');
-        	} else {
-        		src = $('#modal ._slider .swiper-slide img').attr('src');
-        	}
-        	$('#modalImageViewer img').attr('src', src);
-		}); */
-
 	</script>
 
 
