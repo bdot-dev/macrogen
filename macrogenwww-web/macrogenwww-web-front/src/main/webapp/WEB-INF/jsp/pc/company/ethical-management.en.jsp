@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">Ethical Management</div>
-            <div class="slogan">Promoting transparent<br/>and fair business practices.</div>
-            <div class= "slogan-sub">We are committed to fulfilling our corporate social responsibility as a global leader.</div>
+            <div class="slogan">Transparent and<br/> fair business</div>
+            <div class= "slogan-sub">We are committed to fulfilling our corporate social responsibility as a global leader</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -53,7 +53,7 @@
                             </li>
                             <li>
                                 <div class="tit">Protection of Shareholders</div>
-                                <div class="desc">We protect our shareholders' assets and profits to the best of our ability by improving our financial structure and promoting ethical practice. </div>
+                                <div class="desc">We protect shareholders' assets and profits by improving our financial structure and ethical practice.</div> <!-- 번역 변경 -- 2021.11.23 -->
                             </li>
                             <li>
                                 <div class="tit">Shared Growth</div>

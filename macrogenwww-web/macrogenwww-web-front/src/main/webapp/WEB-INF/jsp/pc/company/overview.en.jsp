@@ -11,7 +11,7 @@
         <div class="frame">
                 <div class="hero-title">About MACROGEN</div>
                 <div class="slogan">HUMANIZING<br/> GENOMICS</div>
-                <div class="slogan-sub">Creating a better future for humanity.</div>
+                <div class="slogan-sub">Creating a better future for humanity</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -123,7 +123,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="inner">
-                                <div class="title-sm">CLINICAL DIAGNOSTICS & TREATMENTS</div>
+                                <div class="title-sm">Business Areas</div>
                                 <div class="title">Research Areas</div>
                                 <div class="desc">We provide a wide range of research services for the development of genome-sequencing technology. Based on big data and advanced AI analytics accumulated through research, we are paving the way for a healthy future.</div>
                                 <div class="category-list">
@@ -159,8 +159,8 @@
                         <div class="swiper-slide">
                             <div class="inner">
                                 <div class="title-sm">Business Areas</div>
-                                <div class="title">Business Areas</div>
-                                <div class="desc">We provide various clinical diagnoses and treatment services for a healthy future for 7.8 billion people around the world. In addition to medical treatment, we are committed to building a systematic clinical diagnosis system to promote predictive and cause analysis of diseases.</div>
+                                <div class="title">CLINICAL DIAGNOSTICS & TREATMENTS</div>
+                                <div class="desc">We provide various clinical diagnoses and treatment for 7.8 billion people around the world. We are also committed to building a systematic diagnosis system to promote prediction and cause analysis of diseases.</div> <!-- 번역 변경 -- 2021.11.23 -->
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>

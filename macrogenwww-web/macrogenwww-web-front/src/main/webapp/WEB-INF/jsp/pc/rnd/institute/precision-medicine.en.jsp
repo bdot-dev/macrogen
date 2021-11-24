@@ -17,7 +17,7 @@
 </nav>
 
             <div class="hero-title">Precision Medicine Institute</div>
-            <div class="slogan-sub">Leading R&D for personalized precision medicine</div>
+<!--            <div class="slogan-sub">Leading R&D for personalized precision medicine</div>-->
         </div>
     </div>
 

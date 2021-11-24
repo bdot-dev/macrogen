@@ -42,7 +42,7 @@
 			window.history.replaceState({}, document.title, ' ');
 		});
 
-	    $('.btn-close').on('click',function (){
+	    $('.btn-close').on('click',function () {
 	    	modalResearchResult.hide();
 	    })
 

@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-title" content="macrogen" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="macrogen"/>
+  <meta name="keywords" content="macrogen"/>
+<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+  <title>Mobile-KO v0.3 / 11.23</title>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
+  <script src="../../js/bundle.js?1123"></script>
+  <script src="../../js/common.js?1123"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        <header class="header">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+
+        <div class="frame">
+            <div class="font-h1">내부정보관리규정</div>
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_agreement">
+            <div class="select-box">
+                <div class="selected-value _selected-value">
+                    <span class="text font-body-h-b">2020. 03. 31 - 현재</span>
+                </div>
+                <ul class="select-option _select-option">
+                    <li class="option-value"><a href="#">2020. 03. 31 - 현재</a></li>
+                    <li class="option-value"><a href="#">2019. 10. 21 ~ 2020. 03 .31 </a></li>
+                    <li class="option-value"><a href="#">2018. 10. 26 ~ 2019. 10 .20 </a></li>
+                    <li class="option-value"><a href="#">2017. 03. 31 ~ 2018. 10 .25 </a></li>
+                    <li class="option-value"><a href="#">2012. 12. 03 ~ 2017. 03 .31 </a></li>
+                </ul>
+            </div>
+            <script>
+                /*변수*/
+                var selectBox = $(".select-box");
+                var option = $(".option-value");
+
+
+                /*드롭다운 클릭시 이벤트*/
+                selectBox.on('click', function () {
+                    var select = $(this);
+                    if (select.hasClass('open')) {
+                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                    } else {
+                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                        $('body').on('click', function (e) {
+                            if (selectBox.hasClass('open')) {
+                                if (!selectBox.has(e.target).length) {
+                                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                }
+                            }
+                            e.preventDefault()
+                        })
+                    }
+                });
+
+                /*클릭시 텍스트 변경*/
+                function textChange() {
+                    option.on('click', function () {
+                        var select = $(this).find('a').text();
+                        $('._selected-value').find('span').text(select);
+                    });
+                }
+
+                textChange();
+
+                /*클릭시 탭메뉴 변경*/
+                option.on('click', function () {
+                    var idx = $(this).index();
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                    textChange();
+                })
+
+                /*이전 다음 이동*/
+                function setTabContent(idx) {
+                    $('._selected-value').text($('._select-option li').eq(idx).text());
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                    /*페이지 변경후 상단 이동*/
+                    fnMove();
+
+                    /*클릭시 텍스트 변경*/
+                    console.log(idx);
+
+                }
+
+                /*탭메뉴 상단으로 이동*/
+                function fnMove() {
+                    var offset = $("._content-anchor").offset();
+                    $('html, body').animate({scrollTop: offset.top - 95}, 100);
+                }
+
+                /*외부클릭시 셀렉트박스 초기화*/
+                $("body").click(function (e) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").children('.select-option').slideUp(200);
+                    }
+                });
+
+            </script>
+            <ol class="terms management">
+                <li>
+                    <!--09.29 총 칙 띄어쓰기 제거 -->
+                    <p class="title font-body-h-b">제1장 총칙</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title  font-body-h">제1조(목적)</p>
+                            <p class="desc font-body">이 규정은 ｢자본시장과 금융투자업에 관한 법률｣(이하 “법”이라 한다) 및 제반 법규에 따른 신속․정확한 공시 및 임원․직원의 내부자거래 방지를
+                                위하여 회사 내부정보의 종합관리 및 적절한 공개 등에 관한 사항을 정함을 목적으로 한다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제2조(용어의 정의)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">이 규정에서 “내부정보”라 함은 한국거래소(이하 “거래소”라 한다)의 코스닥시장 공시규정(이하 “공시규정”이라 한다) 제1편에 의한
+                                    공시의무사항과 그 밖에 회사의 경영 또는 재산상황 등에 관한 것으로서 투자자의 투자판단에 영향을 미칠 수 있는 사항을 말한다.
+                                </li>
+                                <li data-bullet="&#9313;">이 규정에서 “공시책임자”라 함은 공시규정 제2조제4항에 따라 회사를 대표하여 신고업무를 수행할 수 있는 자를 말한다.</li>
+                                <li data-bullet="&#9314;">이 규정에서 “임원”이라 함은 이사(｢상법｣ 제401조의2제1항 각 호의 어느 하나에 해당하는 자를 포함한다) 및 감사를 말한다.
+                                </li>
+                                <li data-bullet="&#9315;">제1항부터 제3항 이외에 이 규정에서 사용하는 용어의 정의에 관하여는 관련 법령과 규정에서 사용하는 용어의 정의에 의한다.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제3조(적용범위)</p>
+                            <p>공시, 내부자거래 및 내부정보관리에 관한 사항은 관련 법규 또는 정관에 정한 것을 제외하고는 이 규정에 따른다.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제2장 내부정보의 관리</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제4조(내부정보의 관리)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">임원․직원은 업무상 알게 된 회사의 내부정보를 엄중히 관리하여야 하고, 업무상 필요한 경우를 제외하고는 내부정보를 사내 또는 사외에
+                                    유출하여서는
+                                    아니 된다.
+                                </li>
+                                <li data-bullet="&#9313;">대표이사는 내부정보 및 그와 관련된 문서 등의 보관, 전달, 파기 등에 관한 구체적인 기준을 정하는 등 내부정보관리를 위해 필요한 조치를
+                                    취하여야
+                                    한다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제5조(공시책임자)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">대표이사는 공시책임자를 정하여 지체 없이 거래소에 신고하여야 한다. 공시책임자를 변경한 때에도 또한 같다.</li>
+                                <li data-bullet="&#9313;">공시책임자는 내부정보관리제도의 수립 및 운영에 관련된 업무를 총괄하며 다음 각 호의 업무를 수행한다.
+                                    <ol>
+                                        <li data-bullet="1.">공시의 집행</li>
+                                        <li data-bullet="2.">내부정보관리제도의 운영 상황 점검 및 평가</li>
+                                        <li data-bullet="3.">내부정보에 대한 검토 및 공시 여부의 결정</li>
+                                        <li data-bullet="4.">임원․직원에 대한 교육 등 내부정보관리제도의 운영을 위해 필요한 조치</li>
+                                        <li data-bullet="5.">내부정보의 관리를 담당하거나 공시업무를 담당하는 부서 또는 임원․직원에 대한 지휘 및 감독</li>
+                                        <li data-bullet="6.">그 밖에 내부정보관리제도의 운영을 위해 필요하다고 대표이사가 인정한 업무</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9314;">공시책임자는 그 직무를 수행함에 있어서 다음 각 호의 권한을 가진다.</li>
+                            </ol>
+                        </li>
+                        <li class="skip">
+                            <p>-이하 생략-</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제3장 내부정보의 공개</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제9조(공시의 종류)</p>
+                            <p class="sub-desc">회사의 공시는 다음과 같이 구분한다.</p>
+                            <ol class="desc font-body font-body">
+                                <li data-bullet="1.">공시규정 제1편 제2장 제1절에 따른 주요경영사항 신고 및 공시</li>
+                                <li data-bullet="2.">공시규정 제1편 제2장 제2절에 따른 조회공시</li>
+                                <li data-bullet="3.">공시규정 제1편 제2장 제3절에 따른 공정공시</li>
+                                <li data-bullet="4.">공시규정 제1편 제3장에 따른 자율공시</li>
+                                <li data-bullet="5.">법 제3편 제1장에 따른 증권신고서 등의 제출</li>
+                                <li data-bullet="6.">법 제159조, 제160조 및 제165조와 공시규정 제1편 제2장 제4절에 따른 사업보고서 등의 제출</li>
+                                <li data-bullet="7.">법 제161조에 따른 주요사항보고서의 제출</li>
+                                <li data-bullet="8.">그 밖에 다른 법규에 따른 공시</li>
+                            </ol>
+                        </li>
+                        <li class="skip">
+                            <p>-이하 생략-</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!--footer 수정사항 있을시 메인페이지에 있는 footer도 같이변경해주세요-->
+<footer class="footer main">
+    <div class="font-h5">Macrogen</div>
+    <div class="info">
+        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
+        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+    </div>
+    <div class="link-list">
+        <ul>
+            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
+                    <option value="https://thebiome.life/">더바이옴</option>
+                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
+                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
+                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
+                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
+                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
+                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <ul class="sns">
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    </ul>
+</footer>
+
+    <a href="#" class="btn-totop"></a>
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
+</div>
+<div class="modal gnb" tabindex="-1" id="gnb" data-bs-backdrop="static" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="gnb-content">
+            <div class="gnb-header">
+                <h2 class="logo"><a href="#">마크로젠 로고</a></h2>
+                <a href="#" class="btn-close-black" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
+            </div>
+            <div class="gnb-body" id="menu">
+                <ul>
+                    <li><a href="#none">MACROGEN</a>
+                        <ul>
+                            <li><a href="#none">- 회사소개</a>
+                                <ul>
+                                    <li><a href="#none">- 기업개요</a></li>
+                                    <li><a href="#none">- 경영진</a></li>
+                                    <li><a href="#none">- 연혁</a></li>
+                                    <li><a href="#none">- 비전</a></li>
+                                    <li><a href="#none">- 인증</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 글로벌 네트워크</a></li>
+                            <li><a href="#none">- 채용</a>
+                                <ul>
+                                    <li><a href="#none">- 인재상</a></li>
+                                    <li><a href="#none">- 인사제도</a></li>
+                                    <li><a href="#none">- 채용안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">business</a>
+                        <ul>
+                            <li><a href="#none">- 연구서비스</a>
+                                <ul>
+                                    <li><a href="#none">- NGS</a></li>
+                                    <li><a href="#none">- CES</a></li>
+                                    <li><a href="#none">- Oligo</a></li>
+                                    <li><a href="#none">- Microarray</a></li>
+                                    <li><a href="#none">- 모델동물사업부</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 임상진단서비스</a>
+                                <ul>
+                                    <li><a href="#none">- 암 유전체 검사</a></li>
+                                    <li><a href="#none">- 태아 및 신생아 유전질환</a></li>
+                                    <li><a href="#none">- COVID-19</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 헬스케어서비스</a>
+                                <ul>
+                                    <li><a href="#none">- 개인유전체분석</a></li>
+                                    <li><a href="#none">- 마이크로바이옴분석</a></li>
+                                    <li><a href="#none">- 반려동물유전자분석</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">r&d</a>
+                        <ul>
+                            <li><a href="#none">- 정밀의학연구소</a></li>
+                            <li><a href="#none">- 생명정보학연구소</a></li>
+                            <li><a href="#none">- 더바이옴연구소</a></li>
+                            <li><a href="#none">- 싱크진연구소</a></li>
+                            <li><a href="#none">- 빅데이터연구소</a></li>
+                            <li><a href="#none">- 특허/논문</a>
+                                <ul>
+                                    <li><a href="#none">- 특허</a></li>
+                                    <li><a href="#none">- 논문</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">NEWSROOM</a>
+                        <ul>
+                            <li><a href="#none">- 뉴스</a></li>
+                            <li><a href="#none">- 미디어라이브러리</a></li>
+                            <li><a href="#none">- 공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">ir</a>
+                        <ul>
+                            <li><a href="#none">- 재무정보</a></li>
+                            <li><a href="#none">- 공시정보</a>
+                                <ul>
+                                    <li><a href="#none">- 공고</a></li>
+                                    <li><a href="#none">- 공시정보</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- IR소식</a></li>
+                            <li><a href="#none">- 투자자 문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">esg</a>
+                        <ul>
+                            <li><a href="#none">- ESG경영</a></li>
+                            <li><a href="#none">- 윤리경영</a></li>
+                            <li><a href="#none">- 사회공헌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb-footer">
+                <a href="#" class="btn-lang on">K0R</a>
+                <a href="#" class="btn-lang">ENG</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // gnb show
+    var gnbEl = document.getElementById('gnb')
+    var gnb = new bootstrap.Modal(gnbEl);
+
+    // gnb.show();
+
+    // gnb menu
+    (function ($) {
+        var gnbSet = {
+            click: function (target, speed) {
+                var _self = this, $target = $(target);
+                _self.speed = speed || 300;
+                $target.each(function () {
+                    if (findChildren($(this))) {
+                        return;
+                    }
+                    $(this).addClass('noDepth');
+                });
+
+                function findChildren(obj) {
+                    return obj.find('> ul').length > 0;
+                }
+
+                $target.on('click', 'a', function (e) {
+                    e.stopPropagation();
+                    var $this = $(this), $depthTarget = $this.next(), $siblings = $this.parent().siblings();
+                    $this.parent('li').find('ul li').removeClass('on');
+                    $siblings.removeClass('on');
+                    $siblings.find('ul').slideUp(250);
+                    if ($depthTarget.css('display') == 'none') {
+                        _self.activeOn($this);
+                        $depthTarget.slideDown(_self.speed);
+                    } else {
+                        $depthTarget.slideUp(_self.speed);
+                        _self.activeOff($this);
+                    }
+                })
+            }, activeOff: function ($target) {
+                $target.parent().removeClass('on');
+            }, activeOn: function ($target) {
+                $target.parent().addClass('on');
+            }
+        };
+        $(function () {
+            gnbSet.click('#menu li', 300)
+        });
+    }(jQuery));
+
+    // btn-lang
+    $('.btn-lang').on('click',function (){
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+</script>
+
+</body>
+</html>

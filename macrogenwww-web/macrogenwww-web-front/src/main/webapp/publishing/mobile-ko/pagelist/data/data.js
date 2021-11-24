@@ -122,6 +122,12 @@ data.guide = {
             url: 'loading',
             category: 'guide',
             page: 'loading'
+        },
+        {
+            stateClass: 'complete',
+            url: 'accordion',
+            category: 'guide',
+            page: 'accordion'
         }
     ]
 }
@@ -129,12 +135,12 @@ data.guide = {
 data.macrogen = {
     title: 'MACROGEN',
     list: [
-        // {
-        //     stateClass: 'complete',
-        //     url: 'Main',
-        //     category: 'macrogen',
-        //     page: 'Main'
-        // },
+        {
+           stateClass: 'working',
+            url: 'Main',
+             category: 'macrogen',
+            page: 'Main'
+        },
         {
             stateClass: 'complete',
             url: '01Macrogen_01기업개요',
@@ -298,72 +304,78 @@ data.esg = {
 data.business ={
     title: 'BUSINESS',
     list: [
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_NGS',
-        //     category: 'business',
-        //     page: '연구서비스_NGS'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '연구서비스_CES',
-        //     category: 'business',
-        //     page: '연구서비스_CES'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '연구서비스_Oligo',
-        //     category: 'business',
-        //     page: '연구서비스_Oligo'
-        // },
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_MICROARRAY',
-        //     category: 'business',
-        //     page: '연구서비스_MICROARRAY'
-        // },
-        // {
-        //     stateClass: 'working',
-        //     url: '연구서비스_동물모델사업부',
-        //     category: 'business',
-        //     page: '연구서비스_동물모델사업부'
-        // },
-        // {
-        //     stateClass: 'working',
-        //     url: '임상진단서비스_암유전체검사',
-        //     category: 'business',
-        //     page: '임상진단서비스_암유전체검사'
-        // },
-        // {
-        //     stateClass: 'working',
-        //     url: '임상진단서비스_신생아유전자검사',
-        //     category: 'business',
-        //     page: '임상진단서비스_신생아유전자검사'
-        // },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_NGS',
+            category: 'business',
+            page: '연구서비스_NGS'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_CES',
+            category: 'business',
+            page: '연구서비스_CES'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_genesynthesis',
+            category: 'business',
+            page: '연구서비스_genesynthesis'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_Oligo',
+            category: 'business',
+            page: '연구서비스_Oligo'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_MICROARRAY',
+            category: 'business',
+            page: '연구서비스_MICROARRAY'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_동물모델사업부',
+            category: 'business',
+            page: '연구서비스_동물모델사업부'
+        },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_암유전체검사',
+            category: 'business',
+            page: '임상진단서비스_암유전체검사'
+        },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_신생아유전자검사',
+            category: 'business',
+            page: '임상진단서비스_신생아유전자검사'
+        },
         {
             stateClass: 'complete',
             url: '임상진단서비스_covid19',
             category: 'business',
             page: '임상진단서비스_covid19'
         },
-        // {
-        //     stateClass: 'complete',
-        //     url: '헬스케어서비스_개인유전자분석',
-        //     category: 'business',
-        //     page: '헬스케어서비스_개인유전자분석'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '헬스케어서비스_장내미생물분석',
-        //     category: 'business',
-        //     page: '헬스케어서비스_장내미생물분석'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '헬스케어서비스_반려동물유전자분석',
-        //     category: 'business',
-        //     page: '헬스케어서비스_반려동물유전자분석'
-        // },
+        {
+            stateClass: 'complete ',
+            url: '헬스케어서비스_개인유전자분석',
+            category: 'business',
+            page: '헬스케어서비스_개인유전자분석'
+        },
+        {
+            stateClass: 'complete',
+            url: '헬스케어서비스_장내미생물분석',
+            category: 'business',
+            page: '헬스케어서비스_장내미생물분석'
+        },
+        {
+            stateClass: 'complete',
+            url: '헬스케어서비스_반려동물유전자분석',
+            category: 'business',
+            page: '헬스케어서비스_반려동물유전자분석'
+        },
     ]
 }
 
@@ -371,7 +383,7 @@ data.RD = {
     title: 'R&D',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '03R&D_01정밀의학연구소_01소개',
             category: 'RD',
             page: '03R&D_01정밀의학연구소_01소개'
@@ -425,7 +437,7 @@ data.IR = {
     title: 'IR',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '01재무정보',
             category: 'IR',
             page: '01재무정보'
@@ -460,5 +472,35 @@ data.IR = {
             category: 'IR',
             page: '04투자자문의'
         }
+    ]
+}
+
+data.etc = {
+    title: 'Etc',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '01개인정보처리방침',
+            category: 'etc',
+            page: '01개인정보처리방침'
+        },
+        {
+            stateClass: 'complete',
+            url: '02영상정보_운영_관리',
+            category: 'etc',
+            page: '02영상정보_운영_관리'
+        },
+        {
+            stateClass: 'complete',
+            url: '03내부정보관리규정',
+            category: 'etc',
+            page: '03내부정보관리규정'
+        },
+        {
+            stateClass: 'complete',
+            url: '에러페이지',
+            category: 'etc',
+            page: '에러페이지'
+        },
     ]
 }

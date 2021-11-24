@@ -17,7 +17,7 @@
 </nav>
 
             <div class="hero-title">정밀의학연구소</div>
-            <div class="slogan-sub">환자 맞춤형 정밀의료 실현을 위한 선도 연구</div>
+            <div class="slogan-sub">Precision Medicine Institute</div>
         </div>
     </div>
 

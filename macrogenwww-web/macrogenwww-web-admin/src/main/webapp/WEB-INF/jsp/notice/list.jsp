@@ -41,7 +41,6 @@
 			<table class="table_col">
 				<colgroup>
 					<col width="60px">
-					<col width="150px">
 					<col width="">
 					<col width="150px">
 					<col width="150px">
@@ -50,7 +49,6 @@
 				<thead>
 					<tr>
 						<th><input type="checkbox" v-on:click="checkAll"></th>
-						<th>썸네일</th>
 						<th>제목</th>
 						<th>조회수</th>
 						<th>작성자</th>
@@ -60,13 +58,6 @@
 				<tbody v-if="resultList.length > 0">
 					<tr v-for="(result, index) in upendFixingList" style="background: #eee;">
 						<td>공지</td>
-						<td>
-							<img v-if="result.thumbBassImageUseYn != 'Y'"
-								:src="'${publicUrl }' + result.thumbFlpth"
-								style="width:100px; vertical-align: bottom;" />
-							<img v-else :src="result.thumbBassImageCodeNm"
-								style="width:100px; vertical-align: bottom;" />
-						</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
 							href="javascript:;">{{result.nttSj }}</a></td>
 						<td>{{result.rdcnt }}</td>
@@ -79,13 +70,6 @@
 								name="pkList" :id="'pkList_' + index"
 								:value="result.nttSn">
 						</td>
-						<td>
-							<img v-if="result.thumbBassImageUseYn != 'Y'"
-								:src="'${publicUrl }' + result.thumbFlpth"
-								style="width:100px; vertical-align: bottom;" />
-							<img v-else :src="result.thumbBassImageCodeNm"
-								style="width:100px; vertical-align: bottom;" />
-						</td>
 						<td class="tal"><a v-on:click="onViewLink(result.nttSn)"
 							href="javascript:;">{{result.nttSj }}</a></td>
 						<td>{{result.rdcnt | numberWithCommas }}</td>
@@ -95,7 +79,7 @@
 					</tbody>
 				<tbody v-if="resultList.length == 0">
 					<tr >
-						<td nowrap colspan="6" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
+						<td nowrap colspan="5" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
 					</tr>
 				</tbody>
 			</table>

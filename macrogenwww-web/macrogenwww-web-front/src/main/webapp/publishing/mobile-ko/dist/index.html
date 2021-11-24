@@ -26,8 +26,8 @@
     <ul class="navi_site">
       <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/pc-ko/dist/index.html">PC-KO</a></li>
       <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/pc-en/dist/index.html">PC-EN</a></li>
-      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-ko/dist/index.html" class="active">모바일</a></li>
-    </ul>
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-ko/dist/index.html" class="active">M-KO</a></li>
+      <li><a href="http://imgdomfam.s3-website.ap-northeast-2.amazonaws.com/mobile-en/dist/index.html">M-EN</a></li>
     <h2>Page List</h2>
     <a href="#" class="btn_control_all close"></a>
 <!--    <p><a href="#" class=""><i class="far fa-square"></i><i class="far fa-check-square"></i> 진척률 보기</a></p>-->
@@ -125,6 +125,7 @@
           .append(template(data.business))
           .append(template(data.RD))
           .append(template(data.IR))
+          .append(template(data.etc))
 </script>
 <script>
   $('.link').on('click', function () {
@@ -203,7 +204,7 @@
   })
   // sum = sum - 20;
   var total = (comp / sum) * 100
-  $('.nav_depth_2 .title h2').html('Macrogen-Mobile(KO) v0.2 / 11.18')
+  $('.nav_depth_2 .title h2').html('Macrogen-Mobile(KO) v0.3 / 11.23')
   // .html('페이지 목록 : 완료' + total.toFixed(0) + '%')
 </script>
 </body>
