@@ -209,7 +209,6 @@
                                         slidesPerView: 1,
                                         centeredSlides: false,
                                         spaceBetween: 10,
-                                        grabCursor: true,
                                         pagination: {
                                             el: "._reward3 .swiper-pagination",
                                             clickable : true,

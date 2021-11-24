@@ -11,7 +11,7 @@
         <div class="frame">
                 <div class="hero-title">Executive Leadership </div>
                 <div class="slogan">For the Benefit of<br/>All Mankind</div>
-                <div class="slogan-sub">To live up to the value of "Hongik Ingan," we work day and night. </div>
+                <div class="slogan-sub">To live up to the value of "Hongik Ingan," we work day and night</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

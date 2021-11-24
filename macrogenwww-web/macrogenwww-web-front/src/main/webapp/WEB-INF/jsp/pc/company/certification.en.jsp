@@ -10,8 +10,8 @@
 
         <div class="frame">
                 <div class="hero-title">Certification & Accreditation</div>
-                <div class="slogan">Global standard for<br/>genomic analysis</div>
-                <div class="slogan-sub">Our technological excellence has been recognized around the world.</div>
+                <div class="slogan">Global standard<br/>for genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
+                <div class="slogan-sub">Our technological excellence has been recognized around the world</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

@@ -9,8 +9,8 @@
 		</header>
         <div class="frame">
             <div class="hero-title">Social Responsibility</div>
-            <div class="slogan">We are committed to fulfilling <br/>our social responsibility<br/>  to promote shared growth</div>
-            <div class= "slogan-sub">As part of our dedication to healthy human lives, we support Korean scientists.</div>
+            <div class="slogan">Fulfill CSR to promote<br/> shared growth</div> <!-- 번역 변경 -- 2021.11.23 -->
+            <div class= "slogan-sub">As part of our dedication to healthy human lives, we support Korean scientists</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>

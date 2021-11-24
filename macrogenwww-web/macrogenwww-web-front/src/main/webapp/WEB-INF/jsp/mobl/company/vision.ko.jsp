@@ -68,13 +68,13 @@
                         <div class="title">Humanizing<br/>Genomics</div>
                         <div class="font-body-h">인간의 유전체 정보 및 데이터 분석 기술을 통해 환자 개개인의 유전적 특성에 따른 맞춤 의학을 제시한다는 뜻을 담고 있습니다. 널리 인간 세계를 이롭게 한다는<br/>'홍익인간(弘益人間)'의 사상이 바탕 되었습니다.</div>
                         <div class="img-wrap">
-                            <div class="img img-1" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
+                            <div class="img img-1" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
                                 <img src="/publishing/mobile-ko/dist/img/macrogen/img-vision-parallax-1.png" alt="dna">
                             </div>
-                            <div class="img img-2" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
+                            <div class="img img-2" data-aos="fade-down" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
                                 <img src="/publishing/mobile-ko/dist/img/macrogen/img-vision-parallax-2.png" alt="dna">
                             </div>
-                            <div class="img img-3" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="4" data-rellax-percentage="0.5">
+                            <div class="img img-3" data-aos="fade-up" data-aos-duration="2000" data-rellax-speed="2" data-rellax-percentage="0.5">
                                 <img src="/publishing/mobile-ko/dist/img/macrogen/img-vision-parallax-3.png" alt="dna">
                             </div>
                         </div>
