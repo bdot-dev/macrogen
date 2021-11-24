@@ -52,6 +52,17 @@
 	        <a href="/download/file/${resultVo.atchList[0].atchId }" class="btn-download"><span class="sr-only">다운로드</span></a>
         </c:if>
     </div>
+    <script>
+   		$('.btn-view-zoom._openImageViewer').off('click').on('click', function() {
+        	var src = '';
+        	if ($('#modal ._slider .swiper-slide-active img').length > 0) {
+        		src = $('#modal ._slider .swiper-slide-active img').attr('src');
+        	} else {
+        		src = $('#modal ._slider .swiper-slide img').attr('src');
+        	}
+        	$('#modalImageViewer img').attr('src', src);
+   		});
+    </script>
 </div>
 <div class="modal-body">
     <div class="font-body-h-b">
