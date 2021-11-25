@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-<footer class="footer main">
+<footer class="footer main" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="2000"' : '' }>
     <div class="font-h5">Macrogen</div>
     <div class="info">
         <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
