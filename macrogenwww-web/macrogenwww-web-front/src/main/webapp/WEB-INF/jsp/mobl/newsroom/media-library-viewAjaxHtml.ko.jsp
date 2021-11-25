@@ -47,20 +47,33 @@
 	</c:if>
 
     <div class="btn-wrapper">
-        <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
+        <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"
+        	data-image-src=""><span class="sr-only">확대보기</span></a>
         <c:if test="${fn:length(resultVo.atchList) gt 0 }">
 	        <a href="/download/file/${resultVo.atchList[0].atchId }" class="btn-download"><span class="sr-only">다운로드</span></a>
         </c:if>
     </div>
     <script>
    		$('.btn-view-zoom._openImageViewer').off('click').on('click', function() {
-        	var src = '';
+   			/*
+   			var src = '';
         	if ($('#modal ._slider .swiper-slide-active img').length > 0) {
         		src = $('#modal ._slider .swiper-slide-active img').attr('src');
         	} else {
         		src = $('#modal ._slider .swiper-slide img').attr('src');
         	}
         	$('#modalImageViewer img').attr('src', src);
+        	*/
+        	/*
+        	var src = '';
+        	if ($('#modal ._slider .swiper-slide-active img').length > 0) {
+        		src = $('#modal ._slider .swiper-slide-active img').attr('src');
+        	} else {
+        		src = $('#modal ._slider .swiper-slide img').attr('src');
+        	}
+        	$(this).data('image-src', src)
+            console.log('click', $(this).data('image-src'))
+            */
    		});
     </script>
 </div>

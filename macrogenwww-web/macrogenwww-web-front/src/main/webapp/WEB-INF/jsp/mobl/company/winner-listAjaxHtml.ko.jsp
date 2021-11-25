@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 
 <div class="modal-header">
-    <h5 class="modal-title">마크로젠 과학자상</h5>
+    <h5 class="modal-title">마크로젠 ${ wnpzClCodeVo['codeNm'.concat(lang)] }</h5>
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
