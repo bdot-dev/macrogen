@@ -436,7 +436,7 @@
 	                    <div class="list list-border hover">
 	                    	<c:forEach var="result" items="${ newsList }" varStatus="status">
 		                        <div class="item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-		                            <span class="date"><span class="day"><fmt:formatDate value="${result.registDt }" pattern="dd" />.</span><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM" /></span>
+		                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="tit">${ result.nttSj }</a>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 		                        </div>

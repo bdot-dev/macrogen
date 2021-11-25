@@ -54,12 +54,14 @@
                         <!-- 마크로젠 과학자상 -->
                         <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
-                                <div class="title">Macrogen<br/>Scientist Award</div>
+                                <div class="title">Macrogen Scientist Award</div>
                                 <div class="btn-wrap"><a href="#cl=msa" class="btn btn-sm btn-white"><span>Previous Winners</span></a></div>
                             </div>
                             <div class="list-body">
                                 <div class="desc">
-                                    Biotechnology has joined IT as the new growth engines for the national economy. In particular, biotechnology, as the applied science that develops new innovative technologies using living organisms, plays a vital role in the developing innovations in medicine, agriculture, energy and the environment and enables them to become high-value added industries. It is not an exaggeration to say that the future of our national economy lies in the hands of good biotechnology students. ‘Macrogen Scientist Award’ encourages and supports scientists in Korea who demonstrate excellence and promising accomplishments in basic biotechnology.
+                                    Biotechnology has joined IT as the new growth engine for the national economy.<br/>
+                                    In particular, biotechnology, as the applied science that develops new innovative technologies using living organisms, plays a vital role in developing innovations in medicine, agriculture, energy, and the environment and enables them to become high-value-added industries. Therefore, the future of our national economy lies in the hands of aspiring biotechnologists.<br/>
+                                    The Macrogen Scientist Award was established to encourage and support scientists in Korea who demonstrate excellence and promising accomplishments in the field of basic biotechnology.
                                 </div>
                                 <div class="swiper reward _reward1">
                                     <div class="swiper-wrapper">
@@ -119,14 +121,15 @@
                         <!-- 마크로젠 여성과학자상 -->
                         <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
-                                <div class="title">Macrogen<br/>Woman<br/>Scientist Award</div>
+                                <div class="title">Macrogen<br/> Woman Scientist Award</div>
                                 <div class="btn-wrap"><a href="#cl=wsa" class="btn btn-sm btn-white"><span>Previous Winners</span></a></div>
                             </div>
                             <div class="list-body">
                                 <div class="desc">
-”Macrogen Women Scientist Award” raises the pride of women scientists and promotes support for outstanding and capable women scientists in basic biotechnology.<br/>
-Women scientists in the biotechnology field of Korea have generated excellent research results through continuous research and development, thereby contributing to the advancement of science everywhere. The government established the “Act on Fostering and Supporting Women Scientists and Technicians” in 2002 and it currently supports policies that foster women scientists in research or technical posts in natural sciences and engineering by setting the goals and direction of mid- and long-term policies based on the Act.<br />
-Macrogen roots for and supports women scientists, who have many merits such as strong passion for academia, attention to detail, and flexible leadership, so that they can give free reign to their unlimited talents and bigger possibilities.
+                                    The Macrogen Women Scientist Award recognizes the commitment and dedication of female scientists and supports their contribution in the field of biotechnology.<br/>
+                                    Women scientists in the biotechnology field of Korea have generated excellent research results through continuous research and development, thereby contributing to the advancement of science everywhere.<br/>
+                                    The government established the "Act on Fostering and Supporting Women Scientists and Technicians" in 2002, and it currently supports policies that foster women scientists in research or technical posts in natural sciences and engineering by setting the goals and direction of mid and long-term policies based on the Act.<br/>
+                                    Macrogen supports women scientists, who have a passion for academic excellence, attention to detail, and flexible leadership so that they can reach their full potential.
                                 </div>
                                 <div class="swiper reward _reward2">
                                     <div class="swiper-wrapper">
@@ -185,13 +188,13 @@ Macrogen roots for and supports women scientists, who have many merits such as s
                         <!-- 마크로젠 젊은 생명정보학자상 -->
                         <div class="item" data-aos="fade-up" data-aos-duration="2000">
                             <div class="list-header">
-                                <div class="title">Macrogen<br/>Young<br/>Bioinformatician Award</div>
+                                <div class="title">Macrogen Young Bioinformatician Award</div>
                                 <div class="btn-wrap"><a href="#cl=yba" class="btn btn-sm btn-white"><span>Previous Winners</span></a></div>
                             </div>
                             <div class="list-body">
                                 <div class="desc">
-‘Macrogen Young Bioinformatician Award’ supports the outstanding young scientists in the field of bioinformatics.<br/>
-Korea Society for Bioinformatics(KSB) has established “Macrogen Young Bioinformatician Award” in 2019 to recognize outstanding early-career scientists who have made significant contributions to the field of bioinformatics. Macrogen will support young scientists with high potential in the field of bioinformatics to strengthen the competitiveness of Korea science and technology.                                </div>
+                                    The Macrogen Young Bioinformatician Award supports the outstanding young scientists in the field of bioinformatics<br/>
+                                    Established in 2019 to recognize outstanding early-career scientists who have made significant contributions to the field of bioinformatics, the award is hosted by the Korea Society for Bioinformatics (KSB) and sponsored by Macrogen. We continue to support young scientists with strong potential in the field of bioinformatics to strengthen the competitiveness of our nation's science and technology.
                                 <div class="swiper reward _reward3">
                                     <div class="swiper-wrapper">
 
@@ -264,7 +267,7 @@ Korea Society for Bioinformatics(KSB) has established “Macrogen Young Bioinfor
                     <div class="desc">MDA Korea is a non-profit private organization established in November 1999 for patients suffering from muscular dystrophy caused by genetic abnormalities.</div>
                 </div>
                 <div class="main-img" data-aos="fade-up" data-aos-duration="2000">
-                	<img src="/publishing/pc-en/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원">
+                	<!-- <img src="/publishing/pc-en/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원"> -->
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="multi-stage">

@@ -169,7 +169,7 @@
                         </ul>
                     </div>
                     <!--content-anchor e-->
-                    <p class="main-title font-h4" id="Resequencing">Whole Genome Sequencing</p>
+                    <p class="main-title font-h4">Whole Genome Sequencing</p>
                     <p class="subject font-body-h-b">WGS는 유전체 전체를 한 번에 읽어 유전정보를 분석하는 방법입니다.</p>
                     <p class="desc font-body img_bottom">WGS을 통해 얻어진 변이 정보는 질병과 관련한 유전자 발굴 및 맞춤의학 연구에 활용되고 있습니다. 현재 전 세계
                         153개국 1만
@@ -180,7 +180,7 @@
                         <img src="/publishing/mobile-ko/dist/img/business/img-ngs-genome.png" alt="Whole Genome Sequencing">
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5" id="Sequencing">Whole Genome Resequencing</p>
+                    <p class="sub-title font-h5"  id="Resequencing">Whole Genome Resequencing</p>
                     <p class="desc font-body list_bottom">참조 유전체(Reference Genome)를 활용하여 SNP(Single Nucleotide
                         Polymorphism), InDel(Insertion &#38; Deletion), CNV(Copy Number Variation), SV(Structural
                         Variation) 등 다방면의 변이 분석이 가능한 방법입니다.
@@ -193,7 +193,7 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5">Whole Genome De novo Sequencing</p>
+                    <p class="sub-title font-h5" id="Sequencing">Whole Genome De novo Sequencing</p>
                     <p class="desc font-body list_bottom">참조 유전체(Reference Genome) 정보가 없는 미생물이나 동식물 등 새로운 생물 종의 전체 유전체
                         정보를 알아내는 방법입니다.</p>
                     <div class="list-area">

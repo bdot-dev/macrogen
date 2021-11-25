@@ -24,7 +24,7 @@
     <div class="container container-fluid">
         <div class="section_customMedicine">
             <div class="info-box">
-                <div class="title">Personalized medicine<br/>
+                <div class="font-h3">Personalized medicine<br/>
                     based on precision medicine </div>
                 <div class="desc">Based on extensive data that we've collected and analyzed,<br/>
                     we conduct research for personalized disease prevention and treatment. </div>
@@ -33,8 +33,8 @@
         </div>
         <div class="section_info_list">
             <div class="box clearfix">
-                <div class="sub_title">Established to promote the development of precision medicine.</div>
-                <div class="sub_desc">
+                <div class="font-h7">Established to promote the development of precision medicine.</div>
+                <div class="font-body">
                     <p>Macrogen established the Precision Medicine Institute in 2016 to promote research in the field of precision medicine.
                         The institute has enhanced partnerships with top-tier medical professionals and scientists around the world. It leverages the company’s cutting-edge genomic analysis technologies and the hospital’s excellent clinical research systems to develop various personalized medicine services while pursuing its dedication to achieving research progress with regard to basic medical science.
                         These R&D efforts are intended to help develop NGS-based companion diagnostic systems, circulating tumor DNA analysis, and circulating tumor cell analysis, through which Macrogen expects to be able to develop more accurate and faster testing services for precision medicine.</p>
@@ -43,8 +43,8 @@
             </div>
 
             <div class="box clearfix">
-                <div class="sub_title">Precision medicine is a new medical paradigm for the future.</div>
-                <div class="sub_desc">
+                <div class="font-h7">Precision medicine is a new medical paradigm for the future.</div>
+                <div class="font-body">
                     <p>Precision medicine is a new medical paradigm for the future, providing personalized disease prediction and prevention, as well as personalized diagnosis and treatment services based on genomic data, lifestyle habits, and medical history. Notably, it accurately recognizes individuals' genetic differences through genomic analysis and utilizes this information for personalized diagnosis and treatment. Going forward, Macrogen Precision Medicine Institute will contribute to the realization of precision medicine in Korea and Asia based on the genetic mutation DB obtained from Asians through large-scale genome analysis.</p>
                     <img src="/publishing/pc-en/dist/img/RD/img-medical_paradigm.png" alt="정밀의학 의료 패러다임 모니터 만지는 사람 사진 ">
                 </div>

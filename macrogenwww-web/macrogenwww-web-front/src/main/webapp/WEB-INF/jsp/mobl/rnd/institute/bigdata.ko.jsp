@@ -39,15 +39,15 @@
     <div class="container">
         <div class="section_intro">
             <div class="info-box">
-                <div class="title">다양한 헬스 정보를 분석해 삶의 질을 높입니다</div>
+                <div class="font-h3">다양한 헬스 정보를 분석해 삶의 질을 높입니다</div>
                 <div class="desc">개인별 맞춤형 건강관리 서비스를 제공합니다</div>
             </div>
             <div class="img img-bigData"></div>
         </div>
         <div class="section_info_list">
             <div class="box box-type2">
-                <div class="sub_title">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다&#46;</div>
-                <div class="sub_desc">
+                <div class="font-h7">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다&#46;</div>
+                <div class="font-body">
                     <p> 우리 몸의 모든 정보를 담고 있는 유전체 분석 및 예측을 통해 발생 가능성이 높은 질병들에 대해 개인별 맞춤형 건강 관리 서비스를 제공해 선제적으로 질병을 예방하거나 발병 위험을 낮추는 것이 마크로젠 빅데이터연구소의 목적입니다&#46;</p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <hr class="M-divider">
 
             <div class="box mb-0">
-                <div class="sub_title">연구영역</div>
+                <div class="font-h7">연구영역</div>
                 <ul class="list clearfix">
                     <li>
                         <img src="/publishing/mobile-ko/dist/img/RD/img-research_01.png" alt="방대한 데이터 활용을 위한 시스템 연구">

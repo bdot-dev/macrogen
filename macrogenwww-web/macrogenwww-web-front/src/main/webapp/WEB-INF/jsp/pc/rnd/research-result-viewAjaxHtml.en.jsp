@@ -5,7 +5,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
-    <div class="title">
+    <div class="font-h7">
         <span class="sub_title">${resultVo['bbsCtgryNm'.concat(lang)] }</span>
         ${resultVo.nttSj }
     </div>

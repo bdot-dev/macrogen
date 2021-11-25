@@ -14,7 +14,7 @@
             <div class="font-h1">영상정보처리기기 운영&#183;관리 방침</div>
         </div>
     </div>
-    <div class="container pt-0 pb-0">
+    <div class="container pt-0">
         <div class="section_agreement">
             <div class="select-box">
                 <div class="selected-value _selected-value">

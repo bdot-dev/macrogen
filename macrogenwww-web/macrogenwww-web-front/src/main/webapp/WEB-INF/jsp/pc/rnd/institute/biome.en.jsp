@@ -24,15 +24,15 @@
     <div class="container container-fluid">
         <div class="section_theBiome">
             <div class="info-box">
-                <div class="title">Improving health and quality of life<br/>through microbiome researches.</div>
+                <div class="font-h3">Improving health and quality of life<br/>through microbiome researches.</div>
                 <div class="desc">Understanding how the microbiome works is key to a healthy life.</div>
             </div>
             <div class="img"><!--<img src="/publishing/pc-en/dist/img/RD/img-pincette.png" alt="핀셋으로 집는 사진">--></div>
         </div>
         <div class="section_info_list">
             <div class="box clearfix">
-                <div class="sub_title">Stepping up as a Leader in Microbiome Research</div>
-                <div class="sub_desc">
+                <div class="font-h7">Stepping up as a Leader in Microbiome Research</div>
+                <div class="font-body">
                     <p>Human microbiome refers to the genomes of all microorganisms, including bacteria, fungi, and viruses, that inhabit the human body.
                         It is affected by food, age, genetic factors, medications, and other environmental factors, and plays an important role in maintaining good health.
                         When the microbiome is out of balance, it can lead to obesity, diabetes, asthma, atopy, heart disease, high blood pressure, autism, and cancer.
@@ -44,7 +44,7 @@
             </div>
             <hr class="divider">
             <div class="biome_area">
-                <div class="sub_title">Areas of Research</div>
+                <div class="font-h7">Areas of Research</div>
                 <img src="/publishing/pc-en/dist/img/RD/img-biome-area.png" alt="연구 영역">
             </div>
         </div>

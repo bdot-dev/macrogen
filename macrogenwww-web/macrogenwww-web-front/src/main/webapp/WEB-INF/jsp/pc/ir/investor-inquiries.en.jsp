@@ -31,7 +31,7 @@
                 <div class="input-group">
                     <span class="input-group-text" id="name">Name</span>
                     <input type="text" id="nmbrWrterNm" name="nmbrWrterNm" maxlength="20"
-                    	placeholder="Name" class="form-control" aria-label="input" aria-describedby="name">
+                    	placeholder="Enter your name" class="form-control" aria-label="input" aria-describedby="name">
                 </div>
                 <!--영문버전 추가 영역 -->
                 <div class="input-group input-email-box">
@@ -47,17 +47,17 @@
                 <hr class="divider"/>
             </div>
             <div class="privacy_box">
-                <div class="font-h5"><span>02.</span>Inquiry Details</div>
+                <div class="font-h5"><span>02&#46;</span>Please enter the your inquiry</div>
                 <!-- input / text-->
                 <div class="input-group">
                     <span class="input-group-text" id="title">Subject</span>
                     <input type="text" id="nttSj" name="nttSj" maxlength="200"
-                    	placeholder="input Subject" class="form-control" aria-label="input" aria-describedby="title">
+                    	placeholder="Enter title" class="form-control" aria-label="input" aria-describedby="title">
                 </div>
                 <!-- textarea -->
                 <div class="input-group">
                     <span class="input-group-text" id="faq">Details</span>
-                    <textarea id="nttCn" name="nttCn" placeholder="input Details" class="form-control" aria-label="input"
+                    <textarea id="nttCn" name="nttCn" placeholder="Enter the your inquiry" class="form-control" aria-label="input"
                               aria-describedby="faq"></textarea>
                 </div>
                 <!-- input / text-->
@@ -69,7 +69,7 @@
                     	<img src="/${rc.locale.language }/ir/investor-inquiries/captcha-image" alt="캡차이미지">
                     </span>
                     <input type="text" id="captchaString" name="captchaString" maxlength="10"
-                    	placeholder="Please enter the characters on the left." class="form-control" aria-label="input" aria-describedby="automatic">
+                    	placeholder="Enter number" class="form-control" aria-label="input" aria-describedby="automatic">
                 </div>
                 <!--e 개발영역-->
 

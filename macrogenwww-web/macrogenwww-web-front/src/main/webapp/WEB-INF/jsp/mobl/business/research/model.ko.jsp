@@ -46,15 +46,9 @@
                 <div class="img">
                     <img src="/publishing/mobile-ko/dist/img/business/img-animal-intro.png" alt="oligoIntro">
                 </div>
-                <p class="desc font-body">마크로젠은 고품질 원료와 최적화된 자동화 시스템을 이용하여 다양한 Oligo 합성서비스를 제공합니다. 실험에 사용되는 다양한 Oligo를
-                    원하는 염기서열로 합성하여 제공하는 고객맞춤 서비스입니다.
-                    합성된 Oligo는 DNA Sequencing, PCR, SNP 연구, Gene Synthesis, NGS 서비스, qPCR 서비스, Biochip, siRNA 발현 등 생물학 및
-                    의학분야에서 다양하게 활용되고 있습니다. 마크로젠은 고품질의
-                    Oligo를 제공하기 위하여 좋은 원료와 자동화 시스템을 이용하여 생산하고 있으며, 빠르고 효율이 좋은 MOPC 정제를 모든 Oligo에 무상으로 제공하고 있습니다. MOPC
-                    정제는 자체 개발한 Cartridge 정제
-                    법으로 PAGE, HPLC 정제와 비슷한 수준의 효율을 보입니다. 또한, 철저한 품질관리를 위해 MALDI-TOF 를 이용하여 모든 Oligo의 QC를 진행하며, 자동 분주
-                    시스템을 통해 정량의 Oligo를 제공하여 더욱 편리한 고객의 실험여건을 보장합니다.
-                    합성된 Oligo는 결과 레포트와 함께 제공됩니다.</p>
+                <p class="desc font-body">유전자 변형 마우스(GEM : Genetically Engineered Mouse)란 유전자 편집 기술을 이용해 특정 유전자를 삽입/제거/변형한 실험용 쥐를 말하며 인간 유전자의 기능을 밝히기 위한 목적으로 바이오 및 의학 연구 분야에 활용되고 있습니다. GEM 서비스는 Transgenic Mouse와 Knock-Out/Knock-In Mouse입니다. Transgenic Mouse는 유전자의 기능을 연구하기 위해 특정 유전자를 삽입한 형질 전환 마우스입니다. Knock-Out Mouse는 특정 유전자를 제거함으로써 목표 유전자 발현을 억제한 유전자 변형 마우스이며, Knock-In Mouse는 특정 유전자를 변형함으로써 목표 유전자 발현을 조절 및 탐색할 수 있는 유전자 변형 마우스입니다. 이 밖에도 대량증식, 마우스 계통, 수정란 동결 및 복원, KO/TG 마우스 사육 및 선별 등 GEM과 관련된 다양한 부가 서비스를 제공하고 있습니다. 고객의 다양한 요구를 충족할 수 있도록 맞춤형 부분 공정 서비스를 제공하며, 효율적 공정을 위해 충분한 실험 설계 과정을 거친 후 유전자 변형 마우스를 제작하고 있습니다. 철저한 검역 시스템을 통해 모든 마우스를 SPF(Specific Pathogen Free) 상태로 유지∙공급하고 있습니다.
+                    <br><br>
+                    활발한 연구가 이루어지고 있는 마크로젠의 대표적인 서비스 CRISPR-Cas9은 길잡이 역할을 하는 가이드 RNA와 DNA를 자르는 Cas9 단백질을 붙여 만듭니다. 기본 원리는 표적 DNA를 찾아가는 가이드 RNA의 설계에 따라 DNA 염기서열을 잘라내고 편집하는 위치가 달라지는 것입니다. 마크로젠은 매사추세츠공과대학(MIT)과 하버드대학교가 공동 설립한 브로드연구소(Broad Institute)와 서울대학교병원 등 국내외 최고의 연구기관들과 함께하며 유전자 편집 기술을 발전 시켜 나가고 있습니다. 또한, 미국 브로드연구소가 보유한 50여 건의 CRISPR 유전자 편집 기술을 확보했습니다.</p>
             </div>
             <!--동물모델사업부 공통 e -->
 
