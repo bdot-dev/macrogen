@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="Referrer" content="origin"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
-  <meta name="apple-mobile-web-app-title" content="macrogen" />
-  <meta name="robots" content="index,nofollow"/>
-  <meta name="description" content="macrogen"/>
-  <meta name="keywords" content="macrogen"/>
-<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-EN v0.3 / 11.23</title>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
-  <script src="../../js/bundle.js?1123"></script>
-  <script src="../../js/common.js?1123"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+    <title>Mobile-EN v0.3 / 11.23</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
+    <script src="../../js/bundle.js?1123"></script>
+    <script src="../../js/common.js?1123"></script>
 </head>
 
 <body class="en">
@@ -760,25 +761,31 @@
     <footer class="footer main">
     <div class="font-h5">Macrogen</div>
     <div class="info">
-        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
-        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+        <p>TEL : <a href="tel:02-2180-7000">02-2180-7000</a></p>
         <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">Order site</option>
+                    <option value="/en/policy/privacy">Privacy Statement</option>
+                    <option value="/en/policy/image/">Image Information Processing Policy</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>
-                    <option value="https://thebiome.life/">더바이옴</option>
-                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
-                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
-                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
-                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
-                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
-                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
-                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
-                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                    <option value="https://thebiome.life/">The Biome</option>
+                    <option value="https://www.my-genomestory.com/">My Genomestory</option>
+                    <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
+                    <option value="https://psomagen.com/">Psomagen</option>
+                    <option value="https://www.macrogen-japan.co.jp/">Macrogen Japan</option>
+                    <option value="https://www.macrogen-europe.com">Macrogen Europe</option>
+                    <option value="https://www.macrogen-apac.com/">Macrogen APAC</option>
+                    <option value="http://gmi.ac.kr/index.php">Genome Medicine Institute</option>
+                    <option value="http://www.g2if.org/">Gong-Wu Genome<br/>Information Foundation</option>
                 </select>
             </li>
         </ul>
