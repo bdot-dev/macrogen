@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="Referrer" content="origin"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
-  <meta name="apple-mobile-web-app-title" content="macrogen" />
-  <meta name="robots" content="index,nofollow"/>
-  <meta name="description" content="macrogen"/>
-  <meta name="keywords" content="macrogen"/>
-<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.3 / 11.23</title>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
-  <script src="../../js/bundle.js?1123"></script>
-  <script src="../../js/common.js?1123"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+    <title>Mobile-KO v0.3 / 11.23</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
+    <script src="../../js/bundle.js?1123"></script>
+    <script src="../../js/common.js?1123"></script>
 </head>
 
 <body>
@@ -412,6 +413,7 @@
                         /*slide 영역*/
                         swiperScrollbar = new Swiper ("._businessSlider", {
                             slidesPerView: "auto",
+                            effect : 'fade', // 페이드 효과 사용
                             centeredSlides: true,
                             loop: true,
 
@@ -582,18 +584,15 @@
                 </div>
             </div>
             <!-- e  global map -->
-            <script>
 
+            <script>
                 $('.section-map').ready(function(){
                     $('.inner').scrollLeft(400);
                 });
-
-
-
             </script>
-
         </div>
     </div>
+
 
     <footer class="footer main" data-aos="fade-up" data-aos-duration="2000">
         <div class="font-h5">Macrogen</div>
@@ -604,7 +603,14 @@
         </div>
         <div class="link-list">
             <ul>
-                <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+                <li>
+                    <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                        <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                        <option value="/ko/policy/privacy">개인정보 처리방침</option>
+                        <option value="/ko/policy/inside">내부정보관리규정</option>
+                        <option value="/ko/policy/image/">영상정보처리기기 운영.관리방침</option>
+                    </select>
+                </li>
                 <li>
                     <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                         <option selected>Family Site</option>
@@ -628,6 +634,8 @@
             <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
         </ul>
     </footer>
+
+
     <a href="#" class="btn-totop"></a>
 <script>
     $(document).ready(function(){
