@@ -27,7 +27,7 @@
 
 <body>
 <div class="wrap">
-    <div class="top-bg" style="background-image: url(../../img/business/ngs-bg.png);">
+    <div class="top-bg" style="background-image: url(../../img/business/test-bg.png);">
         <header class="header header-white">
     <div class="inner">
         <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
@@ -58,18 +58,18 @@
 
         <div class="frame">
             <div class="font-h1">COVID-19</div>
-            <div class="font-body-h">감염성 질환 진단을 위한 검사</div>
-            <div class="btn-wrap"><a href="#" class="btn-service"><span class="sr-only">service</span></a></div>
+            <div class="font-body-h">Tests for Diagnosis of Infectious Diseases</div>
+            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
         </div>
     </div>
     <div class="container">
         <div class="section_business">
             <!--covid19 공통 s -->
             <div class="subject-box">
-                <p class="title font-h4">감염병 진단을 위한 분자진단 솔루션을 제공합니다</p>
+                <p class="title font-h4">We provide molecular diagnostic solutions for infectious diseases.</p>
                 <p class="desc font-body">
-                    전세계 코로나 대유행으로 최적의 검사 환경에서 시행되는 신속, 정확한 진단이 필수인 시대입니다.
-                    이에 마크로젠은 높은 정확도의 진단 키트와 함께 이동성 및 안전성, 편의성을 갖춘 현장 진단 시스템을 구성하여 환자와 의료진 모두에게 친화적인 통합 솔루션을 제안합니다.
+                    Due to the global pandemic, it is essential to have an optimal test environment for prompt and accurate diagnoses. To this end, Macrogen proposes integrated<br>
+                    solutions for both patients and medical staff, which consist of onsite diagnostic systems with superior mobility, safety, and convenience and accurate diagnostic kits.
                 </p>
 
             </div>
@@ -77,14 +77,14 @@
 
             <!--covid19 탭 네비 s-->
             <div class="select-nav-box _content-anchor">
-                <p class="title font-h4">SERVICE</p>
+                <p class="title font-h4" id="tab_anchor">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
-                        <span class="text">Axen™ COVID-19 RT 진단키트</span>
+                        <span class="text">Axen™ COVID-19 RT Test Kit</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">Axen™ COVID-19 RT 진단키트</a></li>
-                        <li class="option-value"><a href="#">스마트 모바일 랩</a></li>
+                        <li class="option-value"><a href="#">Axen™ COVID-19 RT Test Kit</a></li>
+                        <li class="option-value"><a href="#">Macrogen Smart Mobile Lab</a></li>
                     </ul>
                 </div>
                 <script>
@@ -124,17 +124,17 @@
                     /*클릭시 탭메뉴 변경*/
                     option.on('click',function(){
                         var idx =$(this).index();
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
                         textChange();
                     })
 
-                    /*이전 다음 이동*/
+                    /*Prev Next 이동*/
                     function setTabContent(idx){
                         $('._selected-value').text($('._select-option li').eq(idx).text());
                         <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-area > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-area > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
                         /*페이지 변경후 상단 이동*/
                         fnMove();
@@ -162,13 +162,13 @@
             <!--covid19 탭 네비 e-->
 
             <!--covid19 탭 메뉴 s-->
-            <div class="info-box-area tab-content">
+            <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
                 <div class="info-box show">
-                    <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
-                    <p class="subject font-body-h">코로나바이러스감염증-19(COVID-19)의 감염 여부를 2시간 내 확인할 수 있는 체외진단 의료기기입니다.</p>
-                    <p class="desc img_bottom font-body">해당 제품은 실시간 유전자 증폭(Real Time-PCR, RT-PCR) 방식을 활용해 미량의 신종 코로나바이러스를 가진 환자를 정확하게 선별합니다.<br>
-                        Axen™ COVID-19 RT 진단키트는 식품의약품안전처의 수출 허가를 승인받았으며, 유럽 체외진단시약 인증(CE-IVD)을 획득해 해외 고객을 대상으로 신뢰도 높은 진단 서비스를 제공하고 있습니다.</p>
+                    <p class="font-h4 main-title">Axen™ COVID-19 RT Test Kit</p>
+                    <p class="subject font-body-h"An in vitro diagnostic kit for confirming the infection of COVID-19 in just two hours.</p>
+                    <p class="desc img_bottom font-body">Based on the RT-PCR (Real Time PCR), the kit is suitable for screening patients with small amounts of novel coronavirus due to its outstanding target detection. The Axen™ COVID-19
+                        <br>test kit has obtained export approval from the Korean Ministry of Food and Drug Safety and Europe’s In-Vitro Diagnostic (CE-IVD) to provide reliable diagnostic services.</p>
                     <div class="img">
                         <img src="../../img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
                     </div>
@@ -296,7 +296,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                              <img src="../../img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
-                                <span class="_btnZoom-1">
+                                <span class="btnZoom-1">
                                     <i class="icon ico-zoom-white"></i>
                                 </span>
                             </div>
@@ -304,7 +304,7 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
-                                <span class="_btnZoom-2">
+                                <span class="btnZoom-2">
                                     <i class="icon ico-zoom-white _btnZoom2"></i>
                                 </span>
                             </div>
@@ -312,30 +312,30 @@
                         <div class="border-gray-box">
                             <div class="img">
                                 <img src="../../img/business/img_clinicaltrialtest.png" alt="flow">
-                                <span class="_btnZoom-3">
+                                <span class="btnZoom-3">
                                     <i class="icon ico-zoom-white _btnZoom3"></i>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
                     <div class="btn-area">
-                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--스마트 모바일 랩-->
                 <div class="info-box">
-                    <p class="font-h4 main-title">스마트 모바일 랩</p>
-                    <p class="subject font-body-h">스마트 모바일 랩(Smart Mobile Lab)은 마크로젠이 전 세계 코로나19 대응을 위해 국내 최초로 구축한 ‘코로나19 현장 검사 시스템’입니다.</p>
-                    <p class="desc img_bottom font-body">코로나 현장 검사를 위한 이동형 소형 검사실로, 바이러스 핵산 추출, 유전자 검사 및 분석 결과 도출까지 전 과정을 진행할 수 있는 올인원(all-in-one) 시스템으로 구성되어 있습니다.</p>
+                    <p class="font-h4 main-title">Macrogen Smart Mobile Lab</p>
+                    <p class="subject font-body-h">Smart Mobile Lab is the first-ever on-site COVID 19 testing system developed in Korea.</p>
+                    <p class="desc img_bottom font-body">This is a small mobile lab for on-site testing of the virus, and it is composed of an all-in-one system that can perform the entire process, starting from the extraction of virus nucleic acid, followed by genetic testing, and then the analysis results.</p>
                     <div class="img">
                         <img src="../../img/business/img-smartmobile-intro.png" alt="스마트모바일랩">
                     </div>
@@ -343,13 +343,13 @@
                         <div class="list-area">
                             <p class="font-body-h title img">Specifications</p>
                             <ul class="list-circle-dot">
-                                <li><p>K-방역모델 사용</p></li>
-                                <li><p>실험 및 예산에 따른 브랜드별 장비 선택 가능</p></li>
-                                <li><p>전원 공급 방식 선택 가능 (외부전원 / 태양열 발전 선택 가능)</p></li>
-                                <li><p>유지/보수 서비스 제공</p></li>
-                                <li><p>검사자 교육 제공 (온라인/오프라인)</p></li>
-                                <li><p>설치/이동 용이</p></li>
-                                <li><p>이동식 실험 / 음압병동 전문 설계 /시공 업체 협력</p></li>
+                                <li><p>K-Quarantine model</p></li>
+                                <li><p>Equipment options available depending on budget or preference</p></li>
+                                <li><p>Power supply options available (External Power/Solar Power System)</p></li>
+                                <li><p>Maintenance and repair service provided</p></li>
+                                <li><p>Training for lab technicians provided (online/offline)</p></li>
+                                <li><p>Easy installation/relocation</p></li>
+                                <li><p>Collaboration with a company specialized in mobile labs and negative pressure wards</p></li>
                             </ul>
                         </div>
                         <div class="list-area">
@@ -386,16 +386,16 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
                     <div class="btn-area">
-                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
                                 <div class="col" onclick="setTabContent(0)">
-                                    <i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col disabled"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                    <i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -407,25 +407,31 @@
     <footer class="footer main">
     <div class="font-h5">Macrogen</div>
     <div class="info">
-        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
-        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+        <p>TEL : <a href="tel:02-2180-7000">02-2180-7000</a></p>
         <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">Order site</option>
+                    <option value="/en/policy/privacy">Privacy Statement</option>
+                    <option value="/en/policy/image/">Image Information Processing Policy</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>
-                    <option value="https://thebiome.life/">더바이옴</option>
-                    <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
-                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
-                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
-                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
-                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
-                    <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
-                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
-                    <option value="http://www.g2if.org/">공우생명정보재단</option>
+                    <option value="https://thebiome.life/">The Biome</option>
+                    <option value="https://www.my-genomestory.com/">My Genomestory</option>
+                    <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
+                    <option value="https://psomagen.com/">Psomagen</option>
+                    <option value="https://www.macrogen-japan.co.jp/">Macrogen Japan</option>
+                    <option value="https://www.macrogen-europe.com">Macrogen Europe</option>
+                    <option value="https://www.macrogen-apac.com/">Macrogen APAC</option>
+                    <option value="http://gmi.ac.kr/index.php">Genome Medicine Institute</option>
+                    <option value="http://www.g2if.org/">Gong-Wu Genome<br/>Information Foundation</option>
                 </select>
             </li>
         </ul>
@@ -621,35 +627,76 @@
     })
 </script>
 
-<!--1번이미지 모달 s-->
+<div class="toast-popup">
+    <p>You can enlarge it by clicking on the image.</p>
+</div>
+<!--modalImageViewer1 s-->
 <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
-            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="graph1"></div>
             </div>
         </div>
     </div>
 </div>
 <script>
     // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-    // zoom
-    var el = document.querySelector('.pinch-zoom');
-    new PinchZoom.default(el, {});
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
 
     // modal close
     $('.btn-close').on('click', function () {
-        modal.hide();
+        modalImageViewer1.hide();
+        hideToastPopup();
     })
 
     // modal open
-    $('._btnZoom-1').on('click', function () {
-        modal.show();
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
+        showToastPopup();
     })
 
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
 
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
 
     // toast popup
     function showToastPopup() {
@@ -659,8 +706,45 @@
     function hideToastPopup() {
         $('.toast-popup').removeClass('active');
     }
-    setTimeout(showToastPopup, 1500);
 </script>
-<!--1번이미지 모달 e-->
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
 </body>
 </html>

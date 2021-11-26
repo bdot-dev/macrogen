@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">태마이크로바이옴 분석</div>
+            <div class="font-h1">마이크로바이옴 분석</div>
             <div class="font-body-h">더바이옴/마이크로브앤미</div>
         </div>
     </div>

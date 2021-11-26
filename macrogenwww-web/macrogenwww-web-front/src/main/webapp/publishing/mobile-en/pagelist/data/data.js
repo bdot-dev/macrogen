@@ -4,7 +4,7 @@ data.macrogen = {
     title: 'MACROGEN',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: 'Main',
             category: 'macrogen',
             page: 'Main'
@@ -78,6 +78,138 @@ data.macrogen = {
     ]
 }
 
+data.business ={
+    title: 'BUSINESS',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '연구서비스_NGS',
+            category: 'business',
+            page: '연구서비스_NGS'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_CES',
+            category: 'business',
+            page: '연구서비스_CES'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_genesynthesis',
+            category: 'business',
+            page: '연구서비스_genesynthesis'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_Oligo',
+            category: 'business',
+            page: '연구서비스_Oligo'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_MICROARRAY',
+            category: 'business',
+            page: '연구서비스_MICROARRAY'
+        },
+        {
+            stateClass: 'complete',
+            url: '연구서비스_동물모델사업부',
+            category: 'business',
+            page: '연구서비스_동물모델사업부'
+        },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_암유전체검사',
+            category: 'business',
+            page: '임상진단서비스_암유전체검사'
+        },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_신생아유전자검사',
+            category: 'business',
+            page: '임상진단서비스_신생아유전자검사'
+        },
+        {
+            stateClass: 'complete',
+            url: '임상진단서비스_covid19',
+            category: 'business',
+            page: '임상진단서비스_covid19'
+        },
+        {
+            stateClass: 'complete',
+            url: '헬스케어서비스_개인유전자분석',
+            category: 'business',
+            page: '헬스케어서비스_개인유전자분석'
+        },
+        {
+            stateClass: 'complete',
+            url: '헬스케어서비스_장내미생물분석',
+            category: 'business',
+            page: '헬스케어서비스_장내미생물분석'
+        },
+        {
+            stateClass: 'complete',
+            url: '헬스케어서비스_반려동물유전자분석',
+            category: 'business',
+            page: '헬스케어서비스_반려동물유전자분석'
+        },
+    ]
+}
+
+data.RD = {
+    title: 'R&D',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '03R&D_01정밀의학연구소_01소개',
+            category: 'RD',
+            page: '03R&D_01정밀의학연구소_01소개'
+        },
+        {
+            stateClass: 'complete',
+            url: '03R&D_02생명정보학연구소',
+            category: 'RD',
+            page: '03R&D_02생명정보학연구소'
+        },
+        {
+            stateClass: 'complete',
+            url: '03R&D_03더바이옴연구소',
+            category: 'RD',
+            page: '03R&D_03더바이옴연구소'
+        },
+        {
+            stateClass: 'complete',
+            url: '03R&D_04싱크진연구소',
+            category: 'RD',
+            page: '03R&D_04싱크진연구소'
+        },
+        {
+            stateClass: 'complete',
+            url: '03R&D_05빅데이터연구소',
+            category: 'RD',
+            page: '03R&D_05빅데이터연구소'
+        },
+        {
+            stateClass: 'complete',
+            url: '06특허,논문_01특허_01목록',
+            category: 'RD',
+            page: '06특허,논문_01특허_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '06특허,논문_02논문_01목록',
+            category: 'RD',
+            page: '06특허,논문_02논문_01목록'
+        },
+        {
+            stateClass: 'complete',
+            url: '06특허,논문_02논문_01목록없음',
+            category: 'RD',
+            page: '06특허,논문_02논문_01목록없음'
+        },
+    ]
+}
+
 data.newsroom = {
     title: 'NEWSROOM',
     list: [
@@ -132,6 +264,24 @@ data.newsroom = {
     ]
 }
 
+data.IR = {
+    title: 'IR',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '01재무정보',
+            category: 'IR',
+            page: '01재무정보'
+        },
+        {
+            stateClass: 'complete',
+            url: '04투자자문의',
+            category: 'IR',
+            page: '04투자자문의'
+        }
+    ]
+}
+
 data.esg = {
     title: 'ESG',
     list: [
@@ -153,186 +303,30 @@ data.esg = {
             category: 'esg',
             page: '06ESG_03사회공헌_01소개'
         },
-      /*  {
-            stateClass: 'working',
-            url: '06ESG_03사회공헌_02과학자상목록',
-            category: 'esg',
-            page: '06ESG_03사회공헌_02과학자상목록'
-        },
-        {
-            stateClass: 'working',
-            url: '06ESG_03사회공헌_03과학자상상세',
-            category: 'esg',
-            page: '06ESG_03사회공헌_03과학자상상세'
-        },*/
     ]
 
 }
 
-data.business ={
-    title: 'BUSINESS',
+data.etc = {
+    title: 'Etc',
     list: [
         {
-            stateClass: 'working',
-            url: '연구서비스_NGS',
-            category: 'business',
-            page: '연구서비스_NGS'
+            stateClass: 'complete',
+            url: '01개인정보처리방침',
+            category: 'etc',
+            page: '01개인정보처리방침'
         },
         {
-            stateClass: 'working',
-            url: '연구서비스_CES',
-            category: 'business',
-            page: '연구서비스_CES'
+            stateClass: 'complete',
+            url: '02영상정보_운영_관리',
+            category: 'etc',
+            page: '02영상정보_운영_관리'
         },
         {
-            stateClass: 'working',
-            url: '연구서비스_Oligo',
-            category: 'business',
-            page: '연구서비스_Oligo'
+            stateClass: 'complete',
+            url: '에러페이지',
+            category: 'etc',
+            page: '에러페이지'
         },
-        {
-            stateClass: 'working',
-            url: '연구서비스_MICROARRAY',
-            category: 'business',
-            page: '연구서비스_MICROARRAY'
-        },
-        {
-            stateClass: 'working',
-            url: '연구서비스_동물모델사업부',
-            category: 'business',
-            page: '연구서비스_동물모델사업부'
-        },
-        {
-            stateClass: 'working',
-            url: '임상진단서비스_암유전체검사',
-            category: 'business',
-            page: '임상진단서비스_암유전체검사'
-        },
-        {
-            stateClass: 'working',
-            url: '임상진단서비스_신생아유전자검사',
-            category: 'business',
-            page: '임상진단서비스_신생아유전자검사'
-        },
-        {
-            stateClass: 'working',
-            url: '임상진단서비스_covid19',
-            category: 'business',
-            page: '임상진단서비스_covid19'
-        },
-        {
-            stateClass: 'working',
-            url: '헬스케어서비스_개인유전자분석',
-            category: 'business',
-            page: '헬스케어서비스_개인유전자분석'
-        },
-        {
-            stateClass: 'working',
-            url: '헬스케어서비스_장내미생물분석',
-            category: 'business',
-            page: '헬스케어서비스_장내미생물분석'
-        },
-        {
-            stateClass: 'working',
-            url: '헬스케어서비스_반려동물유전자분석',
-            category: 'business',
-            page: '헬스케어서비스_반려동물유전자분석'
-        },
-    ]
-}
-
-data.RD = {
-    title: 'R&D',
-    list: [
-        {
-            stateClass: 'working',
-            url: '03R&D_01정밀의학연구소_01소개',
-            category: 'RD',
-            page: '03R&D_01정밀의학연구소_01소개'
-        },
-        {
-            stateClass: 'working',
-            url: '03R&D_02생명정보학연구소',
-            category: 'RD',
-            page: '03R&D_02생명정보학연구소'
-        },
-        {
-            stateClass: 'working',
-            url: '03R&D_03더바이옴연구소',
-            category: 'RD',
-            page: '03R&D_03더바이옴연구소'
-        },
-        {
-            stateClass: 'working',
-            url: '03R&D_04싱크진연구소',
-            category: 'RD',
-            page: '03R&D_04싱크진연구소'
-        },
-        {
-            stateClass: 'working',
-            url: '03R&D_05빅데이터연구소',
-            category: 'RD',
-            page: '03R&D_05빅데이터연구소'
-        },
-        {
-            stateClass: 'working',
-            url: '06특허,논문_01특허_01목록',
-            category: 'RD',
-            page: '06특허,논문_01특허_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '06특허,논문_02논문_01목록',
-            category: 'RD',
-            page: '06특허,논문_02논문_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '06특허,논문_02논문_01목록없음',
-            category: 'RD',
-            page: '06특허,논문_02논문_01목록없음'
-        },
-    ]
-}
-
-data.IR = {
-    title: 'IR',
-    list: [
-        {
-            stateClass: 'working',
-            url: '01재무정보',
-            category: 'IR',
-            page: '01재무정보'
-        },
-        {
-            stateClass: 'working',
-            url: '02공시정보_01공고_01목록',
-            category: 'IR',
-            page: '02공시정보_01공고_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '02공시정보_01공고_02조회',
-            category: 'IR',
-            page: '02공시정보_01공고_02조회'
-        },
-        {
-            stateClass: 'working',
-            url: '03IR소식_01목록',
-            category: 'IR',
-            page: '03IR소식_01목록'
-        },
-        {
-            stateClass: 'working',
-            url: '03IR소식_02조회',
-            category: 'IR',
-            page: '03IR소식_02조회'
-        },
-        {
-            stateClass: 'working',
-            url: '04투자자문의',
-            category: 'IR',
-            page: '04투자자문의'
-        }
     ]
 }

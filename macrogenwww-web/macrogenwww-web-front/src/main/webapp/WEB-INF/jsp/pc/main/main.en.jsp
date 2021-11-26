@@ -307,7 +307,7 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_01.png) no-repeat center center / cover">
                     <div class="text-area">
                             <div class="title">
-                                <span>Personal Healthcare</span><a href="/ko/business/healthcare/personal-genetic">
+                                <span>Personal Healthcare</span><a href="/${rc.locale.language }/business/healthcare/personal-genetic">
                                     <span class="btn btn-circle btn-white btn-md">
                                         <i class="icon icon-arrow-right-short"></i>
                                     </span>
@@ -321,7 +321,7 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>The Biome</span><a href="/ko/business/healthcare/intestinal-microbiome">
+                            <span>The Biome</span><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -335,7 +335,7 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>Clinical Diagnostics/Treatment</span><a href="/ko/business/diagnosis/cancer">
+                            <span>Clinical Diagnostics/Treatment</span><a href="/${rc.locale.language }/business/diagnosis/cancer">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -349,7 +349,7 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_04.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>Pets</span><a href="/ko/business/healthcare/pet-genetic">
+                            <span>Pets</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -363,7 +363,7 @@
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_05.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>Research Services</span><a href="/ko/business/research/ngs">
+                            <span>Research Services</span><a href="/${rc.locale.language }/business/research/ngs">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -413,7 +413,7 @@
 	                    <div class="list list-border hover">
 	                    	<c:forEach var="result" items="${ newsList }" varStatus="status">
 		                        <div class="item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-		                            <span class="date"><span class="day"><fmt:formatDate value="${result.registDt }" pattern="dd" />.</span><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM" /></span>
+		                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="tit">${ result.nttSj }</a>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 		                        </div>

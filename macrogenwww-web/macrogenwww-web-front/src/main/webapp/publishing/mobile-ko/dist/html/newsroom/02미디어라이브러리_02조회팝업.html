@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="Referrer" content="origin"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
-  <meta name="apple-mobile-web-app-title" content="macrogen" />
-  <meta name="robots" content="index,nofollow"/>
-  <meta name="description" content="macrogen"/>
-  <meta name="keywords" content="macrogen"/>
-<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.3 / 11.23</title>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
-  <script src="../../js/bundle.js?1123"></script>
-  <script src="../../js/common.js?1123"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+    <title>Mobile-KO v0.3 / 11.23</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
+    <script src="../../js/bundle.js?1123"></script>
+    <script src="../../js/common.js?1123"></script>
 </head>
 
 <body>
@@ -149,7 +150,14 @@
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                    <option value="/ko/policy/privacy">개인정보 처리방침</option>
+                    <option value="/ko/policy/inside">내부정보관리규정</option>
+                    <option value="/ko/policy/image/">영상정보처리기기 운영.관리방침</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>
@@ -223,7 +231,7 @@
                     </ul>
                 </div>
                 <div class="btn-wrapper">
-                    <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
+                    <a href="#" class="btn-view-zoom _openImageViewer" onclick="getActiveImage()" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
                     <a href="#" class="btn-download"><span class="sr-only">다운로드</span></a>
                 </div>
             </div>
@@ -253,8 +261,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
-            <div class="pinch-zoom-parent">
-                <div class="pinch-zoom"><img src="../../img/@temp/newsroom/sample-1.png" alt=""></div>
+            <div class="parent">
+                <div class="panzoom">
+                    <img src="../../img/@temp/newsroom/sample-1.png" alt="게시물 제목">
+                </div>
             </div>
         </div>
     </div>
@@ -263,6 +273,12 @@
     <p>이미지를 확대할 수 있습니다</p>
 </div>
 <script>
+    // 현재 active 이미지 show
+    function getActiveImage() {
+        let activeImage = $('.swiper-slide-active').children().children('img').attr('src')
+        $('.modal-image-viewer .panzoom').children('img').attr('src',activeImage)
+    }
+
     $(document).ready(function(){
         $('.btn-totop').click(function(){
             $('.modal').animate( { scrollTop:0 },{duration : 100});
@@ -295,10 +311,6 @@
         });
 
         swiper.update();
-
-        // zoom
-        var el = document.querySelector('.pinch-zoom');
-        new PinchZoom.default(el, {});
 
         // toast popup
         function showToastPopup() {

@@ -65,7 +65,8 @@
     <div class="container">
         <div class="section_business">
             <div class="subject-box">
-                <p class="title font-h4">CES는 Sanger Sequencing 베이스로 진행되며 생화학적 방법을 이용하는 DNA 염기서열 분석 방법입니다.</p>
+                <!--v0.4 title 텍스트 변경 (주석제거예정)-->
+                <p class="title font-h4">20년 이상 축적된 경험과 노하우로 뛰어난 품질의 CES(Capillary Electrophoresis Sequencing) 서비스를 제공합니다</p>
                 <p class="subject font-body-h img_bottom">CES는 Sanger Sequencing 베이스로 진행되며 생화학적 방법을 이용하는 DNA 염기서열 분석
                     방법입니다.</p>
                 <div class="img">
@@ -485,7 +486,8 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5 ">
+                    <!--v0.4 anchor 위치 재 조정 id값 변경 (주석제거예정)-->
+                    <p class="sub-title font-h5"  id="ancher5">
                         One-click Sanger Sequencing
                     </p>
                     <p class="desc font-body">
@@ -497,7 +499,8 @@
                         정립하여 정확하게 사용합니다.
                     </p>
                     <hr class="divider">
-                    <p class="sub-title font-h5" id="ancher5">
+                    <!--v0.4 anchor 위치 재 조정 id값 변경 (주석제거예정)-->
+                    <p class="sub-title font-h5">
                         Primer Walking
                     </p>
                     <p class="desc font-body">
@@ -658,7 +661,14 @@
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                    <option value="/ko/policy/privacy">개인정보 처리방침</option>
+                    <option value="/ko/policy/inside">내부정보관리규정</option>
+                    <option value="/ko/policy/image/">영상정보처리기기 운영.관리방침</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>

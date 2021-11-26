@@ -145,10 +145,12 @@
 	    <div class="modal-dialog">
 	        <div class="modal-content">
 	            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
-	            <div class="pinch-zoom-parent">
-	                <div class="pinch-zoom"><img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-1.png" alt=""></div>
-	            </div>
-	        </div>
+	            <div class="parent">
+	                <div class="panzoom">
+	                    <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-1.png" alt="">
+	                </div>
+		        </div>
+		    </div>
 	    </div>
 	</div>
 	<div class="toast-popup">
@@ -173,10 +175,11 @@
 	        })
 
 	        // zoom
-	        var el = document.querySelector('.pinch-zoom');
-	        new PinchZoom.default(el, {});
+	        /* var el = document.querySelector('.pinch-zoom');
+	        new PinchZoom.default(el, {}); */
 
 	        // toast popup
+	        /*
 	        function showToastPopup() {
 	            $('.toast-popup').addClass('active');
 	            setTimeout(hideToastPopup, 2000);
@@ -192,18 +195,15 @@
 
 	        $('._openImageViewer').on('click',function (){
 	            toastPopup();
-	        });
+	        }); */
 
-	        $('#modalImageViewer').on('shown.bs.modal', function () {
-	        	var src = '';
-	        	if ($('#modal ._slider .swiper-slide-active img').length > 0) {
-	        		src = $('#modal ._slider .swiper-slide-active img').attr('src');
-	        	} else {
-	        		src = $('#modal ._slider .swiper-slide img').attr('src');
-	        	}
-	        	$('#modalImageViewer img').attr('src', src);
-			});
 	    });
+
+        /*
+        $('#modalImageViewer').on('show.bs.modal', function (e) {
+        	console.log('show.bs.modal', $(e.currentTarget).find('#view-image').attr('src'))
+		});
+        */
 
 	</script>
 

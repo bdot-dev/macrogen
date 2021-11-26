@@ -1,0 +1,266 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<body class="en">
+
+    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-global-network.png);">
+        <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
+
+        <div class="frame">
+            <div class="font-h4">Global Network</div>
+            <div class="font-slogan en">GLOBAL<br/>MACROGEN</div>
+            <div class="font-h7-r">Leading global precision medicine company</div>
+            <div class="scroll-wrap">
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="macrogen global-macrogen">
+            <!-- s  map -->
+            <div class="section-map" data-aos="fade-up" data-aos-duration="2000">
+                <div class="title">GLOBAL<br/> MACROGEN</div>
+                <div class="desc">Macrogen is cementing its leadership position in precision medicine<br/>
+                    by providing personalized services to local clients and meeting their diverse needs.</div>
+                <div class="map"></div>
+            </div>
+            <!-- e  map -->
+
+            <nav class="tab-secondary" data-aos="fade-up" data-aos-duration="2000">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true"><span>Korea</span></button>
+                    <button class="nav-link" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false"><span>Overseas</span></button>
+                </div>
+            </nav>
+
+            <!-- s  map 상세 -->
+            <div class="section-map-detail" data-aos="fade-up" data-aos-duration="2000">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
+                        <div class="box">
+                            <div class="title">Korea</div>
+                            <div class="detail">
+                                <ul>
+                                    <li class="item" id="seoul">
+                                        <div class="name">Macrogen Gangnam HQ</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_1.png" alt="Macrogen Gangnam HQ"></div>
+                                        <div class="info">
+                                            <div class="address">Macrogen Bldg, 238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-2-2180-7000">+82-2-2180-7000</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-2-2180-7100">+82-2-2180-7100</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="name">Macrogen Genome Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_2.png" alt="Macrogen Genome Center"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>June 1997</span></li>
+                                            </ul>
+                                            <div class="address">10F, 254, Beotkkot-ro, Geumcheon-gu, Seoul (Gasan-dong, World Meridian I)</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-2-2180-7000">+82-2-2180-7000</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-2-2180-7100">+82-2-2180-7100</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="name">Macrogen GEM Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_3.png" alt="Macrogen GEM Center"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>Feb 2002</span></li>
+                                            </ul>
+                                            <div class="address">3F, 466, Gangseo-ro, Gangseo-gu, Seoul (Deungchon-dong, Woori Venture Town)</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-2-3663-5990">+82-2-3663-5990</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-2-3663-5179">+82-2-3663-5179</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="name">Macrogen Daejeon Genome Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_4.png" alt="Macrogen Daejeon Genome Center"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>February 2008</span></li>
+                                            </ul>
+                                            <div class="address">Rm 323, 65, Techno 3-ro, Yuseong-gu, Daejeon (Gwanpyeong-dong, Hanshin S-Meca)</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-42-336-7080">+82-42-336-7080</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
+                        <div class="box">
+                            <div class="title">Overseas</div>
+                            <div class="detail">
+                                <ul>
+                                    <li class="item" id="rockville" >
+                                        <div class="name">Psomagen</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_5.png" alt="Psomagen"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>December 2004</span></li>
+                                            </ul>
+                                            <div class="address">1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+1-301-251-1007">+1-301-251-1007</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+1-301-251-4006">+1-301-251-4006</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="http://www.psomagen.com" target="_blank">www.psomagen.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="tokyo">
+                                        <div class="name">Macrogen Japan</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_6.png" alt="Macrogen Japan"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>November 2007</span></li>
+                                            </ul>
+                                            <div class="address">16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+81-3-5962-1124">+81-3-5962-1124</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="http://www.macrogen-japan.co.jp" target="_blank">www.macrogen-japan.co.jp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="amsterdam">
+                                        <div class="name">Macrogen Europe</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_7.png" alt="Macrogen Europe"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>September 2017 (Branch Opened: June 2008)</span></li>
+                                            </ul>
+                                            <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="synapse">
+                                        <div class="name">Macrogen Singapore</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>March 2018 (Branch Opened : November 2016)</span></li>
+                                            </ul>
+                                            <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="http://www.macrogen-apac.com" target="_blank">www.macrogen-apac.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="madrid">
+                                        <div class="name">Macrogen Spain</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Date of establishment</span><span>December 2016</span></li>
+                                            </ul>
+                                            <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+34-911-138-378">+34-911-138-378</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- e  map 상세 -->
+        </div>
+    </div>
+
+</body>

@@ -24,7 +24,7 @@
     <div class="container container-fluid">
         <div class="section_syncgenes">
             <div class="info-box">
-                <div class="title">Complete precision medicine<br/>
+                <div class="font-h3">Complete precision medicine<br/>
                     based on data integration and analysis</div>
                 <div class="desc">Research on genome information for long and healthy lives</div>
             </div>
@@ -42,21 +42,21 @@
 
         <div class="section_info_list syncgenes-area">
             <div class="box clearfix">
-                <div class="sub_title">Research<span>Research for integration (problem-solving)<br/>of genetic, clinical and health-related lifestyle data</span></div>
-                <div class="sub_desc">
+                <div class="font-h7">Research<span>Research for integration (problem-solving)<br/>of genetic, clinical and health-related lifestyle data</span></div>
+                <div class="font-body">
                     <img src="/publishing/pc-en/dist/img/RD/img-syncgenes_research.png" alt="인간 게놈 염기서열">
                 </div>
             </div>
 
             <div class="box clearfix">
-                <div class="sub_title">Analysis<span>Analysis and research on prediction and artificial intelligence based on integrated data</span></div>
-                <div class="sub_desc">
+                <div class="font-h7">Analysis<span>Analysis and research on prediction and artificial intelligence based on integrated data</span></div>
+                <div class="font-body">
                     <img src="/publishing/pc-en/dist/img/RD/img-syncgenes_analysis.png" alt="인간 게놈 염기서열">
                 </div>
             </div>
             <div class="box clearfix">
-                <div class="sub_title">Precision Medicine<span>Research to apply analytical results to clinical and health management  and development of new technologies in precision medicine </span></div>
-                <div class="sub_desc">
+                <div class="font-h7">Precision Medicine<span>Research to apply analytical results to clinical and health management  and development of new technologies in precision medicine </span></div>
+                <div class="font-body">
                     <img src="/publishing/pc-en/dist/img/RD/img-syncgenes_detailed.png" alt="인간 게놈 염기서열">
                 </div>
             </div>

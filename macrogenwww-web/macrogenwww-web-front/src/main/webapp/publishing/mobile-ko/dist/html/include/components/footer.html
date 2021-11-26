@@ -8,7 +8,14 @@
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                    <option value="/ko/policy/privacy">개인정보 처리방침</option>
+                    <option value="/ko/policy/inside">내부정보관리규정</option>
+                    <option value="/ko/policy/image/">영상정보처리기기 운영.관리방침</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>

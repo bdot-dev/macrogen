@@ -40,7 +40,7 @@
     <div class="container">
         <div class="section_business">
             <div class="subject-box">
-                <p class="title font-h4">CES는 Sanger Sequencing 베이스로 진행되며 생화학적 방법을 이용하는 DNA 염기서열 분석 방법입니다.</p>
+                <p class="title font-h4">20년 이상 축적된 경험과 노하우로 뛰어난 품질의 CES(Capillary Electrophoresis Sequencing) 서비스를 제공합니다</p>
                 <p class="subject font-body-h img_bottom">CES는 Sanger Sequencing 베이스로 진행되며 생화학적 방법을 이용하는 DNA 염기서열 분석
                     방법입니다.</p>
                 <div class="img">
@@ -460,7 +460,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5 ">
+                    <p class="sub-title font-h5" id="ancher5">
                         One-click Sanger Sequencing
                     </p>
                     <p class="desc font-body">
@@ -472,7 +472,7 @@
                         정립하여 정확하게 사용합니다.
                     </p>
                     <hr class="divider">
-                    <p class="sub-title font-h5" id="ancher5">
+                    <p class="sub-title font-h5">
                         Primer Walking
                     </p>
                     <p class="desc font-body">

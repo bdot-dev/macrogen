@@ -47,11 +47,18 @@
 	</c:if>
 
     <div class="btn-wrapper">
-        <a href="#" class="btn-view-zoom _openImageViewer" data-bs-toggle="modal" data-bs-target="#modalImageViewer"><span class="sr-only">확대보기</span></a>
+        <a href="#" class="btn-view-zoom _openImageViewer" onclick="getActiveImage()" data-bs-toggle="modal" data-bs-target="#modalImageViewer"
+        	data-image-src=""><span class="sr-only">확대보기</span></a>
         <c:if test="${fn:length(resultVo.atchList) gt 0 }">
 	        <a href="/download/file/${resultVo.atchList[0].atchId }" class="btn-download"><span class="sr-only">다운로드</span></a>
         </c:if>
     </div>
+    <script>
+	    function getActiveImage() {
+	        let activeImage = $('.swiper-slide-active').children().children('img').attr('src')
+	        $('.modal-image-viewer .panzoom').children('img').attr('src',activeImage)
+	    }
+    </script>
 </div>
 <div class="modal-body">
     <div class="font-body-h-b">
