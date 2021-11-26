@@ -330,11 +330,10 @@
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="title">
-                                        <span>임상진단&#47;치료</span><a href="/${rc.locale.language }/business/diagnosis/cancer">
-                                        <a href="#">
+                                        <span>임상진단&#47;치료</span>
+                                        <a href="/${rc.locale.language }/business/diagnosis/cancer">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         COVID19&#44; 암 유전체 검사 등<br/>질병 발생원인 연구로<br/>맞춤치료에 도움이 될 수 있습니다
@@ -344,11 +343,10 @@
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="title">
-                                        <span>반려동물</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">
-                                        <a href="#">
+                                        <span>반려동물</span>
+                                        <a href="/${rc.locale.language }/business/healthcare/pet-genetic">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         소중한 가족인 반려동물의<br/>건강한 삶을 위해 유전질환예측&#44; 질병 예방 등<br/>맞춤 관리 솔루션을 제공합니다
@@ -358,11 +356,10 @@
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_05.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="title">
-                                        <span>연구서비스</span><a href="/${rc.locale.language }/business/research/ngs">
-                                        <a href="#">
+                                        <span>연구서비스</span>
+                                        <a href="/${rc.locale.language }/business/research/ngs">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         글로벌 스탠다드 인프라 기반의<br/>빠른 염기서열 분석 연구데이터로<br/>경쟁력을 갖추고 있습니다

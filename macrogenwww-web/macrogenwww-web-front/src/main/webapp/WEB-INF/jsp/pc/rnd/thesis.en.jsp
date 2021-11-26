@@ -19,7 +19,7 @@
             <div class="search-wrap mb-5">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"
-                    	class="form-control" placeholder="Enter a search term" aria-label="Enter a search term" aria-describedby="search2" />
+                    	class="form-control" placeholder="Enter search term" aria-label="Enter search term" aria-describedby="search2" />
                     <button class="btn-search" type="button" id="search2"><span class="sr-only">검색</span></button>
                 </div>
             </div>

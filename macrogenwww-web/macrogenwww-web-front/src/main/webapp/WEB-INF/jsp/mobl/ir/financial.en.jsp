@@ -11,34 +11,34 @@
 </header>
 
         <div class="frame">
-            <div class="font-h1">재무정보</div>
+            <div class="font-h1">Financial Information</div>
         </div>
     </div>
     <div class="container pt-0">
         <div class="section_IR">
             <div class="subtitle">
-                <span class="font-h7">연결재무상태표</span>
-                <span class="text-unit">단위 &#58; 천원</span>
+                <span class="font-h7">Consolidated Statement of Financial Position</span>
+                <span class="text-unit">(Unit: Thousand KRW)</span>
             </div>
             <div class="financial_box">
                 <table class="table table-rotate state_table">
                     <tbody>
                     <tr>
-                        <th>구분</th>
-                        <td>유동자산</td>
-                        <td>비유동자산</td>
-                        <td class="table-bg">자산 총계</td>
-                        <td>유동부채</td>
-                        <td>비유동부채</td>
-                        <td class="table-bg">부채 총계</td>
-                        <td class="font-medium">지배기업의 소유주지분</td>
-                        <td>자본금</td>
-                        <td>주식발행초과금</td>
-                        <td>기타포괄손익누계액</td>
-                        <td>기타자본항목</td>
-                        <td>이익잉여금</td>
-                        <td class="font-medium">비지배지분</td>
-                        <td class="table-bg">자본 총계</td>
+                        <th>Items</th>
+                        <td>Current Assets</td>
+                        <td>Non-Current Assets</td>
+                        <td class="table-bg">Total Assets</td>
+                        <td>Current Liabilities</td>
+                        <td>Non-Current Liabilities</td>
+                        <td class="table-bg">Total Liabilities</td>
+                        <td class="font-medium">Owners of Parent Equity</td>
+                        <td>Capital Stock</td>
+                        <td>Capital Surplus</td>
+                        <td>Accumulated Other Comprehensive Income</td>
+                        <td>Other Components of Equity</td>
+                        <td>Retained Earnings</td>
+                        <td class="font-medium">Non-Controlling Interest</td>
+                        <td class="table-bg">Total Equity</td>
                     </tr><c:forEach var="result" items="${fnlttList }" varStatus="status"
 	                       	><c:set var="totalAssets" value="${result.curAssets + result.noncurAssets }"
 	                       	/><c:set var="totalLiabil" value="${result.curLiabil + result.noncurLiabil }"
@@ -65,27 +65,27 @@
                 </table>
             </div>
             <div class="subtitle">
-                <span class="font-h7">연결포괄손익계산서</span>
-                <span class="text-unit">단위 &#58; 천원</span>
+                <span class="font-h7">Consolidated Statement of Comprehensive Income</span>
+                <span class="text-unit">(Unit: Thousand KRW)</span>
             </div>
             <div class="financial_box mb-0">
                 <table class="table table-rotate bill_table">
                     <tbody>
                     <tr>
-                        <th>과목</th>
-                        <td class="table-bg">매출액</td>
-                        <td>매출원가</td>
-                        <td class="table-bg">매출총이익</td>
-                        <td>판매비와 관리비</td>
-                        <td class="table-bg">영업이익</td>
-                        <td>기타 수익</td>
-                        <td>기타 비용</td>
-                        <td class="table-bg">법인세비용차감전순이익</td>
-                        <td>법인세비용</td>
-                        <td>중단영업이익</td>
-                        <td class="table-bg">당기순이익</td>
-                        <td>기타포괄손익</td>
-                        <td class="table-bg">총포괄손익</td>
+                        <th>Items</th>
+                        <td class="table-bg">Sales</td>
+                        <td>Cost of Sales</td>
+                        <td class="table-bg">Gross Profit</td>
+                        <td>Selling and Administrative Expenses</td>
+                        <td class="table-bg">Operating Income</td>
+                        <td>Other income</td>
+                        <td>Other expenses</td>
+                        <td class="table-bg">Income and Loss before Income Taxes</td>
+                        <td>Income Tax Expenses</td>
+                        <td>Discontinued Operations Income</td>
+                        <td class="table-bg">Net Income</td>
+                        <td>Other Comprehensive Income</td>
+                        <td class="table-bg">Total Comprehensive Income</td>
                     </tr><c:forEach var="result" items="${ plosdocList }" varStatus="status"
                         	><c:set var="grossProfit" value="${ result.sales - result.costSales }"
                         	/><c:set var="operatingIncome" value="${ grossProfit - result.sellAdminExpenses }"

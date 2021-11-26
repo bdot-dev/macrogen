@@ -38,12 +38,12 @@
 	                            <ul class="navigation">
 	                                <li class="page-item prev">
 	                                    <a class="page-link" href="#">
-	                                        <span class="sr-only">이전</span>
+	                                        <span class="sr-only">prev</span>
 	                                    </a>
 	                                </li>
 	                                <li class="page-item next">
 	                                    <a class="page-link" href="#">
-	                                        <span class="sr-only">다음</span>
+	                                        <span class="sr-only">next</span>
 	                                    </a>
 	                                </li>
 	                            </ul>
@@ -94,7 +94,7 @@
                 <div class="search-wrap">
                     <div class="input-search">
 	                    <form:input path="searchKeyword" maxlength="100"
-	                    	class="form-control" placeholder="Enter a search term" aria-label="Enter a search term" aria-describedby="search2" />
+	                    	class="form-control" placeholder="Enter search term" aria-label="Enter a search term" aria-describedby="search2" />
 						<input type="text" style="display: none;">
                         <button class="btn-search" type="button" id="search2"><span class="sr-only">검색</span></button>
                     </div>
