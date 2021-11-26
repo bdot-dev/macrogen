@@ -39,7 +39,7 @@
 						</tr>
 
 						<tr>
-							<th>사진 <span>*</span></th>
+							<th>사진 (PC)<span>*</span></th>
 							<td colspan="3" class="tal">
 								<div>
 									<input type="file" name="photoFile" v-on:change="onchangePhotoFile" />
@@ -49,6 +49,21 @@
 									<img :src="'${publicUrl }' + resultVo.photoFlpth"
 										style="width:100px; vertical-align: bottom;" />
 				                    <a href="javascript:;" v-on:click="onDeletePhoto">삭제</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th>사진 (모바일)<span>*</span></th>
+							<td colspan="3" class="tal">
+								<div>
+									<input type="file" name="photoMoblFile" v-on:change="onchangePhotoMoblFile" />
+									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
+								</div>
+								<div v-if="resultVo.photoMoblAtchId">
+									<img :src="'${publicUrl }' + resultVo.photoMoblFlpth"
+										style="width:100px; vertical-align: bottom;" />
+				                    <a href="javascript:;" v-on:click="onDeletePhotoMobl">삭제</a>
 								</div>
 							</td>
 						</tr>

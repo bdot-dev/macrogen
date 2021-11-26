@@ -15,57 +15,50 @@
 		<form:hidden path="searchKeyword"/>
 	</form:form>
 
-    <div class="container">
-        <nav aria-label="breadcrumb">
-		    <ol class="breadcrumb">
-		        <li class="breadcrumb-item">Home</li>
-		        <li class="breadcrumb-item">IR</li>
-		        <li class="breadcrumb-item">공시정보</li>
-		        <li class="breadcrumb-item active">공고</li>
-		    </ol>
-		</nav>
+    <div class="non-bg">
+        <header class="header">
+		    <div class="inner">
+		        <a href="javascript:history.back()" class="btn-back"><span class="sr-only">뒤로가기</span></a>
+		        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+		    </div>
+		</header>
 
-        <div class="section_IR">
-            <div class="font-h1">공고</div>
-            <div class="board">
-                <div class="detail">
-                    <div class="heading">
-                        <div class="btn-indicator-box">
-                            <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
-                        </div>
-                        <div class="title">${resultVo.nttSj }</div>
-                        <div class="date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy&#46;MM&#46;dd" /></div>
+        <div class="frame non-title"></div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_IR board">
+            <div class="view">
+                <div class="view-header">
+                    <div class="font-h4">${resultVo.nttSj }</div>
+                    <div class="font-date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy.MM.dd" /></div>
+                </div>
+                <div class="view-body">
+                    <div class="text">
+	                   	${resultVo.nttCn }
                     </div>
-                    <hr class="divider"/>
-                    <div class="content">
-                        <div class="text">
-                        	${resultVo.nttCn }
-                        </div>
-                        <div class="chips-share-box"><a href="#" class="btn btn-circle btn-white btn-lg"><i class="icon icon-share"></i></a></div>
-                    </div>
-                    <hr class="divider"/>
-                    <div class="board">
-                        <div class="indicator">
-                            <div class="content">
-		                        <a href="javascript:;" class="item prev btn-prev ${ empty prevVo ? 'disabled' : '' }">
-		                            <div class="sub">이전글</div>
-		                            <div class="title">${ empty prevVo ? '첫글입니다' : prevVo.nttSj }</div>
-		                        </a>
-		                        <a href="javascript:;" class="item next btn-next ${ empty nextVo ? 'disabled' : '' }">
-		                            <div class="sub">다음글</div>
-		                            <div class="title">${ empty nextVo ? '마지막 글입니다' : nextVo.nttSj }</div>
-		                        </a>
+                    <div class="btn-wrapper justify-content-end"><a href="#" class="btn-share"><span class="sr-only">공유하기</span></a></div>
+                </div>
+                <div class="view-footer">
+                    <div class="navigation">
+                        <div class="row g-0">
+                            <div class="col">
+	                           	<c:if test="${ not empty prevVo }">
+                            	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">이전글</span>
+                            	</c:if>
                             </div>
-                            <div class="btn-box">
-                                <a href="javascript:;" class="btn btn-black btn-list"><span>목록</span></a>
+                            <div class="col">
+	                           	<c:if test="${ not empty nextVo }">
+                            	<span class="font-body-h-b btn-next">다음글</span><i class="icon ico-left-black btn-next"></i>
+                            	</c:if>
                             </div>
                         </div>
                     </div>
+                    <a href="javascript:;" class="btn btn-black btn-list">목록</a>
                 </div>
             </div>
-
-       </div>
+        </div>
     </div>
+
 
 	<script>
 	$(function() {

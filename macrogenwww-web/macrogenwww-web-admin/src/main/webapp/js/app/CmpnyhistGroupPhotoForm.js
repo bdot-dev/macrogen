@@ -83,7 +83,11 @@ var CmpnyhistGroupPhotoForm = (function($) {
 						return false;
 					}
 					if (!vm.resultVo.photoAtchId) {
-						alert('필수입력 - 사진');
+						alert('필수입력 - 사진 (PC)');
+						return false;
+					}
+					if (!vm.resultVo.photoMoblAtchId) {
+						alert('필수입력 - 사진 (모바일)');
 						return false;
 					}
 					if (!vm.resultVo.photoSjKo) {
@@ -115,6 +119,21 @@ var CmpnyhistGroupPhotoForm = (function($) {
 					vm.resultVo.photoAtchId = null;
 					vm.resultVo.photoFlpth = null;
 				},
+
+				onchangePhotoMoblFile : function(e) {
+					var vm = this;
+					uploadImage($form, $(e.target), function(data) {
+						vm.resultVo.photoMoblAtchId = data.resultVo.atchId;
+						vm.resultVo.photoMoblFlpth = data.resultVo.physiclFlpth;
+
+					});
+				},
+				onDeletePhotoMobl : function() {
+					var vm = this;
+					vm.resultVo.photoMoblAtchId = null;
+					vm.resultVo.photoMoblFlpth = null;
+				},
+
 				groupDisplayNm: function(result) {
 					return "[" + result.beginYear + "-" +
 						(result.endYear == 'present' ? '현재' : result.endYear) + "] " +

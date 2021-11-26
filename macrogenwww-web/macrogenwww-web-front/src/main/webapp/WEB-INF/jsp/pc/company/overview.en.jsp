@@ -2,22 +2,22 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-company-overview.png);">
+    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-company-overview.png);">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
-            <div class="hero-title">기업개요</div>
-            <div class="slogan">Humanizing<br/>Genomics</div>
-            <div class="slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
+                <div class="hero-title">About MACROGEN</div>
+                <div class="slogan">HUMANIZING<br/> GENOMICS</div>
+                <div class="slogan-sub">Creating a better future for humanity</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">MACROGEN</li>
-        <li class="breadcrumb-item">회사소개</li>
-        <li class="breadcrumb-item">기업개요</li>
+        <li class="breadcrumb-item">Compnay </li>
+        <li class="breadcrumb-item">About MACROGEN</li>
     </ol>
 </nav>
 
@@ -33,27 +33,26 @@
             <div class="section-info">
                 <div data-aos="fade-up" data-aos-duration="2000">
                     <div class="title">Humanizing<br/>Genomics</div>
-                    <div class="title-sm">모두가 건강한 세상을 꿈꾸는 기업 마크로젠입니다</div>
+                    <div class="title-sm">Creating a better future for humanity.</div>
                     <div class="text-box">
                         <div class="font-body-h">
-                            정밀의학 생명공학기업 마크로젠은 1997년 6월 5일 서울대학교 의과대학 유전체 의학연구소를 모태로 설립되었으며,<br> 2000년 2월 한국 바이오 벤처기업 최초로
-                            코스닥에 상장했습니다&#46;<br/><br/>
-                            이후 유전자 및 유전체 분석 분야에서 꾸준한 연구개발 활동을 하고 있으며 주요 사업 이외에도 다양한 사회공헌 활동을 통해 바이오 산업 발전에 기여하고
-                            있습니다&#46;<br/>
-                            마크로젠은 유전체 정보에 기반한 개인별 맞춤 의료 정보를 제공함으로써 21세기 정밀의학 실현에 앞장설 뿐 아니라 탁월한 기술력을 바탕으로 다양한 사업분야에서 전 세계
-                            유전체 분석 시장을 선도합니다&#46;
+                            Macrogen was established on June 5, 1997, based in the Genomic Medicine Institute of the Seoul National University College of Medicine. In February 2000. It is the first Korean bio venture to be listed on the KOSDAQ.<br/><br/>
+
+                            Since then, Macrogen has continued to be actively engaged in R&D fields for genetic and genomic analyses. In addition to providing services to clients around the world, Macrogen contributes to the advancement of bioindustries through a wide range of CSR activities.<br/>
+                            <br/>
+                            Macrogen is committed to leading innovation in precision medicine in the 21st century by providing personalized genomic information. It is also realizing achievements in the global genome analysis market in various sectors, thanks to its superior technological expertise.
                         </div>
                     </div>
                 </div>
                 <div class="img-box">
                     <div class="inner">
                         <div class="img">
-                            <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_lg_1.png" alt="글로벌 정밀의학 선도기업">
+                            <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_lg_1.png" alt="A global leader in precision medicine">
                         </div>
                         <ul class="list" data-aos="fade-up" data-aos-duration="2000">
-                            <li>글로벌 정밀의학 선도기업</li>
-                            <li>인간중심의 인본주의 경영</li>
-                            <li>빅데이터와 AI 기반의 헬스케어 솔루션</li>
+                            <li>A global leader in precision medicine</li>
+                            <li>Human-oriented management practices</li>
+                            <li>Big data-based healthcare solutions</li>
                         </ul>
                     </div>
                 </div>
@@ -64,53 +63,53 @@
             <div class="section-overview">
                 <div class="inner">
                     <div data-aos="fade-up" data-aos-duration="2000">
-                        <div class="title-sm">기업현황</div>
+                        <div class="title-sm">Corporate Status</div>
                         <div class="year">EST 1997</div>
-                        <div class="desc">마크로젠은 언제나 능동적으로 환경 변화에 대처하며 지속 성장을 이뤄왔습니다&#46;<br/>
-                            바이오 생태계를 좌우하는 영향력을 갖춘 선도기업으로서 마크로젠의 도전은 계속될 것입니다&#46;
+                        <div class="desc">Macrogen has maintained sustainable growth by adapting to changes in the environment.<br/>
+                            As an industry leader with a strong influence on the bio-ecosystem, our journey to sustainable growth will continue.</div>
                         </div>
                     </div>
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
                         <ul>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="Cases Genome Sequencing"></span>
                                 <span class="val">30M</span>
-                                <span class="desc">유전체 분석 건수</span>
+                                <span class="desc">Cases Genome Sequencing</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_2.png" alt="바이오벤처 최초 코스닥 상장"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_2.png" alt="Bio Ventures Listed on KOSDAQ"></span>
                                 <span class="val">1st</span>
-                                <span class="desc">바이오벤처 최초 코스닥 상장</span>
+                                <span class="desc">Bio Ventures Listed on KOSDAQ</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_3.png" alt="매출 1,000억 돌파"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_3.png" alt="Revenue"></span>
                                 <span class="val">&#36;100M</span>
-                                <span class="desc">매출 1&#44;000억 돌파</span>
+                                <span class="desc">Revenue (2017)</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_4.png" alt="해외 매출"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_4.png" alt="Overseas Revenue"></span>
                                 <span class="val">70&#37;</span>
-                                <span class="desc">해외 매출</span>
+                                <span class="desc">Overseas Revenue</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_5.png" alt="리서치 시퀀싱 분야 점유율"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_5.png" alt="Market Share Research Sequencing"></span>
                                 <span class="val">No&#46;1</span>
-                                <span class="desc">리서치 시퀀싱 분야 점유율</span>
+                                <span class="desc">Market Share Research Sequencing</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_6.png" alt="153개국 18,000여 고객"></span>
-                                <span class="val">153<span class="ko">국</span></span>
-                                <span class="desc">18&#44;000 글로벌파트너</span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_6.png" alt="Countries 18K+ Global Partners"></span>
+                                <span class="val">153countries</span>
+                                <span class="desc">Countries 18K+ Global Partners</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_7.png" alt="SCI급 네이처지 논문 148편"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_7.png" alt="Nature Papers"></span>
                                 <span class="val">19</span>
-                                <span class="desc">Nature지 논문</span>
+                                <span class="desc">Nature Papers</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_8.png" alt="바이오벤처 기업 지원"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Companies Assistance to Bio Venture"></span>
                                 <span class="val">18</span>
-                                <span class="desc">바이오벤처 기업 지원</span>
+                                <span class="desc">Companies Assistance to Bio Venture</span>
                             </li>
                         </ul>
                     </div>
@@ -124,34 +123,33 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="inner">
-                                <div class="title-sm">사업영역</div>
-                                <div class="title">연구서비스</div>
-                                <div class="desc">글로벌 유전체 분석기술의 성장을 위한 다양한 연구 서비스를 제공합니다&#46;<br>
-                                    마크로젠만의 연구결과로 축척된 빅데이터와 고도화된  AI 분석으로 새로운 인류 건강의 역사를 만들어 가고 있습니다&#46;</div>
+                                <div class="title-sm">Business Areas</div>
+                                <div class="title">Research Areas</div>
+                                <div class="desc">We provide a wide range of research services for the development of genome-sequencing technology. Based on big data and advanced AI analytics accumulated through research, we are paving the way for a healthy future.</div>
                                 <div class="category-list">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-atom.svg" alt="NGS"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-atom.svg" alt="NGS"></div>
                                             <div class="tit">NGS</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-molecule.svg" alt="CES"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-molecule.svg" alt="CES"></div>
                                             <div class="tit">CES</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-molecule2.svg" alt="OlIGO"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-molecule2.svg" alt="OlIGO"></div>
                                             <div class="tit">OLIGO</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-chip.svg" alt="MICROARRAY"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-chip.svg" alt="MICROARRAY"></div>
                                             <div class="tit">MICROARRAY</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-rat.svg" alt="GEM"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-rat.svg" alt="GEM"></div>
                                             <div class="tit">GEM</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-laptop.svg" alt="BIOINFORMATICS"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-laptop.svg" alt="BIOINFORMATICS"></div>
                                             <div class="tit">BIOINFORMATICS</div>
                                         </li>
                                     </ul>
@@ -160,25 +158,22 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="inner">
-                                <div class="title-sm">사업영역</div>
-                                <div class="title">임상진단&#47;치료</div>
-                                <div class="desc">
-                                    78억 인류의 건강한 내일을 위한 다양한 임상진단 및 치료를 위한 정보를 제공합니다&#46; <br/>
-                                    단순한 치료만의 목적이 아닌 질병의 예측과 원인 분석이 가능하도록 체계적인 임상진단 시스템을 구축하고 있습니다&#46;
-                                </div>
+                                <div class="title-sm">Business Areas</div>
+                                <div class="title">CLINICAL DIAGNOSTICS & TREATMENTS</div>
+                                <div class="desc">We provide various clinical diagnoses and treatment for 7.8 billion people around the world. We are also committed to building a systematic diagnosis system to promote prediction and cause analysis of diseases.</div> <!-- 번역 변경 -- 2021.11.23 -->
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology.svg" alt="암유전체검사"></div>
-                                            <div class="tit">암유전체검사</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology.svg" alt="암유전체검사"></div>
+                                            <div class="tit">Cancer Occurrence Monitoring</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-embryo1.svg" alt="태아 및 희귀질환 검사"></div>
-                                            <div class="tit">태아 및 희귀질환 검사</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-embryo1.svg" alt="태아 및 희귀질환 검사"></div>
+                                            <div class="tit">Genetic Disorder</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology2.svg" alt="COVID-19"></div>
-                                            <div class="tit">COVID&#45;19</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology2.svg" alt="COVID-19"></div>
+                                            <div class="tit">COVID-19</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -186,23 +181,22 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="inner">
-                                <div class="title-sm">사업영역</div>
-                                <div class="title">퍼스널 헬스케어 및 반려동물</div>
-                                <div class="desc">마크로젠의 연구로 구축된 빅데이터와 AI 분석을 기반으로<br/>
-                                    DNA 특성에 맞는 개인 맞춤형 헬스케어서비스와 소중한 반려동물의 건강 관리 솔루션을 제공합니다&#46;</div>
+                                <div class="title-sm">Business Areas</div>
+                                <div class="title">PERSONAL HEALTHCARE & Pets</div>
+                                <div class="desc">Based on big data and AI analytics built based on our extensive research, we provide personalized health care services based on DNA and health care solutions for companion animals.</div>
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology2.svg" alt="개인유전체분석"></div>
-                                            <div class="tit">개인유전체분석</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology2.svg" alt="Personal Genome Analysis"></div>
+                                            <div class="tit">Personal Genome Analysis</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-microbiology.svg" alt="마이크로바이옴 분석"></div>
-                                            <div class="tit">마이크로바이옴 분석</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-microbiology.svg" alt="Microbiome Analysis"></div>
+                                            <div class="tit">Microbiome Analysis</div>
                                         </li>
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-dog-leash.svg" alt="반려동물 유전자 분석"></div>
-                                            <div class="tit">반려동물 유전자 분석</div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-dog-leash.svg" alt="Pets gene analysis"></div>
+                                            <div class="tit">Pets gene analysis</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -213,12 +207,12 @@
                         <ul class="navigation">
                             <li class="page-item prev">
                                 <a class="page-link _slidePrev" href="#">
-                                    <span class="sr-only">이전</span>
+                                    <span class="sr-only">prev</span>
                                 </a>
                             </li>
                             <li class="page-item next">
                                 <a class="page-link _slideNext" href="#">
-                                    <span class="sr-only">다음</span>
+                                    <span class="sr-only">next</span>
                                 </a>
                             </li>
                         </ul>
@@ -249,39 +243,35 @@
             <div class="section-business-detail">
                 <div class="item item-1" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_1.png" alt="RESEARCH">
-                        <span class="title-sm">Research Sequencing</span>
-                        <span class="title">연구서비스</span>
+                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_1.png" alt="RESEARCH">
+                        <span class="title">RESEARCH</span>
                     </div>
-                    <div class="desc">정부기관&#44; 대학교&#44; 연구소 등</div>
-                    <div class="desc-sm">마크로젠의 핵심 사업으로&#44; 해당 분야에서는 염기서열 분석&#40;NGS&#44; CES&#41;&#44; 바이오칩 분석&#40;Microarray&#41;&#44; 올리고 합성&#40;Oligo&#41;&#44; 유전자 변형 마우스&#40;GEM&#41;&#44; 바이오인포매틱스&#40;Bioinformatics&#41; 등 생명공학 및 임상 연구에 필요한 다양한 서비스를 제공합니다&#46;</div>
+                    <div class="desc">Government, Universities and Research Centers</div>
+                    <div class="desc-sm">Our core areas of business include sequencing (NGS, CES), Microarray, Oligo, GEM (Genetically Engineered Mouse), and Bioinformatics in the form of biotechnology and clinical research service.  </div>
                 </div>
                 <div class="item item-2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_2.png" alt="임상진단">
-                        <span class="title-sm">Clinical Diagnostics &#38; Treatments</span>
-                        <span class="title">임상진단&#47;치료</span>
+                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_2.png" alt="CLINICAL DIAGNOSTICS & TREATMENTS">
+                        <span class="title">CLINICAL<br/> DIAGNOSTICS &<br/> TREATMENTS</span>
                     </div>
-                    <div class="desc">환자 및 의료진 대상</div>
-                    <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다&#46; 암 유전체&#44; 산전 유전체&#44; 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료&#44; 건강관리 방법 등을 제시에 주력하고 있습니다&#46;</div>
+                    <div class="desc">For Patients and Medical Staff</div>
+                    <div class="desc-sm">We invest and conduct R&D projects in the field of precision medicine. This includes tests for cancer genomes, prenatal genomes, and rare disease genomes, focusing on providing personalized diagnosis, treatment, and health care solutions.</div>
                 </div>
                 <div class="item item-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_3.png" alt="개인 유전체">
-                        <span class="title-sm">Personal Healthcare</span>
-                        <span class="title">퍼스널 헬스케어</span>
+                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_3.png" alt="PERSONAL HEALTHCARE">
+                        <span class="title">PERSONAL <br/>HEALTHCARE</span>
                     </div>
-                    <div class="desc">일반인 대상</div>
-                    <div class="desc-sm">퍼스널 헬스케어의 핵심 요소로 주목 받고 있는 분야입니다&#46; 마크로젠에서는 개인유전체분석 서비스 &#39;마이지놈스토리&#39;&#44; 마이크로바이옴 테스트와 분석에 기반한 맞춤형 헬스케어 솔루션 &#39;더바이옴&#39; 등을 통해 고객의 삶에 더욱 실질적이고 효과적인 건강관리 방법을 제시하고 있습니다&#46; </div>
+                    <div class="desc">For the Public</div>
+                    <div class="desc-sm">As a key area of personal health care, genome services are gaining attention. Macrogen is providing more practical and effective health care solutions to improve the quality of people's lives through personal genomic analysis service "My Genome Story" and personalized healthcare solution "The Biome" based on microbiome testing and analysis. </div>
                 </div>
                 <div class="item item-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/macrogen/macrogen_thumb_4.png" alt="응용">
-                        <span class="title-sm">Companion Animals</span>
-                        <span class="title">반려동물</span>
+                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_4.png" alt="PETS">
+                        <span class="title">PETS</span>
                     </div>
-                    <div class="desc">반려동물 대상</div>
-                    <div class="desc-sm">반려동물을 위한 유전자 검사 서비스&#40;myPETGENE&#8482;&#41; 등이 진행되고 있습니다&#46; 이외에도 마크로젠은 Human에서 Non&#45;human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다&#46;</div>
+                    <div class="desc">For Pets</div>
+                    <div class="desc-sm">myPETGENE™ is a genetic testing service for pets. We also analyze the genomic information of all living creatures including humans.</div>
                 </div>
             </div>
             <!-- e  사업분야 상세 -->
@@ -290,7 +280,8 @@
             <div class="section-ci">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title-sm">CI</div>
-                    <div class="text">인류의 건강한 삶을 소망하는<br/>마크로젠의 상징입니다</div>
+                    <div class="text">Macrogen's CI represents<br/>
+                        our commitment to a healthy life.</div>
                 </div>
             </div>
             <!-- e  CI -->
@@ -301,10 +292,11 @@
                     <div class="item">
                         <div class="title">LOGO TYPE</div>
                         <div class="desc">
-                            <div class="bg-logo"><img src="/publishing/pc-ko/dist/img/macrogen/logo-lg.png" alt="macrogen"></div>
+                            <div class="bg-logo"><img src="/publishing/pc-en/dist/img/macrogen/logo-lg.png" alt="macrogen"></div>
                             <div class="content">
-                                마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다&#46;<br/><br/>
-                                유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다&#46;
+                                Macrogen is an abbreviation of Macroscopic Phenotype of Gene, representing our company that studies macroscopic phenomena or phenotypes of genes in vivo.<br/><br/>
+                                It symbolizes the realization of personalized medicine based on personal genomic information and our commitment to healthy human life in line with our slogan, "Humanizing Genomics."
+
                             </div>
                             <div class="download-area"><a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a></div>
                         </div>

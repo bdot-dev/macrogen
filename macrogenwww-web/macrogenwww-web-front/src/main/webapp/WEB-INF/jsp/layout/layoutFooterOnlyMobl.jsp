@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<div class="wrap">
+	<div class="wrap <decorator:getProperty property="body.class" />">
 		<%--
 			/*/company/*, /*/business/*, /*/rnd/institute/*
 			full-bg
@@ -18,7 +18,9 @@
 		<decorator:body />
 
 		<%-- <footer class="footer" --%>
-		<c:import url="/inc/footer" />
+		<c:if test="${ empty MOBILE_NO_FOOTER or not MOBILE_NO_FOOTER }">
+			<c:import url="/inc/footer" />
+		</c:if>
 
 	    <a href="#" class="btn-totop"></a>
 		<script>

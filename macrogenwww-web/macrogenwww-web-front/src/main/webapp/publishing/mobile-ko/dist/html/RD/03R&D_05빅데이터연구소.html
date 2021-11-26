@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="Referrer" content="origin"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
-  <meta name="apple-mobile-web-app-title" content="macrogen" />
-  <meta name="robots" content="index,nofollow"/>
-  <meta name="description" content="macrogen"/>
-  <meta name="keywords" content="macrogen"/>
-<!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-  <title>Mobile-KO v0.2 / 11.18</title>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1116"/>
-  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1116"/>
-  <script src="../../js/bundle.js?1116"></script>
-  <script src="../../js/common.js?1116"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
+    <title>Mobile-KO v0.3 / 11.23</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
+    <script src="../../js/bundle.js?1123"></script>
+    <script src="../../js/common.js?1123"></script>
 </head>
 
 <body>
@@ -57,15 +58,15 @@
     <div class="container">
         <div class="section_intro">
             <div class="info-box">
-                <div class="title">다양한 헬스 정보를 분석해 삶의 질을 높입니다</div>
+                <div class="font-h3">다양한 헬스 정보를 분석해 삶의 질을 높입니다</div>
                 <div class="desc">개인별 맞춤형 건강관리 서비스를 제공합니다</div>
             </div>
             <div class="img img-bigData"></div>
         </div>
         <div class="section_info_list">
             <div class="box box-type2">
-                <div class="sub_title">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다&#46;</div>
-                <div class="sub_desc">
+                <div class="font-h7">빅데이터연구소는 방대한 양의 데이터로부터 가치를 창출하여 삶의 질을 높이기 위해 설립되었습니다&#46;</div>
+                <div class="font-body">
                     <p> 우리 몸의 모든 정보를 담고 있는 유전체 분석 및 예측을 통해 발생 가능성이 높은 질병들에 대해 개인별 맞춤형 건강 관리 서비스를 제공해 선제적으로 질병을 예방하거나 발병 위험을 낮추는 것이 마크로젠 빅데이터연구소의 목적입니다&#46;</p>
                 </div>
             </div>
@@ -73,7 +74,7 @@
             <hr class="M-divider">
 
             <div class="box mb-0">
-                <div class="sub_title">연구영역</div>
+                <div class="font-h7">연구영역</div>
                 <ul class="list clearfix">
                     <li>
                         <img src="../../img/RD/img-research_01.png" alt="방대한 데이터 활용을 위한 시스템 연구">
@@ -91,7 +92,8 @@
             </div>
         </div>
     </div>
-    <footer class="footer main">
+    <!--footer 수정사항 있을시 메인페이지에 있는 footer도 같이변경해주세요-->
+<footer class="footer main">
     <div class="font-h5">Macrogen</div>
     <div class="info">
         <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
@@ -100,7 +102,14 @@
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                    <option value="/ko/policy/privacy">개인정보 처리방침</option>
+                    <option value="/ko/policy/inside">내부정보관리규정</option>
+                    <option value="/ko/policy/image/">영상정보처리기기 운영.관리방침</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>

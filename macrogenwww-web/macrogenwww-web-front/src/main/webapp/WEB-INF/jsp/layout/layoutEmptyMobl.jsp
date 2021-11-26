@@ -7,9 +7,42 @@
 	<c:import url="/inc/htmlHead" />
 	<decorator:head />
 </head>
-<body>
+<body class="<decorator:getProperty property="body.class" />">
 
-	<decorator:body />
+	<div class="wrap <decorator:getProperty property="body.divwrapclass" />">
+		<%--
+			/*/company/*, /*/business/*, /*/rnd/institute/*
+			full-bg
+			container
+		--%>
+		<decorator:body />
+
+		<%-- <footer class="footer" --%>
+		<c:if test="${ empty MOBILE_NO_FOOTER or not MOBILE_NO_FOOTER }">
+			<c:import url="/inc/footer" />
+		</c:if>
+
+	    <a href="#" class="btn-totop"></a>
+		<script>
+		    $(document).ready(function(){
+		        $('.btn-totop').click(function(){
+		            $('html,body').animate( { scrollTop:0 },{duration : 100});
+		            return false;
+		        });
+		        $(window).on('scroll', function (){
+		            var scrollTop = $(window).scrollTop()
+		            if (scrollTop > 150) {
+		                $('.btn-totop').css({'opacity' : 1})
+		            } else {
+		                $('.btn-totop').css({'opacity' : 0})
+		            }
+		        })
+		    });
+		</script>
+	</div>
+
+	<%-- modal gnb --%>
+	<c:import url="/inc/header-inner-gnb" />
 
 </body>
 </html>

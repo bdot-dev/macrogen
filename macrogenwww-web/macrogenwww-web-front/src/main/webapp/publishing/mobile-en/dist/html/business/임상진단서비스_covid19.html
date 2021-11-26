@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Referrer" content="origin"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="macrogen"/>
+    <meta name="robots" content="index,nofollow"/>
+    <meta name="description" content="macrogen"/>
+    <meta name="keywords" content="macrogen"/>
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css"/>
+    <script src="../../js/bundle.js"></script>
+    <![if !IE]>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    <![endif]>
+    <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="../../css/bootstrap-ie11.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+    <script src="../../js/common.js"></script>
+    <title>MACROGEN MOBILE</title>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="top-bg" style="background-image: url(../../img/business/test-bg.png);">
+        <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
+</header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
+
+        <div class="frame">
+            <div class="font-h1">COVID-19</div>
+            <div class="font-body-h">Tests for Diagnosis of Infectious Diseases</div>
+            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section_business">
+            <!--covid19 공통 s -->
+            <div class="subject-box">
+                <p class="title font-h4">We provide molecular diagnostic solutions for infectious diseases.</p>
+                <p class="desc font-body">
+                    Due to the global pandemic, it is essential to have an optimal test environment for prompt and accurate diagnoses. To this end, Macrogen proposes integrated<br>
+                    solutions for both patients and medical staff, which consist of onsite diagnostic systems with superior mobility, safety, and convenience and accurate diagnostic kits.
+                </p>
+
+            </div>
+            <!--covid19 공통 e -->
+
+            <!--covid19 탭 네비 s-->
+            <div class="select-nav-box _content-anchor">
+                <p class="title font-h4" id="tab_anchor">SERVICE</p>
+                <div class="select-box">
+                    <div class="selected-value _selected-value">
+                        <span class="text">Axen™ COVID-19 RT Test Kit</span>
+                    </div>
+                    <ul class="select-option _select-option">
+                        <li class="option-value"><a href="#">Axen™ COVID-19 RT Test Kit</a></li>
+                        <li class="option-value"><a href="#">Macrogen Smart Mobile Lab</a></li>
+                    </ul>
+                </div>
+                <script>
+                    /*변수*/
+                    var selectBox = $(".select-box");
+                    var option = $(".option-value");
+
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click',function() {
+                        var select = $(this);
+                        if(select.hasClass('open')) {
+                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                        }
+                        else {
+                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                            $('body').on('click',function (e){
+                                if(selectBox.hasClass('open')) {
+                                    if(!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+                                e.preventDefault()
+                            })
+                        }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    function textChange(){
+                        option.on('click',function() {
+                            var select = $(this).find('a').text();
+                            $('._selected-value').find('span').text(select);
+                        });
+                    }
+                    textChange();
+
+                    /*클릭시 탭메뉴 변경*/
+                    option.on('click',function(){
+                        var idx =$(this).index();
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        textChange();
+                    })
+
+                    /*Prev Next 이동*/
+                    function setTabContent(idx){
+                        $('._selected-value').text($('._select-option li').eq(idx).text());
+                        <!--탭메뉴 클릭시 페이지 변경-->
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                        /*페이지 변경후 상단 이동*/
+                        fnMove();
+
+                        /*클릭시 텍스트 변경*/
+                        console.log(idx);
+
+                    }
+
+                    /*탭메뉴 상단으로 이동*/
+                    function fnMove(){
+                        var offset = $("._content-anchor").offset();
+                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
+                    }
+
+                    /*외부클릭시 셀렉트박스 초기화*/
+                    $("body").click(function(e){
+                        if(!selectBox.has(e.target).length){
+                            selectBox.removeClass("open").children('.select-option').slideUp(200);
+                        }
+                    });
+
+                </script>
+            </div>
+            <!--covid19 탭 네비 e-->
+
+            <!--covid19 탭 메뉴 s-->
+            <div class="info-box-wrap tab-content">
+                <!--Axen™ COVID-19 RT 진단키트-->
+                <div class="info-box show">
+                    <p class="font-h4 main-title">Axen™ COVID-19 RT Test Kit</p>
+                    <p class="subject font-body-h"An in vitro diagnostic kit for confirming the infection of COVID-19 in just two hours.</p>
+                    <p class="desc img_bottom font-body">Based on the RT-PCR (Real Time PCR), the kit is suitable for screening patients with small amounts of novel coronavirus due to its outstanding target detection. The Axen™ COVID-19
+                        <br>test kit has obtained export approval from the Korean Ministry of Food and Drug Safety and Europe’s In-Vitro Diagnostic (CE-IVD) to provide reliable diagnostic services.</p>
+                    <div class="img">
+                        <img src="../../img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h-b title figure_bottom">Specifications</p>
+                            <div class="table-scroll">
+                             <table class="table">
+                                <colgroup>
+                                    <col style="width:50%;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Specification</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Detection target</td>
+                                    <td>2019-nCoV (COVID-19)</td>
+                                </tr>
+                                <tr>
+                                    <td>Target region</td>
+                                    <td>ORF1ab / E gene</td>
+                                </tr>
+                                <tr>
+                                    <td>Detection technology</td>
+                                    <td>Real-Time RT-PCR</td>
+                                </tr>
+                                <tr>
+                                    <td>Specimen type</td>
+                                    <td>Nasal swab / Sputum</td>
+                                </tr>
+                                <tr>
+                                    <td>PCR run time</td>
+                                    <td>2 hrs</td>
+                                </tr>
+                                <tr>
+                                    <td>Compatible PCR device</td>
+                                    <td>CFX96™ Real-Time PCR</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-body-h title img">Detection Target Region</p>
+                            <ul class="list-circle-dot">
+                                <li><p>ORF1ab</p></li>
+                                <li><p>E gene</p></li>
+                            </ul>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-body-h-b title figure_bottom">Process</p>
+                            <!--10.05 이미지 경로 변경-->
+                            <div class="img">
+                                <img src="../../img/business/img_workflow_level5_row.png" alt="workflow">
+                            </div>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-body-h-b title figure_bottom">Process</p>
+                            <div class="table-scroll">
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:15%;">
+                                    <col style="width:40%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>ORF1ab</th>
+                                    <th>E gene</th>
+                                    <th>RNase P</th>
+                                    <th>Status</th>
+                                    <th>Results</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Positive</td>
+                                </tr>
+                                <tr>
+                                    <td>Positive</td>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Positive (Repeat test, If the repeat result remains inconclusive, additional confirmation testiong should be conducted if clinically indicated.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">Near-source SARS-CoV-2 (Sample should be retested. If the result is still invalid,
+                                        a new specimen should be obtained.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Positive</td>
+                                    <td>Valid</td>
+                                    <td class="text-start">SARS-CoV-2 Negative</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Negative</td>
+                                    <td>Invalid</td>
+                                    <td class="text-start">Repeat test, If the repeat result remains invalid, consider collecting a new specimen.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-gray-box-wrap">
+                        <div class="border-gray-box">
+                            <div class="img">
+                             <img src="../../img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
+                                <span class="btnZoom-1">
+                                    <i class="icon ico-zoom-white"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-gray-box">
+                            <div class="img">
+                                <img src="../../img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
+                                <span class="btnZoom-2">
+                                    <i class="icon ico-zoom-white _btnZoom2"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-gray-box">
+                            <div class="img">
+                                <img src="../../img/business/img_clinicaltrialtest.png" alt="flow">
+                                <span class="btnZoom-3">
+                                    <i class="icon ico-zoom-white _btnZoom3"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
+                    <div class="btn-area">
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
+                    </div>
+                    <div class="board">
+                        <div class="navigation pt-80 mb-0">
+                            <div class="row g-0">
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--스마트 모바일 랩-->
+                <div class="info-box">
+                    <p class="font-h4 main-title">Macrogen Smart Mobile Lab</p>
+                    <p class="subject font-body-h">Smart Mobile Lab is the first-ever on-site COVID 19 testing system developed in Korea.</p>
+                    <p class="desc img_bottom font-body">This is a small mobile lab for on-site testing of the virus, and it is composed of an all-in-one system that can perform the entire process, starting from the extraction of virus nucleic acid, followed by genetic testing, and then the analysis results.</p>
+                    <div class="img">
+                        <img src="../../img/business/img-smartmobile-intro.png" alt="스마트모바일랩">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h title img">Specifications</p>
+                            <ul class="list-circle-dot">
+                                <li><p>K-Quarantine model</p></li>
+                                <li><p>Equipment options available depending on budget or preference</p></li>
+                                <li><p>Power supply options available (External Power/Solar Power System)</p></li>
+                                <li><p>Maintenance and repair service provided</p></li>
+                                <li><p>Training for lab technicians provided (online/offline)</p></li>
+                                <li><p>Easy installation/relocation</p></li>
+                                <li><p>Collaboration with a company specialized in mobile labs and negative pressure wards</p></li>
+                            </ul>
+                        </div>
+                        <div class="list-area">
+                            <p class="font-body-h title figure_bottom">Ordering Information for Relative Product</p>
+                            <div class="table-scroll">
+                                <table class="table">
+                                    <colgroup>
+                                        <col style="width:33.3333%;">
+                                        <col style="width:33.3333%;">
+                                        <col style="width:33.3333%;">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>Name of Kit</th>
+                                        <th>Cat.No.</th>
+                                        <th>BSL-Level</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Smart Mobile Lab(40ft)</td>
+                                        <td>SML01-100</td>
+                                        <td>BSL- 2 Level</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="list-area mb-0">
+                            <p class="font-body-h title img_bottom">Process</p>
+                            <div class="img">
+                                <img src="../../img/business/img_workflow-level7.png" alt="workflow">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
+                    <div class="btn-area">
+                        <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
+                    </div>
+                    <div class="board">
+                        <div class="navigation pt-80 mb-0">
+                            <div class="row g-0">
+                                <div class="col" onclick="setTabContent(0)">
+                                    <i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--covid19 탭 메뉴 e-->
+        </div>
+    </div>
+    <footer class="footer main">
+    <div class="font-h5">Macrogen</div>
+    <div class="info">
+        <p>238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+        <p>TEL : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
+    </div>
+    <div class="link-list">
+        <ul>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">Order site</option>
+                    <option value="/en/policy/privacy">Privacy Statement</option>
+                    <option value="/en/policy/image/">Image Information Processing Policy</option>
+                </select>
+            </li>
+            <li>
+                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                    <option selected>Family Site</option>
+                    <option value="https://thebiome.life/">The Biome</option>
+                    <option value="https://www.my-genomestory.com/">My Genomestory</option>
+                    <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
+                    <option value="https://psomagen.com/">Psomagen</option>
+                    <option value="https://www.macrogen-japan.co.jp/">Macrogen Japan</option>
+                    <option value="https://www.macrogen-europe.com">Macrogen Europe</option>
+                    <option value="https://www.macrogen-apac.com/">Macrogen APAC</option>
+                    <option value="http://gmi.ac.kr/index.php">Genome Medicine Institute</option>
+                    <option value="http://www.g2if.org/">Gong-Wu Genome<br/>Information Foundation</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <ul class="sns">
+        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
+        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-blog"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+    </ul>
+</footer>
+
+    <a href="#" class="btn-totop"></a>
+<script>
+    $(document).ready(function(){
+        $('.btn-totop').click(function(){
+            $('html,body').animate( { scrollTop:0 },{duration : 100});
+            return false;
+        });
+        $(window).on('scroll', function (){
+            var scrollTop = $(window).scrollTop()
+            if (scrollTop > 150) {
+                $('.btn-totop').css({'opacity' : 1})
+            } else {
+                $('.btn-totop').css({'opacity' : 0})
+            }
+        })
+    });
+</script>
+
+</div>
+<div class="modal gnb" tabindex="-1" id="gnb" data-bs-backdrop="static" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="gnb-content">
+            <div class="gnb-header">
+                <h2 class="logo"><a href="#">마크로젠 로고</a></h2>
+                <a href="#" class="btn-close-black" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
+            </div>
+            <div class="gnb-body" id="menu">
+                <ul>
+                    <li><a href="#none">MACROGEN</a>
+                        <ul>
+                            <li><a href="#none">- 회사소개</a>
+                                <ul>
+                                    <li><a href="#none">- 기업개요</a></li>
+                                    <li><a href="#none">- 경영진</a></li>
+                                    <li><a href="#none">- 연혁</a></li>
+                                    <li><a href="#none">- 비전</a></li>
+                                    <li><a href="#none">- 인증</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 글로벌 네트워크</a></li>
+                            <li><a href="#none">- 채용</a>
+                                <ul>
+                                    <li><a href="#none">- 인재상</a></li>
+                                    <li><a href="#none">- 인사제도</a></li>
+                                    <li><a href="#none">- 채용안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">business</a>
+                        <ul>
+                            <li><a href="#none">- 연구서비스</a>
+                                <ul>
+                                    <li><a href="#none">- NGS</a></li>
+                                    <li><a href="#none">- CES</a></li>
+                                    <li><a href="#none">- Oligo</a></li>
+                                    <li><a href="#none">- Microarray</a></li>
+                                    <li><a href="#none">- 모델동물사업부</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 임상진단서비스</a>
+                                <ul>
+                                    <li><a href="#none">- 암 유전체 검사</a></li>
+                                    <li><a href="#none">- 태아 및 신생아 유전질환</a></li>
+                                    <li><a href="#none">- COVID-19</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- 헬스케어서비스</a>
+                                <ul>
+                                    <li><a href="#none">- 개인유전체분석</a></li>
+                                    <li><a href="#none">- 마이크로바이옴분석</a></li>
+                                    <li><a href="#none">- 반려동물유전자분석</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">r&d</a>
+                        <ul>
+                            <li><a href="#none">- 정밀의학연구소</a></li>
+                            <li><a href="#none">- 생명정보학연구소</a></li>
+                            <li><a href="#none">- 더바이옴연구소</a></li>
+                            <li><a href="#none">- 싱크진연구소</a></li>
+                            <li><a href="#none">- 빅데이터연구소</a></li>
+                            <li><a href="#none">- 특허/논문</a>
+                                <ul>
+                                    <li><a href="#none">- 특허</a></li>
+                                    <li><a href="#none">- 논문</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">NEWSROOM</a>
+                        <ul>
+                            <li><a href="#none">- 뉴스</a></li>
+                            <li><a href="#none">- 미디어라이브러리</a></li>
+                            <li><a href="#none">- 공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">ir</a>
+                        <ul>
+                            <li><a href="#none">- 재무정보</a></li>
+                            <li><a href="#none">- 공시정보</a>
+                                <ul>
+                                    <li><a href="#none">- 공고</a></li>
+                                    <li><a href="#none">- 공시정보</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">- IR소식</a></li>
+                            <li><a href="#none">- 투자자 문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">esg</a>
+                        <ul>
+                            <li><a href="#none">- ESG경영</a></li>
+                            <li><a href="#none">- 윤리경영</a></li>
+                            <li><a href="#none">- 사회공헌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb-footer">
+                <a href="#" class="btn-lang on">K0R</a>
+                <a href="#" class="btn-lang">ENG</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // gnb show
+    var gnbEl = document.getElementById('gnb')
+    var gnb = new bootstrap.Modal(gnbEl);
+
+    // gnb.show();
+
+    // gnb menu
+    (function ($) {
+        var gnbSet = {
+            click: function (target, speed) {
+                var _self = this, $target = $(target);
+                _self.speed = speed || 300;
+                $target.each(function () {
+                    if (findChildren($(this))) {
+                        return;
+                    }
+                    $(this).addClass('noDepth');
+                });
+
+                function findChildren(obj) {
+                    return obj.find('> ul').length > 0;
+                }
+
+                $target.on('click', 'a', function (e) {
+                    e.stopPropagation();
+                    var $this = $(this), $depthTarget = $this.next(), $siblings = $this.parent().siblings();
+                    $this.parent('li').find('ul li').removeClass('on');
+                    $siblings.removeClass('on');
+                    $siblings.find('ul').slideUp(250);
+                    if ($depthTarget.css('display') == 'none') {
+                        _self.activeOn($this);
+                        $depthTarget.slideDown(_self.speed);
+                    } else {
+                        $depthTarget.slideUp(_self.speed);
+                        _self.activeOff($this);
+                    }
+                })
+            }, activeOff: function ($target) {
+                $target.parent().removeClass('on');
+            }, activeOn: function ($target) {
+                $target.parent().addClass('on');
+            }
+        };
+        $(function () {
+            gnbSet.click('#menu li', 300)
+        });
+    }(jQuery));
+
+    // btn-lang
+    $('.btn-lang').on('click',function (){
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+</script>
+
+<div class="toast-popup">
+    <p>You can enlarge it by clicking on the image.</p>
+</div>
+<!--modalImageViewer1 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="graph1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
+
+    // modal close
+    $('.btn-close').on('click', function () {
+        modalImageViewer1.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
+        showToastPopup();
+    })
+
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="../../img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
+
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
+
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+</body>
+</html>

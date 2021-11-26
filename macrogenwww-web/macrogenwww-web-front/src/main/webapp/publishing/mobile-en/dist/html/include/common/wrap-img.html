@@ -1,0 +1,51 @@
+<div class="wrap-img" style="">
+  <img src="@@src"/>
+  <a href="#" class="btn btn-sm btn-primary" onclick="clickShow();">show/hide</a>
+</div>
+<style>
+  .wrap-img {
+    position: absolute;
+    top: -2px;
+    margin-left: 0;
+    z-index: 10000;
+    width: 375px;
+    height: auto;
+  }
+  .wrap-img a {
+    position: fixed;
+    top: 0;
+    left: 50px;
+  }
+  .wrap-img img {
+    opacity: 0.5;
+
+  }
+</style>
+
+<script>
+/*  $('.wrap-img img').hide();
+  $('.wrap-img .btn').on('click', function (){
+    console.log(z)
+    if ( $('.wrap-img img').is(':visible')==true ){
+      $('.wrap-img img').hide();
+    } else {
+      $('.wrap-img img').show();
+    }
+  })*/
+
+let wrapImg = document.querySelector('.wrap-img img');
+wrapImg.style.visibility='hidden'
+function clickShow(){
+  console.log('a')
+    if (wrapImg.style.visibility=='hidden'){
+      wrapImg.style.visibility='visible'
+    }else {
+      wrapImg.style.visibility='hidden'
+    }
+  }
+
+
+
+
+
+</script>

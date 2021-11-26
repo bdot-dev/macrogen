@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame">
+            <div class="font-h1">Image Information Processing Policy</div>
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_agreement">
+            <div class="select-box">
+                <div class="selected-value _selected-value">
+                    <span class="text font-body-h-b">2020. 03. 31 - 현재</span>
+                </div>
+                <ul class="select-option _select-option">
+                    <li class="option-value"><a href="#">2020. 03. 31 - 현재</a></li>
+                    <li class="option-value"><a href="#">2019. 10. 21 ~ 2020. 03 .31 </a></li>
+                    <li class="option-value"><a href="#">2018. 10. 26 ~ 2019. 10 .20 </a></li>
+                    <li class="option-value"><a href="#">2017. 03. 31 ~ 2018. 10 .25 </a></li>
+                    <li class="option-value"><a href="#">2012. 12. 03 ~ 2017. 03 .31 </a></li>
+                </ul>
+            </div>
+            <script>
+                /*변수*/
+                var selectBox = $(".select-box");
+                var option = $(".option-value");
+
+
+                /*드롭다운 클릭시 이벤트*/
+                selectBox.on('click', function () {
+                    var select = $(this);
+                    if (select.hasClass('open')) {
+                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                    } else {
+                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                        $('body').on('click', function (e) {
+                            if (selectBox.hasClass('open')) {
+                                if (!selectBox.has(e.target).length) {
+                                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                }
+                            }
+                            e.preventDefault()
+                        })
+                    }
+                });
+
+                /*클릭시 텍스트 변경*/
+                function textChange() {
+                    option.on('click', function () {
+                        var select = $(this).find('a').text();
+                        $('._selected-value').find('span').text(select);
+                    });
+                }
+
+                textChange();
+
+                /*클릭시 탭메뉴 변경*/
+                option.on('click', function () {
+                    var idx = $(this).index();
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                    textChange();
+                })
+
+                /*이전 다음 이동*/
+                function setTabContent(idx) {
+                    $('._selected-value').text($('._select-option li').eq(idx).text());
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                    /*페이지 변경후 상단 이동*/
+                    fnMove();
+
+                    /*클릭시 텍스트 변경*/
+                    console.log(idx);
+
+                }
+
+                /*탭메뉴 상단으로 이동*/
+                function fnMove() {
+                    var offset = $("._content-anchor").offset();
+                    $('html, body').animate({scrollTop: offset.top - 95}, 100);
+                }
+
+                /*외부클릭시 셀렉트박스 초기화*/
+                $("body").click(function (e) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").children('.select-option').slideUp(200);
+                    }
+                });
+
+            </script>
+            <div class="terms movieinfo">
+                <div class="content_area">
+                    <p class="font-body">마크로젠(이하 “회사”라 한다)는 영상정보처리기기 운영&#183;관리 방침을 통해 회사에서 처리하는 영상정보가 어떠한 용도와 방식으로 이용 관리되고 있는지 알려드립니다.</p>
+                    <ol class="terms">
+                        <li>
+                            <p class="title font-body-h-b">1. 영상정보처리기기의 설치 근거 및 설치 목적</p>
+                            <p class="font-body">회사는「개인정보 보호법」제25조 제1항에 따라 다음과 같은 목적으로 영상정보처리기기를 설치, 운영 합니다</p>
+                            <ul class="hyphen_list font-body">
+                                <li>-시설안전 및 화재 예방</li>
+                                <li>-고객의 안전을 위한 범죄 예방</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">2.설치 대수, 설치 위치 및 촬영범위</p>
+                            <ul>
+                                <li class="padding-none">
+                                    <table class="table table-50" summary="설치대수,설치위치및촬영범위">
+                                        <colgroup>
+                                            <col style="width:50%;">
+                                            <col style="width:50%;">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th>설치 대수</th>
+                                            <th>설치 위치 및 촬영 범위</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center">32대</td>
+                                            <td class="text-center">마크로젠 본사</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">6대</td>
+                                            <td class="text-center">마크로젠 강남사옥</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">3.관리책임자 및 접근권한자</p>
+                            <p class="desc font-body">회사는 정보주체의 영상정보를 보호하고 개인영상정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인영상정보 보호책임자를
+                                두고 있습니다.</p>
+                            <ul>
+                                <li>
+                                    <div class="table-scroll">
+                                        <table class="table" summary="개인정보 항목처리">
+                                            <colgroup>
+                                                <col style="width:15%;">
+                                                <col style="width:15%;">
+                                                <col style="width:15%;">
+                                                <col style="width:15%;">
+                                                <col style="width:45%;">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>이름</th>
+                                                <th>직책</th>
+                                                <th>소속</th>
+                                                <th>연락처</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-center">관리책임자 및 접근권한자</td>
+                                                <td class="text-center">신선호</td>
+                                                <td class="text-center">02-2180-7046</td>
+                                                <td class="text-center">전산부</td>
+                                                <td class="text-center">02-2180-7046</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">4. 개인정보의 파기</p>
+                            <ul>
+                                <li data-bullet="가.">
+                                    마크로젠 홈페이지는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다. 다만, 다른 법률에
+                                    따라 보존하여야 하는 경우에는 그러하지 않습니다.
+                                </li>
+                                <li data-bullet="나.">
+                                    개인정보 파기의 절차 및 방법은 다음과 같습니다.
+                                    <ol>
+                                        <li data-bullet="&#9312;">파기절차<br>개인정보의 처리 목적 달성, 보유기간 경과, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 지체 없이 개인정보를 파기합니다.</li>
+                                        <li data-bullet="&#9313;">파기방법<br>전자적 파일 형태로 기록&#183;저장된 개인정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에 기록&#183;저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">5. 이용자 및 법정대리인의 권리와 행사방법</p>
+                            <ul>
+                                <li data-bullet="가.">
+                                    정보주체는 마크로젠 홈페이지에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+                                    <ol>
+                                        <li data-bullet="&#9312;">개인정보 열람요구</li>
+                                        <li data-bullet="&#9313;">오류 등이 있을 경우 정정 요구</li>
+                                        <li data-bullet="&#9314;">삭제요구</li>
+                                        <li data-bullet="&#9315;">처리정지 요구</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="나.">“가”에 따른 권리 행사는 회사에 대해 개인정보보호법 시행령 제41조 제1항에 따라 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 회사는
+                                    이에 대해 지체없이 조치하겠습니다.</li>
+                                <li data-bullet="다.">정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 마크로젠 홈페이지는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지
+                                    않습니다.</li>
+                                <li data-bullet="라.">“가”에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보처리 위임장을 제출하셔야
+                                    합니다.</li>
+                                <li data-bullet="마.">개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다.</li>
+                                <li data-bullet="바.">개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</li>
+                                <li data-bullet="사.">정보주체 권리에 따른 열람의 요구, 정정&#183;삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.
+                                    <div class="download">
+                                        <a class="btn" href="#">
+                                            <span>개인정보처리 위임장</span><i class="icon icon-download"></i></a>
+                                    </div>
+                                </li>
+
+                                <li data-bullet="아.">열람 등의 요구에 대한 거절 조치에 대하여 불복이 있는 경우 정보주체는 아래기관에 이의를 제기할 수 있습니다.
+                                    <div class="gray-box">
+                                        <ul class="list-circle-dot">
+                                            <li><span>개인정보분쟁조정위원회</span> <span>(국번없이) 1833-6972</span>
+                                                <a href="http://www.kopico.go.kr" target="_blank">http://www.kopico.go.kr</a></li>
+                                            <li><span>개인정보침해신고센터</span> <span>(국번없이) 118</span>
+                                                <a href=">http://privacy.kisa.or.kr" target="_blank">http://privacy.kisa.or.kr</a></li>
+                                            <li><span>대검찰청 과학수사부사이버수사과</span> <span>(국번없이) 1301</span>
+                                                <a href="http://spo.go.kr(cid@spo.go.kr)" target="_blank">http://spo.go.kr(cid@spo.go.kr)</a>
+                                            </li>
+                                            <li><span>경찰청 사이버안전국</span> <span>(국번없이) 182</span>
+                                                <a href="https://www.police.go.kr/www/security/cyber.jsp" target="_blank">https://www.police.go.kr/www/security<br>/cyber.jsp</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">6. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</p>
+                            <ul>
+                                <li data-bullet="가.">이용자는 마크로젠 홈페이지를 이용하는 과정에서 “수집되는 자동 생성정보의 항목(쿠키, IP 등)”를 통해 개인정보가 수집될 수 있습니다. 쿠키란 웹사이트에 접속할 때 자동으로 만들어지는 임시 파일로, 이용자의 컴퓨터 하드디스크에 저장됩니다.</li>
+                                <li data-bullet="나.">마크로젠 홈페이지는 아래와 같은 목적으로 쿠키를 사용하며, 이용자는 쿠키 저장에 대한 선택권을 가지며, 웹 브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나 쿠키 저장을 거부할 수 있습니다.
+                                    <ol>
+                                        <li data-bullet="&#9312;">쿠키 사용 목적<br>로그인이 필요한 서비스 이용 시, 매번 아이디와 비밀번호를 다시 입력할 필요 없이 원활한 사용을 위해 쿠키를 사용합니다.
+                                            그 밖에 서비스의 이용형태, 이벤트 참여 파악 등 맞춤형 마케팅 서비스를 위해 쿠키를 사용합니다.
+                                        </li>
+                                        <li data-bullet="&#9313;">쿠키 설정 거부 방법 <br>이용자는 사용하는 웹 브라우저의 옵션에서 모든 쿠키를 허용하거나 쿠키의 저장을 거부할 수 있습니다.<br>
+                                            설정방법의 예시 (IE의 경우): 도구 >인터넷옵션> 개인정보 >고급 > 고급 개인 정보 설정
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">7. 정보주체의 영상정보 열람 등 요구에 대한 조치 </p>
+                            <p class="font-body">
+                                정보주체는 개인영상정보에 관하여 존재확인 또는 열람을 원하는 경우 언제든지 영상정보처리기기 관리책임자에게 “개인정보 영상정보 존재확인&#183;열람 청구서” 서식을
+                                통하여 요구하실 수 있습니다. 단, 정보주체가 촬영된 개인영상정보 및 명백히 정보주체의 급박한 생명, 신체, 재산의 이익을 위하여 필요한 개인영상정보에
+                                한정됩니다.<br>회사는 개인영상정보에 관하여 존재확인 또는 열람을 요구한 경우 지체 없이 필요한 조치를 하겠습니다.
+                            </p>
+                            <div class="download">
+                                <a class="btn btn-light" href="#">
+                                    <span>개인정보 영상정보 존재확인·열람 청구서</span><i class="icon icon-download"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">8. 개인정보 열람 청구</p>
+                            <ul>
+                                <li data-bullet="가.">
+                                    정보주체는 개인정보보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다.<br>
+                                    회사는 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.
+                                    <div class="table-scroll">
+                                        <table class="table">
+                                            <colgroup>
+                                                <col style="width:15.8585%;">
+                                                <col style="width:19.0909%;">
+                                                <col style="width:19.2929%;">
+                                                <col style="width:25.7575%;">
+                                                <col style="width:20.1010%;">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>소속</th>
+                                                <th>성명/직책</th>
+                                                <th>연락처</th>
+                                                <th>이메일</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>개인정보 보호담당자</td>
+                                                <td>정보지원부문</td>
+                                                <td>김재현/부문장</td>
+                                                <td>02-2180-7048</td>
+                                                <td>privacy@macrogen.com</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">9. 개인정보의 안전성 확보조치</p>
+                            <ul>
+                                <li data-bullet="가.">개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
+                                    <ol>
+                                        <li data-bullet="&#9312;">내부관리계획 수립 및 시행<br> ‘개인정보의 기술적∙관리적 보호조치 기준’(방송통신위원회고시 제2019-13호) 및 ‘개인정보의 안전성 확보조치 기준’(행정안전부 고시 제2019-47호)에 의거하여
+                                            내부관리계획을 수립 및 시행합니다.</li>
+                                        <li data-bullet="&#9313;">개인정보에 대한 접근 제한<br>개인정보를 처리하는 개인정보처리시스템에 대한 접근권한의 부여∙변경∙말소를 통하여 개인정보에 대한 접근통제를 위한 필요한 조치를 하고 있으며 침입차단시스템을
+                                            이용하여 외부로부터의 무단 접근을 통제하고 있습니다.</li>
+                                        <li data-bullet="&#9314;">접속기록의 보관 및 위‧변조<br>개인정보처리시스템에 접속한 기록을 최소 6개월 이상 보관∙관리하고 있으며, 접속기록이 위‧변조 및 도난, 분실되지 않도록 관리하고 있습니다.
+                                        </li>
+                                        <li data-bullet="&#9315;">개인정보의 암호화<br>개인정보는 암호화 등을 통해 안전하게 저장 및 관리되고 있습니다. 또한 중요한 데이터는 저장 및 전송 시 암호화하여 사용하는 등의 별도 보안기능을 사용하고 있습니다.
+                                        </li>
+                                        <li data-bullet="&#9316;">보안프로그램 설치 및 주기적 점검∙갱신<br> 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적으로 점검∙갱신하고 있습니다.</li>
+                                        <li data-bullet="&#9317;">비인가자에 대한 출입 통제<br>개인정보를 보관하고 있는 개인정보처리시스템의 물리적 보관 장소를 별도로 두고 이에 대해 출입통제 절차를 수립∙운영하고 있습니다.</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="title font-body-h-b">10. 개인정보 처리방침 변경</p>
+                            <ul>
+                                <li data-bullet="가.">이 개인정보 처리방침은 2020. 03. 31(화)부터 적용됩니다.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+@@include('../../html/include/components/gnb.html')
+</body>
+</html>

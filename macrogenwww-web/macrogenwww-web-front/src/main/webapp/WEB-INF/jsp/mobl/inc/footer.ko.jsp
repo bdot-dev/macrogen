@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-<footer class="footer main">
+<footer class="footer main" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="2000"' : '' }>
     <div class="font-h5">Macrogen</div>
     <div class="info">
         <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
@@ -9,7 +9,14 @@
     </div>
     <div class="link-list">
         <ul>
-            <li><a href="https://dna.macrogen.com/" target="_blank">서비스 신청/견적 문의</a></li>
+            <li>
+                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                    <option value="/${rc.locale.language }/policy/privacy">개인정보 처리방침</option>
+                    <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
+                    <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
+                </select>
+            </li>
             <li>
                 <select class="select" title="familySite" onchange="window.open(value,'_blank');">
                     <option selected>Family Site</option>

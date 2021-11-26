@@ -2,39 +2,52 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="research-wrap">
 
-    <div class="full-bg research_bg">
-        <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
-	<c:import url="/inc/header-inner-gnb" />
+    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/RD/bg-visual.png);">
+        <header class="header header-white">
+    <div class="inner">
+        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+    </div>
 </header>
+<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
 
-        <div class="frame frameB">
-            <nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-white">
-        <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">R&D</li>
-        <li class="breadcrumb-item">생명정보학연구소</li>
-    </ol>
-</nav>
-
-            <div class="hero-title">생명정보학연구소</div>
-            <div class="slogan-sub">Bioinformatics Institute</div>
+        <div class="frame">
+            <div class="font-h1">생명정보학연구소</div>
+            <div class="font-body-h">Bioinformatics Institute</div>
         </div>
     </div>
-
-    <div class="container container-fluid">
-        <div class="section_lifeInformation">
+    <div class="container">
+        <div class="section_intro">
             <div class="info-box">
-                <div class="title">유전체 정보를 기반으로<br>생명의 비밀을 밝혀냅니다 </div>
+                <div class="font-h3">유전체 정보를 기반으로 생명의 비밀을 밝혀냅니다 </div>
                 <div class="desc">유전체 분석 분야에서 다양한 연구를 진행해 나갑니다</div>
             </div>
-            <div class="img">
-            </div>
+            <div class="img img-microscope"></div>
         </div>
         <div class="section_info_list">
-            <div class="box clearfix">
-                <div class="sub_title">유전체 정보 해석의<br>핵심 기술 보유</div>
-                <div class="sub_desc">
+            <div class="box">
+                <div class="font-h7">유전체 정보 해석의 핵심 기술 보유</div>
+                <div class="font-body">
                     <p>마크로젠 생명정보학연구소는 다양한 생물 종의 유전체 관련 정보를 가공하고 해석하는 핵심 기술을 보유하고 있습니다&#46;<br>
                         해당 기술을 기반으로 국내외 주요 리서치 기관 연구진과 공동 연구를 진행 중입니다&#46;<br><br>
                         유전 정보의 보존 및 발현은 생명 현상의 근본을 이루는 중요한 과정입니다&#46;<br>
@@ -48,10 +61,12 @@
                 </div>
             </div>
 
-            <div class="box clearfix">
-                <div class="sub_title">한국인 게놈<br>염기서열&#40;AK1&#41; 발표</div>
-                <div class="sub_desc">
-                    <img src="/publishing/pc-ko/dist/img/RD/img-AK1.png" alt="인간 게놈 염기서열">
+            <hr class="M-divider"/>
+
+            <div class="box mb-0">
+                <div class="font-h7">한국인 게놈 염기서열&#40;AK1&#41; 발표</div>
+                <div class="font-body">
+                    <div class="img img-AK1"></div>
                     <p>2016년에는 게놈연구소 및 서울대유전체의학연구소와 함께 서양인 중심의 인간 표준 게놈을 제외하고 현재까지 가장 완벽한 인간 게놈 염기서열로 평가받는 한국인 게놈
                         염기서열&#40;AK1&#41;을 Nature에 발표함으로써 마크로젠 연구소의 선도적인 역량을 확인했습니다&#46;<br><br>
                         마크로젠의 첨단 유전체 분석 기술과 고급 생명정보학기술&#44; 대량의 서버 수용력 등을 기반으로 신생조합&#40;de novo assembly&#41;이 이루어졌으며 인간 표준 게놈 서열에
@@ -60,10 +75,7 @@
                         생명정보학 연구소는 그간 축적된 연구개발 경험을 바탕으로 알고리즘 개발을 포함한 유전체 분석 분야에서 다양한 연구를 진행해 나갈 것입니다&#46;</p>
                 </div>
             </div>
-
         </div>
-
     </div>
-    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 </body>

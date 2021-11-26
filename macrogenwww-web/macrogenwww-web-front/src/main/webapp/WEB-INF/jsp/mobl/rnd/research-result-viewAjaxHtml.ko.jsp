@@ -5,37 +5,36 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
-    <div class="title">
+    <div class="font-h7">
         <span class="sub_title">${resultVo['bbsCtgryNm'.concat(lang)] }</span>
         ${resultVo.nttSj }
     </div>
-    <hr class="divider"/>
+    <hr class="M-divider"/>
     <div class="desc">
-    	<span>
+        <span>
         ${resultVo.nttCn }
-    	</span>
+        </span>
     </div>
 
 </div>
 <div class="modal-footer">
     <div class="board">
         <div class="navigation">
-            <div class="content clearfix">
-            	<c:if test="${not empty prevVo }">
-	                <a href="javascript:;" class="item prev btn-prev">
-	                    <div class="title">${prevVo.nttSj }</div>
-	                </a>
-            	</c:if>
-            	<c:if test="${not empty nextVo }">
-	                <a href="javascript:;" class="item next btn-next">
-	                    <div class="title">${nextVo.nttSj }</div>
-	                </a>
-	            </c:if>
+            <div class="row g-0">
+                <div class="col">
+                	<c:if test="${not empty prevVo }">
+                	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">이전글</span>
+                	</c:if>
+                </div>
+                <div class="col">
+	            	<c:if test="${not empty nextVo }">
+                	<span class="font-body-h-b btn-next">다음글</span><i class="icon ico-left-black btn-next"></i>
+                	</c:if>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 <script>
 	$(function() {
 		$('#Institute_01 .btn-close').on('click', function() {

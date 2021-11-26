@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+<div class="wrap">
+    <div class="non-bg">
+        @@include('../../html/include/components/header.html')
+        <div class="frame">
+            <div class="font-h1">내부정보관리규정</div>
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="section_agreement">
+            <div class="select-box">
+                <div class="selected-value _selected-value">
+                    <span class="text font-body-h-b">2020. 03. 31 - 현재</span>
+                </div>
+                <ul class="select-option _select-option">
+                    <li class="option-value"><a href="#">2020. 03. 31 - 현재</a></li>
+                    <li class="option-value"><a href="#">2019. 10. 21 ~ 2020. 03 .31 </a></li>
+                    <li class="option-value"><a href="#">2018. 10. 26 ~ 2019. 10 .20 </a></li>
+                    <li class="option-value"><a href="#">2017. 03. 31 ~ 2018. 10 .25 </a></li>
+                    <li class="option-value"><a href="#">2012. 12. 03 ~ 2017. 03 .31 </a></li>
+                </ul>
+            </div>
+            <script>
+                /*변수*/
+                var selectBox = $(".select-box");
+                var option = $(".option-value");
+
+
+                /*드롭다운 클릭시 이벤트*/
+                selectBox.on('click', function () {
+                    var select = $(this);
+                    if (select.hasClass('open')) {
+                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                    } else {
+                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                        $('body').on('click', function (e) {
+                            if (selectBox.hasClass('open')) {
+                                if (!selectBox.has(e.target).length) {
+                                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                }
+                            }
+                            e.preventDefault()
+                        })
+                    }
+                });
+
+                /*클릭시 텍스트 변경*/
+                function textChange() {
+                    option.on('click', function () {
+                        var select = $(this).find('a').text();
+                        $('._selected-value').find('span').text(select);
+                    });
+                }
+
+                textChange();
+
+                /*클릭시 탭메뉴 변경*/
+                option.on('click', function () {
+                    var idx = $(this).index();
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                    textChange();
+                })
+
+                /*이전 다음 이동*/
+                function setTabContent(idx) {
+                    $('._selected-value').text($('._select-option li').eq(idx).text());
+                    <!--탭메뉴 클릭시 페이지 변경-->
+                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                    /*페이지 변경후 상단 이동*/
+                    fnMove();
+
+                    /*클릭시 텍스트 변경*/
+                    console.log(idx);
+
+                }
+
+                /*탭메뉴 상단으로 이동*/
+                function fnMove() {
+                    var offset = $("._content-anchor").offset();
+                    $('html, body').animate({scrollTop: offset.top - 95}, 100);
+                }
+
+                /*외부클릭시 셀렉트박스 초기화*/
+                $("body").click(function (e) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").children('.select-option').slideUp(200);
+                    }
+                });
+
+            </script>
+            <ol class="terms management">
+                <li>
+                    <!--09.29 총 칙 띄어쓰기 제거 -->
+                    <p class="title font-body-h-b">제1장 총칙</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title  font-body-h">제1조(목적)</p>
+                            <p class="desc font-body">이 규정은 ｢자본시장과 금융투자업에 관한 법률｣(이하 “법”이라 한다) 및 제반 법규에 따른 신속․정확한 공시 및 임원․직원의 내부자거래 방지를
+                                위하여 회사 내부정보의 종합관리 및 적절한 공개 등에 관한 사항을 정함을 목적으로 한다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제2조(용어의 정의)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">이 규정에서 “내부정보”라 함은 한국거래소(이하 “거래소”라 한다)의 코스닥시장 공시규정(이하 “공시규정”이라 한다) 제1편에 의한
+                                    공시의무사항과 그 밖에 회사의 경영 또는 재산상황 등에 관한 것으로서 투자자의 투자판단에 영향을 미칠 수 있는 사항을 말한다.
+                                </li>
+                                <li data-bullet="&#9313;">이 규정에서 “공시책임자”라 함은 공시규정 제2조제4항에 따라 회사를 대표하여 신고업무를 수행할 수 있는 자를 말한다.</li>
+                                <li data-bullet="&#9314;">이 규정에서 “임원”이라 함은 이사(｢상법｣ 제401조의2제1항 각 호의 어느 하나에 해당하는 자를 포함한다) 및 감사를 말한다.
+                                </li>
+                                <li data-bullet="&#9315;">제1항부터 제3항 이외에 이 규정에서 사용하는 용어의 정의에 관하여는 관련 법령과 규정에서 사용하는 용어의 정의에 의한다.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제3조(적용범위)</p>
+                            <p>공시, 내부자거래 및 내부정보관리에 관한 사항은 관련 법규 또는 정관에 정한 것을 제외하고는 이 규정에 따른다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title">제4조(내부정보의 관리)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">임원․직원은 업무상 알게 된 회사의 내부정보를 엄중히 관리하여야 하고, 업무상 필요한 경우를 제외하고는 내부정보를 사내 또는 사외에
+                                    유출하여서는
+                                    아니 된다.
+                                </li>
+                                <li data-bullet="&#9313;">대표이사는 내부정보 및 그와 관련된 문서 등의 보관, 전달, 파기 등에 관한 구체적인 기준을 정하는 등 내부정보관리를 위해 필요한 조치를
+                                    취하여야
+                                    한다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title">제5조(공시책임자)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">대표이사는 공시책임자를 정하여 지체 없이 거래소에 신고하여야 한다. 공시책임자를 변경한 때에도 또한 같다.</li>
+                                <li data-bullet="&#9313;">공시책임자는 내부정보관리제도의 수립 및 운영에 관련된 업무를 총괄하며 다음 각 호의 업무를 수행한다.
+                                    <ol>
+                                        <li data-bullet="1.">공시의 집행</li>
+                                        <li data-bullet="2.">내부정보관리제도의 운영 상황 점검 및 평가</li>
+                                        <li data-bullet="3.">내부정보에 대한 검토 및 공시 여부의 결정</li>
+                                        <li data-bullet="4.">임원․직원에 대한 교육 등 내부정보관리제도의 운영을 위해 필요한 조치</li>
+                                        <li data-bullet="5.">내부정보의 관리를 담당하거나 공시업무를 담당하는 부서 또는 임원․직원에 대한 지휘 및 감독</li>
+                                        <li data-bullet="6.">그 밖에 내부정보관리제도의 운영을 위해 필요하다고 대표이사가 인정한 업무</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9314;">공시책임자는 그 직무를 수행함에 있어서 다음 각 호의 권한을 가진다.
+                                    <ol>
+                                        <li data-bullet="1.">내부정보와 관련된 각종 서류 및 기록의 제출을 요구하고 열람할 수 있는 권한</li>
+                                        <li data-bullet="2.">회계 또는 감사업무를 담당하는 부서, 그 밖에 내부정보의 생성과 관련이 있는 업무를 담당하는 부서의 임원․직원으로부터
+                                            필요한 의견을 청취할 수 있는 권한
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9315;">공시책임자는 그 직무를 수행함에 있어 필요한 경우 관련 업무를 담당하는 임원과 협의할 수 있으며, 회사의 비용으로 전문가의 조력을 구할
+                                    수 있다.
+                                </li>
+                                <li data-bullet="&#9316;">공시책임자는 내부정보관리제도의 운영 상황을 정기적으로 대표이사에게(또는 이사회에) 보고하여야 한다.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title">제6조(공시담당자)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">대표이사는 공시담당자를 정하여 지체 없이 거래소에 신고하여야 한다. 공시담당자를 변경한 때에도 또한 같다.</li>
+                                <li data-bullet="&#9313;">공시담당자는 내부정보관리와 관련하여 공시책임자의 지휘를 받으며 다음 각 호의 업무를 수행한다.
+                                    <ol>
+                                        <li data-bullet="1.">내부정보의 수집과 검토 및 공시책임자에 대한 보고</li>
+                                        <li data-bullet="2.">공시의 집행을 위해 필요한 업무</li>
+                                        <li data-bullet="3.">공시 관련 법규의 변경 등 내부정보의 관리를 위해 필요한 사항의 확인 및 공시책임자에 대한 보고</li>
+                                        <li data-bullet="4.">그 밖에 대표이사 또는 공시책임자가 필요하다고 인정한 사항</li>
+                                    </ol>
+                                </li>
+                            </ol>
+
+                        </li>
+                        <li>
+                            <p class="sub-title">제7조(내부정보의 집중)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">임원 및 각 부서의 장은 다음 각 호의 어느 하나에 해당하는 경우에 적시에 공시책임자에게 그에 관한 정보를 제공하여야 한다.
+                                    <ol>
+                                        <li data-bullet="1.">내부정보가 발생하거나 발생이 예상되는 경우</li>
+                                        <li data-bullet="2.">내부정보 중 이미 공시된 사항을 취소 또는 변경해야 할 사유가 발생하거나 발생이 예상되는 경우</li>
+                                        <li data-bullet="3.">그 밖에 공시책임자의 요구가 있는 경우</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9313;">공시책임자 및 대표이사는 제1항에 따른 내부정보의 적시제공을 위해 회사 내의 정보전달 체계를 효율적으로 구축하여야 하며, 필요한 경우 공시의무사항과
+                                    관련된
+                                    업무의 결재과정에 공시책임자의 협조를 받도록 할 수 있다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title">제7조의2(최대주주 관련 정보의 관리)</p>
+                            <p>공시책임자는 최대주주와 관련된 공시의무사항 및 조회공시 요구사항에 대한 공시업무를 원활히 수행하기 위하여 최대주주에게 관련 사실을 충분히 설명하고 해당 정보를
+                                적시에
+                                전달받을 수 있도록 정보전달 체계를 구축하여야 한다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title">제7조의3(종속회사 내부정보의 집중)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">회사는 공시의무사항과 관련한 내부정보가 종속회사에서 발생하거나 발생이 예상되는 경우 종속회사로 하여금 그 내용을 회사의 공시책임자 또는 공시담당자에게
+                                    즉시 통지하도록 하여야 한다.</li>
+                                <li data-bullet="&#9313;">회사는 제1항에 따른 공시의무사항과 관련된 내부정보를 효율적으로 관리하기 위하여 종속회사에 공시관련 정보를 관리하는 자를 두도록 하며, 이를 지정하거나
+                                    변경하는 경우 회사의 공시책임자 또는 공시담당자에게 즉시 통보하도록 하여야 한다.</li>
+                                <li data-bullet="&#9314;">회사는 종속회사에게 공시업무에 필요한 범위에서 관련 자료의 제출을 요구할 수 있다.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title font-body-h-b">제8조(내부정보의 사외제공)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">임원․직원이 업무상의 이유로 회사의 거래상대방․외부감사인․대리인, 회사와 법률자문․경영자문 등의 자문계약을 체결하고 있는 자 등에 대하여 불가피하게
+                                    내부정보를 제공해야 하는 경우 공시책임자에게 이에 관한 사항을 보고하여야 한다.</li>
+                                <li data-bullet="&#9313;">제1항의 경우 공시책임자는 관련 내부정보의 비밀유지에 관한 계약을 체결하는 등 필요한 조치를 취하여야 한다.</li>
+                                <li data-bullet="&#9314;">제1항에 따라 내부정보를 제공함에 있어 공정공시의무가 발생하는 경우에는 이를 지체없이 공시하여야 한다(공시규정 제15조의 적용예외에 해당하는 경우는 제외한다).</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제2장 내부정보의 관리</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제4조(내부정보의 관리)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">임원․직원은 업무상 알게 된 회사의 내부정보를 엄중히 관리하여야 하고, 업무상 필요한 경우를 제외하고는 내부정보를 사내 또는 사외에
+                                    유출하여서는
+                                    아니 된다.
+                                </li>
+                                <li data-bullet="&#9313;">대표이사는 내부정보 및 그와 관련된 문서 등의 보관, 전달, 파기 등에 관한 구체적인 기준을 정하는 등 내부정보관리를 위해 필요한 조치를
+                                    취하여야
+                                    한다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title  font-body-h">제5조(공시책임자)</p>
+                            <ol class="desc font-body">
+                                <li data-bullet="&#9312;">대표이사는 공시책임자를 정하여 지체 없이 거래소에 신고하여야 한다. 공시책임자를 변경한 때에도 또한 같다.</li>
+                                <li data-bullet="&#9313;">공시책임자는 내부정보관리제도의 수립 및 운영에 관련된 업무를 총괄하며 다음 각 호의 업무를 수행한다.
+                                    <ol>
+                                        <li data-bullet="1.">공시의 집행</li>
+                                        <li data-bullet="2.">내부정보관리제도의 운영 상황 점검 및 평가</li>
+                                        <li data-bullet="3.">내부정보에 대한 검토 및 공시 여부의 결정</li>
+                                        <li data-bullet="4.">임원․직원에 대한 교육 등 내부정보관리제도의 운영을 위해 필요한 조치</li>
+                                        <li data-bullet="5.">내부정보의 관리를 담당하거나 공시업무를 담당하는 부서 또는 임원․직원에 대한 지휘 및 감독</li>
+                                        <li data-bullet="6.">그 밖에 내부정보관리제도의 운영을 위해 필요하다고 대표이사가 인정한 업무</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9314;">공시책임자는 그 직무를 수행함에 있어서 다음 각 호의 권한을 가진다.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제3장 내부정보의 공개</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제9조(공시의 종류)</p>
+                            <p class="sub-desc">회사의 공시는 다음과 같이 구분한다.</p>
+                            <ol class="desc font-body font-body">
+                                <li data-bullet="1.">공시규정 제1편 제2장 제1절에 따른 주요경영사항 신고 및 공시</li>
+                                <li data-bullet="2.">공시규정 제1편 제2장 제2절에 따른 조회공시</li>
+                                <li data-bullet="3.">공시규정 제1편 제2장 제3절에 따른 공정공시</li>
+                                <li data-bullet="4.">공시규정 제1편 제3장에 따른 자율공시</li>
+                                <li data-bullet="5.">법 제3편 제1장에 따른 증권신고서 등의 제출</li>
+                                <li data-bullet="6.">법 제159조, 제160조 및 제165조와 공시규정 제1편 제2장 제4절에 따른 사업보고서 등의 제출</li>
+                                <li data-bullet="7.">법 제161조에 따른 주요사항보고서의 제출</li>
+                                <li data-bullet="8.">그 밖에 다른 법규에 따른 공시</li>
+                            </ol>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제4장 내부자 거래 등에 대한 규제</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제14조(단기매매차익의 반환)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">임원과 법 제172조제1항 및 법 시행령 제194조가 정하는 직원은 법 제172조제1항의 특정증권등(이하 “특정증권등”이라 한다)을 매수한 후 6개월 이내에 매도하거나 특정증권등을 매도한 후 6개월 이내에 매수하여 이익을 얻은 경우에 그 이익(이하 “단기매매차익”이라 한다)을 회사에 반환하여야
+                                    한다.</li>
+                                <li data-bullet="&#9313;">회사의 주주(주권 외의 지분증권 또는 증권예탁증권을 소유한 자를 포함한다. 이하 이 조에서 같다)가 회사에 대하여 제1항에 따른 단기매매차익을 얻은 자에게 단기매매차익의 반환청구를 하도록 요구한 경우 회사는 그 요구를 받은 날부터 2개월 이내에 필요한 조치를 취하여야 한다.</li>
+                                <li data-bullet="&#9314;">증권선물위원회가 제1항에 따른 단기매매차익의 발생사실을 회사에 통보한 경우 공시책임자는 지체 없이 다음 각 호의 사항을 회사의 인터넷 홈페이지에 공시하여야 한다.
+                                    <ol>
+                                        <li data-bullet="1.">단기매매차익을 반환해야 할 자의 지위</li>
+                                        <li data-bullet="2.">단기매매차익 금액</li>
+                                        <li data-bullet="3.">증권선물위원회로부터 단기매매차익 발생사실을 통보받은 날</li>
+                                        <li data-bullet="4.">단기매매차익 반환 청구 계획</li>
+                                        <li data-bullet="5.">회사의 주주가 회사로 하여금 단기매매차익을 얻은 자에게 단기매매차익의 반환청구를 하도록 요구할 수 있으며, 회사가 요구를 받은 날부터
+                                            2개월 이내에 그 청구를 하지 아니하는 경우에는 그 주주는 회사를 대위(代位)하여 청구를 할 수 있다는 뜻</li>
+                                    </ol>
+                                </li>
+                                <li data-bullet="&#9315;">제3항의 공시기간은 증권선물위원회로부터 단기매매차익 발생 사실을 통보받은 날부터 2년간 또는 단기매매차익을 반환받은 날 중 먼저 도래하는 날까지로 한다.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="sub-title font-body-h">제15조(특정증권등의 매매 등에 대한 통보)</p>
+                            <p>임원과 법 제172조제1항 및 법 시행령 제194조가 정하는 직원은 특정증권등의 매매, 그 밖의 거래를 하는 경우 그 사실을 공시책임자에게 통보하여야 한다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title font-body-h">제16조(미공개중요정보의 이용행위 금지)</p>
+                            <p>임원․직원은 법 제174조제1항이 정하는 미공개중요정보(계열회사의 미공개중요정보를 포함한다)를 특정증권등의 매매, 그 밖의 거래에 이용하거나 타인에게
+                                이용하게 해서는 아니 된다.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title font-body-h-b">제5장 보 칙</p>
+                    <ul class="content">
+                        <li>
+                            <p class="sub-title font-body-h">제17조(교육)</p>
+                            <ol class="desc">
+                                <li data-bullet="&#9312;">공시책임자와 공시담당자는 공시규정 제36조 및 제44조제5항에 따른 공시업무에 관한 교육 등을 이수하여야 하고, 공시책임자는 교육내용을 관련 임원․직원에게 알려야 한다.</li>
+                                <li data-bullet="&#9313;">대표이사는 임원․직원에게 제14조부터 제16조까지의 사항 및 기타 법이 정하는 내부자거래 등을 예방하기 위한 교육의 실시 등 충분한 노력을 하여야 한다.</li>
+                            </ol>
+                        <li>
+                            <p class="sub-title font-body-h">제18조(규정의 개폐)</p>
+                            <p>이 규정의 개정 또는 폐지는 이사회가 한다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title font-body-h">제19조(규정의 공표)</p>
+                            <p>이 규정은 회사의 홈페이지에 공표한다. 규정을 개정한 때에도 또한 같다.</p>
+                        </li>
+                        <li>
+                            <p class="sub-title font-body-h">부 칙</p>
+                            <p>이 규정은 2017년 7월 7일부터 시행한다.</p>
+                        </li>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    @@include('../../html/include/components/footer.html')
+    @@include('../../html/include/components/toTop.html')
+</div>
+@@include('../../html/include/components/gnb.html')
+</body>
+</html>

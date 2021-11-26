@@ -16,6 +16,8 @@ public class CmpnyhistGroupPhotoVo extends DefaultVo {
 	private Long cmpnyhistGroupSn;
 	private String photoAtchId;
 	private String photoFlpth;
+	private String photoMoblAtchId;
+	private String photoMoblFlpth;
 	private String photoSjKo;
 	private String photoSjEn;
 	private String photoYear;
@@ -90,5 +92,17 @@ public class CmpnyhistGroupPhotoVo extends DefaultVo {
 	}
 	public void setPhotoYear(String photoYear) {
 		this.photoYear = photoYear;
+	}
+	public String getPhotoMoblAtchId() {
+		return photoMoblAtchId;
+	}
+	public void setPhotoMoblAtchId(String photoMoblAtchId) {
+		this.photoMoblAtchId = photoMoblAtchId;
+	}
+	public String getPhotoMoblFlpth() {
+		return photoMoblFlpth;
+	}
+	public void setPhotoMoblFlpth(String photoMoblFlpth) {
+		this.photoMoblFlpth = photoMoblFlpth;
 	}
 }

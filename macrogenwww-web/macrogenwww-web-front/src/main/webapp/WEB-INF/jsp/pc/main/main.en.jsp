@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
-	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
+	<script src="/publishing/pc-en/dist/js/lib/jquery-ui.min.js"></script>
 </head>
 <body class="en">
 
 <div class="wrap main-wrap">
-
 
     <div class="full-bg main-bg">
 
@@ -54,9 +53,9 @@
         <!-- s intro -->
         <div class="intro">
             <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
+                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">Personalized genomic medicine</p>
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
-                    <img src="/publishing/pc-ko/dist/img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
+                    <img src="/publishing/pc-en/dist/img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
             </div>
         </div>
         <!-- e intro -->
@@ -66,22 +65,22 @@
             <div class="swiper-wrapper" id="key-swiper-wrapper">
                 <div class="swiper-slide visual_01">
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
-                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
-                        <p class="slogan-sub">글로벌 리더</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
+                        <p class="slogan-sub">in genome analysis</p>
                         <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_02">
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
-                        <p class="slogan-sub">정밀맞춤의학</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
+                        <p class="slogan-sub">big data and AI</p>
                         <p class="desc">Paving the way to a better future with<br/>precision medicine based on big data powered by AI</p>
                     </div>
                 </div>
                 <div class="swiper-slide visual_03">
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
-                        <p class="slogan-sub">건강한 미래</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
+                        <p class="slogan-sub">future</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
@@ -244,7 +243,7 @@
                         <li>
                             <a href="/${rc.locale.language }/company/overview">
                                 <p>About MACROGEN</p>
-                                <p class="sub-text">Macrogen iss a leading<br>bio venture in Korea.</p>
+                                <p class="sub-text">Macrogen is a leading<br>bio venture in Korea.</p>
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -305,10 +304,10 @@
     <div class="slider">
         <div class="swiper-container _businessSlider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_01.png) no-repeat center center / cover">
                     <div class="text-area">
                             <div class="title">
-                                <span>Personal Healthcare</span><a href="/ko/business/healthcare/personal-genetic">
+                                <span>Personal Healthcare</span><a href="/${rc.locale.language }/business/healthcare/personal-genetic">
                                     <span class="btn btn-circle btn-white btn-md">
                                         <i class="icon icon-arrow-right-short"></i>
                                     </span>
@@ -319,10 +318,10 @@
                             </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>The Biome</span><a href="/ko/business/healthcare/intestinal-microbiome">
+                            <span>The Biome</span><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -333,10 +332,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>Clinical Diagnostics/Treatment</span><a href="/ko/business/diagnosis/cancer">
+                            <span>Clinical Diagnostics/Treatment</span><a href="/${rc.locale.language }/business/diagnosis/cancer">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -347,10 +346,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_04.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
-                            <span>Pets</span><a href="/ko/business/healthcare/pet-genetic">
+                            <span>Pets</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -361,10 +360,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_05.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_05.png) no-repeat center center / cover">
                     <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
                         <div class="title">
-                            <span>Research Services</span><a href="/ko/business/research/ngs">
+                            <span>Research Services</span><a href="/${rc.locale.language }/business/research/ngs">
                              <span class="btn btn-circle btn-white btn-md">
                                  <i class="icon icon-arrow-right-short"></i>
                              </span>
@@ -396,7 +395,7 @@
             </div>
             <script>
                 $(document).ready(function(){
-                  $('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor_3.cur'), auto");
+                  $('.business').css("cursor","url('/publishing/pc-en/dist/img/main/img-cursor_3.cur'), auto");
                 });
             </script>
 
@@ -414,7 +413,7 @@
 	                    <div class="list list-border hover">
 	                    	<c:forEach var="result" items="${ newsList }" varStatus="status">
 		                        <div class="item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-		                            <span class="date"><span class="day"><fmt:formatDate value="${result.registDt }" pattern="dd" />.</span><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM" /></span>
+		                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="tit">${ result.nttSj }</a>
 		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
 		                        </div>

@@ -5,7 +5,7 @@
     <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/company-overview-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -399,6 +399,5 @@
             <!-- e  기업상징 -->
         </div>
     </div>
-
 
 </body>
