@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/test-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -78,7 +78,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -208,7 +208,7 @@
                                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                         }
                                     }
-                                    e.preventDefault()
+
                                 })
                             }
                         });
@@ -230,87 +230,101 @@
                     </script>
                     <!--content-anchor e-->
 
-                    <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer Panel)</p>
-                    <p class="desc font-body data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를 포함하여 대장암의 주원인이 되는 Lynch Syndrome과 관련된 유전자 등 총 16개 유전자에 대한 변이를
-                        분석합니다.</p>
-                    <div class="table-scroll">
-                        <table class="table">
-                        <colgroup>
-                            <col style="width:25%;">
-                            <col style="width:25%;">
-                            <col style="width:50%;">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>Gene List</th>
-                            <th>Target</th>
-                            <th>Description (related cancer type)</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>APC, MUTYH</td>
-                            <td>Large Intestine</td>
-                            <td class="text-start">Germline mutations associated with familial adenomatous polyposis (FAP)</td>
-                        </tr>
-                        <tr>
-                            <td>BRCA1, BRCA2</td>
-                            <td>Breast Ovary</td>
-                            <td class="text-start">Related to breast/ovarian cancer</td>
-                        </tr>
-                        <tr>
-                            <td>CDH1</td>
-                            <td>Stomach Large Intestine</td>
-                            <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer progression and metastasis</td>
-                        </tr>
-                        <tr>
-                            <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
-                            <td>Large Intestine Rectum</td>
-                            <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary non-polyposis colorectal cancer, HNPCC)</td>
-                        </tr>
-                        <tr>
-                            <td>MEN1</td>
-                            <td>Endocrine System</td>
-                            <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
-                                Familial neoplasia affecting the network of hormone-producing glands</td>
-                        </tr>
-                        <tr>
-                            <td>PTEN</td>
-                            <td>Thyroid Breast</td>
-                            <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
-                        </tr>
-                        <tr>
-                            <td>RB1</td>
-                            <td>Eye</td>
-                            <td class="text-start">Retinoblastoma</td>
-                        </tr>
-                        <tr>
-                            <td>RET</td>
-                            <td>Endocrine System Thyroid</td>
-                            <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary thyroid carcinoma</td>
-                        </tr>
-                        <tr>
-                            <td>TP53</td>
-                            <td>Breast Bone Etc.</td>
-                            <td class="text-start">Li - Fraumeni syndrome</td>
-                        </tr>
-                        <tr>
-                            <td>VHL</td>
-                            <td>Eye Kidny Central Nervous System</td>
-                            <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="anchor-section">
+                        <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer Panel)</p>
+                        <p class="desc font-body data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를
+                            포함하여 대장암의 주원인이 되는 Lynch Syndrome과 관련된 유전자 등 총 16개 유전자에 대한 변이를
+                            분석합니다.</p>
+                        <div class="table-scroll">
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:25%;">
+                                    <col style="width:50%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>Gene List</th>
+                                    <th>Target</th>
+                                    <th>Description (related cancer type)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>APC, MUTYH</td>
+                                    <td>Large Intestine</td>
+                                    <td class="text-start">Germline mutations associated with familial adenomatous
+                                        polyposis (FAP)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BRCA1, BRCA2</td>
+                                    <td>Breast Ovary</td>
+                                    <td class="text-start">Related to breast/ovarian cancer</td>
+                                </tr>
+                                <tr>
+                                    <td>CDH1</td>
+                                    <td>Stomach Large Intestine</td>
+                                    <td class="text-start">Responsible for cell-to-cell adhesion llmplicated in cancer
+                                        progression and metastasis
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>EPCAM, PMS2, MLH1, MSH2, MSH6</td>
+                                    <td>Large Intestine Rectum</td>
+                                    <td class="text-start">Related to the mismatch repair of DNA Lynch syndrome<br>(hereditary
+                                        non-polyposis colorectal cancer, HNPCC)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MEN1</td>
+                                    <td>Endocrine System</td>
+                                    <td class="text-start">Multiple endocrine neoplasia type 1 (MEN-1 syndrome)<br>
+                                        Familial neoplasia affecting the network of hormone-producing glands
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PTEN</td>
+                                    <td>Thyroid Breast</td>
+                                    <td class="text-start">Cowden syndrome Tumor - suppressor gene</td>
+                                </tr>
+                                <tr>
+                                    <td>RB1</td>
+                                    <td>Eye</td>
+                                    <td class="text-start">Retinoblastoma</td>
+                                </tr>
+                                <tr>
+                                    <td>RET</td>
+                                    <td>Endocrine System Thyroid</td>
+                                    <td class="text-start">Proto-oncogene Multiple endocrine neoplasia type 2 Medullary
+                                        thyroid carcinoma
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TP53</td>
+                                    <td>Breast Bone Etc.</td>
+                                    <td class="text-start">Li - Fraumeni syndrome</td>
+                                </tr>
+                                <tr>
+                                    <td>VHL</td>
+                                    <td>Eye Kidny Central Nervous System</td>
+                                    <td class="text-start">Tumor - suppressor gene von Hippel - Lindau Syndrome</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <p class="font-h5 sub-title" id="BRCA1">BRCA1/2 유전자 검사</p>
-                    <p class="desc font-body img_bottom">유전성 유방암의 대표적 원인이 되는 BRCA1/2 유전자의 전 영역을 분석해 유방암 발생 위험을 진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
-                    </p>
-                    <div class="border-gray-box">
-                        <!--10.05 이미지 경로 변경-->
-                        <img src="/publishing/mobile-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                        <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
-                    </div>
-                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
+                    <div class="anchor-section"><p class="font-h5 sub-title" id="BRCA1">BRCA1/2 유전자 검사</p>
+                        <p class="desc font-body img_bottom">유전성 유방암의 대표적 원인이 되는 BRCA1/2 유전자의 전 영역을 분석해 유방암 발생 위험을
+                            진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
+                        </p>
+                        <div class="border-gray-box">
+                            <!--10.05 이미지 경로 변경-->
+                            <img src="/publishing/mobile-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                        </div>
+                        <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span>
+                        </p></div>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
                     </div>
@@ -635,7 +649,6 @@
         }
     </script>
     <!--modalImageViewer6 e-->
-
 
 
 </body>

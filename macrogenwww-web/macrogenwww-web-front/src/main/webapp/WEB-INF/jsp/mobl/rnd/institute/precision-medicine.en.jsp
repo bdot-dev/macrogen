@@ -33,7 +33,6 @@
 
         <div class="frame">
             <div class="font-h1">Precision Medicine Institute</div>
-            <div class="font-body-h">Leading R&D for personalized precision medicine</div>
         </div>
     </div>
     <div class="container">

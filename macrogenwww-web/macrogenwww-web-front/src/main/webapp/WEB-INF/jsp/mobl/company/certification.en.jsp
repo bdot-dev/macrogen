@@ -77,7 +77,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1Oy-xTWs2j3z0Da6ouKD_oIaG7rEV7p4i" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISO 9001.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP_인증서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -119,7 +119,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen was accredited as a clinical sample analysis institution by the Ministry of Food and Drug Safety in May 2019. As the first institution in Korea that can analyze samples through NGS technology, we are committed to strengthening the competitiveness of domestic clinical trials by providing reliable analysis services.</div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/임상시험검체분석기관지정서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -138,7 +138,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CAP 인증.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -157,7 +157,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-4.png" alt="CLIA 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CLIA_인증.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -176,7 +176,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/18MsJhFIaBrPe-7JT9_6_LK76pmUDZEkh" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사정확도인증서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -209,11 +209,11 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-wrap">
                             <div class="img">
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-6.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/공평성선언문_ISOIEC.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-7.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1qAyRm6GqG8xeXS2QDOLJljfBSjyVLbLM" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/KOLAS_인증서.pdf" target="_blank">Download</a>
                             </div>
                         </div>
                     </div>
@@ -239,27 +239,27 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-8.png" alt="Illumina">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Illumina Propel+CSpro.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Pacific Biosciences</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-9.png" alt="Pacific Biosciences">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_PacBio.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Agilent Technologies</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-10.png" alt="Agilent Technologies">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_Agilent_2019.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Life Technologies</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-11.png" alt="Life Technologies">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_LifeTech.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <span class="tit">Thermo Fisher Scientific</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
-                                <a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1-NjE1kQuEpGqESNrKS3TO1zhJJy-baVN" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_ThermoFisher.pdf" target="_blank">Download</a>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-13.png" alt="ISO27701 (국제표준 개인정보보호)"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISO27701.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -300,7 +300,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-14.png" alt="ISMS-P (정보보호 및 개인정보보호 관리체계)"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISMS-P 인증서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -320,7 +320,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-15.png" alt="ISO/IEC 27001:2013 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="https://drive.google.com/drive/folders/1MieRd1IX6cvjmJoMWWojoLVTmZvH9qrH" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISO_IEC 27001-2013 인증서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
             </div>

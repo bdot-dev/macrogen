@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/test-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -82,7 +82,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -380,126 +380,124 @@
         </div>
     </div>
 
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<!--modalImageViewer1 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph1.png" alt="graph1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
 
-	<%-- covid 스크립트 --%>
-	<div class="toast-popup">
-	    <p>이미지를 확대할 수 있습니다</p>
-	</div>
-	<!--modalImageViewer1 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph1.png" alt="graph1"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
+    // modal close
+    $('.btn-close').on('click', function () {
+        modalImageViewer1.hide();
+        hideToastPopup();
+    })
 
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modalImageViewer1.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-1').on('click', function () {
-	        modalImageViewer1.show();
-	        showToastPopup();
-	    })
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
 
-	    // show toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
 
-	    // hide toast popup
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
-	<!--modalImageViewer1 e-->
-	<!--modalImageViewer2 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph2.png" alt="graph2"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
-	    // zoom
-	    var el = document.querySelector('.panzoom');
-	    // new PinchZoom.default(el, {});
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modal2.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-2').on('click', function () {
-	        modal2.show();
-	        showToastPopup();
-	    })
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
 
-	    // toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
-	<!--modalImageViewer2 e-->
-	<!--modalImageViewer3 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
-	    // zoom
-	    var el = document.querySelector('.panzoom');
-	    // new PinchZoom.default(el, {});
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modal3.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-3').on('click', function () {
-	        modal3.show();
-	        showToastPopup();
-	    })
-
-	    // toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
 
 </body>
