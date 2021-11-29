@@ -36,15 +36,11 @@
                 <div class="board">
                     <div class="navigation">
                         <div class="row g-0">
-                            <div class="col">
-				            	<c:if test="${ not empty prevVo }">
-	                            	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">이전</span>
-	                            </c:if>
+                            <div class="col ${ empty prevVo ? 'disabled' : '' }">
+                            	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">이전</span>
                             </div>
-                            <div class="col">
-				            	<c:if test="${ not empty nextVo }">
-	                            	<span class="font-body-h-b btn-next">다음</span><i class="icon ico-left-black btn-prev"></i>
-	                            </c:if>
+                            <div class="col ${ empty nextVo ? 'disabled' : '' }">
+                            	<span class="font-body-h-b btn-next">다음</span><i class="icon ico-left-black btn-next"></i>
                             </div>
                         </div>
                     </div>
@@ -85,26 +81,36 @@
 	    });
 
 		$('.btn-prev').on('click', function(e) {
-			$.ajax({
-				dataType: 'html', type : 'post',
-				url: '/${rc.locale.language }/company/winner/viewAjaxHtml/${prevVo.wnpzSn}',
-				data: $form.serialize(),
-			}).done(function(html) {
-				$modalContent.empty().html(html);
-				modal.show();
-			});
+			<c:if test="${ empty prevVo }">
+				alert('첫글입니다.');
+			</c:if>
+			<c:if test="${ not empty prevVo }">
+				$.ajax({
+					dataType: 'html', type : 'post',
+					url: '/${rc.locale.language }/company/winner/viewAjaxHtml/${prevVo.wnpzSn}',
+					data: $form.serialize(),
+				}).done(function(html) {
+					$modalContent.empty().html(html);
+					modal.show();
+				});
+			</c:if>
 
 		});
 
 		$('.btn-next').on('click', function(e) {
-			$.ajax({
-				dataType: 'html', type : 'post',
-				url: '/${rc.locale.language }/company/winner/viewAjaxHtml/${nextVo.wnpzSn}',
-				data: $form.serialize(),
-			}).done(function(html) {
-				$modalContent.empty().html(html);
-				modal.show();
-			});
+			<c:if test="${ empty nextVo }">
+				alert('마지막 글입니다.');
+			</c:if>
+			<c:if test="${ not empty nextVo }">
+				$.ajax({
+					dataType: 'html', type : 'post',
+					url: '/${rc.locale.language }/company/winner/viewAjaxHtml/${nextVo.wnpzSn}',
+					data: $form.serialize(),
+				}).done(function(html) {
+					$modalContent.empty().html(html);
+					modal.show();
+				});
+			</c:if>
 
 	    });
 

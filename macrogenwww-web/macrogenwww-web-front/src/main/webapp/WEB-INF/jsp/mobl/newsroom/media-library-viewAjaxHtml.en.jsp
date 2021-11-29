@@ -73,15 +73,11 @@
     <div class="board">
         <div class="navigation">
             <div class="row g-0">
-                <div class="col">
-	            	<c:if test="${not empty prevVo }">
-                		<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b">Previous</span>
-                	</c:if>
+                <div class="col ${ empty prevVo ? 'disabled' : '' }">
+               		<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">Previous</span>
                 </div>
-                <div class="col">
-	            	<c:if test="${not empty nextVo }">
-                		<span class="font-body-h-b btn-next">Next</span><i class="icon ico-left-black"></i>
-                	</c:if>
+                <div class="col ${ empty nextVo ? 'disabled' : '' }">
+               		<span class="font-body-h-b btn-next">Next</span><i class="icon ico-left-black btn-next"></i>
                 </div>
             </div>
         </div>
@@ -121,33 +117,39 @@
 	var $modalContent = $('#modal .modal-content');
 
 	$(function() {
-    	<c:if test="${not empty prevVo }">
 		$('.btn-prev').on('click', function(e) {
-			$.ajax({
-				dataType: 'html', type : 'post',
-				url: '/${rc.locale.language }/newsroom/media-library/viewAjaxHtml/${prevVo.nttSn}',
-				data: { },
-			}).done(function(html) {
-				modal.show();
-				$modalContent.empty().html(html);
-			});
+			<c:if test="${ empty prevVo }">
+				alert('첫글입니다.');
+			</c:if>
+			<c:if test="${ not empty prevVo }">
+				$.ajax({
+					dataType: 'html', type : 'post',
+					url: '/${rc.locale.language }/newsroom/media-library/viewAjaxHtml/${prevVo.nttSn}',
+					data: { },
+				}).done(function(html) {
+					modal.show();
+					$modalContent.empty().html(html);
+				});
+			</c:if>
 
 		});
-		</c:if>
 
-    	<c:if test="${not empty nextVo }">
 		$('.btn-next').on('click', function(e) {
-			$.ajax({
-				dataType: 'html', type : 'post',
-				url: '/${rc.locale.language }/newsroom/media-library/viewAjaxHtml/${nextVo.nttSn}',
-				data: { },
-			}).done(function(html) {
-				modal.show();
-				$modalContent.empty().html(html);
-			});
+			<c:if test="${ empty nextVo }">
+				alert('마지막 글입니다.');
+			</c:if>
+			<c:if test="${ not empty nextVo }">
+				$.ajax({
+					dataType: 'html', type : 'post',
+					url: '/${rc.locale.language }/newsroom/media-library/viewAjaxHtml/${nextVo.nttSn}',
+					data: { },
+				}).done(function(html) {
+					modal.show();
+					$modalContent.empty().html(html);
+				});
+			</c:if>
 
 	    });
-		</c:if>
 
 	});
 

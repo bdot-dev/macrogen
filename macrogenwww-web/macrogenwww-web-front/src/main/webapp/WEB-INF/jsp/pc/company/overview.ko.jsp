@@ -193,7 +193,7 @@
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology2.svg" alt="개인유전체분석"></div>
+                                            <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/ic-biology.svg" alt="개인유전체분석"></div>
                                             <div class="tit">개인유전체분석</div>
                                         </li>
                                         <li>

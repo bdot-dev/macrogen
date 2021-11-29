@@ -395,7 +395,7 @@
             </div>
             <script>
                 $(document).ready(function(){
-                  $('.business').css("cursor","url('/publishing/pc-en/dist/img/main/img-cursor_3.cur'), auto");
+                  $('.business').css("cursor","url('/publishing/pc-en/dist/img/main/img-cursor.cur'), auto");
                 });
             </script>
 

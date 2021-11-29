@@ -63,7 +63,7 @@
             <div class="section-slogan">
                 <div class="bg">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="font-h7">Slogan_</div>
+                        <div class="font-h7">Slogan</div>
                         <div class="title">HUMANIZING<br/>GENOMICS</div>
                         <div class="font-body-h">Our goal is to present personalized medical solutions according
                             to the genetic characteristics of each patient based on human
