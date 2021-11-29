@@ -259,7 +259,6 @@
 	            let thisOption = $(this);
 	            let thisIndex = thisOption.index();
 	            selectBox.find('._selectedValue').find('span').text(select);
-	            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
 	            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active');
 	            fnListMove(section, thisIndex);
 	        });
