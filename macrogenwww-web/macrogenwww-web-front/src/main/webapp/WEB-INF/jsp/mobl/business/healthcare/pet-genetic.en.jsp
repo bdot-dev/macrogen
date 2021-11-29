@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/bg_banner_pet.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -138,7 +138,7 @@
                                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                         }
                                     }
-                                    e.preventDefault()
+
                                 })
                             }
                         });
@@ -158,7 +158,7 @@
                         fnMousewheel();
 
                     </script>
-                    <p class="font-h4 main-title">마이펫진 검사</p>
+                    <p class="font-h4 main-title">myPETGENE</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img_workflow_level6_row.png" alt="마이펫진검사워크플로우">

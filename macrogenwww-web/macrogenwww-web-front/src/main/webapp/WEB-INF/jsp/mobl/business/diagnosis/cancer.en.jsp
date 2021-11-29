@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/test-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -76,7 +76,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -206,7 +206,7 @@
                                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                         }
                                     }
-                                    e.preventDefault()
+
                                 })
                             }
                         });
@@ -305,8 +305,10 @@
                     </p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
-                        <img src="/publishing/mobile-en/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                        <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                        <div class="img">
+                            <img src="/publishing/mobile-en/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                        </div>
                     </div>
                     <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
                     <div class="btn-area">

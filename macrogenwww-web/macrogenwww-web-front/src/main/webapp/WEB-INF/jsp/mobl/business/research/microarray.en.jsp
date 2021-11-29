@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/ngs-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -84,7 +84,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -148,8 +148,20 @@
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-microarray-expression.png" alt="Expression Microarray">
                     </div>
+                    <!--v0.5 content-anchor 추가 (주석제거예정)-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">mRNA Expression Microarray</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA Expression Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">microRNA Expression Microarray</a></li>
+                        </ul>
+                    </div>
+
                     <hr class="divider">
-                    <p class="font-h5 sub-title">mRNA Expression Microarray</p>
+                    <!--v0.5 id값 추가 완료(주석제거예정)-->
+                    <p class="font-h5 sub-title" id="target1">mRNA Expression Microarray</p>
                     <p class="desc list_bottom font-body">mRNA (messenger RNA) is a type of RNA produced when DNA goes through transcription. It includes the coding region that contains protein information. Analysis of mRNA’s expression pattern is crucial to finding the gene that carries out the main function in a certain environment and the gene’s pathway. With an mRNA expression microarray, the level of the whole gene expression can be analyzed. Even when genetic information whose expression changes according to changes in the biological environment needs to be checked, our microarray screening can provide results quickly.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -252,7 +264,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="font-h5 sub-title list-area-group-top">microRNA Expression Microarray</p>
+                    <!--v0.5 id값 추가 완료(주석제거예정)-->
+                    <p class="font-h5 sub-title list-area-group-top" id="target2">microRNA Expression Microarray</p>
                     <p class="desc font-body list_bottom">This is an analytical technique that can quickly screen information about various microRNA that control gene expression during the translation process. microRNA is a single-sequence small RNA composed of 21 – 25 nucleotides. microRNA controls gene expression by interrupting mRNA’s function of forming protein via the translation process. Study of microRNA can broaden understanding of RNA silencing. The miRNA Expression Microarray can be used to analyze the whole miRNAs from various organisms. In addition to miRNA analysis in cells or tissues, interest is recently growing in exosome samples for the study of the role of miRNA in inter-cell interactions. Macrogen provides reliable results based on its experience in exosomalRNA miRNA analysis.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -365,7 +378,19 @@
                         <img src="/publishing/mobile-en/dist/img/business/img-microarray-genome.png" alt="Genome Microarray">
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title">SNP Genotyping Microarray</p>
+                    <!--v0.5 content-anchor 추가 (주석제거예정)-->
+                    <div class="content-anchor">
+                        <div class="selected-value _anchor-value">
+                            <span class="text">SNP Genotyping Microarray</span>
+                        </div>
+                        <ul class="anchor-option">
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">SNP Genotyping Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CGH Microarray</a></li>
+                        </ul>
+                    </div>
+
+                    <!--v0.5 id 추가 (주석제거예정)-->
+                    <p class="font-h5 sub-title" id="target3">SNP Genotyping Microarray</p>
                     <p class="desc list_bottom font-body">For the human genome composed of about 3 billion pairs of bases, most DNA sequences of individuals match, but about 0.1% is SNP (Single Nucleotide Polymorphism), which is where the differences lie. Such SNP causes genetic diversity of an individual and the difference of sensitivity to different diseases. With the SNP Genotyping Microarray, millions of SNPs can be analyzed simultaneously. Macrogen has the largest SNP chip data automation production facilities in Korea and provides accurate results by applying strict data quality control processes.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -517,19 +542,21 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h4 main-title">CGH Microarray</p>
-                    <p class="desc list_bottom font-body">복제 수 변이라 불리는 CNV(Copy Number Variation)는 염색체 내에 1Kb 이상의 특정 염기서열 부위가 결손 되거나 증폭되어 반복적으로 나타나는 DNA 변이를 의미합니다.
-                        이러한 복제 수 변이는 암세포 증식 외에도 다양한 유전질환을 유발할 수 있습니다.
-                        CGH 칩 데이터 분석 시 DGV, ClinVar등의 Database를 활용하여 다양한 질병이나 특정 Phenotype의 원인이 되는 CNV를 찾을 수 있으며 CGH Microarray를 이용하여 유전자와 염색체상의 CNV를 분석할 수 있습니다.
-                        마크로젠은 주요한 CGH Microarray 장비를 갖추고 있어 연구자의 필요에 따라 제품 선택이 가능하며, 세포 치료제에 사용되는 세포주에 대한 CNV검증서비스도 제공하고 있습니다.</p>
+
+                    <!--v0.5 id 추가 (주석제거예정)-->
+                    <p class="font-h4 main-title" id="target4">CGH Microarray</p>
+
+                    <!--v0.5 텍스트변경 추가 (주석제거예정)-->
+                    <p class="desc list_bottom font-body">mRNA (messenger RNA) is a type of RNA produced when DNA goes through transcription. It includes the coding region that contains protein information. Analysis of mRNA’s expression pattern is crucial to finding the gene that carries out the main function in a certain environment and the gene’s pathway. With an mRNA expression microarray, the level of the whole gene expression can be analyzed. Even when genetic information whose expression changes according to changes in the biological environment needs to be checked, our microarray screening can provide results quickly.</p>
                     <div class="list-area-group">
                         <div class="list-area">
                             <p class="font-body-h-b title figure_bottom">CGH Microarray Platforms </p>
                             <p class="sub-list-title font-body-h-b">Agilent CGH</p>
                             <ul class="list-circle-dot table_bottom font-body">
-                                <li><p>High resolution(60mer) &#38; Sensitivity CGH/CNV chip 제공</p></li>
-                                <li><p>Human 이외에 organism과 관련된 CGH/CNV chip을 제공하고 있으며 Custom 제작도 가능</p></li>
-                                <li><p>FFPE 샘플을 이용한 CGH 실험가능</p></li>
+                                <!--v0.5 텍스트변경 추가 (주석제거예정)-->
+                                <li><p>High resolution (60 mer) & sensitivity CGH/CNV chips are provided</p></li>
+                                <li><p>CGH/CNV chips related to organisms other than human are provided and can be customized</p></li>
+                                <li><p>CGH test using FFPE samples available</p></li>
                             </ul>
                             <div class="table-scroll">
                                 <table class="table">
@@ -540,8 +567,9 @@
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th>제품</th>
-                                        <th>Probe수</th>
+                                        <!--v0.5 텍스트변경 추가 (주석제거예정)-->
+                                        <th>Product</th>
+                                        <th>No. of Probes</th>
                                         <th>Average marker spacing</th>
                                     </tr>
                                     </thead>
@@ -579,9 +607,10 @@
                                         <col style="width:66.7202%;">
                                     </colgroup>
                                     <thead>
+                                    <!--v0.5 텍스트변경 추가 (주석제거예정)-->
                                     <tr>
-                                        <th>분석항목</th>
-                                        <th>내용</th>
+                                        <th>Areas of Analysis</th>
+                                        <th>Description</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -733,5 +762,79 @@
 
         </div>
     </div>
+
+    <!--v0.5 스크립트추가(주석제거예정)-->
+    <script>
+        /*변수*/
+        var contentAnchor = $(".content-anchor");
+        var anchorOption= $(".anchor-value");
+        var anchor = $( "._anchor" );
+        var offset = anchor.offset();
+
+
+        /*특정위치 show & hide*/
+        function fnMousewheel(){
+            var lastScroll = 0;
+
+            $(window).on('scroll',function(e){
+                let listPos = $('.info-box').offset().top;
+                let offset = $(this).scrollTop();
+
+                if (offset > lastScroll){
+                    // console.log('down')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                else {
+                    // console.log('up')
+                    if (offset > listPos) {
+                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                    }
+                    else {
+                        contentAnchor.hide();
+                    }
+                }
+                lastScroll = offset;
+            });
+        }
+
+        /*드롭다운 클릭시 이벤트*/
+        contentAnchor.on('click',function() {
+            var select = $(this);
+            if(select.hasClass('open')) {
+                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+            }
+            else {
+                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                $('body').on('click',function (e){
+                    if(contentAnchor.hasClass('open')) {
+                        if(!contentAnchor.has(e.target).length) {
+                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                        }
+                    }
+
+                })
+            }
+        });
+
+
+        /*클릭시 페이지 이동 이동*/
+        function TitleMove(target){
+            var id = $('#'+ target);
+            var offset = id.offset();
+            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+        }
+        /*클릭시 텍스트 변경*/
+        anchorOption.on('click',function() {
+            var select = $(this).find('a').text();
+            $('._anchor-value').find('span').text(select);
+        });
+        fnMousewheel();
+
+    </script>
 
 </body>
