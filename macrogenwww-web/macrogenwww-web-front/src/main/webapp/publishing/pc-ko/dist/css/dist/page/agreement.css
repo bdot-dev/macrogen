@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/*
+|----------------------------------|
+ v.0.1 (태윤) 최초 작업 -- 2021.08.31
+|----------------------------------|
+*/
+.section_agreement .main-title {
+  padding: 140px 0px 130px;
+  font-weight: 500;
+}
+
+.section_agreement .dropdown_area {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.section_agreement .dropdown_area .select_box {
+  font-size: 18px;
+  line-height: 32px;
+  width: 218px;
+  height: 40px;
+  border-bottom: 1px solid #000000;
+  cursor: pointer;
+  position: relative;
+}
+
+.section_agreement .dropdown_area .select_box .select_default {
+  background-image: url("../img/@temp/agreement/bg-triangle-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 6px) 13.5px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.section_agreement .dropdown_area .select_box .select_default span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.section_agreement .dropdown_area .select_box .select_default.open {
+  background-image: url("../img/@temp/agreement/bg-triangle-up.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 6px) 13.5px;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown {
+  padding: 30px;
+  border: 1px solid #222222;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  position: absolute;
+  background-color: #fff;
+  top: 39px;
+  width: 239px;
+  left: -10px;
+  z-index: 100;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown._dropdown {
+  display: none;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown ul li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown ul li:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown ul li a {
+  display: block;
+  font-size: 16px;
+  color: #909090;
+  line-height: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown ul li a span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.section_agreement .dropdown_area .select_box .select_dropdown ul li a:hover {
+  color: #E50050;
+  font-weight: 700;
+}
+
+.section_agreement .dropdown_area .btn {
+  padding: 0px 24px;
+  min-width: 88px;
+  height: 40px;
+}
+
+.section_agreement .content_area p {
+  line-height: 30px;
+  color: #454545;
+  word-break: keep-all;
+}
+
+.section_agreement .content_area p:first-of-type {
+  padding-top: 100px;
+}
+
+.section_agreement .content_area p.desc {
+  margin-bottom: 15px;
+}
+
+.section_agreement .content_area .terms.management li {
+  padding-left: 0;
+}
+
+.section_agreement .content_area .terms.management li ul.content .sub-title {
+  padding-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+  color: #000000;
+}
+
+.section_agreement .content_area .terms.management li ul.content .desc li {
+  padding-left: 22px;
+}
+
+.section_agreement .content_area .terms.management li ul.content .desc + .sub-title {
+  padding-top: 0;
+}
+
+.section_agreement .content_area .terms.management li ul.content > li {
+  margin-bottom: 32px;
+}
+
+.section_agreement .content_area .terms.management li ul.content > li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.section_agreement .content_area .terms .hyphen_list li {
+  padding-left: 0;
+}
+
+.section_agreement .content_area .terms li {
+  word-break: keep-all;
+}
+
+.section_agreement .content_area .terms li .title {
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.section_agreement .content_area .terms li .download {
+  padding-top: 6px;
+  margin-bottom: 15px;
+}
+
+.section_agreement .content_area .terms li .download .btn {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  min-width: auto;
+  height: auto;
+}
+
+.section_agreement .content_area .terms li .download i {
+  margin-left: 15px;
+}
+
+.section_agreement .content_area .terms li .caption_bottom {
+  padding-top: 20px;
+}
+
+.section_agreement .content_area .terms li ul > li {
+  padding-left: 22px;
+  position: relative;
+}
+
+.section_agreement .content_area .terms li ul > li:before {
+  content: attr(data-bullet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  text-align: left;
+}
+
+.section_agreement .content_area .terms li ul > li .table {
+  margin: 15px -22px 0;
+}
+
+.section_agreement .content_area .terms li ul > li > ol li {
+  padding-left: 22px;
+  position: relative;
+}
+
+.section_agreement .content_area .terms li ul > li > ol li:before {
+  content: attr(data-bullet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  text-align: left;
+}
+
+.section_agreement .content_area .terms li ul .gray-box {
+  width: calc(100% + 22px);
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 36px 60px;
+  margin-left: -22px;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #454545;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li {
+  display: flex;
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li span:nth-of-type(1) {
+  flex: 215px 0 0;
+  margin-right: 30px;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li span:nth-of-type(2) {
+  flex: 140px 0 0;
+  margin-right: 30px;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li a {
+  text-decoration: none;
+  color: #454545;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li:before {
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #454545;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.section_agreement .content_area .terms li ul .gray-box .list-circle-dot > li:nth-last-of-type(1) {
+  margin-bottom: 0px;
+}
+
+.section_agreement .content_area .table {
+  margin: 15px -22px 0;
+  width: calc(100% + 22px);
+}
+
+.section_agreement .content_area .table thead tr th {
+  line-height: 50px;
+}
+
+.section_agreement .content_area .table thead tr th {
+  padding: 15px 30px;
+}
+
+.section_agreement .content_area .table tbody tr td {
+  line-height: 25px;
+}
+
+.section_agreement .content_area .table tbody tr td {
+  padding: 15px 30px;
+}
+
+.section_agreement .content_area ul {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #454545;
+}
+
+/*# sourceMappingURL=agreement.css.map */

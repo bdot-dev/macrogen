@@ -249,6 +249,13 @@ front.common = (function () {
                 $(this).siblings().css('left', left + 'px')
             })
         });
+
+        $(document).ready(function() {
+            $('._btnTooltip').each(function () {
+                var left = $(this).offset().left * -1 + 20;
+                $(this).siblings().css('left', left + 'px')
+            })
+        });
         /* e tooltip */
 
         /* s accordion */
