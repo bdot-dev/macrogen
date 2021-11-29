@@ -21,15 +21,11 @@
     <div class="board">
         <div class="navigation">
             <div class="row g-0">
-                <div class="col">
-                	<c:if test="${not empty prevVo }">
+                <div class="col ${ empty prevVo ? 'disabled' : '' }">
                 	<i class="icon ico-left-black btn-prev"></i><span class="font-body-h-b btn-prev">Previous</span>
-                	</c:if>
                 </div>
-                <div class="col">
-	            	<c:if test="${not empty nextVo }">
+                <div class="col ${ empty nextVo ? 'disabled' : '' }">
                 	<span class="font-body-h-b btn-next">Next</span><i class="icon ico-left-black btn-next"></i>
-                	</c:if>
                 </div>
             </div>
         </div>
