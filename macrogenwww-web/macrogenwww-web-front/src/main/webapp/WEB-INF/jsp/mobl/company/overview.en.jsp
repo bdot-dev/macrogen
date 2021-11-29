@@ -199,7 +199,7 @@
                                 <div class="category-list">
                                     <ul class="row">
                                         <li class="col col-4">
-                                            <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/ic-biology2.svg" alt="개인유전체분석"></div>
+                                            <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/ic-biology.svg" alt="개인유전체분석"></div>
                                             <div class="tit">Personal Genome Analysis</div>
                                         </li>
                                         <li class="col col-4">
@@ -312,7 +312,7 @@
                                 It symbolizes the realization of personalized medicine based on personal genomic information and our commitment to healthy human life in line with our slogan, "Humanizing Genomics."
                             </div>
                             <div class="download-area">
-                                <a href="https://drive.google.com/file/d/11sq3mpDWyBFkULGRPHu9ckUqk_oB11IC/view?usp=sharing" target="_blank" class="btn btn-light btn-round"><span>CI Download</span><i class="icon ico-download-black"></i></a>
+                                <a href="/download/filename/macrogen_CI_기본형.ai" target="_blank" class="btn btn-light btn-round"><span>CI Download</span><i class="icon ico-download-black"></i></a>
                             </div>
                         </div>
                     </div>

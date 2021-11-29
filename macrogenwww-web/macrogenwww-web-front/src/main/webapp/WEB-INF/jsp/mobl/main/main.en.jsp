@@ -203,7 +203,7 @@
                     <div class="swiper-container _shortcutsSlider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-en/dist/img/video/M_main_기업개요.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-en/dist/img/video/M_main_글로벌마크로젠.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -237,7 +237,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-en/dist/img/video/M_main_ESG.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -264,6 +264,8 @@
                         /*slide 영역*/
 
                         swiperScrollbar = new Swiper ("._shortcutsSlider", {
+                            effect : 'fade',
+                            speed: 1000,
                             loop: true,
                             autoplayDisableOnInteraction: false,
                             slidesPerView: 1,
@@ -304,7 +306,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_01.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>Personal Healthcare</span>
                                         <a href="/${rc.locale.language }/business/healthcare/personal-genetic">
                                             <i class="icon-arrow-right-short"></i>
@@ -317,7 +319,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>The Biome</span>
                                         <a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
                                             <i class="icon-arrow-right-short"></i>
@@ -330,7 +332,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>Clinical Diagnostics/Treatment</span>
                                         <a href="/${rc.locale.language }/business/diagnosis/cancer">
                                             <i class="icon-arrow-right-short"></i>
@@ -343,7 +345,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_04.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>Pets</span>
                                         <a href="/${rc.locale.language }/business/healthcare/pet-genetic">
                                             <i class="icon-arrow-right-short"></i>
@@ -356,7 +358,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_05.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>Research Services</span>
                                         <a href="/${rc.locale.language }/business/research/ngs">
                                             <i class="icon-arrow-right-short"></i>

@@ -187,7 +187,7 @@
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology2.svg" alt="Personal Genome Analysis"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology.svg" alt="Personal Genome Analysis"></div>
                                             <div class="tit">Personal Genome Analysis</div>
                                         </li>
                                         <li>

@@ -12,11 +12,11 @@
     <meta name="description" content="macrogen"/>
     <meta name="keywords" content="macrogen"/>
     <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-    <title>Mobile-KO v0.3 / 11.23</title>
-    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
-    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
-    <script src="../../js/bundle.js?1123"></script>
-    <script src="../../js/common.js?1123"></script>
+    <title>Mobile-KO</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?"/>
+    <script src="../../js/bundle.js?"></script>
+    <script src="../../js/common.js?"></script>
 </head>
 
 <body>
@@ -238,7 +238,7 @@
                     <div class="swiper-container _shortcutsSlider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="../../img/video/M_main_기업개요.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="../../img/video/M_main_글로벌마크로젠.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -270,7 +270,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="../../img/video/M_main_ESG.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -296,6 +296,8 @@
                         /*slide 영역*/
 
                         swiperScrollbar = new Swiper ("._shortcutsSlider", {
+                            effect : 'fade',
+                            speed: 1000,
                             loop: true,
                             autoplayDisableOnInteraction: false,
                             slidesPerView: 1,
@@ -337,7 +339,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="background: url(../../img/main/img-business_01.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>퍼스널 헬스케어</span>
                                         <a href="#">
                                             <i class="icon-arrow-right-short"></i>
@@ -350,7 +352,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(../../img/main/img-business_02.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>더바이옴</span>
                                         <a href="#">
                                             <i class="icon-arrow-right-short"></i>
@@ -363,7 +365,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(../../img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>임상진단&#47;치료</span><a href="#">
                                         <a href="#">
                                             <i class="icon-arrow-right-short"></i>
@@ -377,7 +379,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(../../img/main/img-business_04.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>반려동물</span><a href="#">
                                         <a href="#">
                                             <i class="icon-arrow-right-short"></i>
@@ -391,7 +393,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(../../img/main/img-business_05.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>연구서비스</span><a href="#">
                                         <a href="#">
                                             <i class="icon-arrow-right-short"></i>

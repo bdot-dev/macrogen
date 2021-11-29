@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -99,7 +99,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -133,7 +133,6 @@
                         fnMove();
 
                         /*클릭시 텍스트 변경*/
-                        console.log(idx);
 
                     }
 
@@ -157,7 +156,7 @@
             <!--ngs 컨텐츠 s-->
             <div class="info-box-wrap tab-content">
                 <!--Genome-->
-                <div class="info-box show">
+                <div class="info-box _genome show">
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
@@ -180,6 +179,7 @@
                         <img src="/publishing/mobile-ko/dist/img/business/img-ngs-genome.png" alt="Whole Genome Sequencing">
                     </div>
                     <hr class="divider">
+                    <div class="anchor-section">
                     <p class="sub-title font-h5"  id="Resequencing">Whole Genome Resequencing</p>
                     <p class="desc font-body list_bottom">참조 유전체(Reference Genome)를 활용하여 SNP(Single Nucleotide
                         Polymorphism), InDel(Insertion &#38; Deletion), CNV(Copy Number Variation), SV(Structural
@@ -192,7 +192,9 @@
                             <li><p>NextSeq 500</p></li>
                         </ul>
                     </div>
+                    </div>
                     <hr class="divider">
+                    <div class="anchor-section">
                     <p class="sub-title font-h5" id="Sequencing">Whole Genome De novo Sequencing</p>
                     <p class="desc font-body list_bottom">참조 유전체(Reference Genome) 정보가 없는 미생물이나 동식물 등 새로운 생물 종의 전체 유전체
                         정보를 알아내는 방법입니다.</p>
@@ -204,6 +206,7 @@
                             <li><p>PacBio Sequel I &#38; Sequel II</p></li>
                             <li><p>PromethION</p></li>
                         </ul>
+                    </div>
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
@@ -224,9 +227,106 @@
                             </div>
                         </div>
                     </div>
+                    <!--content-anchor script s-->
+                    <script>
+                        /*변수*/
+                        var contentAnchor = $(".content-anchor");
+                        var anchorOption= $(".anchor-value");
+                        var anchor = $( "._anchor" );
+                        var offset = anchor.offset();
+
+                        /*특정위치 show & hide*/
+                        function fnMousewheel(){
+                            var lastScroll = 0;
+                            $(window).on('scroll',function(e){
+                                let listPos = $('.info-box').offset().top;
+                                let offset = $(this).scrollTop();
+
+                                if (offset > lastScroll){
+                                    // console.log('down')
+                                    if (offset > listPos) {
+                                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                                    }
+                                    else {
+                                        contentAnchor.hide();
+                                    }
+                                }
+                                else {
+                                    // console.log('up')
+                                    if (offset > listPos) {
+                                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                                    }
+                                    else {
+                                        contentAnchor.hide();
+                                    }
+                                }
+                                lastScroll = offset;
+                            });
+                        }
+
+
+                        /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+                        $(window).scroll(function(){
+                            var position = $(window).scrollTop();
+
+
+                            if(position > $('.info-box._genome > .anchor-section').eq(0).offset().top && position < $('.anchor-section').eq(1).offset().top){
+                                $('.anchor-section').eq(0).find('.sub-title').text();
+                                $('._anchor-value').find('span').text($('.anchor-section').eq(0).find('.sub-title').text());
+                            }
+
+                            else if (position > $('.anchor-section').eq(1).offset().top) {
+                                $('._anchor-value').find('span').text($('.anchor-section').eq(1).find('.sub-title').text());
+                            }
+
+                            else {
+
+                            }
+                        });
+
+
+
+                        /*드롭다운 클릭시 이벤트*/
+                        contentAnchor.on('click',function() {
+                            var select = $(this);
+                            if(select.hasClass('open')) {
+                                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                            }
+                            else {
+                                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
+                                $('body').on('click',function (e){
+                                    if(contentAnchor.hasClass('open')) {
+                                        if(!contentAnchor.has(e.target).length) {
+                                            contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                                        }
+                                    }
+
+                                })
+                            }
+
+                        });
+
+                        /*클릭시 페이지 이동 이동*/
+                        function TitleMove(target){
+                            var id = $('#'+ target);
+                            var offset = id.offset();
+                            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+                        }
+
+                        /*클릭시 텍스트 변경*/
+                        anchorOption.on('click',function() {
+                            var select = $(this).find('a').text();
+                            $('._anchor-value').find('span').text(select);
+                        });
+
+
+                        fnMousewheel();
+
+                    </script>
+                    <!--content-anchor script e-->
                 </div>
                 <!--Exome-->
-                <div class="info-box">
+                <div class="info-box _sequencing">
                     <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject font-body-h-b">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을
                         선택적으로 분석하는
@@ -310,99 +410,111 @@
                     </div>
                     <!--content-anchor e-->
 
-                    <p class="sub-title font-h5" id="target1">mRNA / Total RNA Sequencing</p>
-                    <p class="desc font-body data_bottom">
-                        Read 수로 mRNA의 발현 값을 표현해 정확한 데이터 값을 알 수 있습니다. 유전자간 발현량뿐만 아니라 novel transcriptome, fusion gene,
-                        alternative splicing과 변이 정보 확인 등의 연구에 활용할 수
-                        있습니다. 최근에는 단일 세포(Single Cell) 수준의 유전자 발현에 대한 연구도 활발히 진행되고 있습니다.
-                    </p>
-                    <p class="sub-title figure_bottom font-body-h-b">Library Construction Kit</p>
-                    <div class="list-area-border">
-                        <div class="list">
-                            <div class="accordion-container">
-                                <div class="accordion-item">
-                                    <a class="accordion-button active" href="#">Illumina</a>
-                                    <div class="accordion-content" style="display: block;">
-                                        <ul class="list">
-                                            <li>TruSeq RNA</li>
-                                            <li>TruSeq stranded mRNA</li>
-                                            <li>TruSeq Stranded Total RNA with Ribo-Zero Human/Mouse/Rat</li>
-                                            <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/Rat</li>
-                                            <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/RatTruS</li>
-                                            <li>TruSeq Stranded Total RNA with Ribo-Zero Globin Human/Mouse/Rat</li>
-                                            <li>TruSeq Stranded Total RNA Sample Preparation Kits with Ribo-Zero Plant
-                                            </li>
-                                            <li>TruSeq Stranded Total RNA (NEB Microbe)</li>
-                                            <li>ScriptSeq™ v2 RNA-Seq Library Preparation Kit (Epicentre)</li>
-                                            <li>TruSeq RNA Access</li>
-                                            <li>TruSeq Total RNA with Ribo-Zero</li>
-                                            <li>TruSeq mRNA (Insert size)</li>
-                                            <li>TruSeq Total RNA with Ribo-Zero (Insert size)</li>
-                                        </ul>
+                    <div class="section-anchor"><p class="sub-title font-h5" id="target1">mRNA / Total RNA Sequencing</p>
+                        <p class="desc font-body data_bottom">
+                            Read 수로 mRNA의 발현 값을 표현해 정확한 데이터 값을 알 수 있습니다. 유전자간 발현량뿐만 아니라 novel transcriptome, fusion
+                            gene,
+                            alternative splicing과 변이 정보 확인 등의 연구에 활용할 수
+                            있습니다. 최근에는 단일 세포(Single Cell) 수준의 유전자 발현에 대한 연구도 활발히 진행되고 있습니다.
+                        </p>
+                        <p class="sub-title figure_bottom font-body-h-b">Library Construction Kit</p>
+                        <div class="list-area-border">
+                            <div class="list">
+                                <div class="accordion-container">
+                                    <div class="accordion-item">
+                                        <a class="accordion-button active" href="#">Illumina</a>
+                                        <div class="accordion-content" style="display: block;">
+                                            <ul class="list">
+                                                <li>TruSeq RNA</li>
+                                                <li>TruSeq stranded mRNA</li>
+                                                <li>TruSeq Stranded Total RNA with Ribo-Zero Human/Mouse/Rat</li>
+                                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/Rat</li>
+                                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/RatTruS
+                                                </li>
+                                                <li>TruSeq Stranded Total RNA with Ribo-Zero Globin Human/Mouse/Rat</li>
+                                                <li>TruSeq Stranded Total RNA Sample Preparation Kits with Ribo-Zero
+                                                    Plant
+                                                </li>
+                                                <li>TruSeq Stranded Total RNA (NEB Microbe)</li>
+                                                <li>ScriptSeq™ v2 RNA-Seq Library Preparation Kit (Epicentre)</li>
+                                                <li>TruSeq RNA Access</li>
+                                                <li>TruSeq Total RNA with Ribo-Zero</li>
+                                                <li>TruSeq mRNA (Insert size)</li>
+                                                <li>TruSeq Total RNA with Ribo-Zero (Insert size)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a class="accordion-button" href="#">Others</a>
+                                        <div class="accordion-content" style="display: none;">
+                                            <ul class="list">
+                                                <li>SMARTer Universal Low RNA library</li>
+                                                <li>SMARTer Ultra Low Input RNA library</li>
+                                                <li>SMARTer Stranded RNA library</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <a class="accordion-button" href="#">Others</a>
-                                    <div class="accordion-content" style="display: none;">
-                                        <ul class="list">
-                                            <li>SMARTer Universal Low RNA library</li>
-                                            <li>SMARTer Ultra Low Input RNA library</li>
-                                            <li>SMARTer Stranded RNA library</li>
-                                        </ul>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divider">
+
+                    <div class="anchor-section">
+                        <p class="font-h5 sub-title" id="target2">Small RNA Sequencing</p>
+                        <p class="desc font-body data_bottom">
+                            유전자가 전사된 mRNA뿐 아니라 유전자 정보를 담고 있지 않은 non-coding RNA, 특히 small RNA는 유전자 발현 조절 기전의 핵심 인자로 밝혀지며
+                            활발히
+                            연구되는 분야입니다. Small RNA family의 대표 종류인 miRNA나 siRNA를 비롯해 piRNA, snRNA 등을 분석함으로써 유전자 발현 조절에 대한
+                            통찰력을
+                            얻을 수 있고, 바이오마커(Biomarker) 개발 및 질병 진단에 적용할 수 있습니다.
+                        </p>
+                        <p class="font-body-h-b sub-title">Library Construction Kit</p>
+                        <div class="accordion-container">
+                            <div class="accordion-item">
+                                <a class="accordion-button active" href="#">Illumina</a>
+                                <div class="accordion-content" style="display: block;">
+                                    <ul class="list">
+                                        <li>Small RNA library</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-button" href="#">Others</a>
+                                <div class="accordion-content" style="display: none;">
+                                    <ul class="list">
+                                        <li>SMARTer Universal Low RNA library</li>
+                                        <li>QIAseq miRNA library</li>
+                                        <li>NEBNext Small RNA library</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <hr class="divider">
-                    <p class="font-h5 sub-title" id="target2">Small RNA Sequencing</p>
-                    <p class="desc font-body data_bottom">
-                        유전자가 전사된 mRNA뿐 아니라 유전자 정보를 담고 있지 않은 non-coding RNA, 특히 small RNA는 유전자 발현 조절 기전의 핵심 인자로 밝혀지며 활발히
-                        연구되는 분야입니다. Small RNA family의 대표 종류인 miRNA나 siRNA를 비롯해 piRNA, snRNA 등을 분석함으로써 유전자 발현 조절에 대한 통찰력을
-                        얻을 수 있고, 바이오마커(Biomarker) 개발 및 질병 진단에 적용할 수 있습니다.
-                    </p>
-                    <p class="font-body-h-b sub-title">Library Construction Kit</p>
-                    <div class="accordion-container">
-                        <div class="accordion-item">
-                            <a class="accordion-button active" href="#">Illumina</a>
-                            <div class="accordion-content" style="display: block;">
-                                <ul class="list">
-                                    <li>Small RNA library</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <a class="accordion-button" href="#">Others</a>
-                            <div class="accordion-content" style="display: none;">
-                                <ul class="list">
-                                    <li>SMARTer Universal Low RNA library</li>
-                                    <li>QIAseq miRNA library</li>
-                                    <li>NEBNext Small RNA library</li>
-                                </ul>
-                            </div>
+                        <div class="list-area">
+                            <p class="title font-body-h-b">Sequencing Platform</p>
+                            <ul class="list-circle-dot">
+                                <li><p>HiSeq 2500 / HiSeq 4000</p></li>
+                                <li><p>NextSeq 500</p></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="list-area">
-                        <p class="title font-body-h-b">Sequencing Platform</p>
-                        <ul class="list-circle-dot">
-                            <li><p>HiSeq 2500 / HiSeq 4000</p></li>
-                            <li><p>NextSeq 500</p></li>
-                        </ul>
-                    </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target3">Isoform Sequencing</p>
-                    <p class="desc font-body">
-                        엑손(Exon)과 인트론(Intron) 으로 구성된 유전자는 발현되는 엑손 영역의 조합에 의해 새로운 transcript가 계속 발견되고 있습니다. Long read
-                        platform을 활용한 Isoform sequencing은 기존에<br>밝혀내지 못하던 전장(full length) transcript를 확인 할 수 있어 유전자의
-                        가능연구에 각광을 받고 있습니다.
-                    </p>
+
+                    <div class="anchor-section"><p class="font-h5 sub-title" id="target3">Isoform Sequencing</p>
+                        <p class="desc font-body">
+                            엑손(Exon)과 인트론(Intron) 으로 구성된 유전자는 발현되는 엑손 영역의 조합에 의해 새로운 transcript가 계속 발견되고 있습니다. Long read
+                            platform을 활용한 Isoform sequencing은 기존에<br>밝혀내지 못하던 전장(full length) transcript를 확인 할 수 있어 유전자의
+                            가능연구에 각광을 받고 있습니다.
+                        </p></div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target4">Exosomal RNA Sequencing</p>
-                    <p class="desc font-body">
-                        엑소좀(Exosome)은 세포 유래의 200 nm 미만의 소포체이며, 엑소좀 안에는 기원한 세포에서 유래한 단백질과 DNA, RNA 등 다양한 생체분자들을 함유하고
-                        있습니다. 이러한 특징을 이용하여 진단을 위한
-                        바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 증 적용 분야를 넓혀가고 있습니다.
-                    </p>
+
+                    <div class="anchor-section"><p class="font-h5 sub-title" id="target4">Exosomal RNA Sequencing</p>
+                        <p class="desc font-body">
+                            엑소좀(Exosome)은 세포 유래의 200 nm 미만의 소포체이며, 엑소좀 안에는 기원한 세포에서 유래한 단백질과 DNA, RNA 등 다양한 생체분자들을 함유하고
+                            있습니다. 이러한 특징을 이용하여 진단을 위한
+                            바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 증 적용 분야를 넓혀가고 있습니다.
+                        </p></div>
+
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
@@ -638,32 +750,42 @@
                         </ul>
                     </div>
                     <!--content-anchor e-->
-                    <p class="sub-title font-h5" id="Amplicon">Metagenome Amplicon Sequencing</p>
-                    <p class="desc font-body list_bottom">16S rRNA나 ITS gene 등 마커 유전자의 특정 영역을 증폭하여 Amplicon library제작 후
-                        Sequencing을 통한 분포도 및 다양성 분석을 수행 합니다.<br>
-                        마커 유전자를 타겟하는 동일한 원리를 사용하여 진핵생물(Eukaryote)에 대한 분석도 가능 합니다. 마크로젠은 바이오인포매틱스(Bioinformatics) 전문 인력이
-                        직접 분석을 수행하며, ASV 분석을 통한 높은 정확도 및 재현성이 보장되는 Taxonomic assignment 및 Diversity 분석이 가능하며 통계분석 및 트렌드에
-                        맞는 Advanced 분석도 가능합니다. </p>
-                    <div class="list-area">
-                        <p class="font-body-h-b title"> Sequencing Platform</p>
-                        <ul class="list-circle-dot">
-                            <li><p>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina Miseq /
-                                Hiseq2500 platform</p></li>
-                            <li><p>16S rRNA Full length → PacBio Sequel / Sequel2 platform</p></li>
-                        </ul>
+                    <div class="anchor-section">
+                        <p class="sub-title font-h5" id="Amplicon">Metagenome Amplicon Sequencing</p>
+                        <p class="desc font-body list_bottom">16S rRNA나 ITS gene 등 마커 유전자의 특정 영역을 증폭하여 Amplicon
+                            library제작 후
+                            Sequencing을 통한 분포도 및 다양성 분석을 수행 합니다.<br>
+                            마커 유전자를 타겟하는 동일한 원리를 사용하여 진핵생물(Eukaryote)에 대한 분석도 가능 합니다. 마크로젠은 바이오인포매틱스(Bioinformatics) 전문
+                            인력이
+                            직접 분석을 수행하며, ASV 분석을 통한 높은 정확도 및 재현성이 보장되는 Taxonomic assignment 및 Diversity 분석이 가능하며 통계분석 및
+                            트렌드에
+                            맞는 Advanced 분석도 가능합니다. </p>
+                        <div class="list-area">
+                            <p class="font-body-h-b title"> Sequencing Platform</p>
+                            <ul class="list-circle-dot">
+                                <li><p>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina
+                                    Miseq /
+                                    Hiseq2500 platform</p></li>
+                                <li><p>16S rRNA Full length → PacBio Sequel / Sequel2 platform</p></li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
                     </div>
-                    <hr class="divider">
-                    <p class="sub-title font-h5" id="Shotgun">Metagenome Shotgun Sequencing</p>
-                    <p class="desc font-body list_bottom">마커 유전자뿐만 아니라 전장유전체를 타겟하여 시퀀싱함으로써 균총분포도 및 다양성과 더불어 assembly,
-                        gene prediction &#38; funtional annotation 까지 가능한 분석 방법 입니다.<br>
-                        바이오인포매틱스(Bioinformatics) 전문 인력이 직접 분석을 수행하며 Taxonomic assignment 분석 시 target taxon의 genome size를
-                        이용한 normalized abundance 값을 계산하여
-                        제공함으로써 보다 정밀한 분석이 가능합니다. </p>
-                    <div class="list-area">
-                        <p class="font-body-h-b title">Sequencing Platform</p>
-                        <ul class="list-circle-dot">
-                            <li><p>Illumina Hiseq XTen / Hiseq 4000 / NovaSeq6000 platform</p></li>
-                        </ul>
+                    <div class="anchor-section">
+                        <p class="sub-title font-h5" id="Shotgun">Metagenome Shotgun Sequencing</p>
+                        <p class="desc font-body list_bottom">마커 유전자뿐만 아니라 전장유전체를 타겟하여 시퀀싱함으로써 균총분포도 및 다양성과 더불어
+                            assembly,
+                            gene prediction &#38; funtional annotation 까지 가능한 분석 방법 입니다.<br>
+                            바이오인포매틱스(Bioinformatics) 전문 인력이 직접 분석을 수행하며 Taxonomic assignment 분석 시 target taxon의 genome
+                            size를
+                            이용한 normalized abundance 값을 계산하여
+                            제공함으로써 보다 정밀한 분석이 가능합니다. </p>
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Sequencing Platform</p>
+                            <ul class="list-circle-dot">
+                                <li><p>Illumina Hiseq XTen / Hiseq 4000 / NovaSeq6000 platform</p></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
@@ -689,79 +811,5 @@
             <!--ngs 컨텐츠 e-->
         </div>
     </div>
-
-    <!--content-anchor script s-->
-    <script>
-        /*변수*/
-        var contentAnchor = $(".content-anchor");
-        var anchorOption= $(".anchor-value");
-        var anchor = $( "._anchor" );
-        var offset = anchor.offset();
-
-
-        /*특정위치 show & hide*/
-        function fnMousewheel(){
-            var lastScroll = 0;
-            $(window).on('scroll',function(e){
-                let listPos = $('.info-box').offset().top;
-                let offset = $(this).scrollTop();
-
-                if (offset > lastScroll){
-                    // console.log('down')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                    }
-                    else {
-                        contentAnchor.hide();
-                    }
-                }
-                else {
-                    // console.log('up')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                    }
-                    else {
-                        contentAnchor.hide();
-                    }
-                }
-                lastScroll = offset;
-            });
-        }
-
-        /*드롭다운 클릭시 이벤트*/
-        contentAnchor.on('click',function() {
-            var select = $(this);
-            if(select.hasClass('open')) {
-                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-            }
-            else {
-                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                $('body').on('click',function (e){
-                    if(contentAnchor.hasClass('open')) {
-                        if(!contentAnchor.has(e.target).length) {
-                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
-                    e.preventDefault()
-                })
-            }
-        });
-
-
-        /*클릭시 페이지 이동 이동*/
-        function TitleMove(target){
-            var id = $('#'+ target);
-            var offset = id.offset();
-            $('html, body').animate({scrollTop : offset.top - 75}, 300);
-        }
-        /*클릭시 텍스트 변경*/
-        anchorOption.on('click',function() {
-            var select = $(this).find('a').text();
-            $('._anchor-value').find('span').text(select);
-        });
-        fnMousewheel();
-
-    </script>
-    <!--content-anchor script e-->
 
 </body>

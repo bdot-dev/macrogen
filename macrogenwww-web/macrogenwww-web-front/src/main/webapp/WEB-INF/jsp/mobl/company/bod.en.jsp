@@ -98,13 +98,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item">
+                                        <!-- <div class="item">
                                             <div class="font-h5">Experience</div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="inner">
+                                        <div class="item">
+                                            <div class="font-h5">Experience</div>
+                                        </div>
                                         <div class="item">
                                             <div class="list">
                                                 <div class="row">
