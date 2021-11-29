@@ -54,7 +54,7 @@
 	                                    	</c:if>
                                         </div>
                                         <div class="col">
-	                                    	<c:if test="${ not empty prevVo }">
+	                                    	<c:if test="${ not empty nextVo }">
 	                                        	<span class="font-body-h-b btn-next">다음글</span><i class="icon ico-left-black"></i>
 	                                    	</c:if>
                                         </div>
