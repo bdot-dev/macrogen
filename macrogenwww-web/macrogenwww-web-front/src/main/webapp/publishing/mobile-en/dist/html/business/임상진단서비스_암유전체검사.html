@@ -329,9 +329,11 @@
                         Mutations in the BRCA 1/2 gene greatly increase the risk of breast cancer.
                     </p>
                     <div class="border-gray-box">
-                        <!--10.05 이미지 경로 변경-->
-                        <img src="../../img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                        <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                        <!--v0.6 div img 추가 -->
+                        <div class="img">
+                            <img src="../../img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                        </div>
                     </div>
                     <p class="notice-text"><i class="icon  ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
                     <div class="btn-area">
@@ -429,14 +431,14 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="window.open(value);">
                     <option selected value="https://dna.macrogen.com/">Order site</option>
                     <option value="/en/policy/privacy">Privacy Statement</option>
                     <option value="/en/policy/image/">Image Information Processing Policy</option>
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="window.open(value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
