@@ -768,14 +768,14 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="window.open(value);">
                     <option selected value="https://dna.macrogen.com/">Order site</option>
                     <option value="/en/policy/privacy">Privacy Statement</option>
                     <option value="/en/policy/image/">Image Information Processing Policy</option>
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="window.open(value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
@@ -934,8 +934,19 @@
             let thisOption = $(this);
             let thisIndex = thisOption.index();
             selectBox.find('._selectedValue').find('span').text(select);
-            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
+            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active');
+            fnListMove(section, thisIndex);
         });
+    }
+
+    /**
+     * fnListMove
+     * @param section
+     * @param index
+     */
+    function fnListMove(section, index){
+        let listOffset = section.find('.history-list').eq(index).offset();
+        $('html, body').animate({scrollTop : listOffset.top - 60}, 100);
     }
 
     /**
@@ -973,15 +984,26 @@
     function fnMousewheel(){
         var lastScroll = 0;
 
-        $(window).on('scroll',function(e){
-            let listPos = $('.section.show .history-list.active').offset().top;
+        $(window).on('scroll',function(){
+            let listPos = $('.section.show ._listWrap').offset().top;
             let selectBox = $('.section.show .select-box');
             let offset = $(this).scrollTop();
+            // console.log(offset);
+
+            $('.section.show .history-list').each(function(idx) {
+                if(offset > $('.section.show .history-list').eq(idx).offset().top - 62) {
+                    $('.section.show .history-list').removeClass('active');
+                    $(this).addClass('active');
+                    selectBox.children('._selectedValue').text($(this).children('.year').text())
+                }
+            });
 
             if (offset > lastScroll){
                 // console.log('down')
                 if (offset > listPos) {
-                    selectBox.show().css({'position': 'fixed','top':'0'});
+                    selectBox.show().css({'position': 'fixed','top': '0'});
+
+
                 }
                 else {
                     selectBox.hide();
@@ -990,7 +1012,7 @@
             else {
                 // console.log('up')
                 if (offset > listPos) {
-                    selectBox.show().css({'position': 'fixed','top':'70px'});
+                    selectBox.show().css({'position': 'fixed','top': '70px'});
                 }
                 else {
                     selectBox.hide();
