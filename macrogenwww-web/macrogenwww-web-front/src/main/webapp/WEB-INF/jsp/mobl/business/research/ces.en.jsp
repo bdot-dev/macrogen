@@ -5,7 +5,7 @@
     <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/ngs-bg.png);">
         <header class="header header-white">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -83,7 +83,7 @@
                                         selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                     }
                                 }
-                                e.preventDefault()
+
                             })
                         }
                     });
@@ -354,12 +354,15 @@
                         <div class="selected-value _anchor-value">
                             <span class="text">PCR Optimization/Amplification</span>
                         </div>
+                        <!--v0.5 value값 추가 (주석제거예정)-->
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('ancher1')"><a href="#">PCR Optimization/Amplification</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher2')"><a href="#">Pyrosequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher3')"><a href="#">NGS Validation</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher4')"><a href="#">MLST analysis</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher5')"><a href="#">One-click Sanger Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher10')"><a href="#">Primer Walking</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher11')"><a href="#">Cloning</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -440,14 +443,16 @@
                         One-click Sanger sequencing is a technique for analyzing certain commonly studied gene variations with just one click for more convenience and quicker results. Optimized results from gDNA extraction to PCR amplification, sequencing, and SNP analysis are delivered to clients. Our dedicated team of researchers perform sequencing of specific exon areas and provide variant analysis results using a primer set manufactured based on many years of know-how. The sequencing results are widely used in studies and medical fields through genetic analysis of diseases. Based on our extensive experience and accurate reference, we establish an optimum test process for each gene for more precision.
                     </p>
                     <hr class="divider">
-                    <p class="sub-title font-h5">
+                    <!--v0.5 id값 추가 (주석제거예정)-->
+                    <p class="sub-title font-h5" id="ancher10">
                         Primer Walking
                     </p>
                     <p class="desc font-body">
                         Primer walking is a service that analyzes the sequence of plasmids or PCR products that cannot be read at once by single primer extension. It is generally used to obtain about 2 to 10kb of sequence information. End sequencing is performed with a primer provided or specified by the client, and the internal primer is designed and produced based on the results. This is extended continuously by redesigning the internal primer in a suitable location from the results obtained by the new primer’s reaction with the same template. Walking takes about 4 days, and can be extended about 500 – 800bp in one direction. The results are used for basic molecular biology research, breeding research, and genetic disease research, and it reduces the test time as Primer Design, Synthesis, and Sequencing are performed.
                     </p>
                     <hr class="divider">
-                    <p class="sub-title font-h5">
+                    <!--v0.5 id값 추가 (주석제거예정)-->
+                    <p class="sub-title font-h5" id="ancher11">
                         Cloning
                     </p>
                     <p class="desc font-body">
@@ -618,7 +623,7 @@
                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                         }
                     }
-                    e.preventDefault()
+
                 })
             }
         });
