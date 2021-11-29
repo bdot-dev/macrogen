@@ -298,7 +298,7 @@
                 <!--Fragment-->
                 <div class="info-box">
                     <p class="main-title font-h4">Fragment</p>
-                    <p class="subject font-body-h-b">he fragment analysis service includes various services such as genotyping, DNA profiling, medical mutation detection, and agricultural research.
+                    <p class="subject font-body-h-b">The fragment analysis service includes various services such as genotyping, DNA profiling, medical mutation detection, and agricultural research.
                         Macrogen provides a microsatellite analysis (VNTRs) service based on our extensive experience and know-how.
                     </p>
                     <div class="img">

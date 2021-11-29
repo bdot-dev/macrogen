@@ -10,7 +10,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="window.open(value);">
                     <option selected value="https://dna.macrogen.com/">Order site</option>
                     <option value="/${rc.locale.language }/policy/privacy">Privacy Statement</option>
                     <%-- <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option> --%>
@@ -18,7 +18,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="window.open(value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>

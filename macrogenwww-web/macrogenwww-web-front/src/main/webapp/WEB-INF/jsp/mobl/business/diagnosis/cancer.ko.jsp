@@ -319,9 +319,11 @@
                             진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
                         </p>
                         <div class="border-gray-box">
-                            <!--10.05 이미지 경로 변경-->
-                            <img src="/publishing/mobile-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
-                            <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                            <div class="img">
+                                <img src="/publishing/mobile-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
+                                <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
+                            </div>
+
                         </div>
                         <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span>
                         </p></div>

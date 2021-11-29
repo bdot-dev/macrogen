@@ -260,7 +260,19 @@
 	            let thisIndex = thisOption.index();
 	            selectBox.find('._selectedValue').find('span').text(select);
 	            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active')
+	            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active');
+	            fnListMove(section, thisIndex);
 	        });
+	    }
+
+	    /**
+	     * fnListMove
+	     * @param section
+	     * @param index
+	     */
+	    function fnListMove(section, index){
+	        let listOffset = section.find('.history-list').eq(index).offset();
+	        $('html, body').animate({scrollTop : listOffset.top - 60}, 100);
 	    }
 
 	    /**
@@ -295,35 +307,46 @@
 	    /**
 	     * fnMousewheel
 	     */
-	    function fnMousewheel(){
-	        var lastScroll = 0;
+	     function fnMousewheel(){
+	         var lastScroll = 0;
 
-	        $(window).on('scroll',function(e){
-	            let listPos = $('.section.show .history-list.active').offset().top;
-	            let selectBox = $('.section.show .select-box');
-	            let offset = $(this).scrollTop();
+	         $(window).on('scroll',function(){
+	             let listPos = $('.section.show ._listWrap').offset().top;
+	             let selectBox = $('.section.show .select-box');
+	             let offset = $(this).scrollTop();
+	             // console.log(offset);
 
-	            if (offset > lastScroll){
-	                // console.log('down')
-	                if (offset > listPos) {
-	                    selectBox.show().css({'position': 'fixed','top':'0'});
-	                }
-	                else {
-	                    selectBox.hide();
-	                }
-	            }
-	            else {
-	                // console.log('up')
-	                if (offset > listPos) {
-	                    selectBox.show().css({'position': 'fixed','top':'70px'});
-	                }
-	                else {
-	                    selectBox.hide();
-	                }
-	            }
-	            lastScroll = offset;
-	        });
-	    }
+	             $('.section.show .history-list').each(function(idx) {
+	                 if(offset > $('.section.show .history-list').eq(idx).offset().top - 62) {
+	                     $('.section.show .history-list').removeClass('active');
+	                     $(this).addClass('active');
+	                     selectBox.children('._selectedValue').text($(this).children('.year').text())
+	                 }
+	             });
+
+	             if (offset > lastScroll){
+	                 // console.log('down')
+	                 if (offset > listPos) {
+	                     selectBox.show().css({'position': 'fixed','top': '0'});
+
+
+	                 }
+	                 else {
+	                     selectBox.hide();
+	                 }
+	             }
+	             else {
+	                 // console.log('up')
+	                 if (offset > listPos) {
+	                     selectBox.show().css({'position': 'fixed','top': '70px'});
+	                 }
+	                 else {
+	                     selectBox.hide();
+	                 }
+	             }
+	             lastScroll = offset;
+	         });
+	     }
 
 	    /**
 	     * 함수 실행

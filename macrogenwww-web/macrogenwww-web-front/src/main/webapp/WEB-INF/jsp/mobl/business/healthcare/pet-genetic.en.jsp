@@ -158,7 +158,7 @@
                         fnMousewheel();
 
                     </script>
-                    <p class="font-h4 main-title">마이펫진 검사</p>
+                    <p class="font-h4 main-title">myPETGENE</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img_workflow_level6_row.png" alt="마이펫진검사워크플로우">
