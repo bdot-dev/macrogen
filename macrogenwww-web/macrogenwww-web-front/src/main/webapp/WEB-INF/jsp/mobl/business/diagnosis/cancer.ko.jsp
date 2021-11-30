@@ -136,7 +136,7 @@
                 <!--암 발생 위험 예측-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">암 발생 위험 예측</p>
-                    <p class="subject font-body-h">암은 다양한 원인에 의해 발생하지만, 일부 암은 타고난 특정 유전자의 변이 때문에 발생합니다. </p>
+                    <p class="subject font-body-h-b">암은 다양한 원인에 의해 발생하지만, 일부 암은 타고난 특정 유전자의 변이 때문에 발생합니다. </p>
                     <p class="desc font-body img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10&#37;가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
                     <div class="border-gray-box">
                         <div class="img">
@@ -342,7 +342,7 @@
                 <!--암 발생 원인 분석-->
                 <div class="info-box">
                     <p class="font-h4 main-title">암 발생 원인 분석</p>
-                    <p class="subject font-body-h">암 환자의 종양 샘플에서 추출한 DNA를 이용해 암 발생에 관여하는 주요 유전자의 변이를 분석함으로써
+                    <p class="subject font-body-h-b">암 환자의 종양 샘플에서 추출한 DNA를 이용해 암 발생에 관여하는 주요 유전자의 변이를 분석함으로써
                         암 발생 원인을 추적하고 개인별 맞춤 치료에 중요한 정보를 제공하는 서비스입니다.</p>
                     <p class="desc img_bottom font-body">지금까지는 종양 샘플의 조직 및 세포의 변화를 육안으로 판별하여 암을 치료해 왔으나, 최근에는암 조직의 유전체 분석을 통해 얻어진 유전 정보를 치료에 활용하고 있습니다.
                         이러한 유전정보의 활용으로 암 발생 원인을 밝혀내고, 적절한 치료 방법 및 약물을 처방하여 효과적인 맞춤형 치료에 도움을 주고 있습니다.</p>
@@ -378,7 +378,7 @@
                 <!--암 발생 모니터링-->
                 <div class="info-box">
                     <p class="font-h4 main-title">암 발생 모니터링</p>
-                    <p class="subject font-body-h"> 체내에 암이 발생한 경우 암세포로부터 떨어져 나온 DNA 조각이 혈액 내에도 존재합니다.</p>
+                    <p class="subject font-body-h-b"> 체내에 암이 발생한 경우 암세포로부터 떨어져 나온 DNA 조각이 혈액 내에도 존재합니다.</p>
                     <p class="desc img_bottom font-body">이를 혈중 종양 DNA(ctDNA; circulating tumor DNA)라 부르며, 혈액 채취만으로 검사를 진행할 수 있어 정기검진으로 조기암 발견이 가능합니다.
                         개인별 ctDNA의 양 차이와 민감한 ctDNA 추출 및 검사과정은 전문적인 기술을 필요로 하기 때문에, 지속적인 기술 향상을 통해 적용 범위를확대해 나갈 예정입니다.</p>
                     <div class="border-gray-box">

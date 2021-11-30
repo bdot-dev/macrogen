@@ -269,7 +269,7 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target8">Knock-out (KO)</p>
+                    <p class="font-h5 sub-title" id="target8">Transgenic (TG) Mouse</p>
                     <p class="desc font-body list_bottom">This is a mouse production service in which a specific gene is overexpressed. A transgenic mouse is one in which a gene of interest is inserted into the mouse’s genome so that the gene is over-expressed. Clients can choose conventional, inducible, and conditional expression vectors freely, depending on their needs.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -507,6 +507,9 @@
     </script>
     <!--content-anchor script e-->
 
+    <div class="toast-popup">
+        <p>You can enlarge it by clicking on the image.</p>
+    </div>
     <!--modalImageViewer1 s-->
     <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
         <div class="modal-dialog">

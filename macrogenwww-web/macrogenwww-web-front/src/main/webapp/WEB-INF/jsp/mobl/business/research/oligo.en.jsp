@@ -146,7 +146,7 @@
                 <!--Standard Oligo-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Standard Oligo</p>
-                    <p class="subject font-body-h">Standard oligo service is provided by synthesizing oligo used in various tests into the sequence as demanded by the client.</p>
+                    <p class="subject font-body-h-b">Standard oligo service is provided by synthesizing oligo used in various tests into the sequence as demanded by the client.</p>
                     <p class="desc font-body img_bottom">Macrogen's oligo synthesis service uses an unmatched automation system that is developed independently to quickly provide the entire process from synthesis to purification and dispensing, while supporting LIMS, an online ordering system that can monitor the entire process from order to delivery. The quality of all oligos is controlled through MALDI-TOF mass spectrometry.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
@@ -185,7 +185,7 @@
                 <!--Modified Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Modified Oligo</p>
-                    <p class="subject font-body-h">This is an oligo service that is provided in the form of a special material bonded to the 3' and 5', internal, or both ends of the standard oligo.</p>
+                    <p class="subject font-body-h-b">This is an oligo service that is provided in the form of a special material bonded to the 3' and 5', internal, or both ends of the standard oligo.</p>
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-oligo-modified.png" alt="Modified Oligo">
                     </div>
@@ -211,7 +211,7 @@
                 <!--Premade Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Premade Oligo</p>
-                    <p class="subject font-body-h">Premade oligo is produced by the PAGE purification of Universal Oligo and delivered immediately upon order.</p>
+                    <p class="subject font-body-h-b">Premade oligo is produced by the PAGE purification of Universal Oligo and delivered immediately upon order.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-oligo-premade.png" alt="Premade Oligo">
@@ -251,7 +251,7 @@
                 <!--Plate Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Plate Oligo</p>
-                    <p class="subject font-body-h">We provide oligos in the form of 96-well plates.</p>
+                    <p class="subject font-body-h-b">We provide oligos in the form of 96-well plates.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-oligo-plate.png" alt="Plate Oligo">
@@ -290,7 +290,7 @@
                 <!--Duplex Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Duplex Oligo</p>
-                    <p class="subject font-body-h">Duplex Oligo (Annealing service) is a service that provides two=complementary single strand DNA in the form of a double strand DNA.</p>
+                    <p class="subject font-body-h-b">Duplex Oligo (Annealing service) is a service that provides two=complementary single strand DNA in the form of a double strand DNA.</p>
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-oligo-duplex.png" alt="Duplex Oligo">
                     </div>
@@ -326,7 +326,7 @@
                 <!--RAPD Kits-->
                 <div class="info-box">
                     <p class="font-h4 main-title">RAPD Kits</p>
-                    <p class="subject font-body-h">RAPD Kits is a service that provides 20 individual 10 mer oligos for various types of research efforts and studies such as genetic mapping
+                    <p class="subject font-body-h-b">RAPD Kits is a service that provides 20 individual 10 mer oligos for various types of research efforts and studies such as genetic mapping
                         and DNA fingerprinting.
                     </p>
                     <!--10.05 이미지 경로 변경-->
