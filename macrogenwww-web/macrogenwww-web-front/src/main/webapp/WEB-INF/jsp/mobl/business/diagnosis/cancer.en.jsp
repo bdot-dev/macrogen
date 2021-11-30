@@ -134,7 +134,7 @@
                 <!--암 발생 위험 예측-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Cancer risk prediction</p>
-                    <p class="subject font-body-h">Cancers occur due to various causes, but some cancers are caused by genetic mutations of specific inherited genes.</p>
+                    <p class="subject font-body-h-b">Cancers occur due to various causes, but some cancers are caused by genetic mutations of specific inherited genes.</p>
                     <p class="desc font-body img_bottom">People who have such cancer-related mutations are exposed to far more risk of cancer than others. Hereditary cancers are caused by gene abnormalities inherited from parents, and the incidence of cancer in the same family is high. Thus, early detection and identification of the exact cause through gene diagnosis is required. The most commonly known hereditary cancers are breast cancer, ovarian cancer, and colon cancer. In regard to incidence of breast cancer, 5% - 10% is known to be genetically caused, and about more than half are caused by abnormalities in genes called BRCA1 and BRCA2. In addition, having genes that cause various cancers will dramatically increase the incidence of cancer.</p>
                     <div class="border-gray-box">
                         <div class="img">
@@ -326,7 +326,7 @@
                 <!--암 발생 원인 분석-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Analysis of causes of cancer</p>
-                    <p class="subject font-body-h">This service tracks the cause of cancer and provides key information for personalized treatment by analyzing mutations in the genes
+                    <p class="subject font-body-h-b">This service tracks the cause of cancer and provides key information for personalized treatment by analyzing mutations in the genes
                         involved in cancer development using DNA extracted from cancer patients' tumor samples.</p>
                     <p class="desc img_bottom font-body">Until now, cancers were classified in a histopathological manner, but recently, gene analysis is performed on cancer tissue, and cancers are subdivided into groups.
                         This contributes to improved response (about 75% of patients exhibit different effects when the same anticancer drug is prescribed) and provides personalized treatment for cancer patients while minimizing adverse effects.</p>
@@ -362,7 +362,7 @@
                 <!--암 발생 모니터링-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Cancer Occurrence Monitoring</p>
-                    <p class="subject font-body-h">When cancer occurs in the body, there are NDA fragments detached from cancer cells in the blood.</p>
+                    <p class="subject font-body-h-b">When cancer occurs in the body, there are NDA fragments detached from cancer cells in the blood.</p>
                     <p class="desc img_bottom font-body">This is called ctDNA (circulating tumor DNA). When ctDNA is checked regularly, cancer cells can be detected early and prompt measures can be taken.
                         Unlike existing biopsies, this test can be performed by simply collecting blood, which makes regular checkups more efficient. However, theistest is not widely given because the levels of ctDNA are different by type of cancer and individual, making detection very difficult. Macrogen is expanding this service by continuously making technical improvements.</p>
                     <div class="border-gray-box">

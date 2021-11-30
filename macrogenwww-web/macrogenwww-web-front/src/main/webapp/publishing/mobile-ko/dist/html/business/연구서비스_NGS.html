@@ -105,7 +105,76 @@
                         <li class="option-value"><a href="#">Metagenome Sequencing</a></li>
                     </ul>
                 </div>
+                <script>
+                    /*변수*/
+                    var selectBox = $(".select-box");
+                    var option = $(".option-value");
 
+
+                    /*드롭다운 클릭시 이벤트*/
+                    selectBox.on('click', function () {
+                        var select = $(this);
+                        if (select.hasClass('open')) {
+                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+                        } else {
+                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+                            $('body').on('click', function (e) {
+                                if (selectBox.hasClass('open')) {
+                                    if (!selectBox.has(e.target).length) {
+                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                                    }
+                                }
+
+                            })
+                        }
+                    });
+
+                    /*클릭시 텍스트 변경*/
+                    function textChange() {
+                        option.on('click', function () {
+                            var select = $(this).find('a').text();
+                            $('._selected-value').find('span').text(select);
+                        });
+                    }
+
+                    textChange();
+
+                    /*클릭시 탭메뉴 변경*/
+                    option.on('click', function () {
+                        var idx = $(this).index();
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+                        textChange();
+                    })
+
+                    /*이전 다음 이동*/
+                    function setTabContent(idx) {
+                        $('._selected-value').text($('._select-option li').eq(idx).text());
+                        <!--탭메뉴 클릭시 페이지 변경-->
+                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+                        /*페이지 변경후 상단 이동*/
+                        fnMove();
+
+                        /*클릭시 텍스트 변경*/
+
+                    }
+
+                    /*탭메뉴 상단으로 이동*/
+                    function fnMove() {
+                        var offset = $("._content-anchor").offset();
+                        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+                    }
+
+                    /*외부클릭시 셀렉트박스 초기화*/
+                    $("body").click(function (e) {
+                        if (!selectBox.has(e.target).length) {
+                            selectBox.removeClass("open").children('.select-option').slideUp(200);
+                        }
+                    });
+
+                </script>
             </div>
             <!--ngs 탭 네비 e-->
 
@@ -184,89 +253,7 @@
                         </div>
                     </div>
                     <!--content-anchor script s-->
-
-
-
                     <script>
-                        /*변수*/
-                        var selectBox = $(".select-box");
-                        var option = $(".option-value");
-
-                        function onClickSelectBox (){
-                            console.log('onClickSelectBox');
-                            /*드롭다운 클릭시 이벤트*/
-                            selectBox.on('click', function () {
-                                var select = $(this);
-                                if (select.hasClass('open')) {
-                                    select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                                } else {
-                                    select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-
-                                }
-                            });
-                        }
-
-                        function onClickSelectOption (){
-                            console.log('onClickSelectOption');
-                            /*클릭시 탭메뉴 변경*/
-                            option.on('click', function () {
-                                console.log($(this));
-                                var idx = $(this).index();
-                                $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                                $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                                textChange($(this));
-                                writeText($(this));
-                            })
-                        }
-
-                        function onClickBody (){
-                            $('body').on('click', function (e) {
-                                if (selectBox.hasClass('open')) {
-                                    if (!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-                                if (!selectBox.has(e.target).length) {
-                                    selectBox.removeClass("open").children('.select-option').slideUp(200);
-                                }
-                            })
-                        }
-
-                        /*클릭시 텍스트 변경*/
-                        function textChange(target) {
-                            var select = target.find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        }
-
-                        /*이전 다음 이동*/
-                        function setTabContent(idx) {
-                            $('._selected-value').text($('._select-option li').eq(idx).text());
-                            <!--탭메뉴 클릭시 페이지 변경-->
-                            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-                            /*페이지 변경후 상단 이동*/
-                            fnMove();
-                            /*클릭시 텍스트 변경*/
-                        }
-
-                        /*탭메뉴 상단으로 이동*/
-                        function fnMove() {
-                            var offset = $("._content-anchor").offset();
-                            $('html, body').animate({scrollTop: offset.top - 95}, 100);
-                        }
-
-
-                        function init (){
-                            onClickSelectBox();
-                            onClickSelectOption();
-                            onClickBody();
-                        }
-
-                        init()
-
-
-
                         /*변수*/
                         var contentAnchor = $(".content-anchor");
                         var anchorOption= $(".anchor-value");
@@ -276,8 +263,8 @@
                         /*특정위치 show & hide*/
                         function fnMousewheel(){
                             var lastScroll = 0;
-                            var listPos = $('.info-box').offset().top;
                             $(window).on('scroll',function(e){
+                                let listPos = $('.info-box').offset().top;
                                 let offset = $(this).scrollTop();
 
                                 if (offset > lastScroll){
@@ -306,26 +293,21 @@
                         /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
                         $(window).scroll(function(){
                             var position = $(window).scrollTop();
+
+
                             if(position > $('.info-box._genome > .anchor-section').eq(0).offset().top && position < $('.anchor-section').eq(1).offset().top){
                                 $('.anchor-section').eq(0).find('.sub-title').text();
                                 $('._anchor-value').find('span').text($('.anchor-section').eq(0).find('.sub-title').text());
-                            } else if (position > $('.anchor-section').eq(1).offset().top) {
+                            }
+
+                            else if (position > $('.anchor-section').eq(1).offset().top) {
                                 $('._anchor-value').find('span').text($('.anchor-section').eq(1).find('.sub-title').text());
                             }
+
+                            else {
+
+                            }
                         });
-
-
-                        /**
-                         * Anchor 글씨 쓰기
-                         * @param text
-                         */
-                        function writeText(text) {
-                            $('._anchor-value .text').text(text)
-                        }
-
-                        //.info-box 안에 anchor-section이  있으면 탭 메뉴명이 나와야 한다.
-                        //.anchor-section 이 있으면 스크롤시 텍스트가 변경 되어야 한다.
-
 
 
 
@@ -502,7 +484,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-
+                    
                     <div class="anchor-section">
                         <p class="font-h5 sub-title" id="target2">Small RNA Sequencing</p>
                         <p class="desc font-body data_bottom">
@@ -542,7 +524,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-
+                    
                     <div class="anchor-section"><p class="font-h5 sub-title" id="target3">Isoform Sequencing</p>
                         <p class="desc font-body">
                             엑손(Exon)과 인트론(Intron) 으로 구성된 유전자는 발현되는 엑손 영역의 조합에 의해 새로운 transcript가 계속 발견되고 있습니다. Long read
@@ -557,7 +539,7 @@
                             있습니다. 이러한 특징을 이용하여 진단을 위한
                             바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 증 적용 분야를 넓혀가고 있습니다.
                         </p></div>
-
+                    
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
@@ -865,7 +847,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value);">
+                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
                     <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
                     <option value="/ko/policy/privacy">개인정보 처리방침</option>
                     <option value="/ko/policy/inside">내부정보관리규정</option>
@@ -873,7 +855,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value);">
+                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>

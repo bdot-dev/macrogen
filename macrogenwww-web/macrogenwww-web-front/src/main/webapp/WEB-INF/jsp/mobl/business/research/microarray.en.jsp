@@ -192,14 +192,14 @@
                                         <td class="text-start">- SurePrint G3 Gene Expression<br>
                                             - SurePrint G3 Exon<br>
                                             - Customization<br>
-                                            - 기타
+                                            - etc
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>Affymetrix</td>
                                         <td class="text-start">- Gene ST (Whole Transcript)<br>
                                             - GenomeArray (3'IVT)<br>
-                                            - 기타
+                                            - etc
                                         </td>
                                     </tr>
                                     <tr>
@@ -507,8 +507,8 @@
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th>분석항목</th>
-                                        <th>내용</th>
+                                        <th>Areas of Analysis</th>
+                                        <th>Description</th>
                                     </tr>
                                     </thead>
                                     <tbody>

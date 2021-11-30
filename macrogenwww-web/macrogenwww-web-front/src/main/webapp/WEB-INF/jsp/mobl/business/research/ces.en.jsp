@@ -658,7 +658,7 @@
     </div>
     <script>
         // modal show
-        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+        var modal = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
         // zoom
         var el = document.querySelector('.panzoom');
         // new PinchZoom.default(el, {});

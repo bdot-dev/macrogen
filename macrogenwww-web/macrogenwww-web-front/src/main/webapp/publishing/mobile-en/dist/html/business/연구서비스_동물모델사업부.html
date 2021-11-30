@@ -270,6 +270,7 @@
                     </div>
                     <!--content-anchor e-->
                     <hr class="divider">
+                    <!--v0.7 오탈자수정-->
                     <p class="sub-title font-h5" id="target5">Knock-out (KO)</p>
                     <p class="desc font-body">This is a mouse production service in which a specific gene has been removed. KO (knock-out) is a technology that produces individuals with new traits by removing specific genes. This allows us to understand the function of specific genes in vivo and to identify genetic mutations that are associated with specific diseases. Macrogen has superior expertise and know-how to secure the mice that researchers need, based on extensive experience in the field.</p>
                     <hr class="divider">
@@ -294,7 +295,8 @@
                         </ul>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target8">Knock-out (KO)</p>
+                    <!--v0.7 오탈자수정-->
+                    <p class="font-h5 sub-title" id="target8">Transgenic (TG) Mouse</p>
                     <p class="desc font-body list_bottom">This is a mouse production service in which a specific gene is overexpressed. A transgenic mouse is one in which a gene of interest is inserted into the mouse’s genome so that the gene is over-expressed. Clients can choose conventional, inducible, and conditional expression vectors freely, depending on their needs.</p>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -467,14 +469,14 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value);">
+                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
                     <option selected value="https://dna.macrogen.com/">Order site</option>
                     <option value="/en/policy/privacy">Privacy Statement</option>
                     <option value="/en/policy/image/">Image Information Processing Policy</option>
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value);">
+                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
@@ -590,6 +592,11 @@
     </script>
     <!--content-anchor script e-->
 
+
+    <!--v0.7 tost-popup 추가-->
+    <div class="toast-popup">
+        <p>You can enlarge it by clicking on the image.</p>
+    </div>
     <!--modalImageViewer1 s-->
     <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
         <div class="modal-dialog">
