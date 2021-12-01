@@ -29,104 +29,36 @@
     </div>
 </header>
 
-        <div class="frame">
-            <div class="font-h1">마크로젠 개인정보 처리방침</div>
-        </div>
+<!--        <div class="frame">-->
+<!--            <div class="font-h1">마크로젠 개인정보 처리방침</div>-->
+<!--        </div>-->
     </div>
 
     <div class="container pt-0">
         <div class="section_agreement">
-            <div class="select-box">
-                <div class="selected-value _selected-value">
-                    <span class="text font-body-h-b">2020. 03. 31 - 현재</span>
+            <p class="main-title font-h1">마크로젠 개인정보 처리방침</p>
+            <div class="dropdown_area">
+                <div class="select-box">
+                    <div class="select_default _select_default">
+                        <span class="text">2020. 03. 31 ~ 현재</span>
+                    </div>
+                    <ul class="select_list _select_list">
+                        <li><span>2020. 03. 31 ~ 현재</span></li>
+                        <li><span>2019. 10. 21 - 2020. 03 .31</span></li>
+                        <li><span>2018. 10. 26 - 2019. 10 .20</span></li>
+                        <li><span>2017. 03. 31 - 2018. 10 .25</span></li>
+                        <li><span>2012. 12. 03 - 2017. 03 .31</span></li>
+                    </ul>
                 </div>
-                <ul class="select-option _select-option">
-                    <li class="option-value"><a href="#">2020. 03. 31 - 현재</a></li>
-                    <li class="option-value"><a href="#">2019. 10. 21 ~ 2020. 03 .31 </a></li>
-                    <li class="option-value"><a href="#">2018. 10. 26 ~ 2019. 10 .20 </a></li>
-                    <li class="option-value"><a href="#">2017. 03. 31 ~ 2018. 10 .25 </a></li>
-                    <li class="option-value"><a href="#">2012. 12. 03 ~ 2017. 03 .31 </a></li>
-                </ul>
             </div>
-            <script>
-                /*변수*/
-                var selectBox = $(".select-box");
-                var option = $(".option-value");
-
-
-                /*드롭다운 클릭시 이벤트*/
-                selectBox.on('click', function () {
-                    var select = $(this);
-                    if (select.hasClass('open')) {
-                        select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                    } else {
-                        select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                        $('body').on('click', function (e) {
-                            if (selectBox.hasClass('open')) {
-                                if (!selectBox.has(e.target).length) {
-                                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                }
-                            }
-                            e.preventDefault()
-                        })
-                    }
-                });
-
-                /*클릭시 텍스트 변경*/
-                function textChange() {
-                    option.on('click', function () {
-                        var select = $(this).find('a').text();
-                        $('._selected-value').find('span').text(select);
-                    });
-                }
-
-                textChange();
-
-                /*클릭시 탭메뉴 변경*/
-                option.on('click', function () {
-                    var idx = $(this).index();
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                    textChange();
-                })
-
-                /*이전 다음 이동*/
-                function setTabContent(idx) {
-                    $('._selected-value').text($('._select-option li').eq(idx).text());
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-                    /*페이지 변경후 상단 이동*/
-                    fnMove();
-
-                    /*클릭시 텍스트 변경*/
-                    console.log(idx);
-
-                }
-
-                /*탭메뉴 상단으로 이동*/
-                function fnMove() {
-                    var offset = $("._content-anchor").offset();
-                    $('html, body').animate({scrollTop: offset.top - 95}, 100);
-                }
-
-                /*외부클릭시 셀렉트박스 초기화*/
-                $("body").click(function (e) {
-                    if (!selectBox.has(e.target).length) {
-                        selectBox.removeClass("open").children('.select-option').slideUp(200);
-                    }
-                });
-
-            </script>
             <div class="content_area">
-                <p class="font-body">마크로젠 홈페이지가 취급하는 모든 개인정보는 "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 및 "개인정보 보호법"에 근거하거나 정보주체의 동의에 의하여 수집·보유 및 처리되고 있습니다.<br>
+                <p>마크로젠 홈페이지가 취급하는 모든 개인정보는 "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 및 "개인정보 보호법"에 근거하거나 정보주체의 동의에 의하여 수집·보유 및 처리되고 있습니다.<br>
                     또한, 정보주체의 개인정보 보호 및 권익을 보장하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같은 처리방침을 두고 있습니다.<br>
                     마크로젠의 서비스별 개인정보 처리에 관한 사항은 각 서비스 홈페이지에 게재하여 정보주체가 확인할 수 있도록 안내하고 있습니다.
                 </p>
                 <ol class="terms">
                     <li>
-                        <p class="title font-body-h-b">1. 개인정보의 수집&#183;이용 목적, 수집하는 개인정보의 항목 및 수집방법</p>
+                        <p class="title font-h8">1. 개인정보의 수집&#183;이용 목적, 수집하는 개인정보의 항목 및 수집방법</p>
                         <ul>
                             <li data-bullet="가.">마크로젠 홈페이지는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용하지 않으며, 이용 목적이 변경되는 경우에는 정보주체의 동의를 받아 처리하겠습니다.
                                 <ol>
@@ -162,11 +94,12 @@
                                 </div>
 
                             </li>
+
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">2. 개인정보의 제3자 제공</p>
-                        <p class="desc font-body">마크로젠 홈페이지는 정보주체의 개인정보를 “1. 개인정보의 수집&#183;이용 목적, 수집하는 개인정보의 항목 및 수집방법”에서 명시한 범위 내에서만 처리하며,
+                        <p class="title font-h8">2. 개인정보의 제3자 제공</p>
+                        <p class="desc">마크로젠 홈페이지는 정보주체의 개인정보를 “1. 개인정보의 수집&#183;이용 목적, 수집하는 개인정보의 항목 및 수집방법”에서 명시한 범위 내에서만 처리하며,
                             다음의 경우를 제외하고는 정보주체의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.
                         </p>
                         <ul class="ko">
@@ -183,7 +116,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">3. 개인정보의 처리 및 보유기간</p>
+                        <p class="title font-h8">3. 개인정보의 처리 및 보유기간</p>
                         <ul>
                             <li data-bullet="가.">마크로젠 홈페이지는 법령에 근거하거나 정보주체로부터 동의 받은 범위 내에서 개인정보를 처리&#183;보유합니다.</li>
                             <li data-bullet="나.">각각의 개인정보 처리 및 보유기간은 다음과 같습니다.
@@ -223,7 +156,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">4. 개인정보의 파기</p>
+                        <p class="title font-h8">4. 개인정보의 파기</p>
                         <ul>
                             <li data-bullet="가.">
                                 마크로젠 홈페이지는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다. 다만, 다른 법률에
@@ -241,8 +174,8 @@
 
                     </li>
                     <li>
-                        <p class="title font-body-h-b">5. 이용자 및 법정대리인의 권리와 행사방법</p>
-                        <ul class="font-body">
+                        <p class="title font-h8">5. 이용자 및 법정대리인의 권리와 행사방법</p>
+                        <ul>
                             <li data-bullet="가.">
                                 정보주체는 마크로젠 홈페이지에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
                                 <ol>
@@ -262,30 +195,23 @@
                             <li data-bullet="바.">개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</li>
                             <li data-bullet="사.">정보주체 권리에 따른 열람의 요구, 정정&#183;삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.
                                 <div class="download">
-                                    <a class="btn btn-light" href="#">
+                                    <a class="btn" href="#">
                                         <span>개인정보처리 위임장</span><i class="icon icon-download"></i></a>
                                 </div>
                             </li>
 
                             <li data-bullet="아.">열람 등의 요구에 대한 거절 조치에 대하여 불복이 있는 경우 정보주체는 아래기관에 이의를 제기할 수 있습니다.
                                 <div class="gray-box">
-                                    <ul class="list-circle-dot font-body">
-                                        <li>
-                                            <span class="tit">개인정보분쟁조정위원회</span>
-                                            <span>(국번없이) 1833-6972</span>
+                                    <ul class="list-circle-dot">
+                                        <li><span>개인정보분쟁조정위원회</span> <span>(국번없이) 1833-6972</span>
                                             <a href="http://www.kopico.go.kr" target="_blank">http://www.kopico.go.kr</a></li>
-                                        <li>
-                                            <span class="tit">개인정보침해신고센터</span>
-                                            <span>(국번없이) 118</span>
+                                        <li><span>개인정보침해신고센터</span> <span>(국번없이) 118</span>
                                             <a href=">http://privacy.kisa.or.kr" target="_blank">http://privacy.kisa.or.kr</a></li>
-                                        <li>
-                                            <span class="tit">대검찰청 과학수사부사이버수사과</span>
-                                            <span>(국번없이) 1301</span>
+                                        <li><span>대검찰청 과학수사부사이버수사과</span> <span>(국번없이) 1301</span>
                                             <a href="http://spo.go.kr(cid@spo.go.kr)" target="_blank">http://spo.go.kr(cid@spo.go.kr)</a>
                                         </li>
-                                        <li>
-                                            <span class="tit">경찰청 사이버안전국</span> <span>(국번없이) 182</span>
-                                            <a href="https://www.police.go.kr/www/security/cyber.jsp" target="_blank">https://www.police.go.kr/www/security<br>/cyber.jsp</a>
+                                        <li><span>경찰청 사이버안전국</span> <span>(국번없이) 182</span>
+                                            <a href="https://www.police.go.kr/www/security/cyber.jsp" target="_blank">https://www.police.go.kr/www/security/cyber.jsp</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -293,7 +219,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">6. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</p>
+                        <p class="title font-h8">6. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</p>
                         <ul>
                             <li data-bullet="가.">이용자는 마크로젠 홈페이지를 이용하는 과정에서 “수집되는 자동 생성정보의 항목(쿠키, IP 등)”를 통해 개인정보가 수집될 수 있습니다. 쿠키란 웹사이트에 접속할 때 자동으로 만들어지는 임시 파일로, 이용자의 컴퓨터 하드디스크에 저장됩니다.</li>
                             <li data-bullet="나.">마크로젠 홈페이지는 아래와 같은 목적으로 쿠키를 사용하며, 이용자는 쿠키 저장에 대한 선택권을 가지며, 웹 브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나 쿠키 저장을 거부할 수 있습니다.
@@ -310,7 +236,7 @@
 
                     </li>
                     <li>
-                        <p class="title font-body-h-b">7. 개인정보 보호책임자</p>
+                        <p class="title font-h8">7. 개인정보 보호책임자</p>
                         <ul>
                             <li data-bullet="가."> 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. 정보주체의 문의에 대해 지체없이 답변 및 처리해드릴 것입니다.
                                 <div class="table-scroll">
@@ -350,10 +276,10 @@
                             </li>
 
                         </ul>
-                        <p class="caption font-body">※ 처리방법 : 개인영상정보의 목적 외 이용, 제3자 제공, 파기, 열람 등 요구에 관한 사항을 기록․관리하고, 보관기간 만료 시 복원이 불가능한 방법으로 영구 삭제(출력물의 경우 파쇄 또는 소각)합니다.</p>
+                        <p class="caption_bottom">※ 처리방법 : 개인영상정보의 목적 외 이용, 제3자 제공, 파기, 열람 등 요구에 관한 사항을 기록․관리하고, 보관기간 만료 시 복원이 불가능한 방법으로 영구 삭제(출력물의 경우 파쇄 또는 소각)합니다.</p>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">8. 개인정보 열람 청구</p>
+                        <p class="title font-h8">8. 개인정보 열람 청구</p>
                         <ul>
                             <li data-bullet="가.">
                                 정보주체는 개인정보보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다.<br>
@@ -391,7 +317,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">9. 개인정보의 안전성 확보조치</p>
+                        <p class="title font-h8">9. 개인정보의 안전성 확보조치</p>
                         <ul>
                             <li data-bullet="가.">개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
                                 <ol>
@@ -410,7 +336,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="title font-body-h-b">10. 개인정보 처리방침 변경</p>
+                        <p class="title font-h8">10. 개인정보 처리방침 변경</p>
                         <ul>
                             <li data-bullet="가.">이 개인정보 처리방침은 2020. 03. 31(화)부터 적용됩니다.</li>
                         </ul>
