@@ -103,8 +103,8 @@
             </div>
             <div class="gnb-footer">
                 <a href="/ko/main" class="btn-lang on">K0R</a>
-                <a href="/en/main" class="btn-lang">ENG</a>
-                <%-- <a href="https://glo.macrogen.com/en/main/index.php" target="_blank" class="btn-lang">ENG</a> --%>
+                <!-- <a href="/en/main" class="btn-lang">ENG</a> -->
+                <a href="https://glo.macrogen.com/en/main/index.php" target="_blank" class="btn-lang">ENG</a>
             </div>
             </div>
         </div>

@@ -142,74 +142,217 @@
     </div>
     <!--footer 수정사항 있을시 메인 footer 별도 확인-->
 
-	<script>
-	    $('#tab a').on('click', function (event) {
-	        event.preventDefault()
-	        $(this).tab('show')
-	    })
+<script>
 
-	    function fnMove(seq){
-	        var id = $('#'+ seq);
-	        var offset = id.offset();
-	        $('html, body').animate({scrollTop : offset.top - 95}, 400);
-	    }
+    /**
+     * swiper
+     */
+    new Swiper('.snbSwiper', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: "._slideRight",
+            prevEl: "._slideLeft",
+        }
+    });
 
-	    // 연혁 인터랙션
-	    $(document).ready(function () {
-	        var section = $('._historySection');
-	        var sectionLength = section.length;
+    var $snbSwiperItem = $('.snbSwiper .swiper-wrapper .swiper-slide a');
+    $snbSwiperItem.click(function () {
+        var target = $(this).parent();
+        $snbSwiperItem.parent().removeClass('on')
+        target.addClass('on');
+        muCenter(target);
+    })
 
-	        section.find('.desc-info').each(function (idx) {
-	            var sectionHeight = section.eq(idx).find('.desc-info').height();
-	            section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
-	        })
+    function muCenter(target) {
+        var snbwrap = $('.snbSwiper .swiper-wrapper');
+        var targetPos = target.position();
+        var box = $('.snbSwiper');
+        var boxHarf = box.width() / 2;
+        var pos;
+        var listWidth = 0;
 
-	         $(window).on('resize scroll', function () {
-	            var currentPosition = $(window).scrollTop();
+        snbwrap.find('.swiper-slide').each(function () {
+            listWidth += $(this).outerWidth();
+        })
 
-	            for (var i = 0; i < sectionLength; i++) {
-	                setHistoryScroll(section.eq(i));
-	            }
+        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+        if (selectTargetPos <= boxHarf) { // left
+            pos = 0;
+        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+            pos = listWidth - box.width();
+        } else {
+            pos = selectTargetPos - boxHarf;
+        }
 
-	            if($(window).scrollTop() == $(document).height() - $(window).height()) {
-	                $('.section .year-info').find('li').removeClass('active')
-	                $('.section:last-child .year-info').find('li:last-child').addClass('active')
-	            }
-	            else {
-	                $('.section:last-child .year-info').find('li:last-child').removeClass('active')
-	            }
-	         })
+        setTimeout(function () {
+            snbwrap.css({
+                "transform": "translate3d(" + (pos * -1) + "px, 0, 0)",
+                "transition-duration": "500ms"
+            })
+        }, 200);
+    }
 
-	        function setHistoryScroll($information) {
-	            var gap = 0;/*50*/
-	            var gapYear = 79;
-	            var currentPosition = $(window).scrollTop() +95; /*+95 X*/
-	            var sectionOffset = $information.find('.desc-info ul').eq(0).offset().top;
-	            var scrollStart = currentPosition - sectionOffset + 123;
-	            var size = $information.find('.year-info li').length;
+    var slide = $('._swiperTab').find('.swiper-slide')
 
-	            $information.find('.year-info li').each(function (index) {
-	                if (currentPosition < $information.find('.desc-info ul').eq(0).offset().top - gap) {
-	                    //섹션 이전 화면에서는 absolute상태
-	                    $information.find('.year-info').css({'top' : 'auto'}, {'position' : 'absolute'});
-	                } else {
-	                    //섹션 안으로 들어오면 fixed 상태
-	                    if (size !== index + 1) {
-	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top - gap && currentPosition < $information.find('.desc-info ul').eq(index + 1).offset().top - gap) {
-	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
-	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
-	                        }
-	                    } else {
-	                        if (currentPosition > $information.find('.desc-info ul').eq(index).offset().top) {
-	                            $information.find('.year-info').css({'top': scrollStart + gap - (gapYear * index)}, {'position': 'fixed'});
-	                            $information.find('.year-info li').eq(index).addClass('active').siblings().removeClass('active');
-	                        }
-	                    }
-	                }
-	            })
-	        }
-	    })
-	</script>
+    $(".section-wrap .swiper-container").each(function(index){
+        var $this = $(this);
+        $this.addClass('slider-' + index);
+
+        new Swiper('.slider-' + index, {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: $('.slider-' + index).siblings().find('.next'),
+                prevEl: $('.slider-' + index).siblings().find('.prev'),
+            },
+            pagination: {
+                el : $('.slider-' + index).siblings().find('.swiper-pagination'),
+                clickable : true
+            }
+        });
+    });
+
+    /**
+     * tab
+     */
+    function setTabContent (idx){
+        var slide =  $('._swiperTab').find('.swiper-slide');
+        var section =  $(".section-wrap").find('.section');
+
+        slide.eq(idx).addClass('active').siblings().removeClass('active');
+        section.addClass('show').siblings().removeClass('show');
+        section.eq(idx).addClass('show').siblings().removeClass('show');
+    }
+
+    slide.on('click', function(){
+        var idx = $(this).index();
+        setTabContent(idx)
+    });
+
+    /**
+     * fnSelectBox
+     * @param selectBox
+     */
+    function fnSelectBox (selectBox){
+        selectBox.on('click', function () {
+            let select = $(this);
+            if (select.hasClass('open')) {
+                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+            } else {
+                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            }
+        });
+    }
+
+    /**
+     * fnOptionBox
+     * @param section
+     * @param option
+     * @param selectBox
+     */
+    function fnOptionBox (section, option ,selectBox){
+        option.on('click', function () {
+            let select = $(this).find('a').text();
+            let thisOption = $(this);
+            let thisIndex = thisOption.index();
+            selectBox.find('._selectedValue').find('span').text(select);
+            section.find('.history-list').eq(thisIndex).addClass('active').siblings().removeClass('active');
+            fnListMove(section, thisIndex);
+        });
+    }
+
+    /**
+     * fnListMove
+     * @param section
+     * @param index
+     */
+    function fnListMove(section, index){
+        let listOffset = section.find('.history-list').eq(index).offset();
+        $('html, body').animate({scrollTop : listOffset.top - 60}, 100);
+    }
+
+    /**
+     * selectInit
+     * @param section
+     */
+    function selectInit (section) {
+        $('._section').each(function (){
+            let target = $(this);
+            let selectBox = target.find(".select-box");
+            let option = target.find(".option-value");
+            fnSelectBox(selectBox);
+            fnOptionBox(target, option, selectBox);
+        })
+    }
+
+    /**
+     * fnBodyEvent
+     */
+    function fnBodyEvent(){
+        $('body').on('click', function (e) {
+            var $select = $(".select-box");
+            if ($select.hasClass('open')) {
+                if (!$select.has(e.target).length) {
+                    $select.removeClass("open").next('.select-option').slideUp(200).removeClass("open");
+                }
+            }
+            e.preventDefault()
+        })
+    }
+
+    /**
+     * fnMousewheel
+     */
+    function fnMousewheel(){
+        var lastScroll = 0;
+
+        $(window).on('scroll',function(){
+            let listPos = $('._listWrap').offset().top;
+            let selectBox = $('.section.show .select-box');
+            let offset = $(this).scrollTop();
+
+            $('.section.show .history-list').each(function(idx) {
+                if(offset > $('.section.show .history-list').eq(idx).offset().top - 62) {
+                    $('.section.show .history-list').removeClass('active');
+                    $(this).addClass('active');
+                    selectBox.children('._selectedValue').text($(this).children('.year').text())
+                }
+            });
+
+            if (offset > lastScroll){
+                // console.log('down')
+                if (offset > listPos) {
+                    selectBox.show().css({'position': 'fixed','top':'0'});
+                }
+                else {
+                    selectBox.hide();
+                }
+            }
+            else {
+                // console.log('up')
+                if (offset > listPos) {
+                    selectBox.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    selectBox.hide();
+                }
+            }
+            lastScroll = offset;
+        });
+    }
+
+    /**
+     * 함수 실행
+     */
+    selectInit();
+    fnBodyEvent();
+    fnMousewheel();
+
+</script>
 
 
 </body>

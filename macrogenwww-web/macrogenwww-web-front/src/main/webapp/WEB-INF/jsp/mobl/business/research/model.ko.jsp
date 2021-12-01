@@ -601,6 +601,9 @@
     </script>
     <!--content-anchor script e-->
 
+    <div class="toast-popup">
+        <p>이미지를 확대할 수 있습니다</p>
+    </div>
     <!--modalImageViewer1 s-->
     <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
         <div class="modal-dialog">
