@@ -20,7 +20,7 @@
                 <span class="font-h7">연결재무상태표</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box">
+            <div class="financial_box table-scroll">
                 <table class="table table-rotate state_table">
                     <tbody>
                     <tr>
@@ -68,7 +68,7 @@
                 <span class="font-h7">연결포괄손익계산서</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box mb-0">
+            <div class="financial_box table-scroll mb-0">
                 <table class="table table-rotate bill_table">
                     <tbody>
                     <tr>

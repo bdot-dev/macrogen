@@ -20,7 +20,7 @@
                 <span class="font-h7">Consolidated Statement of Financial Position</span>
                 <span class="text-unit">(Unit: Thousand KRW)</span>
             </div>
-            <div class="financial_box">
+            <div class="financial_box table-scroll">
                 <table class="table table-rotate state_table">
                     <tbody>
                     <tr>
@@ -68,7 +68,7 @@
                 <span class="font-h7">Consolidated Statement of Comprehensive Income</span>
                 <span class="text-unit">(Unit: Thousand KRW)</span>
             </div>
-            <div class="financial_box mb-0">
+            <div class="financial_box table-scroll mb-0">
                 <table class="table table-rotate bill_table">
                     <tbody>
                     <tr>

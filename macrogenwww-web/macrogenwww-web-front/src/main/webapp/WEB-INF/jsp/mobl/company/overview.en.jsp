@@ -199,7 +199,7 @@
                                 <div class="category-list">
                                     <ul class="row">
                                         <li class="col col-4">
-                                            <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/ic-biology.svg" alt="개인유전체분석"></div>
+                                            <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/ic-biology3.svg" alt="개인유전체분석"></div>
                                             <div class="tit">Personal Genome Analysis</div>
                                         </li>
                                         <li class="col col-4">
