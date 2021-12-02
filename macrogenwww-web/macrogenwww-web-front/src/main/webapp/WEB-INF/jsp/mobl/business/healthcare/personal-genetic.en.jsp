@@ -58,82 +58,91 @@
                         <span class="text">Disease Prediction & Wellness Genetic Test</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">Disease Prediction & Wellness Genetic Test</a></li>
+                        <li class="option-value active"><a href="#">Disease Prediction & Wellness Genetic Test</a></li>
                         <li class="option-value"><a href="#">Health & Beauty Genetic Testing</a></li>
                         <li class="option-value"><a href="#">Drug Response Genetic Test</a></li>
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click',function() {
-                        var select = $(this);
-                        if(select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        }
-                        else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click',function (e){
-                                if(selectBox.hasClass('open')) {
-                                    if(!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange(){
-                        option.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
-                    textChange();
+                }
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click',function(){
-                        var idx =$(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+            })
+        }
+    });
 
-                    /*Prev Next 이동*/
-                    function setTabContent(idx){
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    textChange();
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove(){
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function(e){
-                        if(!selectBox.has(e.target).length){
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                </script>
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
             <!--네비게이션 e-->
 
@@ -479,50 +488,50 @@
     </script>
     <!--contentanchor e-->
 
-<!--1번이미지 모달 s-->
-<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
-            <div class="parent">
-                <div class="panzoom"><img src="/publishing/mobile-en/dist/img/business/img_data_graph1.png" alt="게시물 제목"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="toast-popup">
-    <p>You can enlarge it by clicking on the image.</p>
-</div>
-<script>
-    // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-    // zoom
-    var el = document.querySelector('.panzoom');
-    new PinchZoom.default(el, {});
+	<!--1번이미지 모달 s-->
+	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+	            <div class="parent">
+	                <div class="panzoom"><img src="/publishing/mobile-en/dist/img/business/img_data_graph1.png" alt="게시물 제목"></div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="toast-popup">
+	    <p>You can enlarge it by clicking on the image.</p>
+	</div>
+	<script>
+	    // modal show
+	    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+	    // zoom
+	    var el = document.querySelector('.panzoom');
+	    new PinchZoom.default(el, {});
 
-    // modal close
-    $('.btn-close').on('click', function () {
-        modal.hide();
-        hideToastPopup();
-    })
+	    // modal close
+	    $('.btn-close').on('click', function () {
+	        modal.hide();
+	        hideToastPopup();
+	    })
 
-    // modal open
-    $('._btnZoom-1').on('click', function () {
-        modal.show();
-        showToastPopup();
-    })
+	    // modal open
+	    $('._btnZoom-1').on('click', function () {
+	        modal.show();
+	        showToastPopup();
+	    })
 
 
 
-    // toast popup
-    function showToastPopup() {
-        $('.toast-popup').addClass('active');
-        setTimeout(hideToastPopup, 2000);
-    }
-    function hideToastPopup() {
-        $('.toast-popup').removeClass('active');
-    }
-</script>
-<!--1번이미지 모달 e-->
+	    // toast popup
+	    function showToastPopup() {
+	        $('.toast-popup').addClass('active');
+	        setTimeout(hideToastPopup, 2000);
+	    }
+	    function hideToastPopup() {
+	        $('.toast-popup').removeClass('active');
+	    }
+	</script>
+	<!--1번이미지 모달 e-->
 
 </body>
