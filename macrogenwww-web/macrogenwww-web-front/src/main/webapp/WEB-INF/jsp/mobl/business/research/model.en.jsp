@@ -61,83 +61,92 @@
                         <span class="text">CRISPR Knock-In/Out</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">CRISPR Knock-In/Out</a></li>
+                        <li class="option-value active"><a href="#">CRISPR Knock-In/Out</a></li>
                         <li class="option-value"><a href="#">Genetically Engineered Mouse</a></li>
                         <li class="option-value"><a href="#">Mass Reproduction</a></li>
                         <li class="option-value"><a href="#">Additional</a></li>
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click', function () {
-                        var select = $(this);
-                        if (select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        } else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click', function (e) {
-                                if (selectBox.hasClass('open')) {
-                                    if (!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange() {
-                        option.on('click', function () {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
+                }
 
-                    textChange();
+            })
+        }
+    });
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click', function () {
-                        var idx = $(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                    /*Prev Next 이동*/
-                    function setTabContent(idx) {
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    textChange();
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove() {
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop: offset.top - 95}, 100);
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function (e) {
-                        if (!selectBox.has(e.target).length) {
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*페이지 변경후 상단 이동*/
+        fnMove();
 
-                </script>
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
             <!--네비게이션 바 e-->
 
@@ -245,6 +254,7 @@
                     </div>
                     <!--content-anchor e-->
                     <hr class="divider">
+                    <!--v0.7 오탈자수정-->
                     <p class="sub-title font-h5" id="target5">Knock-out (KO)</p>
                     <p class="desc font-body">This is a mouse production service in which a specific gene has been removed. KO (knock-out) is a technology that produces individuals with new traits by removing specific genes. This allows us to understand the function of specific genes in vivo and to identify genetic mutations that are associated with specific diseases. Macrogen has superior expertise and know-how to secure the mice that researchers need, based on extensive experience in the field.</p>
                     <hr class="divider">
@@ -269,6 +279,7 @@
                         </ul>
                     </div>
                     <hr class="divider">
+                    <!--v0.7 오탈자수정-->
                     <p class="font-h5 sub-title" id="target8">Transgenic (TG) Mouse</p>
                     <p class="desc font-body list_bottom">This is a mouse production service in which a specific gene is overexpressed. A transgenic mouse is one in which a gene of interest is inserted into the mouse’s genome so that the gene is over-expressed. Clients can choose conventional, inducible, and conditional expression vectors freely, depending on their needs.</p>
                     <div class="list-area-group">
@@ -507,6 +518,8 @@
     </script>
     <!--content-anchor script e-->
 
+
+    <!--v0.7 tost-popup 추가-->
     <div class="toast-popup">
         <p>You can enlarge it by clicking on the image.</p>
     </div>

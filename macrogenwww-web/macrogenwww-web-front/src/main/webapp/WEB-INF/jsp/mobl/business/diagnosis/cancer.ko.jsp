@@ -34,15 +34,18 @@
         <div class="frame">
             <div class="font-h1">암 유전체 검사</div>
             <div class="font-body-h">FFPE, Tissue, Liquid Biopsy(액체생검)등을
-                이용한 암유전체 검사 </div>
-            <div class="btn-wrap"><a href="#tabAncher" class="btn-service"><span class="sr-only">service</span></a></div>
+                이용한 암유전체 검사
+            </div>
+            <div class="btn-wrap"><a href="#tabAncher" class="btn-service"><span class="sr-only">service</span></a>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="section_business">
             <div class="subject-box">
                 <p class="font-h4 title">타고난 유전자 특징을 분석하여<br>건강한 삶을 위한 당신만의 솔루션을 제공합니다</p>
-                <p class="subject font-body">개인 유전체 분석을 통해 유전적 요인으로 발생할 수 있는 암에 대한 발생 위험을 예측하고, 암 발생 원인 유전자의 변이 분석으로 개인 맞춤형 치료 정보를 제공합니다.</p>
+                <p class="subject font-body">개인 유전체 분석을 통해 유전적 요인으로 발생할 수 있는 암에 대한 발생 위험을 예측하고, 암 발생 원인 유전자의 변이 분석으로 개인
+                    맞춤형 치료 정보를 제공합니다.</p>
             </div>
 
             <!--암 유전체 검사 탭 네비 s-->
@@ -53,82 +56,91 @@
                         <span class="text">암 발생 위험 예측</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">암 발생 위험 예측</a></li>
+                        <li class="option-value active"><a href="#">암 발생 위험 예측</a></li>
                         <li class="option-value"><a href="#">암 발생 원인 분석</a></li>
                         <li class="option-value"><a href="#">암 발생 모니터링</a></li>
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click',function() {
-                        var select = $(this);
-                        if(select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        }
-                        else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click',function (e){
-                                if(selectBox.hasClass('open')) {
-                                    if(!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange(){
-                        option.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
-                    textChange();
+                }
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click',function(){
-                        var idx =$(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+            })
+        }
+    });
 
-                    /*이전 다음 이동*/
-                    function setTabContent(idx){
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    textChange();
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove(){
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function(e){
-                        if(!selectBox.has(e.target).length){
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                </script>
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
 
             <!--암 유전체 검사 탭 네비 e-->
@@ -137,7 +149,10 @@
                 <div class="info-box show">
                     <p class="font-h4 main-title">암 발생 위험 예측</p>
                     <p class="subject font-body-h-b">암은 다양한 원인에 의해 발생하지만, 일부 암은 타고난 특정 유전자의 변이 때문에 발생합니다. </p>
-                    <p class="desc font-body img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과 관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암, 대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10&#37;가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을 가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
+                    <p class="desc font-body img_bottom">유전성 암은 부모로부터 물려받은 유전자 이상에 의해 발생하며 동일 가계 내 암 환자 발생 확률이 높아집니다. 암과
+                        관련된 변이를 가진 경우 그렇지 않은 사람에 비해 암이 발생할 가능성이 매우 커지므로 유전자 진단을 통한 조기 발견과 정확한 원인 파악이 필요합니다. 유방암, 난소암,
+                        대장암은 대표적인 유전성 암입니다. 유방암 환자의 5~10&#37;가 유전적 원인에 의해 발병한다고 알려져 있으며, 이 중 절반 이상이 BRCA1, BRCA2 유전자 이상을
+                        가지고 있습니다. 이 외에도 다양한 암 발생 주요 원인 유전자를 보유하는 경우 암 발생률이 급격하게 증가하게 됩니다.</p>
                     <div class="border-gray-box">
                         <div class="img">
                             <img src="/publishing/mobile-ko/dist/img/business/img_familyline.png" alt="암 발생 위험 예측">
@@ -152,41 +167,39 @@
                             <span class="text">유전성 암 감수성 검사 (Hereditary Cancer Panel)</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">유전성 암 감수성 검사 (Hereditary Cancer Panel)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">유전성 암 감수성
+                                검사 (Hereditary Cancer Panel)</a></li>
                             <li class="anchor-value" onclick="TitleMove('BRCA1')"><a href="#">BRCA1/2 유전자 검사</a></li>
                         </ul>
                     </div>
                     <script>
                         /*변수*/
                         var contentAnchor = $(".content-anchor");
-                        var anchorOption= $(".anchor-value");
-                        var anchor = $( "._anchor" );
+                        var anchorOption = $(".anchor-value");
+                        var anchor = $("._anchor");
                         var offset = anchor.offset();
 
 
                         /*특정위치 show & hide*/
-                        function fnMousewheel(){
+                        function fnMousewheel() {
                             var lastScroll = 0;
 
-                            $(window).on('scroll',function(e){
+                            $(window).on('scroll', function (e) {
                                 let listPos = $('.info-box').offset().top;
                                 let offset = $(this).scrollTop();
 
-                                if (offset > lastScroll){
+                                if (offset > lastScroll) {
                                     // console.log('down')
                                     if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                                    }
-                                    else {
+                                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
+                                    } else {
                                         contentAnchor.hide();
                                     }
-                                }
-                                else {
+                                } else {
                                     // console.log('up')
                                     if (offset > listPos) {
-                                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                                    }
-                                    else {
+                                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
+                                    } else {
                                         contentAnchor.hide();
                                     }
                                 }
@@ -195,16 +208,15 @@
                         }
 
                         /*드롭다운 클릭시 이벤트*/
-                        contentAnchor.on('click',function() {
+                        contentAnchor.on('click', function () {
                             var select = $(this);
-                            if(select.hasClass('open')) {
+                            if (select.hasClass('open')) {
                                 select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-                            }
-                            else {
+                            } else {
                                 select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                                $('body').on('click',function (e){
-                                    if(contentAnchor.hasClass('open')) {
-                                        if(!contentAnchor.has(e.target).length) {
+                                $('body').on('click', function (e) {
+                                    if (contentAnchor.hasClass('open')) {
+                                        if (!contentAnchor.has(e.target).length) {
                                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                                         }
                                     }
@@ -215,13 +227,14 @@
 
 
                         /*클릭시 페이지 이동 이동*/
-                        function TitleMove(target){
-                            var id = $('#'+ target);
+                        function TitleMove(target) {
+                            var id = $('#' + target);
                             var offset = id.offset();
-                            $('html, body').animate({scrollTop : offset.top - 75}, 300);
+                            $('html, body').animate({scrollTop: offset.top - 75}, 300);
                         }
+
                         /*클릭시 텍스트 변경*/
-                        anchorOption.on('click',function() {
+                        anchorOption.on('click', function () {
                             var select = $(this).find('a').text();
                             $('._anchor-value').find('span').text(select);
                         });
@@ -231,7 +244,8 @@
                     <!--content-anchor e-->
 
                     <div class="anchor-section">
-                        <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer Panel)</p>
+                        <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer
+                            Panel)</p>
                         <p class="desc font-body data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를
                             포함하여 대장암의 주원인이 되는 Lynch Syndrome과 관련된 유전자 등 총 16개 유전자에 대한 변이를
                             분석합니다.</p>
@@ -319,11 +333,11 @@
                             진단합니다. BRCA 1/2 유전자 변이가 있는 경우 유방암 발생 위험이 급격하게 증가합니다.
                         </p>
                         <div class="border-gray-box">
+                            <!--v0.6 div img 추가 -->
                             <div class="img">
                                 <img src="/publishing/mobile-ko/dist/img/business/img-dnatest.png" alt="BRCA1/2 유전자 검사">
                                 <span class="btnZoom-2"><i class="icon ico-zoom-white"></i></span>
                             </div>
-
                         </div>
                         <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span>
                         </p></div>
@@ -333,8 +347,10 @@
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -344,7 +360,8 @@
                     <p class="font-h4 main-title">암 발생 원인 분석</p>
                     <p class="subject font-body-h-b">암 환자의 종양 샘플에서 추출한 DNA를 이용해 암 발생에 관여하는 주요 유전자의 변이를 분석함으로써
                         암 발생 원인을 추적하고 개인별 맞춤 치료에 중요한 정보를 제공하는 서비스입니다.</p>
-                    <p class="desc img_bottom font-body">지금까지는 종양 샘플의 조직 및 세포의 변화를 육안으로 판별하여 암을 치료해 왔으나, 최근에는암 조직의 유전체 분석을 통해 얻어진 유전 정보를 치료에 활용하고 있습니다.
+                    <p class="desc img_bottom font-body">지금까지는 종양 샘플의 조직 및 세포의 변화를 육안으로 판별하여 암을 치료해 왔으나, 최근에는암 조직의 유전체
+                        분석을 통해 얻어진 유전 정보를 치료에 활용하고 있습니다.
                         이러한 유전정보의 활용으로 암 발생 원인을 밝혀내고, 적절한 치료 방법 및 약물을 처방하여 효과적인 맞춤형 치료에 도움을 주고 있습니다.</p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
@@ -360,17 +377,21 @@
                             <span class="btnZoom-4"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
-                    <p class="caption">※ 출처 : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet Oncol. 2011 Feb; 12(2): 175-80.</p>
+                    <p class="caption">※ 출처 : Pao W et al. New driver mutations in non-small-cell lung cancer Lancet
+                        Oncol. 2011 Feb; 12(2): 175-80.</p>
                     <hr class="divider">
-                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
+                    <p class="notice-text"><i class="icon  ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span>
+                    </p>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">다음</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -379,8 +400,10 @@
                 <div class="info-box">
                     <p class="font-h4 main-title">암 발생 모니터링</p>
                     <p class="subject font-body-h-b"> 체내에 암이 발생한 경우 암세포로부터 떨어져 나온 DNA 조각이 혈액 내에도 존재합니다.</p>
-                    <p class="desc img_bottom font-body">이를 혈중 종양 DNA(ctDNA; circulating tumor DNA)라 부르며, 혈액 채취만으로 검사를 진행할 수 있어 정기검진으로 조기암 발견이 가능합니다.
-                        개인별 ctDNA의 양 차이와 민감한 ctDNA 추출 및 검사과정은 전문적인 기술을 필요로 하기 때문에, 지속적인 기술 향상을 통해 적용 범위를확대해 나갈 예정입니다.</p>
+                    <p class="desc img_bottom font-body">이를 혈중 종양 DNA(ctDNA; circulating tumor DNA)라 부르며, 혈액 채취만으로 검사를
+                        진행할 수 있어 정기검진으로 조기암 발견이 가능합니다.
+                        개인별 ctDNA의 양 차이와 민감한 ctDNA 추출 및 검사과정은 전문적인 기술을 필요로 하기 때문에, 지속적인 기술 향상을 통해 적용 범위를확대해 나갈
+                        예정입니다.</p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
@@ -391,20 +414,24 @@
                     <div class="border-gray-box mb-0">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
-                            <img src="/publishing/mobile-ko/dist/img/business/img_monitoring2.png" alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
+                            <img src="/publishing/mobile-ko/dist/img/business/img_monitoring2.png"
+                                 alt="LINEAR CARE SYSTEM&CIRCULAR CARESY STEM">
                             <span class="btnZoom-6"><i class="icon ico-zoom-white"></i></span>
                         </div>
                     </div>
                     <hr class="divider">
-                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
+                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span>
+                    </p>
                     <div class="btn-area">
                         <a href="mailto:ngsclinic@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col disabled"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span
+                                        class="font-body-h-b">이전</span></div>
+                                <div class="col disabled"><span class="font-body-h-b">다음</span><i
+                                        class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -452,6 +479,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -491,6 +519,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -530,6 +559,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -568,6 +598,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -607,6 +638,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -646,6 +678,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
