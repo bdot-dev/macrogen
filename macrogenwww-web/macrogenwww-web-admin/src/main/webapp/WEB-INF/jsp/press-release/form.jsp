@@ -33,7 +33,7 @@
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="80" placeholder="제목" style="width:100%;"/>
+									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="200" placeholder="제목" style="width:100%;"/>
 								</div>
 							</td>
 						</tr>
@@ -155,11 +155,11 @@
 				nttSn : ${ empty nttSn ? 'null' : nttSn },
 				validateOptions: {
 					rules: {
-						nttSj: { required: true, maxlength: 80 },
+						nttSj: { required: true, maxlength: 200 },
 						expsrYn: { required: true },
 					},
 					messages: {
-						nttSj: { required: '필수입력 입니다.(제목)', maxlength: '최대길이 초과 (내용, 최대 80자)' },
+						nttSj: { required: '필수입력 입니다.(제목)', maxlength: '최대길이 초과 (내용, 최대 200자)' },
 						expsrYn: { required: '필수선택 입니다.(노출여부)' },
 					}
 				},

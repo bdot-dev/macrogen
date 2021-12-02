@@ -89,7 +89,7 @@
                         <span class="text">Standard Oligo</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">Standard Oligo</a></li>
+                        <li class="option-value active"><a href="#">Standard Oligo</a></li>
                         <li class="option-value"><a href="#">Modified Oligo</a></li>
                         <li class="option-value"><a href="#">Premade Oligo</a></li>
                         <li class="option-value"><a href="#">Plate Oligo</a></li>
@@ -98,76 +98,85 @@
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click',function() {
-                        var select = $(this);
-                        if(select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        }
-                        else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click',function (e){
-                                if(selectBox.hasClass('open')) {
-                                    if(!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-                                e.preventDefault()
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange(){
-                        option.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
-                    textChange();
+                }
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click',function(){
-                        var idx =$(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+            })
+        }
+    });
 
-                    /*이전 다음 이동*/
-                    function setTabContent(idx){
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    textChange();
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove(){
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function(e){
-                        if(!selectBox.has(e.target).length){
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                </script>
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
             <!--OLigo 탭 네비 e-->
 
@@ -176,9 +185,8 @@
                 <!--Standard Oligo-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Standard Oligo</p>
-                    <p class="subject font-body-h">Standard Oligo 서비스는 각종 실험에 사용되는 Oligo를 고객이 원하는 서열로 합성하여 제공하는 서비스입니다.</p>
+                    <p class="subject font-body-h-b">Standard Oligo 서비스는 각종 실험에 사용되는 Oligo를 고객이 원하는 서열로 합성하여 제공하는 서비스입니다.</p>
                     <p class="desc font-body img_bottom">마크로젠의 Oligo 합성 서비스는 합성부터 정제, 분주 등 전 과정을 신속하게 제공하기 위해 자체 개발한 최상의 자동화 시스템을 이용하며, 주문부터 배송까지 모든 프로세스를 모니터링할 수 있는  온라인 주문 시스템 LIMS를 지원합니다.  또한 MALDI-TOF mess spectrometry를 통해 모든 올리고의 품질을 관리합니다.</p>
-                    <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="../../img/business/img-oligo-standard.png" alt="Standard Oligo cffnb">
                     </div>
@@ -215,8 +223,7 @@
                 <!--Modified Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Modified Oligo</p>
-                    <p class="subject font-body-h">Modified Oligo는 Standard oligo의 3'과 5', Internal 또는 양쪽 말단에 특수 물질이 결합하여 있는 형태로 제공되는 Oligo 서비스입니다.</p>
-                    <!--10.05 이미지 경로 변경-->
+                    <p class="subject font-body-h-b">Modified Oligo는 Standard oligo의 3'과 5', Internal 또는 양쪽 말단에 특수 물질이 결합하여 있는 형태로 제공되는 Oligo 서비스입니다.</p>
                     <div class="img">
                         <img src="../../img/business/img-oligo-modified.png" alt="Modified Oligo">
                     </div>
@@ -245,8 +252,7 @@
                 <!--Premade Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Premade Oligo</p>
-                    <p class="subject font-body-h">Premade Oligo는 자주 사용되는 Universal Oligo를 PAGE 정제로 미리 제작하여, 주문 시 곧바로 제공할 수 있도록 준비된 올리고 입니다.</p>
-                    <!--10.05 이미지 경로 변경-->
+                    <p class="subject font-body-h-b">Premade Oligo는 자주 사용되는 Universal Oligo를 PAGE 정제로 미리 제작하여, 주문 시 곧바로 제공할 수 있도록 준비된 올리고 입니다.</p>
                     <div class="img">
                         <img src="../../img/business/img-oligo-premade.png" alt="Premade Oligo">
                     </div>
@@ -286,8 +292,7 @@
                 <!--Plate Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Plate Oligo</p>
-                    <p class="subject font-body-h">플레이트 올리고(Plate Oligo)는 올리고를 96-well plate 형태로 제공하는 서비스입니다.</p>
-                    <!--10.05 이미지 경로 변경-->
+                    <p class="subject font-body-h-b">플레이트 올리고(Plate Oligo)는 올리고를 96-well plate 형태로 제공하는 서비스입니다.</p>
                     <div class="img">
                         <img src="../../img/business/img-oligo-plate.png" alt="Plate Oligo">
                     </div>
@@ -328,8 +333,7 @@
                 <!--Duplex Oligo-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Duplex Oligo</p>
-                    <p class="subject font-body-h">Duplex Oligo(Annealing service)는 상보적인 두 개의 Single Strand DNA를 하나의 Double Strand DNA 형태로 제공하는 서비스입니다.</p>
-                    <!--10.05 이미지 경로 변경-->
+                    <p class="subject font-body-h-b">Duplex Oligo(Annealing service)는 상보적인 두 개의 Single Strand DNA를 하나의 Double Strand DNA 형태로 제공하는 서비스입니다.</p>
                     <div class="img">
                         <img src="../../img/business/img-oligo-duplex.png" alt="Duplex Oligo">
                     </div>
@@ -368,9 +372,8 @@
                 <!--RAPD Kits-->
                 <div class="info-box">
                     <p class="font-h4 main-title">RAPD Kits</p>
-                    <p class="subject font-body-h">RAPD Kits는 유전자 지도 작성 및 DNA 지문 채취 등 다양한 연구목적에 적합한 20개의 개별 10 mer Oligo를 제공하는 서비스입니다.
+                    <p class="subject font-body-h-b">RAPD Kits는 유전자 지도 작성 및 DNA 지문 채취 등 다양한 연구목적에 적합한 20개의 개별 10 mer Oligo를 제공하는 서비스입니다.
                     </p>
-                    <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="../../img/business/img-oligo-rapdkit.png" alt="RAPD Kits">
                     </div>
@@ -425,7 +428,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
                     <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
                     <option value="/ko/policy/privacy">개인정보 처리방침</option>
                     <option value="/ko/policy/inside">내부정보관리규정</option>
@@ -433,7 +436,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>

@@ -4,7 +4,7 @@
     <div class="modal-dialog">
         <div class="gnb-content">
             <div class="gnb-header">
-                <h2 class="logo"><a href="#">마크로젠 로고</a></h2>
+                <h2 class="logo"><a href="/">마크로젠 로고</a></h2>
                 <a href="#" class="btn-close-black" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
             </div>
             <div class="gnb-body" id="menu">
@@ -103,7 +103,7 @@
             </div>
             <div class="gnb-footer">
                 <a href="/ko/main" class="btn-lang on">K0R</a>
-                <%-- <a href="/en/main" class="btn-lang">ENG</a> --%>
+                <!-- <a href="/en/main" class="btn-lang">ENG</a> -->
                 <a href="https://glo.macrogen.com/en/main/index.php" target="_blank" class="btn-lang">ENG</a>
             </div>
             </div>

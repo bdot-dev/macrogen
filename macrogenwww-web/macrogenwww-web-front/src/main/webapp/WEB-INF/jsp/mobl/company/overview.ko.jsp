@@ -207,7 +207,7 @@
                                 <div class="category-list">
                                     <ul class="row">
                                         <li class="col col-4">
-                                            <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/ic-biology2.svg" alt="개인유전체분석"></div>
+                                            <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/ic-biology3.svg" alt="개인유전체분석"></div>
                                             <div class="tit">개인유전체분석</div>
                                         </li>
                                         <li class="col col-4">

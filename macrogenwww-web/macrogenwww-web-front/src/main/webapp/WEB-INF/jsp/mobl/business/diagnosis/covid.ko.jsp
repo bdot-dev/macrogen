@@ -58,81 +58,90 @@
                         <span class="text">Axen™ COVID-19 RT 진단키트</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">Axen™ COVID-19 RT 진단키트</a></li>
+                        <li class="option-value active"><a href="#">Axen™ COVID-19 RT 진단키트</a></li>
                         <li class="option-value"><a href="#">스마트 모바일 랩</a></li>
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click',function() {
-                        var select = $(this);
-                        if(select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        }
-                        else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click',function (e){
-                                if(selectBox.hasClass('open')) {
-                                    if(!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-                                e.preventDefault()
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange(){
-                        option.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
-                    textChange();
+                }
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click',function(){
-                        var idx =$(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+            })
+        }
+    });
 
-                    /*이전 다음 이동*/
-                    function setTabContent(idx){
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    textChange();
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove(){
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function(e){
-                        if(!selectBox.has(e.target).length){
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                </script>
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
             <!--covid19 탭 네비 e-->
 
@@ -380,126 +389,124 @@
         </div>
     </div>
 
+<div class="toast-popup">
+    <p>이미지를 확대할 수 있습니다</p>
+</div>
+<!--modalImageViewer1 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph1.png" alt="graph1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
 
-	<%-- covid 스크립트 --%>
-	<div class="toast-popup">
-	    <p>이미지를 확대할 수 있습니다</p>
-	</div>
-	<!--modalImageViewer1 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph1.png" alt="graph1"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modalImageViewer1 = new bootstrap.Modal(document.getElementById('modalImageViewer1'))
+    // modal close
+    $('.btn-close').on('click', function () {
+        modalImageViewer1.hide();
+        hideToastPopup();
+    })
 
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modalImageViewer1.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-1').on('click', function () {
+        modalImageViewer1.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-1').on('click', function () {
-	        modalImageViewer1.show();
-	        showToastPopup();
-	    })
+    // show toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
 
-	    // show toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
+    // hide toast popup
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer1 e-->
+<!--modalImageViewer2 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph2.png" alt="graph2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal2.hide();
+        hideToastPopup();
+    })
 
-	    // hide toast popup
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
-	<!--modalImageViewer1 e-->
-	<!--modalImageViewer2 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer2" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_data_graph2.png" alt="graph2"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modal2 = new bootstrap.Modal(document.getElementById('modalImageViewer2'));
-	    // zoom
-	    var el = document.querySelector('.panzoom');
-	    // new PinchZoom.default(el, {});
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modal2.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-2').on('click', function () {
+        modal2.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-2').on('click', function () {
-	        modal2.show();
-	        showToastPopup();
-	    })
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--modalImageViewer2 e-->
+<!--modalImageViewer3 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // modal show
+    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    // new PinchZoom.default(el, {});
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal3.hide();
+        hideToastPopup();
+    })
 
-	    // toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
-	<!--modalImageViewer2 e-->
-	<!--modalImageViewer3 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer3" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-ko/dist/img/business/img_clinicaltrialtest.png" alt="clinicaltrialtest"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<script>
-	    // modal show
-	    var modal3 = new bootstrap.Modal(document.getElementById('modalImageViewer3'));
-	    // zoom
-	    var el = document.querySelector('.panzoom');
-	    // new PinchZoom.default(el, {});
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modal3.hide();
-	        hideToastPopup();
-	    })
+    // modal open
+    $('.btnZoom-3').on('click', function () {
+        modal3.show();
+        showToastPopup();
+    })
 
-	    // modal open
-	    $('.btnZoom-3').on('click', function () {
-	        modal3.show();
-	        showToastPopup();
-	    })
-
-	    // toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
 
 </body>

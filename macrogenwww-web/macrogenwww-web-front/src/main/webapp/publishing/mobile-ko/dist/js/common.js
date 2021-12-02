@@ -14,6 +14,7 @@ front.common = (function () {
         this.swiperTab();
         this.commonHandler();
         this.scrollHorizon();
+        this.selectDefault();
     }
 
     var a = function () {
@@ -249,6 +250,13 @@ front.common = (function () {
                 $(this).siblings().css('left', left + 'px')
             })
         });
+
+        $(document).ready(function() {
+            $('._btnTooltip').each(function () {
+                var left = $(this).offset().left * -1 + 20;
+                $(this).siblings().css('left', left + 'px')
+            })
+        });
         /* e tooltip */
 
         /* s accordion */
@@ -269,13 +277,43 @@ front.common = (function () {
     }
 
     var scrollHorizon = function(){
-        $(window).on("load",function(){
+        /*스크립트 변경*/
+        $(document).ready(function(){
             $(".table-scroll").mCustomScrollbar({
                 axis:"x",
-                theme:"dark"
+                theme:"dark",
+                setTop: "6px"
             });
         });
     };
+
+    var selectDefault = function () {
+        var selectDefault = $('.select-box ._select_default');
+        $('._select_list').hide();
+
+        selectDefault.on('click',function() {
+            var select = $(this);
+            //드롭다운 닫기
+            if(select.hasClass('open')) {
+                select.removeClass('open').next('._select_list').slideUp(200);
+            }
+            //드롭다운 열기
+            else {
+                select.addClass("open").next('._select_list').slideDown(200);
+                /*  $(document).click(function(event) {
+                    if ( !$(event.target).hasClass('open')) {
+                      select.removeClass('open');
+                      $('._select_list').removeClass('open').slideUp(200);
+                    }
+                  });*/
+            }
+            $(this).next().find('span').on('click',function() {
+                var option = $(this).text();
+                console.log(option)
+                $(this).parents('.select-box').find('._select_default .text').text(option);
+            });
+        });
+    }
 
 
     return {
@@ -283,7 +321,8 @@ front.common = (function () {
         swiperTab : swiperTab,
         commonHandler: commonHandler,
         init: init,
-        scrollHorizon : scrollHorizon
+        scrollHorizon : scrollHorizon,
+        selectDefault : selectDefault
     }
 })();
 

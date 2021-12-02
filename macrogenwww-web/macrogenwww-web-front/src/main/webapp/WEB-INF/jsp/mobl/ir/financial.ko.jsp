@@ -5,7 +5,7 @@
     <div class="non-bg">
         <header class="header">
     <div class="inner">
-        <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -20,7 +20,7 @@
                 <span class="font-h7">연결재무상태표</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box">
+            <div class="financial_box table-scroll">
                 <table class="table table-rotate state_table">
                     <tbody>
                     <tr>
@@ -68,7 +68,7 @@
                 <span class="font-h7">연결포괄손익계산서</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box mb-0">
+            <div class="financial_box table-scroll mb-0">
                 <table class="table table-rotate bill_table">
                     <tbody>
                     <tr>

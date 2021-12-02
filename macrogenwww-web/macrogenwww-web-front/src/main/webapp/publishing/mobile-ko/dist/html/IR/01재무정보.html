@@ -12,11 +12,11 @@
     <meta name="description" content="macrogen"/>
     <meta name="keywords" content="macrogen"/>
     <!--  <link rel="shortcut icon" href="../../img/favicon.ico">-->
-    <title>Mobile-KO v0.3 / 11.23</title>
-    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?1123"/>
-    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?1123"/>
-    <script src="../../js/bundle.js?1123"></script>
-    <script src="../../js/common.js?1123"></script>
+    <title>Mobile-KO</title>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_mobile.css?"/>
+    <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?"/>
+    <script src="../../js/bundle.js?"></script>
+    <script src="../../js/common.js?"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <span class="font-h7">연결재무상태표</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box">
+            <div class="financial_box table-scroll">
                 <table class="table table-rotate state_table">
                     <tbody>
                     <tr>
@@ -114,7 +114,7 @@
                 <span class="font-h7">연결포괄손익계산서</span>
                 <span class="text-unit">단위 &#58; 천원</span>
             </div>
-            <div class="financial_box mb-0">
+            <div class="financial_box table-scroll mb-0">
                 <table class="table table-rotate bill_table">
                     <tbody>
                     <tr>
@@ -195,7 +195,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
                     <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
                     <option value="/ko/policy/privacy">개인정보 처리방침</option>
                     <option value="/ko/policy/inside">내부정보관리규정</option>
@@ -203,7 +203,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>

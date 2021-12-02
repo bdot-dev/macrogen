@@ -76,7 +76,15 @@
 			$(function() {
 				$('.icon-share').on('click', function(e) {
 					copyUrlToClipboard();
-					alert('링크 복사가 완료되었습니다.');
+					<c:choose>
+						<c:when test="${rc.locale.language eq 'ko'}">
+							alert('링크 복사가 완료되었습니다.');
+						</c:when>
+						<c:otherwise>
+							alert('The link copy is completed.');
+						</c:otherwise>
+					</c:choose>
+
 				});
 		    });
 		</script>

@@ -12,7 +12,7 @@
                 <div class="hero-title">About MACROGEN</div>
                 <div class="slogan">HUMANIZING<br/> GENOMICS</div>
                 <div class="slogan-sub">Creating a better future for humanity</div>
-            <nav aria-label="breadcrumb">
+                <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">MACROGEN</li>
@@ -21,12 +21,14 @@
     </ol>
 </nav>
 
-            <div class="scroll-wrap">
+                <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
 
+
         </div>
     </div>
+
     <div class="container container-fluid">
         <div class="macrogen company-overview">
             <!-- s  기업 설명 -->
@@ -67,12 +69,11 @@
                         <div class="year">EST 1997</div>
                         <div class="desc">Macrogen has maintained sustainable growth by adapting to changes in the environment.<br/>
                             As an industry leader with a strong influence on the bio-ecosystem, our journey to sustainable growth will continue.</div>
-                        </div>
                     </div>
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
                         <ul>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="Cases Genome Sequencing"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
                                 <span class="val">30M</span>
                                 <span class="desc">Cases Genome Sequencing</span>
                             </li>
@@ -82,7 +83,7 @@
                                 <span class="desc">Bio Ventures Listed on KOSDAQ</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_3.png" alt="Revenue"></span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_3.png" alt="Revenue (2017)"></span>
                                 <span class="val">&#36;100M</span>
                                 <span class="desc">Revenue (2017)</span>
                             </li>
@@ -187,7 +188,7 @@
                                 <div class="category-list category-list-lg">
                                     <ul class="clearfix">
                                         <li>
-                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology2.svg" alt="Personal Genome Analysis"></div>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-biology.svg" alt="Personal Genome Analysis"></div>
                                             <div class="tit">Personal Genome Analysis</div>
                                         </li>
                                         <li>
@@ -373,6 +374,5 @@
             <!-- e  기업상징 -->
         </div>
     </div>
-    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 </body>

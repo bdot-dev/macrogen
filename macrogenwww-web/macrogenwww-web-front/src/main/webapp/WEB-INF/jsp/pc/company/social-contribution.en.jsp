@@ -7,21 +7,22 @@
 		<header class="header" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
+
         <div class="frame">
             <div class="hero-title">Social Responsibility</div>
             <div class="slogan">Fulfill CSR to promote<br/> shared growth</div> <!-- 번역 변경 -- 2021.11.23 -->
             <div class= "slogan-sub">As part of our dedication to healthy human lives, we support Korean scientists</div>
             <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb breadcrumb-white">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">ESG</li>
-			        <li class="breadcrumb-item">Social Responsibility</li>
-			    </ol>
-			</nav>
+    <ol class="breadcrumb breadcrumb-white">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">ESG</li>
+        <li class="breadcrumb-item">Social Responsibility</li>
+    </ol>
+</nav>
 
             <div class="scroll-wrap">
-			    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-			</div>
+    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+</div>
 
         </div>
     </div>
@@ -84,8 +85,7 @@
 	                                                </div>
 	                                            </div>
 	                                        </div>
-                                    	</c:forEach>
-
+	                                    </c:forEach>
 
                                     </div>
                                 </div>
@@ -152,8 +152,7 @@
 	                                                </div>
 	                                            </div>
 	                                        </div>
-                                    	</c:forEach>
-
+	                                    </c:forEach>
                                     </div>
                                 </div>
                                 <div class="pagination-wrap">
@@ -195,10 +194,11 @@
                                 <div class="desc">
                                     The Macrogen Young Bioinformatician Award supports the outstanding young scientists in the field of bioinformatics<br/>
                                     Established in 2019 to recognize outstanding early-career scientists who have made significant contributions to the field of bioinformatics, the award is hosted by the Korea Society for Bioinformatics (KSB) and sponsored by Macrogen. We continue to support young scientists with strong potential in the field of bioinformatics to strengthen the competitiveness of our nation's science and technology.
+                                </div>
                                 <div class="swiper reward _reward3">
                                     <div class="swiper-wrapper">
 
-                                    	<c:forEach var="result" items="${ ybaResultList }" varStatus="status">
+                                        <c:forEach var="result" items="${ ybaResultList }" varStatus="status">
 	                                        <div class="swiper-slide">
 	                                            <div class="box">
 	                                                <div class="img"><img src="${publicUrl }${ result.photoFlpth }" alt="${ result.wnpzNm }"></div>
@@ -217,6 +217,7 @@
 	                                            </div>
 	                                        </div>
 	                                    </c:forEach>
+
                                     </div>
                                 </div>
                                 <div class="pagination-wrap">
@@ -267,7 +268,7 @@
                     <div class="desc">MDA Korea is a non-profit private organization established in November 1999 for patients suffering from muscular dystrophy caused by genetic abnormalities.</div>
                 </div>
                 <div class="main-img" data-aos="fade-up" data-aos-duration="2000">
-                	<!-- <img src="/publishing/pc-en/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원"> -->
+<!--                    <img src="/publishing/pc-en/dist/img/macrogen/ethical-activity-thumb-1.png" alt="근보회 활동후원">-->
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="multi-stage">
@@ -300,7 +301,6 @@
             </div>
         </div>
     </div>
-    <!--footer 수정시 메인 footer 같이 수정해주세요-->
 
 	<script src="/js/util/Hash.js"></script>
     <script>

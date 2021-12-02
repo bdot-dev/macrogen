@@ -204,7 +204,7 @@
                     <div class="swiper-container _shortcutsSlider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-ko/dist/img/video/M_main_기업개요.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-ko/dist/img/video/M_main_글로벌마크로젠.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <video class="video" autoplay muted loop>
+                                <video class="video" autoplay muted loop playsinline>
                                     <source src="/publishing/mobile-ko/dist/img/video/M_main_ESG.mp4" type="video/mp4">
                                 </video>
                                 <div class="text-area">
@@ -262,6 +262,8 @@
                         /*slide 영역*/
 
                         swiperScrollbar = new Swiper ("._shortcutsSlider", {
+                            effect : 'fade',
+                            speed: 1000,
                             loop: true,
                             autoplayDisableOnInteraction: false,
                             slidesPerView: 1,
@@ -303,7 +305,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_01.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>퍼스널 헬스케어</span>
                                         <a href="/${rc.locale.language }/business/healthcare/personal-genetic">
                                             <i class="icon-arrow-right-short"></i>
@@ -316,7 +318,7 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
+                                    <div class="font-h3">
                                         <span>더바이옴</span>
                                         <a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
                                             <i class="icon-arrow-right-short"></i>
@@ -329,12 +331,11 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
-                                        <span>임상진단&#47;치료</span><a href="/${rc.locale.language }/business/diagnosis/cancer">
-                                        <a href="#">
+                                    <div class="font-h3">
+                                        <span>임상진단&#47;치료</span>
+                                        <a href="/${rc.locale.language }/business/diagnosis/cancer">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         COVID19&#44; 암 유전체 검사 등<br/>질병 발생원인 연구로<br/>맞춤치료에 도움이 될 수 있습니다
@@ -343,12 +344,11 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_04.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
-                                        <span>반려동물</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">
-                                        <a href="#">
+                                    <div class="font-h3">
+                                        <span>반려동물</span>
+                                        <a href="/${rc.locale.language }/business/healthcare/pet-genetic">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         소중한 가족인 반려동물의<br/>건강한 삶을 위해 유전질환예측&#44; 질병 예방 등<br/>맞춤 관리 솔루션을 제공합니다
@@ -357,12 +357,11 @@
                             </div>
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_05.png) no-repeat center center / cover">
                                 <div class="text-area">
-                                    <div class="title">
-                                        <span>연구서비스</span><a href="/${rc.locale.language }/business/research/ngs">
-                                        <a href="#">
+                                    <div class="font-h3">
+                                        <span>연구서비스</span>
+                                        <a href="/${rc.locale.language }/business/research/ngs">
                                             <i class="icon-arrow-right-short"></i>
                                         </a>
-                                    </a>
                                     </div>
                                     <div class="desc">
                                         글로벌 스탠다드 인프라 기반의<br/>빠른 염기서열 분석 연구데이터로<br/>경쟁력을 갖추고 있습니다

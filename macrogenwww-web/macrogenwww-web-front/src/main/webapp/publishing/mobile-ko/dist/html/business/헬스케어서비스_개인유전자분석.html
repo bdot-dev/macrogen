@@ -85,82 +85,91 @@
                         <span class="text">질병예측 & 웰니스 유전자검사</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value"><a href="#">질병예측 & 웰니스 유전자검사</a></li>
+                        <li class="option-value active"><a href="#">질병예측 & 웰니스 유전자검사</a></li>
                         <li class="option-value"><a href="#">헬스&뷰티 유전자 검사</a></li>
                         <li class="option-value"><a href="#">약물 반응성 분석 서비스</a></li>
                     </ul>
                 </div>
                 <script>
-                    /*변수*/
-                    var selectBox = $(".select-box");
-                    var option = $(".option-value");
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
 
-                    /*드롭다운 클릭시 이벤트*/
-                    selectBox.on('click',function() {
-                        var select = $(this);
-                        if(select.hasClass('open')) {
-                            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-                        }
-                        else {
-                            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-                            $('body').on('click',function (e){
-                                if(selectBox.hasClass('open')) {
-                                    if(!selectBox.has(e.target).length) {
-                                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                                    }
-                                }
-                                e.preventDefault()
-                            })
-                        }
-                    });
-
-                    /*클릭시 텍스트 변경*/
-                    function textChange(){
-                        option.on('click',function() {
-                            var select = $(this).find('a').text();
-                            $('._selected-value').find('span').text(select);
-                        });
+    /*드롭다운 클릭시 이벤트*/
+    selectBox.on('click', function () {
+        var select = $(this);
+        if (select.hasClass('open')) {
+            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+        } else {
+            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+            $('body').on('click', function (e) {
+                if (selectBox.hasClass('open')) {
+                    if (!selectBox.has(e.target).length) {
+                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                     }
-                    textChange();
+                }
 
-                    /*클릭시 탭메뉴 변경*/
-                    option.on('click',function(){
-                        var idx =$(this).index();
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                        textChange();
-                    })
+            })
+        }
+    });
 
-                    /*이전 다음 이동*/
-                    function setTabContent(idx){
-                        $('._selected-value').text($('._select-option li').eq(idx).text());
-                        <!--탭메뉴 클릭시 페이지 변경-->
-                        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+    /*클릭시 텍스트 변경*/
+    function textChange() {
+        option.on('click', function () {
+            var select = $(this).find('a').text();
+            $('._selected-value').find('span').text(select);
+        });
+    }
 
-                        /*페이지 변경후 상단 이동*/
-                        fnMove();
+    textChange();
 
-                        /*클릭시 텍스트 변경*/
-                        console.log(idx);
+    /*클릭시 탭메뉴 변경*/
+    option.on('click', function () {
+        var idx = $(this).index();
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    }
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
+        textChange();
+    })
 
-                    /*탭메뉴 상단으로 이동*/
-                    function fnMove(){
-                        var offset = $("._content-anchor").offset();
-                        $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                    }
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        $('._selected-value').text($('._select-option li').eq(idx).text());
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-                    /*외부클릭시 셀렉트박스 초기화*/
-                    $("body").click(function(e){
-                        if(!selectBox.has(e.target).length){
-                            selectBox.removeClass("open").children('.select-option').slideUp(200);
-                        }
-                    });
+        /*셀렉트 내부 해당페이지 포인트컬러*/
+        $(".option-value").addClass('active').siblings().removeClass('active');
+        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
 
-                </script>
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+        /*클릭시 텍스트 변경*/
+        console.log(idx);
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*외부클릭시 셀렉트박스 초기화*/
+    $("body").click(function (e) {
+        if (!selectBox.has(e.target).length) {
+            selectBox.removeClass("open").children('.select-option').slideUp(200);
+        }
+    });
+
+</script>
+
             </div>
             <!--네비게이션 e-->
 
@@ -189,81 +198,96 @@
                     <!--content-anchor e-->
                     <hr class="divider">
                     <div class="list-gallery">
-                        <div class="list">
-                            <p class="title font-h5" id="target1">마이지놈스토리 블루 (질병 예측)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">한국인이 걱정하는 주요 암 및 일반 질환을 포함한 질병 예측 유전자 검사 서비스로 암 및 일반 질환에 대한 유전적 위험을 미리 알고 대비함으로써 막연한 불안감을 해소하고 건강한 생활습관을 가질 수 있도록 돕습니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>암(폐암, 위암, 대장암 등 주요 암 13종)</p></li>
-                                            <li><p>일반질환(고혈압, 뇌졸중, 제2형 당뇨병 등 주요 일반질환 23종)</p></li>
-                                        </ul>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target1">마이지놈스토리 블루 (질병 예측)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
                                     </div>
-                                    <div class="btn-wrap">
-                                        <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target2">마이지놈스토리 그린 (웰니스)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">개인의 유전자 정보에 기반하여 건강한 식생활 관리와 효과적인 체중 조절이 이루어질 수 있도록 정보를 제공하는 서비스입니다. 질병을 예방하는 가장 효과적인 방법은 건강한 생활습관입니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>다이어트(비만 위험도, 식탐, 운동에 의한 체중 감량 효과 등 17개 항목)</p></li>
-                                            <li><p>영양(비타민, 칼슘, 오메가3 등 16개 항목)</p></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-wrap">
-                                        <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko" target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
+                                    <div class="cont">
+                                        <p class="desc font-body">한국인이 걱정하는 주요 암 및 일반 질환을 포함한 질병 예측 유전자 검사 서비스로 암 및 일반
+                                            질환에 대한 유전적 위험을 미리 알고 대비함으로써 막연한 불안감을 해소하고 건강한 생활습관을 가질 수 있도록 돕습니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>암(폐암, 위암, 대장암 등 주요 암 13종)</p></li>
+                                                <li><p>일반질환(고혈압, 뇌졸중, 제2형 당뇨병 등 주요 일반질환 23종)</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko"
+                                               target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target3">마이지놈스토리 골드 (종합형)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로 선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target2">마이지놈스토리 그린 (웰니스)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
+                                    </div>
+                                    <div class="cont">
+                                        <p class="desc font-body">개인의 유전자 정보에 기반하여 건강한 식생활 관리와 효과적인 체중 조절이 이루어질 수 있도록
+                                            정보를 제공하는 서비스입니다. 질병을 예방하는 가장 효과적인 방법은 건강한 생활습관입니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>다이어트(비만 위험도, 식탐, 운동에 의한 체중 감량 효과 등 17개 항목)</p></li>
+                                                <li><p>영양(비타민, 칼슘, 오메가3 등 16개 항목)</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko"
+                                               target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target4">젠톡 (질병 예측)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_mygenomegentok.png" alt="젠톡">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">건강설문과 병원 EMR 데이터를 결합한 최초의 유전자 검사 서비스로 ‘젠톡’ 모바일 앱을 통해  검사 결과를 확인하고 주기적으로 건강 정보를 받아볼 수 있습니다.  특히 Master 검사의 경우, 질병 발생 가능성과 관련 있는 강력한 유전변이인 병원성 변이를 함께 분석하여, 높은 예측도의 검사 결과를 제공합니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>Standard(남성 주요 암 12종, 여성 주요 암 14종, 심뇌혈관질환 6종)</p></li>
-                                            <li><p>Grand(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
-                                            <li><p>Master(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
-                                        </ul>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target3">마이지놈스토리 골드 (종합형)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
                                     </div>
-                                    <div class="btn-wrap">
-                                        <a href="mailto:gentok@macrogen.com"  class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                    <div class="cont">
+                                        <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로
+                                            선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target4">젠톡 (질병 예측)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_mygenomegentok.png" alt="젠톡">
+                                    </div>
+                                    <div class="cont">
+                                        <p class="desc font-body">건강설문과 병원 EMR 데이터를 결합한 최초의 유전자 검사 서비스로 ‘젠톡’ 모바일 앱을 통해
+                                            검사 결과를 확인하고 주기적으로 건강 정보를 받아볼 수 있습니다. 특히 Master 검사의 경우, 질병 발생 가능성과 관련 있는 강력한
+                                            유전변이인 병원성 변이를 함께 분석하여, 높은 예측도의 검사 결과를 제공합니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>Standard(남성 주요 암 12종, 여성 주요 암 14종, 심뇌혈관질환 6종)</p></li>
+                                                <li><p>Grand(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
+                                                <li><p>Master(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="mailto:gentok@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -294,113 +318,132 @@
                     </div>
                     <!--content-anchor e-->
                     <div class="list-gallery">
-                        <div class="list">
-                            <p class="title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_allinone69.png" alt="마이지놈스토리더플러스올인원69">
-                                </div>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_allinone69.png" alt="마이지놈스토리더플러스올인원69">
+                                    </div>
 
-                                <div class="cont">
-                                    <p class="desc font-body caption_bottom">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.  검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
-                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
-                                            <li><p>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</p></li>
-                                            <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
-                                            <li><p>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</p></li>
-                                            <li><p>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</p></li>
-                                            <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-wrap">
-                                        <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
-                                              class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-                                            <a href="https://smartstore.naver.com/mygenomestory/products/5372235474"
-                                               target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44 (세부항목 48종)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.  검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
-                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
-                                            <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
-                                            <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
-                                        </ul>
-                                    </div>
-                                    <div class="btn-wrap">
-                                        <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
-                                              class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-                                            <a href="https://smartstore.naver.com/mygenomestory/products/4840761209"
-                                               target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a></div>
+                                    <div class="cont">
+                                        <p class="desc font-body caption_bottom">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해
+                                            ‘나’를 알아갈 수 있도록 돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다. 검사 항목 수는
+                                            지속적으로 업데이트될 예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
+                                                <li><p>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</p></li>
+                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
+                                                <li><p>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</p></li>
+                                                <li><p>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
+                                                                        class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                                <a href="https://smartstore.naver.com/mygenomestory/products/5372235474"
+                                                   target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로 계획할 수 있도록 돕습니다. 검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
-                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>운동: 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 8개 항목</p></li>
-                                            <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
-                                            <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
-                                        </ul>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44 (세부항목 48종)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
                                     </div>
-                                    <div class="btn-wrap">
-                                        <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
-                                        <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
-                                              class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-                                            <a href="https://smartstore.naver.com/mygenomestory/products/4840761209"
-                                               target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a></div>
+                                    <div class="cont">
+                                        <p class="desc font-body">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록
+                                            돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다. 검사 항목 수는 지속적으로 업데이트될
+                                            예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
+                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
+                                                                        class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                                <a href="https://smartstore.naver.com/mygenomestory/products/4840761209"
+                                                   target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="list">
-                            <p class="title font-h5" id="target8">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
-                            <div class="content">
-                                <!--10.05 이미지 경로 변경-->
-                                <div class="img">
-                                    <img src="../../img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
-                                </div>
-                                <div class="cont">
-                                    <p class="desc font-body">성인뿐 아니라  만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로  헬스&#38;뷰티 관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
-                                    <div class="list-area">
-                                        <ul class="list-circle-dot">
-                                            <li><p>헬스: 체질량지수, HDL콜레스테롤, LDL콜레스테롤, 중성지방농도 등 6개 항목</p></li>
-                                            <li><p>스킨: 색소침착, 피부노화, 카페인 대사 등 4개 항목</p></li>
-                                            <li><p>헤어: 남성형탈모, 원형탈모 등 3개 항목</p></li>
-                                        </ul>
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
                                     </div>
-                                    <div class="btn-wrap">
-                                        <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
-                                              class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-                                            <a href="https://smartstore.naver.com/mygenomestory/products/4150226329"
-                                               target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a></div>
+                                    <div class="cont">
+                                        <p class="desc font-body">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로
+                                            계획할 수 있도록 돕습니다. 검사 항목 수는 지속적으로 업데이트될 예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째
+                                            인증기관입니다.</p>
+                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>운동: 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 8개 항목</p></li>
+                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                            <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
+                                                                        class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                                <a href="https://smartstore.naver.com/mygenomestory/products/4840761209"
+                                                   target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="anchor-section">
+                            <div class="list">
+                                <p class="title font-h5" id="target8">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
+                                <div class="content">
+                                    <!--10.05 이미지 경로 변경-->
+                                    <div class="img">
+                                        <img src="../../img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
+                                    </div>
+                                    <div class="cont">
+                                        <p class="desc font-body">성인뿐 아니라 만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로 헬스&#38;뷰티
+                                            관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
+                                        <div class="list-area">
+                                            <ul class="list-circle-dot">
+                                                <li><p>헬스: 체질량지수, HDL콜레스테롤, LDL콜레스테롤, 중성지방농도 등 6개 항목</p></li>
+                                                <li><p>스킨: 색소침착, 피부노화, 카페인 대사 등 4개 항목</p></li>
+                                                <li><p>헤어: 남성형탈모, 원형탈모 등 3개 항목</p></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <div class="btn-wrapper"><a href="mailto:mygenomestory@macrogen.com"
+                                                                        class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+                                                <a href="https://smartstore.naver.com/mygenomestory/products/4150226329"
+                                                   target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -435,7 +478,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="window.open(value,'_blank');">
+                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
                     <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
                     <option value="/ko/policy/privacy">개인정보 처리방침</option>
                     <option value="/ko/policy/inside">내부정보관리규정</option>
@@ -443,7 +486,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="window.open(value,'_blank');">
+                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
@@ -537,7 +580,7 @@
                             contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
                         }
                     }
-                    e.preventDefault()
+
                 })
             }
         });
