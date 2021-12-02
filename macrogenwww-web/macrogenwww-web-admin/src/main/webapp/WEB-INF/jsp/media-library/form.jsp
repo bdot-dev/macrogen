@@ -33,7 +33,7 @@
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">
-									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="80" placeholder="제목" style="width:100%;"/>
+									<input type="text" v-model="resultVo.nttSj" name="nttSj" id="nttSj" class="mr5 txtMaxlen" maxlength="200" placeholder="제목" style="width:100%;"/>
 								</div>
 							</td>
 						</tr> -->
