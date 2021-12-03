@@ -90,14 +90,10 @@
                             <span class="text">CRISPR gRNA Synthesis</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">CRISPR gRNA
-                                Synthesis</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">CRISPR Validated
-                                gRNA</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">CRISPR gRNA Plasmid</a>
-                            </li>
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CRISPR KI/KO Mouse</a>
-                            </li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">CRISPR gRNA Synthesis</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">CRISPR Validated gRNA</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">CRISPR gRNA Plasmid</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CRISPR KI/KO Mouse</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -202,8 +198,7 @@
                         </div>
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">Knock-out (KO)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">Conditional Knock-out
-                                (cKO) 마우스</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">Conditional Knock-out (cKO) 마우스</a></li>
                             <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">Knock-in (KI) 마우스</a>
                             </li>
                             <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">Transgenic (TG) 마우스</a>
@@ -530,9 +525,10 @@
         console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
-        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
@@ -574,22 +570,23 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
-                writeText(infoSectionList.title)
-            } else {
-                var title;
-                for (let i = 0; i < infoSectionList.list.length; i++) {
-                    var item = infoSectionList.list[i]
-                    if (offset > item.offset) {
-                        // console.log(i);
-                        title = item.title
-                        break
-                    }
-                }
-                console.log(title);
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
                 writeText(title)
-            }
+                ChangeColor(title)
 
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
+            }
+            writeText(title)
+            ChangeColor(title)
         });
     }
 
@@ -599,9 +596,20 @@
      * @param text
      */
     function writeText(text) {
-        // console.log(text);
         $('._anchor-value .text').text(text)
 
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
     }
 
     function setInfoSectionList(tit) {
@@ -624,7 +632,6 @@
                 title: title
             })
         })
-        console.log(infoSectionList);
     }
 
     /*드롭다운 클릭시 이벤트*/

@@ -88,8 +88,7 @@
                             <span class="text">유전성 암 감수성 검사 (Hereditary Cancer Panel)</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">유전성 암 감수성
-                                검사 (Hereditary Cancer Panel)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('HereditaryCancerPanel')"><a href="#">유전성 암 감수성 검사 (Hereditary Cancer Panel)</a></li>
                             <li class="anchor-value" onclick="TitleMove('BRCA1')"><a href="#">BRCA1/2 유전자 검사</a></li>
                         </ul>
                     </div>
@@ -97,8 +96,7 @@
                     <!--content-anchor e-->
 
                     <div class="section-anchor">
-                        <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer
-                            Panel)</p>
+                        <p class="font-h5 sub-title" id="HereditaryCancerPanel">유전성 암 감수성 검사 (Hereditary Cancer Panel)</p>
                         <p class="desc font-body data_bottom">유전성 암과 관련된 원인 유전자를 분석해 암에 대한 유전적 위험률을 진단합니다. BRCA1/2 유전자를
                             포함하여 대장암의 주원인이 되는 Lynch Syndrome과 관련된 유전자 등 총 16개 유전자에 대한 변이를
                             분석합니다.</p>
@@ -363,9 +361,10 @@
         console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
-        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
@@ -407,22 +406,23 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
-                writeText(infoSectionList.title)
-            } else {
-                var title;
-                for (let i = 0; i < infoSectionList.list.length; i++) {
-                    var item = infoSectionList.list[i]
-                    if (offset > item.offset) {
-                        // console.log(i);
-                        title = item.title
-                        break
-                    }
-                }
-                console.log(title);
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
                 writeText(title)
-            }
+                ChangeColor(title)
 
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
+            }
+            writeText(title)
+            ChangeColor(title)
         });
     }
 
@@ -432,9 +432,20 @@
      * @param text
      */
     function writeText(text) {
-        // console.log(text);
         $('._anchor-value .text').text(text)
 
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
     }
 
     function setInfoSectionList(tit) {
@@ -457,7 +468,6 @@
                 title: title
             })
         })
-        console.log(infoSectionList);
     }
 
     /*드롭다운 클릭시 이벤트*/

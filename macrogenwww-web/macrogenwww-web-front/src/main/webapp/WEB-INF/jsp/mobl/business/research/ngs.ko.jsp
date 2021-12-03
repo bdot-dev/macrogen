@@ -93,10 +93,8 @@
                             <span class="text">Whole Genome Resequencing</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('Resequencing')"><a href="#">Whole Genome
-                                Resequencing</a></li>
-                            <li class="anchor-value" onclick="TitleMove('Sequencing')"><a href="#">Whole Genome De novo
-                                Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('Resequencing')"><a href="#">Whole Genome Resequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('Sequencing')"><a href="#">Whole Genome De novo Sequencing</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -238,14 +236,10 @@
                             <span class="text"></span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA / Total RNA
-                                Sequencing</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">Small RNA Sequencing</a>
-                            </li>
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">Isoform Sequencing</a>
-                            </li>
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">Exosomal RNA
-                                Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA / Total RNA Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">Small RNA Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">Isoform Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">Exosomal RNA Sequencing</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -258,7 +252,7 @@
                             alternative splicing과 변이 정보 확인 등의 연구에 활용할 수
                             있습니다. 최근에는 단일 세포(Single Cell) 수준의 유전자 발현에 대한 연구도 활발히 진행되고 있습니다.
                         </p>
-                        <p class="sub-title figure_bottom font-body-h-b">Library Construction Kit</p>
+                        <p class="figure_bottom font-body-h-b">Library Construction Kit</p>
                         <div class="list-area-border">
                             <div class="list">
                                 <div class="accordion-container">
@@ -310,7 +304,7 @@
                             통찰력을
                             얻을 수 있고, 바이오마커(Biomarker) 개발 및 질병 진단에 적용할 수 있습니다.
                         </p>
-                        <p class="font-body-h-b sub-title">Library Construction Kit</p>
+                        <p class="font-body-h-b _sub-title">Library Construction Kit</p>
                         <div class="accordion-container">
                             <div class="accordion-item">
                                 <a class="accordion-button active" href="#">Illumina</a>
@@ -585,10 +579,8 @@
                             <span class="text"></span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('Amplicon')"><a href="#">Metagenome Amplicon
-                                Sequencing</a></li>
-                            <li class="anchor-value" onclick="TitleMove('Shotgun')"><a href="#">Metagenome Shotgun
-                                Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('Amplicon')"><a href="#">Metagenome Amplicon Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('Shotgun')"><a href="#">Metagenome Shotgun Sequencing</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -726,9 +718,10 @@
         console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
-        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
@@ -770,21 +763,23 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
-                writeText(infoSectionList.title)
-            } else {
-                var title;
-                for (let i = 0; i < infoSectionList.list.length; i++) {
-                    var item = infoSectionList.list[i]
-                    if (offset > item.offset) {
-                        // console.log(i);
-                        title = item.title
-                        break
-                    }
-                }
-                console.log(title);
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
                 writeText(title)
+                ChangeColor(title)
+
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
             }
+            writeText(title)
+            ChangeColor(title)
 
         });
     }
@@ -795,9 +790,20 @@
      * @param text
      */
     function writeText(text) {
-        // console.log(text);
         $('._anchor-value .text').text(text)
 
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
     }
 
     function setInfoSectionList(tit) {
@@ -820,7 +826,6 @@
                 title: title
             })
         })
-        console.log(infoSectionList);
     }
 
     /*드롭다운 클릭시 이벤트*/
