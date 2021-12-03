@@ -320,6 +320,15 @@
 		                $('.section.show .history-list').removeClass('active');
 		                $(this).addClass('active');
 		                selectBox.children('._selectedValue').text($(this).children('.year').text())
+	                    let text = $(this).children('.year').text();
+	                    $(".section.show .select-box a").css({
+	                        'color' : '#454545',
+	                        'font-weight' : 'normal'
+	                    });
+	                    $(".section.show .select-box a:contains(" + text + ")").css({
+	                        'color' : '#2E87EF',
+	                        'font-weight' : 'bold'
+	                    });
 		            }
 		        });
 

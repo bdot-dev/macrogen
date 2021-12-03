@@ -86,7 +86,7 @@
             <ul>
                 <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Genome Analysis</a></li>
                 <li><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">Microbiome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">Companion animal gene analysis</a></li>
+                <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">Pet DNA Test</a></li>
             </ul>
         </div>
     </div>

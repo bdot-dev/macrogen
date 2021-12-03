@@ -75,12 +75,12 @@
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
                                 <span class="val">30M</span>
-                                <span class="desc">Cases Genome Sequencing</span>
+                                <span class="desc">Cases Genome <br/>Sequencing</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_2.png" alt="Bio Ventures Listed on KOSDAQ"></span>
                                 <span class="val">1st</span>
-                                <span class="desc">Bio Ventures Listed on KOSDAQ</span>
+                                <span class="desc">Bio Ventures Listed on <br/>KOSDAQ</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_3.png" alt="Revenue (2017)"></span>
@@ -95,12 +95,12 @@
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_5.png" alt="Market Share Research Sequencing"></span>
                                 <span class="val">No&#46;1</span>
-                                <span class="desc">Market Share Research Sequencing</span>
+                                <span class="desc">Market Share Research<br/> Sequencing</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_6.png" alt="Countries 18K+ Global Partners"></span>
                                 <span class="val">153countries</span>
-                                <span class="desc">Countries 18K+ Global Partners</span>
+                                <span class="desc">Countries 18K+ Global<br/> Partners</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_7.png" alt="Nature Papers"></span>
@@ -110,7 +110,7 @@
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Companies Assistance to Bio Venture"></span>
                                 <span class="val">18</span>
-                                <span class="desc">Companies Assistance to Bio Venture</span>
+                                <span class="desc">Companies Assistance to<br/> Bio Venture</span>
                             </li>
                         </ul>
                     </div>

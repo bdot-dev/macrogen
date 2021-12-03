@@ -27,7 +27,9 @@
                 <div class="font-h3">Improving the quality of life<br/>through analysis of health information</div>
                 <div class="desc">Providing personalized health care services</div>
             </div>
-            <div class="img"><img src="/publishing/pc-en/dist/img/RD/img-bigData.png" alt="방대한 양의 데이터"></div>
+            <div class="img">
+            	<!-- <img src="/publishing/pc-en/dist/img/RD/img-bigData.png" alt="방대한 양의 데이터"> -->
+            </div>
             <div class="desc-box">
                 <p class="sub-title">The Big Data Institute for Health was established to enhance quality of life by creating value based on extensive amounts of data.</p>
                 <p>The purpose of the institute is to prevent or reduce the risk of developing diseases that are likely to occur through analysis and prediction of the genome, which contains information about our bodies, using personalized health care services.</p>
