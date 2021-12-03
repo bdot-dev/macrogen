@@ -266,9 +266,22 @@
                         </li>
                     </ul>
                     <div class="bg_section bg0"></div>
-                    <div class="bg_section bg1 active"></div>
-                    <div class="bg_section bg2"></div>
-                    <div class="bg_section bg3"></div>
+
+                    <div class="bg_section bg1 active">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_기업개요.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg2">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg3">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_ESG.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <script>
                         var currentIdx = 1;
                         $('.shortcuts-box .btn-list li').mouseover(function () {
@@ -279,10 +292,13 @@
                                 console.log('wun')
                                 $('.bg_section').eq(index).addClass('active')
                                     .siblings().removeClass('active')
-
-
                                 currentIdx = index
                             }
+
+                            $('.bg_section .video').play().currentTime()
+
+                        }).mouseout(function(){
+                            $('.bg_section .video').pause()
                         });
                     </script>
                 </div>
