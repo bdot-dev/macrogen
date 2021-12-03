@@ -14,11 +14,11 @@
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Business</li>
         <li class="breadcrumb-item">Heathcare</li>
-        <li class="breadcrumb-item">Companion animal gene analysis</li>
+        <li class="breadcrumb-item">Pet DNA Test</li>
     </ol>
 </nav>
 
-            <div class="hero-title">Companion animal gene analysis</div>
+            <div class="hero-title">Pet DNA Test</div>
             <div class="slogan-sub">myPETGENE</div>
         </div>
     </div>

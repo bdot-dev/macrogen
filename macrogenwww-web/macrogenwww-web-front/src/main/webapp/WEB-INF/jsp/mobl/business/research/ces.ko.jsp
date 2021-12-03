@@ -70,85 +70,6 @@
                         <li class="option-value"><a href="#">Human ID</a></li>
                     </ul>
                 </div>
-                <script>
-    /*변수*/
-    var selectBox = $(".select-box");
-    var option = $(".option-value");
-
-
-    /*드롭다운 클릭시 이벤트*/
-    selectBox.on('click', function () {
-        var select = $(this);
-        if (select.hasClass('open')) {
-            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-        } else {
-            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-            $('body').on('click', function (e) {
-                if (selectBox.hasClass('open')) {
-                    if (!selectBox.has(e.target).length) {
-                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                    }
-                }
-
-            })
-        }
-    });
-
-    /*클릭시 텍스트 변경*/
-    function textChange() {
-        option.on('click', function () {
-            var select = $(this).find('a').text();
-            $('._selected-value').find('span').text(select);
-        });
-    }
-
-    textChange();
-
-    /*클릭시 탭메뉴 변경*/
-    option.on('click', function () {
-        var idx = $(this).index();
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-        textChange();
-    })
-
-    /*이전 다음 이동*/
-    function setTabContent(idx) {
-        $('._selected-value').text($('._select-option li').eq(idx).text());
-        <!--탭메뉴 클릭시 페이지 변경-->
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-
-        /*페이지 변경후 상단 이동*/
-        fnMove();
-
-        /*클릭시 텍스트 변경*/
-        console.log(idx);
-
-    }
-
-    /*탭메뉴 상단으로 이동*/
-    function fnMove() {
-        var offset = $("._content-anchor").offset();
-        $('html, body').animate({scrollTop: offset.top - 95}, 100);
-    }
-
-    /*외부클릭시 셀렉트박스 초기화*/
-    $("body").click(function (e) {
-        if (!selectBox.has(e.target).length) {
-            selectBox.removeClass("open").children('.select-option').slideUp(200);
-        }
-    });
-
-</script>
 
             </div>
             <!--ces 탭 네비 e-->
@@ -196,7 +117,7 @@
                     </div>
                     <!--content-anchor e-->
 
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="standard">Standard Sequencing
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="standard">Standard Sequencing
                         Single/Plate</p>
                         <p class="desc font-body list_bottom">Standard Sequencing은 Single tube와 96well plate 두 가지로 실험
                             진행이
@@ -222,7 +143,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div calss="anchor-section"><p class="font-h5 sub-title" id="difficult">Difficult Template
+                    <div calss="section-anchor"><p class="font-h5 sub-title" id="difficult">Difficult Template
                         Sequencing</p>
                         <p class="desc font-body list_bottom">Standard Sequencing 결과확인 후 또는 고객의 정보를 바탕으로 특이 구조를 보유한
                             Template를 Sequencing하는 서비스입니다. 특히 아래와 같은 특이구조를 가진 Template에 적합하며 고품질의<br>
@@ -286,7 +207,7 @@
                         </ul>
                     </div>
                     <!--content-anchor e-->
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="rrna">16S/18S/26S rRNA&#38;ITS Region
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="rrna">16S/18S/26S rRNA&#38;ITS Region
                         Full Sequencing</p>
                         <p class="desc list_bottom font-body">16S rRNA gene 27F, 1492R primer를 이용하여 PCR을 진행한 뒤
                             Inter-primer인 785F,
@@ -309,7 +230,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="sub-title font-h5" id="rapidID">Rapid-ID</p>
                         <p class="desc list_bottom font-body">MALDI-TOF 단백질 분석 기술을 이용한 미생물질량분석동정 서비스로 세계 최초 FDA
                             Clearance 획득 및 AOAC
@@ -435,7 +356,7 @@
                         <img src="/publishing/mobile-ko/dist/img/business/img-ces-customized.png" alt="Customized Sequencing">
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="font-h5 sub-title" id="ancher1">PCR Optimization/ Amplification</p>
                         <p class="desc list_bottom font-body">PCR Optimization은 Target region과 관련하여 Reference와 함께 받은
                             Cell/gDNA의 Primer
@@ -454,7 +375,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="ancher2">Pyrosequencing</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="ancher2">Pyrosequencing</p>
                         <p class="desc list_bottom font-body">Pyrosequencing은 Nucleotide가 DNA와 중합이 일어날 때, 생성되는
                             Pyrophosphate(PPi)를
                             이용하여 염기서열을 확인하는 Sequencing 서비스입니다.DNA 서열과 상관없이 특정 Gene의
@@ -485,7 +406,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="ancher3">NGS Validation</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="ancher3">NGS Validation</p>
                         <p class="desc list_bottom font-body">NGS 서비스 이용 후 해당 데이터의 정확도와 신뢰도를 높이기 위해 Sanger Sequencing
                             방법을 이용하는 검증
                             서비스입니다.
@@ -505,7 +426,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section"><p class="font-h5 sub-title" id="ancher4">MLST 분석</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="ancher4">MLST 분석</p>
                         <p class="desc font-body img_bottom">MLST(Multilocus Sequence Typing) 분석은 Bacteria, Fungi 등 동일 종
                             내의 균주를
                             분류하는 분석 방법으로 특이 균종 5~7개 Housekeeping gene을 Sequencing 하여 각각의Sequence Type(ST) 연관 관계를 분석하고,
@@ -519,7 +440,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="sub-title font-h5" id="ancher5">
                             One-click Sanger Sequencing
                         </p>
@@ -535,7 +456,7 @@
                     </div>
                     <hr class="divider">
                     <!--v0.5 id값 추가 (주석제거예정)-->
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="sub-title font-h5" id="ancher10">
                             Primer Walking
                         </p>
@@ -552,7 +473,7 @@
                     </div>
                     <hr class="divider">
                     <!--v0.5 id값 추가 (주석제거예정)-->
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="sub-title font-h5" id="ancher11">
                             Cloning
                         </p>
@@ -623,9 +544,9 @@
                     </div>
                     <!--content-anchor e-->
                     <div class="list-gallery">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="ancher6">친자확인 검사</p>
+                                <p class="sub-title font-h5" id="ancher6">친자확인 검사</p>
                                 <div class="content">
                                     <div class="img mb-0">
                                         <img src="/publishing/mobile-ko/dist/img/business/img-ces-test1.png" alt="친자확인검사">
@@ -641,9 +562,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="ancher7">부계확인 검사</p>
+                                <p class="sub-title font-h5" id="ancher7">부계확인 검사</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -660,9 +581,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="ancher8">모계확인 검사</p>
+                                <p class="sub-title font-h5" id="ancher8">모계확인 검사</p>
                                 <div class="content">
                                     <div class="img mb-0">
                                         <img src="/publishing/mobile-ko/dist/img/business/img-ces-test3.png" alt="모계확인검사">
@@ -679,9 +600,9 @@
                             </div>
                         </div>
                         <hr class="divider">
-                        <div class="anchor-section">
+                        <div class="section-anchor">
                             <div class="list">
-                                <p class="title font-h5" id="ancher9">개인식별 검사</p>
+                                <p class="sub-title font-h5" id="ancher9">개인식별 검사</p>
                                 <div class="content">
                                     <div class="img mb-0">
                                         <img src="/publishing/mobile-ko/dist/img/business/img-ces-test4.png" alt="개인식별검사">
@@ -719,77 +640,219 @@
         </div>
     </div>
 
-    <!--content-anchor script s-->
-    <script>
-        /*변수*/
-        var contentAnchor = $(".content-anchor");
-        var anchorOption = $(".anchor-value");
-        var anchor = $("._anchor");
-        var offset = anchor.offset();
+<!--비즈니스 스크립트 리펙토링 s-->
+<script>
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
+
+    var contentAnchor = $(".content-anchor");
+    var anchorOption = $(".anchor-value");
+    var anchor = $("._anchor");
+    var offset = anchor.offset();
+    var infoSectionList = [];
 
 
-        /*특정위치 show & hide*/
-        function fnMousewheel() {
-            var lastScroll = 0;
+    function onClickSelectBox() {
+        // console.log('onClickSelectBox');
+        /*드롭다운 클릭시 이벤트*/
+        selectBox.on('click', function () {
+            var select = $(this);
+            if (select.hasClass('open')) {
+                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+            } else {
+                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
 
-            $(window).on('scroll', function (e) {
-                let listPos = $('.info-box').offset().top;
-                let offset = $(this).scrollTop();
+            }
+        });
+    }
 
-                if (offset > lastScroll) {
-                    // console.log('down')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
-                    } else {
-                        contentAnchor.hide();
-                    }
-                } else {
-                    // console.log('up')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
-                    } else {
-                        contentAnchor.hide();
+    function onClickSelectOption() {
+        // console.log('onClickSelectOption');
+        /*클릭시 탭메뉴 변경*/
+        option.on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            var idx = $(this).index();
+            var $info = $(".info-box-wrap > div");
+            $info.addClass('show').siblings().removeClass('show');
+            $info.eq(idx).addClass('show').siblings().removeClass('show');
+            textChange($(this));
+            setInfoSectionList($(this).text())
+        })
+    }
+
+    function onClickBody() {
+        $('body').on('click', function (e) {
+            if (selectBox.hasClass('open')) {
+                if (!selectBox.has(e.target).length) {
+                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                }
+            }
+            if (!selectBox.has(e.target).length) {
+                selectBox.removeClass("open").children('.select-option').slideUp(200);
+            }
+        })
+    }
+
+    /*클릭시 텍스트 변경*/
+    function textChange(target) {
+        var select = target.find('a').text();
+        $('._selected-value').find('span').text(select);
+    }
+
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        var $Select = $('._select-option li');
+        var $Selected = $('._selected-value');
+        var $info = $(".info-box-wrap > div");
+        var change = $(".option-value");
+
+        console.log(change);
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $Selected.text($Select.eq(idx).text());
+        $Selected.addClass($Select.eq(idx).addClass('active'));
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        setInfoSectionList($Select.eq(idx).text())
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*특정위치 show & hide*/
+    function fnMousewheel() {
+        var lastScroll = 0;
+        var listPos = $('.info-box').offset().top;
+        $(window).on('scroll', function (e) {
+            let offset = $(this).scrollTop();
+
+            if (offset > lastScroll){
+                // console.log('down')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                }
+                else {
+                    contentAnchor.hide();
+                }
+            } else {
+                // console.log('up')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    contentAnchor.hide();
+                }
+            }
+            lastScroll = offset;
+
+
+            /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
+                writeText(infoSectionList.title)
+            } else {
+                var title;
+                for (let i = 0; i < infoSectionList.list.length; i++) {
+                    var item = infoSectionList.list[i]
+                    if (offset > item.offset) {
+                        // console.log(i);
+                        title = item.title
+                        break
                     }
                 }
-                lastScroll = offset;
-            });
-        }
+                console.log(title);
+                writeText(title)
+            }
 
-        /*드롭다운 클릭시 이벤트*/
+        });
+    }
+
+
+    /**
+     * Anchor 글씨 쓰기
+     * @param text
+     */
+    function writeText(text) {
+        // console.log(text);
+        $('._anchor-value .text').text(text)
+
+    }
+
+    function setInfoSectionList(tit) {
+
+        writeText(tit);
+
+        infoSectionList = {
+            title: tit,
+            list: [],
+        }
+        $('.info-box.show').find('.section-anchor').each(function (index) {
+
+            // console.log(i)
+            let top = $(this).offset().top - 75;
+            // console.log(top);
+            let title = $(this).find('.sub-title').text();
+            infoSectionList.list.unshift({
+                index: index,
+                offset: top,
+                title: title
+            })
+        })
+        console.log(infoSectionList);
+    }
+
+    /*드롭다운 클릭시 이벤트*/
+    function onClickFixedAnchor() {
         contentAnchor.on('click', function () {
             var select = $(this);
             if (select.hasClass('open')) {
                 select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
             } else {
                 select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                $('body').on('click', function (e) {
-                    if (contentAnchor.hasClass('open')) {
-                        if (!contentAnchor.has(e.target).length) {
-                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
 
-                })
             }
         });
-
-
-        /*클릭시 페이지 이동 이동*/
-        function TitleMove(target) {
-            var id = $('#' + target);
-            var offset = id.offset();
-            $('html, body').animate({scrollTop: offset.top - 75}, 300);
-        }
-
+        $('body').on('click', function (e) {
+            if (contentAnchor.hasClass('open')) {
+                if (!contentAnchor.has(e.target).length) {
+                    contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                }
+            }
+        })
         /*클릭시 텍스트 변경*/
         anchorOption.on('click', function () {
             var select = $(this).find('a').text();
-            $('._anchor-value').find('span').text(select);
+            writeText(select)
         });
-        fnMousewheel();
+    }
 
-    </script>
-    <!--content-anchor script e-->
+    /*클릭시 페이지 이동 이동*/
+    function TitleMove(target) {
+        var id = $('#' + target);
+        var offset = id.offset();
+        $('html, body').animate({scrollTop: offset.top - 75}, 300);
+    }
+
+
+    function init() {
+        onClickSelectBox();
+        onClickSelectOption();
+        onClickBody();
+        onClickFixedAnchor();
+        fnMousewheel();
+        setInfoSectionList($('._selected-value span').text())
+    }
+
+    init()
+
+
+</script>
 
     <!--modalImageViewer1 s-->
     <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">

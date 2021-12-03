@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Companion animal gene analysis</div>
+            <div class="font-h1">Pet DNA Test</div>
             <div class="font-body-h">myPETGENE</div>
         </div>
     </div>
