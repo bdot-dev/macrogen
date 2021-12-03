@@ -315,12 +315,6 @@ data.etc = {
             category: 'etc',
             page: '에러페이지'
         },
-        {
-            stateClass: 'complete',
-            url: '팝업페이지',
-            category: 'etc',
-            page: '팝업페이지'
-        },
     ]
 }
 

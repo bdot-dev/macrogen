@@ -54,9 +54,9 @@
                 </div>
             </div>
                 <div class="btn-area">
-                    <a href="#" class="btn btn-white"><span>Service Inquiry</span></a>
-                    <a href="#" class="btn btn-white"><span>Quotation</span></a>
-                    <a href="#" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                    <a href="mailto:sequencing@macrogen.com"target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
+                    <a href="https://dna.macrogen.com/com/cust/retrieveLogin.do?menuCd=QUO400" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                    <a href="https://dna.macrogen.com/" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                 </div>
             </div>
         </div>

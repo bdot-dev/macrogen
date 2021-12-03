@@ -109,16 +109,13 @@
                             <span class="text">Standard Sequencing Single/Plate</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('standard')"><a href="#">Standard Sequencing
-                                Single/Plate</a></li>
-                            <li class="anchor-value" onclick="TitleMove('difficult')"><a href="#">Difficult Template
-                                Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('standard')"><a href="#">Standard Sequencing Single/Plate</a></li>
+                            <li class="anchor-value" onclick="TitleMove('difficult')"><a href="#">Difficult Template Sequencing</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
 
-                    <div class="section-anchor"><p class="font-h5 sub-title" id="standard">Standard Sequencing
-                        Single/Plate</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="standard">Standard Sequencing Single/Plate</p>
                         <p class="desc font-body list_bottom">Standard Sequencing은 Single tube와 96well plate 두 가지로 실험
                             진행이
                             가능합니다.</p>
@@ -143,8 +140,7 @@
                         </div>
                     </div>
                     <hr class="divider">
-                    <div calss="section-anchor"><p class="font-h5 sub-title" id="difficult">Difficult Template
-                        Sequencing</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="difficult">Difficult Template Sequencing</p>
                         <p class="desc font-body list_bottom">Standard Sequencing 결과확인 후 또는 고객의 정보를 바탕으로 특이 구조를 보유한
                             Template를 Sequencing하는 서비스입니다. 특히 아래와 같은 특이구조를 가진 Template에 적합하며 고품질의<br>
                             개선된 결과를 안정적으로 얻을 수 있습니다.</p>
@@ -201,14 +197,12 @@
                             <span class="text">16S/18S/26S rRNA&ITS Region Full Sequencing</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('rrna')"><a href="#">16S/18S/26S rRNA&ITS Region
-                                Full Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('rrna')"><a href="#">16S/18S/26S rRNA&ITS Region Full Sequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('rapidID')"><a href="#">Rapid-ID</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
-                    <div class="section-anchor"><p class="font-h5 sub-title" id="rrna">16S/18S/26S rRNA&#38;ITS Region
-                        Full Sequencing</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="rrna">16S/18S/26S rRNA&#38;ITS Region Full Sequencing</p>
                         <p class="desc list_bottom font-body">16S rRNA gene 27F, 1492R primer를 이용하여 PCR을 진행한 뒤
                             Inter-primer인 785F,
                             907R primer로 Sequencing 하여 균을 동정하는 서비스입니다. 고객이 원하는 경우 Primer를 추가 선택/변경하여 약 1,350bp 이상의 염기서열을
@@ -336,13 +330,11 @@
                         </div>
                         <!--v0.5 value값 추가 (주석제거예정)-->
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('ancher1')"><a href="#">PCR
-                                Optimization/Amplification</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher1')"><a href="#">PCR Optimization/Amplification</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher2')"><a href="#">Pyrosequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher3')"><a href="#">NGS Validation</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher4')"><a href="#">MLST 분석</a></li>
-                            <li class="anchor-value" onclick="TitleMove('ancher5')"><a href="#">One-click Sanger
-                                Sequencing</a></li>
+                            <li class="anchor-value" onclick="TitleMove('ancher5')"><a href="#">One-click Sanger Sequencing</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher10')"><a href="#">Primer Walking</a></li>
                             <li class="anchor-value" onclick="TitleMove('ancher11')"><a href="#">Cloning</a></li>
                         </ul>
@@ -357,7 +349,7 @@
                     </div>
                     <hr class="divider">
                     <div class="section-anchor">
-                        <p class="font-h5 sub-title" id="ancher1">PCR Optimization/ Amplification</p>
+                        <p class="font-h5 sub-title" id="ancher1">PCR Optimization/Amplification</p>
                         <p class="desc list_bottom font-body">PCR Optimization은 Target region과 관련하여 Reference와 함께 받은
                             Cell/gDNA의 Primer
                             디자인, PCR 증폭, Sequencing, BI 리포트를 포함한 전 프로세스 공정을 수행•분석하는 고객 맞춤형 서비스입니다. PCR 증폭, Touch down
@@ -441,9 +433,7 @@
                     </div>
                     <hr class="divider">
                     <div class="section-anchor">
-                        <p class="sub-title font-h5" id="ancher5">
-                            One-click Sanger Sequencing
-                        </p>
+                        <p class="sub-title font-h5" id="ancher5">One-click Sanger Sequencing</p>
                         <p class="desc font-body">
                             일반적으로 많이 연구되고 있는 특정유전자 변이를 분석하는 방법으로 One-click만으로 편리하고 빠르게 이용하실 수 있습니다. 또한 gDNA추출부터 PCR 증폭,
                             Sequencing 및 SNP분석까지 최적화된
@@ -457,9 +447,7 @@
                     <hr class="divider">
                     <!--v0.5 id값 추가 (주석제거예정)-->
                     <div class="section-anchor">
-                        <p class="sub-title font-h5" id="ancher10">
-                            Primer Walking
-                        </p>
+                        <p class="sub-title font-h5" id="ancher10">Primer Walking</p>
                         <p class="desc font-body">
                             Single primer extension으로 한 번에 읽을 수 없는 Plasmid나 PCR product의 염기서열을 분석하는 서비스이며 보통 2~10kb 정도의
                             시퀀스
@@ -474,9 +462,7 @@
                     <hr class="divider">
                     <!--v0.5 id값 추가 (주석제거예정)-->
                     <div class="section-anchor">
-                        <p class="sub-title font-h5" id="ancher11">
-                            Cloning
-                        </p>
+                        <p class="sub-title font-h5" id="ancher11">Cloning</p>
                         <p class="desc font-body">
                             유전체에서 특정 유전자 또는 특정 DNA 절편을 분리한 뒤 원하는 Cell을 이용한 대량 복제 방법으로 PCR Product를 마크로젠에서 제공하는
                             Vector(T-vector or Blunt-vector)에 삽입하거나 고객의 Vector(Sub-cloning)로 제공하는 서비스입니다. PCR product의
@@ -710,9 +696,10 @@
         console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
-        $Selected.addClass($Select.eq(idx).addClass('active'));
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
 
         setInfoSectionList($Select.eq(idx).text())
         /*페이지 변경후 상단 이동*/
@@ -754,21 +741,23 @@
 
 
             /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
-            if (offset < infoSectionList.list[infoSectionList.list?.length - 1]?.offset) {
-                writeText(infoSectionList.title)
-            } else {
-                var title;
-                for (let i = 0; i < infoSectionList.list.length; i++) {
-                    var item = infoSectionList.list[i]
-                    if (offset > item.offset) {
-                        // console.log(i);
-                        title = item.title
-                        break
-                    }
-                }
-                console.log(title);
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
                 writeText(title)
+                ChangeColor(title)
+
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
             }
+            writeText(title)
+            ChangeColor(title)
 
         });
     }
@@ -782,6 +771,18 @@
         // console.log(text);
         $('._anchor-value .text').text(text)
 
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
     }
 
     function setInfoSectionList(tit) {
@@ -804,7 +805,6 @@
                 title: title
             })
         })
-        console.log(infoSectionList);
     }
 
     /*드롭다운 클릭시 이벤트*/
