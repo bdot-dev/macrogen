@@ -445,7 +445,7 @@
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        console.log(change);
+        // console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
@@ -471,7 +471,7 @@
         var listPos = $('.info-box').offset().top;
         $(window).on('scroll', function (e) {
             let offset = $(this).scrollTop();
-            console.log(offset);
+            // console.log(offset);
 
             if (offset > lastScroll){
                 // console.log('down')
@@ -502,6 +502,7 @@
                 let i = 0; i < infoSectionList.list.length; i++) {
                 var item = infoSectionList.list[i]
                 var title = item.title
+
                 writeText(title)
                 ChangeColor(title)
 
@@ -529,7 +530,7 @@
     }
 
     function ChangeColor(title){
-        console.log(title);
+        // console.log(title);
         $(".anchor-value a").css({
             'color' : '#454545',
             'font-weight' : 'normal'
@@ -559,6 +560,7 @@
             let top = $(this).offset().top - 75;
             // console.log(top);
             let title = $(this).find('.sub-title').text();
+
             infoSectionList.list.unshift({
                 index: index,
                 offset: top,
@@ -598,7 +600,7 @@
     function TitleMove(target) {
         var id = $('#' + target);
         var offset = id.offset();
-        $('html, body').animate({scrollTop: offset.top - 75}, 300);
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
     }
 
 
