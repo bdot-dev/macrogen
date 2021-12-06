@@ -515,7 +515,7 @@
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        console.log(change);
+        // console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
@@ -541,7 +541,7 @@
         var listPos = $('.info-box').offset().top;
         $(window).on('scroll', function (e) {
             let offset = $(this).scrollTop();
-            console.log(offset);
+            // console.log(offset);
 
             if (offset > lastScroll){
                 // console.log('down')
@@ -572,6 +572,7 @@
                 let i = 0; i < infoSectionList.list.length; i++) {
                 var item = infoSectionList.list[i]
                 var title = item.title
+
                 writeText(title)
                 ChangeColor(title)
 
@@ -599,7 +600,7 @@
     }
 
     function ChangeColor(title){
-        console.log(title);
+        // console.log(title);
         $(".anchor-value a").css({
             'color' : '#454545',
             'font-weight' : 'normal'
@@ -629,6 +630,7 @@
             let top = $(this).offset().top - 75;
             // console.log(top);
             let title = $(this).find('.sub-title').text();
+
             infoSectionList.list.unshift({
                 index: index,
                 offset: top,
@@ -668,7 +670,7 @@
     function TitleMove(target) {
         var id = $('#' + target);
         var offset = id.offset();
-        $('html, body').animate({scrollTop: offset.top - 75}, 300);
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
     }
 
 
@@ -854,50 +856,6 @@
     })
 </script>
 
-<!--1번이미지 모달 s-->
-<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
-            <div class="parent">
-                <div class="panzoom"><img src="../../img/business/img_data_graph1.png" alt="게시물 제목"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="toast-popup">
-    <p>이미지를 확대할 수 있습니다</p>
-</div>
-<script>
-    // modal show
-    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-    // zoom
-    var el = document.querySelector('.panzoom');
-    new PinchZoom.default(el, {});
 
-    // modal close
-    $('.btn-close').on('click', function () {
-        modal.hide();
-        hideToastPopup();
-    })
-
-    // modal open
-    $('._btnZoom-1').on('click', function () {
-        modal.show();
-        showToastPopup();
-    })
-
-
-
-    // toast popup
-    function showToastPopup() {
-        $('.toast-popup').addClass('active');
-        setTimeout(hideToastPopup, 2000);
-    }
-    function hideToastPopup() {
-        $('.toast-popup').removeClass('active');
-    }
-</script>
-<!--1번이미지 모달 e-->
 </body>
 </html>
