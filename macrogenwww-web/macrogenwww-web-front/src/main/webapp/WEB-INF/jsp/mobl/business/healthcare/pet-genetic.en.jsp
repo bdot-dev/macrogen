@@ -158,6 +158,7 @@
                         fnMousewheel();
 
                     </script>
+                    <!--v0.6 html 오탈자 수정 (주석제거예정)-->
                     <p class="font-h4 main-title">myPETGENE</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">

@@ -488,50 +488,50 @@
     </script>
     <!--contentanchor e-->
 
-	<!--1번이미지 모달 s-->
-	<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
-	            <div class="parent">
-	                <div class="panzoom"><img src="/publishing/mobile-en/dist/img/business/img_data_graph1.png" alt="게시물 제목"></div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div class="toast-popup">
-	    <p>You can enlarge it by clicking on the image.</p>
-	</div>
-	<script>
-	    // modal show
-	    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
-	    // zoom
-	    var el = document.querySelector('.panzoom');
-	    new PinchZoom.default(el, {});
+<!--1번이미지 모달 s-->
+<div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer1" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <a href="#" class="btn-close"><span class="sr-only">Close</span></a>
+            <div class="parent">
+                <div class="panzoom"><img src="/publishing/mobile-en/dist/img/business/img_data_graph1.png" alt="게시물 제목"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="toast-popup">
+    <p>You can enlarge it by clicking on the image.</p>
+</div>
+<script>
+    // modal show
+    var modal = new bootstrap.Modal(document.getElementById('modalImageViewer1'));
+    // zoom
+    var el = document.querySelector('.panzoom');
+    new PinchZoom.default(el, {});
 
-	    // modal close
-	    $('.btn-close').on('click', function () {
-	        modal.hide();
-	        hideToastPopup();
-	    })
+    // modal close
+    $('.btn-close').on('click', function () {
+        modal.hide();
+        hideToastPopup();
+    })
 
-	    // modal open
-	    $('._btnZoom-1').on('click', function () {
-	        modal.show();
-	        showToastPopup();
-	    })
+    // modal open
+    $('._btnZoom-1').on('click', function () {
+        modal.show();
+        showToastPopup();
+    })
 
 
 
-	    // toast popup
-	    function showToastPopup() {
-	        $('.toast-popup').addClass('active');
-	        setTimeout(hideToastPopup, 2000);
-	    }
-	    function hideToastPopup() {
-	        $('.toast-popup').removeClass('active');
-	    }
-	</script>
-	<!--1번이미지 모달 e-->
+    // toast popup
+    function showToastPopup() {
+        $('.toast-popup').addClass('active');
+        setTimeout(hideToastPopup, 2000);
+    }
+    function hideToastPopup() {
+        $('.toast-popup').removeClass('active');
+    }
+</script>
+<!--1번이미지 모달 e-->
 
 </body>

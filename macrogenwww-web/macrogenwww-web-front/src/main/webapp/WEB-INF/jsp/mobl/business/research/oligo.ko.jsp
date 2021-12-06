@@ -520,7 +520,7 @@
     function TitleMove(target) {
         var id = $('#' + target);
         var offset = id.offset();
-        $('html, body').animate({scrollTop: offset.top - 75}, 300);
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
     }
 
 
