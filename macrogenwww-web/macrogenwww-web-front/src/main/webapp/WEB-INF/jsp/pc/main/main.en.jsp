@@ -266,9 +266,22 @@
                         </li>
                     </ul>
                     <div class="bg_section bg0"></div>
-                    <div class="bg_section bg1 active"></div>
-                    <div class="bg_section bg2"></div>
-                    <div class="bg_section bg3"></div>
+
+                    <div class="bg_section bg1 active">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_기업개요.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg2">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="bg_section bg3">
+                        <video class="video" autoplay muted loop>
+                            <source src="/publishing/pc-en/dist/img/video/main_ESG.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <script>
                         var currentIdx = 1;
                         $('.shortcuts-box .btn-list li').mouseover(function () {
@@ -279,10 +292,13 @@
                                 console.log('wun')
                                 $('.bg_section').eq(index).addClass('active')
                                     .siblings().removeClass('active')
-
-
                                 currentIdx = index
                             }
+
+                            $('.bg_section .video').play().currentTime()
+
+                        }).mouseout(function(){
+                            $('.bg_section .video').pause()
                         });
                     </script>
                 </div>
@@ -472,7 +488,7 @@
             slidesPerGroup: 3,
             grabCursor: true,
             loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-            loop : true, // 무한 반복
+            /* loop : true, */
             navigation: {
                 nextEl: "._btnNext",
                 prevEl: "._btnPrev",
