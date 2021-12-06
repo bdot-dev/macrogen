@@ -500,16 +500,16 @@
                 </div>
                 <div class="inner">
                     <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
-                        <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
-                        <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
+                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
+                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
+                        <a class="pin kyoto" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Kyoto, japan</span></a>
+                        <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
+                        <a class="pin synapse" onClick="location.href='/${rc.locale.language}/company/global-network#synapse'"><i></i><span>Synapse, Singapore</span></a>
+                        <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
                     </div>
                 </div>
             </div>
