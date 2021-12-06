@@ -10,7 +10,7 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
+                <select class="select" title="serviceSite" onchange="openWindowInFooter(this)">
                     <option selected value="https://dna.macrogen.com/">Order site</option>
                     <option value="/${rc.locale.language }/policy/privacy">Privacy Statement</option>
                     <%-- <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option> --%>
@@ -18,7 +18,7 @@
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
+                <select class="select" title="familySite" onchange="openWindowInFooter(this)">
                     <option selected>Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
@@ -40,3 +40,17 @@
         <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-linkedin"></i></a></li>
     </ul>
 </footer>
+<script>
+	function openWindowInFooter(select) {
+		var url = select.value;
+		if (!url) return;
+
+		if (url.startsWith('http')) {
+			window.open(url);
+			select.value = '';
+		} else {
+			location.href = url;
+		}
+
+	}
+</script>
