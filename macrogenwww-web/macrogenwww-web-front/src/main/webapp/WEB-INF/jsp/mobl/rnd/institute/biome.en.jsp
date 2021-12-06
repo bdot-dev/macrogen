@@ -57,7 +57,7 @@
             <hr class="M-divider">
 
             <div class="box mb-0">
-                <div class="font-h7">연구영역</div>
+                <div class="font-h7">Areas of Research</div>
                 <img src="/publishing/mobile-en/dist/img/RD/img-biome-area.svg" alt="연구 영역">
             </div>
         </div>

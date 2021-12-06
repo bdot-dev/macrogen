@@ -10,16 +10,17 @@
     <div class="link-list">
         <ul>
             <li>
-                <select class="select" title="serviceSite" onchange="if(this.value) location.href=(this.value);">
-                    <option selected value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
+                <select class="select" title="serviceSite" onchange="openWindowInFooter(this)">
+                    <option value="">서비스 신청/견적 문의</option>
+                    <option value="https://dna.macrogen.com/">서비스 신청/견적 문의</option>
                     <option value="/${rc.locale.language }/policy/privacy">개인정보 처리방침</option>
                     <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
                     <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
                 </select>
             </li>
             <li>
-                <select class="select" title="familySite" onchange="if(this.value) location.href=(this.value);">
-                    <option selected>Family Site</option>
+                <select class="select" title="familySite" onchange="openWindowInFooter(this)">
+                    <option value="">Family Site</option>
                     <option value="https://thebiome.life/">더바이옴</option>
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
@@ -40,3 +41,17 @@
         <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-linkedin"></i></a></li>
     </ul>
 </footer>
+<script>
+	function openWindowInFooter(select) {
+		var url = select.value;
+		if (!url) return;
+
+		if (url.startsWith('http')) {
+			window.open(url);
+			select.value = '';
+		} else {
+			location.href = url;
+		}
+
+	}
+</script>
