@@ -53,15 +53,15 @@
 
             <nav class="tab-secondary" data-aos="fade-up" data-aos-duration="2000">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true"><span>국내</span></button>
-                    <button class="nav-link" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false"><span>글로벌</span></button>
+                    <button class="nav-link ${ globalYn ne 'Y' ? 'active' : '' }" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true"><span>국내</span></button>
+                    <button class="nav-link ${ globalYn eq 'Y' ? 'active' : '' }" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false"><span>글로벌</span></button>
                 </div>
             </nav>
 
             <!-- s  map 상세 -->
             <div class="section-map-detail" data-aos="fade-up" data-aos-duration="2000">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
+                    <div class="tab-pane fade ${ globalYn ne 'Y' ? 'show active' : '' }" id="nav-1" role="tabpanel" aria-labelledby="nav-tab-1">
                         <div class="box">
                             <div class="title">국내</div>
                             <div class="detail">
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
+                    <div class="tab-pane fade ${ globalYn eq 'Y' ? 'show active' : '' }" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
                         <div class="box">
                             <div class="title">글로벌</div>
                             <div class="detail">
