@@ -589,11 +589,14 @@
 	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
 	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
 	                    <br>908억 원을 달성했습니다.
-	                </p>
-	                <div class="btn-area">
+	                </p> --%>
+	                <div class="data-img">
+	                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+	                </div>
+	                <!-- <div class="btn-area">
 	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> --%>
+	                </div> -->
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
@@ -633,6 +636,18 @@
 				layerPopupModal.hide();
 			});
 		});
+
+		function onclickPopupImage(url, trgtCode) {
+			if (!url) {
+				return;
+			}
+
+			if (trgtCode === 'NEW') {
+				window.open(url);
+			} else {
+				location.href = url;
+			}
+		}
 	</script>
 
 </c:if>
