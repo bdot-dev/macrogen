@@ -14,6 +14,7 @@ front.common = (function () {
         this.swiperTab();
         this.commonHandler();
         this.scrollHorizon();
+        this.selectDefault();
     }
 
     var a = function () {
@@ -24,87 +25,6 @@ front.common = (function () {
 
     var swiperTab = function () {
         $(document).ready(function (){
-            if ($('.panzoom > img').length > 0) {
-                var webpage = ($('.panzoom > img'))[0];
-                var image = ($('.panzoom'))[0];
-
-                var mc = new Hammer.Manager(image);
-
-                var pinch = new Hammer.Pinch();
-                var pan = new Hammer.Pan();
-
-                pinch.recognizeWith(pan);
-
-                mc.add([pinch, pan]);
-
-                var adjustScale = 1;
-                var adjustDeltaX = 0;
-                var adjustDeltaY = 0;
-
-                var currentScale = null;
-                var currentDeltaX = null;
-                var currentDeltaY = null;
-                var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-                // Prevent long press saving on mobiles.
-                webpage.addEventListener('touchstart', function (e) {
-                    e.preventDefault()
-                });
-
-                // Handles pinch and pan events/transforming at the same time;
-                mc.on("pinch pan", function (ev) {
-                    var transforms = [];
-
-                    // Adjusting the current pinch/pan event properties using the previous ones set when they finished touching
-                    currentScale = adjustScale * ev.scale;
-
-                    if (currentScale <= 1) {
-                        transforms.push('scale(1)');
-                        transforms.push('translate(0px, 0px)');
-                        webpage.style.transform = transforms.join(' ');
-
-                        if (ev.additionalEvent === "pandown") {
-                            $('html, body').scrollTop(currentScroll - ev.distance);
-                        } else if (ev.additionalEvent === "panup") {
-                            $('html, body').scrollTop(currentScroll + ev.distance);
-                        }
-                    } else {
-                        currentDeltaX = adjustDeltaX + (ev.deltaX / currentScale);
-                        currentDeltaY = adjustDeltaY + (ev.deltaY / currentScale);
-
-                        transforms.push('scale(' + currentScale + ')');
-                        // Concatinating and applying parameters.
-                        transforms.push('translate(' + currentDeltaX + 'px, ' + currentDeltaY + 'px)');
-                        webpage.style.transform = transforms.join(' ');
-                    }
-                });
-
-                mc.on("panend pinchend", function (ev) {
-                    if (currentScale <= 1) {
-                        currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-                        if (ev.additionalEvent === "panright") {
-                        } else if (ev.additionalEvent === "panleft") {}
-                    }
-                    // Saving the final transforms for adjustment next time the user interacts.
-                    adjustScale = currentScale;
-                    adjustDeltaX = currentDeltaX;
-                    adjustDeltaY = currentDeltaY;
-                });
-            }
-
-            /* s swiper - 터치 여부에 따른 show & hide */
-            // swiper.on('slideChange', function() {
-            //     $('._slideLeft').show()
-            //     $('._slideRight').show()
-            // });
-            //
-            // swiper.on('touchMove', function(swiper, index) {
-            //     $('._slideLeft').hide()
-            //     $('._slideRight').hide()
-            // });
-            /* e swiper - 터치 여부에 따른 show & hide */
-
-            /* s slide container & slide - width */
             if($('.macrogen-authorization').length === 1) {
                 new Swiper('.snbSwiper', {
                     slidesPerView: 'auto',
@@ -154,40 +74,6 @@ front.common = (function () {
                         })
                     }, 200);
                 }
-                // var swiper = new Swiper("._swiperTab", {
-                //     slidesPerView: "auto",
-                //     spaceBetween: 0,
-                //     centeredSlides: true,
-                //     watchActiveIndex: true,
-                //     slideToClickedSlide: true,
-                //     navigation: {
-                //         nextEl: "._slideRight",
-                //         prevEl: "._slideLeft",
-                //     }
-                // });
-                //
-                // var slide = $('._swiperTab').find('.swiper-slide')
-                // var idx = slide.length;
-                // var sum = 0;
-                //
-                // for (var i = 0; i <= idx; i++) {
-                //     var target = slide.eq(i);
-                //     var idxWidth = target.outerWidth(true) - 24;
-                //     target.css('width', idxWidth);
-                // }
-                //
-                // for (var j = 0; j < idx; j++) {
-                //     sum = sum + slide.eq(j).outerWidth(true);
-                // }
-                //
-                // $('.swiper-wrapper').css('width', sum);
-                // /* e swiper slide container  */
-                //
-                // /* s slide active  */
-                // slide.on('click', function () {
-                //     $(this).addClass('active').siblings().removeClass('active');
-                // });
-                // /* e slide active  */
             }
         })
     }
@@ -213,6 +99,75 @@ front.common = (function () {
         });
         /* e Dropdown Menu */
 
+        /* s zoom */
+        $(document).ready(function (){
+            if ($('.panzoom > img').length > 0) {
+                var webpage = ($('.panzoom > img'))[0];
+                var image = ($('.panzoom'))[0];
+
+                var mc = new Hammer.Manager(image);
+
+                var pinch = new Hammer.Pinch();
+                var pan = new Hammer.Pan();
+
+                pinch.recognizeWith(pan);
+
+                mc.add([pinch, pan]);
+
+                var adjustScale = 1;
+                var adjustDeltaX = 0;
+                var adjustDeltaY = 0;
+
+                var currentScale = null;
+                var currentDeltaX = null;
+                var currentDeltaY = null;
+                var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                webpage.addEventListener('touchstart', function (e) {
+                    e.preventDefault()
+                });
+
+                mc.on("pinch pan", function (ev) {
+                    var transforms = [];
+
+                    currentScale = adjustScale * ev.scale;
+
+                    if (currentScale <= 1) {
+                        transforms.push('scale(1)');
+                        transforms.push('translate(0px, 0px)');
+                        webpage.style.transform = transforms.join(' ');
+
+                        if (ev.additionalEvent === "pandown") {
+                            $('html, body').scrollTop(currentScroll - ev.distance);
+                        } else if (ev.additionalEvent === "panup") {
+                            $('html, body').scrollTop(currentScroll + ev.distance);
+                        }
+                    } else {
+                        currentDeltaX = adjustDeltaX + (ev.deltaX / currentScale);
+                        currentDeltaY = adjustDeltaY + (ev.deltaY / currentScale);
+
+                        transforms.push('scale(' + currentScale + ')');
+
+                        transforms.push('translate(' + currentDeltaX + 'px, ' + currentDeltaY + 'px)');
+                        webpage.style.transform = transforms.join(' ');
+                    }
+                });
+
+                mc.on("panend pinchend", function (ev) {
+                    if (currentScale <= 1) {
+                        currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                        if (ev.additionalEvent === "panright") {
+                        } else if (ev.additionalEvent === "panleft") {}
+                    }
+
+                    adjustScale = currentScale;
+                    adjustDeltaX = currentDeltaX;
+                    adjustDeltaY = currentDeltaY;
+                });
+            }
+        })
+        /* e zoom */
+
         /* s AOS */
         AOS.init();
         /* e AOS */
@@ -237,6 +192,8 @@ front.common = (function () {
         $('._btnTooltip').on('click',function (){
             $('.tooltip-box').removeClass('active');
             $(this).parent().addClass('active');
+            $('._btnTooltip').css('z-index', '1');
+            $(this).css('z-index', '3');
         })
 
         $('._btnTooltipClose').on('click',function (){
@@ -271,23 +228,78 @@ front.common = (function () {
             }
         });
         /* s accordion */
+
+        /* 인증 tooltip 이슈 처리 */
+        var varUA = navigator.userAgent.toLowerCase();
+
+        if ( varUA.indexOf('android') > -1) {
+            // console.log('android')
+            $('.macrogen.macrogen-authorization .section .tooltip-box .text-box').css('top','41.5px');
+            $('.en .macrogen.macrogen-authorization .section .tooltip-box .text-box').css('top','39.5px');
+            return "android";
+        } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+            // console.log('ios')
+            return "ios";
+        } else {
+            // console.log('others')
+            return "other";
+        }
     }
 
     var scrollHorizon = function(){
-        $(window).on("load",function(){
+        /*스크립트 변경*/
+        $(document).ready(function(){
             $(".table-scroll").mCustomScrollbar({
                 axis:"x",
-                theme:"dark"
+                theme:"dark",
+                setTop: "6px"
+            });
+
+            $(".select-option").mCustomScrollbar({
+                axis:"y",
+            });
+            $(".anchor-option").mCustomScrollbar({
+                axis:"y",
             });
         });
     };
+
+    var selectDefault = function () {
+        var selectDefault = $('.select-box ._select_default');
+        $('._select_list').hide();
+
+        selectDefault.on('click',function() {
+            var select = $(this);
+            //드롭다운 닫기
+            if(select.hasClass('open')) {
+                select.removeClass('open').next('._select_list').slideUp(200);
+            }
+            //드롭다운 열기
+            else {
+                select.addClass("open").next('._select_list').slideDown(200);
+                /*  $(document).click(function(event) {
+                    if ( !$(event.target).hasClass('open')) {
+                      select.removeClass('open');
+                      $('._select_list').removeClass('open').slideUp(200);
+                    }
+                  });*/
+            }
+            $(this).next().find('span').on('click',function() {
+                var option = $(this).text();
+                console.log(option)
+                $(this).parents('.select-box').find('._select_default .text').text(option);
+            });
+        });
+    }
+
 
     return {
         a: a,
         swiperTab : swiperTab,
         commonHandler: commonHandler,
         init: init,
-        scrollHorizon : scrollHorizon
+        scrollHorizon : scrollHorizon,
+        selectDefault : selectDefault
     }
 })();
 

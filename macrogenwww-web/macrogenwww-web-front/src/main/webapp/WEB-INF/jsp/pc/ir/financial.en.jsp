@@ -16,7 +16,7 @@
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">Consolidated Statement of Financial Position</span>
-                    <span class="text-unit">(Unit: Thousand KRW)</span>
+                    <span class="text-unit">Unit: Thousand KRW</span>
                 </div>
 
                 <table class="table table-rotate">
@@ -65,7 +65,7 @@
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">Consolidated Statement of Comprehensive Income</span>
-                    <span class="text-unit">(Unit: Thousand KRW)</span>
+                    <span class="text-unit">Unit: Thousand KRW</span>
                 </div>
                 <table class="table table-rotate">
                     <tbody>

@@ -36,6 +36,7 @@
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/research/ngs">- NGS</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/ces">- CES</a></li>
+                                    <li><a href="/${rc.locale.language }/business/research/gene-sythesis">- Gene Sythesis</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/oligo">- Oligo</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/microarray">- Microarray</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/model">- GEM</a></li>
@@ -52,7 +53,7 @@
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">- Personal Genome Analysis</a></li>
                                     <li><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">- Microbiome Analysis</a></li>
-                                    <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">- Companion animal gene analysis</a></li>
+                                    <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">- Pet DNA Test</a></li>
                                 </ul>
                             </li>
                         </ul>

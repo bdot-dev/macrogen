@@ -497,7 +497,7 @@
             slidesPerGroup: 3,
             grabCursor: true,
             loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-            loop : true, // 무한 반복
+            /* loop : true, */
             navigation: {
                 nextEl: "._btnNext",
                 prevEl: "._btnPrev",
@@ -519,16 +519,16 @@
                         </div>
                     </div>
                     <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
-                        <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
-                        <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
+                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
+                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
+                        <a class="pin kyoto" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Kyoto, japan</span></a>
+                        <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
+                        <a class="pin synapse" onClick="location.href='/${rc.locale.language}/company/global-network#synapse'"><i></i><span>Synapse, Singapore</span></a>
+                        <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
                     </div>
                     <script>
                     	$('.map .pin').on('click', function () {
@@ -589,11 +589,14 @@
 	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
 	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
 	                    <br>908억 원을 달성했습니다.
-	                </p>
-	                <div class="btn-area">
+	                </p> --%>
+	                <div class="data-img">
+	                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+	                </div>
+	                <!-- <div class="btn-area">
 	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> --%>
+	                </div> -->
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
@@ -633,6 +636,18 @@
 				layerPopupModal.hide();
 			});
 		});
+
+		function onclickPopupImage(url, trgtCode) {
+			if (!url) {
+				return;
+			}
+
+			if (trgtCode === 'NEW') {
+				window.open(url);
+			} else {
+				location.href = url;
+			}
+		}
 	</script>
 
 </c:if>

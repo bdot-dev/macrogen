@@ -20,13 +20,13 @@
                     <div class="font-h1">투자자 문의</div>
                     <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
                     <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
-                    <a href="#write-form" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
+                    <a href="#write" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>
 
                 </div>
                 <div class="img-area"></div>
 
             </div>
-            <div class="privacy_box" id="write-form">
+            <div class="privacy_box" id="write">
                 <div class="font-h5"><span>01.</span>정보를 입력해주세요</div>
                 <!-- input / text-->
                 <div class="input-group">

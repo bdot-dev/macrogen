@@ -33,7 +33,8 @@
 
         <div class="frame">
             <div class="font-h1">GEM</div>
-            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
+            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -41,15 +42,36 @@
             <!--동물모델사업부 공통 s -->
             <div class="subject-box">
                 <p class="title font-h4">Customized GEM (Genetically Engineered Mouse) services
-                    and CRISPR(Clustered Regularly Interspaced Shortb Palindromic Repeats) technologies for genome editing
+                    and CRISPR(Clustered Regularly Interspaced Shortb Palindromic Repeats) technologies for genome
+                    editing
                 </p>
-                <p class="subject font-body-h img_bottom">Macrogen produces and supplies genetically engineered mice (GEM) based on CRISPR.</p>
+                <p class="subject font-body-h img_bottom">Macrogen produces and supplies genetically engineered mice
+                    (GEM) based on CRISPR.</p>
                 <div class="img">
                     <img src="/publishing/mobile-en/dist/img/business/img-animal-intro.png" alt="oligoIntro">
                 </div>
-                <p class="desc font-body">GEM (Genetically Engineered Mouse) is a laboratory mouse that has had certain genes inserted, removed, or modified using gene-editing technologies. Such mice are widely used in biological and medical research to identify the functions of human genes. Macrogen’s main GEM service offers Transgenic Mice and Knock-Out/Knock-In mice. A Transgenic Mouse is one in which a specific gene has been inserted to study the function of that gene. A Knock-Out Mouse is a genetically engineered mouse in which the expression of a target gene has been suppressed by removing a specific gene, and a Knock-In Mouse is a genetically engineered mouse in which the expression of a target gene can be adjusted or explored by modifying a certain gene. Macrogen also offers a wide range of other GEM-related services including mass reproduction, mouse line recovery, embryo freezing and reproduction to live, and KO/TG mouse maintenance. To ensure process efficiency, our genetically engineered mice are produced after a thorough experiment design process with our clients. We provide a customized partial process service to meet various client requirements, and our strict quarantine system ensures that all mice are maintained and supplied in a specific pathogen free (SPF) state.
+                <p class="desc font-body">GEM (Genetically Engineered Mouse) is a laboratory mouse that has had certain
+                    genes inserted, removed, or modified using gene-editing technologies. Such mice are widely used in
+                    biological and medical research to identify the functions of human genes. Macrogen’s main GEM
+                    service offers Transgenic Mice and Knock-Out/Knock-In mice. A Transgenic Mouse is one in which a
+                    specific gene has been inserted to study the function of that gene. A Knock-Out Mouse is a
+                    genetically engineered mouse in which the expression of a target gene has been suppressed by
+                    removing a specific gene, and a Knock-In Mouse is a genetically engineered mouse in which the
+                    expression of a target gene can be adjusted or explored by modifying a certain gene. Macrogen also
+                    offers a wide range of other GEM-related services including mass reproduction, mouse line recovery,
+                    embryo freezing and reproduction to live, and KO/TG mouse maintenance. To ensure process efficiency,
+                    our genetically engineered mice are produced after a thorough experiment design process with our
+                    clients. We provide a customized partial process service to meet various client requirements, and
+                    our strict quarantine system ensures that all mice are maintained and supplied in a specific
+                    pathogen free (SPF) state.
                     <br><br>
-                    CRISPR-Cas9, Macrogen's flagship service, is made by attaching a guide RNA that functions as a guide and Cas9 protein that cuts DNA. In principle, the position to cut and edit the DNA sequence varies, depending on the design of the guide RNA that finds the target DNA. Macrogen is developing gene editing technology with Seoul National University Hospital and the most prestigious research institutes around the world, including the Broad Institute co-founded by MIT (Massachusetts Institute of Technology) and Harvard University. Furthermore, we have secured over 50 CRISPR gene editing technologies owned by the Broad Institute in America.</p>
+                    CRISPR-Cas9, Macrogen's flagship service, is made by attaching a guide RNA that functions as a guide
+                    and Cas9 protein that cuts DNA. In principle, the position to cut and edit the DNA sequence varies,
+                    depending on the design of the guide RNA that finds the target DNA. Macrogen is developing gene
+                    editing technology with Seoul National University Hospital and the most prestigious research
+                    institutes around the world, including the Broad Institute co-founded by MIT (Massachusetts
+                    Institute of Technology) and Harvard University. Furthermore, we have secured over 50 CRISPR gene
+                    editing technologies owned by the Broad Institute in America.</p>
             </div>
             <!--동물모델사업부 공통 e -->
 
@@ -67,85 +89,6 @@
                         <li class="option-value"><a href="#">Additional</a></li>
                     </ul>
                 </div>
-                <script>
-    /*변수*/
-    var selectBox = $(".select-box");
-    var option = $(".option-value");
-
-
-    /*드롭다운 클릭시 이벤트*/
-    selectBox.on('click', function () {
-        var select = $(this);
-        if (select.hasClass('open')) {
-            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-        } else {
-            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-            $('body').on('click', function (e) {
-                if (selectBox.hasClass('open')) {
-                    if (!selectBox.has(e.target).length) {
-                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                    }
-                }
-
-            })
-        }
-    });
-
-    /*클릭시 텍스트 변경*/
-    function textChange() {
-        option.on('click', function () {
-            var select = $(this).find('a').text();
-            $('._selected-value').find('span').text(select);
-        });
-    }
-
-    textChange();
-
-    /*클릭시 탭메뉴 변경*/
-    option.on('click', function () {
-        var idx = $(this).index();
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-        textChange();
-    })
-
-    /*이전 다음 이동*/
-    function setTabContent(idx) {
-        $('._selected-value').text($('._select-option li').eq(idx).text());
-        <!--탭메뉴 클릭시 페이지 변경-->
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-
-        /*페이지 변경후 상단 이동*/
-        fnMove();
-
-        /*클릭시 텍스트 변경*/
-        console.log(idx);
-
-    }
-
-    /*탭메뉴 상단으로 이동*/
-    function fnMove() {
-        var offset = $("._content-anchor").offset();
-        $('html, body').animate({scrollTop: offset.top - 95}, 100);
-    }
-
-    /*외부클릭시 셀렉트박스 초기화*/
-    $("body").click(function (e) {
-        if (!selectBox.has(e.target).length) {
-            selectBox.removeClass("open").children('.select-option').slideUp(200);
-        }
-    });
-
-</script>
 
             </div>
             <!--네비게이션 바 e-->
@@ -160,52 +103,95 @@
                             <span class="text">CRISPR gRNA Synthesis</span>
                         </div>
                         <ul class="anchor-option">
+                            <!--v0.11 줄바꿈 이슈-->
                             <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">CRISPR gRNA Synthesis</a></li>
                             <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">CRISPR Validated gRNA</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">CRISPR gRNA Plasmid</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CRISPR KI/KO Mouse</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">CRISPR gRNA Plasmid</a>
+                            </li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CRISPR KI/KO Mouse</a>
+                            </li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
                     <p class="font-h4 main-title">CRISPR Knock-In/Out</p>
-                    <p class="subject font-body-h-b">We produce and supply KI/KO mice quickly at low cost based on CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats).</p>
+                    <p class="subject font-body-h-b">We produce and supply KI/KO mice quickly at low cost based on
+                        CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats).</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-animal-crispr.png" alt="CRISPR Knock-In/Out">
                     </div>
                     <hr class="divider">
-                    <p class="sub-title font-h5" id="target1">CRISPR gRNA Synthesis</p>
-                    <p class="desc font-body">We supply gRNA design, gRNA synthesis, and synthesized gRNA for specific genes. CRISPR/Cas9 is considered as the most advanced technology to modify/edit genes, and Macrogen synthesizes and provides CRISPR gRNA that researchers need. This allows them directly perform corrections of such genes as KO or KI on cells. Macrogen is developing gene editing technology with Seoul National University Hospital and the most prestigious domestic and overseas research institutes, including the Broad Institute co-founded by MIT (Massachusetts Institute of Technology) and Harvard University. We have also managed to secure more than 50 CRISPR gene editing technologies owned by the Broad Research Institute in the United States, and exclusively introduced the "drug-induced CRISPR-Cas9 recombination vector technology” developed by Professor Lee Eun-Joo and Kim Hyo-Soo from the Cell Therapy Commercialization Center at Seoul National University Hospital. The Macrogen GEM Division searches for and delivers gRNA candidates that meet the researcher's needs for free.</p>
+                    <div class="section-anchor"><p class="sub-title font-h5" id="target1">CRISPR gRNA Synthesis</p>
+                        <p class="desc font-body">We supply gRNA design, gRNA synthesis, and synthesized gRNA for
+                            specific
+                            genes. CRISPR/Cas9 is considered as the most advanced technology to modify/edit genes, and
+                            Macrogen synthesizes and provides CRISPR gRNA that researchers need. This allows them
+                            directly
+                            perform corrections of such genes as KO or KI on cells. Macrogen is developing gene editing
+                            technology with Seoul National University Hospital and the most prestigious domestic and
+                            overseas research institutes, including the Broad Institute co-founded by MIT (Massachusetts
+                            Institute of Technology) and Harvard University. We have also managed to secure more than 50
+                            CRISPR gene editing technologies owned by the Broad Research Institute in the United States,
+                            and
+                            exclusively introduced the "drug-induced CRISPR-Cas9 recombination vector technology”
+                            developed
+                            by Professor Lee Eun-Joo and Kim Hyo-Soo from the Cell Therapy Commercialization Center at
+                            Seoul
+                            National University Hospital. The Macrogen GEM Division searches for and delivers gRNA
+                            candidates that meet the researcher's needs for free.</p></div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target2">CRISPR Validated gRNA</p>
-                    <p class="desc font-body">We supply gRNA design, gRNA synthesis, and activity-measured gRNA for specific genes.</p>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="target2">CRISPR Validated gRNA</p>
+                        <p class="desc font-body">We supply gRNA design, gRNA synthesis, and activity-measured gRNA for
+                            specific genes.</p></div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target3">CRISPR gRNA Plasmid</p>
-                    <p class="desc font-body list_bottom">We supply gRNA design for specific genes, gRNA synthesis by producing one selected gRNA as plasmid. CRISPR/Cas9 is currently the most advanced technology for modifying and correcting genes, and the Macrogen GEM Division provides CRISPR Grna needed by researchers in plasmid form so that they can directly conduct gene editing such as KO or KI in cells.</p>
-                    <div class="list-area">
-                        <p class="font-body-h-b title">Service</p>
-                        <ul class="list-circle-dot img_bottom">
-                            <li><p>Co-expression of GRNA and Cas9</p></li>
-                            <li><p>Continuous use through DNA prep.</p></li>
-                            <li><p>Include EGFP or PuroR as selection markers</p></li>
-                            <li><p>Single-cutting or double-cutting available</p></li>
-                        </ul>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="target3">CRISPR gRNA Plasmid</p>
+                        <p class="desc font-body list_bottom">We supply gRNA design for specific genes, gRNA synthesis
+                            by
+                            producing one selected gRNA as plasmid. CRISPR/Cas9 is currently the most advanced
+                            technology
+                            for modifying and correcting genes, and the Macrogen GEM Division provides CRISPR Grna
+                            needed by
+                            researchers in plasmid form so that they can directly conduct gene editing such as KO or KI
+                            in
+                            cells.</p>
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Service</p>
+                            <ul class="list-circle-dot img_bottom">
+                                <li><p>Co-expression of GRNA and Cas9</p></li>
+                                <li><p>Continuous use through DNA prep.</p></li>
+                                <li><p>Include EGFP or PuroR as selection markers</p></li>
+                                <li><p>Single-cutting or double-cutting available</p></li>
+                            </ul>
+                        </div>
                     </div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target4">CRISPR KI/KO Mouse</p>
-                    <p class="desc font-body list_bottom">We provide Knock-In and Knock-Out mouse production services based on CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats). CRISPR gene editing is used on KI (Knock-In Mouse) and KO (Knock-Out Mouse) in a more efficient way. The KI refers to mice in which another gene is expressed, instead of the original gene, by inserting and removing a specific gene. KO refers to those mice in which the expression of a gene is suppressed by removing a specific gene. As a result, researchers can use KO or KI mice to observe gene function in living creatures.
-                    </p>
-                    <div class="list-area img_bottom">
-                        <p class="font-body-h-b title">Service</p>
-                        <ul class="list-circle-dot">
-                            <li><p>Macrogen produces and supplies KI/KO mice in a shorter time frame and at a lower cost based on the CRISPR system that simplified the existing testing process.</p></li>
-                            <li><p>We take care of the entire process of mouse production and delivery with only the name of the gene specified.</p></li>
-                        </ul>
-                    </div>
-                    <div class="border-gray-box">
-                        <div class="img">
-                            <img src="/publishing/mobile-en/dist/img/business/img-crisper_kiko_mouse.png" alt="CRISPR KI/KO Mouse">
-                            <span class="btnZoom-1"><i class="icon ico-zoom-white"></i></span>
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="target4">CRISPR KI/KO Mouse</p>
+                        <p class="desc font-body list_bottom">We provide Knock-In and Knock-Out mouse production
+                            services
+                            based on CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats). CRISPR gene
+                            editing
+                            is used on KI (Knock-In Mouse) and KO (Knock-Out Mouse) in a more efficient way. The KI
+                            refers
+                            to mice in which another gene is expressed, instead of the original gene, by inserting and
+                            removing a specific gene. KO refers to those mice in which the expression of a gene is
+                            suppressed by removing a specific gene. As a result, researchers can use KO or KI mice to
+                            observe gene function in living creatures.
+                        </p>
+                        <div class="list-area img_bottom">
+                            <p class="font-body-h-b title">Service</p>
+                            <ul class="list-circle-dot">
+                                <li><p>Macrogen produces and supplies KI/KO mice in a shorter time frame and at a lower
+                                    cost
+                                    based on the CRISPR system that simplified the existing testing process.</p></li>
+                                <li><p>We take care of the entire process of mouse production and delivery with only the
+                                    name of the gene specified.</p></li>
+                            </ul>
+                        </div>
+                        <div class="border-gray-box">
+                            <div class="img">
+                                <img src="/publishing/mobile-en/dist/img/business/img-crisper_kiko_mouse.png" alt="CRISPR KI/KO Mouse">
+                                <span class="btnZoom-1"><i class="icon ico-zoom-white"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="btn-area">
@@ -234,7 +220,8 @@
                 <!--Genetically Engineered Mouse s-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Genetically Engineered Mouse</p>
-                    <p class="subject font-body-h-b">We provide GEM services for the production and supply of genetically engineered mice.</p>
+                    <p class="subject font-body-h-b">We provide GEM services for the production and supply of
+                        genetically engineered mice.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-animal-genetically.png" alt="Genetically Engineered Mouse">
@@ -245,6 +232,7 @@
                         <div class="selected-value _anchor-value">
                             <span class="text">Knock-out (KO)</span>
                         </div>
+                        <!--v0.11 줄바꿈이슈-->
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">Knock-out (KO)</a></li>
                             <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">Conditional Knock-out (cKO) Mouse</a></li>
@@ -254,75 +242,117 @@
                     </div>
                     <!--content-anchor e-->
                     <hr class="divider">
-                    <!--v0.7 오탈자수정-->
-                    <p class="sub-title font-h5" id="target5">Knock-out (KO)</p>
-                    <p class="desc font-body">This is a mouse production service in which a specific gene has been removed. KO (knock-out) is a technology that produces individuals with new traits by removing specific genes. This allows us to understand the function of specific genes in vivo and to identify genetic mutations that are associated with specific diseases. Macrogen has superior expertise and know-how to secure the mice that researchers need, based on extensive experience in the field.</p>
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor"><p class="sub-title font-h5" id="target5">Knock-out (KO)</p>
+                        <p class="desc font-body">This is a mouse production service in which a specific gene has been
+                            removed. KO (knock-out) is a technology that produces individuals with new traits by
+                            removing
+                            specific genes. This allows us to understand the function of specific genes in vivo and to
+                            identify genetic mutations that are associated with specific diseases. Macrogen has superior
+                            expertise and know-how to secure the mice that researchers need, based on extensive
+                            experience
+                            in the field.</p></div>
                     <hr class="divider">
-                    <p class="font-h5 sub-title" id="target6">Conditional Knock-out (cKO) Mouse</p>
-                    <p class="desc list_bottom font-body">This is a GEM service in which specific genes have been conditionally removed. For genes that cannot be knocked out, such as a lethal gene, we provide Conditional KO mice that can be knocked out at certain point by applying the Cre/loxP system. If the function of a specific gene is lethal, then KO mice cannot be produced by simply removing genes. To solve this problem, we produce mice in which a specific gene is conditionally removed so researchers can more precisely analyze the function and role of the gene. Macrogen has superior expertise and know-how to secure the mice that researchers need, based on extensive experience in the field. </p>
-                    <div class="list-area">
-                        <p class="font-body-h-b title">Service</p>
-                        <ul class="list-circle-dot">
-                            <li><p>KO mice can be produced for lethal genes</p></li>
-                            <li><p>Tissue-specific KO of genes available</p></li>
-                        </ul>
-                    </div>
-                    <hr class="divider">
-                    <p class="font-h5 sub-title" id="target7">Knock-in (KI) Mouse</p>
-                    <p class="desc font-body list_bottom">This is a GEM production service in which a specific gene is precisely inserted into the target location. The KI (knock-in) based on ESC (Embryonic Stem Cell) is a GEM production technology that has been proven over the years. Through this method, a specific gene can be inserted at the correct location to ensure that the specific gene is expressed. Furthermore, it is possible to newly identify the role of an unknown gene by using a TAG or injecting a fluorescent gene into an unknown gene. Insertion of a specific gene (KI) allows the role/function of that gene to be identified in mice. Today, the function of human genes can be identified in mice with humanized mice in which human genes are inserted.</p>
-                    <div class="list-area">
-                        <p class="font-body-h-b title">Service</p>
-                        <ul class="list-circle-dot img_bottom">
-                            <li><p>Check the function of specific genes through insertion</p></li>
-                            <li><p>Create humanized mice with human genes</p></li>
-                            <li><p>Identify the function of the mutation through insertion</p></li>
-                        </ul>
-                    </div>
-                    <hr class="divider">
-                    <!--v0.7 오탈자수정-->
-                    <p class="font-h5 sub-title" id="target8">Transgenic (TG) Mouse</p>
-                    <p class="desc font-body list_bottom">This is a mouse production service in which a specific gene is overexpressed. A transgenic mouse is one in which a gene of interest is inserted into the mouse’s genome so that the gene is over-expressed. Clients can choose conventional, inducible, and conditional expression vectors freely, depending on their needs.</p>
-                    <div class="list-area-group">
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor">
+                        <p class="font-h5 sub-title" id="target6">Conditional Knock-out (cKO) Mouse</p>
+                        <p class="desc list_bottom font-body">This is a GEM service in which specific genes have been
+                            conditionally removed. For genes that cannot be knocked out, such as a lethal gene, we
+                            provide
+                            Conditional KO mice that can be knocked out at certain point by applying the Cre/loxP
+                            system. If
+                            the function of a specific gene is lethal, then KO mice cannot be produced by simply
+                            removing
+                            genes. To solve this problem, we produce mice in which a specific gene is conditionally
+                            removed
+                            so researchers can more precisely analyze the function and role of the gene. Macrogen has
+                            superior expertise and know-how to secure the mice that researchers need, based on extensive
+                            experience in the field. </p>
                         <div class="list-area">
                             <p class="font-body-h-b title">Service</p>
                             <ul class="list-circle-dot">
-                                <li><p>The function of the gene can be checked through over-expression.</p></li>
-                                <li><p>This requires lower production cost and shorter production time than regular KI mice.</p></li>
+                                <li><p>KO mice can be produced for lethal genes</p></li>
+                                <li><p>Tissue-specific KO of genes available</p></li>
                             </ul>
                         </div>
-                        <div class="list-area ">
-                            <p class="font-body-h-b title img_bottom">Workflow</p>
-                            <!--10.05 이미지 경로 변경-->
-                            <div class="img">
-                                <img src="/publishing/mobile-en/dist/img/business/img_workflow_level4.png" alt="workflow">
-                            </div>
-                        </div>
+                    </div>
+                    <hr class="divider">
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor">
+                        <p class="font-h5 sub-title" id="target7">Knock-in (KI) Mouse</p>
+                        <p class="desc font-body list_bottom">This is a GEM production service in which a specific gene
+                            is
+                            precisely inserted into the target location. The KI (knock-in) based on ESC (Embryonic Stem
+                            Cell) is a GEM production technology that has been proven over the years. Through this
+                            method, a
+                            specific gene can be inserted at the correct location to ensure that the specific gene is
+                            expressed. Furthermore, it is possible to newly identify the role of an unknown gene by
+                            using a
+                            TAG or injecting a fluorescent gene into an unknown gene. Insertion of a specific gene (KI)
+                            allows the role/function of that gene to be identified in mice. Today, the function of human
+                            genes can be identified in mice with humanized mice in which human genes are inserted.</p>
                         <div class="list-area">
-                            <p class="font-body-h-b title img">Documents</p>
-                            <div class="file-download">
-                                <div class="item">
-                                    <i class="icon ico-file-pdf"></i>
-                                    <span class="font-body-b">Construction of expression vector.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
-                                </div>
-                                <div class="item">
-                                    <i class="icon ico-file-pdf"></i>
-                                    <span class="font-body-b">Purification of Expression vector for microinjection.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
-                                </div>
-                                <div class="item">
-                                    <i class="icon ico-file-pdf"></i>
-                                    <span class="font-body-b">Microinjection/Production of founder mouse.pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
-                                </div>
-                                <div class="item">
-                                    <i class="icon ico-file-pdf"></i>
-                                    <span class="font-body-b">Indentification of the founder(FO).pdf</span>
-                                    <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                            <p class="font-body-h-b title">Service</p>
+                            <ul class="list-circle-dot img_bottom">
+                                <li><p>Check the function of specific genes through insertion</p></li>
+                                <li><p>Create humanized mice with human genes</p></li>
+                                <li><p>Identify the function of the mutation through insertion</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <!--v0.11 section-anchor 추가-->
+                    <div class="section-anchor"><p class="font-h5 sub-title" id="target8">Transgenic (TG) Mouse</p>
+                        <p class="desc font-body list_bottom">This is a mouse production service in which a specific
+                            gene is
+                            overexpressed. A transgenic mouse is one in which a gene of interest is inserted into the
+                            mouse’s genome so that the gene is over-expressed. Clients can choose conventional,
+                            inducible,
+                            and conditional expression vectors freely, depending on their needs.</p>
+                        <div class="list-area-group">
+                            <div class="list-area">
+                                <p class="font-body-h-b title">Service</p>
+                                <ul class="list-circle-dot">
+                                    <li><p>The function of the gene can be checked through over-expression.</p></li>
+                                    <li><p>This requires lower production cost and shorter production time than regular
+                                        KI
+                                        mice.</p></li>
+                                </ul>
+                            </div>
+                            <div class="list-area ">
+                                <p class="font-body-h-b title img_bottom">Workflow</p>
+                                <!--10.05 이미지 경로 변경-->
+                                <div class="img">
+                                    <img src="/publishing/mobile-en/dist/img/business/img_workflow_level4.png" alt="workflow">
                                 </div>
                             </div>
-                        </div>
+                            <div class="list-area">
+                                <p class="font-body-h-b title img">Documents</p>
+                                <div class="file-download">
+                                    <div class="item">
+                                        <i class="icon ico-file-pdf"></i>
+                                        <span class="font-body-b">Construction of expression vector.pdf</span>
+                                        <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon ico-file-pdf"></i>
+                                        <span class="font-body-b">Purification of Expression vector for microinjection.pdf</span>
+                                        <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon ico-file-pdf"></i>
+                                        <span class="font-body-b">Microinjection/Production of founder mouse.pdf</span>
+                                        <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    </div>
+                                    <div class="item">
+                                        <i class="icon ico-file-pdf"></i>
+                                        <span class="font-body-b">Indentification of the founder(FO).pdf</span>
+                                        <a href="#" class="download"><i class="icon ico-download-black"></i></a>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:mouse@macrogen.com"
@@ -348,8 +378,17 @@
                 <!--Mass Reproduction s -->
                 <div class="info-box">
                     <p class="font-h4 main-title">Mass Reproduction</p>
-                    <p class="subject font-body-h-b">Macrogen uses IVF (In Vitro Fertilization) technology to offer a mass reproduction service.</p>
-                    <p class="desc img_bottom font-body">It is possible to secure the desired number of mice in a short period of time through natural breeding and IVF. Macrogen’s mass reproduction service produces mice necessary for non-clinical studies by using IVF technology to secure large numbers of individuals of the same age (measured in weeks). We also utilize stable embryo transfer technologies and highly efficient IVF methods to provide clients with large numbers of mice of the desired age and quantity in a short period. This allows us to efficiently provide mice necessary for various studies such as those conducted by pharmaceutical laboratories and national research institutions, enabling our clients to obtain non-clinical study results within a short time frame.</p>
+                    <p class="subject font-body-h-b">Macrogen uses IVF (In Vitro Fertilization) technology to offer a
+                        mass reproduction service.</p>
+                    <p class="desc img_bottom font-body">It is possible to secure the desired number of mice in a short
+                        period of time through natural breeding and IVF. Macrogen’s mass reproduction service produces
+                        mice necessary for non-clinical studies by using IVF technology to secure large numbers of
+                        individuals of the same age (measured in weeks). We also utilize stable embryo transfer
+                        technologies and highly efficient IVF methods to provide clients with large numbers of mice of
+                        the desired age and quantity in a short period. This allows us to efficiently provide mice
+                        necessary for various studies such as those conducted by pharmaceutical laboratories and
+                        national research institutions, enabling our clients to obtain non-clinical study results within
+                        a short time frame.</p>
                     <div class="border-gray-box">
                         <!--10.05 이미지 경로 변경-->
                         <div class="img">
@@ -392,14 +431,20 @@
                 <!--Additional s-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Additional</p>
-                    <p class="subject font-body-h-b">We offer additional testing services in various scales tailored to the needs of our clients.</p>
+                    <p class="subject font-body-h-b">We offer additional testing services in various scales tailored to
+                        the needs of our clients.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img-animal-additional.png" alt="Additional">
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Mouse Maintenance</p>
-                    <p class="desc list_bottom font-body">Macrogen breeds hetero- and homo-KO/TG mice, and all mice are managed as SPF (Specific Pathogen Free). In addition, F1 mice are finally checked for germline transmission through PCR screening. We also maintain the SPF facilities for easy maintenance of GEM so they do not need to be moved after production, and generations can be reproduced after the selection service. If it is difficult to manage GEM at the client's animal room after production, then they can breed and be kept in the Macrogen animal room indefinitely.</p>
+                    <p class="desc list_bottom font-body">Macrogen breeds hetero- and homo-KO/TG mice, and all mice are
+                        managed as SPF (Specific Pathogen Free). In addition, F1 mice are finally checked for germline
+                        transmission through PCR screening. We also maintain the SPF facilities for easy maintenance of
+                        GEM so they do not need to be moved after production, and generations can be reproduced after
+                        the selection service. If it is difficult to manage GEM at the client's animal room after
+                        production, then they can breed and be kept in the Macrogen animal room indefinitely.</p>
                     <div class="list-area">
                         <p class="font-body-h-b title">Documents</p>
                         <div class="file-download">
@@ -412,11 +457,19 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Embryo freezing & Reproduction to Live</p>
-                    <p class="desc font-body">Macrogen operates a GEM bank system while also using cryo-sperm and embryos to provide embryo freezing and reproduction services.
-                        If it is difficult to manage disease model mice, then we provide a fertilized egg freezing service where we freeze their fertilized eggs so they can be freely moved and sold. Our technological prowess enables us to offer long-term storage services for our clients’ GEM.</p>
+                    <p class="desc font-body">Macrogen operates a GEM bank system while also using cryo-sperm and
+                        embryos to provide embryo freezing and reproduction services.
+                        If it is difficult to manage disease model mice, then we provide a fertilized egg freezing
+                        service where we freeze their fertilized eggs so they can be freely moved and sold. Our
+                        technological prowess enables us to offer long-term storage services for our clients’ GEM.</p>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Mouse Line Recovery</p>
-                    <p class="desc font-body">This is a service for breeding and maintaining disease model mice at SPF facilities. We provide IVF (In Vitro Fertilization) and ET (Embryo Transfer) services for mice with a low reproducibility or clients who need lineage maintenance of GEM. Our staff at the SPF facilities are in charge of maintaining the cycle and reproduction schedule for clients. Detailed information on mouse management is provided once every three months, so our clients can use the service with confidence.</p>
+                    <p class="desc font-body">This is a service for breeding and maintaining disease model mice at SPF
+                        facilities. We provide IVF (In Vitro Fertilization) and ET (Embryo Transfer) services for mice
+                        with a low reproducibility or clients who need lineage maintenance of GEM. Our staff at the SPF
+                        facilities are in charge of maintaining the cycle and reproduction schedule for clients.
+                        Detailed information on mouse management is provided once every three months, so our clients can
+                        use the service with confidence.</p>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:mouse@macrogen.com"
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
@@ -442,82 +495,246 @@
 
         </div>
     </div>
+    <!--컨텐츠 내용 e-->
+    <!--v0.11 mo-ko랑 싱크 비즈니스 스크립트 추가-->
+    <!--비즈니스 스크립트 리펙토링 s-->
+<script>
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
 
-    <!--content-anchor script s-->
-    <script>
-        /*변수*/
-        var contentAnchor = $(".content-anchor");
-        var anchorOption= $(".anchor-value");
-        var anchor = $( "._anchor" );
-        var offset = anchor.offset();
+    var contentAnchor = $(".content-anchor");
+    var anchorOption = $(".anchor-value");
+    var anchor = $("._anchor");
+    var offset = anchor.offset();
+    var infoSectionList = [];
 
 
-        /*특정위치 show & hide*/
-        function fnMousewheel(){
-            var lastScroll = 0;
+    function onClickSelectBox() {
+        // console.log('onClickSelectBox');
+        /*드롭다운 클릭시 이벤트*/
+        selectBox.on('click', function () {
+            var select = $(this);
+            if (select.hasClass('open')) {
+                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+            } else {
+                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
 
-            $(window).on('scroll',function(e){
-                let listPos = $('.info-box').offset().top;
-                let offset = $(this).scrollTop();
+            }
+        });
+    }
 
-                if (offset > lastScroll){
-                    // console.log('down')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed','top':'0px'});
-                    }
-                    else {
-                        contentAnchor.hide();
-                    }
+    function onClickSelectOption() {
+        // console.log('onClickSelectOption');
+        /*클릭시 탭메뉴 변경*/
+        option.on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            var idx = $(this).index();
+            var $info = $(".info-box-wrap > div");
+            $info.addClass('show').siblings().removeClass('show');
+            $info.eq(idx).addClass('show').siblings().removeClass('show');
+            textChange($(this));
+            setInfoSectionList($(this).text())
+        })
+    }
+
+    function onClickBody() {
+        $('body').on('click', function (e) {
+            if (selectBox.hasClass('open')) {
+                if (!selectBox.has(e.target).length) {
+                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                }
+            }
+            if (!selectBox.has(e.target).length) {
+                selectBox.removeClass("open").children('.select-option').slideUp(200);
+            }
+        })
+    }
+
+    /*클릭시 텍스트 변경*/
+    function textChange(target) {
+        var select = target.find('a').text();
+        $('._selected-value').find('span').text(select);
+    }
+
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        var $Select = $('._select-option li');
+        var $Selected = $('._selected-value');
+        var $info = $(".info-box-wrap > div");
+        var change = $(".option-value");
+
+        console.log(change);
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $Selected.text($Select.eq(idx).text());
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
+
+        setInfoSectionList($Select.eq(idx).text())
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*특정위치 show & hide*/
+    function fnMousewheel() {
+        var lastScroll = 0;
+        var listPos = $('.info-box').offset().top;
+        $(window).on('scroll', function (e) {
+            let offset = $(this).scrollTop();
+            console.log(offset);
+
+            if (offset > lastScroll){
+                // console.log('down')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'0px'});
                 }
                 else {
-                    // console.log('up')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed','top':'70px'});
-                    }
-                    else {
-                        contentAnchor.hide();
-                    }
+                    contentAnchor.hide();
                 }
-                lastScroll = offset;
-            });
-        }
+            } else {
+                // console.log('up')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    contentAnchor.hide();
+                }
+            }
+            lastScroll = offset;
 
-        /*드롭다운 클릭시 이벤트*/
-        contentAnchor.on('click',function() {
+
+
+            /*v0.10 스크립트 변경 s*/
+
+            /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
+                writeText(title)
+                ChangeColor(title)
+
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
+            }
+            writeText(title)
+            ChangeColor(title)
+        });
+
+        /*v0.10 스크립트 변경 e*/
+    }
+
+
+    /**
+     * Anchor 글씨 쓰기
+     * @param text
+     */
+    function writeText(text) {
+        $('._anchor-value .text').text(text)
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
+    }
+
+
+
+
+
+
+
+    function setInfoSectionList(tit) {
+
+        writeText(tit);
+
+        infoSectionList = {
+            title: tit,
+            list: [],
+        }
+        $('.info-box.show').find('.section-anchor').each(function (index) {
+            // console.log(i)
+            let top = $(this).offset().top - 75;
+            // console.log(top);
+            let title = $(this).find('.sub-title').text();
+            infoSectionList.list.unshift({
+                index: index,
+                offset: top,
+                title: title
+            })
+
+        })
+        // console.log(infoSectionList);
+    }
+
+    /*드롭다운 클릭시 이벤트*/
+    function onClickFixedAnchor() {
+        contentAnchor.on('click', function () {
             var select = $(this);
-            if(select.hasClass('open')) {
+            if (select.hasClass('open')) {
                 select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
-            }
-            else {
+            } else {
                 select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                $('body').on('click',function (e){
-                    if(contentAnchor.hasClass('open')) {
-                        if(!contentAnchor.has(e.target).length) {
-                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
 
-                })
             }
         });
-
-
-        /*클릭시 페이지 이동 이동*/
-        function TitleMove(target){
-            var id = $('#'+ target);
-            var offset = id.offset();
-            $('html, body').animate({scrollTop : offset.top - 75}, 300);
-        }
+        $('body').on('click', function (e) {
+            if (contentAnchor.hasClass('open')) {
+                if (!contentAnchor.has(e.target).length) {
+                    contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                }
+            }
+        })
         /*클릭시 텍스트 변경*/
-        anchorOption.on('click',function() {
+        anchorOption.on('click', function () {
             var select = $(this).find('a').text();
-            $('._anchor-value').find('span').text(select);
+            writeText(select)
         });
+    }
+
+    /*클릭시 페이지 이동 이동*/
+    function TitleMove(target) {
+        var id = $('#' + target);
+        var offset = id.offset();
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
+    }
+
+
+    function init() {
+        onClickSelectBox();
+        onClickSelectOption();
+        onClickBody();
+        onClickFixedAnchor();
         fnMousewheel();
+        setInfoSectionList($('._selected-value span').text())
+    }
 
-    </script>
-    <!--content-anchor script e-->
+    init()
 
+
+</script>
+<!--비즈니스 스크립트 리펙토링 e-->
 
     <!--v0.7 tost-popup 추가-->
     <div class="toast-popup">
@@ -557,6 +774,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }
@@ -597,6 +815,7 @@
             $('.toast-popup').addClass('active');
             setTimeout(hideToastPopup, 2000);
         }
+
         function hideToastPopup() {
             $('.toast-popup').removeClass('active');
         }

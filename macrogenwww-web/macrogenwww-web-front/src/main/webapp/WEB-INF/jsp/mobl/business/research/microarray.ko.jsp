@@ -70,85 +70,6 @@
                         <li class="option-value"><a href="#">Epigenome Microarray</a></li>
                     </ul>
                 </div>
-                <script>
-    /*변수*/
-    var selectBox = $(".select-box");
-    var option = $(".option-value");
-
-
-    /*드롭다운 클릭시 이벤트*/
-    selectBox.on('click', function () {
-        var select = $(this);
-        if (select.hasClass('open')) {
-            select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
-        } else {
-            select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-            $('body').on('click', function (e) {
-                if (selectBox.hasClass('open')) {
-                    if (!selectBox.has(e.target).length) {
-                        selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                    }
-                }
-
-            })
-        }
-    });
-
-    /*클릭시 텍스트 변경*/
-    function textChange() {
-        option.on('click', function () {
-            var select = $(this).find('a').text();
-            $('._selected-value').find('span').text(select);
-        });
-    }
-
-    textChange();
-
-    /*클릭시 탭메뉴 변경*/
-    option.on('click', function () {
-        var idx = $(this).index();
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-        textChange();
-    })
-
-    /*이전 다음 이동*/
-    function setTabContent(idx) {
-        $('._selected-value').text($('._select-option li').eq(idx).text());
-        <!--탭메뉴 클릭시 페이지 변경-->
-        $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-        $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-        /*셀렉트 내부 해당페이지 포인트컬러*/
-        $(".option-value").addClass('active').siblings().removeClass('active');
-        $(".option-value").eq(idx).addClass('active').siblings().removeClass('active');
-
-        /*페이지 변경후 상단 이동*/
-        fnMove();
-
-        /*클릭시 텍스트 변경*/
-        console.log(idx);
-
-    }
-
-    /*탭메뉴 상단으로 이동*/
-    function fnMove() {
-        var offset = $("._content-anchor").offset();
-        $('html, body').animate({scrollTop: offset.top - 95}, 100);
-    }
-
-    /*외부클릭시 셀렉트박스 초기화*/
-    $("body").click(function (e) {
-        if (!selectBox.has(e.target).length) {
-            selectBox.removeClass("open").children('.select-option').slideUp(200);
-        }
-    });
-
-</script>
 
             </div>
             <!--MICROARRAY 탭 네비 e-->
@@ -168,16 +89,14 @@
                             <span class="text">mRNA Expression Microarray</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA Expression
-                                Microarray</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">microRNA Expression
-                                Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">mRNA Expression Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">microRNA Expression Microarray</a></li>
                         </ul>
                     </div>
 
                     <hr class="divider">
 
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <!--v0.5 id값 추가 완료(주석제거예정)-->
                         <p class="font-h5 sub-title" id="target1">mRNA Expression Microarray</p>
                         <p class="desc list_bottom font-body">mRNA(messenger RNA)는 DNA가 전사될 때 생성되는 RNA의 일종입니다. mRNA는 단백질
@@ -293,7 +212,7 @@
                         </div>
                     </div>
                     <!--v0.5 id값 추가 완료(주석제거예정)-->
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <p class="font-h5 sub-title list-area-group-top" id="target2">microRNA Expression Microarray</p>
                         <p class="desc font-body list_bottom">번역(Translation) 과정에서 유전자의 발현을 조절하는 다양한 microRNA에 대한 정보를
                             빠르게 스크리닝하여 한번에 얻을 수 있는 분석방법입니다.
@@ -427,12 +346,11 @@
                             <span class="text">SNP Genotyping Microarray</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">SNP Genotyping
-                                Microarray</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">SNP Genotyping Microarray</a></li>
                             <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">CGH Microarray</a></li>
                         </ul>
                     </div>
-                    <div class="anchor-section">
+                    <div class="section-anchor">
                         <!--v0.5 id 추가 (주석제거예정)-->
                         <p class="font-h5 sub-title" id="target3">SNP Genotyping Microarray</p>
 
@@ -596,8 +514,8 @@
                     </div>
                     <hr class="divider">
                     <!--v0.5 id 추가 (주석제거예정)-->
-                    <div class="anchor-section">
-                        <p class="font-h4 main-title" id="target4">CGH Microarray</p>
+                    <div class="section-anchor">
+                        <p class="font-h4 sub-title" id="target4">CGH Microarray</p>
                         <p class="desc list_bottom font-body">복제 수 변이라 불리는 CNV(Copy Number Variation)는 염색체 내에 1Kb 이상의 특정
                             염기서열 부위가 결손 되거나 증폭되어 반복적으로 나타나는 DNA 변이를 의미합니다.
                             이러한 복제 수 변이는 암세포 증식 외에도 다양한 유전질환을 유발할 수 있습니다.
@@ -833,75 +751,232 @@
         </div>
     </div>
 
-    <!--v0.5 스크립트추가(주석제거예정)-->
-    <script>
-        /*변수*/
-        var contentAnchor = $(".content-anchor");
-        var anchorOption = $(".anchor-value");
-        var anchor = $("._anchor");
-        var offset = anchor.offset();
+<!--비즈니스 스크립트 리펙토링 s-->
+<script>
+    /*변수*/
+    var selectBox = $(".select-box");
+    var option = $(".option-value");
+
+    var contentAnchor = $(".content-anchor");
+    var anchorOption = $(".anchor-value");
+    var anchor = $("._anchor");
+    var offset = anchor.offset();
+    var infoSectionList = [];
 
 
-        /*특정위치 show & hide*/
-        function fnMousewheel() {
-            var lastScroll = 0;
-
-            $(window).on('scroll', function (e) {
-                let listPos = $('.info-box').offset().top;
-                let offset = $(this).scrollTop();
-
-                if (offset > lastScroll) {
-                    // console.log('down')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '0px'});
-                    } else {
-                        contentAnchor.hide();
-                    }
-                } else {
-                    // console.log('up')
-                    if (offset > listPos) {
-                        contentAnchor.show().css({'position': 'fixed', 'top': '70px'});
-                    } else {
-                        contentAnchor.hide();
-                    }
-                }
-                lastScroll = offset;
-            });
-        }
-
+    function onClickSelectBox() {
+        // console.log('onClickSelectBox');
         /*드롭다운 클릭시 이벤트*/
+        selectBox.on('click', function () {
+            var select = $(this);
+            if (select.hasClass('open')) {
+                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
+            } else {
+                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
+
+            }
+        });
+    }
+
+    function onClickSelectOption() {
+        // console.log('onClickSelectOption');
+        /*클릭시 탭메뉴 변경*/
+        option.on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+            var idx = $(this).index();
+            var $info = $(".info-box-wrap > div");
+            $info.addClass('show').siblings().removeClass('show');
+            $info.eq(idx).addClass('show').siblings().removeClass('show');
+            textChange($(this));
+            setInfoSectionList($(this).text())
+        })
+    }
+
+    function onClickBody() {
+        $('body').on('click', function (e) {
+            if (selectBox.hasClass('open')) {
+                if (!selectBox.has(e.target).length) {
+                    selectBox.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
+                }
+            }
+            if (!selectBox.has(e.target).length) {
+                selectBox.removeClass("open").children('.select-option').slideUp(200);
+            }
+        })
+    }
+
+    /*클릭시 텍스트 변경*/
+    function textChange(target) {
+        var select = target.find('a').text();
+        $('._selected-value').find('span').text(select);
+    }
+
+    /*이전 다음 이동*/
+    function setTabContent(idx) {
+        var $Select = $('._select-option li');
+        var $Selected = $('._selected-value');
+        var $info = $(".info-box-wrap > div");
+        var change = $(".option-value");
+
+        console.log(change);
+        <!--탭메뉴 클릭시 페이지 변경-->
+        $Selected.text($Select.eq(idx).text());
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+
+        change.eq(idx).addClass('active').siblings().removeClass('active');
+
+        setInfoSectionList($Select.eq(idx).text())
+        /*페이지 변경후 상단 이동*/
+        fnMove();
+
+    }
+
+    /*탭메뉴 상단으로 이동*/
+    function fnMove() {
+        var offset = $("._content-anchor").offset();
+        $('html, body').animate({scrollTop: offset.top - 95}, 100);
+    }
+
+    /*특정위치 show & hide*/
+    function fnMousewheel() {
+        var lastScroll = 0;
+        var listPos = $('.info-box').offset().top;
+        $(window).on('scroll', function (e) {
+            let offset = $(this).scrollTop();
+
+            if (offset > lastScroll){
+                // console.log('down')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'0px'});
+                }
+                else {
+                    contentAnchor.hide();
+                }
+            } else {
+                // console.log('up')
+                if (offset > listPos) {
+                    contentAnchor.show().css({'position': 'fixed','top':'70px'});
+                }
+                else {
+                    contentAnchor.hide();
+                }
+            }
+            lastScroll = offset;
+
+
+            /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
+            var title;
+            for (
+                let i = 0; i < infoSectionList.list.length; i++) {
+                var item = infoSectionList.list[i]
+                var title = item.title
+                writeText(title)
+                ChangeColor(title)
+
+                if (offset > item.offset) {
+                    // console.log(i);
+                    title = item.title
+
+                    break
+                }
+            }
+            writeText(title)
+            ChangeColor(title)
+        });
+    }
+
+
+    /**
+     * Anchor 글씨 쓰기
+     * @param text
+     */
+    function writeText(text) {
+        $('._anchor-value .text').text(text)
+
+    }
+
+    function ChangeColor(title){
+        console.log(title);
+        $(".anchor-value a").css({
+            'color' : '#454545',
+            'font-weight' : 'normal'
+        });
+        $(".anchor-value a:contains(" + title + ")").css({
+            'color' : '#2E87EF',
+            'font-weight' : 'bold'
+        });
+    }
+
+    function setInfoSectionList(tit) {
+
+        writeText(tit);
+
+        infoSectionList = {
+            title: tit,
+            list: [],
+        }
+        $('.info-box.show').find('.section-anchor').each(function (index) {
+
+            // console.log(i)
+            let top = $(this).offset().top - 75;
+            // console.log(top);
+            let title = $(this).find('.sub-title').text();
+            infoSectionList.list.unshift({
+                index: index,
+                offset: top,
+                title: title
+            })
+        })
+    }
+
+    /*드롭다운 클릭시 이벤트*/
+    function onClickFixedAnchor() {
         contentAnchor.on('click', function () {
             var select = $(this);
             if (select.hasClass('open')) {
                 select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
             } else {
                 select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-                $('body').on('click', function (e) {
-                    if (contentAnchor.hasClass('open')) {
-                        if (!contentAnchor.has(e.target).length) {
-                            contentAnchor.removeClass("open").next('._dropdown').slideUp(200).removeClass("open");
-                        }
-                    }
 
-                })
             }
         });
-
-
-        /*클릭시 페이지 이동 이동*/
-        function TitleMove(target) {
-            var id = $('#' + target);
-            var offset = id.offset();
-            $('html, body').animate({scrollTop: offset.top - 75}, 300);
-        }
-
+        $('body').on('click', function (e) {
+            if (contentAnchor.hasClass('open')) {
+                if (!contentAnchor.has(e.target).length) {
+                    contentAnchor.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
+                }
+            }
+        })
         /*클릭시 텍스트 변경*/
         anchorOption.on('click', function () {
             var select = $(this).find('a').text();
-            $('._anchor-value').find('span').text(select);
+            writeText(select)
         });
-        fnMousewheel();
+    }
 
-    </script>
+    /*클릭시 페이지 이동 이동*/
+    function TitleMove(target) {
+        var id = $('#' + target);
+        var offset = id.offset();
+        $('html, body').animate({scrollTop: offset.top - 60}, 300);
+    }
+
+
+    function init() {
+        onClickSelectBox();
+        onClickSelectOption();
+        onClickBody();
+        onClickFixedAnchor();
+        fnMousewheel();
+        setInfoSectionList($('._selected-value span').text())
+    }
+
+    init()
+
+
+</script>
+
+<!--비즈니스 스크립트 리펙토링 e-->
 
 </body>
