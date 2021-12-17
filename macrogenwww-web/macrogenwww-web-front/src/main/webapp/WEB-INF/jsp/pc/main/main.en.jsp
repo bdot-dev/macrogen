@@ -585,12 +585,15 @@
 	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
 	                </div> --%>
+	                <div class="data-img">
+	                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+	                </div>
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
 	                    <input class="form-check-input" type="checkbox" id="popup-sn"
 	                    	value="${ popupVo.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn">오늘 하루 이 창 열지 않기</label>
+	                    <label class="form-check-label" for="popup-sn">Do not open today</label>
 	                </div>
 	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close">
 	                    <span>Close</span>
@@ -624,6 +627,18 @@
 				layerPopupModal.hide();
 			});
 		});
+
+		function onclickPopupImage(url, trgtCode) {
+			if (!url) {
+				return;
+			}
+
+			if (trgtCode === 'NEW') {
+				window.open(url);
+			} else {
+				location.href = url;
+			}
+		}
 	</script>
 
 </c:if>
