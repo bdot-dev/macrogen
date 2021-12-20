@@ -22,7 +22,7 @@ public class AppController extends DefaultController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String main(Model model) throws Exception {
 
-		return "app";
+		return "redirect:/" + getLang();
 	}
 
 }

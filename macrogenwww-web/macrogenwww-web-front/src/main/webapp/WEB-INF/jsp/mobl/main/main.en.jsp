@@ -427,7 +427,7 @@
 	                           	</c:forEach>
 
 	                        </ul>
-	                        <a href="#" class="btn-text" data-aos="fade-up" data-aos-duration="2000">
+	                        <a href="/${rc.locale.language }/newsroom/news" class="btn-text" data-aos="fade-up" data-aos-duration="2000">
 	                            <span>MORE</span><i class="icon ico-moveLong-black"></i>
 	                        </a>
 	                    </div>
