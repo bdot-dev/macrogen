@@ -426,7 +426,7 @@
 	                           	</c:forEach>
 
 	                        </ul>
-	                        <a href="#" class="btn-text" data-aos="fade-up" data-aos-duration="2000">
+	                        <a href="/${rc.locale.language }/newsroom/news" class="btn-text" data-aos="fade-up" data-aos-duration="2000">
 	                            <span>MORE</span><i class="icon ico-moveLong-black"></i>
 	                        </a>
 	                    </div>
@@ -522,5 +522,86 @@
         </div>
     </div>
 
+	<%-- 팝업 --%>
+	<c:if test="${not empty popupVo  }">
+		<div class="modal fade modal-notice" tabindex="-1" id="modal" data-bs-backdrop="static" aria-labelledby="modal"
+		     aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <div class="ico-notice icon"></div>
+		            </div>
+		            <div class="modal-body">
+		                <div class="scroll">
+		                    <div class="data-img">
+		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
+			                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt=""
+			                    	onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+		                    </div>
+		                    <%-- <div class="btn-wrapper">
+		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
+		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
+		                    </div> --%>
+		                </div>
+		            </div>
+		            <div class="modal-footer">
+		                <a href="#" data-popup-sn="${popupVo.popupSn}" class="btn-footer close-box"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<script>
+		    var modalEl = document.getElementById('modal')
+		    var modal = new bootstrap.Modal(modalEl)
+
+		    modal.show();
+
+		    $(document).ready(function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
+		    })
+
+		    modalEl.addEventListener('shown.bs.modal', function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
+		    })
+
+		    modalEl.addEventListener('hide.bs.modal', function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
+		    })
+		</script>
+		<script>
+			$(function() {
+				var $btnPopupClose = $('#modal .close-box');
+				$btnPopupClose.on('click', function() {
+					var sn = $(this).data('popup-sn');
+					if (!sn) return;
+
+					var snListStr = $.cookie('popup-sn-list');
+					if (!snListStr) {
+						snListStr = sn;
+					} else if (snListStr.indexOf(sn) < 0) {
+						snListStr += ',' + sn;
+					}
+					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+					modal.hide();
+				});
+			});
+
+			function onclickPopupImage(url, trgtCode) {
+				if (!url) {
+					return;
+				}
+
+				if (trgtCode === 'NEW') {
+					window.open(url);
+				} else {
+					location.href = url;
+				}
+			}
+		</script>
+	</c:if>
 
 </body>
