@@ -229,23 +229,33 @@
 
             <div class="section-activity">
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="title">근보회 활동후원</div>
-                    <div class="desc">‘근보회’는 유전자 이상에 의해 발생하는 근육질환인 근이영양증을 앓고 있는 환우와 가족들의 모임으로서 1999년 11월 발족한 비영리 민간단체입니다.</div>
+                    <div class="title">Sponsor of MDA Korea</div>
+                    <div class="desc">MDA Korea is a non-profit private organization established in November 1999 for patients suffering from muscular dystrophy caused by genetic abnormalities.</div>
                 </div>
                 <div class="desc-box" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="img img-right"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-1.png" alt="근보회 활동후원"></div>
+                    <div class="img img-right"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-1.png" alt="Sponsor of MDA Korea"></div>
                     <div class="text-box">
-                        <div class="font-body-h-b">마크로젠은 근보회 활동을 후원합니다</div>
-                        <div class="font-body">근보회는 근보회 환우를 위한 복지혜택, 오프라인 정기모임, 근이영양증 환우 진단 및 간병을 위한 상담서비스 제공 등 근이영양증을 알리는 활동과 함께 그 치료법 등을 찾는 데 도움을 줄 수 있도록 다양한 활동들을 지속하고 있습니다.<br/>마크로젠은 근이영양증 연구자들을 물색하여 이들이 희귀질환을 연구할 수 있도록 지원하고 있으며 환우들과 회사임직원이 함께하는 봄나들이, 작은 음악회 등 정기적인 근보회 활동을 통해 친목 도모 및 상호교류의 장을 만들어 가고 있습니다.</div>
-                    </div>
-                    <div class="img img-center"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-2.png" alt="마크로젠은 근보회 활동을 후원합니다"></div>
-                    <div class="text-box">
-                        <div class="font-body-h-b">근이영양증 (Muscular dystrophy)이란?</div>
-                        <div class="font-body">유전적인 요인으로 진행성 근력저하 및 위축을 보이고 병리학적으로 근육섬유의 괴사 및 재생을 특징으로 하는 퇴행성 근육병증을 말합니다. 이는 디스트로핀(dystrophin) 유전자 등 유전자 돌연변이에 의해 특정 단백이 소실되어 근세포막의 손상으로 근육섬유의 괴사와 퇴행 과정을 거쳐 결국 근력저하 및 위축이 발생하게 되는 질환입니다. 해당 질환이 발생하는 유전적 원인으로는 50-60%가 유전자 결실에 의하여 발생하며 나머지 40-50%는 점 돌연변이, 미세 결손, 중복 등이 그 원인으로 알려져 있습니다.</div>
-                    </div>
-                    <div class="img img-center"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-3.png" alt="근이영양증 (Muscular dystrophy)이란?"></div>
-                </div>
-            </div>
+                        <div class="font-body-h-b">Macrogen supports the activities of MDA Korea.</div>
+                        <div class="font-body">MDA Korea engages in various activities to find a cure for muscular dystrophy as well as activities to share information on muscular dystrophy,
+                            including providing benefits for patients belonging to MDA Korea, regular offline gatherings, and consulting service for the diagnosis and care of patients
+                            with muscular dystrophy.
+                            We help researchers to study muscular dystrophy, and support their studies on rare diseases, and create opportunities to socialize and interact by organizing
+                            an annual spring outing with patients, executives, and employees of Macrogen and mini-concerts.
+	                    </div>
+	                    <div class="img img-center"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-2.png" alt="Macrogen supports the activities of MDA Korea."></div>
+	                    <div class="text-box">
+	                        <div class="font-body-h-b">What Is Muscular Dystrophy?</div>
+	                        <div class="font-body">Muscular dystrophy is a degenerative muscle disease that shows progressive degeneration of muscle strength.
+	                            This disease has the pathological characteristics of necrosis and regeneration of muscle fiber due to genetic factors.
+	                            A specific protein that is lost by mutation of genes such as the dystrophin gene, goes through muscle fiber necrosis and degeneration caused
+	                            by damage to muscle cell membranes, resulting in degeneration of muscle strength and muscle dystrophy. It occurs in 50 - 60% of the cases caused
+	                            by deletion of genes and the other 40 - 50% is known to be caused by mutation, microdeletion, and duplication of genes.</div>
+	                    </div>
+	                    <div class="img img-center"><img src="/publishing/mobile-en/dist/img/esg/ethical-activity-thumb-3.png" alt="What Is Muscular Dystrophy?"></div>
+	                </div>
+	            </div>
+	        </div>
+
         </div>
     </div>
 
