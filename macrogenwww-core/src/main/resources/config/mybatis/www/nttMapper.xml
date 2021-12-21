@@ -30,7 +30,7 @@
 		<if test="searchKeyword != null and searchKeyword != ''">
 			<choose>
 				<when test="searchCondition == 'TITLE'">
-					and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+					and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%') or tn.ntt_sumry like concat('%', #{searchKeyword}, '%') )
 				</when>
 				<when test="searchCondition == 'WRTER'">
 					and exists (
@@ -50,7 +50,7 @@
 							OR tn.ntt_cn like concat('%', #{searchKeyword}, '%') )
 				</when>
 				<otherwise>
-					and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+					and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%') or tn.ntt_sumry like concat('%', #{searchKeyword}, '%') )
 				</otherwise>
 			</choose>
 		</if>
@@ -269,7 +269,7 @@
 		and bbs_id = #{bbsId}
 		and tn.ntt_sn <![CDATA[ > ]]> #{nttSn}
 		<if test="searchKeyword != null and searchKeyword != ''">
-			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+			and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%') or tn.ntt_sumry like concat('%', #{searchKeyword}, '%') )
 		</if>
 		<if test="bbsCtgrySn != null and bbsCtgrySn != ''">
 			and tn.bbs_ctgry_sn = #{bbsCtgrySn}
@@ -286,7 +286,7 @@
 		and bbs_id = #{bbsId}
 		and tn.ntt_sn <![CDATA[ < ]]> #{nttSn}
 		<if test="searchKeyword != null and searchKeyword != ''">
-			and tn.ntt_sj like concat('%', #{searchKeyword}, '%')
+			and ( tn.ntt_sj like concat('%', #{searchKeyword}, '%') or tn.ntt_sumry like concat('%', #{searchKeyword}, '%') )
 		</if>
 		<if test="bbsCtgrySn != null and bbsCtgrySn != ''">
 			and tn.bbs_ctgry_sn = #{bbsCtgrySn}
