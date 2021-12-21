@@ -56,6 +56,9 @@
     <script>
 	    function getActiveImage() {
 	        let activeImage = $('.swiper-slide-active').children().children('img').attr('src')
+	        if (!activeImage) {
+	        	activeImage = $('.swiper-slide').children().children('img').attr('src')
+	        }
 	        $('.modal-image-viewer .panzoom').children('img').attr('src',activeImage)
 	    }
     </script>
