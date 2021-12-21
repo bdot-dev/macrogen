@@ -12,10 +12,10 @@
 <meta name="description" content="macrogen"/>
 <meta name="keywords" content="macrogen"/>
 <link rel="shortcut icon" href="/publishing/mobile-en/dist/img/favicon/favicon.ico">
-<link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_component_mobile.css?1216"/>
-<link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_page_mobile_ko.css?1216"/>
-<script src="/publishing/mobile-en/dist/js/bundle.js?1216"></script>
-<script src="/publishing/mobile-en/dist/js/common.js?1216"></script>
+<link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_component_mobile.css?1221"/>
+<link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_page_mobile_ko.css?1221"/>
+<script src="/publishing/mobile-en/dist/js/bundle.js?1221"></script>
+<script src="/publishing/mobile-en/dist/js/common.js?1221"></script>
 <![if !IE]>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
