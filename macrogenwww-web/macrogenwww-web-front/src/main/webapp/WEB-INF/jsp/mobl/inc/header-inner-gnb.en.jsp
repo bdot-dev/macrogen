@@ -49,7 +49,7 @@
                                     <li><a href="/${rc.locale.language }/business/diagnosis/covid">- COVID-19</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#none">- Heathcare</a>
+                            <li><a href="#none">- Healthcare</a>
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">- Personal Genome Analysis</a></li>
                                     <li><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">- Microbiome Analysis</a></li>

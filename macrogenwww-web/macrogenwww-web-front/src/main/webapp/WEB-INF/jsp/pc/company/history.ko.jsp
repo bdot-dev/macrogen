@@ -165,7 +165,7 @@ $(document).ready(function () {
         section.eq(idx).find('.year-info').css('height', sectionHeight + 'px')
     })
 
-    $(window).on('resize scroll', _.throttle(function (){
+    $(window).on('resize scroll', function (){
         var currentPosition = $(window).scrollTop();
 
         for (var i = 0; i < sectionLength; i++) {
@@ -179,7 +179,7 @@ $(document).ready(function () {
         else {
             $('.section:last-child .year-info').find('li:last-child').removeClass('active')
         }
-    }, 100));
+    })
 
     function setHistoryScroll($information) {
         var gap = 0;/*50*/
