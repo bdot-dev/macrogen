@@ -82,7 +82,7 @@
             </ul>
         </div>
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Heathcare</a></div>
+            <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Healthcare</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Genome Analysis</a></li>
                 <li><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">Microbiome Analysis</a></li>

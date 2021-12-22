@@ -1,0 +1,7 @@
+* source code management 에서 다운로드
+	http://gitlab.eluocnc.com:28080/kimjd72/macrogenwww
+	branch :
+		master => 운영기
+		test => 개발기
+
+* 회원가입 후 승인이 필요함.

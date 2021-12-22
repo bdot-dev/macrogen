@@ -1,0 +1,31 @@
+-- 테이블목록
+select
+  t.TABLE_SCHEMA
+  , t.TABLE_NAME
+  , t.TABLE_COMMENT
+from information_schema.TABLES t
+where t.TABLE_SCHEMA = 'macrogenwww'
+-- and t.TABLE_NAME not in (
+--   'mig_store_20181116'
+-- )
+order by t.TABLE_NAME
+;
+
+-- 테이블목록
+select
+  c.TABLE_NAME
+  , (select t.TABLE_COMMENT from information_schema.TABLES t where t.TABLE_NAME = c.TABLE_NAME) table_name
+  , c.ORDINAL_POSITION "Col #"
+  , c.COLUMN_NAME "Column Name"
+  , case when c.DATA_TYPE = 'varchar' then concat(c.DATA_TYPE, '(', c.CHARACTER_MAXIMUM_LENGTH , ')') else c.DATA_TYPE end "Data Type"
+  , case when c.COLUMN_KEY = 'PRI' then 'PK' else c.COLUMN_KEY end "PK"
+  , case when c.IS_NULLABLE = 'NO' then 'NOT NULL' else null end "Not Null"
+  , c.COLUMN_DEFAULT "Default"
+  , c.COLUMN_COMMENT "Comments"
+from information_schema.COLUMNS c
+where TABLE_SCHEMA = 'macrogenwww'
+-- and c.TABLE_NAME not in (
+--   'mig_store_20181116'
+-- )
+order by c.TABLE_NAME, c.ORDINAL_POSITION
+;

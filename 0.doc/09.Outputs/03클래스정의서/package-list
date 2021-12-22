@@ -1,0 +1,15 @@
+macrogen.www.authentication
+macrogen.www.common
+macrogen.www.common.storage
+macrogen.www.controller
+macrogen.www.enums
+macrogen.www.exception
+macrogen.www.interceptor
+macrogen.www.mapper
+macrogen.www.service
+macrogen.www.service.impl
+macrogen.www.sitemesh
+macrogen.www.tag
+macrogen.www.typeHandler
+macrogen.www.utils
+macrogen.www.vo

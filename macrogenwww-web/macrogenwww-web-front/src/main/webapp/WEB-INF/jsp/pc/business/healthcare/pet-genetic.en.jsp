@@ -13,7 +13,7 @@
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">Heathcare</li>
+        <li class="breadcrumb-item">Healthcare</li>
         <li class="breadcrumb-item">Pet DNA Test</li>
     </ol>
 </nav>
