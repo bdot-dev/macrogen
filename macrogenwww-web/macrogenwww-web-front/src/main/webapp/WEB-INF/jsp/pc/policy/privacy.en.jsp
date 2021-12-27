@@ -31,7 +31,7 @@
 								</c:otherwise>
 							</c:choose>
 
-							<li><span><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</span></li>
+							<li><span><a href="/${rc.locale.language }/policy/privacy/${result.policySn}"><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</a></span></li>
 						</c:forEach>
 					</ul>
 				</div>
