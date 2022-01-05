@@ -61,7 +61,7 @@
                     </div>
                     <div class="btn-area">
                         <a href="https://www.my-genomestory.com/service_detail?service_code=mbs&selectLang=ko" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-                        <a href="https://smartstore.naver.com/thebiome/products/5557972286" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
+                        <a href="https://smartstore.naver.com/thebiomelife" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
                     </div>
                 </div>
             </div>
