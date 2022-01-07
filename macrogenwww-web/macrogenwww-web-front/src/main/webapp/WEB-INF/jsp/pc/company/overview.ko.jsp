@@ -306,7 +306,10 @@
                                 마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다&#46;<br/><br/>
                                 유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다&#46;
                             </div>
-                            <div class="download-area"><a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a></div>
+                            <div class="download-area">
+                            	<a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a>
+								<a class="btn-download" href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" style="padding-left: 44px;"><span>Brochure Download</span><i class="icon icon-download"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
