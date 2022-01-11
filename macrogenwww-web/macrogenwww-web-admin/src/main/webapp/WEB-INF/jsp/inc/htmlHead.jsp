@@ -53,6 +53,8 @@
 		option.locale = '${rc.locale}';
 		App.init(option);
 
-		CKEDITOR.timestamp = '20220111';
+		if (CKEDITOR) {
+			CKEDITOR.timestamp = '20220111';
+		}
 	});
 </script>
