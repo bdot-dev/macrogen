@@ -55,13 +55,13 @@ CKEDITOR.on('dialogDefinition', function(e) {
 
         //info탭을 제거하면 이미지 업로드가 안된다.
         var infoTab = dialog.getContents( 'info' );
-        infoTab.remove( 'txtHSpace');
+        /*infoTab.remove( 'txtHSpace');
         infoTab.remove( 'txtVSpace');
         infoTab.remove( 'txtBorder');
         infoTab.remove( 'txtWidth');
         infoTab.remove( 'txtHeight');
         infoTab.remove( 'ratioLock');
-        infoTab.remove( 'cmbAlign');
+        infoTab.remove( 'cmbAlign');*/
     }
 });
 
