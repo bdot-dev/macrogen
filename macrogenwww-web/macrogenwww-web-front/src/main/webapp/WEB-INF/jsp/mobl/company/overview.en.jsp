@@ -8,6 +8,18 @@
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
+<style>
+.macrogen.company-overview .section-symbol .item .desc .brochure_img {
+    width: 100%;
+    height: 63.55555vw;
+    background-image: url(/publishing/pc-ko/dist/img/macrogen/brochure-img.png);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2);
+</style>
 <script>
     $(function(){
         var lastScroll = 0;
@@ -382,6 +394,16 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">DIGITAL BROCHURE</div>
+                        <div class="desc">
+                            <div class="brochure_img"><span class="sr-only">digital brochure</span></div>
+                            <div class="download-area">
+                                <a href="/download/filename/macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>KOR PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank" class="btn btn-light btn-round"><span>ENG PDF</span><i class="icon ico-download-black"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

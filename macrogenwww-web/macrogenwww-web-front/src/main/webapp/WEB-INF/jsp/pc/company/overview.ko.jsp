@@ -379,6 +379,17 @@
                             </ul>
                         </div>
                     </div>
+                     <div class="item">
+                        <div class="title">디지털브로슈어</div>
+                        <div class="desc">
+                            <div class="brochure_img" style="box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2); width: 710px; float:left;"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png" alt="brochure"></div>
+                           
+                            <div class="download-area" style="padding-left:40px; width:216px; float:left;">
+                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-bottom:30px;"><span>국문 PDF</span><i class="icon icon-download"></i></a><br>
+								<a class="btn-download" href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank"><span>영문 PDF</span><i class="icon icon-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- e  기업상징 -->
