@@ -540,6 +540,10 @@
             </div>
             <!-- e  global map -->
 
+			<!-- brochure -->
+			<div>
+				brochure
+			</div>
 
         </div>
     </div>
