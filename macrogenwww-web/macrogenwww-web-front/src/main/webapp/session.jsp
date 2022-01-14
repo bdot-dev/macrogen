@@ -6,9 +6,9 @@
 <body>
 	<div>request.getServerName():<%= request.getServerName() %></div>
 	<div>request.getServerPort():<%= request.getServerPort() %></div>
-	<div>request.getServerName():<%= request.getRemoteAddr() %></div>
+	<%-- <div>request.getServerName():<%= request.getRemoteAddr() %></div> --%>
 <%
-	
+
 	String session_name = "";
 	String session_value = "";
 
