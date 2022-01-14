@@ -333,7 +333,7 @@
       overflow: hidden;
       margin-bottom: 65px;
       padding-top: 64px; }
-      .macrogen.company-overview .section-symbol .item:last-child {
+      .macrogen.company-overview .section-symbol .item:nth-child(2) {
         margin-bottom: 0;
         border-top: 1px solid #E9E9E9; }
       .macrogen.company-overview .section-symbol .item .title {
