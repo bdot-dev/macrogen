@@ -325,7 +325,7 @@
                             </div>
                             <div class="download-area">
                                 <a href="/download/filename/macrogen_CI_기본형.ai" target="_blank" class="btn btn-light btn-round"><span>CI Download</span><i class="icon ico-download-black"></i></a>
-                                <a href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" class="btn btn-light btn-round"><span>Brochure Download</span><i class="icon ico-download-black"></i></a>
+                               <!-- <a href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" class="btn btn-light btn-round"><span>Brochure Download</span><i class="icon ico-download-black"></i></a> -->
                             </div>
                         </div>
                     </div>
