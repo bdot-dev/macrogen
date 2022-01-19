@@ -119,7 +119,8 @@
 		<error-code>500</error-code>
 		<location>/error.jsp</location>
 	</error-page>
-	<error-code>501</error-code>
+	<error-page>
+		<error-code>501</error-code>
 		<location>/error.jsp</location>
 	</error-page>
 	<!-- this is for jndi datasource -->
