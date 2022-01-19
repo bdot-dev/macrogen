@@ -299,21 +299,17 @@
             <div class="section-symbol" data-aos="fade-up" data-aos-duration="2000">
                 <div class="inner">
                     <div class="item">
-                        <div class="title">LOGO TYPE</div>
+                        <div class="title">마크로젠 CI</div>
                         <div class="desc">
                             <div class="bg-logo"><img src="/publishing/pc-ko/dist/img/macrogen/logo-lg.png" alt="macrogen"></div>
                             <div class="content">
                                 마크로젠은 Macroscopic Phenotype of Gene의 줄임말로 유전자가 생체 내에서 보여주는 거시적인 현상 또는 표현형을 연구하는 회사임을 뜻합니다&#46;<br/><br/>
                                 유전체와 사람이 하나가 된 모습을 형상화하였으며 개인 유전체 정보에 기반한 맞춤의학 실현을 통해 인류의 건강한 삶을 소망하는 마크로젠의 슬로건  Humanizing Genomics을 표현하였습니다&#46;
                             </div>
-                            <div class="download-area">
-                            	<a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a>
-								<!-- <a class="btn-download" href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" style="padding-left: 44px;"><span>Brochure Download</span><i class="icon icon-download"></i></a> -->
-                            </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="title">COLOR SYSTEM</div>
+                        <div class="title" style="opacity:0;">COLOR SYSTEM</div>
                         <div class="desc">
                             <ul class="color-list">
                                 <li>
@@ -377,15 +373,19 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="download-area">
+                            	<a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a>
+								<!-- <a class="btn-download" href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" style="padding-left: 44px;"><span>Brochure Download</span><i class="icon icon-download"></i></a> -->
+                            </div>
                         </div>
                     </div>
                      <div class="item">
-                        <div class="title">디지털브로슈어</div>
+                        <div class="title">마크로젠 회사소개서</div>
                         <div class="desc">
-                            <div class="brochure_img" style="box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2); width: 710px; float:left;"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png" alt="brochure"></div>
+                            <div class="brochure_img"><a href="/downfile/macrogen_brochure_ko.pdf" target="_blank"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></a></div>
                            
-                            <div class="download-area" style="padding-left:40px; width:216px; float:left;">
-                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-bottom:30px;"><span>국문 PDF</span><i class="icon icon-download"></i></a><br>
+                            <div class="download-area">
+                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>국문 PDF</span><i class="icon icon-download"></i></a>
 								<a class="btn-download" href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank"><span>영문 PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>
