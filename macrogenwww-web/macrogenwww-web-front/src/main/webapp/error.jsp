@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<% response.setStatus(200); %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -113,6 +114,5 @@
     <p class="desc">※ If access is delayed for a long time, please contact the manager's email.</p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
-<% response.setStatus(200); %>
 </body>
 </html>
