@@ -113,5 +113,6 @@
     <p class="desc">※ If access is delayed for a long time, please contact the manager's email.</p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
+<% response.setStatus(200); %>
 </body>
 </html>
