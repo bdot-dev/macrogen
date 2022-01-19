@@ -12,7 +12,7 @@
 .macrogen.company-overview .section-symbol .item .desc .brochure_img {
     width: 100%;
     height: 63.55555vw;
-    background-image: url(/publishing/pc-ko/dist/img/macrogen/brochure-img.png);
+    background-image: url(/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2);
     background-size: cover;
     background-position: center center;
     margin-bottom: 40px;
@@ -316,21 +316,17 @@
             <div class="section-symbol">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="item">
-                        <div class="title">LOGO TYPE</div>
+                        <div class="title">Macrogen CI</div>
                         <div class="desc">
                             <div class="bg-logo"><span class="sr-only">macrogen</span></div>
                             <div class="content">
                                 Macrogen is an abbreviation of Macroscopic Phenotype of Gene, representing our company that studies macroscopic phenomena or phenotypes of genes in vivo.<br/><br/>
                                 It symbolizes the realization of personalized medicine based on personal genomic information and our commitment to healthy human life in line with our slogan, "Humanizing Genomics."
                             </div>
-                            <div class="download-area">
-                                <a href="/download/filename/macrogen_CI_기본형.ai" target="_blank" class="btn btn-light btn-round"><span>CI Download</span><i class="icon ico-download-black"></i></a>
-                               <!-- <a href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" class="btn btn-light btn-round"><span>Brochure Download</span><i class="icon ico-download-black"></i></a> -->
-                            </div>
                         </div> 
                     </div>
                     <div class="item">
-                        <div class="title">COLOR SYSTEM</div>
+                        <!-- <div class="title">COLOR SYSTEM</div> -->
                         <div class="desc">
                             <ul class="row color-list">
                                 <li class="col col-6">
@@ -394,14 +390,18 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="download-area">
+                            	<a href="/download/filename/macrogen_CI_기본형.ai" target="_blank" class="btn btn-light btn-round"><span>CI Download</span><i class="icon ico-download-black"></i></a>
+                            	<!-- <a href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" class="btn btn-light btn-round"><span>Brochure Download</span><i class="icon ico-download-black"></i></a> -->
+                       		</div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="title">DIGITAL BROCHURE</div>
+                        <div class="title">Macrogen Company Profile</div>
                         <div class="desc">
                             <div class="brochure_img"><span class="sr-only">digital brochure</span></div>
                             <div class="download-area">
-                                <a href="/download/filename/macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>KOR PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="/downfile/macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>KOR PDF</span><i class="icon ico-download-black"></i></a>
                                 <a href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank" class="btn btn-light btn-round"><span>ENG PDF</span><i class="icon ico-download-black"></i></a>
                             </div>
                         </div>

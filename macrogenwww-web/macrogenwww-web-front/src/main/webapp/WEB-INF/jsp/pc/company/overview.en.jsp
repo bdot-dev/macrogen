@@ -291,22 +291,17 @@
             <div class="section-symbol" data-aos="fade-up" data-aos-duration="2000">
                 <div class="inner">
                     <div class="item">
-                        <div class="title">LOGO TYPE</div>
+                        <div class="title">Macrogen CI</div>
                         <div class="desc">
                             <div class="bg-logo"><img src="/publishing/pc-en/dist/img/macrogen/logo-lg.png" alt="macrogen"></div>
                             <div class="content">
                                 Macrogen is an abbreviation of Macroscopic Phenotype of Gene, representing our company that studies macroscopic phenomena or phenotypes of genes in vivo.<br/><br/>
                                 It symbolizes the realization of personalized medicine based on personal genomic information and our commitment to healthy human life in line with our slogan, "Humanizing Genomics."
-
-                            </div>
-                            <div class="download-area">
-                            	<a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a>
-								<!-- <a class="btn-download" href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" style="padding-left: 44px;"><span>Brochure Download</span><i class="icon icon-download"></i></a> -->
                             </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="title">COLOR SYSTEM</div>
+                        <div class="title" style="opacity:0;">COLOR SYSTEM</div>
                         <div class="desc">
                             <ul class="color-list">
                                 <li>
@@ -370,15 +365,19 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="download-area">
+                            	<a class="btn-download" href="/download/filename/macrogen_CI_기본형.ai" target="_blank"><span>CI Download</span><i class="icon icon-download"></i></a>
+								<!-- <a class="btn-download" href="/download/filename/e브로셔_최종본_220106.pdf" target="_blank" style="padding-left: 44px;"><span>Brochure Download</span><i class="icon icon-download"></i></a> -->
+                            </div>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="title">DIGITAL BROCHURE</div>
+                        <div class="title">Macrogen<br> Company Profile</div>
                         <div class="desc">
-                            <div class="brochure_img" style="box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2); width: 710px; float:left;"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png" alt="brochure"></div>
+                            <div class="brochure_img"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></div>
                            
-                            <div class="download-area" style="padding-left:40px; width:216px; float:left;">
-                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-bottom:30px;"><span>KOR PDF</span><i class="icon icon-download"></i></a><br>
+                            <div class="download-area">
+                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>KOR PDF</span><i class="icon icon-download"></i></a>
 								<a class="btn-download" href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>

@@ -4596,8 +4596,13 @@
       width: 1244px;
       margin: 0 auto; }
     .macrogen.company-overview .section-symbol .item {
-      overflow: hidden;
-      margin-bottom: 150px; }
+      overflow: hidden;}
+        .macrogen.company-overview .section-symbol .item:first-child{
+       	 margin-bottom: 90px;
+       }
+       .macrogen.company-overview .section-symbol .item:nth-child(2){
+       	 margin-bottom: 150px;
+       }
       .macrogen.company-overview .section-symbol .item:last-child {
         margin-bottom: 0; }
       .macrogen.company-overview .section-symbol .item .title {
@@ -4626,8 +4631,7 @@
           font-size: 18px;
           line-height: 32px;
           letter-spacing: -0.75px;
-          color: #454545;
-          margin-bottom: 59px; }
+          color: #454545;}
         .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download {
           display: inline-block; }
           .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span {
@@ -4640,6 +4644,7 @@
             .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span:first-child {
               margin-right: 15px; }
         .macrogen.company-overview .section-symbol .item .desc .color-list {
+        	margin-bottom: 59px;
           overflow: hidden; }
           .macrogen.company-overview .section-symbol .item .desc .color-list li {
             float: left;
@@ -4673,6 +4678,11 @@
                 font-size: 16px;
                 line-height: 30px;
                 color: #454545; }
+                 .macrogen.company-overview .section-symbol .item .desc .brochure_img{
+               	margin-bottom: 49px;}
+               .macrogen.company-overview .section-symbol .item .desc .brochure_img img {
+            	box-shadow: 5px 5px 8px 0px #00000026; }
+                
   .macrogen.macrogen-authorization .slide-tab-wrap {
     margin-top: 153px;
     margin-bottom: 139px; }
