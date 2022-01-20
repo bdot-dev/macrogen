@@ -540,7 +540,6 @@
             </div>
             <!-- e  global map -->
 
-
         </div>
     </div>
     <%-- <footer class="footer">

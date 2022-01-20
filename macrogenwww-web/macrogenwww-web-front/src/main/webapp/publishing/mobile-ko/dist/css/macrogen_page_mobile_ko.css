@@ -325,15 +325,15 @@
       line-height: 50px;
       letter-spacing: -3px;
       color: #FFFFFF; }
-  .macrogen.company-overview .section-symbol {
-    margin-top: 64px; }
+  /*.macrogen.company-overview .section-symbol {
+    margin-top: 64px; } */
     .macrogen.company-overview .section-symbol .inner {
       padding: 0 20px; }
     .macrogen.company-overview .section-symbol .item {
       overflow: hidden;
       margin-bottom: 65px;
       padding-top: 64px; }
-      .macrogen.company-overview .section-symbol .item:last-child {
+      .macrogen.company-overview .section-symbol .item:nth-child(2) {
         margin-bottom: 0;
         border-top: 1px solid #E9E9E9; }
       .macrogen.company-overview .section-symbol .item .title {
@@ -358,8 +358,7 @@
           font-size: 16px;
           line-height: 32px;
           letter-spacing: -0.5px;
-          color: #454545;
-          margin-bottom: 40px; }
+          color: #454545; }
         .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download {
           display: inline-block; }
           .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span {
@@ -372,6 +371,8 @@
             color: #000000; }
             .macrogen.company-overview .section-symbol .item .desc .download-area .btn-download span:first-child {
               margin-right: 15px; }
+              .macrogen.company-overview .section-symbol .item .desc .color-list{
+              margin-bottom: 40px;}
         .macrogen.company-overview .section-symbol .item .desc .color-list li:first-child, .macrogen.company-overview .section-symbol .item .desc .color-list li:nth-child(2) {
           margin-bottom: 40px; }
         .macrogen.company-overview .section-symbol .item .desc .color-list li .color {
@@ -405,6 +406,25 @@
             line-height: 26px;
             letter-spacing: -0.5px;
             color: #454545; }
+            
+            .macrogen.company-overview .section-symbol .item .desc .brochure_img {
+			    width: 100%;
+			    height: 0;
+    			padding-bottom: 71.55555%;
+			    /*height: 63.55555vw;*/
+			    background-image: url(/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2);
+			    background-size: cover;
+			    background-position: center center;
+			    margin-bottom: 40px;
+			    background-repeat: no-repeat;
+			    box-shadow: 5px 5px 8px 0px #00000026;
+    		}
+    		
+    		 .macrogen.company-overview .section-symbol .item .desc .brochure_img img{
+    		 
+    		 }
+    
+    
   .macrogen.macrogen-management .section-chairman, .macrogen.macrogen-management .section-ceo {
     padding-top: 80px; }
     .macrogen.macrogen-management .section-chairman .inner .font-h3, .macrogen.macrogen-management .section-ceo .inner .font-h3 {
