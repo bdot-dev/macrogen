@@ -49,13 +49,10 @@ public final class RequestWrapper extends HttpServletRequestWrapper {
 				"</iframe>",
 				"<object>",
 				"</object>",
-				"<img>",
-				"</img>",
 				"onerror",
 				"onclick",
 				"onload",
 				"onmouseover",
-				"alert"
 		};
 			
 		StringBuffer sb = null;
