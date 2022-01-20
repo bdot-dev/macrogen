@@ -15,7 +15,7 @@ public class ErrorController {
     private static Logger LOGGER = LoggerFactory.getLogger(ErrorController.class);
     
     @RequestMapping("/error")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.BAD_GATEWAY)
     public String Error(HttpServletResponse res, Model model) {
     	LOGGER.debug("http status: "+HttpStatus.OK);
         return "error";

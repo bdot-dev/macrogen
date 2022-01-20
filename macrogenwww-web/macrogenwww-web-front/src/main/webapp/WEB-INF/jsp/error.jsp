@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!doctype html>
+<%-- <% response.setStatus(200); %> --%>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
