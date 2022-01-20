@@ -386,7 +386,7 @@
                            
                             <div class="download-area">
                             	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>국문 PDF</span><i class="icon icon-download"></i></a>
-								<a class="btn-download" href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank"><span>영문 PDF</span><i class="icon icon-download"></i></a>
+								<!-- <a class="btn-download" href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank"><span>영문 PDF</span><i class="icon icon-download"></i></a> -->
                             </div>
                         </div>
                     </div>
