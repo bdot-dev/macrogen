@@ -25,7 +25,6 @@ import macrogen.www.vo.PopupVo;
 
 @Controller
 @RequestMapping("/{langId}/main")
-@ResponseStatus(HttpStatus.OK)
 public class MainController extends DefaultController {
 
 	@Autowired
