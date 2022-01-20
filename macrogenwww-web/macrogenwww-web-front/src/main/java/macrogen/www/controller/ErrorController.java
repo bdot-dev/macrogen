@@ -17,7 +17,7 @@ public class ErrorController {
     @RequestMapping("/error")
     @ResponseStatus(HttpStatus.BAD_GATEWAY)
     public String Error(HttpServletResponse res, Model model) {
-    	LOGGER.debug("http status: "+HttpStatus.OK);
+    	LOGGER.debug("http status: "+HttpStatus.BAD_GATEWAY);
         return "error";
     }
 
