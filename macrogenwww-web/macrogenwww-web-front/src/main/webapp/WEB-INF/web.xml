@@ -119,7 +119,10 @@
 		<error-code>500</error-code>
 		<location>/error.jsp</location>
 	</error-page>
-
+	<error-page>
+		<error-code>501</error-code>
+		<location>/error.jsp</location>
+	</error-page>
 	<!-- this is for jndi datasource -->
 	<resource-ref>
 		<res-ref-name>jdbc/macrogenwww</res-ref-name>
@@ -129,4 +132,19 @@
 
 	<!-- this is for session clustering -->
 	<distributable />
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>restricted methods</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>PUT</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+			<http-method>TRACE</http-method>
+			<http-method>COPY</http-method>
+			<http-method>MOVE</http-method>
+		</web-resource-collection>
+		<auth-constraint />
+	</security-constraint>
+
 </web-app>
