@@ -63,28 +63,32 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide visual_01">
+                <div class="swiper-slide">
+                	<div class="visual visual_01"></div>
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
                         <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
                         <p class="slogan-sub">in genome analysis</p>
                         <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
                     </div>
                 </div>
-                <div class="swiper-slide visual_02">
+                <div class="swiper-slide">
+                	<div class="visual visual_02"></div>
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
                         <p class="slogan-sub">big data and AI</p>
                         <p class="desc">Paving the way to a better future with<br/>precision medicine based on big data powered by AI</p>
                     </div>
                 </div>
-                <div class="swiper-slide visual_03">
+                <div class="swiper-slide">
+                	<div class="visual visual_03"></div>
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
                         <p class="slogan-sub">future</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
-                <div class="swiper-slide visual_04">
+                <div class="swiper-slide">
+               		<div class="visual visual_04"></div>
                     <div class="text-box phrase">
                         <p>DNA will save the world.<br/>Your past and future is in your DNA.</p>
                         <span class="name">Founder/Chairman of Macrogen<span>  Jeong-Sun Seo</span></span>
@@ -175,6 +179,16 @@
 
                         },
                     },
+                    on: {
+                    	slideChange: function () { 
+							var $slides = this.slides; 
+							$slides.children('.visual').css('animation', 'none'); 
+							$slides.eq(this.activeIndex).children('.visual').css({ 
+								'animation-name': 'grow2', 
+								'animation-duration': '1s' 
+							}) 
+                        }, 
+                    }
                 })
 
                 step2()

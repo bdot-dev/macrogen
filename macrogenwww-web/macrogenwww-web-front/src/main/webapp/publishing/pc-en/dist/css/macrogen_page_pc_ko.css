@@ -6447,8 +6447,8 @@
         background-image: url(../img/macrogen/img-vision-DNA-2.png?v2);
         left: auto;
         right: 0;
-        top: 1650px;
-        z-index: -1; }
+        top: 3450px; 
+        z-index: 7; }
       .macrogen.macrogen-vision .parallax-DNA.DNA-3 {
         background-image: url(../img/macrogen/img-vision-DNA-3.png?v2);
         z-index: -1;
@@ -7196,20 +7196,35 @@
       overflow: hidden;
       height: 300px; }
       
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 {
-        background: url("../img/main/img-main_01.png") no-repeat center bottom/cover; }
+            @keyframes grow2 {
+		  0% {
+		    transform: scale(1.2);
+		    opacity: 0; }
+		  100% {
+		    transform: scale(1);
+		    opacity: 1; } }
+
+  .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
+  	position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow:hidden; 
+        background-size: cover;}
+      
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
+        background: url("../img/main/img-main_01.png") no-repeat center bottom; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 .text-gradient img {
           width: 612px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_02 {
-        background: url("../img/main/img-main_02.png") no-repeat center center/cover; }
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 {
+        background: url("../img/main/img-main_02.png") no-repeat center center; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_02 .text-gradient img {
           width: 611px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_03 {
-        background: url("../img/main/img-main_03.png") no-repeat center center/cover; }
-        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_03 .text-gradient img {
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 {
+        background: url("../img/main/img-main_03.png") no-repeat center center; }
+        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 .text-gradient img {
           width: 532px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_04 {
-        background: url("../img/main/img-main_04.png") no-repeat center center/cover; }
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
+        background: url("../img/main/img-main_04.png") no-repeat center center; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
@@ -7237,7 +7252,6 @@
           top: 48%;
           transform: translate(-50%, -50%);
           color: #FFFFFF;
-          position: relative;
           display: inline-block;
           text-align: center; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase p {
