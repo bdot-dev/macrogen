@@ -436,7 +436,7 @@
         padding: 0 20px; }
         .macrogen.macrogen-management .section-chairman .inner .info-wrap .info .font-h7, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .font-h7 {
           margin-bottom: 24px; }
-        .macrogen.macrogen-management .section-chairman .inner .info-wrap .info .font-body, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .font-body {
+        .macrogen.macrogen-management .section-chairman .inner .info-wrap .info .font-, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .font-body {
           word-break: keep-all;
           margin-bottom: 56px; }
         .macrogen.macrogen-management .section-chairman .inner .info-wrap .info .sign, .macrogen.macrogen-management .section-ceo .inner .info-wrap .info .sign {
@@ -1790,6 +1790,35 @@
           margin-bottom: 16px; }
         .macrogen.macrogen-vision .section-core-values .values .item .font-body {
           padding: 0 45px; }
+          
+          .macrogen.macrogen-vision .parallax-DNA.DNA-1 {
+		      position: absolute;
+		      width: 277px;
+		      height: 300px;
+		      background-image: url("../img/macrogen/img-vision-DNA.png");
+		      background-size: cover;
+		      top: 53%;
+		      left: -15%;
+		      z-index: 2; }
+		      .macrogen.macrogen-vision .parallax-DNA.DNA-2 {
+		        position: absolute;
+		        background-image: url(../img/macrogen/img-vision-DNA-2.png);
+		        width: 233px;
+		        height: 294px;
+		        right: 0;
+		        bottom: 0;
+		        z-index: 7;}
+		      .macrogen.macrogen-vision .parallax-DNA.DNA-3 {
+		        position: absolute;
+		        background-image: url(../img/macrogen/img-vision-DNA-3.png);
+		        width: 259px;
+		        height: 233px;
+		        top: 146%;
+    			right: -15%;
+		        z-index: 2;
+		        }
+          
+          
   .macrogen.macrogen-contact-us {
     /* 아이콘 */ }
     .macrogen.macrogen-contact-us .inner {
@@ -2830,6 +2859,51 @@
         width: 100%;
         height: 100%;
         animation: dim 2s; }
+        
+        .main-wrap .bg-DNA {
+		  position: absolute;
+		  z-index: 99;
+		  display: inline-block;
+		  width: 221px;
+		  height: 199px;
+		  transform: rotate(0deg);
+		  right: -12%;
+		  top: -5%;
+		  background: url("../img/main/img-vision-DNA.png") no-repeat center center/contain;
+		  opacity: 0.7;
+		  animation: DNA-down 2s 1s forwards; }
+
+@keyframes DNA-down {
+  0% {
+    top: -5%;
+    opacity: 0.7; }
+  100% {
+    top: 11%;
+    opacity: 1; } }
+  .main-wrap .bg-DNA.DNA-move {
+    top: 11%;
+    transform: rotate(0deg);
+    opacity: 1;
+    animation: background 7s infinite; }
+    
+    @keyframes background {
+  0% {
+    transform: rotate(0deg);
+    top: 11%; }
+  20% {
+    top: 12%; }
+  25% {
+    transform: rotate(5deg); }
+  40% {
+    top: 11%; }
+  50% {
+    transform: rotate(8deg); }
+  60% {
+    top: 12%; }
+  75% {
+    transform: rotate(5deg); }
+  90% {
+    top: 11%; } }
 
 @keyframes dim {
   0% {
