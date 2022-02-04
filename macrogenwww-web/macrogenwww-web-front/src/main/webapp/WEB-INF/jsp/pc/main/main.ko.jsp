@@ -64,28 +64,32 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide visual_01">
-                    <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
-                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
-                        <p class="slogan-sub">글로벌 리더</p>
-                        <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
-                    </div>
+                <div class="swiper-slide">
+                	<div class="visual visual_01"></div>
+	                <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
+	                    <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
+	                    <p class="slogan-sub">글로벌 리더</p>
+	                    <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
+	                </div>
                 </div>
-                <div class="swiper-slide visual_02">
+                <div class="swiper-slide">
+                	<div class="visual visual_02"></div>
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
                         <p class="slogan-sub">정밀맞춤의학</p>
                         <p class="desc">인공지능을 통해 분석된 빅데이터를 기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
                     </div>
                 </div>
-                <div class="swiper-slide visual_03">
+                <div class="swiper-slide">
+               		<div class="visual visual_03"></div>
                     <div class="text-box">
                         <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
                         <p class="slogan-sub">건강한 미래</p>
                         <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로 새로운 미래를 열어갑니다</p>
                     </div>
                 </div>
-                <div class="swiper-slide visual_04">
+                <div class="swiper-slide">
+                	<div class="visual visual_04"></div>
                     <div class="text-box phrase">
                         <p>DNA가 세상을 구할 것이다<br>나의 DNA에는 과거와 미래가 공존한다</p>
                         <span class="name">마크로젠 창립자&#47;회장<span>서정선</span></span>
@@ -176,7 +180,18 @@
 
                         },
                     },
+                    on: {
+                    	slideChange: function () { 
+							var $slides = this.slides; 
+							$slides.children('.visual').css('animation', 'none'); 
+							$slides.eq(this.activeIndex).children('.visual').css({ 
+								'animation-name': 'grow2', 
+								'animation-duration': '1s' 
+							}) 
+                        }, 
+                    }
                 })
+
                 step2()
             }
         </script>
