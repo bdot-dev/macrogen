@@ -402,7 +402,7 @@
                             <div class="brochure_img"><span class="sr-only">digital brochure</span></div>
                             <div class="download-area">
                                 <a href="/downfile/macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>KOR PDF</span><i class="icon ico-download-black"></i></a>
-                                <a href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank" class="btn btn-light btn-round"><span>ENG PDF</span><i class="icon ico-download-black"></i></a>
+                                <!-- <a href="void(0);" onclick="alert('COMING SOON'); return false;" target="_blank" class="btn btn-light btn-round"><span>ENG PDF</span><i class="icon ico-download-black"></i></a> -->
                             </div>
                         </div>
                     </div>

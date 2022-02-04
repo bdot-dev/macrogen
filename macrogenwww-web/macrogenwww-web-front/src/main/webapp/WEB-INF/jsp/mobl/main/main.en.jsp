@@ -175,6 +175,7 @@
 
         </script>
         <!-- e 메인비주얼 영역 -->
+       <div class="bg-DNA"></div>
     </div>
 
     <div class="container">

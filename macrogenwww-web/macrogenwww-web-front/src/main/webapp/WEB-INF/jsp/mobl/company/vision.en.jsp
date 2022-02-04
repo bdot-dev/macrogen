@@ -61,6 +61,10 @@
 
             <!-- s vision -->
             <div class="section-slogan">
+             <div class="parallax-DNA DNA-1 _DNA1" data-rellax-speed="10"></div>
+                <script>
+                    var rellax1 = new Rellax('._DNA1');
+                </script>
                 <div class="bg">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                         <div class="font-h7">Slogan</div>
@@ -84,6 +88,10 @@
                         </div>
                     </div>
                 </div>
+                   <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
+              <script>
+                  var rellax2 = new Rellax('._DNA2');
+              </script>
             </div>
             <script> <!-- script 수정 -- 2021.11.25 -->
                 $(document).ready(function() {
@@ -126,6 +134,10 @@
 
             <!-- s 핵심가치 -->
             <div class="section-core-values">
+             <div class="parallax-DNA DNA-3 _DNA3" data-rellax-speed="10"></div>
+                <script>
+                    var rellax6 = new Rellax('._DNA3');
+                </script>
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-h7">Core Values</div>
                     <div class="values">

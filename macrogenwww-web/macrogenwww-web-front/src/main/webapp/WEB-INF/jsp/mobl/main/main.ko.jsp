@@ -176,8 +176,12 @@
             }
 
         </script>
+        
+         <div class="bg-DNA"></div>
+        
         <!-- e 메인비주얼 영역 -->
     </div>
+    
 
     <div class="container">
         <div class="main-page">
