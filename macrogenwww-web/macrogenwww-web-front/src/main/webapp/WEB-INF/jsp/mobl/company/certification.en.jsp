@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-authorization.png);">
+    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-authorization_v2.png);">
         <header class="header header-white">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>

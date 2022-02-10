@@ -2869,7 +2869,8 @@
       position: absolute;
       bottom: 0;
       overflow: hidden;
-      height: 36.9458%;
+      /*height: 36.9458%;*/
+      height: 100%;
       /*visual_01 이슈*/ }
       .main-wrap .main-bg .swiper-container .swiper-wrapper:before {
         content: '';
