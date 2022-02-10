@@ -377,7 +377,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_04.png) no-repeat center center / cover">
+                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_04_v2.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
                             <span>Pets</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">

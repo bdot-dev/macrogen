@@ -346,7 +346,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_04.png) no-repeat center center / cover">
+                            <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_04_v2.png) no-repeat top center / cover">
                                 <div class="text-area">
                                     <div class="font-h3">
                                         <span>Pets</span>
