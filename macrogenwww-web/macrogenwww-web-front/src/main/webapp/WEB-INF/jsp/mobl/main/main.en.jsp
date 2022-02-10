@@ -10,14 +10,14 @@
 </header>
 
         <!-- s intro -->
-        <div class="intro">
+        <!-- <div class="intro">
             <div class="box">
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">Personalized genomic medicine</p>
                 <p data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
                     <span class="text-gradient" >for 7.8 billion people.</span>
                 </p>
             </div>
-        </div>
+        </div> -->
         <!-- e intro -->
 
         <!-- s 메인비주얼 영역 -->
@@ -26,8 +26,9 @@
                 <div class="swiper-slide">
                     <div class="visual visual_01">
                         <div class="text-box">
-                            <p><span class="text-gradient">Global leader</span></p>
-                            <p class="slogan-sub">in genome analysis</p>
+                           <!--  <p><span class="text-gradient">Global leader</span></p> -->
+                           <p class="slogan-sub">Personalized genomic medicine</p>
+                            <p class="slogan-sub">for 7.8 billion people</p>
                             <p class="desc">Leading the future with innovative genome analysis technology</p>
                         </div>
                     </div>
@@ -75,15 +76,16 @@
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
 
-            setTimeout(function () {
+           // setTimeout(function () {
                 step1()
-            }, delay)
+           // }, delay)
 
             function step1() {
-                $wrapper.css({
-                    'transform': 'translateY(0)',
-                    'transition-duration': '1s'
-                })
+               // $wrapper.css({
+               //    'transform': 'translateY(0)',
+               //     'transition-duration': '1s'
+               // })
+ 				$('.header').addClass('header-white')
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"

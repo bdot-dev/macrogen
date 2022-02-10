@@ -51,13 +51,13 @@
         </script>
 
         <!-- s intro -->
-        <div class="intro">
+        <!-- <div class="intro">
             <div class="box">
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">Personalized genomic medicine</p>
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
                     <img src="/publishing/pc-en/dist/img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
             </div>
-        </div>
+        </div> -->
         <!-- e intro -->
 
         <!-- s 메인비주얼 영역 -->
@@ -66,8 +66,9 @@
                 <div class="swiper-slide">
                 	<div class="visual visual_01"></div>
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p>
-                        <p class="slogan-sub">in genome analysis</p>
+                        <!-- <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p> -->
+                        <p class="slogan-sub">Personalized genomic medicine</p>
+                        <p class="slogan-sub">for 7.8 billion people</p>
                         <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
                     </div>
                 </div>
@@ -112,15 +113,15 @@
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
             var mainSwiper;
-            setTimeout(function () {
+            //setTimeout(function () {
                 step1();
-            }, delay)
+           // }, delay)
 
             function step1() {
-                $wrapper.css({
-                    'transform': 'translateY(0)',
-                    'transition-duration': '1s'
-                })
+                //$wrapper.css({
+                //    'transform': 'translateY(0)',
+                //    'transition-duration': '1s'
+                //})
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"
