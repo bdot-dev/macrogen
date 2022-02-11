@@ -76,15 +76,15 @@
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
 
-           // setTimeout(function () {
+            setTimeout(function () {
                 step1()
-           // }, delay)
+            })
 
             function step1() {
-               // $wrapper.css({
-               //    'transform': 'translateY(0)',
-               //     'transition-duration': '1s'
-               // })
+                $wrapper.css({
+                   'transform': 'translateY(0)',
+                    'transition-duration': '1s'
+                })
  				$('.header').addClass('header-white')
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({

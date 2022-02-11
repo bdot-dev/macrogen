@@ -114,15 +114,15 @@
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
             var mainSwiper;
-           // setTimeout(function () {
+            setTimeout(function () {
                 step1();
-           // }, delay)
+            })
 
             function step1() {
-               // $wrapper.css({
-                //    'transform': 'translateY(0)',
-                 //   'transition-duration': '1s'
-                //})
+               $wrapper.css({
+                   'transform': 'translateY(0)',
+                   'transition-duration': '1s'
+                })
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"
