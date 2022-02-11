@@ -87,6 +87,10 @@
                         <img src="/publishing/pc-ko/dist/img/macrogen/img-vision-parallax-3.png" alt="dna">
                     </div>
                 </div>
+                <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
+                <script>
+                  var rellax2 = new Rellax('._DNA2');
+                </script>
             </div>
             <!-- e vision -->
 
@@ -101,10 +105,7 @@
 
             <!-- s 경영이념 -->
             <div class="section-management-philosophy" data-aos="fade-up" data-aos-duration="2000">
-               <!-- DNA-2 위치변경 - 21.10.19 변경 후-->
-              <div class="parallax-DNA DNA-2 _DNA2" data-rellax-speed="10"></div>
               <script>
-                  var rellax2 = new Rellax('._DNA2');
                   var rellax3 = new Rellax('.img-1');
                   var rellax4 = new Rellax('.img-2');
                   var rellax5 = new Rellax('.img-3');

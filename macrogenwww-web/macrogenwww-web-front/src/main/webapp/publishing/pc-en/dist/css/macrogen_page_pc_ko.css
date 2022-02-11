@@ -6438,18 +6438,19 @@
       position: absolute;
       width: 732px;
       height: 777px;
-      background-image: url("../img/macrogen/img-vision-DNA.png");
+      background-image: url("../img/macrogen/img-vision-DNA.png?v2");
       background-size: cover;
       top: 1300px;
       left: -120px;
       z-index: 2; }
       .macrogen.macrogen-vision .parallax-DNA.DNA-2 {
-        background-image: url(../img/macrogen/img-vision-DNA-2.png);
+        background-image: url(../img/macrogen/img-vision-DNA-2.png?v2);
         left: auto;
         right: 0;
-        top: 1000px; }
+        top: 3450px; 
+        z-index: 7; }
       .macrogen.macrogen-vision .parallax-DNA.DNA-3 {
-        background-image: url(../img/macrogen/img-vision-DNA-3.png);
+        background-image: url(../img/macrogen/img-vision-DNA-3.png?v2);
         z-index: -1;
         top: 1700px; }
     @media (max-width: 1440px) {
@@ -7074,9 +7075,9 @@
   transform: rotate(-15deg);
   right: 160px;
   top: -300px;
-  background: url("../img/main/img-vision-DNA.png") no-repeat center center/contain;
+  background: url("../img/main/img-vision-DNA.png?v2") no-repeat center center/contain;
   opacity: 0.7;
-  animation: DNA-down 4s 3s forwards; }
+  animation: DNA-down 2s 1s forwards; }
 
 @keyframes DNA-down {
   0% {
@@ -7193,21 +7194,37 @@
       position: absolute;
       bottom: 0;
       overflow: hidden;
-      height: 300px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 {
-        background: url("../img/main/img-main_01.png") no-repeat center bottom/cover; }
+      height: 100%; }
+      
+            @keyframes grow2 {
+		  0% {
+		    transform: scale(1.2);
+		    opacity: 0; }
+		  100% {
+		    transform: scale(1);
+		    opacity: 1; } }
+
+  .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
+  	position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow:hidden; 
+        background-size: cover;}
+      
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
+        background: url("../img/main/img-main_01.png") no-repeat center bottom; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 .text-gradient img {
           width: 612px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_02 {
-        background: url("../img/main/img-main_02.png") no-repeat center center/cover; }
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 {
+        background: url("../img/main/img-main_02.png") no-repeat center center; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_02 .text-gradient img {
           width: 611px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_03 {
-        background: url("../img/main/img-main_03.png") no-repeat center center/cover; }
-        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_03 .text-gradient img {
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 {
+        background: url("../img/main/img-main_03.png") no-repeat center center; }
+        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 .text-gradient img {
           width: 532px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_04 {
-        background: url("../img/main/img-main_04.png") no-repeat center center/cover; }
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
+        background: url("../img/main/img-main_04.png") no-repeat center center; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
@@ -7235,7 +7252,6 @@
           top: 48%;
           transform: translate(-50%, -50%);
           color: #FFFFFF;
-          position: relative;
           display: inline-block;
           text-align: center; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase p {
@@ -8559,7 +8575,7 @@
       border-bottom: none;
       position: relative;
       display: block;
-      height: 35px; }
+      height: 0; }
       .modal .modal-dialog.layer-modal .modal-content .modal-header .blue-circle {
         position: absolute;
         left: 50%;
@@ -8568,14 +8584,17 @@
         width: 60px;
         height: 60px;
         background: linear-gradient(180deg, rgba(46, 77, 239, 0) 49.17%, rgba(27, 59, 227, 0.4) 100%), linear-gradient(0deg, #2E87EF, #2E87EF);
-        border-radius: 50%; }
+        border-radius: 50%;
+        z-index: 1; }
         .modal .modal-dialog.layer-modal .modal-content .modal-header .blue-circle .icon-union {
           background-image: url("../img/common/ico-union.svg");
           width: 100%;
           height: 100%; }
     .modal .modal-dialog.layer-modal .modal-content .modal-body {
+      flex: 1 1 0;
       background-color: #fff;
-      padding: 40px; }
+      padding: 0; 
+      z-index:0;}
       .modal .modal-dialog.layer-modal .modal-content .modal-body .data-img {
         width: 100%;
         height: 100%;
