@@ -10672,9 +10672,9 @@ p {
             .wrap .footer .inner .section_familysite .family-box .select_site.open:before {
               transform: rotate(180deg); }
           .wrap .footer .inner .section_familysite .family-box .popup_box {
-            width: 185px;
-            height: 490px;
-            padding: 30px;
+            width: 190px;
+            height: 590px;
+            padding: 28px;
             position: absolute;
             bottom: 45px;
             right: 0;
