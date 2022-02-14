@@ -33,9 +33,11 @@
                     <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
                     <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
                     <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
+                    <a href="https://macrogenclinical.com/macrogen/" target="_blank" class="list"><span class="text">마크로젠 스페인</span></a>
                     <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 싱가포르</span></a>
                     <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">유전체의학연구소</span></a>
                     <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
+                    <a href="http://www.genehealth.or.kr/" target="_blank" class="list"><span class="text">진헬스 건강검진센터</span></a>
                 </div>
             </div>
         </div>

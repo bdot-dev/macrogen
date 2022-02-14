@@ -27,9 +27,11 @@
                     <option value="https://psomagen.com/">소마젠(Psomagen)</option>
                     <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
                     <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
+                    <option value="https://macrogenclinical.com/macrogen/">마크로젠 스페인</option>
                     <option value="https://www.macrogen-apac.com/">마크로젠 싱가포르</option>
                     <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
                     <option value="http://www.g2if.org/">공우생명정보재단</option>
+                    <option value="http://www.genehealth.or.kr/">진헬스 건강검진센터</option>
                 </select>
             </li>
         </ul>

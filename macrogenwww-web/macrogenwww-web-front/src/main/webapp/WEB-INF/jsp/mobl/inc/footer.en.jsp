@@ -19,16 +19,18 @@
             </li>
             <li>
                 <select class="select" title="familySite" onchange="openWindowInFooter(this)">
-                    <option selected>Family Site</option>
+                    <option value="">Family Site</option>
                     <option value="https://thebiome.life/">The Biome</option>
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
                     <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
                     <option value="https://psomagen.com/">Psomagen</option>
                     <option value="https://www.macrogen-japan.co.jp/">Macrogen Japan</option>
                     <option value="https://www.macrogen-europe.com">Macrogen Europe</option>
+                    <option value="https://macrogenclinical.com/macrogen/">Macrogen Spain</option>
                     <option value="https://www.macrogen-apac.com/">Macrogen APAC</option>
                     <option value="http://gmi.ac.kr/index.php">Genome Medicine Institute</option>
                     <option value="http://www.g2if.org/">Gong-Wu Genome<br/>Information Foundation</option>
+                    <option value="http://www.genehealth.or.kr/">Genehealth</option>
                 </select>
             </li>
         </ul>

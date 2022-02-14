@@ -33,9 +33,11 @@
                     <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">Psomagen</span></a>
                     <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">Macrogen Japan</span></a>
                     <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">Macrogen Europe</span></a>
+                    <a href="https://macrogenclinical.com/macrogen/" target="_blank" class="list"><span class="text">Macrogen Spain</span></a>
                     <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">Macrogen APAC</span></a>
                     <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">Genome Medicine Institute</span></a>
                     <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">Gong-Wu Genome<br/>Information Foundation</span></a>
+                    <a href="http://www.genehealth.or.kr/" target="_blank" class="list"><span class="text">Genehealth</span></a>
                 </div>
             </div>
         </div>
