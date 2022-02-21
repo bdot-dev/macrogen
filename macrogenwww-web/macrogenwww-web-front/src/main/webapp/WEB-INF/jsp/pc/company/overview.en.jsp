@@ -378,7 +378,7 @@
                            
                             <div class="download-area">
                             	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>KOR PDF</span><i class="icon icon-download"></i></a>
-								<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
+								<a class="btn-download" href="/downfile/macrogen_brochure_en.pdf" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>
                     </div>
