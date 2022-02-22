@@ -48,7 +48,7 @@
 		if (!url) return;
 
 		if (url.startsWith('http')) {
-			window.open(url);
+			location.href = url;
 			select.value = '';
 		} else {
 			location.href = url;

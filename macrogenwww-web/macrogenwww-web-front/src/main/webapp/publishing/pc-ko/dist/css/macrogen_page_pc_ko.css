@@ -5680,10 +5680,9 @@
       margin-bottom: 100px; }
     .macrogen.macrogen-management .section-chairman .inner .chairman-info {
       overflow: hidden;
-      margin-bottom: 180px;
       background-image: url(../img/macrogen/img-chairman.png);
-      background-size: 940px 850px;
-      background-position: 642px -72px;
+      background-size: 1160px 1070px;
+      background-position: 642px 0;
       background-repeat: no-repeat; }
       .macrogen.macrogen-management .section-chairman .inner .chairman-info .info {
         float: left;
@@ -5696,11 +5695,11 @@
         .macrogen.macrogen-management .section-chairman .inner .chairman-info .info .font-body {
           font-weight: normal;
           color: #454545;
-          margin-bottom: 15.2941%;
+          margin-bottom: 21.2941%;
           word-break: keep-all; }
         .macrogen.macrogen-management .section-chairman .inner .chairman-info .info .sign {
           text-align: right;
-          height: 46px; }
+          height: 146px; }
           .macrogen.macrogen-management .section-chairman .inner .chairman-info .info .sign .font-body-h {
             font-weight: normal;
             display: inline-block;
@@ -5715,43 +5714,64 @@
         .macrogen.macrogen-management .section-chairman .inner .chairman-info .img img {
           width: 100%;
           height: auto; }
-  .macrogen.macrogen-management .section-ceo {
+  .macrogen.macrogen-management .section-ceo-career {
     padding-top: 150px;
-    padding-right: 17.4479%;
-    padding-bottom: 180px; }
-    .macrogen.macrogen-management .section-ceo .img {
-      width: 100%;
+    padding-right:0;}
+     .macrogen.macrogen-management .section-ceo-career .inner .sign{
+      padding-left: 21.3248%;
+      padding-bottom: 78px; }
+    .macrogen.macrogen-management .section-ceo-career .inner .sign .font-h7{
+    display:block;}
+    
+    .macrogen.macrogen-management .section-ceo-career .inner .item{
       height: 640px;
-      margin-bottom: 100px;
-      background-image: url(../img/macrogen/img-ceo.png);
-      background-size: 1582px 640px;
-      background-position: 0 0;
+      margin-bottom: 180px;
+   	  background-position: -10% center;
       background-repeat: no-repeat; }
-    .macrogen.macrogen-management .section-ceo .inner {
+    
+    .macrogen.macrogen-management .section-ceo-career .inner .item.item1 {
+      background-image: url(../img/macrogen/img-ceo1.png); }
+      
+        .macrogen.macrogen-management .section-ceo-career .inner .item.item2 {
+      background-image: url(../img/macrogen/img-ceo2.png);}
+      
+      .macrogen.macrogen-management .section-ceo-career .inner .item .txt{
+      padding-top: 60px;
+      width: 480px;
+   	  position: absolute;
+      left: 1000px;}
+    .macrogen.macrogen-management .section-ceo-career .inner {
       /* width: 1244px;
-         margin: 0 auto;*/
-      padding-left: 21.3248%; }
-      .macrogen.macrogen-management .section-ceo .inner .font-h3 {
+         margin: 0 auto;
+      padding-left: 21.3248%;*/ }
+      .macrogen.macrogen-management .section-ceo-career .inner .font-h3 {
         margin-bottom: 80px; }
-      .macrogen.macrogen-management .section-ceo .inner .info .item {
+      .macrogen.macrogen-management .section-ceo-career .inner .info .item {
         margin-bottom: 80px;
         overflow: hidden; }
+        .macrogen.macrogen-management .section-ceo .inner .font-h3 {
+        color: #fff;
+        margin-bottom: 80px; }
       .macrogen.macrogen-management .section-ceo .inner .info .font-h7 {
         float: left;
         width: 37.6904%;
         margin-right: 4.8115%;
         /*60px / 1247px*/
-        word-break: keep-all; }
+        word-break: keep-all; 
+        color: #fff; }
       .macrogen.macrogen-management .section-ceo .inner .info .font-body {
         word-break: keep-all;
         float: left;
         width: 56.8564%;
         font-weight: normal;
         color: #454545;
-        letter-spacing: -0.85px; }
+        letter-spacing: -0.85px;
+        color: #fff; }
       .macrogen.macrogen-management .section-ceo .inner .sign {
+        margin-top: 20px;
         text-align: right;
-        height: 46px; }
+        height: 46px; 
+        color: #fff; }
         .macrogen.macrogen-management .section-ceo .inner .sign .font-body-h {
           font-weight: normal;
           display: inline-block;
@@ -5849,32 +5869,29 @@
                 line-height: 30px;
                 letter-spacing: -1.3px;
                 color: #FFFFFF; }
-  .macrogen.macrogen-management .section-ceo-career {
-    padding-top: 130px;
+  .macrogen.macrogen-management .section-ceo {
+    padding-top: 100px;
     width: 1920px;
-    height: 800px;
+    height: 1107px;
     background-image: url("../img/macrogen/bg-ceo-career.png");
     background-size: cover;
     width: auto;
     background-position: center;
     margin: 0 auto; }
-    .macrogen.macrogen-management .section-ceo-career .inner {
+    .macrogen.macrogen-management .section-ceo .inner {
       width: 1244px;
       margin: 0 auto; }
-      .macrogen.macrogen-management .section-ceo-career .inner .item {
+      .macrogen.macrogen-management .section-ceo .inner .item {
         overflow: hidden;
         margin-bottom: 60px; }
-        .macrogen.macrogen-management .section-ceo-career .inner .item:last-child {
+        .macrogen.macrogen-management .section-ceo .inner .item:last-child {
           margin-bottom: 0; }
         .macrogen.macrogen-management .section-ceo-career .inner .item .title {
-          float: left;
-          position: relative;
-          width: 312px;
           font-weight: 700;
           font-size: 36px;
           line-height: 52px;
           letter-spacing: -1px;
-          color: #FFFFFF; }
+          color: #000; }
           .macrogen.macrogen-management .section-ceo-career .inner .item .title span {
             position: relative;
             display: inline-block; }
@@ -5885,11 +5902,10 @@
               height: 3px;
               right: -58px;
               bottom: 12px;
-              background: #FFFFFF; }
+              background: #000; }
         .macrogen.macrogen-management .section-ceo-career .inner .item .list {
-          float: left;
-          width: calc(100% - 312px);
-          padding-top: 37px; }
+          padding-top: 37px;
+          color: #000; }
           .macrogen.macrogen-management .section-ceo-career .inner .item .list .row {
             padding: 0;
             margin: 0; }
@@ -5898,7 +5914,7 @@
               margin: 0; }
           .macrogen.macrogen-management .section-ceo-career .inner .item .list li {
             overflow: hidden;
-            width: 510px;
+            width: auto;
             margin-bottom: 10px; }
             .macrogen.macrogen-management .section-ceo-career .inner .item .list li:last-child {
               margin-bottom: 0; }
@@ -5918,7 +5934,7 @@
                 font-size: 22px;
                 line-height: 28px;
                 letter-spacing: 0.5px;
-                color: #FFFFFF;
+                color: #000;
                 padding-left: 20px;
                 margin-right: 20px; }
                 .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:first-child::before {
@@ -5927,17 +5943,16 @@
                   width: 5px;
                   height: 5px;
                   border-radius: 50%;
-                  background-color: #FFFFFF;
+                  background-color: #000;
                   left: 0;
                   top: 50%;
                   transform: translateY(-50%); }
               .macrogen.macrogen-management .section-ceo-career .inner .item .list li span:nth-child(2) {
                 display: inline-block;
-                width: 335px;
                 font-size: 16px;
                 line-height: 30px;
                 letter-spacing: -1.3px;
-                color: #FFFFFF; }
+                color: #000; }
   .macrogen.macrogen-history .slide-tab-wrap {
     width: 1244px;
     margin: 0 auto;

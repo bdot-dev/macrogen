@@ -70,7 +70,8 @@
                                         질병 예방과 건강 관리로 급변해왔습니다.
                                     </div>
                                     <div class="font-body">
-                                        또한, 1,000달러 게놈이 실현됨에 따라 인류 사회는 의료 정보와 인간 유전체 정보가 통합된 빅데이터를 기반으로 질병을 예측, 진단, 치료하는 정밀의학(Precision Medicine)의 시대로 빠르게 나아가고 있습니다. 마크로젠은 이러한 의료 패러다임의 변화와 정밀의학 실현의 핵심인 유전체 의학, 즉 Genomics Medicine의 중요성을 일찍부터 인식하고 인간 유전체 분석 분야에서 탁월한 연구 성과들을 달성해 왔습니다. 특히 마크로젠은 2009년 세계 4번째 개인 유전체 분석 결과이자 세계 최초의 북방계 아시아인 유전체 분석 결과로서 한국인의 전장 유전체를 분석하였으며 2016년에는 기존 국제 표준 유전체의 한계를 극복하고 미래 정밀의학에 적용 가능한 세계 최고 완성도의 아시아인 표준 유전체를 구축하는 연구 성과를 달성했습니다.
+                                        또한, 1,000달러 게놈이 실현됨에 따라 인류 사회는 의료 정보와 인간 유전체 정보가 통합된 빅데이터를 기반으로 질병을 예측, 진단, 치료하는 정밀의학(Precision Medicine)의 시대로 빠르게 나아가고 있습니다. 마크로젠은 이러한 의료 패러다임의 변화와 정밀의학 실현의 핵심인 유전체 의학, 즉 Genomics Medicine의 중요성을 일찍부터 인식하고 인간 유전체 분석 분야에서 탁월한 연구 성과들을 달성해 왔습니다. 특히 마크로젠은 2009년 세계 4번째 개인 유전체 분석 결과이자 세계 최초의 북방계 아시아인 유전체 분석 결과로서 한국인의 전장 유전체를 분석하였으며 2016년에는 기존 국제 표준 유전체의 한계를 극복하고 미래 정밀의학에 적용 가능한 세계 최고 완성도의 아시아인 표준 유전체를 구축하는 연구 성과를 달성했습니다.<br><br>
+                                        지난 20여 년간 계속해서 변화하고 적응하며 성장해온 마크로젠은 새로운 경영체제와 중장기 비전 ‘마크로젠 2.0’으로의 혁신을 통해 국내 및 글로벌 지놈센터 확장 등 ‘Genome 파운드리’ 산업 글로벌 No. 1을 이룩할 채비를 갖추고, 마크로젠 의료재단 진헬스 건강검진 센터 등 의료기관에서 시행하는 질병 예측 유전자 맞춤 검강검진 서비스를 통해 클리닉 분야에서도 제2의 도약을 준비하고 있습니다.<br> DNA 분석 전방 사업 등 수직계열화를 통해 내실을 더욱 다지는 한편, ‘웰니스’를 구심점으로 한 헬스케어 기업으로서 글로벌 네트워크를 확장해 나가며 유전체 정보 등 빅데이터에 인공지능(AI) 분석 기술을 결합하는 방식의 헬스케어 디지털 전환을 바탕으로 생로병사의 한계에 대한 꿈을 실현할 수 있도록 계속해서 앞으로 나아가겠습니다.
                                     </div>
                                     <div class="sign">
                                         <span class="font-body-h">마크로젠 회장</span>
@@ -290,58 +291,69 @@
                 <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
                     <!-- s  CEO -->
                     <div class="section-ceo">
-                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="font-h3">
-                                대한민국 대표 생명공학<br/> 기업 마크로젠
-                                대표이사<br/> 이수강입니다.
+                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                        	<div class="font-h6">국내 사업 대표이사</div>
+                            <div class="font-h3">김창훈 </div>
+                            <div class="info-wrap">
+                                <div class="img">
+                                    <img src="/publishing/mobile-ko/dist/img/macrogen/img-ceo-kch.png" alt="대표이사 김창훈">
+                                </div>
+                                <div class="info">
+                                    <div class="item">
+                                            <div class="font-h5">학력 및 약력</div>
+                                            <div class="list">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>
+                                                                <span>2022 - 현재</span>
+                                                                <span>마크로젠 대표이사</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>2012 - 2021</span>
+                                                                <span>마크로젠 바이오인포매틱스<br> 연구소 (부)소장 / CTO</span>
+                                                            </li>
+                                                             <li>
+			                                                    <span>2009 - 2011</span>
+			                                                    <span>분자설계연구소 책임연구원</span>
+			                                                </li>
+                                                            <li>
+                                                                <span>2003 - 2009</span>
+                                                                <span>미국립암연구소(NCI) 연구원</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>2001 - 2009</span>
+                                                                <span>한국생명공학연구원 선임연구원</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>1998</span>
+                                                                <span>한국과학기술원(KAIST)<br> 생물과학 박사</span>
+                                                            </li>                                                         
+			                                                <li>
+			                                                    <span>1992</span>
+			                                                    <span>한국과학기술원(KAIST)<br> 생물과학 석사</span>
+			                                                </li>
+			                                                <li>
+			                                                    <span>1990</span>
+			                                                    <span>경북대학교 유전공학 학사</span>
+			                                                </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>                         
+                                </div>
                             </div>
+                        </div>
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                        	<div class="font-h6">해외 사업 대표이사</div>
+                            <div class="font-h3">이수강 </div>
                             <div class="info-wrap">
                                 <div class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-ceo.png" alt="대표이사 이수강">
                                 </div>
                                 <div class="info">
                                     <div class="item">
-                                        <div class="font-h7">
-                                            마크로젠은 '글로벌 유전체 분석
-                                            전문 기업'이자 '대한민국을 대표하는
-                                            생명공학 기업'입니다.
-                                        </div>
-                                        <div class="font-body">
-                                            1997년 6월 5일 설립된 마크로젠은 급변하는 생명공학 시장에서 끊임없는 연구와 혁신 활동을 해왔으며, 현재 전 세계 153개국 1만 8천여 연구기관 고객을 보유한 '글로벌 No.1 정밀의학 선도기업'으로 성장했습니다. 우수한 인력과 오랜 서비스 수행 경험에서 우러난 탁월한 기술력을 갖추고 있으며, 세계 최고 수준의 유전체 분석 수행 인프라를 구축하여 글로벌 생명공학 토털 솔루션을 제공하고 있습니다.<br/>
-                                            또한, 고품질의 서비스를 안정적으로 제공하기 위해 ISO9001 국제 품질경영시스템 인증을 보유하고 있으며, 다양한 유전체 분석 플랫폼 공급업체로부터 CSP(Certified Service Provider) 인증을 획득하였습니다.<br/>
-                                            또한 업계 최초로 PIMS(Personal Information Management System, 개인정보보호 관리체계) 인증을 획득하는 등 정보보안 및 개인정보보호 강화를 위해 꾸준히 노력하고 있습니다. 뿐만 아니라 유전체 분석 기술 분야의 선도기업과 지속적인 기술협력을 통해 최신기술 보급에 최선을 다하고 있습니다.
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="font-h7">
-                                            이제 마크로젠은 기술 중심 기업에서
-                                            고객 중심 기업으로
-                                            제2의 도약을 꿈꾸고 있습니다.
-                                        </div>
-                                        <div class="font-body">
-                                            연구자 시장에서 인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성하고자 합니다. 국제적 수준의 임상진단 실험실을 갖춘 정밀의학센터 네트워크를 구축하고, 암 진단을 포함한 최신 유전체 분석 기술 기반의 임상진단 서비스를 지속적으로 개발&#183;출시해 나가고 있습니다.<br/>
-                                            또한, 국내뿐만 아니라 미국 소마젠, 유럽법인, 일본법인 등 해외 거점별 현지화 전략으로 DTC 유전자 검사와 마이크로바이옴 분석 서비스를 출시하고 글로벌 시장을 적극적으로 공략해 나가고 있습니다.<br/>
-                                            앞으로도 마크로젠은 고객 감동을 실현하기 위해 끊임없는 연구개발과 고객 친화적 서비스 개선을 지속하는 것은 물론, 투명한 기업경영과 경영효율 극대화를 추진하면서 글로벌 생명공학 선도기업으로서 최선을 다할 것을 약속드립니다.<br/>
-                                            감사합니다.
-                                        </div>
-                                    </div>
-                                    <div class="sign">
-                                        <span class="font-body-h">마크로젠 대표</span>
-                                        <span class="font-h7">이수강</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- e  회장 -->
-
-                    <!-- s  CEO 경력-->
-                    <div class="section-ceo-career">
-                        <div class="swiper-container _slider2" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="inner">
-                                        <div class="item">
                                             <div class="font-h5">학력 및 약력</div>
                                             <div class="list">
                                                 <div class="row">
@@ -375,25 +387,53 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e  회장 -->
+
+                    <!-- s  CEO 경력-->
+                    <div class="section-ceo-career">
+                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="font-h3">
+                                	인사말
+                            </div>
+                            <div class="info-wrap">
+                  
+                                <div class="info">
+                                    <div class="item">
+                                        <div class="font-h7">
+                                            마크로젠은 '글로벌 유전체 분석
+                                            전문 기업'이자 '대한민국을 대표하는
+                                            생명공학 기업'입니다.
                                         </div>
+                                        <div class="font-body">
+                                            1997년 6월 5일 설립된 마크로젠은 급변하는 생명공학 시장에서 끊임없는 연구와 혁신 활동을 해왔으며, 현재 전 세계 153개국 1만 8천여 연구기관 고객을 보유한 '글로벌 No.1 정밀의학 선도기업'으로 성장했습니다. 우수한 인력과 오랜 서비스 수행 경험에서 우러난 탁월한 기술력을 갖추고 있으며, 세계 최고 수준의 유전체 분석 수행 인프라를 구축하여 글로벌 생명공학 토털 솔루션을 제공하고 있습니다.<br/>
+                                            또한, 고품질의 서비스를 안정적으로 제공하기 위해 ISO9001 국제 품질경영시스템 인증을 보유하고 있으며, 다양한 유전체 분석 플랫폼 공급업체로부터 CSP(Certified Service Provider) 인증을 획득하였습니다.<br/>
+                                            또한 업계 최초로 PIMS(Personal Information Management System, 개인정보보호 관리체계) 인증을 획득하는 등 정보보안 및 개인정보보호 강화를 위해 꾸준히 노력하고 있습니다. 뿐만 아니라 유전체 분석 기술 분야의 선도기업과 지속적인 기술협력을 통해 최신기술 보급에 최선을 다하고 있습니다.
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="font-h7">
+                                            이제 마크로젠은 기술 중심 기업에서
+                                            고객 중심 기업으로
+                                            제2의 도약을 꿈꾸고 있습니다.
+                                        </div>
+                                        <div class="font-body">
+                                            연구자 시장에서 인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성하고자 합니다. 국제적 수준의 임상진단 실험실을 갖춘 정밀의학센터 네트워크를 구축하고, 암 진단을 포함한 최신 유전체 분석 기술 기반의 임상진단 서비스를 지속적으로 개발&#183;출시해 나가고 있습니다.<br/>
+                                            또한, 국내뿐만 아니라 미국 소마젠, 유럽법인, 일본법인 등 해외 거점별 현지화 전략으로 DTC 유전자 검사와 마이크로바이옴 분석 서비스를 출시하고 글로벌 시장을 적극적으로 공략해 나가고 있습니다.<br/>
+                                            앞으로도 마크로젠은 고객 감동을 실현하기 위해 끊임없는 연구개발과 고객 친화적 서비스 개선을 지속하는 것은 물론, 투명한 기업경영과 경영효율 극대화를 추진하면서 글로벌 생명공학 선도기업으로서 최선을 다할 것을 약속드립니다.<br/>
+                                            감사합니다.
+                                        </div>
+                                    </div>
+                                    <div class="sign">
+                                        <span class="font-body-h">마크로젠 대표</span>
+                                        <span class="font-h7">김창훈 / 이수강</span>
                                     </div>
                                 </div>
                             </div>
-<!--                            <div class="pagination-wrap">-->
-<!--                                <ul class="navigation">-->
-<!--                                    <li class="page-item prev">-->
-<!--                                        <a class="page-link _slidePrev" href="#">-->
-<!--                                            <span class="sr-only">이전</span>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="page-item next">-->
-<!--                                        <a class="page-link _slideNext" href="#">-->
-<!--                                            <span class="sr-only">다음</span>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                            <div class="swiper-pagination"></div>-->
                         </div>
                     </div>
                     <script>
