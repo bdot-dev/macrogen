@@ -243,7 +243,7 @@
 	                                                </li>
 	                                                <li>
 	                                                    <span>1998</span>
-	                                                    <span>한국과학기술원(KAIST) 생물과학 박사</span>
+	                                                    <span>한국과학기술원(KAIST) 생물공학 박사</span>
 	                                                </li>
 	                                                <li>
 	                                                    <span>1992</span>
