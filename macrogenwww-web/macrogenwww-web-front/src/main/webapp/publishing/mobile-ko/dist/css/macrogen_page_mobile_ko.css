@@ -2232,6 +2232,12 @@
     margin-right: -20px; }
     .section_business .table-scroll table tr th {
       white-space: nowrap; }
+      .section_business .info-box.info-covid19 .table-scroll table tr th{
+      background: #F7F7F7;}
+    .section_business .info-box.info-covid19 .table tr:first-child{
+    border-top: 1px solid #000; }
+        .section_business .info-box-wrap .info-covid19 .list-area .title {
+    font-weight:bold; }
   .section_business .icon.ico-cart-white {
     margin-right: 8px;
     margin-bottom: 3px; }
@@ -2352,6 +2358,10 @@
     color: #000; }
   .section_business .info-box-wrap .list-area-group .list-area {
     margin-bottom: 48px; }
+      .section_business .info-box-wrap .list-area-group .list-area.last-list-area {
+    margin-bottom: 80px; }
+    .section_business .info-box-wrap .list-area-group .list-area.last-list-area2 {
+    margin-bottom: 65px; }
   .section_business .info-box-wrap .list-area-group + .btn-area {
     padding-top: 32px; }
   .section_business .info-box-wrap .list-area .title {
@@ -2422,12 +2432,19 @@
     line-height: 32px;
     letter-spacing: -0.5px;
     color: #909090; }
+    
+     .section_business .info-box-wrap .info-covid19 .notice-text{
+     padding-top: 65px;
+     border-top: 1px solid #e9e9e9;}
+    
     .section_business .info-box-wrap .notice-text i {
       margin-top: 6px;
       flex: 20px 0 0;
       margin-right: 8px; }
   .section_business .info-box-wrap .navigation.pt-80 {
     padding-top: 80px; }
+    .section_business .info-box-wrap .info-covid19 .navigation.pt-80 {
+    padding-bottom: 80px; }
   .section_business .list-gallery .img {
     margin-bottom: 40px; }
   .section_business .list-gallery .btn-wrap {
@@ -2463,7 +2480,9 @@
       color: #000000; }
     .section_business .box-gray-6 .desc {
       color: #666666; }
-
+      
+      
+      
 /*
 |----------------------------------|
  v.0.1 (주연) 최초 작업 -- 2021.11.12
