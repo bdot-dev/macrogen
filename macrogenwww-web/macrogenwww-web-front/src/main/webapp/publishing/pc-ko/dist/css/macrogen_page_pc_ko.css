@@ -3927,6 +3927,11 @@
       padding: 15px; }
   .section_business .info-box .table {
     margin-bottom: 0; }
+    .section_business .info-box.info-covid19 .table {
+  	border-top: 1px solid #000; }
+  	.section_business .info-box.info-covid19 .table tbody tr th{
+  	color: #666;
+  	border-top:0;  }
     .section_business .info-box .table thead th {
       padding: 15px 30px; }
     .section_business .info-box .table tbody td {
