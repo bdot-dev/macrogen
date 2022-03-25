@@ -24,7 +24,7 @@
     </div>
 
     <div class="container">
-        <div class="section_business">
+        <div class="section_business microbiome">
             <!--메인 컨텐츠-->
             <div class="subject-box no-line">
                 <p class="title font-h4">Present personalized solutions<br>

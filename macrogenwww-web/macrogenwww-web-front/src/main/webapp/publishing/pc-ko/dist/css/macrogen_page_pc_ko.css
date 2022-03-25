@@ -3593,12 +3593,21 @@
       margin-bottom: 50px; }
   .section_business .subject-box .img {
     margin-bottom: 60px; }
-    .section_business .subject-box .img.caption_bottom {
+    
+  .section_business.microbiome .subject-box .img {
+    margin-bottom: 80px; }  
+    
+  .section_business.microbiome .subject-box .img:last-child {
+    margin-bottom: 0; }  
+    
+  .section_business .subject-box .img.caption_bottom {
       margin-bottom: 0px; }
+      
   .section_business .subject-box.no-line {
     padding-bottom: 50px;
     margin: 0; }
-    .section_business .subject-box.no-line:after {
+
+  .section_business .subject-box.no-line:after {
       display: none; }
   .section_business .subject-box:after {
     content: '';
@@ -3660,12 +3669,30 @@
     font-size: 18px;
     margin-bottom: 20px;
     letter-spacing: -0.75px; }
+   .section_business.microbiome .info-box .subject {
+   font-weight: 400;}
     .section_business .info-box .subject.img_bottom {
       margin-bottom: 60px; }
+    .section_business.microbiome .info-box .subject.img_bottom {
+     margin-bottom: 20px; }
     .section_business .info-box .subject + .img {
       padding-top: 20px; }
+      
+   .section_business.microbiome .info-box .img:first-of-type {
+    margin-bottom: 120px; }  
+    .section_business.microbiome .info-box .img:nth-of-type(3) {
+    margin-bottom: 60px; }  
+   .section_business.microbiome .info-box .sub-title {
+    margin-bottom: 20px;  }
+    .section_business.microbiome .info-box .list-area{
+    margin-bottom: 40px;    }
   .section_business .info-box .sub-title {
     margin-bottom: 30px; }
+    .section_business.microbiome .info-box .csinfo{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.75px;
+    }
     .section_business .info-box .sub-title.figure_bottom {
       margin-bottom: 25px; }
     .section_business .info-box .sub-title.graph_bottom {
@@ -3676,6 +3703,8 @@
     margin-top: 80px; }
   .section_business .info-box .img + .list-area {
     padding-top: 80px; }
+    .section_business.microbiome .info-box .img + .list-area {
+    padding-top: 40px; }
   .section_business .info-box .img + .box-gray-6 {
     padding-top: 80px; }
   .section_business .info-box .img + .list-area-group {
@@ -3967,6 +3996,14 @@
   line-height: 30px;
   font-weight: 400;
   color: #454545; }
+  .list-circle-dot.txtcolor{
+  color: #707070;  }
+  .list-circle-dot li > span{
+  display: block;
+  font-size: 16px; 
+  letter-spacing:-0.75;
+  color: #707070;}
+  
   .list-circle-dot > li {
     margin-bottom: 10px; }
     .list-circle-dot > li:before {
