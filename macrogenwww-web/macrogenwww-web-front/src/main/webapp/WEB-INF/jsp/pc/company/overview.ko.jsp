@@ -73,46 +73,52 @@
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
                         <ul>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
-                                <span class="val">30M</span>
-                                <span class="desc">유전체 분석 건수</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_1.png" alt="매출 1,300억원 규모"></span>
+                                <span class="val">&#36;130M</span>
+                                <span class="desc">매출 1,300억원 규모¹</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_2.png" alt="바이오벤처 최초 코스닥 상장"></span>
-                                <span class="val">1st</span>
-                                <span class="desc">바이오벤처 최초 코스닥 상장</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_2.png" alt="해외매출 비중"></span>
+                                <span class="val">50&#37;</span>
+                                <span class="desc">해외매출 비중¹</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_3.png" alt="매출 1,000억 돌파"></span>
-                                <span class="val">&#36;100M</span>
-                                <span class="desc">매출 1&#44;000억 돌파</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_6.png" alt="1만 8천여 고객"></span>
+                                <span class="val"><span class="ko">전세계</span> 153<span class="ko">개국</span></span>
+                                <span class="desc">1만 8천여 고객</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_4.png" alt="해외 매출"></span>
-                                <span class="val">70&#37;</span>
-                                <span class="desc">해외 매출</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_8.png" alt="글로벌 임직원 수"></span>
+                                <span class="val">600&#43;</span>
+                                <span class="desc">글로벌 임직원 수²</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_5.png" alt="리서치 시퀀싱 분야 점유율"></span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_5.png" alt="국내 유전체 분석 시장점유율 1위"></span>
                                 <span class="val">No&#46;1</span>
-                                <span class="desc">리서치 시퀀싱 분야 점유율</span>
+                                <span class="desc">국내 유전체 분석<br> 시장점유율 1위</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_6.png" alt="153개국 18,000여 고객"></span>
-                                <span class="val">153<span class="ko">국</span></span>
-                                <span class="desc">18&#44;000 글로벌파트너</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_3.png" alt="연간 30만명 유전체 분석 CAPA"></span>
+                                <span class="val">Global TOP5</span>
+                                <span class="desc">연간 30만명<br> 유전체 분석 CAPA</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_7.png" alt="SCI급 네이처지 논문 148편"></span>
-                                <span class="val">19</span>
-                                <span class="desc">Nature지 논문</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_4.png" alt="빅데이터 컴퓨팅 인프라"></span>
+                                <span class="val">30PB</span>
+                                <span class="desc">빅데이터 컴퓨팅 인프라</span>
                             </li>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_8.png" alt="바이오벤처 기업 지원"></span>
-                                <span class="val">18</span>
-                                <span class="desc">바이오벤처 기업 지원</span>
+                                <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_7.png" alt="한국인 표준 유전체 완성 등 논문 발표 수"></span>
+                                <span class="val">148</span>
+                                <span class="desc">한국인 표준 유전체 완성 등<br> 논문 발표 수³</span>
                             </li>
                         </ul>
+                        <hr class="divider">
+                        <div class="footnote">
+                        1) 2021년 연결 기준<br>
+						2) 2022년 3월 기준<br>
+						3) Nature 본지/자매지, SCI급 논문  발표수 
+						</div>
                     </div>
                 </div>
             </div>

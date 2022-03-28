@@ -145,7 +145,7 @@
     width: 100%;
     background-color: #F7F7F7;
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     overflow: hidden; }
     .macrogen.company-overview .section-overview .inner {
       padding: 0 20px; }
@@ -185,9 +185,23 @@
           height: 100%; }
       .macrogen.company-overview .section-overview .overview-list .item .font-h4 {
         display: block; }
+        .macrogen.company-overview .section-overview .overview-list .item:nth-child(3) .font-h4{
+        letter-spacing: -3px;}
+       .macrogen.company-overview .section-overview .overview-list .item .font-h4 .ko{
+       font-size: 24px;
+       letter-spacing: -2px; }
       .macrogen.company-overview .section-overview .overview-list .item .font-body-h {
         display: block;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: -1.5px; }
+        .macrogen.company-overview .section-overview .overview-list hr.divider{
+        margin: 20px 0 24px 0;
+        height: 1px;
+        background: #E9E9E9; }
+        .macrogen.company-overview .section-overview .overview-list .footnote{
+        color: #707070;
+        font-size: 14px;
+        line-height: 26px;        }
   .macrogen.company-overview .section-business {
     position: relative;
     width: auto;
