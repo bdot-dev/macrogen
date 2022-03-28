@@ -184,11 +184,12 @@
           width: 100%;
           height: 100%; }
       .macrogen.company-overview .section-overview .overview-list .item .font-h4 {
-        display: block; }
+        display: block;
+        font-size: 27px; }
         .macrogen.company-overview .section-overview .overview-list .item:nth-child(3) .font-h4{
         letter-spacing: -3px;}
        .macrogen.company-overview .section-overview .overview-list .item .font-h4 .ko{
-       font-size: 24px;
+       font-size: 23px;
        letter-spacing: -2px; }
       .macrogen.company-overview .section-overview .overview-list .item .font-body-h {
         display: block;
