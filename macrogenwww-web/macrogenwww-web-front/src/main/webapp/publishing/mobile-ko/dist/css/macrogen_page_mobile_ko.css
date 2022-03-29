@@ -2286,6 +2286,9 @@
       .section_business.microbiome .info-box .border-gray-box .img{
       margin-bottom: 0; }
       .section_business.microbiome .info-box .csinfo{display: block; margin-top: 24px; color: #000; font-weight: 600; font-size: 18px;}
+      .section_business.microbiome .info-box .csinfo span{
+     color: #2987F5;
+     text-decoration: underline; }
      .section_business.microbiome .info-box .font-h8{font-size: 18px; font-weight: 600;}
     .section_business .subject-box .desc {
       word-break: keep-all;
