@@ -4387,7 +4387,8 @@
           .macrogen.company-overview .section-overview .overview-list .item:nth-child(6) .val{
           margin-left: -25px;}
           .macrogen.company-overview .section-overview .overview-list .item .val span {
-            font-size: 36px; }
+            font-size: 40px; 
+            font-family: "Noto Sans KR";	}
         .macrogen.company-overview .section-overview .overview-list .item .desc {
           display: block;
           white-space: nowrap;
