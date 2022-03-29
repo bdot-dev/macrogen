@@ -115,7 +115,7 @@
                             <li><p>라프레(LaPre) 유형을 위한 더비피도 면역튼튼</p></li>
                         </ul>
                     </div>
-                    <a class="csinfo" href="tel:1644-9599">더바이옴 고객센터 1644-9599</a>
+                    <a class="csinfo" href="tel:1644-9599">더바이옴 고객센터 <span>1644-9599</span></a>
                     <div class="btn-area">
                         <a href="https://thebiome.life/" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
                         <a href="https://smartstore.naver.com/thebiomelife" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
