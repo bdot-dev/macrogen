@@ -88,7 +88,7 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_2.png" alt="마크로젠 지놈센터"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>1997년 6월</span></li>
+                                                <li><span>1997년 6월 설립</span></li>
                                             </ul>
                                             <div class="address">서울특별시 금천구 벚꽃로 254, 10층 (가산동, 월드메르디앙1차)</div>
                                             <div class="tel">
@@ -108,7 +108,7 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_3.png" alt="마크로젠 모델동물센터"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2002년 2월</span></li>
+                                                <li><span>2002년 2월 설립</span></li>
                                             </ul>
                                             <div class="address">서울특별시 강서구 강서로 466, 3층 (등촌동, 우리벤처타운)</div>
                                             <div class="tel">
@@ -123,12 +123,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item">
-                                        <div class="name">마크로젠 대전 지놈센터</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_4.png" alt="마크로젠 대전 지놈센터"></div>
+                                    <li class="item" id="daejeon">
+                                        <div class="name">마크로젠 대전지사</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_4.png" alt="마크로젠 대전지사"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2008년 2월</span></li>
+                                                <li><span>2008년 2월 설립</span></li>
                                             </ul>
                                             <div class="address">대전광역시 유성구 테크노3로 65, 323호 (관평동, 한신에스메카)</div>
                                             <div class="tel">
@@ -141,6 +141,26 @@
                                                     <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="songdo">
+                                        <div class="name">마크로젠 송도 글로벌 지놈캠퍼스</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 지놈캠퍼스"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>2024년 설립 예정</span></li>
+                                            </ul>
+                                            <div class="address">인천광역시 연수구 송도동 210-2)</div>
+                                           <!-- <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-42-336-7080">+82-42-336-7080</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
+                                                </div>
+                                            </div> -->
                                         </div>
                                     </li>
                                 </ul>
@@ -157,7 +177,7 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_5.png" alt="소마젠 (Psomagen)"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2004년 12월</span></li>
+                                                <li><span>2004년 12월 설립</span></li>
                                             </ul>
                                             <div class="address">1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA</div>
                                             <div class="tel">
@@ -181,7 +201,7 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_6.png" alt="일본법인"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2007년 11월</span></li>
+                                                <li><span>2007년 11월 설립</span></li>
                                             </ul>
                                             <div class="address">16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN</div>
                                             <div class="tel">
@@ -196,32 +216,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="amsterdam">
-                                        <div class="name">유럽법인</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_7.png" alt="유럽법인"></div>
-                                        <div class="info">
-                                            <ul>
-                                                <li><span>설립일자</span><span>2017년 9월(지사 오픈: 2008년 6월)</span></li>
-                                            </ul>
-                                            <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
-                                            <div class="tel">
-                                                <div>
-                                                    <span>TEL.</span>
-                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
-                                                </div>
-                                                <div>
-                                                    <span>WEB.</span>
-                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
                                     <li class="item" id="synapse">
                                         <div class="name">싱가포르법인</div>
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_8.png" alt="싱가포르법인"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2018년 3월 (지사 오픈: 2016년 11월)</span></li>
+                                                <li><span>2018년 3월 설립 (지사 오픈: 2016년 11월)</span></li>
                                             </ul>
                                             <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
                                             <div class="tel">
@@ -236,12 +236,72 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="item" id="amsterdam">
+                                        <div class="name">유럽법인</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_7.png" alt="유럽법인"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>2017년 9월 설립 (지사 오픈: 2008년 6월)</span></li>
+                                            </ul>
+                                            <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="maastricht">
+                                        <div class="name">벨기에지사</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에지사"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>2021년 8월 설립</span></li>
+                                            </ul>
+                                            <div class="address">Oxfordlaan 70, 6229 EV Maastricht, Netherlands</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="italy">
+                                        <div class="name">이탈리아지사</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_12.png" alt="이탈리아지사"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>2021년 12월 설립</span></li>
+                                            </ul>
+                                            <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+39-02-5666-0274">+39-02-5666-0274</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li class="item" id="madrid">
                                         <div class="name">스페인지사</div>
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_9.png" alt="스페인지사"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>설립일자</span><span>2016년 12월</span></li>
+                                                <li><span>2016년 12월 설립</span></li>
                                             </ul>
                                             <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
                                             <div class="tel">
