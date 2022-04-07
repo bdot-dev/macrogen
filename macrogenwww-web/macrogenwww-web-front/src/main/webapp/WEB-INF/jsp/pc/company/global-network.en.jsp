@@ -249,9 +249,9 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>December 2016</span></li>
+                                        <li><span>Established in Dec 2016</span></li>
                                     </ul>
-                                    <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
+                                    <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>

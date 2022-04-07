@@ -265,7 +265,7 @@
                                         <li><span>2016년 12월 설립</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
-                                    <div class="address">Calle Martinez Villergas&#44; 52&#46; Edificio B&#46; Planta Baja&#46; Oficina 1&#47;Izquierda&#46; Madrid&#46; 28027&#44; Spain</div>
+                                    <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>
