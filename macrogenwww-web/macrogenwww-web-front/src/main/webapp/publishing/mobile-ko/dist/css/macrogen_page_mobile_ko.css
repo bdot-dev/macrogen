@@ -767,8 +767,8 @@
       .macrogen.global-macrogen .section-map .map {
         position: relative;
         width: 100%;
-        height: 48.95522vw;
-        background-image: url("../img/macrogen/bg-map.png");
+        height: 43.95522vw;
+        background-image: url("../img/macrogen/bg-map2.png");
         background-size: cover;
         margin: 0 auto; }
         .macrogen.global-macrogen .section-map .map .pin {
@@ -852,6 +852,10 @@
           top: 0;
           left: 0;
           background-color: #E9E9E9; }
+          
+         .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-of-type::before{
+         background:none; }
+          
         .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-child {
           margin-bottom: 0;
           padding-bottom: 0; }
@@ -885,7 +889,7 @@
               line-height: 32px; }
               .macrogen.global-macrogen .section-map-detail .box > .detail .item .info ul li span:first-child {
                 position: relative;
-                width: 98px;
+                width: auto;
                 vertical-align: middle;
                 font-family: sans-serif;
                 font-weight: bold;
@@ -3701,36 +3705,47 @@
             vertical-align: bottom;
             margin-left: 5px;
             letter-spacing: 1px; }
+            
           .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
-            bottom: 258px;
-            left: 220px; }
-          .main-wrap .main-page .section-map .inner .map .pin.seoul {
-            bottom: 258px;
-            left: 513px; }
-          .main-wrap .main-page .section-map .inner .map .pin.boston {
-            bottom: 258px;
-            left: 823px; }
-          .main-wrap .main-page .section-map .inner .map .pin.tokyo {
-            bottom: 210px;
-            left: 590px; }
-          .main-wrap .main-page .section-map .inner .map .pin.virginia {
-            bottom: 210px;
-            left: 779px; }
+            bottom: 261px;
+            left: 129px; }            
+          .main-wrap .main-page .section-map .inner .map .pin.maastricht {
+            bottom: 226px;
+            left: 146px; }
+          .main-wrap .main-page .section-map .inner .map .pin.milan {
+            bottom: 188px;
+            left: 174px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
-            bottom: 162px;
-            left: 125px; }
-          .main-wrap .main-page .section-map .inner .map .pin.kyoto {
-            bottom: 162px;
-            left: 513px; }
+            bottom: 146px;
+            left: 81px; }
+          .main-wrap .main-page .section-map .inner .map .pin.seoul {
+            bottom: 285px;
+            left: 534px; }
+          .main-wrap .main-page .section-map .inner .map .pin.songdo {
+          bottom: 252px;
+          left: 509px; }
+          .main-wrap .main-page .section-map .inner .map .pin.daejeon {
+          bottom: 212px;
+          left: 553px; }
+         .main-wrap .main-page .section-map .inner .map .pin.tokyo {
+          bottom: 154px;
+          left: 604px; }
+         .main-wrap .main-page .section-map .inner .map .pin.synapse {
+            bottom: 77px;
+            left: 456px; }       
+         .main-wrap .main-page .section-map .inner .map .pin.boston {
+            bottom: 258px;
+            right: 98px; }
           .main-wrap .main-page .section-map .inner .map .pin.newyork {
-            bottom: 162px;
-            left: 915px; }
-          .main-wrap .main-page .section-map .inner .map .pin.synapse {
-            bottom: 114px;
-            left: 402px; }
+            bottom: 211px;
+            right: 129px; }
           .main-wrap .main-page .section-map .inner .map .pin.rockville {
-            bottom: 114px;
-            left: 823px; }
+            bottom: 157px;
+            right: 185px; }
+          .main-wrap .main-page .section-map .inner .map .pin.virginia {
+            bottom: 110px;
+            right: 227px; }
+          
     .main-wrap .main-page .section-map .swiper-scrollbar {
       display: block !important;
       bottom: 50px;

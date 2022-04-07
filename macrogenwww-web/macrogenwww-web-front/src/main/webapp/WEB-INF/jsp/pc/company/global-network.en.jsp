@@ -34,16 +34,19 @@
                 <div class="desc">Macrogen is cementing its leadership position in precision medicine<br/>
                     by providing personalized services to local clients and meeting their diverse needs.</div>
                 <div class="map">
-                    <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; The Netherlands</span></a>
-                    <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
-                    <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
-                    <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
-                    <a class="pin virginia" href="#rockville"><span>Virginia&#44; USA</span></a>
+                    <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
+                    <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
+                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
-                    <a class="pin kyoto" href="#tokyo"><span>Kyoto&#44; japan</span></a>
-                    <a class="pin newyork" href="#rockville"><span>New york&#44; USA</span></a>
+                    <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
+                    <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
+                    <a class="pin daejeon" href="#daejeon"><span>Daejeon&#44; Korea</span></a>
+                    <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
                     <a class="pin synapse" href="#synapse"><span>Synapse&#44; Singapore</span></a>
+                    <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
+                    <a class="pin newyork" href="#rockville"><span>New york&#44; USA</span></a>                    
                     <a class="pin rockville" href="#rockville"><span>Rockville&#44; USA</span></a>
+                    <a class="pin virginia" href="#rockville"><span>Virginia&#44; USA</span></a>
                 </div>
             </div>
             <script>
@@ -77,7 +80,7 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_2.png" alt="Macrogen Genome Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>June 1997</span></li>
+                                        <li><span>Established in June 1997</span></li>
                                     </ul>
                                     <div class="address">10F, 254, Beotkkot-ro, Geumcheon-gu, Seoul (Gasan-dong, World Meridian I)</div>
                                     <div class="tel">
@@ -93,7 +96,7 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_3.png" alt="Macrogen GEM Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>Feb 2002</span></li>
+                                        <li><span>Established in Feb 2002</span></li>
                                     </ul>
                                     <div class="address">3F, 466, Gangseo-ro, Gangseo-gu, Seoul (Deungchon-dong, Woori Venture Town)</div>
                                     <div class="tel">
@@ -104,12 +107,12 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item height_fix">
+                            <li class="item height_fix" id="daejeon">
                                 <div class="name">Macrogen Daejeon Genome Center</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_4.png" alt="Macrogen Daejeon Genome Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>February 2008</span></li>
+                                        <li><span>Established in Feb 2008</span></li>
                                     </ul>
                                     <div class="address">Rm 323, 65, Techno 3-ro, Yuseong-gu, Daejeon (Gwanpyeong-dong, Hanshin S-Meca)</div>
                                     <div class="tel">
@@ -118,6 +121,22 @@
                                         <span>FAX&#46;</span>
                                         <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
                                     </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="songdo">
+                                <div class="name">Macrogen Songdo Global Genome Campus</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Genome Campus"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in 2024</span></li>
+                                    </ul>
+                                    <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
+                                    <!-- <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
+                                    </div>  -->
                                 </div>
                             </li>
                         </ul>
@@ -132,7 +151,7 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_5.png" alt="Psomagen"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>December 2004</span></li>
+                                        <li><span>Established in Dec 2004</span></li>
                                     </ul>
                                     <div class="address">1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA</div>
                                     <div class="tel">
@@ -150,7 +169,7 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_6.png" alt="Macrogen Japan"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>November 2007</span></li>
+                                        <li><span>Established in Nov 2007</span></li>
                                     </ul>
                                     <div class="address">16F Time24 Building&#44; 2&#45;4&#45;32 Aomi&#44; Koto-ku&#44; Tokyo 135&#45;0064&#44; JAPAN</div>
                                     <div class="tel">
@@ -161,12 +180,28 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="item height_fix" id="synapse">
+                                <div class="name">Macrogen Singapore</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in Mar 2018 (Branch Opened : Nov 2016)</span></li>
+                                    </ul>
+                                    <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+65-6339-0927">&#43;65&#45;6339&#45;0927</a>
+                                        <span>WEB&#46;</span>
+                                        <a href="http://www.macrogen-apac.com" target="_blank">www&#46;macrogen&#45;apac&#46;com</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="item height_fix" id="amsterdam">
                                 <div class="name">Macrogen Europe</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_7.png" alt="Macrogen Europe"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>September 2017 (Branch Opened: June 2008)</span></li>
+                                        <li><span>Established in Sep 2017 (Branch Opened: June 2008) </span></li>
                                     </ul>
                                     <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
                                     <div class="tel">
@@ -176,20 +211,36 @@
                                         <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="item height_fix" id="synapse">
-                                <div class="name">Macrogen Singapore</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
+                            </li> 
+                            <li class="item height_fix" id="maastricht">
+                                <div class="name">Macrogen Belgium</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Macrogen Belgium"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Date of establishment</span><span>March 2018 (Branch Opened : November 2016)</span></li>
+                                        <li><span>Established in Aug 2021</span></li>
                                     </ul>
-                                    <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
+                                    <div class="address">Oxfordlaan 70, 6229 EV Maastricht, Netherlands</div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
-                                        <a href="tel:+65-6339-0927">&#43;65&#45;6339&#45;0927</a>
+                                        <a href="tel:+31-20-333-7563">+31&#45;20&#45;333&#45;7563</a>
                                         <span>WEB&#46;</span>
-                                        <a href="http://www.macrogen-apac.com" target="_blank">www&#46;macrogen&#45;apac&#46;com</a>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item height_fix" id="italy">
+                                <div class="name">Macrogen Italy</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in Dec 2016</span></li>
+                                    </ul>
+                                    <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+39-02-5666-0274">+39&#45;02&#45;5666&#45;0274 </a>
+                                        <span>WEB&#46;</span>
+                                        <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
                                     </div>
                                 </div>
                             </li>
@@ -206,7 +257,7 @@
                                         <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>
                                     </div>
                                 </div>
-                            </li>
+                            </li>                           
                         </ul>
                     </div>
                 </div>

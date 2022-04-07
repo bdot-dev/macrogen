@@ -89,7 +89,7 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_2.png" alt="Macrogen Genome Center"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>June 1997</span></li>
+                                                <li><span>Established in June 1997</span></li>
                                             </ul>
                                             <div class="address">10F, 254, Beotkkot-ro, Geumcheon-gu, Seoul (Gasan-dong, World Meridian I)</div>
                                             <div class="tel">
@@ -109,7 +109,7 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_3.png" alt="Macrogen GEM Center"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>Feb 2002</span></li>
+                                                <li><span>Established in Feb 2002</span></li>
                                             </ul>
                                             <div class="address">3F, 466, Gangseo-ro, Gangseo-gu, Seoul (Deungchon-dong, Woori Venture Town)</div>
                                             <div class="tel">
@@ -124,12 +124,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item">
+                                    <li class="item" id="daejeon">
                                         <div class="name">Macrogen Daejeon Genome Center</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_4.png" alt="Macrogen Daejeon Genome Center"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>February 2008</span></li>
+                                                <li><span>Established in Feb 2008</span></li>
                                             </ul>
                                             <div class="address">Rm 323, 65, Techno 3-ro, Yuseong-gu, Daejeon (Gwanpyeong-dong, Hanshin S-Meca)</div>
                                             <div class="tel">
@@ -142,6 +142,26 @@
                                                     <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="songdo">
+                                        <div class="name">Macrogen Songdo Global Genome Campus</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Genome Campus"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in 2024</span></li>
+                                            </ul>
+                                            <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
+                                            <!-- <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-42-336-7080">+82-42-336-7080</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
+                                                </div>
+                                            </div> -->
                                         </div>
                                     </li>
                                 </ul>
@@ -158,7 +178,7 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_5.png" alt="Psomagen"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>December 2004</span></li>
+                                                <li><span>Established in Dec 2004</span></li>
                                             </ul>
                                             <div class="address">1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA</div>
                                             <div class="tel">
@@ -182,7 +202,7 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_6.png" alt="Macrogen Japan"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>November 2007</span></li>
+                                                <li><span>Established in Nov 2007</span></li>
                                             </ul>
                                             <div class="address">16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN</div>
                                             <div class="tel">
@@ -197,32 +217,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="amsterdam">
-                                        <div class="name">Macrogen Europe</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_7.png" alt="Macrogen Europe"></div>
-                                        <div class="info">
-                                            <ul>
-                                                <li><span>Date of establishment</span><span>September 2017 (Branch Opened: June 2008)</span></li>
-                                            </ul>
-                                            <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
-                                            <div class="tel">
-                                                <div>
-                                                    <span>TEL.</span>
-                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
-                                                </div>
-                                                <div>
-                                                    <span>WEB.</span>
-                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
                                     <li class="item" id="synapse">
                                         <div class="name">Macrogen Singapore</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>March 2018 (Branch Opened : November 2016)</span></li>
+                                                <li><span>Established in Mar 2018 <br> (Branch Opened : Nov 2016)</span></li>
                                             </ul>
                                             <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
                                             <div class="tel">
@@ -237,12 +237,72 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="item" id="amsterdam">
+                                        <div class="name">Macrogen Europe</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_7.png" alt="Macrogen Europe"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Sep 2017 <br>(Branch Opened: June 2008)</span></li>
+                                            </ul>
+                                            <div class="address">Meibergdreef 57, Amsterdam, The Netherlands</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="maastricht">
+                                        <div class="name">Macrogen Belgium</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Macrogen Belgium"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Aug 2021</span></li>
+                                            </ul>
+                                            <div class="address">Oxfordlaan 70, 6229 EV Maastricht, Netherlands</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="italy">
+                                        <div class="name">Macrogen Italy</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Dec 2021</span></li>
+                                            </ul>
+                                            <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+39-02-5666-0274">+39-02-5666-0274</a>
+                                                </div>
+                                                <div>
+                                                    <span>WEB.</span>
+                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li class="item" id="madrid">
                                         <div class="name">Macrogen Spain</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Date of establishment</span><span>December 2016</span></li>
+                                                <li><span>Established in Dec 2016</li>
                                             </ul>
                                             <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
                                             <div class="tel">
