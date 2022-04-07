@@ -4965,7 +4965,7 @@
       position: relative;
       width: 1244px;
       height: 608px;
-      background-image: url("../img/macrogen/bg-map.png");
+      background-image: url("../img/macrogen/bg-map.png?v2");
       background-size: cover; }
       .macrogen.global-macrogen .section-map .map .pin {
         position: absolute;
@@ -4993,35 +4993,45 @@
           color: #FFFFFF;
           background-image: url(../img/macrogen/ic-pin-foc.svg); }
         .macrogen.global-macrogen .section-map .map .pin.amsterdam {
-          top: 76px;
-          left: 71px; }
-        .macrogen.global-macrogen .section-map .map .pin.seoul {
-          top: 76px;
-          left: 512px; }
-        .macrogen.global-macrogen .section-map .map .pin.boston {
-          top: 76px;
-          left: 854.5px; }
-        .macrogen.global-macrogen .section-map .map .pin.tokyo {
-          top: 134px;
-          left: 587.5px; }
-        .macrogen.global-macrogen .section-map .map .pin.virginia {
-          top: 134px;
-          left: 794px; }
+          top: 22px;
+          left: 127px; }
+        .macrogen.global-macrogen .section-map .map .pin.maastricht {
+          top: 67px;
+          left: 160px; }
+        .macrogen.global-macrogen .section-map .map .pin.milan {
+          top: 120px;
+          left: 117px; }
         .macrogen.global-macrogen .section-map .map .pin.madrid {
-          top: 192px;
-          left: 5.5px; }
-        .macrogen.global-macrogen .section-map .map .pin.kyoto {
-          top: 192px;
-          left: 492.5px; }
-        .macrogen.global-macrogen .section-map .map .pin.newyork {
-          top: 192px;
-          left: 932.5px; }
+          top: 160px;
+          left: 34px; }
+        .macrogen.global-macrogen .section-map .map .pin.seoul {
+          top: 6px;
+          left: 602px; }
+        .macrogen.global-macrogen .section-map .map .pin.songdo {
+          top: 47px;
+          left: 569px; }
+        .macrogen.global-macrogen .section-map .map .pin.daejeon {
+          top: 99px;
+          left: 612px; }
+        .macrogen.global-macrogen .section-map .map .pin.tokyo {
+          top: 165px;
+          left: 570px; }
         .macrogen.global-macrogen .section-map .map .pin.synapse {
-          top: 250px;
-          left: 358px; }
+          top: 358px;
+          left: 473px; }
+        .macrogen.global-macrogen .section-map .map .pin.boston {
+          top: 20px;
+          left: 1087px; }
+        .macrogen.global-macrogen .section-map .map .pin.newyork {
+          top: 75px;
+          left: 1029px; }
         .macrogen.global-macrogen .section-map .map .pin.rockville {
-          top: 250px;
-          left: 846px; }
+          top: 138px;
+          left: 970px; }
+        .macrogen.global-macrogen .section-map .map .pin.virginia {
+          top: 190px;
+          left: 939px; }
+       
   .macrogen.global-macrogen .section-map-detail .box {
     position: relative;
     margin-bottom: 280px; }
@@ -7713,7 +7723,7 @@
       margin: 0 auto; }
       .main-wrap .main-page .section-map .inner .info-box {
         padding-top: 125px;
-        margin-bottom: 206px; }
+        margin-bottom: 233px; }
         .main-wrap .main-page .section-map .inner .info-box .title {
           font-weight: 700;
           font-size: 60px;
@@ -7742,7 +7752,8 @@
           text-transform: uppercase;
           color: #FFFFFF;
           overflow: hidden;
-          transition: 0.25s; }
+          transition: 0.25s; 
+          cursor: pointer;}
           .main-wrap .main-page .section-map .inner .map .pin i {
             width: 12px;
             height: 16px;
@@ -7771,35 +7782,44 @@
             vertical-align: bottom;
             margin-left: 5px; }
           .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
-            top: 76px;
-            left: 123px; }
-          .main-wrap .main-page .section-map .inner .map .pin.seoul {
-            top: 76px;
-            left: 525px; }
-          .main-wrap .main-page .section-map .inner .map .pin.boston {
-            top: 76px;
-            left: 945px; }
-          .main-wrap .main-page .section-map .inner .map .pin.tokyo {
-            top: 134px;
-            left: 628px; }
-          .main-wrap .main-page .section-map .inner .map .pin.virginia {
-            top: 134px;
-            left: 888px; }
+            top: 13px;
+            left: 54px; }
+          .main-wrap .main-page .section-map .inner .map .pin.maastricht {
+            top: 60px;
+            left: 86px; }
+          .main-wrap .main-page .section-map .inner .map .pin.milan {
+            top: 106px;
+            left: 120px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
-            top: 192px;
-            left: 0; }
-          .main-wrap .main-page .section-map .inner .map .pin.kyoto {
-            top: 192px;
-            left: 524px; }
-          .main-wrap .main-page .section-map .inner .map .pin.newyork {
-            top: 192px;
-            left: 1070px; }
+            top: 150px;
+            left: 24px; }
+          .main-wrap .main-page .section-map .inner .map .pin.seoul {
+            top: 0;
+            left: 531px; }
+          .main-wrap .main-page .section-map .inner .map .pin.songdo {
+            top: 41px;
+            left: 498px; }
+          .main-wrap .main-page .section-map .inner .map .pin.daejeon {
+            top: 92px;
+            left: 541px; }
+          .main-wrap .main-page .section-map .inner .map .pin.tokyo {
+            top: 161px;
+            left: 607px; }
           .main-wrap .main-page .section-map .inner .map .pin.synapse {
-            top: 250px;
-            left: 377px; }
+            top: 255px;
+            left: 445px; }
+          .main-wrap .main-page .section-map .inner .map .pin.boston {
+            top: 25px;
+            left: 1098px; }
+          .main-wrap .main-page .section-map .inner .map .pin.newyork {
+            top: 80px;
+            left: 1040px; }
           .main-wrap .main-page .section-map .inner .map .pin.rockville {
-            top: 250px;
-            left: 946px; }
+            top: 143px;
+            left: 981px; }
+          .main-wrap .main-page .section-map .inner .map .pin.virginia {
+            top: 195px;
+            left: 950px; }
 
 .main-wrap .footer:before {
   border-top: none; }
