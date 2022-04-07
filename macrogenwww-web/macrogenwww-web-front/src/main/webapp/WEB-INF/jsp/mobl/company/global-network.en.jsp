@@ -304,7 +304,7 @@
                                             <ul>
                                                 <li><span>Established in Dec 2016</li>
                                             </ul>
-                                            <div class="address">Calle Martinez Villergas, 52. Edificio B. Planta Baja. Oficina 1/Izquierda. Madrid. 28027, Spain</div>
+                                            <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
                                             <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>
