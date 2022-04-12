@@ -139,7 +139,12 @@ public class CompanyController extends DefaultController {
 		model.addAttribute("globalYn", "Y");
 		return getDev() + "/company/global-network." + getLang();
 	}
-
+	
+	@RequestMapping("/sitemap")
+	public String sitemap(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/sitemap." + getLang();
+	}
+	
 	@RequestMapping("/history")
 	public String history(@PathVariable LangId langId,
 			Model model) throws Exception {
