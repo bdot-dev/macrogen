@@ -3538,7 +3538,7 @@
   .business_bg.bg-type2 {
     background-image: url("../img/business/bg_banner_cancer.png"); }
   .business_bg.bg-type3 {
-    background-image: url("../img/business/bg_banner_pet.png"); }
+    background-image: url("../img/business/bg_banner_pet.png?v2"); }
 
 @keyframes businessAnimation {
   from {
