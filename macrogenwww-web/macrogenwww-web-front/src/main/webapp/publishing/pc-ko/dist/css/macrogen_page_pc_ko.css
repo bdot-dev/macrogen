@@ -6537,11 +6537,12 @@
     .macrogen.macrogen-contact-us .ic-mail {
       display: inline-block;
       width: 16px;
-      height: 16px;
-      background-image: url("../img/macrogen/ic-mail.svg");
-      background-size: cover;
+      height: 30px;
+      background: url("../img/macrogen/ic-mail.svg") 0 center no-repeat;
+      background-size: 16px 16px;
       margin-right: 10px;
-      transform: translateY(3px); }
+      transform: translateY(3px);
+      vertical-align: middle; }
     .macrogen.macrogen-contact-us .ic-fax {
       display: inline-block;
       width: 16px;
@@ -6553,11 +6554,12 @@
     .macrogen.macrogen-contact-us .ic-call {
       display: inline-block;
       width: 16px;
-      height: 16px;
-      background-image: url("../img/macrogen/ic-call.svg");
-      background-size: cover;
+   	  height: 30px;
+      background: url(../img/macrogen/ic-call.svg) 0 center no-repeat;
+      background-size: 16px 16px;
       margin-right: 10px;
-      transform: translateY(3px); }
+      transform: translateY(3px);
+      vertical-align: middle; }
     .macrogen.macrogen-contact-us .font-h3 {
       margin-bottom: 120px;
       line-height: 81px; }
@@ -6573,8 +6575,8 @@
         position: relative;
         width: 50%;
         float: left; }
-        .macrogen.macrogen-contact-us .map-wrap .info .item:last-child {
-          padding-left: 126px; }
+       /* .macrogen.macrogen-contact-us .map-wrap .info .item:last-child {
+          padding-left: 126px; }*/
           .macrogen.macrogen-contact-us .map-wrap .info .item:last-child::after {
             content: none; }
         .macrogen.macrogen-contact-us .map-wrap .info .item::after {
@@ -6704,7 +6706,7 @@
             letter-spacing: -0.75px;
             color: #000000;
             margin-bottom: 20px; }
-            .macrogen.macrogen-contact-us .category .item .desc .name:nth-child(3) {
+            .macrogen.macrogen-contact-us .category .item .desc .name:nth-child(2), .macrogen.macrogen-contact-us .category .item .desc .name:nth-child(3) {
               margin-top: 40px; }
           .macrogen.macrogen-contact-us .category .item .desc li {
             margin-bottom: 2px; }
@@ -6717,7 +6719,7 @@
               font-size: 16px;
               line-height: 30px;
               color: #454545;
-              margin-right: 4px; }
+              margin-right: 8px; }
             .macrogen.macrogen-contact-us .category .item .desc li a {
               font-size: 16px;
               line-height: 30px;
