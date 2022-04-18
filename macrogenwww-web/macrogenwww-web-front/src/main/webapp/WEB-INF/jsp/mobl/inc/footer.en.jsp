@@ -16,7 +16,7 @@
                     <option value="/${rc.locale.language }/policy/privacy">Privacy Statement</option>
                     <%-- <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option> --%>
                     <option value="/${rc.locale.language }/policy/image/">Image Information Processing Policy</option>
-                    <option value="/${rc.locale.language }/company/sitemap">Sitemap</option>
+                   <!-- <option value="/${rc.locale.language }/company/sitemap">Sitemap</option> -->
                 </select>
             </li>
             <li>
