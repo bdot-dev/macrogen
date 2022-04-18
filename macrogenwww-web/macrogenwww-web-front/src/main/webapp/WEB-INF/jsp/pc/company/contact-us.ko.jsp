@@ -82,7 +82,7 @@
                                     <div class="name">샘플접수&#47;실험&#47;결과</div>
                                     <ul>
                                         <li><i class="ic-call"></i><a href="tel:+82-2-2180-7237">&#43;82&#45;2&#45;2180&#45;7237</a></li>
-                                        <li><i class="ic-mail"></i><a href="cestechnical@macrogen.com">cestechnical&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:cestechnical@macrogen.com">cestechnical&#64;macrogen&#46;com</a></li>
                                     </ul>
                                     <div class="name">견적 및 계산서 문의</div>
                                     <ul>
