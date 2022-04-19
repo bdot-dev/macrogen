@@ -110,10 +110,10 @@
                                             원인에 의해 유전자 돌연변이가 발생하게 되는 경우 정상적인 단백질이 형성되지 않아 질환이 발병하게 됩니다.
                                             이러한 돌연변이는 부모로부터 유전되거나 후천적으로 발생하게 되는데 마이펫진은 부모로부터 유전된 돌연변이 인자를 확인함으로써 유전질환
                                             정보를 얻을 수 있습니다</p>
-                                        <div class="btn-wrap">
+                                       <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_010101.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -134,10 +134,10 @@
                                             이 검사는 2개 시료의 유전자 좌위를 비교 분석하여 동일한 개체의 DNA인지 식별하며, 해당 DNA정보를 보관하기 때문에 분실 시에도
                                             동일한 개체임을 확인할 수 있습니다.
                                             또한, 반려동물에 대한 소유권 분쟁 시 반려동물의 유전자형을 비교하여 입증하는 증명서로 사용됩니다.</p>
-                                        <div class="btn-wrap">
+                                       <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_02.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -156,10 +156,10 @@
                                             혈연관계를 입증하는 검사입니다.
                                             DNA는 유전물질이기 때문에 자식은 부/모로부터 동일한 유전형을 하나씩 물려받아 한 쌍을 이루게 됩니다. 혈연확인서는 본 유전자형이 서로
                                             일치하는지 확인함으로써 과학적인 방법으로 혈연관계를 입증합니다.</p>
-                                        <div class="btn-wrap">
+                                       <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_03.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -180,10 +180,10 @@
                                             조류의 정자에는 Z염색체가 한 개 들어있고 난자에는 Z 혹은 W가 들어있어 난자에 의해 성별이 정해지게 됩니다.
                                             암컷이 이형 염색체를 가지는 ZW형이고 수컷은 동형 염색체를 가지는 ZZ형입니다.
                                             이러한 암수의 성염색체 차이를 DNA분석을 통해 확인함으로써 조류의 성 감별이 가능합니다.</p>
-                                        <div class="btn-wrap">
+                                      <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_04.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -196,8 +196,8 @@
                                     allowfullscreen></iframe>
                         </div>
                         <div class="btn-area">
-                            <a href="https://www.mypetgene.com/sub/sub01_01.php" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-                            <a href="https://www.mypetgene.com/sub/sub03_01.php" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
+                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
                         </div>
                     </div>
                 </div>
