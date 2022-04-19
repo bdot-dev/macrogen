@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-    <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/bg_banner_pet.png);">
+    <div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/bg_banner_pet_dog.png);">
         <header class="header header-white">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
@@ -125,10 +125,10 @@
                                             protein is not formed, which causes a disease. These mutations are either
                                             inherited from parents or acquired, and myPETGENE can obtain genetic disease
                                             information by identifying mutation factors inherited from parents.</p>
-                                        <div class="btn-wrap">
+                                       <!--  <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_010101.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -161,10 +161,10 @@
                                             also used as a certificate to verify the genotype of companion animals in
                                             case
                                             of disputes of ownership for companion animals.</p>
-                                        <div class="btn-wrap">
+                                       <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_02.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -188,10 +188,10 @@
                                             parent and form a pair. The certificate proves the paternity in a scientific
                                             way
                                             by confirming that the genotypes match each other.</p>
-                                        <div class="btn-wrap">
+                                      <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_03.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -224,10 +224,10 @@
                                             checking the sex chromosome differences between males and females through
                                             DNA
                                             analysis.</p>
-                                        <div class="btn-wrap">
+                                       <!-- <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_04.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
