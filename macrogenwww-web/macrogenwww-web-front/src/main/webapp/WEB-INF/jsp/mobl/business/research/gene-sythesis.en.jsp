@@ -79,11 +79,11 @@
                     <div class="btn-area">
                         <div class="btn-wrapper">
                             <a href="mailto:sequencing@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/com/cust/retrieveLogin.do?menuCd=QUO400"
+                            <a href="/${rc.locale.language }/company/contact-us"
                                class="btn btn-light"><span>Quotation</span></a>
                         </div>
                         <div class="btn-wrapper">
-                            <a href="https://dna.macrogen.com/" class="btn btn-primary"><i
+                            <a href="/${rc.locale.language }/company/contact-us" class="btn btn-primary"><i
                                     class="icon ico-cart-white"></i><span>Order</span></a>
                         </div>
                     </div>
