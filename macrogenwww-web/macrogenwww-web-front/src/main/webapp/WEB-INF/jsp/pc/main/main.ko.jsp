@@ -667,19 +667,15 @@
 		}
 		
 		function popupClose(sn, idx) {
-			console.log("순서------"+idx +"오늘 체크=====   "+$('#popup-sn'+idx).is(':checked'));
 			if ($('#popup-sn'+idx).is(':checked')) {
-				console.log("sn========="+sn);
 				if (!sn) return;
 	
 				var snListStr = $.cookie('popup-sn-list');
-				console.log("snListStr==========="+snListStr);
 				if (!snListStr) {
 					snListStr = sn;
 				} else if (snListStr.indexOf(sn) < 0) {
 					snListStr += ',' + sn;
 				}
-				console.log("snListStr2==========="+snListStr);
 				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
 			}
 			
