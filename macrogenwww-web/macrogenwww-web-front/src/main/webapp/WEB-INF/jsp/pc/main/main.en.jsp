@@ -582,8 +582,11 @@
 </div>
 
 <%-- 팝업 --%>
-<c:if test="${not empty popupVo  }">
-	<div class="modal" tabindex="-1" id="layerPopup" data-bs-backdrop="static">
+<c:if test="${not empty popupList  }">
+<c:forEach var="popup" items="${popupList}" varStatus="status">
+	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
+		<input type="hidden" value="${popupCnt}" id="popupCnt">
+		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
 	    <div class="modal-dialog modal-dialog-centered layer-modal">
 	        <div class="modal-content">
 	            <div class="modal-header">
@@ -604,16 +607,15 @@
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
 	                </div> --%>
 	                <div class="data-img">
-	                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 	                </div>
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn"
-	                    	value="${ popupVo.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn">Do not open today</label>
+	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }">
+	                    <label class="form-check-label" for="popup-sn${status.index }">Do not open today</label>
 	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close">
+	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
 	                    <span>Close</span>
 	                    <i class="icon ico-close-white"></i>
 	                </div>
@@ -621,31 +623,29 @@
 	        </div>
 	    </div>
 	</div>
+</c:forEach>
 	<script>
-	    var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show();
+	var popupCnt = $("#popupCnt").val();
+	
+	for(var i=0;i<popupCnt;i++){
+		var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
+		var coockieChk = $("#cookieChkList"+i).val();
+		
+		if(coockieChk == 'true'){
+			console.log("숨기기");
+			layerPopupModal.hide();
+		}else if(coockieChk =='false'){
+			console.log("보이기");
+			layerPopupModal.show();
+		}
+		
+	    //layerPopupModal.show();
+	}
+		
+	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+	    layerPopupModal.show(); */
 	</script>
 	<script>
-		$(function() {
-			var $btnPopupClose = $('#layerPopup .close-box');
-			var $chkPopupSn = $('#layerPopup #popup-sn');
-			$btnPopupClose.on('click', function() {
-				if ($chkPopupSn.is(':checked')) {
-					var sn = $chkPopupSn.val();
-					if (!sn) return;
-
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-				}
-				layerPopupModal.hide();
-			});
-		});
-
 		function onclickPopupImage(url, trgtCode) {
 			if (!url) {
 				return;
@@ -656,6 +656,26 @@
 			} else {
 				location.href = url;
 			}
+		}
+		
+		function popupClose(sn, idx) {
+			console.log("순서------"+idx +"오늘 체크=====   "+$('#popup-sn'+idx).is(':checked'));
+			if ($('#popup-sn'+idx).is(':checked')) {
+				console.log("sn========="+sn);
+				if (!sn) return;
+	
+				var snListStr = $.cookie('popup-sn-list');
+				console.log("snListStr==========="+snListStr);
+				if (!snListStr) {
+					snListStr = sn;
+				} else if (snListStr.indexOf(sn) < 0) {
+					snListStr += ',' + sn;
+				}
+				console.log("snListStr2==========="+snListStr);
+				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+			}
+			
+			layerPopupModal.hide();
 		}
 	</script>
 
