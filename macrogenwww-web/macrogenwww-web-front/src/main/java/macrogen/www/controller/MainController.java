@@ -63,7 +63,7 @@ public class MainController extends DefaultController {
 		popupVo.setExposed(true);
 		//popupVo.setOrderBy("sort_asc");
 		popupVo.setOrderBy("sort_desc");
-
+		popupVo.setExposedPopupCnt(popupService.count(popupVo));
 		List<PopupVo> popupList = popupService.list(popupVo);
 		if (null != popupList && !popupList.isEmpty()) {
 			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
