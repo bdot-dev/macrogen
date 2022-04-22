@@ -149,7 +149,7 @@ public class IrController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irdislos");
@@ -240,8 +240,9 @@ public class IrController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		nttService.increaseRdcnt(listVo);
 		model.addAttribute("resultVo", resultVo);
-
+		
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irnews");

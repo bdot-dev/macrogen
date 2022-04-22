@@ -208,7 +208,7 @@ public class RndController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		String bbsId = "research-result";
 		listVo.setLangCode(langId.name());
