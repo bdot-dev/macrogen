@@ -682,6 +682,8 @@
 			}
 			
 			layerPopupModal.hide();
+			$('.show').parent('body').css("overflow", "hidden");
+			$('.show').parent('body').css("padding-right", "17px");
 		}
 	</script>
 </c:if>
