@@ -639,6 +639,8 @@
 		
 	    //layerPopupModal.show();
 	}
+	
+	$('div.modal-backdrop:gt(0)').css("opacity", "0");
 		
 	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
 	    layerPopupModal.show(); */
