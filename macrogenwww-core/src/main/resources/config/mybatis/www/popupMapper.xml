@@ -57,6 +57,9 @@
 			<when test="orderBy == 'sort_asc' ">
 				order by tp.sort_ordr ASC
 			</when>
+			<when test="orderBy == 'sort_desc' ">
+				order by tp.sort_ordr DESC
+			</when>
 			<otherwise>
 				order by tp.regist_dt DESC
 			</otherwise>
