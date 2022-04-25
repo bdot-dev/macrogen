@@ -164,15 +164,10 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:sequencing@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
-                            <!-- <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100"
-                               target="_blank" class="btn btn-light"><span>견적의뢰</span>-->
-                               <a href="https://www.macrogen.com/ko/company/contact-us"
-                               target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100"
+                               target="_blank" class="btn btn-light"><span>견적의뢰</span>
                         </div>
-                        <div class="btn-wrapper"><!-- <a href="https://dna.macrogen.com/kor" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>주문하기</span></a>-->
-                                                    <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>주문하기</span></a></div>
                     </div>

@@ -135,8 +135,8 @@
                         <hr class="divider">
                         <iframe width="1180" height="664" src="https://www.youtube.com/embed/kU6SGSdnqTI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="btn-area">
-                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                            <a href="https://www.mypetgene.com/sub/sub01_01.php" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+                            <a href="https://www.mypetgene.com/sub/sub03_01.php" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                         </div>
                     </div>
                 </div>

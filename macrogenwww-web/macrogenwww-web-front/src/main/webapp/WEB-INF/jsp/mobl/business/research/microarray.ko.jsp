@@ -314,16 +314,10 @@
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
-                            <!-- <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500"
-                               target="_blank" class="btn btn-light"><span>견적의뢰</span></a> -->
-                            <a href="https://www.macrogen.com/ko/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO5000"
                                target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
-                             
                                </div>
-                        <div class="btn-wrapper"><!-- <a href="mailto:array@macrogen.com" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>주문하기</span></a> -->
-                                <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank"
+                        <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>주문하기</span></a></div>
                     </div>
@@ -617,7 +611,7 @@
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>견적의뢰</span></a></div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
@@ -736,7 +730,7 @@
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>견적의뢰</span></a></div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
