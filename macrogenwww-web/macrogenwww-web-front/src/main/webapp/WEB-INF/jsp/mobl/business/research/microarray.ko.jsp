@@ -314,7 +314,7 @@
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com"
                                                     class="btn btn-light"><span>서비스문의</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO5000"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
                                </div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
