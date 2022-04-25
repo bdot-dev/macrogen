@@ -63,7 +63,10 @@ var popupForm = (function($) {
 						vm.$refs.sortOrdr.focus();
 						return false;
 					}
-
+					if(vm.resultVo.sortOrdr == 0 || vm.resultVo.sortOrdr >3 ){
+						alert("노출순서는 1에서 3까지만 입력 가능합니다.");
+						return false;
+					}
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
 						url : '/' + options.lang + '/popup/submit',
