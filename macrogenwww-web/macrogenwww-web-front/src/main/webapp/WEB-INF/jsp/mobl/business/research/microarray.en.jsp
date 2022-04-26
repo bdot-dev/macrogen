@@ -338,7 +338,7 @@
 
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
@@ -643,7 +643,7 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
@@ -766,7 +766,7 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
                         <div class="btn-wrapper"><a href="mailto:array@macrogen.com" target="_blank"
                                                     class="btn btn-primary"><i
