@@ -95,11 +95,11 @@
                     <div class="btn-area">
                         <div class="btn-wrapper">
                             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a>
                         </div>
                         <div class="btn-wrapper">
-                         <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>Order</span></a>
+                         <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>Order</span></a>
                         </div>
                     </div>
                     <div class="board">
@@ -122,9 +122,9 @@
                     <div class="btn-area">
                         <div class="btn-wrapper">
                             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a>
                         </div>
                     </div>
@@ -163,9 +163,9 @@
 
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
                     <div class="board">
@@ -202,9 +202,9 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
                     <div class="board">
@@ -238,9 +238,9 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
                     <div class="board">
@@ -277,10 +277,10 @@
                     </div>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us"
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
                         <div class="btn-wrapper">
-                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i>
+                            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i>
                                 <span>Order</span></a>
                         </div>
                     </div>

@@ -142,8 +142,8 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -189,8 +189,8 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -296,8 +296,8 @@
                     </p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -327,8 +327,8 @@
                     <p class="desc">WGBS (Whole Genome Bisulfite Sequencing) is a key NGS technique that can check methylation. This DNA processing technique uses sodium bisulfite, a substance that converts unmethylated cytosine to uracil, to observe the level of methylation of DNA by analyzing the nucleotide sequence afterward.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -384,8 +384,8 @@
                     </p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -413,8 +413,8 @@
                     <p class="desc">Macrogen is the only Korean company that provides the ATAC (Assay for Transposase-Accessible Chromatin) service that analyzes the DNA's open structure through NGS. By assessing the sequence of the regions where the condensed DNA is released for the RNA transcription process through ATAC analysis, it is possible to check how transcription is controlled by RNA, even if the DNA sequences are the same.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -442,8 +442,8 @@
                     <p class="desc">As a CSP (Certified Service Provider) for spatial gene expression service, Macrogen is recognized for quick service delivery and a superior level of performance based on its NGS (Next Generation Sequencing) performance, and is ranked first in Korea and fifth in the world. We are also leading the market with diversified spatial sequencing services by rapidly introducing new spatial genome analysis techniques.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -491,8 +491,8 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                         <!-- <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
                         <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a> -->
                     </div>
