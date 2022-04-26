@@ -140,12 +140,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
+		</div>
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
-
 </body>
