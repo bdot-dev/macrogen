@@ -14,7 +14,8 @@
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">Privacy Statement</a></span></li>
                             <%-- <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li> --%>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">Image Information Processing Policy</a></span></li>
-                           <!-- <li><span class="font-medium"><a href="/${rc.locale.language }/company/sitemap">Sitemap</a></span></li> -->
+                            <li><span class="font-medium"><a href="/${rc.locale.language }/company/sitemap">Sitemap</a></span></li>
+                            <li><span class="font-medium"><a href="/${rc.locale.language }/company/contact-us">Contact us</a></span></li>
                             <!-- <li><span class="font-medium"><a href="/${rc.locale.language }/company/contact-us">Contact us</a></span></li> -->
                         </ul>
                     </li>

@@ -6543,7 +6543,7 @@
       background: url("../img/macrogen/ic-mail.svg") 0 center no-repeat;
       background-size: 16px 16px;
       margin-right: 10px;
-      transform: translateY(3px);
+      transform: translateY(1px);
       vertical-align: middle; }
     .macrogen.macrogen-contact-us .ic-fax {
       display: inline-block;
