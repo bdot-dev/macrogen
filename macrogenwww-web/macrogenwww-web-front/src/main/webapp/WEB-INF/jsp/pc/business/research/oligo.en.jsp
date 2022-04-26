@@ -109,12 +109,8 @@
           </div>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
-            <!-- 
             <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
-             -->
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -141,8 +137,8 @@
           <p class="desc">The Modified Oligo service is conducted independently. Modified oligos including fluorescent dyes, non-fluorescent modifications, dark quenchers, and internal modification are synthesized on a daily basis to facilitate rapid test conditions. Additionally, the status of oligo production can be checked through the order page, and all modified oligos that are synthesized go through the complete quality control process using MALDI-TOF to ensure reliable quality.</p>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -183,8 +179,8 @@
           </div>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -226,8 +222,8 @@
           </div>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -267,8 +263,8 @@
           </div>
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -311,8 +307,8 @@
 
           <div class="btn-area">
             <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
           </div>
           <hr class="divider">
           <div class="board">
