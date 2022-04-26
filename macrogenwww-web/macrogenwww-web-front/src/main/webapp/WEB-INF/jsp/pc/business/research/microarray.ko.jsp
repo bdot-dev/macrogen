@@ -265,10 +265,8 @@
 
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-           <!-- <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-           		<a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>-->
-           <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-            <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+           	<a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
           <div class="board">
@@ -527,7 +525,7 @@
           </div>
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">
@@ -633,7 +631,7 @@
           </div>
           <div class="btn-area">
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-           <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+           <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
           </div>
           <hr class="divider">

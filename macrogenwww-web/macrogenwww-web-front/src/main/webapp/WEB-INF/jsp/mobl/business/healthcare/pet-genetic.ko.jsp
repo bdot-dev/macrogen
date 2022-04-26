@@ -196,8 +196,8 @@
                                     allowfullscreen></iframe>
                         </div>
                         <div class="btn-area">
-                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-                            <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
+                            <a href="https://www.mypetgene.com/sub/sub01_01.php" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                            <a href="https://www.mypetgene.com/sub/sub03_01.php" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
                         </div>
                     </div>
                 </div>
