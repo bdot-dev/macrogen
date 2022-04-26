@@ -106,8 +106,7 @@
 			        </div>
 			        <div class="item">
 			            <div class="title"><a href="/${rc.locale.language }/newsroom/notice">공지사항</a></div>
-			        </div>
-			        
+			        </div>			     
 		        </div>
 		        <div class="section ir">
 		        	<div class="font-h6">IR</div>
