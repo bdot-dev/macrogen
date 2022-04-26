@@ -10,11 +10,12 @@
                 <ul class="text">
                     <li>
                         <ul class="terms clearfix">
-                            <li><span class="font-medium"><a href="https://dna.macrogen.com/" target="_blank">서비스 신청&#47;견적 문의</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보 처리방침</a></span></li>
+                            <li><span class="font-medium"><a href="https://dna.macrogen.com/" target="_blank">서비스 신청</a></span></li>
+                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보취급방침</a></span></li>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영&#46;관리방침</a></span></li>
-                            <!-- <li><span class="font-medium"><a href="/${rc.locale.language }/company/contact-us">Contact us</a></span></li> -->
+                            <li><span class="font-medium"><a href="/${rc.locale.language }/company/sitemap">사이트맵</a></span></li>
+                            <li><span class="font-bold"><a href="/${rc.locale.language }/company/contact-us">Contact us</a></span></li>
                         </ul>
                     </li>
                     <li><span>서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span></li>

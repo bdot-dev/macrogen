@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/bg_banner_pet.png);">
+    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/bg_banner_pet_dog.png);">
         <header class="header header-white">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
@@ -180,7 +180,7 @@
                                             조류의 정자에는 Z염색체가 한 개 들어있고 난자에는 Z 혹은 W가 들어있어 난자에 의해 성별이 정해지게 됩니다.
                                             암컷이 이형 염색체를 가지는 ZW형이고 수컷은 동형 염색체를 가지는 ZZ형입니다.
                                             이러한 암수의 성염색체 차이를 DNA분석을 통해 확인함으로써 조류의 성 감별이 가능합니다.</p>
-                                        <div class="btn-wrap">
+                                       <div class="btn-wrap">
                                             <a href="https://www.mypetgene.com/sub/sub02_04.php" target="_blank"
                                                class="btn btn-sm btn-light"><span>자세히 보기</span></a>
                                         </div>

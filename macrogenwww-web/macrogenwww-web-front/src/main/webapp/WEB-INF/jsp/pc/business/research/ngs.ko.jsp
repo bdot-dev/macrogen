@@ -142,10 +142,8 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <!-- <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a> -->
-                        <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://www.macrogen.com/ko/company/contact-us" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a> 
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -188,7 +186,7 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_q뢰uotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
                         <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">

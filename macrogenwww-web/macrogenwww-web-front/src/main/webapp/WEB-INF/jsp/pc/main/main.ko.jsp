@@ -651,6 +651,8 @@
 		
 	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
 	    layerPopupModal.show(); */
+	    
+	    $('div.modal-backdrop:gt(0)').css("opacity", "0");
 	</script>
 	<script>
 
@@ -680,6 +682,8 @@
 			}
 			
 			layerPopupModal.hide();
+			$('.show').parent('body').css("overflow", "hidden");
+			$('.show').parent('body').css("padding-right", "17px");
 		}
 	</script>
 </c:if>

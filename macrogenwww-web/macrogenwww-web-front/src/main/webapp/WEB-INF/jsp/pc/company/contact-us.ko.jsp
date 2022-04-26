@@ -8,16 +8,7 @@
 		</header>
 
         <div class="frame frameC">
-            <nav aria-label="breadcrumb">
-			    <ol class="breadcrumb">
-			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">MACROGEN</li>
-			        <li class="breadcrumb-item">회사소개</li>
-			        <li class="breadcrumb-item active">CONTACT US</li>
-			    </ol>
-			</nav>
-
-            <div class="hero-title en">CONTACT US</div>
+           <div class="hero-title en">CONTACT US</div>
         </div>
     </div>
     <div class="container container-fluid">
@@ -41,7 +32,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="item">
+                           <!-- <div class="item">
                                 <div class="tit">서비스 결제문의</div>
                                 <div class="desc">
                                     <ul>
@@ -49,11 +40,12 @@
                                         <li><i class="ic-mail"></i><a href="mailto:payment@macrogen.com">payment&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="map" style="width: 100%; height: 700px; background-color: rgba(255,0,0,.3);">
+                    <div class="map" style="width: 100%; height: 700px;">
                         <!-- map 영역 -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.24471171763!2d127.03919631558716!3d37.50214613557033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61e17544d513%3A0x8065825e2db33d25!2z66eI7YGs66Gc7KCgIChNYWNyb2dlbik!5e0!3m2!1sen!2skr!4v1649747073001!5m2!1sen!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                      <div class="map-info">
                          <div class="inner">
@@ -62,7 +54,7 @@
                                <span class="tit">마크로젠 본사</span>
                                <span class="address">서울특별시 강남구 역삼2동 테헤란로 238 마크로젠빌딩</span>
                            </div>
-                           <div class="pin-btn-wrap"><a class="btn btn-sm btn-white" href="#"><i class="google-pin"></i><span>구글지도에서 길찾기</span></a></div>
+                           <div class="pin-btn-wrap"><a class="btn btn-sm btn-white" href="https://goo.gl/maps/sd5Puv13CMhr2T5LA"><i class="google-pin"></i><span>구글지도에서 길찾기</span></a></div>
                          </div>
                       </div>
                 </div>
@@ -89,26 +81,27 @@
                                 <div class="desc">
                                     <div class="name">샘플접수&#47;실험&#47;결과</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7017</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:oligo@macrogen.com">oligo&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7237">&#43;82&#45;2&#45;2180&#45;7237</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:cestechnical@macrogen.com">cestechnical&#64;macrogen&#46;com</a></li>
                                     </ul>
                                     <div class="name">견적 및 계산서 문의</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7146">&#43;82&#45;2&#45;2180&#45;7146</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7326">&#43;82&#45;2&#45;2180&#45;7326</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="item item-lg">
                                 <div class="title">Oligo</div>
                                 <div class="desc">
-                                    <div class="name">샘플접수&#47;실험&#47;결과</div>
+                                    <!-- <div class="name">샘플접수&#47;실험&#47;결과</div> -->
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7017</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:oligo@macrogen.com">oligo&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7017&nbsp;</a><a href="tel:+82-2-2180-7287">/ &#43;82&#45;2&#45;2180&#45;7287</a></li>
+                                        <li><i class="ic-mail"></i><span>국내</span><a href="mailto:oligo@macrogen.com">oligokr&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-mail"></i><span>해외</span><a href="mailto:oligo@macrogen.com">oligo&#64;macrogen&#46;com</a></li>
                                     </ul>
                                     <div class="name">견적 및 계산서 문의</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7146">&#43;82&#45;2&#45;2180&#45;7146</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7326">&#43;82&#45;2&#45;2180&#45;7326</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -116,7 +109,7 @@
                                 <div class="title">Microarray</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7201">&#43;82&#45;2&#45;2180&#45;7201</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7360">&#43;82&#45;2&#45;2180&#45;7360</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:array@macrogen.com">array&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -125,7 +118,7 @@
                                 <div class="title">임상진단서비스</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7201">&#43;82&#45;2&#45;2180&#45;7201</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7222">&#43;82&#45;2&#45;2180&#45;7222</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:ngsclinic@macrogen.com">ngsclinic&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -134,8 +127,8 @@
                                 <div class="title">개인유전체분석</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7201">&#43;82&#45;2&#45;2180&#45;7201</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:mygenomestory@macrogen.com">mygenomestory&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7220">&#43;82&#45;2&#45;2180&#45;7220</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:hello@macrogen.com">hello&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -144,12 +137,12 @@
                                 <div class="desc">
                                     <div class="name">샘플접수&#47;실험&#47;결과</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7017</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:oligo@macrogen.com">oligo&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-3663-5990">&#43;82&#45;2&#45;3663&#45;5990</a></li>
                                     </ul>
                                     <div class="name">견적 및 계산서 문의</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-3664-2004">&#43;82&#45;2&#45;3664&#45;2004</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-3663-2004">&#43;82&#45;2&#45;3663&#45;2004</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:mouse@macrogen.com">mouse&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -157,7 +150,7 @@
                                 <div class="title">마이펫진</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7201">&#43;82&#45;2&#45;2180&#45;7201</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7145">&#43;82&#45;2&#45;2180&#45;7145</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:mypetgene@macrogen.com">mypetgene&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -167,23 +160,23 @@
                                 <div class="desc">
                                     <div class="name">샘플접수&#47;실험&#47;결과</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7017</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:oligo@macrogen.com">oligo&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7134">&#43;82&#45;2&#45;2180&#45;7134</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:hg1427@macrogen.com">hg1427&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="item item-md">
-                                <div class="title">대전지사</div>
+                                <!-- <div class="title">대전지사</div>
                                 <div class="desc">
                                     <ul>
                                         <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7201</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:sequencing@macrogen.com">sequencing&#64;macrogen&#46;com</a></li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
-                    <div class="btn-wrap"><a href="/${rc.locale.language }/company/global-network" class="btn btn-text"><span>마크로젠 글로벌 네트워크</span><i class="icon icon-arrow-right-long"></i></a></div>
+                    <!-- <div class="btn-wrap"><a href="/${rc.locale.language }/company/global-network" class="btn btn-text"><span>마크로젠 글로벌 네트워크</span><i class="icon icon-arrow-right-long"></i></a></div> --> 
                 </div>
             </div>
             <!-- e 연구·사업 분야별 문의 -->
