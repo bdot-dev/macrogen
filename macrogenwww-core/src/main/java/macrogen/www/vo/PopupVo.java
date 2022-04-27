@@ -30,7 +30,7 @@ public class PopupVo extends DefaultVo {
 	private Integer clickCo;
 	private String expsrYn;
 	private Integer sortOrdr;
-
+	
 	private String searchExpsrYn;
 
 	private String popupBeginDe;

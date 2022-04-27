@@ -109,7 +109,7 @@ public class NewsroomController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("press-release");
@@ -197,7 +197,7 @@ public class NewsroomController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		String bbsId = "media-library";
 		listVo.setLangCode(langId.name());
@@ -306,7 +306,7 @@ public class NewsroomController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("notice");

@@ -24,6 +24,9 @@
 			and tp.expsr_yn = 'Y'
 			and now() between tp.popup_begin_dt and tp.popup_end_dt
 		</if>
+		<!-- <if test="exposedPopupCnt != null and exposedPopupCnt != ''">
+			and tp.sort_ordr <![CDATA[ < ]]> 4
+		</if> -->
 	</sql>
 	<select id="list" parameterType="popupVo" resultType="popupVo">
 		<include refid="paging.countTop"/>
@@ -57,9 +60,9 @@
 			<when test="orderBy == 'sort_asc' ">
 				order by tp.sort_ordr ASC
 			</when>
-			<when test="orderBy == 'sort_desc' ">
+			<!-- <when test="orderBy == 'sort_desc' ">
 				order by tp.sort_ordr DESC
-			</when>
+			</when> -->
 			<otherwise>
 				order by tp.regist_dt DESC
 			</otherwise>
