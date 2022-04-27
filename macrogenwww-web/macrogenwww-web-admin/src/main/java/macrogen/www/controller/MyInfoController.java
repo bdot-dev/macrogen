@@ -5,6 +5,8 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -35,6 +37,8 @@ public class MyInfoController {
 
 	@Resource(name="passwordEncoder")
 	private ShaPasswordEncoder passwordEncoder;
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(MyInfoController.class);
 
 	/**
 	 * <pre>
@@ -56,7 +60,7 @@ public class MyInfoController {
 		resultVo = mngrService.viewByLoginId(resultVo);
 		resultVo.setMode("UPDATE");
 		model.addAttribute("resultVo", resultVo);
-
+		LOGGER.debug("현재 비번====="+resultVo.getLoginPassword());
 		return "myinfo/form";
 	}
 
@@ -80,9 +84,35 @@ public class MyInfoController {
 			mngrVo.setLoginPassword(passwordEncoder.encodePassword(mngrVo.getLoginPassword(), null));
 		}
 		mngrVo.setUpdusrSn(loginVo.getUserSn());
-		mngrService.updateMyinfo(mngrVo);
+		mngrVo.setCurrentPassword(passwordEncoder.encodePassword(mngrVo.getCurrentPassword(), null));
+		MngrVo resultVo = new MngrVo();
+		resultVo = mngrService.viewByLoginId(loginVo);
+		LOGGER.debug("현재 비번====="+resultVo.getLoginPassword());
+		LOGGER.debug("현재 비번 입력====="+mngrVo.getCurrentPassword());
+		LOGGER.debug("변경 비번 입력====="+mngrVo.getLoginPassword());
+		
+		LOGGER.debug("현재 userSn====="+resultVo.getUserSn());
+		LOGGER.debug("변경하는 userSn====="+mngrVo.getUserSn());
+		
+		if(resultVo.getLoginPassword()==mngrVo.getCurrentPassword()||resultVo.getLoginPassword().equals(mngrVo.getCurrentPassword())) {
+			if(resultVo.getUserSn()==mngrVo.getUserSn()||resultVo.getUserSn().equals(mngrVo.getUserSn())) {
+				//mngrService.updateMyinfo(mngrVo);
+				LOGGER.debug("변경 성공");
+				resultMap.put("result", "success");
+			}else if(resultVo.getUserSn()!=mngrVo.getUserSn()){
+				LOGGER.debug("유저번호  다름");
+				resultMap.put("result", "userSnFail");
+			}
+			//mngrService.updateMyinfo(mngrVo);
+			//resultMap.put("result", "success");
+		}
+		else if(resultVo.getLoginPassword()!=mngrVo.getCurrentPassword()){
+			LOGGER.debug("현재 비번과 다름");
+			resultMap.put("result", "passwordFail");
+		}
+		
 
-		resultMap.put("result", "success");
+		
 		return resultMap;
 	}
 }
