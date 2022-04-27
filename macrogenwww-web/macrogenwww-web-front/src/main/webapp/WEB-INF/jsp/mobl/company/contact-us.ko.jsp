@@ -117,7 +117,7 @@
                                 <div class="title">개인유전체분석</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7220">02&#45;2180&#45;7220</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7220">&#43;82&#45;2&#45;2180&#45;7220</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:hello@macrogen.com">hello&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -127,11 +127,11 @@
                                 <div class="desc">
                                     <div class="name">샘플접수&#47;실험&#47;결과</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-3663-5990">02&#45;3663&#45;5990</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-3663-5990">&#43;82&#45;2&#45;3663&#45;5990</a></li>
                                     </ul>
                                     <div class="name">견적 및 계산서 문의</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-3664-2004">02&#45;3664&#45;2004</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-3664-2004">&#43;82&#45;2&#45;3664&#45;2004</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:mouse@macrogen.com">mouse&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -140,7 +140,7 @@
                                 <div class="title">마이펫진</div>
                                 <div class="desc">
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7145">02&#45;2180&#45;7145</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7145">&#43;82&#45;2&#45;2180&#45;7145</a></li>
                                         <li><i class="ic-mail"></i><a href="mailto:mypetgene@macrogen.com">mypetgene&#64;macrogen&#46;com</a></li>
                                     </ul>
                                 </div>
@@ -163,5 +163,4 @@
             <!-- e 연구·사업 분야별 문의 -->
         </div>
     </div>
-
 </body>

@@ -69,6 +69,14 @@ var popupList = (function($) {
 					var vm = this;
 					if (!vm.resultList || vm.resultList.length <= 0) return;
 
+					for(var i=0;i<vm.resultList.length;i++){
+						if(vm.resultList[i].sortOrdr == 0 || vm.resultList[i].sortOrdr >3 ){
+							alert("노출순서는 1에서 3까지만 입력 가능합니다.");
+							$("#sortOrdr"+i).focus();
+							return false;
+						}
+					}
+				
 					$.ajax({
 						dataType : 'json',
 						type : 'POST',

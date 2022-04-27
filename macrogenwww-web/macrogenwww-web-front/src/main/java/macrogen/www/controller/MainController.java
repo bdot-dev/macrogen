@@ -43,7 +43,7 @@ public class MainController extends DefaultController {
 		nttVo.setBbsId("press-release");
 		nttVo.setFirstIndex(0);
 		nttVo.setRecordCountPerPage(3);
-		List<NttVo> newsList = nttService.list(nttVo);
+		List<NttVo> newsList = nttService.list(nttVo);	
 		model.addAttribute("newsList", newsList);
 
 		// Social Media 목록
@@ -62,16 +62,37 @@ public class MainController extends DefaultController {
 		popupVo.setFirstIndex(-1);
 		popupVo.setExposed(true);
 		popupVo.setOrderBy("sort_asc");
-
+		/*
+		popupVo.setOrderBy("sort_desc");
+		popupVo.setExposedPopupCnt(popupService.count(popupVo));
+		List<PopupVo> popupList = popupService.list(popupVo);
+		if (null != popupList && !popupList.isEmpty()) {
+			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
+			List<Boolean> cookieChkList = new ArrayList<>();
+			for (PopupVo popup : popupList) {
+				cookieChkList.add(exceptPopupSnList.contains(popup.getPopupSn()));
+				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
+					model.addAttribute("popupVo", popup);
+					model.addAttribute("cookieChkList", cookieChkList);
+					model.addAttribute("popupList", popupList);
+				}
+			}
+			int popupCnt = popupList.size();
+			model.addAttribute("popupCnt", popupCnt);
+		}
+		*/
+		
 		List<PopupVo> popupList = popupService.list(popupVo);
 		if (null != popupList && !popupList.isEmpty()) {
 			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
 			for (PopupVo popup : popupList) {
+
 				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
 					model.addAttribute("popupVo", popup);
 				}
 			}
 		}
+
 
 		return getDev() + "/main/main." + getLang();
 	}
@@ -79,7 +100,6 @@ public class MainController extends DefaultController {
 	private List<Long> getExceptPopupSnList(HttpServletRequest request) {
 		try {
 			List<Long> snList = new ArrayList<>();
-
 			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-sn-list");
 			if (StringUtils.isEmpty(exceptPopupSnStr)) {
 				return snList;

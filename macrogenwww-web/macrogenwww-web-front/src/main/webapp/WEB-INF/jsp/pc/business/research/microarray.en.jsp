@@ -263,6 +263,8 @@
             <a href="mailto:array@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
              <a href="https://dna.macrogen.com/quotation/retrieveChipQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>Quotation</span></a>
             <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+            <!-- <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO500" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="mailto:array@macrogen.com" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a> -->
           </div>
           <hr class="divider">
           <div class="board">
