@@ -121,7 +121,7 @@
 			rules: {
 				roleId: { required: true },
 				currentPassword: {
-					required: true},
+					required:  true},
 				loginPassword: {
 					passwordFormat: true },
 				loginPasswordConf: {
@@ -170,8 +170,16 @@
 						alert('현재 비밀번호가 올바르지 않습니다.');
 						goList();
 					}
+					if (data && data.result === 'passwordEmpty') {
+						alert('현재 패스워드를 입력해주세요.');
+						goList();
+					}
 					if (data && data.result === 'userSnFail') {
 						alert('개인정보 변경에 실패하였습니다.');
+						goList();
+					}
+					if (data && data.result === 'pwdFormatFail') {
+						alert('영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.');
 						goList();
 					}
 				}
