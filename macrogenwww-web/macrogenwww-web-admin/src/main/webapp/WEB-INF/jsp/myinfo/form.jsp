@@ -24,23 +24,29 @@
 						<col width="35%">
 						<col width="15%">
 						<col width="35%">
+						<col width="15%">
+						<col width="35%">
 					</colgroup>
 					<tbody>
 						<tr>
 							<th>관리자구분 <span>*</span></th>
-							<td colspan="3" class="tal">
+							<td colspan="5" class="tal">
 								${resultVo.roleNm } (${resultVo.roleId })
 							</td>
 						</tr>
 						<tr>
 							<th>아이디 <span>*</span></th>
-							<td colspan="3" class="tal">
+							<td colspan="5" class="tal">
 								${resultVo.loginId}
 								<form:hidden path="userSn" />
 								<form:hidden path="loginId" />
 							</td>
 						</tr>
 						<tr>
+							<th>현재 패스워드 <span>*</span></th>
+							<td>
+								<input id="currentPassword" name="currentPassword" type="password" maxlength="20" placeholder="현재 비밀번호 입력" class="w100p" />
+							</td>
 							<th>패스워드 <span>*</span></th>
 							<td>
 								<input id="loginPassword" name="loginPassword" type="password" maxlength="20" placeholder="비밀번호 입력" class="w100p" />
@@ -52,7 +58,7 @@
 						</tr>
 						<tr>
 							<th>이름 <span>*</span></th>
-							<td colspan="3" class="tal">
+							<td colspan="5" class="tal">
 								${resultVo.userNm}
 								<form:hidden path="userNm" />
 							</td>
@@ -60,20 +66,20 @@
 
 						<tr>
 							<th>이메일</th>
-							<td colspan="3">
+							<td colspan="5">
 								<form:input path="email" maxlength="50" placeholder="이메일" class="w100p" />
 							</td>
 						</tr>
 
 						<tr>
 							<th>휴대폰번호</th>
-							<td colspan="3">
+							<td colspan="5">
 								<form:input path="mbtlnum" maxlength="50" placeholder="휴대폰번호" class="w100p" />
 							</td>
 						</tr>
 						<tr>
 							<th>전화번호</th>
-							<td colspan="3">
+							<td colspan="5">
 								<form:input path="telno" maxlength="50" placeholder="전화번호" class="w100p" />
 							</td>
 						</tr>
@@ -81,9 +87,9 @@
 						<c:if test="${resultVo.mode eq 'UPDATE' }">
 						<tr>
 							<th>등록일시</th>
-							<td><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy-MM-dd HH:mm" /></td>
+							<td colspan="2"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy-MM-dd HH:mm" /></td>
 							<th>수정일시</th>
-							<td><fmt:formatDate value="${resultVo.updtDt }" pattern="yyyy-MM-dd HH:mm" /></td>
+							<td colspan="2"><fmt:formatDate value="${resultVo.updtDt }" pattern="yyyy-MM-dd HH:mm" /></td>
 						</tr>
 						</c:if>
 
@@ -114,6 +120,8 @@
 		var validateOptions = {
 			rules: {
 				roleId: { required: true },
+				currentPassword: {
+					required:  true},
 				loginPassword: {
 					passwordFormat: true },
 				loginPasswordConf: {
@@ -121,6 +129,8 @@
 			},
 			messages: {
 				roleId: { required: '필수입력입니다' },
+				currentPassword: {
+					required: '현재 패스워드를 입력해주세요'},
 				loginPassword: {
 					passwordFormat: '영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요'},
 				loginPasswordConf: {
@@ -154,6 +164,22 @@
 					}
 					if (data && data.result === 'success') {
 						alert('저장되었습니다.');
+						goList();
+					}
+					if (data && data.result === 'passwordFail') {
+						alert('현재 비밀번호가 올바르지 않습니다.');
+						goList();
+					}
+					if (data && data.result === 'passwordEmpty') {
+						alert('현재 패스워드를 입력해주세요.');
+						goList();
+					}
+					if (data && data.result === 'userSnFail') {
+						alert('개인정보 변경에 실패하였습니다.');
+						goList();
+					}
+					if (data && data.result === 'pwdFormatFail') {
+						alert('영문, 숫자, 특수문자를 조합하여 8~20자로 입력해주세요.');
 						goList();
 					}
 				}
