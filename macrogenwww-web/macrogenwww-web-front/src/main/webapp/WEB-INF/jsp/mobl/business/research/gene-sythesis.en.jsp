@@ -80,10 +80,10 @@
                         <div class="btn-wrapper">
                             <a href="mailto:sequencing@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/com/cust/retrieveLogin.do?menuCd=QUO400"
-                               class="btn btn-light"><span>Quotation</span></a>
+                               class="btn btn-light" target="_blank" ><span>Quotation</span></a>
                         </div>
                         <div class="btn-wrapper">
-                            <a href="https://dna.macrogen.com/" class="btn btn-primary"><i
+                            <a href="https://dna.macrogen.com/" class="btn btn-primary" target="_blank" ><i
                                     class="icon ico-cart-white"></i><span>Order</span></a>
                         </div>
                     </div>

@@ -75,7 +75,7 @@
                         <a href="https://dna.macrogen.com/com/cust/retrieveLogin.do?menuCd=QUO400" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
                     </div>
                     <div class="btn-wrapper">
-                        <a href="https://dna.macrogen.com/" target="_blank" class="btn btn-primary"><i
+                       <a href="https://dna.macrogen.com/" target="_blank" class="btn btn-primary"><i
                             class="icon ico-cart-white"></i><span>주문하기</span></a>
                     </div>
                 </div>

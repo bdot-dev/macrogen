@@ -30,7 +30,8 @@ public class PopupVo extends DefaultVo {
 	private Integer clickCo;
 	private String expsrYn;
 	private Integer sortOrdr;
-
+	private Integer exposedPopupCnt;
+	
 	private String searchExpsrYn;
 
 	private String popupBeginDe;
@@ -178,6 +179,12 @@ public class PopupVo extends DefaultVo {
 	}
 	public void setSortOrdr(Integer sortOrdr) {
 		this.sortOrdr = sortOrdr;
+	}
+	public Integer getExposedPopupCnt() {
+		return exposedPopupCnt;
+	}
+	public void setExposedPopupCnt(Integer exposedPopupCnt) {
+		this.exposedPopupCnt = exposedPopupCnt;
 	}
 	public String getSearchExpsrYn() {
 		return searchExpsrYn;

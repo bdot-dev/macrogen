@@ -154,7 +154,7 @@
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -205,7 +205,7 @@
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -258,7 +258,7 @@
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -368,7 +368,7 @@
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>Quotation</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+                        <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
                     </div>
                     <hr class="divider">
                     <div class="board">
