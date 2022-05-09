@@ -473,7 +473,7 @@
 	                                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                                        </div>
 	                                        <div class="content">${result.somlnkSj }</div>
-	                                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 	                                    </a>
 	                                </div>
 								</c:forEach>
@@ -559,7 +559,7 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="#" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')"><span>오늘은 그만 보기</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
 		            </div>
 		        </div>
@@ -575,10 +575,11 @@
 		    var popupCnt = $("#popupCnt").val();
 			
 			for(var i=0;i<popupCnt;i++){
-				var modalEl = document.getElementById('modal'+i);
-				var modal = new bootstrap.Modal(modalEl); 
+				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
+				/* var modalEl = document.getElementById('modal'+i);
+				var modal = new bootstrap.Modal(modalEl);  */
 				var coockieChk = $("#cookieChkList"+i).val();
-				
+
 				if(coockieChk == 'true'){
 					modal.hide();
 				}else if(coockieChk =='false'){
@@ -631,15 +632,16 @@
 				}
 			}
  
-			 function popupClose(sn, idx) {
+			 function popupClose(sn) {
 				if (!sn) return;
-			
+				
 				var snListStr = $.cookie('popup-sn-list');
 				if (!snListStr) {
 					snListStr = sn;
 				} else if (snListStr.indexOf(sn) < 0) {
 					snListStr += ',' + sn;
 				}
+
 				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
 				modal.hide();
 			}
