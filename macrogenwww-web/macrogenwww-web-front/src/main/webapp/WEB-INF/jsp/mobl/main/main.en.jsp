@@ -469,7 +469,7 @@
 	                                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                                        </div>
 	                                        <div class="content">${result.somlnkSj }</div>
-	                                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+	                                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
 	                                    </a>
 	                                </div>
 								</c:forEach>
