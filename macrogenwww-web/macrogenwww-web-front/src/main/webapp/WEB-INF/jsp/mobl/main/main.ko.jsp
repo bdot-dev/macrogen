@@ -473,7 +473,7 @@
 	                                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                                        </div>
 	                                        <div class="content">${result.somlnkSj }</div>
-	                                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+	                                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
 	                                    </a>
 	                                </div>
 								</c:forEach>
@@ -559,7 +559,7 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
 		            </div>
 		        </div>
