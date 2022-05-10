@@ -555,7 +555,7 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="#" data-popup-sn="${popup.popupSn}" class="btn-footer close-box" onclick="popupClose('${ popup.popupSn }')"><span>Stop watching today</span></a>
+		                <a href="#" data-popup-sn="${popup.popupSn}" class="btn-footer close-box" onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>Stop watching today</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>Close</span></a>
 		            </div>
 		        </div>
