@@ -1,5 +1,6 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -118,7 +119,11 @@ public class MainSomlnkController {
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
-
+		
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String postDt = df.format(vo.getPostDt());
+		vo.setPostDt(df.parse(postDt));
+		
 		if (StringUtils.isEmpty(vo.getMainSomlnkSn())) {
 			vo.setLangCode(langId.name());
 			mainSomlnkService.insert(vo);

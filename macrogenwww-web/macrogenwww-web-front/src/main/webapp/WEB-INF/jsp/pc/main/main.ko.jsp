@@ -498,7 +498,7 @@
 	                        </div>
 	                        <div class="content">${result.somlnkSj }
 	                        </div>
-	                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 	                    </a>
 	                </div>
 				</c:forEach>
@@ -638,7 +638,6 @@
 		for(var i=0;i<popupCnt;i++){
 			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
 			var coockieChk = $("#cookieChkList"+i).val();
-			console.log("쿠키체크======="+coockieChk);
 			
 			if(coockieChk == 'true'){
 				layerPopupModal.hide();
