@@ -11,12 +11,15 @@
     <if test="searchSomlnkCtgryCode != null and searchSomlnkCtgryCode != ''">
     	and tms.somlnk_ctgry_code = #{searchSomlnkCtgryCode}
     </if>
-	<if test="searchBeginDt != null">
+    <if test="searchBeginDt != null">
 		AND tms.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
 	</if>
 	<if test="searchEndDt != null">
 		AND tms.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
 	</if>
+	<if test="nowDt != null">
+      	AND tms.post_dt  <![CDATA[<=]]> DATE(#{nowDt}) <!--  AND DATE_ADD(tms.end_dt, INTERVAL 1 DAY)  <![CDATA[>]]> DATE(#{nowDt}) -->
+    </if>
   </sql>
 
   <select id="count" parameterType="mainSomlnkVo" resultType="int">
@@ -45,6 +48,7 @@
 			, ( select user_nm from tb_user where user_sn = tms.register_sn ) register_nm
 		, tms.updt_dt
 		, tms.updusr_sn
+		, tms.post_dt
 		, ( select user_nm from tb_user where user_sn = tms.updusr_sn ) updusr_nm
 	from tb_main_somlnk tms
 	where 1 = 1
@@ -78,6 +82,7 @@
 			, ( select user_nm from tb_user where user_sn = tms.register_sn ) register_nm
 		, tms.updt_dt
 		, tms.updusr_sn
+		, tms.post_dt
 		, ( select user_nm from tb_user where user_sn = tms.updusr_sn ) updusr_nm
     from tb_main_somlnk tms
     where tms.main_somlnk_sn = #{mainSomlnkSn}
@@ -100,6 +105,7 @@
       , register_sn
       , updt_dt
       , updusr_sn
+      , post_dt
     ) values (
       #{mainSomlnkSn}
       , #{langCode}
@@ -112,6 +118,7 @@
       , #{registerSn}
       , now()
       , #{updusrSn}
+      , #{postDt}
     )
   </insert>
 
@@ -130,6 +137,7 @@
       <if test="somlnkSj != null">, somlnk_sj = #{somlnkSj} </if>
       <if test="somlnkUrl != null">, somlnk_url = #{somlnkUrl} </if>
       <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+      <if test="postDt != null">, post_dt = #{postDt} </if>
     where main_somlnk_sn = #{mainSomlnkSn}
   </update>
 

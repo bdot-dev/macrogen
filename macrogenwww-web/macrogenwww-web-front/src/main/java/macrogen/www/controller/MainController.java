@@ -1,6 +1,8 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,6 +53,12 @@ public class MainController extends DefaultController {
 		somlnkVo.setLangCode(langId.name());
 		somlnkVo.setFirstIndex(0);
 		somlnkVo.setRecordCountPerPage(20);
+
+		Date now = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String nowDt = df.format(now);
+		somlnkVo.setNowDt(df.parse(nowDt));
+
 		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
 		model.addAttribute("mainSomlnkList", mainSomlnkList);
 
