@@ -439,10 +439,12 @@
 
                 <div class="video-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                     <div class="info-box">
-                        <div class="title">#Macrogen TV</div>
-                        <div class="desc">Watch our latest news in video.</div>
-                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn_play">
-                            <i class="icon_youtube"></i><span>Marcrogen Youtube</span><i class="icon-arrow-right-short"></i>
+                        <div class="title">How Can We Help You?</div>
+                        <div class="desc">Our team of experts will help you find<br>
+							the most appropriate solutions to all your needs.
+						</div>
+                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn_play">
+                            <span>Contact us</span><i class="icon-arrow-right-short"></i>
                         </a>
                     </div>
                 </div>

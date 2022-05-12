@@ -462,9 +462,9 @@
 	                </div>
 	                <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 	                    <div class="info-box">
-	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
-	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
-	                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
+	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">도움이 필요하신가요?</div>
+	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">전문가와 가장 적합한 솔루션을 확인해보세요</div>
+	                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>문의하기</span><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
 	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
 	                </div>
