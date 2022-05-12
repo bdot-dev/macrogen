@@ -58,7 +58,7 @@ public class MainController extends DefaultController {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		String nowDt = df.format(now);
 		somlnkVo.setNowDt(df.parse(nowDt));
-		
+
 		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
 		model.addAttribute("mainSomlnkList", mainSomlnkList);
 

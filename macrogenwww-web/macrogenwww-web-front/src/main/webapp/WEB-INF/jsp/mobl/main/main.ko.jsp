@@ -443,10 +443,10 @@
 
                 <div class="video-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                     <div class="info-box">
-                        <div class="title">#Macrogen TV</div>
-                        <div class="desc">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
-                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn_play">
-                            <i class="icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon-arrow-right-short"></i>
+                        <div class="title">도움이 필요하신가요?</div>
+                        <div class="desc">전문가와 가장 적합한 솔루션을 확인해보세요</div>
+                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn_play">
+                            <span>문의하기</span><i class="icon-arrow-right-short"></i>
                         </a>
                     </div>
                 </div>
