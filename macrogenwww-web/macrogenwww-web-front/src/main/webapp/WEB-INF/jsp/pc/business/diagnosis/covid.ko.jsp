@@ -85,8 +85,8 @@
                             <p class="font-h8 title figure_bottom">Specifications</p>
                             <table class="table">
                                 <colgroup>
-                                    <col style="width:50%;">
-                                    <col style="width:50%;">
+                                    <col style="width:35%;">
+                                    <col style="width:65%;">
                                 </colgroup>
                                 <!--<thead>
                                 <tr>
@@ -153,8 +153,8 @@
                             <p class="font-h8 title figure_bottom">Specifications</p>
                             <table class="table">
                                 <colgroup>
-                                    <col style="width:50%;">
-                                    <col style="width:50%;">
+                                    <col style="width:35%;">
+                                    <col style="width:65%;">
                                 </colgroup>
                                 <!--<thead>
                                 <tr>

@@ -2531,6 +2531,15 @@
     line-height: 32px;
     letter-spacing: -0.5px;
     color: #909090; }
+    .section_business .info-box-wrap .info-covid19  .list-area .list-circle-dot.features > li span {
+     margin-left: 15px; color: #000; display: inline-block; vertical-align: top; }
+    .section_business .info-box-wrap .info-covid19 .list-area .list-circle-dot.features > li p {
+    margin-left: 0; width: 80%; margin-left: 8px; letter-spacing: -1px;  }
+    
+      @media screen and (max-width: 320px) {
+    .section_business .info-box-wrap .info-covid19 .list-area .list-circle-dot.features > li p {width: 79%}
+    }
+    
     
      .section_business .info-box-wrap .info-covid19 .notice-text{
      padding-top: 65px;
