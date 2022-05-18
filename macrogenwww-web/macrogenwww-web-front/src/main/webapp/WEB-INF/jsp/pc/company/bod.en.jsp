@@ -329,7 +329,7 @@
 	                                                </li>
 	                                                <li>
 	                                                    <span>1990</span>
-	                                                    <span>B.S. in Industrial Engineering, Seoul National<br> University, Korea사</span>
+	                                                    <span>B.S. in Industrial Engineering, Seoul National<br> University, Korea</span>
 	                                                </li>
 	                                            </ul>
 	                                        </div>
