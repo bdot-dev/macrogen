@@ -11,7 +11,7 @@
                     <li>
                         <ul class="terms clearfix">
                             <li><span class="font-medium"><a href="https://dna.macrogen.com/" target="_blank">서비스 신청</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보취급방침</a></span></li>
+                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보처리방침</a></span></li>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영&#46;관리방침</a></span></li>
                             <li><span class="font-medium"><a href="/${rc.locale.language }/company/sitemap">사이트맵</a></span></li>
