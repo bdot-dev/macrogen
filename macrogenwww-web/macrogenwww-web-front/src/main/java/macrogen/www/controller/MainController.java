@@ -1,6 +1,8 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,6 +53,12 @@ public class MainController extends DefaultController {
 		somlnkVo.setLangCode(langId.name());
 		somlnkVo.setFirstIndex(0);
 		somlnkVo.setRecordCountPerPage(20);
+
+		Date now = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String nowDt = df.format(now);
+		somlnkVo.setNowDt(df.parse(nowDt));
+
 		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
 		model.addAttribute("mainSomlnkList", mainSomlnkList);
 
@@ -61,8 +69,9 @@ public class MainController extends DefaultController {
 		popupVo.setLangCode(langId.name());
 		popupVo.setFirstIndex(-1);
 		popupVo.setExposed(true);
-		popupVo.setOrderBy("sort_asc");
-		/*
+		//popupVo.setOrderBy("sort_asc");
+		popupVo.setOrderBy("sort_desc");
+
 		popupVo.setOrderBy("sort_desc");
 		popupVo.setExposedPopupCnt(popupService.count(popupVo));
 		List<PopupVo> popupList = popupService.list(popupVo);
@@ -80,19 +89,6 @@ public class MainController extends DefaultController {
 			int popupCnt = popupList.size();
 			model.addAttribute("popupCnt", popupCnt);
 		}
-		*/
-		
-		List<PopupVo> popupList = popupService.list(popupVo);
-		if (null != popupList && !popupList.isEmpty()) {
-			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
-			for (PopupVo popup : popupList) {
-
-				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
-					model.addAttribute("popupVo", popup);
-				}
-			}
-		}
-
 
 		return getDev() + "/main/main." + getLang();
 	}

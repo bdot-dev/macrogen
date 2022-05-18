@@ -118,10 +118,10 @@
                         </div>
                         <div class="list-area">
                             <p class="font-body-h title img">Features</p>
-                            <ul class="list-circle-dot">
-                                <li><p>신속: 15분 이내 검사 결과를 확인 가능</p></li>
-                                <li><p>정확: 높은 민감도(96.9%, 126/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
-                                <li><p>간편: 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
+                            <ul class="list-circle-dot features">
+                                <li><span>신속:</span><p> 15분 이내 검사 결과를 확인 가능</p></li>
+                                <li><span>정확:</span><p> 높은 민감도(96.9%, 126/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
+                                <li><span>간편:</span><p> 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
                             </ul>
                         </div>
                         <div class="list-area last-list-area">
@@ -185,10 +185,10 @@
                         </div>
                         <div class="list-area">
                             <p class="font-body-h title img">Features</p>
-                            <ul class="list-circle-dot">
-                                <li><p>신속: 15분 이내 검사 결과를 확인 가능</p></li>
-                                <li><p>정확: 높은 민감도(97.7%, 127/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
-                                <li><p>간편: 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
+                            <ul class="list-circle-dot features">
+                                <li><span>신속:</span><p> 15분 이내 검사 결과를 확인 가능</p></li>
+                                <li><span>정확:</span><p> 높은 민감도(97.7%, 127/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
+                                <li><span>간편:</span><p> 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
                             </ul>
                         </div>
                         <div class="list-area last-list-area2">

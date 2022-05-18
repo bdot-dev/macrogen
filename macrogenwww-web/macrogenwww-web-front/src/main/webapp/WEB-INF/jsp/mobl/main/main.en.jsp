@@ -439,10 +439,12 @@
 
                 <div class="video-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                     <div class="info-box">
-                        <div class="title">#Macrogen TV</div>
-                        <div class="desc">Watch our latest news in video.</div>
-                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn_play">
-                            <i class="icon_youtube"></i><span>Marcrogen Youtube</span><i class="icon-arrow-right-short"></i>
+                        <div class="title">How Can We Help You?</div>
+                        <div class="desc">Our team of experts will help you find<br>
+							the most appropriate solutions to all your needs.
+						</div>
+                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn_play">
+                            <span>Contact us</span><i class="icon-arrow-right-short"></i>
                         </a>
                     </div>
                 </div>
@@ -469,7 +471,7 @@
 	                                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                                        </div>
 	                                        <div class="content">${result.somlnkSj }</div>
-	                                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 	                                    </a>
 	                                </div>
 								</c:forEach>
@@ -530,9 +532,12 @@
     </div>
 
 	<%-- 팝업 --%>
-	<c:if test="${not empty popupVo  }">
-		<div class="modal fade modal-notice" tabindex="-1" id="modal" data-bs-backdrop="static" aria-labelledby="modal"
+	<c:if test="${not empty popupList }">
+	<c:forEach var="popup" items="${popupList}" varStatus="status">
+		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
 		     aria-hidden="true">
+		    <input type="hidden" value="${popupCnt}" id="popupCnt">
+			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
 		    <div class="modal-dialog">
 		        <div class="modal-content">
 		            <div class="modal-header">
@@ -542,8 +547,8 @@
 		                <div class="scroll">
 		                    <div class="data-img">
 		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
-			                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt=""
-			                    	onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
+			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 		                    </div>
 		                    <%-- <div class="btn-wrapper">
 		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
@@ -552,14 +557,15 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="#" data-popup-sn="${popupVo.popupSn}" class="btn-footer close-box"><span>Stop watching today</span></a>
+		                <a href="#" data-popup-sn="${popup.popupSn}" class="btn-footer close-box" onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>Stop watching today</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>Close</span></a>
 		            </div>
 		        </div>
 		    </div>
 		</div>
+		</c:forEach>
 		<script>
-		    var modalEl = document.getElementById('modal')
+		   /*  var modalEl = document.getElementById('modal')
 		    var modal = new bootstrap.Modal(modalEl)
 
 		    modal.show();
@@ -577,10 +583,24 @@
 		    modalEl.addEventListener('hide.bs.modal', function () {
 		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
 		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
-		    })
+		    }) */
+		    
+			var popupCnt = $("#popupCnt").val();
+			
+			for(var i=0;i<popupCnt;i++){
+				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
+				
+				var coockieChk = $("#cookieChkList"+i).val();
+
+				if(coockieChk == 'true'){
+					modal.hide();
+				}else if(coockieChk =='false'){
+					modal.show();
+				}
+			}
 		</script>
 		<script>
-			$(function() {
+			/* $(function() {
 				var $btnPopupClose = $('#modal .close-box');
 				$btnPopupClose.on('click', function() {
 					var sn = $(this).data('popup-sn');
@@ -595,7 +615,7 @@
 					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
 					modal.hide();
 				});
-			});
+			}); */
 
 			function onclickPopupImage(url, trgtCode) {
 				if (!url) {
@@ -607,6 +627,20 @@
 				} else {
 					location.href = url;
 				}
+			}
+			
+			function popupClose(sn) {
+				if (!sn) return;
+				
+				var snListStr = $.cookie('popup-sn-list');
+				if (!snListStr) {
+					snListStr = sn;
+				} else if (snListStr.indexOf(sn) < 0) {
+					snListStr += ',' + sn;
+				}
+
+				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+				modal.hide();
 			}
 		</script>
 	</c:if>

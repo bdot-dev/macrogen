@@ -13283,7 +13283,8 @@ table {
     overflow-x: hidden;
     overflow-y: auto; }
   .modal .modal-dialog {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     margin: 0;
     pointer-events: none;
@@ -13364,7 +13365,7 @@ table {
         .modal.modal-image-viewer .modal-dialog .modal-content .btn-close:hover {
           opacity: 1; }
   .modal.modal-notice {
-    top: auto;
+    bottom: 0;
     overflow: visible; }
     .modal.modal-notice .modal-dialog .modal-content {
       min-height: auto;

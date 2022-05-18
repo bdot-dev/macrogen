@@ -10,6 +10,7 @@ public class UserVo extends DefaultVo {
 	private String userNm;
 	private String loginId;
 	private String loginPassword;
+	private String currentPassword;
 	private String email;
 	private String telno;
 	private String mbtlnum;
@@ -43,6 +44,12 @@ public class UserVo extends DefaultVo {
 	}
 	public void setLoginPassword(String loginPassword) {
 		this.loginPassword = loginPassword;
+	}
+	public String getCurrentPassword() {
+		return currentPassword;
+	}
+	public void setCurrentPassword(String currentPassword) {
+		this.currentPassword = currentPassword;
 	}
 	public String getEmail() {
 		return email;

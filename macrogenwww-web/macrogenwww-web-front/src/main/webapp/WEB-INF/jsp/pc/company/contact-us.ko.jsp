@@ -17,7 +17,7 @@
             <!-- s map -->
             <div class="section">
                 <div class="inner">
-                    <div class="font-h3">도움이 필요하신가요?<br/>분야별 담당자가 안내해드립니다</div>
+                    <div class="font-h3">도움이 필요하신가요?<br/>분야별 전문가가 안내해드립니다</div>
                 </div>
                 <div class="map-wrap">
                     <div class="inner">
