@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.enums.Policy;
 import macrogen.www.service.CodeService;
@@ -103,7 +104,9 @@ public class PolicyController {
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
-
+		
+		vo.setPolicyCn(CommonStringUtil.replaceEditorTagRev(vo.getPolicyCn()));
+		
 		if (StringUtils.isEmpty(vo.getPolicySn())) {
 			vo.setLangCode(langId.name());
 			vo.setPolicyCode(policy.name());

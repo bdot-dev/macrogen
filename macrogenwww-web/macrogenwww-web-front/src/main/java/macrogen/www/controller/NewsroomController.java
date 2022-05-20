@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.NttService;
 import macrogen.www.vo.NttVo;
@@ -96,7 +97,7 @@ public class NewsroomController extends DefaultController {
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-
+		
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
@@ -108,7 +109,11 @@ public class NewsroomController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
 		model.addAttribute("resultVo", resultVo);
+		
 		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
@@ -305,13 +310,16 @@ public class NewsroomController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+	
 		model.addAttribute("resultVo", resultVo);
 		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("notice");
 		listVo.setNttSn(nttSn);
-
+		
 		NttVo prevVo = nttService.prev(listVo);
 		model.addAttribute("prevVo", prevVo);
 
