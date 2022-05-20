@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.BbsCtgryService;
 import macrogen.www.service.CodeService;
@@ -237,6 +238,8 @@ public class NttController {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		vo.setLangCode(langId.name());
+		
+		vo.setNttCn(CommonStringUtil.replaceEditorTagRev(vo.getNttCn()));
 
 		if (StringUtils.isEmpty(vo.getNttSn())) {
 			vo.setRegisterSn(loginVo.getUserSn());

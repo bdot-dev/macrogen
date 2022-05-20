@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.WnpzService;
@@ -124,6 +125,8 @@ public class WnpzController {
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
+		
+		vo.setWnpzCn(CommonStringUtil.replaceEditorTagRev(vo.getWnpzCn()));
 
 		if (StringUtils.isEmpty(vo.getWnpzSn())) {
 			vo.setLangCode(langId.name());
