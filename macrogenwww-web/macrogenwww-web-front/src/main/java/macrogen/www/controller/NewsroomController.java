@@ -63,7 +63,10 @@ public class NewsroomController extends DefaultController {
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-
+		for(int i=0;i<resultList.size();i++) {
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEventHander(resultList.get(i).getNttCnBrief()));
+		}
+		
 		model.addAttribute("paginationInfo", paginationInfo);
 		model.addAttribute("resultList", resultList);
 
@@ -90,7 +93,7 @@ public class NewsroomController extends DefaultController {
 
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
-
+		
 		List<NttVo> resultList = nttService.list(listVo);
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
@@ -113,7 +116,6 @@ public class NewsroomController extends DefaultController {
 		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
 		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
 		model.addAttribute("resultVo", resultVo);
-		
 		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
