@@ -64,6 +64,7 @@ public class NewsroomController extends DefaultController {
 			paginationInfo.setTotalRecordCount(0);
 		}
 		for(int i=0;i<resultList.size();i++) {
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(resultList.get(i).getNttCnBrief()));
 			resultList.get(i).setNttCn(CommonStringUtil.replaceEventHander(resultList.get(i).getNttCnBrief()));
 		}
 		
