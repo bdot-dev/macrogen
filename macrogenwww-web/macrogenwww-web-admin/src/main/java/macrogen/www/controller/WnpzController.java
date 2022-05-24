@@ -104,10 +104,6 @@ public class WnpzController {
 			resultMap.put("resultVo", resultVo);
 		} else {
 			WnpzVo resultVo = wnpzService.viewByPk(vo.getWnpzSn());
-			if(resultVo.getWnpzCn()!=null) {
-				resultVo.setWnpzCn(CommonStringUtil.replaceEventHander(resultVo.getWnpzCn()));
-				resultVo.setWnpzCn(CommonStringUtil.replaceEditorTag(resultVo.getWnpzCn()));
-			}
 			resultMap.put("resultVo", resultVo);
 		}
 

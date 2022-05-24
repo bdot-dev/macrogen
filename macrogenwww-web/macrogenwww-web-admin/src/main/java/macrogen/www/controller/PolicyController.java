@@ -82,10 +82,6 @@ public class PolicyController {
 			resultMap.put("resultVo", resultVo);
 		} else {
 			PolicyVo resultVo = policyService.viewByPk(vo.getPolicySn());
-			if(resultVo.getPolicyCn()!=null) {
-				resultVo.setPolicyCn(CommonStringUtil.replaceEventHander(resultVo.getPolicyCn()));
-				resultVo.setPolicyCn(CommonStringUtil.replaceEditorTag(resultVo.getPolicyCn()));
-			}
 			resultMap.put("resultVo", resultVo);
 
 			// 정책목록
