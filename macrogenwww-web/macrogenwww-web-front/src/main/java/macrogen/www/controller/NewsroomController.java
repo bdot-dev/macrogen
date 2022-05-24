@@ -63,15 +63,20 @@ public class NewsroomController extends DefaultController {
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
+		
 		for(int i=0;i<resultList.size();i++) {
-			resultList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(resultList.get(i).getNttCnBrief()));
-			resultList.get(i).setNttCn(CommonStringUtil.replaceEventHander(resultList.get(i).getNttCnBrief()));
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(resultList.get(i).getNttCn()));
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEventHander(resultList.get(i).getNttCn()));
 		}
 		
 		model.addAttribute("paginationInfo", paginationInfo);
 		model.addAttribute("resultList", resultList);
 
 		List<NttVo> upendFixingList = nttService.upendFixingList(langId.name(), listVo.getBbsId());
+		for(int i=0;i<upendFixingList.size();i++) {
+			upendFixingList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(upendFixingList.get(i).getNttCn()));
+			upendFixingList.get(i).setNttCn(CommonStringUtil.replaceEventHander(upendFixingList.get(i).getNttCn()));
+		}
 		model.addAttribute("upendFixingList", upendFixingList);
 
 		return getDev() + "/newsroom/news." + getLang();
