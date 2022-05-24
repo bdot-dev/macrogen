@@ -200,12 +200,6 @@ public class NttController {
 			NttAtchVo nttAtchVo = new NttAtchVo();
 			nttAtchVo.setNttSn(nttVo.getNttSn());
 			nttAtchVo.setFirstIndex(-1);
-
-			if(resultVo.getNttCn()!=null) {
-				resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
-				resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
-			}
-			
 			resultVo.setAtchList(nttAtchService.list(nttAtchVo));
 		} else {
 			resultVo.setBbsId(bbsId);

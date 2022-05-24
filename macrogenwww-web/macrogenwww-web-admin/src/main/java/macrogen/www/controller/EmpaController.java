@@ -126,10 +126,6 @@ public class EmpaController {
 			resultMap.put("resultVo", resultVo);
 		} else {
 			EmpaVo resultVo = empaService.viewByPk(vo.getEmpaSn());
-			if(resultVo.getEmpaCn()!=null) {
-				resultVo.setEmpaCn(CommonStringUtil.replaceEventHander(resultVo.getEmpaCn()));
-				resultVo.setEmpaCn(CommonStringUtil.replaceEditorTag(resultVo.getEmpaCn()));
-			}
 			resultMap.put("resultVo", resultVo);
 		}
 
