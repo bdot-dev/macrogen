@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+   <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
 	<script src="/publishing/pc-en/dist/js/lib/jquery-ui.min.js"></script>
@@ -68,30 +68,30 @@
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
                         <!-- <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p> -->
                         <p class="slogan-sub">Personalized genomic medicine</p>
-                        <p class="slogan-sub">for 7.8 billion people</p>
-                        <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
+                        <p class="slogan-sub">for all 7.8 billion people</p>
+                        <p class="desc">Building a healthier future with <br/>innovative genome analysis technology</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                 	<div class="visual visual_02"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
-                        <p class="slogan-sub">big data and AI</p>
-                        <p class="desc">Paving the way to a better future with<br/>precision medicine based on big data powered by AI</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png?v2" alt="빅데이터 ai기반"></p>
+                        <p class="slogan-sub">custom medicine</p>
+                        <p class="desc">Improving future health with higher precision <br/>and personalized medicine</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                 	<div class="visual visual_03"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
-                        <p class="slogan-sub">future</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png?v2" alt="희망과 함께하는"></p>
+                        <p class="slogan-sub">for humanity</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                		<div class="visual visual_04"></div>
                     <div class="text-box phrase">
-                        <p>DNA will save the world.<br/>Your past and future is in your DNA.</p>
+                        <p>DNA holds our past and future</p>
                         <span class="name">Founder/Chairman of Macrogen<span>  Jeong-Sun Seo</span></span>
                     </div>
                 </div>

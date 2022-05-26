@@ -10,7 +10,7 @@
 
         <div class="frame">
             <div class="hero-title">Ethical Management</div>
-            <div class="slogan">Transparent and<br/> fair business</div>
+            <div class="slogan">We promote transparent and<br/> fair business</div>
             <div class= "slogan-sub">We are committed to fulfilling our corporate social responsibility as a global leader</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
@@ -32,8 +32,8 @@
             <!-- s  문구 -->
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="text-lg">Dedicated to transparent<br/>and fair operation.</div>
-                    <div class="desc">We will continue to build trust based on the principles of ethical management.</div>
+                    <div class="text-lg">We are dedicated to transparent<br/> and fair operation</div>
+                    <div class="desc">We will continue to build trust based on the principles of ethical management</div>
                 </div>
             </div>
             <!-- e  문구 -->

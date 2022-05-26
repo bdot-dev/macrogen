@@ -803,3 +803,7 @@ alter table tb_relate_prduct
 		references tb_prduct ( -- 제품
 			prduct_sn -- 제품_순번
 		);
+
+
+--메인소셜미디어링크
+ALTER TABLE macrogenwww.tb_main_somlnk ADD column post_dt datetime DEFAULT NULL; (게시일 컬럼 추가)
