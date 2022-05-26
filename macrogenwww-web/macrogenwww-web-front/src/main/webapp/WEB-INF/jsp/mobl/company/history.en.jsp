@@ -33,7 +33,10 @@
 
         <div class="frame">
             <div class="font-h4">History</div>
-            <div class="font-slogan en">Opening a new door  to genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
+            <div class="font-slogan en ft39">Opening new
+				doors in the
+				development of
+				genomic analysis</div> <!-- 번역 변경 -- 2022.05.26 -->
             <div class="font-h7-r">Macrogen is paving the way to a healthier and brighter future for humanity.</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
