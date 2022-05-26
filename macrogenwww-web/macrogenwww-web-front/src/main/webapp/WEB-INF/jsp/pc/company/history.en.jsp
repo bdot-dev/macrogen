@@ -10,7 +10,7 @@
 
         <div class="frame">
                 <div class="hero-title">History</div>
-                <div class="slogan">Opening a new door<br/>to genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
+                <div class="slogan history_slogan">Opening new doors<br/> in the development of genomic analysis.</div> <!-- 번역 변경 -- 2022.05.26 -->
                 <div class="slogan-sub">Macrogen is paving the way to a healthier and brighter future for humanity</div>
                 <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">

@@ -33,8 +33,8 @@
 
         <div class="frame">
             <div class="font-h4">ESG Management</div>
-            <div class="font-slogan en">Creating a <br/>healthy society.</div>
-            <div class="font-h7-r">Paving the way to a sustainable future.</div>
+            <div class="font-slogan en">Creating a<br/> healthier society</div>
+            <div class="font-h7-r">Promoting health and research<br/> for a better future</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -46,8 +46,7 @@
             <!-- s text -->
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">Toward a sustainable future
-                        where we all can flourish.</div>
+                    <div class="font-h3">We are shaping an inclusive and sustainable future</div>
                 </div>
             </div>
             <!-- e text -->

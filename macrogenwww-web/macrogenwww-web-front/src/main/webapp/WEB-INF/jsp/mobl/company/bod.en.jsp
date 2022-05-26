@@ -33,7 +33,7 @@
 
         <div class="frame">
             <div class="font-h4">Executive Leadership </div>
-            <div class="font-slogan en">Broadly benefiting<br/> all mankind</div>
+            <div class="font-slogan en ft39">Broadly benefiting<br/> all mankind</div>
             <div class="font-h7-r">Macrogen seeks to help everyone<br/> enjoy a long and healthy life by<br/> utilizing genomic data </div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
