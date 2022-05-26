@@ -10,7 +10,7 @@
 
         <div class="frame">
                 <div class="hero-title">Vision</div>
-                <div class="slogan">Global leader<br/>in precision medicine</div> <!-- 번역 변경 -- 2021.11.23 -->
+                <div class="slogan">The global leader<br/>in precision medicine</div> <!-- 번역 변경 -- 2021.11.23 -->
                 <div class="slogan-sub">We predict and diagnose diseases and provides personalized solutions</div>
                 <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
