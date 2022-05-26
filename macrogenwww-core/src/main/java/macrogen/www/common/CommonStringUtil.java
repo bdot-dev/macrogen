@@ -176,4 +176,150 @@ public class CommonStringUtil {
 			return o.toString().trim();
 		}
 	}
+	
+	/**
+     * select  가져올 때
+     * @param content
+     * @return
+     */
+	public static String replaceEditorTag(String content) { 
+		String str = content;
+		if(str != null && !str.equals("")){ 
+			str = str.replaceAll("&amp;", "&"); 
+			str = str.replaceAll("&lt;", "<"); 
+			str = str.replaceAll("&gt;", ">"); 
+		}else{ 
+			str = ""; 
+		} 
+		return str; 
+	} 
+	
+    
+	/**
+     * select  가져올 때
+     * @param content
+     * @return
+     */
+	public static String replaceEventHander(String content) {
+        String cont = content;
+        cont = cont.replaceAll("(?i)javascript","");
+        cont = cont.replaceAll("(?i)eval","");
+        cont = cont.replaceAll("(?i)innerhtml","");
+        cont = cont.replaceAll("(?i)onload","");
+        cont = cont.replaceAll("(?i)onmousewheel","");
+        cont = cont.replaceAll("(?i)onactive","");
+        cont = cont.replaceAll("(?i)onfocusout","");
+        cont = cont.replaceAll("(?i)expression","");
+        cont = cont.replaceAll("(?i)charset","");
+        cont = cont.replaceAll("(?i)ondataavailable","");
+        cont = cont.replaceAll("(?i)oncut","");
+        cont = cont.replaceAll("(?i)onkeyup","");
+        cont = cont.replaceAll("(?i)applet","");
+        cont = cont.replaceAll("(?i)document","");
+        cont = cont.replaceAll("(?i)onafteripudate","");
+        cont = cont.replaceAll("(?i)onclick","");
+        cont = cont.replaceAll("(?i)onkeypress","");
+        cont = cont.replaceAll("(?i)onmousedown","");
+        cont = cont.replaceAll("(?i)onchange","");
+        cont = cont.replaceAll("(?i)onbounce","");
+        cont = cont.replaceAll("(?i)onbeforeactivate","");
+        cont = cont.replaceAll("(?i)onbeforecut","");
+        cont = cont.replaceAll("(?i)onmouseenter","");
+        cont = cont.replaceAll("(?i)onbeforecopy","");
+        cont = cont.replaceAll("(?i)ondbclick","");
+        cont = cont.replaceAll("(?i)onmouseout","");
+        cont = cont.replaceAll("(?i)binding","");
+        cont = cont.replaceAll("(?i)onbeforedeactivate","");
+        cont = cont.replaceAll("(?i)ondeactivate","");
+        cont = cont.replaceAll("(?i)onmouseover","");
+        //cont = cont.replaceAll("(?i)style","");
+        cont = cont.replaceAll("(?i)alert","");
+        cont = cont.replaceAll("(?i)ondatasetchaged","");
+        cont = cont.replaceAll("(?i)ondrag","");
+        cont = cont.replaceAll("(?i)onsubmit","");
+        cont = cont.replaceAll("(?i)script","");
+        cont = cont.replaceAll("(?i)msgbox","");
+        cont = cont.replaceAll("(?i)cnbeforeprint","");
+        cont = cont.replaceAll("(?i)ondragend","");
+        cont = cont.replaceAll("(?i)onmouseend","");
+        cont = cont.replaceAll("(?i)embed","");
+        cont = cont.replaceAll("(?i)refresh","");
+        cont = cont.replaceAll("(?i)cnbeforepaste","");
+        cont = cont.replaceAll("(?i)ondragenter","");
+        cont = cont.replaceAll("(?i)onresizestart","");
+        cont = cont.replaceAll("(?i)object","");
+        cont = cont.replaceAll("(?i)void","");
+        cont = cont.replaceAll("(?i)onbeforeeditfocus","");
+        cont = cont.replaceAll("(?i)ondragleave","");
+        cont = cont.replaceAll("(?i)onuload","");
+        cont = cont.replaceAll("(?i)iframe","");
+        cont = cont.replaceAll("(?i)cookie","");
+        cont = cont.replaceAll("(?i)onbeforeuload","");
+        cont = cont.replaceAll("(?i)ondragover","");
+        cont = cont.replaceAll("(?i)onselectstart","");
+        cont = cont.replaceAll("(?i)frame","");
+        cont = cont.replaceAll("(?i)onbeforeupdate","");
+        cont = cont.replaceAll("(?i)ondragstart","");
+        cont = cont.replaceAll("(?i)onreset","");
+        cont = cont.replaceAll("(?i)frameset","");
+        cont = cont.replaceAll("(?i)onpaste","");
+        cont = cont.replaceAll("(?i)onpropertychange","");
+        cont = cont.replaceAll("(?i)ondrop","");
+        cont = cont.replaceAll("(?i)ondblclick","");
+        cont = cont.replaceAll("(?i)onmove","");
+        cont = cont.replaceAll("(?i)ilayer","");
+        cont = cont.replaceAll("(?i)onresize","");
+        cont = cont.replaceAll("(?i)ondatasetcomplete","");
+        cont = cont.replaceAll("(?i)onerror","");
+        cont = cont.replaceAll("(?i)oncontextmenu","");
+        cont = cont.replaceAll("(?i)layer","");
+        cont = cont.replaceAll("(?i)onselect","");
+        cont = cont.replaceAll("(?i)oncellchange","");
+        cont = cont.replaceAll("(?i)onfinish","");
+        cont = cont.replaceAll("(?i)onrowexit","");
+        cont = cont.replaceAll("(?i)bgsound","");
+        cont = cont.replaceAll("(?i)base","");
+        cont = cont.replaceAll("(?i)onlayoutcomplete","");
+        cont = cont.replaceAll("(?i)onfocus","");
+        cont = cont.replaceAll("(?i)onerrorupdate","");
+        cont = cont.replaceAll("(?i)onblur","");
+        cont = cont.replaceAll("(?i)vbscript","");
+        cont = cont.replaceAll("(?i)onselectionchange","");
+        cont = cont.replaceAll("(?i)onstop","");
+        cont = cont.replaceAll("(?i)onfilterchage","");
+        cont = cont.replaceAll("(?i)onbefore","");
+        cont = cont.replaceAll("(?i)onstart","");
+        cont = cont.replaceAll("(?i)onrowsinserted","");
+        cont = cont.replaceAll("(?i)onkeydown","");
+        cont = cont.replaceAll("(?i)onlosecapture","");
+        cont = cont.replaceAll("(?i)onmouseup","");
+        cont = cont.replaceAll("(?i)onfocusin","");
+        cont = cont.replaceAll("(?i)oncontrolselected","");
+        cont = cont.replaceAll("(?i)onrowsdelete","");
+        cont = cont.replaceAll("(?i)onmousemove","");
+        cont = cont.replaceAll("(?i)onrowenter","");
+        cont = cont.replaceAll("(?i)onhelp","");
+        cont = cont.replaceAll("(?i)onreadystatechange","");
+        cont = cont.replaceAll("(?i)onmouseleave","");
+
+        return cont;
+    }
+	
+	/**
+     * insert, update
+     * @param content
+     * @return
+     */
+	public static String replaceEditorTagRev(String content) {  
+		String str = content; 
+		if(str != null && !str.equals("")){ 
+			str = str.replaceAll("&", "&amp;"); 
+			str = str.replaceAll("<", "&lt;"); 
+			str = str.replaceAll(">", "&gt;"); 
+		}else{ 
+			str = ""; 
+		} 
+		return str; 
+	} 
+	
 }

@@ -13,7 +13,7 @@
                 <select class="select" title="serviceSite" onchange="openWindowInFooter(this)">
                 	<option value="">서비스 신청/약관</option>
                     <option value="https://dna.macrogen.com/">서비스 신청</option>
-                    <option value="/${rc.locale.language }/policy/privacy">개인정보취급방침</option>
+                    <option value="/${rc.locale.language }/policy/privacy">개인정보처리방침</option>
                     <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
                     <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
                     <option value="/${rc.locale.language }/company/sitemap">사이트맵</option>
