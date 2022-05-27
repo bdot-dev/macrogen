@@ -159,6 +159,20 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="item item-lg">
+                                <div class="title">Microbiome</div>
+                                <div class="desc">
+                                    <div class="name">Quote and Invoice</div>
+                                    <ul>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7206">&#43;82&#45;2&#45;2180&#45;7206</a></li>
+                                    </ul>
+                                    <div class="name">The Biome Customer Care</div>
+                                    <ul>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-1644-9599">&#43;82&#45;2&#45;1644&#45;9599</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:thebiome@macrogen.com">thebiome&#64;macrogen&#46;com</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                   <!-- <div class="btn-wrap"><a href="/${rc.locale.language }/company/global-network" class="btn btn-text"><span>마크로젠 글로벌 네트워크</span><i class="icon icon-arrow-right-long"></i></a></div> -->

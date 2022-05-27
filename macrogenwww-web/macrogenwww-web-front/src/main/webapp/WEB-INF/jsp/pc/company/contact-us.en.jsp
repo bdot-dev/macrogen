@@ -158,7 +158,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item item-md">
+                            <li class="item item-lg">
                                 <div class="title">Human ID</div>
                                 <div class="desc">
                                     <div class="name">Sample Reception and Result</div>
@@ -168,14 +168,19 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="item item-md">
-                                <!-- <div class="title">대전지사</div>
+                            <li class="item item-lg">
+                            	<div class="title">Microbiome</div>
                                 <div class="desc">
+                                    <div class="name">Quote and Invoice</div>
                                     <ul>
-                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7017">&#43;82&#45;2&#45;2180&#45;7201</a></li>
-                                        <li><i class="ic-mail"></i><a href="mailto:sequencing@macrogen.com">sequencing&#64;macrogen&#46;com</a></li>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7206">&#43;82&#45;2&#45;2180&#45;7206</a></li>
                                     </ul>
-                                </div> -->
+                                    <div class="name">The Biome Customer Care</div>
+                                    <ul>
+                                        <li><i class="ic-call"></i><a href="tel:+82-2-1644-9599">&#43;82&#45;2&#45;1644&#45;9599</a></li>
+                                        <li><i class="ic-mail"></i><a href="mailto:thebiome@macrogen.com">thebiome&#64;macrogen&#46;com</a></li>
+                                    </ul>
+                                </div>                                
                             </li>
                         </ul>
                     </div>
