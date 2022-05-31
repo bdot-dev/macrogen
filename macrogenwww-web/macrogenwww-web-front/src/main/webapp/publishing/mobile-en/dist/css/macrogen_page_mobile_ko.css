@@ -3118,8 +3118,8 @@
         /*  left: 5.333%!*20px*!;
               top: 25.86%!*210px*!;*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
-          font-size: 48px;
-          line-height: 56px;
+          font-size: 44px;
+          line-height: 50px;
           letter-spacing: -1px;
           color: #ffffff;
           font-weight: bold; }
@@ -3149,12 +3149,13 @@
             font-size: 26px;
             line-height: 42px;
             letter-spacing: -1px;
-            margin: 0 40px; }
+            margin: 30px 40px; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase > .name {
             position: absolute;
             bottom: -90px;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
             font-size: 14px; }
             .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase > .name span {
               font-size: 18px;

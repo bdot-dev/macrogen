@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.enums.Policy;
 import macrogen.www.service.PolicyService;
@@ -51,6 +52,8 @@ public class PolicyController extends DefaultController {
 			@PathVariable Policy policy, @PathVariable long policySn, Model model) throws Exception {
 
 		PolicyVo resultVo = policyService.viewByPk(policySn);
+		resultVo.setPolicyCn(CommonStringUtil.replaceEditorTag(resultVo.getPolicyCn()));
+		resultVo.setPolicyCn(CommonStringUtil.replaceEventHander(resultVo.getPolicyCn()));
 		model.addAttribute("resultVo", resultVo);
 
 		// 정책목록

@@ -33,8 +33,11 @@
 
         <div class="frame">
             <div class="font-h4">Ethical Management</div>
-            <div class="font-slogan en">Transparent and fair business</div> <!-- 번역 변경 -- 2021.11.23 -->
-            <div class="font-h7-r">We are committed to fulfilling our corporate social responsibility as a global leader.</div>
+            <div class="font-slogan en ft44">We promote 
+										transparent and 
+										fair business
+										practices</div> <!-- 번역 변경 -- 2022.05.26 -->
+            <div class="font-h7-r">We are committed to fulfilling<br> our corporate social responsibility<br> as a global leader.</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -46,8 +49,8 @@
             <!-- s  문구 -->
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">Dedicated to transparent<br/>and fair operation.</div>
-                    <div class="font-body-h">We will continue to build trust based on the principles of ethical management.</div>
+                    <div class="font-h3">We are dedicated to<br> transparent and fair<br> operation</div>
+                    <div class="font-body-h">We will continue to build trust based on the principles of ethical management</div>
                 </div>
             </div>
             <!-- e  문구 -->

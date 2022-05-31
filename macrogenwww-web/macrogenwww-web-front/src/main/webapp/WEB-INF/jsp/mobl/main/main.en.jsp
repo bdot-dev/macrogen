@@ -27,27 +27,29 @@
                     <div class="visual visual_01">
                         <div class="text-box">
                            <!--  <p><span class="text-gradient">Global leader</span></p> -->
-                           <p class="slogan-sub">Personalized genomic medicine</p>
-                            <p class="slogan-sub">for 7.8 billion people</p>
-                            <p class="desc">Leading the future with innovative genome analysis technology</p>
+                           <p class="slogan-sub">Personalized genomic</p>
+                           <p class="slogan-sub">medicine for all</p>
+                            <p class="slogan-sub">7.8 billion</p>
+                            <p class="slogan-sub">people</p>
+                            <p class="desc">Building a healthier future with innovative genome analysis technology</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="visual visual_02">
                         <div class="text-box">
-                            <p><span class="text-gradient">Personalized medicine based on </span></p>
-                            <p class="slogan-sub">big data and AI</p>
-                            <p class="desc">Paving the way to a better future with
-                                precision medicine based on big data powered by AI</p>
+                            <p><span class="text-gradient">Big data and</br> AI-driven</span></p>
+                            <p class="slogan-sub">custom</br> medicine</p>
+                            <p class="desc">Improving future health with higher precision
+							and personalized medicine</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="visual visual_03">
                         <div class="text-box">
-                            <p><span class="text-gradient">Hopeful and healthy</span></p>
-                            <p class="slogan-sub"> future</p>
+                            <p><span class="text-gradient">Creating a healthier</span></p>
+                            <p class="slogan-sub"> for humanity</p>
                             <p class="desc">Macrogen opens the door to the future using
                                 body designs for human health</p>
                         </div>
@@ -56,8 +58,9 @@
                 <div class="swiper-slide">
                     <div class="visual visual_04">
                         <div class="text-box phrase">
-                            <p>DNA will save the world.
-                                Your past and future is in your DNA.</p>
+                            <p>DNA holds</br>
+							   our past and</br>
+							   future</p>
                             <span class="name">Founder/Chairman of Macrogen<br><span>Jeong-Sun Seo</span></span>
                         </div>
                     </div>

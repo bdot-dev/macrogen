@@ -11416,6 +11416,12 @@ body {
         .wrap .full-bg .frame .font-slogan.en {
           font-size: 48px;
           line-height: 52px; }
+        .wrap .full-bg .frame .font-slogan.en.ft44{
+        	font-size: 44px; }
+         .wrap .full-bg .frame .font-slogan.en.ft39{
+        	font-size: 39px; }  
+        .wrap .full-bg .frame .font-slogan.en.ft39{
+          font-size: 39px; }
       .wrap .full-bg .frame .font-h7-r {
         margin-bottom: 24px;
         color: #fff;

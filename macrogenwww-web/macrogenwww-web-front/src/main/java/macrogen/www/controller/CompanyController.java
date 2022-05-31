@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.common.storage.StorageService;
 import macrogen.www.enums.Codes.WnpzClCode;
 import macrogen.www.enums.LangId;
@@ -198,6 +199,8 @@ public class CompanyController extends DefaultController {
 			@ModelAttribute("listVo") WnpzVo listVo, Model model) throws Exception {
 
 		WnpzVo resultVo = wnpzService.viewByPk(wnpzSn);
+		resultVo.setWnpzCn(CommonStringUtil.replaceEditorTag(resultVo.getWnpzCn()));
+		resultVo.setWnpzCn(CommonStringUtil.replaceEventHander(resultVo.getWnpzCn()));
 		model.addAttribute("resultVo", resultVo);
 
 		// 이전글, 다음글
@@ -396,6 +399,10 @@ public class CompanyController extends DefaultController {
 		model.addAttribute("remove_header_bg_white_unuse", "Y");
 
 		EmpaVo resultVo = empaService.viewByPk(empaSn);
+		
+		resultVo.setEmpaCn(CommonStringUtil.replaceEditorTag(resultVo.getEmpaCn()));
+		resultVo.setEmpaCn(CommonStringUtil.replaceEventHander(resultVo.getEmpaCn()));
+		
 		model.addAttribute("resultVo", resultVo);
 
 		// 이전글, 다음글
