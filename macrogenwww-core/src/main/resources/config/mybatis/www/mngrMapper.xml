@@ -131,4 +131,27 @@
     delete from tb_mngr where user_sn = #{userSn}
   </delete>
 
+	<select id="userAuth" parameterType="mngrVo" resultMap="mngrMap">
+	    select
+	        tm.user_sn
+	        , tm.role_id
+	        , (select role_nm from tb_role where role_id = tm.role_id) role_nm
+	        , tm.regist_dt, tm.register_sn, tm.updt_dt, tm.updusr_sn
+	        , tu.email
+	        , tu.telno
+	        , tu.mbtlnum
+	        , tu.login_id
+	        , tu.login_password
+	        , tu.user_nm
+	        , tu.last_password_change_dt
+	        , tu.password_input_error_co
+	        , tu.login_co
+	        , tu.last_login_dt
+	        , tu.password_initl_yn
+	    from tb_mngr tm
+	    inner join tb_user tu on tu.user_sn = tm.user_sn
+	    where tu.login_id = #{userId}
+	    and tu.login_password =#{userPwd}
+  </select>
+
 </mapper>

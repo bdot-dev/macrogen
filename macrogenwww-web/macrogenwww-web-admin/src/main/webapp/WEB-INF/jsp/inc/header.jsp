@@ -7,7 +7,7 @@
 	<div id="divpop">
 		<div class="topline"></div>
 		<h1>2차 인증 팝업</h1>
-		<form id="loginForm" name="loginForm" method="post" action="/j_spring_security_check">
+		<%-- <form id="loginForm" name="loginForm" method="post" action="/j_spring_security_check">
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 			<input type="hidden" value="${returnUrl }" name="returnUrl" />
 			<div class="login_Area">
@@ -26,7 +26,25 @@
 					</ul>
 				</div>
 			</div>
-		</form>
+		</form> --%>
+		<form:form commandName="resultVo" id="loginForm" name="loginForm" method="post">
+			<div class="login_Area">
+				<p>※ 계정 정보 변경 권한 확인을 위한 인증이 필요합니다.</p>
+				<div class="login_frm">
+					<ul>
+						<li><label for="userId">Admin ID</label>
+						<input id="userId" name="userId" type="text" maxlength="20" placeholder="User Id" class="w100p" />
+						</li>
+						<li><label for="userPwd">Password</label><input id="userPwd" name="userPwd" type="password" maxlength="20" placeholder="User Password" class="w100p" />
+						</li>
+						<li>
+							<button type="button" name="button" class="btn_login03">확인</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</form:form>
+		
 		<button type="button" class="close_btn">X</button>
 	</div>
 	<div id="popup_bg"></div>
@@ -56,6 +74,12 @@
 </div>
 <script>
 	$(function() {
+		/* 
+		var options = {
+				err : '${param.err}'
+			};
+		Login.init(options); */
+		
 		$('.btnLogout', '.util').on('click', function() {
 			location.href = '/logout?${_csrf.parameterName}=${_csrf.token}';
 		});
@@ -67,11 +91,64 @@
 		
 		$('.close_btn').on('click', function() {
 			document.getElementById('popup_wrap').style.visibility = "hidden";
-			$('html, body').css({overflow: 'auto'});
+			$('html, body').css({overflow: 'inherit'});
 		});
 		
-		$('.btn_login03').on('click', function() {
+		var $form = $('#loginForm');
+		
+		var validateOptions = {
+				rules: {
+					userId: { required: true },
+					userPwd: {
+						required:  true},
+				},
+				messages: {
+					userId: { required: '필수입력입니다(아이디)' },
+					userPwd: { required: '필수입력입니다(패스워드)' },
+				}
+			};
+
+			$form.find(".btn_login03").on('click', function(e){
+
+				// validate
+				validator = $form.validate(validateOptions);
+				if (!$form.valid()) {
+					return false;
+				}
+
+				$form.ajaxSubmit({
+					type: 'post', dataType: 'json',
+					url: '/auth/submit',
+					success: function(data) {
+						console.log(data.result);
+						if(data.result == "success"){
+							location.href = '/myinfo/form';
+						}else if(data.result == "fail"){
+							alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
+							document.getElementById('popup_wrap').style.visibility = "hidden";
+							$('html, body').css({overflow: 'inherit'});
+						}
+						
+						
+					}
+				});
+		    });
+		
+		/* $('.btn_login03').on('click', function() {
 			location.href = '/myinfo/form';
-		});
+		}); */
 	});
+	
+	/* $(window).load(function(){
+		var options = {
+			err : '${param.err}'
+		};
+
+		if (options.err == '5') {
+			alert('아이디가 없거나, 비밀번호가 일치하지 않습니다.');
+		} else if (options.err == '6') {
+			alert('관리자 사이트 로그인이 5회 이상 실패하여\n해당 계정이 잠금 처리되었습니다.\n\n관리자에게 문의하세요.');
+		}
+
+	}); */
 </script>
