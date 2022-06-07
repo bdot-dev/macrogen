@@ -33,8 +33,8 @@
 
         <div class="frame">
             <div class="font-h4">Social Responsibility</div>
-            <div class="font-slogan en">Fulfill CSR to promote shared growth</div> <!-- 번역 변경 -- 2021.11.23 -->
-            <div class="font-h7-r">As part of our dedication to healthy human lives, we support Korean scientists.</div>
+            <div class="font-slogan en ft39">We fulfill our<br> social responsibility for a<br> better world</div> <!-- 번역 변경 -- 2021.11.23 -->
+            <div class="font-h7-r">We support Korean scientists as part of our dedication to healthier living</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -47,8 +47,7 @@
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-h3">Macrogen supports the future of Korea</div>
-                    <div class="font-body-h">With a strong sense of responsibility and calling, we will continue to fulfill our social responsibility as a committed supporter
-                        for researchers in the field of biotechnology, as well as play a pivotal role in strengthening national technological competitiveness.</div>
+                    <div class="font-body-h">In pursuit of our calling, we will continue to fulfill our social responsibility as a committed supporter for researchers in the field of biotechnology, as well as play a pivotal role in strengthening national technological competitiveness</div>
                 </div>
             </div>
             <!-- e  문구 -->
