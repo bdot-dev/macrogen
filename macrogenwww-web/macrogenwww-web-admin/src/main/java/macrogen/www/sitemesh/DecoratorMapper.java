@@ -24,7 +24,7 @@ import com.opensymphony.module.sitemesh.mapper.AbstractDecoratorMapper;
 public class DecoratorMapper extends AbstractDecoratorMapper {
 	private static final Logger LOGGER = LoggerFactory.getLogger(DecoratorMapper.class);
 
-	private static final String[] UNUSE_LEFTMENU_URL = {"/main", "/myinfo/form"};
+	private static final String[] UNUSE_LEFTMENU_URL = {"/main", "/myinfo/form", "/myinfo/auth"};
 	
 	/**
 	 * <pre>
