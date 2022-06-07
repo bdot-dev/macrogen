@@ -123,4 +123,11 @@ public class MyInfoController {
 		
 		return resultMap;
 	}
+
+	
+	@RequestMapping("/auth")
+	public String auth(@AuthenticationPrincipal MngrVo loginVo, Model model) throws Exception {
+		
+		return "auth/auth";
+	}
 }
