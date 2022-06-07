@@ -88,5 +88,17 @@ public interface MngrMapper {
 	 * @return
 	 */
 	int count(MngrVo mngrVo);
-
+	
+	/**
+	 * <pre>
+	 * userAuth
+	 * 1. 개요   : 관리자 인증
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param mngrVo
+	 * @return
+	 */
+	MngrVo userAuth(MngrVo mngrVo);
+	
 }
