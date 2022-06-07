@@ -128,6 +128,6 @@ public class MyInfoController {
 	@RequestMapping("/auth")
 	public String auth(@AuthenticationPrincipal MngrVo loginVo, Model model) throws Exception {
 		
-		return "myinfo/auth";
+		return "auth/auth";
 	}
 }
