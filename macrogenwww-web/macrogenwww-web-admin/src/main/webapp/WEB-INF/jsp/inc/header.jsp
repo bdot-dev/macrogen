@@ -32,7 +32,7 @@
 			location.href = '/logout?${_csrf.parameterName}=${_csrf.token}';
 		});
 		$('.btnMyinfo', '.util').on('click', function() {
-			location.href = '/myinfo/form';
+			location.href = '/myinfo/auth';
 		});
 	});
 </script>
