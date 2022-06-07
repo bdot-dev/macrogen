@@ -74,12 +74,6 @@
 </div>
 <script>
 	$(function() {
-		/* 
-		var options = {
-				err : '${param.err}'
-			};
-		Login.init(options); */
-		
 		$('.btnLogout', '.util').on('click', function() {
 			location.href = '/logout?${_csrf.parameterName}=${_csrf.token}';
 		});
@@ -138,17 +132,4 @@
 			location.href = '/myinfo/form';
 		}); */
 	});
-	
-	/* $(window).load(function(){
-		var options = {
-			err : '${param.err}'
-		};
-
-		if (options.err == '5') {
-			alert('아이디가 없거나, 비밀번호가 일치하지 않습니다.');
-		} else if (options.err == '6') {
-			alert('관리자 사이트 로그인이 5회 이상 실패하여\n해당 계정이 잠금 처리되었습니다.\n\n관리자에게 문의하세요.');
-		}
-
-	}); */
 </script>
