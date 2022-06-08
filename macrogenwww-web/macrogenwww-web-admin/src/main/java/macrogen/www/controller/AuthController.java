@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import macrogen.www.service.MngrService;
+import macrogen.www.service.UserService;
 import macrogen.www.vo.MngrVo;
 
 
@@ -28,6 +29,9 @@ public class AuthController {
 
 	@Resource(name="mngrService")
 	private MngrService mngrService;
+	
+	@Resource(name="userService")
+	private UserService userService;
 	
 	@Resource(name="passwordEncoder")
 	private ShaPasswordEncoder passwordEncoder;
@@ -55,13 +59,16 @@ public class AuthController {
 		
 		mngrVo.setUserPwd(passwordEncoder.encodePassword(mngrVo.getUserPwd(), null));
 		resultVo = mngrService.userAuth(mngrVo);
-
-		if(resultVo!=null) {
+		
+		MngrVo userVo = new MngrVo();
+		userVo = mngrService.view(loginVo);
+		if(resultVo!=null&&userVo.getPasswordInputErrorCo()<6) {
 			resultMap.put("result", "success");
-		}else if (resultVo==null) {
+		}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<6) {
+			userService.increasePasswordInputErrorCo(loginVo);
 			resultMap.put("result", "fail");
-		}else {
-			resultMap.put("result", "error");
+		}else if(userVo.getPasswordInputErrorCo()>5) {
+			resultMap.put("result", "locked");
 		}
 		return resultMap;
 	}

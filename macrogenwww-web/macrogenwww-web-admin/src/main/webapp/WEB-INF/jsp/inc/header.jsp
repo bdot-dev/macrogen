@@ -97,10 +97,15 @@
 						alert("인증되었습니다");
 						location.href = '/myinfo/form';
 					}else if(data.result == "fail"){
-						alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
+						alert("관리자 아이디 또는 비밀번호가 틀렸습니다.\n다시 확인하고 시도해주세요. \n\n※5회 이상 로그인 실패 시 잠금처리됩니다");
 						document.getElementById('popup_wrap').style.visibility = "hidden";
 						$('html, body').css({overflow: 'inherit'});
-					}		
+					}else if(data.result == "locked"){
+						alert("관리자 로그인 시도 5회 이상 실패하여\n해당 계정이 잠금처리 되었습니다. \n\n슈퍼관리자에게 문의하세요");
+						document.getElementById('popup_wrap').style.visibility = "hidden";
+						$('html, body').css({overflow: 'inherit'});
+					}
+					
 							
 				}
 			});
