@@ -56,19 +56,28 @@ public class AuthController {
 		mngrVo.setUpdusrSn(loginVo.getUserSn());
 		
 		MngrVo resultVo = new MngrVo();
-		
 		mngrVo.setUserPwd(passwordEncoder.encodePassword(mngrVo.getUserPwd(), null));
 		resultVo = mngrService.userAuth(mngrVo);
 		
 		MngrVo userVo = new MngrVo();
 		userVo = mngrService.view(loginVo);
-		if(resultVo!=null&&userVo.getPasswordInputErrorCo()<5) {
-			resultMap.put("result", "success");
-		}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<5) {
-			userService.increasePasswordInputErrorCo(loginVo);
-			resultMap.put("result", "fail");
-		}else if(userVo.getPasswordInputErrorCo()>4) {
-			resultMap.put("result", "locked");
+		if(loginVo.getLoginId().equals(mngrVo.getUserId())||loginVo.getLoginId()==mngrVo.getUserId()) {			
+			if(resultVo!=null&&userVo.getPasswordInputErrorCo()<5) {
+				resultMap.put("result", "success");
+			}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<5) {
+				userService.increasePasswordInputErrorCo(loginVo);
+				resultMap.put("result", "fail");
+			}else if(userVo.getPasswordInputErrorCo()>4) {
+				resultMap.put("result", "locked");
+			}
+		}else {
+			if(userVo.getPasswordInputErrorCo()<5) {
+				userService.increasePasswordInputErrorCo(loginVo);
+				resultMap.put("result", "fail");
+			}else if(userVo.getPasswordInputErrorCo()>4) {
+				resultMap.put("result", "locked");
+			}
+			
 		}
 		return resultMap;
 	}
