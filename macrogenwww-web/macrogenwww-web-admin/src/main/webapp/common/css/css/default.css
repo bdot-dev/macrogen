@@ -860,14 +860,14 @@ a.smaller.flat_black, button.smaller.flat_black, input.smaller.flat_black, span.
 #divpop .login_Area{top: 90px; left: 36px; transform: none; width: 559px;}
 #divpop .login_Area p{margin-bottom: 80px; font-size: 12px; color: #D10127;}
 #divpop .login_frm{}
-#divpop .login_frm ul li{display: block; margin-bottom: 22px;}
+#divpop .login_frm ul li{display: flex; margin-bottom: 22px;}
 #divpop .login_frm ul li:nth-child(2){margin-bottom: 77px;}
-#divpop .login_frm ul li label{padding-left: 71px; font-family: 'NanumSquare'; font-weight: 700; font-size: 16px; color: #02133A;}
+#divpop .login_frm ul li label{padding-left: 71px; width: 180px; line-height: 40px; font-family: 'NanumSquare'; font-weight: 700; font-size: 16px; color: #02133A;}
 #divpop .login_frm ul li label::before, #divpop .login_frm ul li + li label::before{padding-right: 7px; color: #02133A;}
 #divpop .login_frm ul li + li label::before{padding-left:0;}
 #divpop .login_frm ul li .btn_login03{display: block; margin: 0 auto; width: 56px; height: 30px; background: #001E62; color:#fff; font-weight: 700; font-size: 14px;}
 #divpop .login_frm ul li input{width: 302px; height: 40px; background:#fff; border: 1px solid rgba(0, 0, 0, 0.12);}
-#divpop .close_btn{position: absolute; top: 35px; right: 22px; width:20px; height:20px; background: url(../../images/close_btn.png) no-repeat 0 0; text-indent:-9999px;}
+#divpop .close_btn{position: absolute; top: 35px; right: 22px; width:20px; height:20px; background: url(../../../images/close_btn.png) no-repeat 0 0; text-indent:-9999px;}
 #popup_bg{width: 100%; left: 0; position: fixed; top: -108px; background: #000; min-height: 1093px; height: 100%; overflow: hidden; opacity: 0.4; z-index: 2;}
 
 
