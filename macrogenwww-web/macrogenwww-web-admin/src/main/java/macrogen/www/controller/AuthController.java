@@ -67,7 +67,7 @@ public class AuthController {
 		}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<5) {
 			userService.increasePasswordInputErrorCo(loginVo);
 			resultMap.put("result", "fail");
-		}else if(userVo.getPasswordInputErrorCo()>5) {
+		}else if(userVo.getPasswordInputErrorCo()>4) {
 			resultMap.put("result", "locked");
 		}
 		return resultMap;
