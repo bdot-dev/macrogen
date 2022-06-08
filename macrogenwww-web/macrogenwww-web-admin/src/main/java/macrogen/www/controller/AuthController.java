@@ -58,8 +58,10 @@ public class AuthController {
 
 		if(resultVo!=null) {
 			resultMap.put("result", "success");
-		}else {
+		}else if (resultVo==null) {
 			resultMap.put("result", "fail");
+		}else {
+			resultMap.put("result", "error");
 		}
 		return resultMap;
 	}
