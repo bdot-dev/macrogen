@@ -131,6 +131,7 @@ public class WnpzController {
 		vo.setUpdusrSn(loginVo.getUserSn());
 		
 		vo.setWnpzCn(CommonStringUtil.replaceEditorTagRev(vo.getWnpzCn()));
+		vo.setWnpzCn(CommonStringUtil.cleanXSS(vo.getWnpzCn()));
 
 		if (StringUtils.isEmpty(vo.getWnpzSn())) {
 			vo.setLangCode(langId.name());
