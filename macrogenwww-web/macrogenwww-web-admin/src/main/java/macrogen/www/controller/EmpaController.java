@@ -155,6 +155,7 @@ public class EmpaController {
 		vo.setUpdusrSn(loginVo.getUserSn());
 		
 		vo.setEmpaCn(CommonStringUtil.replaceEditorTagRev(vo.getEmpaCn()));
+		vo.setEmpaCn(CommonStringUtil.cleanXSS(vo.getEmpaCn()));
 		
 		if (StringUtils.isEmpty(vo.getEmpaSn())) {
 			vo.setLangCode(langId.name());

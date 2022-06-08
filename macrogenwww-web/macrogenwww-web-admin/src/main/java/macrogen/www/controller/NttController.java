@@ -246,7 +246,7 @@ public class NttController {
 		vo.setLangCode(langId.name());
 		
 		vo.setNttCn(CommonStringUtil.replaceEditorTagRev(vo.getNttCn()));
-
+		vo.setNttCn(CommonStringUtil.cleanXSS(vo.getNttCn()));
 		if (StringUtils.isEmpty(vo.getNttSn())) {
 			vo.setRegisterSn(loginVo.getUserSn());
 			vo.setUpdusrSn(loginVo.getUserSn());
