@@ -110,6 +110,7 @@ public class PolicyController {
 		vo.setUpdusrSn(loginVo.getUserSn());
 		
 		vo.setPolicyCn(CommonStringUtil.replaceEditorTagRev(vo.getPolicyCn()));
+		vo.setPolicyCn(CommonStringUtil.cleanXSS(vo.getPolicyCn()));
 		
 		if (StringUtils.isEmpty(vo.getPolicySn())) {
 			vo.setLangCode(langId.name());
