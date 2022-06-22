@@ -128,7 +128,7 @@
                                     <img src="/publishing/pc-en/dist/img/business/img_mygenomegentok.png" alt="젠톡">
                                 </div>
                                 <div class="cont">
-                                    <p class="desc">As the first genetic test service that combines a health survey and EMR data, the “GenTok” mobile app allows clients to check their test results and receive health information on a regular basis. When it comes to the Master test, it provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
+                                    <p class="desc">As the first genetic test service that combines a health survey and EMR data, the “GenTok” mobile app allows clients to check their test results and receive health information on a regular basis. It provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
                                     <div class="list-area">
                                     	<p class="desc" style="margin-bottom:6px; !important">Master  (Men 23 / Women 25)</p>
                                         <ul class="list-circle-dot">
