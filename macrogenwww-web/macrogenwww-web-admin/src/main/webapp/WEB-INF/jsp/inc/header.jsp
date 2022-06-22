@@ -7,26 +7,6 @@
 	<div id="divpop">
 		<div class="topline"></div>
 		<h1>2차 인증 팝업</h1>
-		<%-- <form id="loginForm" name="loginForm" method="post" action="/j_spring_security_check">
-			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-			<input type="hidden" value="${returnUrl }" name="returnUrl" />
-			<div class="login_Area">
-				<p>※ 계정 정보 변경 권한 확인을 위한 인증이 필요합니다.</p>
-				<div class="login_frm">
-					<ul>
-						<li><label for="">Admin ID</label> <input type="text"
-							id="j_username" name="j_username" value="${savedMngrId }"
-							maxlength="20" placeholder="User Id" /></li>
-						<li><label for="">Password</label> <input type="password"
-							id="j_password" name="j_password" maxlength="20"
-							placeholder="Password" /></li>
-						<li>
-							<button type="button" name="button" class="btn_login03">확인</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</form> --%>
 		<form:form commandName="resultVo" id="loginForm" name="loginForm" method="post">
 			<div class="login_Area">
 				<p>※ 계정 정보 변경 권한 확인을 위한 인증이 필요합니다.</p>
@@ -100,36 +80,50 @@
 					userId: { required: '필수입력입니다(아이디)' },
 					userPwd: { required: '필수입력입니다(패스워드)' },
 				}
-			};
-
-			$form.find(".btn_login03").on('click', function(e){
-
-				// validate
-				validator = $form.validate(validateOptions);
-				if (!$form.valid()) {
-					return false;
-				}
-
-				$form.ajaxSubmit({
-					type: 'post', dataType: 'json',
-					url: '/auth/submit',
-					success: function(data) {
-						console.log(data.result);
-						if(data.result == "success"){
-							location.href = '/myinfo/form';
-						}else if(data.result == "fail"){
-							alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
-							document.getElementById('popup_wrap').style.visibility = "hidden";
-							$('html, body').css({overflow: 'inherit'});
-						}
-						
-						
-					}
-				});
-		    });
+		};
+		var logout	=	function(){
+			location.href = '/logout?${_csrf.parameterName}=${_csrf.token}';
+		}
 		
-		/* $('.btn_login03').on('click', function() {
-			location.href = '/myinfo/form';
-		}); */
+		var actionAuth = function() {
+			// validate
+			validator = $form.validate(validateOptions);
+			if (!$form.valid()) {
+				return false;
+			}
+
+			$form.ajaxSubmit({
+				type: 'post', dataType: 'json',
+				url: '/auth/submit',
+				success: function(data) {
+					if(data.result == "success"){
+						alert("인증되었습니다");
+						location.href = '/myinfo/form';
+					}else if(data.result == "fail"){
+						alert("관리자 아이디 또는 비밀번호가 틀렸습니다.\n다시 확인하고 시도해주세요. \n\n※5회 이상 로그인 실패 시 잠금처리됩니다.");
+						document.getElementById('popup_wrap').style.visibility = "hidden";
+						$('html, body').css({overflow: 'inherit'});
+					}else if(data.result == "locked"){
+						alert("관리자 로그인 시도 5회 이상 실패하여\n해당 계정이 잠금처리 되었습니다. \n\n슈퍼관리자에게 문의하세요.");
+						logout();
+						document.getElementById('popup_wrap').style.visibility = "hidden";
+						$('html, body').css({overflow: 'inherit'});
+					}
+					
+							
+				}
+			});
+		};
+		
+		var onEnter = function(e) {
+			if (e.keyCode == 13) {
+				actionAuth();
+				e.preventDefault();
+			}
+		};
+		
+		$('.btn_login03').on('click', actionAuth);
+		$('#userId, #userPwd').on('keypress', onEnter);
+		
 	});
 </script>

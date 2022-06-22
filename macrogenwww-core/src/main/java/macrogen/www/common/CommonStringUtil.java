@@ -320,6 +320,125 @@ public class CommonStringUtil {
 			str = ""; 
 		} 
 		return str; 
+	}
+	
+	public static String cleanXSS(String value) { 
+		String [] checkStr_arr  = {
+				"eval",
+				"innerhtml",
+				"onload",
+				"onmousewheel",
+				"onactive",
+				"onfocusout",
+				"expression",
+				"charset",
+				"ondataavailable",
+				"oncut",
+				"onkeyup",
+				"applet",
+				"document",
+				"onafteripudate",
+				"onclick",
+				"onkeypress",
+				"onmousedown",
+				"onchange",
+				"onbounce",
+				"onbeforeactivate",
+				"onbeforecut",
+				"onmouseenter",
+				"onbeforecopy",
+				"ondbclick",
+				"onmouseout",
+				"binding",
+				"onbeforedeactivate",
+				"ondeactivate",
+				"onmouseover",
+				"alert",
+				"ondatasetchaged",
+				"ondrag",
+				"onsubmit",
+				"script",
+				"msgbox",
+				"cnbeforeprint",
+				"ondragend",
+				"onmouseend",
+				/* "embed", */
+				"refresh",
+				"cnbeforepaste",
+				"ondragenter",
+				"onresizestart",
+				"object",
+				"void",
+				"onbeforeeditfocus",
+				"ondragleave",
+				"onuload",
+				/* "iframe", */
+				"cookie",
+				"onbeforeuload",
+				"ondragover",
+				"onselectstart",
+				/* "frame", */
+				"onbeforeupdate",
+				"ondragstart",
+				"onreset",
+				"frameset",
+				"onpaste",
+				"onpropertychange",
+				"ondrop",
+				"ondblclick",
+				"onmove",
+				"ilayer",
+				"onresize",
+				"ondatasetcomplete",
+				"onerror",
+				"oncontextmenu",
+				"layer",
+				"onselect",
+				"oncellchange",
+				"onfinish",
+				"onrowexit",
+				"bgsound",
+				"base",
+				"onlayoutcomplete",
+				"onfocus",
+				"onerrorupdate",
+				"onblur",
+				"vbscript",
+				"onselectionchange",
+				"onstop",
+				"onfilterchage",
+				"onbefore",
+				"onstart",
+				"onrowsinserted",
+				"onkeydown",
+				"onlosecapture",
+				"onmouseup",
+				"onfocusin",
+				"oncontrolselected",
+				"onrowsdelete",
+				"onmousemove",
+				"onrowenter",
+				"onhelp",
+				"onreadystatechange",
+				"onmouseleave",
+				"javascript",
+				"script",
+		};
+		
+		StringBuffer sb = null;
+		
+		for(String checkStr:checkStr_arr){
+			while(value.indexOf(checkStr)!=-1){
+				value=value.replaceAll(checkStr, "");
+			}
+			while(value.toLowerCase().indexOf(checkStr)!=-1){
+				sb = new StringBuffer(value);
+				sb = sb.replace(value.toLowerCase().indexOf(checkStr), value.toLowerCase().indexOf(checkStr)+checkStr.length(), "");
+				value = sb.toString();
+			}
+		}
+
+		return value; 
 	} 
 	
 }

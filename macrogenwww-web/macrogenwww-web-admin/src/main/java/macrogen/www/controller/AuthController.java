@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import macrogen.www.service.MngrService;
+import macrogen.www.service.UserService;
 import macrogen.www.vo.MngrVo;
 
 
@@ -28,6 +29,9 @@ public class AuthController {
 
 	@Resource(name="mngrService")
 	private MngrService mngrService;
+	
+	@Resource(name="userService")
+	private UserService userService;
 	
 	@Resource(name="passwordEncoder")
 	private ShaPasswordEncoder passwordEncoder;
@@ -52,14 +56,28 @@ public class AuthController {
 		mngrVo.setUpdusrSn(loginVo.getUserSn());
 		
 		MngrVo resultVo = new MngrVo();
-		
 		mngrVo.setUserPwd(passwordEncoder.encodePassword(mngrVo.getUserPwd(), null));
 		resultVo = mngrService.userAuth(mngrVo);
-
-		if(resultVo!=null) {
-			resultMap.put("result", "success");
+		
+		MngrVo userVo = new MngrVo();
+		userVo = mngrService.view(loginVo);
+		if(loginVo.getLoginId().equals(mngrVo.getUserId())||loginVo.getLoginId()==mngrVo.getUserId()) {			
+			if(resultVo!=null&&userVo.getPasswordInputErrorCo()<5) {
+				resultMap.put("result", "success");
+			}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<5) {
+				userService.increasePasswordInputErrorCo(loginVo);
+				resultMap.put("result", "fail");
+			}else if(userVo.getPasswordInputErrorCo()>4) {
+				resultMap.put("result", "locked");
+			}
 		}else {
-			resultMap.put("result", "fail");
+			if(userVo.getPasswordInputErrorCo()<5) {
+				userService.increasePasswordInputErrorCo(loginVo);
+				resultMap.put("result", "fail");
+			}else if(userVo.getPasswordInputErrorCo()>4) {
+				resultMap.put("result", "locked");
+			}
+			
 		}
 		return resultMap;
 	}
