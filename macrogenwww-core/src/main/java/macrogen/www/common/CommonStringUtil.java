@@ -423,6 +423,9 @@ public class CommonStringUtil {
 				"onmouseleave",
 				"javascript",
 				"script",
+				"xss",
+				"onanimation",
+				"style"
 		};
 		
 		StringBuffer sb = null;
