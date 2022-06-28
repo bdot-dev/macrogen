@@ -169,14 +169,12 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_mygenomegentok.png" alt="젠톡">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">건강설문과 병원 EMR 데이터를 결합한 최초의 유전자 검사 서비스로 ‘젠톡’ 모바일 앱을 통해
-                                            검사 결과를 확인하고 주기적으로 건강 정보를 받아볼 수 있습니다. 특히 Master 검사의 경우, 질병 발생 가능성과 관련 있는 강력한
-                                            유전변이인 병원성 변이를 함께 분석하여, 높은 예측도의 검사 결과를 제공합니다.</p>
+                                        <p class="desc font-body">건강설문과 병원 EMR 데이터를 결합한 최초의 유전자 검사 서비스로 ‘젠톡’ 모바일 앱을 통해  검사 결과를 확인하고 주기적으로 건강 정보를 받아볼 수 있습니다.  질병 발생 가능성과 관련 있는 강력한 유전변이인 병원성 변이를 함께 분석하여, 높은 예측도의 검사 결과를 제공합니다.</p>
                                         <div class="list-area">
-                                            <ul class="list-circle-dot">
-                                                <li><p>Standard(남성 주요 암 12종, 여성 주요 암 14종, 심뇌혈관질환 6종)</p></li>
-                                                <li><p>Grand(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
-                                                <li><p>Master(암 및 주요질환 17(19)종, 심뇌혈관질환 6종)</p></li>
+                                        	<p class="font-body">Master  (남성 23 / 여성 25)</p>
+                                            <ul class="list-circle-dot" style="color:#707070;">
+                                                <li><p>남성: 주요 암 12종, 주요 질환 5종, 심뇌혈관질환 6종</p></li>
+                                                <li><p>여성: 주요 암 14종, 주요 질환 5종, 심뇌혈관질환 6종</p></li>
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
