@@ -188,6 +188,8 @@ public class CommonStringUtil {
 			str = str.replaceAll("&amp;", "&"); 
 			str = str.replaceAll("&lt;", "<"); 
 			str = str.replaceAll("&gt;", ">"); 
+			str = str.replaceAll("&ldquo;", "\""); 
+			str = str.replaceAll("&rdquo;", "\""); 
 		}else{ 
 			str = ""; 
 		} 
@@ -395,7 +397,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)plaintext","");
         cont = cont.replaceAll("(?i)pre","");
         cont = cont.replaceAll("(?i)progress","");
-        cont = cont.replaceAll("(?i)q","");
+        //cont = cont.replaceAll("(?i)q","");
         cont = cont.replaceAll("(?i)rb","");
         cont = cont.replaceAll("(?i)rp","");
         cont = cont.replaceAll("(?i)rt","");
@@ -644,7 +646,7 @@ public class CommonStringUtil {
 				"plaintext",
 				"pre",
 				"progress",
-				"q",
+				//"q",
 				"rb",
 				"rp",
 				"rt",
