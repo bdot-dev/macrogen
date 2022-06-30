@@ -339,7 +339,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)dfn","");
         cont = cont.replaceAll("(?i)dialog","");
         cont = cont.replaceAll("(?i)dir","");
-        cont = cont.replaceAll("(?i)div","");
+        //cont = cont.replaceAll("(?i)div","");
         cont = cont.replaceAll("(?i)dl","");
         cont = cont.replaceAll("(?i)dt","");
         cont = cont.replaceAll("(?i)element","");
@@ -588,7 +588,7 @@ public class CommonStringUtil {
 				"dfn",
 				"dialog",
 				"dir",
-				"div",
+				//"div",
 				"dl",
 				"dt",
 				"element",
