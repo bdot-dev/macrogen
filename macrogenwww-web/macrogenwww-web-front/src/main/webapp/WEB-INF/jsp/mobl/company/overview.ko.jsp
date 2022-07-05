@@ -406,8 +406,8 @@
                         <div class="desc">
                             <div class="brochure_img"><span class="sr-only">digital brochure</span></div>
                             <div class="download-area">
-                                <a href="/downfile//macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>국문 PDF</span><i class="icon ico-download-black"></i></a>
-                                <a href="/downfile//macrogen_brochure_en.pdf" target="_blank" class="btn btn-light btn-round"><span>영문 PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="/downfile/mg_ebrochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>국문 PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="/downfile/macrogen_brochure_en.pdf" target="_blank" class="btn btn-light btn-round"><span>영문 PDF</span><i class="icon ico-download-black"></i></a>
                             </div>
                         </div>
                     </div>

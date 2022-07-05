@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠 본사 및 분당 정밀의학센터와 소마젠&#40;미주법인&#41;&#44; 싱가포르법인은 NGS 기술을 이용한 임상진단 시퀀싱 분야에서 CAP 인증을 획득했습니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CAP 인증.pdf" target="_blank">CAP 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">CAP 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 본사에서 수행하는 분자유전검사 서비스와 관련하여 매년 A등급&#40;보험 미등재 항목 포함 시&#44; P등급&#41;을 획득했습니다&#46; 고객에게 더욱 신뢰할 수 있는 결과를 제공함으로써 국민건강 및 생명과학 분야의 발전에 기여합니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사정확도인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="box box-full box-full-sm">
                     <div class="left">
-                        <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina&#44; Pacific Biosciences&#44;Life Technologies&#44; Thermo Fisher Scientific&#44; Agilent Technology 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램&#40;CSP&#44; Certified Service Provider&#41;에 참여합니다&#46; 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다&#46; 고품질의 서비스를 제공하고&#44; 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다&#46;</div>
+                        <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina&#44; Pacific Biosciences&#44;Life Technologies&#44; Thermo Fisher Scientific&#44; Agilent Technology, 10x Genomics 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램&#40;CSP&#44; Certified Service Provider&#41;에 참여합니다&#46; 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다&#46; 고품질의 서비스를 제공하고&#44; 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다&#46;</div>
                         <div class="img-wrap">
                             <div class="img">
                                 <span class="tit">Illumina</span>
@@ -252,6 +252,11 @@
                                 <span class="tit">Thermo Fisher Scientific</span>
                                 <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
                                 <a class="btn btn-sm btn-white" href="/pdf/CSP_Certificate_ThermoFisher.pdf" target="_blank">인증서 보기</a>
+                            </div>
+                            <div class="img">
+                                <span class="tit">10x Genomics</span>
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-16.png" alt="10x Genomics">
+                                <a class="btn btn-sm btn-white" href="/pdf/CSP_Certificate_10xGenomics.pdf" target="_blank">인증서 보기</a>
                             </div>
                         </div>
                     </div>
