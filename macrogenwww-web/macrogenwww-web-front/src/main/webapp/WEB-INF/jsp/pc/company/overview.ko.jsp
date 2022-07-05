@@ -388,10 +388,10 @@
                      <div class="item">
                         <div class="title">마크로젠 회사소개서</div>
                         <div class="desc">
-                            <div class="brochure_img"><a href="/downfile/macrogen_brochure_ko.pdf?v2" target="_blank"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></a></div>
+                            <div class="brochure_img"><a href="/downfile/macrogen_brochure_ko.pdf" target="_blank"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></a></div>
                            
                             <div class="download-area">
-                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf?v2" target="_blank" style="padding-right:44px;"><span>국문 PDF</span><i class="icon icon-download"></i></a>
+                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>국문 PDF</span><i class="icon icon-download"></i></a>
 								<a class="btn-download" href="/downfile/macrogen_brochure_en.pdf" target="_blank"><span>영문 PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>
