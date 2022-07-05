@@ -188,6 +188,8 @@ public class CommonStringUtil {
 			str = str.replaceAll("&amp;", "&"); 
 			str = str.replaceAll("&lt;", "<"); 
 			str = str.replaceAll("&gt;", ">"); 
+			str = str.replaceAll("&ldquo;", "\""); 
+			str = str.replaceAll("&rdquo;", "\""); 
 		}else{ 
 			str = ""; 
 		} 
@@ -252,7 +254,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onbeforeeditfocus","");
         cont = cont.replaceAll("(?i)ondragleave","");
         cont = cont.replaceAll("(?i)onuload","");
-        cont = cont.replaceAll("(?i)iframe","");
+        //cont = cont.replaceAll("(?i)iframe","");
         cont = cont.replaceAll("(?i)cookie","");
         cont = cont.replaceAll("(?i)onbeforeuload","");
         cont = cont.replaceAll("(?i)ondragover","");
@@ -301,6 +303,133 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onhelp","");
         cont = cont.replaceAll("(?i)onreadystatechange","");
         cont = cont.replaceAll("(?i)onmouseleave","");
+        cont = cont.replaceAll("(?i)onanimation","");
+
+        cont = cont.replaceAll("(?i)a2","");
+        cont = cont.replaceAll("(?i)abbr","");
+        cont = cont.replaceAll("(?i)acronym","");
+        cont = cont.replaceAll("(?i)address","");
+        cont = cont.replaceAll("(?i)animate","");
+        cont = cont.replaceAll("(?i)animatemotion","");
+        cont = cont.replaceAll("(?i)animatetransform","");
+        cont = cont.replaceAll("(?i)applet","");
+        cont = cont.replaceAll("(?i)area","");
+        cont = cont.replaceAll("(?i)article","");
+        cont = cont.replaceAll("(?i)aside","");
+        cont = cont.replaceAll("(?i)audio","");
+        cont = cont.replaceAll("(?i)audio2","");
+        cont = cont.replaceAll("(?i)bdi","");
+        cont = cont.replaceAll("(?i)bdo","");
+        cont = cont.replaceAll("(?i)big","");
+        cont = cont.replaceAll("(?i)blink","");
+        cont = cont.replaceAll("(?i)blockquote","");
+        cont = cont.replaceAll("(?i)button","");
+        cont = cont.replaceAll("(?i)canvas","");
+        cont = cont.replaceAll("(?i)caption","");
+        cont = cont.replaceAll("(?i)cite","");
+        cont = cont.replaceAll("(?i)code","");
+        cont = cont.replaceAll("(?i)col","");
+        cont = cont.replaceAll("(?i)colgroup","");
+        cont = cont.replaceAll("(?i)command","");
+        cont = cont.replaceAll("(?i)content","");
+        cont = cont.replaceAll("(?i)custom tags","");
+        cont = cont.replaceAll("(?i)data","");
+        cont = cont.replaceAll("(?i)datalist","");
+        cont = cont.replaceAll("(?i)dd","");
+        cont = cont.replaceAll("(?i)del","");
+        cont = cont.replaceAll("(?i)details","");
+        cont = cont.replaceAll("(?i)dfn","");
+        cont = cont.replaceAll("(?i)dialog","");
+        cont = cont.replaceAll("(?i)dir","");
+        //cont = cont.replaceAll("(?i)div","");
+        cont = cont.replaceAll("(?i)dl","");
+        cont = cont.replaceAll("(?i)dt","");
+        cont = cont.replaceAll("(?i)element","");
+        cont = cont.replaceAll("(?i)fieldset","");
+        cont = cont.replaceAll("(?i)figcaption","");
+        cont = cont.replaceAll("(?i)figure","");
+        cont = cont.replaceAll("(?i)footer","");
+        cont = cont.replaceAll("(?i)form","");
+        cont = cont.replaceAll("(?i)frameset","");
+        cont = cont.replaceAll("(?i)h1","");
+        cont = cont.replaceAll("(?i)head","");
+        cont = cont.replaceAll("(?i)header","");
+        cont = cont.replaceAll("(?i)hgroup","");
+        cont = cont.replaceAll("(?i)hr","");
+        cont = cont.replaceAll("(?i)html","");
+        //cont = cont.replaceAll("(?i)i","");
+        cont = cont.replaceAll("(?i)iframe2","");
+        cont = cont.replaceAll("(?i)image","");
+        cont = cont.replaceAll("(?i)image2","");
+        cont = cont.replaceAll("(?i)image3","");
+        cont = cont.replaceAll("(?i)img2","");
+        cont = cont.replaceAll("(?i)input","");
+        cont = cont.replaceAll("(?i)input2","");
+        cont = cont.replaceAll("(?i)input3","");
+        cont = cont.replaceAll("(?i)input4","");
+        cont = cont.replaceAll("(?i)ins","");
+        cont = cont.replaceAll("(?i)kbd","");
+        cont = cont.replaceAll("(?i)keygen","");
+        cont = cont.replaceAll("(?i)label","");
+        cont = cont.replaceAll("(?i)legend","");
+        cont = cont.replaceAll("(?i)listing","");
+        cont = cont.replaceAll("(?i)main","");
+        cont = cont.replaceAll("(?i)map","");
+        cont = cont.replaceAll("(?i)mark","");
+        cont = cont.replaceAll("(?i)marquee","");
+        cont = cont.replaceAll("(?i)menu","");
+        cont = cont.replaceAll("(?i)menuitem","");
+        cont = cont.replaceAll("(?i)meta","");
+        cont = cont.replaceAll("(?i)meter","");
+        cont = cont.replaceAll("(?i)multicol","");
+        cont = cont.replaceAll("(?i)nav","");
+        cont = cont.replaceAll("(?i)nextid","");
+        cont = cont.replaceAll("(?i)nobr","");
+        cont = cont.replaceAll("(?i)noembed","");
+        cont = cont.replaceAll("(?i)noframes","");
+        cont = cont.replaceAll("(?i)noscript","");
+        cont = cont.replaceAll("(?i)object","");
+        cont = cont.replaceAll("(?i)optgroup","");
+        cont = cont.replaceAll("(?i)option","");
+        cont = cont.replaceAll("(?i)output","");
+        cont = cont.replaceAll("(?i)param","");
+        cont = cont.replaceAll("(?i)picture","");
+        cont = cont.replaceAll("(?i)plaintext","");
+        cont = cont.replaceAll("(?i)pre","");
+        cont = cont.replaceAll("(?i)progress","");
+        //cont = cont.replaceAll("(?i)q","");
+        cont = cont.replaceAll("(?i)rb","");
+        cont = cont.replaceAll("(?i)rp","");
+        cont = cont.replaceAll("(?i)rt","");
+        cont = cont.replaceAll("(?i)rtc","");
+        cont = cont.replaceAll("(?i)ruby","");
+        cont = cont.replaceAll("(?i)samp","");
+        cont = cont.replaceAll("(?i)script","");
+        cont = cont.replaceAll("(?i)section","");
+        cont = cont.replaceAll("(?i)select","");
+        cont = cont.replaceAll("(?i)set","");
+        cont = cont.replaceAll("(?i)shadow","");
+        cont = cont.replaceAll("(?i)slot","");
+        cont = cont.replaceAll("(?i)small","");
+        cont = cont.replaceAll("(?i)source","");
+        cont = cont.replaceAll("(?i)spacer","");
+        cont = cont.replaceAll("(?i)strike","");
+        cont = cont.replaceAll("(?i)sub","");
+        cont = cont.replaceAll("(?i)summary","");
+        cont = cont.replaceAll("(?i)sup","");
+        cont = cont.replaceAll("(?i)svg","");
+        cont = cont.replaceAll("(?i)template","");
+        cont = cont.replaceAll("(?i)textarea","");
+        cont = cont.replaceAll("(?i)tfoot","");
+        cont = cont.replaceAll("(?i)time","");
+        cont = cont.replaceAll("(?i)track","");
+        cont = cont.replaceAll("(?i)var","");
+        cont = cont.replaceAll("(?i)video","");
+        cont = cont.replaceAll("(?i)video2","");
+        cont = cont.replaceAll("(?i)wbr","");
+        cont = cont.replaceAll("(?i)xmp","");
+        cont = cont.replaceAll("(?i)xss","");
+        cont = cont.replaceAll("(?i)script","");
 
         return cont;
     }
@@ -423,6 +552,131 @@ public class CommonStringUtil {
 				"onmouseleave",
 				"javascript",
 				"script",
+				"xss",
+				"onanimation",
+				"a2",
+				"abbr",
+				"acronym",
+				"address",
+				"animate",
+				"animatemotion",
+				"animatetransform",
+				"applet",
+				"area",
+				"article",
+				"aside",
+				"audio",
+				"audio2",
+				"bdi",
+				"bdo",
+				"big",
+				"blink",
+				"blockquote",
+				"button",
+				"canvas",
+				"caption",
+				"cite",
+				"code",
+				"col",
+				"colgroup",
+				"command",
+				"content",
+				"custom tags",
+				"data",
+				"datalist",
+				"dd",
+				"del",
+				"details",
+				"dfn",
+				"dialog",
+				"dir",
+				//"div",
+				"dl",
+				"dt",
+				"element",
+				"fieldset",
+				"figcaption",
+				"figure",
+				"footer",
+				"form",
+				"frameset",
+				"h1",
+				"head",
+				"header",
+				"hgroup",
+				"hr",
+				"html",
+				//"i",
+				"iframe2",
+				"image",
+				"image2",
+				"image3",
+				"img2",
+				"input",
+				"input2",
+				"input3",
+				"input4",
+				"ins",
+				"kbd",
+				"keygen",
+				"label",
+				"legend",
+				"listing",
+				"main",
+				"map",
+				"mark",
+				"marquee",
+				"menu",
+				"menuitem",
+				"meta",
+				"meter",
+				"multicol",
+				"nav",
+				"nextid",
+				"nobr",
+				"noembed",
+				"noframes",
+				"noscript",
+				"object",
+				"optgroup",
+				"option",
+				"output",
+				"param",
+				"picture",
+				"plaintext",
+				"pre",
+				"progress",
+				//"q",
+				"rb",
+				"rp",
+				"rt",
+				"rtc",
+				"ruby",
+				"samp",
+				"script",
+				"section",
+				"select",
+				"set",
+				"shadow",
+				"slot",
+				"small",
+				"source",
+				"spacer",
+				"strike",
+				"sub",
+				"summary",
+				"sup",
+				"svg",
+				"template",
+				"textarea",
+				"tfoot",
+				"time",
+				"track",
+				"var",
+				"video",
+				"video2",
+				"wbr",
+				"xmp"
 		};
 		
 		StringBuffer sb = null;
