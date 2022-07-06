@@ -126,7 +126,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen’s headquarters, Bundang Precision Medicine Center, Psomagen (Macrogen USA) and Macrogen APAC have been awarded the CAP accreditation for clinical diagnostic sequencing using NGS technology.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CAP 인증.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-3.png" alt="CAP Accreditation"></div>
@@ -164,7 +164,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">The molecular genetic testing services provided by Macrogen Headquarters maintain A-grade certification (P-grade when including items not covered by health insurance). By providing customers with reliable results, Macrogen contributes to national health and progress in the national bioscience fields.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사정확도인증서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-5.png" alt="Genetic Testing Accuracy Evaluation Certification"></div>
@@ -225,7 +225,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                 </div>
                 <div class="box box-full box-full-sm">
                     <div class="left">
-                        <div class="desc">To provide quality services that inspire customer confidence, Macrogen is a member of the CSP (Certified Service Provider) program alongside Illumina, Pacific Biosciences, Life Technologies, Thermo Fisher Scientific, and Agilent Technology. Through its in-house service quality management system and participation in the CSP program, Macrogen complies with the service quality standards established by genetic analysis platform suppliers. This allows Macrogen to not only supply high-quality services, but also to work with genetic analysis platform suppliers in joint marketing and support programs to provide customers with added benefits.</div>
+                        <div class="desc">To provide quality services that inspire customer confidence, Macrogen is a member of the CSP (Certified Service Provider) program alongside Illumina, Pacific Biosciences, Life Technologies, Thermo Fisher Scientific, Agilent Technology, and 10x Genomics. Through its in-house service quality management system and participation in the CSP program, Macrogen complies with the service quality standards established by genetic analysis platform suppliers. This allows Macrogen to not only supply high-quality services, but also to work with genetic analysis platform suppliers in joint marketing and support programs to provide customers with added benefits.</div>
                         <div class="img-wrap">
                             <div class="img">
                                 <span class="tit">Illumina</span>
@@ -251,6 +251,11 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                                 <span class="tit">Thermo Fisher Scientific</span>
                                 <img src="/publishing/pc-en/dist/img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
                                 <a class="btn btn-sm btn-white" href="/pdf/CSP_Certificate_ThermoFisher.pdf" target="_blank">Download</a>
+                            </div>
+                            <div class="img">
+                                <span class="tit">10x Genomics</span>
+                                <img src="/publishing/pc-en/dist/img/macrogen/img-authorization-16.png" alt="10x Genomics">
+                                <a class="btn btn-sm btn-white" href="/pdf/CSP_Certificate_10xGenomics.pdf" target="_blank">Download</a>
                             </div>
                         </div>
                     </div>

@@ -138,7 +138,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CAP 인증.pdf" target="_blank">CAP 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">CAP 인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -176,7 +176,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사정확도인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -234,7 +234,7 @@
                 </div>
                 <div class="box">
                     <div class="title-box">
-                        <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina, Pacific Biosciences,Life Technologies, Thermo Fisher Scientific, Agilent Technology 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램(CSP, Certified Service Provider)에 참여합니다. 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다. 고품질의 서비스를 제공하고, 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다.</div>
+                        <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina, Pacific Biosciences,Life Technologies, Thermo Fisher Scientific, Agilent Technology, 10x Genomics 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램(CSP, Certified Service Provider)에 참여합니다. 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다. 고품질의 서비스를 제공하고, 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다.</div>
                         <div class="img-wrap">
                             <div class="img">
                                 <span class="tit">Illumina</span>
@@ -260,6 +260,11 @@
                                 <span class="tit">Thermo Fisher Scientific</span>
                                 <img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-12.png" alt="Thermo Fisher Scientific">
                                 <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_ThermoFisher.pdf" target="_blank">인증서 보기</a>
+                            </div>
+                            <div class="img">
+                                <span class="tit">10x Genomics</span>
+                                <img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-16.png" alt="10x Genomics">
+                                <a class="btn btn-light btn-round" href="/pdf/CSP_Certificate_10xGenomics.pdf" target="_blank">인증서 보기</a>
                             </div>
                         </div>
                     </div>
