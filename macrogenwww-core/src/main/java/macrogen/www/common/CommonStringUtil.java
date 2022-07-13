@@ -343,7 +343,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)dir","");
         //cont = cont.replaceAll("(?i)div","");
         cont = cont.replaceAll("(?i)dl","");
-        cont = cont.replaceAll("(?i)dt","");
+        //cont = cont.replaceAll("(?i)dt","");
         cont = cont.replaceAll("(?i)element","");
         cont = cont.replaceAll("(?i)fieldset","");
         cont = cont.replaceAll("(?i)figcaption","");
@@ -592,7 +592,7 @@ public class CommonStringUtil {
 				"dir",
 				//"div",
 				"dl",
-				"dt",
+				//"dt",
 				"element",
 				"fieldset",
 				"figcaption",
