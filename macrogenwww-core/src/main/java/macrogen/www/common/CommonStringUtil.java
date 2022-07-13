@@ -428,9 +428,10 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)video2","");
         cont = cont.replaceAll("(?i)wbr","");
         cont = cont.replaceAll("(?i)xmp","");
+        */
         cont = cont.replaceAll("(?i)xss","");
         cont = cont.replaceAll("(?i)script","");
-	*/
+	
         return cont;
     }
 	
@@ -605,7 +606,7 @@ public class CommonStringUtil {
 				"head",
 				"header",
 				"hgroup",
-				"hr",
+				//"hr",
 				"html",
 				//"i",
 				"iframe2",
