@@ -304,7 +304,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onreadystatechange","");
         cont = cont.replaceAll("(?i)onmouseleave","");
         cont = cont.replaceAll("(?i)onanimation","");
-        /*
+        
         cont = cont.replaceAll("(?i)a2","");
         cont = cont.replaceAll("(?i)abbr","");
         cont = cont.replaceAll("(?i)acronym","");
@@ -331,7 +331,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)col","");
         cont = cont.replaceAll("(?i)colgroup","");
         cont = cont.replaceAll("(?i)command","");
-        cont = cont.replaceAll("(?i)content","");
+        //cont = cont.replaceAll("(?i)content","");
         cont = cont.replaceAll("(?i)custom tags","");
         //cont = cont.replaceAll("(?i)data","");
         cont = cont.replaceAll("(?i)datalist","");
@@ -355,7 +355,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)head","");
         cont = cont.replaceAll("(?i)header","");
         cont = cont.replaceAll("(?i)hgroup","");
-        cont = cont.replaceAll("(?i)hr","");
+        //cont = cont.replaceAll("(?i)hr","");
         cont = cont.replaceAll("(?i)html","");
         //cont = cont.replaceAll("(?i)i","");
         cont = cont.replaceAll("(?i)iframe2","");
@@ -428,7 +428,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)video2","");
         cont = cont.replaceAll("(?i)wbr","");
         cont = cont.replaceAll("(?i)xmp","");
-        */
+        
         cont = cont.replaceAll("(?i)xss","");
         cont = cont.replaceAll("(?i)script","");
 	
@@ -582,7 +582,7 @@ public class CommonStringUtil {
 				"col",
 				"colgroup",
 				"command",
-				"content",
+				//"content",
 				"custom tags",
 				//"data",
 				"datalist",
