@@ -333,7 +333,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)command","");
         cont = cont.replaceAll("(?i)content","");
         cont = cont.replaceAll("(?i)custom tags","");
-        cont = cont.replaceAll("(?i)data","");
+        //cont = cont.replaceAll("(?i)data","");
         cont = cont.replaceAll("(?i)datalist","");
         cont = cont.replaceAll("(?i)dd","");
         cont = cont.replaceAll("(?i)del","");
