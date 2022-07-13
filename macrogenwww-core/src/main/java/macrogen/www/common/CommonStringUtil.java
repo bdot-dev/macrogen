@@ -304,7 +304,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onreadystatechange","");
         cont = cont.replaceAll("(?i)onmouseleave","");
         cont = cont.replaceAll("(?i)onanimation","");
-
+        /*
         cont = cont.replaceAll("(?i)a2","");
         cont = cont.replaceAll("(?i)abbr","");
         cont = cont.replaceAll("(?i)acronym","");
@@ -335,7 +335,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)custom tags","");
         //cont = cont.replaceAll("(?i)data","");
         cont = cont.replaceAll("(?i)datalist","");
-        cont = cont.replaceAll("(?i)dd","");
+        //cont = cont.replaceAll("(?i)dd","");
         cont = cont.replaceAll("(?i)del","");
         cont = cont.replaceAll("(?i)details","");
         cont = cont.replaceAll("(?i)dfn","");
@@ -430,7 +430,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)xmp","");
         cont = cont.replaceAll("(?i)xss","");
         cont = cont.replaceAll("(?i)script","");
-
+	*/
         return cont;
     }
 	
@@ -445,6 +445,7 @@ public class CommonStringUtil {
 			str = str.replaceAll("&", "&amp;"); 
 			str = str.replaceAll("<", "&lt;"); 
 			str = str.replaceAll(">", "&gt;"); 
+			str = str.replaceAll("·", "&middot;"); 
 		}else{ 
 			str = ""; 
 		} 
@@ -584,7 +585,7 @@ public class CommonStringUtil {
 				"custom tags",
 				//"data",
 				"datalist",
-				"dd",
+				//"dd",
 				"del",
 				"details",
 				"dfn",
