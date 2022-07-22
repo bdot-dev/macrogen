@@ -304,7 +304,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onreadystatechange","");
         cont = cont.replaceAll("(?i)onmouseleave","");
         cont = cont.replaceAll("(?i)onanimation","");
-
+        
         cont = cont.replaceAll("(?i)a2","");
         cont = cont.replaceAll("(?i)abbr","");
         cont = cont.replaceAll("(?i)acronym","");
@@ -331,11 +331,11 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)col","");
         cont = cont.replaceAll("(?i)colgroup","");
         cont = cont.replaceAll("(?i)command","");
-        cont = cont.replaceAll("(?i)content","");
+        //cont = cont.replaceAll("(?i)content","");
         cont = cont.replaceAll("(?i)custom tags","");
-        cont = cont.replaceAll("(?i)data","");
+        //cont = cont.replaceAll("(?i)data","");
         cont = cont.replaceAll("(?i)datalist","");
-        cont = cont.replaceAll("(?i)dd","");
+        //cont = cont.replaceAll("(?i)dd","");
         cont = cont.replaceAll("(?i)del","");
         cont = cont.replaceAll("(?i)details","");
         cont = cont.replaceAll("(?i)dfn","");
@@ -343,7 +343,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)dir","");
         //cont = cont.replaceAll("(?i)div","");
         cont = cont.replaceAll("(?i)dl","");
-        cont = cont.replaceAll("(?i)dt","");
+        //cont = cont.replaceAll("(?i)dt","");
         cont = cont.replaceAll("(?i)element","");
         cont = cont.replaceAll("(?i)fieldset","");
         cont = cont.replaceAll("(?i)figcaption","");
@@ -355,7 +355,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)head","");
         cont = cont.replaceAll("(?i)header","");
         cont = cont.replaceAll("(?i)hgroup","");
-        cont = cont.replaceAll("(?i)hr","");
+        //cont = cont.replaceAll("(?i)hr","");
         cont = cont.replaceAll("(?i)html","");
         //cont = cont.replaceAll("(?i)i","");
         cont = cont.replaceAll("(?i)iframe2","");
@@ -428,9 +428,10 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)video2","");
         cont = cont.replaceAll("(?i)wbr","");
         cont = cont.replaceAll("(?i)xmp","");
+        
         cont = cont.replaceAll("(?i)xss","");
         cont = cont.replaceAll("(?i)script","");
-
+	
         return cont;
     }
 	
@@ -445,6 +446,7 @@ public class CommonStringUtil {
 			str = str.replaceAll("&", "&amp;"); 
 			str = str.replaceAll("<", "&lt;"); 
 			str = str.replaceAll(">", "&gt;"); 
+			str = str.replaceAll("·", "&middot;"); 
 		}else{ 
 			str = ""; 
 		} 
@@ -580,11 +582,11 @@ public class CommonStringUtil {
 				"col",
 				"colgroup",
 				"command",
-				"content",
+				//"content",
 				"custom tags",
-				"data",
+				//"data",
 				"datalist",
-				"dd",
+				//"dd",
 				"del",
 				"details",
 				"dfn",
@@ -592,7 +594,7 @@ public class CommonStringUtil {
 				"dir",
 				//"div",
 				"dl",
-				"dt",
+				//"dt",
 				"element",
 				"fieldset",
 				"figcaption",
@@ -604,7 +606,7 @@ public class CommonStringUtil {
 				"head",
 				"header",
 				"hgroup",
-				"hr",
+				//"hr",
 				"html",
 				//"i",
 				"iframe2",

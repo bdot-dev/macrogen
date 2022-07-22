@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.SocialContentsMapper">
+  <sql id="list_where">
+    <if test="langCode != null and langCode != ''">
+      and tsc.lang_code = #{langCode}
+    </if>
+    <if test="searchKeyword != null and searchKeyword != ''">
+    	and tsc.cntnts_sj like concat('%', #{searchKeyword}, '%')
+    </if>
+    <if test="searchCntntsCtgryCode != null and searchCntntsCtgryCode != ''">
+    	and tsc.cntnts_ctgry_code = #{searchCntntsCtgryCode}
+    </if>
+    <if test="searchBeginDt != null">
+		AND tsc.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+	</if>
+	<if test="searchEndDt != null">
+		AND tsc.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+	</if>
+  </sql>
+
+  <select id="count" parameterType="cntntsVo" resultType="int">
+    select count(*)
+    from tb_social_contents tsc
+    where 1 = 1
+    <include refid="list_where" />
+  </select>
+
+  <select id="list" parameterType="cntntsVo" resultType="cntntsVo">
+    <include refid="paging.countTop" />
+	select
+		tsc.cntnts_sn
+		, tsc.lang_code
+		, tsc.cntnts_ctgry_code
+		, ( select code_nm from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm_en
+		, tsc.image_atch_id
+		, ( select physicl_flpth from tb_atch where atch_id = tsc.image_atch_id ) image_flpth
+		, tsc.cntnts_sj
+		, tsc.sort_ordr
+		, tsc.regist_dt
+		, tsc.register_sn
+		, ( select user_nm from tb_user where user_sn = tsc.register_sn ) register_nm
+		, tsc.updt_dt
+		, tsc.updusr_sn
+		, tsc.post_dt
+		, ( select user_nm from tb_user where user_sn = tsc.updusr_sn ) updusr_nm
+	from tb_social_contents tsc
+	where 1 = 1
+    <include refid="list_where" />
+    <choose>
+      <when test='orderBy == "regist_dt_desc"'>
+        order by tsc.regist_dt desc, tsc.cntnts_sn desc
+      </when>
+      <otherwise>
+        order by tsc.cntnts_sn desc
+      </otherwise>
+    </choose>
+    <include refid="paging.countBottom" />
+  </select>
+
+  <select id="view" parameterType="cntntsVo" resultType="cntntsVo">
+    select
+		tsc.cntnts_sn
+		, tsc.lang_code
+		, tsc.cntnts_ctgry_code
+		, ( select code_nm from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'CNTNTS_CTGRY_CODE' and code = tsc.cntnts_ctgry_code ) cntnts_ctgry_code_nm_en
+		, tsc.image_atch_id
+		, ( select physicl_flpth from tb_atch where atch_id = tsc.image_atch_id ) image_flpth
+		, ( select logic_nm from tb_atch where atch_id = tsc.image_atch_id ) logic_nm
+		, tsc.cntnts_sj
+		, tsc.sort_ordr
+		, tsc.regist_dt
+		, tsc.register_sn
+			, ( select user_nm from tb_user where user_sn = tsc.register_sn ) register_nm
+		, tsc.updt_dt
+		, tsc.updusr_sn
+		, tsc.post_dt
+		, ( select user_nm from tb_user where user_sn = tsc.updusr_sn ) updusr_nm
+    from tb_social_contents tsc
+    where tsc.cntnts_sn = #{cntntsSn}
+  </select>
+
+  <select id="seq" resultType="long">
+    select fn_nextval('sq_cntnts')
+  </select>
+
+  <insert id="insert" parameterType="cntntsVo">
+    insert into tb_social_contents (
+      cntnts_sn
+      , lang_code
+      , cntnts_ctgry_code
+      , image_atch_id
+      , cntnts_sj
+      , sort_ordr
+      , regist_dt
+      , register_sn
+      , updt_dt
+      , updusr_sn
+      , post_dt
+    ) values (
+      #{cntntsSn}
+      , #{langCode}
+      , #{cntntsCtgryCode}
+      , #{imageAtchId}
+      , #{cntntsSj}
+      , #{sortOrdr}
+      , now()
+      , #{registerSn}
+      , now()
+      , #{updusrSn}
+      , #{postDt}
+    )
+  </insert>
+
+  <delete id="delete" parameterType="cntntsVo">
+    delete from tb_social_contents where cntnts_sn = #{cntntsSn}
+  </delete>
+
+  <update id="update" parameterType="cntntsVo">
+    update tb_social_contents
+    set
+        updt_dt = now()
+        , updusr_sn = #{updusrSn}
+      <if test="langCode != null">, lang_code = #{langCode} </if>
+      <if test="cntntsCtgryCode != null">, cntnts_ctgry_code = #{cntntsCtgryCode} </if>
+      <if test="imageAtchId != null">, image_atch_id = #{imageAtchId} </if>
+      <if test="cntntsSj != null">, cntnts_sj = #{cntntsSj} </if>
+      <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
+      <if test="postDt != null">, post_dt = #{postDt} </if>
+    where cntnts_sn = #{cntntsSn}
+  </update>
+
+</mapper>
