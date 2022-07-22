@@ -536,6 +536,24 @@ create table tb_relate_prduct (
 )
 comment '관련제품';
 
+
+--사회공헌 컨텐츠
+CREATE TABLE tb_social_contents (
+  `cntnts_sn` bigint NOT NULL COMMENT '컨텐츠_순번',
+  `cntnts_ctgry_code` varchar(50) DEFAULT NULL COMMENT '컨텐츠_카테고리_코드',
+  `image_atch_id` varchar(50) DEFAULT NULL COMMENT '이미지_첨부_아이디',
+  `cntnts_sj` varchar(500) DEFAULT NULL COMMENT '컨텐츠_제목',
+  `sort_ordr` smallint DEFAULT NULL COMMENT '정렬_순서',
+  `regist_dt` datetime DEFAULT NULL COMMENT '등록_일시',
+  `register_sn` bigint DEFAULT NULL COMMENT '등록자_순번',
+  `updt_dt` datetime DEFAULT NULL COMMENT '수정_일시',
+  `updusr_sn` bigint DEFAULT NULL COMMENT '수정자_순번',
+  `lang_code` varchar(50) DEFAULT NULL COMMENT '언어_코드',
+  `post_dt` datetime DEFAULT NULL COMMENT '게시일',
+  PRIMARY KEY (`cntnts_sn`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='사회공헌컨텐츠';
+
+
 -- 관련제품
 alter table tb_relate_prduct
 	add constraint pk_tb_relate_prduct -- 관련제품 기본키
@@ -806,4 +824,4 @@ alter table tb_relate_prduct
 
 
 --메인소셜미디어링크
-ALTER TABLE macrogenwww.tb_main_somlnk ADD column post_dt datetime DEFAULT NULL; (게시일 컬럼 추가)
+ALTER TABLE tb_main_somlnk ADD column post_dt datetime DEFAULT NULL; (게시일 컬럼 추가)
