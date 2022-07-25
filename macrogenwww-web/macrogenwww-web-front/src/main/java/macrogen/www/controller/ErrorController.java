@@ -16,8 +16,14 @@ public class ErrorController extends DefaultController {
 		Integer errorCode = Integer.parseInt(request.getAttribute("javax.servlet.error.status_code").toString());
 		
 		String langId= getLang();
+		String dev = getDev() ;
 		
-		mav.setViewName("errors/error_"+langId);
+		if(dev.equals("pc") || dev=="pc") {
+			mav.setViewName("errors/error_"+langId);
+		}else {
+			mav.setViewName("errors/error_mo_"+langId);
+		}
+		
 
 		return mav;
 	}
