@@ -261,7 +261,7 @@ footer address { font-size: 11px; font-weight: normal; color: #e2e2e2; }
 #container .lnb > ul ul li a.active { margin-left: 0; color: #e64e47; font-weight: 500; border-left: 0; background: none; }
 #container .lnb > ul ul li a:before { display: inline-block; width: 15px; margin-top: -1px; margin-left: 10px; content: '↳'; vertical-align: top; }
 #container .lnb > ul ul li:last-child a { padding-bottom: 15px; border-bottom: 0; }
-#container .contents { width: 100%; min-height: 985px; padding-bottom: 137px; border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; background-color: #fff; }
+#container .contents { width: 100%; min-height: 1130px; padding-bottom: 137px; border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; background-color: #fff; }
 #container .title_wrap { margin-bottom: 20px; }
 #container .title_h2_wrap { position: relative; height: 61px; padding: 19px 0 18px 30px; border-bottom: 1px solid #d9d9d9; }
 #container .title_h2_wrap h2 { font-size: 22px; line-height: 20px; color: #000; font-weight: 500; }
