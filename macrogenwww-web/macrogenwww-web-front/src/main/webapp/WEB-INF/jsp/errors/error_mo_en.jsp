@@ -99,7 +99,7 @@
         color: #707070;
     }
     .mail{
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
