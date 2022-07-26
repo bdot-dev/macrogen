@@ -60,23 +60,34 @@
     <script src="/publishing/pc-en/dist/js/common.js?0917"></script>
 <body>
 <style>
-    .title{
-        font-family: Noto Sans KR;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: -0.75px;
-        text-align: center;
+	.wrap{display:none;}
+	.main-title{
+		margin: 60px 0 20px 0;
+		font-family: Noto Sans KR;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: -0.75px;
+		text-align: center;		
+	}
+    .title{    
+    	margin-bottom: 10px;   
+		font-family: Noto Sans KR;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: -0.75px;
+		text-align: center;
+		color: #707070;
     }
     .desc{
         font-family: Noto Sans KR;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: -0.75px;
-        text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: -0.75px;
+		text-align: center;
+		color: #454545;
     }
     .mail{
         font-family: Proxima Nova;
@@ -97,7 +108,7 @@
     .img.error{margin-top: 180px; text-align: center;}
 
 </style>
-<div class="wrap">
+<div class="server_wrap">
     <!--10.05 이미지 경로 변경-->
     <div class="img logo">
         <img src="/publishing/pc-en/dist/img/error/logo.png" alt="로고">
@@ -106,11 +117,12 @@
     <div class="img error">
         <img src="/publishing/pc-en/dist/img/error/error.png" alt="에러이미지">
     </div>
+    <p class="main-title">Under Maintenance</p>
     <p class="title">
-        Access to the Macrogen site is being delayed now.<br>
-        Try again in a little while.
+        Our website is currently under maintenance.<br>
+		We apologize for any inconveniences and appreciate your patience.
     </p>
-    <p class="desc">※ If access is delayed for a long time, please contact the manager's email.</p>
+    <p class="desc">※ Any questions, please contact us at</p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
 </body>

@@ -8,9 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="Referrer" content="origin"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="apple-mobile-web-app-title" content="macrogen" />
-    <meta name="viewport" content="width=1244"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
     <!-- IE 10 이하 -->
     <link rel="shortcut icon" href="/publishing/pc-ko/dist/favicon/favicon.ico">
     <!-- Android -->
@@ -60,30 +59,50 @@
     <script src="/publishing/pc-ko/dist/js/common.js?0917"></script>
 <body>
 <style>
-    .title{
-        font-family: Noto Sans KR;
-        font-size: 26px;
+	.wrap{
+		width: 100%;
+	    height: 100%;
+	    position: relative;
+	    align-items: center;
+	    display: flex;
+	    overflow: hidden;
+	    flex-flow: column wrap;
+	}
+	.main-title{
+		margin: 3% 0 1% 0;
+		font-family: Noto Sans KR;
+        font-size: 22px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 38px;
+        letter-spacing: -0.75px;
+        text-align: center;
+	}
+    .title{
+        font-family: Noto Sans KR;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
         letter-spacing: -0.75px;
         text-align: center;
     }
     .desc{
         font-family: Noto Sans KR;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 26px;
         letter-spacing: -0.75px;
         text-align: center;
+        color: #707070;
     }
     .mail{
         font-family: Proxima Nova;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 26px;
         letter-spacing: 0em;
         text-decoration: none;
         text-align: center;
@@ -93,8 +112,9 @@
     .mail:hover{
         color: #454545;
     }
-    .img.logo{margin-top: 50px; text-align: center;}
-    .img.error{margin-top: 180px; text-align: center;}
+    .img.logo{margin-top: 10%; text-align: center;}
+    .img.error{display: flex; justify-content: center; align-items: center; margin-top: 7%; height: 153px; text-align: center;}
+    .img.error img{width:92px;}
 
 </style>
 <div class="wrap">
@@ -104,11 +124,12 @@
     <div class="img error">
         <img src="/publishing/pc-ko/dist/img/error/error.png" alt="에러이미지">
     </div>
-    <p class="title">
-        현재 마크로젠 사이트 접속이 원활하지 않습니다<br>
-        잠시 후에 다시 시도해주세요
+    <p class="main-title">사이트 접속 지연</p>
+	<p class="title">
+        현재 마크로젠 사이트 접속이 원활하지 않습니다.<br>
+        잠시 후에 다시 시도해주세요.
     </p>
-    <p class="desc">장시간 접속이 지연되는 경우 관리자 메일로 연락주시기 바랍니다.</p>
+    <p class="desc">※ 장시간 접속이 지연되는 경우<br>관리자 메일로 연락주시기 바랍니다.</p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
 </body>
