@@ -90,7 +90,7 @@
         color: #707070;
     }
     .desc{
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -101,7 +101,7 @@
     }
     .mail{
    		margin-bottom: 170px;
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
