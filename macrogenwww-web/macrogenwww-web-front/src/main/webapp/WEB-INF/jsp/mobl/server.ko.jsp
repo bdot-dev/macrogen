@@ -101,7 +101,7 @@
     }
     .mail{
    		margin-bottom: 170px;
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
