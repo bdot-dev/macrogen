@@ -32,9 +32,9 @@ public class BusinessController extends DefaultController {
 		return getDev() + "/business/research/ces." + getLang();
 	}
 
-	@RequestMapping("/research/gene-sythesis")
-	public String researchGeneSythesis(@PathVariable LangId langId) throws Exception {
-		return getDev() + "/business/research/gene-sythesis." + getLang();
+	@RequestMapping("/research/gene-synthesis")
+	public String researchGeneSynthesis(@PathVariable LangId langId) throws Exception {
+		return getDev() + "/business/research/gene-synthesis." + getLang();
 	}
 
 	@RequestMapping("/research/oligo")
