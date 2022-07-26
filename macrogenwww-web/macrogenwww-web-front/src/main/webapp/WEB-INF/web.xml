@@ -109,19 +109,19 @@
 
 	<error-page>
 		<error-code>403</error-code>
-		<location>/error.jsp</location>
+		<location>/errors</location>
 	</error-page>
 	<error-page>
 		<error-code>404</error-code>
-		<location>/error.jsp</location>
+		<location>/errors</location>
 	</error-page>
 	<error-page>
 		<error-code>500</error-code>
-		<location>/error.jsp</location>
+		<location>/errors</location>
 	</error-page>
 	<error-page>
 		<error-code>501</error-code>
-		<location>/error.jsp</location>
+		<location>/errors</location>
 	</error-page>
 	<!-- this is for jndi datasource -->
 	<resource-ref>

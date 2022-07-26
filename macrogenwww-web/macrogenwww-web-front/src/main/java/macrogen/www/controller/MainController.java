@@ -89,7 +89,7 @@ public class MainController extends DefaultController {
 			int popupCnt = popupList.size();
 			model.addAttribute("popupCnt", popupCnt);
 		}
-
+		//return getDev() + "/server." + getLang();
 		return getDev() + "/main/main." + getLang();
 	}
 
