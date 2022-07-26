@@ -60,6 +60,7 @@
     <script src="/publishing/pc-en/dist/js/common.js?0917"></script>
 <body>
 <style>
+	.wrap{display:none;}
 	.main-title{
 		margin: 60px 0 20px 0;
 		font-family: Noto Sans KR;
@@ -107,7 +108,7 @@
     .img.error{margin-top: 180px; text-align: center;}
 
 </style>
-<div class="wrap">
+<div class="server_wrap">
     <!--10.05 이미지 경로 변경-->
     <div class="img logo">
         <img src="/publishing/pc-en/dist/img/error/logo.png" alt="로고">
