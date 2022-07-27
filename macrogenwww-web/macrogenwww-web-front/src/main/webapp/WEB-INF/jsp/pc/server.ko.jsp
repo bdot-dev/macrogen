@@ -60,26 +60,37 @@
     <script src="/publishing/pc-ko/dist/js/common.js?0917"></script>
 <body>
 <style>
-    .title{
-        font-family: Noto Sans KR;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: -0.75px;
-        text-align: center;
+	.wrap{display:none;}
+	.main-title{
+		margin: 60px 0 20px 0;
+		font-family: Noto Sans KR;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: -0.75px;
+		text-align: center;		
+	}
+    .title{    
+    	margin-bottom: 10px;   
+		font-family: Noto Sans KR;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: -0.75px;
+		text-align: center;
+		color: #707070;
     }
     .desc{
         font-family: Noto Sans KR;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: -0.75px;
-        text-align: center;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: -0.75px;
+		text-align: center;
+		color: #454545;
     }
     .mail{
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -97,18 +108,19 @@
     .img.error{margin-top: 180px; text-align: center;}
 
 </style>
-<div class="wrap">
+<div class="server_wrap">
     <div class="img logo">
         <img src="/publishing/pc-ko/dist/img/error/logo.png" alt="로고">
     </div>
     <div class="img error">
         <img src="/publishing/pc-ko/dist/img/error/error.png" alt="에러이미지">
     </div>
+    <p class="main-title">서버 점검중입니다.</p>
     <p class="title">
-        현재 마크로젠 사이트 접속이 원활하지 않습니다<br>
-        잠시 후에 다시 시도해주세요
+	        현재 서버작업으로 사이트 이용이 불가능합니다.<br>
+		 빠른 시간 내에 마칠 수 있도록 최선을 다하겠습니다.
     </p>
-    <p class="desc">장시간 접속이 지연되는 경우 관리자 메일로 연락주시기 바랍니다.</p>
+    <p class="desc">※ 문의사항이 있으신 경우, 관리자 메일로 연락주시기 바랍니다. </p>
     <a class="mail" href="mailto:webmaster@macrogen.com">webmaster@macrogen.com</a>
 </div>
 </body>
