@@ -94,7 +94,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 30px;
+        line-height: 18px;
         letter-spacing: 0em;
         text-decoration: none;
         text-align: center;
