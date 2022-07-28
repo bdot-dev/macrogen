@@ -105,7 +105,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: 26px;
+        line-height: 12px;
         letter-spacing: 0em;
         text-decoration: none;
         text-align: center;
