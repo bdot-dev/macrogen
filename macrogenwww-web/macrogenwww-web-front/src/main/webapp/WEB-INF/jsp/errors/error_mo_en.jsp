@@ -108,11 +108,9 @@
         text-decoration: none;
         text-align: center;
         display: block;
-        color: #454545;
+        color: #3366BB;
     }
-    .mail:hover{
-        color: #454545;
-    }
+  
     .img.logo{margin-top: 10%; text-align: center;}
     .img.error{display: flex; justify-content: center; align-items: center; margin-top: 7%; height: 153px; text-align: center;}
     .img.error img{width:92px;}
