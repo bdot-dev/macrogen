@@ -79,7 +79,7 @@
         text-align: center;
     }
     .mail{
-        font-family: Proxima Nova;
+        font-family: Noto Sans KR;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -88,11 +88,9 @@
         text-decoration: none;
         text-align: center;
         display: block;
-        color: #454545;
+        color: #3366BB;
     }
-    .mail:hover{
-        color: #454545;
-    }
+  
     .img.logo{margin-top: 50px; text-align: center;}
     .img.error{margin-top: 180px; text-align: center;}
 
