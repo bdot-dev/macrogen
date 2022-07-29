@@ -69,12 +69,12 @@
 	    flex-flow: column wrap;
 	}
 	.main-title{
-		margin: 10px 0 20px 0;
+		margin: 10px 0 24px 0;
 		font-family: Noto Sans KR;
         font-size: 22px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 38px;
         letter-spacing: -0.75px;
         text-align: center;
 	}
@@ -102,19 +102,17 @@
     .mail{
    		margin-bottom: 170px;
         font-family: Noto Sans KR;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0em;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: -0.5px;
         text-decoration: none;
         text-align: center;
         display: block;
-        color: #454545;
+        color: #3366BB;
     }
-    .mail:hover{
-        color: #454545;
-    }
+
     .img.logo{margin-top: 10%; text-align: center;}
     .img.error{display: flex; justify-content: center; align-items: center; margin-top: 7%; height: 153px; text-align: center;}
     .img.error img{width:92px;}
