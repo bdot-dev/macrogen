@@ -71,6 +71,7 @@
                 <li><a href="/${rc.locale.language }/business/research/oligo">Oligo</a></li>
                 <li><a href="/${rc.locale.language }/business/research/microarray">Microarray</a></li>
                 <li><a href="/${rc.locale.language }/business/research/model">GEM</a></li>
+                <li><a href="/${rc.locale.language }/business/research/reagent">Reagent &<br>LABware</a></li>
             </ul>
         </div>
         <div class="item">
