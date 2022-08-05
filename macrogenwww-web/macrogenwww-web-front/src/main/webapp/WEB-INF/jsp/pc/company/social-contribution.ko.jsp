@@ -10,7 +10,7 @@
         <div class="frame">
             <div class="hero-title">사회공헌</div>
             <div class="slogan ko">함께하는 미래를 위해<br/>사회적 책임을 실천합니다</div>
-            <div class= "slogan-sub">대한민국의 과학자를 응원하고 인류의 건강한 삶을 위해 후원합니다</div>
+            <div class= "slogan-sub">지구와 인류의 건강한 삶을 위해 노력합니다</div>
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -31,21 +31,141 @@
             <!-- s  문구 -->
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="text-lg">마크로젠은 대한민국의 미래를<br/>응원하고 지원합니다</div>
-                    <div class="desc">강한 책임감과 소명의식을 지닌 마크로젠은 앞으로 생명공학 분야의 연구자들을 위한 든든한 후원자이자<br/>
-                        국가 기술경쟁력 강화의 중심축 역할로서 맡은바 사회적 책임을 다할 것입니다&#46;</div>
+                    <div class="text-lg">마크로젠人은 지속가능한<br/> 지구를 생각합니다</div>
+                    <div class="desc">마크로젠 임직원은 생활 속 환경 보호, 사회적 책임 활동 등 자발적으로 ESG 캠페인에 참여하며  친환경적인 사내 문화를 조성하고 있습니다.<br/>
+					더 나은 세상을 만들어 나가기 위해 마크로젠 임직원은 적극적으로 ESG 활동을 실천하고 있습니다.</div>
                 </div>
             </div>
             <!-- e  문구 -->
-
+            
             <!-- s  하나 -->
-            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-1.png);">
+            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-3.png);">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-slogan color-white">하나&#46;</div>
-                    <div class="desc color-white">마크로젠이 후원하는<br/>과학자상</div>
+                    <div class="desc color-white">마크로젠 임직원이 실천하는<br/>ESG 활동</div>
                 </div>
             </div>
             <!-- e 하나 -->
+            
+            <div class="section-activity section-supporters">
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="title">ESG 서포터즈</div>
+                    <div class="desc">임직원들의 자발적 참여로 구성된 ESG 서포터즈는 지속가능한 지구를 위한 공동의 목표를 가지고 있으며 1년의 임기로 활동합니다.<br/>
+						환경 보호, 사회적 책임 활동 등 캠페인을 직접 기획하며 많은 임직원들이 ESG 활동에 동참 할 수 있도록 다양한 프로그램을 만들고 있습니다
+					</div>
+					<div class="slider">
+				        <div class="slider-navigation">
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+				        </div>
+				        <div class="swiper-container _supportSlider">
+				            <div class="swiper-wrapper">				
+								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+					                <div class="swiper-slide">
+					                    <a href="${result.somlnkUrl }" target="_blank">
+					                        <div class="img">
+					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
+					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+					                        </div>
+					                        <div class="content">${result.somlnkSj }
+					                        </div>
+					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+					                    </a>
+					                </div>
+								</c:forEach>				
+				            </div>
+				        </div>				        
+				    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">   
+                	<div class="title">마크로젠은 사회적 책임을 위해 <br/>다양한 파트너와 동행합니다</div>
+                    <div class="desc">마크로젠은 유전체 분석 분야의 인재 양성 및 유전체 분석 기술을 활용하여 사회적 책임을 다하려 합니다.<br/>
+						비영리기관, 지자체 및 대학 등 다양한 파트너와 협업하며 지속가능한 사회적 발전에 도움이 되도록 최선을 다하겠습니다.
+					</div>                 
+                </div>
+            </div>
+		    <script>
+		        new Swiper("._supportSlider", {
+		            slidesPerView: "auto",
+		            slidesPerGroup: 4,
+		            grabCursor: true,
+		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+		            /* loop : true, */
+		            navigation: {
+		                nextEl: "._btnNext",
+		                prevEl: "._btnPrev",
+		            },
+		        });		        		      
+		    </script>
+		    
+		     <!-- s  둘 -->
+            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-4.png);">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="font-slogan color-white">둘&#46;</div>
+                    <div class="desc color-white">마크로젠과<br/>함께하는 사회적 파트너</div>
+                </div>
+            </div>
+            <!-- e 둘 -->
+            
+            <div class="section-activity section-supporters">
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="title">지역 사회 프로그램</div>
+                    <div class="desc">마크로젠은 유전체 분야 전문기술인력 양성, 소외계층 유전자 검사 지원 및 인류의 건강한 삶을 위하여<br/>
+						다양한 분야의 공익 활동을 추진해 나가고 있습니다.
+					</div>
+					<div class="slider">
+				        <div class="slider-navigation">
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+				        </div>
+				        <div class="swiper-container _communitySlider">
+				            <div class="swiper-wrapper">				
+								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+					                <div class="swiper-slide">
+					                    <a href="${result.somlnkUrl }" target="_blank">
+					                        <div class="img">
+					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
+					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+					                        </div>
+					                        <div class="content">${result.somlnkSj }
+					                        </div>
+					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+					                    </a>
+					                </div>
+								</c:forEach>				
+				            </div>
+				        </div>				        
+				    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="2000">   
+                	<div class="title">마크로젠은 대한민국의 미래를<br/>응원하고 지원합니다</div>
+                    <div class="desc">강한 책임감과 소명의식을 지닌 마크로젠은 앞으로 생명공학 분야의 연구자들을 위한 든든한 후원자이자<br/>
+						국가 기술경쟁력 강화의 중심축 역할로서 맡은바 사회적 책임을 다할 것입니다.
+					</div>                 
+                </div>
+            </div>
+		    <script>
+		        new Swiper("._communitySlider", {
+		            slidesPerView: "auto",
+		            slidesPerGroup: 4,
+		            grabCursor: true,
+		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+		            /* loop : true, */
+		            navigation: {
+		                nextEl: "._btnNext",
+		                prevEl: "._btnPrev",
+		            },
+		        });		        		      
+		    </script>
+		    
+            <!-- s  셋 -->
+            <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-1.png);">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="font-slogan color-white">셋&#46;</div>
+                    <div class="desc color-white">마크로젠이 후원하는<br/>과학자상</div>
+                </div>
+            </div>
+            <!-- e 셋 -->
 
             <!-- s 과학자 상 -->
             <div class="section-reward">
@@ -253,14 +373,14 @@
             </div>
             <!-- e 과학자 상 -->
 
-            <!-- s 둘 -->
+            <!-- s 넷 -->
             <div class="section-banner" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-banner-2.png);">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-slogan color-white">둘&#46;</div>
+                    <div class="font-slogan color-white">넷&#46;</div>
                     <div class="desc color-white">마크로젠의 사회적<br/>후원활동</div>
                 </div>
             </div>
-            <!-- e 둘 -->
+            <!-- e 넷 -->
 
             <div class="section-activity">
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
