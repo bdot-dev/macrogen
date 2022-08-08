@@ -30,12 +30,14 @@ import macrogen.www.service.CmpnyhistService;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
 import macrogen.www.service.SetupService;
+import macrogen.www.service.SocialContentsService;
 import macrogen.www.service.WnpzService;
 import macrogen.www.vo.ApplFormVo;
 import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CmpnyhistGroupVo;
 import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.EmpaVo;
+import macrogen.www.vo.SocialContentsVo;
 import macrogen.www.vo.WnpzVo;
 import macrogen.www.vo.YearCmpnyhistVo;
 
@@ -79,7 +81,10 @@ public class CompanyController extends DefaultController {
 
 	@Autowired
 	private WnpzService wnpzService;
-
+	
+	@Autowired
+	private SocialContentsService socialContentsService;
+	
 	@Value("${globals.atch.private.path}")
 	private String atchPrivatePath;
 
@@ -185,7 +190,20 @@ public class CompanyController extends DefaultController {
 		// 마크로젠 젊은 생명정보 학자상 수상자 목록
 		List<WnpzVo> ybaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.yba.name());
 		model.addAttribute("ybaResultList", ybaResultList);
-
+		
+		SocialContentsVo socoVo = new SocialContentsVo();
+		socoVo.setLangCode(langId.name());
+		socoVo.setFirstIndex(0);
+		socoVo.setRecordCountPerPage(20);
+		socoVo.setMode("fo");
+		socoVo.setCntntsCtgryCode("ESG");
+		List<SocialContentsVo> esgList = socialContentsService.list(socoVo);
+		model.addAttribute("esgList", esgList);
+		
+		socoVo.setCntntsCtgryCode("COMMUNITY");
+		List<SocialContentsVo> communityList = socialContentsService.list(socoVo);
+		model.addAttribute("communityList", communityList);
+		
 		return getDev() + "/company/social-contribution." + getLang();
 	}
 

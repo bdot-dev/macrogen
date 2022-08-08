@@ -53,28 +53,25 @@
                     <div class="desc">임직원들의 자발적 참여로 구성된 ESG 서포터즈는 지속가능한 지구를 위한 공동의 목표를 가지고 있으며 1년의 임기로 활동합니다.<br/>
 						환경 보호, 사회적 책임 활동 등 캠페인을 직접 기획하며 많은 임직원들이 ESG 활동에 동참 할 수 있도록 다양한 프로그램을 만들고 있습니다
 					</div>
-					<div class="slider">
-				        <div class="slider-navigation">
-				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-				        </div>
+					<div class="slider">				        
 				        <div class="swiper-container _supportSlider">
 				            <div class="swiper-wrapper">				
-								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<c:forEach var="result" items="${ esgList }" varStatus="status">
 					                <div class="swiper-slide">
-					                    <a href="${result.somlnkUrl }" target="_blank">
-					                        <div class="img">
-					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-					                        </div>
-					                        <div class="content">${result.somlnkSj }
-					                        </div>
-					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-					                    </a>
+					                   <div class="img">
+					                       <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">
+					                   </div>
+					                   <div class="content">${result.cntntsSj }
+					                   </div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
-				        </div>				        
+				        </div>	
+				        <div class="slider-navigation">
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+				        </div>			        
 				    </div>
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">   
@@ -86,10 +83,11 @@
             </div>
 		    <script>
 		        new Swiper("._supportSlider", {
-		            slidesPerView: "auto",
+		            slidesPerView: "4",
 		            slidesPerGroup: 4,
 		            grabCursor: true,
-		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+		            spaceBetween: 20,
+		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(4개가 나와야 되는데 1개만 있다면 3개는 빈칸으로 채워서 4개를 만듦)
 		            /* loop : true, */
 		            navigation: {
 		                nextEl: "._btnNext",
@@ -113,28 +111,25 @@
                     <div class="desc">마크로젠은 유전체 분야 전문기술인력 양성, 소외계층 유전자 검사 지원 및 인류의 건강한 삶을 위하여<br/>
 						다양한 분야의 공익 활동을 추진해 나가고 있습니다.
 					</div>
-					<div class="slider">
-				        <div class="slider-navigation">
-				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-				        </div>
+					<div class="slider">				        
 				        <div class="swiper-container _communitySlider">
 				            <div class="swiper-wrapper">				
-								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<c:forEach var="result" items="${ communityList }" varStatus="status">
 					                <div class="swiper-slide">
-					                    <a href="${result.somlnkUrl }" target="_blank">
-					                        <div class="img">
-					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-					                        </div>
-					                        <div class="content">${result.somlnkSj }
-					                        </div>
-					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-					                    </a>
+					                   <div class="img">
+					                       <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">
+					                   </div>
+					                   <div class="content">${result.cntntsSj }
+					                   </div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
-				        </div>				        
+				        </div>		
+				        <div class="slider-navigation">
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+				            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+				        </div>				        		        
 				    </div>
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">   
@@ -146,10 +141,11 @@
             </div>
 		    <script>
 		        new Swiper("._communitySlider", {
-		            slidesPerView: "auto",
+		            slidesPerView: "4",
 		            slidesPerGroup: 4,
+		            spaceBetween: 20,
 		            grabCursor: true,
-		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+		            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(4개가 나와야 되는데 1개만 있다면 3개는 빈칸으로 채워서 4개를 만듦)
 		            /* loop : true, */
 		            navigation: {
 		                nextEl: "._btnNext",
