@@ -34,8 +34,7 @@
         <div class="frame">
             <div class="font-h4">사회공헌</div>
             <div class="font-slogan">함께하는 미래를 위해 사회적 책임을 실천합니다</div>
-            <div class="font-h7-r">대한민국의 과학자를 응원하고
-                인류의 건강한 삶을 위해 후원합니다</div>
+            <div class="font-h7-r">지구와 인류의 건강한 삶을 위해<br>노력합니다 </div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -47,15 +46,116 @@
             <!-- s  문구 -->
             <div class="section-description">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">마크로젠은 대한민국의 미래를 응원하고 지원합니다</div>
-                    <div class="font-body-h">강한 책임감과 소명의식을 지닌 마크로젠은 앞으로 생명공학 분야의 연구자들을 위한 든든한 후원자이자 국가 기술경쟁력 강화의 중심축 역할로서 맡은바 사회적 책임을 다할 것입니다.</div>
+                    <div class="font-h3">마크로젠人은 지속가능한 지구를 생각합니다</div>
+                    <div class="font-body-h">마크로젠 임직원은 생활 속 환경 보호, 사회적 책임 활동 등 자발적으로 ESG 캠페인에 참여하며 친환경적인 사내 문화를 조성하고 있습니다. 더 나은 세상을 만들어 나가기 위해 마크로젠 임직원은 적극적으로 ESG 활동을 실천하고 있습니다.</div>
                 </div>
             </div>
             <!-- e  문구 -->
-
-            <!-- s  하나 -->
-            <div class="section-heading" data-aos="fade-up" data-aos-duration="2000" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-ethical-banner-1.png);"></div>
+            
+            
+			<!-- s  하나 -->
+            <div class="section-heading" data-aos="fade-up" data-aos-duration="2000" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-ethical-banner-3.png);"></div>
             <!-- e 하나 -->
+            
+             <div class="esgtitle" data-aos="fade-up" data-aos-duration="2000">
+                <div class="list-header">
+                    <div class="font-h3">ESG 서포터즈</div>
+                </div>
+                <div class="list-body">
+                    <div class="desc">임직원들의 자발적 참여로 구성된 ESG 서포터즈는 지속가능한 지구를 위한 공동의 목표를 가지고 있으며 1년의 임기로 활동합니다. 환경 보호, 사회적 책임 활동 등 캠페인을 직접 기획하며 많은 임직원들이 ESG 활동에 동참 할 수 있도록 다양한 프로그램을 만들고 있습니다.</div>
+            	</div>            	         
+             </div>           
+             <div class="esgslide" data-aos="fade-up" data-aos-duration="2000">
+                <div class="slider">
+                    <div class="swiper-container _supporterSlider">
+                        <div class="swiper-wrapper">
+							<c:forEach var="result" items="${ esgList }" varStatus="status">
+	                             <div class="swiper-slide item">	                              
+                                     <div class="img">
+                                         <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">	                                        
+                                     </div>
+                                     <div class="content">${result.cntntsSj }</div>
+                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>	                               
+	                             </div>
+							</c:forEach>
+						</div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <script>
+                    new Swiper("._supporterSlider", {
+                        slidesPerView: "auto",
+                        observer: true,
+                        observeParents: true,
+                        scrollbar: {
+                            el: ".swiper-scrollbar",
+                        }
+                    });
+                </script>
+           	</div>  
+           	
+           	<div class="esgsubtitle" data-aos="fade-up" data-aos-duration="2000">
+                <div class="list-header">
+                    <div class="font-h3">마크로젠은 사회적 책임을 위해 다양한 파트너와 동행합니다</div>
+                </div>
+                <div class="list-body">
+                    <div class="desc">마크로젠은 유전체 분석 분야의 인재 양성 및 유전체 분석 기술을 활용하여 사회적 책임을 다하려 합니다. 비영리기관, 지자체 및 대학 등 다양한 파트너와 협업하며 지속가능한 사회적 발전에 도움이 되도록 최선을 다하겠습니다.</div>
+            	</div>            	         
+             </div>  
+            
+            <!-- s  둘 -->
+            <div class="section-heading" data-aos="fade-up" data-aos-duration="2000" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-ethical-banner-4.png);"></div>
+            <!-- e 둘 -->
+            
+            <div class="esgtitle" data-aos="fade-up" data-aos-duration="2000">
+                <div class="list-header">
+                    <div class="font-h3">지역 사회 프로그램</div>
+                </div>
+                <div class="list-body">
+                    <div class="desc">마크로젠은 유전체 분야 전문기술인력 양성, 소외계층 유전자 검사 지원 및 인류의 건강한 삶을 위하여 다양한 분야의 공익 활동을 추진해 나가고 있습니다.</div>
+            	</div>            	         
+             </div>           
+             <div class="esgslide" data-aos="fade-up" data-aos-duration="2000">
+                <div class="slider">
+                    <div class="swiper-container _communitySlider">
+                        <div class="swiper-wrapper">
+							<c:forEach var="result" items="${ communityList }" varStatus="status">
+	                             <div class="swiper-slide item">	                              
+                                     <div class="img">
+                                         <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">	                                        
+                                     </div>
+                                     <div class="content">${result.cntntsSj }</div>
+                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>	                               
+	                             </div>
+							</c:forEach>
+						</div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <script>
+                    new Swiper("._communitySlider", {
+                        slidesPerView: "auto",
+                        observer: true,
+                        observeParents: true,
+                        scrollbar: {
+                            el: ".swiper-scrollbar",
+                        }
+                    });
+                </script>
+           	</div>  
+           	
+           	<div class="esgsubtitle" data-aos="fade-up" data-aos-duration="2000">
+                <div class="list-header">
+                    <div class="font-h3">마크로젠은 대한민국의 미래를 응원하고 지원합니다</div>
+                </div>
+                <div class="list-body">
+                    <div class="desc">강한 책임감과 소명의식을 지닌 마크로젠은 앞으로 생명공학 분야의 연구자들을 위한 든든한 후원자이자 국가 기술경쟁력 강화의 중심축 역할로서 맡은바 사회적 책임을 다할 것입니다.</div>
+            	</div>            	         
+             </div>             
+            
+            <!-- s  셋 -->
+            <div class="section-heading" data-aos="fade-up" data-aos-duration="2000" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-ethical-banner-1.png);"></div>
+            <!-- e 셋 -->
 
             <!-- s 과학자 상 -->
             <div class="section-reward">
@@ -223,9 +323,9 @@
             </div>
             <!-- e 과학자 상 -->
 
-            <!-- s 둘 -->
+            <!-- s 넷 -->
             <div class="section-heading" data-aos="fade-up" data-aos-duration="2000" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-ethical-banner-2.png);"></div>
-            <!-- e 둘 -->
+            <!-- e 넷 -->
 
             <div class="section-activity">
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
