@@ -28,6 +28,7 @@ public class SocialContentsVo extends DefaultVo {
 	private Date postDt;
 	private Date nowDt;
 	private String logicNm;
+	private String mode;
 
 	private String searchCntntsCtgryCode;
 
@@ -151,5 +152,13 @@ public class SocialContentsVo extends DefaultVo {
 
 	public void setLogicNm(String logicNm) {
 		this.logicNm = logicNm;
+	}
+
+	public String getMode() {
+		return mode;
+	}
+
+	public void setMode(String mode) {
+		this.mode = mode;
 	}
 }

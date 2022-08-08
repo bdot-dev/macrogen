@@ -60,17 +60,14 @@
 				        </div>
 				        <div class="swiper-container _supportSlider">
 				            <div class="swiper-wrapper">				
-								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<c:forEach var="result" items="${ esgList }" varStatus="status">
 					                <div class="swiper-slide">
-					                    <a href="${result.somlnkUrl }" target="_blank">
-					                        <div class="img">
-					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-					                        </div>
-					                        <div class="content">${result.somlnkSj }
-					                        </div>
-					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-					                    </a>
+					                   <div class="img">
+					                       <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">
+					                   </div>
+					                   <div class="content">${result.cntntsSj }
+					                   </div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
@@ -120,17 +117,14 @@
 				        </div>
 				        <div class="swiper-container _communitySlider">
 				            <div class="swiper-wrapper">				
-								<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<c:forEach var="result" items="${ communityList }" varStatus="status">
 					                <div class="swiper-slide">
-					                    <a href="${result.somlnkUrl }" target="_blank">
-					                        <div class="img">
-					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-					                        </div>
-					                        <div class="content">${result.somlnkSj }
-					                        </div>
-					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-					                    </a>
+					                   <div class="img">
+					                       <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">
+					                   </div>
+					                   <div class="content">${result.cntntsSj }
+					                   </div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
