@@ -4066,7 +4066,7 @@
 	    overflow: hidden;
 	    display: -webkit-box;
 	    white-space: normal;
-	    -webkit-line-clamp: 3;
+	    -webkit-line-clamp: 2;
 	    -webkit-box-orient: vertical;}
 	.macrogen.ethical-management .slider .swiper-container .swiper-wrapper .swiper-slide.item .date{margin-bottom:62px; font-size: 14px; line-height: 30px; color: #909090;}
 	.macrogen.ethical-management .slider .swiper-container .swiper-scrollbar{    
