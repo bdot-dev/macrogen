@@ -63,7 +63,7 @@
 					                   </div>
 					                   <div class="content">${result.cntntsSj }
 					                   </div>
-					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
@@ -121,7 +121,7 @@
 					                   </div>
 					                   <div class="content">${result.cntntsSj }
 					                   </div>
-					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+					                   <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM" /></div>
 					                </div>
 								</c:forEach>				
 				            </div>
