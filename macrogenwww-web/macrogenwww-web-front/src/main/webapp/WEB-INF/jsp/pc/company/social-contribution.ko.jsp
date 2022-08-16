@@ -51,7 +51,7 @@
                 <div class="box" data-aos="fade-up" data-aos-duration="2000">
                     <div class="title">ESG 서포터즈</div>
                     <div class="desc">임직원들의 자발적 참여로 구성된 ESG 서포터즈는 지속가능한 지구를 위한 공동의 목표를 가지고 있으며 1년의 임기로 활동합니다.<br/>
-						환경 보호, 사회적 책임 활동 등 캠페인을 직접 기획하며 많은 임직원들이 ESG 활동에 동참 할 수 있도록 다양한 프로그램을 만들고 있습니다
+						환경 보호, 사회적 책임 활동 등 캠페인을 직접 기획하며 많은 임직원들이 ESG 활동에 동참 할 수 있도록 다양한 프로그램을 만들고 있습니다.
 					</div>
 					<div class="slider">				        
 				        <div class="swiper-container _supportSlider">
