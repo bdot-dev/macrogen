@@ -75,7 +75,7 @@
                                          <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">	                                        
                                      </div>
                                      <div class="content">${result.cntntsSj }</div>
-                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>	                               
+                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM" /></div>	                               
 	                             </div>
 							</c:forEach>
 						</div>
@@ -125,7 +125,7 @@
                                          <img src="${publicUrl}${result.imageFlpth}" alt="${result.cntntsSj }">	                                        
                                      </div>
                                      <div class="content">${result.cntntsSj }</div>
-                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>	                               
+                                     <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM" /></div>	                               
 	                             </div>
 							</c:forEach>
 						</div>
