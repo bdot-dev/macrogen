@@ -40,6 +40,7 @@
                                     <li><a href="/${rc.locale.language }/business/research/oligo">- Oligo</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/microarray">- Microarray</a></li>
                                     <li><a href="/${rc.locale.language }/business/research/model">- 모델동물사업부</a></li>
+                                    <%-- <li><a href="/${rc.locale.language }/business/research/reagent">- Reagent&LABware</a></li> --%>
                                 </ul>
                             </li>
                             <li><a href="#none">- 임상진단서비스</a>

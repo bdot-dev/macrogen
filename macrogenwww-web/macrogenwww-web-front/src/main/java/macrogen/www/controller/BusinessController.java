@@ -52,7 +52,11 @@ public class BusinessController extends DefaultController {
 		return getDev() + "/business/research/model." + getLang();
 	}
 
-
+	@RequestMapping("/research/reagent")
+	public String reagentLabware(@PathVariable LangId langId) throws Exception {
+		return getDev() + "/business/research/reagent." + getLang();
+	}
+	
 	@RequestMapping("/diagnosis/cancer")
 	public String diagnosisCancer(@PathVariable LangId langId) throws Exception {
 		return getDev() + "/business/diagnosis/cancer." + getLang();
@@ -88,6 +92,5 @@ public class BusinessController extends DefaultController {
 	public String diagnosisLiquidBiopsy(@PathVariable LangId langId) throws Exception {
 		return getDev() + "/business/diagnosis/liquid-biopsy." + getLang();
 	}
-
 
 }

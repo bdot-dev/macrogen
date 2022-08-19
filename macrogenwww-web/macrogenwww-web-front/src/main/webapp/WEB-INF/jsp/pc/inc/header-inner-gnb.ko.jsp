@@ -70,6 +70,7 @@
                 <li><a href="/${rc.locale.language }/business/research/oligo">Oligo</a></li>
                 <li><a href="/${rc.locale.language }/business/research/microarray">Microarray</a></li>
                 <li><a href="/${rc.locale.language }/business/research/model">모델동물사업부</a></li>
+                <%-- <li><a href="/${rc.locale.language }/business/research/reagent">Reagent &<br>LABware</a></li> --%>
             </ul>
         </div>
         <div class="item">

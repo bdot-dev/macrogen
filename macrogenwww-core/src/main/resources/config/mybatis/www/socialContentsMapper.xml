@@ -49,6 +49,9 @@
 	from tb_social_contents tsc
 	where 1 = 1
     <include refid="list_where" />
+    <if test="mode == 'fo'">
+		AND cntnts_ctgry_code = #{cntntsCtgryCode}
+	</if>
     <choose>
       <when test='orderBy == "regist_dt_desc"'>
         order by tsc.regist_dt desc, tsc.cntnts_sn desc
