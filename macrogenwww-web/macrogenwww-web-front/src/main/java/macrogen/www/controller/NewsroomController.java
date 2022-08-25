@@ -56,7 +56,7 @@ public class NewsroomController extends DefaultController {
 
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
-
+		listVo.setOrderBy("regist_dt_desc");
 		List<NttVo> resultList = nttService.list(listVo);
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
