@@ -45,6 +45,7 @@ public class MainController extends DefaultController {
 		nttVo.setBbsId("press-release");
 		nttVo.setFirstIndex(0);
 		nttVo.setRecordCountPerPage(3);
+		nttVo.setOrderBy("regist_dt_desc");
 		List<NttVo> newsList = nttService.list(nttVo);	
 		model.addAttribute("newsList", newsList);
 
