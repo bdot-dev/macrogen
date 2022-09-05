@@ -4996,10 +4996,13 @@
           background-image: url(../img/macrogen/ic-pin-foc.svg); }
         .macrogen.global-macrogen .section-map .map .pin.amsterdam {
           top: 22px;
-          left: 127px; }
+          left: 113px; }
         .macrogen.global-macrogen .section-map .map .pin.maastricht {
           top: 67px;
-          left: 160px; }
+          left: 137px; }
+         .macrogen.global-macrogen .section-map .map .pin.paris {
+          top: 79px;
+          left: -32px; }
         .macrogen.global-macrogen .section-map .map .pin.milan {
           top: 120px;
           left: 117px; }
@@ -5018,7 +5021,7 @@
         .macrogen.global-macrogen .section-map .map .pin.tokyo {
           top: 165px;
           left: 570px; }
-        .macrogen.global-macrogen .section-map .map .pin.synapse {
+        .macrogen.global-macrogen .section-map .map .pin.biopolis {
           top: 358px;
           left: 473px; }
         .macrogen.global-macrogen .section-map .map .pin.boston {
@@ -5033,6 +5036,12 @@
         .macrogen.global-macrogen .section-map .map .pin.virginia {
           top: 190px;
           left: 939px; }
+        .macrogen.global-macrogen .section-map .map .pin.maastricht {
+          top: 67px;
+          left: 160px; }  
+        .macrogen.global-macrogen .section-map .map .pin.santiago {
+          top: 476px;
+          left: 994px; }
        
   .macrogen.global-macrogen .section-map-detail .box {
     position: relative;
@@ -5126,6 +5135,8 @@
           letter-spacing: -0.75px;
           color: #707070;
           margin-bottom: 8px; }
+          .macrogen.global-macrogen .section-map-detail .box > .detail .item .info .address span {         
+          font-weight: 700;  }
         .macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel span {
           position: relative;
           font-weight: 700;
@@ -7835,6 +7846,9 @@
           .main-wrap .main-page .section-map .inner .map .pin.milan {
             top: 106px;
             left: 120px; }
+            .main-wrap .main-page .section-map .inner .map .pin.paris {
+            top: 106px;
+            left: -40px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
             top: 150px;
             left: 24px; }
@@ -7850,7 +7864,7 @@
           .main-wrap .main-page .section-map .inner .map .pin.tokyo {
             top: 161px;
             left: 607px; }
-          .main-wrap .main-page .section-map .inner .map .pin.synapse {
+          .main-wrap .main-page .section-map .inner .map .pin.biopolis {
             top: 255px;
             left: 445px; }
           .main-wrap .main-page .section-map .inner .map .pin.boston {
@@ -7865,6 +7879,9 @@
           .main-wrap .main-page .section-map .inner .map .pin.virginia {
             top: 195px;
             left: 950px; }
+            .main-wrap .main-page .section-map .inner .map .pin.santiago {
+            top: 276px;
+            left: 1063px; }
 
 .main-wrap .footer:before {
   border-top: none; }
