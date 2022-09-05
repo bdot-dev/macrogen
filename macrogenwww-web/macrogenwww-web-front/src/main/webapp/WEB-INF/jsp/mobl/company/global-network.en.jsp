@@ -217,14 +217,14 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="synapse">
+                                    <li class="item" id="biopolis">
                                         <div class="name">Macrogen Singapore</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Mar 2018 <br> (Branch Opened : Nov 2016)</span></li>
                                             </ul>
-                                            <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
+                                            <div class="address">#05-18, Synapse Building, 3 Biopolis Drive, Singapore 138623</div>
                                             <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>
@@ -257,6 +257,22 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="item" id="madrid">
+                                        <div class="name">Macrogen Spain</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Dec 2016</li>
+                                            </ul>
+                                            <div class="address">C. de Martínez Villergas, 52, 28027 Madrid, Spain</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+34-911-138-378">+34-911-138-378</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li class="item" id="maastricht">
                                         <div class="name">Macrogen Belgium</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Macrogen Belgium"></div>
@@ -264,7 +280,12 @@
                                             <ul>
                                                 <li><span>Established in Aug 2021</span></li>
                                             </ul>
-                                            <div class="address">Oxfordlaan 70, 6229 EV Maastricht, Netherlands</div>
+                                            <div class="address" style="margin-bottom:0;">
+		                                   		<span>Sales Office&#46;</span><p>Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium</p>                               
+		                                    </div>
+		                                    <div class="address">                                   		
+		                                   		<span>Laboratory&#46;</span><p>Oxfordlaan 70, 6229 EV Maastricht, Netherlands</p>
+		                                    </div>           
                                             <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>
@@ -282,7 +303,7 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Established in Dec 2021</span></li>
+                                                <li><span>Established in Nov 2021</span></li>
                                             </ul>
                                             <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
                                             <div class="tel">
@@ -297,20 +318,24 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="madrid">
-                                        <div class="name">Macrogen Spain</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
+                                    <li class="item" id="paris">
+                                        <div class="name">Macrogen France Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_13.png" alt="Macrogen France"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Established in Dec 2016</li>
+                                                <li><span>Established in Jul 2022</li>
                                             </ul>
-                                            <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
-                                            <div class="tel">
-                                                <div>
-                                                    <span>TEL.</span>
-                                                    <a href="tel:+34-911-138-378">+34-911-138-378</a>
-                                                </div>
-                                            </div>
+                                            <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                          
+                                        </div>
+                                    </li>
+                                    <li class="item" id="santiago">
+                                        <div class="name">Macrogen Chile Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Macrogen Chile"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Jul 2022</li>
+                                            </ul>
+                                            <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                          
                                         </div>
                                     </li>
                                 </ul>
