@@ -33,7 +33,7 @@
                 <div class="title">GLOBAL MACROGEN</div>
                 <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다&#46;</div>
                 <div class="map">
-                	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
+                	<a class="pin poland" href="#poland"><span>Warsaw&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
