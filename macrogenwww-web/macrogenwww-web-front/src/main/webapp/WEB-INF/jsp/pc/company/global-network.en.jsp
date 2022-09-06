@@ -34,7 +34,7 @@
                 <div class="desc">Macrogen is cementing its leadership position in precision medicine<br/>
                     by providing personalized services to local clients and meeting their diverse needs.</div>
                 <div class="map">
-                	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
+                	<a class="pin poland" href="#poland"><span>Warsaw&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
