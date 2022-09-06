@@ -34,10 +34,11 @@
                 <div class="desc">Macrogen is cementing its leadership position in precision medicine<br/>
                     by providing personalized services to local clients and meeting their diverse needs.</div>
                 <div class="map">
+                	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
-                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>
+                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>                    
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
                     <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
@@ -284,7 +285,17 @@
                                     </ul>
                                     <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                  
                                 </div>
-                            </li>               
+                            </li>   
+							<li class="item height_fix" id="poland">
+	                            <div class="name">Macrogen Poland</div>
+	                            <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Macrogen Poland"></div> -->
+	                            <div class="info">
+	                                <ul>
+	                                    <li><span>Established in Jun 2022</span></li>
+	                                </ul>
+	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                  
+	                            </div>
+	                        </li>            
                         </ul>
                     </div>
                 </div>
