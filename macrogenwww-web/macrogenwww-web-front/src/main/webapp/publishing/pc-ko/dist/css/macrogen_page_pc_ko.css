@@ -4966,8 +4966,8 @@
     .macrogen.global-macrogen .section-map .map {
       position: relative;
       width: 1244px;
-      height: 608px;
-      background-image: url("../img/macrogen/bg-map.png?v2");
+      height: 673px;
+      background-image: url("../img/macrogen/bg-map.png");
       background-size: cover; }
       .macrogen.global-macrogen .section-map .map .pin {
         position: absolute;
@@ -4994,54 +4994,54 @@
           box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2);
           color: #FFFFFF;
           background-image: url(../img/macrogen/ic-pin-foc.svg); }
+        .macrogen.global-macrogen .section-map .map .pin.poland {
+          top: 17.44px;
+          left: 5px; }
         .macrogen.global-macrogen .section-map .map .pin.amsterdam {
-          top: 22px;
-          left: 113px; }
+          top: 59.1px;
+          left: 112px; }
         .macrogen.global-macrogen .section-map .map .pin.maastricht {
-          top: 67px;
-          left: 137px; }
+          top: 107.39px;
+          left: 146px; }
          .macrogen.global-macrogen .section-map .map .pin.paris {
-          top: 79px;
-          left: -32px; }
+          top: 115.05px;
+          left: -20px; }
         .macrogen.global-macrogen .section-map .map .pin.milan {
-          top: 120px;
-          left: 117px; }
+          top: 158.69px;
+          left: 117.5px; }
         .macrogen.global-macrogen .section-map .map .pin.madrid {
-          top: 160px;
+          top: 199px;
           left: 34px; }
         .macrogen.global-macrogen .section-map .map .pin.seoul {
-          top: 6px;
+          top: 42.24px;
           left: 602px; }
         .macrogen.global-macrogen .section-map .map .pin.songdo {
-          top: 47px;
-          left: 569px; }
+          top: 84.08px;
+          left: 576px; }
         .macrogen.global-macrogen .section-map .map .pin.daejeon {
-          top: 99px;
+          top: 136.38px;
           left: 612px; }
         .macrogen.global-macrogen .section-map .map .pin.tokyo {
-          top: 165px;
+          top: 205.47px;
           left: 570px; }
         .macrogen.global-macrogen .section-map .map .pin.biopolis {
-          top: 358px;
-          left: 473px; }
+          top: 340.08px;
+          left: 471px;  }
         .macrogen.global-macrogen .section-map .map .pin.boston {
-          top: 20px;
+          top: 54.21px;
           left: 1087px; }
         .macrogen.global-macrogen .section-map .map .pin.newyork {
-          top: 75px;
+          top: 111.74px;
           left: 1029px; }
         .macrogen.global-macrogen .section-map .map .pin.rockville {
-          top: 138px;
+          top: 175.55px;
           left: 970px; }
         .macrogen.global-macrogen .section-map .map .pin.virginia {
-          top: 190px;
-          left: 939px; }
-        .macrogen.global-macrogen .section-map .map .pin.maastricht {
-          top: 67px;
-          left: 160px; }  
+          top: 228.89px;
+          left: 939px; }        
         .macrogen.global-macrogen .section-map .map .pin.santiago {
-          top: 476px;
-          left: 994px; }
+          top: 513.35px;
+          left: 995px; }
        
   .macrogen.global-macrogen .section-map-detail .box {
     position: relative;
@@ -7846,6 +7846,9 @@
           .main-wrap .main-page .section-map .inner .map .pin.milan {
             top: 106px;
             left: 120px; }
+           .main-wrap .main-page .section-map .inner .map .pin.poland {
+            top: 60px;
+            left: -100px; }
             .main-wrap .main-page .section-map .inner .map .pin.paris {
             top: 106px;
             left: -40px; }

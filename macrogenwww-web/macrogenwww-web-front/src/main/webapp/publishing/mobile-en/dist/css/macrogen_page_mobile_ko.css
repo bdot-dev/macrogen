@@ -3802,19 +3802,22 @@
             letter-spacing: 1px; }
          .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             bottom: 261px;
-            left: 129px; }            
+            left: 149px; }            
           .main-wrap .main-page .section-map .inner .map .pin.maastricht {
             bottom: 226px;
-            left: 146px; }
+            left: 186px; }
           .main-wrap .main-page .section-map .inner .map .pin.paris {
             bottom: 188px;
-            left: 24px; }
+            left: 44px; }
           .main-wrap .main-page .section-map .inner .map .pin.milan {
             bottom: 188px;
-            left: 174px; }
+            left: 194px; }
+          .main-wrap .main-page .section-map .inner .map .pin.poland {
+            bottom: 226px;
+            left: 8px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
             bottom: 146px;
-            left: 81px; }
+            left: 101px; }
           .main-wrap .main-page .section-map .inner .map .pin.seoul {
             bottom: 285px;
             left: 534px; }

@@ -338,6 +338,16 @@
                                             <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                          
                                         </div>
                                     </li>
+                                    <li class="item" id="poland">
+		                                <div class="name">Macrogen Poland</div>
+		                               <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_15.png" alt="Macrogen Poland"></div> -->
+		                                <div class="info">
+		                                    <ul>
+		                                        <li><span>Established in Jun 2022</span></li>
+		                                    </ul>
+		                                    <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
+		                                </div>
+		                            </li>   
                                 </ul>
                             </div>
                         </div>
