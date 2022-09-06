@@ -33,10 +33,11 @@
                 <div class="title">GLOBAL MACROGEN</div>
                 <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다&#46;</div>
                 <div class="map">
+                	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
-                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>
+                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>                    
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
                     <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
@@ -300,7 +301,18 @@
                                     </ul>
                                     <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                    
                                 </div>
-                            </li>                                                        
+                            </li>   
+                            <li class="item height_fix" id="poland">
+                                <div class="name">폴란드 지사</div>
+                               <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_15.png" alt="폴란드 지사"></div> -->
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2022년 6월 설립(2022.06.10)</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
+                                    </ul>
+                                    <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
+                                </div>
+                            </li>                                                      
                         </ul>
                     </div>
                 </div>

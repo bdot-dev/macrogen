@@ -327,16 +327,26 @@
                                             <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                            
                                         </div>
                                     </li>
-                                     <li class="item" id="santiago">
-                                        <div class="name">칠레 지놈슈퍼센터</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 지놈슈퍼센터"></div>
-                                        <div class="info">
-                                            <ul>
-                                                <li><span>2022년 7월 설립</span></li>
-                                            </ul>
-                                            <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                            
-                                        </div>
-                                    </li>
+                                    <li class="item" id="santiago">
+                                       <div class="name">칠레 지놈슈퍼센터</div>
+                                       <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 지놈슈퍼센터"></div>
+                                       <div class="info">
+                                           <ul>
+                                               <li><span>2022년 7월 설립</span></li>
+                                           </ul>
+                                           <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                            
+                                       </div>
+                                   </li>
+                                   <li class="item" id="poland">
+	                                <div class="name">폴란드 지사</div>
+	                               <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_15.png" alt="폴란드 지사"></div> -->
+	                                <div class="info">
+	                                    <ul>
+	                                        <li><span>2022년 6월 설립(2022.06.10)</span></li>	                                        
+	                                    </ul>
+	                                    <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
+	                                </div>
+	                            </li>   
                                 </ul>
                             </div>
                         </div>
