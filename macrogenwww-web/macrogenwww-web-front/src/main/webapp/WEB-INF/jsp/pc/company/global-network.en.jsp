@@ -254,7 +254,7 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in Nov 2016</span></li>
+                                        <li><span>Established in Nov 2021</span></li>
                                     </ul>
                                     <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
                                     <div class="tel">
