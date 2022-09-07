@@ -274,8 +274,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="maastricht">
-                                        <div class="name">Macrogen Belgium</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Macrogen Belgium"></div>
+                                        <div class="name">Belgium Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Belgium Genome Super Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Aug 2021</span></li>
@@ -299,8 +299,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="italy">
-                                        <div class="name">Macrogen Italy</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
+                                        <div class="name">Milano Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_12.png" alt="Milano Genome Super Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Nov 2021</span></li>
@@ -319,8 +319,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="paris">
-                                        <div class="name">Macrogen France Genome Super Center</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_13.png" alt="Macrogen France"></div>
+                                        <div class="name">Paris Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_13.png" alt="Paris Genome Super Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Jul 2022</li>
@@ -329,8 +329,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="santiago">
-                                        <div class="name">Macrogen Chile Genome Super Center</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Macrogen Chile"></div>
+                                        <div class="name">Santiago Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Super Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Jul 2022</li>
@@ -339,8 +339,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="poland">
-		                                <div class="name">Macrogen Poland</div>
-		                               <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_15.png" alt="Macrogen Poland"></div> -->
+		                                <div class="name">Warszawa Genome Super Center</div>
+		                               <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_15.png" alt="Warszawa Genome Super Center"></div> -->
 		                                <div class="info">
 		                                    <ul>
 		                                        <li><span>Established in Jun 2022</span></li>
