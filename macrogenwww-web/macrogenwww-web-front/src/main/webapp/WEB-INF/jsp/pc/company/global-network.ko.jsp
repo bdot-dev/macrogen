@@ -33,7 +33,7 @@
                 <div class="title">GLOBAL MACROGEN</div>
                 <div class="desc">마크로젠은 세계 어디에서나 현지 고객 맞춤형 서비스를 제공하며 신속하고 체계적인 고객 대응으로<br/>글로벌 정밀의학 선도기업으로 자리매김하고 있습니다&#46;</div>
                 <div class="map">
-                	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
+                	<a class="pin poland" href="#poland"><span>Warsaw&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
@@ -242,8 +242,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="maastricht">
-                                <div class="name">벨기에지사</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에지사"></div>
+                                <div class="name">벨기에 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2021년 8월 설립</span></li>
@@ -264,8 +264,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="italy">
-                                <div class="name">이탈리아지사</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_12.png" alt="이탈리아지사"></div>
+                                <div class="name">밀라노 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_12.png" alt="밀라노 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2021년 11월 설립</span></li>
@@ -281,8 +281,8 @@
                                 </div>
                             </li>   
                             <li class="item height_fix" id="paris">
-                                <div class="name">프랑스 지놈슈퍼센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_13.png" alt="프랑스 지놈슈퍼센터"></div>
+                                <div class="name">파리 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_13.png" alt="파리 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2022년 7월 설립</span></li>
@@ -292,8 +292,8 @@
                                 </div>
                             </li>   
                             <li class="item height_fix" id="santiago">
-                                <div class="name">칠레 지놈슈퍼센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 지놈슈퍼센터"></div>
+                                <div class="name">산티아고 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="산티아고 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2022년 7월 설립</span></li>
@@ -303,11 +303,11 @@
                                 </div>
                             </li>   
                             <li class="item height_fix" id="poland">
-                                <div class="name">폴란드 지사</div>
-                               <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_15.png" alt="폴란드 지사"></div> -->
+                                <div class="name">바르샤바 지놈슈퍼센터</div>
+                               <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_15.png" alt="바르샤바 지놈슈퍼센터"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>2022년 6월 설립(2022.06.10)</span></li>
+                                        <li><span>2022년 6월 설립</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
