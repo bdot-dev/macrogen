@@ -242,8 +242,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="maastricht">
-                                <div class="name">벨기에 지놈슈퍼센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 지놈슈퍼센터"></div>
+                                <div class="name">마스트리흐트 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="마스트리흐트 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2021년 8월 설립</span></li>

@@ -274,8 +274,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="maastricht">
-                                        <div class="name">Belgium Genome Super Center</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Belgium Genome Super Center"></div>
+                                        <div class="name">Maastricht Genome Super Center</div>
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Maastricht Genome Super Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Aug 2021</span></li>
