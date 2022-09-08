@@ -908,6 +908,11 @@
           letter-spacing: -0.75px;
           color: #707070;
           margin-bottom: 8px; }
+           .macrogen.global-macrogen .section-map-detail .box > .detail #maastricht .info .address{
+          display: flex;   }
+          .macrogen.global-macrogen .section-map-detail .box > .detail #maastricht .info .address > span{
+          min-width: 28%;
+          font-weight: 700;   }      
         .macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel > div span {
           position: relative;
           font-family: sans-serif;
@@ -3782,6 +3787,7 @@
           text-transform: uppercase;
           color: #FFFFFF; }
           .main-wrap .main-page .section-map .inner .map .pin i {
+            margin-top: -6px;
             width: 12px;
             height: 16px;
             display: inline-block;
@@ -3796,16 +3802,22 @@
             letter-spacing: 1px; }
          .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             bottom: 261px;
-            left: 129px; }            
+            left: 149px; }            
           .main-wrap .main-page .section-map .inner .map .pin.maastricht {
             bottom: 226px;
-            left: 146px; }
+            left: 206px; }
+          .main-wrap .main-page .section-map .inner .map .pin.paris {
+            bottom: 188px;
+            left: 44px; }
           .main-wrap .main-page .section-map .inner .map .pin.milan {
             bottom: 188px;
-            left: 174px; }
+            left: 194px; }
+          .main-wrap .main-page .section-map .inner .map .pin.poland {
+            bottom: 226px;
+            left: 12px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
             bottom: 146px;
-            left: 81px; }
+            left: 101px; }
           .main-wrap .main-page .section-map .inner .map .pin.seoul {
             bottom: 285px;
             left: 534px; }
@@ -3818,7 +3830,7 @@
          .main-wrap .main-page .section-map .inner .map .pin.tokyo {
           bottom: 154px;
           left: 604px; }
-         .main-wrap .main-page .section-map .inner .map .pin.synapse {
+         .main-wrap .main-page .section-map .inner .map .pin.biopolis {
             bottom: 77px;
             left: 456px; }       
          .main-wrap .main-page .section-map .inner .map .pin.boston {
@@ -3833,6 +3845,9 @@
           .main-wrap .main-page .section-map .inner .map .pin.virginia {
             bottom: 110px;
             right: 227px; }
+          .main-wrap .main-page .section-map .inner .map .pin.santiago {
+            bottom: 47px;
+            right:77px; }
     .main-wrap .main-page .section-map .swiper-scrollbar {
       display: block !important;
       bottom: 50px;

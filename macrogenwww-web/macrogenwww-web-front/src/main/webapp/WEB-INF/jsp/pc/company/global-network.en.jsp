@@ -34,19 +34,22 @@
                 <div class="desc">Macrogen is cementing its leadership position in precision medicine<br/>
                     by providing personalized services to local clients and meeting their diverse needs.</div>
                 <div class="map">
+                	<a class="pin poland" href="#poland"><span>Warszawa&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin maastricht" href="#maastricht"><span>Maastricht&#44; Netherlands</span></a>
-                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>
+                    <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
+                    <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>                    
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
                     <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
                     <a class="pin daejeon" href="#daejeon"><span>Daejeon&#44; Korea</span></a>
                     <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
-                    <a class="pin synapse" href="#synapse"><span>Synapse&#44; Singapore</span></a>
+                    <a class="pin biopolis" href="#biopolis"><span>Biopolis&#44; Singapore</span></a>
                     <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
                     <a class="pin newyork" href="#rockville"><span>New york&#44; USA</span></a>                    
                     <a class="pin rockville" href="#rockville"><span>Rockville&#44; USA</span></a>
                     <a class="pin virginia" href="#rockville"><span>Virginia&#44; USA</span></a>
+                    <a class="pin santiago" href="#santiago"><span>Santiago&#44; Chile</span></a>
                 </div>
             </div>
             <script>
@@ -180,14 +183,14 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item height_fix" id="synapse">
+                            <li class="item height_fix" id="biopolis">
                                 <div class="name">Macrogen Singapore</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Mar 2018 (Branch Opened : Nov 2016)</span></li>
                                     </ul>
-                                    <div class="address">3 Biopolis Drive #05-18, Synapse, Singapore 138623</div>
+                                    <div class="address">#05-18, Synapse Building, 3 Biopolis Drive, Singapore 138623</div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+65-6339-0927">&#43;65&#45;6339&#45;0927</a>
@@ -212,14 +215,33 @@
                                     </div>
                                 </div>
                             </li> 
+                            <li class="item height_fix" id="madrid">
+                                <div class="name">Macrogen Spain</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in Dec 2016</span></li>
+                                    </ul>
+                                    <div class="address">C. de Martínez Villergas, 52, 28027 Madrid, Spain</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>
+                                    </div>
+                                </div>
+                            </li> 
                             <li class="item height_fix" id="maastricht">
-                                <div class="name">Macrogen Belgium</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Macrogen Belgium"></div>
+                                <div class="name">Maastricht Genome Super Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Maastricht Genome Super Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Aug 2021</span></li>
                                     </ul>
-                                    <div class="address">Oxfordlaan 70, 6229 EV Maastricht, Netherlands</div>
+                                    <div class="address" style="margin-bottom:0;">
+                                   		<span>Sales Office&#46;</span> Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium                                   
+                                    </div>
+                                    <div class="address">                                   		
+                                   		<span>Laboratory&#46;</span> Oxfordlaan 70, 6229 EV Maastricht, Netherlands
+                                    </div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+31-20-333-7563">+31&#45;20&#45;333&#45;7563</a>
@@ -229,11 +251,11 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="italy">
-                                <div class="name">Macrogen Italy</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Macrogen Italy"></div>
+                                <div class="name">Milano Genome Super Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Milano Genome Super Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in Dec 2016</span></li>
+                                        <li><span>Established in Nov 2021</span></li>
                                     </ul>
                                     <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
                                     <div class="tel">
@@ -244,20 +266,36 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item height_fix" id="madrid">
-                                <div class="name">Macrogen Spain</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_9.png" alt="Macrogen Spain"></div>
+                            <li class="item height_fix" id="paris">
+                                <div class="name">Paris Genome Super Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_13.png" alt="Paris Genome Super Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in Dec 2016</span></li>
+                                        <li><span>Established in Jul 2022</span></li>
                                     </ul>
-                                    <div class="address">Av Sur del Aeropuerto de Barajas, n° 24, Building 28, Office B-2, Madrid, Spain</div>
-                                    <div class="tel">
-                                        <span>TEL&#46;</span>
-                                        <a href="tel:+34-911-138-378">&#43;34&#45;911&#45;138&#45;378</a>
-                                    </div>
+                                    <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                    
                                 </div>
-                            </li>                           
+                            </li>   
+                            <li class="item height_fix" id="santiago">
+                                <div class="name">Santiago Genome Super Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Super Center"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in Jul 2022</span></li>
+                                    </ul>
+                                    <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                  
+                                </div>
+                            </li>   
+							<li class="item height_fix" id="poland">
+	                            <div class="name">Warszawa Genome Super Center</div>
+	                            <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Warszawa Genome Super Center"></div> -->
+	                            <div class="info">
+	                                <ul>
+	                                    <li><span>Established in Jun 2022</span></li>
+	                                </ul>
+	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                  
+	                            </div>
+	                        </li>            
                         </ul>
                     </div>
                 </div>

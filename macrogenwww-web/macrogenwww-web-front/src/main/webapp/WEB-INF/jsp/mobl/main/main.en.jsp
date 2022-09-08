@@ -510,17 +510,20 @@
                     <div class="map">
                         <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
 	                    <a class="pin maastricht" onClick="location.href='/${rc.locale.language}/company/global-network2#maastricht'"><i></i><span>Maastricht, Netherlands</span></a>
+	                    <a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network2#paris'"><i></i><span>Paris, France</span></a>
 	                    <a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network2#italy'"><i></i><span>Milan, Italy</span></a>
+	                    <a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network2#poland'"><i></i><span>Warszawa, Poland</span></a>
 	                    <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>
 	                    <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
 	                    <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
 	                    <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
 	                    <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Tokyo, japan</span></a>
-	                    <a class="pin synapse" onClick="location.href='/${rc.locale.language}/company/global-network2#synapse'"><i></i><span>Synapse, Singapore</span></a>
+	                    <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network2#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
 	                    <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Boston, USA</span></a>
 	                    <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>New york, USA</span></a>
 	                    <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Rockville, USA</span></a>
 	                    <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Virginia, USA</span></a>
+	                     <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network2#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
                 </div>
             </div>
