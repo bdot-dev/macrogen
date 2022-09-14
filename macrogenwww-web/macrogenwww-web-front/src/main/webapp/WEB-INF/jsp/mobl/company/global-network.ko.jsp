@@ -257,8 +257,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="madrid">
-                                        <div class="name">스페인지사</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_9.png" alt="스페인지사"></div>
+                                        <div class="name">스페인 마드리드 지놈슈퍼센터</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_9.png" alt="스페인 마드리드 지놈슈퍼센터"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>2016년 12월 설립</span></li>
@@ -272,9 +272,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="maastricht">
-                                        <div class="name">마스트리흐트 지놈슈퍼센터</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="마스트리흐트 지놈슈퍼센터"></div>
+                                    <li class="item" id="leuven">
+                                        <div class="name">벨기에 루벤 지놈슈퍼센터</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>2021년 8월 설립</span></li>
@@ -298,8 +298,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="italy">
-                                        <div class="name">밀라노 지놈슈퍼센터</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_12.png" alt="밀라노 지놈슈퍼센터"></div>
+                                        <div class="name">이탈리아 밀라노 지놈슈퍼센터</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_12.png" alt="이탈리아 밀라노 지놈슈퍼센터"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>2021년 11월 설립</span></li>
@@ -318,8 +318,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="paris">
-                                        <div class="name">파리 지놈슈퍼센터</div>
-                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_13.png" alt="파리 지놈슈퍼센터"></div>
+                                        <div class="name">프랑스 파리 지놈슈퍼센터</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_13.png" alt="프랑스 파리 지놈슈퍼센터"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>2022년 7월 설립</span></li>
@@ -328,8 +328,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="santiago">
-                                       <div class="name">산티아고 지놈슈퍼센터</div>
-                                       <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="산티아고 지놈슈퍼센터"></div>
+                                       <div class="name">칠레 산티아고 지놈슈퍼센터</div>
+                                       <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
                                        <div class="info">
                                            <ul>
                                                <li><span>2022년 7월 설립</span></li>
@@ -338,8 +338,8 @@
                                        </div>
                                    </li>
                                    <li class="item" id="poland">
-	                                <div class="name">바르샤바 지놈슈퍼센터</div>
-	                               <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_15.png" alt="바르샤바 지놈슈퍼센터"></div> -->
+	                                <div class="name">폴란드 슈체친 지놈슈퍼센터</div>
+	                                <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_15.png" alt="폴란드 슈체친 지놈슈퍼센터"></div>
 	                                <div class="info">
 	                                    <ul>
 	                                        <li><span>2022년 6월 설립</span></li>	                                        
