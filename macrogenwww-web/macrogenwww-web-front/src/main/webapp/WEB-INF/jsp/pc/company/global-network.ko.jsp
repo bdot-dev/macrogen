@@ -299,7 +299,7 @@
                                         <li><span>2022년 7월 설립</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
-                                    <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                    
+                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
                                 </div>
                             </li>   
                             <li class="item height_fix" id="poland">
