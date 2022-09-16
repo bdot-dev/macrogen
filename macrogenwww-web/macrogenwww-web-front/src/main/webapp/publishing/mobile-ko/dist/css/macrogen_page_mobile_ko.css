@@ -917,9 +917,9 @@
           letter-spacing: -0.75px;
           color: #707070;
           margin-bottom: 8px; }         
-          .macrogen.global-macrogen .section-map-detail .box > .detail #maastricht .info .address{
+          .macrogen.global-macrogen .section-map-detail .box > .detail #leuven .info .address{
           display: flex;   }
-          .macrogen.global-macrogen .section-map-detail .box > .detail #maastricht .info .address > span{
+          .macrogen.global-macrogen .section-map-detail .box > .detail #leuven .info .address > span{
           min-width: 28%;
           font-weight: 700;   }          
         .macrogen.global-macrogen .section-map-detail .box > .detail .item .info .tel > div span {
@@ -3783,7 +3783,7 @@
           .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             bottom: 261px;
             left: 149px; }            
-          .main-wrap .main-page .section-map .inner .map .pin.maastricht {
+          .main-wrap .main-page .section-map .inner .map .pin.leuven {
             bottom: 226px;
             left: 206px; }
             .main-wrap .main-page .section-map .inner .map .pin.paris {
@@ -3794,7 +3794,7 @@
             left: 194px; }
           .main-wrap .main-page .section-map .inner .map .pin.poland {
             bottom: 226px;
-            left: 12px; }
+            left: 26px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
             bottom: 146px;
             left: 101px; }
