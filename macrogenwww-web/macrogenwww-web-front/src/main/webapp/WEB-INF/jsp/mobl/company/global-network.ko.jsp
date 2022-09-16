@@ -334,7 +334,7 @@
                                            <ul>
                                                <li><span>2022년 7월 설립</span></li>
                                            </ul>
-                                           <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                            
+                                           <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                            
                                        </div>
                                    </li>
                                    <li class="item" id="poland">

@@ -216,8 +216,8 @@
                                 </div>
                             </li> 
                             <li class="item height_fix" id="madrid">
-                                <div class="name">Spain Madrid Genome Super Center</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_9.png" alt="Spain Madrid Genome Super Center"></div>
+                                <div class="name">Madrid Genome Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_9.png" alt="Madrid Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Dec 2016</span></li>
@@ -230,8 +230,8 @@
                                 </div>
                             </li> 
                             <li class="item height_fix" id="leuven">
-                                <div class="name">Belgium Leuven Genome Super Center</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Belgium Leuven Genome Super Center"></div>
+                                <div class="name">Leuven Genome Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Leuven Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Aug 2021</span></li>
@@ -251,8 +251,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="italy">
-                                <div class="name">Italy Milano Genome Super Center </div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Italy Milano Genome Super Center"></div>
+                                <div class="name">Milano Genome Center </div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_12.png" alt="Milano Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Nov 2021</span></li>
@@ -267,8 +267,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="paris">
-                                <div class="name">France Paris Genome Super Center</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_13.png" alt="France Paris Genome Super Center"></div>
+                                <div class="name">Paris Genome Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_13.png" alt="Paris Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Jul 2022</span></li>
@@ -277,18 +277,18 @@
                                 </div>
                             </li>   
                             <li class="item height_fix" id="santiago">
-                                <div class="name">Chile Santiago Genome Super Center</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Chile Santiago Genome Super Center"></div>
+                                <div class="name">Santiago Genome Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in Jul 2022</span></li>
                                     </ul>
-                                    <div class="address">Magdalena 140 Oficina 402, Las Condes Santiago, Chile</div>                                  
+                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                  
                                 </div>
                             </li>   
 							<li class="item height_fix" id="poland">
-	                            <div class="name">Poland Szczecin Genome Super Center</div>
-	                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Poland Szczecin Genome Super Center"></div>
+	                            <div class="name">Szczecin Genome Center</div>
+	                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Szczecin Genome Center"></div>
 	                            <div class="info">
 	                                <ul>
 	                                    <li><span>Established in Jun 2022</span></li>
