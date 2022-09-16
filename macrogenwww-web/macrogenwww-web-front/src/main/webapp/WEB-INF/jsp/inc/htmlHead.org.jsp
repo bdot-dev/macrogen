@@ -43,12 +43,12 @@
 <meta name="robots" content="ALL">
 <meta property="og:type" content="website">
 <meta property="og:title" content="마크로젠">
-<meta property="og:description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+<meta property="og:description" content="유전체정보를 제공하여 개인의 잠재력과 삶의 질 향상에 기여하는 글로벌 헬스케어 기업">
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
 <meta property="og:url" content="www.macrogen.co.kr">
 <link rel="canonical" href="http://www.macrogen.co.kr">
 <meta name="keywords" content="마크로젠 키워드">
-<meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+<meta name="description" content="유전체정보를 제공하여 개인의 잠재력과 삶의 질 향상에 기여하는 글로벌 헬스케어 기업">
 <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_component_pc.css?1116"/>
 <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_page_pc_ko.css?1116"/>
 <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
