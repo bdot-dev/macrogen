@@ -276,6 +276,16 @@
                                     <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                    
                                 </div>
                             </li>   
+                            <li class="item height_fix" id="poland">
+	                            <div class="name">Szczecin Genome Center</div>
+	                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Szczecin Genome Center"></div>
+	                            <div class="info">
+	                                <ul>
+	                                    <li><span>Established in Jun 2022</span></li>
+	                                </ul>
+	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                  
+	                            </div>
+	                        </li> 
                             <li class="item height_fix" id="santiago">
                                 <div class="name">Santiago Genome Center</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div>
@@ -285,17 +295,7 @@
                                     </ul>
                                     <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                  
                                 </div>
-                            </li>   
-							<li class="item height_fix" id="poland">
-	                            <div class="name">Szczecin Genome Center</div>
-	                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_15.png" alt="Szczecin Genome Center"></div>
-	                            <div class="info">
-	                                <ul>
-	                                    <li><span>Established in Jun 2022</span></li>
-	                                </ul>
-	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                  
-	                            </div>
-	                        </li>            
+                            </li>      
                         </ul>
                     </div>
                 </div>
