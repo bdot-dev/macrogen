@@ -842,11 +842,11 @@
           position: absolute;
           width: 100%;
           height: 1px;
-          bottom: 0;
+          top: 0;
           left: 0;
           background-color: #E9E9E9; }
-          .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-of-type::before{
-         background:none; }
+         /* .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-of-type::before{
+         background:none; } */
         .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-child {
           margin-bottom: 0;
           padding-bottom: 0; }
