@@ -291,17 +291,6 @@
                                     <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                    
                                 </div>
                             </li>   
-                            <li class="item height_fix" id="santiago">
-                                <div class="name">칠레 산티아고 지놈슈퍼센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
-                                <div class="info">
-                                    <ul>
-                                        <li><span>2022년 7월 설립</span></li>
-                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
-                                    </ul>
-                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
-                                </div>
-                            </li>   
                             <li class="item height_fix" id="poland">
                                 <div class="name">폴란드 슈체친 지놈슈퍼센터</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_15.png" alt="폴란드 슈체친 지놈슈퍼센터"></div>
@@ -312,7 +301,18 @@
                                     </ul>
                                     <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
                                 </div>
-                            </li>                                                      
+                            </li>  
+                            <li class="item height_fix" id="santiago">
+                                <div class="name">칠레 산티아고 지놈슈퍼센터</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2022년 7월 설립</span></li>
+                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
+                                    </ul>
+                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
+                                </div>
+                            </li>                                             
                         </ul>
                     </div>
                 </div>

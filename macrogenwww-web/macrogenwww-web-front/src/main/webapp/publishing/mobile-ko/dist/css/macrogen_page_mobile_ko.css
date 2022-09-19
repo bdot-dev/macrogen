@@ -853,8 +853,8 @@
           left: 0;
           background-color: #E9E9E9; }
           
-         .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-of-type::before{
-         background:none; }
+         /* .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-of-type::before{
+         background:none; } */
           
         .macrogen.global-macrogen .section-map-detail .box > .detail .item:last-child {
           margin-bottom: 0;
