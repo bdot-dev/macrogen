@@ -3781,6 +3781,81 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px; }
+        
+    /*220921 reagent 페이지 추가*/
+    .section_business.reagent_conts .subject-box .title{letter-spacing: -3px;}
+     .section_business.reagent_conts .info-box .category{margin: 40px 0 100px; width: 100%; height: 190px;}
+     .section_business.reagent_conts .info-box .category .item{margin-right: 20px; display: table; float: left; width: 190px; height: 190px; border-radius: 50%; vertical-align: top; cursor:pointer;}
+     .section_business.reagent_conts .info-box .category .item:first-child{
+	    background: url("../img/business/img-reagent-cat1.png") no-repeat;
+	    background-size: cover;}
+	 .section_business.reagent_conts .info-box .category .item:nth-child(2){
+	    background: url("../img/business/img-reagent-cat2.png") no-repeat;
+	    background-size: cover;}
+	 .section_business.reagent_conts .info-box .category .item:nth-child(3){
+	    background: url("../img/business/img-reagent-cat3.png") no-repeat;
+	    background-size: cover;}
+	 .section_business.reagent_conts .info-box .category .item:nth-child(4){
+	    background: url("../img/business/img-reagent-cat4.png") no-repeat;
+	    background-size: cover;}
+	 .section_business.reagent_conts .info-box .category .item:nth-child(5){
+	    background: url("../img/business/img-reagent-cat5.png") no-repeat;
+	    background-size: cover;}
+	 .section_business.reagent_conts .info-box .category .item:last-child{
+	    margin-right:0;
+	    background: rgba(0, 0, 0, 0.5);}
+	 .section_business.reagent_conts .info-box .category .item:last-child p{font-size:16px;}
+     .section_business.reagent_conts .info-box .category .item p{display: table-cell; vertical-align: middle; font-size: 18px; font-family: Proxima Nova; font-weight: 700; text-align: center; line-height:21.92px; color: #fff;}
+     .section_business.reagent_conts .info-box .category .item p:before{content:'•'; display: block; color: #2E87EF; font-size: 24px;}
+     .section_business.reagent_conts .info-box .category .item:hover p:before{color: #fff;}
+     .section_business.reagent_conts .info-box .category .item:hover:last-child p{display:none;}
+	.section_business.reagent_conts .info-box .category .item:hover:first-child{
+		 background: url("../img/business/img-reagent-cat1-1.png") no-repeat;}
+	.section_business.reagent_conts .info-box .category .item:hover:nth-child(2){
+		 background: url("../img/business/img-reagent-cat2-2.png") no-repeat;}
+	.section_business.reagent_conts .info-box .category .item:hover:nth-child(3){
+		 background: url("../img/business/img-reagent-cat3-3.png") no-repeat;}
+	.section_business.reagent_conts .info-box .category .item:hover:nth-child(4){
+		 background: url("../img/business/img-reagent-cat4-4.png") no-repeat;}
+	.section_business.reagent_conts .info-box .category .item:hover:nth-child(5){
+		 background: url("../img/business/img-reagent-cat5-5.png") no-repeat;}
+	.section_business.reagent_conts .info-box .category .item:hover:last-child{
+		 background: url("../img/business/img-reagent-cat6-6.png") no-repeat;}
+    .section_business.reagent_conts .info-box .qr{display: flex; justify-content: center; align-items: center; height:320px; background: #F7F7F7;}
+    .section_business.reagent_conts .info-box .qr .img{width: 180px; height: 180px; margin-right: 80px;}
+    .section_business.reagent_conts .info-box .qr .img img{width: 100%; height: 100%;}
+    .section_business.reagent_conts .info-box .qr .info .title{
+    	font-weight: 700;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: -0.75px;
+        margin-bottom: 20px;}
+    .section_business.reagent_conts .info-box .qr .info .desc{
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 400;
+		letter-spacing: -0.75px;
+		color: #454545;
+		margin-bottom: 60px;}
+    .section_business.reagent_conts .info-box .qr .info a{
+    	position: relative;
+   		font-size: 16px;
+		line-height: 30px;
+		font-weight: 700;
+		letter-spacing: -0.75px;
+		color: #2E87EF;}
+	 .section_business.reagent_conts .info-box .qr .info a:after{
+		content:'';
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+	 	margin-left: 20px;
+	 	width: 66px;
+	 	height: 12px;
+	 	background: url("../img/business/img-reagent-arrow.png") no-repeat;
+	 	background-size: cover;
+	 	}
+    
   .section_business .info-box .list-gallery .list .title {
     line-height: 52px;
     margin-bottom: 40px; }
