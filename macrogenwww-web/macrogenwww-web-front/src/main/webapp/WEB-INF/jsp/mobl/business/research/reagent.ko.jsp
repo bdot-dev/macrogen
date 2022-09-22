@@ -58,19 +58,20 @@
             <div class="info-box-wrap">     
                 <p class="title font-h4">Category</p>
                 <div class="category">
-	                <div class="item"><p>PCR</p></div>
-	                <div class="item"><p>Real-time<br>PCR</p></div>
+	                <div class="item"><a href="https://axen.modoo.at/?link=8jaseqwo">PCR</a></div>
+	                <div class="item"><a href="https://axen.modoo.at/?link=2k6xxy48">Real-time<br>PCR</a></div>
 	            </div>
 	            <div class="category">
-	                <div class="item"><p>Sample<br>Preparation</p></div>
-	                <div class="item"><p>Plastic ware</p></div>
+	                <div class="item"><a href="https://axen.modoo.at/?link=aaucbhds">Sample<br>Preparation</a></div>
+	                <div class="item"><a href="https://axen.modoo.at/?link=8lozt65l">Plastic ware</a></div>
 	            </div>
 	            <div class="category">
-	                <div class="item"><p>Related<br>products</p></div>
-	                <div class="item"><p>METTLER<br>TOLEDO</p></div>
+	                <div class="item"><a href="https://axen.modoo.at/?link=5dbrfd45">Related<br>products</a></div>
+	                <div class="item"><a href="https://www.mt.com/kr/ko/home.html">METTLER<br>TOLEDO</a></div>
                 </div>                
                 <div class="btn-area">
-	            	<a class="btn btn-light" href="mailto:reagent@macrogen.com"target="_blank" class="btn btn-white"><span>서비스문의</span></a>                   
+	            	<a class="btn btn-light" href="mailto:reagent@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>     
+	            	<a class="btn btn-light" href="https://axen.modoo.at/" target="_blank" class="btn btn-white"><span>자세히 보기</span></a>                   
 	            </div>                 
             </div>
         </div>
