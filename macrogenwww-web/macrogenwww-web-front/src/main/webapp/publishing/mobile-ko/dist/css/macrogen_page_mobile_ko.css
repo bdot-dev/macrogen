@@ -2617,11 +2617,11 @@
 	    margin-right:0;
 	    background: rgba(0, 0, 0, 0.5);}
 	    
-	 .section_business.reagent_conts .info-box-wrap .category:nth-of-type(3) .item:last-child p{font-size:14px;}
-     .section_business.reagent_conts .info-box-wrap .category .item p{display: table-cell; vertical-align: middle; font-size: 16px; font-family: Proxima Nova; font-weight: 700; text-align: center; line-height:19.49px; color: #fff;}
-     .section_business.reagent_conts .info-box-wrap .category .item p:before{content:'•'; display: block; color: #2E87EF; font-size: 24px;}
-     .section_business.reagent_conts .info-box-wrap .category .item:hover p:before{color: #fff;}
-     .section_business.reagent_conts .info-box-wrap .category:nth-of-type(3) .item:hover:last-child p{display:none;}
+	 .section_business.reagent_conts .info-box-wrap .category:nth-of-type(3) .item:last-child a{font-size:14px;}
+     .section_business.reagent_conts .info-box-wrap .category .item a{display: table-cell; vertical-align: middle; font-size: 16px; font-family: Proxima Nova; font-weight: 700; text-align: center; line-height:19.49px; color: #fff;}
+     .section_business.reagent_conts .info-box-wrap .category .item a:before{content:'•'; display: block; color: #2E87EF; font-size: 24px;}
+     .section_business.reagent_conts .info-box-wrap .category .item:hover a:before{color: #fff;}
+     .section_business.reagent_conts .info-box-wrap .category:nth-of-type(3) .item:hover:last-child a{font-size:0;}
 	.section_business.reagent_conts .info-box-wrap .category:first-of-type .item:hover:first-child{
 		 background: url("../img/business/img-reagent-cat1-1.png") no-repeat;}
 	.section_business.reagent_conts .info-box-wrap .category:first-of-type .item:hover:nth-child(2){
