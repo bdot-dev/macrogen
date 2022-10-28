@@ -8585,7 +8585,7 @@
 		.macrogen.ethical-management .section-activity.section-supporters .slider .swiper-container .swiper-wrapper .swiper-slide .date{
 		  padding: 0 30px; margin-bottom: 30px; font-size: 16px; font-weight: 700; line-height: 28px; color: #909090; font-family: Proxima Nova;}
 		  
-		.section_IR td {border: 1px solid #000;}
+		.section_IR td, .section_IR tr, .section_IR th {border: 1px solid #000;}
 
 
 
