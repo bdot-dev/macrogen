@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.enums.Policy;
 import macrogen.www.service.CodeService;
@@ -81,6 +82,10 @@ public class PolicyController {
 			resultMap.put("resultVo", resultVo);
 		} else {
 			PolicyVo resultVo = policyService.viewByPk(vo.getPolicySn());
+			if(resultVo.getPolicyCn()!=null) {
+				resultVo.setPolicyCn(CommonStringUtil.replaceEventHander(resultVo.getPolicyCn()));
+				resultVo.setPolicyCn(CommonStringUtil.replaceEditorTag(resultVo.getPolicyCn()));
+			}
 			resultMap.put("resultVo", resultVo);
 
 			// 정책목록
@@ -103,7 +108,10 @@ public class PolicyController {
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
-
+		
+		vo.setPolicyCn(CommonStringUtil.replaceEditorTagRev(vo.getPolicyCn()));
+		vo.setPolicyCn(CommonStringUtil.cleanXSS(vo.getPolicyCn()));
+		
 		if (StringUtils.isEmpty(vo.getPolicySn())) {
 			vo.setLangCode(langId.name());
 			vo.setPolicyCode(policy.name());

@@ -36,6 +36,13 @@
 								</select>
 							</td>
 						</tr>
+						<tr>
+							<th>게시일 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<vue-datepicker v-model="resultVo.postDt" buttonimage="/images/calendar.png"
+								id="postDt" name="postDt"></vue-datepicker>
+							</td>
+						</tr>
 
 						<tr>
 							<th>대표 이미지 <span>*</span></th>

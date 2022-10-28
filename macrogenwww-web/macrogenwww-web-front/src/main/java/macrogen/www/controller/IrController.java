@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.FnlttService;
@@ -148,8 +149,12 @@ public class IrController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+		
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irdislos");
@@ -240,8 +245,12 @@ public class IrController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		nttService.increaseRdcnt(listVo);
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+		
 		model.addAttribute("resultVo", resultVo);
-
+		
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("irnews");

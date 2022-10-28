@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.BbsCtgryService;
 import macrogen.www.service.NttService;
@@ -207,8 +208,12 @@ public class RndController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
-		model.addAttribute("resultVo", resultVo);
 
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+		
+		model.addAttribute("resultVo", resultVo);
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		String bbsId = "research-result";
 		listVo.setLangCode(langId.name());

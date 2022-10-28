@@ -54,6 +54,7 @@
 					<col width="">
 					<col width="120px">
 					<col width="120px">
+					<col width="120px">
 				</colgroup>
 				<thead>
 					<tr>
@@ -63,6 +64,7 @@
 						<th>제목</th>
 						<th>등록자</th>
 						<th>최종수정일</th>
+						<th>게시일</th>
 					</tr>
 				</thead>
 				<tbody v-if="resultList.length > 0">
@@ -77,11 +79,12 @@
 							href="javascript:;">{{ result.somlnkSj }}</a></td>
 						<td>{{ result.updusrNm }}</td>
 						<td>{{ result.updtDt | timeToDate('YYYY-MM-DD HH:mm') }}</td>
+						<td>{{ result.postDt | timeToDate('YYYY-MM-DD') }}</td>
 					</tr>
 				</tbody>
 				<tbody v-if="resultList.length == 0">
 					<tr>
-						<td nowrap colspan="6" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
+						<td nowrap colspan="7" style="padding:80px 0px;text-align:center;">검색결과가 없습니다.</td>
 					</tr>
 				</tbody>
 			</table>

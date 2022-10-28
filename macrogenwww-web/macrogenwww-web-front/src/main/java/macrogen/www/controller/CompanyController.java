@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.common.storage.StorageService;
 import macrogen.www.enums.Codes.WnpzClCode;
 import macrogen.www.enums.LangId;
@@ -29,12 +30,14 @@ import macrogen.www.service.CmpnyhistService;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
 import macrogen.www.service.SetupService;
+import macrogen.www.service.SocialContentsService;
 import macrogen.www.service.WnpzService;
 import macrogen.www.vo.ApplFormVo;
 import macrogen.www.vo.AtchVo;
 import macrogen.www.vo.CmpnyhistGroupVo;
 import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.EmpaVo;
+import macrogen.www.vo.SocialContentsVo;
 import macrogen.www.vo.WnpzVo;
 import macrogen.www.vo.YearCmpnyhistVo;
 
@@ -78,7 +81,10 @@ public class CompanyController extends DefaultController {
 
 	@Autowired
 	private WnpzService wnpzService;
-
+	
+	@Autowired
+	private SocialContentsService socialContentsService;
+	
 	@Value("${globals.atch.private.path}")
 	private String atchPrivatePath;
 
@@ -139,7 +145,12 @@ public class CompanyController extends DefaultController {
 		model.addAttribute("globalYn", "Y");
 		return getDev() + "/company/global-network." + getLang();
 	}
-
+	
+	@RequestMapping("/sitemap")
+	public String sitemap(@PathVariable LangId langId, Model model) throws Exception {
+		return getDev() + "/company/sitemap." + getLang();
+	}
+	
 	@RequestMapping("/history")
 	public String history(@PathVariable LangId langId,
 			Model model) throws Exception {
@@ -184,7 +195,20 @@ public class CompanyController extends DefaultController {
 		// 마크로젠 젊은 생명정보 학자상 수상자 목록
 		List<WnpzVo> ybaResultList = wnpzService.allListByWnpzClCode(langId.name(), WnpzClCode.yba.name());
 		model.addAttribute("ybaResultList", ybaResultList);
-
+		
+		SocialContentsVo socoVo = new SocialContentsVo();
+		socoVo.setLangCode(langId.name());
+		socoVo.setFirstIndex(0);
+		socoVo.setRecordCountPerPage(20);
+		socoVo.setMode("fo");
+		socoVo.setCntntsCtgryCode("ESG");
+		List<SocialContentsVo> esgList = socialContentsService.list(socoVo);
+		model.addAttribute("esgList", esgList);
+		
+		socoVo.setCntntsCtgryCode("COMMUNITY");
+		List<SocialContentsVo> communityList = socialContentsService.list(socoVo);
+		model.addAttribute("communityList", communityList);
+		
 		return getDev() + "/company/social-contribution." + getLang();
 	}
 
@@ -193,6 +217,8 @@ public class CompanyController extends DefaultController {
 			@ModelAttribute("listVo") WnpzVo listVo, Model model) throws Exception {
 
 		WnpzVo resultVo = wnpzService.viewByPk(wnpzSn);
+		resultVo.setWnpzCn(CommonStringUtil.replaceEditorTag(resultVo.getWnpzCn()));
+		resultVo.setWnpzCn(CommonStringUtil.replaceEventHander(resultVo.getWnpzCn()));
 		model.addAttribute("resultVo", resultVo);
 
 		// 이전글, 다음글
@@ -391,6 +417,10 @@ public class CompanyController extends DefaultController {
 		model.addAttribute("remove_header_bg_white_unuse", "Y");
 
 		EmpaVo resultVo = empaService.viewByPk(empaSn);
+		
+		resultVo.setEmpaCn(CommonStringUtil.replaceEditorTag(resultVo.getEmpaCn()));
+		resultVo.setEmpaCn(CommonStringUtil.replaceEventHander(resultVo.getEmpaCn()));
+		
 		model.addAttribute("resultVo", resultVo);
 
 		// 이전글, 다음글

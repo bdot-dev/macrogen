@@ -1,6 +1,8 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -43,7 +45,8 @@ public class MainController extends DefaultController {
 		nttVo.setBbsId("press-release");
 		nttVo.setFirstIndex(0);
 		nttVo.setRecordCountPerPage(3);
-		List<NttVo> newsList = nttService.list(nttVo);
+		nttVo.setOrderBy("regist_dt_desc");
+		List<NttVo> newsList = nttService.list(nttVo);	
 		model.addAttribute("newsList", newsList);
 
 		// Social Media 목록
@@ -51,6 +54,12 @@ public class MainController extends DefaultController {
 		somlnkVo.setLangCode(langId.name());
 		somlnkVo.setFirstIndex(0);
 		somlnkVo.setRecordCountPerPage(20);
+
+		Date now = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String nowDt = df.format(now);
+		somlnkVo.setNowDt(df.parse(nowDt));
+
 		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
 		model.addAttribute("mainSomlnkList", mainSomlnkList);
 
@@ -61,25 +70,33 @@ public class MainController extends DefaultController {
 		popupVo.setLangCode(langId.name());
 		popupVo.setFirstIndex(-1);
 		popupVo.setExposed(true);
-		popupVo.setOrderBy("sort_asc");
+		//popupVo.setOrderBy("sort_asc");
+		popupVo.setOrderBy("sort_desc");
 
+		popupVo.setOrderBy("sort_desc");
+		popupVo.setExposedPopupCnt(popupService.count(popupVo));
 		List<PopupVo> popupList = popupService.list(popupVo);
 		if (null != popupList && !popupList.isEmpty()) {
 			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
+			List<Boolean> cookieChkList = new ArrayList<>();
 			for (PopupVo popup : popupList) {
+				cookieChkList.add(exceptPopupSnList.contains(popup.getPopupSn()));
 				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
 					model.addAttribute("popupVo", popup);
+					model.addAttribute("cookieChkList", cookieChkList);
+					model.addAttribute("popupList", popupList);
 				}
 			}
+			int popupCnt = popupList.size();
+			model.addAttribute("popupCnt", popupCnt);
 		}
-
+		//return getDev() + "/server." + getLang();
 		return getDev() + "/main/main." + getLang();
 	}
 
 	private List<Long> getExceptPopupSnList(HttpServletRequest request) {
 		try {
 			List<Long> snList = new ArrayList<>();
-
 			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-sn-list");
 			if (StringUtils.isEmpty(exceptPopupSnStr)) {
 				return snList;

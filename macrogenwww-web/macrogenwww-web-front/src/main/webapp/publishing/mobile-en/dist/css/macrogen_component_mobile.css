@@ -11416,6 +11416,12 @@ body {
         .wrap .full-bg .frame .font-slogan.en {
           font-size: 48px;
           line-height: 52px; }
+        .wrap .full-bg .frame .font-slogan.en.ft44{
+        	font-size: 44px; }
+         .wrap .full-bg .frame .font-slogan.en.ft39{
+        	font-size: 39px; }  
+        .wrap .full-bg .frame .font-slogan.en.ft39{
+          font-size: 39px; }
       .wrap .full-bg .frame .font-h7-r {
         margin-bottom: 24px;
         color: #fff;
@@ -13284,7 +13290,8 @@ table {
     overflow-x: hidden;
     overflow-y: auto; }
   .modal .modal-dialog {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     margin: 0;
     pointer-events: none;
@@ -13365,7 +13372,7 @@ table {
         .modal.modal-image-viewer .modal-dialog .modal-content .btn-close:hover {
           opacity: 1; }
   .modal.modal-notice {
-    top: auto;
+    bottom: 0;
     overflow: visible; }
     .modal.modal-notice .modal-dialog .modal-content {
       min-height: auto;

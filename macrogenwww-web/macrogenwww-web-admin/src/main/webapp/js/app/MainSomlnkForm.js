@@ -49,7 +49,7 @@ var MainSomlnkForm = (function($) {
 					} else {
 						vm.submitFlag = true;
 					}
-
+					
 					$.ajax({dataType : 'json', type : 'post',
 						contentType : 'application/json',
 						url : '/' + options.lang + '/main-somlnk/submit',
@@ -92,6 +92,11 @@ var MainSomlnkForm = (function($) {
 					if (!vm.resultVo.somlnkUrl) {
 						alert('필수입력 - 링크');
 						vm.$refs.somlnkUrl.focus();
+						return false;
+					}
+					if (!vm.resultVo.postDt) {
+						alert('필수입력 - 게시일');
+						vm.$refs.postDt.focus();
 						return false;
 					}
 					return true;

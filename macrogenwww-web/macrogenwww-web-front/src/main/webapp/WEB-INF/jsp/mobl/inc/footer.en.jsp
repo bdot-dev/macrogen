@@ -11,12 +11,16 @@
         <ul>
             <li>
                 <select class="select" title="serviceSite" onchange="openWindowInFooter(this)">
-                    <option selected value="https://dna.macrogen.com/">Order site</option>
+                	<option value="">Service&Policy</option>
+                    <option value="https://dna.macrogen.com/">Order site</option>
                     <option value="/${rc.locale.language }/policy/privacy">Privacy Statement</option>
                     <%-- <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option> --%>
                     <option value="/${rc.locale.language }/policy/image/">Image Information Processing Policy</option>
+                    <option value="/${rc.locale.language }/company/sitemap">sitemap</option>
+                    <option value="/${rc.locale.language }/company/contact-us">Contact us</option>
                 </select>
             </li>
+            
             <li>
                 <select class="select" title="familySite" onchange="openWindowInFooter(this)">
                     <option value="">Family Site</option>

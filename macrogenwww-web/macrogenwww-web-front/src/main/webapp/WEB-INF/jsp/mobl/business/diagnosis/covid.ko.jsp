@@ -43,7 +43,7 @@
             <div class="subject-box">
                 <p class="title font-h4">감염병 진단을 위한 분자진단 솔루션을 제공합니다</p>
                 <p class="desc font-body">
-                    전세계 코로나 대유행으로 최적의 검사 환경에서 시행되는 신속, 정확한 진단이 필수인 시대입니다.
+                   최적의 검사 환경에서 시행되는 신속, 정확한 진단이 필수인 시대입니다.
                     이에 마크로젠은 높은 정확도의 진단 키트와 함께 이동성 및 안전성, 편의성을 갖춘 현장 진단 시스템을 구성하여 환자와 의료진 모두에게 친화적인 통합 솔루션을 제안합니다.
                 </p>
 
@@ -55,10 +55,10 @@
                 <p class="title font-h4" id="tab_anchor">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
-                        <span class="text">Axen™ COVID-19 RT 진단키트</span>
+                        <span class="text">Axen™ COVID-19 항원/항체 진단키트</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Axen™ COVID-19 RT 진단키트</a></li>
+                        <li class="option-value active"><a href="#">Axen™ COVID-19 항원/항체 진단키트</a></li>
                         <li class="option-value"><a href="#">스마트 모바일 랩</a></li>
                     </ul>
                 </div>
@@ -69,13 +69,11 @@
             <!--covid19 탭 메뉴 s-->
             <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
-                <div class="info-box show">
-                    <p class="font-h4 main-title">Axen™ COVID-19 RT 진단키트</p>
-                    <p class="subject font-body-h">코로나바이러스감염증-19(COVID-19)의 감염 여부를 2시간 내 확인할 수 있는 체외진단 의료기기입니다.</p>
-                    <p class="desc img_bottom font-body">해당 제품은 실시간 유전자 증폭(Real Time-PCR, RT-PCR) 방식을 활용해 미량의 신종 코로나바이러스를 가진 환자를 정확하게 선별합니다.<br>
-                        Axen™ COVID-19 RT 진단키트는 식품의약품안전처의 수출 허가를 승인받았으며, 유럽 체외진단시약 인증(CE-IVD)을 획득해 해외 고객을 대상으로 신뢰도 높은 진단 서비스를 제공하고 있습니다.</p>
+                <div class="info-box info-covid19 show">
+                    <p class="font-h4 main-title">Axen™ COVID-19 항원 진단키트</p>
+                    <p class="desc img_bottom font-body">마크로젠 신속 항원 진단키트 Axen™ COVID-19 Ag RAPID는 97%의 높은 민감도로 타액, 비강 또는 비인두 검체에 존재하는 SARS-CoV-2 특정 항원을 정성 검출해 15분 이내 코로나바이러스 감염 여부를 신속히 진단할 수 있는 체외진단 의료기기입니다.</p>
                     <div class="img">
-                        <img src="/publishing/mobile-ko/dist/img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
+                        <img src="/publishing/mobile-ko/dist/img/business/img_coronamedical1.png" alt="Axen™ COVID-19 항원 진단키트">
                     </div>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -86,142 +84,120 @@
                                     <col style="width:50%;">
                                     <col style="width:50%;">
                                 </colgroup>
-                                <thead>
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Specification</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Detection target</td>
-                                    <td>2019-nCoV (COVID-19)</td>
+                                    <th>제품 타입</th>
+                                    <td>정성 신속진단키트<br>(면역크로마토그래피법)</td>
                                 </tr>
                                 <tr>
-                                    <td>Target region</td>
-                                    <td>ORF1ab / E gene</td>
+                                     <th rowspan="2">시료 및 시료양</th>
+                                    <td>타액, 비강 또는 비인두 도말 검체</td>
                                 </tr>
                                 <tr>
-                                    <td>Detection technology</td>
-                                    <td>Real-Time RT-PCR</td>
+                                    <td>4방울 (190㎕)</td>
                                 </tr>
                                 <tr>
-                                    <td>Specimen type</td>
-                                    <td>Nasal swab / Sputum</td>
+                                    <th>측정시간</th>
+                                    <td>15분</td>
                                 </tr>
                                 <tr>
-                                    <td>PCR run time</td>
-                                    <td>2 hrs</td>
+                                    <th>사용기간</th>
+                                    <td>24개월</td>
                                 </tr>
                                 <tr>
-                                    <td>Compatible PCR device</td>
-                                    <td>CFX96™ Real-Time PCR</td>
+                                    <th>보관온도</th>
+                                    <td>실온 (1 ~ 30℃)</td>
+                                </tr>
+                                <tr>
+                                    <th>포장 사이즈</th>
+                                    <td>30 T/Box</td>
                                 </tr>
                                 </tbody>
                             </table>
                             </div>
                         </div>
                         <div class="list-area">
-                            <p class="font-body-h title img">Detection Target Region</p>
-                            <ul class="list-circle-dot">
-                                <li><p>ORF1ab</p></li>
-                                <li><p>E gene</p></li>
+                            <p class="font-body-h title img">Features</p>
+                            <ul class="list-circle-dot features">
+                                <li><span>신속:</span><p> 15분 이내 검사 결과를 확인 가능</p></li>
+                                <li><span>정확:</span><p> 높은 민감도(96.9%, 126/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
+                                <li><span>간편:</span><p> 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
                             </ul>
                         </div>
+                        <div class="list-area last-list-area">
+                            <p class="font-body-h title img">Certification</p>
+                            <ul class="list-circle-dot">
+                                <li><p>유럽 체외진단시약 인증(CE-IVD)</p></li>
+                                <li><p>수출허가증 (CFS, Certificate of Free Sales)</p></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                         <p class="font-h4 main-title">Axen™ COVID-19 항체 진단키트</p>
+                    <p class="desc img_bottom font-body">마크로젠 신속 항체 진단키트 Axen™ COVID-19 lg RAPID는 97% 이상으로 높은 정확도로 검사자의 혈청, 혈장, 전혈에서 존재하는 SARS-CoV-2의 IgM / IgG 항체를 정성 검출하는
+체외진단 의료기기입니다. 아주 적은 양의 혈액으로 15분 이내에 코로나바이러스 감염 진단이 가능합니다.</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img_coronamedical2.png" alt="Axen™ COVID-19 항체 진단키트">
+                    </div>
+                    <div class="list-area-group">
                         <div class="list-area">
-                            <p class="font-body-h-b title figure_bottom">Process</p>
-                            <!--10.05 이미지 경로 변경-->
-                            <div class="img">
-                                <img src="/publishing/mobile-ko/dist/img/business/img_workflow_level5_row.png" alt="workflow">
-                            </div>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-body-h-b title figure_bottom">Process</p>
+                            <p class="font-body-h-b title figure_bottom">Specifications</p>
                             <div class="table-scroll">
-                            <table class="table">
+                             <table class="table">
                                 <colgroup>
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:40%;">
+                                    <col style="width:50%;">
+                                    <col style="width:50%;">
                                 </colgroup>
-                                <thead>
-                                <tr>
-                                    <th>ORF1ab</th>
-                                    <th>E gene</th>
-                                    <th>RNase P</th>
-                                    <th>Status</th>
-                                    <th>Results</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Positive</td>
+                                    <th>제품 타입</th>
+                                    <td>정성 신속진단키트<br>(면역크로마토그래피법)</td>
                                 </tr>
                                 <tr>
-                                    <td>Positive</td>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Positive (Repeat test, If the repeat result remains inconclusive, additional confirmation testiong should be conducted if clinically indicated.)</td>
+                                     <th rowspan="2">시료 및 시료양</th>
+                                    <td>혈청, 혈장, 전혈</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">Near-source SARS-CoV-2 (Sample should be retested. If the result is still invalid,
-                                        a new specimen should be obtained.)</td>
+                                    <td>3㎕</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Negative</td>
+                                	<th>버퍼희석액</th>
+                                    <td>4방울 (180㎕)</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Invalid</td>
-                                    <td class="text-start">Repeat test, If the repeat result remains invalid, consider collecting a new specimen.</td>
+                                    <th>측정시간</th>
+                                    <td>15분</td>
+                                </tr>
+                                <tr>
+                                    <th>사용기간</th>
+                                    <td>24개월</td>
+                                </tr>
+                                <tr>
+                                    <th>보관온도</th>
+                                    <td>실온 (1 ~ 30℃)</td>
+                                </tr>
+                                <tr>
+                                    <th>포장 사이즈</th>
+                                    <td>30 T/Box</td>
                                 </tr>
                                 </tbody>
                             </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="border-gray-box-wrap">
-                        <div class="border-gray-box">
-                            <div class="img">
-                             <img src="/publishing/mobile-ko/dist/img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
-                                <span class="btnZoom-1">
-                                    <i class="icon ico-zoom-white"></i>
-                                </span>
-                            </div>
+                        <div class="list-area">
+                            <p class="font-body-h title img">Features</p>
+                            <ul class="list-circle-dot features">
+                                <li><span>신속:</span><p> 15분 이내 검사 결과를 확인 가능</p></li>
+                                <li><span>정확:</span><p> 높은 민감도(97.7%, 127/130)와 특이도(97.3%, 146/150)로 정확한 진단 가능</p></li>
+                                <li><span>간편:</span><p> 별도의 장비 없이 쉽고 간편한 사용으로 현장 검사 최적화</p></li>
+                            </ul>
                         </div>
-                        <div class="border-gray-box">
-                            <div class="img">
-                                <img src="/publishing/mobile-ko/dist/img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
-                                <span class="btnZoom-2">
-                                    <i class="icon ico-zoom-white _btnZoom2"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="border-gray-box">
-                            <div class="img">
-                                <img src="/publishing/mobile-ko/dist/img/business/img_clinicaltrialtest.png" alt="flow">
-                                <span class="btnZoom-3">
-                                    <i class="icon ico-zoom-white _btnZoom3"></i>
-                                </span>
-                            </div>
-                        </div>
+                        <div class="list-area last-list-area2">
+                            <p class="font-body-h title img">Certification</p>
+                            <ul class="list-circle-dot">
+                                <li><p>유럽 체외진단시약 인증(CE-IVD)</p></li>
+                                <li><p>수출허가증 (CFS, Certificate of Free Sales)</p></li>
+                            </ul>
+                        </div>                        
                     </div>
                     <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
                     <div class="btn-area">

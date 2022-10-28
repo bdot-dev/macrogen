@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.BbsCtgryService;
 import macrogen.www.service.CodeService;
@@ -199,6 +200,12 @@ public class NttController {
 			NttAtchVo nttAtchVo = new NttAtchVo();
 			nttAtchVo.setNttSn(nttVo.getNttSn());
 			nttAtchVo.setFirstIndex(-1);
+			
+			if(resultVo.getNttCn()!=null) {
+				resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+				resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+			}
+			
 			resultVo.setAtchList(nttAtchService.list(nttAtchVo));
 		} else {
 			resultVo.setBbsId(bbsId);
@@ -237,7 +244,9 @@ public class NttController {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		vo.setLangCode(langId.name());
-
+		
+		vo.setNttCn(CommonStringUtil.replaceEditorTagRev(vo.getNttCn()));
+		vo.setNttCn(CommonStringUtil.cleanXSS(vo.getNttCn()));
 		if (StringUtils.isEmpty(vo.getNttSn())) {
 			vo.setRegisterSn(loginVo.getUserSn());
 			vo.setUpdusrSn(loginVo.getUserSn());

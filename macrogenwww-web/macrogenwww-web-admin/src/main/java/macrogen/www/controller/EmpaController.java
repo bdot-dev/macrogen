@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.EmpaService;
@@ -125,6 +126,10 @@ public class EmpaController {
 			resultMap.put("resultVo", resultVo);
 		} else {
 			EmpaVo resultVo = empaService.viewByPk(vo.getEmpaSn());
+			if(resultVo.getEmpaCn()!=null) {
+				resultVo.setEmpaCn(CommonStringUtil.replaceEventHander(resultVo.getEmpaCn()));
+				resultVo.setEmpaCn(CommonStringUtil.replaceEditorTag(resultVo.getEmpaCn()));
+			}
 			resultMap.put("resultVo", resultVo);
 		}
 
@@ -148,7 +153,10 @@ public class EmpaController {
 
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
-
+		
+		vo.setEmpaCn(CommonStringUtil.replaceEditorTagRev(vo.getEmpaCn()));
+		vo.setEmpaCn(CommonStringUtil.cleanXSS(vo.getEmpaCn()));
+		
 		if (StringUtils.isEmpty(vo.getEmpaSn())) {
 			vo.setLangCode(langId.name());
 			empaService.insert(vo);

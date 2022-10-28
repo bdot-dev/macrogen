@@ -143,7 +143,7 @@
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a> 
                     </div>
                     <hr class="divider">
                     <div class="board">
@@ -186,7 +186,7 @@
                     </div>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="http://dna.macrogen.com/kor/quotation/ngs/ngs_q뢰uotation_step1.jsp" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
                         <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
                     </div>
                     <hr class="divider">
@@ -293,7 +293,7 @@
                     <p class="desc">
                         엑소좀(Exosome)은 세포 유래의 200 nm 미만의 소포체이며, 엑소좀 안에는 기원한 세포에서 유래한 단백질과 DNA, RNA 등 다양한 생체분자들을 함유하고
                         있습니다. 이러한 특징을 이용하여 진단을 위한
-                        바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 증 적용 분야를 넓혀가고 있습니다.
+                        바이오마커(Biomarker)나 질병의 모니터링에 활용가능하며, 최근엔 치료제와 화장품 개발에도 활용되는 등 적용 분야를 넓혀가고 있습니다.
                     </p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
@@ -350,7 +350,7 @@
                 </div>
                 <!--Cell-->
                 <div class="info-box">
-                    <p class="font-h4 main-title">Single Cell Muti-omics analysis</p>
+                    <p class="font-h4 main-title">Single Cell Multi-omics analysis</p>
                     <p class="subject">국내 최초, 최다 경험을 바탕으로 고객 맞춤형 Single cell Multi-omics analysis 서비스를 제공합니다.</p>
                     <p class="desc img_bottom">싱글셀 유전자 분석은 생물의 기능적, 구조적 단위인 하나의 세포에서 유전자 발현량 및 유전자 변화를 분석하는 것 입니다. 싱글셀
                         단위에서 cellular heterogeneity, rare cell population, cellular differentiation, chromatin
@@ -359,7 +359,7 @@
                         기반으로 높은 수준의 유전자 분석 데이터를 빠르게 제공합니다. 또한 24년간 축적한 업계 1위의 유전체 분석 기술력과 빅데이터 및 미개척 분야 연구 투자를 기반으로 싱글셀
                         분석 서비스를 다양화하며 시장을 선도하고 있습니다. </p>
                     <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-cell.png" alt="Single Cell Muti-omics analysis소개이미지">
+                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-cell.png" alt="Single Cell Multi-omics analysis소개이미지">
                     </div>
                     <div class="box-gray-6">
                         <div>

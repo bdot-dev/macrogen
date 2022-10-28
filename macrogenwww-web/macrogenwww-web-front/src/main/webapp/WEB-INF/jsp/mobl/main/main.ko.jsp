@@ -443,10 +443,10 @@
 
                 <div class="video-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
                     <div class="info-box">
-                        <div class="title">#Macrogen TV</div>
-                        <div class="desc">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
-                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn_play">
-                            <i class="icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon-arrow-right-short"></i>
+                        <div class="title">도움이 필요하신가요?</div>
+                        <div class="desc">전문가와 가장 적합한 솔루션을 확인해보세요</div>
+                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn_play">
+                            <span>문의하기</span><i class="icon-arrow-right-short"></i>
                         </a>
                     </div>
                 </div>
@@ -473,7 +473,7 @@
 	                                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 	                                        </div>
 	                                        <div class="content">${result.somlnkSj }</div>
-	                                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 	                                    </a>
 	                                </div>
 								</c:forEach>
@@ -507,16 +507,22 @@
                 </div>
                 <div class="inner">
                     <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Kyoto, japan</span></a>
-                        <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='/${rc.locale.language}/company/global-network2#synapse'"><i></i><span>Synapse, Singapore</span></a>
-                        <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Rockville, USA</span></a>
+                    	<a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+	                    <a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network2#leuven'"><i></i><span>Leuven, Belgium</span></a>
+	                    <a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network2#paris'"><i></i><span>Paris, France</span></a>
+	                    <a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network2#italy'"><i></i><span>Milan, Italy</span></a>
+	                     <a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network2#poland'"><i></i><span>Szczecin, Poland</span></a>
+	                    <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>
+	                    <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+	                    <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
+	                    <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+	                    <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Tokyo, japan</span></a>
+	                    <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network2#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+	                    <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Boston, USA</span></a>
+	                    <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>New york, USA</span></a>
+	                    <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Rockville, USA</span></a>
+	                    <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Virginia, USA</span></a>
+	                    <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network2#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
                 </div>
             </div>
@@ -531,9 +537,12 @@
     </div>
 
 	<%-- 팝업 --%>
-	<c:if test="${not empty popupVo  }">
-		<div class="modal fade modal-notice" tabindex="-1" id="modal" data-bs-backdrop="static" aria-labelledby="modal"
+	<c:if test="${not empty popupList  }">
+	<c:forEach var="popup" items="${popupList}" varStatus="status">
+		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
 		     aria-hidden="true">
+		    <input type="hidden" value="${popupCnt}" id="popupCnt">
+			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
 		    <div class="modal-dialog">
 		        <div class="modal-content">
 		            <div class="modal-header">
@@ -543,8 +552,8 @@
 		                <div class="scroll">
 		                    <div class="data-img">
 		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
-			                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt=""
-			                    	onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
+			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 		                    </div>
 		                    <%-- <div class="btn-wrapper">
 		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
@@ -553,19 +562,35 @@
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="#" data-popup-sn="${popupVo.popupSn}" class="btn-footer close-box"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
 		            </div>
 		        </div>
 		    </div>
 		</div>
+		</c:forEach>
 		<script>
-		    var modalEl = document.getElementById('modal')
+		    /* var modalEl = document.getElementById('modal')
 		    var modal = new bootstrap.Modal(modalEl)
 
-		    modal.show();
+		    modal.show(); */
+		    
+		    var popupCnt = $("#popupCnt").val();
+			
+			for(var i=0;i<popupCnt;i++){
+				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
+				/* var modalEl = document.getElementById('modal'+i);
+				var modal = new bootstrap.Modal(modalEl);  */
+				var coockieChk = $("#cookieChkList"+i).val();
 
-		    $(document).ready(function () {
+				if(coockieChk == 'true'){
+					modal.hide();
+				}else if(coockieChk =='false'){
+					modal.show();
+				}
+			}
+
+		   /*  $(document).ready(function () {
 		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
 		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
 		    })
@@ -578,10 +603,10 @@
 		    modalEl.addEventListener('hide.bs.modal', function () {
 		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
 		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
-		    })
+		    })  */
 		</script>
 		<script>
-			$(function() {
+			/* $(function() {
 				var $btnPopupClose = $('#modal .close-box');
 				$btnPopupClose.on('click', function() {
 					var sn = $(this).data('popup-sn');
@@ -597,7 +622,7 @@
 					modal.hide();
 				});
 			});
-
+ */
 			function onclickPopupImage(url, trgtCode) {
 				if (!url) {
 					return;
@@ -608,6 +633,20 @@
 				} else {
 					location.href = url;
 				}
+			}
+ 
+			 function popupClose(sn) {
+				if (!sn) return;
+				
+				var snListStr = $.cookie('popup-sn-list');
+				if (!snListStr) {
+					snListStr = sn;
+				} else if (snListStr.indexOf(sn) < 0) {
+					snListStr += ',' + sn;
+				}
+
+				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+				modal.hide();
 			}
 		</script>
 	</c:if>
