@@ -10,8 +10,8 @@
 
         <div class="frame">
             <div class="hero-title">ESG Management</div>
-            <div class="slogan">Creating a <br/>healthy society.</div>
-            <div class= "slogan-sub">Paving the way to a sustainable future.</div>
+            <div class="slogan">Creating a healthier<br/> society</div>
+            <div class= "slogan-sub">Promoting health and research for a better future</div>
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -32,8 +32,7 @@
             <!-- s text -->
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">Toward a sustainable future<br/>
-                        where we all can flourish.</div>
+                    <div class="font-h3">We are shaping an inclusive <br/>and sustainable future</div>
                 </div>
             </div>
             <!-- e text -->

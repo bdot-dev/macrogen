@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+   <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
 	<script src="/publishing/pc-en/dist/js/lib/jquery-ui.min.js"></script>
@@ -68,30 +68,30 @@
                     <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
                         <!-- <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_01.png" alt="유전체 분석기술의"></p> -->
                         <p class="slogan-sub">Personalized genomic medicine</p>
-                        <p class="slogan-sub">for 7.8 billion people</p>
-                        <p class="desc">Leading the future with innovative<br/>genome analysis technology.</p>
+                        <p class="slogan-sub">for all 7.8 billion people</p>
+                        <p class="desc">Building a healthier future with <br/>innovative genome analysis technology</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                 	<div class="visual visual_02"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
-                        <p class="slogan-sub">big data and AI</p>
-                        <p class="desc">Paving the way to a better future with<br/>precision medicine based on big data powered by AI</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_02.png?v2" alt="빅데이터 ai기반"></p>
+                        <p class="slogan-sub">custom medicine</p>
+                        <p class="desc">Improving future health with higher precision <br/>and personalized medicine</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                 	<div class="visual visual_03"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
-                        <p class="slogan-sub">future</p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png?v2" alt="희망과 함께하는"></p>
+                        <p class="slogan-sub">for humanity</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                		<div class="visual visual_04"></div>
                     <div class="text-box phrase">
-                        <p>DNA will save the world.<br/>Your past and future is in your DNA.</p>
+                        <p>DNA holds our past and future</p>
                         <span class="name">Founder/Chairman of Macrogen<span>  Jeong-Sun Seo</span></span>
                     </div>
                 </div>
@@ -455,9 +455,9 @@
 	                </div>
 	                <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 	                    <div class="info-box">
-	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
-                            <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Watch our latest news in video.</div>
-	                        <a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>Marcrogen Youtube</span><i class="icon icon-arrow-right-short"></i></a>
+	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">How Can We Help You?</div>
+                            <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Our team of experts will help you find the most appropriate solutions to all your needs.</div>
+	                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>Contact us</span><i class="icon icon-arrow-right-short"></i></a>
 	                    </div>
 	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
 	                </div>
@@ -489,7 +489,7 @@
 	                        </div>
 	                        <div class="content">${result.somlnkSj }
 	                        </div>
-	                        <div class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></div>
+	                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 	                    </a>
 	                </div>
 				</c:forEach>
@@ -525,16 +525,22 @@
                         </div>
                     </div>
                     <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+                      	<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Leuven, Belgium</span></a>
+                      	<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
+                      	<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
+                      	<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
                         <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Kyoto, japan</span></a>
+                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
+                        <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
                         <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='/${rc.locale.language}/company/global-network#synapse'"><i></i><span>Synapse, Singapore</span></a>
                         <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
+                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
                     <script>
                     	$('.map .pin').on('click', function () {
@@ -579,8 +585,11 @@
 </div>
 
 <%-- 팝업 --%>
-<c:if test="${not empty popupVo  }">
-	<div class="modal" tabindex="-1" id="layerPopup" data-bs-backdrop="static">
+<c:if test="${not empty popupList  }">
+<c:forEach var="popup" items="${popupList}" varStatus="status">
+	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
+		<input type="hidden" value="${popupCnt}" id="popupCnt">
+		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
 	    <div class="modal-dialog modal-dialog-centered layer-modal">
 	        <div class="modal-content">
 	            <div class="modal-header">
@@ -601,16 +610,15 @@
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
 	                </div> --%>
 	                <div class="data-img">
-	                    <img src="${publicUrl}${popupVo.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popupVo.popupLinkUrl}', '${popupVo.popupLinkTrgtCode}')">
+	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 	                </div>
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn"
-	                    	value="${ popupVo.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn">Do not open today</label>
+	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }">
+	                    <label class="form-check-label" for="popup-sn${status.index }">Do not open today</label>
 	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close">
+	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
 	                    <span>Close</span>
 	                    <i class="icon ico-close-white"></i>
 	                </div>
@@ -618,31 +626,29 @@
 	        </div>
 	    </div>
 	</div>
+</c:forEach>
 	<script>
-	    var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show();
+	var popupCnt = $("#popupCnt").val();
+	
+	for(var i=0;i<popupCnt;i++){
+		var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
+		var coockieChk = $("#cookieChkList"+i).val();
+		
+		if(coockieChk == 'true'){
+			layerPopupModal.hide();
+		}else if(coockieChk =='false'){
+			layerPopupModal.show();
+		}
+		
+	    //layerPopupModal.show();
+	}
+	
+	$('div.modal-backdrop:gt(0)').css("opacity", "0");
+		
+	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+	    layerPopupModal.show(); */
 	</script>
 	<script>
-		$(function() {
-			var $btnPopupClose = $('#layerPopup .close-box');
-			var $chkPopupSn = $('#layerPopup #popup-sn');
-			$btnPopupClose.on('click', function() {
-				if ($chkPopupSn.is(':checked')) {
-					var sn = $chkPopupSn.val();
-					if (!sn) return;
-
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-				}
-				layerPopupModal.hide();
-			});
-		});
-
 		function onclickPopupImage(url, trgtCode) {
 			if (!url) {
 				return;
@@ -653,6 +659,24 @@
 			} else {
 				location.href = url;
 			}
+		}
+		
+		function popupClose(sn, idx) {
+			if ($('#popup-sn'+idx).is(':checked')) {
+				if (!sn) return;
+	
+				var snListStr = $.cookie('popup-sn-list');
+				if (!snListStr) {
+					snListStr = sn;
+				} else if (snListStr.indexOf(sn) < 0) {
+					snListStr += ',' + sn;
+				}
+				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+			}
+			
+			layerPopupModal.hide();
+			$('.show').parent('body').css("overflow", "hidden");
+			$('.show').parent('body').css("padding-right", "17px");
 		}
 	</script>
 

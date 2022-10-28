@@ -87,46 +87,52 @@
                     <div class="overview-list">
                         <ul class="row">
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
-                                <span class="font-h4">30M</span>
-                                <span class="font-body-h">유전체 분석 건수</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_1.png" alt="매출 1,300억원 규모"></span>
+                                <span class="font-h4">&#36;130M</span>
+                                <span class="font-body-h">매출 1,300억원 규모¹</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_2.png" alt="바이오벤처 최초 코스닥 상장"></span>
-                                <span class="font-h4">1st</span>
-                                <span class="font-body-h">바이오벤처 최초<br/> 코스닥 상장</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_2.png" alt="해외매출 비중"></span>
+                                <span class="font-h4">50&#37;</span>
+                                <span class="font-body-h">해외매출 비중¹</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_3.png" alt="매출 1,000억 돌파"></span>
-                                <span class="font-h4">&#36;100M</span>
-                                <span class="font-body-h">매출 1,000억 돌파</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_6.png" alt="1만 8천여 고객"></span>
+                                <span class="font-h4"><span class="ko">전세계</span> 153<span class="ko">개국</span></span>
+                                <span class="font-body-h">1만 8천여 고객</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_4.png" alt="해외 매출"></span>
-                                <span class="font-h4">70&#37;</span>
-                                <span class="font-body-h">해외 매출</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_8.png" alt="글로벌 임직원 수"></span>
+                                <span class="font-h4">600&#43;</span>
+                                <span class="font-body-h">글로벌 임직원 수²</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_5.png" alt="리서치 시퀀싱 분야 점유율"></span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_5.png" alt="국내 유전체 분석 시장점유율 1위"></span>
                                 <span class="font-h4">No.1</span>
-                                <span class="font-body-h">리서치 시퀀싱 분야<br/> 점유율</span>
+                                <span class="font-body-h">국내 유전체 분석<br> 시장점유율 1위</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_6.png" alt="153개국 18,000여 고객"></span>
-                                <span class="font-h4">153<span class="ko">국</span></span>
-                                <span class="font-body-h">18,000 글로벌파트너</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_3.png" alt="연간 30만명 유전체 분석 CAPA"></span>
+                                <span class="font-h4">Global TOP5</span></span>
+                                <span class="font-body-h">연간 30만명<br> 유전체 분석 CAPA</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_7.png" alt="SCI급 네이처지 논문 148편"></span>
-                                <span class="font-h4">19</span>
-                                <span class="font-body-h">Nature지 논문</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_4.png" alt="빅데이터 컴퓨팅 인프라"></span>
+                                <span class="font-h4">30PB</span>
+                                <span class="font-body-h">빅데이터 컴퓨팅<br> 인프라</span>
                             </li>
                             <li class="item col col-6">
-                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_8.png" alt="바이오벤처 기업 지원"></span>
-                                <span class="font-h4">18</span>
-                                <span class="font-body-h">바이오벤처 기업 지원</span>
+                                <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_7.png" alt="한국인 표준 유전체 완성 등 논문 발표 수"></span>
+                                <span class="font-h4">148</span>
+                                <span class="font-body-h">한국인 유전체<br> 완성 등 논문 발표 수³</span>
                             </li>
                         </ul>
+                        <hr class="divider">
+                        <div class="footnote">
+	                        1) 2021년 연결 기준<br>
+							2) 2022년 3월 기준<br>
+							3) Nature 본지/자매지, SCI급 논문  발표수 
+						</div>
                     </div>
                 </div>
             </div>
@@ -400,8 +406,8 @@
                         <div class="desc">
                             <div class="brochure_img"><span class="sr-only">digital brochure</span></div>
                             <div class="download-area">
-                                <a href="/downfile//macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>국문 PDF</span><i class="icon ico-download-black"></i></a>
-                                <a href="/downfile//macrogen_brochure_en.pdf" target="_blank" class="btn btn-light btn-round"><span>영문 PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="/downfile/macrogen_brochure_ko.pdf" target="_blank" class="btn btn-light btn-round"><span>국문 PDF</span><i class="icon ico-download-black"></i></a>
+                                <a href="/downfile/macrogen_brochure_en.pdf" target="_blank" class="btn btn-light btn-round"><span>영문 PDF</span><i class="icon ico-download-black"></i></a>
                             </div>
                         </div>
                     </div>

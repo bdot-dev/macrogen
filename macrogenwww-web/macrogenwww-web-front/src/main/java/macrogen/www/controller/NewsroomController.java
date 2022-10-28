@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.NttService;
 import macrogen.www.vo.NttVo;
@@ -55,18 +56,27 @@ public class NewsroomController extends DefaultController {
 
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
-
+		listVo.setOrderBy("regist_dt_desc");
 		List<NttVo> resultList = nttService.list(listVo);
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-
+		
+		for(int i=0;i<resultList.size();i++) {
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(resultList.get(i).getNttCn()));
+			resultList.get(i).setNttCn(CommonStringUtil.replaceEventHander(resultList.get(i).getNttCn()));
+		}
+		
 		model.addAttribute("paginationInfo", paginationInfo);
 		model.addAttribute("resultList", resultList);
 
 		List<NttVo> upendFixingList = nttService.upendFixingList(langId.name(), listVo.getBbsId());
+		for(int i=0;i<upendFixingList.size();i++) {
+			upendFixingList.get(i).setNttCn(CommonStringUtil.replaceEditorTag(upendFixingList.get(i).getNttCn()));
+			upendFixingList.get(i).setNttCn(CommonStringUtil.replaceEventHander(upendFixingList.get(i).getNttCn()));
+		}
 		model.addAttribute("upendFixingList", upendFixingList);
 
 		return getDev() + "/newsroom/news." + getLang();
@@ -89,14 +99,14 @@ public class NewsroomController extends DefaultController {
 
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
-
+		
 		List<NttVo> resultList = nttService.list(listVo);
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-
+		
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
@@ -108,8 +118,11 @@ public class NewsroomController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("press-release");
@@ -197,7 +210,7 @@ public class NewsroomController extends DefaultController {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		String bbsId = "media-library";
 		listVo.setLangCode(langId.name());
@@ -305,13 +318,16 @@ public class NewsroomController extends DefaultController {
 			@ModelAttribute("listVo") NttVo listVo, Model model) throws Exception {
 
 		NttVo resultVo = nttService.viewByPk(nttSn);
+		resultVo.setNttCn(CommonStringUtil.replaceEditorTag(resultVo.getNttCn()));
+		resultVo.setNttCn(CommonStringUtil.replaceEventHander(resultVo.getNttCn()));
+	
 		model.addAttribute("resultVo", resultVo);
-
+		nttService.increaseRdcnt(listVo);
 		// 이전글, 다음글
 		listVo.setLangCode(langId.name());
 		listVo.setBbsId("notice");
 		listVo.setNttSn(nttSn);
-
+		
 		NttVo prevVo = nttService.prev(listVo);
 		model.addAttribute("prevVo", prevVo);
 

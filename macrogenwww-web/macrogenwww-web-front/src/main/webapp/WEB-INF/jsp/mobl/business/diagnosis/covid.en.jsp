@@ -41,10 +41,9 @@
         <div class="section_business">
             <!--covid19 공통 s -->
             <div class="subject-box">
-                <p class="title font-h4">We provide molecular diagnostic solutions for infectious diseases.</p>
+                <p class="title font-h4">We provide molecular diagnostic solutions to diagnose infectious diseases.</p>
                 <p class="desc font-body">
-                    Due to the global pandemic, it is essential to have an optimal test environment for prompt and accurate diagnoses. To this end, Macrogen proposes integrated<br>
-                    solutions for both patients and medical staff, which consist of onsite diagnostic systems with superior mobility, safety, and convenience and accurate diagnostic kits.
+                    Rapid and accurate diagnoses made in the optimal testing environment are a must in today's world. Macrogen proposes integrated diagnostic solutions easy-to-use for both patients and medical professionals by supplying highly accurate testing kits and building the point-of-care diagnosis system marked by mobility, safety, and convenience.
                 </p>
 
             </div>
@@ -55,10 +54,10 @@
                 <p class="title font-h4" id="tab_anchor">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
-                        <span class="text">Axen™ COVID-19 RT Test Kit</span>
+                        <span class="text">Axen™ COVID-19 Testing Kits</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Axen™ COVID-19 RT Test Kit</a></li>
+                        <li class="option-value active"><a href="#">Axen™ COVID-19 Testing Kits</a></li>
                         <li class="option-value"><a href="#">Macrogen Smart Mobile Lab</a></li>
                     </ul>
                 </div>
@@ -69,13 +68,14 @@
             <!--covid19 탭 메뉴 s-->
             <div class="info-box-wrap tab-content">
                 <!--Axen™ COVID-19 RT 진단키트-->
-                <div class="info-box show">
-                    <p class="font-h4 main-title">Axen™ COVID-19 RT Test Kit</p>
-                    <p class="subject font-body-h"An in vitro diagnostic kit for confirming the infection of COVID-19 in just two hours.</p>
-                    <p class="desc img_bottom font-body">Based on the RT-PCR (Real Time PCR), the kit is suitable for screening patients with small amounts of novel coronavirus due to its outstanding target detection. The Axen™ COVID-19
-                        <br>test kit has obtained export approval from the Korean Ministry of Food and Drug Safety and Europe’s In-Vitro Diagnostic (CE-IVD) to provide reliable diagnostic services.</p>
+                <div class="info-box info-covid19 show">
+                    <p class="font-h4 main-title">Axen™ COVID-19 Ag RAPID</p>
+                   <!-- <p class="subject font-body-h">An in vitro diagnostic kit for confirming the infection of COVID-19 in just two hours.</p> -->
+                    <p class="desc img_bottom font-body">
+						Axen™ COVID-19 Ag RAPID is Macrogen's rapid antigen self-test kit with a high sensitivity of 97%. It can rapidly confirm COVID-19 infection within 15 minutes by qualitatively detecting the SARS-CoV-2 specific antigen in specimens from saliva, nasal swabs, or nasopharyngeal swabs.
+					</p>
                     <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img_coronamedical.png" alt="Axen™ COVID-19 RT 진단키트">
+                        <img src="/publishing/mobile-en/dist/img/business/img_coronamedical1.png" alt="Axen™ COVID-19 Ag RAPID">
                     </div>
                     <div class="list-area-group">
                         <div class="list-area">
@@ -86,142 +86,121 @@
                                     <col style="width:50%;">
                                     <col style="width:50%;">
                                 </colgroup>
-                                <thead>
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Specification</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Detection target</td>
-                                    <td>2019-nCoV (COVID-19)</td>
+                                    <th>Product Type</th>
+                                    <td>Qualitative Rapid Testing Kit<br> (ImmunoChromatography)</td>
                                 </tr>
                                 <tr>
-                                    <td>Target region</td>
-                                    <td>ORF1ab / E gene</td>
+                                    <th rowspan="2">Specimen<br> & Test Volume</th>
+                                    <td>saliva, nasal swabs, or nasopharyngeal swabs</td>
                                 </tr>
                                 <tr>
-                                    <td>Detection technology</td>
-                                    <td>Real-Time RT-PCR</td>
+                                    <td>4 drops(190 ㎕)</td>
                                 </tr>
                                 <tr>
-                                    <td>Specimen type</td>
-                                    <td>Nasal swab / Sputum</td>
+                                    <th>Reading Time</th>
+                                    <td>15 minutes</td>
                                 </tr>
                                 <tr>
-                                    <td>PCR run time</td>
-                                    <td>2 hrs</td>
+                                    <th>Shelf-life</th>
+                                    <td>24 months</td>
                                 </tr>
                                 <tr>
-                                    <td>Compatible PCR device</td>
-                                    <td>CFX96™ Real-Time PCR</td>
+                                    <th>Storage Temp</th>
+                                    <td>Room Temperature (1~30℃)</td>
+                                </tr>
+                                <tr>
+                                    <th>Package</th>
+                                    <td>30 T/Box</td>
                                 </tr>
                                 </tbody>
                             </table>
                             </div>
                         </div>
                         <div class="list-area">
-                            <p class="font-body-h title img">Detection Target Region</p>
-                            <ul class="list-circle-dot">
-                                <li><p>ORF1ab</p></li>
-                                <li><p>E gene</p></li>
+                            <p class="font-body-h title img">Features</p>
+                            <ul class="list-circle-dot features">
+                                <li><span>Rapid:</span><p> Result reading possible within 15 minutes</p></li>
+                                <li><span>Accurate:</span><p> high sensitivity (96.9%, 126/130) and high specificity (97.3%, 146/150)</p></li>
+                                <li><span>Simple:</span><p> Optimized point-of-care testing enabled by the test kit easy and simple to use</p></li>
                             </ul>
                         </div>
+                        <div class="list-area last-list-area">
+                            <p class="font-body-h title img">Certification</p>
+                            <ul class="list-circle-dot">
+                                <li><p>CE-IVD</p></li>
+                                <li><p>CFS, Certificate of Free Sales</p></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <p class="font-h4 main-title">Axen™ COVID-19 lg RAPID</p>
+                    <p class="desc img_bottom font-body">Axen™ COVID-19 lg RAPID is Macrogen's rapid antibody testing kit with a high accuracy of 97% or more. It is an in vitro diagnostic device that qualitatively
+						detects the IgM / IgG antibodies to SARS-CoV-2 in serum, plasma, and whole blood. With a minimal amount of blood sample, it can diagnose COVID-19
+						infection within 15 minutes.</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img_coronamedical2.png" alt="Axen™ COVID-19 lg RAPID">
+                    </div>
+                    <div class="list-area-group">
                         <div class="list-area">
-                            <p class="font-body-h-b title figure_bottom">Process</p>
-                            <!--10.05 이미지 경로 변경-->
-                            <div class="img">
-                                <img src="/publishing/mobile-en/dist/img/business/img_workflow_level5_row.png" alt="workflow">
-                            </div>
-                        </div>
-                        <div class="list-area">
-                            <p class="font-body-h-b title figure_bottom">Process</p>
+                            <p class="font-body-h-b title figure_bottom">Specifications</p>
                             <div class="table-scroll">
-                            <table class="table">
+                             <table class="table">
                                 <colgroup>
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:15%;">
-                                    <col style="width:40%;">
+                                    <col style="width:50%;">
+                                    <col style="width:50%;">
                                 </colgroup>
-                                <thead>
-                                <tr>
-                                    <th>ORF1ab</th>
-                                    <th>E gene</th>
-                                    <th>RNase P</th>
-                                    <th>Status</th>
-                                    <th>Results</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Positive</td>
+                                    <th>Product Type</th>
+                                    <td>Qualitative Rapid Testing Kit<br/>(ImmunoChromatography)</td>
                                 </tr>
                                 <tr>
-                                    <td>Positive</td>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Positive (Repeat test, If the repeat result remains inconclusive, additional confirmation testiong should be conducted if clinically indicated.)</td>
+                                    <th rowspan="2">Specimen<br> & Test Volume</th>
+                                    <td>serum, plasma, and whole blood</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">Near-source SARS-CoV-2 (Sample should be retested. If the result is still invalid,
-                                        a new specimen should be obtained.)</td>
+                                    <td>3㎕</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Positive</td>
-                                    <td>Valid</td>
-                                    <td class="text-start">SARS-CoV-2 Negative</td>
+                                    <th>Sample Diluent<br> Buffer Volume</th>
+                                    <td>4 drops(180 ㎕)</td>
                                 </tr>
                                 <tr>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Negative</td>
-                                    <td>Invalid</td>
-                                    <td class="text-start">Repeat test, If the repeat result remains invalid, consider collecting a new specimen.</td>
+                                    <th>Reading Time</th>
+                                    <td>15 minutes</td>
+                                </tr>
+                                <tr>
+                                    <th>Shelf-life</th>
+                                    <td>24 months</td>
+                                </tr>
+                                <tr>
+                                    <th>Storage Temp</th>
+                                    <td>Room Temperature (1~30℃)</td>
+                                </tr>
+                                <tr>
+                                    <th>Package</th>
+                                    <td>30 T/Box</td>
                                 </tr>
                                 </tbody>
                             </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="border-gray-box-wrap">
-                        <div class="border-gray-box">
-                            <div class="img">
-                             <img src="/publishing/mobile-en/dist/img/business/img_data_graph1.png" alt="ORF1AB/E/RnaseP Amplificaton">
-                                <span class="btnZoom-1">
-                                    <i class="icon ico-zoom-white"></i>
-                                </span>
-                            </div>
+                        <div class="list-area">
+                            <p class="font-body-h title img">Features</p>
+                            <ul class="list-circle-dot features">
+                                <li><span>Rapid:</span><p> Result reading possible within 15 minutes</p></li>
+                                <li><span>Accurate:</span><p> high sensitivity (97.7%, 127/130) and high specificity (97.3%, 146/150)</p></li>
+                                <li><span>Simple:</span><p> Optimized point-of-care testing enabled by the test kit easy and simple to use</p></li>
+                            </ul>
                         </div>
-                        <div class="border-gray-box">
-                            <div class="img">
-                                <img src="/publishing/mobile-en/dist/img/business/img_data_graph2.png" alt="ORF 1ab/E Amplificaton">
-                                <span class="btnZoom-2">
-                                    <i class="icon ico-zoom-white _btnZoom2"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="border-gray-box">
-                            <div class="img">
-                                <img src="/publishing/mobile-en/dist/img/business/img_clinicaltrialtest.png" alt="flow">
-                                <span class="btnZoom-3">
-                                    <i class="icon ico-zoom-white _btnZoom3"></i>
-                                </span>
-                            </div>
-                        </div>
+                        <div class="list-area last-list-area2">
+                            <p class="font-body-h title img">Certification</p>
+                            <ul class="list-circle-dot">
+                                <li><p>CE-IVD</p></li>
+                                <li><p>CFS, Certificate of Free Sales</p></li>
+                            </ul>
+                        </div>                        
                     </div>
                     <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
                     <div class="btn-area">

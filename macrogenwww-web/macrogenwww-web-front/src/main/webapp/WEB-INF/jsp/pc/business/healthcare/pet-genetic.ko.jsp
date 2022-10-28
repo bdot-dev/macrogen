@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg business_bg bg-type3">
+    <div class="full-bg business_bg bg-type4">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
@@ -128,7 +128,7 @@
                                         이러한 암수의 성염색체 차이를 DNA분석을 통해 확인함으로써 조류의 성 감별이 가능합니다.</p>
                                     <div class="btn-wrap">
                                         <a href="https://www.mypetgene.com/sub/sub02_04.php" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                    </div>
+                                    </div
                                 </div>
                             </div>
                         </div>
@@ -140,12 +140,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
+		</div>
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
-
 </body>

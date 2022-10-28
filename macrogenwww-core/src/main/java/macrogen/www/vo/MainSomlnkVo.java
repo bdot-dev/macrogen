@@ -1,5 +1,6 @@
 package macrogen.www.vo;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,6 +26,8 @@ public class MainSomlnkVo extends DefaultVo {
 	private String somlnkSj;
 	private String somlnkUrl;
 	private Integer sortOrdr;
+	private Date postDt;
+	private Date nowDt;
 
 	private String searchSomlnkCtgryCode;
 
@@ -107,5 +110,17 @@ public class MainSomlnkVo extends DefaultVo {
 	}
 	public void setSearchSomlnkCtgryCode(String searchSomlnkCtgryCode) {
 		this.searchSomlnkCtgryCode = searchSomlnkCtgryCode;
+	}
+	public Date getPostDt() {
+		return postDt;
+	}
+	public void setPostDt(Date postDt) {
+		this.postDt = postDt;
+	}
+	public Date getNowDt() {
+		return nowDt;
+	}
+	public void setNowDt(Date nowDt) {
+		this.nowDt = nowDt;
 	}
 }

@@ -159,7 +159,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -214,7 +214,7 @@
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
                         <div class="btn-wrapper">
-                            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary">
+                            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary">
                                 <i class="icon ico-cart-white"></i>
                                 <span>Order</span></a>
                         </div>
@@ -380,7 +380,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -422,7 +422,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -440,7 +440,7 @@
                 </div>
                 <!--Cell-->
                 <div class="info-box">
-                    <p class="font-h4 main-title">Single Cell Muti-omics analysis</p>
+                    <p class="font-h4 main-title">Single Cell Multi-omics analysis</p>
                     <p class="subject font-body-h-b">Macrogen provides personalized single cell multi-omics analysis
                         services based on extensive experience and innovation.</p>
                     <p class="desc img_bottom font-body">Single-cell gene sequencing is used to analyze gene expression
@@ -456,7 +456,7 @@
                         data and unexplored areas.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-ngs-cell.png" alt="Single Cell Muti-omics analysis소개이미지">
+                        <img src="/publishing/mobile-en/dist/img/business/img-ngs-cell.png" alt="Single Cell Multi-omics analysis소개이미지">
                     </div>
                     <div class="box-gray-6">
                         <div>
@@ -501,7 +501,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -546,7 +546,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -592,7 +592,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>
@@ -684,7 +684,7 @@
                                                     class="btn btn-light"><span>Service Inquiry</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
                                target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank"
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
                                                     class="btn btn-primary"><i
                                 class="icon ico-cart-white"></i><span>Order</span></a></div>
                     </div>

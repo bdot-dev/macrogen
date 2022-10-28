@@ -33,8 +33,10 @@
 
         <div class="frame">
             <div class="font-h4">VISION</div>
-            <div class="font-slogan en">Global leader<br/>in precision medicine</div> <!-- 번역 변경 -- 2021.11.23 -->
-            <div class="font-h7-r">Predicts and diagnoses diseases and provides personalized solutions.</div>
+            <div class="font-slogan en ft39">The global leader 
+										in precision
+										medicine</div> <!-- 번역 변경 -- 2022.05.26 -->
+            <div class="font-h7-r">We predict and diagnose diseases and provides personalized solutions</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>

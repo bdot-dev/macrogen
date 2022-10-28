@@ -75,7 +75,7 @@
 					<tbody v-if="resultList.length > 0">
 						<tr v-for="(item, index) in resultList" >
 							<td>{{paginationInfo.totalRecordCount + 1 - ((paginationInfo.currentPageNo-1) * paginationInfo.recordCountPerPage + (index + 1)) }}</td>
-							<td><input type="text" v-model="item.sortOrdr" maxlength=3 name="sortOrdr" style="width:80%;" /></td>
+							<td><input type="text" v-model="item.sortOrdr" maxlength=3 name="sortOrdr" style="width:80%;"  :id="'sortOrdr' + index" /></td>
 							<td v-on:click="onClickView(item.popupSn)" style="cursor:pointer;" >{{item.popupNm}}</td>
 							<td>{{item.popupBeginDt | timeToDate('YYYY-MM-DD HH:mm')}} ~  {{item.popupEndDt | timeToDate('YYYY-MM-DD HH:mm')}}</td>
 							<td>{{item.expsrYn}}</td>
