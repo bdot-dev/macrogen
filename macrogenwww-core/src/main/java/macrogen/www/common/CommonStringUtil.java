@@ -212,13 +212,13 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)onmousewheel","");
         cont = cont.replaceAll("(?i)onactive","");
         cont = cont.replaceAll("(?i)onfocusout","");
-        cont = cont.replaceAll("(?i)expression","");
+        //cont = cont.replaceAll("(?i)expression","");
         cont = cont.replaceAll("(?i)charset","");
         cont = cont.replaceAll("(?i)ondataavailable","");
         cont = cont.replaceAll("(?i)oncut","");
         cont = cont.replaceAll("(?i)onkeyup","");
         cont = cont.replaceAll("(?i)applet","");
-        cont = cont.replaceAll("(?i)document","");
+        //cont = cont.replaceAll("(?i)document","");
         cont = cont.replaceAll("(?i)onafteripudate","");
         cont = cont.replaceAll("(?i)onclick","");
         cont = cont.replaceAll("(?i)onkeypress","");
@@ -236,7 +236,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)ondeactivate","");
         cont = cont.replaceAll("(?i)onmouseover","");
         //cont = cont.replaceAll("(?i)style","");
-        cont = cont.replaceAll("(?i)alert","");
+        //cont = cont.replaceAll("(?i)alert","");
         cont = cont.replaceAll("(?i)ondatasetchaged","");
         cont = cont.replaceAll("(?i)ondrag","");
         cont = cont.replaceAll("(?i)onsubmit","");
@@ -250,7 +250,7 @@ public class CommonStringUtil {
         cont = cont.replaceAll("(?i)cnbeforepaste","");
         cont = cont.replaceAll("(?i)ondragenter","");
         cont = cont.replaceAll("(?i)onresizestart","");
-        cont = cont.replaceAll("(?i)object","");
+       //cont = cont.replaceAll("(?i)object","");
         cont = cont.replaceAll("(?i)void","");
         cont = cont.replaceAll("(?i)onbeforeeditfocus","");
         cont = cont.replaceAll("(?i)ondragleave","");
@@ -350,13 +350,13 @@ public class CommonStringUtil {
 				"onmousewheel",
 				"onactive",
 				"onfocusout",
-				"expression",
+				//"expression",
 				"charset",
 				"ondataavailable",
 				"oncut",
 				"onkeyup",
 				"applet",
-				"document",
+				//"document",
 				"onafteripudate",
 				"onclick",
 				"onkeypress",
@@ -373,7 +373,7 @@ public class CommonStringUtil {
 				"onbeforedeactivate",
 				"ondeactivate",
 				"onmouseover",
-				"alert",
+				//"alert",
 				"ondatasetchaged",
 				"ondrag",
 				"onsubmit",
@@ -387,7 +387,7 @@ public class CommonStringUtil {
 				"cnbeforepaste",
 				"ondragenter",
 				"onresizestart",
-				"object",
+				//"object",
 				"void",
 				"onbeforeeditfocus",
 				"ondragleave",
