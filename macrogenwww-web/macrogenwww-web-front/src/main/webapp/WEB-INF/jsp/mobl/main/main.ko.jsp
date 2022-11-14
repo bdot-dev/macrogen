@@ -324,7 +324,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
+                           <!-- <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="font-h3">
                                         <span>더바이옴</span>
@@ -336,7 +336,7 @@
                                         마이크로바이옴을 분석하여<br/>나에게 가장 잘 맞는<br/>맞춤형 솔루션을 제공합니다
                                     </div>
                                 </div>
-                            </div>
+                            </div>  -->
                             <div class="swiper-slide" style="background: url(/publishing/mobile-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="font-h3">

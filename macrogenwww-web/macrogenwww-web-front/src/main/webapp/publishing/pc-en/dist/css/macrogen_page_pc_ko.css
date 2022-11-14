@@ -3614,6 +3614,7 @@
   .section_business .subject-box.no-line {
     padding-bottom: 50px;
     margin: 0; }
+  .section_business.microbiome .subject-box.no-line{padding-bottom:0;}
     .section_business .subject-box.no-line:after {
       display: none; }
   .section_business .subject-box:after {
