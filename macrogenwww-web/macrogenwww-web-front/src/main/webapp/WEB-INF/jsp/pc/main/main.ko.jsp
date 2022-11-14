@@ -352,7 +352,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
+                <!-- <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
                             <span>더바이옴</span><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
@@ -366,7 +366,7 @@
                             나에게 가장 잘 맞는 맞춤형 솔루션을 제공합니다
                         </div>
                     </div>
-                </div>
+                </div>  -->
                 <div class="swiper-slide" style="background: url(/publishing/pc-ko/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">

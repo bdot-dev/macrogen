@@ -2335,6 +2335,10 @@
     padding-bottom: 80px;
     border-bottom: 10px solid #f5f5f5;
     margin-bottom: 80px; }
+  .section_business .subject-box.no-line{
+ 	padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;}
     .section_business .subject-box .title {
       margin-bottom: 24px; }
     .section_business .subject-box .subject {
