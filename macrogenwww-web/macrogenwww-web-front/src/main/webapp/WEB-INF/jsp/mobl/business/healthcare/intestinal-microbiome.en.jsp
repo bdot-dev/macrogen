@@ -33,13 +33,13 @@
 
         <div class="frame">
             <div class="font-h1 microbiome_title">Microbiome Analysis and Customized Solutions</div>
-            <div class="font-body-h">The Biome</div>
+            <div class="font-body-h">The Biome Pro</div>
         </div>
     </div>
     <div class="container">
         <div class="section_business microbiome">
             <!--메인 컨텐츠-->
-            <div class="subject-box">
+            <div class="subject-box no-line">
                 <p class="title font-h4">We provide personalized healthcare solutions by analyzing each person's gut microbiome based on big data.
                 </p>
                 <p class="subject font-body-h img_bottom">
@@ -56,7 +56,7 @@
                     <img src="/publishing/mobile-en/dist/img/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                 </div>
             </div>
-            <div class="info-box-wrap">
+            <div class="info-box-wrap" style="display:none;">
                 <!--질병예측 & 웰니스 유전자검사-->
                 <div class="info-box show">
                     <p class="font-h4 sub-title" id="disease_title">The Biome</p>
