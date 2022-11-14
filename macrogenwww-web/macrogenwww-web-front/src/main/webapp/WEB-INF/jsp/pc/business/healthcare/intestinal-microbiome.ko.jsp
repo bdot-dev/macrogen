@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-
     <div class="full-bg business_bg bg-type3">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
@@ -19,7 +18,7 @@
 </nav>
 
             <div class="hero-title">마이크로바이옴 분석 및 맞춤형 솔루션</div>
-            <div class="slogan-sub">더바이옴</div>
+            <div class="slogan-sub">더바이옴 프로</div>
         </div>
     </div>
     <div class="container">
@@ -41,7 +40,7 @@
                     <img src="/publishing/pc-ko/dist/img/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                 </div>
             </div>
-            <div class="info-box-wrap">
+            <div class="info-box-wrap" style="display:none;">
                 <!--더바이옴-->
                 <div class="info-box">
                     <p class="font-h4 main-title">더바이옴(the Biome)</p>
