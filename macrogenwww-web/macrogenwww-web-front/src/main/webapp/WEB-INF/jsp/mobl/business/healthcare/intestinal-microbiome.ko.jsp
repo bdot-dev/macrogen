@@ -33,13 +33,13 @@
 
         <div class="frame">
             <div class="font-h1">마이크로바이옴 분석 및 맞춤형 솔루션</div>
-            <div class="font-body-h">더바이옴</div>
+            <div class="font-body-h">더바이옴 프로</div>
         </div>
     </div>
     <div class="container">
         <div class="section_business microbiome">
             <!--메인 컨텐츠-->
-            <div class="subject-box">
+            <div class="subject-box no-line">
                 <p class="title font-h4">빅데이터에 기반한 마이크로바이옴 분석을 통해 개인 맞춤형 건강관리 솔루션을 제공합니다 </p>
                 <p class="subject font-body-h img_bottom">
                 ‘마이크로바이옴’은 제2의 유전체라고도 불릴 만큼 중요한 존재로 주목 받고 있습니다. 신진대사, 소화능력, 질병 관리체계, 면역력 등 인체에 다양한 영향을 미치는 것으로 확인되면서, 질병의 90% 이상이 마이크로바이옴과 연관된 것으로도 나타났습니다.
@@ -54,7 +54,7 @@
                     <img src="/publishing/mobile-ko/dist/img/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                 </div>
             </div>
-            <div class="info-box-wrap">
+            <div class="info-box-wrap" style="display:none;">
                 <!--질병예측 & 웰니스 유전자검사-->
                 <div class="info-box show">
                     <p class="font-h4 sub-title" id="disease_title">더바이옴(the Biome)</p>

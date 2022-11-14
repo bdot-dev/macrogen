@@ -19,7 +19,7 @@
 </nav>
 
             <div class="hero-title microbiome_title">Microbiome Analysis and Customized Solutions</div>
-            <div class="slogan-sub">The Biome</div>
+            <div class="slogan-sub">The Biome Pro</div>
         </div>
     </div>
 
@@ -45,7 +45,7 @@
                     <img src="/publishing/pc-en/dist/img/business/img_microbiome_test.png" alt="마이크로바이옴 검사">
                 </div>
             </div>
-            <div class="info-box-wrap">
+            <div class="info-box-wrap" style="display:none;">
                 <!--더바이옴-->
                 <div class="info-box">
                     <p class="font-h4 main-title">The Biome</p>

@@ -24,7 +24,7 @@
             <li>
                 <select class="select" title="familySite" onchange="openWindowInFooter(this)">
                     <option value="">Family Site</option>
-                    <option value="https://thebiome.life/">The Biome</option>
+                   <!-- <option value="https://thebiome.life/">The Biome</option> -->
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
                     <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
                     <option value="https://psomagen.com/">Psomagen</option>

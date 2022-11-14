@@ -323,7 +323,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
+                           <!-- <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="font-h3">
                                         <span>The Biome</span>
@@ -335,7 +335,7 @@
                                         Solutions are personalized by analyzing one's microbiome.
                                     </div>
                                 </div>
-                            </div>
+                            </div>  -->
                             <div class="swiper-slide" style="background: url(/publishing/mobile-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
                                 <div class="text-area">
                                     <div class="font-h3">
