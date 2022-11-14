@@ -3619,6 +3619,8 @@
     position: absolute;
     left: 0;
     bottom: 0; }
+  .section_business.microbiome .subject-box{padding-bottom:0; margin-bottom:0;}
+  .section_business.microbiome .subject-box:after{display:none;}
 
 .section_business .tab-box {
   margin-bottom: 120px; }

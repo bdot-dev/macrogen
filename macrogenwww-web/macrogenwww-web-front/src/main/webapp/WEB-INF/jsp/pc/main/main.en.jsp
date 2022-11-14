@@ -349,7 +349,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
+                <!-- <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">
                             <span>The Biome</span><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
@@ -362,7 +362,7 @@
                             Solutions are personalized by analyzing one's microbiome.
                         </div>
                     </div>
-                </div>
+                </div>  -->
                 <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
                     <div class="text-area">
                         <div class="title">

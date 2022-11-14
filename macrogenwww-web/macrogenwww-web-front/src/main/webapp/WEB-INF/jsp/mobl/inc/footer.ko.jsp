@@ -23,7 +23,7 @@
             <li>
                 <select class="select" title="familySite" onchange="openWindowInFooter(this)">
                     <option value="">Family Site</option>
-                    <option value="https://thebiome.life/">더바이옴</option>
+                   <!-- <option value="https://thebiome.life/">더바이옴</option> -->
                     <option value="https://www.my-genomestory.com/">마이지놈스토리</option>
                     <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
                     <option value="https://psomagen.com/">소마젠(Psomagen)</option>
