@@ -65,7 +65,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                             </div>
                         </div>
                         <div class="desc">Macrogen’s headquarters and Psomagen (Macrogen USA) obtained the ISO 9001 certification from the British Standards Institution (BSI) in order to increase customer trust and satisfaction. Through this certification, we have established company-wide quality objectives and policies, as well as detailed regulations for our work processes. This has allowed us not only to improve the efficiency of our management practices, but also to achieve cost savings, improved profits, and enhanced competitiveness.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO 9001.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/FM_89418_마크로젠_(2022년).pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
@@ -90,7 +90,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                             </div>
                         </div>
                         <div class="desc">In February 2019, Macrogen received [NGS-based in-vitro diagnostic reagent GMP] from the Ministry of Food and Drug Safety, confirming the stability and effectiveness of our in vitro diagnostic reagent manufacturing technology. With this accreditation, Macrogen can launch and offer its clinical diagnostic product directly to the market.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/GMP_인증서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/GMP인정서_마크로젠_2025.08.23만료_(1).pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-2.png" alt="GMP Accreditation"></div>
