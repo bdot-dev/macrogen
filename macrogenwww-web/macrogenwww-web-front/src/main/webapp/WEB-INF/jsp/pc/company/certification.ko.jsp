@@ -67,7 +67,7 @@
                             인증을 획득하여 관리&#183;운영을 하고 있습니다&#46; 전사적인 품질 보장 방침 및 목표&#44; 업무 프로세스 상세 규정을 수립함으로써 경영 효율성을 제고함과 동시에 원가절감&#44;
                             이익개선&#44; 경쟁력 향상 등 긍정적인 성과를 내고 있습니다&#46;
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO 9001.pdf" target="_blank">ISO 9001 &#58; 2005 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/FM_89418_마크로젠_(2022년).pdf" target="_blank">ISO 9001 &#58; 2015 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
@@ -82,7 +82,7 @@
                 <div class="box">
                     <div class="left">
                         <div class="title-sm">
-                            <span>GMP 인정</span>
+                            <span>GMP 인증</span>
                             <div class="tooltip-box">
                                 <a class="btn-tooltip _btnTooltip" href="#"><i class="icon-tooltip"></i></a>
                                 <div class="text-box">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 2019년 2월 식품의약품안전처로부터 NGS 기반 체외진단 시약 GMP 인정을 획득했습니다&#46;  이를 통해 체외진단 시약 제조기술의 안전성과 유효성을 검증 받아 자체 개발한 임상 진단 시약을 직접 시장에 출시 및 판매할 수 있습니다&#46; </div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/GMP_인증서.pdf" target="_blank">GMP인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/GMP인정서_마크로젠_2025.08.23만료_(1).pdf" target="_blank">GMP인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
