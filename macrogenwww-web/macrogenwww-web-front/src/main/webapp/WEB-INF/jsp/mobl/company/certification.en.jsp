@@ -77,7 +77,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISO 9001.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/FM_89418_마크로젠_(2022년).pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP_인증서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP인정서_마크로젠_2025.08.23만료_(1).pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">

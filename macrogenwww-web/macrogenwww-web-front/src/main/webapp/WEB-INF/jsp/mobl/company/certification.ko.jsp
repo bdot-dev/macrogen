@@ -78,7 +78,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-1.png" alt="ISO 9001"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/ISO 9001.pdf" target="_blank">ISO 9001 : 2005 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/FM_89418_마크로젠_(2022년).pdf" target="_blank">ISO 9001 : 2015 인증서 보기</a></div>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="box">
                     <div class="title-box">
                         <div class="title-sm">
-                            <span>GMP 인정</span>
+                            <span>GMP 인증</span>
                             <div class="tooltip-box">
                                 <a class="btn-tooltip _btnTooltip" href="#"><i class="icon-tooltip"></i></a>
                                 <div class="text-box">
@@ -103,7 +103,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP_인증서.pdf" target="_blank">GMP인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP인정서_마크로젠_2025.08.23만료_(1).pdf" target="_blank">GMP인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">
