@@ -623,7 +623,7 @@
         .macrogen.macrogen-authorization .section .tooltip-box .btn-tooltip .icon-tooltip::before {
           content: '';
           position: absolute;
-          bottom: -19px;
+          bottom: -15px;
           left: 50%;
           transform: translateX(-50%) rotate(45deg);
           background-color: #fff;
