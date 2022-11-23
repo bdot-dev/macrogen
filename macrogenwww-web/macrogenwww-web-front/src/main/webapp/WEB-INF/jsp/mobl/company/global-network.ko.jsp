@@ -148,9 +148,29 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 지놈캠퍼스"></div>
                                         <div class="info">
                                             <ul>
+                                                <li><span>2025년 설립 예정</span></li>
+                                            </ul>
+                                            <div class="address">인천광역시 연수구 송도동 210-2</div>
+                                           <!-- <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+82-42-336-7080">+82-42-336-7080</a>
+                                                </div>
+                                                <div>
+                                                    <span>FAX.</span>
+                                                    <a href="tel:+82-42-336-7180">+82-42-336-7180</a>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="name">마크로젠 세종캠퍼스</div>
+                                        <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_16.png" alt="마크로젠 세종캠퍼스"></div>
+                                        <div class="info">
+                                            <ul>
                                                 <li><span>2024년 설립 예정</span></li>
                                             </ul>
-                                            <div class="address">인천광역시 연수구 송도동 210-2)</div>
+                                            <div class="address">세종특별자치시 4-2생활권 복합4-3-1 BL</div>
                                            <!-- <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>
@@ -324,7 +344,13 @@
                                             <ul>
                                                 <li><span>2022년 7월 설립</span></li>
                                             </ul>
-                                            <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                            
+                                            <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>
+                                            <div class="tel">
+                                                <div>
+                                                    <span>TEL.</span>
+                                                    <a href="tel:+33-1-82-32-00-96">+33-1-82-32-00-96</a>
+                                                </div>
+                                            </div>                                            
                                         </div>
                                     </li>
                                     <li class="item" id="poland">

@@ -131,10 +131,26 @@
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Genome Campus"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in 2024</span></li>
+                                        <li><span>Established in 2025</span></li>
                                     </ul>
                                     <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
                                     <!-- <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
+                                    </div>  -->
+                                </div>
+                            </li>
+                            <li class="item height_fix">
+                                <div class="name">Macrogen Sejong Campus</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_16.png" alt="Macrogen Sejong Campus"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>Established in 2024</span></li>
+                                    </ul>
+                                    <!-- <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
+                                    <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
                                         <span>FAX&#46;</span>
@@ -273,7 +289,11 @@
                                     <ul>
                                         <li><span>Established in Jul 2022</span></li>
                                     </ul>
-                                    <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                    
+                                    <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+33-1-82-32-00-96">+33&#45;1&#45;82&#45;32&#45;00&#45;96</a>
+                                    </div>
                                 </div>
                             </li>   
                             <li class="item height_fix" id="poland">
