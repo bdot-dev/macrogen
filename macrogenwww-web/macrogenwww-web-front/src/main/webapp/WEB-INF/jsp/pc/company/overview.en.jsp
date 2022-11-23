@@ -73,52 +73,53 @@
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
                         <ul>
                             <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
-                                <span class="val">&#36;130M</span>
-                                <span class="desc">Revenue¹</span>
-                            </li>
-                            <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_2.png" alt="Bio Ventures Listed on KOSDAQ"></span>
-                                <span class="val">50&#37;</span>
-                                <span class="desc">Global Sales Ratio¹</span>
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_5.png" alt="Market Share Research Sequencing"></span>
+                                <span class="val">No&#46;1</span>
+                                <span class="desc">Market share in Korea</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_6.png" alt="Revenue (2017)"></span>
-                                <span class="val">153 Countries</span>
-                                <span class="desc">18,000+ customers</span>
-                            </li>
-                            <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Overseas Revenue"></span>
-                                <span class="val">600&#43;</span>
-                                <span class="desc">No. of employees at<br/> Global Macrogen²</span>
-                            </li>
-                            <li class="item">
-                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_5.png" alt="Market Share Research Sequencing"></span>
-                                <span class="val">No&#46;1<br/> market share</span>
-                                <span class="desc">in the Korean<br/> DNA Sequencing Industry</span>
+                                <span class="val">150&#43;</span>
+                                <span class="desc">18K customers in<br/>153 countries<br/>around the globe</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_3.png" alt="Countries 18K+ Global Partners"></span>
                                 <span class="val">Global<br/> TOP5</span>
-                                <span class="desc">The annual DNA<br/> Sequencing capacity:<br/> 300,000 people per year</span>
+                                <span class="desc">By sequencing capacity<br/>(300K+ genomes per year)</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_2.png" alt="Bio Ventures Listed on KOSDAQ"></span>
+                                <span class="val">50&#37;</span>
+                                <span class="desc">Overseas revenue</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
+                                <span class="val">&#36;100M</span>
+                                <span class="desc">Annual revenue (2021)</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_4.png" alt="Nature Papers"></span>
                                 <span class="val">30PB</span>
-                                <span class="desc">Big data computing<br/> infrastructure</span>
+                                <span class="desc">Computing resources for<br/>big data analysis</span>
+                            </li>
+                            <li class="item">
+                                <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Overseas Revenue"></span>
+                                <span class="val">730&#43;</span>
+                                <span class="desc">Number of employees (2022)</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_7.png" alt="Companies Assistance to Bio Venture"></span>
                                 <span class="val">148</span>
-                                <span class="desc">No. of published articles³</span>
+                                <span class="desc">SCI-level articles in top-tier<br/>journals (including Nature)</span>
                             </li>
                         </ul>
-                        <hr class="divider">
+                        <!-- 20221123 기업소개 주석 -->
+                        <!-- <hr class="divider">
                         <div class="footnote">
                         1) Based on Consolidated Financial Statements of 2021<br>
 						2) As of March 2022<br>
 						3) No. of SCI-level articles (including articles published in Nature and its affiliated journals)
-						</div>
+						</div> -->
                     </div>
                 </div>
             </div>
