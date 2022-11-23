@@ -137,10 +137,26 @@
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 지놈캠퍼스"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>2024년 설립 예정</span></li>
+                                        <li><span>2025년 설립 예정</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">인천광역시 연수구 송도동 210-2</div>
+                                    <!-- <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
+                                        <span>FAX&#46;</span>
+                                        <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
+                                    </div>  -->
+                                </div>
+                            </li>
+                            <li class="item height_fix">
+                                <div class="name">마크로젠 세종캠퍼스</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_16.png" alt="마크로젠 세종캠퍼스"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2024년 설립 예정</span></li>
+                                    </ul>
+                                    <div class="address">세종특별자치시 4-2생활권 복합4-3-1 BL</div>
                                     <!-- <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
@@ -274,7 +290,7 @@
                                     <div class="address">Viale Ortles, 22/4, 20139 Milano, MI, Italy</div>
                                     <div class="tel">
                                         <span>TEL&#46;</span>
-                                        <a href="tel:+39-02-5666-0274">+39&#45;02&#45;5666&#45;0274 </a>
+                                        <a href="tel:+39-02-5666-0274">+39&#45;02&#45;5666&#45;0274</a>
                                         <span>WEB&#46;</span>
                                         <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
                                     </div>
@@ -288,7 +304,11 @@
                                         <li><span>2022년 7월 설립</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
-                                    <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>                                    
+                                    <div class="address">161 Rue de la Belle Etoile, 95700, Roissy-en, France</div>     
+                                    <div class="tel">
+                                        <span>TEL&#46;</span>
+                                        <a href="tel:+33-1-82-32-00-96">+33&#45;1&#45;82&#45;32&#45;00&#45;96</a>
+                                    </div>                               
                                 </div>
                             </li>   
                             <li class="item height_fix" id="poland">
