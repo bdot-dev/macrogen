@@ -4750,7 +4750,7 @@
         display: inline-block;
         vertical-align: text-bottom; }
         .macrogen.macrogen-authorization .section > .title .tooltip-box .text-box {
-          top: 66px; }
+          top: 74px; }
     .macrogen.macrogen-authorization .section .title-sm {
       font-weight: 700;
       font-size: 32px;
@@ -4848,7 +4848,7 @@
         float: left;
         width: calc(100% - 816px - 44px); }
   .macrogen.macrogen-authorization .tooltip-box .text-box {
-    top: 46px; }
+    top: 52px; }
   .macrogen.recruitment-info .section {
     padding-bottom: 100px;
     border-bottom: 1px solid #e9e9e9;
