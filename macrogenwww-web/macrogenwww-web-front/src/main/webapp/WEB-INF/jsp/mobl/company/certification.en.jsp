@@ -209,7 +209,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-wrap">
                             <div class="img">
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-6.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-light btn-round" href="/pdf/공평성선언문_ISOIEC.pdf" target="_blank">Download</a>
+                                <a class="btn btn-light btn-round" href="/pdf/품질방침 및 공평성 선언.pdf" target="_blank">Download</a>
                             </div>
                             <div class="img">
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-7.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
