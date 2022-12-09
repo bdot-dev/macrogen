@@ -256,10 +256,7 @@
                                             analyzing
                                             the genetic characteristics you want to know. The All-in-One solution covers
                                             the
-                                            most areas in Korea and is a premium service that offers total health care.
-                                            The
-                                            number of categories will be continuously updated, and we are the first
-                                            certification body to be expanding DTC categories.</p>
+                                            most areas in Korea and is a premium service that offers total health care.</p>
                                         <p class="caption">※ The service is not available to persons under 19 years of
                                             age.</p>
                                         <div class="list-area">
@@ -314,11 +311,7 @@
                                             genetic
                                             characteristics you want to know. The All-in-One solution covers the most
                                             areas
-                                            in Korea and is a premium service that offers total health care. The number
-                                            of
-                                            categories will be continuously updated, and we are the first certification
-                                            body
-                                            to be expanding DTC categories.</p>
+                                            in Korea and is a premium service that offers total health care.</p>
                                         <p class="caption">※ The service is not available to persons under 19 years of
                                             age.</p>
                                         <div class="list-area">
@@ -360,9 +353,7 @@
                                     <div class="cont">
                                         <p class="desc font-body">The analysis for nutrients and exercise patterns
                                             allows
-                                            you to plan your health care. The number of categories will be continuously
-                                            updated, and we are the first certification body to be expanding DTC
-                                            categories.</p>
+                                            you to plan your health care.</p>
                                         <p class="caption">※ The service is not available to persons under 19 years of
                                             age.</p>
                                         <div class="list-area">
@@ -395,7 +386,7 @@
                         <!--v0.11 section-anchor 추가-->
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target8">My Genomestory The Plus 12 (13 Subcategories)</p>
+                                <p class="sub-title font-h5" id="target8">My Genomestory The Plus 11 (13 Subcategories)</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
