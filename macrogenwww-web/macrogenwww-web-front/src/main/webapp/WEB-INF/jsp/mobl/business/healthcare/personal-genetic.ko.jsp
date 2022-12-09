@@ -101,8 +101,7 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">한국인이 걱정하는 주요 암 및 일반 질환을 포함한 질병 예측 유전자 검사 서비스로 암 및 일반
-                                            질환에 대한 유전적 위험을 미리 알고 대비함으로써 막연한 불안감을 해소하고 건강한 생활습관을 가질 수 있도록 돕습니다.</p>
+                                        <p class="desc font-body">한국인이 걱정하는 주요 암 및 일반 질환을 포함한 질병 예측 유전자 검사 서비스로 암 및 일반 질환에 대한 유전적 위험을 미리 알고 대비함으로써 막연한 불안감을 해소하고 건강한 생활습관을 가질 수 있도록 돕습니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
                                                 <li><p>암(폐암, 위암, 대장암 등 주요 암 13종)</p></li>
@@ -127,8 +126,7 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">개인의 유전자 정보에 기반하여 건강한 식생활 관리와 효과적인 체중 조절이 이루어질 수 있도록
-                                            정보를 제공하는 서비스입니다. 질병을 예방하는 가장 효과적인 방법은 건강한 생활습관입니다.</p>
+                                        <p class="desc font-body">개인의 유전자 정보에 기반하여 건강한 식생활 관리와 효과적인 체중 조절이 이루어질 수 있도록 정보를 제공하는 서비스입니다. 질병을 예방하는 가장 효과적인 방법은 건강한 생활습관입니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
                                                 <li><p>다이어트(비만 위험도, 식탐, 운동에 의한 체중 감량 효과 등 17개 항목)</p></li>
@@ -153,8 +151,7 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로
-                                            선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
+                                        <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로 선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,8 +218,7 @@
 
                                     <div class="cont">
                                         <p class="desc font-body caption_bottom">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해
-                                            ‘나’를 알아갈 수 있도록 돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다. 검사 항목 수는
-                                            지속적으로 업데이트될 예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                            ‘나’를 알아갈 수 있도록 돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
                                         <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
@@ -255,9 +251,7 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록
-                                            돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다. 검사 항목 수는 지속적으로 업데이트될
-                                            예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                        <p class="desc font-body">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다. 국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
                                         <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
@@ -287,9 +281,7 @@
                                         <img src="/publishing/mobile-ko/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로
-                                            계획할 수 있도록 돕습니다. 검사 항목 수는 지속적으로 업데이트될 예정이며, ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째
-                                            인증기관입니다.</p>
+                                        <p class="desc font-body">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로 계획할 수 있도록 돕습니다.</p>
                                         <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
@@ -313,15 +305,14 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target8">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
+                                <p class="sub-title font-h5" id="target8">마이지놈스토리 더플러스 11 (세부항목 13종)</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
                                         <img src="/publishing/mobile-ko/dist/img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">성인뿐 아니라 만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로 헬스&#38;뷰티
-                                            관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
+                                        <p class="desc font-body">성인뿐 아니라 만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로 헬스&#38;뷰티 관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
                                                 <li><p>헬스: 체질량지수, HDL콜레스테롤, LDL콜레스테롤, 중성지방농도 등 6개 항목</p></li>

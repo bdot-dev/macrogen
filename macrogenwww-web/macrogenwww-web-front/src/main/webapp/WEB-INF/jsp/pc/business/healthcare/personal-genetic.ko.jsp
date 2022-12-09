@@ -152,7 +152,7 @@
                                 </div>
 
                                 <div class="cont">
-                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.  검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
                                     <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -179,7 +179,7 @@
                                     <img src="/publishing/pc-ko/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
                                 </div>
                                 <div class="cont">
-                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.  검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
                                     <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -203,7 +203,7 @@
                                     <img src="/publishing/pc-ko/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
                                 </div>
                                 <div class="cont">
-                                    <p class="desc">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로 계획할 수 있도록 돕습니다. 검사 항목 수는 지속적으로 업데이트될 예정이며,  ㈜마크로젠은 DTC 항목 확대가 가능한 첫 번째 인증기관입니다.</p>
+                                    <p class="desc">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로 계획할 수 있도록 돕습니다.</p>
                                     <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -221,7 +221,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 더플러스 12 (세부항목 13종)</p>
+                            <p class="title font-h5">마이지놈스토리 더플러스 11 (세부항목 13종)</p>
                             <div class="content">
                                 <div class="picture">
                                     <img src="/publishing/pc-ko/dist/img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
