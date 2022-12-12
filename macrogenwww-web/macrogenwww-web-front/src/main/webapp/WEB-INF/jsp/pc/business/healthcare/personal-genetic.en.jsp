@@ -163,7 +163,7 @@
                                 </div>
 
                                 <div class="cont">
-                                    <p class="desc">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care. The number of categories will be continuously updated, and we are the first certification body to be expanding DTC categories. </p>
+                                    <p class="desc">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care.</p>
                                     <p class="caption">※ The service is not available to persons under 19 years of age. </p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -192,7 +192,7 @@
                                     <img src="/publishing/pc-en/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
                                 </div>
                                 <div class="cont">
-                                    <p class="desc">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care. The number of categories will be continuously updated, and we are the first certification body to be expanding DTC categories.</p>
+                                    <p class="desc">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care.</p>
                                     <p class="caption">※ The service is not available to persons under 19 years of age. </p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -218,7 +218,7 @@
                                     <img src="/publishing/pc-en/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
                                 </div>
                                 <div class="cont">
-                                    <p class="desc">The analysis for nutrients and exercise patterns allows you to plan your health care. The number of categories will be continuously updated, and we are the first certification body to be expanding DTC categories.</p>
+                                    <p class="desc">The analysis for nutrients and exercise patterns allows you to plan your health care.</p>
                                     <p class="caption">※ The service is not available to persons under 19 years of age. </p>
                                     <div class="list-area">
                                         <ul class="list-circle-dot">
@@ -237,7 +237,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">My Genomestory The Plus 12 (13 Subcategories)</p>
+                            <p class="title font-h5">My Genomestory The Plus 11 (13 Subcategories)</p>
                             <div class="content">
                                 <!--10.05 이미지 경로 변경-->
                                 <div class="picture">
