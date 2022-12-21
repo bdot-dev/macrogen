@@ -41,7 +41,7 @@
             <!--개인유전체분석 공통 s-->
             <div class="subject-box">
                 <p class="title font-h4">마이지놈스토리는 사람마다 다른 유전자 특성에 맞춰<br>
-                    건강 관리에 도움을 주는 개인 맞춤형 헬스케어 서비스입니다.
+                    건강 관리에 도움을 주는 개인 유전체 분석 서비스입니다.
                 </p>
                 <p class="subject font-body-h img_bottom">마이지놈스토리는 질병의 위험도를 확인하는 것에서 나아가, 누구나 자신의 유전자 데이터를 통해 개인 고유의 특성을 이해하고<br>
                     생애 전반의 라이프스타일을 개선하여 건강한 삶을 누릴 수 있도록 도움을 드립니다. </p>
@@ -108,6 +108,7 @@
                                                 <li><p>일반질환(고혈압, 뇌졸중, 제2형 당뇨병 등 주요 일반질환 23종)</p></li>
                                             </ul>
                                         </div>
+                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko"
                                                target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
@@ -133,6 +134,7 @@
                                                 <li><p>영양(비타민, 칼슘, 오메가3 등 16개 항목)</p></li>
                                             </ul>
                                         </div>
+                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko"
                                                target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
@@ -152,6 +154,7 @@
                                     </div>
                                     <div class="cont">
                                         <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로 선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
+                                    	<p class="caption">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                     </div>
                                 </div>
                             </div>
@@ -174,6 +177,7 @@
                                                 <li><p>여성: 주요 암 14종, 주요 질환 5종, 심뇌혈관질환 6종</p></li>
                                             </ul>
                                         </div>
+                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="mailto:gentok@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
                                         </div>
@@ -186,8 +190,8 @@
                 <!--헬스&뷰티 유전자 검사-->
                 <div class="info-box">
                     <p class="font-h4 main-title" id="anchor2">헬스&#38;뷰티 유전자 검사</p>
-                    <p class="subject font-body-h">‘마이지놈스토리 더플러스’는 의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 DTC(Direct-To-Customer) 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다.
-                        <br>마이지놈스토리 더플러스는 개인의 유전적 특성을 분석 후 그에 따른 맞춤 생활 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.</p>
+                    <p class="subject font-body-h">‘마이지놈스토리 더플러스’는 의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 DTC(Direct-To-Consumer) 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다.
+                        <br>마이지놈스토리 더플러스는 개인의 유전적 특성을 분석 후 그에 따른 생활 속 관리 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
                         <img src="/publishing/mobile-ko/dist/img/business/img_healthbeauthintro.png" alt="헬스&뷰티 유전자 검사">
@@ -199,17 +203,17 @@
                             <span class="text">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44 (세부항목 48종)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12 (세부항목 13종)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">마이지놈스토리 더플러스 올인원 69</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">마이지놈스토리 더플러스 피트니스 41</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
                     <div class="list-gallery">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</p>
+                                <p class="sub-title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -222,12 +226,12 @@
                                         <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
-                                                <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
+                                                <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</p></li>
                                                 <li><p>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</p></li>
-                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
+                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 11개 항목</p></li>
                                                 <li><p>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</p></li>
                                                 <li><p>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</p></li>
-                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</p></li>
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
@@ -244,7 +248,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44 (세부항목 48종)</p>
+                                <p class="sub-title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -255,9 +259,9 @@
                                         <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
-                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
-                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
-                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 11개 항목</p></li>
+                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</p></li>
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
@@ -274,7 +278,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41(세부항목 43종)</p>
+                                <p class="sub-title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -286,8 +290,8 @@
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
                                                 <li><p>운동: 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 8개 항목</p></li>
-                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
-                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+                                                <li><p>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</p></li>
+                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</p></li>
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
@@ -305,7 +309,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target8">마이지놈스토리 더플러스 11 (세부항목 13종)</p>
+                                <p class="sub-title font-h5" id="target8">마이지놈스토리 더플러스 11</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -315,9 +319,9 @@
                                         <p class="desc font-body">성인뿐 아니라 만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로 헬스&#38;뷰티 관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
-                                                <li><p>헬스: 체질량지수, HDL콜레스테롤, LDL콜레스테롤, 중성지방농도 등 6개 항목</p></li>
+                                                <li><p>헬스: 체질량지수, 콜레스테롤, 중성지방 농도 등 5개 항목</p></li>
                                                 <li><p>스킨: 색소침착, 피부노화, 카페인 대사 등 4개 항목</p></li>
-                                                <li><p>헤어: 남성형탈모, 원형탈모 등 3개 항목</p></li>
+                                                <li><p>헤어: 남성형탈모, 모발굵기 2개 항목</p></li>
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
