@@ -3873,6 +3873,10 @@
     .section_business .info-box .list-gallery .list .content .cont .caption {
       padding-top: 0;
       margin: -20px 0 30px; }
+	.section_business .info-box .list-gallery .list .content .cont .caption.txt {
+		padding-top: 13px;
+		margin: 0;
+	}
     .section_business .info-box .list-gallery .list .content .cont .list-circle-dot > li {
       color: #707070;
       margin-bottom: 6px; }
