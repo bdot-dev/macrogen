@@ -57,10 +57,10 @@
                 <p class="title font-h4">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
-                        <span class="text">질병예측 & 웰니스 유전자검사</span>
+                        <span class="text">질병예측 유전자검사</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">질병예측 & 웰니스 유전자검사</a></li>
+                        <li class="option-value active"><a href="#">질병예측 유전자검사</a></li>
                         <li class="option-value"><a href="#">헬스&뷰티 유전자 검사</a></li>
                         <li class="option-value"><a href="#">약물 반응성 분석 서비스</a></li>
                     </ul>
@@ -69,24 +69,24 @@
             </div>
             <!--네비게이션 e-->
             <div class="info-box-wrap">
-                <!--질병예측 & 웰니스 유전자검사-->
+                <!--질병예측 유전자검사-->
                 <div class="info-box show">
-                    <p class="font-h4 main-title">질병예측 &#38; 웰니스 유전자검사</p>
+                    <p class="font-h4 main-title">질병예측 유전자검사</p>
                     <p class="subject font-body-h">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
-                        <img src="/publishing/mobile-ko/dist/img/business/img_disease.png" alt="질병예측 & 웰니스 유전자검사">
+                        <img src="/publishing/mobile-ko/dist/img/business/img_disease.png" alt="질병예측 유전자검사">
                     </div>
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
-                            <span class="text">마이지놈스토리 블루 (질병 예측)</span>
+                            <span class="text">마이지놈스토리 블루</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">마이지놈스토리 블루 (질병 예측)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">마이지놈스토리 그린 (웰니스)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">마이지놈스토리 골드 (종합형)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡 (질병 예측)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">마이지놈스토리 블루</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">마이지놈스토리 그린</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">마이지놈스토리 골드</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -94,7 +94,7 @@
                     <div class="list-gallery">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target1">마이지놈스토리 블루 (질병 예측)</p>
+                                <p class="sub-title font-h5" id="target1">마이지놈스토리 블루</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -108,7 +108,7 @@
                                                 <li><p>일반질환(고혈압, 뇌졸중, 제2형 당뇨병 등 주요 일반질환 23종)</p></li>
                                             </ul>
                                         </div>
-                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    	<p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko"
                                                target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
@@ -120,7 +120,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target2">마이지놈스토리 그린 (웰니스)</p>
+                                <p class="sub-title font-h5" id="target2">마이지놈스토리 그린</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -134,7 +134,7 @@
                                                 <li><p>영양(비타민, 칼슘, 오메가3 등 16개 항목)</p></li>
                                             </ul>
                                         </div>
-                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    	<p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko"
                                                target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
@@ -146,15 +146,15 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target3">마이지놈스토리 골드 (종합형)</p>
+                                <p class="sub-title font-h5" id="target3">마이지놈스토리 골드</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
                                         <img src="/publishing/mobile-ko/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">질병(블루)에서부터 웰니스(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로 선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
-                                    	<p class="caption">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                        <p class="desc font-body">질병(블루)에서부터 영양/비만관리(그린)까지 건강한 삶을 만들기 위해 필요한 검사 항목을 포괄적으로 선택할 수 있는 종합형 유전자 검사 서비스입니다.</p>
+                                    	<p class="caption black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target4">젠톡 (질병 예측)</p>
+                                <p class="sub-title font-h5" id="target4">젠톡</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -177,7 +177,7 @@
                                                 <li><p>여성: 주요 암 14종, 주요 질환 5종, 심뇌혈관질환 6종</p></li>
                                             </ul>
                                         </div>
-                                    	<p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    	<p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                         <div class="btn-wrap">
                                             <a href="mailto:gentok@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
                                         </div>
