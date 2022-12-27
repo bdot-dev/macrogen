@@ -2584,6 +2584,12 @@
       margin-bottom: 16px; }
   .section_business .list-gallery .list .cont .caption {
     margin-bottom: 24px; }
+  .section_business .list-gallery .list .cont .caption.txt {
+  	padding-top: 15px;
+  	margin: 0; }
+  .section_business .list-gallery .list .cont .caption.black {
+  	color: #000;
+  	font-weight: bold; }
   .section_business .box-gray-6 {
     margin-bottom: 40px;
     border: 1px solid #e5e5e5; }
