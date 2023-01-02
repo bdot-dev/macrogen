@@ -313,13 +313,13 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <!-- s  회장 경력-->
+                    <!-- e  회장 경력-->
                 </div>
                 <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-tab-2">
                     <!-- s  CEO -->
                     <div class="section-ceo">
                         <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="font-h6">CEO, Domestic Business</div>
+                            <div class="font-h6">CEO</div>
                             <div class="font-h3">Changhoon Kim </div>
                             <div class="info-wrap">
                                 <div class="img">
@@ -372,54 +372,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                        	<div class="font-h6">CEO, Global Business</div>
-                            <div class="font-h3">Sukang Lee </div>
-                            <div class="info-wrap">
-                                <div class="img">
-                                    <img src="/publishing/mobile-en/dist/img/macrogen/img-ceo.png" alt="대표이사 이수강">
-                                </div>
-                                <div class="info">
-                                    <div class="item">
-                                            <div class="font-h5">Education & Experience</div>
-                                            <div class="list">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>
-                                                                <span>2020 - Present</span>
-                                                                <span>CEO, Macrogen Inc.</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2016 - 2020</span>
-                                                                <span>COO, Macrogen Inc.</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2015 - 2016</span>
-                                                                <span>Advisor, LG CNS</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2003 - 2016</span>
-                                                                <span>VP & Head of IT Research<br> Center Unit, LG CNS</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>1992</span>
-                                                                <span>M.S. in Industrial Engineering,<br> Seoul National University, Korea</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>1990</span>
-                                                                <span>B.S. in Industrial Engineering,<br> Seoul National University, Korea</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>                         
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <!-- e  회장 -->
+                    <!-- e  CEO -->
 
                     <!-- s  CEO 경력-->
                     <div class="section-ceo-career">
@@ -451,13 +405,13 @@
                                     </div>
                                     <div class="sign">
                                         <span class="font-body-h">CEO of Macrogen</span>
-                                        <span class="font-h7">Changhoon Kim / Sukang Lee</span>
+                                        <span class="font-h7">Changhoon Kim</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- s  회장 경력-->
+                    <!-- s  CEO 경력-->
                 </div>
             </div>
         </div>

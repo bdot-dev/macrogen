@@ -211,7 +211,7 @@
                     <div class="section-ceo-career">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                              <div class="sign">
-                                <span class="font-h7">국내 사업 대표이사</span>
+                                <span class="font-h7">대표이사</span>
                                 <span class="font-h3">김창훈</span>
                             </div>
                             <div class="item item1">
@@ -260,67 +260,6 @@
 	                             </div>
                             </div>                           
                         </div>
-                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                             <div class="sign">
-                                <span class="font-h7">해외 사업 대표이사</span>
-                                <span class="font-h3">이수강</span>
-                            </div>
-                            <div class="item item2">
-                                <div class="txt">
-                                	<div class="title"><span>학력 및 약력</span></div>
-	                                <div class="list">
-	                                    <div class="row">
-	                                        <div class="col">
-	                                            <ul>
-	                                                <li>
-	                                                    <span>2020 &#45; 현재</span>
-	                                                    <span>마크로젠 대표이사</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2016 &#45; 2020</span>
-	                                                    <span>마크로젠 최고운영책임자</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2015 &#45; 2016</span>
-	                                                    <span>LG CNS 자문</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2003 &#45; 2016</span>
-	                                                    <span>LG CNS 상무</span>
-	                                                </li>
-	                                                <%--
-	                                                <li>
-	                                                    <span>2002 - 2003</span>
-	                                                    <span>Descartes Systems Group 이사</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2000 - 2002</span>
-	                                                    <span>Ariba 수석컨설턴트</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2000 - 2000</span>
-	                                                    <span>i2 Technologies 컨설턴트</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>1992 - 1999</span>
-	                                                    <span>대우자동차 과장</span>
-	                                                </li>
-	                                                 --%>
-	                                                <li>
-	                                                    <span>1992</span>
-	                                                    <span>서울대학교 산업공학 석사</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>1990</span>
-	                                                    <span>서울대학교 산업공학 학사</span>
-	                                                </li>
-	                                            </ul>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                             </div>
-                            </div>                           
-                        </div>
                     </div>
                     <!-- e  회장 -->
 
@@ -357,7 +296,7 @@
 		                            </div>
 		                            <div class="sign">
 		                                <span class="font-body-h">마크로젠 대표</span>
-		                                <span class="font-h6">김창훈 / 이수강</span>
+		                                <span class="font-h6">김창훈</span>
 		                            </div>
 	                      </div>
                     </div>
