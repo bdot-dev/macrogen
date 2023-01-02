@@ -228,7 +228,7 @@
                     <div class="section-ceo-career">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                              <div class="sign">
-                                <span class="font-h7">CEO, Domestic Business</span>
+                                <span class="font-h7">CEO</span>
                                 <span class="font-h3">Changhoon Kim</span>
                             </div>
                             <div class="item item1">
@@ -277,67 +277,6 @@
 	                             </div>
                             </div>                           
                         </div>
-                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                             <div class="sign">
-                                <span class="font-h7">CEO, Global Business</span>
-                                <span class="font-h3">Sukang Lee</span>
-                            </div>
-                            <div class="item item2">
-                                <div class="txt">
-                                	<div class="title"><span>Education & Experience</span></div>
-	                                <div class="list">
-	                                    <div class="row">
-	                                        <div class="col">
-	                                            <ul>
-	                                                <li>
-	                                                    <span>2020 &#45; Present</span>
-	                                                    <span>CEO, Macrogen Inc.</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2016 &#45; 2020</span>
-	                                                    <span>COO, Macrogen Inc.</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2015 &#45; 2016</span>
-	                                                    <span>Advisor, LG CNS</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2003 &#45; 2016</span>
-	                                                    <span>VP & Head of IT Research Center Unit, LG CNS</span>
-	                                                </li>
-	                                                <%--
-	                                                <li>
-	                                                    <span>2002 - 2003</span>
-	                                                    <span>Descartes Systems Group 이사</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2000 - 2002</span>
-	                                                    <span>Ariba 수석컨설턴트</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>2000 - 2000</span>
-	                                                    <span>i2 Technologies 컨설턴트</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>1992 - 1999</span>
-	                                                    <span>대우자동차 과장</span>
-	                                                </li>
-	                                                 --%>
-	                                                <li>
-	                                                    <span>1992</span>
-	                                                    <span>M.S. in Industrial Engineering, Seoul National<br> University, Korea</span>
-	                                                </li>
-	                                                <li>
-	                                                    <span>1990</span>
-	                                                    <span>B.S. in Industrial Engineering, Seoul National<br> University, Korea</span>
-	                                                </li>
-	                                            </ul>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                             </div>
-                            </div>                           
-                        </div>
                     </div>
                     <!-- e  회장 -->
 
@@ -369,7 +308,7 @@
 		                            </div>
 		                            <div class="sign">
 		                                <span class="font-body-h">CEO of Macrogen</span>
-		                                <span class="font-h6">Changhoon Kim / Sukang Lee</span>
+		                                <span class="font-h6">Changhoon Kim</span>
 		                            </div>
 	                      </div>
                     </div>
