@@ -292,7 +292,7 @@
                     <!-- s  CEO -->
                     <div class="section-ceo">
                      <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                        	<div class="font-h6">국내 사업 대표이사</div>
+                        	<div class="font-h6">대표이사</div>
                             <div class="font-h3">김창훈 </div>
                             <div class="info-wrap">
                                 <div class="img">
@@ -345,52 +345,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                        	<div class="font-h6">해외 사업 대표이사</div>
-                            <div class="font-h3">이수강 </div>
-                            <div class="info-wrap">
-                                <div class="img">
-                                    <img src="/publishing/mobile-ko/dist/img/macrogen/img-ceo.png" alt="대표이사 이수강">
-                                </div>
-                                <div class="info">
-                                    <div class="item">
-                                            <div class="font-h5">학력 및 약력</div>
-                                            <div class="list">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <ul>
-                                                            <li>
-                                                                <span>2020 - 현재</span>
-                                                                <span>마크로젠 대표이사</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2016 - 2020</span>
-                                                                <span>마크로젠 최고운영책임자</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2015 - 2016</span>
-                                                                <span>LG CNS 자문</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>2003 - 2016</span>
-                                                                <span>LG CNS 상무</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>1992</span>
-                                                                <span>서울대학교 산업공학 석사</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>1990</span>
-                                                                <span>서울대학교 산업공학 학사</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>                         
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <!-- e  회장 -->
 
@@ -430,7 +384,7 @@
                                     </div>
                                     <div class="sign">
                                         <span class="font-body-h">마크로젠 대표</span>
-                                        <span class="font-h7">김창훈 / 이수강</span>
+                                        <span class="font-h7">김창훈</span>
                                     </div>
                                 </div>
                             </div>
