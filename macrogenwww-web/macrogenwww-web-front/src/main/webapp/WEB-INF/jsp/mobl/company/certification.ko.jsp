@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 2019년 5월 식품의약품안전처가 공인한 임상검체분석기관으로 지정되었습니다. 국내 최초로 NGS 기술을 통한 검체 분석이 가능한 기관으로써 신뢰성 높은 분석 서비스를 제공하여 국내 임상시험의 경쟁력 강화에 기여합니다.</div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/임상시험검체분석기관지정서.pdf" target="_blank">임상시험검체분석기관 지정서 GCLP  보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/임상시험검체분석기관 지정서(제154호)_2022.pdf" target="_blank">임상시험검체분석기관 지정서 GCLP  보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -157,7 +157,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-4.png" alt="CLIA 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CLIA_인증.pdf" target="_blank">CLIA인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CLIA인증_Certificate of Accreditation_Macrogen HQ_2023.pdf" target="_blank">CLIA인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -176,7 +176,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">
