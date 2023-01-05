@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 2019년 5월 식품의약품안전처가 공인한 임상검체분석기관으로 지정되었습니다&#46; 국내 최초로 NGS 기술을 통한 검체 분석이 가능한 기관으로써 신뢰성 높은 분석 서비스를 제공하여 국내 임상시험의 경쟁력 강화에 기여합니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/임상시험검체분석기관지정서.pdf" target="_blank">임상시험검체분석기관 지정서 GCLP  보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/임상시험검체분석기관 지정서(제154호)_2022.pdf" target="_blank">임상시험검체분석기관 지정서 GCLP  보기</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 국내외 임상진단 시장의 진출을 위해 한국 본사 및 분당 정밀의학센터와 소마젠&#40;미주법인&#41; 임상검사실에 대해 CLIA 인증을 획득했습니다&#46; 이를 통해 국내외 의료기관의 환자 시료를 검사하는 것은 물론&#44; 다양한 임상진단 서비스를 제공하고 있습니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CLIA_인증.pdf" target="_blank">CLIA인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CLIA인증_Certificate of Accreditation_Macrogen HQ_2023.pdf" target="_blank">CLIA인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-4.png" alt="CLIA 인증"></div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 본사에서 수행하는 분자유전검사 서비스와 관련하여 매년 A등급&#40;보험 미등재 항목 포함 시&#44; P등급&#41;을 획득했습니다&#46; 고객에게 더욱 신뢰할 수 있는 결과를 제공함으로써 국민건강 및 생명과학 분야의 발전에 기여합니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
