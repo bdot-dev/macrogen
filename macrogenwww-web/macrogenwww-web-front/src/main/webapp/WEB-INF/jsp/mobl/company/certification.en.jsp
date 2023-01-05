@@ -119,7 +119,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen was accredited as a clinical sample analysis institution by the Ministry of Food and Drug Safety in May 2019. As the first institution in Korea that can analyze samples through NGS technology, we are committed to strengthening the competitiveness of domestic clinical trials by providing reliable analysis services.</div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/임상시험검체분석기관지정서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/임상시험검체분석기관 지정서(제154호)_2022.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -157,7 +157,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-4.png" alt="CLIA 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CLIA_인증.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CLIA인증_Certificate of Accreditation_Macrogen HQ_2023.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -176,7 +176,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
