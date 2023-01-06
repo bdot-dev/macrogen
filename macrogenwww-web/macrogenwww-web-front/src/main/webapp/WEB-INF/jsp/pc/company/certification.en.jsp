@@ -110,7 +110,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen was accredited as a clinical sample analysis institution by the Ministry of Food and Drug Safety in May 2019. As the first institution in Korea that can analyze samples through NGS technology, we are committed to strengthening the competitiveness of domestic clinical trials by providing reliable analysis services.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/임상시험검체분석기관지정서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/임상시험검체분석기관 지정서(제154호)_2022.pdf" target="_blank">Download</a></div>
                     </div>
                 </div>
                 <div class="box">
@@ -145,7 +145,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen received CLIA certification for its headquarters, Bundang Precision Medicine Center and Psomagen (Macrogen USA) to enter the domestic and overseas clinical diagnostics market. Backed by this CLIA certification, Macrogen provides various clinical diagnostics services as well as inspections of patients specimens.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CLIA_인증.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CLIA인증_Certificate of Accreditation_Macrogen HQ_2023.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-4.png" alt="CLIA Certification"></div>
@@ -164,7 +164,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">The molecular genetic testing services provided by Macrogen Headquarters maintain A-grade certification (P-grade when including items not covered by health insurance). By providing customers with reliable results, Macrogen contributes to national health and progress in the national bioscience fields.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사 정확도평가 인증_2022.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-5.png" alt="Genetic Testing Accuracy Evaluation Certification"></div>
