@@ -384,8 +384,8 @@
                             <div class="brochure_img"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></div>
                            
                             <div class="download-area">
-                            	<a class="btn-download" href="/downfile/macrogen_brochure_ko.pdf" target="_blank" style="padding-right:44px;"><span>KOR PDF</span><i class="icon icon-download"></i></a>
-								<a class="btn-download" href="/downfile/macrogen_brochure_en.pdf" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
+                            	<a class="btn-download" href="/downfile/e_brochure_ko_230110_compressed.pdf" target="_blank" style="padding-right:44px;"><span>KOR PDF</span><i class="icon icon-download"></i></a>
+								<a class="btn-download" href="/downfile/e_brochure_en_230110_compressed.pdf" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>
                     </div>
