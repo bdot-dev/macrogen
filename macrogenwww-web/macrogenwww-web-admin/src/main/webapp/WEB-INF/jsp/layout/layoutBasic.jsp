@@ -4,6 +4,13 @@
 <html>
 <head>
 	<title><decorator:title />Macrogen CMS</title>
+	<script>
+		var siteConfigs = {
+			environment			:	"${globalsSiteEnvironment}",
+			bUserOverlap		:	${bUserOverlap}
+		};
+		window.siteConfigs = siteConfigs;
+	</script>
 	<%@ include file="/WEB-INF/jsp/inc/htmlHead.jsp" %>
 	<decorator:head />
 </head>
@@ -56,6 +63,13 @@
 	<!-- <form id="uploadForm" name="uploadForm" enctype="multipart/form-data" action="/upload/file">
 		<input type="file" name="atchFile" />
 	</form> -->
+	<script src="/js/app/mngrAuth.js"></script>
+	<%-- <c:if test="${bUserOverlap eq false }">
+    <script>
+    	alert('동일계정으로 로그인되었습니다. 로그아웃 처리 됩니다.');
+    	location.href = '/logout';
+    </script>
+    </c:if>	 --%>
 
     <script>
       $(function() {

@@ -22,6 +22,7 @@
         <intercept-url pattern="/change-initial-password" access="permitAll" />
         <intercept-url pattern="/change-initial-password/submit" access="permitAll" />
         <intercept-url pattern="/error.jsp" access="permitAll" />
+        <intercept-url pattern="/accessError.jsp" access="permitAll" />
 
         <intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 
