@@ -84,8 +84,6 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 		
 		String clientIp = CommonStringUtil.getClientIp(request);
 		
-		LOGGER.info("로그인 아이피::::::::::::::::::::::::::::::"+clientIp);
-		
 		LoginLogVo loginLogVo = new LoginLogVo();
 		
 		loginLogVo.setLoginId(loginId);
