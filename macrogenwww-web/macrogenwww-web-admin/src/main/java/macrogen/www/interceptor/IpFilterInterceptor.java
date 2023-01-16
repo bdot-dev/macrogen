@@ -44,7 +44,6 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception{
 		
-		request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
 		LOGGER.debug("userIp:{}", request.getRemoteAddr());
 		LOGGER.debug("userDevice :{}", request.getHeader("user-agent"));
 		LOGGER.debug("servletPath:{}", request.getServletPath());
@@ -73,7 +72,7 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 			
 			String clientIp = CommonStringUtil.getClientIp(request);
 			LOGGER.info("차단 아이피::::::::::::::::::::::::::::::"+clientIp);
-			LOGGER.info("실행 환경::::::::::::::::::::::::::::::"+environment);
+
 			if(allowedIpList.size()==0) {
 				ipChk = true;
 			}else if(allowedIpList.size()>0) {
@@ -84,31 +83,10 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 				}
 			}
 			
-			
-			/*
-			if("real".equals(environment)) {
-				if(ipChk) {
-					LOGGER.info("관리자:"+ipChk);
-					LOGGER.info("PC:"+devChk);
-					return true;
-				}
-				else if(!ipChk) {
-					LOGGER.info("관리자: "+ipChk);
-					LOGGER.info("PC: "+devChk);
-					response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
-					response.setHeader("Location", "/accessError.jsp");
-				}
-			}
-			*/
-			
 			if(ipChk) {
-				LOGGER.info("관리자:"+ipChk);
-				LOGGER.info("PC:"+devChk);
 				return true;
 			}
 			else if(!ipChk) {
-				LOGGER.info("관리자: "+ipChk);
-				LOGGER.info("PC: "+devChk);
 				response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
 				response.setHeader("Location", "/accessError.jsp");
 			}
