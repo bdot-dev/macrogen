@@ -520,10 +520,10 @@ public class CommonStringUtil {
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }
-        if (ip != null && ip.indexOf(",") > -1) {
-            String[] proxyIps = ip.split(",");
-            ip = proxyIps[proxyIps.length - 1];
-        }
+//        if (ip != null && ip.indexOf(",") > -1) {
+//            String[] proxyIps = ip.split(",");
+//            ip = proxyIps[proxyIps.length - 1];
+//        }
         return ip;
     }
 }
