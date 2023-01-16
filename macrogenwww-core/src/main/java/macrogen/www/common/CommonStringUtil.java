@@ -16,12 +16,17 @@
 
 package macrogen.www.common;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
 * @class CommonStringUtil
@@ -41,7 +46,7 @@ import javax.servlet.http.HttpServletRequest;
 */
 
 public class CommonStringUtil {
-
+	private static final Logger LOGGER = LoggerFactory.getLogger(CommonStringUtil.class);
 	/**
 	* @fn isEmpty
 	* @brief 함수 간략 설명 :
@@ -504,7 +509,8 @@ public class CommonStringUtil {
 	
 	
 	public static String getClientIp(HttpServletRequest request) {
-        String ip = request.getHeader("X-FORWARDED-FOR");
+        //String ip = request.getHeader("X-FORWARDED-FOR");
+        String ip = request.getHeader("X-Forwarded-For");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("Proxy-Client-IP");
         }
@@ -512,7 +518,7 @@ public class CommonStringUtil {
             ip = request.getHeader("WL-Proxy-Client-IP");
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-            ip = request.getHeader("HTTP_CLIENT_IP");
+            ip = request.getHeader("HTTP_CLIENT_IP"); 
         }
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("HTTP_X_FORWARDED_FOR");
@@ -520,10 +526,16 @@ public class CommonStringUtil {
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }
-//        if (ip != null && ip.indexOf(",") > -1) {
-//            String[] proxyIps = ip.split(",");
-//            ip = proxyIps[proxyIps.length - 1];
-//        }
+
+        /*
+        if (ip != null && ip.indexOf(",") > -1) {
+            String[] proxyIps = ip.split(",");
+            ip = proxyIps[proxyIps.length - 1];
+        }*/
+        
+        
+        
+        
         return ip;
     }
 }
