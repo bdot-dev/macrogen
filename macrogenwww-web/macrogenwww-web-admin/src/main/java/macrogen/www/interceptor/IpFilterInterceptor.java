@@ -1,5 +1,6 @@
 package macrogen.www.interceptor;
 
+import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +73,10 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 			
 			String clientIp = CommonStringUtil.getClientIp(request);
 			LOGGER.info("차단 아이피::::::::::::::::::::::::::::::"+clientIp);
-
+			
+			InetAddress local = InetAddress.getLocalHost();
+			LOGGER.info("My PC IP :" + local.getHostAddress());
+			
 			if(allowedIpList.size()==0) {
 				ipChk = true;
 			}else if(allowedIpList.size()>0) {
