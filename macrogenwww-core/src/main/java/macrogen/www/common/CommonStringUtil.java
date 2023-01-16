@@ -16,8 +16,6 @@
 
 package macrogen.www.common;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -527,11 +525,11 @@ public class CommonStringUtil {
             ip = request.getRemoteAddr();
         }
 
-        /*
+        
         if (ip != null && ip.indexOf(",") > -1) {
             String[] proxyIps = ip.split(",");
             ip = proxyIps[proxyIps.length - 1];
-        }*/
+        }
         
         
         

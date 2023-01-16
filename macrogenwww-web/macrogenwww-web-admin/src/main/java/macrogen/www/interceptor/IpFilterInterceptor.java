@@ -72,10 +72,7 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 			boolean ipChk = false;
 			
 			String clientIp = CommonStringUtil.getClientIp(request);
-			LOGGER.info("차단 아이피::::::::::::::::::::::::::::::"+clientIp);
-			
-			InetAddress local = InetAddress.getLocalHost();
-			LOGGER.info("My PC IP :" + local.getHostAddress());
+			LOGGER.info("userIp : "+clientIp);
 			
 			if(allowedIpList.size()==0) {
 				ipChk = true;
