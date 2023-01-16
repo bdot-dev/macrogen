@@ -10,6 +10,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.exception.BaseException;
 import macrogen.www.service.RoleMngrurlService;
 import macrogen.www.vo.MngrVo;
@@ -48,6 +49,7 @@ public class AccessInterceptor extends HandlerInterceptorAdapter {
 		MngrVo mngrVo = (MngrVo) authentication.getPrincipal();
 
 		String servletPath = request.getServletPath();
+		LOGGER.info("아이피:::::::::::::::::::::::"+CommonStringUtil.getClientIp(request));
 		LOGGER.debug("servletPath:{}", servletPath);
 
 		RoleMngrurlVo roleMngrurlVo = new RoleMngrurlVo();
