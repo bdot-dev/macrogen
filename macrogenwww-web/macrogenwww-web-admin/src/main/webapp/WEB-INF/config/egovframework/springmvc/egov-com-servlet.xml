@@ -76,6 +76,11 @@
 			<mvc:exclude-mapping path="/common/lib/**"/>
 			<mvc:exclude-mapping path="/rest/**"/>
 			<mvc:exclude-mapping path="/inc/**"/>
+			<mvc:exclude-mapping path="/mngrmenu/forward/**"/>
+			<mvc:exclude-mapping path="/upload/**"/>
+			<mvc:exclude-mapping path="/download/**"/>
+			<mvc:exclude-mapping path="/myinfo/**"/>
+			<mvc:exclude-mapping path="/main"/>
 			
 			<ref bean="ipFilterInterceptor" />
 		</mvc:interceptor>
@@ -94,11 +99,6 @@
 			<mvc:exclude-mapping path="/common/lib/**"/>
 			<mvc:exclude-mapping path="/rest/**"/>
 			<mvc:exclude-mapping path="/inc/**"/>
-			<mvc:exclude-mapping path="/mngrmenu/forward/**"/>
-			<mvc:exclude-mapping path="/upload/**"/>
-			<mvc:exclude-mapping path="/download/**"/>
-			<mvc:exclude-mapping path="/myinfo/**"/>
-			<mvc:exclude-mapping path="/main"/>
 			
 			<ref bean="menuResolver" />
 		</mvc:interceptor>
