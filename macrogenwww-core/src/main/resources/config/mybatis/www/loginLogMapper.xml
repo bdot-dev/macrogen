@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.LoginLogMapper">
+
+	<sql id="list_where">
+		<if test='searchKeyword != null and searchKeyword != ""'>
+			<choose>
+				<when test='searchCondition == "RESULT"'>
+					and tll.login_result like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "REASON"'>
+					and tll.reason like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "IP"'>
+					and tll.ip like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+
+	</sql>
+
+	<select id="list" parameterType="loginLogVo" resultType="loginLogVo">
+		<include refid="paging.top"/>
+		select
+		    tll.log_seq
+		    , tll.login_id
+		    , tll.login_result
+		    , tll.reason
+		    , tll.ip
+		    , tll.regist_dt
+		from tb_logger_login tll
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tll.log_seq desc
+		<include refid="paging.bottom"/>
+	</select>
+	
+	<select id="listExcel" parameterType="loginLogVo" resultType="loginLogVo">
+		select
+		    tll.log_seq
+		    , tll.login_id
+		    , tll.login_result
+		    , tll.reason
+		    , tll.ip
+		    , tll.regist_dt
+		from tb_logger_login tll
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tll.log_seq desc
+	</select>
+	
+	<select id="count" parameterType="loginLogVo" resultType="int">
+		select count(*)
+		from tb_logger_login tll
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<insert id="insert" parameterType="loginLogVo">
+		INSERT INTO tb_logger_login(
+			login_id
+			, login_result
+			, reason
+			, ip
+			, regist_dt
+		) VALUES (
+			#{loginId}
+			, #{loginResult}
+			, #{reason}
+			, #{ip}
+			, now()
+		)
+	</insert>
+</mapper>
