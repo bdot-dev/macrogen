@@ -83,6 +83,8 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 		String loginPw = (String)authentication.getCredentials();
 		
 		String clientIp = CommonStringUtil.getClientIp(request);
+		LOGGER.info("ip:::::::::::::::::::"+clientIp);
+		LOGGER.info("remote addr:::::::::::::::::::"+request.getRemoteAddr());
 		
 		LoginLogVo loginLogVo = new LoginLogVo();
 		
