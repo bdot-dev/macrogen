@@ -88,9 +88,8 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 				return true;
 			}
 			else if(!ipChk) {
-				//response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
-				//response.setHeader("Location", "/accessError.jsp");
-				response.sendRedirect("/accessError.jsp");
+				response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
+				response.setHeader("Location", "/accessError.jsp");
 			}
 			
 		} catch (Exception e) {
