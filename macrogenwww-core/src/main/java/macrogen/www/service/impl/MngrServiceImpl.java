@@ -158,4 +158,9 @@ public class MngrServiceImpl extends EgovAbstractServiceImpl implements MngrServ
 	public MngrVo userAuth(MngrVo mngrVo) throws Exception {
 		return mngrMapper.userAuth(mngrVo);
 	}
+	
+	@Override
+	public void increaseMngrLoginToken(UserVo userVo) throws Exception{
+		mngrMapper.increaseMngrLoginToken(userVo);
+	}
 }
