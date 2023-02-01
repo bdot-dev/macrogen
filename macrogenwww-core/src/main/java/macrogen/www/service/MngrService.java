@@ -3,6 +3,7 @@ package macrogen.www.service;
 import java.util.List;
 
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.UserVo;
 
 public interface MngrService {
 
@@ -135,4 +136,16 @@ public interface MngrService {
 	void updateInitPassword(MngrVo mngrVo) throws Exception;
 	
 	MngrVo userAuth(MngrVo mngrVo) throws Exception;
+	
+	/** 
+	 * <pre>
+	 * increaseMngrLoginToken
+	 * 1. 개요   : 관리자 로그인 토큰 생성  
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 * 
+	 * @param userVo
+	 * @throws Exception
+	 */ 	
+	void increaseMngrLoginToken(UserVo userVo) throws Exception;
 }

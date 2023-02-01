@@ -4,6 +4,7 @@ import java.util.List;
 
 import egovframework.rte.psl.dataaccess.mapper.Mapper;
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.UserVo;
 
 @Mapper
 public interface MngrMapper {
@@ -101,4 +102,14 @@ public interface MngrMapper {
 	 */
 	MngrVo userAuth(MngrVo mngrVo);
 	
+	/**
+	 * <pre>
+	 * increaseMngrLoginToken
+	 * 1. 개요   : 관리자 토큰 생성 
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 * 
+	 * @param mngrVo
+	 */ 	
+	void increaseMngrLoginToken(UserVo userVo);
 }

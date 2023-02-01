@@ -20,7 +20,8 @@ public class UserVo extends DefaultVo {
 	private Date lastLoginDt;
 	private UserSeCode userSeCode;
 	private String passwordInitlYn;
-
+	private String loginTkn;
+	
 	public Long getUserSn() {
 		return userSn;
 	}
@@ -105,5 +106,10 @@ public class UserVo extends DefaultVo {
 	public void setPasswordInitlYn(String passwordInitlYn) {
 		this.passwordInitlYn = passwordInitlYn;
 	}
-
+	public String getLoginTkn() {
+		return loginTkn;
+	}
+	public void setLoginTkn(String loginTkn) {
+		this.loginTkn = loginTkn;
+	}
 }

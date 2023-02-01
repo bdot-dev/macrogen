@@ -12,7 +12,7 @@ public class MngrVo extends UserVo {
 	private String roleNm;
 	private String userId;
 	private String userPwd;
-	private List<String> allowedIpList = new ArrayList<>();
+	private String loginTkn;
 	
 	public String getRoleId() {
 		return roleId;
@@ -26,12 +26,6 @@ public class MngrVo extends UserVo {
 	public void setRoleNm(String roleNm) {
 		this.roleNm = roleNm;
 	}
-	public List<String> getAllowedIpList() {
-		return allowedIpList;
-	}
-	public void setAllowedIpList(List<String> allowedIpList) {
-		this.allowedIpList = allowedIpList;
-	}
 	public String getUserId() {
 		return userId;
 	}
@@ -43,5 +37,11 @@ public class MngrVo extends UserVo {
 	}
 	public void setUserPwd(String userPwd) {
 		this.userPwd = userPwd;
+	}
+	public String getLoginTkn() {
+		return loginTkn;
+	}
+	public void setLoginTkn(String loginTkn) {
+		this.loginTkn = loginTkn;
 	}
 }
