@@ -83,7 +83,7 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 					}
 				}
 			}
-			
+			LOGGER.info("ipChk : "+ipChk);
 			if(ipChk) {
 				return true;
 			}
