@@ -83,13 +83,13 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 					}
 				}
 			}
-			LOGGER.info("ipChk : "+ipChk);
+
 			if(ipChk) {
 				return true;
 			}
 			else if(!ipChk) {
 				response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
-				response.setHeader("Location", "/accessError.jsp");
+				response.setHeader("Location", "accessError.jsp");
 			}
 			
 		} catch (Exception e) {
