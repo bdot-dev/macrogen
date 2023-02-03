@@ -378,7 +378,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <!-- <div class="item">		2023.02.03 회사소개서 주석
                         <div class="title">Macrogen<br> Company Profile</div>
                         <div class="desc">
                             <div class="brochure_img"><img src="/publishing/pc-ko/dist/img/macrogen/brochure-img.png?v2" alt="brochure"></div>
@@ -388,7 +388,7 @@
 								<a class="btn-download" href="/downfile/e_brochure_en_230110_compressed.pdf" target="_blank"><span>ENG PDF</span><i class="icon icon-download"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- e  기업상징 -->

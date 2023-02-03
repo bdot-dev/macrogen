@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.IpFilterMapper">
+
+	<sql id="list_where">
+		<if test="searchKeyword != null and searchKeyword != '' ">
+			<choose>
+				<when test="searchCondition == 'TITLE'">
+					and ( tai.title like concat('%', #{searchKeyword}, '%'))
+				</when>
+				<when test="searchCondition == 'IP'">
+					and ( tai.ip like concat('%', #{searchKeyword}, '%'))
+				</when>
+			</choose>
+		</if>
+	</sql>
+	<select id="list" parameterType="ipFilterVo" resultType="ipFilterVo">
+		<include refid="paging.countTop"/>
+		SELECT
+			tai.COL
+			, tai.title
+			, tai.ip
+			, tai.use_yn
+			, tai.regist_dt
+			, tai.register_sn
+			, tai.updt_dt
+			, tai.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tai.register_sn ) registerNm
+			, ( select user_nm from tb_user where user_sn = tai.updusr_sn ) updusrNm
+		FROM
+			tb_access_ip tai
+		WHERE 1 = 1
+		<include refid="list_where" />
+		<choose>
+			<when test="orderBy == 'reg_asc' ">
+				order by tai.regist_dt ASC
+			</when>
+			<otherwise>
+				order by tai.regist_dt DESC
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom"/>
+	</select>
+	
+	
+	<select id="listAll" parameterType="ipFilterVo" resultType="ipFilterVo">
+		<include refid="paging.countTop"/>
+		SELECT
+			tai.COL
+			, tai.title
+			, tai.ip
+			, tai.use_yn
+			, tai.regist_dt
+			, tai.register_sn
+			, tai.updt_dt
+			, tai.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tai.register_sn ) registerNm
+			, ( select user_nm from tb_user where user_sn = tai.updusr_sn ) updusrNm
+		FROM
+			tb_access_ip tai
+		WHERE 1 = 1
+		and use_yn = 'Y'
+	</select>
+	
+	
+	<select id="count" parameterType="ipFilterVo" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_access_ip tai
+		WHERE 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="view" parameterType="ipFilterVo" resultType="ipFilterVo">
+		SELECT
+			tai.COL
+			, tai.title
+			, tai.ip
+			, tai.use_yn
+			, tai.regist_dt
+			, tai.register_sn
+			, tai.updt_dt
+			, tai.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tai.register_sn ) registerNm
+			, ( select user_nm from tb_user where user_sn = tai.updusr_sn ) updusrNm
+		FROM
+			tb_access_ip tai
+		WHERE
+			tai.col = #{col}
+	</select>
+
+	<insert id="insert" parameterType="ipFilterVo">
+		INSERT INTO tb_access_ip(
+			title
+			, ip
+			, use_yn
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) VALUES (
+			#{title}
+			, #{ip}
+			, #{useYn}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}
+		)
+	</insert>
+
+	<update id="update" parameterType="ipFilterVo">
+		UPDATE tb_access_ip	SET
+			updt_dt = now()
+			, updusr_sn = #{updusrSn}
+			<if test="title != null">, title = #{title} </if>
+			<if test="ip != null">, ip = #{ip} </if>
+			<if test="useYn != null">, use_yn = #{useYn} </if>
+		WHERE
+			COL = #{col}
+	</update>
+	
+	<!-- <update id="delete" parameterType="ipFilterVo">
+		UPDATE tb_access_ip	SET
+			updt_dt = now()
+			, updusr_sn = #{updusrSn}
+			, use_yn = #{useYn}
+		WHERE
+			COL = #{col}
+	</update> -->
+	<delete id="delete" parameterType="ipFilterVo">
+		DELETE FROM tb_access_ip where COL = #{col}
+	</delete>
+</mapper>
