@@ -79,6 +79,7 @@
         , tu.login_co
         , tu.last_login_dt
         , tu.password_initl_yn
+        , tm.login_tkn
     from tb_mngr tm
     inner join tb_user tu on tu.user_sn = tm.user_sn
     where tm.user_sn = #{userSn}
@@ -153,5 +154,13 @@
 	    where tu.login_id = #{userId}
 	    and tu.login_password =#{userPwd}
   </select>
-
+  
+  <!-- 로그인 토큰 업데이트 -->
+  	<update id="increaseMngrLoginToken" parameterType="userVo">
+  		update tb_mngr 	set 
+  			login_tkn = #{loginTkn}
+  		where 
+  			user_sn = #{userSn}
+ 	</update>
+ 	
 </mapper>

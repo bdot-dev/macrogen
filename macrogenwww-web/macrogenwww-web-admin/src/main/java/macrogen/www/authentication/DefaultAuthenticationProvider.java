@@ -20,11 +20,14 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.Roles;
 import macrogen.www.service.CodeService;
+import macrogen.www.service.LoginLogService;
 import macrogen.www.service.MngrService;
 import macrogen.www.service.UserService;
 import macrogen.www.vo.CodeVo;
+import macrogen.www.vo.LoginLogVo;
 import macrogen.www.vo.MngrVo;
 import macrogen.www.vo.UserVo;
 
@@ -53,7 +56,10 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 
 	@Resource(name="codeService")
 	private CodeService codeService;
-
+	
+	@Resource(name = "loginLogService")
+	private LoginLogService loginLogService;
+	
 	/**
 	 * <pre>
 	 * authenticate
@@ -69,17 +75,45 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 	@Override
 	public Authentication authenticate(Authentication authentication)
 			throws AuthenticationException {
-
+		
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+		
 		// get login_id, login_pw
 		String loginId = (String)authentication.getPrincipal();
 		String loginPw = (String)authentication.getCredentials();
-
+		
+		String clientIp = CommonStringUtil.getClientIp(request);
+		LOGGER.info("ip:::::::::::::::::::"+clientIp);
+		LOGGER.info("remote addr:::::::::::::::::::"+request.getRemoteAddr());
+		
+		LoginLogVo loginLogVo = new LoginLogVo();
+		
+		loginLogVo.setLoginId(loginId);
+		loginLogVo.setIp(clientIp);
+		
 		if (loginId == null || "".equals(loginId.trim())) {
 			LOGGER.debug("invalid login id");
+			loginLogVo.setLoginResult("실패");
+			loginLogVo.setReason("아이디 미입력");
+			
+			try {
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
 			throw new BadCredentialsException("Login failed");
 		}
 		if (loginPw == null || "".equals(loginPw.trim())) {
 			LOGGER.debug("invalid login pw");
+			loginLogVo.setLoginResult("실패");
+			loginLogVo.setReason("비밀번호 미입력");
+			
+			try {
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
 			throw new BadCredentialsException("Login failed");
 		}
 
@@ -104,13 +138,39 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 
 		if (mngrVo == null) {
 			LOGGER.debug("login_id dose not match");
+			loginLogVo.setLoginResult("실패");
+			loginLogVo.setReason("등록되지 않은 아이디");
+			try {
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
 			throw new BadCredentialsException("Login failed");
 		}
 		if (mngrVo.getLoginId() == null || "".equals(mngrVo.getLoginId().trim())) {
+			loginLogVo.setLoginResult("실패");
+			loginLogVo.setReason("아이디 오류");
+			
+			try {
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
 			LOGGER.debug("invalid db id");
 			throw new BadCredentialsException("Login failed");
 		}
 		if (mngrVo.getLoginPassword() == null || "".equals(mngrVo.getLoginPassword().trim())) {
+			loginLogVo.setLoginResult("실패");
+			loginLogVo.setReason("비밀번호 오류");
+			
+			try {
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
 			LOGGER.debug("invalid db pw");
 			throw new BadCredentialsException("Login failed");
 		}
@@ -139,14 +199,44 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 		}*/
 
 		// 아이피 확인 : 아이피 접속제한 등에 사용
-		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+		
 		LOGGER.debug("userIp : {}", request.getRemoteAddr());
 
 		// 아이디와 암호화된 비밀번호가 일치하는가?
 		if (loginId.equals(mngrVo.getLoginId())
 				&& encryptedLoginPw.equals(mngrVo.getLoginPassword())) {
 			LOGGER.info("login success...");
-
+			
+			try {
+				loginLogVo.setLoginResult("성공");
+				loginLogVo.setReason("로그인 성공");
+				loginLogService.insert(loginLogVo);
+				UserVo userVo = new UserVo();
+				userVo.setUserSn(mngrVo.getUserSn());
+				String loginTkn = CommonStringUtil.randomStrCreate(6);
+				userVo.setLoginTkn(loginTkn);
+				mngrVo.setLoginTkn(loginTkn);
+				
+				// 관리자 로그인 TOKEN 값 추가 
+				mngrService.increaseMngrLoginToken(userVo);
+				
+				
+				Boolean bUserOverlap = false;
+				if(!StringUtils.isEmpty(mngrVo)) {
+					MngrVo admInfo = mngrService.view(mngrVo);
+					if(admInfo != null && admInfo.getLoginTkn().equals(mngrVo.getLoginTkn()) ) bUserOverlap = true;
+				}
+				
+				
+				request.setAttribute("bUserOverlap", bUserOverlap);
+				request.setAttribute("mngrVo", mngrVo);
+				
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+				throw new BadCredentialsException("password_input_error_count_exceed");
+			}
+			
+			
 			// 초기비밀번호 변경 화면으로 이동
 			if ("Y".equals(mngrVo.getPasswordInitlYn())) {
 				request.getSession().setAttribute("PASSWORD_CHANGE_USER_SN", mngrVo.getUserSn());
@@ -181,6 +271,9 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 		} else if (loginId.equals(mngrVo.getLoginId())
 				&& !encryptedLoginPw.equals(mngrVo.getLoginPassword())) {
 			try {
+				loginLogVo.setLoginResult("실패");
+				loginLogVo.setReason("비밀번호 오류");
+				loginLogService.insert(loginLogVo);
 				UserVo userVo = new UserVo();
 				userVo.setUserSn(mngrVo.getUserSn());
 				userService.increasePasswordInputErrorCo(userVo);
@@ -188,7 +281,32 @@ public class DefaultAuthenticationProvider implements AuthenticationProvider {
 				LOGGER.debug(e.getMessage());
 			}
 			throw new BadCredentialsException("Login failed");
-		} else {
+		} else if(!loginId.equals(mngrVo.getLoginId())
+				&& encryptedLoginPw.equals(mngrVo.getLoginPassword())){
+			
+			try {
+				loginLogVo.setLoginResult("실패");
+				loginLogVo.setReason("아이디 오류");
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
+			throw new BadCredentialsException("Login failed");
+		} else if(!loginId.equals(mngrVo.getLoginId())
+				&& !encryptedLoginPw.equals(mngrVo.getLoginPassword())){
+			
+			try {
+				loginLogVo.setLoginResult("실패");
+				loginLogVo.setReason("아이디와 비밀번호 오류");
+				loginLogService.insert(loginLogVo);
+			} catch (Exception e) {
+				LOGGER.debug(e.getMessage());
+			}
+			
+			throw new BadCredentialsException("Login failed");
+		}
+		else {
 			throw new BadCredentialsException("Login failed");
 		}
 	}
