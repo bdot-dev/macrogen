@@ -40,10 +40,8 @@
         <div class="section_business">
             <!--OLigo 공통 s -->
             <div class="subject-box">
-                <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo DNA를<br>
-                    빠르고 합리적인 비용으로 이용할 수 있습니다
-                </p>
-                <p class="subject font-body-h img_bottom">고객 맞춤형 DNA 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
+                <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo를 빠르고 합리적인 비용으로 이용할 수 있습니다</p>
+                <p class="subject font-body-h img_bottom">고객 맞춤형 Oligo 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
                 <!--10.05 이미지 경로 변경-->
                 <div class="img">
                     <img src="/publishing/mobile-ko/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
@@ -58,8 +56,12 @@
 
             <!--OLigo 탭 네비 s-->
             <div class="select-nav-box _content-anchor" id="tab_anchor">
-                <p class="title font-h4">DNA Synthesis SERVICE</p>
-                <div class="select-box">
+            	<div class="select-tab-tit-box">
+            		<div class="select_tit active">DNA</div>
+            		<div class="select_tit">RNA</div>
+            	</div>
+                <p class="title font-h4">Oligo Synthesis</p> 
+                <div class="select-box DNA active">
                     <div class="selected-value _selected-value">
                         <span class="text">Standard Oligo</span>
                     </div>
@@ -72,12 +74,21 @@
                         <li class="option-value"><a href="#">RAPD Kits</a></li>
                     </ul>
                 </div>
+                <div class="select-box RNA">
+                    <div class="selected-value _selected-value">
+                        <span class="text">Single Strand RNA</span>
+                    </div>
+                    <ul class="select-option _select-option">
+                        <li class="option-value active"><a href="#">Single Strand RNA</a></li>
+                        <li class="option-value"><a href="#">Double Strand RNA</a></li>
+                    </ul>
+                </div>
 
             </div>
             <!--OLigo 탭 네비 e-->
 
-            <!--oligo 탭 메뉴 s-->
-            <div class="info-box-wrap tab-content">
+            <!--DNA 탭 메뉴 s-->
+            <div class="info-box-wrap tab-content active">
                 <!--Standard Oligo-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Standard Oligo</p>
@@ -308,7 +319,82 @@
 
                 </div>
             </div>
-            <!--oligo 탭 메뉴 e-->
+            <!-- DNA 탭 메뉴 e-->
+            <!-- RNA 탭 메뉴 s -->
+            <div class="info-box-wrap tab-content">
+                <!--Single Strand RNA-->
+                <div class="info-box show">
+                    <p class="font-h4 main-title">Single Strand RNA</p>
+                    <p class="subject font-body-h-b">Single Strand RNA 서비스는 각종 실험에 사용되는 Oligo를 고객이 직접 design 한 서열로 합성하여 제공하는 서비스입니다.</p>
+                    <p class="desc font-body img_bottom">마크로젠의 RNA Oligo 합성 서비스는 고품질의 원료를 이용하여 자체적으로 합성을 진행하고 HPLC정제를 통해 고순도의 RNA Oligo를 제공합니다. 또한, 주문부터 배송까지 모든 프로세스를 체계적으로 관리하고 MALDI-TOF mass spectrometry를 통해 모든 올리고의 품질을 관리합니다.</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img-oligo-single-strand.png" alt="Single Strand RNA">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Features</p>
+                            <ul class="list-circle-dot">
+                                <li><p>제공량 : 10nmole, 30nmole, 50nmol</p></li>
+                                <li><p>Purification : Cartridge, HPLC</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <div class="btn-wrapper">
+                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
+                               target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+                        </div>
+                        <div class="btn-wrapper">
+                         	<a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="navigation pt-80 mb-0">
+                            <div class="row g-0">
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(7)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Double Strand RNA-->
+                <div class="info-box">
+                    <p class="font-h4 main-title">Double Strand RNA</p>
+                    <p class="subject font-body-h-b">Double Strand RNA(Annealing service)는 직접 design 한 상보적인 두 개의 Single Strand RNA를 하나의 Double Strand RNA 형태로 제공하는 서비스 입니다.</p>
+                    <p class="desc font-body img_bottom">Double Strand RNA는 Annealing 과정을 거쳐 상보적인 서열 2개의 Oligo를 하나의 결합된 Oligo 형태로 제공됩니다. 최대 50bp까지 Double Strand RNA 서비스가 가능하며, 합성과 Annealing 과정에서 2회의 QC를 거쳐 고객에게 제공됩니다.</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img-oligo-double-strand.png" alt="Double Strand RNA">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Features</p>
+                            <ul class="list-circle-dot">
+                                <li><p>제공량 : 10nmole, 30nmole, 50nmol</p></li>
+                                <li><p>Purification : Cartridge, HPLC</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <div class="btn-wrapper">
+                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
+                               target="_blank" class="btn btn-light"><span>견적의뢰</span></a></div>
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i
+                                class="icon ico-cart-white"></i><span>주문하기</span></a>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="navigation pt-80 mb-0">
+                            <div class="row g-0">
+                                 <div class="col" onclick="setTabContent(6)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+                                <div class="col disabled"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- RNA 탭 메뉴 e -->
         </div>
     </div>
 
@@ -317,13 +403,32 @@
     /*변수*/
     var selectBox = $(".select-box");
     var option = $(".option-value");
+    var tabTitle = $(".select_tit");
 
     var contentAnchor = $(".content-anchor");
     var anchorOption = $(".anchor-value");
     var anchor = $("._anchor");
     var offset = anchor.offset();
     var infoSectionList = [];
-
+    
+    function onClickTabTitle() {
+    	/* 탭 타이틀 클릭시 이벤트 */
+    	tabTitle.on('click', function() {
+    		var idx = $(this).index(); 
+    		$(this).addClass('active').siblings().removeClass('active');
+    		
+    		if($(this).text() === 'DNA') {
+    			$('.select-box.DNA').addClass('active').siblings().removeClass('active');
+    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+    			$('.select-box.DNA .option-value').eq(0).trigger('click');
+    		}
+    		else if ($(this).text() === 'RNA') {
+    			$('.select-box.RNA').addClass('active').siblings().removeClass('active');
+    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+    			$('.select-box.RNA .option-value').eq(0).trigger('click');
+    		}
+    	});
+    }
 
     function onClickSelectBox() {
         // console.log('onClickSelectBox');
@@ -334,7 +439,6 @@
                 select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
             } else {
                 select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-
             }
         });
     }
@@ -342,14 +446,16 @@
     function onClickSelectOption() {
         // console.log('onClickSelectOption');
         /*클릭시 탭메뉴 변경*/
-        option.on('click', function () {
+        option.on('click', function (event) {
+        	event.stopPropagation();
             $(this).addClass('active').siblings().removeClass('active')
-            var idx = $(this).index();
+            var idx = $(this).index('.option-value');
             var $info = $(".info-box-wrap > div");
             $info.addClass('show').siblings().removeClass('show');
             $info.eq(idx).addClass('show').siblings().removeClass('show');
             textChange($(this));
-            setInfoSectionList($(this).text())
+            setInfoSectionList($(this).text());
+            if(selectBox.hasClass('open')) selectBox.removeClass('open').children('.select-option').slideUp(200).removeClass('open');
         })
     }
 
@@ -375,11 +481,10 @@
     /*이전 다음 이동*/
     function setTabContent(idx) {
         var $Select = $('._select-option li');
-        var $Selected = $('._selected-value');
+        var $Selected = $('._selected-value span');
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
@@ -525,6 +630,7 @@
 
 
     function init() {
+    	onClickTabTitle();
         onClickSelectBox();
         onClickSelectOption();
         onClickBody();
