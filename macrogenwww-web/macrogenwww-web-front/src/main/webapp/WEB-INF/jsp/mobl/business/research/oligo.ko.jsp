@@ -334,7 +334,7 @@
                         <div class="list-area">
                             <p class="font-body-h-b title">Features</p>
                             <ul class="list-circle-dot">
-                                <li><p>10nmole, 30nmole, 50nmol</p></li>
+                                <li><p>제공량 : 10nmole, 30nmole, 50nmol</p></li>
                                 <li><p>Purification : Cartridge, HPLC</p></li>
                             </ul>
                         </div>
@@ -370,7 +370,7 @@
                         <div class="list-area">
                             <p class="font-body-h-b title">Features</p>
                             <ul class="list-circle-dot">
-                                <li><p>10nmole, 30nmole, 50nmol</p></li>
+                                <li><p>제공량 : 10nmole, 30nmole, 50nmol</p></li>
                                 <li><p>Purification : Cartridge, HPLC</p></li>
                             </ul>
                         </div>
