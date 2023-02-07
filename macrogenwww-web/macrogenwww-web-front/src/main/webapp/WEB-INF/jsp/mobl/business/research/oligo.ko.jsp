@@ -476,7 +476,6 @@
     function textChange(target) {
         var select = target.find('a').text();
         $('._selected-value').find('span').text(select);
-        console.log($('._selected-value').find('span').text())
     }
 
     /*이전 다음 이동*/
@@ -486,7 +485,6 @@
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
