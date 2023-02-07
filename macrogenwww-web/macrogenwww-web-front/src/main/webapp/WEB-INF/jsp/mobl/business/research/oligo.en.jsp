@@ -373,7 +373,7 @@
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(6)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
                                 <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
@@ -473,7 +473,7 @@
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        console.log(change);
+        
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
