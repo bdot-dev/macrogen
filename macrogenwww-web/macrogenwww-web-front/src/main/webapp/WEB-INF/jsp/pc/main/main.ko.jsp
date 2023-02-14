@@ -64,6 +64,18 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
+                <div class="swiper-slide visual_00">
+                	<div class="visual"></div>
+                    <div class="text-box">
+                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
+                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="swiper-slide">
                 	<div class="visual visual_01"></div>
 	                <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
@@ -72,14 +84,6 @@
 	                    <p class="slogan-sub">78억 인류와 세상을 향합니다</p>
 	                    <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
 	                </div>
-                </div>
-                <div class="swiper-slide">
-                	<div class="visual visual_02"></div>
-                    <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_02.png" alt="빅데이터 ai기반"></p>
-                        <p class="slogan-sub">정밀맞춤의학</p>
-                        <p class="desc">인공지능을 통해 분석된 빅데이터를 기반으로<br>미래 정밀맞춤의학의 시대를 만들어갑니다</p>
-                    </div>
                 </div>
                 <div class="swiper-slide">
                		<div class="visual visual_03"></div>
