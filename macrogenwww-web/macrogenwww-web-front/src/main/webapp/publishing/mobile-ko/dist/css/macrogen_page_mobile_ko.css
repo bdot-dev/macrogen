@@ -3180,6 +3180,7 @@
         background: url("../img/main/img-main_00.png") no-repeat center bottom/cover; }
         
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box {
+          left: 0;
           width: 100%;
           text-align: center; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box .text-gradient {
