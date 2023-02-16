@@ -84,7 +84,9 @@ public class RoleServiceImpl extends EgovAbstractServiceImpl implements RoleServ
 	public void insert(RoleVo roleVo) throws Exception{
 		roleMapper.insert(roleVo);
 
-		// TB_ROLE_MNGRMENU 등록 => 전체 삭제 후 등록
+		// TB_ROLE_MNGRMENU 등록 => 전체 삭제 후 등록\
+		roleVo.setChangeSnList(roleVo.getMenuSnList());
+		
 		deleteRoleMngrmenuByRoleId(roleVo);
 		deleteRoleMngrurlByRoleId(roleVo);
 		insertRoleMngrmenu(roleVo);
@@ -116,7 +118,7 @@ public class RoleServiceImpl extends EgovAbstractServiceImpl implements RoleServ
 		}
 		
 		tmpArr.addAll(roleVo.getMenuSnList());
-
+		
 		for(Long menuSn : menuSnList) {
 			if (roleVo.getMenuSnList().contains(menuSn) == true) {
 	            //일치하는 아이템을 지움
@@ -215,34 +217,44 @@ public class RoleServiceImpl extends EgovAbstractServiceImpl implements RoleServ
 
 		}
 		
-		for (Long menuSn : roleVo.getChangeSnList()) {
-			MngrAuthLogVo authVo = new MngrAuthLogVo();
-			authVo.setRoleId(roleVo.getRoleId());
-			authVo.setMenuSn(menuSn);
-			authVo.setIp(clientIp);
-			authVo.setResult("저장");
-			authVo.setRegisterSn(roleVo.getRegisterSn());
-			if(roleVo.getPendncyMenuSnList()!=null) {
-				if (roleVo.getPendncyMenuSnList().contains(menuSn) == true) {
-					authVo.setPendncyYn("Y");
-				}else if(roleVo.getPendncyMenuSnList().contains(menuSn) == false) {
-					authVo.setPendncyYn("N");
-		        }
+		if(roleVo.getChangeSnList()!=null) {
+			
+			for (Long menuSn : roleVo.getChangeSnList()) {
+				MngrAuthLogVo authVo = new MngrAuthLogVo();
+				authVo.setRoleId(roleVo.getRoleId());
+				authVo.setMenuSn(menuSn);
+				authVo.setIp(clientIp);
+				authVo.setResult("저장");
+				authVo.setRegisterSn(roleVo.getRegisterSn());
+				if(roleVo.getPendncyMenuSnList()!=null) {
+					if (roleVo.getPendncyMenuSnList().contains(menuSn) == true) {
+						authVo.setPendncyYn("Y");
+					}else if(roleVo.getPendncyMenuSnList().contains(menuSn) == false) {
+						authVo.setPendncyYn("N");
+			        }
+				}
+				mngrAuthLogMapper.insertMngrMenu(authVo);
 			}
-			mngrAuthLogMapper.insertMngrMenu(authVo);
-		}
 		
+		}
 		ArrayList<Long> tmpArr = new ArrayList<>();
 		
-		tmpArr.addAll(roleVo.getOrgUrlList());
+		if(roleVo.getOrgUrlList()!=null) {
+			tmpArr.addAll(roleVo.getOrgUrlList());
+		}
 		
 		for(Long menuSn : roleVo.getAccessSnList()) {
-			if (roleVo.getOrgUrlList().contains(menuSn) == true) {
-				//일치하는 아이템을 지움
-				tmpArr.remove(menuSn);
-			}else if(roleVo.getOrgUrlList().contains(menuSn) == false) {
+			if(roleVo.getOrgUrlList() == null) {
 	        	tmpArr.add(menuSn);
+	        }else if(roleVo.getOrgUrlList()!=null) {
+				if (roleVo.getOrgUrlList().contains(menuSn) == true) {
+					//일치하는 아이템을 지움
+					tmpArr.remove(menuSn);
+				}else if(roleVo.getOrgUrlList().contains(menuSn) == false) {
+		        	tmpArr.add(menuSn);
+		        }
 	        }
+			
 			
 		}
 		
