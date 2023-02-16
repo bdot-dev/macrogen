@@ -39,6 +39,13 @@
 		WHERE TR.ROLE_ID = #{roleId}
 	</select>
 	
+	<select id="urlList" parameterType="roleVo" resultType="Long">
+		select menu_sn from tb_role_mngrurl trm, tb_mngrurl tm 
+		where trm.url = tm.url
+		and role_id = #{roleId}
+	</select>
+	
+	
 	<insert id="insert" parameterType="roleVo">
 		INSERT INTO tb_role (
 			ROLE_ID, ROLE_NM, REGIST_DT, REGISTER_SN, UPDT_DT, UPDUSR_SN

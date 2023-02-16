@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.InvstLogMapper">
+
+	<sql id="list_where">
+		<if test='searchKeyword != null and searchKeyword != ""'>
+			<choose>
+				<when test='searchCondition == "ID"'>
+					and tih.login_id like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "NAME"'>
+					and tih.user_nm like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test='searchCondition == "TITLE"'>
+					and tih.ntt_sj like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+
+	</sql>
+
+	<select id="list" parameterType="invstLogVo" resultType="invstLogVo">
+		<include refid="paging.top"/>
+		select
+		    tih.inv_his_seq
+		    , tih.login_id
+		    , tih.user_nm
+		    , tih.result
+		    , tih.ntt_sn
+		    , tih.ntt_sj
+		    , tih.ip
+		    , tih.register_sn
+		    , tih.regist_dt
+		from tb_investor_history tih
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tih.inv_his_seq desc
+		<include refid="paging.bottom"/>
+	</select>
+	
+	<select id="listExcel" parameterType="invstLogVo" resultType="invstLogVo">
+		select
+		    tih.inv_his_seq
+		    , tih.login_id
+		    , tih.user_nm
+		    , tih.result
+		    , tih.ntt_sn
+		    , tih.ntt_sj
+		    , tih.ip
+		    , tih.register_sn
+		    , tih.regist_dt
+		from tb_investor_history tih
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    tih.inv_his_seq desc
+	</select>
+	
+	<select id="count" parameterType="invstLogVo" resultType="int">
+		select count(*)
+		from tb_investor_history tih
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<insert id="insert" parameterType="invstLogVo">
+		INSERT INTO tb_investor_history(
+			ntt_sn
+			, ntt_sj
+			, user_nm
+			, login_id
+			, result
+			, register_sn
+			, ip
+			, regist_dt
+		) VALUES (
+			#{nttSn}
+			, #{nttSj}
+			, #{userNm}
+			, #{loginId}
+			, #{result}
+			, #{registerSn}
+			, #{ip}
+			, now()
+		)
+	</insert>
+</mapper>
