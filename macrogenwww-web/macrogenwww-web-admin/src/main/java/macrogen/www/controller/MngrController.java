@@ -1,11 +1,14 @@
 package macrogen.www.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.apache.ibatis.javassist.expr.NewArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -20,9 +23,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 import macrogen.www.enums.Roles;
 import macrogen.www.service.CodeService;
+import macrogen.www.service.MngrLogService;
 import macrogen.www.service.MngrService;
 import macrogen.www.service.RoleService;
 import macrogen.www.service.UserService;
+import macrogen.www.vo.MngrLogVo;
 import macrogen.www.vo.MngrVo;
 import macrogen.www.vo.RoleVo;
 import macrogen.www.vo.UserVo;
@@ -44,6 +49,9 @@ public class MngrController {
 	
 	@Resource(name="mngrService")
 	private MngrService mngrService;
+	
+	@Resource(name="mngrLogService")
+	private MngrLogService mngrLogService;
 
 	@Autowired
 	private UserService userService;
@@ -175,10 +183,23 @@ public class MngrController {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		if (!StringUtils.isEmpty(mngrVo.getUserSn())) {
+			
 			MngrVo resultVo = new MngrVo();
 			resultVo.setUserSn(mngrVo.getUserSn());
 			resultVo = mngrService.view(resultVo);
 			resultMap.put("resultVo", resultVo);
+			
+			MngrLogVo mngrLogVo = new MngrLogVo();
+			mngrLogVo.setUserSn(resultVo.getUserSn());
+			mngrLogVo.setRoleId("-");
+			mngrLogVo.setChangeInfo("-");
+			mngrLogVo.setPwdFailCleanYn("X");
+			mngrLogVo.setPwdCleanYn("X");
+			mngrLogVo.setLoginId(resultVo.getLoginId());
+			mngrLogVo.setRegisterSn(loginVo.getUserSn());
+			mngrLogVo.setResult("조회");
+			
+			mngrLogService.insert(mngrLogVo);
 
 			// 비밀번호 삭제
 			resultVo.setLoginPassword(null);
@@ -224,9 +245,77 @@ public class MngrController {
 		// set login user
 		mngrVo.setRegisterSn(loginVo.getUserSn());
 		mngrVo.setUpdusrSn(loginVo.getUserSn());
-
+		
+		
+		
+		
 		if (!StringUtils.isEmpty(mngrVo.getUserSn())) {
+			MngrVo viewVo = new MngrVo();
+			MngrLogVo mngrLogVo = new MngrLogVo();
+			
+			viewVo = mngrService.view(mngrVo);
+			ArrayList<String> chgArr = new ArrayList<String>();
+			
+			if(!viewVo.getRoleId().equals(mngrVo.getRoleId())&&viewVo.getRoleId()!=mngrVo.getRoleId()) {
+				mngrLogVo.setRoleId(mngrVo.getRoleId());
+				chgArr.add("권한");
+			}
+			if(mngrVo.getLoginPassword()!=null && !mngrVo.getLoginPassword().equals("")) {
+				if(!viewVo.getLoginPassword().equals(mngrVo.getLoginPassword())&&viewVo.getLoginPassword()!=mngrVo.getLoginPassword()) {
+					chgArr.add("비밀번호");
+				}
+			}
+			
+			
+			if(!viewVo.getUserNm().equals(mngrVo.getUserNm())&&viewVo.getUserNm()!=mngrVo.getUserNm()) {
+				chgArr.add("이름");
+			}
+			
+			if(mngrVo.getEmail()!=null) {
+				if(viewVo.getEmail()!=mngrVo.getEmail()&&!mngrVo.getEmail().equals(viewVo.getEmail())) {
+					chgArr.add("이메일");
+				}
+			}
+			
+			if(mngrVo.getMbtlnum()!=null) {
+				if(viewVo.getMbtlnum()!=mngrVo.getMbtlnum()&&!mngrVo.getMbtlnum().equals(viewVo.getMbtlnum())) {
+					chgArr.add("휴대폰 번호");
+				}
+			}
+			
+			if(mngrVo.getTelno()!=null) {
+				if(viewVo.getTelno()!=mngrVo.getTelno()&&!mngrVo.getTelno().equals(viewVo.getTelno())) {
+					chgArr.add("전화번호");
+				}
+			}
+			String chg = "";
+			
+			for(int i=0;i<chgArr.size();i++) {
+				if(i==chgArr.size()-1) {
+					chg += chgArr.get(i);
+				}else {
+					chg += chgArr.get(i)+", ";
+				}
+				
+			}
+			
+			mngrLogVo.setChangeInfo(chg);
+			
+			
+			mngrLogVo.setUserSn(mngrVo.getUserSn());
+			mngrLogVo.setLoginId(viewVo.getLoginId());
+			mngrLogVo.setChangeInfo(chg);
+			mngrLogVo.setPwdFailCleanYn("X");
+			mngrLogVo.setPwdCleanYn("X");
+			mngrLogVo.setRegisterSn(loginVo.getUserSn());
+			mngrLogVo.setResult("수정");
+			
 			mngrService.update(mngrVo);
+			
+			mngrLogService.insert(mngrLogVo);
+			
+			
+			
 		} else {
 			// 관리자 등록시, 초기비밀번호(macrogen@admin) 설정, 비밀번호_초기화_여부 'Y' 로 설정
 			mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
@@ -283,8 +372,24 @@ public class MngrController {
 			@RequestBody MngrVo mngrVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
+		
+		MngrVo viewVo = new MngrVo();
+		viewVo = mngrService.view(mngrVo);
+		
 		mngrService.delete(mngrVo);
-
+		
+		MngrLogVo mngrLogVo = new MngrLogVo();
+		mngrLogVo.setUserSn(mngrVo.getUserSn());
+		mngrLogVo.setRoleId("-");
+		mngrLogVo.setChangeInfo("-");
+		mngrLogVo.setPwdFailCleanYn("X");
+		mngrLogVo.setPwdCleanYn("X");
+		mngrLogVo.setLoginId(viewVo.getLoginId());
+		mngrLogVo.setRegisterSn(loginVo.getUserSn());
+		mngrLogVo.setResult("삭제");
+		
+		mngrLogService.insert(mngrLogVo);
+		
 		resultMap.put("result", "success");
 		return resultMap;
 	}
@@ -308,7 +413,19 @@ public class MngrController {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		mngrService.initPasswordInputErrorCo(mngrVo);
-
+		
+		MngrLogVo mngrLogVo = new MngrLogVo();
+		mngrLogVo.setUserSn(mngrVo.getUserSn());
+		mngrLogVo.setLoginId(mngrVo.getLoginId());
+		mngrLogVo.setRoleId("-");
+		mngrLogVo.setChangeInfo("-");
+		mngrLogVo.setPwdFailCleanYn("O");
+		mngrLogVo.setPwdCleanYn("X");
+		mngrLogVo.setRegisterSn(loginVo.getUserSn());
+		mngrLogVo.setResult("조회");
+		
+		mngrLogService.insert(mngrLogVo);
+		
 		resultMap.put("result", "success");
 		return resultMap;
 	}
@@ -323,6 +440,18 @@ public class MngrController {
 
 		mngrVo.setLoginPassword(passwordEncoder.encodePassword(INITIAL_PASSWORD, null));
 		mngrService.initPassword(mngrVo);
+		
+		MngrLogVo mngrLogVo = new MngrLogVo();
+		mngrLogVo.setUserSn(mngrVo.getUserSn());
+		mngrLogVo.setLoginId(mngrVo.getLoginId());
+		mngrLogVo.setRoleId("-");
+		mngrLogVo.setChangeInfo("-");
+		mngrLogVo.setPwdFailCleanYn("X");
+		mngrLogVo.setPwdCleanYn("O");
+		mngrLogVo.setRegisterSn(loginVo.getUserSn());
+		mngrLogVo.setResult("조회");
+		
+		mngrLogService.insert(mngrLogVo);
 
 		resultMap.put("result", "success");
 		return resultMap;

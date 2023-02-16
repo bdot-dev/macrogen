@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MngrAuthLogMapper">
+
+	<sql id="list_where">
+		<if test='searchKeyword != null and searchKeyword != ""'>
+			<choose>
+				<when test='searchCondition == "AUTH"'>
+					and exists (
+					    select 1 from tb_role
+					    where role_id like concat('%', #{searchKeyword}, '%')
+					    and role_id = log.role_id
+					)
+				</when>
+				<when test='searchCondition == "MENU"'>
+					and exists (
+					    select 1 from vw_mngrmenu
+					    where menu_nm like concat('%', #{searchKeyword}, '%')
+					    and menu_sn = log.menu_sn
+					)
+				</when>
+				<when test='searchCondition == "URL"'>
+					and exists (
+					    select 1 from vw_mngrmenu
+					    where menu_url like concat('%', #{searchKeyword}, '%')
+					    and menu_sn = log.url_menu_sn
+					)
+					or exists (
+					    select 1 from vw_mngrmenu
+					    where menu_nm_path like concat('%', #{searchKeyword}, '%')
+					    and menu_sn = log.url_menu_sn
+					)
+				</when>
+			</choose>
+		</if>
+
+	</sql>
+
+	<select id="list" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		<include refid="paging.top"/>
+		select  mngr_his_seq 
+			,role_nm
+			,role_id
+			,ip 
+			,regist_dt 
+			,register_sn 
+			,result 
+			,IFNULL((select menu_nm from  vw_mngrmenu where menu_sn = log.menu_sn), "-") menu_nm
+			,IFNULL((select menu_nm_path from vw_mngrmenu where menu_sn = log.url_menu_sn), "-") menu_nm_path
+			,IFNULL((select url from tb_mngrurl where menu_sn = log.url_menu_sn), "-") url 
+	        ,menu_sn
+	        ,menu_cnt
+        	,url_cnt
+        	,url_menu_sn
+	    from (
+		    select
+			 		trh.mngr_his_seq
+				    , IFNULL((select role_nm from tb_role where role_id = trh.role_id ), "-") role_nm
+				    , trh.role_id
+				    , trh.ip
+				    , trh.regist_dt
+				    , trh.register_sn
+				    , trh.result
+		            , IFNULL((select menu_sn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by menu_sn limit 1), null) menu_sn
+		            , IFNULL((select pendncy_yn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), "-") pendncy_yn
+		            , IFNULL((select mngrmenu_his_seq from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrmenu_his_seq
+					, IFNULL((select mngrurl_his_seq from  tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrurl_his_seq
+					, IFNULL((select menu_sn from tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by menu_sn limit 1), null) url_menu_sn 
+		            , IFNULL((select count(menu_sn) from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq), 0) menu_cnt
+		            , IFNULL((select count(url) from  tb_role_mngrurl_history where mngr_his_seq = trh.mngr_his_seq), 0) url_cnt
+			from tb_role_history trh) log
+    	where 1 = 1
+		<include refid="list_where" />
+		order by
+		    log.mngr_his_seq desc
+		<include refid="paging.bottom"/>
+	</select>
+	
+	<select id="listExcel" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		select  mngr_his_seq 
+			,role_nm
+			,role_id
+			,ip 
+			,regist_dt 
+			,register_sn 
+			,result 
+			,IFNULL((select menu_nm from  vw_mngrmenu where menu_sn = log.menu_sn), "-") menu_nm
+			,IFNULL((select menu_nm_path from vw_mngrmenu where menu_sn = log.url_menu_sn), "-") menu_nm_path
+			,IFNULL((select url from tb_mngrurl where menu_sn = log.url_menu_sn), "-") url 
+	        ,menu_sn
+	        ,menu_cnt
+        	,url_cnt
+	    from (
+		    select
+			 		trh.mngr_his_seq
+				    , IFNULL((select role_nm from tb_role where role_id = trh.role_id ), "-") role_nm
+				    , trh.role_id
+				    , trh.ip
+				    , trh.regist_dt
+				    , trh.register_sn
+				    , trh.result
+		            , IFNULL((select menu_sn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by menu_sn limit 1), null) menu_sn
+		            , IFNULL((select pendncy_yn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), "-") pendncy_yn
+		            , IFNULL((select mngrmenu_his_seq from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrmenu_his_seq
+					, IFNULL((select mngrurl_his_seq from  tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrurl_his_seq
+					, IFNULL((select menu_sn from tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by menu_sn limit 1), null) url_menu_sn 
+		            , IFNULL((select count(menu_sn) from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq), 0) menu_cnt
+		            , IFNULL((select count(url) from  tb_role_mngrurl_history where mngr_his_seq = trh.mngr_his_seq), 0) url_cnt
+			from tb_role_history trh) log
+    	where 1 = 1
+		<include refid="list_where" />
+		order by
+		    log.mngr_his_seq desc
+	</select>
+	
+	<select id="count" parameterType="mngrAuthLogVo" resultType="int">
+		select count(*)
+		from (
+		    select
+			 trh.mngr_his_seq
+				    , IFNULL((select role_nm from tb_role where role_id = trh.role_id ), "-") role_nm
+				    , trh.role_id
+				    , trh.ip
+				    , trh.regist_dt
+				    , trh.register_sn
+				    , trh.result
+		            , IFNULL((select menu_sn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) menu_sn
+		            , IFNULL((select pendncy_yn from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), "-") pendncy_yn
+		            , IFNULL((select mngrmenu_his_seq from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrmenu_his_seq
+					, IFNULL((select url from  tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), "-") url
+					, IFNULL((select mngrurl_his_seq from  tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by mngr_his_seq limit 1), null) mngrurl_his_seq
+		            , IFNULL((select count(menu_sn) from  tb_role_mngrmenu_history where mngr_his_seq = trh.mngr_his_seq), 0) menu_cnt
+		            , IFNULL((select count(url) from  tb_role_mngrurl_history where mngr_his_seq = trh.mngr_his_seq), 0) url_cnt
+		            , IFNULL((select menu_sn from tb_role_mngrurl_history truh where mngr_his_seq = trh.mngr_his_seq order by menu_sn limit 1), null) url_menu_sn 
+			from tb_role_history trh) log
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+	
+	<select id="view" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		select 
+			role_id
+            , trh.mngr_his_seq
+			, group_concat(menu_nm_path order by mngrmenu.menu_sn separator ',') menu_nm
+            , group_concat(concat(menu_nm_path, ' (', url,')') order by mngrmenu.menu_sn separator ',') menu_nm_path
+            , group_concat(url order by mngrmenu.menu_sn separator ', ') url
+            , result
+            , regist_dt
+        from tb_role_history trh, 
+	        (select  
+				mngrmenu_his_seq
+				, menu_sn
+				, IFNULL((select menu_nm from  vw_mngrmenu where menu_sn = trmh.menu_sn), "-") menu_nm
+				, IFNULL((select menu_nm_path from vw_mngrmenu where menu_sn = trmh.menu_sn), "-") menu_nm_path
+	            , IFNULL((select menu_url from tb_mngrmenu where menu_sn = trmh.menu_sn), "-") url
+				, trmh.pendncy_yn
+	            , mngr_his_seq
+	        from tb_role_mngrmenu_history trmh where mngr_his_seq = #{mngrHisSeq}) mngrmenu
+	    where 1=1
+	    and mngrmenu.mngr_his_seq = trh.mngr_his_seq group by trh.mngr_his_seq
+	</select>
+	
+	<select id="viewRef" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		select * from tb_role_history
+		where 1=1
+		and mngr_his_seq = #{mngrHisSeq}
+	</select>
+	
+	<select id="viewMenuList" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		select menu_nm_path 
+		from tb_role_mngrmenu_history trmh, vw_mngrmenu vw 
+		where 1=1 
+		and trmh.menu_sn = vw.menu_sn and mngr_his_seq = #{mngrHisSeq}
+		order by vw.menu_nm_path
+	</select>
+	
+	<select id="viewUrlList" parameterType="mngrAuthLogVo" resultType="mngrAuthLogVo">
+		select  concat(menu_nm_path, ' (', url,')') url
+		from tb_role_mngrurl_history trmh, vw_mngrmenu vw 
+		where 1=1 
+		and trmh.menu_sn = vw.menu_sn and mngr_his_seq = #{mngrHisSeq}
+		order by vw.menu_nm_path
+	</select>
+	
+	
+	<insert id="insert" parameterType="mngrAuthLogVo">
+		INSERT INTO tb_role_history(
+			role_id
+			, ip
+			, regist_dt
+			, register_sn
+			, result
+		) VALUES (
+			#{roleId}
+			, #{ip}
+			, now()
+			, #{registerSn}
+			, #{result}
+		)
+	</insert>
+	
+	<insert id="insertMngrMenu" parameterType="mngrAuthLogVo">
+		<selectKey keyProperty="mngrHisSeq,registerSn" resultType="mngrAuthLogVo" order="BEFORE">
+			SELECT mngr_his_seq as mngrHisSeq, register_sn as registerSn FROM tb_role_history  order by mngr_his_seq desc limit 1
+		</selectKey>
+		INSERT INTO tb_role_mngrmenu_history(
+			 role_id
+			, menu_sn
+			, pendncy_yn
+			, ip
+			, regist_dt
+			, register_sn
+			, result
+			, mngr_his_seq
+		) VALUES (
+			#{roleId}
+			, #{menuSn}
+			, #{pendncyYn}
+			, #{ip}
+			, now()
+			, #{registerSn}
+			, #{result}
+			, #{mngrHisSeq}
+		)
+	</insert>
+	
+	<insert id="insertMngrUrl" parameterType="mngrAuthLogVo">
+		<selectKey keyProperty="mngrHisSeq,registerSn" resultType="mngrAuthLogVo" order="BEFORE">
+			SELECT mngr_his_seq as mngrHisSeq, register_sn as registerSn FROM tb_role_history order by mngr_his_seq desc limit 1
+		</selectKey>
+		INSERT INTO tb_role_mngrurl_history(
+			role_id
+			, url
+			, ip
+			, regist_dt
+			, register_sn
+			, result
+			, mngr_his_seq
+			, menu_sn
+		) VALUES (
+			#{roleId}
+			, #{url}
+			, #{ip}
+			, now()
+			, #{registerSn}
+			, #{result}
+			, #{mngrHisSeq}
+			, #{menuSn}
+		)
+	</insert>
+	
+</mapper>
