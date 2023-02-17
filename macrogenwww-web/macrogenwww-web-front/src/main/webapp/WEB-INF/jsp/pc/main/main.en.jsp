@@ -85,7 +85,7 @@
                 <div class="swiper-slide">
                 	<div class="visual visual_03"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="../../img/main/txt-main_03.png" alt="희망과 함께하는"></p>
+                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
                         <p class="slogan-sub">for humanity</p>
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
