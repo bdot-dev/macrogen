@@ -87,7 +87,7 @@
                 <div class="swiper-slide">
                		<div class="visual visual_03"></div>
                     <div class="text-box">
-                        <p class="text-gradient"><img src="../../img/main/txt-main_03.png" alt="희망과 함께하는"></p>
+                        <p class="text-gradient"><img src="/publishing/pc-ko/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
                         <p class="slogan-sub">건강한 미래</p>
                         <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로 새로운 미래를 열어갑니다</p>
                     </div>
