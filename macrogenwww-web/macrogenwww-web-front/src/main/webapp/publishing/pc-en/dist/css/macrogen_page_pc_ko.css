@@ -7387,7 +7387,47 @@
         height: 100%;
         overflow:hidden; 
         background-size: cover;}
-      
+    
+      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .visual {
+        background: url("../img/main/img-main_00.png") no-repeat center bottom; }
+        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box {
+          top: 337px;
+          left: 0;
+          width: 100%;
+          text-align: center; }
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .slogan-sub {
+            font-family: 'Proxima Nova';
+            font-weight: 700;
+            font-size: 46px;
+            letter-spacing: -0.02em;
+            line-height: 107%;
+            font-feature-settings: 'kern' off; }
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .desc {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 133%;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'kern' off; }
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+          }
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns button {
+            width: 170px;
+            height: 38px;
+            margin: 0 5px;
+            font-weight: 700;
+            font-size: 15px;
+            font-family: 'Proxima Nova';
+            color: #fff;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.15);
+          }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
         background: url("../img/main/img-main_01.png") no-repeat center bottom; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 .text-gradient img {
@@ -7406,24 +7446,24 @@
         display: none;
         position: absolute;
         left: 335px;
-        top: 48.979%;
+        top: 413px;
         /* .text-gradient {
               background: linear-gradient(to right, #00ADA9, #377EF9);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             }*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
-          font-size: 86px;
-          line-height: 98px;
-          letter-spacing: -0.06em;
-          color: #ffffff;
-          font-weight: bold; }
+          font-weight: 700;
+          font-size: 66px;
+          line-height: 106%;
+          letter-spacing: -0.02em;
+          color: #ffffff; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p.desc {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 40px;
-            letter-spacing: -0.05em;
-            margin-top: 35px; }
+            margin-top: 25px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: -0.02em; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase {
           left: 50%;
           top: 48%;
