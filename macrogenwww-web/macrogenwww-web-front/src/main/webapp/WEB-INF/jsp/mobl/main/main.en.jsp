@@ -24,34 +24,33 @@
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="visual visual_01">
+                    <div class="visual visual_00">
                         <div class="text-box">
-                           <!--  <p><span class="text-gradient">Global leader</span></p> -->
-                           <p class="slogan-sub">Personalized genomic</p>
-                           <p class="slogan-sub">medicine for all</p>
-                            <p class="slogan-sub">7.8 billion</p>
-                            <p class="slogan-sub">people</p>
-                            <p class="desc">Building a healthier future with innovative genome analysis technology</p>
+                            <p class="slogan-sub">NovaSeq X Plus & PacBio Revio, <br>the latest systems in genome <br>sequencing, will be adopted for <br>the first time in the world</p>
+                            <p class="desc">As the global launching partner of Illumina and <br>PacBio, Macrogen is one of the first companies <br>to bring the most revolutionary sequencing <br>technology to the market, helping to open up <br>an era of $100 personal genomes.</p>
+                            <div class="btns">
+                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000237?pageIndex=1&searchKeyword='">NovaSeq X Plus</button>
+                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000238?pageIndex=1&searchKeyword='">Revio</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="visual visual_02">
+                    <div class="visual visual_01">
                         <div class="text-box">
-                            <p><span class="text-gradient">Big data and</br> AI-driven</span></p>
-                            <p class="slogan-sub">custom</br> medicine</p>
-                            <p class="desc">Improving future health with higher precision
-							and personalized medicine</p>
+                           <p class="slogan-sub">Personalized genomic</p>
+                           <p class="slogan-sub">medicine for all</p>
+                            <p class="slogan-sub">7.8 billion people</p>
+                            <p class="desc">Building a healthier future with <br>innovative genome analysis technology</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="visual visual_03">
                         <div class="text-box">
-                            <p><span class="text-gradient">Creating a healthier</span></p>
-                            <p class="slogan-sub"> for humanity</p>
-                            <p class="desc">Macrogen opens the door to the future using
-                                body designs for human health</p>
+                            <p><span class="text-gradient">Creating a healthier future</span></p>
+                            <p class="slogan-sub">for humanity</p>
+                            <p class="desc">Macrogen opens the door to the future using <br>body designs for human health</p>
                         </div>
                     </div>
                 </div>
@@ -67,8 +66,8 @@
                 </div>
             </div>
             <div class="scroll-wrap">
-    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-</div>
+                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+            </div>
 
             <!-- If we need pagination -->
             <div class="swiper-pagination" id="key-swiper-pagination"></div>
