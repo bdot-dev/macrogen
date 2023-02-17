@@ -7401,24 +7401,25 @@
         display: none;
         position: absolute;
         left: 335px;
-        top: 48.979%;
+        top: 413px;
         /* .text-gradient {
               background: linear-gradient(to right, #00ADA9, #377EF9);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             }*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
-          font-size: 86px;
-          line-height: 98px;
+          font-weight: 700; 
+          font-size: 56px;
+          line-height: 125%;
           letter-spacing: -0.06em;
           color: #ffffff;
-          font-weight: bold; }
+          font-feature-settings: 'kern' off; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p.desc {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 40px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
             letter-spacing: -0.05em;
-            margin-top: 35px; }
+            margin-top: 32px; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase {
           left: 50%;
           top: 48%;
