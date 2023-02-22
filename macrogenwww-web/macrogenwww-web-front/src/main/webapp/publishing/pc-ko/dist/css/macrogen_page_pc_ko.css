@@ -7571,7 +7571,7 @@
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet .path {
           display: none; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet:first-of-type.swiper-pagination-bullet-active .path {
-          animation: dash linear 23000ms; }
+          animation: dash linear 55000ms; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active .path {
           display: inline-block !important;
           stroke-dasharray: 1000;
