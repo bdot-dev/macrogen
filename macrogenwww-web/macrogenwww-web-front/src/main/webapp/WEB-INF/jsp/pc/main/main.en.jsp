@@ -63,7 +63,7 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide visual_00">
+                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
                 	<div class="visual"></div>
                     <div class="text-box">
                         <p class="slogan-sub">NovaSeq X Plus & PacBio Revio, <br>the latest systems in genome sequencing, <br>will be adopted for the first time in the world</p>
@@ -158,9 +158,9 @@
                 mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
                     loop: true, //반복
-                    speed: 1200,//속도
+                    speed: 0,//속도
                     autoplay: {
-                        delay: 3500,
+                        delay: 4700,
                         waitForTransition: true,
                         disableOnInteraction: false,
                     },
