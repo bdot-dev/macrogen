@@ -37,26 +37,23 @@
     </div>
     <div class="container">
         <div class="section_business">
-            <!--Oligo 공통 s -->
+            <!--OLigo 공통 s -->
             <div class="subject-box">
-                <p class="title font-h4">Macrogen offers high-quality and quick Oligo at a reasonable price using a state-of-the-art automated system.</p>
-                <p class="subject font-body-h img_bottom">We will continue to take the lead in technological innovation in the fields of biology and medicine by providing high-quality Oligo through Personalized Oligo Production</p>
+                <p class="title font-h4">Macrogen offers high-quality and quick Oligo DNA at a reasonable price using a state-of-the-art automated system.
+                </p>
+                <p class="subject font-body-h img_bottom">We will continue to take the lead in technological innovation in the fields of biology and medicine by providing high-quality Oligo through personalized DNA production.</p>
                 <!--10.05 이미지 경로 변경-->
                 <div class="img">
                     <img src="/publishing/mobile-en/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
                 </div>
                 <p class="desc font-body">Macrogen offers an oligo synthesis service at various scales using high-quality materials and an optimized process. This is a tailored service that provides various oligoes synthesized to the sequence required by the client. The synthesized oligos are used in various biology and medical fields such as DNA sequencing, PCR, SNP study, gene synthesis, NGS service, qPCR service, biochip, and siRNA expression. Macrogen uses superior materials and an automation system to provide high-quality oligos, and offers MOPC purification for all oligos free of charge. MOPC purification, an independently developed cartridge purification method, has efficiency similar to that of HPLC and PAGE purification. Furthermore, all oligos are subject to a quality control process using MALDI-TOF, and a set quantity of oligos are provided through an automatic dispensing system to ensure their quality and more convenient test conditions for clients. The synthesized oligos are also provided with result reports.</p>
             </div>
-            <!--Oligo 공통 e -->
+            <!--OLigo 공통 e -->
 
-            <!--Oligo 탭 네비 s-->
+            <!--OLigo 탭 네비 s-->
             <div class="select-nav-box _content-anchor" id="tab_anchor">
-            	<div class="select-tab-tit-box">
-            		<div class="select_tit active">DNA</div>
-            		<div class="select_tit">RNA</div>
-            	</div>
-                <p class="title font-h4">Oligo Synthesis</p> 
-                <div class="select-box DNA active">
+                <p class="title font-h4">DNA Synthesis SERVICE</p>
+                <div class="select-box">
                     <div class="selected-value _selected-value">
                         <span class="text">Standard Oligo</span>
                     </div>
@@ -69,20 +66,12 @@
                         <li class="option-value"><a href="#">RAPD Kits</a></li>
                     </ul>
                 </div>
-                <div class="select-box RNA">
-                    <div class="selected-value _selected-value">
-                        <span class="text">Single Strand RNA</span>
-                    </div>
-                    <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Single Strand RNA</a></li>
-                        <li class="option-value"><a href="#">Double Strand RNA</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--Oiigo 탭 네비 e-->
 
-            <!--DNA 탭 메뉴 s-->
-            <div class="info-box-wrap tab-content DNA active">
+            </div>
+            <!--OLigo 탭 네비 e-->
+
+            <!--oligo 탭 메뉴 s-->
+            <div class="info-box-wrap tab-content">
                 <!--Standard Oligo-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Standard Oligo</p>
@@ -305,82 +294,7 @@
                     </div>
                 </div>
             </div>
-            <!-- DNA 탭 메뉴 e -->
-            <!-- RNA 탭 메뉴 s -->
-            <div class="info-box-wrap tab-content RNA">
-                <!--Single Strand RNA-->
-                <div class="info-box show">
-                    <p class="font-h4 main-title">Single Strand RNA</p>
-                    <p class="subject font-body-h-b">Single Strand RNA service is a service that synthesizes Oligo used in various experiments with a sequence designed by the customer.</p>
-                    <p class="desc font-body img_bottom">Macrogen's RNA Oligo synthesis service uses high-quality raw materials to carry out its own synthesis and provides high-purity RNA Oligos through HPLC purification. In addition, we systematically manage all processes from ordering to delivery, and manages the quality of all oligos through MALDI-TOF mass spectrometry.</p>
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-oligo-single-strand.png" alt="Single Strand RNA">
-                    </div>
-                    <div class="list-area-group">
-                        <div class="list-area">
-                            <p class="font-body-h-b title">Features</p>
-                            <ul class="list-circle-dot">
-                                <li><p>Yield : 10nmol, 30nmol, 50nmol</p></li>
-                                <li><p>Purification : Cartridge, HPLC</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="btn-area">
-                        <div class="btn-wrapper">
-                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a>
-                        </div>
-                        <div class="btn-wrapper">
-                         <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>Order</span></a>
-                        </div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(7)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Double Strand RNA-->
-                <div class="info-box">
-                    <p class="font-h4 main-title">Double Strand RNA</p>
-                    <p class="subject font-body-h-b">Double Strand RNA (Annealing service) is a service that provides two complementary Single Strand RNAs designed by yourself in the form of a single Double Strand RNA.</p>
-                    <p class="desc font-body img_bottom">Double Strand RNA is provided in the form of a combined oligo of two oligos of complementary sequences through an annealing process. Double strand RNA service is available up to 50 bp, and is provided to customers through two rounds of QC in the synthesis and annealing process.</p>
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-oligo-double-strand.png" alt="Double Strand RNA">
-                    </div>
-                    <div class="list-area-group">
-                        <div class="list-area">
-                            <p class="font-body-h-b title">Features</p>
-                            <ul class="list-circle-dot">
-                                <li><p>Yield : 10nmole, 30nmole, 50nmol</p></li>
-                                <li><p>Purification : Cartridge, HPLC</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="btn-area">
-                        <div class="btn-wrapper">
-                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>Order</span></a>
-                        </div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col" onclick="setTabContent(6)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
-                                <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- RNA 탭 메뉴 e -->
+            <!--oligo 탭 메뉴 e-->
         </div>
     </div>
     <!--v0.11 mo-ko랑 싱크 비즈니스 스크립트 추가-->
@@ -389,32 +303,12 @@
     /*변수*/
     var selectBox = $(".select-box");
     var option = $(".option-value");
-    var tabTitle = $(".select_tit")
 
     var contentAnchor = $(".content-anchor");
     var anchorOption = $(".anchor-value");
     var anchor = $("._anchor");
     var offset = anchor.offset();
     var infoSectionList = [];
-    
-    function onClickTabTitle() {
-    	/* 탭 타이틀 클릭시 이벤트 */
-    	tabTitle.on('click', function() {
-    		var idx = $(this).index(); 
-    		$(this).addClass('active').siblings().removeClass('active');
-    		
-    		if($(this).text() === 'DNA') {
-    			$('.select-box.DNA').addClass('active').siblings().removeClass('active');
-    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
-    			$('.select-box.DNA .option-value').eq(0).trigger('click')
-    		}
-    		else if ($(this).text() === 'RNA') {
-    			$('.select-box.RNA').addClass('active').siblings().removeClass('active');
-    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
-    			$('.select-box.RNA .option-value').eq(0).trigger('click')
-    		}    		
-    	});
-    }
 
 
     function onClickSelectBox() {
@@ -434,16 +328,14 @@
     function onClickSelectOption() {
         // console.log('onClickSelectOption');
         /*클릭시 탭메뉴 변경*/
-        option.on('click', function (event) {
-        	event.stopPropagation();
+        option.on('click', function () {
             $(this).addClass('active').siblings().removeClass('active')
-            var idx = $(this).index('.option-value');
+            var idx = $(this).index();
             var $info = $(".info-box-wrap > div");
             $info.addClass('show').siblings().removeClass('show');
             $info.eq(idx).addClass('show').siblings().removeClass('show');
             textChange($(this));
-            setInfoSectionList($(this).text());
-            if(selectBox.hasClass('open')) selectBox.removeClass('open').children('.select-option').slideUp(200).removeClass('open');
+            setInfoSectionList($(this).text())
         })
     }
 
@@ -473,7 +365,7 @@
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 
-        
+        console.log(change);
         <!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
@@ -631,7 +523,6 @@
 
 
     function init() {
-    	onClickTabTitle();
         onClickSelectBox();
         onClickSelectOption();
         onClickBody();
