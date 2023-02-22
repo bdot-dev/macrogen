@@ -3624,17 +3624,15 @@
 
 .section_business .tab-box {
   margin-bottom: 120px; }
-  .section_business .tab-box .tab-tit {
+  /* .section_business .tab-box .tab-tit {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center; }
+	align-items: center; } */
   .section_business .tab-box .title {
     margin-bottom: 20px;
     line-height: 54px;
-    font-size: 36px;
-    color: #d9d9d9;
-    cursor: pointer; }
-  .section_business .tab-box .title:first-child {
+    font-size: 36px; }
+ /* .section_business .tab-box .title:first-child {
   	margin-right: 40px; }
   .section_business .tab-box .title:last-child {
   	margin-left: 40px;
@@ -3674,18 +3672,18 @@
           background-color: #2E87EF;
           bottom: 4px;
           left: 0; }
-.section_business .info-box-wrap {
+  .section_business .info-box-wrap {
 	display: none; }
 	.section_business .info-box-wrap.active {
-		display: block; }
+		display: block; } */
 		.section_business .info-box-wrap.tab-content .info-box {
 		  display: none; }
 		  .section_business .info-box-wrap.tab-content .info-box.show {
 		    display: block; }
-.section_business .slide-tab-wrap .swiper-container {
+/* .section_business .slide-tab-wrap .swiper-container {
 	display: none; }
 	.section_business .slide-tab-wrap .swiper-container.on {
-		display: block; }
+		display: block; } */
 
 .section_business .info-box {
   /*텍스트 관련*/
