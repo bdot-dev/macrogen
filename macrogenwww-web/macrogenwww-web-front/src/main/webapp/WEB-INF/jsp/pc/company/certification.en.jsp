@@ -204,7 +204,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                             <div class="img">
                                 <img src="/publishing/pc-en/dist/img/macrogen/img-authorization-7.png" alt="DAkkS and KOLAS Accreditation (ISO/IEC 17025)">
-                                <a class="btn btn-sm btn-white" href="/pdf/KOLAS_인증서.pdf" target="_blank">Download</a>
+                                <a class="btn btn-sm btn-white" href="/pdf/KOLAS_인증서_영문.pdf" target="_blank">Download</a>
                             </div>
                         </div>
                     </div>
