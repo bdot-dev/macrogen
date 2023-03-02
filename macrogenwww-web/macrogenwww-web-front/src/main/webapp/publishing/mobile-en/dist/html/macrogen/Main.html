@@ -57,40 +57,43 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="visual visual_01">
+                <div class="swiper-slide" data-swiper-autoplay="8000">
+                    <div class="visual visual_00">
                         <div class="text-box">
-                            <p><span class="text-gradient">Global leader</span></p>
-                            <p class="slogan-sub">in genome analysis</p>
-                            <p class="desc">Leading the future with innovative genome analysis technology</p>
+                            <p class="slogan-sub">NovaSeq X Plus & PacBio Revio, <br>the latest systems in genome <br>sequencing, will be adopted for <br>the first time in the world</p>
+                            <p class="desc">As the global launching partner of Illumina and <br>PacBio, Macrogen is one of the first companies <br>to bring the most revolutionary sequencing <br>technology to the market, helping to open up <br>an era of $100 personal genomes.</p>
+                            <div class="btns">
+                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000237?pageIndex=1&searchKeyword='">NovaSeq X Plus</button>
+                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000238?pageIndex=1&searchKeyword='">Revio</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="visual visual_02">
+                    <div class="visual visual_01">
                         <div class="text-box">
-                            <p><span class="text-gradient">Personalized medicine based on </span></p>
-                            <p class="slogan-sub">big data and AI</p>
-                            <p class="desc">Paving the way to a better future with
-                                precision medicine based on big data powered by AI</p>
+                           <p class="slogan-sub">Personalized genomic</p>
+                           <p class="slogan-sub">medicine for all</p>
+                            <p class="slogan-sub">7.8 billion people</p>
+                            <p class="desc">Building a healthier future with <br>innovative genome analysis technology</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="visual visual_03">
                         <div class="text-box">
-                            <p><span class="text-gradient">Hopeful and healthy</span></p>
-                            <p class="slogan-sub"> future</p>
-                            <p class="desc">Macrogen opens the door to the future using
-                                body designs for human health</p>
+                            <p><span class="text-gradient">Creating a healthier future</span></p>
+                            <p class="slogan-sub">for humanity</p>
+                            <p class="desc">Macrogen opens the door to the future using <br>body designs for human health</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="visual visual_04">
                         <div class="text-box phrase">
-                            <p>DNA will save the world.
-                                Your past and future is in your DNA.</p>
+                            <p>DNA holds</br>
+							   our past and</br>
+							   future</p>
                             <span class="name">Founder/Chairman of Macrogen<br><span>Jeong-Sun Seo</span></span>
                         </div>
                     </div>
@@ -111,13 +114,14 @@
 
             setTimeout(function () {
                 step1()
-            }, delay)
+            })
 
             function step1() {
                 $wrapper.css({
-                    'transform': 'translateY(0)',
+                   'transform': 'translateY(0)',
                     'transition-duration': '1s'
                 })
+ 				$('.header').addClass('header-white')
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
                     height: "100%"
@@ -151,9 +155,9 @@
                 var mainSwiper = new Swiper($container, {
                     effect : 'fade', // 페이드 효과
                     loop: true, //반복
-                    speed: 1200,//속도
+                    speed: 0,//속도
                     autoplay: {
-                        delay: 3500,
+                        delay: 4700,
                         waitForTransition: true,
                         disableOnInteraction: false,
                     },

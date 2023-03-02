@@ -1,11 +1,14 @@
 package macrogen.www.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,12 +16,19 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.service.CodeService;
+import macrogen.www.service.MngrAuthLogService;
+import macrogen.www.service.MngrmenuService;
 import macrogen.www.service.MngrurlService;
 import macrogen.www.service.RoleService;
+import macrogen.www.vo.MngrAuthLogVo;
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.MngrmenuVo;
 import macrogen.www.vo.MngrurlVo;
 import macrogen.www.vo.RoleVo;
 
@@ -44,7 +54,14 @@ public class RoleController {
 
 	@Resource(name="mngrurlService")
 	private MngrurlService mngrurlService;
-
+	
+	@Resource(name="mngrAuthLogService")
+	private MngrAuthLogService mngrAuthLogService;
+	
+	@Resource(name="mngrmenuService")
+	private MngrmenuService mngrmenuService;
+	
+	private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass());
 	/**
 	 * <pre>
 	 * list
@@ -99,13 +116,24 @@ public class RoleController {
 	 * @throws Exception
 	 */
 	@RequestMapping("/form")
-	public String form(@ModelAttribute RoleVo roleVo, Model model) throws Exception {
-
+	public String form(@AuthenticationPrincipal MngrVo loginVo, @ModelAttribute RoleVo roleVo, Model model) throws Exception {
+		
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+		String clientIp = CommonStringUtil.getClientIp(request);
+		
 		RoleVo resultVo = new RoleVo();
 		if (!StringUtils.isEmpty(roleVo.getRoleId())) {
 			resultVo.setRoleId(roleVo.getRoleId());
 			resultVo = roleService.view(resultVo);
-
+			
+			MngrAuthLogVo logVo = new MngrAuthLogVo();
+			logVo.setRoleId(roleVo.getRoleId());
+			logVo.setIp(clientIp);
+			logVo.setRegisterSn(loginVo.getUserSn());
+			logVo.setResult("조회");
+			roleVo.setRegisterSn(loginVo.getRegisterSn());
+			mngrAuthLogService.insert(logVo);
+			
 			resultVo.setMode("UPDATE");
 			model.addAttribute("resultVo", resultVo);
 		} else {
@@ -141,6 +169,17 @@ public class RoleController {
 			RoleVo roleVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+		String clientIp = CommonStringUtil.getClientIp(request);
+		
+		MngrAuthLogVo logVo = new MngrAuthLogVo();
+		logVo.setRoleId(roleVo.getRoleId());
+		logVo.setIp(clientIp);
+		logVo.setRegisterSn(loginVo.getUserSn());
+		logVo.setResult("저장");
+		roleVo.setRegisterSn(loginVo.getRegisterSn());
+		mngrAuthLogService.insert(logVo);
+		
 		if ("UPDATE".equals(roleVo.getMode())) {
 			roleVo.setUpdusrSn(loginVo.getUserSn());
 			roleService.update(roleVo);
@@ -149,9 +188,8 @@ public class RoleController {
 			roleVo.setRegisterSn(loginVo.getUserSn());
 			roleVo.setUpdusrSn(loginVo.getUserSn());
 			roleService.insert(roleVo);
-
 		}
-
+		
 		resultMap.put("result", "success");
 		return resultMap;
 	}
@@ -173,7 +211,19 @@ public class RoleController {
 	public Map<String, Object> delete(@AuthenticationPrincipal MngrVo loginVo,
 			RoleVo roleVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
-
+		
+		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+		String clientIp = CommonStringUtil.getClientIp(request);
+		
+		MngrAuthLogVo logVo = new MngrAuthLogVo();
+		logVo.setRoleId(roleVo.getRoleId());
+		logVo.setIp(clientIp);
+		logVo.setRegisterSn(loginVo.getUserSn());
+		logVo.setResult("삭제");
+		roleVo.setRegisterSn(loginVo.getRegisterSn());
+		mngrAuthLogService.insert(logVo);
+		
+		
 		roleService.delete(roleVo);
 
 		resultMap.put("result", "success");
