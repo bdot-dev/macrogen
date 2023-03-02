@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MngrLogMapper">
+
+	<sql id="list_where">
+		<if test='searchKeyword != null and searchKeyword != ""'>
+			<choose>
+				<when test='searchCondition == "ID"'>
+					and exists (
+					    select 1 from tb_user
+					    where login_id like concat('%', #{searchKeyword}, '%')
+					    and user_sn = thm.user_sn
+					)
+					<!-- and thm.login_result like concat('%', #{searchKeyword}, '%') -->
+				</when>
+				<when test='searchCondition == "AUTH"'>
+					and exists (
+					    select 1 from tb_role
+					    where role_nm like concat('%', #{searchKeyword}, '%')
+					    and role_id = thm.role_id
+					)
+					<!-- and thm.role like concat('%', #{searchKeyword}, '%') -->
+				</when>
+				<when test='searchCondition == "CHG"'>
+					and thm.change_info like concat('%', #{searchKeyword}, '%')
+				</when>
+			</choose>
+		</if>
+
+	</sql>
+
+	<select id="list" parameterType="mngrLogVo" resultType="mngrLogVo">
+		<include refid="paging.top"/>
+		select
+		    thm.mngr_his_seq
+		    , thm.login_id user_id
+		    , IFNULL((select role_nm from tb_role where role_id = thm.role_id ), "-") role_nm
+		    , thm.change_info
+		    , thm.pwd_fail_clean_yn
+		    , thm.pwd_clean_yn
+		    , thm.regist_dt
+		    , thm.register_sn
+		    , thm.result
+		from tb_mngr_history thm
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    thm.mngr_his_seq desc
+		<include refid="paging.bottom"/>
+	</select>
+	
+	<select id="listExcel" parameterType="mngrLogVo" resultType="mngrLogVo">
+		select
+		    thm.mngr_his_seq
+		    , thm.login_id user_id
+		    , IFNULL((select role_nm from tb_role where role_id = thm.role_id ), "-") role_nm
+		    , thm.change_info
+		    , thm.pwd_fail_clean_yn
+		    , thm.pwd_clean_yn
+		    , thm.regist_dt
+		    , thm.register_sn
+		    , thm.result
+		from tb_mngr_history thm
+		where 1 = 1
+		<include refid="list_where" />
+		order by
+		    thm.mngr_his_seq desc
+	</select>
+	
+	<select id="count" parameterType="mngrLogVo" resultType="int">
+		select count(*)
+		from tb_mngr_history thm
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<insert id="insert" parameterType="mngrLogVo">
+		INSERT INTO tb_mngr_history(
+			user_sn
+			, role_id
+			, change_info
+			, pwd_fail_clean_yn
+			, pwd_clean_yn
+			, regist_dt
+			, register_sn
+			, result
+			, login_id
+		) VALUES (
+			#{userSn}
+			, #{roleId}
+			, #{changeInfo}
+			, #{pwdFailCleanYn}
+			, #{pwdCleanYn}
+			, now()
+			, #{registerSn}
+			, #{result}
+			, #{loginId}
+		)
+	</insert>
+</mapper>

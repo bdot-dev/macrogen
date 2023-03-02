@@ -3344,11 +3344,13 @@
           margin-left: 0; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet .path {
           display: none; }
+        .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet:first-of-type.swiper-pagination-bullet-active .path {
+          animation: dash linear 92000ms; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active .path {
           display: inline-block !important;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
-          animation: dash linear 40000ms;
+          animation: dash linear 52000ms;
           animation-iteration-count: unset; }
       .main-wrap .main-bg .swiper-container .swiper-pagination .fp-arc-loader {
         transform: rotate(-90deg); }

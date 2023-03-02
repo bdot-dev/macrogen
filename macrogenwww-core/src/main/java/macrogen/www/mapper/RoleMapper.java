@@ -28,6 +28,18 @@ public interface RoleMapper {
 	 * @return
 	 */
 	List<RoleVo> list(RoleVo param);
+	
+	/**
+	 * <pre>
+	 * list
+	 * 1. 개요   : 권한 url 목록
+	 * 2. 작성자 : eluocnc
+	 * </pre>
+	 *
+	 * @param param
+	 * @return
+	 */
+	List<Long> urlList(RoleVo param);
 
 	/**
 	 * <pre>
