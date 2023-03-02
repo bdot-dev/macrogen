@@ -205,7 +205,7 @@
                             </div>
                             <div class="img">
                                 <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-7.png" alt="DAkkS 및 KOLAS 인정 (ISO/IEC 17025)">
-                                <a class="btn btn-sm btn-white" href="/pdf/KOLAS_인증서.pdf" target="_blank">KOLAS인증서 보기</a>
+                                <a class="btn btn-sm btn-white" href="/pdf/KOLAS_인증서_국문.pdf" target="_blank">KOLAS인증서 보기</a>
                             </div>
                         </div>
                     </div>
