@@ -51,8 +51,10 @@
 		<typeAlias alias="setupVo" type="macrogen.www.vo.SetupVo"/>
 		<typeAlias alias="mainSomlnkVo" type="macrogen.www.vo.MainSomlnkVo"/>
 		<typeAlias alias="cntntsVo" type="macrogen.www.vo.SocialContentsVo"/>
-		
+
 		<typeAlias alias="ipFilterVo" type="macrogen.www.vo.IpFilterVo"/>
 		<typeAlias alias="loginLogVo" type="macrogen.www.vo.LoginLogVo"/>
+
+		<typeAlias alias="mainPeopleVo" type="macrogen.www.vo.MainPeopleVo"/>
 	</typeAliases>
 </configuration>
