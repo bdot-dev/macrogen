@@ -40,10 +40,8 @@
         <div class="section_business">
             <!--OLigo 공통 s -->
             <div class="subject-box">
-                <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo DNA를<br>
-                    빠르고 합리적인 비용으로 이용할 수 있습니다
-                </p>
-                <p class="subject font-body-h img_bottom">고객 맞춤형 DNA 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
+                <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo를 빠르고 합리적인 비용으로 이용할 수 있습니다</p>
+                <p class="subject font-body-h img_bottom">고객 맞춤형 Oligo 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
                 <!--10.05 이미지 경로 변경-->
                 <div class="img">
                     <img src="/publishing/mobile-ko/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
@@ -58,7 +56,7 @@
 
             <!--OLigo 탭 네비 s-->
             <div class="select-nav-box _content-anchor" id="tab_anchor">
-                <p class="title font-h4">DNA Synthesis SERVICE</p>
+                <p class="title font-h4">Oligo Synthesis</p> 
                 <div class="select-box">
                     <div class="selected-value _selected-value">
                         <span class="text">Standard Oligo</span>
@@ -375,7 +373,7 @@
     /*이전 다음 이동*/
     function setTabContent(idx) {
         var $Select = $('._select-option li');
-        var $Selected = $('._selected-value');
+        var $Selected = $('._selected-value span');
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 

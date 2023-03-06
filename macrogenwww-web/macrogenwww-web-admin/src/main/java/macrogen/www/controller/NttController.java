@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -21,8 +22,10 @@ import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.BbsCtgryService;
 import macrogen.www.service.CodeService;
+import macrogen.www.service.InvstLogService;
 import macrogen.www.service.NttAtchService;
 import macrogen.www.service.NttService;
+import macrogen.www.vo.InvstLogVo;
 import macrogen.www.vo.MngrVo;
 import macrogen.www.vo.NttAtchVo;
 import macrogen.www.vo.NttVo;
@@ -43,6 +46,9 @@ public class NttController {
 
 	@Resource(name="nttService")
 	private NttService nttService;
+	
+	@Resource(name = "invstLogService")
+	private InvstLogService invstLogServive;
 
 	@Resource(name="nttAtchService")
 	private NttAtchService nttAtchService;
@@ -52,7 +58,7 @@ public class NttController {
 
 	@Resource(name="bbsCtgryService")
 	private BbsCtgryService bbsCtgryService;
-
+	
 	/**
 	 * <pre>
 	 * list
@@ -188,15 +194,30 @@ public class NttController {
 	@ResponseBody
 	public Map<String, Object> formData(@PathVariable LangId langId, @PathVariable String bbsId,
 			@AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody NttVo nttVo) throws Exception {
+			@RequestBody NttVo nttVo, HttpServletRequest request) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		// 검색결과
 		NttVo resultVo = new NttVo();
+		InvstLogVo invstLogVo = new InvstLogVo();
 		if (!StringUtils.isEmpty(nttVo.getNttSn())) {
 			resultVo.setNttSn(nttVo.getNttSn());
 			resultVo = nttService.view(resultVo);
-
+			
+			if(bbsId.equals("investor-inquiries")|| bbsId == "investor-inquiries") {
+				String clientIp = CommonStringUtil.getClientIp(request);
+				invstLogVo.setIp(clientIp);
+				invstLogVo.setNttSn(resultVo.getNttSn());
+				invstLogVo.setNttSj(resultVo.getNttSj());
+				invstLogVo.setResult("조회");
+				invstLogVo.setUserNm(resultVo.getNmbrWrterNm());
+				invstLogVo.setRegisterSn(loginVo.getUserSn());
+				invstLogVo.setLoginId(loginVo.getLoginId());
+				
+				invstLogServive.insert(invstLogVo);
+			}
+			
+			
 			NttAtchVo nttAtchVo = new NttAtchVo();
 			nttAtchVo.setNttSn(nttVo.getNttSn());
 			nttAtchVo.setFirstIndex(-1);
@@ -277,12 +298,26 @@ public class NttController {
 	@RequestMapping("/form/delete")
 	@ResponseBody
 	public Map<String, Object> delete(@PathVariable LangId langId, @PathVariable String bbsId, @AuthenticationPrincipal MngrVo loginVo,
-			@RequestBody NttVo nttVo) throws Exception {
+			@RequestBody NttVo nttVo,  HttpServletRequest request) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
 
 		nttVo.setUpdusrSn(loginVo.getUserSn());
 		nttService.delete(nttVo);
-
+		
+		InvstLogVo invstLogVo = new InvstLogVo();
+		if(bbsId.equals("investor-inquiries")|| bbsId == "investor-inquiries") {
+			String clientIp = CommonStringUtil.getClientIp(request);
+			invstLogVo.setIp(clientIp);
+			invstLogVo.setNttSn(nttVo.getNttSn());
+			invstLogVo.setNttSj(nttVo.getNttSj());
+			invstLogVo.setResult("삭제");
+			invstLogVo.setUserNm(nttVo.getNmbrWrterNm());
+			invstLogVo.setRegisterSn(loginVo.getUserSn());
+			invstLogVo.setLoginId(loginVo.getLoginId());
+			
+			invstLogServive.insert(invstLogVo);
+		}
+		
 		resultMap.put("result", "success");
 		return resultMap;
 	}

@@ -361,7 +361,7 @@
     /*이전 다음 이동*/
     function setTabContent(idx) {
         var $Select = $('._select-option li');
-        var $Selected = $('._selected-value');
+        var $Selected = $('._selected-value span');
         var $info = $(".info-box-wrap > div");
         var change = $(".option-value");
 

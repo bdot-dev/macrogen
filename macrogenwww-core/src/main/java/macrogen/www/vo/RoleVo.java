@@ -19,6 +19,8 @@ public class RoleVo extends DefaultVo{
 	private List<Long> menuSnList;
 	private List<Long> pendncyMenuSnList;
 	private List<Long> accessSnList;
+	private List<Long> changeSnList;
+	private List<Long> orgUrlList;
 
 	public String getRoleId() {
 		return roleId;
@@ -50,5 +52,17 @@ public class RoleVo extends DefaultVo{
 	public void setAccessSnList(List<Long> accessSnList) {
 		this.accessSnList = accessSnList;
 	}
-
+	public List<Long> getChangeSnList() {
+		return changeSnList;
+	}
+	public void setChangeSnList(List<Long> changeSnList) {
+		this.changeSnList = changeSnList;
+	}
+	public List<Long> getOrgUrlList() {
+		return orgUrlList;
+	}
+	public void setOrgUrlList(List<Long> orgUrlList) {
+		this.orgUrlList = orgUrlList;
+	}
+	
 }
