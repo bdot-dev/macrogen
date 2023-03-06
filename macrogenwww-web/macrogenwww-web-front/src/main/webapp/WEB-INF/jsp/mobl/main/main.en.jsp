@@ -29,7 +29,7 @@
                             <p class="slogan-sub">NovaSeq X Plus & PacBio Revio, <br>the latest systems in genome <br>sequencing, will be adopted for <br>the first time in the world</p>
                             <p class="desc">As the global launching partner of Illumina and <br>PacBio, Macrogen is one of the first companies <br>to bring the most revolutionary sequencing <br>technology to the market, helping to open up <br>an era of $100 personal genomes.</p>
                             <div class="btns">
-                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000237?pageIndex=1&searchKeyword='">NovaSeq X Plus</button>
+                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000244?pageIndex=1&searchKeyword='">NovaSeq X Plus</button>
                                 <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000238?pageIndex=1&searchKeyword='">Revio</button>
                             </div>
                         </div>
