@@ -30,9 +30,8 @@
     <div class="section_business">
       <!--메인 컨텐츠-->
 <div class="subject-box">
-    <p class="title font-h4">Macrogen offers high-quality and quick Oligo DNA at a<br> reasonable price using a state-of-the-art automated system.
-    </p>
-    <p class="subject">We will continue to take the lead in technological innovation in the fields of biology and medicine by providing high-quality Oligo through personalized DNA production.</p>
+    <p class="title font-h4">Macrogen offers high-quality and quick Oligo at a<br> reasonable price using a state-of-the-art automated system.</p>
+    <p class="subject">We will continue to take the lead in technological innovation in the fields of biology and medicine by providing high-quality Oligo through Personalized Oligo Production.</p>
     <!--10.05 이미지 경로 변경-->
     <div class="img">
         <img src="/publishing/pc-en/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
@@ -42,9 +41,12 @@
 
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
-        <p class="font-h4 title">DNA Synthesis SERVICE</p>
+      	<div class="tab-tit">
+        	<p class="font-h4 title active">DNA Oligo Synthesis</p>
+        	<p class="font-h4 title">RNA Oligo Synthesis</p>
+      	</div>
         <div class="slide-tab-wrap">
-          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Standard Oligo</a></div>
               <div class="swiper-slide "><a href="#">Modified Oligo</a></div>
@@ -54,13 +56,29 @@
               <div class="swiper-slide"><a href="#">RAPD Kits</a></div>
             </div>
           </div>
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
+              <div class="swiper-slide "><a href="#">Double Strand RNA</a></div>
+            </div>
+          </div>
         </div>
       </div>
       <!--탭메뉴 스크립트-->
       <!--10.08 앵커포인트 스크립트 완료-->
       <script>
+      	<!-- 탭 타이틀 -->
+      	$('.tab-tit .title').on('click', function(){
+      		var idx = $(this).index();
+      		
+      		$(this).addClass('active').siblings().removeClass('active');
+      		$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+      		$('.slide-tab-wrap > div').eq(idx).addClass('on').siblings().removeClass('on');
+      		$('.swiper-container.on .swiper-slide').eq(0).trigger('click')
+      	})
+      
         $('._swiperTab .swiper-slide').on('click', function(){
-          var idx = $(this).index();
+          var idx = $(this).index('.swiper-slide');
 
           $(this).addClass('active').siblings().removeClass('active');
           <!--탭메뉴 클릭시 페이지 변경-->
@@ -86,7 +104,7 @@
         }
       </script>
 
-      <div class="info-box-wrap tab-content">
+      <div class="info-box-wrap tab-content active">
         <!--Standard Oligo-->
         <div class="info-box show">
           <p class="font-h4 main-title">Standard Oligo</p>
@@ -326,6 +344,77 @@
         </div>
       </div>
 
+	  <div class="info-box-wrap tab-content">
+        <!--Single Strand RNA-->
+        <div class="info-box show">
+          <p class="font-h4 main-title">Single Strand RNA</p>
+          <p class="subject">Single Strand RNA service is a service that synthesizes Oligo used in various experiments with a sequence designed by the customer.</p>
+          <p class="desc img_bottom">Macrogen's RNA Oligo synthesis service uses high-quality raw materials to carry out its own synthesis and provides high-purity RNA Oligos through HPLC purification. In addition, we systematically manage all processes from ordering to delivery, and manages the quality of all oligos through MALDI-TOF mass spectrometry.</p>
+          <div class="img">
+            <img src="/publishing/pc-en/dist/img/business/img-oligo-single-strand.png" alt="Single Strand RNA">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>Yield: 10nmol, 30nmol, 50nmol</li>
+                <li>Purification : Cartridge, HPLC</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inpquiry</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item next" onclick="setTabContent(7)">
+                  <div class="title">Double strand RNA</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </div>
+        <!--Double Strand RNA-->
+        <div class="info-box">
+          <p class="font-h4 main-title">Double Strand RNA</p>
+          <p class="subject">Double Strand RNA (Annealing service) is a service that provides two complementary Single Strand RNAs designed by yourself in the form of a single Double Strand RNA.</p>
+          <p class="desc img_bottom">Double Strand RNA is provided in the form of a combined oligo of two oligos of complementary sequences through an annealing process. Double strand RNA service is available up to 50 bp, and is provided to customers through two rounds of QC in the synthesis and annealing process.</p>
+          <div class="img">
+            <img src="/publishing/pc-en/dist/img/business/img-oligo-double-strand.png" alt="Double Strand RNA">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>Yield : 10nmol, 30nmol, 50nmol</li>
+                <li>Purification : Cartridge, HPLC</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inpquiry</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item prev" onclick="setTabContent(6)">
+                  <div class="title">Single Strand RNA</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
