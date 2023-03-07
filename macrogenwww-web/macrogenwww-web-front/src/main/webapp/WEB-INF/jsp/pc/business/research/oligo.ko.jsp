@@ -29,25 +29,30 @@
     <div class="section_business">
       <!--메인 컨텐츠-->
 <div class="subject-box">
-    <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo DNA를<br>
+    <p class="title font-h4">최신 자동화 시스템으로 마크로젠의 고품질 Oligo를<br>
         빠르고 합리적인 비용으로 이용할 수 있습니다
     </p>
-    <p class="subject">고객 맞춤형 DNA 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
+    <p class="subject">고객 맞춤형 Oligo 제작을 통해 고품질의 Oligo를 제공하여 생물학 및 의학분야의 기술발전에 앞장서겠습니다</p>
     <div class="img">
         <img src="/publishing/pc-ko/dist/img/business/img-oligo-intro.png" alt="oligoIntro">
     </div>
-    <p class="desc">마크로젠은 고품질 원료와 최적화된 자동화 시스템을 이용하여 다양한 Oligo 합성서비스를 제공합니다. 실험에 사용되는 다양한 Oligo를 원하는 염기서열로 합성하여 제공하는 고객맞춤 서비스입니다.
-        합성된 Oligo는 DNA  Sequencing, PCR, SNP 연구, Gene Synthesis, NGS 서비스, qPCR 서비스, Biochip, siRNA 발현 등 생물학 및 의학분야에서 다양하게 활용되고 있습니다. 마크로젠은 고품질의
-        Oligo를 제공하기 위하여 좋은 원료와 자동화 시스템을 이용하여 생산하고 있으며, 빠르고 효율이 좋은 MOPC 정제를 모든 Oligo에 무상으로 제공하고 있습니다. MOPC 정제는 자체 개발한 Cartridge 정제
-        법으로 PAGE, HPLC 정제와 비슷한 수준의 효율을 보입니다. 또한, 철저한 품질관리를 위해 MALDI-TOF 를 이용하여 모든 Oligo의 QC를 진행하며, 자동 분주 시스템을 통해 정량의 Oligo를 제공하여 더욱 편리한 고객의 실험여건을 보장합니다.
-        합성된 Oligo는 결과 레포트와 함께 제공됩니다.</p>
+    <p class="desc">
+        마크로젠은 고품질 원료 및 최적화된 자동화 시스템을 이용하여 다양한 Oligo 합성서비스를 제공합니다. 합성된 Oligo는 DNA Sequencing, PCR, SNP 연구, Gene Synthesis, NGS 서비스, qPCR 서비스,
+        Biochip, siRNA 발현 등 생물학 및 의학 분야에서 다양하게 활용되고 있습니다. 고품질의 Oligo 제공을 위해 좋은 원료 및 자동화 시스템을 이용하고 있으며, 효율이 좋은 MOPC 정제를 모든 Oligo에 무상
+        제공하고 있습니다. MOPC 정제는 자체 개발한 Cartridge 정제법으로 PAGE, HPLC 정제와 비슷한 수준의 효율을 보입니다. MAlDI-TOF를 이용해 철저한 품질관리를 진행하며, Oligo의 QC를 진행하며, 자동
+        분주 시스템을 통해 정량의 Oligo를 제공하여 더욱 편리한 고객 실험 여건을 보장합니다. 합성된 Oligo는 결과 리포트와 함께 제공됩니다. 고객 맞춤형 Oligo 제작을 통해 고품질의 Oligo를 제공하여 생물학 및
+        의학 분야의 기술발전에 앞장서겠습니다.
+    </p>
 </div>
 
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
-        <p class="font-h4 title">DNA Synthesis SERVICE</p>
+      	<div class="tab-tit">
+        	<p class="font-h4 title active">DNA Oligo Synthesis</p>
+        	<p class="font-h4 title">RNA Oligo Synthesis</p>
+      	</div>
         <div class="slide-tab-wrap">
-          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Standard Oligo</a></div>
               <div class="swiper-slide "><a href="#">Modified Oligo</a></div>
@@ -57,12 +62,28 @@
               <div class="swiper-slide"><a href="#">RAPD Kits</a></div>
             </div>
           </div>
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
+              <div class="swiper-slide "><a href="#">Double Strand RNA</a></div>
+            </div>
+          </div>
         </div>
       </div>
       <!--탭메뉴 스크립트-->
       <script>
+      	<!-- 탭 타이틀 -->
+      	$('.tab-tit .title').on('click', function(){
+      		var idx = $(this).index();
+      		
+      		$(this).addClass('active').siblings().removeClass('active');
+      		$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+      		$('.slide-tab-wrap > div').eq(idx).addClass('on').siblings().removeClass('on');
+      		$('.swiper-container.on .swiper-slide').eq(0).trigger('click')
+      	})
+      
         $('._swiperTab .swiper-slide').on('click', function(){
-          var idx = $(this).index();
+          var idx = $(this).index('.swiper-slide');
 
           $(this).addClass('active').siblings().removeClass('active');
           <!--탭메뉴 클릭시 페이지 변경-->
@@ -88,12 +109,12 @@
         }
       </script>
 
-      <div class="info-box-wrap tab-content">
+      <div class="info-box-wrap tab-content active">
         <!--Standard Oligo-->
         <div class="info-box show">
           <p class="font-h4 main-title">Standard Oligo</p>
           <p class="subject">Standard Oligo 서비스는 각종 실험에 사용되는 Oligo를 고객이 원하는 서열로 합성하여 제공하는 서비스입니다.</p>
-          <p class="desc img_bottom">마크로젠의 Oligo 합성 서비스는 합성부터 정제, 분주 등 전 과정을 신속하게 제공하기 위해 자체 개발한 최상의 자동화 시스템을 이용하며, 주문부터 배송까지 모든 프로세스를 모니터링할 수 있는  온라인 주문 시스템 LIMS를 지원합니다.  또한 MALDI-TOF mess spectrometry를 통해 모든 올리고의 품질을 관리합니다.</p>
+          <p class="desc img_bottom">합성된 Oligo는 DNA sequencing, SNP 연구, Gene Synthesis, NGS 분석, qPCR 분석, Biochip, siRNA 발현 등 생물학 및 의학 분야에 다양하게 활용되고 있습니다. 마크로젠의 Oligo 합성 서비스는 합성부터 정제, 분주 등 전 과정을 신속하게 제공하기 위해 자체 개발한 최상의 자동화 시스템을 이용하며, 주문부터 배송까지 모든 프로세스를 모니터링할 수 있는  온라인 주문 시스템 LIMS를 지원합니다. 또한 MALDI-TOF를 통해 모든 올리고의 품질을 관리합니다.</p>
           <div class="img">
             <img src="/publishing/pc-ko/dist/img/business/img-oligo-standard.png" alt="Standard Oligo cffnb">
           </div>
@@ -103,7 +124,7 @@
               <ul class="list-circle-dot">
                 <li>50nmole, 200nmole, 1umole 스케일 서비스 제공</li>
                 <li>주문 후 24시간 내 Oligo 배송(영업사원 배송지역/ 50mer 이하/ 오후 5시 이전 주문)</li>
-                <li>자동 정량분주 시스템(Liquid Handling System)에 의한 정확한 농도제공</li>
+                <li>자동 정량 분주 시스템에 의한 정확한 농도 제공</li>
                 <li>LIMS(Laboratory Information Management System)를 기반으로 주문, 합성진행, 배송, 합성결과 확인가능</li>
               </ul>
             </div>
@@ -332,6 +353,78 @@
           <script>
 
           </script>
+        </div>
+      </div>
+      
+      <div class="info-box-wrap tab-content">
+        <!--Single Strand RNA-->
+        <div class="info-box show">
+          <p class="font-h4 main-title">Single Strand RNA</p>
+          <p class="subject">Single Strand RNA 서비스는 각종 실험에 사용되는 Oligo를 고객이 직접 design 한 서열로 합성하여 제공하는 서비스입니다.</p>
+          <p class="desc img_bottom">마크로젠의 RNA Oligo 합성 서비스는 고품질의 원료를 이용하여 자체적으로 합성을 진행하고 HPLC정제를 통해 고순도의 RNA Oligo를 제공합니다. 또한, 주문부터 배송까지 모든 프로세스를 체계적으로 관리하고 MALDI-TOF mass spectrometry를 통해 모든 올리고의 품질을 관리합니다.</p>
+          <div class="img">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-single-strand.png" alt="Single Strand RNA">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>제공량 : 10nmol, 30nmol, 50nmol</li>
+                <li>Purification : Cartridge, HPLC</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item next" onclick="setTabContent(7)">
+                  <div class="title">Double strand RNA</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <script>
+
+          </script>
+        </div>
+        <!--Double Strand RNA-->
+        <div class="info-box">
+          <p class="font-h4 main-title">Double Strand RNA</p>
+          <p class="subject">Double Strand RNA(Annealing service)는 직접 design 한 상보적인 두 개의 Single Strand RNA를 하나의 Double Strand RNA 형태로 제공하는 서비스 입니다.</p>
+          <p class="desc img_bottom">Double Strand RNA는 Annealing 과정을 거쳐 상보적인 서열 2개의 Oligo를 하나의 결합된 Oligo 형태로 제공됩니다. 최대 50bp까지 Double Strand RNA 서비스가 가능하며, 합성과 Annealing 과정에서 2회의 QC를 거쳐 고객에게 제공됩니다.</p>
+          <div class="img">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-double-strand.png" alt="Double Strand RNA">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>제공량 : 10nmol, 30nmol, 50nmol</li>
+                <li>Purification : Cartridge, HPLC</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <hr class="divider">
+          <div class="board">
+            <div class="navigation">
+              <div class="content clearfix">
+                <a href="#" class="item prev" onclick="setTabContent(6)">
+                  <div class="title">Single Strand RNA</div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
