@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="container oligo_sec">
+  <div class="container oligo_sec"> 
     <div class="section_business">
       <!--메인 컨텐츠-->
 <div class="subject-box">

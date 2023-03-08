@@ -3649,7 +3649,7 @@
     height: 28px;
     background: #d9d9d9;
     pointer-events: none; }
-  .oligo_sec .section_business .tab-box .tab-tit .title.active{
+  .oligo_sec .section_business .tab-box .tab-tit .title.active{ 
   	font-size: 44px;
   	color: #000; }
   .section_business .tab-box .tab-list {

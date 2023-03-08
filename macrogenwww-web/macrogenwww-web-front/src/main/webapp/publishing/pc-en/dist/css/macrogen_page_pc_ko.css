@@ -3679,7 +3679,7 @@
           background-color: #2E87EF;
           bottom: 4px;
           left: 0; }
-.oligo_sec .section_business .info-box-wrap {
+.oligo_sec .section_business .info-box-wrap { 
 	display: none; }
 	.oligo_sec .section_business .info-box-wrap.active {
 		display: block; }
