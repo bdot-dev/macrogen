@@ -35,7 +35,7 @@
             <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container oligo_sec"> 
         <div class="section_business">
             <!--Oligo 공통 s -->
             <div class="subject-box">
