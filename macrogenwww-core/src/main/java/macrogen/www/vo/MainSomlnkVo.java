@@ -28,7 +28,14 @@ public class MainSomlnkVo extends DefaultVo {
 	private Integer sortOrdr;
 	private Date postDt;
 	private Date nowDt;
+	private String brdid;
 
+	public String getBrdid() {
+		return brdid;
+	}
+	public void setBrdid(String brdid) {
+		this.brdid = brdid;
+	}
 	private String searchSomlnkCtgryCode;
 
 	private List<Long> mainSomlnkSnList;

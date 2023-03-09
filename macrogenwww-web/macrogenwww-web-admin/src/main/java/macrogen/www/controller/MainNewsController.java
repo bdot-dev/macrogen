@@ -35,8 +35,8 @@ import macrogen.www.vo.MngrVo;
  * @version :
  */
 @Controller
-@RequestMapping("/{langId}/main-somlnk")
-public class MainSomlnkController {
+@RequestMapping("/{langId}/main-news")
+public class MainNewsController {
 
 	@Autowired
 	private MainSomlnkService mainSomlnkService;
@@ -47,26 +47,28 @@ public class MainSomlnkController {
 	@RequestMapping("/list")
 	public String list(@PathVariable LangId langId, @AuthenticationPrincipal MngrVo mngrVo,
 			@ModelAttribute("listVo") MainSomlnkVo listVo, Model model) throws Exception {
-
-		return "main-somlnk/list";
+		
+		return "main-news/list";
 	}
 
 	@RequestMapping("/list/data")
 	@ResponseBody
 	public Map<String, Object> listData(@PathVariable LangId langId, @RequestBody MainSomlnkVo listVo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
-
+		
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(listVo.getPageIndex());
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
 		paginationInfo.setPageSize(listVo.getPageSize());
 
-		listVo.setBrdid("sns");
+		listVo.setBrdid("news");
 		
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
 
 		listVo.setLangCode(langId.toString());
+		
+		
 
 		List<MainSomlnkVo> resultList = mainSomlnkService.list(listVo);
 		paginationInfo.setTotalRecordCount(mainSomlnkService.count(listVo));
@@ -74,7 +76,7 @@ public class MainSomlnkController {
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
-		List<CodeVo> somlnkCtgryCodeList = codeService.listByCodeSe("SOMLNK_CTGRY_CODE");
+		List<CodeVo> somlnkCtgryCodeList = codeService.listByCodeSe("NEWS_CTGRY_CODE");
 		resultMap.put("somlnkCtgryCodeList", somlnkCtgryCodeList);
 
 		return resultMap;
@@ -83,13 +85,13 @@ public class MainSomlnkController {
 	@RequestMapping("/form")
 	public String form(@PathVariable LangId langId,
 			@ModelAttribute("listVo") MainSomlnkVo listVo, Model model) throws Exception {
-		return "main-somlnk/form";
+		return "main-news/form";
 	}
 
 	@RequestMapping("/form/{mainSomlnkSn}")
 	public String form(@PathVariable LangId langId, @PathVariable Long mainSomlnkSn,
 			@ModelAttribute("listVo") MainSomlnkVo listVo, Model model) throws Exception {
-		return "main-somlnk/form";
+		return "main-news/form";
 	}
 
 	@RequestMapping("/form/data")
@@ -97,7 +99,7 @@ public class MainSomlnkController {
 	public Map<String, Object> formData(@PathVariable LangId langId,
 			@RequestBody MainSomlnkVo vo) throws Exception {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
-
+		
 		if (StringUtils.isEmpty(vo.getMainSomlnkSn())) {
 			MainSomlnkVo resultVo = new MainSomlnkVo();
 			resultMap.put("resultVo", resultVo);
@@ -106,7 +108,7 @@ public class MainSomlnkController {
 			resultMap.put("resultVo", resultVo);
 		}
 
-		List<CodeVo> somlnkCtgryCodeList = codeService.listByCodeSe("SOMLNK_CTGRY_CODE");
+		List<CodeVo> somlnkCtgryCodeList = codeService.listByCodeSe("NEWS_CTGRY_CODE");
 		resultMap.put("somlnkCtgryCodeList", somlnkCtgryCodeList);
 
 		return resultMap;
@@ -119,7 +121,7 @@ public class MainSomlnkController {
 			@RequestBody MainSomlnkVo vo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
-		vo.setBrdid("sns");
+		vo.setBrdid("news");
 		
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
