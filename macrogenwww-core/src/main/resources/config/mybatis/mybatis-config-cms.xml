@@ -60,5 +60,7 @@
 		<typeAlias alias="invstLogVo" type="macrogen.www.vo.InvstLogVo"/>
 
 		<typeAlias alias="mainPeopleVo" type="macrogen.www.vo.MainPeopleVo"/>
+		
+		<typeAlias alias="mainNttVo" type="macrogen.www.vo.MainNttVo"/>
 	</typeAliases>
 </configuration>
