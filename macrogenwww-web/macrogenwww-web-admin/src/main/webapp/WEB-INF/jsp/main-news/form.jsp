@@ -63,8 +63,8 @@
 							<th>제목 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">
-									<textarea type="text" v-model="resultVo.somlnkSj" ref="somlnkSj"
-										maxlength="200" placeholder="제목" class="w100p"></textarea>
+									<input type="text" v-model="resultVo.somlnkSj" ref="somlnkSj"
+										maxlength="200" placeholder="제목" class="w100p" />
 								</div>
 							</td>
 						</tr>

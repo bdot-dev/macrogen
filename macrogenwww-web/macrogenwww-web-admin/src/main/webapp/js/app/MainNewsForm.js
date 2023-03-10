@@ -81,7 +81,7 @@ var MainNewsForm = (function($) {
 						return false;
 					}
 					if (!vm.resultVo.imageAtchId) {
-						alert('필수입력 - 대표');
+						alert('필수입력 - 대표 이미지');
 						return false;
 					}
 					if (!vm.resultVo.somlnkSj) {
