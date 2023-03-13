@@ -68,7 +68,7 @@
 					<td><a v-on:click="onViewLink(result.mainNttSn)"
 							href="javascript:;">{{ result.mainNttSjPc }}</a></td>
 					<td>{{ result.expsrYn }}</td>
-					<td><input type="text" v-model="result.expsrPrty" maxlength=3 name="expsrPrty" style="width:40%;" :id="'expsrPrty' + '\${index}'"/></td>
+					<td><input type="number" v-model="result.expsrPrty" maxlength=3 name="expsrPrty" style="width:40%;" :id="'expsrPrty' + '\${index}'"/></td>
 					<td>{{ result.registerNm }}</td>
 					<td></td>
 				</tr>

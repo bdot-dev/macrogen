@@ -6,7 +6,7 @@ package macrogen.www.vo;
  *    |_ MainNttVo.java
  *
  * </pre>
- * 1. 작성일 : 2023. 3. 3. 오후 4:03
+ * 1. 작성일 : 2023. 3. 3
  * 2. 작성자 : eluocnc
  * @version :
  */
@@ -26,7 +26,7 @@ public class MainNttVo extends DefaultVo{
 	private String imageFlpthPc;	
 	private String imageFlpthMobl;
 	
-	private String expsrYn;					// 노출여부
+	private String expsrYn="Y";					// 노출여부
 	private Integer expsrPrty;				// 노출순서
 	private String langCode;				// 언어 코드	
 	

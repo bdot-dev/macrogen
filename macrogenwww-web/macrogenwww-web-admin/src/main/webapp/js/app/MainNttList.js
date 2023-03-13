@@ -55,7 +55,8 @@ var MainNttList = (function($) {
 					if (!vm.resultList || vm.resultList.length <= 0) return;
 					
 					for(var i=0; i < vm.resultList.length; i++){
-						if(vm.resultList[i].expsrPrty == 0){
+						if(vm.resultList[i].expsrPrty == 0 || vm.resultList[i].expsrPrty == ''){
+							alert("노출순서를 입력해주세요.");
 							$("#expsrPrty" + i).focus();
 							return false;
 						}

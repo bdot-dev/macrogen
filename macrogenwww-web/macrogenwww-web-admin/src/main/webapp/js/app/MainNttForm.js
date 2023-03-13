@@ -87,11 +87,6 @@ var MainNttForm = (function($) {
 						vm.$refs.title.focus();
 						return false;
 					}	
-					if(!vm.resultVo.expsrYn){
-						alert('필수입력 - 노출여부');
-						vm.$refs.expsrYn.focus();
-						return false;
-					}
 					if(!vm.resultVo.expsrPrty){
 						alert('필수입력 - 노출순서');
 						vm.$refs.expsrPrty.focus();

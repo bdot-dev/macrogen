@@ -1,4 +1,4 @@
-var MainNttForm = (function($) {
+var MainBusinessForm = (function($) {
 	
 	var options, $form;
 	
@@ -7,7 +7,7 @@ var MainNttForm = (function($) {
 		$form = $("#editForm");
 
 		initVue();
-	}; 
+	};  
 
 	var initVue = function (){
 		vue = new Vue({
@@ -80,16 +80,11 @@ var MainNttForm = (function($) {
 				validate: function() {
 					var vm = this;
 					
-					if(!vm.resultVo.expsrYn){
-						alert('필수입력 - 노출여부');
-						vm.$refs.expsrYn.focus();
-						return false;
-					}
 					if(!vm.resultVo.expsrPrty){
 						alert('필수입력 - 노출순서');
 						vm.$refs.expsrPrty.focus();
 						return false;
-					}												
+					}													
 					if (!vm.resultVo.mainNttSjPc) {
 						alert('필수입력 - 타이틀(PC)');
 						vm.$refs.mainNttSjPc.focus();
@@ -100,12 +95,12 @@ var MainNttForm = (function($) {
 						vm.$refs.mainNttSjMo.focus();
 						return false;
 					}
-					if (!vm.resultVo.mainNttCnMo) {
+					if (!vm.resultVo.mainNttCnPc) {
 						alert('필수입력 - 설명문구(PC)');
 						vm.$refs.mainNttCnPc.focus();
 						return false;
 					}
-					if (!vm.resultVo.mainNttCnPc) {
+					if (!vm.resultVo.mainNttCnMo) {
 						alert('필수입력 - 설명문구(MO)');
 						vm.$refs.mainNttCnMo.focus();
 						return false;
