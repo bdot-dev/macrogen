@@ -69,6 +69,15 @@
 							</td>
 						</tr>
 						<tr>
+							<th>내용 <span>*</span></th>
+							<td colspan="3" class="tal">
+								<div class="lbMaxlenPrnt">
+									<input type="text" v-model="resultVo.somlnkDt" ref="somlnkDt"
+										maxlength="200" placeholder="내용" class="w100p" />
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<th>링크 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">

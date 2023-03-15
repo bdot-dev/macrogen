@@ -24,12 +24,19 @@ public class MainSomlnkVo extends DefaultVo {
 	private String imageAtchId;
 	private String imageFlpth;
 	private String somlnkSj;
+	private String somlnkDt;
 	private String somlnkUrl;
 	private Integer sortOrdr;
 	private Date postDt;
 	private Date nowDt;
 	private String brdid;
 
+	public String getSomlnkDt() {
+		return somlnkDt;
+	}
+	public void setSomlnkDt(String somlnkDt) {
+		this.somlnkDt = somlnkDt;
+	}
 	public String getBrdid() {
 		return brdid;
 	}
