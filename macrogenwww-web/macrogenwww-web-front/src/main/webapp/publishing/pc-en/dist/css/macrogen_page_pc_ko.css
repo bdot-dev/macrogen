@@ -3628,22 +3628,23 @@
 
 .section_business .tab-box {
   margin-bottom: 120px; }
-  .section_business .tab-box .tab-tit {
+  .oligo_sec .section_business .tab-box .tab-tit {
   	display: flex;
   	justify-content: flex-start;
   	align-items: center; }
+	.oligo_sec .section_business .tab-box .tab-tit .title {
+	  color: #d9d9d9;
+	  cursor: pointer; }
   .section_business .tab-box .title {
     margin-bottom: 20px;
     line-height: 54px;
-    font-size: 36px;
-    color: #d9d9d9;
-    cursor: pointer; }
-  .section_business .tab-box .title:first-child {
+    font-size: 36px; }
+  .oligo_sec .section_business .tab-box .title:first-child {
   	margin-right: 40px; }
-  .section_business .tab-box .title:last-child {
+  .oligo_sec .section_business .tab-box .title:last-child {
   	margin-left: 40px;
   	position: relative; }
-  .section_business .tab-box .title:last-child::before {
+  .oligo_sec .section_business .tab-box .title:last-child::before {
   	content: '';
   	position: absolute;
   	top: 26%;
@@ -3652,7 +3653,7 @@
   	height: 28px;
   	background: #d9d9d9;
   	posinter-events: none; }
-  .section_business .tab-box .tab-tit .title.active{
+  .oligo_sec .section_business .tab-box .tab-tit .title.active{
   	font-size: 44px;
   	color: #000; }
   .section_business .tab-box .tab-list {
@@ -3678,17 +3679,17 @@
           background-color: #2E87EF;
           bottom: 4px;
           left: 0; }
-.section_business .info-box-wrap {
+.oligo_sec .section_business .info-box-wrap { 
 	display: none; }
-	.section_business .info-box-wrap.active {
+	.oligo_sec .section_business .info-box-wrap.active {
 		display: block; }
 		.section_business .info-box-wrap.tab-content .info-box {
 		  display: none; }
 		  .section_business .info-box-wrap.tab-content .info-box.show {
 		    display: block; }
-.section_business .slide-tab-wrap .swiper-container {
+.oligo_sec .section_business .slide-tab-wrap .swiper-container {
 	display: none; }
-	.section_business .slide-tab-wrap .swiper-container.on {
+	.oligo_sec .section_business .slide-tab-wrap .swiper-container.on {
 		display: block; }
 
 .section_business .info-box {
