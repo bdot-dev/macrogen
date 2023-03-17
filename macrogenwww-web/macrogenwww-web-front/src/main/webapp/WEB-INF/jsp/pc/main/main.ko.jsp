@@ -92,7 +92,7 @@
                         <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로 새로운 미래를 열어갑니다</p>
                     </div>
                 </div>
-                <!-- <div class="swiper-slide">
+                <!-- <div class="swiper-slide"> 
                 	<div class="visual visual_04"></div>
                     <div class="text-box phrase">
                         <p>DNA가 세상을 구할 것이다<br>나의 DNA에는 과거와 미래가 공존한다</p>

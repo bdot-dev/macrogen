@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="swiper-slide">
+                <!-- <div class="swiper-slide"> 
                     <div class="visual visual_04">
                         <div class="text-box phrase">
                             <p>DNA holds</br>
