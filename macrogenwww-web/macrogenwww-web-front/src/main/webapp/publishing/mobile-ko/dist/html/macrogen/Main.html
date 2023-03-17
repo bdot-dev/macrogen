@@ -56,9 +56,70 @@
         </div>
         <!-- e intro -->
 
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    videoId: 'PYVP4IpaeRo',
+                    playerVars: {   
+                    'playsinline': 1,
+                    'autoplay': 1,   
+                    'rel': 0,
+                    'showinfo': 0,
+                    'modestbranding': 1,
+                    'playsinline': 1,
+                    'showinfo': 0,
+                    'rel': 0,
+                    'controls': 0,
+                    'color':'white',
+                    'loop': 0,
+                    'mute':1,
+                    // 'origin': 'https://meeranblog24x7.blogspot.com/'
+                    },
+                    events: {
+                    'onReady': onPlayerReady,
+                    // 'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+            function onPlayerReady(event) {
+                player.playVideo();
+                player.mute();
+            }
+            var done = false;
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 6000);
+                    done = true;
+                }
+            }
+            function stopVideo() {
+                player.stopVideo();
+            }
+        </script>
+
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
+                <!-- 유투브일때 -->
+                <!-- <div class="swiper-slide" data-swiper-autoplay="8000">
+                    <div class="visual visual_00">     
+                        <div id="player"></div>                   
+                        <div class="text-box">
+                            <p class="text-gradient">최첨단 유전체 분석 시스템 <br>세계 최초 도입</p>
+                            <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                            <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 <br>$100 개인 유전체 시대를 이끌어갑니다</p>
+                            <div class="btns">
+                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
+                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="swiper-slide" data-swiper-autoplay="8000">
                     <div class="visual visual_00">
                         <div class="text-box">
@@ -108,10 +169,11 @@
         </div>
         <script>
             var $container = $('#key-swiper-container');
+            var $conLi = $container.find('.swiper-slide');
             var $wrapper = $('#key-swiper-wrapper');
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
-
+            var mainSwiper;
             setTimeout(function () {
                 step1()
             })
@@ -146,50 +208,62 @@
                 // $('.stock_information').delay(1500).fadeIn()
             }
 
-            function setSlider() {
+
+            function setSlider() {                
+                var conCnt = $conLi.length;
+                let options = {};
+
                 if (mainSwiper !== undefined) {
-                    //console.log('mainSwiper');
+                    console.log('mainSwiper');
                     return false
                 }
-                //console.log('setSlider');
-                var mainSwiper = new Swiper($container, {
-                    effect : 'fade', // 페이드 효과
-                    loop: true, //반복
-                    speed: 0,//속도
-                    autoplay: {
-                        delay: 4700,
-                        waitForTransition: true,
-                        disableOnInteraction: false,
-                    },
-                    pagination: {
-                        el: $pagination,
-                        clickable: true,
-                        renderBullet: function (index, className) {
-                            var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="28" height="28">' +
-                                '<circle class="path" cx="50%" cy="50%" r="13" fill="none"  stroke="#FFF"' +
-                                'stroke-opacity="1" stroke-width="1px"></circle>' +
-                                '<circle cx="50%" cy="50%" r="4" fill="#FFF"></circle>' +
-                                '</svg></span>';
-                            //console.log('setSlider222');
-                            return bu;
+                console.log('setSlider');
+                if(conCnt < 2){
+                    console.log(conCnt);
+                    options = {}         
+                }else{
+                    options = {                        
+                        effect : 'fade', // 페이드 효과
+                        loop: true, //반복
+                        speed: 0,//속도
+                        autoplay: {
+                            delay: 4700,
+                            waitForTransition: true,
+                            disableOnInteraction: false,
                         },
-                    },
-                    on: {
-                        slideChange: function () {
-                            !$('.swiper-slide').eq(this.activeIndex).css({
-                                'animation-name': 'none',
-                                'animation-duration': '0'
-                            })
+                        pagination: {
+                            el: $pagination,
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                                var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="28" height="28">' +
+                                    '<circle class="path" cx="50%" cy="50%" r="13" fill="none"  stroke="#FFF"' +
+                                    'stroke-opacity="1" stroke-width="1px"></circle>' +
+                                    '<circle cx="50%" cy="50%" r="4" fill="#FFF"></circle>' +
+                                    '</svg></span>';
+                                //console.log('setSlider222');
+                                return bu;
+                            },
+                        },
+                        on: {
+                            slideChange: function () {
+                                !$('.swiper-slide').eq(this.activeIndex).css({
+                                    'animation-name': 'none',
+                                    'animation-duration': '0'
+                                })
 
-                            $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
-                                'animation-name': 'grow2',
-                                'animation-duration': '3s'
-                            })
+                                $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
+                                    'animation-name': 'grow2',
+                                    'animation-duration': '3s'
+                                })
+                            }
                         }
-                    }
-                })
+                    }   
+                    //$('.swiper_btn').delay(1000).fadeIn()     
+                }
+
+                mainSwiper = new Swiper($container, options)
                 step2()
-            }
+            }            
 
             function introScroll(){
                 var lastScroll = 0;
