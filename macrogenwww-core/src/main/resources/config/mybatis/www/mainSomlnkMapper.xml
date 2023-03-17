@@ -93,6 +93,7 @@
 		, tms.image_atch_id
 		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
 		, tms.somlnk_sj
+		, tms.somlnk_dt
 		, tms.somlnk_url
 		, tms.sort_ordr
 		, tms.regist_dt
@@ -117,6 +118,7 @@
       , somlnk_ctgry_code
       , image_atch_id
       , somlnk_sj
+      , somlnk_dt
       , somlnk_url
       , sort_ordr
       , regist_dt
@@ -131,6 +133,7 @@
       , #{somlnkCtgryCode}
       , #{imageAtchId}
       , #{somlnkSj}
+      , #{somlnkDt}
       , #{somlnkUrl}
       , #{sortOrdr}
       , now()
@@ -155,6 +158,7 @@
       <if test="somlnkCtgryCode != null">, somlnk_ctgry_code = #{somlnkCtgryCode} </if>
       <if test="imageAtchId != null">, image_atch_id = #{imageAtchId} </if>
       <if test="somlnkSj != null">, somlnk_sj = #{somlnkSj} </if>
+      <if test="somlnkDt != null">, somlnk_dt = #{somlnkDt} </if>
       <if test="somlnkUrl != null">, somlnk_url = #{somlnkUrl} </if>
       <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
       <if test="postDt != null">, post_dt = #{postDt} </if>

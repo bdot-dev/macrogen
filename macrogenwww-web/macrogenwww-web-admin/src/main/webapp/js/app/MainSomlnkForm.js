@@ -89,6 +89,11 @@ var MainSomlnkForm = (function($) {
 						vm.$refs.somlnkSj.focus();
 						return false;
 					}
+					if (!vm.resultVo.somlnkDt) {
+						alert('필수입력 - 내용');
+						vm.$refs.somlnkDt.focus();
+						return false;
+					}
 					if (!vm.resultVo.somlnkUrl) {
 						alert('필수입력 - 링크');
 						vm.$refs.somlnkUrl.focus();
