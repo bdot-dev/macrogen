@@ -56,14 +56,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div class="visual visual_04">
                         <div class="text-box phrase">
                             <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>
                             <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="scroll-wrap">
                 <div class="scroll"><span class="bar" style="bottom: 0"></span></div>

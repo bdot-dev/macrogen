@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div class="visual visual_04">
                         <div class="text-box phrase">
                             <p>DNA holds</br>
@@ -63,7 +63,7 @@
                             <span class="name">Founder/Chairman of Macrogen<br><span>Jeong-Sun Seo</span></span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="scroll-wrap">
                 <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
