@@ -54,11 +54,10 @@
 							<td colspan="3" class="tal">{{ resultVo.field }}</td>
 						</tr>
 						<tr>
-							<th colspan="6" class="tal">내용</th>
-						</tr>
-						<tr>
+							<th>내용</th>
 							<td colspan="6" class="tal"  style="height: 250px;">{{ resultVo.contactCn }}</td>
 						</tr>
+
 						<tr>
 							<th>등록일시</th>
 							<td colspan="3" class="tal">{{ resultVo.registDt  | timeToDate('YYYY-MM-DD HH:mm:ss')}}</td>
