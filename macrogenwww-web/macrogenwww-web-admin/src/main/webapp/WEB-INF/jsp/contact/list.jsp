@@ -20,9 +20,9 @@
 					<strong>검색어</strong>
 					<select v-model="listVo.searchCondition" id="searchCondition" name="searchCondition" style="width:150px;" class="mr5">
 						<option value="">전체</option>
-						<option :value="'NMBR_WRTER'">이름</option>
+						<option :value="'NMBR_WRTER_NM'">이름</option>
 						<option :value="'FIELD'">문의분야</option>
-						<option :value="'NATION'">국가</option>
+						<option :value="'NATION_CODE'">국가</option>
 					</select>
 					<input type="text" name="searchKeyword" id="searchKeyword" class="mr5" style="width:400px;"
 					 maxlength="50"  v-model="listVo.searchKeyword" v-on:keydown.enter="onSearch"/>
@@ -50,8 +50,8 @@
 					<col width="100px" />
 					<col width="150px" />
 					<col width="300px" />
-					<col width="200px" />
 					<col width="100px" />
+					<col width="150px" />
 					<col width="100px" />
 				</colgroup>
 				<thead>
@@ -77,7 +77,7 @@
 					<td class="tal"><a v-on:click="onViewLink(result.contactSn)"
 							href="javascript:;">{{ result.contactSj }}</td>
 					<td>{{ result.field }}</td>
-					<td>{{ result.nationCode }}</td>
+					<td>{{ result.nationCodeNm${lang} }}</td>
 					<td>{{ result.registDt | timeToDate('YYYY-MM-DD HH:mm') }}</td>
 				</tr>
 			</tbody>

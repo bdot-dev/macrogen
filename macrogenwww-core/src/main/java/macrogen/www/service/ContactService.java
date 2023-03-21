@@ -6,11 +6,13 @@ import macrogen.www.vo.ContactVo;
 
 public interface ContactService {
 
-	List<ContactVo> list(ContactVo listVo) throws Exception ;
+	List<ContactVo> list(ContactVo listVo) throws Exception;
 
-	int count(ContactVo listVo) throws Exception ;
+	int count(ContactVo listVo) throws Exception;
 
 	void delete(ContactVo vo) throws Exception;
+	
+	void insert(ContactVo vo) throws Exception;
 
 	ContactVo view(ContactVo vo) throws Exception;
 	

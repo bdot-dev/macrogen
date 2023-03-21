@@ -99,7 +99,7 @@ public class ContactController {
 		resultMap.put("recordCountPerPageList", codeService.listByCodeSe("RECORD_COUNT_PER_PAGE"));
 		
 		// 코드목록 : 국가	
-		resultMap.put("nationCodeList", codeService.listByCodeSe("PATENT_NATION_CODE"));
+		resultMap.put("nationCodeList", codeService.listByCodeSe("CONTACT_NATION_CODE"));
 		
 		return resultMap;
 	}
@@ -125,7 +125,7 @@ public class ContactController {
 			resultMap.put("resultVo", resultVo);
 		}
 				
-		List<CodeVo> nationCodeList = codeService.listByCodeSe("PATENT_NATION_CODE");
+		List<CodeVo> nationCodeList = codeService.listByCodeSe("CONTACT_NATION_CODE");
 		resultMap.put("nationCodeList", nationCodeList);
 		
 		return resultMap;
