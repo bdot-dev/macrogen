@@ -24,7 +24,7 @@ front.common = (function () {
     }
 
     var swiperTab = function () {
-        $(document).ready(function (){
+        $(document).ready(function (){ 
             if($('.macrogen-authorization').length === 1) {
                 new Swiper('.snbSwiper', {
                     slidesPerView: 'auto',
