@@ -318,6 +318,117 @@
             <!-- s 연구·사업 분야별 문의 -->
             <div class="section">
                 <div class="inner">
+                    <!-- s:2023리뉴얼 -->
+                    <div class="section_IR">
+                        <div class="privacy_box">
+                            <div class="font-h5">문의정보</div>                      
+                            <div class="input-group">
+                                <span class="input-group-text" id="name">이름</span>
+                                <input type="text" placeholder="이름을 입력하세요" class="form-control" aria-label="input" aria-describedby="name">
+                            </div>
+                            <!-- input / phone-->
+                            <div class="input-group input-phone-box">
+                                <span class="input-group-text" id="num1">휴대폰 번호</span>
+                                <div class="input-group-phone">
+                                    <div class="select-box ">
+                                        <a href="#" class="select_default _select_default"><span class="text">010</span></a>
+                                        <ul class="select_list _select_list">
+                                            <li><span>010</span></li>
+                                            <li><span>011</span></li>
+                                            <li><span>016</span></li>
+                                            <li><span>017</span></li>
+                                            <li><span>018</span></li>
+                                            <li><span>019</span></li>
+                                        </ul>
+                                    </div>
+            
+                                    <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                                    <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
+                                    <script>
+                                        /*숫자 글자수 제한*/
+                                        function lengthLimit4(e){
+                                            if(e.value.length > 4){
+                                                e.value = e.value.slice(0, 4)
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                                <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다&#46;</span></p>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="email">이메일</span>
+                                <input type="text" placeholder="이메일을 입력해주세요" class="form-control" aria-label="input" aria-describedby="email">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="nation">국가</span>
+                                <div class="select-box full">
+                                    <a href="#" class="select_default _select_default"><span class="text">국가를 선택해주세요</span></a>
+                                    <ul class="select_list _select_list">
+                                        <li><span>010</span></li>
+                                        <li><span>011</span></li>
+                                        <li><span>016</span></li>
+                                        <li><span>017</span></li>
+                                        <li><span>018</span></li>
+                                        <li><span>019</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inquiry">문의 분야</span>
+                                <div class="select-box full">
+                                    <a href="#" class="select_default _select_default"><span class="text">문의 분야를 선택해주세요</span></a>
+                                    <ul class="select_list _select_list">
+                                        <li><span>010</span></li>
+                                        <li><span>011</span></li>
+                                        <li><span>016</span></li>
+                                        <li><span>017</span></li>
+                                        <li><span>018</span></li>
+                                        <li><span>019</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- input / text-->
+                            <div class="input-group">
+                                <span class="input-group-text" id="title">제목</span>
+                                <input type="text" placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
+                            </div>
+                            <!-- textarea -->
+                            <div class="input-group">
+                                <span class="input-group-text" id="faq">문의내용</span>
+                                <textarea type="text" placeholder="문의하실 내용을 입력하세요" class="form-control" aria-label="input"
+                                        aria-describedby="faq"></textarea>
+                            </div>
+                            <!-- input / text-->
+
+                            <!--s security-->
+                            <div class="input-group">
+                                <span class="input-group-text" id="automatic">자동등록방지</span>
+                                <span class="security" style="width: 160px; height: 60px; background: #E9E9E9; display: inline-block; margin-right: 15px;"></span>
+                                <input type="text" placeholder="왼쪽의 글자를 순서대로 입력하세요" class="form-control" aria-label="input" aria-describedby="automatic">
+                            </div>
+                            <!--e security-->
+                            <hr class="divider">
+                        </div>
+                        <div class="privacy_box">
+                            <div class="font-h5">개인정보 수집 · 이용 동의서</div>
+                            <div class="agreement">
+                                <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 투자 문의 및 상담 문의 대응</p>
+                                <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                                <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
+                                <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" checked type="checkbox" value="" id="check">
+                                <label class="form-check-label" for="check">동의합니다</label>
+                            </div>
+                            <div class="btn-box">                            
+                                <a href="#" class="btn btn-primary"><i class="icon icon-pen"></i><span>문의하기</span></a>
+                            </div>
+                            <hr class="divider">
+                        </div>                        
+                    </div>                    
+                    <!-- e:2023리뉴얼 -->
+
                     <div class="font-h5">연구·사업 분야별 문의</div>
                     <div class="category">
                         <ul class="clearfix">

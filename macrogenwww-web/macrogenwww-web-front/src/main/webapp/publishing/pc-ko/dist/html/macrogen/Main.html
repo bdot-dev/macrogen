@@ -93,6 +93,9 @@
                         <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
                     </ul>
                     <div class="btn_eng">
+                        <!-- s:2023리뉴얼 -->
+                        <a href="#" class="btn btn-round"><span>Contact Us</span></a>
+                        <!-- e:2023리뉴얼 -->
                         <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
                     </div>
                 </div>
@@ -278,7 +281,35 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+                <!-- mp4일때 -->
+                <!-- <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+                	<video class="video" autoplay muted loop playsinline><source src="../../img/video/main_기업개요.mp4" type="video/mp4"></video>
+                    <div class="text-box">
+                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
+                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+                	<iframe frameborder="0" height="100%" width="100%" 
+                    src="https://www.youtube.com/embed/PYVP4IpaeRo?controls=0&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <div class="text-box">
+                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
+                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="swiper-slide visual_00" data-swiper-autoplay="8000"> 
                 	<div class="visual"></div>
                     <div class="text-box">
                         <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
@@ -327,6 +358,7 @@
         </div>
         <script>
             var $container = $('#key-swiper-container');
+            var $conLi = $container.find('.swiper-slide');
             var $wrapper = $('#key-swiper-wrapper');
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
@@ -360,56 +392,65 @@
                 $wrapper.css({'overflow': 'visible'})
                 $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()
-                $('.swiper_btn').delay(1000).fadeIn()
+                $('.scroll-wrap').delay(1000).fadeIn()                
                 $('.stock_information').delay(1500).fadeIn()
             }
 
-            function setSlider() {
+            function setSlider() {                
+                var conCnt = $conLi.length;
+                let options = {};
+
                 if (mainSwiper !== undefined) {
                     console.log('mainSwiper');
                     return false
                 }
                 console.log('setSlider');
-                mainSwiper = new Swiper($container, {
-                    effect : 'fade', // 페이드 효과
-                    loop: true, //반복
-                    speed: 0,//속도
-                    autoplay: {
-                        delay: 4700,
-                        waitForTransition: true,
-                        disableOnInteraction: false,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                        el: $pagination,
-                        clickable: true,
-
-                           renderBullet: function (index, className) {
-                               var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
-                               '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
-                               'stroke-opacity="1" stroke-width="1px"></circle>' +
-                               '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
-                               '</svg></span>';
-                        return bu;
-
+                if(conCnt < 2){
+                    console.log(conCnt);
+                    options = {}         
+                }else{
+                    options = {
+                        effect : 'fade', // 페이드 효과
+                        loop: true, //반복
+                        speed: 0,//속도
+                        autoplay: {
+                            delay: 4700,
+                            waitForTransition: true,
+                            disableOnInteraction: false,
                         },
-                    },
-                    on: {
-                    	slideChange: function () { 
-							var $slides = this.slides; 
-							$slides.children('.visual').css('animation', 'none'); 
-							$slides.eq(this.activeIndex).children('.visual').css({ 
-								'animation-name': 'grow2', 
-								'animation-duration': '1s' 
-							}) 
-                        }, 
-                    }
-                })
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        pagination: {
+                            el: $pagination,
+                            clickable: true,
 
+                            renderBullet: function (index, className) {
+                                var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
+                                '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
+                                'stroke-opacity="1" stroke-width="1px"></circle>' +
+                                '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
+                                '</svg></span>';
+                            return bu;
+
+                            },
+                        },
+                        on: {
+                            slideChange: function () { 
+                                var $slides = this.slides; 
+                                $slides.children('.visual').css('animation', 'none'); 
+                                $slides.eq(this.activeIndex).children('.visual').css({ 
+                                    'animation-name': 'grow2', 
+                                    'animation-duration': '1s' 
+                                }) 
+                            }, 
+                        }
+                    }   
+                    $('.swiper_btn').delay(1000).fadeIn()     
+                }
+
+                mainSwiper = new Swiper($container, options)
                 step2()
             }
         </script>
@@ -652,8 +693,47 @@
 
             <!-- e  business slide -->
 
+
+            <!-- s  People :2023리뉴얼 -->
+            <div class="section-people">
+                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
+                    <div class="title">People</div>                    
+                </div>
+                <ul class="list">
+                    <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">      
+                        <a href="#">
+                            <p class="info"><strong>김기찬</strong>ESG 위원장</p>
+                            <img src="../../img/main/img-people_01.png" alt="김기찬 ESG 위원장">
+                            <p class="content">인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성합니다.</p>                      
+                        </a>                  
+                    </li>                    
+                    <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">         
+                        <a href="#">
+                            <p class="info"><strong>김예린</strong>디지털혁신 본부장</p>
+                            <img src="../../img/main/img-people_02.png" alt="김예린 디지털혁신 본부장">
+                            <p class="content">인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성합니다.</p>                      
+                        </a>               
+                    </li>                    
+                    <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">                        
+                        <a href="#">            
+                            <p class="info"><strong>John Mayer</strong>개인지놈사업 본부장</p>
+                            <img src="../../img/main/img-people_03.png" alt="John Mayer 개인지놈사업 본부장">
+                            <p class="content">기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성합니다.</p>                      
+                        </a>
+                    </li>                    
+                    <li data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">                        
+                        <a href="#">   
+                            <p class="info"><strong>홍기동</strong>지놈사업 본부장</p>
+                            <img src="../../img/main/img-people_04.png" alt="홍기동 지놈사업 본부장">
+                            <p class="content">인정받은 기술력과 위상을 토대로 부가가치가 높은 임상진단 및 개인 유전체 분석 분야 등 고객 밀착형 신사업을 집중적으로 육성합니다.</p>                      
+                        </a>
+                    </li>                    
+                </ul>                
+            </div>
+            <!-- e  People :2023리뉴얼-->            
+
             <!-- s  news -->
-            <div class="section-news">
+            <!-- <div class="section-news">
                 <div class="info-box" data-aos="fade-up" data-aos-duration="500">
                     <div class="title">News</div>
                     <div class="desc">전세계 모든 인류가 건강한 세상을 꿈꾸는<br>마크로젠의 새로운 소식을 알려드립니다</div>
@@ -685,21 +765,17 @@
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">#Macrogen TV</div>
                         <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">마크로젠의 새로운 소식을 영상으로 만나보세요</div>
                         <a href="#" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="icon icon_youtube"></i><span>마크로젠 유튜브채널</span><i class="icon icon-arrow-right-short"></i></a>
-                    </div>
-
+                    </div> -->
                     <!-- more 영역 제거-->
                     <!--<a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a>-->
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
             <!-- e  news -->
 
             <!-- s  media -->
             <div class="section-media">
                 <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000">Social Media </div>
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">다양한 채널을 통해 마크로젠의
-                        소식을 만나실 수 있습니다
-                    </div>
+                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>                    
                 </div>
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
     <div class="slider">
@@ -712,79 +788,105 @@
                 <div class="swiper-slide">
                     <a href="https://youtu.be/2BHy_3FxjUk" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_01.png" alt="물만 마셔도 살찌는 유전자가 있을까?">
-                            <span class="sns">Youtube</span>
+                            <img src="../../img/main/img-news_01.png" alt="데이터 활용 가치를 증진">
+                            <span class="sns">Event</span>
                         </div>
-                        <div class="content">물만 마셔도 살이 찐다구?! 체중이 변하는 이유가 나의 유전자와 관련이 있다는 사실! 알고계셨나요? 유.잘.알 마크로젠 전문가들이
-                            확실히 알려드립니다.
+                        <div class="content">
+                            <strong class="title">데이터 활용 가치를 증진</strong>
+                            마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것
                         </div>
-                        <div class="date">2021.09.09</div>
+                        <div class="date">2023.07.21</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://blog.naver.com/macrogen_official/222481324813" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_02.png" alt="미래의학의 새로운 패러다임 정밀의학의 모든 것">
-                            <span class="sns">blog</span>
+                            <img src="../../img/main/img-news_02.png" alt="아주대학교 의료원과 업무협약 체결">
+                            <span class="sns">Webinar</span>
                         </div>
-                        <div class="content">유전체 데이터로 질병 극복을 꿈꾸는 미래, 정밀의학! 질병 예측 및 예방, 맞춤 진단, 치료를 제공하는 미래의학의 새로운 패러다임,
-                            정밀의학에 대해 알아보아요.
+                        <div class="content">
+                            <strong class="sns">데이터 활용 가치를 증진</strong>
+                            정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.
                         </div>
-                        <div class="date">2021.08.23</div>
+                        <div class="date">2023.07.18</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://blog.naver.com/macrogen_official/222462577508" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_03.png" alt="함께하는 건강한 세상 ESG경영으로 실천합니다">
-                            <span class="sns">blog</span>
+                            <img src="../../img/main/img-news_03.png" alt="초정밀 최신장비 일루미나 런칭">
+                            <span class="sns">Promotion</span>
                         </div>
-                        <div class="content">환경보호, 사회적 책임 그리고 투명한 지배구조로 마크로젠이 실천하고 있는 ESG 경영 활동 내역을 소개합니다.</div>
-                        <div class="date">2021.08.09</div>
+                        <div class="content">
+                            <strong class="title">초정밀 최신장비 일루미나 런칭</strong>
+                            정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.
+                        </div>
+                        <div class="date">2023.05.13</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://youtu.be/1GxtiISWwTg" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_04.png" alt="마크로젠 NGS 영업부문 인터뷰">
-                            <span class="sns">Youtube</span></div>
-                        <div class="content">유전체 분석 기업 직원들은 어떻게 일할까?<br>마크로젠 직원들의 찐(gene) 이야기! 유튜브 마크로젠 채널의 찐톡에서 만나보세요.
+                            <img src="../../img/main/img-news_03.png" alt="웹뷰어 ‘DEG Viewer’ 베타서비스 출시!">
+                            <span class="sns">Launch</span>
                         </div>
-                        <div class="date">2021.07.29</div>
+                        <div class="content">
+                            <strong class="title">웹뷰어 ‘DEG Viewer’ 베타서비스 출시!</strong>
+                            마크로젠이 차별 발현 유전자 분석 결과를 원하는 조건에 맞추어 다양하게 시각화할 수 있는 웹뷰어 ‘DEG Viewer’ 베타 서비스를 25일 출시한다.
+                        </div>
+                        <div class="date">2023.04.21</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.facebook.com/macrogenkr/posts/4139457679509293" target="_blank">
+                    <a href="https://youtu.be/2BHy_3FxjUk" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_05.png" alt="장미남 / 장미녀 체크리스트">
-                            <span class="sns">Facebook</span>
+                            <img src="../../img/main/img-news_01.png" alt="데이터 활용 가치를 증진">
+                            <span class="sns">Event</span>
                         </div>
-                        <div class="content">오늘의 장은 안녕하신가요?<br>생활 습관과 장의 건강상태를 체크해보세요. 장 건강이우리 몸 건강의 시작이랍니다.</div>
-                        <div class="date">2021.07.22</div>
+                        <div class="content">
+                            <strong class="title">데이터 활용 가치를 증진</strong>
+                            마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것
+                        </div>
+                        <div class="date">2023.07.21</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.facebook.com/macrogenkr/posts/4081205675334494" target="_blank">
+                    <a href="https://blog.naver.com/macrogen_official/222481324813" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_06.png" alt="반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있는 방법">
-                            <span class="sns">Facebook</span>
+                            <img src="../../img/main/img-news_02.png" alt="아주대학교 의료원과 업무협약 체결">
+                            <span class="sns">Webinar</span>
                         </div>
-                        <div class="content">반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있다면 좋겠죠. 마크로젠이 견종별, 묘종별 주의해야 할 유전질환의
-                            종류를 알려드릴게요!
+                        <div class="content">
+                            <strong class="title">데이터 활용 가치를 증진</strong>
+                            정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.
                         </div>
-                        <div class="date">2021.07.21</div>
+                        <div class="date">2023.07.18</div>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.facebook.com/macrogenkr/posts/4081205675334494" target="_blank">
+                    <a href="https://blog.naver.com/macrogen_official/222462577508" target="_blank">
                         <div class="img">
-                            <img src="../../img/main/img-media_06.png" alt="반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있는 방법">
-                            <span class="sns">Facebook</span>
+                            <img src="../../img/main/img-news_03.png" alt="초정밀 최신장비 일루미나 런칭">
+                            <span class="sns">Promotion</span>
                         </div>
-                        <div class="content">반려동물에게도 발생할 수 있는 유전질환, 미리 알아보고 예방할 수 있다면 좋겠죠. 마크로젠이 견종별, 묘종별 주의해야 할 유전질환의
-                            종류를 알려드릴게요!
+                        <div class="content">
+                            <strong class="title">초정밀 최신장비 일루미나 런칭</strong>
+                            정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.
                         </div>
-                        <div class="date">2021.07.21</div>
+                        <div class="date">2023.05.13</div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://youtu.be/1GxtiISWwTg" target="_blank">
+                        <div class="img">
+                            <img src="../../img/main/img-news_03.png" alt="웹뷰어 ‘DEG Viewer’ 베타서비스 출시!">
+                            <span class="sns">Launch</span>
+                        </div>
+                        <div class="content">
+                            <strong class="title">웹뷰어 ‘DEG Viewer’ 베타서비스 출시!</strong>
+                            마크로젠이 차별 발현 유전자 분석 결과를 원하는 조건에 맞추어 다양하게 시각화할 수 있는 웹뷰어 ‘DEG Viewer’ 베타 서비스를 25일 출시한다.
+                        </div>
+                        <div class="date">2023.04.21</div>
                     </a>
                 </div>
             </div>
@@ -814,10 +916,10 @@
                     <div class="info-box">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
                         <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해<br/>현지 고객의 다양한 요구에 부합하는 맞춤형 서비스를 더욱 신속하고 체계적으로 제공합니다
+                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해 현지 고객의<br>다양한 요구에 부합하는 맞춤형 서비스를 더욱 신속하고 체계적으로 제공합니다
                         </div>
                     </div>
-                    <div class="map">
+                    <!-- <div class="map">
                         <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
                         <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
                         <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
@@ -828,6 +930,24 @@
                         <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
                         <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
                         <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+                    </div> -->
+                    <div class="map">
+                        <a class="pin amsterdam" onclick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+                      	<a class="pin leuven" onclick="location.href='01Macrogen_06글로벌네트워크.html#leuven'"><i></i><span>Leuven, Belgium</span></a>
+                      	<a class="pin paris" onclick="location.href='01Macrogen_06글로벌네트워크.html#paris'"><i></i><span>Paris, France</span></a>
+                      	<a class="pin milan" onclick="location.href='01Macrogen_06글로벌네트워크.html#italy'"><i></i><span>Milan, Italy</span></a>
+                      	<a class="pin poland" onclick="location.href='01Macrogen_06글로벌네트워크.html#poland'"><i></i><span>Szczecin, Poland</span></a>
+                        <a class="pin madrid" onclick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
+                        <a class="pin seoul" onclick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin songdo" onclick="location.href='01Macrogen_06글로벌네트워크.html#songdo'"><i></i><span>Songdo, Korea</span></a>
+                        <a class="pin daejeon" onclick="location.href='01Macrogen_06글로벌네트워크.html#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+                        <a class="pin tokyo" onclick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin biopolis" onclick="location.href='01Macrogen_06글로벌네트워크.html#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+                        <a class="pin boston" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
+                        <a class="pin newyork" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
+                        <a class="pin rockville" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+                        <a class="pin virginia" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin santiago" onclick="location.href='01Macrogen_06글로벌네트워크.html#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
                     <script>
                         $('.map .pin').on('click', function () {
@@ -838,6 +958,52 @@
                 </div>
             </div>
             <!-- e  global map -->
+
+           
+            <!-- s  People :2023리뉴얼 -->
+            <div class="section-partners">
+                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
+                    <div class="title">Global<br>Partners</div>     
+                    <div class="desc">
+                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">인류의 건강한 미래를 만드는 마크로젠의 파트너</p>
+                    </div>               
+                </div>
+                <div class="slider"  data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    <div class="swiper _partnersSlider">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_01.png" alt="삼성전기"></a>
+                            </li>                    
+                            <li class="swiper-slide">                                                
+                                <a href=""><img src="../../img/main/img-global_02.png" alt="삼성전기"></a>
+                            </li>                    
+                        </ul> 
+                    </div>
+                    <script>
+                        new Swiper("._partnersSlider", {
+                            loop: true,
+                            spaceBetween: 80,
+                            slidesPerView: "auto",                                                       
+                        });
+                    </script>
+                </div>                               
+            </div>
+            <!-- e  People :2023리뉴얼-->       
 
 
         </div>

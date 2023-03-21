@@ -4163,7 +4163,7 @@
   .macrogen.full-bg {
     position: relative;
     background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
-    background-size: 1920px 980px;
+    background-size: 1920px 600px;
     background-position: top center;
     background-repeat: no-repeat;
     animation-duration: 2s;
@@ -4216,7 +4216,7 @@
     .macrogen.full-bg .frame {
       position: relative;
       height: calc(100% - 124px);
-      margin: 0 auto; }
+      margin: 0 auto; padding-top: 241px; padding-bottom: 100px;}
       .macrogen.full-bg .frame .hero-title {
         margin-bottom: 130px;
         line-height: 58px;
@@ -4230,10 +4230,13 @@
         line-height: 98px;
         letter-spacing: -6px; }
       .macrogen.full-bg .frame .slogan-sub {
-        line-height: 38px; }
+        font-size: 22px;
+        line-height: 33px; 
+        letter-spacing: -0.75px;}
       .macrogen.full-bg .frame.frameC {
-        height: auto; }
+        height: auto; }    
     .macrogen.full-bg .scroll-wrap {
+      display: none;
       z-index: 11;
       box-sizing: border-box;
       margin: 0;
@@ -7124,10 +7127,10 @@
 @keyframes subAnimation {
   from {
     opacity: 0;
-    background-size: 3840px 1960px; }
+    background-size: 3840px 1200px; }
   to {
     opacity: 1;
-    background-size: 1920px 980px; } }
+    background-size: 1920px 600px; } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* 공통 */

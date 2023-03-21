@@ -13884,13 +13884,14 @@ body {
 }
 
 .wrap .full-bg .frame .font-slogan {
+  display: none;
   margin-bottom: 24px;
   color: #fff;
   word-break: keep-all;
 }
 
 .wrap .full-bg .frame .font-h7-r {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   color: #fff;
   word-break: keep-all;
 }

@@ -118,10 +118,28 @@ data.business ={
             page: '연구서비스_동물모델사업부'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'waiting',
+            url: '임상진단서비스_정밀의학',
+            category: 'business',
+            page: '임상진단서비스_정밀의학'
+        },
+        {
+            stateClass: 'waiting',
             url: '임상진단서비스_암유전체검사',
             category: 'business',
             page: '임상진단서비스_암유전체검사'
+        },
+        {
+            stateClass: 'waiting',
+            url: '임상진단서비스_NGS기반유전자패널검사실',
+            category: 'business',
+            page: '임상진단서비스_NGS기반유전자패널검사실'
+        },
+        {
+            stateClass: 'waiting',
+            url: '임상진단서비스_GCLP',
+            category: 'business',
+            page: '임상진단서비스_GCLP'
         },
         {
             stateClass: 'complete',

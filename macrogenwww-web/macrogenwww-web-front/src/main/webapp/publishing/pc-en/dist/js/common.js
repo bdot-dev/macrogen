@@ -90,7 +90,7 @@ front.common = (function () {
           var sub = setTimeout(function() {
             // console.log($('html, body').scrollTop())
             if($('html, body').scrollTop() !== 0) clearTimeout(sub)
-            else $('html, body').animate({scrollTop: 980}, 200);
+            else $('html, body').animate({scrollTop: 600}, 200);
           }, 3000);
         }
       }
