@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="macrogen.www.mapper.ContactMapper">
-
+	
 	<sql id="list_where">
 		<if test="langCode != null and langCode != ''">
 			ANd tc.lang_code = #{langCode}
@@ -14,18 +14,29 @@
 		</if>
 		<if test="searchKeyword != null and searchKeyword != ''">
 			<choose>
-				<when test="searchCondition == 'NMBR_WRTER'">
+				<when test="searchCondition == 'NMBR_WRTER_NM'">
 					AND tc.nmbr_writer_nm like concat('%', #{searchKeyword}, '%')
 				</when>
 				<when test="searchCondition == 'FIELD'">
 					AND tc.field like concat('%', #{searchKeyword}, '%')
 				</when>
-				<when test="searchCondition == 'NATION'">
-					AND tc.nation_code like concat('%', #{searchKeyword}, '%')
+				<when test="searchCondition == 'NATION_CODE'">
+					AND exists (
+						select code_nm from tb_code 
+						where code_nm like concat('%', #{searchKeyword}, '%') 
+						and code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code
+					)
 				</when>
 				<otherwise>
-					AND ( tc.contact_sj like concat('%', #{searchKeyword}, '%') or tc.nation_code like concat('%', #{searchKeyword}, '%') 
-						or tc.field like concat('%', #{searchKeyword}, '%') or tc.nmbr_writer_nm like concat('%', #{searchKeyword}, '%') )
+					AND ( tc.contact_sj like concat('%', #{searchKeyword}, '%') 
+							OR exists (
+								select code_nm from tb_code 
+								where code_nm like concat('%', #{searchKeyword}, '%')
+								and code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code
+							) 
+							OR tc.field like concat('%', #{searchKeyword}, '%') 
+							OR tc.nmbr_writer_nm like concat('%', #{searchKeyword}, '%') 
+						)
 				</otherwise>
 			</choose>
 		</if>	
@@ -44,7 +55,9 @@
 			tc.contact_sn
 			, tc.lang_code
 			, tc.nation_code
-			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, ( select code_nm from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm_en
 			, tc.nmbr_writer_nm
 			, tc.contact_sj
 			, tc.contact_cn
@@ -79,7 +92,9 @@
 			tc.contact_sn
 			, tc.lang_code
 			, tc.nation_code
-			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, ( select code_nm from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, ( select code_nm_ko from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm_ko
+			, ( select code_nm_en from tb_code where code_se = 'CONTACT_NATION_CODE' and code = tc.nation_code ) nation_code_nm_en
 			, tc.nmbr_writer_nm
 			, tc.contact_sj
 			, tc.contact_cn
@@ -94,6 +109,44 @@
 			, tc.updusr_sn
 		from tb_contact tc
 		where tc.contact_sn = #{contactSn}
+	</select>
+	
+	<insert id="insert" parameterType="contactVo">
+		insert into tb_contact (
+			contact_sn
+			, lang_code
+			, nation_code
+			, nmbr_writer_nm
+			, contact_sj
+			, contact_cn
+			, company
+			, mbtlnum
+			, email
+			, field
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn 
+		) values (
+			#{contactSn}
+			, #{langCode}
+			, #{nationCode}
+			, #{nmbrWriterNm}
+			, #{contactSj}
+			, #{contactCn}
+			, #{company}
+			, #{mbtlnum}
+			, #{email}
+			, #{field}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}			
+		)
+	</insert>
+	
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_contact')
 	</select>
 	
 	<delete id="delete" parameterType="contactVo">
