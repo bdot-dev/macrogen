@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.ContactMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			ANd tc.lang_code = #{langCode}
+		</if>
+		<if test="searchBeginDt != null">
+			AND tc.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+		</if>
+		<if test="searchEndDt != null">
+			AND tc.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			<choose>
+				<when test="searchCondition == 'NMBR_WRTER'">
+					AND tc.nmbr_writer_nm like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test="searchCondition == 'FIELD'">
+					AND tc.field like concat('%', #{searchKeyword}, '%')
+				</when>
+				<when test="searchCondition == 'NATION'">
+					AND tc.nation_code like concat('%', #{searchKeyword}, '%')
+				</when>
+				<otherwise>
+					AND ( tc.contact_sj like concat('%', #{searchKeyword}, '%') or tc.nation_code like concat('%', #{searchKeyword}, '%') 
+						or tc.field like concat('%', #{searchKeyword}, '%') or tc.nmbr_writer_nm like concat('%', #{searchKeyword}, '%') )
+				</otherwise>
+			</choose>
+		</if>	
+	</sql>
+
+	<select id="count" parameterType="contactVo" resultType="int">
+		select count(*)
+		from tb_contact tc
+		where 1 = 1
+		<include refid="list_where" />
+	</select>
+
+	<select id="list" parameterType="contactVo" resultType="contactVo">
+		<include refid="paging.countTop"/>
+		select
+			tc.contact_sn
+			, tc.lang_code
+			, tc.nation_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, tc.nmbr_writer_nm
+			, tc.contact_sj
+			, tc.contact_cn
+			, tc.company
+			, tc.mbtlnum
+			, tc.email
+			, tc.field
+			, tc.regist_dt
+			, tc.register_sn
+			, ( select user_nm from tb_user where user_sn = tc.register_sn ) register_nm
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_contact tc
+		where 1 = 1	
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tc.regist_dt desc, tc.contact_sn desc
+			</when>
+			<when test='orderBy == "regist_dt_asc"'>
+				order by tc.regist_dt asc, tc.contact_sn asc
+			</when>
+			<otherwise>
+				order by tc.contact_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom"/>
+	</select>
+	
+	<select id="view" parameterType="contactVo" resultType="contactVo">
+		select
+			tc.contact_sn
+			, tc.lang_code
+			, tc.nation_code
+			, ( select code_nm from tb_code where code_se = 'PATENT_NATION_CODE' and code = tc.nation_code ) nation_code_nm
+			, tc.nmbr_writer_nm
+			, tc.contact_sj
+			, tc.contact_cn
+			, tc.company
+			, tc.mbtlnum
+			, tc.email
+			, tc.field
+			, tc.regist_dt
+			, tc.register_sn
+			, ( select user_nm from tb_user where user_sn = tc.register_sn ) register_nm
+			, tc.updt_dt
+			, tc.updusr_sn
+		from tb_contact tc
+		where tc.contact_sn = #{contactSn}
+	</select>
+	
+	<delete id="delete" parameterType="contactVo">
+		delete from tb_contact where contact_sn = #{contactSn}
+	</delete>
+	
+</mapper>
