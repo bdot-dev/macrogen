@@ -36,6 +36,12 @@ public class ContactServiceImpl extends EgovAbstractServiceImpl implements Conta
 	}
 	
 	@Override
+	public void insert(ContactVo vo) {
+		vo.setContactSn(contactMapper.seq());
+		contactMapper.insert(vo);		
+	}
+	
+	@Override
 	public ContactVo viewByPk(Long contactSn) throws Exception {
 	
 		ContactVo vo = new ContactVo();

@@ -76,28 +76,43 @@
 							</td>
 						</tr>
 						<tr>
-							<th>배너 이미지 <span>*</span></th>
+							<th>배너 이미지</th>
 							<td colspan="3" class="tal">
 								<div>
 									(PC)<br>
 									<input type="file" name="imageFilePc" v-on:change="onchangeImageFilePc" />
-									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
+									<span>(사이즈 : 가로사이즈 기준 1920(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
 								</div>
 								<div v-if="resultVo.imageAtchIdPc">
 									<img :src="'${publicUrl }'+ resultVo.imageFlpthPc"
 										style="width:100px; vertical-align: bottom;" />
-				                    <!-- <a href="javascript:;" v-on:click="onDeleteImage">삭제</a> -->
+				                    <a href="javascript:;" v-on:click="onDeleteImagePc">삭제</a>
 								</div>
 								<br><br>
 								<div>
 									(MO)<br>
 									<input type="file" name="imageFileMobl" v-on:change="onchangeImageFileMobl" />
-									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
+									<span>(사이즈 : 가로사이즈 기준 375(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
 								</div>
 								<div v-if="resultVo.imageAtchIdMo">
 									<img :src="'${publicUrl }' + resultVo.imageFlpthMobl"
 										style="width:100px; vertical-align: bottom;" />
-				                    <!-- <a href="javascript:;" v-on:click="onDeleteImage">삭제</a> -->
+				                    <a href="javascript:;" v-on:click="onDeleteImageMo">삭제</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>영상 URL</th>
+							
+							<td class="tal" colspan="3">
+								<div class="lbMaxlenPrnt">
+									(PC)<input type="text" placeholder="영상 URL(PC)" 
+										v-model="resultVo.mediaUrlPc" class="w100p" ref="mediaUrlPc" />
+								</div>
+								<br>
+								<div class="lbMaxlenPrnt">
+									(MO)<input type="text" placeholder="영상 URL(MO)" 
+										v-model="resultVo.mediaUrlMo" class="w100p" ref="mediaUrlMo" />
 								</div>
 							</td>
 						</tr>

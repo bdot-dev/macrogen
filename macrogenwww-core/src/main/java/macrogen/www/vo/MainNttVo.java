@@ -23,10 +23,13 @@ public class MainNttVo extends DefaultVo{
 	private String imageAtchIdPc;			// 이미지 첨부 아이디_PC
 	private String imageAtchIdMo;			// 이미지 첨부 아이디_MO
 	
+	private String mediaUrlPc;				// 영상 url_PC
+	private String mediaUrlMo;				// 영상 url_MO
+	
 	private String imageFlpthPc;	
 	private String imageFlpthMobl;
 	
-	private String expsrYn="Y";					// 노출여부
+	private String expsrYn="Y";				// 노출여부
 	private Integer expsrPrty;				// 노출순서
 	private String langCode;				// 언어 코드	
 	
@@ -93,6 +96,18 @@ public class MainNttVo extends DefaultVo{
 		this.imageAtchIdMo = imageAtchIdMo;
 	}
 	
+	public String getMediaUrlPc() {
+		return mediaUrlPc;
+	}
+	public void setMediaUrlPc(String mediaUrlPc) {
+		this.mediaUrlPc = mediaUrlPc;
+	}
+	public String getMediaUrlMo() {
+		return mediaUrlMo;
+	}
+	public void setMediaUrlMo(String mediaUrlMo) {
+		this.mediaUrlMo = mediaUrlMo;
+	}
 	public String getImageFlpthPc() {
 		return imageFlpthPc;
 	}

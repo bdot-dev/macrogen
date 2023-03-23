@@ -95,16 +95,6 @@ var MainBusinessForm = (function($) {
 						vm.$refs.mainNttSjMo.focus();
 						return false;
 					}
-					if (!vm.resultVo.mainNttCnPc) {
-						alert('필수입력 - 설명문구(PC)');
-						vm.$refs.mainNttCnPc.focus();
-						return false;
-					}
-					if (!vm.resultVo.mainNttCnMo) {
-						alert('필수입력 - 설명문구(MO)');
-						vm.$refs.mainNttCnMo.focus();
-						return false;
-					}
 					if (!vm.resultVo.imageAtchIdPc) {
 						alert('필수입력 - PC 이미지');
 						return false;

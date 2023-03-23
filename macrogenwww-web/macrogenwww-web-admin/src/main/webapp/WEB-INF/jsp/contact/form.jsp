@@ -42,12 +42,12 @@
 							<td colspan="3" class="tal">{{ resultVo.email }}</td>
 						</tr>
 						<tr>
-							<th>회사명</th>
+							<th>소속</th>
 							<td colspan="3" class="tal">{{ resultVo.company }}</td>
 						</tr>
 						<tr>
 							<th>국가</th>
-							<td colspan="3" class="tal">{{ resultVo.nationCode }}</td>
+							<td colspan="3" class="tal">{{ resultVo.nationCodeNm${lang} }}</td>
 						</tr>
 						<tr>
 							<th>문의분야</th>
@@ -79,9 +79,10 @@
 	<script>
 		$(function() {
 			var options = {
-				contactSn : ${ empty contactSn ? 'null' : contactSn },		
+				contactSn : ${ empty contactSn ? 'null' : contactSn },
 			}
 			options.lang = '${langId}';
+			options.Lang = '${lang}';
 			ContactForm.init(options);
 		});
 		

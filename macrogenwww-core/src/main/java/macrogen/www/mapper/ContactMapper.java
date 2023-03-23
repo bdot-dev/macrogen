@@ -27,5 +27,8 @@ public interface ContactMapper {
 
 	void delete(ContactVo vo);
 
+	void insert(ContactVo vo);
+	
 	ContactVo view(ContactVo vo);
+
 }

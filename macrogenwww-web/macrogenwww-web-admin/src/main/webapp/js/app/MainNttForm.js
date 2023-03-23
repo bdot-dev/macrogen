@@ -91,16 +91,12 @@ var MainNttForm = (function($) {
 						alert('필수입력 - 노출순서');
 						vm.$refs.expsrPrty.focus();
 						return false;
-					}										
-					if (!vm.resultVo.imageAtchIdPc) {
-						alert('필수입력 - PC 이미지');
+					}			
+					if((!vm.resultVo.imageAtchIdPc && !vm.resultVo.mediaUrlPc) && (!vm.resultVo.imageAtchIdMo && !vm.resultVo.mediaUrlMo)){
+						alert('이미지 또는 영상 URL 중 한가지는 \n필수등록 해주세요');
 						return false;
-					}
-					if (!vm.resultVo.imageAtchIdMo) {
-						alert('필수입력 - MO 이미지');
-						return false;
-					}
-	
+					} 
+
 					if(vm.resultVo.btYn == 1){	
 						if (!vm.resultVo.btSjPc1) {
 							alert('필수입력 - 버튼명 PC');
@@ -119,6 +115,7 @@ var MainNttForm = (function($) {
 							return false;
 						}
 					} 
+					
 					if(vm.resultVo.btYn == 2) {
 						if (!vm.resultVo.btSjPc1) {
 							alert('필수입력 - 버튼명 PC');
@@ -174,6 +171,21 @@ var MainNttForm = (function($) {
 	
 					});
 				},
+				
+				onDeleteImagePc : function() {
+					var vm = this;
+					
+					vm.resultVo.imageAtchIdPc = null;
+					vm.resultVo.imageFlpthPc = null;
+				},
+				
+				onDeleteImageMo : function() {
+					var vm = this;
+					
+					vm.resultVo.imageAtchIdMo = null;
+					vm.resultVo.imageFlpthMobl = null;
+				},
+				
 				onBtYn : function(data) {
 					var vm = this;
 					vm.btChange(data);

@@ -6,8 +6,12 @@ import java.util.List;
 public class ContactVo extends DefaultVo {
 
 	private Long contactSn;
-	private String nationCode;
 	private String langCode;
+	
+	private String nationCode;
+	private String nationCodeNm;
+	private String nationCodeNmKo;
+	private String nationCodeNmEn;
 	
 	private String nmbrWriterNm;
 	private String contactSj;
@@ -22,6 +26,8 @@ public class ContactVo extends DefaultVo {
 	
 	private List<Long> contactSnList;	// 체크 삭제 리스트
 	
+	private String captchaString;
+	
 	
 	public Long getContactSn() {
 		return contactSn;
@@ -34,6 +40,25 @@ public class ContactVo extends DefaultVo {
 	}
 	public void setNationCode(String nationCode) {
 		this.nationCode = nationCode;
+	}
+	
+	public String getNationCodeNm() {
+		return nationCodeNm;
+	}
+	public void setNationCodeNm(String nationCodeNm) {
+		this.nationCodeNm = nationCodeNm;
+	}
+	public String getNationCodeNmKo() {
+		return nationCodeNmKo;
+	}
+	public void setNationCodeNmKo(String nationCodeNmKo) {
+		this.nationCodeNmKo = nationCodeNmKo;
+	}
+	public String getNationCodeNmEn() {
+		return nationCodeNmEn;
+	}
+	public void setNationCodeNmEn(String nationCodeNmEn) {
+		this.nationCodeNmEn = nationCodeNmEn;
 	}
 	public String getLangCode() {
 		return langCode;
@@ -95,6 +120,12 @@ public class ContactVo extends DefaultVo {
 	}
 	public void setContactSnList(List<Long> contactSnList) {
 		this.contactSnList = contactSnList;
+	}
+	public String getCaptchaString() {
+		return captchaString;
+	}
+	public void setCaptchaString(String captchaString) {
+		this.captchaString = captchaString;
 	}
 	
 	
