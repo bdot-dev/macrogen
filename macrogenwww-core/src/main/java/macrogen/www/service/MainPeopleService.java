@@ -30,4 +30,6 @@ public interface MainPeopleService {
 
 	MainPeopleVo viewByPk(Long sn) throws Exception;
 
+	void updateSortOrdr(MainPeopleVo vo) throws Exception;
+
 }
