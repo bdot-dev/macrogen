@@ -44,6 +44,8 @@
 			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_pc ) image_flpth_pc
 			, tmn.image_atch_id_mo
 			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_mo ) image_flpth_mobl
+			, tmn.media_url_pc
+			, tmn.media_url_mo
 			, tmn.expsr_yn
 			, tmn.expsr_prty
 			, tmn.title
@@ -89,6 +91,8 @@
 			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_pc ) image_flpth_pc
 			, tmn.image_atch_id_mo
 			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_mo ) image_flpth_mobl
+			, tmn.media_url_pc
+			, tmn.media_url_mo
 			, tmn.expsr_yn
 			, tmn.expsr_prty
 			, tmn.title
@@ -119,6 +123,8 @@
 			, main_ntt_cn_mo
 			, image_atch_id_pc
 			, image_atch_id_mo
+			, media_url_pc
+			, media_url_mo
 			, expsr_yn
 			, expsr_prty
 			, title
@@ -143,6 +149,8 @@
 			, #{mainNttCnMo}
 			, #{imageAtchIdPc}
 			, #{imageAtchIdMo}
+			, #{mediaUrlPc}
+			, #{mediaUrlMo}
 			, #{expsrYn}
 			, #{expsrPrty}
 			, #{title}
@@ -173,6 +181,8 @@
 			, main_ntt_cn_Mo = #{mainNttCnMo}
 			, image_atch_id_pc = #{imageAtchIdPc}
 			, image_atch_id_mo = #{imageAtchIdMo}
+			, media_url_pc = #{mediaUrlPc}
+			, media_url_mo = #{mediaUrlMo}
 			, expsr_yn = #{expsrYn}
 			, expsr_prty = #{expsrPrty}
 			, title = #{title}

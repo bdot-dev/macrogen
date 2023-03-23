@@ -42,7 +42,7 @@
 							<td colspan="3" class="tal">{{ resultVo.email }}</td>
 						</tr>
 						<tr>
-							<th>회사명</th>
+							<th>소속</th>
 							<td colspan="3" class="tal">{{ resultVo.company }}</td>
 						</tr>
 						<tr>
