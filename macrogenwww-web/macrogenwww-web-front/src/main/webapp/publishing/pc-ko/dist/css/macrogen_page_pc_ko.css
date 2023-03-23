@@ -7746,13 +7746,16 @@
   .main-wrap .main-page .info-box {
     width: 1244px; }
     .main-wrap .main-page .info-box .title {
-      font-weight: bold;
-      font-size: 60px;
-      line-height: 72px; }
+      margin-bottom: 33px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 50px;      
+      line-height: 72px; 
+      letter-spacing: 3px; text-transform:uppercase;}
     .main-wrap .main-page .info-box .desc {
       font-size: 18px;
       line-height: 34px;
-      letter-spacing: -1px;
+      letter-spacing: -0.5px;
       color: #454545; }
   .main-wrap .main-page .section-define .info-box {
     width: 1244px;
@@ -7784,6 +7787,7 @@
       width: 50%;
       margin: 85px 70px 0 0; }
       .main-wrap .main-page .section-define .info-box .text-box .text {
+        white-space: nowrap;
         font-size: 18px;
         line-height: 34px;
         letter-spacing: -1px;
@@ -7864,7 +7868,7 @@
     .main-wrap .main-page .section-business .info-box {
       margin: 145px auto 100px; }
       .main-wrap .main-page .section-business .info-box .title {
-        margin-bottom: 33px; }
+        margin-bottom: 27px; }
       .main-wrap .main-page .section-business .info-box .desc {
         margin-left: 215px; }
     .main-wrap .main-page .section-business .business {
@@ -7898,10 +7902,13 @@
 
 /*2023리뉴얼*/
 .main-wrap .main-page .section-people{
-  padding:0 0 115px; 
-  background: url("../img/main/bg-people.png") no-repeat center bottom;}
+  /*padding:0 0 115px;*/ }
 .main-wrap .main-page .section-people .info-box{
-  margin: 150px auto 65px; }
+  margin: 140px auto 57px; 
+  text-align: center;}
+  .main-wrap .main-page .section-people .info-box .title{
+    margin-bottom: 10px;
+  }
 .main-wrap .main-page .section-people .list {
   display: flex; 
   justify-content: space-between; 
@@ -7923,35 +7930,67 @@
         letter-spacing: -0.5px; 
         color: #fff}
 
-.main-wrap .main-page .section-partners{
-  display: flex; align-items: center; border-bottom: 1px solid #D9D9D9;}  
-.main-wrap .main-page .section-partners .info-box{
-  width: auto;
-  padding: 80px 0 75px 338px; }
-  .main-wrap .main-page .section-partners .slider{overflow: hidden; margin-left: 157px;}
-  .main-wrap .main-page .section-partners .info-box .desc{margin-top: 21px; letter-spacing: -0.5px; color: #000; white-space: nowrap;}
-.main-wrap .main-page .section-partners .swiper-wrapper {
-  /* display: flex; 
-  justify-content: space-between; 
-  width: 1244px;  */
-  /* margin:0 auto;  */
-}
-    .main-wrap .main-page .section-partners .swiper-wrapper .swiper-slide{
-      width: auto !important;
+
+
+
+
+
+        .deco_swiper {overflow:hidden;position: relative;width:100%;height: 524px;}
+        .deco_swiper .swiper-wrapper{display: flex; align-items: center; margin-left: -61px; }
+        .deco_swiper .swiper-slide {position: relative; width:402px;height:402px; border-radius: 100%; transition: 0.5s;}
+        .deco_swiper .swiper-slide.lst01{background: #ABDFFD;}
+        .deco_swiper .swiper-slide.lst02{background: #DDE0FD;}
+        .deco_swiper .swiper-slide.lst03{background: #DEFBD1;}
+        .flip {position:relative;width:402px;height:402px;}
+        .flip .front, .flip .back {position:absolute;width:100%;height:100%; transition: 0.5s; cursor: pointer;}
+        .flip .front {overflow: hidden;  border-radius: 100%;}
+        .flip .front .img {/*position: absolute; right:0; bottom:0;*/ display: block;  width: 383px; height: 333px; transform: translate(0, 100%);}
+        .flip .front .img img{display: block; width:100%; height:100%;}
+        .flip .front .info-area{opacity: 0; transition:0.5s;}
+        .flip .front .name{position: absolute; top:162px; left:68px; text-align: left; font-size: 14px; line-height: 20px; letter-spacing: -0.5px;}
+        .flip .front .name strong{display:block; margin-bottom: 10px; font-weight: 700; font-size: 24px; line-height: 30px;}
+        .flip .front .btn-text {position: absolute; top:347px; left:68px;}
+
+        .flip .back {padding:80px 33px 0; text-align: center; opacity: 0;}
+        .flip .back .name{position: relative; display:block; padding-bottom: 13px; margin-bottom: 45px; font-size: 14px; line-height: 30px; }
+        .flip .back .name::after{content: '';
+          display: inline-block;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          border-top: 4px solid #000;
+          width: 50px;     
+           margin-left: -25px;}
+        .flip .back .name strong{display:block; margin-bottom: 10px; font-weight: 700; font-size: 26px; text-align: center;}        
+        .flip .back .txt{font-weight: 400; font-size: 16px; line-height: 28px;}
+
+        .deco_swiper .swiper-slide.swiper-slide-active {width:524px; height:524px; }
+        .deco_swiper .swiper-slide.swiper-slide-active .flip {width:100%; height:100%; }
+        .deco_swiper .swiper-slide.swiper-slide-active .flip .front{justify-content:right; }        
+        .deco_swiper .swiper-slide.swiper-slide-active .flip .front .info-area{opacity: 1;}
+        .deco_swiper .swiper-slide.swiper-slide-active .flip .front .img{margin-right:-100px; /*width:500px; height: auto;*/transform: scale(1.5); }                        
+        .deco_swiper .swiper-slide.swiper-slide-active.rotate .flip .front{opacity: 0;}
+        .deco_swiper .swiper-slide.swiper-slide-active.rotate .flip .back{opacity: 1;}
+        
+        
+
+
+.main-wrap .main-page .section-partners{padding-bottom: 114px; border-bottom: 11px solid #F5F5F5;}
+  .main-wrap .main-page .section-partners .info-box{
+    margin: 90px auto 76px; 
+    text-align: center;}
+    .main-wrap .main-page .section-partners .info-box .title{
+      margin-bottom: 20px;
+      line-height: 52px;
     }
-      /* .main-wrap .main-page .section-partners .swiper-wrapper li .info{
-        letter-spacing: -0.5px;}
-        .main-wrap .main-page .section-partners .swiper-wrapper li .info strong{
-          display: block; 
-          font-weight: 700; 
-          font-size: 18px; 
-          line-height: 28px;}
-      .main-wrap .main-page .section-partners .list li .content{
-        margin-top: 25px; 
-        font-size: 18px; 
-        line-height: 30px; 
-        letter-spacing: -0.5px; 
-        color: #fff} */
+    .main-wrap .main-page .section-partners .info-box .desc{margin-top: 21px; letter-spacing: -0.5px; color: #000; white-space: nowrap;}
+  .main-wrap .main-page .section-partners .partners-list {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap:wrap;
+    width: 1244px;  
+    margin:-82px auto 0; }
+  .main-wrap .main-page .section-partners .partners-list li{width: 20%; margin-top: 82px;}
 
 
 /*//2023리뉴얼*/
@@ -8042,21 +8081,29 @@
     padding-left: 330px; }
     .main-wrap .main-page .section-media .info-box {
       width: 1244px;
-      margin: 150px 0 0; }
+      margin: 146px 0 0; }
       /* .main-wrap .main-page .section-media .info-box .title {
         margin-bottom: 20px; } */
+    .main-wrap .main-page .section-media .media{
+      width: 1244px;    }
     .main-wrap .main-page .section-media .media .slider {
       position: relative;
       width: unset;
       margin: 0 auto; }
       .main-wrap .main-page .section-media .media .slider .slider-navigation {
         width: 1240px;
-        position: relative;
+        /* position: relative; */
         /* margin-bottom: 0; */
         top: 0px; }
         .main-wrap .main-page .section-media .media .slider .slider-navigation .btn-circle {
+          position: absolute;
+          top:137px;
           width: 45px;
-          height: 45px; }
+          height: 45px; z-index: 10;}
+          .main-wrap .main-page .section-media .media .slider .slider-navigation .btn-circle._btnPrev{
+            left: -22px;}
+          .main-wrap .main-page .section-media .media .slider .slider-navigation .btn-circle._btnNext{
+            right: -22px;}
       .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide > a {
         display: block; }
       .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide .img {
