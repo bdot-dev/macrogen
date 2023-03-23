@@ -91,12 +91,19 @@ var MainNttForm = (function($) {
 						alert('필수입력 - 노출순서');
 						vm.$refs.expsrPrty.focus();
 						return false;
-					}			
-					if((!vm.resultVo.imageAtchIdPc && !vm.resultVo.mediaUrlPc) && (!vm.resultVo.imageAtchIdMo && !vm.resultVo.mediaUrlMo)){
-						alert('이미지 또는 영상 URL 중 한가지는 \n필수등록 해주세요');
+					}
+					
+					if(!vm.resultVo.imageAtchIdPc && !vm.resultVo.mediaUrlPc){
+						alert('PC 이미지 또는 PC 영상 URL 중 한가지는 \n필수등록 해주세요');
 						return false;
-					} 
-
+					}
+					
+		
+					if(!vm.resultVo.imageAtchIdMo && !vm.resultVo.mediaUrlMo){
+						alert('MO 이미지 또는 MO 영상 URL 중 한가지는 \n필수등록 해주세요');
+						return false;
+					}
+		
 					if(vm.resultVo.btYn == 1){	
 						if (!vm.resultVo.btSjPc1) {
 							alert('필수입력 - 버튼명 PC');
