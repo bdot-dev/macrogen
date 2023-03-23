@@ -771,7 +771,7 @@
                                 </div>
                             </div>                            
                         </div> 
-                        <!-- <div class="swiper-slide lst03">
+                        <div class="swiper-slide" style="background-color: #DEFBD1;">
                             <div class="flip">
                                 <div class="front">
                                     <span class="img"><img src="../../img/main/img-people_03.png" alt="1"></span>      
@@ -792,15 +792,15 @@
                                         trusted company.</p>
                                 </div>
                             </div>                            
-                        </div>                                             -->
+                        </div>                                            
                     </div>
                 </div>
             </div>
 
             <script>
                 $(function(){                
-                    setSlider();
-                    function setSlider() {      
+                    setSlider2();
+                    function setSlider2() {      
                         var pSwiper;
                         var $container = $('._peopleSlider');
                         var $conLi = $container.find('.swiper-slide');                                
@@ -811,9 +811,12 @@
                             console.log('pSwiper');
                             return false
                         }
-                        console.log('setSlider');
+
+                        var html = $("._peopleSlider .swiper-wrapper").html();                        
+                        $(".swiper-wrapper").append(html);                        
+                        
                         if(conCnt < 4){
-                            $container.addClass("sm");                              
+                            $container.addClass("sm");                               
                         }    
                         options = {
                             centeredSlides: true, 
@@ -829,22 +832,7 @@
                             //     disableOnInteraction: false,
                             // },
                             speed: 1000,
-                            // lazy: true, 
-                            on: {
-                                // slideChange: function () { 
-                                //     var $slides = this.slides;                                     
-                                //     console.log(this.activeIndex);
-                                //     $slides.eq(this.activeIndex).removeClass("rotate");
-                                // }, 
-                                click(event) {
-                                    // var $slides = this.slides; 
-                                    // console.log('event.target',this.clickedIndex);
-                                    // console.log($slides.eq(this.activeIndex).attr('class'));
-                                    // var liClass= $slides.eq(this.activeIndex);
-                                    // if(liClass.hasClass('swiper-slide-active')) {
-                                    // }   
-                                },
-                            },
+                            lazy: true,                            
                         }       
                         pSwiper = new Swiper($container, options)               
                     }          
@@ -852,14 +840,14 @@
                     $('._peopleSlider .swiper-slide').on('click',function (){                             
                         var swiper = $(this);
                         //var sub = setTimeout(function() {
-                            if(swiper.hasClass('swiper-slide-active')) {
+                            //if(swiper.hasClass('swiper-slide-active')) {
                                 if(!swiper.hasClass('rotate') ) {
                                     swiper.addClass("rotate").siblings().removeClass("rotate");
                                 }
                                 else{
                                     swiper.removeClass("rotate");
                                 }
-                            }
+                            //}
                         //}, 300);                                                
                     })
                 });
