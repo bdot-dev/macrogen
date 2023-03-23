@@ -49,7 +49,7 @@
 							<td colspan="3" class="tal">
 								<div>
 									<input type="file" name="imageFile" v-on:change="onchangeImageFile" />
-									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
+									<span>(사이즈 : 가로사이즈 기준 315(px)  |  용량 : 3MB 이하  |  형식 : jpg, png, gif)</span>
 								</div>
 								<div v-if="resultVo.imageAtchId">
 									<img :src="'${publicUrl }' + resultVo.imageFlpth"

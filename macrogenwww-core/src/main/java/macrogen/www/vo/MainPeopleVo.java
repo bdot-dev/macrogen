@@ -20,15 +20,18 @@ public class MainPeopleVo extends DefaultVo {
 	private String peopleDept;
 	private String cnPc;
 	private String cnMo;
-	private String linkUrl;
 
-	private String atchId;
-	private String imageAtchId;
-	private String imageFlpth;
-	private String PeopleUrl;
-	private Integer sortOrdr;
+	private String atchIdPc;
+	private String imageAtchIdPc;
+	private String imageFlpthPc;
+	private String atchIdMo;
+	private String imageAtchIdMo;
+	private String imageFlpthMo;
 
-	private List<MainPeopleVo> dataVoList;
+	private Integer sortOrdr = 99;
+	private String viewYn = "N";
+
+	private List<MainPeopleVo> sortOrdrList;
 
 	public Long getPeopleSn() {
 		return peopleSn;
@@ -78,36 +81,52 @@ public class MainPeopleVo extends DefaultVo {
 		this.cnMo = cnMo;
 	}
 
-	public String getLinkUrl() {
-		return linkUrl;
+	public String getAtchIdPc() {
+		return atchIdPc;
 	}
 
-	public void setLinkUrl(String linkUrl) {
-		this.linkUrl = linkUrl;
+	public void setAtchIdPc(String atchIdPc) {
+		this.atchIdPc = atchIdPc;
 	}
 
-	public String getImageAtchId() {
-		return imageAtchId;
+	public String getImageAtchIdPc() {
+		return imageAtchIdPc;
 	}
 
-	public void setImageAtchId(String imageAtchId) {
-		this.imageAtchId = imageAtchId;
+	public void setImageAtchIdPc(String imageAtchIdPc) {
+		this.imageAtchIdPc = imageAtchIdPc;
 	}
 
-	public String getImageFlpth() {
-		return imageFlpth;
+	public String getImageFlpthPc() {
+		return imageFlpthPc;
 	}
 
-	public void setImageFlpth(String imageFlpth) {
-		this.imageFlpth = imageFlpth;
+	public void setImageFlpthPc(String imageFlpthPc) {
+		this.imageFlpthPc = imageFlpthPc;
 	}
 
-	public String getPeopleUrl() {
-		return PeopleUrl;
+	public String getAtchIdMo() {
+		return atchIdMo;
 	}
 
-	public void setPeopleUrl(String peopleUrl) {
-		PeopleUrl = peopleUrl;
+	public void setAtchIdMo(String atchIdMo) {
+		this.atchIdMo = atchIdMo;
+	}
+
+	public String getImageAtchIdMo() {
+		return imageAtchIdMo;
+	}
+
+	public void setImageAtchIdMo(String imageAtchIdMo) {
+		this.imageAtchIdMo = imageAtchIdMo;
+	}
+
+	public String getImageFlpthMo() {
+		return imageFlpthMo;
+	}
+
+	public void setImageFlpthMo(String imageFlpthMo) {
+		this.imageFlpthMo = imageFlpthMo;
 	}
 
 	public Integer getSortOrdr() {
@@ -118,20 +137,20 @@ public class MainPeopleVo extends DefaultVo {
 		this.sortOrdr = sortOrdr;
 	}
 
-	public String getAtchId() {
-		return atchId;
+	public String getViewYn() {
+		return viewYn;
 	}
 
-	public void setAtchId(String atchId) {
-		this.atchId = atchId;
+	public void setViewYn(String viewYn) {
+		this.viewYn = viewYn;
 	}
 
-	public List<MainPeopleVo> getDataVoList() {
-		return dataVoList;
+	public List<MainPeopleVo> getSortOrdrList() {
+		return sortOrdrList;
 	}
 
-	public void setDataVoList(List<MainPeopleVo> dataVoList) {
-		this.dataVoList = dataVoList;
+	public void setSortOrdrList(List<MainPeopleVo> sortOrdrList) {
+		this.sortOrdrList = sortOrdrList;
 	}
 
 }

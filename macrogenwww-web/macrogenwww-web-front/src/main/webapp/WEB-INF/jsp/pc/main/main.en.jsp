@@ -90,13 +90,13 @@
                         <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                		<div class="visual visual_04"></div>
                     <div class="text-box phrase">
                         <p>DNA holds our past and future</p>
                         <span class="name">Founder/Chairman of Macrogen<span>  Jeong-Sun Seo</span></span>
                     </div>
-                </div>
+                </div> --> 
             </div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>

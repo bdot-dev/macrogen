@@ -5,8 +5,8 @@
     <if test="langCode != null and langCode != ''">
       and tmp.lang_code = #{langCode}
     </if>
-    <if test="sortOrdr != null and sortOrdr != ''">
-      and tmp.sort_ordr = #{sortOrdr}
+    <if test='searchUseYn != null and searchUseYn != ""'>
+      and tmp.view_yn = #{searchUseYn}
     </if>
   </sql>
 
@@ -26,9 +26,11 @@
 		, tmp.people_dept
 		, tmp.cn_pc
 		, tmp.cn_mo
-		, tmp.link_url
-		, tmp.atch_id as imageAtchId
-		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id ) image_flpth
+		, tmp.atch_id_pc as imageAtchIdPc
+		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id_pc ) image_flpth_pc
+		, tmp.atch_id_mo as imageAtchIdMo
+		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id_mo ) image_flpth_mo
+		, tmp.view_yn
 		, tmp.sort_ordr
 		, tmp.regist_dt
 		, tmp.register_sn
@@ -39,7 +41,11 @@
 	from tb_main_people tmp
 	where 1 = 1
     <include refid="list_where" />
-    order by tmp.people_sn asc
+    order by
+   		<if test='mode != null and mode == "main"'>
+   		tmp.sort_ordr asc,
+   		</if>
+	    tmp.people_sn asc
     <include refid="paging.countBottom" />
   </select>
 
@@ -51,9 +57,11 @@
 		, tmp.people_dept
 		, tmp.cn_pc
 		, tmp.cn_mo
-		, tmp.link_url
-		, tmp.atch_id as imageAtchId
-		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id ) image_flpth
+		, tmp.atch_id_pc as imageAtchIdPc
+		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id_pc ) image_flpth_pc
+		, tmp.atch_id_mo as imageAtchIdMo
+		, ( select physicl_flpth from tb_atch where atch_id = tmp.atch_id_mo ) image_flpth_mo
+		, tmp.view_yn
 		, tmp.sort_ordr
 		, tmp.regist_dt
 		, tmp.register_sn
@@ -77,8 +85,9 @@
 	  , people_dept
 	  , cn_pc
 	  , cn_mo
-	  , link_url
-	  , atch_id
+	  , atch_id_pc
+	  , atch_id_mo
+	  , view_yn
 	  , sort_ordr
 	  , regist_dt
 	  , register_sn
@@ -91,8 +100,9 @@
       , #{peopleDept}
       , #{cnPc}
       , #{cnMo}
-      , #{linkUrl}
-      , #{imageAtchId}
+      , #{imageAtchIdPc}
+      , #{imageAtchIdMo}
+      , #{viewYn}
       , #{sortOrdr}
       , now()
       , #{registerSn}
@@ -114,9 +124,18 @@
         , people_dept = #{peopleDept}
         , cn_pc = #{cnPc}
         , cn_mo = #{cnMo}
-        , link_url = #{linkUrl}
-      <if test="imageAtchId != null">, atch_id = #{imageAtchId} </if>
+        , sort_ordr = #{sortOrdr}
+        , view_yn = #{viewYn}
+      <if test="imageAtchIdPc != null">, atch_id_pc = #{imageAtchIdPc} </if>
+      <if test="imageAtchIdMo != null">, atch_id_mo = #{imageAtchIdMo} </if>
     where people_sn = #{peopleSn}
+  </update>
+
+  <update id="updateSortOrdr" parameterType="mainPeopleVo">
+	update tb_main_people
+	set
+		sort_ordr = #{sortOrdr}
+	where people_sn = #{peopleSn}
   </update>
 
 </mapper>

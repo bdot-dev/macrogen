@@ -31,4 +31,6 @@ public interface MainPeopleMapper {
 
 	void update(MainPeopleVo vo);
 
+	void updateSortOrdr(MainPeopleVo vo);
+
 }

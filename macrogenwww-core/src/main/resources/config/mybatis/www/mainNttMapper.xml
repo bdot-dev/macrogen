@@ -71,6 +71,12 @@
 			<when test='orderBy == "regist_dt_asc"'>
 				order by tmn.regist_dt asc, tmn.main_ntt_sn asc
 			</when>
+			<when test='orderBy == "expsr_prty_desc"'>
+				order by tmn.expsr_prty desc
+			</when>
+			<when test='orderBy == "expsr_prty_asc"'>
+				order by tmn.expsr_prty asc
+			</when>
 			<otherwise>
 				order by tmn.main_ntt_sn desc
 			</otherwise>

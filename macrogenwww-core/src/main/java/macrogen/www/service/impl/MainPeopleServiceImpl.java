@@ -64,4 +64,9 @@ public class MainPeopleServiceImpl extends EgovAbstractServiceImpl implements Ma
 		return view(vo);
 	}
 
+	@Override
+	public void updateSortOrdr(MainPeopleVo vo) throws Exception {
+		mainPeopleMapper.updateSortOrdr(vo);
+	}
+
 }
