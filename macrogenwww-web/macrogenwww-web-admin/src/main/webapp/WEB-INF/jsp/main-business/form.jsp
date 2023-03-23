@@ -57,7 +57,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<th>설명 문구<span>*</span></th>
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
@@ -68,14 +68,14 @@
 									(MO)<textarea v-model='resultVo.mainNttCnMo' ref="mainNttCnMo" placeholder="서브문구(MO)" class="w100p devck" rows='4'></textarea>
 								</div>
 							</td>
-						</tr>
+						</tr> -->
 						<tr>
 							<th>카드 이미지 <span>*</span></th>
 							<td colspan="3" class="tal">
 								<div>
 									(PC)<br>
 									<input type="file" name="imageFilePc" v-on:change="onchangeImageFilePc" />
-									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
+									<span>(사이즈 : 가로사이즈 기준 1030(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
 								</div>
 								<div v-if="resultVo.imageAtchIdPc">
 									<img :src="'${publicUrl }'+ resultVo.imageFlpthPc"
@@ -86,7 +86,7 @@
 								<div>
 									(MO)<br>
 									<input type="file" name="imageFileMobl" v-on:change="onchangeImageFileMobl" />
-									<span>(사이즈 : 가로사이즈 기준 1000(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
+									<span>(사이즈 : 가로사이즈 기준 335(px)  |  용량 : 3MB 이하  |  형식 : jpg, png)</span>
 								</div>
 								<div v-if="resultVo.imageAtchIdMo">
 									<img :src="'${publicUrl }' + resultVo.imageFlpthMobl"
