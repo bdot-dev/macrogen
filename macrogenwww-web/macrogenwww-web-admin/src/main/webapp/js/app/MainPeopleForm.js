@@ -58,8 +58,8 @@ var MainPeopleForm = (function($) {
 						data : JSON.stringify(vm.resultVo),
 					}).done(function(data) {
 						vm.submitFlag = false;
-						alert("배너가 저장되었습니다.");
-						location.href = "/main-people/list";
+						alert("저장되었습니다.");
+						location.href = '/' + options.lang + '/main-people/list';
 					});
 				},
 				onDelete : function() {
