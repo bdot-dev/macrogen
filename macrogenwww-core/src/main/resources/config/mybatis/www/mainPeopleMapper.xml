@@ -5,6 +5,9 @@
     <if test="langCode != null and langCode != ''">
       and tmp.lang_code = #{langCode}
     </if>
+    <if test='searchUseYn != null and searchUseYn != ""'>
+      and tmp.view_yn = #{searchUseYn}
+    </if>
   </sql>
 
   <select id="count" parameterType="mainPeopleVo" resultType="int">
@@ -38,7 +41,11 @@
 	from tb_main_people tmp
 	where 1 = 1
     <include refid="list_where" />
-    order by tmp.people_sn asc
+    order by
+   		<if test='mode != null and mode == "main"'>
+   		tmp.sort_ordr asc,
+   		</if>
+	    tmp.people_sn asc
     <include refid="paging.countBottom" />
   </select>
 
