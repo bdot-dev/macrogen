@@ -57,7 +57,7 @@
 								</div>
 							</td>
 						</tr>
-						<!-- <tr>
+						<tr>
 							<th>설명 문구<span>*</span></th>
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
@@ -68,7 +68,7 @@
 									(MO)<textarea v-model='resultVo.mainNttCnMo' ref="mainNttCnMo" placeholder="서브문구(MO)" class="w100p devck" rows='4'></textarea>
 								</div>
 							</td>
-						</tr> -->
+						</tr>
 						<tr>
 							<th>카드 이미지 <span>*</span></th>
 							<td colspan="3" class="tal">
