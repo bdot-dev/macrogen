@@ -771,7 +771,7 @@
                                 </div>
                             </div>                            
                         </div> 
-                        <div class="swiper-slide" style="background-color: #DEFBD1;">
+                        <!-- <div class="swiper-slide" style="background-color: #DEFBD1;">
                             <div class="flip">
                                 <div class="front">
                                     <span class="img"><img src="../../img/main/img-people_03.png" alt="1"></span>      
@@ -792,7 +792,7 @@
                                         trusted company.</p>
                                 </div>
                             </div>                            
-                        </div>                                            
+                        </div>                                             -->
                     </div>
                 </div>
             </div>
@@ -813,7 +813,7 @@
                         }
 
                         var html = $("._peopleSlider .swiper-wrapper").html();                        
-                        $(".swiper-wrapper").append(html);                        
+                        $("._peopleSlider .swiper-wrapper").append(html);                        
                         
                         if(conCnt < 4){
                             $container.addClass("sm");                               
@@ -832,23 +832,27 @@
                             //     disableOnInteraction: false,
                             // },
                             speed: 1000,
-                            lazy: true,                            
+                            lazy: true,       
+                            // on: {
+                            //     slideChangeTransitionEnd: function() {
+                            //         var $slides = $container.find('.swiper-slide');
+                            //         $slides.removeClass('rotate');
+                            //         var $activeSlide = $container.find('.swiper-slide-active');
+                            //         $activeSlide.addClass('rotate');
+                            //     }
+                            // }                   
                         }       
                         pSwiper = new Swiper($container, options)               
                     }          
                     
                     $('._peopleSlider .swiper-slide').on('click',function (){                             
-                        var swiper = $(this);
-                        //var sub = setTimeout(function() {
-                            //if(swiper.hasClass('swiper-slide-active')) {
-                                if(!swiper.hasClass('rotate') ) {
-                                    swiper.addClass("rotate").siblings().removeClass("rotate");
-                                }
-                                else{
-                                    swiper.removeClass("rotate");
-                                }
-                            //}
-                        //}, 300);                                                
+                        var swiper = $(this);                        
+                        if(!swiper.hasClass('rotate') ) {
+                            swiper.addClass("rotate").siblings().removeClass("rotate");
+                        }
+                        else{
+                            swiper.removeClass("rotate");
+                        }                                                                
                     })
                 });
             </script>
