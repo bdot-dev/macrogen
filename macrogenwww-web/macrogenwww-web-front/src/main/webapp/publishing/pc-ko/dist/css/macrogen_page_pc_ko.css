@@ -7868,7 +7868,8 @@
     .main-wrap .main-page .section-business .info-box {
       margin: 145px auto 100px; }
       .main-wrap .main-page .section-business .info-box .title {
-        margin-bottom: 27px; }
+        margin-bottom: 27px; 
+        text-align: left;}
       .main-wrap .main-page .section-business .info-box .desc {
         margin-left: 215px; }
     .main-wrap .main-page .section-business .business {
@@ -7943,42 +7944,34 @@
         line-height: 30px; 
         letter-spacing: -0.5px; 
         color: #fff}
-        .people_swiper {overflow:hidden;position: relative;width:100%;height: 524px;}
+        .people_swiper {overflow: hidden;position: relative;width: 100%;height: 524px;}
         .people_swiper.sm{width: 1468px;margin: 0 auto;}
         .people_swiper .swiper-wrapper{display: flex; align-items: center; margin-left: -61px; }
-        .people_swiper .swiper-slide {position: relative; width:402px;height:402px; border-radius: 100%; transition: 0.5s; }
+        .people_swiper .swiper-slide {position: relative; width: 402px;height:402px; border-radius: 100%; transition: 0.5s; }
         .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
         .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
         .people_swiper .swiper-slide.bg03{background-color: #DEFBD1;}
         .people_swiper .flip {position:relative;width:100%;height:100%;}
-        .people_swiper .flip .front, .people_swiper .flip .back {position:absolute;width:100%;height:100%; transition: 0.5s; cursor: pointer;}
+        .people_swiper .flip .front, .people_swiper .flip .back {position: absolute;width: 100%;height: 100%; transition: 0.5s;cursor: pointer;}
         .people_swiper .flip .front {overflow: hidden;  border-radius: 100%;}
-        .people_swiper .flip .front .img {position: absolute; right:50%; bottom:0; width: 383px; height: 333px; margin-right: 0; transform: translateX(50%); transition: all .5s; }
-        .people_swiper .flip .front .img img{display: block; width:100%; height:100%;}
-        .people_swiper .flip .front .info-area{opacity: 0; transition:0.5s;}
-        .people_swiper .flip .front .name{position: absolute; top:162px; left:68px; text-align: left; font-size: 14px; line-height: 20px; letter-spacing: -0.5px;}
-        .people_swiper .flip .front .name strong{display:block; margin-bottom: 10px; font-weight: 700; font-size: 24px; line-height: 30px;}
-        .people_swiper .flip .front .btn-text {position: absolute; top:347px; left:68px;}
-        .people_swiper .flip .back {padding:80px 33px 0; text-align: center; opacity: 0;}
-        .people_swiper .flip .back .name{position: relative; display:block; padding-bottom: 13px; margin-bottom: 45px; font-size: 14px; line-height: 30px; }
-        .people_swiper .flip .back .name::after{content: '';
-          display: inline-block;
-          position: absolute;
-          left: 50%;
-          bottom: 0;
-          border-top: 4px solid #000;
-          width: 50px;     
-           margin-left: -25px;}
+        .people_swiper .flip .front .img {position: absolute; right: 50%;bottom:0;width: 383px;height: 333px;margin-right: 0;transform: translateX(50%);transition: all .5s; }
+        .people_swiper .flip .front .img img{display: block; width: 100%; height: 100%;}
+        .people_swiper .flip .front .info-area{opacity: 0; transition: 0.5s;}
+        .people_swiper .flip .front .name{position: absolute;top: 162px; left:68px; text-align: left;font-size: 14px;line-height: 20px;letter-spacing: -0.5px;}
+        .people_swiper .flip .front .name strong{display: block; margin-bottom: 10px;font-weight: 700;font-size: 24px;line-height: 30px;}
+        .people_swiper .flip .front .btn-text {position: absolute;top: 347px;left: 68px;}
+        .people_swiper .flip .back {padding: 80px 33px 0;text-align: center;opacity: 0;}
+        .people_swiper .flip .back .name{position: relative; display: block;padding-bottom: 13px; margin-bottom: 45px; font-size: 14px; line-height: 30px; }
+        .people_swiper .flip .back .name::after{content: ''; display: inline-block; position: absolute;left: 50%; bottom: 0; border-top: 4px solid #000;width: 50px; margin-left: -25px;}
         .people_swiper .flip .back .name strong{display:block; margin-bottom: 10px; font-weight: 700; font-size: 26px; text-align: center;}        
-        .people_swiper .flip .back .txt{font-weight: 400; font-size: 16px; line-height: 28px;}
-        .people_swiper .swiper-slide.swiper-slide-active {width:524px; height:524px; }
-        .people_swiper .swiper-slide.swiper-slide-active .flip {width:100%; height:100%; }
+        .people_swiper .flip .back .txt{font-weight: 400; font-size: 16px;line-height: 28px;}
+        .people_swiper .swiper-slide.swiper-slide-active {width: 524px; height: 524px; }
+        .people_swiper .swiper-slide.swiper-slide-active .flip {width: 100%; height: 100%; }
         .people_swiper .swiper-slide.swiper-slide-active .flip .front{justify-content:right; }        
         .people_swiper .swiper-slide.swiper-slide-active .flip .front .info-area{opacity: 1;}
-        .people_swiper .swiper-slide.swiper-slide-active .flip .front .img{right:0; bottom: 50px; transform: scale(1.3); }                        
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .front{opacity: 0;}
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1;}
-        
+        .people_swiper .swiper-slide.swiper-slide-active .flip .front .img{right: 0;bottom: 50px;transform: scale(1.3); }                        
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front{opacity: 0 !important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1 !important;}
 /*//2023리뉴얼*/
 
   .main-wrap .main-page .section-news .info-box {
