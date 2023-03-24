@@ -7946,7 +7946,10 @@
         .people_swiper {overflow:hidden;position: relative;width:100%;height: 524px;}
         .people_swiper.sm{width: 1468px;margin: 0 auto;}
         .people_swiper .swiper-wrapper{display: flex; align-items: center; margin-left: -61px; }
-        .people_swiper .swiper-slide {position: relative; width:402px;height:402px; border-radius: 100%; transition: 0.5s;}
+        .people_swiper .swiper-slide {position: relative; width:402px;height:402px; border-radius: 100%; transition: 0.5s; }
+        .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
+        .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
+        .people_swiper .swiper-slide.bg03{background-color: #DEFBD1;}
         .people_swiper .flip {position:relative;width:100%;height:100%;}
         .people_swiper .flip .front, .people_swiper .flip .back {position:absolute;width:100%;height:100%; transition: 0.5s; cursor: pointer;}
         .people_swiper .flip .front {overflow: hidden;  border-radius: 100%;}
