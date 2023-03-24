@@ -599,138 +599,79 @@
                                         trusted company.</p>
                                 </div>
                             </div>                            
-                        </div> 
-                        </div>
+                        </div>                         
                     </div>
                     <div class="swiper-pagination"></div>
-                        <script>
-                            var swiperScrollbar = null
-                            $(document).ready(function (){
-                                /*slide 영역*/
-                                setSlider2();
-                                function setSlider2() {      
-                                    var pSwiper;
-                                    var $container = $('._peopleSlider');
-                                    var $conLi = $container.find('.swiper-slide');                                
-                                    var conCnt = $conLi.length;
-                                    let options = {};
-            
-                                    if (pSwiper !== undefined) {
-                                        console.log('pSwiper');
-                                        return false
-                                    }   
-                                    options = {
-                                        centeredSlides: true, 
-                                        slidesPerView: "auto",
-                                        slideToClickedSlide : true,
-                                        loop:true,
-                                        loopedSlides: 30,
-                                        loopAdditionalSlides: 10,
-                                        allowTouchMove : true,
-                                        spaceBetween: 70,
-                                        // autoplay: {
-                                        //     delay: 1000,
-                                        //     disableOnInteraction: false,
-                                        // },
-                                        speed: 1000,
-                                        lazy: true,      
-                                        
-                                        pagination: {
-                                        el: '.swiper-pagination',
-                                        clickable: 'true',
-                                        type: 'bullets',
-                                        renderBullet: function (index, className) {
-                                        return '<span class="' + className + '">' + '<i></i>' + '</span>';
-                                        },
+                </div>
+            </div>
+            <script>
+                var swiperScrollbar = null
+                $(document).ready(function (){
+                    /*slide 영역*/
+                    setSlider2();
+                    function setSlider2() {      
+                        var pSwiper;
+                        var $container = $('._peopleSlider');
+                        var $conLi = $container.find('.swiper-slide');                                
+                        var conCnt = $conLi.length;
+                        let options = {};
 
-                             },                      
-                                    }       
-                                    pSwiper = new Swiper($container, options) 
-                                                  
-                                }  
-                                
-                                
-                                
+                        if (pSwiper !== undefined) {
+                            console.log('pSwiper');
+                            return false
+                        }   
+                        options = {
+                            centeredSlides: true, 
+                            slidesPerView: "auto",
+                            slideToClickedSlide : true,
+                            loop:true,
+                            loopedSlides: 30,
+                            loopAdditionalSlides: 10,
+                            allowTouchMove : true,
+                            spaceBetween: 70,
+                            // autoplay: {
+                            //     delay: 1000,
+                            //     disableOnInteraction: false,
+                            // },
+                            speed: 1000,
+                            lazy: true,      
+                            
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: 'true',
+                                type: 'bullets',
+                                renderBullet: function (index, className) {
+                                return '<span class="' + className + '">' + '<i></i>' + '</span>';
+                            },
 
-                                $('._peopleSlider .swiper-slide').on('click',function (){                             
-                                    var swiper = $(this);
-                                     //var sub = setTimeout(function() {
-                                     //if(swiper.hasClass('swiper-slide-active')) {
-                                if(!swiper.hasClass('rotate') ) {
-                                    swiper.addClass("rotate").siblings().removeClass("rotate");
-                                }
-                                else{
-                                    swiper.removeClass("rotate");
-                                }
+                    },                      
+                        }       
+                        pSwiper = new Swiper($container, options)                                         
+                    }                      
 
-                                
-                            //}
-                        //}, 300);                                                
-                    })
+                    $('._peopleSlider .swiper-slide').on('click',function (){                             
+                        var swiper = $(this);
+                            //var sub = setTimeout(function() {
+                            //if(swiper.hasClass('swiper-slide-active')) {
+                    if(!swiper.hasClass('rotate') ) {
+                        swiper.addClass("rotate").siblings().removeClass("rotate");
+                    }
+                    else{
+                        swiper.removeClass("rotate");
+                    }
 
                     
-                });
-                                
-                                
-                            
-                        </script>
-                        <!-- <script>
-                            $(function(){                
-                                setSlider2();
-                                function setSlider2() {      
-                                    var pSwiper;
-                                    var $container = $('._peopleSlider');
-                                    var $conLi = $container.find('.swiper-slide');                                
-                                    var conCnt = $conLi.length;
-                                    let options = {};
-            
-                                    if (pSwiper !== undefined) {
-                                        console.log('pSwiper');
-                                        return false
-                                    }
-            
-                                    var html = $("._peopleSlider .swiper-wrapper").html();                        
-                                    $(".swiper-wrapper").append(html);                        
-                                    
-                                    if(conCnt < 4){
-                                        $container.addClass("sm");                               
-                                    }    
-                                    options = {
-                                        centeredSlides: true, 
-                                        slidesPerView: "auto",
-                                        slideToClickedSlide : true,
-                                        loop:true,
-                                        loopedSlides: 30,
-                                        loopAdditionalSlides: 10,
-                                        allowTouchMove : true,
-                                        spaceBetween: 70,
-                                        // autoplay: {
-                                        //     delay: 1000,
-                                        //     disableOnInteraction: false,
-                                        // },
-                                        speed: 1000,
-                                        lazy: true,                            
-                                    }       
-                                    pSwiper = new Swiper($container, options)               
-                                }          
-                                
-                                $('._peopleSlider .swiper-slide').on('click',function (){                             
-                                    var swiper = $(this);
-                                    //var sub = setTimeout(function() {
-                                        //if(swiper.hasClass('swiper-slide-active')) {
-                                            if(!swiper.hasClass('rotate') ) {
-                                                swiper.addClass("rotate").siblings().removeClass("rotate");
-                                            }
-                                            else{
-                                                swiper.removeClass("rotate");
-                                            }
-                                        //}
-                                    //}, 300);                                                
-                                })
-                            });
-                        </script> -->
+                //}
+            //}, 300);                                                
+        })
 
-                         <!-- e People :2023리뉴얼--> 
+        
+    });
+                    
+                    
+                
+            </script>
+            <!-- e People :2023리뉴얼--> 
 
             <!-- s  news & event-->
             <div class="section-media">
