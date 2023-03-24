@@ -3618,7 +3618,12 @@
   .main-wrap .main-page .info-box .title {
     font-weight: bold;
     font-size: 40px;
-    line-height: 58px; }
+    line-height: 58px;
+    text-align: left!important;
+    text-transform: capitalize!important;
+    letter-spacing: -1px!important;
+    font-family: 'AppleSDGothicNeoB00'!important;
+     }
   .main-wrap .main-page .info-box .desc {
     font-size: 16px;
     line-height: 32px;
@@ -4061,11 +4066,9 @@
           line-height: 72px;
           letter-spacing: 3px;
           text-transform: uppercase;
-        } */
+        } 
 
-        .main-wrap .main-page .section-media .media {
-          /* width: 1244px; */
-        }
+       
 
         .main-wrap .main-page .section-media .media .slider {
           position: relative;
@@ -4194,10 +4197,13 @@
           color: #909090;
         }
 
+       
+
+
         /* slide bar */        
         .main-wrap .main-page .section-media .swiper-container-horizontal > .swiper-pagination-bullets {
           display: flex;
-          bottom: -25px;
+         
         }
 
         .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -4206,12 +4212,11 @@
           width: 100%;
         }
 
-        .main-wrap .main-page .section-people .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-          bottom: 0;
-
+        .main-wrap .main-page .section-media .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+          bottom: -36px;
         }
 
-        .main-wrap .main-page .section-people .swiper-pagination-bullet {
+        .main-wrap .main-page .section-media .swiper-pagination-bullet {
           position: relative;
           /* width: calc(100% / 5); */
           flex: 1;
@@ -4221,11 +4226,11 @@
           background-color:transparent;
         }
 
-        .main-wrap .main-page .section-people .swiper-pagination-bullet.swiper-pagination-bullet-active i {
+        .main-wrap .main-page .section-media .swiper-pagination-bullet.swiper-pagination-bullet-active i {
           background-color: #666;
         }
 
-        .main-wrap .main-page .section-people .swiper-pagination-bullet i {
+        .main-wrap .main-page .section-media .swiper-pagination-bullet i {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -4234,7 +4239,6 @@
           height: 1px;
           background-color: #f7f7f7;
         } 
-
         
 
 
@@ -4361,7 +4365,8 @@
         position: relative;
         margin: unset; }
         .main-wrap .main-page .section-media .media .slider .swiper-container {
-          overflow: unset; }
+          overflow: unset; 
+        margin-bottom: 110px;}
           .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide.item {
             width: 315px !important;
             margin-right: 20px; }
