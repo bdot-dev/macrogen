@@ -78,10 +78,12 @@ public class MainRenewalController extends DefaultController {
 		MainSomlnkVo somlnkVo = new MainSomlnkVo();
 		
 		somlnkVo.setBrdid("news");
+		somlnkVo.setOrderBy("regist_dt_desc");
 		
 		somlnkVo.setLangCode(langId.name());
 		somlnkVo.setFirstIndex(0);
 		somlnkVo.setRecordCountPerPage(20);
+		
 		
 		Date now = new Date();
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
