@@ -3290,13 +3290,15 @@
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
         width: 100%;
         height: 100%; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 {
-        background: url("../img/main/img-main_00.png") no-repeat center bottom/cover; }
+     /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 {
+        background: url("../img/main/img-main_00.png") no-repeat center bottom/cover; }*/
         
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box {
-          left: 0;
+          position: absolute;
+          top: 50%;
+          left: 5.33%;
           width: 100%;
-          text-align: center; }
+          /*text-align: center; */}
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box .text-gradient {
             font-weight: 700;
             font-size: 24px;
@@ -3319,7 +3321,7 @@
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box .btns {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: left;
             margin-top: 40px; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_00 .text-box .btns button {
             width: 200px;
@@ -3333,14 +3335,14 @@
             border: 1px solid rgba(255, 255, 255, 0.6);
             border-radius: 100px;
             background: rgba(255, 255, 255, 0.15); }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
+     /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
         background: url("../img/main/img-main_01.png") no-repeat center bottom/cover; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 {
         background: url("../img/main/img-main_02.png") no-repeat center center/cover; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 {
         background: url("../img/main/img-main_03.png") no-repeat center center/cover; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
-        background: url("../img/main/img-main_04.png") no-repeat center center/cover; }
+        background: url("../img/main/img-main_04.png") no-repeat center center/cover; }*/
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
@@ -3356,7 +3358,7 @@
           letter-spacing: -0.06em;
           color: #ffffff;
           font-feature-settings: 'kern' off; }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p .text-gradient {
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 .text-box p > span {
             background: linear-gradient(to right, #00ADA9, #377EF9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; }
@@ -3615,15 +3617,15 @@
 
 
     }*/ }
-  .main-wrap .main-page .info-box .title {
+  /*.main-wrap .main-page .info-box .title {
     font-weight: bold;
     font-size: 40px;
     line-height: 58px;
     text-align: left!important;
     text-transform: capitalize!important;
-    letter-spacing: -1px!important;
+    
     font-family: 'AppleSDGothicNeoB00'!important;
-     }
+     }*/
   .main-wrap .main-page .info-box .desc {
     font-size: 16px;
     line-height: 32px;
@@ -4060,12 +4062,13 @@
 
         .main-wrap .main-page .info-box .title {
           margin-bottom: 33px;
-          text-align: center;
+          text-align: left;
           font-weight: 700;
           font-size: 50px;
           line-height: 72px;
           letter-spacing: 3px;
-          text-transform: uppercase;
+          text-transform: capitalize;
+          font-family:'AppleSDGothicNeoB00' ;
         } 
 
        
@@ -4481,7 +4484,7 @@
           font-size: 12px;
           letter-spacing: -0.5px;
           text-transform: uppercase;
-          color: #FFFFFF; }
+          color: #000; }
           .main-wrap .main-page .section-map .inner .map .pin i {
             margin-top: -6px;
             width: 12px;
