@@ -1,5 +1,7 @@
 package macrogen.www.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.MainNttService;
 import macrogen.www.service.MainPeopleService;
+import macrogen.www.service.MainSomlnkService;
 import macrogen.www.vo.MainNttVo;
 import macrogen.www.vo.MainPeopleVo;
+import macrogen.www.vo.MainSomlnkVo;
 
 @Controller
 @RequestMapping("/{langId}/main-new")
@@ -25,6 +29,9 @@ public class MainRenewalController extends DefaultController {
 	
 	@Autowired
 	private MainPeopleService mainPeopleService;
+	
+	@Autowired
+	private MainSomlnkService mainSomlnkService;
 	
 	@RequestMapping("")
 	public String main(@PathVariable LangId langId, Model model,
@@ -65,7 +72,28 @@ public class MainRenewalController extends DefaultController {
 		
 		List<MainNttVo> mainBusinessList = mainNttService.list(mainBusinessVo);
 		model.addAttribute("mainBusinessList", mainBusinessList);
-				
+		
+		
+		// 뉴스&이벤트 관리
+		MainSomlnkVo somlnkVo = new MainSomlnkVo();
+		
+		somlnkVo.setBrdid("news");
+		somlnkVo.setOrderBy("regist_dt_desc");
+		
+		somlnkVo.setLangCode(langId.name());
+		somlnkVo.setFirstIndex(0);
+		somlnkVo.setRecordCountPerPage(20);
+		
+		
+		Date now = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String nowDt = df.format(now);
+		somlnkVo.setNowDt(df.parse(nowDt));
+
+		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
+		model.addAttribute("mainSomlnkList", mainSomlnkList);
+
+		
 		return getDev() + "/main-new/main-new." + getLang();
 	}
 	

@@ -259,37 +259,39 @@
                 </div>
                 <!-- 피플 관리 영역 end-->        
 
-            <%-- <!-- s  news -->
-            <c:if test="${ fn:length(newsList) gt 0 }">
-	            <div class="section-news">
+            <!-- start  NEWS AND EVENTS -->
+                <div class="section-news">
 	                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
-	                    <div class="title">News</div>
-	                    <div class="desc">전세계 모든 인류가 건강한 세상을 꿈꾸는<br>마크로젠의 새로운 소식을 알려드립니다</div>
+	                    <div class="title">NEWS AND EVENTS</div>
+	                    <div class="desc">최신 업데이트된 마크로젠의 소식을 만나실 수 있습니다</div>
 	                </div>
-	                <div class="board">
-	                    <div class="list list-border hover">
-	                    	<c:forEach var="result" items="${ newsList }" varStatus="status">
-		                        <div class="item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-		                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
-		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="tit">${ result.nttSj }</a>
-		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
-		                        </div>
-	                    	</c:forEach>
-	                    </div>
-	                    <a href="/${rc.locale.language }/newsroom/news" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000"
-	                       data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
-	                </div>
-	                <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-	                    <div class="info-box">
-	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">도움이 필요하신가요?</div>
-	                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">전문가와 가장 적합한 솔루션을 확인해보세요</div>
-	                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>문의하기</span><i class="icon icon-arrow-right-short"></i></a>
-	                    </div>
-	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
-	                </div>
-	            </div>
-            </c:if>
-            <!-- e  news --> --%>
+	                <c:forEach var="result" items="${mainSomlnkList}" varStatus="status">
+	                	<table border="1">
+                			<tr>
+	                			<th>카테고리 : </th>
+	                			<td>${result.somlnkCtgryCode}</td>
+	                		</tr>
+	                		<tr>
+	                			<th>이미지 : </th>
+	                			<td><img src="${publicUrl}${result.imageAtchId}"</td>
+	                		</tr>
+	                		<tr>
+	                			<th>제목 : </th>
+	                			<td>${result.somlnkSj}</td>
+	                		</tr>
+	                		<tr>
+	                			<th>내용 : </th>
+	                			<td>${result.somlnkDt}</td>
+	                		</tr>
+	                		<tr>
+	                			<th>날짜: </th>
+	                			<td><div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div></td>
+	                		</tr>
+               			</table>           	
+	                </c:forEach>
+                </div>
+          </div>
+            <!-- end NEWS AND EVENTS -->
 
             <%-- <!-- s  media -->
             <div class="section-media">
@@ -540,7 +542,7 @@
 			}
 		}
 		
-		function popupClose(sn, idx) {
+		function popupClose(sn, idx){
 			if ($('#popup-sn'+idx).is(':checked')) {
 				if (!sn) return;
 	

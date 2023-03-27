@@ -51,6 +51,7 @@
 		, tms.image_atch_id
 		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
 		, tms.somlnk_sj
+		, tms.somlnk_dt
 		, tms.somlnk_url
 		, tms.sort_ordr
 		, tms.regist_dt
