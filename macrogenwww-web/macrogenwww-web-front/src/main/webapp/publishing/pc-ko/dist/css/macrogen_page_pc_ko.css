@@ -7450,21 +7450,22 @@
         background-size: cover;}
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video{
           height: 100%; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .visual {
-        background: url("../img/main/img-main_00.png") no-repeat center bottom; }
+     /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .visual {
+        background: url("../img/main/img-main_00.png") no-repeat center bottom; }*/
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box {
-          top: 337px;
-          left: 0;
+          position: absolute;
+          top: 413px;
+          left: 346px;
           width: 100%;
-          text-align: center; }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .text-gradient {
+          /*ext-align: center;*/ }
+         /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .text-gradient {
             margin-bottom: 6px;
             font-weight: 700;
             font-size: 42px;
             letter-spacing: -0.06em;
             line-height: 131%;
             font-feature-settings: 'kern' off;
-          }
+          }*/
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .slogan-sub {
             font-family: 'Proxima Nova';
             font-weight: 700;
@@ -7481,7 +7482,7 @@
           }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             margin-top: 37px;
           }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns button {
@@ -7498,20 +7499,20 @@
             border-radius: 100px;
             background: rgba(255, 255, 255, 0.15);
           }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
-        background: url("../img/main/img-main_01.png") no-repeat center bottom; }
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
+        background: url("../img/main/img-main_01.png") no-repeat center bottom; }*/
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 .text-gradient img {
           width: 612px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 {
-        background: url("../img/main/img-main_02.png") no-repeat center center; }
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 {
+        background: url("../img/main/img-main_02.png") no-repeat center center; }*/
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_02 .text-gradient img {
           width: 611px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 {
-        background: url("../img/main/img-main_03.png") no-repeat center center; }
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 {
+        background: url("../img/main/img-main_03.png") no-repeat center center; }*/
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 .text-gradient img {
           width: 532px; }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
-        background: url("../img/main/img-main_04.png") no-repeat center center; }
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
+        background: url("../img/main/img-main_04.png") no-repeat center center; }*/
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
