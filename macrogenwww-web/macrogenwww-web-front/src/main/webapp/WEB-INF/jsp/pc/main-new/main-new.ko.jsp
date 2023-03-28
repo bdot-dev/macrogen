@@ -351,7 +351,7 @@
 				</div>
 				<script>
 					$(document).ready(function(){
-						$('.business').css("cursor","url('../../img/main/img-cursor.cur'), auto");
+						$('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor.cur'), auto");
 					});
 				</script>
 				<!-- e  business slide -->				
