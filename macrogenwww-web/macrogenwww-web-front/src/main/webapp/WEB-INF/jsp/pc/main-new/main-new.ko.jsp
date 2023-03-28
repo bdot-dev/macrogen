@@ -65,14 +65,34 @@
 		<!-- 유튜브 링크 넣어서 테스트  -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-            
+            	<!-- mp4일때 -->
+               <!-- <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+                	<video class="video" autoplay muted loop playsinline><source src="https://www.youtube.com/embed/PYVP4IpaeRo?controls=0&autoplay=1&mute=1" type="video/mp4"></video>
+                    <div class="text-box">
+                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
+                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+                	<iframe frameborder="0" height="100%" width="100%" 
+                    src="https://www.youtube.com/embed/_YdFyzU8ryA?autoplay=0&controls=0&fs=0&loop=1&modestbranding=1&iv_load_policy=3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    
+                </div>
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
 	               	<c:if test="${result.expsrYn == 'Y'}">
-		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
-			            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+		                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
+		                	<%-- <c:if test="">		                	
+				            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+		                	</c:if> --%>
 		                    <div class="text-box">
 		                        <p class="slogan-sub">${result.mainNttSjPc}</p>
-		                        <p class="desc">${result.mainNttCnPc}</p>
+		                        <p class="desc">${fn:replace(result.mainNttCnPc, newLineChar, "<br/>")}</p>
 		                        <c:choose>
 		                        	<c:when test="${result.btYn != 0 && result.btYn == 1}">
 				                        <div class="btns">
@@ -326,7 +346,7 @@
 												</a>  
 											</div>
 											<div class="desc">
-												${ result.mainNttCnPc }
+												${fn:replace(result.mainNttCnPc, newLineChar, "<br/>")}
 											</div>	
 										</div> 
 									</div>	          
