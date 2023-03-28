@@ -311,48 +311,50 @@
 						</div>
 					</div>
 					<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
-	<div class="slider">	
-		<div class="swiper-container _businessSlider">
-			<div class="swiper-wrapper">
-				<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-					<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
-						<div class="text-area">
-							<div class="title">
-								<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
-									<span class="btn btn-circle btn-white btn-md">
-										<i class="icon icon-arrow-right-short"></i>
-									</span>
-								</a>  
-							</div>
-							<div class="desc">
-								${ result.mainNttCnPc }
-							</div>	
-						</div>           
-				</c:forEach>	
-
-			</div>		
-		</div>				
-	</div>
-	<script>
-		$(document).ready(function (){
-			/*slide 영역*/
-				new Swiper ("._businessSlider", {
-				slidesPerView: "auto",
-				centeredSlides: true,
-				loop: true,
-			});
-		})
-	</script>				
-
-</div>
-
-</div>
-<script>
-	$(document).ready(function(){
-		$('.business').css("cursor","url('../../img/main/img-cursor.cur'), auto");
-	});
-</script>
-<!-- e  business slide -->				
+					<div class="slider">	
+						<div class="swiper-container _businessSlider">
+							<div class="swiper-wrapper">
+							
+								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
+									<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+										<div class="text-area">
+											<div class="title">
+												<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
+													<span class="btn btn-circle btn-white btn-md">
+														<i class="icon icon-arrow-right-short"></i>
+													</span>
+												</a>  
+											</div>
+											<div class="desc">
+												${ result.mainNttCnPc }
+											</div>	
+										</div> 
+									</div>	          
+								</c:forEach>	
+				
+							</div>		
+						</div>				
+					</div>
+					<script>
+						$(document).ready(function (){
+							/*slide 영역*/
+								new Swiper ("._businessSlider", {
+								slidesPerView: "auto",
+								centeredSlides: true,
+								loop: true,
+							});
+						})
+					</script>				
+				
+				</div>
+				
+				</div>
+				<script>
+					$(document).ready(function(){
+						$('.business').css("cursor","url('../../img/main/img-cursor.cur'), auto");
+					});
+				</script>
+				<!-- e  business slide -->				
 				
 				<!-- e  business  slide -->
 				
@@ -467,46 +469,46 @@
                 </div>
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 
-	<div class="slider">
-		<div class="slider-navigation">
-			<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-			<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-		</div>
-				        
-		<div class="swiper-container _mediaSlider">
-			<div class="swiper-wrapper">
-				        	
-				<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
-					<div class="swiper-slide">
-						<a href="${ result.somlnkUrl }" target="_blank">
-							<div class="img">
-								<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
-								<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-							</div>
-							<div class="content">${result.somlnkSj }</div>
-							<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-						</a>
+				<div class="slider">
+					<div class="slider-navigation">
+						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+						<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
 					</div>
-				</c:forEach>
-				        		
+							        
+					<div class="swiper-container _mediaSlider">
+						<div class="swiper-wrapper">
+							        	
+							<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<div class="swiper-slide">
+									<a href="${ result.somlnkUrl }" target="_blank">
+										<div class="img">
+											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+										</div>
+										<div class="content">${result.somlnkSj }</div>
+										<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+									</a>
+								</div>
+							</c:forEach>
+							        		
+							</div>
+						</div>				        
+					</div>
+					<script>
+						new Swiper("._mediaSlider", {
+							spaceBetween: 52,
+							slidesPerView: "auto",
+							slidesPerGroup: 3,
+							grabCursor: true,
+							loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+							/* loop : true, */
+							navigation: {
+								nextEl: "._btnNext",
+								prevEl: "._btnPrev",
+							},
+						});
+					</script>
 				</div>
-			</div>				        
-		</div>
-		<script>
-			new Swiper("._mediaSlider", {
-				spaceBetween: 52,
-				slidesPerView: "auto",
-				slidesPerGroup: 3,
-				grabCursor: true,
-				loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-				/* loop : true, */
-				navigation: {
-					nextEl: "._btnNext",
-					prevEl: "._btnPrev",
-				},
-			});
-		</script>
-	</div>
 			</div>
 	
 			<!-- s  global map -->
