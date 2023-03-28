@@ -15,7 +15,7 @@
         </header>
         <script>
             var gnb2depth = $('#gnb2Depth .box')
-            let gnbIndex = $('#gnb li')
+            gnbIndex = $('#gnb li')
 
             $('#gnb li').mouseover(function () {
                 $('.header-main').css('background','#fff');
@@ -603,10 +603,10 @@
 		</div>
 	</div>        
 	
-	<a href="#" class="btn btn-text btn-totop">
-    	<i class="icon icon-arrow-top-long"></i>
-    	<span>TOP</span>
-	</a>
+	<c:import url="/inc/footer" />
+    <a href="#" class="btn btn-text btn-totop">
+    <i class="icon icon-arrow-top-long"></i> 
+    <span>TOP</span>
 	
 	<script>
 	    $(document).ready(function(){
