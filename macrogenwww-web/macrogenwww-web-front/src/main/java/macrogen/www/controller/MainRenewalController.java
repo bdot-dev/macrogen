@@ -40,7 +40,7 @@ public class MainRenewalController extends DefaultController {
 		// 메인 배너
 		MainNttVo mainBannerVo = new MainNttVo();
 		mainBannerVo.setLangCode(langId.name());
-		mainBannerVo.setMainBbsId("banner");
+		mainBannerVo.setMainBbsId("banner"); 
 		mainBannerVo.setFirstIndex(0);		
 		mainBannerVo.setOrderBy("expsr_prty_asc");
 		
