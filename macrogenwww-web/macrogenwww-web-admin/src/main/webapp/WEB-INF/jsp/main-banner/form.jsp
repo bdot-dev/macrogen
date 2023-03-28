@@ -55,11 +55,11 @@
 							
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
-									(PC)<input type="text" ref="mainNttSjPc" maxlength="50" placeholder="제목(PC)" v-model="resultVo.mainNttSjPc" class="w100p" />
+									(PC)<input type="text" ref="mainNttSjPc" maxlength="300" placeholder="제목(PC)" v-model="resultVo.mainNttSjPc" class="w100p" />
 								</div>
 								<br>
 								<div class="lbMaxlenPrnt">
-									(MO)<input type="text" ref="mainNttSjMo" maxlength="50" placeholder="제목(MO)" v-model="resultVo.mainNttSjMo" class="w100p" />
+									(MO)<input type="text" ref="mainNttSjMo" maxlength="300" placeholder="제목(MO)" v-model="resultVo.mainNttSjMo" class="w100p" />
 								</div>
 							</td>
 						</tr>
