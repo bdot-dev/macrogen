@@ -7392,34 +7392,34 @@
         overflow:hidden; 
         background-size: cover;}
     
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .visual {
-        background: url("../img/main/img-main_00.png") no-repeat center bottom; }
-        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box {
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .visual {
+        background: url("../img/main/img-main_00.png") no-repeat center bottom; }*/
+        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual .text-box {
           position: absolute;
           top: 413px;
           left: 333px;
           width: 100%;
            }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .slogan-sub {
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual .text-box .slogan-sub {
             font-family: 'Proxima Nova';
             font-weight: 700;
-            font-size: 46px;
+            font-size: 48px;
             letter-spacing: -0.02em;
             line-height: 107%;
             font-feature-settings: 'kern' off; }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .desc {
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual .text-box .desc {
             margin-top: 15px;
             font-weight: 400;
             font-size: 18px;
             line-height: 133%;
             letter-spacing: -0.02em;
             font-feature-settings: 'kern' off; }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns {
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual .text-box .btns {
             display: flex;
             justify-content: left;
             margin-top: 35px;
           }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_00 .text-box .btns button {
+          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual .text-box .btns button {
             width: 170px;
             height: 38px;
             margin: 0 5px;
@@ -7433,7 +7433,7 @@
             border-radius: 100px;
             background: rgba(255, 255, 255, 0.15);
           }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
+      /*.main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_01 {
         background: url("../img/main/img-main_01.png") no-repeat center bottom; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.visual_01 .text-gradient img {
           width: 612px; }
@@ -7446,7 +7446,7 @@
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_03 .text-gradient img {
           width: 532px; }
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual_04 {
-        background: url("../img/main/img-main_04.png") no-repeat center center; }
+        background: url("../img/main/img-main_04.png") no-repeat center center; }*/
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
@@ -7459,14 +7459,14 @@
             }*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
           font-weight: 700;
-          font-size: 66px;
+          font-size: 48px;
           line-height: 106%;
           letter-spacing: -0.02em;
           color: #ffffff; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p.desc {
             margin-top: 25px;
             font-weight: 400;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 130%;
             letter-spacing: -0.02em; }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box.phrase {
@@ -7681,8 +7681,10 @@
     width: 1244px; }
     .main-wrap .main-page .info-box .title {
       font-weight: bold;
-      font-size: 60px;
-      line-height: 72px; }
+      font-size: 50px;
+      line-height: 72px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
     .main-wrap .main-page .info-box .desc {
       font-size: 18px;
       line-height: 34px;
@@ -7829,6 +7831,16 @@
         .main-wrap .main-page .section-business .business .slider .swiper-slide:nth-of-type(4) {
           background: url("../img/main/img-business_04.png") no-repeat center center; }
 
+          .en .main-wrap .main-page .section-business .business .slider .swiper-slide.swiper-slide-active .text-area .title {
+            font-size: 50px;
+          }
+
+          .business .slider .swiper-container .swiper-wrapper .swiper-slide .title > a .btn {
+            position: absolute;
+            left: 200%;
+            top: 50%;
+          }
+
 /*2023리뉴얼*/
 .main-wrap .main-page .section-partners{padding-bottom: 114px; border-bottom: 11px solid #F5F5F5;}
   .main-wrap .main-page .section-partners .info-box{
@@ -7879,6 +7891,8 @@
         .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
         .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
         .people_swiper .swiper-slide.bg03{background-color: #DEFBD1;}
+        .people_swiper .swiper-slide.bg04{background-color: #D1FBF6;}
+        .people_swiper .swiper-slide.bg05{background-color: #F7FDDD;}
         .people_swiper .flip {position:relative;width:100%;height:100%;}
         .people_swiper .flip .front, .people_swiper .flip .back {position: absolute;width: 100%;height: 100%; transition: 0.5s;cursor: pointer;}
         .people_swiper .flip .front {overflow: hidden;  border-radius: 100%;}
@@ -8284,7 +8298,7 @@
       .en .main-wrap .main-page .section-news .video-box .info-box .btn_play .icon-arrow-right-short {
         margin-left: 20px; }
 
-.en .main-wrap .main-page .section-map {
+.en .main-wrap .main-page .section-map { 
   position: relative;
   background: url("../img/main/bg-map.png") no-repeat center center/cover;
   width: 100%;
@@ -8297,7 +8311,7 @@
       margin-bottom: 233px; }
       .en .main-wrap .main-page .section-map .inner .info-box .title {
         font-weight: 700;
-        font-size: 60px;
+        font-size: 50px;
         line-height: 72px;
         margin-bottom: 33px;
         color: #000;
