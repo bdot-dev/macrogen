@@ -79,15 +79,14 @@
                     </div>
                 </div> -->
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
-	               	<c:if test="${result.expsrYn == 'Y'}">
+	            	<c:if test="${result.expsrYn == 'Y'}">
 		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
 		                	<c:choose>
-		                		<c:when	test="${result.mediaUrlPc != null || result.mediaUrlPc != '' }">
+		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
 			                		 <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/eUzXNxvAsgg?controls=0&mute=1&autoplay=1&modestbranding=1" 
 			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
 					                 </iframe>		
 					                 	<div class="text-box">
-					                 		<p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
 				                        	<c:choose>
@@ -106,7 +105,7 @@
 				                    	</div>			            	
 		                		</c:when>
 		                		<c:otherwise>
-					            	<div class="visual visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            	<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
@@ -128,7 +127,7 @@
 		                	</c:choose>		                			                	
 		                   
 		                </div>               	
-	             	</c:if>			
+	             	</c:if>
                	</c:forEach>
                	
             </div>
@@ -356,20 +355,22 @@
 							<div class="swiper-wrapper">
 							
 								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-									<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
-										<div class="text-area">
-											<div class="title">
-												<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
-													<span class="btn btn-circle btn-white btn-md">
-														<i class="icon icon-arrow-right-short"></i>
-													</span>
-												</a>  
-											</div>
-											<div class="desc">
-												${fn:replace(result.mainNttCnPc, newline, "<br/>")}
-											</div>	
-										</div> 
-									</div>	          
+									<c:if test="${result.expsrYn == 'Y'}">
+										<div class="swiper-slide" style="background: url(http://cms.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+											<div class="text-area">
+												<div class="title">
+													<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
+														<span class="btn btn-circle btn-white btn-md">
+															<i class="icon icon-arrow-right-short"></i>
+														</span>
+													</a>  
+												</div>
+												<div class="desc">
+													${fn:replace(result.mainNttCnPc, newline, "<br/>")}
+												</div>	
+											</div> 
+										</div>	  
+									</c:if>	        
 								</c:forEach>	
 				
 							</div>		
@@ -413,7 +414,7 @@
 	                    <div class="swiper-wrapper">
 		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
 		                		<c:if test="${ result.viewYn == 'Y' }">
-			                        <div class="swiper-slide bg0${ (status.index % 5) +1 }">
+			                        <div class="swiper-slide bg0${status.index % 5 +1}">
 			                            <div class="flip">
 			                                <div class="front">
 			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
