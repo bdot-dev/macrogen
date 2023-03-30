@@ -287,17 +287,17 @@
 	
 	                    <div class="bg_section bg1 active">
 	                        <video class="video" autoplay muted loop>
-	                            <source src="../../img/video/main_기업개요.mp4" type="video/mp4">
+	                            <source src="/publishing/pc-ko/dist/img/video/main_기업개요.mp4" type="video/mp4">
 	                        </video>
 	                    </div>
 	                    <div class="bg_section bg2">
 	                        <video class="video" autoplay muted loop>
-	                            <source src="../../img/video/main_글로벌마크로젠.mp4" type="video/mp4">
+	                            <source src="/publishing/pc-ko/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
 	                        </video>
 	                    </div>
 	                    <div class="bg_section bg3">
 	                        <video class="video" autoplay muted loop>
-	                            <source src="../../img/video/main_ESG.mp4" type="video/mp4">
+	                            <source src="/publishing/pc-ko/dist/img/video/main_ESG.mp4" type="video/mp4">
 	                        </video>
 	                    </div>
 	                    <script>
