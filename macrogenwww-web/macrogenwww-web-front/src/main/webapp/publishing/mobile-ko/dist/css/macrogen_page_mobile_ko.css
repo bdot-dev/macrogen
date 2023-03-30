@@ -3856,19 +3856,26 @@
         .people_swiper .swiper-wrapper {
           display: flex;
           align-items: center;
-          overflow: visible;
+          /*overflow: visible;*/
+          margin-left: -1px;
+        }
+
+        .people_swiper .resize .swiper-wrapper {
+          margin-left: 0;
         }
 
         .people_swiper .swiper-slide {
           position: relative;
-          width: 402px; 
+          width: 402px!important;
+          min-width: 402px; 
           height: 402px;
           border-radius: 100%;
           transition: 0.5s;
+          margin: 0 35px;
         }
 
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .front{opacity: 0;}
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front {opacity: 0!important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1!important;}
 
         .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
         .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
@@ -3916,16 +3923,19 @@
           transition: 0.5s;
         }
 
+        .people_swiper .swiper-slide.swiper-slide-active {
+          min-width: 400px; width: 400px; height: 400px;
+        }
         .people_swiper .swiper-slide.swiper-slide-active .flip .front .info-area {
           opacity: 1;
         }
 
         .people_swiper .flip .front .name {
           position: absolute;
-          top: 105px;
+          top: 95px;
           left: 53px;
           text-align: left;
-          font-size: 15px;
+          font-size: 13px;
           line-height: 20px;
           letter-spacing: -0.5px;
 
@@ -3935,13 +3945,13 @@
           display: block;
           margin-bottom: 10px;
           font-weight: 700;
-          font-size: 30px;
-          line-height: 34px;
+          font-size: 27px;
+          line-height: 33px;
         }
 
         .people_swiper .flip .front .btn-text {
           position: absolute;
-          top: 235px;
+          top: 259px;
           left: 53px;
         }
 
