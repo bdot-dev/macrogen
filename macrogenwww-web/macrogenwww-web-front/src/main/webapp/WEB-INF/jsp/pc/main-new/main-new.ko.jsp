@@ -78,35 +78,55 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
-                	<iframe frameborder="0" height="100%" width="100%" 
-                    src="https://www.youtube.com/embed/_YdFyzU8ryA?autoplay=0&controls=0&fs=0&loop=1&modestbranding=1&iv_load_policy=3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                    
-                </div>
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
 	               	<c:if test="${result.expsrYn == 'Y'}">
-		                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
-		                	<%-- <c:if test="">		                	
-				            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
-		                	</c:if> --%>
-		                    <div class="text-box">
-		                        <p class="slogan-sub">${result.mainNttSjPc}</p>
-		                        <p class="desc">${fn:replace(result.mainNttCnPc, newLineChar, "<br/>")}</p>
-		                        <c:choose>
-		                        	<c:when test="${result.btYn != 0 && result.btYn == 1}">
-				                        <div class="btns">
-				                            <button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
-				                        </div>
-		                        	</c:when>
-		                        	<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-				                        <div class="btns">
-				                            <button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
-				                            <button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
-				                        </div>
-		                        	</c:when>	                        
-		                        </c:choose>
-		                    </div>
+		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
+		                	<c:choose>
+		                		<c:when	test="${result.mediaUrlPc != null || result.mediaUrlPc != '' }">
+			                		 <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/eUzXNxvAsgg?controls=0&mute=1&autoplay=1&modestbranding=1" 
+			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
+					                 </iframe>		
+					                 	<div class="text-box">
+					                 		<p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
+				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
+				                        	<c:choose>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
+						                       		<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
+						                        	</div>
+				                        		</c:when>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+						                        	<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
+						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
+						                        	</div>
+				                        		</c:when>	                        
+				                        	</c:choose>
+				                    	</div>			            	
+		                		</c:when>
+		                		<c:otherwise>
+					            	<div class="visual visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            		<div class="text-box">
+				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
+				                        	<c:choose>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
+						                       		<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
+						                        	</div>
+				                        		</c:when>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+						                        	<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
+						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
+						                        	</div>
+				                        		</c:when>	                        
+				                        	</c:choose>
+				               			</div>
+		                		</c:otherwise>
+		                	</c:choose>		                			                	
+		                   
 		                </div>               	
 	             	</c:if>			
                	</c:forEach>
@@ -346,7 +366,7 @@
 												</a>  
 											</div>
 											<div class="desc">
-												${fn:replace(result.mainNttCnPc, newLineChar, "<br/>")}
+												${fn:replace(result.mainNttCnPc, newline, "<br/>")}
 											</div>	
 										</div> 
 									</div>	          
@@ -393,10 +413,10 @@
 	                    <div class="swiper-wrapper">
 		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
 		                		<c:if test="${ result.viewYn == 'Y' }">
-			                        <div class="swiper-slide bg0${ (status.index % 3)+1 } dev${status.index}">
+			                        <div class="swiper-slide bg0${ (status.index % 5) +1 }">
 			                            <div class="flip">
 			                                <div class="front">
-			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}"></span>      
+			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
 			                                    <div class="info-area">
 			                                        <span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
 			                                            <strong>${ result.peopleNm }</strong><br>
