@@ -324,18 +324,23 @@
 	                        $('.shortcuts-box .btn-list li').mouseover(function () {
 	                            var index = $(this).index() + 1;
 	                            console.log(index)
-	
+
 	                            if (index !== currentIdx) {
 	                                console.log('wun')
 	                                $('.bg_section').eq(index).addClass('active')
 	                                    .siblings().removeClass('active')
 	                                currentIdx = index
 	                            }
-	
-	                            $('.bg_section .video').play().currentTime()
-	
+	                            //
+	                            $('.bg_section .video').filter(":not(:eq("+(index-1)+"))").each(function(){
+	                            	$(this).get(0).pause();
+	                            })
+
+	                            //$('.bg_section .video').play().currentTime()
+	                            $('.bg_section .video').eq(index-1).get(0).play() //.currentTime()
+
 	                        }).mouseout(function(){
-	                            $('.bg_section .video').pause()
+	                        	//$('.bg_section .video').pause()
 	                        });
 	                    </script>
 	                </div>
