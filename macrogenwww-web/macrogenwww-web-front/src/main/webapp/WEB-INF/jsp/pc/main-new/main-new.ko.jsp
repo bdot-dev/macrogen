@@ -92,7 +92,7 @@
 				                    	</div>			            	
 		                		</c:when>
 		                		<c:otherwise>
-					            	<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
