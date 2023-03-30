@@ -683,12 +683,11 @@
             </div>
             <script>
                 var swiperScrollbar = null
-                var pSwiper;
-                var resizeCheck;
                 $(document).ready(function (){
                     /*slide 영역*/
-                    setSlider2();
                     
+                    var pSwiper;
+                    setSlider2();
                     function setSlider2() {      
                         
                         var $container = $('._peopleSlider');
@@ -705,18 +704,12 @@
                             slidesPerView: "auto",
                             slideToClickedSlide : true,
                             loop:true,
-                            loopedSlides: 30,
+                            loopedSlides: conCnt,
                             loopAdditionalSlides: 10,
                             allowTouchMove : true,
-                            spaceBetween: 70,
-                            
-                           
-                            // autoplay: {
-                            //     delay: 1000,
-                            //     disableOnInteraction: false,
-                            // },
-                            speed: 1000,
-                            lazy: true,      
+                            speed:1000,
+                            lazy:true,
+                            //spaceBetween: 70,
                             
                             pagination: {
                                 el: '.swiper-pagination',
@@ -740,27 +733,16 @@
                     }
                     else{
                         swiper.removeClass("rotate");
-                    }
+                    }    
+          })
 
-                    
-                //}
-            //}, 300);     
-            console.log("resizeEnd");
-            // 리사이즈 END체크
-            $(window).resize(function(){
-                if(resizeCheck){ //계속 리사이즈중이면 clear
-                    clearTimeout(resizeCheck); 
-                };
         
-                //0.5초이상 리사이즈 지속하지않으면 실행
-                    resizeCheck = setTimeout(function(){
-                    console.log("resizeEnd");
-                    pSwiper.update(); //스와이퍼 업데이트
-                    
-                },500);
-            });
-      
-        })
+            // 리사이즈 END체크
+           window.addEventListener('resize', function(){
+                $('._peopleSlider').addClass("resize");
+                pSwiper,update();
+
+           })
 
       
     ;})
