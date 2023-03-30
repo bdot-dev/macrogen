@@ -49,6 +49,7 @@
                     }
                 }
             })
+        
         </script>
 
 		<!-- s intro -->
@@ -61,34 +62,20 @@
         </div> -->
 		
 		<!-- s 메인비주얼 영역 -->
-		
-		<!-- 유튜브 링크 넣어서 테스트  -->
-        <div class="swiper-container" id="key-swiper-container">
+       	<div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-            	<!-- mp4일때 -->
-               <!-- <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
-                	<video class="video" autoplay muted loop playsinline><source src="https://www.youtube.com/embed/PYVP4IpaeRo?controls=0&autoplay=1&mute=1" type="video/mp4"></video>
-                    <div class="text-box">
-                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
-                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
-                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
-                        <div class="btns">
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
-                        </div>
-                    </div>
-                </div> -->
+            
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
 	            	<c:if test="${result.expsrYn == 'Y'}">
 		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
 		                	<c:choose>
 		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
-			                		 <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/eUzXNxvAsgg?controls=0&mute=1&autoplay=1&modestbranding=1" 
+			                		 <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
 			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
 					                 </iframe>		
 					                 	<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
 				                        	<c:choose>
 				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
 						                       		<div class="btns">
@@ -108,7 +95,7 @@
 					            	<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
 				                        	<c:choose>
 				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
 						                       		<div class="btns">
@@ -128,31 +115,26 @@
 		                   
 		                </div>               	
 	             	</c:if>
+	             	
+		           <div class="scroll-wrap">
+		               <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+		           </div>        
+		                    
+					<!-- If we need pagination -->
+		  			<div class="swiper-pagination" id="key-swiper-pagination"></div>	
+		  			        							
+					<c:if test="${ result.expsrYn == 'Y' &&  mainBannerList.size() > 1 }">
+						<!-- If we need navigation buttons -->
+		           		<div class="swiper-button-prev swiper_btn"></div>
+		            	<div class="swiper-button-next swiper_btn"></div>	  					
+					</c:if>
                	</c:forEach>
                	
-            </div>
-            
-            <div class="scroll-wrap">
-               <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-           </div>        
-                    
-			<!-- If we need pagination -->
-  			<div class="swiper-pagination" id="key-swiper-pagination"></div>
-  			
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper_btn"></div>
-            <div class="swiper-button-next swiper_btn"></div>	
-            							
-			<%-- <c:if test="${ result.expsrYn == 'Y' }">			
-				<c:choose>
-					<c:when test="${ mainBannerList.size() < 1 }">			
-	     				     					
-					</c:when>
-				</c:choose>
-			</c:if> --%>
-           
-        </div>    
+            </div>            
+        </div> 
+             	
         <script>
+        
             var $container = $('#key-swiper-container');
             var $conLi = $container.find('.swiper-slide');
             var $wrapper = $('#key-swiper-wrapper');
@@ -270,14 +252,14 @@
 	                            </p>
 	                            <!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">생명공학기업 마크로젠 입니다</p> -->
 	                        </div>
-	                        <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
+	                        <a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
 	                           data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
 	                    </div>
 	                </div>
 	                <div class="shortcuts-box" data-aos="fade-up" data-aos-duration="500">
 	                    <ul class="btn-list clearfix">
 	                        <li>
-	                            <a href="#">
+	                            <a href="/${rc.locale.language }/company/overview">
 	                                <p>기업개요</p>
 	                                <p class="sub-text">유전체 분석 기반 글로벌 디지털 <br> 헬스케어 기업 마크로젠입니다</p><!--  People :2023리뉴얼 -->
 	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
@@ -285,7 +267,7 @@
 	                            </a>
 	                        </li>
 	                        <li>
-	                            <a href="#">
+	                            <a href="/${rc.locale.language }/company/global-network">
 	                                <p>글로벌 마크로젠</p>
 	                                <p class="sub-text">전세계 유전체 분석 연구를 이끄는 <br>글로벌 파트너와 함께 합니다</p><!--  People :2023리뉴얼 -->
 	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
@@ -293,7 +275,7 @@
 	                            </a>
 	                        </li>
 	                        <li>
-	                            <a href="#">
+	                            <a href="/${rc.locale.language }/company/esg-management">
 	                                <p>ESG</p>
 	                                <p class="sub-text">지속가능한 미래를 위해 노력합니다</p><!--  People :2023리뉴얼 -->
 	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
@@ -361,7 +343,7 @@
 							
 								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
 									<c:if test="${result.expsrYn == 'Y'}">
-										<div class="swiper-slide" style="background: url(http://cms.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+										<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
 											<div class="text-area">
 												<div class="title">
 													<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
@@ -516,6 +498,7 @@
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 
 				<div class="slider">
+
 					<div class="slider-navigation">
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
@@ -579,22 +562,22 @@
                         <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
                     </div> -->
                     <div class="map">
-                        <a class="pin amsterdam" onclick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-                      	<a class="pin leuven" onclick="location.href='01Macrogen_06글로벌네트워크.html#leuven'"><i></i><span>Leuven, Belgium</span></a>
-                      	<a class="pin paris" onclick="location.href='01Macrogen_06글로벌네트워크.html#paris'"><i></i><span>Paris, France</span></a>
-                      	<a class="pin milan" onclick="location.href='01Macrogen_06글로벌네트워크.html#italy'"><i></i><span>Milan, Italy</span></a>
-                      	<a class="pin poland" onclick="location.href='01Macrogen_06글로벌네트워크.html#poland'"><i></i><span>Szczecin, Poland</span></a>
-                        <a class="pin madrid" onclick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin seoul" onclick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin songdo" onclick="location.href='01Macrogen_06글로벌네트워크.html#songdo'"><i></i><span>Songdo, Korea</span></a>
-                        <a class="pin daejeon" onclick="location.href='01Macrogen_06글로벌네트워크.html#daejeon'"><i></i><span>Daejeon, Korea</span></a>
-                        <a class="pin tokyo" onclick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin biopolis" onclick="location.href='01Macrogen_06글로벌네트워크.html#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
-                        <a class="pin boston" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin newyork" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin rockville" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
-                        <a class="pin virginia" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin santiago" onclick="location.href='01Macrogen_06글로벌네트워크.html#santiago'"><i></i><span>Santiago, Chile</span></a>
+                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+                      	<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Leuven, Belgium</span></a>
+                      	<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
+                      	<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
+                      	<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
+                        <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
+                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
+                        <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
+                        <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
+                        <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
+                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
                     <script>
                         $('.map .pin').on('click', function () {
@@ -616,34 +599,34 @@
                 </div>
                 <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_01.png" alt="일루미나"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_02.png" alt="팩바이오"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_03.png" alt="써모피셔"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_04.png" alt="지노믹스"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_05.png" alt="올링크"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_06.png" alt="애질런트"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트">
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_07.png" alt="나노스트링"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링">
                     </li>  
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_08.png" alt="마이크로소프트"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트">
                     </li>   
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_09.png" alt="트위스트"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트">
                     </li>   
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_10.png" alt="나노포어"></a>
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어">
                     </li>                     
                 </ul> 
             </div>
