@@ -98,11 +98,25 @@ var MainNttForm = (function($) {
 						return false;
 					}
 					
-		
 					if(!vm.resultVo.imageAtchIdMo && !vm.resultVo.mediaUrlMo){
 						alert('MO 이미지 또는 MO 영상 URL 중 한가지는 \n필수등록 해주세요');
 						return false;
 					}
+					
+					if(vm.resultVo.imageAtchIdPc && vm.resultVo.imageAtchIdMo){
+						if(vm.resultVo.mediaUrlPc || vm.resultVo.mediaUrlMo){
+							alert('이미지와 영상중 한가지만 \n등록 가능합니다');
+							return false;						
+						}
+					}
+					
+					if(vm.resultVo.mediaUrlPc && vm.resultVo.mediaUrlMo){
+						if(vm.resultVo.imageAtchIdPc || vm.resultVo.imageAtchIdMo){
+							alert('이미지와 영상중 한가지만 \n등록 가능합니다');
+							return false;						
+						}
+					}
+		
 		
 					if(vm.resultVo.btYn == 1){	
 						if (!vm.resultVo.btSjPc1) {
