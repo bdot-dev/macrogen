@@ -7933,7 +7933,7 @@
       margin-bottom: 20px;
       line-height: 52px;
     }
-    .main-wrap .main-page .section-partners .info-box .desc{margin-top: 21px; letter-spacing: -0.5px; color: #000; white-space: nowrap;}
+    .main-wrap .main-page .section-partners .info-box .desc{margin-top: 21px; letter-spacing: -0.5px; color: #000; white-space: nowrap; font-weight: 300;}
   .main-wrap .main-page .section-partners .partners-list {
     display: flex;
     justify-content: center;
@@ -8166,7 +8166,7 @@
           font-size: 18px;
           line-height: 30px;
           letter-spacing: -0.5px;
-          color: #000; }
+          color: #000;  font-weight:300;}
       .main-wrap .main-page .section-map .inner .map {
         position: relative; }
         .main-wrap .main-page .section-map .inner .map .pin {
