@@ -7580,7 +7580,7 @@
       top: 28.877%;
       left: 335px;
       height: 50px;
-      width: 220px; }
+      width: 500px; }
       .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet {
         background: transparent;
         width: 50px !important;
@@ -7837,8 +7837,8 @@
 
           .business .slider .swiper-container .swiper-wrapper .swiper-slide .title > a .btn {
             position: absolute;
-            left: 200%;
-            top: 50%;
+            left: 153%;
+            top: -22%;
           }
 
 /*2023리뉴얼*/

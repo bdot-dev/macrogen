@@ -4160,6 +4160,7 @@
 
         .media .slider .swiper-container .swiper-wrapper .swiper-slide {
           width: 380px!important;
+          padding: 0 20px;
         }
 
         .main-wrap .main-page .section-media .media .slider .swiper-container {
@@ -4203,7 +4204,6 @@
         }
 
         .media .slider .swiper-container .swiper-wrapper .swiper-slide .content {
-
           font-size: 18px;
           font-weight: 400;
           line-height: 30px;
@@ -4472,7 +4472,7 @@
         color: #000;
         display: inline-block; }
       .main-wrap .main-page .section-map .info-box .desc {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 32px;
         letter-spacing: -0.5px;
         color: #000;
