@@ -498,7 +498,7 @@
                 </div>
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 
-				<div class="slider">
+				<div class="slider"> 
 
 					<div class="slider-navigation">
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>

@@ -18,7 +18,7 @@
 		<c:when test="${ layout_type eq 'company' or layout_type eq 'business' or layout_type eq 'main' or layout_type eq 'rnd_institute' }">
 			<c:set var="snsIconColor" value="" />
 		</c:when>
-	</c:choose>
+	</c:choose> 
 	<div class="section_btn" data-layout-type="${layout_type }">
 	    <ul class="sns">
 	        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-circle${snsIconColor }"></i></a></li>

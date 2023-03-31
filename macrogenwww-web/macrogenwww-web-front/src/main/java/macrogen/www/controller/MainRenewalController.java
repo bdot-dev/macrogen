@@ -51,7 +51,7 @@ public class MainRenewalController extends DefaultController {
 		model.addAttribute("mainBannerList", mainBannerList);
 		
 		
-		// 피플 관리
+		// 피플 관리 
 		MainPeopleVo mainPeopleVo = new MainPeopleVo();
 		mainPeopleVo.setLangCode(langId.name());
 		mainPeopleVo.setFirstIndex(0);		
