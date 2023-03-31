@@ -9,15 +9,15 @@
 		<form:hidden path="searchCondition"/>
 		<form:hidden path="searchKeyword"/>
 	</form:form>
-	
+
 	<form id="editForm" name="editForm" enctype="multipart/form-data">
 		<div class="page_wrap vuelayer">
 			<div class="title_h4_wrap">
 				<span><em>*</em> 는 필수 입력값</span>
 			</div>
-			
+
 			<div class="board_wrap mb20">
-			
+
 				<table class="table_row mb20">
 					<colgroup>
 						<col width="15%">
@@ -30,7 +30,7 @@
 							<th>노출여부<span>*</span></th>
 							<td class="tal" colspan="3">
 								<label v-for="(result, index) in expsrYnList">
-									<input type="radio" v-model="resultVo.expsrYn" 
+									<input type="radio" v-model="resultVo.expsrYn"
 										:value="result.code" name="expsrYns" :id="'expsrYns' + index"/>
 									{{ result.codeNm }}
 								</label>
@@ -46,7 +46,7 @@
 						</tr>
 						<tr>
 							<th>타이틀<span>*</span></th>
-							
+
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
 									(PC)<input type="text" ref="mainNttSjPc" maxlength="300" placeholder="제목(PC)" v-model="resultVo.mainNttSjPc" class="w100p" />
@@ -99,14 +99,14 @@
 							<th>링크<span>*</span></th>
 							<td colspan="3" class="tal">
 								<div class="lbMaxlenPrnt">
-									<input type="text" id="linkUrl1" ref="lickUrl1" maxlength="50" placeholder="링크" v-model="resultVo.linkUrl1" class="w100p" />
+									<input type="text" id="linkUrl1" ref="lickUrl1" maxlength="200" placeholder="링크" v-model="resultVo.linkUrl1" class="w100p" />
 								</div>
 							</td>
 						</tr>
 					</tbody>
-				</table>					
-			</div>	
-				
+				</table>
+			</div>
+
 			<div class="board_wrap mb20">
 				<div class="btn_wrap tar">
 					<button type="button" name="button" class="btn" v-on:click="onSubmit">저장</button>
@@ -114,7 +114,7 @@
 					<button type="button" name="button" class="btn" v-on:click="onList">목록</button>
 				</div>
 			</div>
-		
+
 		</div>
 	</form>
 	<script src="/js/app/MainBusinessForm.js"></script>
@@ -127,7 +127,7 @@
 			options.lang = '${langId}',
 			MainBusinessForm.init(options);
 		});
-	
+
 		function vueUpdated(vm) {
 		}
 

@@ -40,11 +40,11 @@
 						<td class="tal">
 							<div class="lbMaxlenPrnt">
 								이름
-								<input type="text" v-model='resultVo.peopleNm' ref="peopleNm" maxlength="30" placeholder="이름" class="w100p" />
+								<input type="text" v-model='resultVo.peopleNm' ref="peopleNm" maxlength="100" placeholder="이름" class="w100p" />
 							</div>
 							<div class="lbMaxlenPrnt">
 								직함
-								<input type="text" v-model='resultVo.peopleDept' ref="peopleDept" maxlength="30" placeholder="직함" class="w100p" />
+								<input type="text" v-model='resultVo.peopleDept' ref="peopleDept" maxlength="100" placeholder="직함" class="w100p" />
 							</div>
 						</td>
 					</tr>

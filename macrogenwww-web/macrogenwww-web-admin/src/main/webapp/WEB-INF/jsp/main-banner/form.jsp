@@ -9,7 +9,7 @@
 		<form:hidden path="searchCondition"/>
 		<form:hidden path="searchKeyword"/>
 	</form:form>
-	
+
 	<form id="editForm" name="editForm" enctype="multipart/form-data">
 		<div class="page_wrap vuelayer" v-cloak>
 			<div class="title_h4_wrap">
@@ -36,7 +36,7 @@
 							<th>노출여부<span>*</span></th>
 							<td class="tal" colspan="3">
    								<label v-for="(result, index) in expsrYnList">
-   									<input type="radio" v-model="resultVo.expsrYn" 
+   									<input type="radio" v-model="resultVo.expsrYn"
    										:value="result.code" name="expsrYns" :id="'expsrYns' + index"/>
    									{{ result.codeNm }}
    								</label>
@@ -52,7 +52,7 @@
 						</tr>
 						<tr>
 							<th>타이틀</th>
-							
+
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
 									(PC)<input type="text" ref="mainNttSjPc" maxlength="300" placeholder="제목(PC)" v-model="resultVo.mainNttSjPc" class="w100p" />
@@ -103,15 +103,15 @@
 						</tr>
 						<tr>
 							<th>영상 URL</th>
-							
+
 							<td class="tal" colspan="3">
 								<div class="lbMaxlenPrnt">
-									(PC)<input type="text" placeholder="영상 URL(PC)" 
+									(PC)<input type="text" placeholder="영상 URL(PC)"
 										v-model="resultVo.mediaUrlPc" class="w100p" ref="mediaUrlPc" />
 								</div>
 								<br>
 								<div class="lbMaxlenPrnt">
-									(MO)<input type="text" placeholder="영상 URL(MO)" 
+									(MO)<input type="text" placeholder="영상 URL(MO)"
 										v-model="resultVo.mediaUrlMo" class="w100p" ref="mediaUrlMo" />
 								</div>
 							</td>
@@ -137,7 +137,7 @@
 								</div>
 								<br>
 								<div class="lbMaxlenPrnt">
-									링크<input type="text" id="linkUrl1" ref="linkUrl1" maxlength="50" placeholder="링크" v-model="resultVo.linkUrl1" class="w100p" />
+									링크<input type="text" id="linkUrl1" ref="linkUrl1" maxlength="200" placeholder="링크" v-model="resultVo.linkUrl1" class="w100p" />
 								</div>
 							</td>
 						</tr>
@@ -154,22 +154,22 @@
 								</div>
 								<br>
 								<div class="lbMaxlenPrnt">
-									링크<input type="text" ref="linkUrl2" maxlength="50" placeholder="링크" v-model="resultVo.linkUrl2" class="w100p" />
+									링크<input type="text" ref="linkUrl2" maxlength="200" placeholder="링크" v-model="resultVo.linkUrl2" class="w100p" />
 								</div>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			
+
 			<div class="board_wrap mb20">
 				<div class="btn_wrap tar">
 					<button type="button" name="button" class="btn" v-on:click="onSubmit">저장</button>
 					<button v-if="resultVo.mainNttSn" type="button" name="button" class="btn" v-on:click="onDelete">삭제</button>
 					<button type="button" name="button" class="btn" v-on:click="onList">목록</button>
 				</div>
-			</div>			
-			
+			</div>
+
 		</div>
 	</form>
 	<script src="/js/app/MainNttForm.js"></script>
@@ -182,10 +182,10 @@
 			options.lang = '${langId}',
 			MainNttForm.init(options);
 		});
-	
+
 		function vueUpdated(vm) {
 		}
-	
-		
+
+
 	</script>
 </body>
