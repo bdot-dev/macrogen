@@ -42,33 +42,36 @@ public class MainRenewalController extends DefaultController {
 		mainBannerVo.setLangCode(langId.name());
 		mainBannerVo.setMainBbsId("banner"); 
 		mainBannerVo.setFirstIndex(0);		
+		mainBannerVo.setExpsrYn("Y");
 		mainBannerVo.setOrderBy("expsr_prty_asc");
+		mainBannerVo.setRecordCountPerPage(999);
 		
-		List<MainNttVo> mainBannerList = mainNttService.list(mainBannerVo);
 		
+		List<MainNttVo> mainBannerList = mainNttService.list(mainBannerVo);	
 		model.addAttribute("mainBannerList", mainBannerList);
-		
 		
 		
 		// 피플 관리
 		MainPeopleVo mainPeopleVo = new MainPeopleVo();
 		mainPeopleVo.setLangCode(langId.name());
-		mainPeopleVo.setFirstIndex(0);
-		mainPeopleVo.setMode("main");
+		mainPeopleVo.setFirstIndex(0);		
+		mainPeopleVo.setMode("mode");
+		mainPeopleVo.setViewYn("Y");
+		mainPeopleVo.setRecordCountPerPage(5);
 								
+		
 		List<MainPeopleVo> mainPeopleList = mainPeopleService.list(mainPeopleVo);
 		
 		model.addAttribute("mainPeopleList", mainPeopleList);
-		model.addAttribute("resultVo", mainPeopleVo);
-
-
 		
 		// 비즈니스 카드
 		MainNttVo mainBusinessVo = new MainNttVo();
 		mainBusinessVo.setLangCode(langId.name());
 		mainBusinessVo.setMainBbsId("business");
 		mainBusinessVo.setFirstIndex(0);
+		mainBannerVo.setExpsrYn("Y");
 		mainBusinessVo.setOrderBy("expsr_prty_asc");
+		mainBusinessVo.setRecordCountPerPage(999);
 		
 		List<MainNttVo> mainBusinessList = mainNttService.list(mainBusinessVo);
 		model.addAttribute("mainBusinessList", mainBusinessList);
@@ -82,7 +85,7 @@ public class MainRenewalController extends DefaultController {
 		
 		somlnkVo.setLangCode(langId.name());
 		somlnkVo.setFirstIndex(0);
-		somlnkVo.setRecordCountPerPage(20);
+		somlnkVo.setRecordCountPerPage(999);
 		
 		
 		Date now = new Date();

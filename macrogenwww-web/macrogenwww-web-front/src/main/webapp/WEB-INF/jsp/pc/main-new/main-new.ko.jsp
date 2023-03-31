@@ -7,7 +7,6 @@
 
 <div class="wrap main-wrap">
 
-
     <div class="full-bg main-bg">
 
         <header class="header header-bg-white header-main" id="header">
@@ -92,7 +91,7 @@
 				                    	</div>			            	
 		                		</c:when>
 		                		<c:otherwise>
-					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            	<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
@@ -399,9 +398,10 @@
 
 	                <div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
 	                    <div class="swiper-wrapper">
-		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
-		                		<c:if test="${ result.viewYn == 'Y' }">
-			                        <div class="swiper-slide bg0${status.index % 5 +1}">
+	                   
+		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
+		                		 <c:if test="${ result.viewYn == 'Y' }">
+			                        <div class="swiper-slide bg0${status.index % 5 + 1}">
 			                            <div class="flip">
 			                                <div class="front">
 			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
@@ -421,8 +421,9 @@
 			                                </div>
 			                            </div>                            
 			                        </div>    
-			                	</c:if>        
+			                	 </c:if>      			               
 		                	</c:forEach>
+		                	  
 		                </div>
 		            </div>
 		        </div>
@@ -593,7 +594,7 @@
             <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="info-box">
                     <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
                        세계적인 파트너들이 마크로젠과 함께 합니다
                     </div>               
                 </div>
@@ -657,6 +658,6 @@
 	    });
 	</script>
 
-</div><!-- 첫시작 -->
+</div>
  
 </body>

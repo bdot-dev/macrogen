@@ -39,13 +39,13 @@
 		, tmp.updusr_sn
 		, ( select user_nm from tb_user where user_sn = tmp.updusr_sn ) updusr_nm
 	from tb_main_people tmp
-	where 1 = 1
+	where view_yn = 'Y'
     <include refid="list_where" />
     order by
    		<if test='mode != null and mode == "main"'>
    		tmp.sort_ordr asc,
    		</if>
-	    tmp.people_sn asc
+	    tmp.people_sn desc
     <include refid="paging.countBottom" />
   </select>
 
