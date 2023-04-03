@@ -7450,7 +7450,7 @@
       }
 
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
-        background: url(../img/main/img-main_04.png) no-repeat center center / cover !important
+        background: url(../img/main/img-main_test.PNG) no-repeat center center / cover !important
       } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
       /* e yt 영상 2023.03.30*/
 
@@ -8090,6 +8090,7 @@
             left: -22px;}
           .main-wrap .main-page .section-media .media .slider .slider-navigation .btn-circle._btnNext{
             right: -22px;}
+            .media .slider .swiper-container .swiper-wrapper .swiper-slide { margin: 0 auto;}
       .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide > a {
         display: block; }
       .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide .img {
@@ -8116,8 +8117,18 @@
             height: 2px;
             background-color: #ffffff;
             margin-left: 10px; } */
+
+           
         .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide .content .title{
           display: block; margin-bottom: 10px; font-weight: 700; color: #000;}
+
+          .media .slider .swiper-container .swiper-wrapper .swiper-slide .content p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+          }
 
        /*e --- news&media*/
 
