@@ -334,7 +334,7 @@
 				<!-- s  business  slide -->
 				<div class="section-business">
 					<div class="info-box">
-						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Business</div>
+						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Service</div>
 						<div class="desc">
 							<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
 								<br>더 건강하고 행복한 삶을 만들어갑니다.</p> <!--  People :2023리뉴얼 -->
@@ -523,7 +523,10 @@
 											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
 											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 										</div>
-										<div class="content">${result.somlnkSj }</div>
+										<div class="content">
+											<strong class="title">${ result.somlnkSj }</strong>
+											${ result.somlnkDt }
+										</div>
 										<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 									</a>
 								</div>
