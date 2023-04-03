@@ -334,7 +334,7 @@
 				<!-- s  business  slide -->
 				<div class="section-business">
 					<div class="info-box">
-						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Service</div>
+						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Services</div>
 						<div class="desc">
 							<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
 								<br>더 건강하고 행복한 삶을 만들어갑니다.</p> <!--  People :2023리뉴얼 -->
@@ -347,7 +347,7 @@
 							
 								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
 									<c:if test="${result.expsrYn == 'Y'}">
-										<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+										<div class="swiper-slide" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
 											<div class="text-area">
 												<div class="title">
 													<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
@@ -409,7 +409,7 @@
 			                        <div class="swiper-slide bg0${status.index % 5 + 1}">
 			                            <div class="flip">
 			                                <div class="front">
-			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
+			                                    <span class="img"><img src="http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
 			                                    <div class="info-area">
 			                                        <span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
 			                                            <strong>${ result.peopleNm }</strong><br>
@@ -520,7 +520,7 @@
 								<div class="swiper-slide">
 									<a href="${ result.somlnkUrl }" target="_blank">
 										<div class="img">
-											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+											<img src="http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
 											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 										</div>
 										<div class="content">
