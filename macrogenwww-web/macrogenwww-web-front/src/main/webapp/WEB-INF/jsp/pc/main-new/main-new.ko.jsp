@@ -467,6 +467,15 @@
                             allowTouchMove : true,
                             speed: 1000,
                             lazy: true,
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            }
                         }       
                         pSwiper = new Swiper($container, options)               
                     }          
@@ -484,7 +493,7 @@
                     //resize
                     window.addEventListener('resize', function(){
                         $('._peopleSlider').addClass("resize");
-                        pSwiper,update();
+                        pSwiper.update();
                     })
                 });
             	</script>
