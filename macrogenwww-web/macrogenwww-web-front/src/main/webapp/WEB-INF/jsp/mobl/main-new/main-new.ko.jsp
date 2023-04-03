@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body divwrapclass="main-wrap">
     <div class="main-bg">
-        <header class="header">
+<header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -68,73 +68,77 @@
             }
         </script>
 		
-		
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
             	
-                <c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
-	               	<c:if test="${result.expsrYn == 'Y'}">
-	               		<div class="swiper-slide" data-swiper-autoplay="8000">
-	               			<c:choose>
-				           		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
-				           			 <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/eUzXNxvAsgg?controls=0&mute=1&autoplay=1&modestbranding=1" 
-		                		 		allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
-				                 	 </iframe>	
-					                 <div class="text-box">
-			                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-			                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
+           		<c:forEach var="result" items="${ mainBannerList }" varStatus="status">
+           			<c:if test="${result.expsrYn == 'Y'}">
+           				<div class="swiper-slide visual" data-swiper-autoplay="8000">
+           					
+           					<c:choose>
+		               			<c:when	test="${result.mediaUrlMo != null && result.mediaUrlMo != '' }">
+	               					<div class="visual visual_00">
+	               						<div id="player"></div>
+				                 		<div class="text-box">
+					                 		<p class="slogan-sub">${result.mainNttSjMo}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+				                        	<c:choose>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
+						                       		<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
+						                        	</div>
+				                        		</c:when>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+						                        	<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
+						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
+						                        	</div>
+				                        		</c:when>	                        
+				                        	</c:choose>
+		               					</div>	
+	               					</div>
+		               			</c:when>
+		               			
+		               			<c:otherwise>
+		               				<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthMobl}) 
+		               					no-repeat center center / cover">
+		               				</div>
+	               					<div class="text-box">
+				                 		<p class="slogan-sub">${result.mainNttSjMo}</p>
+			                        	<p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
 			                        	<c:choose>
 			                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
 					                       		<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
+					                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
 					                        	</div>
 			                        		</c:when>
 			                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
 					                        	<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
-					                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
+					                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
+					                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
 					                        	</div>
 			                        		</c:when>	                        
 			                        	</c:choose>
-			               			</div>			               			
-				           	</c:when>
-				           	<c:otherwise>
-				           		<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
-				           		<div class="text-box">
-			                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-			                        	<p class="desc">${fn:replace(result.mainNttCnPc, newLine, "<br/>")}</p>
-			                        	<c:choose>
-			                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
-					                       		<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
-					                        	</div>
-			                        		</c:when>
-			                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-					                        	<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
-					                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
-					                        	</div>
-			                        		</c:when>	                        
-			                        	</c:choose>
-			               			</div>	
-				           	</c:otherwise>
-		            	</c:choose>
-		            	</div>
-			
-	                </div>               	
-             		</c:if>			
-              	</c:forEach>     
-              	      
-            </div>
-            
-            <div class="scroll-wrap">
+		               				</div>
+		               			</c:otherwise>
+		               		</c:choose>
+           					
+           				</div>
+           			</c:if>
+           		</c:forEach>     
+                
+			 
+       		</div>   	  
+			 
+			 <div class="scroll-wrap">
                 <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
             </div>
 
             <!-- If we need pagination -->
             <div class="swiper-pagination" id="key-swiper-pagination"></div>
         </div>
+        
         <script>
             var $container = $('#key-swiper-container');
             var $conLi = $container.find('.swiper-slide');
@@ -255,10 +259,7 @@
 
         </script>
         <!-- e 메인비주얼 영역 -->
-        
-         <div class="bg-DNA"></div>
-        
-        <!-- e 메인비주얼 영역 -->
+
     </div>
     
 
@@ -388,17 +389,19 @@
                        <div class="swiper-wrapper">
                        		
 							<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-		                          <div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthMobl}) no-repeat center center / cover">
-		                              <div class="text-area">
-		                                  <div class="font-h3">
-		                                      <span>${result.mainNttSjMo}</span>
-		                                      <a href="${result.linkUrl1 }">
-		                                           <i class="icon-arrow-right-short"></i>
-		                                      </a>
-		                                  </div>
-		                                  <div class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</div>
-		                              </div>
-		                          </div>
+								<c:if test="${result.expsrYn == 'Y'}">
+			                       <div class="swiper-slide" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthMobl}) no-repeat center center / cover">
+			                           <div class="text-area">
+			                               <div class="font-h3">
+			                                   <span>${result.mainNttSjMo}</span>
+			                                   <a href="${result.linkUrl1 }">
+			                                        <i class="icon-arrow-right-short"></i>
+			                                   </a>
+			                               </div>
+			                               <div class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</div>
+			                           </div>
+			                       </div>
+		                    	</c:if>      
 		               		</c:forEach>
                        </div>                       
                        <div class="swiper-pagination"></div>
@@ -452,10 +455,10 @@
                     
                         <c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
                         	<c:if test="${ result.viewYn == 'Y' }">
-                        		<div class="swiper-slide" style="background-color: #ABDFFD;">
+                        		<div class="swiper-slide bg0${status.index % 5 + 1}">
                         			 <div class="flip">
                         			 	<div class="front">
-                        			 		<span class="img"><img src="${publicUrl}${result.imageFlpthPc}"></span>
+                        			 		<span class="img"><img src="http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthMo}"></span>
                         			 		<div class="info-area">
                         			 			<span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
 		                                            <strong>${ result.peopleNm }</strong><br>
@@ -569,45 +572,47 @@
             </script>
             <!-- e People :2023리뉴얼--> 
 
-			 <!-- s  news & event-->
+			<!-- s  news & event-->
             <div class="section-media">
-            	<div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
-                    <div class="desc">
-                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                           다양한 채널을 통해<br>마크로젠의 소식을 만나실 수 있습니다
-                        </p>
-                    </div>                    
-                </div>
-                <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-            </div>
+	        	<div class="info-box">
+                   <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
+                   <div class="desc">
+                       <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                          다양한 채널을 통해<br>마크로젠의 소식을 만나실 수 있습니다
+                       </p>
+                   </div>                    
+				</div>           
+                <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">        
+	            
+		            <div class="slider">
+		            	<div class="slider-navigation">
+	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+	                   	</div>
+				       	<div class="swiper-container _mediaSlider">
+				       		<div class="swiper-wrapper">
+				       			<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+				       				<div class="swiper-slide">
+				       					<a href="${ result.somlnkUrl }" target="_blank">
+					       					<div class="img">
+					                            <img src="http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+					                        </div>
+					                        <div class="content">
+					                        	<strong class="title">${ result.somlnkSj }</strong>
+					                            ${ result.somlnkDt }
+					                        </div>
+					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+				                        </a>
+				       				</div>
+				       			</c:forEach>
+				   			</div>
+				       		<div class="swiper-pagination"></div>
+		           		</div>
+		            </div>
+		            
             
-            <div class="slider">
-            	<div class="slider-navigation">
-		            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-		            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-		        </div>
-		        
-		         <div class="swiper-container _mediaSlider">
-		         	<div class="swiper-wrapper">
-		         		<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
-		         			<div class="swiper-slide">
-		         				<a href="${ result.somlnkUrl }" target="_blank">
-			                        <div class="img">
-			                            <img src="http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
-			                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-			                        </div>
-			                        <div class="content">
-			                            <strong class="title">${result.somlnkSj }</strong>
-			                        </div>
-			                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-			                    </a>
-		         			</div>
-		         		</c:forEach>
-		         			<div class="swiper-pagination"></div>
-		         	</div>
-		         </div>
-		         
+            	</div>        
             </div>
             <script>
 		        new Swiper("._mediaSlider", {
@@ -634,23 +639,39 @@
 		        });
 		    </script>
             
-            
-
             <!-- s  global map -->
             <div class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Macrogen</div>
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 <br/> 통해 현지 고객의 다양한요구에 부합하는 맞춤형 <br/> 서비스를 더욱 신속하고 체계적으로 제공합니다
-                    </div>
-                </div>
                 <div class="inner">
+                    <div class="info-box">
+                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
+                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                           
+                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를<br> 통해 현지 고객의다양한 요구에 부합하는 맞춤형<br>
+                            서비스를 더욱  신속하고 체계적으로 제공합니다
+                           
+                           
+                           
+                            <!--  People :2023리뉴얼 -->
+                        </div>
+                    </div>
+                    <!-- <div class="map">
+                        <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
+                        <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
+                        <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
+                        <a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
+                        <a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
+                        <a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
+                        <a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
+                        <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
+                        <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
+                        <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+                    </div> -->
                     <div class="map">
                         <a class="pin amsterdam" onclick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-                        <a class="pin leuven" onclick="location.href='01Macrogen_06글로벌네트워크.html#leuven'"><i></i><span>Leuven, Belgium</span></a>
-                        <a class="pin paris" onclick="location.href='01Macrogen_06글로벌네트워크.html#paris'"><i></i><span>Paris, France</span></a>
-                        <a class="pin milan" onclick="location.href='01Macrogen_06글로벌네트워크.html#italy'"><i></i><span>Milan, Italy</span></a>
-                        <a class="pin poland" onclick="location.href='01Macrogen_06글로벌네트워크.html#poland'"><i></i><span>Szczecin, Poland</span></a>
+                      	<a class="pin leuven" onclick="location.href='01Macrogen_06글로벌네트워크.html#leuven'"><i></i><span>Leuven, Belgium</span></a>
+                      	<a class="pin paris" onclick="location.href='01Macrogen_06글로벌네트워크.html#paris'"><i></i><span>Paris, France</span></a>
+                      	<a class="pin milan" onclick="location.href='01Macrogen_06글로벌네트워크.html#italy'"><i></i><span>Milan, Italy</span></a>
+                      	<a class="pin poland" onclick="location.href='01Macrogen_06글로벌네트워크.html#poland'"><i></i><span>Szczecin, Poland</span></a>
                         <a class="pin madrid" onclick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
                         <a class="pin seoul" onclick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
                         <a class="pin songdo" onclick="location.href='01Macrogen_06글로벌네트워크.html#songdo'"><i></i><span>Songdo, Korea</span></a>
@@ -663,22 +684,22 @@
                         <a class="pin virginia" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
                         <a class="pin santiago" onclick="location.href='01Macrogen_06글로벌네트워크.html#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
+                    <script>
+                        $('.map .pin').on('click', function () {
+                            $(this).addClass('active')
+                                .siblings().removeClass('active')
+                        })
+                    </script>
                 </div>
             </div>
-
-            <script>
-                $('.map .pin').on('click', function () {
-                    $(this).addClass('active')
-                        .siblings().removeClass('active')
-                })
-            </script>
-
+            
             <script>
                 $('.section-map').ready(function(){
                     $('.inner').scrollLeft(400);
                 });
             </script>
-            <!-- e  global map -->
+            <!--global map -->
+            
             
             <!-- s  global partners -->
 
@@ -691,34 +712,34 @@
                 </div>
                 <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_01.png" alt="일루미나"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_02.png" alt="팩바이오"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_03.png" alt="써모피셔"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_04.png" alt="지노믹스"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_05.png" alt="올링크"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_06.png" alt="애질런트"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트"></a>
                     </li>                    
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_07.png" alt="나노스트링"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링"></a>
                     </li>  
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_08.png" alt="마이크로소프트"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트"></a>
                     </li>   
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_09.png" alt="트위스트"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트"></a>
                     </li>   
                     <li>                                                
-                        <a href=""><img src="../../img/main/img-global_10.png" alt="나노포어"></a>
+                        <a href=""><img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어"></a>
                     </li>                     
                 </ul> 
             </div>
@@ -727,119 +748,5 @@
         </div>
     </div>
 
-	<%-- 팝업 --%>
-	<c:if test="${not empty popupList  }">
-	<c:forEach var="popup" items="${popupList}" varStatus="status">
-		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
-		     aria-hidden="true">
-		    <input type="hidden" value="${popupCnt}" id="popupCnt">
-			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-		    <div class="modal-dialog">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <div class="ico-notice icon"></div>
-		            </div>
-		            <div class="modal-body">
-		                <div class="scroll">
-		                    <div class="data-img">
-		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
-			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
-			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-		                    </div>
-		                    <%-- <div class="btn-wrapper">
-		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
-		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
-		                    </div> --%>
-		                </div>
-		            </div>
-		            <div class="modal-footer">
-		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
-		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-		</c:forEach>
-		<script>
-		    /* var modalEl = document.getElementById('modal')
-		    var modal = new bootstrap.Modal(modalEl)
-
-		    modal.show(); */
-		    
-		    var popupCnt = $("#popupCnt").val();
-			
-			for(var i=0;i<popupCnt;i++){
-				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
-				/* var modalEl = document.getElementById('modal'+i);
-				var modal = new bootstrap.Modal(modalEl);  */
-				var coockieChk = $("#cookieChkList"+i).val();
-
-				if(coockieChk == 'true'){
-					modal.hide();
-				}else if(coockieChk =='false'){
-					modal.show();
-				}
-			}
-
-		   /*  $(document).ready(function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('shown.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('hide.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
-		    })  */
-		</script>
-		<script>
-			/* $(function() {
-				var $btnPopupClose = $('#modal .close-box');
-				$btnPopupClose.on('click', function() {
-					var sn = $(this).data('popup-sn');
-					if (!sn) return;
-
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-					modal.hide();
-				});
-			});
- */
-			function onclickPopupImage(url, trgtCode) {
-				if (!url) {
-					return;
-				}
-
-				if (trgtCode === 'NEW') {
-					window.open(url);
-				} else {
-					location.href = url;
-				}
-			}
- 
-			 function popupClose(sn) {
-				if (!sn) return;
-				
-				var snListStr = $.cookie('popup-sn-list');
-				if (!snListStr) {
-					snListStr = sn;
-				} else if (snListStr.indexOf(sn) < 0) {
-					snListStr += ',' + sn;
-				}
-
-				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-				modal.hide();
-			}
-		</script>
-	</c:if>
 
 </body>

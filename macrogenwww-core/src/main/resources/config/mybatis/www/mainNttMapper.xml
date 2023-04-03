@@ -183,7 +183,7 @@
 			, main_bbs_id = #{mainBbsId}
 			, main_ntt_sj_pc = #{mainNttSjPc}
 			, main_ntt_sj_Mo = #{mainNttSjMo}
-			, main_ntt_cn_Mo = #{mainNttCnPc}
+			, main_ntt_cn_Pc = #{mainNttCnPc}
 			, main_ntt_cn_Mo = #{mainNttCnMo}
 			, image_atch_id_pc = #{imageAtchIdPc}
 			, image_atch_id_mo = #{imageAtchIdMo}

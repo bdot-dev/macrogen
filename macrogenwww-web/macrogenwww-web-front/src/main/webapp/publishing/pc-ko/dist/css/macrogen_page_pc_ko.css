@@ -7443,38 +7443,16 @@
 		    opacity: 1; } }
 
 
-        /* s yt 영상 2023.03.30*/
-
-        .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .youtube-background {
-        height: 100%;
-        width: 100%;
-        z-index: 0;  
-        position: absolute;
-        overflow: hidden;  
-        inset: 0px;
-        pointer-events: none;
-        background-image: url(&quot;https://img.youtube.com/vi/eUzXNxvAsgg/maxresdefault.jpg&quot;);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-       }
-
-    
-
+      /* s yt 영상 2023.03.30*/
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide iframe {
-        top: 50%; left: 50%; 
-        transform: translateX(-50%) translateY(-50%); 
-        position: absolute;
-        opacity: 1; 
-        width: 2023.11px; 
-        height: 1138px;
         transition: opacity 500ms ease-in-out;
-        }
+			  transition-delay: 250ms;
+      }
 
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
-        background: url(../img/main/img-main_04.png) no-repeat center center / cover !important} /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
-
-       /* e yt 영상 2023.03.30*/
+        background: url(../img/main/img-main_04.png) no-repeat center center / cover !important
+      } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
+      /* e yt 영상 2023.03.30*/
 
 
   .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
@@ -7670,7 +7648,7 @@
           display: inline-block !important;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
-          animation: dash linear 32000ms;
+          animation: dash linear 42000ms;
           animation-iteration-count: unset; }
       .main-wrap .main-bg .swiper-container .swiper-pagination .fp-arc-loader {
         transform: rotate(-90deg); }
@@ -7970,8 +7948,8 @@
         .people_swiper {overflow: hidden;position: relative;width: 100%;height: 524px;}
         .people_swiper.sm{width: 1468px;margin: 0 auto;}
         .people_swiper .swiper-wrapper{display: flex; align-items: center; margin-left: -61px; }
-        .people_swiper .resize .swiper-wrapper {margin-left: 0;}
-        .people_swiper .swiper-slide {position: relative; width: 402px!important; min-width:402px; height:402px; margin:0 35px; border-radius: 100%; transition: 0.5s; }
+        .people_swiper.resize .swiper-wrapper {margin-left: 0;}
+        .people_swiper .swiper-slide {position: relative; width: 402px !important; min-width:402px; height:402px; margin:0 35px; border-radius: 100%; transition: 0.5s; }
         .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
         .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
         .people_swiper .swiper-slide.bg03{background-color: #DEFBD1;}
@@ -7996,8 +7974,8 @@
         .people_swiper .swiper-slide.swiper-slide-active .flip .front{justify-content:right; }
         .people_swiper .swiper-slide.swiper-slide-active .flip .front .info-area{opacity: 1;}
         .people_swiper .swiper-slide.swiper-slide-active .flip .front .img{right: 0;bottom: 50px;transform: scale(1.3); }
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .front{opacity: 0 !important;}
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1 !important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front, .people_swiper .swiper-slide[class*="active"].rotate .flip .front *{opacity: 0 !important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .back, .people_swiper .swiper-slide[class*="active"].rotate .flip .back *{opacity: 1 !important;}
 /*//2023리뉴얼*/
 
 /*s --- news&media*/

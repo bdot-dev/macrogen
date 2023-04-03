@@ -2,11 +2,11 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
 	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
 <body>
 
 <div class="wrap main-wrap">
-
 
     <div class="full-bg main-bg">
 
@@ -67,12 +67,14 @@
             
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
 	            	<c:if test="${result.expsrYn == 'Y'}">
-		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
+		                <div class="swiper-slide">
 		                	<c:choose>
 		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
-			                		 <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
+			                		 <!-- <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
 			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
 					                 </iframe>		
+									  -->
+									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
 					                 	<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
@@ -92,7 +94,7 @@
 				                    	</div>			            	
 		                		</c:when>
 		                		<c:otherwise>
-					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            	<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
@@ -192,7 +194,7 @@
                         loop: true, //반복
                         speed: 0,//속도
                         autoplay: {
-                            delay: 4700,
+                            delay: 6000,
                             waitForTransition: true,
                             disableOnInteraction: false,
                         },
@@ -230,6 +232,8 @@
 
                 mainSwiper = new Swiper($container, options)
                 step2()
+				
+                jQuery('[data-vbg]').youtube_background();
             }
         </script>
        	</div>
@@ -330,7 +334,7 @@
 				<!-- s  business  slide -->
 				<div class="section-business">
 					<div class="info-box">
-						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Business</div>
+						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Service</div>
 						<div class="desc">
 							<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
 								<br>더 건강하고 행복한 삶을 만들어갑니다.</p> <!--  People :2023리뉴얼 -->
@@ -399,9 +403,10 @@
 
 	                <div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
 	                    <div class="swiper-wrapper">
-		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
-		                		<c:if test="${ result.viewYn == 'Y' }">
-			                        <div class="swiper-slide bg0${status.index % 5 +1}">
+	                   
+		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
+		                		 <c:if test="${ result.viewYn == 'Y' }">
+			                        <div class="swiper-slide bg0${status.index % 5 + 1}">
 			                            <div class="flip">
 			                                <div class="front">
 			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
@@ -421,72 +426,76 @@
 			                                </div>
 			                            </div>                            
 			                        </div>    
-			                	</c:if>        
+			                	 </c:if>      			               
 		                	</c:forEach>
+		                	  
 		                </div>
 		            </div>
 		        </div>
 					
 				<script>
 	                $(function(){                
-	                    setSlider2();
-	                    function setSlider2() {      
-	                        var pSwiper;
-	                        var $container = $('._peopleSlider');
-	                        var $conLi = $container.find('.swiper-slide');                                
-	                        var conCnt = $conLi.length;
-	                        let options = {};
-	
-	                        if (pSwiper !== undefined) {
-	                            console.log('pSwiper');
-	                            return false
-	                        }
-	
-	                        var html = $("._peopleSlider .swiper-wrapper").html();                        
-	                        $("._peopleSlider .swiper-wrapper").append(html);                        
-	                        
-	                        if(conCnt < 4){
-	                            $container.addClass("sm");                               
-	                        }    
-	                        options = {
-	                            // observer: true,
-	                            // observeParents: true,
-	                            centeredSlides: true, 
-	                            slidesPerView: "auto",
-	                            slideToClickedSlide : true,
-	                            loop:true,
-	                            loopedSlides: 30,
-	                            loopAdditionalSlides: 10,
-	                            allowTouchMove : true,
-	                            spaceBetween: 70,                            
-	                            // autoplay: {
-	                            //     delay: 1000,
-	                            //     disableOnInteraction: false,
-	                            // },
-	                            speed: 1000,
-	                            lazy: true,       
-	                            // on: {
-	                            //     slideChangeTransitionEnd: function() {
-	                            //         var $slides = $container.find('.swiper-slide');
-	                            //         $slides.removeClass('rotate');
-	                            //         var $activeSlide = $container.find('.swiper-slide-active');
-	                            //         $activeSlide.addClass('rotate');
-	                            //     }
-	                            // }                   
-	                        }       
-	                        pSwiper = new Swiper($container, options)               
-	                    }          
-	                    
-	                    $('._peopleSlider .swiper-slide').on('click',function (){                             
-	                        var swiper = $(this);                        
-	                        if(!swiper.hasClass('rotate') ) {
-	                            swiper.addClass("rotate").siblings().removeClass("rotate");
-	                        }
-	                        else{
-	                            swiper.removeClass("rotate");
-	                        }                                                                
-	                    })                    
-	                });
+                    var pSwiper;
+                    setSlider2();
+                    function setSlider2() {      
+                        // var pSwiper;
+                        var $container = $('._peopleSlider');
+                        var $conLi = $container.find('.swiper-slide');                                
+                        var conCnt = $conLi.length;
+                        let options = {};
+
+                        if (pSwiper !== undefined) {
+                            console.log('pSwiper');
+                            return false
+                        }
+
+                        var html = $("._peopleSlider .swiper-wrapper").html();                        
+                        $("._peopleSlider .swiper-wrapper").append(html);                        
+                        
+                        if(conCnt < 4){
+                            $container.addClass("sm");                               
+                        }    
+                        options = {
+                            // observer: true,
+                            // observeParents: true,
+                            centeredSlides: true, 
+                            slidesPerView: "auto",
+                            slideToClickedSlide : true,
+                            loop:true,
+                            loopedSlides: conCnt,
+                            loopAdditionalSlides: 10,
+                            allowTouchMove : true,
+                            speed: 1000,
+                            lazy: true,
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            }
+                        }       
+                        pSwiper = new Swiper($container, options)               
+                    }          
+                    
+                    $('._peopleSlider .swiper-slide').on('click',function (){                             
+                        var swiper = $(this);                        
+                        if(!swiper.hasClass('rotate') ) {
+                            swiper.addClass("rotate").siblings().removeClass("rotate");
+                        }
+                        else{
+                            swiper.removeClass("rotate");
+                        }                                                                
+                    })    
+                   
+                    //resize
+                    window.addEventListener('resize', function(){
+                        $('._peopleSlider').addClass("resize");
+                        pSwiper.update();
+                    })
+                });
             	</script>
             <!-- e  People :2023리뉴얼-->    	
 			
@@ -497,7 +506,7 @@
                 </div>
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 
-				<div class="slider">
+				<div class="slider"> 
 
 					<div class="slider-navigation">
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
@@ -514,7 +523,10 @@
 											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
 											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 										</div>
-										<div class="content">${result.somlnkSj }</div>
+										<div class="content">
+											<strong class="title">${ result.somlnkSj }</strong>
+											${ result.somlnkDt }
+										</div>
 										<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 									</a>
 								</div>
@@ -593,7 +605,7 @@
             <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="info-box">
                     <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
                        세계적인 파트너들이 마크로젠과 함께 합니다
                     </div>               
                 </div>
@@ -657,6 +669,6 @@
 	    });
 	</script>
 
-</div><!-- 첫시작 -->
+</div>
  
 </body>

@@ -18,7 +18,7 @@
 		<c:when test="${ layout_type eq 'company' or layout_type eq 'business' or layout_type eq 'main' or layout_type eq 'rnd_institute' }">
 			<c:set var="snsIconColor" value="" />
 		</c:when>
-	</c:choose>
+	</c:choose> 
 	<div class="section_btn" data-layout-type="${layout_type }">
 	    <ul class="sns">
 	        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook-circle${snsIconColor }"></i></a></li>
@@ -28,7 +28,7 @@
 	    </ul>
 	    <div class="btn_eng">
 	    	<!-- s:2023리뉴얼 -->
-            <!-- <a href="#" class="btn btn-round"><span>Contact Us</span></a> -->
+            <a href="/ko/company/contact-us" class="btn btn-round"><span>Contact Us</span></a>
 	        <a href="/en/main" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
 	        <%-- <a href="https://glo.macrogen.com/en/main/index.php" target="_blank" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a> --%>
 	    </div>
@@ -45,7 +45,7 @@
                 <li><a href="/${rc.locale.language }/company/history">연혁</a></li>
                 <li><a href="/${rc.locale.language }/company/vision">비전</a></li>
                 <li><a href="/${rc.locale.language }/company/certification">인증</a></li>
-                <!-- <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li> -->
+                <%-- <li><a href="/${rc.locale.language }/company/contact-us">Contact us</a></li> --%>
             </ul>
         </div>
         <div class="item">
