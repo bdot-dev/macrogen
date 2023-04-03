@@ -62,6 +62,7 @@
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
   <script src="../../js/common.js?"></script>
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
 
 <body>
@@ -268,61 +269,14 @@
             })
         </script>
 
-        <!-- s intro -->
-        <div class="intro">
-            <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
-                    <img src="../../img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
-            </div>
-        </div>
-        <!-- e intro -->
-
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <!-- mp4일때 -->
-                <!-- <div class="swiper-slide visual" data-swiper-autoplay="8000">
-                	<video class="video" autoplay muted loop playsinline><source src="../../img/video/dna-27019.mp4" type="video/mp4"></video>
-                    <div class="text-box">
-                       
-                        <p class="slogan-sub">최첨단 유전체 분석 시스템 세계 최초 도입<br>NovaSeq X Plus & PacBio Revio</p>
-                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
-                        <div class="btns">
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="swiper-slide visual" data-swiper-autoplay="8000">
-                	
-                    
-                    <iframe frameborder="0" height="100%" width="100%" 
-                    src="https://www.youtube.com/embed/eUzXNxvAsgg?controls=0&mute=1&autoplay=1&modestbranding=1&loop=1&playlist=eUzXNxvAsgg" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                    <div class="text-box">
-                        <p class="text-gradient">최첨단 유전체 분석 시스템 세계 최초 도입</p>
-                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
-                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
-                        <div class="btns">
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
-                        </div>
-                    </div>
-                </div> -->
-
-                     <!-- 20230330 -->
+                <!-- 20230330 -->
                 <!-- slide 영상배경 -->
-                <div class="swiper-slide ">
-                    <div id="ytbg" data-vbg="https://www.youtube.com/watch?v=eUzXNxvAsgg" class="youtube-background video-background">
-                       <iframe frameborder="0" allow="autoplay; mute" 
-                             src="https://www.youtube.com/embed/eUzXNxvAsgg?&amp;enablejsapi=1&amp;disablekb=1&amp;controls=0
-                                  &amp;rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;playsinline=1&amp;showinfo=0&amp;modestbranding=1
-                                  &amp;fs=0&amp;mute=1&amp;autoplay=1&amp;loop=1&amp;playlist=eUzXNxvAsgg"
-                             id="eUzXNxvAsgg-227" 
-                             title="4K Particles Background 001,  Motion Graphics, Background Video, GRAPHICS, วีดีโอพื้นหลัง">
-                        </iframe>
-                    </div><!-- 동영상이 2개 이상일때 id값 1씩 증가 ex)ytbg2, ytbg3 / 영상 불려오는 동안 배경이미지 css 임의 지정 -->
+                <div class="swiper-slide">
+                    <div id="ytbg" data-vbg="https://www.youtube.com/watch?v=eUzXNxvAsgg">
+                    </div><!-- 동영상 배경 슬라이더 2개 이상일때 id값 1씩 증가 ex)ytbg2, ytbg3 / 영상 불려오는 동안 배경이미지 css 임의 지정 -->
                     <div class="text-box">
                         <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
                         <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
@@ -353,32 +307,8 @@
 	                    <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
 	                </div>
                 </div>
-
-               
                 <!--// 이미지 텍스트 -->
-                <!--// 20230330 -->
-                <!--
-                <div class="swiper-slide visual" data-swiper-autoplay="8000"> 
-                	<div class="visual" style="background: url(../../img/main/img-main_00.png) no-repeat center center / cover"></div>
-                    <div class="text-box">
-                        <p class="slogan-sub">최첨단 유전체 분석 시스템 세계 최초 도입<br>NovaSeq X Plus & PacBio Revio</p>
-                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
-                        <div class="btns">
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
-                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                	<div class="visual visual" style="background: url(../../img/main/img-main_01.png) no-repeat center center / cover"></div>
-	                <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
-	                    <p class="slogan-sub">유전체 맞춤 의학으로<br>78억 인류와 세상을 향합니다</p>
-	                    <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
-	                </div>
-                </div>
-            -->
-             
+                <!--// 20230330 -->             
             </div>
 
             <div class="scroll-wrap">
@@ -451,7 +381,7 @@
                         loop: true, //반복
                         speed: 0,//속도
                         autoplay: {
-                            delay: 4700,
+                            delay: 6000,
                             waitForTransition: true,
                             disableOnInteraction: false,
                         },
@@ -867,7 +797,7 @@
                     var pSwiper;
                     setSlider2();
                     function setSlider2() {      
-                        var pSwiper;
+                        // var pSwiper;
                         var $container = $('._peopleSlider');
                         var $conLi = $container.find('.swiper-slide');                                
                         var conCnt = $conLi.length;
@@ -895,20 +825,7 @@
                             loopAdditionalSlides: 10,
                             allowTouchMove : true,
                             speed: 1000,
-                            lazy: true,  
-                            //spaceBetween: 70,                            
-                            // autoplay: {
-                            //     delay: 1000,
-                            //     disableOnInteraction: false,
-                            // },
-                            // on: {
-                            //     slideChangeTransitionEnd: function() {
-                            //         var $slides = $container.find('.swiper-slide');
-                            //         $slides.removeClass('rotate');
-                            //         var $activeSlide = $container.find('.swiper-slide-active');
-                            //         $activeSlide.addClass('rotate');
-                            //     }
-                            // }                   
+                            lazy: true,
                         }       
                         pSwiper = new Swiper($container, options)               
                     }          
@@ -925,9 +842,8 @@
                    
                     //resize
                     window.addEventListener('resize', function(){
-                $('._peopleSlider').addClass("resize");
-                pSwiper,update();
-
+                        $('._peopleSlider').addClass("resize");
+                        pSwiper,update();
                     })
                 });
             </script>

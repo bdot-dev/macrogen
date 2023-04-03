@@ -2,6 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
 	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
 <body>
 
@@ -66,12 +67,14 @@
             
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
 	            	<c:if test="${result.expsrYn == 'Y'}">
-		                <div class="swiper-slide visual" data-swiper-autoplay="8000">
+		                <div class="swiper-slide">
 		                	<c:choose>
 		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
-			                		 <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
+			                		 <!-- <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
 			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
 					                 </iframe>		
+									  -->
+									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
 					                 	<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
 				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
@@ -191,7 +194,7 @@
                         loop: true, //반복
                         speed: 0,//속도
                         autoplay: {
-                            delay: 4700,
+                            delay: 6000,
                             waitForTransition: true,
                             disableOnInteraction: false,
                         },
@@ -229,6 +232,8 @@
 
                 mainSwiper = new Swiper($container, options)
                 step2()
+				
+                jQuery('[data-vbg]').youtube_background();
             }
         </script>
        	</div>
@@ -430,64 +435,58 @@
 					
 				<script>
 	                $(function(){                
-	                    setSlider2();
-	                    function setSlider2() {      
-	                        var pSwiper;
-	                        var $container = $('._peopleSlider');
-	                        var $conLi = $container.find('.swiper-slide');                                
-	                        var conCnt = $conLi.length;
-	                        let options = {};
-	
-	                        if (pSwiper !== undefined) {
-	                            console.log('pSwiper');
-	                            return false
-	                        }
-	
-	                        var html = $("._peopleSlider .swiper-wrapper").html();                        
-	                        $("._peopleSlider .swiper-wrapper").append(html);                        
-	                        
-	                        if(conCnt < 4){
-	                            $container.addClass("sm");                               
-	                        }    
-	                        options = {
-	                            // observer: true,
-	                            // observeParents: true,
-	                            centeredSlides: true, 
-	                            slidesPerView: "auto",
-	                            slideToClickedSlide : true,
-	                            loop:true,
-	                            loopedSlides: 30,
-	                            loopAdditionalSlides: 10,
-	                            allowTouchMove : true,
-	                            spaceBetween: 70,                            
-	                            // autoplay: {
-	                            //     delay: 1000,
-	                            //     disableOnInteraction: false,
-	                            // },
-	                            speed: 1000,
-	                            lazy: true,       
-	                            // on: {
-	                            //     slideChangeTransitionEnd: function() {
-	                            //         var $slides = $container.find('.swiper-slide');
-	                            //         $slides.removeClass('rotate');
-	                            //         var $activeSlide = $container.find('.swiper-slide-active');
-	                            //         $activeSlide.addClass('rotate');
-	                            //     }
-	                            // }                   
-	                        }       
-	                        pSwiper = new Swiper($container, options)               
-	                    }          
-	                    
-	                    $('._peopleSlider .swiper-slide').on('click',function (){                             
-	                        var swiper = $(this);                        
-	                        if(!swiper.hasClass('rotate') ) {
-	                            swiper.addClass("rotate").siblings().removeClass("rotate");
-	                        }
-	                        else{
-	                            swiper.removeClass("rotate");
-	                        }                                                                
-	                    })                    
-	                });
+                    var pSwiper;
+                    setSlider2();
+                    function setSlider2() {      
+                        // var pSwiper;
+                        var $container = $('._peopleSlider');
+                        var $conLi = $container.find('.swiper-slide');                                
+                        var conCnt = $conLi.length;
+                        let options = {};
+
+                        if (pSwiper !== undefined) {
+                            console.log('pSwiper');
+                            return false
+                        }
+
+                        var html = $("._peopleSlider .swiper-wrapper").html();                        
+                        $("._peopleSlider .swiper-wrapper").append(html);                        
+                        
+                        if(conCnt < 4){
+                            $container.addClass("sm");                               
+                        }    
+                        options = {
+                            // observer: true,
+                            // observeParents: true,
+                            centeredSlides: true, 
+                            slidesPerView: "auto",
+                            slideToClickedSlide : true,
+                            loop:true,
+                            loopedSlides: conCnt,
+                            loopAdditionalSlides: 10,
+                            allowTouchMove : true,
+                            speed: 1000,
+                            lazy: true,
+                        }       
+                        pSwiper = new Swiper($container, options)               
+                    }          
+                    
+                    $('._peopleSlider .swiper-slide').on('click',function (){                             
+                        var swiper = $(this);                        
+                        if(!swiper.hasClass('rotate') ) {
+                            swiper.addClass("rotate").siblings().removeClass("rotate");
+                        }
+                        else{
+                            swiper.removeClass("rotate");
+                        }                                                                
+                    })    
+                   
+                    //resize
+                    window.addEventListener('resize', function(){
+                        $('._peopleSlider').addClass("resize");
+                        pSwiper,update();
+                    })
+                });
             	</script>
             <!-- e  People :2023리뉴얼-->    	
 			
