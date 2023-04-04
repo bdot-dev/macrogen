@@ -56,7 +56,7 @@ public class MainRenewalController extends DefaultController {
 		mainPeopleVo.setLangCode(langId.name());
 		mainPeopleVo.setFirstIndex(0);		
 		mainPeopleVo.setMode("main");
-		mainPeopleVo.setViewYn("Y");
+		mainPeopleVo.setSearchUseYn("Y");
 		mainPeopleVo.setRecordCountPerPage(5);
 								
 		

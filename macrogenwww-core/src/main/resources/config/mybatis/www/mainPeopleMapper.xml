@@ -39,7 +39,7 @@
 		, tmp.updusr_sn
 		, ( select user_nm from tb_user where user_sn = tmp.updusr_sn ) updusr_nm
 	from tb_main_people tmp
-	where view_yn = 'Y'
+	where 1 = 1
     <include refid="list_where" />
     order by
    		<if test='mode != null and mode == "main"'>
