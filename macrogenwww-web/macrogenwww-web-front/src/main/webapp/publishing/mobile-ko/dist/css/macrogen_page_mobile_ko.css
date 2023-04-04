@@ -3356,6 +3356,8 @@
               background: rgba(255, 255, 255, 0.15);
             }
 
+            /* iphone se 기준 미디어쿼리 */
+
             @media screen and (max-width:376px) {
               .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .btns {
                  flex-direction: column;
@@ -3774,6 +3776,8 @@
     width: 0; }
   100% {
     width: 100%; } }
+
+    /* section business */
   .main-wrap .main-page .section-business {
     padding: 0 20px;
     margin-bottom: 48px; }
@@ -3846,6 +3850,7 @@
       .main-wrap .main-page .business-box .slider .swiper-container .swiper-pagination-bullet-active i {
         background-color: #666666; }
   
+        /* section business */
   
         /*  s People :2023리뉴얼 */
 
