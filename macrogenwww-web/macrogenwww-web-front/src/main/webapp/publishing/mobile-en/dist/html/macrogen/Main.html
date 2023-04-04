@@ -624,14 +624,6 @@
                             speed:1000,
                             lazy:true,
                             //spaceBetween: 70;
-                            
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: 'true',
-                                type: 'bullets',
-                                renderBullet: function (index, className) {
-                                return '<span class="' + className + '">' + '<i></i>' + '</span>';
-                            },
 
                             on: {
                                 slideChangeTransitionStart: function () {
@@ -641,8 +633,18 @@
                                     $('.flip .back').show(0);
                                     AOS.init();
                                 },
-                            }
-                    },                      
+                            },
+                            
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: 'true',
+                                type: 'bullets',
+                                renderBullet: function (index, className) {
+                                return '<span class="' + className + '">' + '<i></i>' + '</span>';
+                            },
+
+                           
+                            },                      
                         }       
                         pSwiper = new Swiper($container, options)                                         
                     }                      

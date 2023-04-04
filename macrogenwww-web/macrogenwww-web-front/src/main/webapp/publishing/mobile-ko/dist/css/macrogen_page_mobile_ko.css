@@ -3380,6 +3380,7 @@
         top: 55%;
         left: 5.33%;
         transform: translateY(-50%);
+        margin-right: 10px;
         /*  left: 5.333%!*20px*!;
             top: 25.86%!*210px*!;*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
@@ -3894,7 +3895,8 @@
           margin: 0 35px;
         }
 
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .front, .people_swiper .swiper-slide[class*="active"].rotate .flip .front *{opacity: 0 !important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front, 
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front *{opacity: 0 !important;}
         .people_swiper .swiper-slide[class*="active"].rotate .flip .back, .people_swiper .swiper-slide[class*="active"].rotate .flip .back *{opacity: 1 !important;}
 
 

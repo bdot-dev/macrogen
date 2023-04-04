@@ -3219,6 +3219,7 @@
         left: 5.33%;
         transform: translateY(-50%);
         font-family: 'Proxima Nova';
+        margin-right: 10px;
         /*  left: 5.333%!*20px*!;
               top: 25.86%!*210px*!;*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {

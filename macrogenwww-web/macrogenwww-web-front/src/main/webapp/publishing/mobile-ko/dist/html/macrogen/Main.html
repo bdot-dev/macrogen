@@ -696,7 +696,16 @@
                             allowTouchMove : true,
                             speed:1000,
                             lazy:true,
-                            //spaceBetween: 70;
+                            
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            },
                             
                             pagination: {
                                 el: '.swiper-pagination',
@@ -706,16 +715,7 @@
                                 return '<span class="' + className + '">' + '<i></i>' + '</span>';
                             },
 
-                            on: {
-                                slideChangeTransitionStart: function () {
-                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
-                                },
-                                slideChangeTransitionEnd: function () {
-                                    $('.flip .back').show(0);
-                                    AOS.init();
-                                },
-                            }
-                    },                      
+                          },                      
                         }       
                         pSwiper = new Swiper($container, options)                                         
                     }                      
@@ -738,8 +738,9 @@
                 $('._peopleSlider').addClass("resize");
                 pSwiper.update();
 
-           }) 
-        ;})
+           });
+        
+        })
                     
                     
                 
