@@ -3288,6 +3288,20 @@
   100% {
     background-size: 100vw auto;
     opacity: 1; } }
+
+
+  /* s yt 영상 2023.03.30*/
+  .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide iframe {
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 250ms;
+  }
+
+  .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
+    background: url(../img/main/img-main_test.PNG) no-repeat center center / cover !important
+  } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
+  /* e yt 영상 2023.03.30*/
+
+
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual #player{position: absolute; width: 100%; height: 100%;}
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
         width: 100%;
@@ -3300,6 +3314,7 @@
           top: 50%;
           left: 5.33%;
           width: 100%;
+          transform:translateY(-50%);
           /*text-align: center; */}
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual .text-box .text-gradient {
             font-weight: 700;
@@ -3320,31 +3335,34 @@
             font-size: 16px;
             line-height: 162%;
             letter-spacing: -0.05em; }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual .text-box .btns {
-            display: flex;
-            align-items: left;
-            margin-top: 34px;
-             }
-          .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual .text-box .btns button {
-            width: 145px;
-            height: 43px;
-            margin: 5px 10px 0 0;
-            font-weight: 700;
-            font-size: 16px;
-            font-family: 'Proxima Nova';
-            color: #fff;
-            letter-spacing: 0.02em;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            border-radius: 100px;
-            background: rgba(255, 255, 255, 0.15); }
+
+            .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .btns {
+              display: flex;
+              justify-content: left;
+              margin-top: 37px;
+            }
+            .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .btns button {
+              width: 145px;
+              height: 43px;
+              margin:5px 10px 0 0;
+              font-weight: 700;
+              font-size: 15px;
+              font-family: 'Proxima Nova';
+              color: #fff;
+              line-height: 18px;
+              letter-spacing: 0.02em;
+              border: 1px solid rgba(255, 255, 255, 0.6);
+              border-radius: 100px;
+              background: rgba(255, 255, 255, 0.15);
+            }
 
             @media screen and (max-width:376px) {
-              .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual .text-box .btns {
+              .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .btns {
                  flex-direction: column;
                  
               }
       
-              .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual .text-box .btns button {
+              .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .btns button {
                 margin-top: 10px;
               }
             }
@@ -3359,7 +3377,7 @@
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box {
         display: none;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 5.33%;
         transform: translateY(-50%);
         /*  left: 5.333%!*20px*!;
@@ -3449,7 +3467,7 @@
           display: inline-block !important;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
-          animation: dash linear 52000ms;
+          animation: dash linear 42000ms;
           animation-iteration-count: unset; }
       .main-wrap .main-bg .swiper-container .swiper-pagination .fp-arc-loader {
         transform: rotate(-90deg); }
@@ -3637,7 +3655,7 @@
     text-align: left!important;
    /*text-transform: capitalize!important;*/
     letter-spacing: -1px;
-    
+    margin-bottom: 16px!important;
      }
   .main-wrap .main-page .info-box .desc {
     font-size: 16px;
@@ -3652,7 +3670,7 @@
       line-height: 44px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      margin-bottom: 32px;
+      margin-bottom: 32px!important;
     }
       .main-wrap .main-page .section-define .info-box .title span:first-of-type {
         display: block; }
@@ -3669,7 +3687,8 @@
           background: #000000; }
     .main-wrap .main-page .section-define .info-box .desc {
       padding-left: 35px;
-      color: #000000; }
+      color: #000000;
+      font-size: 15px; }
       .main-wrap .main-page .section-define .info-box .desc .btn-text {
         display: inline-block;
         padding-top: 40px; }
@@ -3790,7 +3809,8 @@
               vertical-align: text-top; }
           .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide .text-area .desc {
             line-height: 32px;
-            letter-spacing: -0.5px; }
+            letter-spacing: -0.5px;
+             }
         .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide.swiper-slide-prev .text-area, .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide.swiper-slide-next .text-area {
           transform: translate3d(100px, 0, 0);
           opacity: 0;
@@ -3874,8 +3894,10 @@
           margin: 0 35px;
         }
 
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .front {opacity: 0!important;}
-        .people_swiper .swiper-slide[class*="active"].rotate .flip .back{opacity: 1!important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .front, .people_swiper .swiper-slide[class*="active"].rotate .flip .front *{opacity: 0 !important;}
+        .people_swiper .swiper-slide[class*="active"].rotate .flip .back, .people_swiper .swiper-slide[class*="active"].rotate .flip .back *{opacity: 1 !important;}
+
+
 
         .people_swiper .swiper-slide.bg01{background-color: #ABDFFD;}
         .people_swiper .swiper-slide.bg02{background-color: #DDE0FD;}
@@ -4223,6 +4245,16 @@
           font-weight: 700;
           counter-reset: #000;
         }
+
+        .media .slider .swiper-container .swiper-wrapper .swiper-slide .content p {
+          
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+          }
+       
 
         .media .slider .swiper-container .swiper-wrapper .swiper-slide .date {
           font-size: 16px;

@@ -17,6 +17,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?"/>
     <script src="../../js/bundle.js?"></script>
     <script src="../../js/common.js?"></script>
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
 
 <body>
@@ -54,113 +55,118 @@
         </div>
         <!-- e intro -->
 
-        <!-- s 메인비주얼 영역 -->
-        <div class="swiper-container" id="key-swiper-container">
-            <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide" data-swiper-autoplay="8000">
-                    <div class="visual" style="background:url(../../img/main/img-main_00.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                            <p class="slogan-sub"> The NovaSeq X Plus & Revio <br>have been installed, marking<br>their  first introduction to Asia</p>
-                            <p class="desc">As the global launching partner of illumina<br>and PacBio, Macrogen is one of the first<br>
+       <!-- s 메인비주얼 영역 -->
+       <div class="swiper-container" id="key-swiper-container">
+        <div class="swiper-wrapper" id="key-swiper-wrapper">
+            <!-- 20230330 -->
+            <!-- slide 영상배경 -->
+            <div class="swiper-slide">
+                <div id="ytbg" data-vbg="https://www.youtube.com/watch?v=eUzXNxvAsgg">
+                </div><!-- 동영상 배경 슬라이더 2개 이상일때 id값 1씩 증가 ex)ytbg2, ytbg3 / 영상 불려오는 동안 배경이미지 css 임의 지정 -->
+                <div class="text-box">
+                    <p class="slogan-sub"> The NovaSeq X Plus & Revio <br>have been installed, marking<br>their  first introduction to Asia</p>
+                    <p class="desc">As the global launching partner of illumina<br>and PacBio, Macrogen is one of the first<br>
                                 companies to bring the most revolutionary<br>sequencing technology to the market</p>
-                            <div class="btns">
-                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000237?pageIndex=1&searchKeyword='">MORE</button>
-                                <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000238?pageIndex=1&searchKeyword='">MORE</button>
-                            </div>
-                        </div>
+                    <div class="btns">
+                        <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">MORE</button>
+                        <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">MORE</button>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="visual" style="background:url(../../img/main/img-main_01.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                           <p class="slogan-sub">Personalized genomic</p>
-                           <p class="slogan-sub">medicine for all</p>
-                            <p class="slogan-sub">7.8 billion people</p>
-                            <p class="desc">Building a healthier future with <br>innovative genome analysis technology</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="visual" style="background:url(../../img/main/img-main_03.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                            <!--<p><span class="text-gradient">Creating a healthier future</span></p>-->
-                            <p class="slogan-sub">Creating a healthier future<br>for humanity</p>
-                            <p class="desc">Macrogen opens the door to the future using <br>body designs for human health</p>
-                        </div>
-                    </div>
-                </div>
-                
-               <!-- <div class="swiper-slide">
-                    <div class="visual visual_04">
-                        <div class="text-box phrase">
-                            <p>DNA holds</br>
-							   our past and</br>
-							   future</p>
-                            <span class="name">Founder/Chairman of Macrogen<br><span>Jeong-Sun Seo</span></span>
-                        </div>
-                    </div>
-                </div>-->
-
             </div>
-            <div class="scroll-wrap">
-    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-</div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination" id="key-swiper-pagination"></div>
+            <!--// slide 영상배경 -->
+            <!-- slide 이미지 텍스트 -->
+            <div class="swiper-slide">
+                <div class="visual" style="background: url(../../img/main/img-main_00.png) no-repeat center center / cover"></div>
+                <div class="text-box">
+                    <p class="slogan-sub">Personalized genomic</p>
+                           <p class="slogan-sub">medicine for all</p>
+                           <p class="slogan-sub">7.8 billion people</p>
+                           <p class="desc">Building a healthier future with <br>innovative genome analysis technology</p>
+                    <div class="btns">
+                        <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">MORE</button>
+                        <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="visual" style="background: url(../../img/main/img-main_01.png) no-repeat center center / cover"></div>
+                <div class="text-box">
+                        <p class="slogan-sub">Creating a healthier future<br>for humanity</p>
+                        <p class="desc">Macrogen opens the door to the future using <br>body designs for human health</p>
+                </div>
+            </div>
+            <!--// 이미지 텍스트 -->
+            <!--// 20230330 -->             
         </div>
-        <script>
-            var $container = $('#key-swiper-container');
-            var $wrapper = $('#key-swiper-wrapper');
-            var $pagination = $('#key-swiper-pagination');
-            var delay = 5000;
 
-            setTimeout(function () {
-                step1()
+        <div class="scroll-wrap">
+            <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="key-swiper-pagination"></div>
+    </div>
+    <script>
+        var $container = $('#key-swiper-container');
+        var $conLi = $container.find('.swiper-slide');
+        var $wrapper = $('#key-swiper-wrapper');
+        var $pagination = $('#key-swiper-pagination');
+        var delay = 5000;
+        var mainSwiper;
+        setTimeout(function () {
+            step1()
+        })
+
+        function step1() {
+            $wrapper.css({
+                'transform': 'translateY(0)',
+                'transition-duration': '1s'
             })
+            $('.header').addClass('header-white')
+            $('.bg-DNA').addClass('DNA-move')
+            $wrapper.animate({
+                height: "100%"
+            }, 1000, function () {
+                $('.swiper-wrapper').css({'overflow': 'visible'})
+                $pagination.show()
+                setSlider()
 
-            function step1() {
-                $wrapper.css({
-                   'transform': 'translateY(0)',
-                    'transition-duration': '1s'
-                })
- 				$('.header').addClass('header-white')
-                $('.bg-DNA').addClass('DNA-move')
-                $wrapper.animate({
-                    height: "100%"
-                }, 1000, function () {
-                    $('.swiper-wrapper').css({'overflow': 'visible'})
-                    $pagination.show()
-                    setSlider()
+                $('html').addClass('animated')
+            })
+        }
 
-                    $('html').addClass('animated')
-                })
+        function step2() {
+            //after 기능
+            $('.header').addClass('header-white')
+            introScroll()
+
+            $wrapper.css({'overflow': 'visible'})
+            $container.css({'overflow': 'hidden'})
+            $('.text-box').fadeIn()
+            $('.scroll-wrap').delay(1000).fadeIn()
+            // $('.stock_information').delay(1500).fadeIn()
+        }
+
+
+        function setSlider() {                
+            var conCnt = $conLi.length;
+            let options = {};
+
+            if (mainSwiper !== undefined) {
+                console.log('mainSwiper');
+                return false
             }
-
-            function step2() {
-                //after 기능
-                $('.header').addClass('header-white')
-                introScroll()
-
-                $wrapper.css({'overflow': 'visible'})
-                $container.css({'overflow': 'hidden'})
-                $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()
-                // $('.stock_information').delay(1500).fadeIn()
-            }
-
-            function setSlider() {
-                if (mainSwiper !== undefined) {
-                    //console.log('mainSwiper');
-                    return false
-                }
-                //console.log('setSlider');
-                var mainSwiper = new Swiper($container, {
+            console.log('setSlider');
+            if(conCnt < 2){
+                console.log(conCnt);
+                options = {}         
+            }else{
+                options = {                        
                     effect : 'fade', // 페이드 효과
                     loop: true, //반복
                     speed: 0,//속도
                     autoplay: {
-                        delay: 4700,
+                        delay: 6000,
                         waitForTransition: true,
                         disableOnInteraction: false,
                     },
@@ -186,36 +192,42 @@
 
                             $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
                                 'animation-name': 'grow2',
-                                'animation-duration': '3s'
+                                'animation-duration': '1s'
                             })
                         }
                     }
-                })
-                step2()
+                }   
+                $('.swiper_btn').delay(1000).fadeIn()     
             }
 
-            function introScroll(){
-                var lastScroll = 0;
-                $(window).scroll(function(){
-                    var st = $(this).scrollTop();
-                    if (st > lastScroll){
-                        // console.log('Down');
-                        $('.header').show().css({'position': 'absolute','top':'0'});
-                    }
-                    else if (st === 0) {
-                        // console.log('Top');
-                        $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
-                    }
-                    else {
-                        // console.log('Up');
-                        $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
-                    }
-                    lastScroll = st;
-                });
-            }
+            mainSwiper = new Swiper($container, options)
+            step2()
 
-        </script>
-        <!-- e 메인비주얼 영역 -->
+            jQuery('[data-vbg]').youtube_background();
+        }            
+
+        function introScroll(){
+            var lastScroll = 0;
+            $(window).scroll(function(){
+                var st = $(this).scrollTop();
+                if (st > lastScroll){
+                    // console.log('Down');
+                    $('.header').show().css({'position': 'absolute','top':'0'});
+                }
+                else if (st === 0) {
+                    // console.log('Top');
+                    $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                }
+                else {
+                    // console.log('Up');
+                    $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+                }
+                lastScroll = st;
+            });
+        }
+
+    </script>
+    <!-- e 메인비주얼 영역 -->
     </div>
 
     <div class="container">
@@ -611,7 +623,7 @@
                             allowTouchMove : true,
                             speed:1000,
                             lazy:true,
-                            //spaceBetween: 70,
+                            //spaceBetween: 70;
                             
                             pagination: {
                                 el: '.swiper-pagination',
@@ -621,6 +633,15 @@
                                 return '<span class="' + className + '">' + '<i></i>' + '</span>';
                             },
 
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            }
                     },                      
                         }       
                         pSwiper = new Swiper($container, options)                                         
@@ -642,13 +663,12 @@
             // 리사이즈 END체크
            window.addEventListener('resize', function(){
                 $('._peopleSlider').addClass("resize");
-                pSwiper,update();
+                pSwiper.update();
 
            })
 
       
     ;})
-                    
                     
                     
                 

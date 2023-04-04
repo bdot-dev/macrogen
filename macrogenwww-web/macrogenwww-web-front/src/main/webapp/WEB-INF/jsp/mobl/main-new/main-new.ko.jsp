@@ -20,6 +20,8 @@
                     <span class="text-gradient">세상을 향합니다</span></p>
             </div>
         </div> -->
+
+
         <!-- e intro -->
         
 		<script>
@@ -72,64 +74,65 @@
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
             	
-           		<c:forEach var="result" items="${ mainBannerList }" varStatus="status">
-           			<c:if test="${result.expsrYn == 'Y'}">
-           				<div class="swiper-slide visual" data-swiper-autoplay="8000">
-           					
-           					<c:choose>
-		               			<c:when	test="${result.mediaUrlMo != null && result.mediaUrlMo != '' }">
-	               					<div class="visual visual_00">
-	               						<div id="player"></div>
-				                 		<div class="text-box">
-					                 		<p class="slogan-sub">${result.mainNttSjMo}</p>
-				                        	<p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
-				                        	<c:choose>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
-						                       		<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
-						                        	</div>
-				                        		</c:when>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-						                        	<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
-						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
-						                        	</div>
-				                        		</c:when>	                        
-				                        	</c:choose>
-		               					</div>	
-	               					</div>
-		               			</c:when>
-		               			
-		               			<c:otherwise>
-		               				<div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthMobl}) 
-		               					no-repeat center center / cover">
-		               				</div>
-	               					<div class="text-box">
-				                 		<p class="slogan-sub">${result.mainNttSjMo}</p>
-			                        	<p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
-			                        	<c:choose>
-			                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
-					                       		<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
-					                        	</div>
-			                        		</c:when>
-			                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-					                        	<div class="btns">
-					                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
-					                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
-					                        	</div>
-			                        		</c:when>	                        
-			                        	</c:choose>
-		               				</div>
-		               			</c:otherwise>
-		               		</c:choose>
-           					
-           				</div>
-           			</c:if>
-           		</c:forEach>     
-                
-			 
-       		</div>   	  
+                <c:forEach var="result" items="${ mainBannerList }" varStatus="status">
+                    <c:if test="${result.expsrYn == 'Y'}">
+                        <div class="swiper-slide"><!--20230404 수정-->
+                            
+                            <c:choose>
+                                <c:when	test="${result.mediaUrlMo != null && result.mediaUrlMo != '' }">
+                                     <!--20230404 수정-->
+                                      <div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
+                                      <div class="text-box">
+                                          <p class="slogan-sub">${result.mainNttSjMo}</p>
+                                         <p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+                                         <c:choose>
+                                             <c:when test="${result.btYn != 0 && result.btYn == 1}">
+                                                    <div class="btns">
+                                                     <button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
+                                                 </div>
+                                             </c:when>
+                                             <c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+                                                 <div class="btns">
+                                                     <button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
+                                                     <button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
+                                                 </div>
+                                             </c:when>	                        
+                                         </c:choose>
+                                        </div>	
+                                    
+                                </c:when>
+                                
+                                <c:otherwise>
+                                    <div class="visual" style="background: url(http://www.macrogen.eluocnc.com:9001/${publicUrl}${result.imageFlpthMobl}) 
+                                        no-repeat center center / cover">
+                                    </div>
+                                    <div class="text-box">
+                                      <p class="slogan-sub">${result.mainNttSjMo}</p>
+                                     <p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+                                     <c:choose>
+                                         <c:when test="${result.btYn != 0 && result.btYn == 1}">
+                                                <div class="btns">
+                                                 <button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
+                                             </div>
+                                         </c:when>
+                                         <c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+                                             <div class="btns">
+                                                 <button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
+                                                 <button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
+                                             </div>
+                                         </c:when>	                        
+                                     </c:choose>
+                                    </div>
+                                </c:otherwise>
+                            </c:choose>
+                            
+                        </div>
+                    </c:if>
+                </c:forEach>     
+             
+          
+            </div>   	  
+                 
 			 
 			 <div class="scroll-wrap">
                 <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
@@ -139,7 +142,7 @@
             <div class="swiper-pagination" id="key-swiper-pagination"></div>
         </div>
         
-        <script>
+        <script> /*2023.0404 수정*/
             var $container = $('#key-swiper-container');
             var $conLi = $container.find('.swiper-slide');
             var $wrapper = $('#key-swiper-wrapper');
@@ -199,7 +202,7 @@
                         loop: true, //반복
                         speed: 0,//속도
                         autoplay: {
-                            delay: 4700,
+                            delay: 6000,
                             waitForTransition: true,
                             disableOnInteraction: false,
                         },
@@ -225,16 +228,18 @@
 
                                 $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
                                     'animation-name': 'grow2',
-                                    'animation-duration': '3s'
+                                    'animation-duration': '1s'
                                 })
                             }
                         }
                     }   
-                    //$('.swiper_btn').delay(1000).fadeIn()     
+                    $('.swiper_btn').delay(1000).fadeIn()     
                 }
 
                 mainSwiper = new Swiper($container, options)
                 step2()
+
+                jQuery('[data-vbg]').youtube_background();
             }            
 
             function introScroll(){
@@ -484,91 +489,84 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <script>
             
-               var swiperScrollbar = null
-               var pSwiper;
-               var resizeCheck;
-               $(document).ready(function (){
-                   /*slide 영역*/
-                   setSlider2();
-                   
-                   function setSlider2() {      
-                       
-                       var $container = $('._peopleSlider');
-                       var $conLi = $container.find('.swiper-slide');                                
-                       var conCnt = $conLi.length;
-                       let options = {};
+            <script> /*2023.0404 수정*/
+                var swiperScrollbar = null
+                $(document).ready(function (){
+                    /*slide 영역*/
+                    
+                    var pSwiper;
+                    setSlider2();
+                    function setSlider2() {      
+                        
+                        var $container = $('._peopleSlider');
+                        var $conLi = $container.find('.swiper-slide');                                
+                        var conCnt = $conLi.length;
+                        let options = {};
 
-                       if (pSwiper !== undefined) {
-                           console.log('pSwiper');
-                           return false
-                       }   
-                       options = {
-                           centeredSlides: true, 
-                           slidesPerView: "auto",
-                           slideToClickedSlide : true,
-                           loop:true,
-                           loopedSlides: 30,
-                           loopAdditionalSlides: 10,
-                           allowTouchMove : true,
-                           spaceBetween: 70,
-                           
-                          
-                           // autoplay: {
-                           //     delay: 1000,
-                           //     disableOnInteraction: false,
-                           // },
-                           speed: 1000,
-                           lazy: true,      
-                           
-                           pagination: {
-                               el: '.swiper-pagination',
-                               clickable: 'true',
-                               type: 'bullets',
-                               renderBullet: function (index, className) {
-                               return '<span class="' + className + '">' + '<i></i>' + '</span>';
-                           },
+                        if (pSwiper !== undefined) {
+                            console.log('pSwiper');
+                            return false
+                        }   
+                        options = {
+                            centeredSlides: true, 
+                            slidesPerView: "auto",
+                            slideToClickedSlide : true,
+                            loop:true,
+                            loopedSlides: conCnt,
+                            loopAdditionalSlides: 10,
+                            allowTouchMove : true,
+                            speed:1000,
+                            lazy:true,
+                            //spaceBetween: 70;
+                            
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: 'true',
+                                type: 'bullets',
+                                renderBullet: function (index, className) {
+                                return '<span class="' + className + '">' + '<i></i>' + '</span>';
+                            },
 
-                   },                      
-                       }       
-                       pSwiper = new Swiper($container, options)                                         
-                   }                      
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            }
+                    },                      
+                        }       
+                        pSwiper = new Swiper($container, options)                                         
+                    }                      
 
-                   $('._peopleSlider .swiper-slide').on('click',function (){                             
-                       var swiper = $(this);
-                           //var sub = setTimeout(function() {
-                           //if(swiper.hasClass('swiper-slide-active')) {
-                   if(!swiper.hasClass('rotate') ) {
-                       swiper.addClass("rotate").siblings().removeClass("rotate");
-                   }
-                   else{
-                       swiper.removeClass("rotate");
-                   }
+                    $('._peopleSlider .swiper-slide').on('click',function (){                             
+                        var swiper = $(this);
+                            //var sub = setTimeout(function() {
+                            //if(swiper.hasClass('swiper-slide-active')) {
+                    if(!swiper.hasClass('rotate') ) {
+                        swiper.addClass("rotate").siblings().removeClass("rotate");
+                    }
+                    else{
+                        swiper.removeClass("rotate");
+                    }    
+          })
 
-                   
-		                //}
-		            //}, 300);     
-		            console.log("resizeEnd");
-		            // 리사이즈 END체크
-		            $(window).resize(function(){
-		                if(resizeCheck){ //계속 리사이즈중이면 clear
-		                    clearTimeout(resizeCheck); 
-		                };
-		        
-		                //0.5초이상 리사이즈 지속하지않으면 실행
-		                    resizeCheck = setTimeout(function(){
-		                    console.log("resizeEnd");
-		                    pSwiper.update(); //스와이퍼 업데이트
-		                    
-		                },500);
-		            });
-		      
-		        })
-		
-		      
-		    ;})
-			                    
+        
+            // resize
+           window.addEventListener('resize', function(){
+                $('._peopleSlider').addClass("resize");
+                pSwiper.update();
+
+           })
+
+      
+    ;})
+                    
+                    
+                
             </script>
             <!-- e People :2023리뉴얼--> 
 
@@ -600,7 +598,7 @@
 					                        </div>
 					                        <div class="content">
 					                        	<strong class="title">${ result.somlnkSj }</strong>
-					                            ${ result.somlnkDt }
+					                            <p>${ result.somlnkDt }</p> 
 					                        </div>
 					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
 				                        </a>
@@ -645,7 +643,6 @@
                     <div class="info-box">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
                         <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                           
                             국내 지사를 포함하여 세계 각지의 글로벌 네트워크를<br> 통해 현지 고객의다양한 요구에 부합하는 맞춤형<br>
                             서비스를 더욱  신속하고 체계적으로 제공합니다
                            

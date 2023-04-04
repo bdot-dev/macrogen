@@ -17,6 +17,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_mobile_ko.css?"/>
     <script src="../../js/bundle.js?"></script>
     <script src="../../js/common.js?"></script>
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
 
 <body>
@@ -105,61 +106,45 @@
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <!-- 유투브일때 -->
-                <!-- <div class="swiper-slide" data-swiper-autoplay="8000">
-                    <div class="visual visual_00">     
-                        <div id="player"></div>                   
-                        <div class="text-box">
-                            <p class="text-gradient">최첨단 유전체 분석 시스템 <br>세계 최초 도입</p>
-                            <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
-                            <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 <br>$100 개인 유전체 시대를 이끌어갑니다</p>
-                            <div class="btns">
-                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">NovaSeq X Plus</button>
-                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">Revio</button>
-                            </div>
+                <!-- 20230330 -->
+                <!-- slide 영상배경 -->
+                <div class="swiper-slide">
+                    <div id="ytbg" data-vbg="https://www.youtube.com/watch?v=eUzXNxvAsgg">
+                    </div><!-- 동영상 배경 슬라이더 2개 이상일때 id값 1씩 증가 ex)ytbg2, ytbg3 / 영상 불려오는 동안 배경이미지 css 임의 지정 -->
+                    <div class="text-box">
+                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">MORE</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">MORE</button>
                         </div>
                     </div>
-                </div> -->
-                <div class="swiper-slide" data-swiper-autoplay="8000">
-                    <div class="visual" style="background:url(../../img/main/img-main_00.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                           <!-- <p class="text-gradient">최첨단 유전체 분석 시스템 <br>세계 최초 도입</p>-->
-                            <p class="slogan-sub">최첨단 유전체 분석 시스템 <br>세계 최초 도입 <br>NovaSeq X Plus & PacBio Revio</p>
-                            <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 <br>$100 개인 유전체 시대를 이끌어갑니다</p>
-                            <div class="btns">
-                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">MORE</button>
-                                <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">MORE</button>
-                            </div>
+                </div>
+                <!--// slide 영상배경 -->
+                <!-- slide 이미지 텍스트 -->
+                <div class="swiper-slide">
+                	<div class="visual" style="background: url(../../img/main/img-main_00.png) no-repeat center center / cover"></div>
+                    <div class="text-box">
+                        <p class="slogan-sub">최첨단 유전체 분석 시스템 세계 최초 도입<br>NovaSeq X Plus & PacBio Revio</p>
+                        <p class="desc">일루미나와 팩바이오의 글로벌 론칭 파트너로서 <br>최신 시퀀싱 기술을 가장 빠르게 선보이며 $100 개인 유전체 시대를 이끌어갑니다</p>
+                        <div class="btns">
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000215?pageIndex=1&searchKeyword'">MORE</button>
+                            <button type="button" onclick="location.href='https://www.macrogen.com/ko/newsroom/news/20000000225?pageIndex=1&searchKeyword='">MORE</button>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="visual " style="background:url(../../img/main/img-main_01.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                            <!--<p class="slogan-sub">유전체 맞춤 의학으로</p>-->
-                            <p class="slogan-sub">유전체 맞춤 의학으로<br>78억 인류와 세상을 향합니다</p>
-                            <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
-                        </div>
-                    </div>
+                	<div class="visual" style="background: url(../../img/main/img-main_01.png) no-repeat center center / cover"></div>
+	                <div class="text-box">
+	                   <p class="slogan-sub">유전체 맞춤 의학으로</p>
+	                    <p class="slogan-sub">유전체 맞춤 의학으로<br>78억 인류와 세상을 향합니다</p>
+	                    <p class="desc">독보적 유전체 분석 기술로<br>인류의 건강한 미래를 선도합니다.</p>
+	                </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="visual" style="background:url(../../img/main/img-main_03.png)no-repeat center bottom/cover">
-                        <div class="text-box">
-                           <!-- <p><span class="text-gradient">희망과 함께하는</span></p>-->
-                            <p class="slogan-sub"><span>희망과 함께하는</span><br>건강한 미래</p>
-                            <p class="desc">마크로젠은 인류의 건강을 위한<br>내 몸 설계도로 새로운 미래를 열어갑니다</p>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="swiper-slide">
-                    <div class="visual visual_04">
-                        <div class="text-box phrase">
-                            <p>DNA가<br>세상을 구할 것이다<br>나의 DNA에는<br>과거와 미래가 공존한다</p>
-                            <span class="name">마크로젠 창립자&#47;회장<br><span>서정선</span></span>
-                        </div>
-                    </div>
-                </div>-->
+                <!--// 이미지 텍스트 -->
+                <!--// 20230330 -->             
             </div>
+
             <div class="scroll-wrap">
                 <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
             </div>
@@ -227,7 +212,7 @@
                         loop: true, //반복
                         speed: 0,//속도
                         autoplay: {
-                            delay: 4700,
+                            delay: 6000,
                             waitForTransition: true,
                             disableOnInteraction: false,
                         },
@@ -253,16 +238,18 @@
 
                                 $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
                                     'animation-name': 'grow2',
-                                    'animation-duration': '3s'
+                                    'animation-duration': '1s'
                                 })
                             }
                         }
                     }   
-                    //$('.swiper_btn').delay(1000).fadeIn()     
+                    $('.swiper_btn').delay(1000).fadeIn()     
                 }
 
                 mainSwiper = new Swiper($container, options)
                 step2()
+
+                jQuery('[data-vbg]').youtube_background();
             }            
 
             function introScroll(){
@@ -709,7 +696,7 @@
                             allowTouchMove : true,
                             speed:1000,
                             lazy:true,
-                            //spaceBetween: 70,
+                            //spaceBetween: 70;
                             
                             pagination: {
                                 el: '.swiper-pagination',
@@ -719,6 +706,15 @@
                                 return '<span class="' + className + '">' + '<i></i>' + '</span>';
                             },
 
+                            on: {
+                                slideChangeTransitionStart: function () {
+                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                                },
+                                slideChangeTransitionEnd: function () {
+                                    $('.flip .back').show(0);
+                                    AOS.init();
+                                },
+                            }
                     },                      
                         }       
                         pSwiper = new Swiper($container, options)                                         
@@ -740,12 +736,10 @@
             // 리사이즈 END체크
            window.addEventListener('resize', function(){
                 $('._peopleSlider').addClass("resize");
-                pSwiper,update();
+                pSwiper.update();
 
-           })
-
-      
-    ;})
+           }) 
+        ;})
                     
                     
                 
@@ -778,7 +772,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">데이터 활용 가치를 증진</strong>
-                            마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것
+                           <p>마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것</p>
                         </div>
                         <div class="date">2023.07.21</div>
                     </a>
@@ -791,7 +785,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">데이터 활용 가치를 증진</strong>
-                            정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.
+                            <p>정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.</p>
                         </div>
                         <div class="date">2023.07.18</div>
                     </a>
@@ -804,7 +798,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">초정밀 최신장비 일루미나 런칭</strong>
-                            정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.
+                           <p>정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.</p>
                         </div>
                         <div class="date">2023.05.13</div>
                     </a>
@@ -817,7 +811,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">웹뷰어 ‘DEG Viewer’ 베타서비스 출시!</strong>
-                            마크로젠이 차별 발현 유전자 분석 결과를 원하는 조건에 맞추어 다양하게 시각화할 수 있는 웹뷰어 ‘DEG Viewer’ 베타 서비스를 25일 출시한다.
+                            <p>마크로젠이 차별 발현 유전자 분석 결과를 원하는 조건에 맞추어 다양하게 시각화할 수 있는 웹뷰어 ‘DEG Viewer’ 베타 서비스를 25일 출시한다.</p>
                         </div>
                         <div class="date">2023.04.21</div>
                     </a>
@@ -830,7 +824,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">데이터 활용 가치를 증진</strong>
-                            마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것
+                            <p>마크로젠은 공식 인증 유전자검사기관으로서 올바른 유전체 데이터 활용에 앞장 서고, 데이터 활용 가치를 증진할 수 있는 다양한 사업을 선보일 것</p>
                         </div>
                         <div class="date">2023.07.21</div>
                     </a>
@@ -843,7 +837,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">데이터 활용 가치를 증진</strong>
-                            정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.
+                            <p>정밀의학 생명공학기업 마크로젠(대표이사 김창훈, 이수강)이 아주대학교의료원(원장 박해심)과 정밀 유전체 데이터 생산 및 활용을 위한 업무협약을 체결했다.</p>
                         </div>
                         <div class="date">2023.07.18</div>
                     </a>
@@ -856,7 +850,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">초정밀 최신장비 일루미나 런칭</strong>
-                            정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.
+                            <p>정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.</p>
                         </div>
                         <div class="date">2023.05.13</div>
                     </a>
@@ -869,7 +863,7 @@
                         </div>
                         <div class="content">
                             <strong class="title">웹뷰어 ‘DEG Viewer’ 베타서비스 출시!</strong>
-                            마크로젠이 차별 발현 유전자 분석 결과를 원하는 조건에 맞추어 다양하게 시각화할 수 있는 웹뷰어 ‘DEG Viewer’ 베타 서비스를 25일 출시한다.
+                            <p>정밀의학 생명공학기업 마크로젠 세계 최대 유전체분석 기기 제조업체 일루미나의 초정밀 최신 장비 세계 최초 론칭 파트너가 됐다고 30일 밝혔다.</p>
                         </div>
                         <div class="date">2023.04.21</div>
                     </a>
