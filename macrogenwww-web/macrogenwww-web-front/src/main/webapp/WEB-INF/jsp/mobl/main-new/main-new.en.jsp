@@ -571,13 +571,13 @@
 			<!-- s  news & event-->
             <div class="section-media">
 	        	<div class="info-box">
-                   <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
-                   <div class="desc">
-                       <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                          다양한 채널을 통해<br>마크로젠의 소식을 만나실 수 있습니다
-                       </p>
-                   </div>                    
-				</div>    
+                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
+                    <div class="desc">
+                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            Keep up with our latest news as we pave<br>the way to a brighter future.
+                        </p>
+                    </div>                    
+                </div>   
 				       
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">        
 		            <div class="slider">
