@@ -592,7 +592,7 @@
 				       			<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
 				       				<div class="swiper-slide">
 				       					<a href="${ result.somlnkUrl }" target="_blank">
-					       					<div class="img">
+					       					<div class="img"> 
 					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
 					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 					                        </div>
