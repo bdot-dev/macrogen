@@ -567,7 +567,79 @@
                                 
             </script>
             <!-- e People :2023리뉴얼-->
+						
+			<!-- s  news & event-->
+            <div class="section-media">
+	        	<div class="info-box">
+                   <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
+                   <div class="desc">
+                       <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                          다양한 채널을 통해<br>마크로젠의 소식을 만나실 수 있습니다
+                       </p>
+                   </div>                    
+				</div>    
+				       
+                <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">        
+		            <div class="slider">
+		            	<div class="slider-navigation">
+	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+	                   	</div>
+	                   	
+				       	<div class="swiper-container _mediaSlider">
+				       		<div class="swiper-wrapper">
+				       		
+				       			<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+				       				<div class="swiper-slide">
+				       					<a href="${ result.somlnkUrl }" target="_blank">
+					       					<div class="img">
+					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+					                        </div>
+					                        <div class="content">
+					                        	<strong class="title">${ result.somlnkSj }</strong>
+					                            <p>${ result.somlnkDt }</p> 
+					                        </div>
+					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+				                        </a>
+				       				</div>
+				       			</c:forEach>
+				       			
+				   			</div>
+				       		<div class="swiper-pagination"></div>
+		           		</div>
+		            </div>
+            	</div>   
+            	     
+            </div>
+            
+            <script>
+            new Swiper("._mediaSlider", {
+                spaceBetween: 1,
+                slidesPerView: "auto",
+                slidesPerGroup: 1,
+                grabCursor: true,
+                centeredSlides: true, 
+                loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+                /* loop : true, */
+                navigation: {
+                    nextEl: "._btnNext",
+                    prevEl: "._btnPrev",
+                },
 
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: 'true',
+                    type: 'bullets',
+                    renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + '<i></i>' + '</span>';
+                },
+
+              },                      
+            });
+		    </script>
+			<!-- e  news & event-->
+			
             <!-- s  global map -->
             <div class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="info-box">
