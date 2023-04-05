@@ -589,7 +589,7 @@
 	        </div>
             <!-- e  global map -->
 			
-			<!-- s  People :2023리뉴얼 -->
+			<!-- s  global partners -->
 	         <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 	            <div class="info-box">
 	                <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
@@ -630,7 +630,7 @@
                     </li>                     
                 </ul>
 	        </div>
-        	<!-- e  People :2023리뉴얼-->
+        	<!-- e  global partners -->
 			
 
         </div>
