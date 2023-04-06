@@ -3145,7 +3145,7 @@
       }
 
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
-          background: url(../img/main/img-main_test.PNG) no-repeat center center / cover !important
+          background: url(../img/main/img-main_loading.PNG) no-repeat center center / cover !important
       } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
 /* e yt 영상 2023.03.30*/
 
@@ -3641,6 +3641,7 @@
           color: #ffffff; }
           .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide .text-area .font-h3 {
             margin-bottom: 8px; }
+            .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide .text-area .font-h3 a {vertical-align: middle;}
             .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide .text-area .font-h3 .icon-arrow-right-short {
               background: url("../img/main/ico-arrow-right-short.png") no-repeat center center;
               width: 36px;
@@ -3648,7 +3649,7 @@
               background-size: 100% auto;
               display: inline-block;
               margin-left: 8px;
-              vertical-align: text-top; }
+              vertical-align: unset; }
           .main-wrap .main-page .business-box .slider .swiper-container .swiper-slide .text-area .desc {
             line-height: 32px;
             letter-spacing: -0.5px; }
@@ -4225,11 +4226,8 @@
           letter-spacing: -0.5px;
           color: #454545;
           margin-bottom: 25px;
-          overflow: hidden;
-          display: -webkit-box;
           white-space: normal;
-          -webkit-line-clamp:3;
-          -webkit-box-orient:vertical;
+         
         }
 
         .main-wrap .main-page .section-media .media .slider .swiper-container .swiper-wrapper .swiper-slide .content .title {
@@ -4237,6 +4235,11 @@
           margin-bottom: 10px;
           font-weight: 700;
           counter-reset: #000;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
         }
 
         .media .slider .swiper-container .swiper-wrapper .swiper-slide .content p {
