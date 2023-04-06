@@ -24,7 +24,7 @@
 
         <!-- e intro -->
         
-		<script>
+		<!-- <script>
             var tag = document.createElement('script');
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -68,7 +68,7 @@
             function stopVideo() {
                 player.stopVideo();
             }
-        </script>
+        </script> -->
 		
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
@@ -83,8 +83,8 @@
                                      <!--20230404 수정-->
                                       <div id="ytbg" data-vbg="${result.mediaUrlMo}"></div>
                                       <div class="text-box">
-                                          <p class="slogan-sub">${result.mainNttSjMo}</p>
-                                         <p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+                                         <p class="slogan-sub">${result.mainNttSjMo}</p>
+                                         <p class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</p>
                                          <c:choose>
                                              <c:when test="${result.btYn != 0 && result.btYn == 1}">
                                                     <div class="btns">
@@ -299,7 +299,7 @@
                                         <span>기업개요</span>
                                     </div>
                                     <div class="desc">
-                                        대한민국 바이오 벤처 대표기업<br/>마크로젠 입니다
+                                         유전체 분석 기반 글로벌 디지털<br>헬스케어 기업 마크로젠입니다
                                     </div>
                                     <a href="#">
                                         <i class="icon-arrow-right-short"></i>
@@ -315,7 +315,7 @@
                                         <span>글로벌 마크로젠</span>
                                     </div>
                                     <div class="desc">
-                                        유전체 분석 연구를 이끄는<br/>글로벌 파트너와 함께 합니다
+                                    	전세계 유전체 분석 연구를 이끄는<br/>글로벌 파트너와 함께 합니다
                                     </div>
                                     <a href="#">
                                         <i class="icon-arrow-right-short"></i>
@@ -331,7 +331,7 @@
                                         <span>ESG</span>
                                     </div>
                                     <div class="desc">
-                                        인류의 건강한 미래가<br/>지속가능한 세계를 만들어갑니다
+                                        지속가능한 미래를 위해 노력합니다
                                     </div>
                                     <a href="#">
                                         <i class="icon-arrow-right-short"></i>
@@ -476,13 +476,13 @@
 		                                        	<span>MORE</span><i class="icon icon-arrow-right-long"></i>
 		                                        </p>                      
                         			 		</div>
-                        			 		<div class="back">
-			                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-			                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
-			                                        <p class="txt">${ result.cnMo }</p>
-			                                    </div>
-			                                </div>
-                        			 	</div>
+                        			 	</div>			
+                       			 		<div class="back">
+		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+		                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
+		                                        <p class="txt">${ result.cnMo }</p>
+		                                    </div>
+		                                </div>
                         			 </div>
                         		</div>
                         	</c:if>
@@ -651,51 +651,38 @@
                         <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             국내 지사를 포함하여 세계 각지의 글로벌 네트워크를<br> 통해 현지 고객의다양한 요구에 부합하는 맞춤형<br>
                             서비스를 더욱  신속하고 체계적으로 제공합니다
-                           
-                           
-                           
+                              
                             <!--  People :2023리뉴얼 -->
                         </div>
                     </div>
-                    <!-- <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
-                        <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
-                        <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
-                    </div> -->
-                    <div class="map">
-                        <a class="pin amsterdam" onclick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-                      	<a class="pin leuven" onclick="location.href='01Macrogen_06글로벌네트워크.html#leuven'"><i></i><span>Leuven, Belgium</span></a>
-                      	<a class="pin paris" onclick="location.href='01Macrogen_06글로벌네트워크.html#paris'"><i></i><span>Paris, France</span></a>
-                      	<a class="pin milan" onclick="location.href='01Macrogen_06글로벌네트워크.html#italy'"><i></i><span>Milan, Italy</span></a>
-                      	<a class="pin poland" onclick="location.href='01Macrogen_06글로벌네트워크.html#poland'"><i></i><span>Szczecin, Poland</span></a>
-                        <a class="pin madrid" onclick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin seoul" onclick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin songdo" onclick="location.href='01Macrogen_06글로벌네트워크.html#songdo'"><i></i><span>Songdo, Korea</span></a>
-                        <a class="pin daejeon" onclick="location.href='01Macrogen_06글로벌네트워크.html#daejeon'"><i></i><span>Daejeon, Korea</span></a>
-                        <a class="pin tokyo" onclick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin biopolis" onclick="location.href='01Macrogen_06글로벌네트워크.html#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
-                        <a class="pin boston" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin newyork" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin rockville" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
-                        <a class="pin virginia" onclick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin santiago" onclick="location.href='01Macrogen_06글로벌네트워크.html#santiago'"><i></i><span>Santiago, Chile</span></a>
-                    </div>
-                    <script>
-                        $('.map .pin').on('click', function () {
-                            $(this).addClass('active')
-                                .siblings().removeClass('active')
-                        })
-                    </script>
-                </div>
-            </div>
-            
+                   <div class="inner">
+	                    <div class="map">
+	                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+		                    <a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network2#leuven'"><i></i><span>Leuven, Belgium</span></a>
+		                    <a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network2#paris'"><i></i><span>Paris, France</span></a>
+		                    <a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network2#italy'"><i></i><span>Milan, Italy</span></a>
+		                    <a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network2#poland'"><i></i><span>Szczecin, Poland</span></a>
+		                    <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>
+		                    <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+		                    <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
+		                    <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+		                    <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Tokyo, japan</span></a>
+		                    <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network2#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+		                    <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Boston, USA</span></a>
+		                    <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>New york, USA</span></a>
+		                    <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Rockville, USA</span></a>
+		                    <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Virginia, USA</span></a>
+		                     <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network2#santiago'"><i></i><span>Santiago, Chile</span></a>
+	                    </div>
+	                    <script>
+	                        $('.map .pin').on('click', function () {
+	                            $(this).addClass('active')
+	                                .siblings().removeClass('active')
+	                        })
+	                    </script>
+	                </div>
+	            </div>
+           </div> 
             <script>
                 $('.section-map').ready(function(){
                     $('.inner').scrollLeft(400);
