@@ -4020,7 +4020,7 @@
         }
 
         .people_swiper .flip .back {
-          padding: 60px 60px 0;
+          padding: 55px 60px 0;
           text-align: center;
           opacity: 0;
         }
@@ -4037,7 +4037,7 @@
           position: relative;
           display: block;
           padding-bottom: 13px;
-          margin-bottom: 35px;
+          margin-bottom: 25px;
           font-size: 12px;
           line-height: 22px;
         }
@@ -4049,6 +4049,10 @@
           font-size: 20px;
           text-align: center;
         }
+
+        .people_swiper .flip .back .name p {
+          line-height: 20px;
+        } /*2023.04.06 수정*/
    
         .people_swiper .flip .back .name::after {
           content: '';
