@@ -20,7 +20,7 @@
         </div> -->
         <!-- e intro -->
 
-		<script>
+		<!-- <script>
             var tag = document.createElement('script');
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -64,7 +64,7 @@
             function stopVideo() {
                 player.stopVideo();
             }
-        </script>
+        </script> -->
 
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
@@ -474,13 +474,13 @@
 		                                        	<span>MORE</span><i class="icon icon-arrow-right-long"></i>
 		                                        </p>                      
                         			 		</div>
-                        			 		<div class="back">
-			                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-			                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
-			                                        <p class="txt">${ result.cnMo }</p>
-			                                    </div>
-			                                </div>
-                        			 	</div>
+                        			 	</div>			
+                       			 		<div class="back">
+		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+		                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
+		                                        <p class="txt">${ result.cnMo }</p>
+		                                    </div>
+		                                </div>
                         			 </div>
                         		</div>
                         	</c:if>
