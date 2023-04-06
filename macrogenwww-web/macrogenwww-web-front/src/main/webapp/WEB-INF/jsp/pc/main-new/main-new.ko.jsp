@@ -420,7 +420,7 @@
 			                                </div>
 			                                <div class="back">
 			                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-			                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
+			                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
 			                                        <p class="txt">${ result.cnPc }</p>
 			                                    </div>
 			                                </div>

@@ -250,11 +250,11 @@
                     </div>
                     <div class="text-box">
                         <div class="text">
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">As a biotechnology company, Macrogen leads </p>
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">personalized medicine based on individual patients'</p>
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">human genome information and data analysis technology.</p>
+                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">We contribute to the health, happiness, and well-being of  </p>
+                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550"> humanity, leveraging DNA sequencing data analysis technology</p>
+                           <!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">human genome information and data analysis technology.</p>-->
                         </div>
-                        <a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
+                        <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
                            data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -263,23 +263,23 @@
                         <li>
                             <a href="/${rc.locale.language }/company/overview">
                                 <p>About MACROGEN</p>
-                                <p class="sub-text">Macrogen is a leading<br>bio venture in Korea.</p>
+                                <p class="sub-text">Macrogen is a global digital healthcare company <br> based on DNA sequencing and analysis.</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="/${rc.locale.language }/company/global-network">
-                                <p>Global Network</p>
-                                <p class="sub-text">We work with global leaders in<br>genetic analysis and research.</p>
+                                <p>Global Macrogen</p>
+                                <p class="sub-text">We work with global leaders in <br>genetic analysis and research</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="/${rc.locale.language }/company/esg-management">
-                                <p>ESG Management</p>
-                                <p class="sub-text">We are committed to creating<br>a sustainable future for human health.</p>
+                                <p>ESG</p>
+                                <p class="sub-text">We are committed to creating<br>a sustainable future for human health</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -413,7 +413,7 @@
 		                                </div>
 		                                <div class="back">
 		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-		                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
+		                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
 		                                        <p class="txt">${ result.cnPc }</p>
 		                                    </div>
 		                                </div>

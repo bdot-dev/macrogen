@@ -20,51 +20,6 @@
         </div> -->
         <!-- e intro -->
 
-		<!-- <script>
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            var player;
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                    videoId: 'PYVP4IpaeRo',
-                    playerVars: {   
-                    'playsinline': 1,
-                    'autoplay': 1,   
-                    'rel': 0,
-                    'showinfo': 0,
-                    'modestbranding': 1,
-                    'playsinline': 1,
-                    'showinfo': 0,
-                    'rel': 0,
-                    'controls': 0,
-                    'color':'white',
-                    'loop': 0,
-                    'mute':1,
-                    // 'origin': 'https://meeranblog24x7.blogspot.com/'
-                    },
-                    events: {
-                    'onReady': onPlayerReady,
-                    // 'onStateChange': onPlayerStateChange
-                    }
-                });
-            }
-            function onPlayerReady(event) {
-                player.playVideo();
-                player.mute();
-            }
-            var done = false;
-            function onPlayerStateChange(event) {
-                if (event.data == YT.PlayerState.PLAYING && !done) {
-                    setTimeout(stopVideo, 6000);
-                    done = true;
-                }
-            }
-            function stopVideo() {
-                player.stopVideo();
-            }
-        </script> -->
 
         <!-- s 메인비주얼 영역 -->
         <div class="swiper-container" id="key-swiper-container">
@@ -477,7 +432,7 @@
                         			 	</div>			
                        			 		<div class="back">
 		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-		                                        <span class="name"><strong>${ result.peopleNm }</strong> ${ result.peopleDept }</span>
+		                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
 		                                        <p class="txt">${ result.cnMo }</p>
 		                                    </div>
 		                                </div>
@@ -645,7 +600,7 @@
                 <div class="info-box">
                     <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Macrogen</div>
                     <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        We provide personalized solutions To meet the diverse needs of local customers around the world in a timely manner.
+                        We provide personalized solutions to meet the<br> diverse needs of local customers around the world<br> in a timely manner
                     </div>
                 </div>
                 <div class="inner">
