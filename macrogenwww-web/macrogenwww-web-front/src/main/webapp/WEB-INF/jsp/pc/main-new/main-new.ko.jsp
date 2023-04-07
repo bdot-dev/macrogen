@@ -73,7 +73,7 @@
 			                		 <!-- <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
 			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
 					                 </iframe>		
-									  -->
+									  --> 
 									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
 					                 	<div class="text-box">
 				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
