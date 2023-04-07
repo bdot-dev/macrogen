@@ -1,8 +1,10 @@
    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <head>
-	<script src="/publishing/pc-en/dist/js/lib/jquery-ui.min.js"></script>
+	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
 </head>
+
 <body class="en">
 
 <div class="wrap main-wrap">
@@ -61,68 +63,94 @@
         <!-- e intro -->
 
         <!-- s 메인비주얼 영역 -->
-        <div class="swiper-container" id="key-swiper-container">
+       	<div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
-                <div class="swiper-slide visual_00" data-swiper-autoplay="8000">
-                	<div class="visual"></div>
-                    <div class="text-box">
-                        <p class="slogan-sub">NovaSeq X Plus & PacBio Revio, <br>the latest systems in genome sequencing, <br>will be adopted for the first time in the world</p>
-                        <p class="desc">As the global launching partner of Illumina and PacBio, <br>Macrogen is one of the first companies to bring the most revolutionary sequencing <br>technology to the market, helping to open up an era of $100 personal genomes.</p>
-                        <div class="btns">
-                            <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000245?pageIndex=1&searchKeyword='">NovaSeq X Plus</button>
-                            <button type="button" onclick="location.href='https://www.macrogen.com/en/newsroom/news/20000000238?pageIndex=1&searchKeyword='">Revio</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                	<div class="visual visual_01"></div>
-                    <div class="text-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="2000">
-                        <p class="slogan-sub">Personalized genomic medicine</p>
-                        <p class="slogan-sub">for all 7.8 billion people</p>
-                        <p class="desc">Building a healthier future with <br/>innovative genome analysis technology</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                	<div class="visual visual_03"></div>
-                    <div class="text-box">
-                        <p class="text-gradient"><img src="/publishing/pc-en/dist/img/main/txt-main_03.png" alt="희망과 함께하는"></p>
-                        <p class="slogan-sub">for humanity</p>
-                        <p class="desc">Macrogen opens the door to the future using<br/>body designs for human health</p>
-                    </div>
-                </div>
-                <!-- <div class="swiper-slide">
-               		<div class="visual visual_04"></div>
-                    <div class="text-box phrase">
-                        <p>DNA holds our past and future</p>
-                        <span class="name">Founder/Chairman of Macrogen<span>  Jeong-Sun Seo</span></span>
-                    </div>
-                </div> --> 
-            </div>
-            <div class="scroll-wrap">
-    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-</div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination" id="key-swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper_btn"></div>
-            <div class="swiper-button-next swiper_btn"></div>
+            
+               	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
+	            	<c:if test="${result.expsrYn == 'Y'}">
+		                <div class="swiper-slide">
+		                	<c:choose>
+		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
+			                		 <!-- <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
+			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
+					                 </iframe>		
+									  -->
+									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
+					                 	<div class="text-box">
+				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
+				                        	<c:choose>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
+						                       		<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
+						                        	</div>
+				                        		</c:when>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+						                        	<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
+						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
+						                        	</div>
+				                        		</c:when>	                        
+				                        	</c:choose>
+				                    	</div>			            	
+		                		</c:when>
+		                		<c:otherwise>
+					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
+					            		<div class="text-box">
+				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
+				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
+				                        	<c:choose>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
+						                       		<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
+						                        	</div>
+				                        		</c:when>
+				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
+						                        	<div class="btns">
+						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
+						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
+						                        	</div>
+				                        		</c:when>	                        
+				                        	</c:choose>
+				               			</div>
+		                		</c:otherwise>
+		                	</c:choose>		                			                	
+		                   
+		                </div>               	
+	             	</c:if>
+	             	
+		           <div class="scroll-wrap">
+		               <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+		           </div>        
+		                    
+					<!-- If we need pagination -->
+		  			<div class="swiper-pagination" id="key-swiper-pagination"></div>	
+		  			        							
+					<c:if test="${ result.expsrYn == 'Y' &&  mainBannerList.size() > 1 }">
+						<!-- If we need navigation buttons -->
+		           		<div class="swiper-button-prev swiper_btn"></div>
+		            	<div class="swiper-button-next swiper_btn"></div>	  					
+					</c:if>
+               	</c:forEach>
+               	
+            </div>            
         </div>
-        <script>
+        
+        <script>        
             var $container = $('#key-swiper-container');
+            var $conLi = $container.find('.swiper-slide');
             var $wrapper = $('#key-swiper-wrapper');
             var $pagination = $('#key-swiper-pagination');
             var delay = 5000;
             var mainSwiper;
             setTimeout(function () {
                 step1();
-             })
+            })
 
             function step1() {
-                $wrapper.css({
-                    'transform': 'translateY(0)',
-                    'transition-duration': '1s'
+               $wrapper.css({
+                   'transform': 'translateY(0)',
+                   'transition-duration': '1s'
                 })
                 $('.bg-DNA').addClass('DNA-move')
                 $wrapper.animate({
@@ -144,98 +172,73 @@
                 $wrapper.css({'overflow': 'visible'})
                 $container.css({'overflow': 'hidden'})
                 $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()
-                $('.swiper_btn').delay(1000).fadeIn()
+                $('.scroll-wrap').delay(1000).fadeIn()                
                 $('.stock_information').delay(1500).fadeIn()
             }
 
-            function setSlider() {
+            function setSlider() {                
+                var conCnt = $conLi.length;
+                let options = {};
+
                 if (mainSwiper !== undefined) {
                     console.log('mainSwiper');
                     return false
                 }
                 console.log('setSlider');
-                mainSwiper = new Swiper($container, {
-                    effect : 'fade', // 페이드 효과
-                    loop: true, //반복
-                    speed: 0,//속도
-                    autoplay: {
-                        delay: 4700,
-                        waitForTransition: true,
-                        disableOnInteraction: false,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    pagination: {
-                        el: $pagination,
-                        clickable: true,
-
-                           renderBullet: function (index, className) {
-                               var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
-                               '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
-                               'stroke-opacity="1" stroke-width="1px"></circle>' +
-                               '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
-                               '</svg></span>';
-                        return bu;
-
+                if(conCnt < 2){
+                    console.log(conCnt);
+                    options = {}         
+                }else{
+                    options = {
+                        effect : 'fade', // 페이드 효과
+                        loop: true, //반복
+                        speed: 0,//속도
+                        autoplay: {
+                            delay: 6000,
+                            waitForTransition: true,
+                            disableOnInteraction: false,
                         },
-                    },
-                    on: {
-                    	slideChange: function () { 
-							var $slides = this.slides; 
-							$slides.children('.visual').css('animation', 'none'); 
-							$slides.eq(this.activeIndex).children('.visual').css({ 
-								'animation-name': 'grow2', 
-								'animation-duration': '1s' 
-							}) 
-                        }, 
-                    }
-                })
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        pagination: {
+                            el: $pagination,
+                            clickable: true,
 
+                            renderBullet: function (index, className) {
+                                var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
+                                '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
+                                'stroke-opacity="1" stroke-width="1px"></circle>' +
+                                '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
+                                '</svg></span>';
+                            return bu;
+
+                            },
+                        },
+                        on: {
+                            slideChange: function () { 
+                                var $slides = this.slides; 
+                                $slides.children('.visual').css('animation', 'none'); 
+                                $slides.eq(this.activeIndex).children('.visual').css({ 
+                                    'animation-name': 'grow2', 
+                                    'animation-duration': '1s' 
+                                }) 
+                            }, 
+                        }
+                    }   
+                    $('.swiper_btn').delay(1000).fadeIn()     
+                }
+
+                mainSwiper = new Swiper($container, options)
                 step2()
+				
+                jQuery('[data-vbg]').youtube_background();
             }
         </script>
-
-        <div class="bg-DNA"></div>
-
-
-        <!-- e 메인비주얼 영역 -->
-
-        <!-- s 주가 영역 -->
-        <%--
-        <div class="stock_information">
-
-            <span class="close_btn"></span>
-            <div class="stock_cont">
-                <div class="stock_box">
-                    <p class="title">Stock Information</p>
-                    <div class="content"></div>
-                </div>
-            </div>
-        </div>
-        <script>
-            $(document).ready(function () {
-                $(".stock_information .close_btn").on('click', function () {
-                    if ($(this).next().hasClass('active') == true) {
-                        $(this).removeClass('active')
-                        $(this).next().removeClass('active')
-                        $(this).parents('body').css("overflow-y", "auto")
-
-                    } else {
-                        $(this).addClass('active')
-                        $(this).next().addClass('active')
-                        $(this).parents('body').css("overflow-y", " hidden")
-                    }
-                })
-            })
-        </script>
-         --%>
-        <!-- e 주가 영역 -->
     </div>
 
-
+	<!-- s Humanizing  -->
     <div class="container container-fluid">
         <div class="main-page company-define">
             <!-- s  바로가기 -->
@@ -247,9 +250,9 @@
                     </div>
                     <div class="text-box">
                         <div class="text">
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">As a biotechnology company, Macrogen leads </p>
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">personalized medicine based on individual patients'</p>
-                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">human genome information and data analysis technology.</p>
+                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">We contribute to the health, happiness, and well-being of  </p>
+                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550"> humanity, leveraging DNA sequencing data analysis technology</p>
+                           <!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">human genome information and data analysis technology.</p>-->
                         </div>
                         <a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
                            data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
@@ -259,24 +262,24 @@
                     <ul class="btn-list clearfix">
                         <li>
                             <a href="/${rc.locale.language }/company/overview">
-                                <p>About MACROGEN</p>
-                                <p class="sub-text">Macrogen is a leading<br>bio venture in Korea.</p>
+                                <p>About Macrogen</p>
+                                <p class="sub-text">Macrogen is a global digital healthcare company <br> based on DNA sequencing and analysis.</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="/${rc.locale.language }/company/global-network">
-                                <p>Global Network</p>
-                                <p class="sub-text">We work with global leaders in<br>genetic analysis and research.</p>
+                                <p>Global Macrogen</p>
+                                <p class="sub-text">We work with global leaders in <br>genetic analysis and research</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
                         </li>
                         <li>
                             <a href="/${rc.locale.language }/company/esg-management">
-                                <p>ESG Management</p>
-                                <p class="sub-text">We are committed to creating<br>a sustainable future for human health.</p>
+                                <p>ESG</p>
+                                <p class="sub-text">We are committed to creating<br>a sustainable future for human health</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -320,213 +323,244 @@
                     </script>
                 </div>
             </div>
-            <!-- e  바로가기 -->
+            <!-- e  Humanizing -->
 
             <!-- s  business slide -->
             <div class="section-business">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="500">Business</div>
+            	<div class="info-box">
+                    <div class="title" data-aos="fade-up" data-aos-duration="500">OUR SERVICES</div>
                     <div class="desc">
                         <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            As a global leader in precision medicine that drives innovation by building integrated big data of genomic and medical information, predicting<br/>
-                            diseases and conducting human genome research projects, we contribute to the health and happiness of mankind.
+                            From genomic research to personal healthcare,
+                            <br>we provide world-class professional services to create a healthier and happier life
                         </p>
                     </div>
-                </div>
-                <div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
-    <div class="slider">
-        <div class="swiper-container _businessSlider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_01.png) no-repeat center center / cover">
-                    <div class="text-area">
-                            <div class="title">
-                                <span>Personal Healthcare</span><a href="/${rc.locale.language }/business/healthcare/personal-genetic">
-                                    <span class="btn btn-circle btn-white btn-md">
-                                        <i class="icon icon-arrow-right-short"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="desc">
-                                Personalized healthcare solutions for managing people's health<br/>according to their genetic characteristics.
-                            </div>
-                    </div>
-                </div>
-                <!-- <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_02.png) no-repeat center center / cover">
-                    <div class="text-area">
-                        <div class="title">
-                            <span>The Biome</span><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">
-                             <span class="btn btn-circle btn-white btn-md">
-                                 <i class="icon icon-arrow-right-short"></i>
-                             </span>
-                            </a>
-                        </div>
-                        <div class="desc">
-                            Solutions are personalized by analyzing one's microbiome.
-                        </div>
-                    </div>
-                </div>  -->
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_03.png) no-repeat center center / cover">
-                    <div class="text-area">
-                        <div class="title">
-                            <span>Clinical Diagnostics/Treatment</span><a href="/${rc.locale.language }/business/diagnosis/cancer">
-                             <span class="btn btn-circle btn-white btn-md">
-                                 <i class="icon icon-arrow-right-short"></i>
-                             </span>
-	                        </a>
-                        </div>
-                        <div class="desc">
-                            Research on the cause of disease, e.g., COVID19 and cancer<br/>genomic testing for personalized treatment.
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_04_v2.png) no-repeat center center / cover">
-                    <div class="text-area">
-                        <div class="title">
-                            <span>Pets</span><a href="/${rc.locale.language }/business/healthcare/pet-genetic">
-                             <span class="btn btn-circle btn-white btn-md">
-                                 <i class="icon icon-arrow-right-short"></i>
-                             </span>
-                            </a>
-                        </div>
-                        <div class="desc">
-                            Personalized management solutions, e.g., prediction and prevention of<br/>genetic diseases for your beloved pets.
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" style="background: url(/publishing/pc-en/dist/img/main/img-business_05.png) no-repeat center center / cover">
-                    <div  class="text-area" data-aos="fade-left" data-aos-duration="500">
-                        <div class="title">
-                            <span>Research Services</span><a href="/${rc.locale.language }/business/research/ngs">
-                             <span class="btn btn-circle btn-white btn-md">
-                                 <i class="icon icon-arrow-right-short"></i>
-                             </span>
-                            </a>
-                        </div>
-                        <div class="desc">
-                            Competitive research and analysis for fast sequencing based on<br/>global standard infrastructure.
-                        </div>
-                    </div>
-                </div>
-
-
+                </div> 	
+  				<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
+					<div class="slider">	
+						<div class="swiper-container _businessSlider">
+							<div class="swiper-wrapper">
+							
+								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
+									<c:if test="${result.expsrYn == 'Y'}">
+										<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+											<div class="text-area">
+												<div class="title">
+													<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
+														<span class="btn btn-circle btn-white btn-md">
+															<i class="icon icon-arrow-right-short"></i>
+														</span>
+													</a>  
+												</div>
+												<div class="desc">
+													${fn:replace(result.mainNttCnPc, newline, "<br/>")}
+												</div>	
+											</div> 
+										</div>	  
+									</c:if>	        
+								</c:forEach>	
+				
+							</div>		
+						</div>				
+					</div>
+	  				<script>
+						$(document).ready(function (){
+							/*slide 영역*/
+								new Swiper ("._businessSlider", {
+								slidesPerView: "auto",
+								centeredSlides: true,
+								loop: true,
+							});
+						})
+					</script>
+				</div>
             </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function (){
-            /*slide 영역*/
-             new Swiper ("._businessSlider", {
-                slidesPerView: "auto",
-                centeredSlides: true,
-                loop: true,
-            });
+			<script>
+				$(document).ready(function(){
+					$('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor.cur'), auto");
+				});
+			</script>
+			<!-- e  business slide -->	
 
-        })
-    </script>
-</div>
+            <!-- s  People :2023리뉴얼 -->
+            
+			<div class="section-people">
+				<div class="info-box" data-aos="fade-up" data-aos-duration="500">
+                    <div class="title">People</div>        
+                    <div class="desc">
+                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            Meet macrogen team, global partners, and customers from all around the world.
+                        </p>
+                    </div>            
+                </div> 
 
-            </div>
-            <script>
-                $(document).ready(function(){
-                  $('.business').css("cursor","url('/publishing/pc-en/dist/img/main/img-cursor.cur'), auto");
-                });
-            </script>
+				<div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+					<div class="swiper-wrapper">
+					
+						<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
+		               		 <c:if test="${ result.viewYn == 'Y' }">
+		                        <div class="swiper-slide bg0${status.index % 5 + 1}">
+		                            <div class="flip">
+		                                <div class="front">
+		                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
+		                                    <div class="info-area">
+		                                        <span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+		                                            <strong>${ result.peopleNm }</strong><br>
+		                                                ${ result.peopleDept }
+		                                        </span>                                            
+		                                        <p href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100"><span>MORE</span><i class="icon icon-arrow-right-long"></i></p>                      
+		                                    </div>       
+		                                </div>
+		                                <div class="back">
+		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+		                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
+		                                        <p class="txt">${ result.cnPc }</p>
+		                                    </div>
+		                                </div>
+		                            </div>                            
+		                        </div>    
+		                	 </c:if>      			               
+		               	</c:forEach>
+		               	
+					</div>
+				</div>
+			</div>
+			
+			<script>
+                $(function(){                
+                   var pSwiper;
+                   setSlider2();
+                   function setSlider2() {      
+                       // var pSwiper;
+                       var $container = $('._peopleSlider');
+                       var $conLi = $container.find('.swiper-slide');                                
+                       var conCnt = $conLi.length;
+                       let options = {};
 
+                       if (pSwiper !== undefined) {
+                           console.log('pSwiper');
+                           return false
+                       }
 
-            <!-- e  business slide -->
-
-            <!-- s  news -->
-            <c:if test="${ fn:length(newsList) gt 0 }">
-	            <div class="section-news">
-	                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
-                    <div class="title">NEWSROOM</div>
-                    <div class="desc">Keep up with our latest news as we pave the way to a brighter future.</div>
-	                </div>
-	                <div class="board">
-	                    <div class="list list-border hover">
-	                    	<c:forEach var="result" items="${ newsList }" varStatus="status">
-		                        <div class="item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-		                            <span class="date"><fmt:formatDate value="${result.registDt }" pattern="yyyy.MM.dd" /></span>
-		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="tit">${ result.nttSj }</a>
-		                            <a href="/${rc.locale.language }/newsroom/news/${result.nttSn}" class="arrow"><i class="icon icon-arrow-right-short"></i></a>
-		                        </div>
-	                    	</c:forEach>
-	                    </div>
-	                    <a href="/${rc.locale.language }/newsroom/news" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000"
-	                       data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
-	                </div>
-	                <div class="video-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-	                    <div class="info-box">
-	                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">How Can We Help You?</div>
-                            <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Our team of experts will help you find the most appropriate solutions to all your needs.</div>
-	                        <a href="/${rc.locale.language }/company/contact-us" target="_blank" class="btn btn-white btn-round btn_play" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>Contact us</span><i class="icon icon-arrow-right-short"></i></a>
-	                    </div>
-	                    <!-- <a href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><span>MORE</span><i class="icon icon-arrow-right-long-white"></i></a> -->
-	                </div>
-	            </div>
-            </c:if>
-            <!-- e  news -->
-
-            <!-- s  media -->
-            <div class="section-media">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000">Social Media </div>
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Get our latest news via social media channels.</div>
+                       var html = $("._peopleSlider .swiper-wrapper").html();                        
+                       $("._peopleSlider .swiper-wrapper").append(html);                        
+                       
+                       if(conCnt < 4){
+                           $container.addClass("sm");                               
+                       }    
+                       options = {
+                           // observer: true,
+                           // observeParents: true,
+                           centeredSlides: true, 
+                           slidesPerView: "auto",
+                           slideToClickedSlide : true,
+                           loop:true,
+                           loopedSlides: conCnt,
+                           loopAdditionalSlides: 10,
+                           allowTouchMove : true,
+                           speed: 1000,
+                           lazy: true,
+                           on: {
+                               slideChangeTransitionStart: function () {
+                               $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+                               },
+                               slideChangeTransitionEnd: function () {
+                                   $('.flip .back').show(0);
+                                   AOS.init();
+                               },
+                           }
+                       }       
+                       pSwiper = new Swiper($container, options)               
+                   }          
+                   
+                   $('._peopleSlider .swiper-slide').on('click',function (){                             
+                       var swiper = $(this);                        
+                       if(!swiper.hasClass('rotate') ) {
+                           swiper.addClass("rotate").siblings().removeClass("rotate");
+                       }
+                       else{
+                           swiper.removeClass("rotate");
+                       }                                                                
+                   })    
+                  
+                   //resize
+                   window.addEventListener('resize', function(){
+                       $('._peopleSlider').addClass("resize");
+                       pSwiper.update();
+                   })
+               });
+           	</script>
+            <!-- e  People :2023리뉴얼-->   
+			
+			<!-- s  news -->
+			
+			<div class="section-media">
+            	<div class="info-box">
+                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>                    
                 </div>
                 <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-    <div class="slider">
-        <div class="slider-navigation">
-            <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-            <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-        </div>
-        <div class="swiper-container _mediaSlider">
-            <div class="swiper-wrapper">
+                
+				<div class="slider"> 
 
-				<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
-	                <div class="swiper-slide">
-	                    <a href="${result.somlnkUrl }" target="_blank">
-	                        <div class="img">
-	                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }">
-	                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-	                        </div>
-	                        <div class="content">${result.somlnkSj }
-	                        </div>
-	                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-	                    </a>
-	                </div>
-				</c:forEach>
-
-            </div>
-        </div>
-    </div>
-    <script>
-        new Swiper("._mediaSlider", {
-            slidesPerView: "auto",
-            slidesPerGroup: 3,
-            grabCursor: true,
-            loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-            /* loop : true, */
-            navigation: {
-                nextEl: "._btnNext",
-                prevEl: "._btnPrev",
-            },
-        });
-    </script>
-</div>
-
-            </div>
-            <!-- e  media -->
-
+					<div class="slider-navigation">
+						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
+						<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
+					</div>
+							        
+					<div class="swiper-container _mediaSlider">
+						<div class="swiper-wrapper">
+							        	
+							<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
+								<div class="swiper-slide">
+									<a href="${ result.somlnkUrl }" target="_blank">
+										<div class="img">
+											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+										</div>
+										<div class="content">
+											<strong class="title">${ result.somlnkSj }</strong>
+											<p>${ result.somlnkDt }</p>
+										</div>
+										<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
+									</a>
+								</div>
+							</c:forEach>
+							        		
+							</div>
+						</div>				        
+					</div>
+					<script>
+						new Swiper("._mediaSlider", {
+							spaceBetween: 52,
+							slidesPerView: "auto",
+							slidesPerGroup: 3,
+							grabCursor: true,
+							loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
+							/* loop : true, */
+							navigation: {
+								nextEl: "._btnNext",
+								prevEl: "._btnPrev",
+							},
+						});
+					</script>
+				</div>
+			</div>
+			
+			<!-- e  news -->
+			
+			
             <!-- s  global map -->
             <div class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="inner">
-                    <div class="info-box">
-                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
-                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            We provide personalized solutions to meet the diverse needs of local customers around the world in a timely manner.
-                        </div>
-                    </div>
-                    <div class="map">
+	            <div class="inner">
+	                <div class="info-box">
+	                    <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
+	                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+	                        We provide personalized solutions to meet the diverse needs of local customers
+	                            <br>around the world in a timely manner<!--  People :2023리뉴얼 -->
+	                    </div>
+	                </div>
+
+	                <div class="map">
                         <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
                       	<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Leuven, Belgium</span></a>
                       	<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
@@ -544,22 +578,64 @@
                         <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
                         <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
                     </div>
-                    <script>
-                    	$('.map .pin').on('click', function () {
-                                $(this).addClass('active')
-                                    .siblings().removeClass('active')
-                        })
-                    </script>
-                </div>
-            </div>
+                    
+	                <script>
+	                    $('.map .pin').on('click', function () {
+	                        $(this).addClass('active')
+	                            .siblings().removeClass('active')
+	                    })
+	                </script>
+	            </div>
+	        </div>
             <!-- e  global map -->
-
+			
+			<!-- s  global partners -->
+	         <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+	            <div class="info-box">
+	                <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
+	                <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+	                    Global partners are with Macrogen.
+	                </div>               
+	            </div>
+	            <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트">
+                    </li>                    
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링">
+                    </li>  
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트">
+                    </li>   
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트">
+                    </li>   
+                    <li>                                                
+                        <img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어">
+                    </li>                     
+                </ul>
+	        </div>
+        	<!-- e  global partners -->
+			
 
         </div>
     </div>
-    <%-- <footer class="footer">
-		<c:import url="/inc/footer" />
-    </footer> --%>
+
 	<c:import url="/inc/footer" />
     <a href="#" class="btn btn-text btn-totop">
     <i class="icon icon-arrow-top-long"></i>
@@ -585,103 +661,5 @@
 </script>
 
 </div>
-
-<%-- 팝업 --%>
-<c:if test="${not empty popupList  }">
-<c:forEach var="popup" items="${popupList}" varStatus="status">
-	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
-		<input type="hidden" value="${popupCnt}" id="popupCnt">
-		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-	    <div class="modal-dialog modal-dialog-centered layer-modal">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <div class="blue-circle">
-	                    <i class="icon icon-union"></i>
-	                </div>
-	            </div>
-	            <div class="modal-body">
-	                <%-- <p class="title">${popupVo.popupNm }</p>
-	                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
-	                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
-	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
-	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
-	                    <br>908억 원을 달성했습니다.
-	                </p>
-	                <div class="btn-area">
-	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
-	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> --%>
-	                <div class="data-img">
-	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-	                </div>
-	            </div>
-	            <div class="modal-footer">
-	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }">
-	                    <label class="form-check-label" for="popup-sn${status.index }">Do not open today</label>
-	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
-	                    <span>Close</span>
-	                    <i class="icon ico-close-white"></i>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</c:forEach>
-	<script>
-	var popupCnt = $("#popupCnt").val();
-	
-	for(var i=0;i<popupCnt;i++){
-		var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
-		var coockieChk = $("#cookieChkList"+i).val();
-		
-		if(coockieChk == 'true'){
-			layerPopupModal.hide();
-		}else if(coockieChk =='false'){
-			layerPopupModal.show();
-		}
-		
-	    //layerPopupModal.show();
-	}
-	
-	$('div.modal-backdrop:gt(0)').css("opacity", "0");
-		
-	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show(); */
-	</script>
-	<script>
-		function onclickPopupImage(url, trgtCode) {
-			if (!url) {
-				return;
-			}
-
-			if (trgtCode === 'NEW') {
-				window.open(url);
-			} else {
-				location.href = url;
-			}
-		}
-		
-		function popupClose(sn, idx) {
-			if ($('#popup-sn'+idx).is(':checked')) {
-				if (!sn) return;
-	
-				var snListStr = $.cookie('popup-sn-list');
-				if (!snListStr) {
-					snListStr = sn;
-				} else if (snListStr.indexOf(sn) < 0) {
-					snListStr += ',' + sn;
-				}
-				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-			}
-			
-			layerPopupModal.hide();
-			$('.show').parent('body').css("overflow", "hidden");
-			$('.show').parent('body').css("padding-right", "17px");
-		}
-	</script>
-
-</c:if>
 
 </body>
