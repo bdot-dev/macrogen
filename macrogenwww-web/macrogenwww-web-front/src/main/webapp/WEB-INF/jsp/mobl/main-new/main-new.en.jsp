@@ -35,7 +35,7 @@
                                       <div id="ytbg" data-vbg="${result.mediaUrlMo}"></div>
                                       <div class="text-box">
                                           <p class="slogan-sub">${result.mainNttSjMo}</p>
-                                         <p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+                                         <p class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</p>
                                          <c:choose>
                                              <c:when test="${result.btYn != 0 && result.btYn == 1}">
                                                     <div class="btns">
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="text-box">
                                       <p class="slogan-sub">${result.mainNttSjMo}</p>
-                                     <p class="desc">${fn:replace(result.mainNttCnMo, newLine, "<br/>")}</p>
+                                     <p class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</p>
                                      <c:choose>
                                          <c:when test="${result.btYn != 0 && result.btYn == 1}">
                                                 <div class="btns">
