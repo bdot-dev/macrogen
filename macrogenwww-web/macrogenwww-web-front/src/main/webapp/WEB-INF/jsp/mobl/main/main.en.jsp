@@ -246,12 +246,12 @@
                                 </video>
                                 <div class="text-area">
                                     <div class="title">
-                                        <span>About MACROGEN</span>
+                                        <span>About Macrogen</span>
                                     </div>
                                     <div class="desc">
                                         Macrogen is a global digital healthcare company<br>based on DNA sequencing and analysis.
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/overview">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>
@@ -268,7 +268,7 @@
                                         We work with global leaders in<br>
                                         genetic analysis and research.
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/global-network">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>
@@ -285,7 +285,7 @@
                                         We are committed to creating<br>
                                         a sustainable future for human health.
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/esg-management">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>

@@ -254,7 +254,7 @@
                                     <div class="desc">
                                          유전체 분석 기반 글로벌 디지털<br>헬스케어 기업 마크로젠입니다
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/overview">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>
@@ -270,7 +270,7 @@
                                     <div class="desc">
                                     	전세계 유전체 분석 연구를 이끄는<br/>글로벌 파트너와 함께 합니다
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/global-network">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>
@@ -286,7 +286,7 @@
                                     <div class="desc">
                                         지속가능한 미래를 위해 노력합니다
                                     </div>
-                                    <a href="#">
+                                    <a href="/${rc.locale.language }/company/esg-management">
                                         <i class="icon-arrow-right-short"></i>
                                     </a>
                                 </div>
