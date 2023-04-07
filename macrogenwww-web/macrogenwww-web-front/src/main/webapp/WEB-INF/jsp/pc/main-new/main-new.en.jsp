@@ -262,7 +262,7 @@
                     <ul class="btn-list clearfix">
                         <li>
                             <a href="/${rc.locale.language }/company/overview">
-                                <p>About MACROGEN</p>
+                                <p>About Macrogen</p>
                                 <p class="sub-text">Macrogen is a global digital healthcare company <br> based on DNA sequencing and analysis.</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
