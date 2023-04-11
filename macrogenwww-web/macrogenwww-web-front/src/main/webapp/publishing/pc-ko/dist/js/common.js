@@ -130,6 +130,7 @@ front.common = (function () {
   var selectDefault = function () { 
     var selectDefault = $('.select-box ._select_default'); 
     var selectList = $('.select_list li, ._select_list li'); 
+    var selectEmail = $('._select_email'); 
     $('._select_list').hide(); 
  
     selectList.on('click',function() { 
@@ -156,16 +157,34 @@ front.common = (function () {
           } 
         });*/ 
       } 
+ 
+ 
       $(this).next().find('span').on('click',function() { 
         var option = $(this).text(); 
         console.log(option) 
-        $(this).parents('.select-box').find('._select_default .text').text(option).css({'color' : '#000'}); 
-       
+        $(this).parents('.select-box').find('._select_default .text').text(option); 
+        $(this).parents('.select-box').find('._select_default .text').css({'color' : '#000'}); 
+        if($(this).hasClass('directly')){ 
+          $(this).parents('.select-box').find('._select_default .text').text(''); 
+        } 
       }); 
+    }); 
+ 
+    selectEmail.on('click',function() { 
+      $(this).next().find('span').on('click',function() { 
+        if($(this).hasClass('directly')){ 
+          $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' />"); 
+          $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
+          $('.input_email').css({ 'border' : '1px solid transparent' }); 
+        }  
+      }); 
+ 
     }); 
   } 
 
 
+
+  
 
   return {
     a : a,
