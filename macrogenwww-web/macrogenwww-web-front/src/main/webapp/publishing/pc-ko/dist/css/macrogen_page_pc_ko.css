@@ -7477,7 +7477,7 @@
           left: 346px;
           width: 100%;}
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box .slogan-sub {
-            font-family: 'Proxima Nova';
+            font-family: "Noto Sans KR";
             font-weight: 700;
             font-size: 46px;
             letter-spacing: -0.02em;
@@ -7878,12 +7878,27 @@
         /* s business 내부 text slide */
         /* e business 내부 text slide */ }
 
+
+        /* s 0411 추가수정 */
         .business .slider .swiper-container .swiper-wrapper .swiper-slide .title {
           letter-spacing: 0.5px;
           color: #fff;
+          font-size: 50px;
           font-weight: bold;
           margin-bottom: 15px;
+          line-height: 50px; 
         }
+
+        .business .slider .swiper-container .swiper-wrapper .swiper-slide .title > a {
+          padding: 55px 0 0 60px;
+          height: 50px; 
+        }
+
+        .business .slider .swiper-container .swiper-wrapper .swiper-slide .title > span {
+          vertical-align: -webkit-baseline-middle;
+        }
+
+        /* e 0411 추가수정 */
 
         .main-wrap .main-page .section-business .business .slider .swiper-slide.swiper-slide-active .text-area {
           position: absolute;
@@ -8163,13 +8178,16 @@
         padding-top: 111px;
         margin-bottom: 250px;
         text-align: center;}
+        
+        /*0411 추가수정*/
         .main-wrap .main-page .section-map .inner .info-box .title {
+          font-family: 'Proxima Nova';
           font-weight: 700;
-          font-size: 60px;
+          font-size: 50px;
           line-height: 52px;
           font-family: Proxima Nova;
-          margin-bottom: 22px;
           color: #000; }
+
         .main-wrap .main-page .section-map .inner .info-box .desc {
           font-size: 18px;
           line-height: 30px;
@@ -8177,16 +8195,20 @@
           color: #000;  font-weight:300;}
       .main-wrap .main-page .section-map .inner .map {
         position: relative; }
+        
+        /* s 0411 추가수정 */
+        
         .main-wrap .main-page .section-map .inner .map .pin {
           position: absolute;
           padding: 0 16px;
           height: 38px;
           line-height: 36px;
-          background-color: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.55);
           border: 1px solid rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
           box-sizing: border-box;
           border-radius: 19px;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 13px;
           letter-spacing: 0.02em;
           text-transform: uppercase;
@@ -8194,6 +8216,10 @@
           overflow: hidden;
           transition: 0.25s;
           cursor: pointer;}
+
+           /* e 0411 추가수정 */
+
+
           .main-wrap .main-page .section-map .inner .map .pin i {
             width: 12px;
             height: 16px;
