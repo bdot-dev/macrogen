@@ -8386,11 +8386,12 @@
         padding: 0 16px;
         height: 38px;
         line-height: 36px;
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.55);/*(수정) 2023-04-11*/
         border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.05);/*(추가) 2023-04-11*/
         box-sizing: border-box;
         border-radius: 19px;
-        font-weight: 700;
+        font-weight: 500;/*(수정) 2023-04-11*/
         font-size: 13px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -8402,7 +8403,7 @@
           width: 12px;
           height: 16px;
           display: inline-block;
-          background-image: url(../img/main/ico-pin-white.png);
+          background-image: url(../img/main/ico-pin-black.png);/*(수정) 2023-04-11*/
           background-size: 12px 16px;
           background-position: 0 0;
           background-repeat: no-repeat;
@@ -8424,7 +8425,7 @@
             background-image: url(../img/main/ico-pin-pink.png); }
         .en .main-wrap .main-page .section-map .inner .map .pin span {
           vertical-align: bottom;
-          margin-left: 5px; }
+          margin-left: 10px;/*(수정) 2023-04-11*/ }
         /*.en .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             top: 13px;
             left: 54px; }
