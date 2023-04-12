@@ -70,6 +70,7 @@
 			, ( select user_nm from tb_user where user_sn = tc.register_sn ) register_nm
 			, tc.updt_dt
 			, tc.updusr_sn
+			, ( select user_nm from tb_user where user_sn = tc.updusr_sn ) updusr_nm
 		from tb_contact tc
 		where 1 = 1	
 		<include refid="list_where" />
