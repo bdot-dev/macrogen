@@ -4361,8 +4361,9 @@
           padding: 0 12px;
           height: 30px;
           line-height: 30px;
-          background-color: rgba(255, 255, 255, 0.15);
+          background-color: rgba(255, 255, 255, 0.55);/*(수정) 2023-04-11*/
           border: 1px solid rgba(255, 255, 255, 0.6);
+          box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.05);/*(추가) 2023-04-11*/
           box-sizing: border-box;
           border-radius: 15px;
           font-weight: bold;
@@ -4375,7 +4376,7 @@
             width: 12px;
             height: 16px;
             display: inline-block;
-            background-image: url(../img/main/ico-pin-white.png);
+            background-image: url(../img/main/ico-pin-black.png);/*(수정) 2023-04-11*/
             background-size: 100% auto;
             background-position: 0 0;
             background-repeat: no-repeat;

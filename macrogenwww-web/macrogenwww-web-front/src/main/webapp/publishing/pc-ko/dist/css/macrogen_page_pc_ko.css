@@ -8224,7 +8224,7 @@
             width: 12px;
             height: 16px;
             display: inline-block;
-            background-image: url(../img/main/ico-pin-white.png);
+            background-image: url(../img/main/ico-pin-black.png);/*(수정) 2023-04-11*/
             background-size: 12px 16px;
             background-position: 0 0;
             background-repeat: no-repeat;
@@ -8246,7 +8246,7 @@
               background-image: url(../img/main/ico-pin-pink.png); }
           .main-wrap .main-page .section-map .inner .map .pin span {
             vertical-align: bottom;
-            margin-left: 5px; }
+            margin-left: 10px;/*(수정) 2023-04-11*/ }
           .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             top: 13px;
             left: 126px; }
