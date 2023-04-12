@@ -254,14 +254,14 @@
 </script>
 
         <div class="frame frameC">
-            <nav aria-label="breadcrumb">
+            <!--<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">MACROGEN</li>
         <li class="breadcrumb-item">회사소개</li>
         <li class="breadcrumb-item active">CONTACT US</li>
     </ol>
-</nav>
+</nav>-->
 
             <div class="hero-title en">CONTACT US</div>
         </div>
@@ -528,6 +528,7 @@
                                     <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 중간 네자리" maxlength="4" oninput="lengthLimit4(this)">
                                     <input type="number" placeholder="" class="form-control" aria-label="input" aria-describedby="휴대폰번호 마지막 네자리" maxlength="4" oninput="lengthLimit4(this)">
                                     <script>
+                                        
                                         /*숫자 글자수 제한*/
                                         function lengthLimit4(e){
                                             if(e.value.length > 4){
@@ -544,12 +545,10 @@
                                             });
                                         });
 
-                                        
-
 
                                     </script>
                                 </div>
-                                <p class="notice-text"><i class="icon icon-attention"></i><span>문의사항에 대한 답변은 개별 연락을 통해 답변드릴 예정이니 연락 받으실 휴대폰 번호를 정확히 입력해주시기 바랍니다&#46;</span></p>
+                                
                             </div>
 
                             <!--s email form 수정 2023.04.07-->
@@ -563,7 +562,6 @@
                                     <em>@</em>
                                     <div class="select-box ">
                                         <a href="#" class="select_default _select_default _select_email"><span class="text"></span></a>
-                                       
                                         <ul class="select_list _select_list">
                                             <li><span class="directly">직접입력</span></li>
                                             <li><span>naver.com</span></li>
@@ -572,10 +570,8 @@
                                             <li><span>yahoo.co.kr</span></li>
                                             <li><span>nate.com</span></li>
                                         </ul>
-                                    </div> 
-                                   
+                                    </div>  
                                 </div>
-                               
                             </div>
 
 
@@ -616,6 +612,50 @@
                                 <span class="input-group-text" id="title">제목</span>
                                 <input type="text" placeholder="제목을 입력하세요" class="form-control" aria-label="input" aria-describedby="title">
                             </div>
+
+                            <!--드롭다운 수정 2023.04.12--> 
+                            <script> 
+                                $(document).ready(function(){ 
+                                    var selectDefault = $('.select-box ._select_default'); 
+                                    var selectList = $('.select_list li, ._select_list li'); 
+                                    var selectEmail = $('._select_email'); 
+                                        $('._select_list').hide(); 
+       
+                                        /*드롭다운*/ 
+                                    selectList.on('click',function() { 
+                                        if(selectDefault.hasClass('open')) { 
+                                           selectDefault.removeClass('open').next('._select_list').slideUp(200); 
+                                        } else { 
+                                           selectDefault.addClass("open").next('._select_list').slideDown(200); 
+                                        } 
+                                    }); 
+     
+                                    selectDefault.on('click',function() { 
+                                    var option = $(this).text(); 
+                                    console.log(option) 
+     
+                                        $(this).next().find('span').on('click',function() { 
+                                            $(this).parents('.select-box').find('._select_default .text').css({'color' : '#000'}); 
+                                                if($(this).hasClass('directly')){ 
+                                            $(this).parents('.select-box').find('._select_default .text').text(''); 
+                                            } 
+                                        }); 
+                                    }); 
+     
+                            /*email - 직접입력*/ 
+                                    selectEmail.on('click',function() { 
+                                        $(this).next().find('span').on('click',function() { 
+                                            if($(this).hasClass('directly')){ 
+                                                $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' />"); 
+                                                $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
+                                                $('.input_email').css({ 'border' : '1px solid transparent' }); 
+                                            }  
+                                        }); 
+                                    }); 
+                                }); 
+    </script> 
+    
+
                             <!-- textarea -->
                             <div class="input-group essential">
                                 <span class="input-group-text" id="faq">문의내용</span>
@@ -650,14 +690,14 @@
                             <div class="btn-box">                            
                                 <a href="#" class="btn btn-primary"><span>문의하기</span></a>
                             </div>
-                            
+                            <hr class="divider">  
                         </div> 
                     </div>
                     </div> 
                     
                     </div>    
                    
-                    <hr class="divider">  
+                  
                     <!-- e:2023리뉴얼 -->
 
                     <div class="font-h5">연구·사업 분야별 문의</div>

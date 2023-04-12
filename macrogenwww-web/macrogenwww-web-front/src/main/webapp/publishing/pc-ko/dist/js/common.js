@@ -127,62 +127,37 @@ front.common = (function () {
     });
   }
 
-  var selectDefault = function () { 
-    var selectDefault = $('.select-box ._select_default'); 
-    var selectList = $('.select_list li, ._select_list li'); 
-    var selectEmail = $('._select_email'); 
-    $('._select_list').hide(); 
- 
-    selectList.on('click',function() { 
-      if(selectDefault.hasClass('open')) { 
-        selectDefault.removeClass('open').next('._select_list').slideUp(200); 
-      } else { 
-        selectDefault.addClass("open").next('._select_list').slideDown(200); 
-      } 
-    }); 
- 
-    selectDefault.on('click',function() { 
-      var select = $(this); 
-      //드롭다운 닫기 
-      if(select.hasClass('open')) { 
-        select.removeClass('open').next('._select_list').slideUp(200); 
-      } 
-      //드롭다운 열기 
-      else { 
-        select.addClass("open").next('._select_list').slideDown(200); 
-      /*  $(document).click(function(event) { 
-          if ( !$(event.target).hasClass('open')) { 
-            select.removeClass('open'); 
-            $('._select_list').removeClass('open').slideUp(200); 
-          } 
-        });*/ 
-      } 
- 
- 
-      $(this).next().find('span').on('click',function() { 
-        var option = $(this).text(); 
-        console.log(option) 
-        $(this).parents('.select-box').find('._select_default .text').text(option); 
-        $(this).parents('.select-box').find('._select_default .text').css({'color' : '#000'}); 
-        if($(this).hasClass('directly')){ 
-          $(this).parents('.select-box').find('._select_default .text').text(''); 
-        } 
-      }); 
-    }); 
- 
-    selectEmail.on('click',function() { 
-      $(this).next().find('span').on('click',function() { 
-        if($(this).hasClass('directly')){ 
-          $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' />"); 
-          $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
-          $('.input_email').css({ 'border' : '1px solid transparent' }); 
-        }  
-      }); 
- 
-    }); 
-  } 
+  /* s contactUS e-mail */
+  var selectDefault = function () {
+    var selectDefault = $('.select-box ._select_default');
+    $('._select_list').hide();
+
+    selectDefault.on('click',function() {
+      var select = $(this);
+      //드롭다운 닫기
+      if(select.hasClass('open')) {
+        select.removeClass('open').next('._select_list').slideUp(200);
+      }
+      //드롭다운 열기
+      else {
+        select.addClass("open").next('._select_list').slideDown(200);
+      /*  $(document).click(function(event) {
+          if ( !$(event.target).hasClass('open')) {
+            select.removeClass('open');
+            $('._select_list').removeClass('open').slideUp(200);
+          }
+        });*/
+      }
+      $(this).next().find('span').on('click',function() {
+        var option = $(this).text();
+        console.log(option)
+        $(this).parents('.select-box').find('._select_default .text').text(option);
+      });
+    });
+  }
 
 
+/* e contactUS e-mail */
 
   
 

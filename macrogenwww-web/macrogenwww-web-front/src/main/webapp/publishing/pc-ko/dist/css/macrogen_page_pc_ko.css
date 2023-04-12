@@ -8753,7 +8753,7 @@
     background: url("../img/IR/img-handshake.png") no-repeat center center/cover;
     height: 560px; }
   .section_IR .privacy_box {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 1244px; }
     .section_IR .privacy_box#write {
       padding-top: 120px; }
