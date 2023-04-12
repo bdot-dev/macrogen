@@ -7501,7 +7501,7 @@
             margin: 0 5px;
             font-weight: 700;
             font-size: 15px;
-            font-family: 'Proxima Nova';
+            font-family: 'Noto Sans KR';
             color: #fff;
             line-height: 18px;
             letter-spacing: 0.02em;
@@ -7520,16 +7520,16 @@
               -webkit-text-fill-color: transparent;
             }*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
-          font-family: 'Proxima Nova'; /* 2023.04.07 수정*/
+          font-family: 'Noto Sans KR'; 
           font-weight: 700;
-          font-size: 46px; /* 2023.04.07 수정*/
+          font-size: 46px; 
           line-height: 125%;
           letter-spacing: -0.06em;
           color: #ffffff;
           font-feature-settings: 'kern' off; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p.desc {
             font-weight: 400;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 160%;
             letter-spacing: -0.05em;
             margin-top: 32px; }
@@ -8181,11 +8181,10 @@
         
         /*0411 추가수정*/
         .main-wrap .main-page .section-map .inner .info-box .title {
-          font-family: 'Proxima Nova';
+          /*font-family: 'Proxima Nova';*/
           font-weight: 700;
           font-size: 50px;
           line-height: 52px;
-          font-family: Proxima Nova;
           color: #000; }
 
         .main-wrap .main-page .section-map .inner .info-box .desc {
