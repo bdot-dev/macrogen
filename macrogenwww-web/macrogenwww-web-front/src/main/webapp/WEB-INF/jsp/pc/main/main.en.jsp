@@ -263,7 +263,7 @@
                         <li>
                             <a href="/${rc.locale.language }/company/overview">
                                 <p>About Macrogen</p>
-                                <p class="sub-text">Macrogen is a global digital healthcare company <br> based on DNA sequencing and analysis.</p><!--  People :2023리뉴얼 -->
+                                <p class="sub-text">Macrogen is a global digital healthcare company <br> based on DNA sequencing and analysis</p><!--  People :2023리뉴얼 -->
                                 <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
                                 </p>
                             </a>
@@ -389,7 +389,7 @@
                     <div class="title">People</div>        
                     <div class="desc">
                         <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            Meet macrogen team, global partners, and customers from all around the world.
+                            Meet macrogen team, global partners, and customers from all around the world
                         </p>
                     </div>            
                 </div> 
@@ -594,7 +594,7 @@
 	            <div class="info-box">
 	                <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
 	                <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-	                    Global partners are with Macrogen.
+	                    Global partners are with Macrogen
 	                </div>               
 	            </div>
 	            <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
