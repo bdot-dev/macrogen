@@ -10731,7 +10731,7 @@ p {
     font-size: 64px;
     line-height: 93px;
     margin-bottom: 10px;
-    letter-spacing: 0.5px; }
+    letter-spacing: -3px; }
   .en .wrap .full-bg .frame .slogan {
     font-size: 80px;
     line-height: 86px;
@@ -10742,7 +10742,7 @@ p {
   .en .wrap .full-bg .frame .slogan-sub {
     font-weight: 500;
     font-size: 22px;
-    line-height: 32px;
+    line-height: 33px;
     letter-spacing: -0.75px; }
   .en .wrap .full-bg .frame.frameB {
     padding-top: 211px;

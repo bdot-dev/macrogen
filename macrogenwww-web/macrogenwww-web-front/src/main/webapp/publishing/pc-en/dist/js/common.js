@@ -151,6 +151,10 @@ front.common = (function () {
         var option = $(this).text();
         console.log(option)
         $(this).parents('.select-box').find('._select_default .text').text(option);
+        // 2023-04-17 selectDefault 수정
+        select.removeClass('open').next('._select_list').slideUp(200);
+        // 2023-04-18 selectDefault 수정
+        $(this).parents('.select-box').find('._select_default .text').addClass('active');
       });
     });
   }

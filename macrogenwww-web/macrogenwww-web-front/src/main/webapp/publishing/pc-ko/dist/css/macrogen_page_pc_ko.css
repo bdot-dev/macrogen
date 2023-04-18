@@ -7458,7 +7458,7 @@
       }
 
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
-        background: url(/publishing/pc-ko/dist/img/main/img-main_loading2.png) no-repeat center center / cover !important;
+        background: url(/publishing/pc-ko/dist/img/main/img-main_loading.png) no-repeat center center / cover !important;
       } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
       /* e yt 영상 2023.03.30*/
 
@@ -7501,7 +7501,7 @@
             margin: 0 5px;
             font-weight: 700;
             font-size: 15px;
-            font-family: 'Noto Sans KR';
+            font-family: 'Proxima Nova';
             color: #fff;
             line-height: 18px;
             letter-spacing: 0.02em;
@@ -7520,16 +7520,16 @@
               -webkit-text-fill-color: transparent;
             }*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
-          font-family: 'Noto Sans KR'; 
+          font-family: 'Proxima Nova'; /* 2023.04.07 수정*/
           font-weight: 700;
-          font-size: 46px; 
+          font-size: 46px; /* 2023.04.07 수정*/
           line-height: 125%;
           letter-spacing: -0.06em;
           color: #ffffff;
           font-feature-settings: 'kern' off; }
           .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p.desc {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 160%;
             letter-spacing: -0.05em;
             margin-top: 32px; }
@@ -8181,10 +8181,11 @@
         
         /*0411 추가수정*/
         .main-wrap .main-page .section-map .inner .info-box .title {
-          /*font-family: 'Proxima Nova';*/
+          font-family: 'Proxima Nova';
           font-weight: 700;
           font-size: 50px;
           line-height: 52px;
+          font-family: Proxima Nova;
           color: #000; }
 
         .main-wrap .main-page .section-map .inner .info-box .desc {
@@ -8752,7 +8753,7 @@
     background: url("../img/IR/img-handshake.png") no-repeat center center/cover;
     height: 560px; }
   .section_IR .privacy_box {
-    margin: 100px auto;
+    margin: 0 auto;
     width: 1244px; }
     .section_IR .privacy_box#write {
       padding-top: 120px; }
@@ -8828,6 +8829,7 @@
 
     
     .input-group .full .select_default > span {color:#d9d9d9;}
+    .input-group .full .select_default > span.active {color:#000;}
 
     .input-group-email {
       display: flex;
@@ -9041,7 +9043,7 @@
     .section .map-wrap .map_pins .seoul .popup_inner {
       top: -224px; left:22px;
       width: 457px;
-      height: 509px;
+      height: 380px;
      
      
     }

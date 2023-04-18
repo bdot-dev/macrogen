@@ -11292,7 +11292,7 @@ p {
   background: linear-gradient(106.65deg, #00ADA9 9.33%, #377EF9 93.88%); }
 
 .color-point-primary {
-  color: #2E87EF; }
+  color: #2E87EF !important; }
 
 .color-point-secondary {
   color: #186BE8; }
@@ -12142,6 +12142,8 @@ textarea::placeholder {
   .dropdown .select {
     cursor: pointer;
     display: block; }
+    .dropdown .select span {color: #d9d9d9;}
+    .dropdown .select span.active {color: #000;}
     .dropdown .select .ico-select-nor {
       position: absolute;
       width: 9px;
