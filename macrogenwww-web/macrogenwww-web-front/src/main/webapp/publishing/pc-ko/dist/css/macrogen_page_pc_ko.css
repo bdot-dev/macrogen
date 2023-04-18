@@ -7457,15 +7457,11 @@
 			  transition-delay: 250ms;
       }
 
-<<<<<<< HEAD
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background { 
         background: url(/publishing/pc-ko/dist/img/main/img-main_loading2.png) no-repeat center center / cover !important;
       } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */ 
-=======
-      .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {
-        background: url(/publishing/pc-ko/dist/img/main/img-main_loading.png) no-repeat center center / cover !important;
-      } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
->>>>>>> publishing/KJinHee
+      /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {background: url(/publishing/pc-ko/dist/img/main/img-main_loading.png) no-repeat center center / cover !important;}  */
+      /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
       /* e yt 영상 2023.03.30*/
 
 
