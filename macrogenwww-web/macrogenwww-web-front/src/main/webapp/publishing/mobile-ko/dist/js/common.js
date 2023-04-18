@@ -24,7 +24,7 @@ front.common = (function () {
     }
 
     var swiperTab = function () {
-        $(document).ready(function (){
+        $(document).ready(function (){ 
             if($('.macrogen-authorization').length === 1) {
                 new Swiper('.snbSwiper', {
                     slidesPerView: 'auto',
@@ -174,6 +174,7 @@ front.common = (function () {
 
         /* s full-bg 일 경우, 자동 하단으로 스크롤 */
         var screeSize = document.documentElement.clientHeight;
+        var bgHeight = $('.full-bg').height();
         // console.log(screeSize);
 
         if($('.full-bg').length) {
@@ -182,7 +183,7 @@ front.common = (function () {
                 var sub = setTimeout(function() {
                     // console.log($('html, body').scrollTop())
                     if($('html, body').scrollTop() !== 0) clearTimeout(sub)
-                    else $('html, body').animate({scrollTop: screeSize}, 300);
+                    else $('html, body').animate({scrollTop: bgHeight}, 300);
                 }, 2000);
             }
         }

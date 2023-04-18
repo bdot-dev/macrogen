@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="macrogen.www.mapper.MainNttMapper">
+
+	<sql id="list_where">
+		<if test="langCode != null and langCode != ''">
+			AND tmn.lang_code = #{langCode}
+		</if>
+		<if test="mainBbsId!= null and mainBbsId!= ''">
+			AND tmn.main_bbs_id = #{mainBbsId}
+		</if>
+		<if test="searchCondition != null and searchCondition != ''">
+			AND tmn.expsr_yn = #{searchCondition}
+		</if>
+		<if test="searchKeyword != null and searchKeyword != ''">
+			AND tmn.title like concat('%', #{searchKeyword}, '%')
+		</if>
+		<if test="searchBeginDt != null">
+			AND tmn.updt_dt <![CDATA[>=]]> DATE(#{searchBeginDt})
+		</if>
+		<if test="searchEndDt != null">
+			AND tmn.updt_dt <![CDATA[<=]]> DATE_ADD(DATE(#{searchEndDt}), INTERVAL 1 DAY)
+		</if>
+	</sql>	
+
+	<select id="count" parameterType="mainNttVo" resultType="int">
+	    select count(*)
+	    from tb_main_ntt tmn
+	    where 1 = 1
+	    <include refid="list_where" />
+  	</select>	
+	
+	<select id="list" parameterType="mainNttVo" resultType="mainNttVo">
+		<include refid="paging.countTop"/>
+		select
+			tmn.main_ntt_sn
+			, tmn.lang_code
+			, tmn.main_bbs_id
+			, tmn.main_ntt_sj_pc
+			, tmn.main_ntt_sj_mo
+			, tmn.main_ntt_cn_pc
+			, tmn.main_ntt_cn_mo
+			, tmn.image_atch_id_pc
+			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_pc ) image_flpth_pc
+			, tmn.image_atch_id_mo
+			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_mo ) image_flpth_mobl
+			, tmn.media_url_pc
+			, tmn.media_url_mo
+			, tmn.expsr_yn
+			, tmn.expsr_prty
+			, tmn.title
+			, tmn.bt_yn
+			, tmn.bt_sj_pc_1
+			, tmn.bt_sj_mo_1
+			, tmn.link_url_1
+			, tmn.bt_sj_pc_2
+			, tmn.bt_sj_mo_2
+			, tmn.link_url_2
+			, tmn.regist_dt
+			, tmn.register_sn
+			, ( select user_nm from tb_user where user_sn = tmn.register_sn ) register_nm
+			, tmn.updt_dt
+			, tmn.updusr_sn
+		from tb_main_ntt tmn
+		where 1 = 1	
+		<include refid="list_where" />
+		<choose>
+			<when test='orderBy == "regist_dt_desc"'>
+				order by tmn.regist_dt desc, tmn.main_ntt_sn desc
+			</when>
+			<when test='orderBy == "regist_dt_asc"'>
+				order by tmn.regist_dt asc, tmn.main_ntt_sn asc
+			</when>
+			<when test='orderBy == "expsr_prty_desc"'>
+				order by tmn.expsr_prty desc
+			</when>
+			<when test='orderBy == "expsr_prty_asc"'>
+				order by tmn.expsr_prty asc
+			</when>
+			<otherwise>
+				order by tmn.main_ntt_sn desc
+			</otherwise>
+		</choose>
+		<include refid="paging.countBottom"/>
+	</select>
+	
+	<select id="view" parameterType="mainNttVo" resultType="mainNttVo">
+		select
+			tmn.main_ntt_sn
+			, tmn.lang_code
+			, tmn.main_bbs_id
+			, tmn.main_ntt_sj_pc
+			, tmn.main_ntt_sj_mo
+			, tmn.main_ntt_cn_pc
+			, tmn.main_ntt_cn_mo
+			, tmn.image_atch_id_pc
+			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_pc ) image_flpth_pc
+			, tmn.image_atch_id_mo
+			, ( select physicl_flpth from tb_atch where atch_id = tmn.image_atch_id_mo ) image_flpth_mobl
+			, tmn.media_url_pc
+			, tmn.media_url_mo
+			, tmn.expsr_yn
+			, tmn.expsr_prty
+			, tmn.title
+			, tmn.bt_yn
+			, tmn.bt_sj_pc_1
+			, tmn.bt_sj_mo_1
+			, tmn.link_url_1
+			, tmn.bt_sj_pc_2
+			, tmn.bt_sj_mo_2
+			, tmn.link_url_2
+			, tmn.regist_dt
+			, tmn.register_sn
+			, ( select user_nm from tb_user where user_sn = tmn.register_sn ) register_nm
+			, tmn.updt_dt
+			, tmn.updusr_sn
+		from tb_main_ntt tmn
+		where tmn.main_ntt_sn = #{mainNttSn}
+	</select>
+	
+	<insert id="insert" parameterType="mainNttVo">
+		insert into tb_main_ntt (
+			main_ntt_sn
+			, lang_code
+			, main_bbs_id
+			, main_ntt_sj_pc
+			, main_ntt_sj_mo
+			, main_ntt_cn_pc
+			, main_ntt_cn_mo
+			, image_atch_id_pc
+			, image_atch_id_mo
+			, media_url_pc
+			, media_url_mo
+			, expsr_yn
+			, expsr_prty
+			, title
+			, bt_yn
+			, bt_sj_pc_1
+			, bt_sj_mo_1
+			, link_url_1
+			, bt_sj_pc_2
+			, bt_sj_mo_2
+			, link_url_2
+			, regist_dt
+			, register_sn
+			, updt_dt
+			, updusr_sn
+		) values (
+			#{mainNttSn}
+			,#{langCode}
+			, #{mainBbsId}
+			, #{mainNttSjPc}
+			, #{mainNttSjMo}
+			, #{mainNttCnPc}
+			, #{mainNttCnMo}
+			, #{imageAtchIdPc}
+			, #{imageAtchIdMo}
+			, #{mediaUrlPc}
+			, #{mediaUrlMo}
+			, #{expsrYn}
+			, #{expsrPrty}
+			, #{title}
+			, #{btYn}
+			, #{btSjPc1}
+			, #{btSjMo1}
+			, #{linkUrl1}
+			, #{btSjPc2}
+			, #{btSjMo2}
+			, #{linkUrl2}
+			, now()
+			, #{registerSn}
+			, now()
+			, #{updusrSn}			
+		)
+	</insert>
+	
+	<update id="update" parameterType="mainNttVo">
+		update tb_main_ntt
+		set
+			updt_dt = now()
+			, updusr_sn = #{updusrSn}
+			, lang_code = #{langCode}
+			, main_bbs_id = #{mainBbsId}
+			, main_ntt_sj_pc = #{mainNttSjPc}
+			, main_ntt_sj_Mo = #{mainNttSjMo}
+			, main_ntt_cn_Pc = #{mainNttCnPc}
+			, main_ntt_cn_Mo = #{mainNttCnMo}
+			, image_atch_id_pc = #{imageAtchIdPc}
+			, image_atch_id_mo = #{imageAtchIdMo}
+			, media_url_pc = #{mediaUrlPc}
+			, media_url_mo = #{mediaUrlMo}
+			, expsr_yn = #{expsrYn}
+			, expsr_prty = #{expsrPrty}
+			, title = #{title}
+			, bt_yn = #{btYn}
+			, bt_sj_pc_1 = #{btSjPc1}
+			, bt_sj_mo_1 = #{btSjMo1}
+			, link_url_1 = #{linkUrl1}
+			, bt_sj_pc_2 = #{btSjPc2}
+			, bt_sj_mo_2 = #{btSjMo2}
+			, link_url_2 = #{linkUrl2}
+		where main_ntt_sn = #{mainNttSn}
+	</update>
+	
+	<delete id="delete" parameterType="mainNttVo">
+		delete from tb_main_ntt where main_ntt_sn = #{mainNttSn}
+	</delete>
+	
+	<select id="seq" resultType="long">
+		select fn_nextval('sq_main_Ntt')
+	</select>
+	
+	<update id="updateExpsrPrty" parameterType="mainNttVo">
+		UPDATE tb_main_ntt SET
+			expsr_prty = #{expsrPrty}
+		WHERE
+			main_ntt_sn = #{mainNttSn}
+	</update>
+	
+</mapper>

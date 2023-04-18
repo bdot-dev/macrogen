@@ -12403,9 +12403,10 @@ textarea.form-control {
     width: 100%;
     height: 100%;
     border-bottom: 0; }
+    /* 230411 경영진 탭	메뉴 수정 */
     .tab-wrap .nav-tabs .nav-link {
       display: flex;
-      width: 33.3%;
+      width: 50%;
       align-items: center;
       justify-content: center;
       height: 100%;
@@ -12423,10 +12424,11 @@ textarea.form-control {
       font-weight: bold;
       font-size: 22px;
       letter-spacing: -0.75px; }
-      /* .tab-wrap .nav-tabs .nav-link:first-child {
+      .tab-wrap .nav-tabs .nav-link:first-child {
         padding-left: 378px; }
       .tab-wrap .nav-tabs .nav-link:nth-child(2) {
-        padding-right: 378px; } */
+        padding-right: 378px; }
+     /* 230411 경영진 탭 메뉴 수정 */
       .tab-wrap .nav-tabs .nav-link span {
         position: relative;
         display: inline-block; }

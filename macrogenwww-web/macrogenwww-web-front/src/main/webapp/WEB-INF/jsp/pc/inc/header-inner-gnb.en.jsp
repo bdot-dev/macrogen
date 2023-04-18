@@ -27,6 +27,7 @@
 	        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-linkedin-circle${snsIconColor }"></i></a></li>
 	    </ul>
 	    <div class="btn_eng">
+	    	<a href="/en/company/contact-us" class="btn btn-round"><span>Contact Us</span></a>
 	        <a href="/ko/main" class="btn btn-round"><i class="icon icon-earth-black"></i><span>KOR</span></a>
 	    </div>
 	</div>
