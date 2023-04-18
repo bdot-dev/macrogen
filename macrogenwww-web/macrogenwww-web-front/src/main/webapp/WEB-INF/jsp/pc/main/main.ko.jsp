@@ -337,7 +337,7 @@
 						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Services</div>
 						<div class="desc">
 							<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
-								<br>더 건강하고 행복한 삶을 만들어갑니다</p> <!--  People :2023리뉴얼 -->
+								<br>더 건강하고 행복한 삶을 만들어갑니다</p><!--2023-04-17::마침표삭제--> <!--  People :2023리뉴얼 -->
 						</div>
 					</div>
 					<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
@@ -558,7 +558,8 @@
                     <div class="info-box">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
                         <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 서비스를 신속하고 체계적으로 제공합니다<!--  People :2023리뉴얼 -->
+                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
+                           서비스를 더욱  신속하고 체계적으로 제공합니다<!--2023-04-17::마침표삭제-->
                         </div>
                     </div>
                     <!-- <div class="map">

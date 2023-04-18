@@ -249,7 +249,7 @@
                                         <span>About Macrogen</span>
                                     </div>
                                     <div class="desc">
-                                        Macrogen is a global digital healthcare company<br>based on DNA sequencing and analysis.
+                                        Macrogen is a global digital healthcare company<br>based on DNA sequencing and analysis<!--2023-04-17::마침표삭제-->
                                     </div>
                                     <a href="/${rc.locale.language }/company/overview">
                                         <i class="icon-arrow-right-short"></i>
@@ -266,7 +266,7 @@
                                     </div>
                                     <div class="desc">
                                         We work with global leaders in<br>
-                                        genetic analysis and research.
+                                        genetic analysis and research<!--2023-04-17::마침표삭제-->
                                     </div>
                                     <a href="/${rc.locale.language }/company/global-network">
                                         <i class="icon-arrow-right-short"></i>
@@ -283,7 +283,7 @@
                                     </div>
                                     <div class="desc">
                                         We are committed to creating<br>
-                                        a sustainable future for human health.
+                                        a sustainable future for human health<!--2023-04-17::마침표삭제-->
                                     </div>
                                     <a href="/${rc.locale.language }/company/esg-management">
                                         <i class="icon-arrow-right-short"></i>
@@ -407,7 +407,7 @@
                     <div class="title">People</div>        
                     <div class="desc">
                         <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            Meet macrogen team, global partners, and<br> customers from all around the world.
+                            Meet macrogen team, global partners, and<br> customers from all around the world<!--2023-04-17::마침표삭제-->
                         </p>
                     </div>            
                 </div>
@@ -529,7 +529,7 @@
                     <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
                     <div class="desc">
                         <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            Keep up with our latest news as we pave<br>the way to a brighter future.
+                            Keep up with our latest news as we pave<br>the way to a brighter future<!--2023-04-17::마침표삭제-->
                         </p>
                     </div>                    
                 </div>   
@@ -646,7 +646,7 @@
                 <div class="info-box">
                     <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
                     <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        Global partners are with Macrogen.
+                        Global partners are with Macrogen<!--2023-04-17::마침표삭제-->
                     </div>               
                 </div>
                 <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
