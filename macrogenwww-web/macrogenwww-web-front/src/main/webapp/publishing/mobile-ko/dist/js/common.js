@@ -24,7 +24,7 @@ front.common = (function () {
     }
 
     var swiperTab = function () {
-        $(document).ready(function (){ 
+        $(document).ready(function (){
             if($('.macrogen-authorization').length === 1) {
                 new Swiper('.snbSwiper', {
                     slidesPerView: 'auto',
@@ -80,23 +80,25 @@ front.common = (function () {
 
     var commonHandler = function () {
         /* s Dropdown Menu */
-        var dropdown = $('.dropdown');
-
-        dropdown.on('click', function () {
-            $(this).attr('tabindex', 1).focus();
-            $(this).toggleClass('active');
-            $(this).find('.dropdown-menu').slideToggle(300);
-        });
-
-        dropdown.focusout(function () {
-            $(this).removeClass('active');
-            $(this).find('.dropdown-menu').slideUp(300);
-        });
-
-        $('.dropdown .dropdown-menu li').on('click', function () {
-            $(this).parents('.dropdown').find('span').text($(this).text());
-            $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
-        });
+        // 2023-04-17 Dropdown 수정
+        $('.dropdown').each(function(){
+            var dropdown = $(this);
+            dropdown.on('click', function () {
+                $(this).attr('tabindex', 1).focus();
+                $(this).toggleClass('active');
+                $(this).find('.dropdown-menu').slideToggle(300);
+            });
+            dropdown.focusout(function () {
+                $(this).removeClass('active');
+                $(this).find('.dropdown-menu').slideUp(300);
+            });
+            dropdown.find($('.dropdown-menu li')).on('click', function () {
+                dropdown.find(".select span").text($(this).text());
+                dropdown.find(".select span").addClass('active');
+                //$(this).parents().parents('.dropdown').find('span').text($(this).text());
+                dropdown.find('input').attr('value', $(this).attr('id'));
+            });
+        })
         /* e Dropdown Menu */
 
         /* s zoom */
@@ -174,7 +176,6 @@ front.common = (function () {
 
         /* s full-bg 일 경우, 자동 하단으로 스크롤 */
         var screeSize = document.documentElement.clientHeight;
-        var bgHeight = $('.full-bg').height();
         // console.log(screeSize);
 
         if($('.full-bg').length) {
@@ -183,7 +184,7 @@ front.common = (function () {
                 var sub = setTimeout(function() {
                     // console.log($('html, body').scrollTop())
                     if($('html, body').scrollTop() !== 0) clearTimeout(sub)
-                    else $('html, body').animate({scrollTop: bgHeight}, 300);
+                    else $('html, body').animate({scrollTop: screeSize}, 300);
                 }, 2000);
             }
         }
