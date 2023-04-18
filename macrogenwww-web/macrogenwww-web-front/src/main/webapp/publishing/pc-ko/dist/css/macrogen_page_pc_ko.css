@@ -7456,13 +7456,12 @@
         transition: opacity 500ms ease-in-out;
 			  transition-delay: 250ms;
       }
-
+      
+		/* 메인 로딩 이미지 수정 2023.04.18 */
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background { 
-        background: url(/publishing/pc-ko/dist/img/main/img-main_loading2.png) no-repeat center center / cover !important;
+        background: url(/publishing/pc-ko/dist/img/main/img-main_loading.png) no-repeat center center / cover !important;
       } /* 영상 불려오는 동안 배경이미지 css 임의 지정 */ 
-      /* .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .video-background {background: url(/publishing/pc-ko/dist/img/main/img-main_loading.png) no-repeat center center / cover !important;}  */
-      /* 영상 불려오는 동안 배경이미지 css 임의 지정 */
-      /* e yt 영상 2023.03.30*/
+
 
 
   .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .visual {
