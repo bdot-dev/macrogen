@@ -6731,6 +6731,7 @@
 .input-group-email em {color: #d9d9d9; font-style: inherit; line-height: 50px; font-size: 18px;}
 .input-group-email .email {width: 50%;}
 .input-group-email .select-box {width: 50%; line-height: 50px; padding-left: 10px;}
+.input-group-email .input_email {outline: none;}/*2023-04-19 추가*/
 .select-box.full{flex: 1;}
 .select-box.full .select_default {display: flex; flex: 1; align-items: center; height: 100%;}
 .input-group .full .select_default > span {color:#d9d9d9;font-weight: 400;}
