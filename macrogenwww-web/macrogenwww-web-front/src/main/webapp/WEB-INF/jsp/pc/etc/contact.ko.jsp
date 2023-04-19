@@ -12,6 +12,7 @@
 		<input type="hidden" id="email" name="email" />
 		<input type="hidden" id="field" name="field" />
 
+
 		<div class="full-bg macrogen no-bg">
 	        <div class="frame frameC">
 	            <div class="hero-title en">CONTACT US</div>
@@ -42,140 +43,141 @@
 	                        </div>
                             <!--s map pin 2023.04.06-->
                             <div class="contact_map">
-                                <div class="map_pins">
-                                    <a class="pin poland"><i></i>
-                                        <div class="popup_info poland_popup">
-                                            <div class="popup_inner">
-                                                <strong>SZCZECIN, POLAND</strong>
-                                                Teofila Firlika 19, 71-637 Szczecin, Poland
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin amsterdam" ><i></i>
-                                    <div class="popup_info">
-                                        <div class="popup_inner">
-                                            <strong>AMSTERDAM, NETHERLANDS</strong>
-                                            Meibergdreef 57, Amsterdam, Netherlands
-                                            <p><i class="ic-call"></i>+31-20-333-7563</p>
-                                        </div>
-                                        
-                                        </div>
-                                    </a>
-                                    <a class="pin leuven"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>LEUVEN,  BELGIUM</strong>
-                                                Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium<br>Oxfordlaan 70, 6229 EV Maastricht, Netherlands
-                                                <p><i class="ic-call"></i>+31-20-333-7563</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin paris"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>PARIS, FRANCE</strong>
-                                                161 Rue de la Belle Etoile, 95700, Roissy-en, France
-                                                <p><i class="ic-call"></i>+33-1-82-00-96</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin madrid" ><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>MADRID, SPAIN</strong>
-                                                C. de Martínez Villergas, 52, 28027 Madrid, Spain
-                                                <p><i class="ic-call"></i>+34-911-138-378</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin milan"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>MILAN, ITALY</strong>
-                                                Viale Ortles, 22/4, 20139 Milano, MI, Italy
-                                                <p><i class="ic-call"></i>+39-02-5666-0274</p>
-                                             </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin seoul"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>SEOUL, KOREA</strong>
-                                                서울특별시 강남구 테헤란로 238 (마크로젠빌딩)
-                                                <p><i class="ic-call"></i>+82-2-2180-7000</p>
-                                                <div class="border_bottom"></div>
-                                                <strong>SONGDO, KOREA</strong>
-                                                인천광역시 연수구 송도동 210-2
-                                                <div class="border_bottom"></div>
-                                                <strong>DAEJEON, KOREA</strong>
-                                                대전광역시 유성구 테크노3로 65, 323호 (관평동, 한신에스메카)
-                                                <p><i class="ic-call"></i>+82-42-336-7080</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin tokyo"><i></i>
-                                        <div class="popup_info">
-                                                <div class="popup_inner">
-                                                <strong>TOKYO, JAPAN</strong>
-                                                16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN
-                                                <p><i class="ic-call"></i>+81-3-5962-1124</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin biopolis"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>BIOPOLIS, SINGAPORE</strong>
-                                                #05-18, Synapse Building, 3 Biopolis Drive, Singapore 138623
-                                                <p><i class="ic-call"></i>+65-6339-0927</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin boston"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>BOSTON, USA</strong>
-                                                1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
-                                                <p><i class="ic-call"></i>+1-301-251-1007</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin newyork"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>NEW yORK, USA</strong>
-                                                1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
-                                                <p><i class="ic-call"></i>+1-301-251-1007</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin rockville" ><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>ROCKVILLE, USA</strong>
-                                                1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
-                                                <p><i class="ic-call"></i>+1-301-251-1007</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin virginia"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>VIRGINIA, USA</strong>
-                                                1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
-                                                <p><i class="ic-call"></i>+1-301-251-1007</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="pin santiago"><i></i>
-                                        <div class="popup_info">
-                                            <div class="popup_inner">
-                                                <strong>SANTIAGO, CHILE</strong>
-                                                Magdalena 140 Oficina 401, Las Condes Santiago, Chile
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                <!-- 2023-04-17::지도핀에 링크 추가 -->
+	                            <div class="map_pins">
+	                                <a href="https://goo.gl/maps/uCx53gRnfMACvyqCA" target="_blank" class="pin poland"><i></i>
+	                                    <div class="popup_info poland_popup">
+	                                        <div class="popup_inner">
+	                                            <strong>SZCZECIN, POLAND</strong>
+	                                            Teofila Firlika 19, 71-637 Szczecin, Poland
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/JpjkFu4dcm3hSCVX9" target="_blank" class="pin amsterdam" ><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>AMSTERDAM, NETHERLANDS</strong>
+	                                            Meibergdreef 57, Amsterdam, Netherlands
+	                                            <p><span class="ic-call"></span>+31-20-333-7563</p>
+	                                        </div>
+	                                        
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/YAAPN7VzmYbNK3416" target="_blank" class="pin leuven"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>LEUVEN,  BELGIUM</strong>
+	                                            Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium<br>Oxfordlaan 70, 6229 EV Maastricht, Netherlands
+	                                            <p><span class="ic-call"></span>+31-20-333-7563</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/8g2KsnrG3fvTSuib9" target="_blank" class="pin paris"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>PARIS, FRANCE</strong>
+	                                            161 Rue de la Belle Etoile, 95700, Roissy-en, France
+	                                            <p><span class="ic-call"></span>+33-1-82-00-96</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/YDWcjkPGRojs7o1u6" target="_blank" class="pin madrid" ><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>MADRID, SPAIN</strong>
+	                                            C. de Martínez Villergas, 52, 28027 Madrid, Spain
+	                                            <p><sapn class="ic-call"></sapn>+34-911-138-378</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/pvL34u6vBZGomHB67" target="_blank" class="pin milan"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>MILAN, ITALY</strong>
+	                                            Viale Ortles, 22/4, 20139 Milano, MI, Italy
+	                                            <p><span class="ic-call"></span>+39-02-5666-0274</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/uXiAmFLfAjKmsEbSA" target="_blank" class="pin seoul"><i></i>
+	                                    <div class="popup_info">
+	                                        <!-- 2023-04-17::한국 송도주소 삭제 -->
+	                                        <div class="popup_inner">
+	                                            <strong>SEOUL, KOREA</strong>
+	                                            서울특별시 강남구 테헤란로 238 (마크로젠빌딩)
+	                                            <p><span class="ic-call"></span>+82-2-2180-7000</p>
+	                                            <div class="border_bottom"></div>
+	                                            <strong>DAEJEON, KOREA</strong>
+	                                            대전광역시 유성구 테크노3로 65, 323호 (관평동, 한신에스메카)
+	                                            <p><span class="ic-call"></span>+82-42-336-7080</p>
+	                                        </div>
+	                                        <!-- //2023-04-17::한국 송도주소 삭제 -->
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/iG8oBnNpT54vJRHAA" target="_blank" class="pin tokyo"><i></i>
+	                                    <div class="popup_info">
+	                                            <div class="popup_inner">
+	                                            <strong>TOKYO, JAPAN</strong>
+	                                            16F Time24 Building, 2-4-32 Aomi, Koto-ku, Tokyo 135-0064, JAPAN
+	                                            <p><span class="ic-call"></span>+81-3-5962-1124</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/KLY49WbgfXxpT1xd6" target="_blank" class="pin biopolis"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>BIOPOLIS, SINGAPORE</strong>
+	                                            #05-18, Synapse Building, 3 Biopolis Drive, Singapore 138623
+	                                            <p><span class="ic-call"></span>+65-6339-0927</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/z384ZygcEgA3PDg19" target="_blank" class="pin boston"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>BOSTON, USA</strong>
+	                                            1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
+	                                            <p><span class="ic-call"></span>+1-301-251-1007</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/z384ZygcEgA3PDg19" target="_blank" class="pin newyork"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>NEW yORK, USA</strong>
+	                                            1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
+	                                            <p><span class="ic-call"></span>+1-301-251-1007</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/z384ZygcEgA3PDg19" target="_blank" class="pin rockville" ><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>ROCKVILLE, USA</strong>
+	                                            1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
+	                                            <p><span class="ic-call"></span>+1-301-251-1007</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/z384ZygcEgA3PDg19" target="_blank" class="pin virginia"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>VIRGINIA, USA</strong>
+	                                            1330 Piccard Drive, Suite 205, Rockville, MD 20850 USA
+	                                            <p><span class="ic-call"></span>+1-301-251-1007</p>
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                                <a href="https://goo.gl/maps/zac2CzmfeNZ8Vgvk8" target="_blank" class="pin santiago"><i></i>
+	                                    <div class="popup_info">
+	                                        <div class="popup_inner">
+	                                            <strong>SANTIAGO, CHILE</strong>
+	                                            Magdalena 140 Oficina 401, Las Condes Santiago, Chile
+	                                        </div>
+	                                    </div>
+	                                </a>
+	                            </div>
+	                            <!-- //2023-04-17::지도핀에 링크 추가 -->
                             </div>
 
                             <script>
@@ -228,15 +230,9 @@
                             <div class="section_IR">
                                 <div class="privacy_box">
                                     <div class="accordion-title toggle-btn">
-                                        <div class="font-h5">
-                                          문의하기
-                                        </div>
-                                        <div class="arrow-wrapper">
-                                          <div class="arrow">
-                                            <div class="close"></div>
-                                          </div>
-                                        </div>
-                                    </div> 
+		                                <div class="font-h5 color-point-primary">문의하기</div>
+		                                <div class="arrow-wrapper"><div class="arrow"><div class="close"></div></div></div>
+		                            </div> 
                                     
                                     <div class="input-group-box">
 
@@ -318,7 +314,7 @@
                                                 var selectEmail = $('._select_email'); 
                                                     $('._select_list').hide(); 
                 
-                                                    /*드롭다운*/ 
+                                                /*드롭다운*/ 
                                                 selectList.on('click',function() { 
                                                     if(selectDefault.hasClass('open')) { 
                                                     selectDefault.removeClass('open').next('._select_list').slideUp(200); 
@@ -326,18 +322,40 @@
                                                     selectDefault.addClass("open").next('._select_list').slideDown(200); 
                                                     } 
                                                 }); 
-                
-                                                selectDefault.on('click',function() { 
-                                                var option = $(this).text(); 
-                                                console.log(option) 
-                
-                                                    $(this).next().find('span').on('click',function() { 
-                                                        $(this).parents('.select-box').find('._select_default .text').css({'color' : '#000'}); 
-                                                            if($(this).hasClass('directly')){ 
-                                                        $(this).parents('.select-box').find('._select_default .text').text(''); 
-                                                        } 
-                                                    }); 
-                                                }); 
+                								
+                                                var selectDefault = function () {
+                                                    var selectDefault = $('.select-box ._select_default');
+                                                    $('._select_list').hide();
+
+                                                    selectDefault.on('click',function() {
+                                                      var select = $(this);
+                                                      //드롭다운 닫기
+                                                      if(select.hasClass('open')) {
+                                                        select.removeClass('open').next('._select_list').slideUp(200);
+                                                      }
+                                                      //드롭다운 열기
+                                                      else {
+                                                        select.addClass("open").next('._select_list').slideDown(200);
+                                                      /*  $(document).click(function(event) {
+                                                          if ( !$(event.target).hasClass('open')) {
+                                                            select.removeClass('open');
+                                                            $('._select_list').removeClass('open').slideUp(200);
+                                                          }
+                                                        });*/
+                                                      }
+                                                      
+	                                                    $(this).next().find('span').on('click',function() {
+	                                                      var option = $(this).text();
+	                                                      console.log(option)
+	                                                      $(this).parents('.select-box').find('._select_default .text').text(option);
+	                                                      // 2023-04-17 selectDefault 수정
+	                                                      select.removeClass('open').next('._select_list').slideUp(200);
+	                                                      // 2023-04-18 selectDefault 수정
+	                                                      $(this).parents('.select-box').find('._select_default .text').addClass('active');
+	
+	                                                    });
+                                                	});
+                                                } 
                 
                                                 /*email - 직접입력*/ 
                                                 selectEmail.on('click',function() { 
@@ -360,7 +378,7 @@
                                                 <ul class="select_list _select_list" id="dropdown-nation">
                                                         <c:forEach items="${ nationCodeList }" var="result" varStatus="status">
                                                         <li>
-                                                            <span id="nation" data-value="${result.code}">${result.codeNmEn}</span>
+                                                            <span id="nation" data-value-nation="${result.code}">${result.codeNmEn}</span>
                                                         </li>
                                                         </c:forEach>
                                                 </ul>
@@ -622,15 +640,15 @@
 		    	
 		    	$(document).ready(function(){
 					 $("#dropdown-nation").on("click", "span", function(e){
-						 console.log($(this).attr("data-value"));
-						 $("#nationCode").val($(this).attr("data-value"));
+						 console.log($(this).attr("data-value-nation"));
+						 $("#nationCode").val($(this).attr("data-value-nation"));
 					 });
 					
 				});
 					
 		    	$(document).ready(function(){
 		    		$("#dropdown-field").on("click", "span", function(e){
-		    			console.log($(this).attr("data-value-fld"));
+		    			 console.log($(this).attr("data-value-fld"));
 		    			 $("#field").val($(this).attr("data-value-fld"));
 		    		});
 		    	});
