@@ -8825,6 +8825,7 @@
     .select-box .select_list > li span {
       color: #5b5b5b; 
     }
+    .select-box .select_list > li:hover span {color: #E50050;}/*2023-04-19 추가*/
 
     .input-group-box input::placeholder {
       font-weight: normal;
