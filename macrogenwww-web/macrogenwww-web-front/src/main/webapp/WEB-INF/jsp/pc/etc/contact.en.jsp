@@ -247,7 +247,7 @@
 	                                        <div class="select-box ">
 	                                            <a href="javascript:;" class="select_default _select_default _select_email"><span class="text" id="email2"></span></a>
 	                                            <ul class="select_list _select_list">
-	                                            	<li><span class="directly">Diret input</span></li>
+	                                            	<li><span class="directly">Direct input</span></li>
 	                                                <c:forEach items="${emailCodeList }" var="result" varStatus="status">
                                                         <li><span>${result.codeNmEn }</span></li>
                                                     </c:forEach>
