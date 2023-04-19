@@ -360,7 +360,8 @@
                                                 /*email - 직접입력*/ 
                                                 selectEmail.on('click',function() { 
                                                     $(this).next().find('span').on('click',function() { 
-                                                        if($(this).hasClass('directly')){ 
+                                                        if($(this).hasClass('directly')){
+                                                        	$(this).parents('.select-box').find('._select_default .text').empty();
                                                             $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' id='email3' />"); 
                                                             $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
                                                             $('.input_email').css({ 'border' : '1px solid transparent' }); 

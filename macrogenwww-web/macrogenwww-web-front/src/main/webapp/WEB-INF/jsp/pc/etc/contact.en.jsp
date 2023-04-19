@@ -239,7 +239,7 @@
 	                                    <input type="number" id="mbtlnum" name="mbtlnum" placeholder="Enter your Phone number" class="form-control" aria-label="input" aria-describedby="phone">
 	                                </div>
 	                                
-	                                <div class="input-group essential">
+	                                <div class="input-group input-phone-box essential">
 	                                    <span class="input-group-text" id="email">Email</span>
 	                                    <div class="input-group-email">
 	                                        <input type="text" id="email1" name="email1" placeholder="Enter your E-mail" class="form-control email" aria-label="input" aria-describedby="email">
@@ -247,6 +247,7 @@
 	                                        <div class="select-box ">
 	                                            <a href="javascript:;" class="select_default _select_default _select_email"><span class="text" id="email2"></span></a>
 	                                            <ul class="select_list _select_list">
+	                                            	<li><span class="directly">Diret input</span></li>
 	                                                <c:forEach items="${emailCodeList }" var="result" varStatus="status">
                                                         <li><span>${result.codeNmEn }</span></li>
                                                     </c:forEach>
@@ -254,70 +255,72 @@
 	                                        </div> 
 	                                    </div>
 	                                </div>
-	                                <!--드롭다운 수정 2023.04.12--> 
-                                    <script> 
-	                                    
-                                        $(document).ready(function(){ 
-                                            var selectDefault = $('.select-box ._select_default'); 
-                                            var selectList = $('.select_list li, ._select_list li'); 
-                                            var selectEmail = $('._select_email'); 
-                                                $('._select_list').hide(); 
-            
-                                            /*드롭다운*/ 
-                                            selectList.on('click',function() { 
-                                                if(selectDefault.hasClass('open')) { 
-                                                selectDefault.removeClass('open').next('._select_list').slideUp(200); 
-                                                } else { 
-                                                selectDefault.addClass("open").next('._select_list').slideDown(200); 
-                                                } 
-                                            }); 
-            								
-                                            var selectDefault = function () {
-                                                var selectDefault = $('.select-box ._select_default');
-                                                $('._select_list').hide();
 
-                                                selectDefault.on('click',function() {
-                                                  var select = $(this);
-                                                  //드롭다운 닫기
-                                                  if(select.hasClass('open')) {
-                                                    select.removeClass('open').next('._select_list').slideUp(200);
-                                                  }
-                                                  //드롭다운 열기
-                                                  else {
-                                                    select.addClass("open").next('._select_list').slideDown(200);
-                                                  /*  $(document).click(function(event) {
-                                                      if ( !$(event.target).hasClass('open')) {
-                                                        select.removeClass('open');
-                                                        $('._select_list').removeClass('open').slideUp(200);
-                                                      }
-                                                    });*/
-                                                  }
-                                                  
-                                                 $(this).next().find('span').on('click',function() {
-                                                   var option = $(this).text();
-                                                   console.log(option)
-                                                   $(this).parents('.select-box').find('._select_default .text').text(option);
-                                                   // 2023-04-17 selectDefault 수정
+                                    <!--드롭다운 수정 2023.04.12--> 
+                                   <script> 
+                                   
+                                       $(document).ready(function(){ 
+                                           var selectDefault = $('.select-box ._select_default'); 
+                                           var selectList = $('.select_list li, ._select_list li'); 
+                                           var selectEmail = $('._select_email'); 
+                                               $('._select_list').hide(); 
+           
+                                           /*드롭다운*/ 
+                                           selectList.on('click',function() { 
+                                               if(selectDefault.hasClass('open')) { 
+                                               selectDefault.removeClass('open').next('._select_list').slideUp(200); 
+                                               } else { 
+                                               selectDefault.addClass("open").next('._select_list').slideDown(200); 
+                                               } 
+                                           }); 
+           								
+                                           var selectDefault = function () {
+                                               var selectDefault = $('.select-box ._select_default');
+                                               $('._select_list').hide();
+
+                                               selectDefault.on('click',function() {
+                                                 var select = $(this);
+                                                 //드롭다운 닫기
+                                                 if(select.hasClass('open')) {
                                                    select.removeClass('open').next('._select_list').slideUp(200);
-                                                   // 2023-04-18 selectDefault 수정
-                                                   $(this).parents('.select-box').find('._select_default .text').addClass('active');
+                                                 }
+                                                 //드롭다운 열기
+                                                 else {
+                                                   select.addClass("open").next('._select_list').slideDown(200);
+                                                 /*  $(document).click(function(event) {
+                                                     if ( !$(event.target).hasClass('open')) {
+                                                       select.removeClass('open');
+                                                       $('._select_list').removeClass('open').slideUp(200);
+                                                     }
+                                                   });*/
+                                                 }
+                                                 
+                                                $(this).next().find('span').on('click',function() {
+                                                  var option = $(this).text();
+                                                  console.log(option)
+                                                  $(this).parents('.select-box').find('._select_default .text').text(option);
+                                                  // 2023-04-17 selectDefault 수정
+                                                  select.removeClass('open').next('._select_list').slideUp(200);
+                                                  // 2023-04-18 selectDefault 수정
+                                                  $(this).parents('.select-box').find('._select_default .text').addClass('active');
 
-                                                 });
-                                            	});
-                                            } 
-            
-                                            /*email - 직접입력*/ 
-                                            selectEmail.on('click',function() { 
-                                                $(this).next().find('span').on('click',function() { 
-                                                    if($(this).hasClass('directly')){ 
-                                                        $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' id='email3' />"); 
-                                                        $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
-                                                        $('.input_email').css({ 'border' : '1px solid transparent' }); 
-                                                    }  
-                                                }); 
-                                            }); 
-                                        }); 
-                                    </script>
+                                                });
+                                           	});
+                                           } 
+           
+                                           /*email - 직접입력*/ 
+                                           selectEmail.on('click',function() { 
+                                               $(this).next().find('span').on('click',function() { 
+                                                   if($(this).hasClass('directly')){
+                                                   		$(this).parents('.select-box').find('._select_default .text').empty();
+	                                                    $(this).parents('.select-box').find('._select_default .text').append("<input class='input_email' id='email3' />"); 
+	                                                    $(this).parents('.select-box').find('._select_default .text .input_email').focus(); 
+	                                                    $('.input_email').css({ 'border' : '1px solid transparent' }); 
+                                                   }  
+                                               }); 
+                                           }); 
+                                       }); 
+                                   </script>
 	                                    
 	                                <!-- s 국가 -->
 	                                <div class="input-group essential">
