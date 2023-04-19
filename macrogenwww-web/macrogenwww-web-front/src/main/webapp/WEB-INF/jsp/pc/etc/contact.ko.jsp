@@ -670,11 +670,11 @@
 						submitting = true;
 					}
 					
-					// 문의분야
+					/* // 문의분야
 					$("#field").val();
 					
 					// 국가
-					$("#nationCode").val();
+					$("#nationCode").val(); */
 			
 					// 핸드폰
 					$("#mbtlnum").val(mbtlnum1.text() + '-' + mbtlnum2.val() + '-' + mbtlnum3.val());

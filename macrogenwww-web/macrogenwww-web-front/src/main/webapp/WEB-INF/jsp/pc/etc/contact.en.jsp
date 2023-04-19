@@ -236,7 +236,7 @@
 	                                <!-- input / phone-->
 	                                <div class="input-group essential">
 	                                    <span class="input-group-text" id="phone">Phone</span>
-	                                    <input type="number" id="mbtlnum" name="mbtlnum" placeholder="Enter your Phone number" class="form-control" aria-label="input" aria-describedby="phone">
+	                                    <input type="text" id="mbtlnum" name="mbtlnum" placeholder="Enter your Phone number" class="form-control" aria-label="input" aria-describedby="phone">
 	                                </div>
 	                                
 	                                <div class="input-group input-phone-box essential">
@@ -630,11 +630,11 @@
 					submitting = true;
 				}
 				
-				// 문의분야
+				/* // 문의분야
 				$("#field").val();
 				
 				// 국가
-				$("#nationCode").val();		
+				$("#nationCode").val(); */		
 	
 				// 이메일										
 				$("#email").val(email1.val() + '@' + email2.text());
@@ -729,7 +729,7 @@
 	    	}
 	
 	    	if (!checkAgree.is(':checked')) {
-	    		alert('Agree to the collection and use of personal information');
+	    		alert('Agree to the collection and use of personal information.');
 	    		checkAgree.focus();
 	    		return false;
 	    	}
