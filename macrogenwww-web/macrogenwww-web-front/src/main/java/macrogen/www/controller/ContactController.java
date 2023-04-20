@@ -24,7 +24,7 @@ import macrogen.www.vo.ContactVo;
 import nl.captcha.Captcha;
 
 @Controller
-@RequestMapping("/{langId}/etc/contact")
+@RequestMapping("/{langId}/contact-us")
 public class ContactController extends DefaultController {
 
 	@Autowired
@@ -40,7 +40,7 @@ public class ContactController extends DefaultController {
 		model.addAttribute("nationCodeList", codeService.listByCodeSe("CONTACT_NATION_CODE"));
 		model.addAttribute("emailCodeList", codeService.listByCodeSe("CONTACT_EMAIL_CODE"));
 		
-		return getDev() + "/etc/contact." + getLang();
+		return getDev() + "/contact-us/contact-us." + getLang();
 	}
 	
 	@RequestMapping("/captcha-image")
@@ -59,8 +59,7 @@ public class ContactController extends DefaultController {
 		
 		// validate captcha string (vo.getCaptchaString())
 		Captcha captcha = (Captcha) request.getSession().getAttribute(Captcha.NAME);
-		if (StringUtils.isEmpty(vo.getCaptchaString()) ||
-				!captcha.isCorrect(vo.getCaptchaString())) {
+		if (StringUtils.isEmpty(vo.getCaptchaString()) || !captcha.isCorrect(vo.getCaptchaString())) {
 			resultMap.put("result", "fail");
  			resultMap.put("message", "invalid_captcha");
 			return resultMap;
