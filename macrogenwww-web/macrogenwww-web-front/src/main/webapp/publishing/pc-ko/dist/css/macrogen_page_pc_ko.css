@@ -6949,10 +6949,9 @@ margin-bottom: 60px; }
     .macrogen.macrogen-contact-us .btn-wrap {
       display: flex;
       justify-content: flex-end; }
-/*2023-04-19 추가*/
-.macrogen.macrogen-contact-us .section_IR .font-h5 {margin-bottom: 0 !important;border-bottom: none !important;}
-.macrogen.macrogen-contact-us .section_IR .input-group-box {border-top: 1px solid #e9e9e9;padding-top: 60px;}
-
+/*2023-04-20 추가*/
+.macrogen.macrogen-contact-us .section_IR .input-group-box {border-bottom: 1px solid #e9e9e9;padding-bottom: 114px;margin-bottom: 130px;}
+.macrogen.macrogen-contact-us .section .section .inner .divider {display: none;}
 
        /*220418 sitemap*/
 
