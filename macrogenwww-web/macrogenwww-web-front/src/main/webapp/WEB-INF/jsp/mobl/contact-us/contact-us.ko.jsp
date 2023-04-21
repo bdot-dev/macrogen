@@ -313,7 +313,7 @@
 		                                </div>
 		                            </li>
 		                            <li class="item">
-		                                <div class="title">마이펫진</div><!--2023-04-21 수정-->
+		                                <div class="title">반려동물 헬스케어</div><!--2023-04-21 수정-->
 		                                <div class="desc">
 		                                    <ul>
 		                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7145">&#43;82&#45;2&#45;2180&#45;7145</a></li>
