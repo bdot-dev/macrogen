@@ -276,7 +276,7 @@
 		                                </div>
 		                            </li>
 		                            <li class="item">
-		                                <div class="title">개인유전체분석</div>
+		                                <div class="title">퍼스널 헬스케어</div><!--2023-04-21 수정-->
 		                                <div class="desc">
 		                                    <ul>
 		                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7220">&#43;82&#45;2&#45;2180&#45;7220</a></li>
@@ -313,7 +313,7 @@
 		                                </div>
 		                            </li>
 		                            <li class="item">
-		                                <div class="title">마이펫진</div>
+		                                <div class="title">마이펫진</div><!--2023-04-21 수정-->
 		                                <div class="desc">
 		                                    <ul>
 		                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7145">&#43;82&#45;2&#45;2180&#45;7145</a></li>
@@ -331,6 +331,26 @@
 		                                    </ul>
 		                                </div>
 		                            </li>
+									<!-- 2023-04-21 추가 -->
+									<li class="item ">
+										<div class="title">Single Cell</div>
+										<div class="desc">
+											<ul>
+												<li><i class="ic-call"></i><a href="tel:+82-2-2180-7205">&#43;82&#45;2&#45;2180&#45;7205</a></li>
+												<li><i class="ic-mail"></i><a href="mailto:ngskr@macrogen.com">ngskr&#64;macrogen&#46;com</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="item ">
+										<div class="title">Proteomics</div>
+										<div class="desc">
+											<ul>
+												<li><i class="ic-call"></i><a href="tel:+82-2-2180-7128">&#43;82&#45;2&#45;2180&#45;7128</a></li>
+												<li><i class="ic-mail"></i><a href="mailto:array@macrogen.com">array&#64;macrogen&#46;com</a></li>
+											</ul>
+										</div>
+									</li>
+									<!-- //2023-04-21 추가 -->
 		                        </ul>
 		                    </div>
 		
