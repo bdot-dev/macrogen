@@ -20,6 +20,9 @@
 	<if test="nowDt != null">
       	AND tms.post_dt  <![CDATA[<=]]> DATE(#{nowDt}) <!--  AND DATE_ADD(tms.end_dt, INTERVAL 1 DAY)  <![CDATA[>]]> DATE(#{nowDt}) -->
     </if>
+    <if test="brdid != null">
+      and tms.brdid = #{brdid}
+    </if>
   </sql>
 
   <select id="count" parameterType="mainSomlnkVo" resultType="int">
@@ -35,12 +38,20 @@
 		tms.main_somlnk_sn
 		, tms.lang_code
 		, tms.somlnk_ctgry_code
+		<if test="brdid == 'sns' ">
 		, ( select code_nm from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
 		, ( select code_nm_ko from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
 		, ( select code_nm_en from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		</if>
+		<if test="brdid == 'news' ">
+		, ( select code_nm from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		</if>
 		, tms.image_atch_id
 		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
 		, tms.somlnk_sj
+		, tms.somlnk_dt
 		, tms.somlnk_url
 		, tms.sort_ordr
 		, tms.regist_dt
@@ -50,8 +61,9 @@
 		, tms.updusr_sn
 		, tms.post_dt
 		, ( select user_nm from tb_user where user_sn = tms.updusr_sn ) updusr_nm
+		, tms.brdid
 	from tb_main_somlnk tms
-	where 1 = 1
+	where 1 = 1 
     <include refid="list_where" />
     <choose>
       <when test='orderBy == "regist_dt_desc"'>
@@ -69,12 +81,20 @@
 		tms.main_somlnk_sn
 		, tms.lang_code
 		, tms.somlnk_ctgry_code
+		<if test="brdid == 'sns' ">
 		, ( select code_nm from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
 		, ( select code_nm_ko from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
 		, ( select code_nm_en from tb_code where code_se = 'SOMLNK_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		</if>
+		<if test="brdid == 'news' ">
+		, ( select code_nm from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm
+		, ( select code_nm_ko from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_ko
+		, ( select code_nm_en from tb_code where code_se = 'NEWS_CTGRY_CODE' and code = tms.somlnk_ctgry_code ) somlnk_ctgry_code_nm_en
+		</if>
 		, tms.image_atch_id
 		, ( select physicl_flpth from tb_atch where atch_id = tms.image_atch_id ) image_flpth
 		, tms.somlnk_sj
+		, tms.somlnk_dt
 		, tms.somlnk_url
 		, tms.sort_ordr
 		, tms.regist_dt
@@ -99,6 +119,7 @@
       , somlnk_ctgry_code
       , image_atch_id
       , somlnk_sj
+      , somlnk_dt
       , somlnk_url
       , sort_ordr
       , regist_dt
@@ -106,12 +127,14 @@
       , updt_dt
       , updusr_sn
       , post_dt
+      , brdid
     ) values (
       #{mainSomlnkSn}
       , #{langCode}
       , #{somlnkCtgryCode}
       , #{imageAtchId}
       , #{somlnkSj}
+      , #{somlnkDt}
       , #{somlnkUrl}
       , #{sortOrdr}
       , now()
@@ -119,6 +142,7 @@
       , now()
       , #{updusrSn}
       , #{postDt}
+      , #{brdid}
     )
   </insert>
 
@@ -135,9 +159,11 @@
       <if test="somlnkCtgryCode != null">, somlnk_ctgry_code = #{somlnkCtgryCode} </if>
       <if test="imageAtchId != null">, image_atch_id = #{imageAtchId} </if>
       <if test="somlnkSj != null">, somlnk_sj = #{somlnkSj} </if>
+      <if test="somlnkDt != null">, somlnk_dt = #{somlnkDt} </if>
       <if test="somlnkUrl != null">, somlnk_url = #{somlnkUrl} </if>
       <if test="sortOrdr != null">, sort_ordr = #{sortOrdr} </if>
       <if test="postDt != null">, post_dt = #{postDt} </if>
+      <if test="brdid != null">, brdid = #{brdid} </if>
     where main_somlnk_sn = #{mainSomlnkSn}
   </update>
 

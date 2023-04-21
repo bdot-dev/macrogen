@@ -17,7 +17,7 @@
                     <%-- <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option> --%>
                     <option value="/${rc.locale.language }/policy/image/">Image Information Processing Policy</option>
                     <option value="/${rc.locale.language }/company/sitemap">sitemap</option>
-                    <option value="/${rc.locale.language }/company/contact-us">Contact us</option>
+                    <option value="/${rc.locale.language }/contact-us">Contact us</option>
                 </select>
             </li>
             

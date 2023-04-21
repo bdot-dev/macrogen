@@ -54,8 +54,15 @@
 		
 		<typeAlias alias="ipFilterVo" type="macrogen.www.vo.IpFilterVo"/>
 		<typeAlias alias="loginLogVo" type="macrogen.www.vo.LoginLogVo"/>
+
 		<typeAlias alias="mngrAuthLogVo" type="macrogen.www.vo.MngrAuthLogVo"/>
 		<typeAlias alias="mngrLogVo" type="macrogen.www.vo.MngrLogVo"/>
 		<typeAlias alias="invstLogVo" type="macrogen.www.vo.InvstLogVo"/>
+
+		<typeAlias alias="mainPeopleVo" type="macrogen.www.vo.MainPeopleVo"/>
+		
+		<typeAlias alias="mainNttVo" type="macrogen.www.vo.MainNttVo"/>
+		
+		<typeAlias alias="contactVo" type="macrogen.www.vo.ContactVo"/>
 	</typeAliases>
 </configuration>
