@@ -34,7 +34,7 @@ public class MainController extends DefaultController {
 	@Autowired
 	private MainNttService mainNttService;
 	
-	@Autowired
+	@Autowired 
 	private MainPeopleService mainPeopleService;
 	
 	@Autowired

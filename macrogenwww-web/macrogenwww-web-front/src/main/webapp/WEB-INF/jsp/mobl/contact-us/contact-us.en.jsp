@@ -62,7 +62,7 @@
 		            <!-- 2023-04-17::문의하기 내용추가 -->
             		<div class="accordion-container">
             			<div class="accordion-item">
-            				<a class="accordion-button color-point-primary" href="#">Inquiry Information</a>
+            				<a class="accordion-button color-point-primary" href="#">Ask the experts</a>
             				<hr class="divider"/>
             				<div class="accordion-content">
             				

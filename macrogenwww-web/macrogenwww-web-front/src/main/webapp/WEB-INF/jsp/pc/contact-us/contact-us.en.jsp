@@ -219,7 +219,7 @@
 	        				<div class="privacy_box">
 	        				
 	        					<div class="accordion-title toggle-btn">
-	                                <div class="font-h5 color-point-primary">Inquiry Information</div>
+	                                <div class="font-h5 color-point-primary">Ask the experts</div>
 	                                <div class="arrow-wrapper"><div class="arrow"><div class="close"></div></div></div>
 	                            </div>
 	                            
