@@ -326,7 +326,7 @@
     });
 
     $('#header').on({
-        "mouseleave focusout" : function () {
+        "mouseleave" : function () {//2023-04-27::"focusout" 삭제
             gnb2depth.removeClass('active')
             gnbIndex.removeClass('active')
             $('.header-main').css('background','none');
