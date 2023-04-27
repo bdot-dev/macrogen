@@ -334,6 +334,10 @@
             if ($('html').is('.animated')) {
                 $('#header').removeClass('header-bg-white')
             }
+
+            $('.item li a').removeClass('activation');
+            $('.folding').removeClass('on');
+            $('.folding ul').slideUp(250);
         }
     })
 
