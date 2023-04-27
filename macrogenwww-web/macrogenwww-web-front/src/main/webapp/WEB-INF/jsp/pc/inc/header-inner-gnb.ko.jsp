@@ -164,3 +164,44 @@
         </div> -->
     </div>
 </div>
+
+<!-- 2023-04-27 스크립트내용 추가 -->
+<script>
+    var gnb2depth = $('#gnb2Depth .box')
+    gnbIndex = $('#gnb li')
+
+    $('#gnb li').mouseover(function () {
+        $('.header-main').css('background','#fff');
+        $(this).parents('#header').addClass('header-bg-white')
+        gnbIndex.removeClass('active');
+        $(this).addClass('active');
+        gnb2depth.removeClass('active');
+        let idx = $(this).index();
+        gnb2depth.eq(idx).addClass('active');
+        $('#gnb2Depth').css({
+            borderBottom:"1px solid #e9e9e9",
+            borderTop:"1px solid #e9e9e9"
+        })
+    });
+
+    gnb2depth.mouseover(function () {
+        gnbIndex.removeClass('active');
+        let idx = $(this).index();
+        gnbIndex.eq(idx).addClass('active');
+
+    });
+
+    $('#header').on({
+        "mouseleave focusout" : function () {
+            gnb2depth.removeClass('active')
+            gnbIndex.removeClass('active')
+            $('.header-main').css('background','none');
+            $('#gnb2Depth').css('border','none')
+            if ($('html').is('.animated')) {
+                $('#header').removeClass('header-bg-white')
+            }
+        }
+    })
+
+</script>
+<!-- //2023-04-27 스크립트내용 추가 -->

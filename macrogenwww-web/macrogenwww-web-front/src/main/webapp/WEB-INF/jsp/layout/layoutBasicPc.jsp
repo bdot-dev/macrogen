@@ -24,34 +24,8 @@
 		<header class="header header-bg-white" id="header">
 	    	<c:import url="/inc/header-inner-gnb" />
 		</header>
-		<script>
-		    var gnb2depth = $('#gnb2Depth .box')
-		    let gnbIndex = $('#gnb li')
+		<!-- 2023-04-27 스크립트내용 인클루드 파일로 이동 -->
 
-		    $('#gnb li').mouseover(function () {
-		        $(this).parents('#header').addClass('header-bg-white')
-		        gnbIndex.removeClass('active');
-		        $(this).addClass('active');
-		        gnb2depth.removeClass('active');
-		        let idx = $(this).index();
-		        gnb2depth.eq(idx).addClass('active');
-		        $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
-		    });
-
-		     gnb2depth.mouseover(function () {
-		         gnbIndex.removeClass('active');
-		        let idx = $(this).index();
-		         gnbIndex.eq(idx).addClass('active');
-		     });
-
-		    $('#header').on({
-		        "mouseleave focusout" : function () {
-		            gnb2depth.removeClass('active')
-		            gnbIndex.removeClass('active')
-		            $('#gnb2Depth').css('border','none')
-		        }
-		    })
-		</script>
 
 		<!-- 내용// -->
 		<decorator:body />
