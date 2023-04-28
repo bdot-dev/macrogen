@@ -557,10 +557,10 @@
                 <div class="inner">
                     <div class="info-box">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
-                        <!--2023-04-28::내용삭제<div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
+                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <!--2023-04-28::내용삭제 국내 지사를 포함하여 -->세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
                            서비스를 더욱  신속하고 체계적으로 제공합니다
-                        </div>-->
+                        </div>
                     </div>
                     <!-- <div class="map">
                         <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
