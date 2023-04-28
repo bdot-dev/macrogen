@@ -25,6 +25,8 @@
  v.0.1 주연 : 최초 작업 -- 2021.08.31
 |----------------------------------|
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');/* 2023-04-28 추가 */
 @keyframes scrollMove {
   0% {
     top: -100%; }
@@ -102,7 +104,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  /* font-family: var(--bs-body-font-family);2023-04-28 수정 */
+  font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;/*2023-04-28 수정*/
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
