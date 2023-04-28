@@ -3229,6 +3229,7 @@
         transform: translateY(-50%);
         font-family: 'Proxima Nova';
         margin-right: 10px;
+        font-family: 'Noto Sans', sans-serif;/*2023-04-28 add*/
         /*  left: 5.333%!*20px*!;
               top: 25.86%!*210px*!;*/ }
         .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide .text-box p {
@@ -3520,7 +3521,7 @@
       line-height: 44px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;font-family: 'Noto Sans', sans-serif;/*2023-04-28 add*/ }
       .main-wrap .main-page .section-define .info-box .title span:first-of-type {
         display: block; }
       .main-wrap .main-page .section-define .info-box .title span:last-of-type {
@@ -4128,7 +4129,7 @@
           line-height: 72px;
           letter-spacing: -1px;
           text-transform: capitalize;
-          font-family:'AppleSDGothicNeoB00' ;
+          /* font-family:'AppleSDGothicNeoB00' ; */font-family: 'Noto Sans', sans-serif;/*2023-04-28 add*/
         } 
 
        
@@ -4228,7 +4229,7 @@
           font-size: 18px;
           line-height: 22px;
           letter-spacing: 0;
-          font-family:'Proxima Nova';
+          /* font-family:'Proxima Nova'; */font-family: 'Noto Sans', sans-serif;/*2023-04-28 add*/
           background: #fff;
         }
 
