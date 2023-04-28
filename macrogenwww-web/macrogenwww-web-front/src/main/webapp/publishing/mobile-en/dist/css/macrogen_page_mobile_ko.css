@@ -3194,7 +3194,7 @@
                 margin:5px 10px 0 0;
                 font-weight: 700;
                 font-size: 15px;
-                font-family: 'Proxima Nova';
+                /* font-family: 'Proxima Nova'; */font-family: 'Noto Sans', sans-serif;/*2023-04-28 add*/
                 color: #fff;
                 line-height: 18px;
                 letter-spacing: 0.02em;
