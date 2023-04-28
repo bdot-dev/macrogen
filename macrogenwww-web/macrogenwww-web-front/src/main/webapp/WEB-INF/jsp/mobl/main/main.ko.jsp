@@ -601,10 +601,10 @@
                 <div class="inner">
                     <div class="info-box">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
-                        <!--2023-04-28::내용삭제<div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            국내 지사를 포함하여 세계 각지의 글로벌 네트워크를<br> 통해 현지 고객의다양한 요구에 부합하는 맞춤형<br>
+                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <!--2023-04-28::내용삭제 국내 지사를 포함하여 -->세계 각지의 글로벌 네트워크를<br> 통해 현지 고객의다양한 요구에 부합하는 맞춤형<br>
                             서비스를 더욱  신속하고 체계적으로 제공합니다
-                        </div>-->
+                        </div>
                     </div>
                    <div class="inner">
 	                    <div class="map">
