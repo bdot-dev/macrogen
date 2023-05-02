@@ -6,8 +6,8 @@
 	    <nav>
 	        <ul id="gnb">
                 <li><span class="font-bold">macrogen</span></li>
-                <li><span class="font-bold">business</span></li>
-                <li><span class="font-bold">r&#38;d</span></li>
+                <li><span class="font-bold">Service</span></li><!--2023-05-02 수정-->
+                <!-- <li><span class="font-bold">r&#38;d</span></li> 2023-05-02 삭제 -->
                 <li><span class="font-bold">newsroom</span></li>
                 <li><span class="font-bold">ir</span></li>
                 <li><span class="font-bold">esg</span></li>
@@ -49,74 +49,194 @@
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/company/global-network">Global Network</a></div>
         </div>
-
-        <%--
+        <!-- 2023-05-02 추가 -->
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/company/qualified-image">채용</a></div>
-            <ul>
-                <li><a href="/${rc.locale.language }/company/qualified-image">인재상</a></li>
-                <li><a href="/${rc.locale.language }/company/hrm">인사제도</a></li>
-                <li><a href="/${rc.locale.language }/company/recruit">채용안내</a></li>
-            </ul>
-        </div>
-        --%>
-    </div>
-    <!--Business-->
-    <div class="box clearfix">
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/business/research/ngs">Research</a></div>
-            <ul>
-                <li><a href="/${rc.locale.language }/business/research/ngs">NGS</a></li>
-                <li><a href="/${rc.locale.language }/business/research/ces">CES</a></li>
-                <li><a href="/${rc.locale.language }/business/research/gene-synthesis">Gene Synthesis</a></li>
-                <li><a href="/${rc.locale.language }/business/research/oligo">Oligo</a></li>
-                <li><a href="/${rc.locale.language }/business/research/microarray">Microarray</a></li>
-                <li><a href="/${rc.locale.language }/business/research/model">GEM</a></li>
-                <%-- <li><a href="/${rc.locale.language }/business/research/reagent">Reagent &<br>LABware</a></li> --%>
-            </ul>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">Clinical Diagnostics</a></div>
-            <ul>
-                <li><a href="/${rc.locale.language }/business/diagnosis/cancer">Cancer Genome Testing</a></li>
-                <li><a href="/${rc.locale.language }/business/diagnosis/newborn">Genetic Disorder</a></li>
-                <li><a href="/${rc.locale.language }/business/diagnosis/covid">COVID&#45;19</a></li>
-            </ul>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Healthcare</a></div>
-            <ul>
-                <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Genome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/intestinal-microbiome">Microbiome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">Pet DNA Test</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--R&D-->
-    <div class="box clearfix">
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/precision-medicine">Precision Medicine<br/>Institute</a></div>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/bioinformatics">Bioinformatics<br/>Institute</a></div>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/biome">The Biome<br/>Institute</a></div>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/sync-genes">Sync Genes<br/>Institute</a></div>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/bigdata">Big Data Institute<br/>for Health</a></div>
-        </div>
-        <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/patent">Patents&#47;Papers</a></div>
+            <div class="title"><a href="/${rc.locale.language }/rnd/patent">Resource</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/patent">Patents</a></li>
                 <li><a href="/${rc.locale.language }/rnd/thesis">Papers</a></li>
             </ul>
         </div>
+        <div class="item">
+            <div class="title"><a href="#">r&#38;d</a></div>
+            <ul>
+                <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">Precision Medicine Institute</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/bioinformatics">Bioinformatics Institute</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/biome">The Biome Institute</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/sync-genes">Sync Genes Institute</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/bigdata">Big Data Institute for Health</a></li>
+            </ul>
+        </div>
+        <!-- //2023-05-02 추가 -->
     </div>
+    <!--Business-->
+    <div class="box clearfix">
+        <!-- 2023-05-02 수정 -->
+        <!-- 추후 론칭(오픈 시 숨김) -->
+        <!-- <div class="item">
+            <div class="title"><a href="#">Healthcare Platform</a></div>
+            <ul>
+                <li><a href="#">CanBe</a></li>
+            </ul>
+        </div> -->
+        <!-- //추후 론칭(오픈 시 숨김) -->
+        <div class="item">
+            <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Healthcare</a></div>
+            <ul>
+                <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Disease Prediction<br>&#38; Wellness Genetic Test</a></li>
+                <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">DTC Genetic Testing</a></li>
+                <!-- 추후 론칭(오픈 시 숨김)<li><a href="/${rc.locale.language }/business">마이크로바이옴 검사솔루션</a></li> -->
+            </ul>
+        </div>
+        <div class="item">
+            <div class="title"><a href="/${rc.locale.language }/business/healthcare/pet-genetic">Pet Healthcare</a></div>
+            <ul>
+                <li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">Pet DNA Test</a></li>
+            </ul>
+        </div>
+        <div class="item menu0204">
+            <div class="title"><a href="/${rc.locale.language }/business/research/ngs">Research Services</a></div>
+            <ul>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/ngs">NGS</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/ngs#genome">Whole Genome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/ces">CES</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/ces#standard">Standard Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#identification">Identification</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#fragment">Fragment</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#customized">Customized Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#human">Human ID</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/microarray">Microarray</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/microarray#expression">Expression Microarray</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/microarray#genome">Genome Microarray</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/microarray#epigenome">Epigenome Microarray</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/proteomics">Proteomics</a> <!-- 신규추가 -->
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/proteomics">Proteomics Olink</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/gene-synthesis">Gene Synthesis</a>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/oligo">Oligo</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/oligo#dna">Gene Synthesis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/oligo#rna">RNA Oligo Synthesis</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/model">GEM/CRISPR</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/research/model#crispr">CRISPR Knock-in/out</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#gem">GEM</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#mass">Mass Production</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#additional">Additional</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/research/reagent">Reagent & LABware</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item menu0205">
+            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">Clinical Services</a></div>
+            <ul>
+                <li>
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer">Precision Medicine</a>
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer risk prediction</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis of causes of <br>cancer</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#monitoring">Cancer Occurrence <br>Monitoring</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Genetic testing <br>for cancer risk</a> <!--신규 추가 -->
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Hereditary Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">BRCA1/2 Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Gastric Cancer Panel</a></li> 
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel">NGS-based Genetic <br>Panel Lab</a> <!--신규 추가 -->
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Certification acquired by <br>Macrogen in the clinical <br>diagnosis business</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Key features and strengths <br>of  Macrogen’s cancer panels</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Scope of projects to set up <br>NGS-based PMG labs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/${rc.locale.language }/business/diagnosis/gclp">GCLP</a> <!--신규 추가 -->
+                    <div class="folding">
+                        <button type="button"></button>
+                        <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">ClinPham Seq</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Multi Omics</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Storage of samples</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li> -->
+            </ul>
+        </div>
+        <div class="item">
+            <div class="title"><a href="/${rc.locale.language }/business/research/ngs">Single Cell Expert Services</a></div>
+            <ul>
+                <li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>
+                <li><a href="/${rc.locale.language }/business/spatital">Spatial Transcriptome Analysis</a></li>
+                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Statial)</a></li> <!-- 신규 추가 -->
+            </ul>
+        </div>
+        <!-- //2023-05-02 수정 -->
+    </div>
+
+    <!-- 2023-05-02 R&D 메뉴 "macrogen" 하위메뉴로 이동 -->
+    
     <!--Newsroom-->
     <div class="box clearfix">
         <div class="item">
@@ -166,7 +286,7 @@
         </div> -->
     </div>
 </div>
-<!-- 2023-04-27 스크립트내용 추가 -->
+<!-- 2023-05-02 스크립트내용 추가 -->
 <script>
     var gnb2depth = $('#gnb2Depth .box')
     let gnbIndex = $('#gnb li')
@@ -193,7 +313,7 @@
     });
 
     $('#header').on({
-        "mouseleave focusout" : function () {
+        "mouseleave" : function () {//2023-05-02::"focusout" 삭제
             gnb2depth.removeClass('active')
             gnbIndex.removeClass('active')
             $('.header-main').css('background','none');
@@ -201,7 +321,52 @@
             if ($('html').is('.animated')) {
                 $('#header').removeClass('header-bg-white')
             }
+
+            $('.item li a').removeClass('activation');
+            $('.folding').removeClass('on');
+            $('.folding ul').slideUp(250);
         }
     })
+
+    var gnbSet = {
+        click: function (target, speed) {
+            var _self = this, $target = $(target);
+            _self.speed = speed || 300;
+            $target.each(function () {
+                if (findChildren($(this))) {
+                    return;
+                }
+                $(this).addClass('noDepth');
+            });
+
+            function findChildren(obj) {
+                return obj.find('> ul').length > 0;
+            }
+
+            $target.on('click', 'button', function (e) {
+                e.stopPropagation();
+                $('.item li a').removeClass('activation');
+                $('.folding').removeClass('on');
+                $('.folding ul').slideUp(250);
+                var $this = $(this),$depthTarget = $this.next();
+                if ($depthTarget.css('display') == 'none') {
+                    _self.activeOn($this);
+                    $depthTarget.slideDown(_self.speed);
+                } else {
+                    $depthTarget.slideUp(_self.speed);
+                    _self.activeOff($this);
+                }
+            })
+        }, activeOff: function ($target) {
+            $target.parent().removeClass('on');
+            $target.parent().prev('a').removeClass('activation');
+        }, activeOn: function ($target) {
+            $target.parent().addClass('on');
+            $target.parent().prev('a').addClass('activation');
+        }
+    };
+    $(function () {
+        gnbSet.click('.item .folding', 300)
+    });
 </script>
-<!-- //2023-04-27 스크립트내용 추가 -->
+<!-- //2023-05-02 스크립트내용 추가 -->
