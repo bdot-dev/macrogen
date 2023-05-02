@@ -48,9 +48,9 @@
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-              <div class="swiper-slide active"><a href="#">Expression Microarray</a></div>
-              <div class="swiper-slide "><a href="#">Genome Microarray</a></div>
-              <div class="swiper-slide"><a href="#">Epigenome Microarray</a></div>
+              <div class="swiper-slide active" id="expression"><a href="#">Expression Microarray</a></div><!-- 20230502 div에 id 붙여줌. 링크 hash -->
+              <div class="swiper-slide" id="genome"><a href="#">Genome Microarray</a></div>
+              <div class="swiper-slide" id="epigenome"><a href="#">Epigenome Microarray</a></div>
             </div>
           </div>
         </div>
@@ -80,6 +80,13 @@
         function fnMove(){
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+
+        // location.hash // 20230502
+        if(location.hash) {
+        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
         }
       </script>
       <div class="info-box-wrap tab-content">
