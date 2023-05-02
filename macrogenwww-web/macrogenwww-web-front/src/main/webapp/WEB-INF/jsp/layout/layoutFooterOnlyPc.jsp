@@ -23,6 +23,7 @@
 		<!-- 내용// -->
 		<decorator:body />
 		<script>
+		/*
 		    var gnb2depth = $('#gnb2Depth .box')
 		    let gnbIndex = $('#gnb li')
 
@@ -53,6 +54,7 @@
 		            $('#gnb2Depth').css('border','none')
 		        }
 		    })
+		*/
 		</script>
 		<!-- //내용 -->
 
