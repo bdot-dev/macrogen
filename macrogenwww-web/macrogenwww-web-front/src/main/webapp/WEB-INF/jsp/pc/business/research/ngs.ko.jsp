@@ -52,14 +52,14 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide "><a href="#">Whole Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Epigenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
+                            <div class="swiper-slide active" id="genome"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide" id="exome"><a href="#">Whole Exome Sequencing</a></div>
+                            <div class="swiper-slide" id="transcriptome"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide" id="epigenome"><a href="#">Epigenome Sequencing</a></div>
+                            <!-- <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
                             <div class="swiper-slide"><a href="#">ATAC analysis</a></div>
-                            <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div> -->
+                            <div class="swiper-slide" id="metagenome"><a href="#">Metagenome Sequencing</a></div>
                         </div>
                     </div>
                     <div class="btn-box">
@@ -571,6 +571,13 @@
         function fnMove(){
             var offset = $("#_tab-box").offset();
             $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+        
+     	// location.hash // 20230502
+        if(location.hash) {
+        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
         }
 
         $('._swiperTab .swiper-slide').on('click', function(){

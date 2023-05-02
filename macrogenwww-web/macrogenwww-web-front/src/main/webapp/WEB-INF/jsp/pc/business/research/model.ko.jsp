@@ -46,10 +46,10 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">CRISPR Knock-In/Out</a></div>
-                            <div class="swiper-slide "><a href="#">Genetically Engineered Mouse</a></div>
-                            <div class="swiper-slide"><a href="#">Mass Reproduction</a></div>
-                            <div class="swiper-slide"><a href="#">Additional</a></div>
+                            <div class="swiper-slide active" id="crispr"><a href="#">CRISPR Knock-In/Out</a></div>
+                            <div class="swiper-slide" id="gem"><a href="#">Genetically Engineered Mouse</a></div>
+                            <div class="swiper-slide" id="mass"><a href="#">Mass Reproduction</a></div>
+                            <div class="swiper-slide" id="additional"><a href="#">Additional</a></div>
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,14 @@
                     var offset = $("#_tab-box").offset();
                     $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }
+                
+            	// location.hash // 20230502
+                if(location.hash) {
+                	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+                	loadtab.click();	// tab content view
+                	setTabContent(loadtab.index());	// scroll 이동
+                }
+
             </script>
 
             <div class="info-box-wrap tab-content">

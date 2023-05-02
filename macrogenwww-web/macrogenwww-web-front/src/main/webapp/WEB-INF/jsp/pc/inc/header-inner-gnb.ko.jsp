@@ -116,11 +116,11 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/research/ngs">Whole Genome Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ngs">Whole Exome Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ngs">Transcriptome Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ngs">Epigenome Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ngs">Metagenome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#genome">Whole Genome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
                 </li>
@@ -129,11 +129,11 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/research/ces">Standard Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ces">Identification</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ces">Fragment</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ces">Customized Sequencing</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/ces">Human ID</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#standard">Standard Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#identification">Identification</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#fragment">Fragment</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#customized">Customized Sequencing</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ces#human">Human ID</a></li>
                         </ul>
                     </div>
                 </li>
@@ -142,9 +142,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/research/microarray">Expression Microarray</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/microarray">Genome Microarray</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/microarray">Epigenome Microarray</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/microarray#expression">Expression Microarray</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/microarray#genome">Genome Microarray</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/microarray#epigenome">Epigenome Microarray</a></li>
                         </ul>
                     </div>
                 </li>
@@ -165,8 +165,8 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/research/oligo">DNA Oligo Synthesis</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/oligo">RNA Oligo Synthesis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/oligo#dna">DNA Oligo Synthesis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/oligo#rna">RNA Oligo Synthesis</a></li>
                         </ul>
                     </div>
                 </li>
@@ -175,10 +175,10 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/research/model">CRISPR Knock-in/out</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/model">GEM</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/model">Mass Production</a></li>
-                            <li><a href="/${rc.locale.language }/business/research/model">Additional</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#crispr">CRISPR Knock-in/out</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#gem">GEM</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#mass">Mass Production</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/model#additional">Additional</a></li>
                         </ul>
                     </div>
                 </li>
@@ -195,9 +195,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 위험 예측</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 원인 분석</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 모니터링</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">암 발생 위험 예측</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">암 발생 원인 분석</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#monitoring">암 발생 모니터링</a></li>
                         </ul>
                     </div>
                 </li>
@@ -241,9 +241,9 @@
         <div class="item">
             <div class="title"><a href="/${rc.locale.language }/business/research/ngs">싱글셀분석서비스</a></div>
             <ul>
-                <li><a href="/${rc.locale.language }/business/research/ngs">Single Cell Multi-omics Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/research/ngs">Spatial Transcriptome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/research/singlecell">Single Cell (In situ / Statial)</a></li> <!-- 신규 추가 -->
+                <li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>
+                <li><a href="/${rc.locale.language }/business/spatital">Spatial Transcriptome Analysis</a></li>
+                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Statial)</a></li> <!-- 신규 추가 -->
             </ul>
         </div>
         <!-- //2023-04-27 수정 -->

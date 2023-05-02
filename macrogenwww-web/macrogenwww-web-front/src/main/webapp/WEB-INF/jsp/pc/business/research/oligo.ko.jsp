@@ -48,8 +48,8 @@
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
       	<div class="tab-tit">
-        	<p class="font-h4 title active">DNA Oligo Synthesis</p>
-        	<p class="font-h4 title">RNA Oligo Synthesis</p>
+        	<p class="font-h4 title active" id="dna">DNA Oligo Synthesis</p>
+        	<p class="font-h4 title" id="rna">RNA Oligo Synthesis</p>
       	</div>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
@@ -65,7 +65,7 @@
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
-              <div class="swiper-slide "><a href="#">Double Strand RNA</a></div>
+              <div class="swiper-slide"><a href="#">Double Strand RNA</a></div>
             </div>
           </div>
         </div>
@@ -106,6 +106,13 @@
         function fnMove(){
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+        
+     	// location.hash // 20230502
+        if(location.hash) {
+        	var loadtab = $('.tab-tit .title').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
         }
       </script>
 
