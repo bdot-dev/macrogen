@@ -9287,7 +9287,7 @@ margin-bottom: 60px; }
 .gnb-2depth .folding button::before {width: 11px;height: 1px;}
 .gnb-2depth .folding button::after {width: 1px;height: 11px;transition: all 300ms ease-in-out;transform-origin: center center;}
 .gnb-2depth .folding.on button::after {transform: rotate(90deg);opacity: 0;}
-.gnb-2depth .folding a:hover {color: #000;font-weight: 500;}
+.gnb-2depth .folding a:hover {color: #000 !important;font-weight: 500;}
 .gnb-2depth a.activation {color: #E50050 !important;font-weight: 500;}
 .gnb-2depth .folding .cards-body {display: none;margin: 15px 0 0 10px;}
 .gnb-2depth .item>ul>li {position: relative;}
