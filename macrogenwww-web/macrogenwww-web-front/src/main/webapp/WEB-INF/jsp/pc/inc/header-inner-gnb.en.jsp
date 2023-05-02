@@ -169,7 +169,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/reagent">Reagent & LABware</a>
+                    <a href="/${rc.locale.language }/business/research/reagent">Reagent &#38; LABware</a>
                 </li>
             </ul>
         </div>
