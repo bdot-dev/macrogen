@@ -12,9 +12,9 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">임상진단서비스</li>
-        <li class="breadcrumb-item">암 유전체 검사</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">임상분석서비스</li>
+        <li class="breadcrumb-item">정밀의학</li>
     </ol>
 </nav>
 

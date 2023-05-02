@@ -9,7 +9,8 @@
         <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
-		        <li class="breadcrumb-item">R&D</li>
+		        <li class="breadcrumb-item">MARCROGEN</li>
+		        <li class="breadcrumb-item">RESOURCE</li>
 		        <li class="breadcrumb-item active">논문</li>
 		    </ol>
 		</nav>

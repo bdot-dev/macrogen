@@ -12,9 +12,9 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">연구서비스</li>
-        <li class="breadcrumb-item">OLIGO</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">연구분석서비스</li>
+        <li class="breadcrumb-item">Microarray</li>
     </ol>
 </nav>
 

@@ -11,6 +11,7 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">MARCROGEN</li>
         <li class="breadcrumb-item">R&D</li>
         <li class="breadcrumb-item">정밀의학연구소</li>
     </ol>
