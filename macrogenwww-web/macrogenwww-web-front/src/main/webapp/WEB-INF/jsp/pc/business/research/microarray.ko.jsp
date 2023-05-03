@@ -12,7 +12,7 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">Service</li> 
         <li class="breadcrumb-item">연구분석서비스</li>
         <li class="breadcrumb-item">Microarray</li>
     </ol>
@@ -73,21 +73,26 @@
           $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
-          /*페이지 변경후 상단 이동*/
+          /*페이지 변경후 상단 이동*/ 
           fnMove();
         }
-        /*탭메뉴 상단으로 이동*/
-        function fnMove(){
+        /*탭메뉴 상단으로 이동*/  
+        function fnMove(){  
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
 
-        // location.hash // 20230502
+     	// location.hash // 20230502
         if(location.hash) {
-        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
         }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
       <div class="info-box-wrap tab-content">
         <!--Expression Microarray-->
