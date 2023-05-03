@@ -1,8 +1,8 @@
- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 
 <body>	
-  	<div class="full-bg business_bg bg-type2">
+	<div class="full-bg business_bg bg-type2">
 		<!--header 수정시 메인 header 같이 수정해주세요-->
 		<header class="header" id="header">
 			<c:import url="/inc/header-inner-gnb" />
@@ -113,10 +113,7 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
-
-
                     <p class="sub-title font-h5">서비스 특장점</p>
                     <p class="desc">lClinPharmSeq은 평생 단 한번의 검사로 개인 맞춤 치료를 가능하게 합니다.<br>다양한 질병과 연관성 높은 59종 유전자를 검사하여, 평생동안 유관 약물의 효과를 늘리고 부작용을 줄여 처방할 수 있습니다.</p>
                     <div class="img_gclp01">
@@ -322,7 +319,5 @@
                 });
             </script>
 		</div>
-
 	</div>
-
 </body>
