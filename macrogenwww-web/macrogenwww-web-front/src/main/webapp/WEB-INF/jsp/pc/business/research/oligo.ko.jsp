@@ -16,7 +16,7 @@
         <li class="breadcrumb-item">연구분석서비스</li>
         <li class="breadcrumb-item">OLIGO</li>
     </ol>
-</nav>
+</nav> 
 
       <div class="hero-title">OLIGO</div>
       <a href="#_tab-box" class="btn btn-round btn-service">
@@ -107,13 +107,17 @@
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
-        
+          
      	// location.hash // 20230502
         if(location.hash) {
         	var loadtab = $('.tab-tit .title').filter(location.hash);
         	loadtab.click();	// tab content view
         	setTabContent(loadtab.index());	// scroll 이동
         }
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
 
       <div class="info-box-wrap tab-content active">

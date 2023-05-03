@@ -13,7 +13,7 @@
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Service</li>
-        <li class="breadcrumb-item">연구분석서비스</li>
+        <li class="breadcrumb-item">연구분석서비스</li> 
         <li class="breadcrumb-item">NGS</li>
     </ol>
 </nav>
@@ -572,6 +572,14 @@
             var offset = $("#_tab-box").offset();
             $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
+
+        $('._swiperTab .swiper-slide').on('click', function(){ 
+            var idx = $(this).index();
+            setTabContent(idx) 
+        });
+
+        $('.swiper-notification').remove();
+        
         
      	// location.hash // 20230502
         if(location.hash) {
@@ -579,13 +587,10 @@
         	loadtab.click();	// tab content view
         	setTabContent(loadtab.index());	// scroll 이동
         }
-
-        $('._swiperTab .swiper-slide').on('click', function(){
-            var idx = $(this).index();
-            setTabContent(idx)
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
         });
-
-        $('.swiper-notification').remove();
     </script>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 
 <body>	
@@ -50,8 +50,8 @@
             </div>
             <!--//탭 슬라이드-->
 
-			 <!-- 탭 컨텐츠 -->
-			 <div class="info-box-wrap tab-content">
+			<!-- 탭 컨텐츠 -->
+			<div class="info-box-wrap tab-content">
                 <!-- 약물유전체분석 -->
                 <div class="info-box show">
                     <p class="font-h4 main-title">약물유전체 분석 (ClinPharm Seq)</p>

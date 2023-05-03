@@ -8,9 +8,9 @@
 		<c:import url="/inc/header-inner-gnb" />
 	</header>
 
-	</div>
-
+	</div> 
+ 
 	<div>
 		<b>test</b>
 	</div>
-</body></html>
+</body>
