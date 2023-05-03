@@ -79,10 +79,10 @@
                             <li><a href="#" onclick="setTabContent(1)">Whole Exome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(2)">Transcriptome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(3)">Epigenome Sequencing</a></li>
-                            <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
+                            <!-- <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
                             <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
-                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
-                            <li><a href="#" onclick="setTabContent(7)">Metagenome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li> -->
+                            <li><a href="#" onclick="setTabContent(4)">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
 
