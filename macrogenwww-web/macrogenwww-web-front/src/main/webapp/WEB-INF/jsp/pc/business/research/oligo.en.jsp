@@ -16,7 +16,7 @@
         <li class="breadcrumb-item">Research</li>
         <li class="breadcrumb-item">OLIGO</li>
     </ol>
-</nav>
+</nav> 
 
       <div class="hero-title">OLIGO</div>
       <a href="#_tab-box" class="btn btn-round btn-service">
@@ -100,7 +100,7 @@
         /*탭메뉴 상단으로 이동*/
         function fnMove(){
           var offset = $("#_tab-box").offset();
-          $('html, body').animate({scrollTop : offset.top - 95}, 100);
+          $('html, body').animate({scrollTop : offset.top - 95}, 100); 
         }
         
      	// location.hash // 20230502

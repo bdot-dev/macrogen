@@ -89,7 +89,7 @@
                     $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }
                 
-             	// location.hash // 20230502
+             	// location.hash // 20230502 
                 if(location.hash) {
                 	
                		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);

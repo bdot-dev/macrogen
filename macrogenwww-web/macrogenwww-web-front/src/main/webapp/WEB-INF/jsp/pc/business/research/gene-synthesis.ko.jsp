@@ -15,7 +15,7 @@
         <li class="breadcrumb-item">연구분석서비스</li>
         <li class="breadcrumb-item">GENE SYNTHESIS</li>
     </ol>
-</nav>
+</nav> 
 
             <div class="hero-title">GENE SYNTHESIS</div>
         </div>

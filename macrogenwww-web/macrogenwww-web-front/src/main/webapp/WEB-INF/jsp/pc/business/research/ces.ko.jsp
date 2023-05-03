@@ -7,7 +7,7 @@
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
-        <div class="frame frameB">
+        <div class="frame frameB"> 
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -77,7 +77,7 @@
                     fnMove();
                 }
 
-                /*탭메뉴 상단으로 이동*/
+                /*탭메뉴 상단으로 이동*/  
                 function fnMove(){
                     var offset = $("#_tab-box").offset();
                     $('html, body').animate({scrollTop : offset.top - 95}, 100);

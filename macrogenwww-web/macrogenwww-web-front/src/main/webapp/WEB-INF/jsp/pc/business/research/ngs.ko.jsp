@@ -13,7 +13,7 @@
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Service</li>
-        <li class="breadcrumb-item">연구분석서비스</li>
+        <li class="breadcrumb-item">연구분석서비스</li> 
         <li class="breadcrumb-item">NGS</li>
     </ol>
 </nav>
@@ -573,9 +573,9 @@
             $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
 
-        $('._swiperTab .swiper-slide').on('click', function(){
+        $('._swiperTab .swiper-slide').on('click', function(){ 
             var idx = $(this).index();
-            setTabContent(idx)
+            setTabContent(idx) 
         });
 
         $('.swiper-notification').remove();

@@ -6,7 +6,7 @@
     <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
-</header>
+</header> 
 
     <div class="frame frameB">
       <nav aria-label="breadcrumb">

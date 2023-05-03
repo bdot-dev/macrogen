@@ -12,7 +12,7 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">Service</li> 
         <li class="breadcrumb-item">연구분석서비스</li>
         <li class="breadcrumb-item">모델동물/크리스퍼</li>
     </ol>
@@ -77,7 +77,7 @@
                 }
 
                 /*탭메뉴 상단으로 이동*/
-                function fnMove(){
+                function fnMove(){  
                     var offset = $("#_tab-box").offset();
                     $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }

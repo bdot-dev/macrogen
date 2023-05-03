@@ -15,7 +15,7 @@
         <li class="breadcrumb-item">Business</li>
         <li class="breadcrumb-item">Research</li>
         <li class="breadcrumb-item">OLIGO</li>
-    </ol>
+    </ol> 
 </nav>
 
       <div class="hero-title">MICROARRAY</div>

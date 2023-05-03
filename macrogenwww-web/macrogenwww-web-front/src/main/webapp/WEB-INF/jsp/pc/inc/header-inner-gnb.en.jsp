@@ -133,7 +133,7 @@
                             <li><a href="/${rc.locale.language }/business/research/microarray#epigenome">Epigenome Microarray</a></li>
                         </ul>
                     </div>
-                </li>
+                </li>  
                 <li>
                     <a href="/${rc.locale.language }/business/research/proteomics">Proteomics</a> <!-- 신규추가 -->
                     <div class="folding">
