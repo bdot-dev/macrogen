@@ -572,13 +572,6 @@
             var offset = $("#_tab-box").offset();
             $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
-        
-     	// location.hash // 20230502
-        if(location.hash) {
-        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
-        }
 
         $('._swiperTab .swiper-slide').on('click', function(){
             var idx = $(this).index();
@@ -586,6 +579,18 @@
         });
 
         $('.swiper-notification').remove();
+        
+        
+     	// location.hash // 20230502
+        if(location.hash) {
+        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
+        }
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
     </script>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 

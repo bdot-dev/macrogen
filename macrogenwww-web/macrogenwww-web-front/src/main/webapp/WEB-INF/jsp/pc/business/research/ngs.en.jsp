@@ -53,15 +53,15 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide "><a href="#">Whole  Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Epigenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
-                            <div class="swiper-slide"><a href="#">ATAC analysis</a></div>
-                            <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div>
-                            <!--10.25 html 추가-->
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide active" id="genome"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide" id="exome"><a href="#">Whole  Exome Sequencing</a></div>
+                            <div class="swiper-slide" id="transcriptome"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide" id="epigenome"><a href="#">Epigenome Sequencing</a></div>
+                            <div class="swiper-slide" id="metagenome"><a href="#">Metagenome Sequencing</a></div>
+                            <!-- <div class="swiper-slide" id="exome"><a href="#">Single Cell Multi-omics analysis</a></div>
+                            <div class="swiper-slide" id="exome"><a href="#">ATAC analysis</a></div>
+                            <div class="swiper-slide" id="exome"><a href="#">Spatial Gene Expression analysis</a></div>
+                            10.25 html 추가 -->
                         </div>
                     </div>
                     <div class="btn-box">
@@ -81,9 +81,9 @@
                             <li><a href="#" onclick="setTabContent(1)">Whole Exome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(2)">Transcriptome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(3)">Epigenome Sequencing</a></li>
-                            <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
+                            <!-- <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
                             <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
-                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
+                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li> -->
                             <!--10.25 html 추가-->
                             <li><a href="#" onclick="setTabContent(7)">Metagenome Sequencing</a></li>
                         </ul>
@@ -564,6 +564,21 @@
         });
 
         $('.swiper-notification').remove();
+        
+		
+   		// location.hash // 20230502
+        if(location.hash) {
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
+        }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
+   		
+     
     </script>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 

@@ -35,9 +35,9 @@
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-              <div class="swiper-slide active"><a href="#">Cancer risk prediction</a></div>
-              <div class="swiper-slide "><a href="#">Analysis of causes of cancer</a></div>
-              <div class="swiper-slide"><a href="#">Cancer Occurrence Monitoring</a></div>
+              <div class="swiper-slide active" id="prediction"><a href="#">Cancer risk prediction</a></div>
+              <div class="swiper-slide" id="analyze"><a href="#">Analysis of causes of cancer</a></div>
+              <div class="swiper-slide" id="monitoring"><a href="#">Cancer Occurrence Monitoring</a></div>
             </div>
           </div>
         </div>
@@ -68,6 +68,18 @@
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
+        
+     	// location.hash // 20230502
+        if(location.hash) {
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
+        }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
 
       <div class="info-box-wrap tab-content">

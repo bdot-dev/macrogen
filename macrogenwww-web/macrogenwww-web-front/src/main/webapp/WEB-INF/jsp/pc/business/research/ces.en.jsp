@@ -47,11 +47,11 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Standard Sequencing</a></div>
-                            <div class="swiper-slide "><a href="#">Identification</a></div>
-                            <div class="swiper-slide"><a href="#">Fragment</a></div>
-                            <div class="swiper-slide"><a href="#">Customized Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Human ID</a></div>
+                            <div class="swiper-slide active" id="standard"><a href="#">Standard Sequencing</a></div>
+                            <div class="swiper-slide" id="identification"><a href="#">Identification</a></div>
+                            <div class="swiper-slide" id="fragment"><a href="#">Fragment</a></div>
+                            <div class="swiper-slide" id="customized"><a href="#">Customized Sequencing</a></div>
+                            <div class="swiper-slide" id="human"><a href="#">Human ID</a></div>
                             <!--<div class="swiper-slide"><a href="#">Gene Sythesis</a></div>-->
                             <!--09.23 3depth로 변경예정이여서 주석처리하겠습니다.-->
                         </div>
@@ -88,6 +88,18 @@
                     var offset = $("#_tab-box").offset();
                     $('html, body').animate({scrollTop : offset.top - 95}, 100);
                 }
+                
+             	// location.hash // 20230502
+                if(location.hash) {
+                	
+               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+               		loadtab.click();	// tab content view
+               		setTabContent(loadtab.index());	// scroll 이동
+                }
+           		
+                $(window).on("hashchange",function () { 
+                	location.reload();
+                });
             </script>
 
             <div class="info-box-wrap tab-content">

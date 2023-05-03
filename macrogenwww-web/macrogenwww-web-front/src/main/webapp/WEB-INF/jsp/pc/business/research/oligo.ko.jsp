@@ -114,6 +114,10 @@
         	loadtab.click();	// tab content view
         	setTabContent(loadtab.index());	// scroll 이동
         }
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
 
       <div class="info-box-wrap tab-content active">

@@ -82,12 +82,17 @@
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
 
-        // location.hash // 20230502
+     	// location.hash // 20230502
         if(location.hash) {
-        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
         }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
       <div class="info-box-wrap tab-content">
         <!--Expression Microarray-->
