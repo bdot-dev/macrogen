@@ -34,7 +34,7 @@
       <div class="tab-box" id="_tab-box">
 
         <div class="subject-box">
-          <p class="font-h4 title">글로벌 정밀의학 선도기업으로서 유전체정보, 의료정보 및 생활정보의 통합 빅데이터를 구축하고 질병을 예측하여 미래의학 혁신에 <br>이바지하고 있습니다.</p>
+          <p class="font-h4 title">글로벌 정밀의학 선도기업으로서 유전체정보, 의료정보 및 생활정보의 통합 빅데이터를 구축하고 질병을 예측하여 미래의학 혁신에 이바지하고 있습니다.</p>
           <p class="subject info">개인의 상황에 따른 질병 예측, 예방, 맞춤 진료 및 치료를 위해 유전체학(genomics)을 포함하여 단백질체학(proteomics), 전사체학(transcriptomics)의 멀티오믹스(multi-omics) 분석을 수행하고 있습니다.</p>
           <div class="line-box01 precision">
             <p class="font-h8">정밀의학(Precision Medicine) 실현</p>
