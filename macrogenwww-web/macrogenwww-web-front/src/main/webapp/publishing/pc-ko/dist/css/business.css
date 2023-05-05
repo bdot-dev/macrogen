@@ -20,6 +20,11 @@
 .section_business .tab-box .info {font-size: 17.8px;line-height: 32px;letter-spacing: -0.75px;padding: 38px 0 108px;}
 .section_business .info-box .img + .sub-title {margin-top: 67px;}
 .section_business .info-box-wrap>.btn-area {display: flex;justify-content: center;padding-top: 140px;}
+.section_business .tab-box .font-h4.title {letter-spacing: 0;}
+.section_business .subject02 {font-size: 16px;color: #454545;line-height: 30px;letter-spacing: -0.75px;}
+.section_business .info-box .desc02 {word-break: keep-all;line-height: 32px;letter-spacing: -0.75px;color: #454545;font-size: 18px;}
+.wrap .full-bg .frame.frameB .hero-title.en,
+.wrap .full-bg .frame.frameB .slogan-sub.en {letter-spacing: 0.5px;}
 /* //비지니스 추가 스타일 공통 */
 /* 임상진단서비스_정밀의학 */
 .section_business .precision {padding-top: 50px;text-align: center;}
@@ -126,3 +131,27 @@ padding-left: 15px;color: #186BE8;font-size: 18px;font-weight: 700;line-height: 
 .section_business .img_gclp05 .font-body-h {font-weight: 500;padding-bottom: 20px;}
 .section_business .img_gclp05 .dot_list01 + .font-body-h {padding: 60px 0;}
 /* //임상진단서비스_GCLP */
+/* Proteomics */
+.section_business.proteomics .info-box .desc02 + .table_wrap {margin-top: 47px;}
+.section_business.proteomics .proteomics_diagram {margin-top: 61px;margin-bottom: 50px;}
+.section_business.proteomics .proteomics_diagram ul {border: 1px solid #E9E9E9;display: flex;flex-wrap: wrap;padding: 42px 0 42px 33px;margin-bottom: 30px;}
+.section_business.proteomics .proteomics_diagram li {padding: 20px 45px;}
+.section_business.proteomics .proteomics_diagram p {font-size: 14px;line-height: 20px;letter-spacing: -0.75px;color: #909090;}
+.section_business.proteomics .info-box .table_wrap .title {margin-bottom: 25px;font-weight: 700;font-size: 22px;line-height: 27px;letter-spacing: 0.5px;}
+.section_business.proteomics .info-box .table tbody td.left {text-align: left;}
+/* //Proteomics */
+/* Single Cell */
+.business_bg.single_cell {background-image: url("../img/business/bg_single_cell.png");}
+.section_business.single_cell .info-box .main-title {letter-spacing: 0;}
+.section_business.single_cell {}
+.section_business.single_cell {}
+.section_business.single_cell {}
+.section_business.single_cell {}
+.section_business.single_cell {}
+.section_business.single_cell {}
+.section_business.single_cell {}
+/* //Single Cell */
+.section_business 
+
+
+
