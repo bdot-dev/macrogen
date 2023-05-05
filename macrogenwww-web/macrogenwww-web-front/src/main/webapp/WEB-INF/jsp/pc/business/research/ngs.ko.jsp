@@ -326,9 +326,11 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
-                    <p class="desc">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지
-                        않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소<br>
-                        나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
+                    <p class="desc">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지 않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 <br>나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
+                    <hr class="divider">
+                    <p class="font-h5 sub-title">ATAC analysis</p>
+                    <p class="subject">ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.</p>
+                    <p class="desc img_bottom">마크로젠은 국내 1위 세계 5위의 차세대염기서열분석(Next generation sequencing, NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠르게 제공하며, 고객 샘플 맞춤형 실험이 가능합니다. 유전자 발현을 위해 히스톤 단백질로 응축된 DNA(closed chromatin)가 풀려있는(open chromatin) 상태를 분석함으로써 RNA 중합 효소(polymerase)의 접근 가능한 영역을 유추하거나 전사 인자(transcripton factor) 결합 부위 및 뉴클레오솜(nucleosome) 위치에 대한 정보를 얻을 수 있습니다. DNA에 저장된 유전 정보가 실제로 역할을 하기 위해서는 먼저 전사체(RNA)로 발현이 되어야 합니다. DNA 발현은 DNA 서열 자체 변화로 조절되지만, DNA 염기서열의 변화 없이 나선 구조의 변화나 주변 단백질의 변화를 통해서도 조절할 수 있습니다. DNA 염기서열의 변화 없이 구조의 변화나 주변 단백질의 변화를 통한 유전자 기능의 변화를 연구하는 학문을 후성유전학(Epigenetics)이라 합니다.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>

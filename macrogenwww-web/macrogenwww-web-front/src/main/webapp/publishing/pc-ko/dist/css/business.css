@@ -155,6 +155,8 @@ padding-left: 15px;color: #186BE8;font-size: 18px;font-weight: 700;line-height: 
 
 .business_bg.bg-singlemulti {background-image: url("../img/business/bg_single_cell_multi.png");}
 .business_bg.bg-spatital {background-image: url("../img/business/bg_spatital.png");}
+.business_bg.bg-personal01 {background-image: url("../img/business/bg_personal01.png");}
+.business_bg.bg-personal02 {background-image: url("../img/business/bg_personal02.png");}
 .section_business .subject-box.type02 {margin-bottom: 0;padding-bottom: 40px;}
 .section_business .subject-box.type02::after {display: none;}
 
