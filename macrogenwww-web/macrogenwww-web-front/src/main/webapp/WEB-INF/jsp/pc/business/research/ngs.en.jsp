@@ -85,7 +85,7 @@
                             <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
                             <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li> -->
                             <!--10.25 html 추가-->
-                            <li><a href="#" onclick="setTabContent(7)">Metagenome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(4)">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
                     <!--탭모달 스크립트-->
