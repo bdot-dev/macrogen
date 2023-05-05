@@ -143,15 +143,15 @@ padding-left: 15px;color: #186BE8;font-size: 18px;font-weight: 700;line-height: 
 /* Single Cell */
 .business_bg.single_cell {background-image: url("../img/business/bg_single_cell.png");}
 .section_business.single_cell .info-box .main-title {letter-spacing: 0;}
-.section_business.single_cell {}
-.section_business.single_cell {}
-.section_business.single_cell {}
-.section_business.single_cell {}
-.section_business.single_cell {}
-.section_business.single_cell {}
+.section_business.single_cell table.table.table-row tbody tr th {text-align: left;}
+.section_business.single_cell table.table tbody tr td {text-align: left;}
+.section_business.single_cell .point {color: #2E87EF !important;}
+.section_business.single_cell .table_wrap {margin-top: 63px;}
+.section_business.single_cell .table_wrap p {margin-top: 10px;font-size: 14px;line-height: 20px;letter-spacing: -0.75px;}
+.section_business.single_cell .data_wrap {margin-top: 73px;}
+.section_business.single_cell .data_wrap .title {margin-bottom: 19px;font-weight: 700;font-size: 22px;line-height: 27px;letter-spacing: 0.5px;}
 .section_business.single_cell {}
 /* //Single Cell */
-.section_business 
 
 
 
