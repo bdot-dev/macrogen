@@ -97,13 +97,13 @@
 						</ol>
 					</div>
 					<div class="img_ngs_gene02">
-						<a href="" class="btn_down">ISO 9001.pdf</a>
-						<a href="" class="btn_down">CLIA 인증</a>
-						<a href="" class="btn_down">CAP 인증</a>
-						<a href="" class="btn_down">유전자검사 정확도평가 인증</a>
-						<a href="" class="btn_down">GMP 인증</a>
-						<a href="" class="btn_down">임상검사실체외진단검사 인증(GCLP)</a>
-						<a href="" class="btn_down">ISO 13485</a>
+						<a href="/downfile/1_FM89418_macrogen(2022).pdf" class="btn_down">ISO 9001.pdf</a>
+						<a href="/downfile/2_Certificate_of_Accreditation_MacrogenHQ_2023.pdf" class="btn_down">CLIA 인증</a>
+						<a href="/downfile/3_Macrogen_HQ-CAP_Certificate_of_Accreditation_2022-2024.pdf" class="btn_down">CAP 인증</a>
+						<a href="/downfile/4_Macrogen_2022-20_Institute_of_Genetic_testing_evaluation.pdf" class="btn_down">유전자검사 정확도평가 인증</a>
+						<a href="/downfile/9_Certificate_of_GMP_Macrogen_2025.08.23.pdf" class="btn_down">GMP 인증</a>
+						<a href="/downfile/7_Genetic_Testing_Accuracy_Evaluation_Certification_5-2.PDF" class="btn_down">임상검사실체외진단검사 인증(GCLP)</a>
+						<a href="/downfile/6_ISO13485.pdf" class="btn_down">ISO 13485</a>
 					</div>
 					<hr class="divider">
 					<div class="board">
