@@ -9,13 +9,15 @@
 .section_business .info-box .desc.gap {padding-right: 40px;}
 .section_business .subject.info + .img {margin-top: 40px;}
 .section_business .subject-box .img.last {margin-bottom: 0;}
-.section_business .info-box .reference {padding-top: 26px;color: #909090;font-size: 14px;line-height: 20px;}
+.section_business .info-box .reference {margin-top: 26px;display: flex;align-items: flex-start;color: #909090;font-size: 14px;line-height: 20px;}
+.section_business .info-box .reference .icon01 {width: 20px;height: 20px;margin-right: 7px;margin-top: -2px;
+    background: url('../img/common/ico_reference01.png') center center no-repeat;background-size: contain;}
 .section_business .dot_list01 li {position: relative;color: #707070;font-size: 16px;padding-left: 15px;line-height: 30px;padding-bottom: 6px;}
 .section_business .dot_list01 li::before {content: '';content: '';position: absolute;left: 0;top: 10px;width: 5px;height: 5px;background-color: #454545;border-radius: 50%;}
 .section_business .dot_list01 li.none {padding-left: 0;}
 .section_business .dot_list01 li.none::before {display: none;}
 .section_business .dot_list01 li:last-child {padding-bottom: 0;}
-.section_business .tab-box .info {font-size: 18px;line-height: 32px;letter-spacing: -0.75px;padding: 38px 0 108px;}
+.section_business .tab-box .info {font-size: 17.8px;line-height: 32px;letter-spacing: -0.75px;padding: 38px 0 108px;}
 .section_business .info-box .img + .sub-title {margin-top: 67px;}
 .section_business .info-box-wrap>.btn-area {display: flex;justify-content: center;padding-top: 140px;}
 /* //비지니스 추가 스타일 공통 */
