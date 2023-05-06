@@ -330,6 +330,7 @@
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
                     <p class="desc font-body">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지 않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 <br>나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
                     <!--2023-05-06::컨텐츠 추가-->
+                    <hr class="divider">
                     <p class="font-h5 sub-title">ATAC analysis</p>
                     <p class="desc font-body">
                         ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.<br><br>
