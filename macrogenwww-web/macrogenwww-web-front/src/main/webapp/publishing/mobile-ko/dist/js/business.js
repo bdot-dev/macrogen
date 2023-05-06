@@ -78,7 +78,7 @@ function fnMousewheel() {
         let offset = $(this).scrollTop();
         // console.log(offset);
         if (offset > lastScroll){
-            // console.log('down')
+            console.log('down')
             if (offset > listPos) {
                 contentAnchor.show().css({'position': 'fixed','top':'0px'});
             }
@@ -86,7 +86,7 @@ function fnMousewheel() {
                 contentAnchor.hide();
             }
         } else {
-            // console.log('up')
+            console.log('up')
             if (offset > listPos) {
                 contentAnchor.show().css({'position': 'fixed','top':'70px'});
             }
