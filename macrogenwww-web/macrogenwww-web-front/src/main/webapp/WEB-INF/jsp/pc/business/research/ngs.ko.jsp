@@ -355,42 +355,6 @@
                 <!-- 2023-05-05::ATAC analysis 삭제 -->
                 <!-- 2023-05-05::Spatial Gene Expression analysis 삭제 -->
                 
-                <!-- <div class="info-box">
-                    <p class="font-h4 main-title">ATAC analysis</p>
-                    <p class="subject">ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.</p>
-                    <p class="desc img_bottom">마크로젠은 국내 1위 세계 5위의 차세대염기서열분석(Next generation sequencing, NGS) 수행능력을 기반으로
-                        높은 수준의 유전자 분석 데이터를 빠르게 제공하며, 고객 샘플 맞춤형 실험이 가능합니다.
-                        유전자 발현을 위해 히스톤 단백질로 응축된 DNA(closed chromatin)가 풀려있는(open chromatin) 상태를 분석함으로써 RNA 중합
-                        효소(polymerase)의 접근 가능한 영역을 유추하거나 전사 인자(transcripton factor) 결합 부위 및 뉴클레오솜(nucleosome) 위치에 대한 정보를
-                        얻을 수 있습니다. DNA에 저장된 유전 정보가 실제로 역할을 하기 위해서는 먼저 전사체(RNA)로 발현이 되어야 합니다. DNA 발현은 DNA 서열 자체 변화로
-                        조절되지만, DNA 염기서열의 변화 없이 나선 구조의 변화나 주변 단백질의 변화를 통해서도 조절할 수 있습니다. DNA 염기서열의 변화 없이 구조의 변화나 주변 단백질의
-                        변화를 통한 유전자 기능의 변화를 연구하는 학문을 후성유전학(Epigenetics)이라 합니다.</p>
-                    <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-atac.png" alt="ATAC analysis">
-                    </div>
-                    <p class="desc">이를 분석하는 여러 방법 중 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 ATAC(Assay for Transposase-Accessible
-                        Chromatin)서비스를 제공하는국내 기업은 마크로젠이 유일합니다. ATAC 분석을 통해 응축되어 있던 DNA가 RNA 전사 과정을 위해 풀려 있는 부분의 서열을 알게
-                        됨으로써 DNA의 염기 서열이 동일할지라도 RNA로 어떻게 전사가 조절되는지 확인 가능합니다. </p>
-                    <div class="btn-area">
-                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(4)">
-                                    <div class="title">Epigenome Sequencing</div>
-                                </a>
-                                <a href="#" class="item next" onclick="setTabContent(6)">
-                                    <div class="title">Spatial Gene Expression analysis</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
                 <!--Metagenome-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Metagenome Sequencing</p>
