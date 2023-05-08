@@ -57,12 +57,12 @@
                 <p class="title font-h4">SERVICE</p>
                 <div class="select-box">
                     <div class="selected-value _selected-value">
-                        <span class="text">유전성 암 감수성 검사</span>
+                        <span class="text">암 유전자 검사</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">유전성 암 감수성 검사</a></li>
+                        <li class="option-value active"><a href="#">암 유전자 검사</a></li>
+                        <li class="option-value"><a href="#">유전성 암 감수성 검사</a></li>
                         <li class="option-value"><a href="#">BRCA1/2 유전자 검사</a></li>
-                        <li class="option-value"><a href="#">암 유전자 검사</a></li>
                         <li class="option-value"><a href="#">위암검사패널</a></li>
                     </ul>
                 </div>
@@ -71,8 +71,43 @@
 
             <!-- 탭 컨텐츠 s-->
             <div class="info-box-wrap tab-content">
-                <!--유전성 암 감수성 검사-->
+                <!-- 암 유전자 검사 -->
                 <div class="info-box show">
+                    <p class="font-h4 main-title">암 유전자 검사 <br>(Axen™ Cancer Panel)</p>
+                    <p class="desc font-body img_bottom">Axen™ Cancer Panel은 capture hybridization 방식의 Pan-cancer panel로, coverage를 더욱 높여 암 관련 유전자 exon의 모든 SNV, InDel뿐만 아니라 Fusion gene, CNV 그리고 TMB, MSI까지도 효율적으로 검출할 수 있습니다. 원하는 연구범위에 따라 최소 88개부터 최대 559개 유전자로 구성된 3종의 cancer panel 중 가장 적합한 서비스를 선택할 수 있으며, Liquid Biopsy와 Tumor Biopsy 모두 분석이 가능합니다.</p>
+                    <div class="border-gray-box">
+                        <div class="img">
+                            <img src="../../img/business/img_cancer_genome06.png" alt="">
+                            <span class="btnZoom" data-img="img_cancer_genome06"><i class="icon ico-zoom-white"></i></span>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="../../img/business/img_cancer_genome07.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="../../img/business/img_cancer_genome08.png" alt="">
+                    </div>
+                    <hr class="divider">
+                    <div class="btn-area">
+                        <div class="btn_wrapper">
+                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                        </div>
+                    </div>
+                    <div class="board">
+                        <div class="navigation pt-80 mb-0">
+                            <div class="row g-0">
+                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <!-- //암 유전자 검사 -->
+
+                <!--유전성 암 감수성 검사-->
+                <div class="info-box">
                     <p class="font-h4 main-title">유전성 암 감수성 검사 <br>(Axen™ Hereditary Cancer Panel)</p>
                     <p class="desc font-body img_bottom">혈액 채취를 통해 대표적인 유전성 암 관련 유전자를 검사하는 Axen™ Hereditary Cancer (유전성 암) 검사는 관련 논문들을 기반으로 하여 특정 암의 조기 발견에 도움이 될 수 있는 유전자 변이를 검사할 수 있도록 설계되었습니다. 유전성 암에서 대표적으로 널리 알려져 있는 유방암과 대장암 등 다양한 유전성 암 원인 유전자 69개를 차세대염기서열 분석법을 통해 한번에 분석 가능합니다.</p>
                     <div class="border-gray-box">
@@ -91,9 +126,8 @@
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
-
+                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
@@ -126,46 +160,13 @@
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+                                <div class="col" onclick="setTabContent(3)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- //BRCA1/2 유전자 검사 -->
-
-                <!-- 암 유전자 검사 -->
-                <div class="info-box">
-                    <p class="font-h4 main-title">암 유전자 검사 <br>(Axen™ Cancer Panel)</p>
-                    <p class="desc font-body img_bottom">Axen™ Cancer Panel은 capture hybridization 방식의 Pan-cancer panel로, coverage를 더욱 높여 암 관련 유전자 exon의 모든 SNV, InDel뿐만 아니라 Fusion gene, CNV 그리고 TMB, MSI까지도 효율적으로 검출할 수 있습니다. 원하는 연구범위에 따라 최소 88개부터 최대 559개 유전자로 구성된 3종의 cancer panel 중 가장 적합한 서비스를 선택할 수 있으며, Liquid Biopsy와 Tumor Biopsy 모두 분석이 가능합니다.</p>
-                    <div class="border-gray-box">
-                        <div class="img">
-                            <img src="../../img/business/img_cancer_genome06.png" alt="">
-                            <span class="btnZoom" data-img="img_cancer_genome06"><i class="icon ico-zoom-white"></i></span>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="../../img/business/img_cancer_genome07.png" alt="">
-                    </div>
-                    <div class="img">
-                        <img src="../../img/business/img_cancer_genome08.png" alt="">
-                    </div>
-                    <hr class="divider">
-                    <div class="btn-area">
-                        <div class="btn_wrapper">
-                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-                        </div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-                                <div class="col disabled"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- //암 유전자 검사 -->
 
                 <!-- 위암검사패널 -->
                 <div class="info-box">
