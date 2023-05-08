@@ -78,6 +78,7 @@
 						<li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">반려동물 유전자검사</a></li>
 					</ul>
 				</div>
+				<div class="item"></div>
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/business/research/ngs">연구분석서비스</a></div>
 					<ul>
