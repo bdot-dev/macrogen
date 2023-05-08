@@ -82,6 +82,7 @@
 						<li><a href="/${rc.locale.language }/business/research/model">GEM/CRISPR</a></li>
 					</ul>
 				</div>
+				<div class="item"></div>
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">Clinical Services</a></div>
 					<ul>
@@ -92,7 +93,7 @@
 						<!-- <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li> -->
 					</ul>
 				</div>
-				<div class="item">
+				<div class="item wide">
 					<div class="title"><a href="/${rc.locale.language }/business/research/ngs">Single Cell Expert <br>Services</a></div>
 					<ul>
 						<li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>

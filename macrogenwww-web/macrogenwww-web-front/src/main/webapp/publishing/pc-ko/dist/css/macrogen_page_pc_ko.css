@@ -6962,8 +6962,8 @@ margin-bottom: 60px; }
 
 	.macrogen.macrogen-sitemap .section {display: flex;flex-wrap: wrap;align-items: stretch;position: relative;padding: 100px 0 0 369px;border-bottom: 1px solid #e9e9e9;}
 	/* .macrogen.macrogen-sitemap .section > div {display: inline-block;vertical-align: top; } */
-	.macrogen.macrogen-sitemap .section .font-h6 {position: absolute;left: 0;top: 90px;width: 369px;}
-	.macrogen.macrogen-sitemap .section .item {width: 245px;padding-bottom: 100px;}
+	.macrogen.macrogen-sitemap .section .font-h6 {position: absolute;left: 0;top: 90px;width: 360px;}
+	.macrogen.macrogen-sitemap .section .item {width: 220px;padding-bottom: 100px;}
 	.macrogen.macrogen-sitemap .section .item .title, .macrogen.macrogen-sitemap .section .item li {
 	margin-bottom: 20px; }
 	.macrogen.macrogen-sitemap .section .item .title a{
