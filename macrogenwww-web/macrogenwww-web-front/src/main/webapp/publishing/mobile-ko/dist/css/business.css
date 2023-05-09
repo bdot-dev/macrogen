@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.mb64 {margin-bottom: 64px;}
+.mb0 {margin-bottom: 0 !important;}
+.pt82 {padding-top: 82px !important;}
+.p_text01 {margin-top: 16px;font-size: 14px;line-height: 26px;letter-spacing: -0.5px;color: #909090;}
+.mr-10 {margin-right: -10px;}
+.tline {border-top: 1px solid #000;}
+.point {color: #2E87EF !important;}
+.section_business .btn_wrapper.flex {display: flex;align-items: flex-start;}
+.section_business .btn_wrapper.flex .btn {flex: 1;}
+.section_business .btn_wrapper.flex .btn + .btn {margin-left: 4px;margin-top: 0;}
 /* 비지니스 추가 스타일 공통 */
 .modal.modal-image-viewer .modal-dialog .modal-content .parent .zoom_img {position: relative;display: flex;align-items: center;height: 100vh;width: 100vw;max-width: 100vw;}
 .modal.modal-image-viewer .modal-dialog .modal-content .parent .zoom_img img {width: 100%;height: auto;}
@@ -54,8 +64,8 @@
 /* //임상진단서비스_NGS기반유전자패널검사실 */
 
 .section_business .subject-box.type02 {margin-bottom: 0;border-bottom: none;padding-bottom: 40px;}
-.top-bg.single_multi {background-image: url('../img/business/bg_single_multi.png');}
-.top-bg.spatital {background-image: url('../img/business/bg_spatital.png');}
+.top-bg.single_multi {background-image: url('../img/business/singlecell_img_mo.png');}
+.top-bg.spatital {background-image: url('../img/business/singlecell_img_mo.png');}
 .top-bg.personal01 {background-image: url('../img/business/bg_personal01.png');}
 .top-bg.personal02 {background-image: url('../img/business/bg_personal02.png');}
 
