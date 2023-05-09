@@ -106,6 +106,9 @@
                             <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
                             <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
                             <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                            <%-- <li><a href="/${rc.locale.language }/business/research/ngs#multi-omics">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#atac">ATAC analysis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#spatial">Spatial Gene Expression analysis</a></li> --%>
                             <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
