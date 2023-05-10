@@ -41,10 +41,10 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab">
                         <div class="swiper-wrapper _swiperTab">
-                            <div class="swiper-slide active"><a href="#">암 유전자 검사 (Axen™ Cancer Panel)</a></div>
-                            <div class="swiper-slide "><a href="#">유전성 암 감수성 검사 (Axen™ Hereditary Cancer Panel)</a></div>
-                            <div class="swiper-slide "><a href="#">BRCA1/2 유전자 검사 (Axen™ BRCA / Axen™ BRCA Premium)</a></div>
-                            <div class="swiper-slide "><a href="#">위암 검사 패널(Axen™ Gastric Cancer)</a></div>
+                            <div class="swiper-slide active" id="cancer"><a href="#">암 유전자 검사 (Axen™ Cancer Panel)</a></div>
+                            <div class="swiper-slide" id="hereditary"><a href="#">유전성 암 감수성 검사 (Axen™ Hereditary Cancer Panel)</a></div>
+                            <div class="swiper-slide" id="brca"><a href="#">BRCA1/2 유전자 검사 (Axen™ BRCA / Axen™ BRCA Premium)</a></div>
+                            <div class="swiper-slide" id="gastric"><a href="#">위암 검사 패널(Axen™ Gastric Cancer)</a></div>
                         </div>
                     </div>
                     <div class="btn-box">
@@ -249,6 +249,18 @@
                     if(LayerPopup.has(e.target).length === 0){
                         LayerPopup.hide();
                     }
+                });
+                
+             	// location.hash // 20230502
+                if(location.hash) {
+                	
+               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+               		loadtab.click();	// tab content view
+               		setTabContent(loadtab.index());	// scroll 이동
+                }
+           		
+                $(window).on("hashchange",function () { 
+                	location.reload();
                 });
             </script>
 		</div>

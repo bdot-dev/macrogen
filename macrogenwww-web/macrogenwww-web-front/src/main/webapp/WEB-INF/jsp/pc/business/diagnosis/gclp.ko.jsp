@@ -41,9 +41,9 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab">
                         <div class="swiper-wrapper _swiperTab">
-                            <div class="swiper-slide active"><a href="#">약물유전체분석</a></div>
-                            <div class="swiper-slide "><a href="#">멀티오믹스</a></div>
-                            <div class="swiper-slide "><a href="#">검체보관 서비스</a></div>
+                            <div class="swiper-slide active" id="drug"><a href="#">약물유전체분석</a></div>
+                            <div class="swiper-slide" id="multi-omics"><a href="#">멀티오믹스</a></div>
+                            <div class="swiper-slide" id="sample"><a href="#">검체보관 서비스</a></div>
                         </div>
                     </div>
                 </div>
@@ -316,6 +316,18 @@
                 $('._swiperTab .swiper-slide').on('click', function(){
                     var idx = $(this).index();
                     setTabContent(idx)
+                });
+                
+             	// location.hash // 20230502
+                if(location.hash) {
+                	
+               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+               		loadtab.click();	// tab content view
+               		setTabContent(loadtab.index());	// scroll 이동
+                }
+           		
+                $(window).on("hashchange",function () { 
+                	location.reload();
                 });
             </script>
 		</div>

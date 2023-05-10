@@ -98,7 +98,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">퍼스널 헬스케어</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">질병예측 유전자검사</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">DTC 유전자검사</a></li>
+                <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">DTC 유전자검사</a></li>
                 <!-- 추후 론칭(오픈 시 숨김)<li><a href="/${rc.locale.language }/business">마이크로바이옴 검사솔루션</a></li> -->
             </ul>
         </div>
@@ -120,6 +120,9 @@
                             <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
                             <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
                             <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                            <%-- <li><a href="/${rc.locale.language }/business/research/ngs#multi-omics">Single Cell Multi-omics analysis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#atac">ATAC analysis</a></li>
+                            <li><a href="/${rc.locale.language }/business/research/ngs#spatial">Spatial Gene Expression analysis</a></li> --%>
                             <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
@@ -206,10 +209,10 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">암 감수성 검사</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">BRCA1/2 유전자 검사</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">암 유전자 검사</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">위암 검사 패널</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">암 감수성 검사</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#brca">BRCA1/2 유전자 검사</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">암 유전자 검사</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#gastric">위암 검사 패널</a></li> 
                         </ul>
                     </div>
                 </li>
@@ -218,9 +221,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">임상진단사업 인증 현황</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">마크로젠 암 진단 패널의 <br>특징 및 경쟁력</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">NGS기반 유전자 패널 <br>검사실(PMG Lab) 구축 범위</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">임상진단사업 인증 현황</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#characteristic">마크로젠 암 진단 패널의 <br>특징 및 경쟁력</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#build">NGS기반 유전자 패널 <br>검사실(PMG Lab) 구축 범위</a></li>
                         </ul>
                     </div>
                 </li>
@@ -229,9 +232,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">ClinPham Seq</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Multi Omics</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">검체보관 서비스</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#drug">ClinPham Seq</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">검체보관 서비스</a></li>
                         </ul>
                     </div>
                 </li>

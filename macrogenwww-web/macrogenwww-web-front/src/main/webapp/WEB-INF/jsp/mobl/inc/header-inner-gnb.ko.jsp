@@ -74,27 +74,27 @@
                                 <ul>
                                     <li><a href="#">- NGS</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/ngs">Whole Genome Sequencing</a></li>
-                                            <li><a href="#">Whole Exome Sequencing</a></li>
-                                            <li><a href="#">Transcriptome Sequencing</a></li>
-                                            <li><a href="#">Epigenome Sequencing</a></li>
-                                            <li><a href="#">Metagenome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#genome">Whole Genome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- CES</a>
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/research/ces">Standard Sequencing</a></li>
-                                            <li><a href="#">Identification</a></li>
-                                            <li><a href="#">Fragment</a></li>
-                                            <li><a href="#">Customized Sequencing</a></li>
-                                            <li><a href="#">Human ID</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces">Identification</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces">Fragment</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces">Customized Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces">Human ID</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- Microarray</a>
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/research/microarray">Expression Microarray</a></li>
-                                            <li><a href="#">Genome Microarray</a></li>
-                                            <li><a href="#">Epigenome Microarray</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/microarray">Genome Microarray</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/microarray">Epigenome Microarray</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- Proteomics</a>
@@ -105,16 +105,16 @@
                                     <li><a href="/${rc.locale.language }/business/research/gene-synthesis">- Gene Synthesis</a></li>
                                     <li><a href="#">- Oligo</a>
                                         <ul class="cards-body">
-                                            <li><a href="/${rc.locale.language }/business/research/oligo">Gene Synthesis</a></li>
-                                            <li><a href="#">RNA Oligo Synthesis</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/oligo">DNA Oligo Synthesis</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/oligo">RNA Oligo Synthesis</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- 모델동물/크리스퍼</a>
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/research/model">CRISPR Knock-in/out</a></li>
-                                            <li><a href="#">GEM</a></li>
-                                            <li><a href="#">Mass Production</a></li>
-                                            <li><a href="#">Additional</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model">GEM</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model">Mass Production</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model">Additional</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="/${rc.locale.language }/business/research/reagent">- 연구용 시약 및 소모품</a></li>
@@ -125,30 +125,30 @@
                                     <li><a href="#">- 정밀의학</a>
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 위험 예측</a></li>
-                                            <li><a href="#">암 발생 원인 분석</a></li>
-                                            <li><a href="#">암 발생 모니터링</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 원인 분석</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">암 발생 모니터링</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- 암 유전체 검사</a>
                                         <ul class="cards-body">
-                                            <li><a href="#">암 감수성 검사</a></li>
-                                            <li><a href="#">BRCA1/2 유전자 검사</a></li>
-                                            <li><a href="#">암 유전자 검사</a></li>
-                                            <li><a href="#">위암 검사 패널</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">암 감수성 검사</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">BRCA1/2 유전자 검사</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">암 유전자 검사</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">위암 검사 패널</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- NGS 유전자패널 검사실</a>
                                         <ul class="cards-body">
-                                            <li><a href="#">임상진단사업 인증 현황</a></li>
-                                            <li><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></li>
-                                            <li><a href="#">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">임상진단사업 인증 현황</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">마크로젠 암 진단 패널의 특징 및 경쟁력</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- GCLP</a>
                                         <ul class="cards-body">
-                                            <li><a href="#">ClinPham Seq</a></li>
-                                            <li><a href="#">Multi Omics</a></li>
-                                            <li><a href="#">검체보관 서비스</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">ClinPham Seq</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Multi Omics</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">검체보관 서비스</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li> -->

@@ -41,9 +41,9 @@
 				<div class="slide-tab-wrap">
 					<div class="swiper-container tab-slide-box _swiperTab">
 						<div class="swiper-wrapper _swiperTab">
-							<div class="swiper-slide active"><a href="#">임상진단사업 인증 현황</a></div>
-							<div class="swiper-slide "><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></div>
-							<div class="swiper-slide "><a href="#">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></div>
+							<div class="swiper-slide active" id="certification"><a href="#">임상진단사업 인증 현황</a></div>
+							<div class="swiper-slide" id="characteristic"><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></div>
+							<div class="swiper-slide" id="build"><a href="#">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></div>
 						</div>
 					</div>
 				</div>
@@ -235,6 +235,18 @@
 					var offset = $("#_tab-box").offset();
 					$('html, body').animate({scrollTop : offset.top - 95}, 100);
 				}
+				
+				// location.hash // 20230502
+                if(location.hash) {
+                	
+               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+               		loadtab.click();	// tab content view
+               		setTabContent(loadtab.index());	// scroll 이동
+                }
+           		
+                $(window).on("hashchange",function () { 
+                	location.reload();
+                });
 			</script>
 		</div>
 	</div>
