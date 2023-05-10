@@ -7,7 +7,7 @@
 	        <ul id="gnb">
                 <li><span class="font-bold">macrogen</span></li>
                 <li><span class="font-bold">Service</span></li><!--2023-04-27 수정-->
-                <li><span class="font-bold">Resource</span></li><!--2023-04-27 수정-->
+                <!-- <li><span class="font-bold">Resource</span></li> --><!--2023-04-27 수정-->
                 <li><span class="font-bold">newsroom</span></li>
                 <li><span class="font-bold">ir</span></li>
                 <li><span class="font-bold">esg</span></li>
