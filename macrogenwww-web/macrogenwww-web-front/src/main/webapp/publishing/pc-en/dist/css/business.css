@@ -179,10 +179,10 @@ line-height: 22px;letter-spacing: -0.05em;
 .section_business.single_cell {}
 /* //Single Cell */
 
-.business_bg.bg-singlemulti {background-image: url("../img/business/bg_single_cell.png");}
-.business_bg.bg-spatital {background-image: url("../img/business/bg_single_cell.png");}
-.business_bg.bg-personal01 {background-image: url("../img/business/bg_personal01.png");}
-.business_bg.bg-personal02 {background-image: url("../img/business/bg_personal02.png");}
+.business_bg.bg-singlemulti {background-image: url("../../../pc-ko/dist/img/business/bg_single_cell.png");}
+.business_bg.bg-spatital {background-image: url("../../../pc-ko/dist/img/business/bg_single_cell.png");}
+.business_bg.bg-personal01 {background-image: url("../../../pc-ko/dist/img/business/bg_personal01.png");}
+.business_bg.bg-personal02 {background-image: url("../../../pc-ko/dist/img/business/bg_personal02.png");}
 .section_business .subject-box.type02 {margin-bottom: 0;padding-bottom: 40px;}
 .section_business .subject-box.type02::after {display: none;}
 

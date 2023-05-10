@@ -85,9 +85,9 @@
                         <li class="option-value"><a href="#">Whole Exsome Sequencing</a></li>
                         <li class="option-value"><a href="#">Transcriptome Sequencing</a></li>
                         <li class="option-value"><a href="#">Epigenome Sequencing</a></li>
-                        <li class="option-value"><a href="#">Single cell Multi-omics analysis</a></li>
-                        <li class="option-value"><a href="#">ATAC analysis</a></li>
-                        <li class="option-value"><a href="#">Spatial Gene Expression analysis</a></li>
+                        <!-- <li class="option-value"><a href="#">Single cell Multi-omics analysis</a></li> -->
+                        <!-- <li class="option-value"><a href="#">ATAC analysis</a></li> -->
+                        <!-- <li class="option-value"><a href="#">Spatial Gene Expression analysis</a></li> -->
                         <li class="option-value"><a href="#">Metagenome Sequencing</a></li>
                     </ul>
                 </div>
@@ -417,196 +417,38 @@
                         check methylation. This DNA processing technique uses sodium bisulfite, a substance that
                         converts unmethylated cytosine to uracil, to observe the level of methylation of DNA by
                         analyzing the nucleotide sequence afterward.</p>
-                    <div class="btn-area">
-                        <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
-                                                    class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>Order</span></a></div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col" onclick="setTabContent(2)"><i class="icon ico-left-black"></i><span
-                                        class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(4)"><span class="font-body-h-b">Next</span><i
-                                        class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
+                        
+                    <!-- 2023-05-09::내용추가 -->
+                    <hr class="divider">
+                    <p class="font-h5 sub-title">ATAC analysis</p>
+                    <p class="desc font-body">
+                        ATAC is a technique used to analyze accessible DNA regions through NGS (Next Generation Sequencing).<br><br>
+                        Macrogen provides a high level of genetic sequencing data quickly based on its NGS (next generation sequencing) performance, which ranks first in Korea and fifth in the world, and supports personalized sample tests. By assessing the open state of closed chromatin condensed into histone proteins for gene expression, the accessible region of RNA polymerase can be inferred, or the transcription factor binding site and nucleosome (nucleosome) location information can be acquired. In order for the genetic information stored in DNA to actually play a role, it should be expressed as a transcript (RNA). The DNA expression is controlled by changes in the DNA sequence itself, but it can also be regulated by changes in the helix structure or changes in surrounding proteins without changing the DNA sequence. The study of changes in gene function through structural changes or changes in surrounding proteins without changes in the DNA sequence is known as epigenetics.
+                    </p>
+                    <!-- //2023-05-09::내용추가 -->
 
-                </div>
-                <!--Cell-->
-                <div class="info-box">
-                    <p class="font-h4 main-title">Single Cell Multi-omics analysis</p>
-                    <p class="subject font-body-h-b">Macrogen provides personalized single cell multi-omics analysis
-                        services based on extensive experience and innovation.</p>
-                    <p class="desc img_bottom font-body">Single-cell gene sequencing is used to analyze gene expression
-                        profile and genetic changes in a single cell, which is a functional and structural unit of an
-                        organism. As it becomes possible to determine cellular heterogeneity, rare cell population,
-                        cellular differentiation, chromatin heterogeneity, immune profile, and surface protein profile
-                        in a single cell unit, this technique is applied to various fields of research including
-                        selection of cell treatments, stem cells, and cancer development and progression. Macrogen
-                        quickly provides a high level of genetic sequencing data based on its ability to perform NGS
-                        (next generation sequencing), which ranks first in Korea and fifth in the world. Furthermore, we
-                        are leading the market by diversifying single-cell sequencing services, thanks to
-                        industry-leading genome sequencing expertise accumulated over 24 years and investment in big
-                        data and unexplored areas.</p>
-                    <!--10.05 이미지 경로 변경-->
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-ngs-cell.png" alt="Single Cell Multi-omics analysis소개이미지">
-                    </div>
-                    <div class="box-gray-6">
-                        <div>
-                            <p class="title font-body-h-b">single cell RNA sequencing</p>
-                            <p class="desc font-body">single cell RNA sequencing</p>
-                        </div>
-                        <div>
-                            <p class="title font-body-h-b">single nucleus RNA sequencing</p>
-                            <p class="desc font-body">Analysis of gene expression after isolation of nucleus from
-                                samples that are difficult to progress to single cells</p>
-                        </div>
-                        <div>
-                            <p class="title font-body-h-b">single cell immune profiling</p>
-                            <p class="desc font-body">Single cell TCR and BCR gene expression analysis</p>
-                        </div>
-                        <div>
-                            <p class="title font-body-h-b">single cell surface protein profiling</p>
-                            <p class="desc font-body">Analysis of proteins located on the surface of single cells</p>
-                        </div>
-                        <div>
-                            <p class="title font-body-h-b">single cell ATAC sequencing</p>
-                            <p class="desc font-body">Analysis of single-nucleus DNA's accessibility</p>
-                        </div>
-                        <div>
-                            <p class="title font-body-h-b">single cell Multiome sequencing</p>
-                            <p class="desc font-body">Simultaneous analysis of single-nucleus DNA's accessibility and
-                                gene expression</p>
-                        </div>
-                    </div>
-                    <p class="font-body desc">With the advent of the single-cell sequencing technique, it became
-                        possible to analyze trace amounts of cellular genes and those expressed in small amounts, which
-                        cannot be examined through conventional gene analysis. As a result, we are able to gain insights
-                        into individuals' environment, genetics, and biological characteristics in detail, allowing us
-                        to get one step closer to realizing ultra-precision medicine that can predict, prevent, and
-                        diagnose diseases. Macrogen has carried out the most single cell sequencing projects in Korea,
-                        and is the only CSP (Certified Service Provider) in the country for single cell gene expression
-                        and spatial gene expression services. In addition, we are leading the market by diversifying
-                        single-cell sequencing services by introducing innovative single-cell sequencing techniques.
-                    </p>
                     <div class="btn-area">
-                        <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
-                                                    class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>Order</span></a></div>
+                        <div class="btn-wrapper">
+                            <a href="mailto:ngskr@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
+                        <div class="btn-wrapper">
+                            <a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>Order</span></a>
+                        </div>
                     </div>
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(3)"><i class="icon ico-left-black"></i><span
-                                        class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(5)"><span class="font-body-h-b">Next</span><i
-                                        class="icon ico-left-black"></i></div>
+                                <div class="col" onclick="setTabContent(2)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+                                <div class="col" onclick="setTabContent(4)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--ATAC-->
-                <div class="info-box">
-                    <p class="font-h4 main-title">ATAC analysis</p>
-                    <p class="subject font-body-h-b">ATAC is a technique used to analyze accessible DNA regions through
-                        NGS (Next Generation Sequencing).</p>
-                    <p class="desc font-body img_bottom">Macrogen provides a high level of genetic sequencing data
-                        quickly based on its NGS (next generation sequencing) performance, which ranks first in Korea
-                        and fifth in the world, and supports personalized sample tests. By assessing the open state of
-                        closed chromatin condensed into histone proteins for gene expression, the accessible region of
-                        RNA polymerase can be inferred, or the transcription factor binding site and nucleosome
-                        (nucleosome) location information can be acquired. In order for the genetic information stored
-                        in DNA to actually play a role, it should be expressed as a transcript (RNA). The DNA expression
-                        is controlled by changes in the DNA sequence itself, but it can also be regulated by changes in
-                        the helix structure or changes in surrounding proteins without changing the DNA sequence. The
-                        study of changes in gene function through structural changes or changes in surrounding proteins
-                        without changes in the DNA sequence is known as epigenetics.</p>
-                    <!--10.05 이미지 경로 변경-->
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-ngs-atac.png" alt="ATAC analysis">
-                    </div>
-                    <p class="desc font-body">Macrogen is the only Korean company that provides the ATAC (Assay for
-                        Transposase-Accessible Chromatin) service that analyzes the DNA's open structure through NGS. By
-                        assessing the sequence of the regions where the condensed DNA is released for the RNA
-                        transcription process through ATAC analysis, it is possible to check how transcription is
-                        controlled by RNA, even if the DNA sequences are the same.</p>
-                    <div class="btn-area">
-                        <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
-                                                    class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>Order</span></a></div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col" onclick="setTabContent(4)"><i class="icon ico-left-black"></i><span
-                                        class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(6)"><span class="font-body-h-b">Next</span><i
-                                        class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Spatial-->
-                <div class="info-box">
-                    <p class="main-title font-h4">Spatial Gene Expression analysis</p>
-                    <p class="subject font-body-h-b">This is the latest research analysis technique that can
-                        simultaneously check tissue spatial information and genomic expression information.</p>
-                    <p class="desc font-body img_bottom">Spatial gene expression analysis is the latest genetic
-                        sequencing technology, which simultaneously assesses the genetic information of cells and the
-                        location of the cells. It can directly analyze the gene expression of the tissue itself without
-                        separation into single cells or RNA extraction. By doing so, you can understand the tissue
-                        heterogeneity at the same time by obtaining the unique location information of cells in the
-                        tissue, as well as the gene expression information. In addition, it has the advantage of being
-                        able to be applied to both the fresh tissue obtained from surgery and FFPE tissue treated with
-                        formalin to store the tissue. By analyzing genetic information and tissue location information
-                        at once, you can set a direction for treatment or predict efficacy. For example, by checking the
-                        genetic information and location of the cancer patient's immune cells and cancer cells, you can
-                        determine how effective treatment is, whether cancer cells have metastasized, and the expected
-                        prognosis of the treatment.</p>
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
-                    </div>
-                    <p class="desc font-body">As a CSP (Certified Service Provider) for spatial gene expression service,
-                        Macrogen is recognized for quick service delivery and a superior level of performance based on
-                        its NGS (Next Generation Sequencing) performance, and is ranked first in Korea and fifth in the
-                        world. We are also leading the market with diversified spatial sequencing services by rapidly
-                        introducing new spatial genome analysis techniques.
-                    </p>
-                    <div class="btn-area">
-                        <div class="btn-wrapper"><a href="mailto:ngskr@macrogen.com"
-                                                    class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300"
-                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
-                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank"
-                                                    class="btn btn-primary"><i
-                                class="icon ico-cart-white"></i><span>Order</span></a></div>
-                    </div>
-                    <div class="board">
-                        <div class="navigation pt-80 mb-0">
-                            <div class="row g-0">
-                                <div class="col" onclick="setTabContent(5)"><i class="icon ico-left-black"></i><span
-                                        class="font-body-h-b">Prev</span></div>
-                                <div class="col" onclick="setTabContent(7)"><span class="font-body-h-b">Next</span><i
-                                        class="icon ico-left-black"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- 2023-05-09::Single Cell Multi-omics analysis 삭제-->
+                <!-- 2023-05-09::ATAC analysis 삭제-->
+                <!-- 2023-05-09::Spatial Gene Expression analysis 삭제-->
+
                 <!--Metagenome-->
                 <div class="info-box">
 
@@ -691,7 +533,7 @@
                     <div class="board">
                         <div class="navigation pt-80 mb-0">
                             <div class="row g-0">
-                                <div class="col" onclick="setTabContent(6)"><i class="icon ico-left-black"></i><span
+                                <div class="col" onclick="setTabContent(3)"><i class="icon ico-left-black"></i><span
                                         class="font-body-h-b">Prev</span></div>
                                 <div class="col disabled"><span class="font-body-h-b">Next</span><i
                                         class="icon ico-left-black"></i></div>
@@ -772,7 +614,7 @@
         var change = $(".option-value");
 
         console.log(change);
-        <!--탭메뉴 클릭시 페이지 변경-->
+        //<!--탭메뉴 클릭시 페이지 변경-->
         $Selected.text($Select.eq(idx).text());
         $info.addClass('show').siblings().removeClass('show');
         $info.eq(idx).addClass('show').siblings().removeClass('show');
