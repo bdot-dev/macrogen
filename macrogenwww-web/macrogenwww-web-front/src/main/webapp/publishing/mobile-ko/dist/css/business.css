@@ -44,7 +44,6 @@
 .section_business .info-box-wrap .info-box .img + .border-gray-box {margin-top: 42px;}
 .section_business .title,
 .section_business .desc {word-break: keep-all;}
-.section_business .select-nav-box .info {}
 /* //비지니스 추가 스타일 공통 */
 /* 임상진단서비스_NGS기반유전자패널검사실 */
 .section_business .img_ngs_gene01 li {position: relative;}
