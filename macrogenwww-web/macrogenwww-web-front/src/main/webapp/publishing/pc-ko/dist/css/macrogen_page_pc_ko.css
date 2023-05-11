@@ -5958,21 +5958,18 @@
           position: relative;}
           .macrogen.macrogen-management .section-leader .thumbnail .item .img .name{
             position: absolute;
-            left: 0; right: 0; bottom:0;
-            margin: 0 40px;
-            padding:16px 0 40px;
+            left: 0; right: 0; bottom:0;height: 247px;display: flex;flex-direction: column;justify-content: flex-end;
+            padding:16px 40px 40px;
             font-weight: 500;
             font-size: 16px;
             line-height: 30px;
             letter-spacing: -0.5px;
             color: #FFFFFF;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
             }
             .macrogen.macrogen-management .section-leader .thumbnail .item .img .name::before{
               content: "";
-              position: absolute;
-              top: 0;
-              display: block;
-              width: 100%;
+              display: block;margin-bottom: 16px;
               border-top: 1px solid #fff;
               opacity: 0.3;
             }
