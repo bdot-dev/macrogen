@@ -488,15 +488,19 @@
 /* e : 2023리뉴얼 leader */
 
   .macrogen.macrogen-management .section-chairman-career, .macrogen.macrogen-management .section-ceo-career {
-    padding-top: 80px;
+    padding: 60px 0;
     width: auto;
-    height: 760px;
+    /* height: 760px; */
     background-image: url("../img/macrogen/bg-chairman-career.png");
     background-size: cover;
     background-position: center bottom;
     margin: 0 auto; }
     .macrogen.macrogen-management .section-chairman-career .pagination-wrap, .macrogen.macrogen-management .section-ceo-career .pagination-wrap {
-      top: 214px; }
+      top: 50%; }
+      .macrogen.macrogen-management .section-chairman-career .swiper-container-horizontal > .swiper-pagination-bullets,
+      .macrogen.macrogen-management .section-ceo-career .swiper-container-horizontal > .swiper-pagination-bullets {bottom: -30px;}
+      .macrogen.macrogen-management .section-chairman-career {overflow: hidden;}
+      .macrogen.macrogen-management .section-chairman-career .swiper-container {overflow: visible;}
     .macrogen.macrogen-management .section-chairman-career .inner, .macrogen.macrogen-management .section-ceo-career .inner {
       padding: 0 20px; }
       .macrogen.macrogen-management .section-chairman-career .inner .item, .macrogen.macrogen-management .section-ceo-career .inner .item {
@@ -584,7 +588,7 @@
   .macrogen.macrogen-management .section-ceo-career {
     padding-top: 80px;
     width: auto;
-    height: 2076px;
+    /* height: 2076px; */
     color: #fff;
     background-image: url("../img/macrogen/bg-ceo-career-v2.png");
     background-size: cover; }
