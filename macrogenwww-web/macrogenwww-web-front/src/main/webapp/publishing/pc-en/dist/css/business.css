@@ -37,7 +37,7 @@
 .section_business .info-box .desc02 {word-break: keep-all;line-height: 32px;letter-spacing: -0.75px;color: #454545;font-size: 18px;}
 .wrap .full-bg .frame.frameB .hero-title.en,
 .wrap .full-bg .frame.frameB .slogan-sub.en {letter-spacing: 0.5px;}
-.section_business .info-box .desc02 {color: #454545;font-weight: 700;font-size: 18px;line-height: 32px;letter-spacing: 0;margin-bottom: 30px;}
+.section_business .info-box .desc02 {color: #454545;font-size: 18px;line-height: 32px;letter-spacing: 0;margin-bottom: 30px;}
 /* //비지니스 추가 스타일 공통 */
 /* 임상진단서비스_정밀의학 */
 .section_business .precision {padding-top: 50px;text-align: center;}
@@ -167,7 +167,7 @@ line-height: 22px;letter-spacing: -0.05em;
 .section_business.proteomics .info-box .table tbody td.left {text-align: left;}
 /* //Proteomics */
 /* Single Cell */
-.business_bg.single_cell {background-image: url("../img/business/bg_single_cell.png");}
+.business_bg.single_cell {background-image: url("../../../pc-ko/dist/img/business/bg_single_cell.png");}
 .section_business.single_cell .info-box .main-title {letter-spacing: 0;}
 .section_business.single_cell table.table.table-row tbody tr th {text-align: left;}
 .section_business.single_cell table.table tbody tr td {text-align: left;}
