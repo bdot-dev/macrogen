@@ -84,7 +84,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Healthcare</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Disease Prediction<br>&#38; Wellness Genetic Test</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">DTC Genetic Testing</a></li>
+                <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">DTC Genetic Testing</a></li>
                 <!-- 추후 론칭(오픈 시 숨김)<li><a href="/${rc.locale.language }/business">마이크로바이옴 검사솔루션</a></li> -->
             </ul>
         </div>
@@ -195,10 +195,10 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Hereditary Cancer Panel</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">BRCA1/2 Cancer Panel</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Cancer Panel</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Gastric Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">Hereditary Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#brca">BRCA1/2 Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Cancer Panel</a></li> 
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#gastric">Gastric Cancer Panel</a></li> 
                         </ul>
                     </div>
                 </li>
@@ -207,9 +207,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Certification acquired by <br>Macrogen in the clinical <br>diagnosis business</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Key features and strengths <br>of  Macrogen’s cancer panels</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel">Scope of projects to set up <br>NGS-based PMG labs</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification acquired by <br>Macrogen in the clinical <br>diagnosis business</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key features and strengths <br>of  Macrogen’s cancer panels</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope of projects to set up <br>NGS-based PMG labs</a></li>
                         </ul>
                     </div>
                 </li>
@@ -218,9 +218,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">ClinPham Seq</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Multi Omics</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp">Storage of samples</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage of samples</a></li>
                         </ul>
                     </div>
                 </li>

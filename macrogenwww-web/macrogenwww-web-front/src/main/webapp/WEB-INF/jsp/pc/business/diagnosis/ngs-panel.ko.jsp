@@ -42,8 +42,8 @@
 					<div class="swiper-container tab-slide-box _swiperTab">
 						<div class="swiper-wrapper _swiperTab">
 							<div class="swiper-slide active" id="certification"><a href="#">임상진단사업 인증 현황</a></div>
-							<div class="swiper-slide" id="characteristic"><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></div>
-							<div class="swiper-slide" id="build"><a href="#">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></div>
+							<div class="swiper-slide" id="features"><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></div>
+							<div class="swiper-slide" id="scope"><a href="#">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></div>
 						</div>
 					</div>
 				</div>

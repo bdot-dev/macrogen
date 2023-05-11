@@ -222,8 +222,8 @@
                         <button type="button"></button>
                         <ul class="cards-body">
                             <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">임상진단사업 인증 현황</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#characteristic">마크로젠 암 진단 패널의 <br>특징 및 경쟁력</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#build">NGS기반 유전자 패널 <br>검사실(PMG Lab) 구축 범위</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">마크로젠 암 진단 패널의 <br>특징 및 경쟁력</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">NGS기반 유전자 패널 <br>검사실(PMG Lab) 구축 범위</a></li>
                         </ul>
                     </div>
                 </li>
@@ -232,7 +232,7 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#drug">ClinPham Seq</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">검체보관 서비스</a></li>
                         </ul>

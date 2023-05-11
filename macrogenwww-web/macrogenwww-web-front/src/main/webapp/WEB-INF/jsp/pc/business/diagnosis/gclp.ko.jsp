@@ -41,7 +41,7 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab">
                         <div class="swiper-wrapper _swiperTab">
-                            <div class="swiper-slide active" id="drug"><a href="#">약물유전체분석</a></div>
+                            <div class="swiper-slide active" id="clin"><a href="#">약물유전체분석</a></div>
                             <div class="swiper-slide" id="multi-omics"><a href="#">멀티오믹스</a></div>
                             <div class="swiper-slide" id="sample"><a href="#">검체보관 서비스</a></div>
                         </div>
