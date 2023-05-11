@@ -12713,10 +12713,8 @@ textarea::placeholder {
     cursor: pointer;
     border-radius: 0;
     border: 0; }
-    .tab-primary .nav-tabs .nav-link:first-child {
-      padding: 0 0 0 20px; }
-    .tab-primary .nav-tabs .nav-link:last-child {
-      padding: 0 20px 0 0; }
+    /* .tab-primary .nav-tabs .nav-link:first-child {padding: 0 0 0 20px; } */
+    /* .tab-primary .nav-tabs .nav-link:last-child {padding: 0 20px 0 0; } */
     .tab-primary .nav-tabs .nav-link span {
       display: inline-block;
       font-family: sans-serif;
