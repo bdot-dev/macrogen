@@ -112,7 +112,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/research/ngs">연구분석서비스</a></div>
             <ul>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/ngs">NGS</a>
+                    <a href="/${rc.locale.language }/business/research/ngs#genome">NGS</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -128,7 +128,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/ces">CES</a>
+                    <a href="/${rc.locale.language }/business/research/ces#standard">CES</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -141,7 +141,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/microarray">Microarray</a>
+                    <a href="/${rc.locale.language }/business/research/microarray#expression">Microarray</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -164,7 +164,7 @@
                     <a href="/${rc.locale.language }/business/research/gene-synthesis">Gene Synthesis</a>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/oligo">Oligo</a>
+                    <a href="/${rc.locale.language }/business/research/oligo#dna">Oligo</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -174,7 +174,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/model">모델동물/크리스퍼</a>
+                    <a href="/${rc.locale.language }/business/research/model#crispr">모델동물/크리스퍼</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -194,7 +194,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">임상분석서비스</a></div>
             <ul>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer">정밀의학</a>
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">정밀의학</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -205,7 +205,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome">암 유전체 검사</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer"">암 유전체 검사</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -217,7 +217,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel">NGS 유전자패널 검사실</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification"">NGS 유전자패널 검사실</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -228,7 +228,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/gclp">GCLP</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/gclp#clin">GCLP</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">

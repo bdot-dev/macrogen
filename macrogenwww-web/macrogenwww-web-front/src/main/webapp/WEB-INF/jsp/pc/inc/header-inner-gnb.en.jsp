@@ -98,7 +98,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/research/ngs">Research Services</a></div>
             <ul>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/ngs">NGS</a>
+                    <a href="/${rc.locale.language }/business/research/ngs#genome">NGS</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -114,7 +114,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/ces">CES</a>
+                    <a href="/${rc.locale.language }/business/research/ces#standard">CES</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -127,7 +127,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/microarray">Microarray</a>
+                    <a href="/${rc.locale.language }/business/research/microarray#expression">Microarray</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -150,7 +150,7 @@
                     <a href="/${rc.locale.language }/business/research/gene-synthesis">Gene Synthesis</a>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/oligo">Oligo</a>
+                    <a href="/${rc.locale.language }/business/research/oligo#dna">Oligo</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -160,7 +160,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/research/model">GEM/CRISPR</a>
+                    <a href="/${rc.locale.language }/business/research/model#crispr">GEM/CRISPR</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -180,7 +180,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">Clinical Services</a></div>
             <ul>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer">Precision Medicine</a>
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Precision Medicine</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -191,7 +191,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome">Genetic testing <br>for cancer risk</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Genetic testing <br>for cancer risk</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -203,7 +203,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel">NGS-based Genetic <br>Panel Lab</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">NGS-based Genetic <br>Panel Lab</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -214,7 +214,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/gclp">GCLP</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/gclp#clin">GCLP</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
