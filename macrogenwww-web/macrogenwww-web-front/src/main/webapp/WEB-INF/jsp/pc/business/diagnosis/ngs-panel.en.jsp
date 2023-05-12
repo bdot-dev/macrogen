@@ -26,7 +26,7 @@
 		</div>
 		
 		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
+	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
 	            <div class="subject-box">
 	                <p class="font-h4 title">Macrogen offers support during the early stages of setting up of labs for next-generation gene sequencing panels, including consulting on the panel itself, related equipment and personnel.</p>
@@ -181,7 +181,7 @@
 	                    <div class="board">
 	                        <div class="navigation">
 	                            <div class="content clearfix">
-	                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">Key features and strengths of Macrogen’s cancer panels</div></a>
+	                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">Certification acquired by Macrogenin the clinical diagnosis business</div></a>
 	                                <a href="#" class="item next"onclick="setTabContent(2)"><div class="title">Scope of projects to set up NGS-based PMG labs</div></a>
 	                            </div>
 	                        </div>

@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
+	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
 	            <div class="subject-box">
 	                <p class="font-h4 title">At Macrogen, we use a variety of highly sensitive NGS tests to analyze genetic mutations associated with cancer, to help with the prevention, early detection and treatment of cancer.</p>

@@ -67,10 +67,10 @@
                         <li class="option-value" id="exome"  onclick="setTabContent(1)"><a href="#">Whole Exsome Sequencing</a></li>
                         <li class="option-value" id="transcriptome"  onclick="setTabContent(2)"><a href="#">Transcriptome Sequencing</a></li>
                         <li class="option-value" id="epigenome"  onclick="setTabContent(3)"><a href="#">Epigenome Sequencing</a></li>
+                        <li class="option-value" id="metagenome"  onclick="setTabContent(4)"><a href="#">Metagenome Sequencing</a></li>
                         <!-- <li class="option-value"><a href="#">Single cell Multi-omics analysis</a></li> -->
                         <!-- <li class="option-value"><a href="#">ATAC analysis</a></li> -->
                         <!-- <li class="option-value"><a href="#">Spatial Gene Expression analysis</a></li> -->
-                        <li class="option-value" id="metagenome"  onclick="setTabContent(4)"><a href="#">Metagenome Sequencing</a></li>
                     </ul>
                 </div>
             </div>

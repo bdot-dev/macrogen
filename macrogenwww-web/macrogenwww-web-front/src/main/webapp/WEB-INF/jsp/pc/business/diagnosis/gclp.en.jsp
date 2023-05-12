@@ -26,7 +26,7 @@
 		</div>
 		
 		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
+	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
 	            <div class="subject-box">
 	                <p class="font-h4 title">As an institution specializing in the analysis of samples used in clinical trials, Macrogen also offers services for identifying bio-markers in addition to regular analyses.</p>

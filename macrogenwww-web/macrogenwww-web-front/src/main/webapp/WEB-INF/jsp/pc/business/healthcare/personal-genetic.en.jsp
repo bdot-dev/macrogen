@@ -26,7 +26,7 @@
 		</div>
 		
 		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
+	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
 	            <div class="subject-box type02">
 	                <p class="font-h4 title">Disease Prediction & Wellness Genetic Test</p>

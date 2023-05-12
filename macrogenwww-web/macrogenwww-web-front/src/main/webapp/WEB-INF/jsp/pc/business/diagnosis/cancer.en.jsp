@@ -26,7 +26,7 @@
 	</div>
 
 	<div class="container">
-        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
+        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
         <div class="section_business">
             <div class="subject-box">
                 <p class="font-h4 title">As a global leader in precision medicine, Macrogen has established Big Data on genomes, medicine and lifestyle to better forecast disease risks, thereby contributing to future innovation in the field of healthcare.</p>
@@ -128,7 +128,7 @@
                     <p class="font-h4 main-title">Cancer Occurrence Monitoring</p>
                     <p class="subject">When cancer occurs in the body, there are NDA fragments detached from cancer cells in the blood.</p>
                     <p class="desc">This is called ctDNA (circulating tumor DNA). When ctDNA is checked regularly, cancer cells can be detected early and prompt measures can be taken. <br>Unlike existing biopsies, this test can be performed by simply collecting blood, which makes regular checkups more efficient. However, theistest is not widely given because the levels ofctDNA are different by type of cancer and individual, making detection very difficult. Macrogen is expanding this service by continuously making technical improvements.</p>
-                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_precision07.png" alt="Cancer Occurrence Monitoring"/></div>
+                    <div class="img"><img src="/publishing/pc-en/dist/img/business/img_monitoring.png" alt="Cancer Occurrence Monitoring"/></div>
                     <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_precision08.png" alt="LINEAR CARE SYSTEM/CIRCULAR CARE SYSTEM"/></div>
                     <hr class="divider">
                     <div class="board">

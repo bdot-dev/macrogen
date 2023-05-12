@@ -23,7 +23,7 @@
                             </li>
                             <li><a href="/${rc.locale.language }/company/global-network">Global Network</a></li>
                             <!--2023-05-02::뎁스이동-->
-                            <li><a href="/${rc.locale.language }/rnd/patent">Resource</a>
+                            <li><a href="#none">Resource</a>
                                 <ul>
                                     <li><a href="/${rc.locale.language }/rnd/patent">- Patents</a></li>
                                     <li><a href="/${rc.locale.language }/rnd/thesis">- Papers</a></li>
@@ -54,7 +54,7 @@
                             <li><a href="#none">Personal Healthcare</a>
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">- Disease Prediction &#38; Wellness Genetic Test</a></li>
-                                    <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">- DTC Genetic Testing</a></li>
+                                    <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">- DTC Genetic Testing</a></li>
                                     <!-- 추후 론칭(오픈 시 숨김)<li><a href="/${rc.locale.language }/business/">- 마이크로바이옴 검사솔루션</a></li> -->
                                 </ul>
                             </li>
@@ -67,20 +67,20 @@
                                 <ul>
                                     <li><a href="#">- NGS</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/ngs">Whole Genome Sequencing</a></li>
-                                            <li><a href="#">Whole Exome Sequencing</a></li>
-                                            <li><a href="#">Transcriptome Sequencing</a></li>
-                                            <li><a href="#">Epigenome Sequencing</a></li>
-                                            <li><a href="#">Metagenome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#genome">Whole Genome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#exome">Whole Exome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#transcriptome">Transcriptome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#epigenome">Epigenome Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ngs#metagenome">Metagenome Sequencing</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- CES</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/ces">Standard Sequencing</a></li>
-                                            <li><a href="#">Identification</a></li>
-                                            <li><a href="#">Fragment</a></li>
-                                            <li><a href="#">Customized Sequencing</a></li>
-                                            <li><a href="#">Human ID</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces#standard">Standard Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces#identification">Identification</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces#fragment">Fragment</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces#customized">Customized Sequencing</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/ces#human">Human ID</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- Microarray</a>
