@@ -40,7 +40,7 @@
 	                <div class="select-box">
 	                    <div class="selected-value _selected-value">
 	                        <span class="text">임상진단사업 인증 현황</span>
-	                    </div>
+	                    </div> 
 	                    <ul class="select-option _select-option">
 	                        <li class="option-value active" onclick="setTabContent(0)" id="certification"><a href="#">임상진단사업 인증 현황</a></li>
 	                        <li class="option-value" onclick="setTabContent(1)" id="features"><a href="#">마크로젠 암 진단 패널의 특징 및 경쟁력</a></li>

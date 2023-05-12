@@ -36,7 +36,7 @@
 	
 	            <!-- 탭 네비 s-->
 	            <div class="select-nav-box _content-anchor" id="tab_anchor">
-	                <p class="title font-h4">SERVICE</p>
+	                <p class="title font-h4">SERVICE</p> 
 	                <div class="select-box">
 	                    <div class="selected-value _selected-value">
 	                        <span class="text">암 발생 위험 예측</span>
