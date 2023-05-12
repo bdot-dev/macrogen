@@ -14,7 +14,7 @@
 	                    <li class="breadcrumb-item">Home</li>
 	                    <li class="breadcrumb-item">SERVICE</li>
 	                    <li class="breadcrumb-item">Single Cell Expert Services</li>
-	                    <li class="breadcrumb-item">Spatial Gene Expression analysis</li>
+	                    <li class="breadcrumb-item">Spatial Transcriptome analysis</li>
 	                </ol>
 	            </nav>
 	            <div class="hero-title en">Spatial Gene Expression analysis</div>

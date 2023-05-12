@@ -13,7 +13,7 @@
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Service</li>
-        <li class="breadcrumb-item">퍼스널 헬스케어</li>
+        <li class="breadcrumb-item">반려동물 헬스케어</li>
         <li class="breadcrumb-item">반려동물 유전자검사</li>
     </ol>
 </nav>

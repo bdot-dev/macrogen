@@ -45,11 +45,11 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active" id="standard"><a href="#">Standard Sequencing</a></div>
-                            <div class="swiper-slide" id="identification"><a href="#">Identification</a></div>
-                            <div class="swiper-slide" id="fragment"><a href="#">Fragment</a></div>
-                            <div class="swiper-slide" id="customized"><a href="#">Customized Sequencing</a></div>
-                            <div class="swiper-slide" id="human"><a href="#">Human ID</a></div>
+                            <div class="swiper-slide active" onclick="setTabContent(0)" id="standard"><a href="#">Standard Sequencing</a></div>
+                            <div class="swiper-slide" onclick="setTabContent(1)" id="identification"><a href="#">Identification</a></div>
+                            <div class="swiper-slide" onclick="setTabContent(2)" id="fragment"><a href="#">Fragment</a></div>
+                            <div class="swiper-slide" onclick="setTabContent(3)" id="customized"><a href="#">Customized Sequencing</a></div>
+                            <div class="swiper-slide" onclick="setTabContent(4)" id="human"><a href="#">Human ID</a></div>
                             <!--<div class="swiper-slide"><a href="#">Gene Sythesis</a></div>-->
                             <!--09.23 3depth로 변경예정이여서 주석처리하겠습니다.-->
                         </div>
