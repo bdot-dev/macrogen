@@ -74,7 +74,7 @@ padding-left: 15px;color: #186BE8;font-size: 18px;font-weight: 700;line-height: 
 .section_business .img_ngs_gene03 .competitive01 {top: 54px;left: 50%;transform: translateX(-50%);}
 .section_business .img_ngs_gene03 .competitive02 {bottom: 68px;right: 317px;}
 .section_business .img_ngs_gene03 .competitive03 {bottom: 68px;left: 317px;}
-.section_business .img_ngs_gene03 [class^="competitive"] .txt02 {position: absolute;top: 50%;width: 291px;color: #454545;font-size: 14px;font-weight: 400;text-align: left;line-height: 20px;letter-spacing: -0.75px;}
+.section_business .img_ngs_gene03 [class^="competitive"] .txt02 {position: absolute;top: 50%;width: 291px;color: #454545;font-size: 14px;font-weight: 400;text-align: left;line-height: 20px;letter-spacing: -0.75px;word-break: keep-all;}
 .section_business .img_ngs_gene03 [class^="competitive"] .left {right: 0;transform: translate(100%,-50%);padding-left: 55px;background: url('/publishing/pc-ko/dist/img/common/ico_dot_arrow01.png') left center no-repeat;}
 .section_business .img_ngs_gene03 [class^="competitive"] .right {left: 0;transform: translate(-100%,-50%);padding-right: 45px;background: url('/publishing/pc-ko/dist/img/common/ico_dot_arrow02.png') right center no-repeat;padding-left: 20px;}
 .section_business .img_ngs_gene03 [class^="competitive"] .txt01 {margin-top: 8px;}
