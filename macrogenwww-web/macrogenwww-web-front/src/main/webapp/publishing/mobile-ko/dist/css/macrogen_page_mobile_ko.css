@@ -4903,7 +4903,7 @@
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li a::after {content: '';position: absolute;top: 50%;right: 30px;width: 14px;height: 9px;transform: translateY(-50%);background: url('../img/common/down_bt.png') center center no-repeat;background-size: contain;opacity: 0.8;transition: all 300ms ease-in-out;}
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li.noDepth a::after {display: none;}
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li > ul {padding: 0;}
-.gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li > ul li a {font-size: 14px;font-weight: 300;line-height: 32px;}
+.gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li > ul li a {font-size: 14px;font-weight: 300;line-height: 18px;padding-bottom: 14px;}
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li > ul li {margin-bottom: 0;}
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li.on>a {color: #000;font-weight: 500;}
 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li.on>a::after {transform: scaleY(-1) translateY(50%);opacity: 1;}
