@@ -228,7 +228,7 @@
             </ul>
         </div>
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/business/research/ngs">Single Cell Expert Services</a></div>
+            <div class="title"><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Expert Services</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>
                 <li><a href="/${rc.locale.language }/business/spatital">Spatial Transcriptome Analysis</a></li>
