@@ -91,8 +91,8 @@
 	                    </div>
 	                    <div class="btn-area pt82">
 	                        <div class="btn_wrapper flex">
-	                            <a href="" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-	                            <a href="" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -154,8 +154,8 @@
 	                    </div>
 	                    <div class="btn-area pt82">
 	                        <div class="btn_wrapper flex">
-	                            <a href="" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-	                            <a href="" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -210,8 +210,8 @@
 	                    </div>
 	                    <div class="btn-area pt82">
 	                        <div class="btn_wrapper flex">
-	                            <a href="" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-	                            <a href="" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
 	                        </div>
 	                    </div>
 	                    <div class="board">

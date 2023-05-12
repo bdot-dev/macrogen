@@ -153,7 +153,7 @@
 	                    <p class="desc font-body img_bottom">Multi Omics는 유전체(Genome), 전사(Transcriptome), 단백체(Proteome), 대사체(metabolome) 등의 다양한 분자 수준에서 생성된 여러 데이터를 총체적이고 통합적인 분석을 의미합니다.<br><br>새로운 기술과 장비의 발전으로 다양하고 복잡한 생물학적 실체간의 연관성을 찾기 위한 바이오마커를 발굴하고 분석하여, 질병과 생리학의 정교한 마커를 구축할 수 있습니다. 단일 유전자 돌연변이로 인해 발생하는 단순한 질병은 병인학적 요인이 거의 없으며, 복합질병의 경우 다수의 조절유전자들과 다수의 요인에 의해 영향을 받기 때문에 다수의 오믹스 데이터를 통한 분석이 필요합니다.</p>
 	                    <div class="border-gray-box">
 	                        <div class="img">
-	                            <img src="../../img/business/img_gclp05.png" alt="">
+	                            <img src="/publishing/mobile-ko/dist/img/business/img_gclp05.png" alt="">
 	                            <span class="btnZoom" data-img="img_gclp05"><i class="icon ico-zoom-white"></i></span>
 	                        </div>
 	                    </div>
