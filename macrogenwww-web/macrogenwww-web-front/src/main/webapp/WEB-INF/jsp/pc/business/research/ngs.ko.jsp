@@ -462,7 +462,7 @@
         
         
      	// location.hash // 20230502
-        if(location.hash) {
+        if(location.hash != "#_tab-box") {
         	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
         	loadtab.click();	// tab content view
         	setTabContent(loadtab.index());	// scroll 이동

@@ -6,7 +6,7 @@
     <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
 	<c:import url="/inc/header-inner-gnb" />
-</header> 
+</header>
 
     <div class="frame frameB">
       <nav aria-label="breadcrumb">
@@ -107,17 +107,17 @@
         function fnMove(){
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
-        }  
-        
+        }
+
      	// location.hash // 20230502
-        if(location.hash) {
-        	
+        if(location.hash != "#_tab-box") {
+
        		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
        		loadtab.click();	// tab content view
        		setTabContent(loadtab.index());	// scroll 이동
         }
-   		
-        $(window).on("hashchange",function () { 
+
+        $(window).on("hashchange",function () {
         	location.reload();
         });
       </script>
