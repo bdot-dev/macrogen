@@ -10,7 +10,7 @@
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">MACROGEN</li>
-		        <li class="breadcrumb-item">Resource</li>
+		        <li class="breadcrumb-item">Resource</li> 
 		        <li class="breadcrumb-item active">Papers</li>
 		    </ol>
 		</nav>

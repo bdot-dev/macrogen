@@ -4,7 +4,7 @@
 	<div class="section_gnb">
 	    <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 	    <nav>
-	        <ul id="gnb">
+	        <ul id="gnb"> 
                 <li><span class="font-bold">macrogen</span></li>
                 <li><span class="font-bold">Service</span></li><!--2023-05-02 수정-->
                 <!-- <li><span class="font-bold">r&#38;d</span></li> 2023-05-02 삭제 -->
