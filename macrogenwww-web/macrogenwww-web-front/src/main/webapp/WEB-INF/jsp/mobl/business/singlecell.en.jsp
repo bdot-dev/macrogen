@@ -2,63 +2,54 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 	<div class="wrap">
-		<div class="full-bg business_bg single_cell">
+		<div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/singlecell_img_mo.png);">
 			<header class="header header-white">
 			    <div class="inner">
 			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			    </div>
 			</header>
-			<div class="frame frameB">
-	            <nav aria-label="breadcrumb">
-	                <ol class="breadcrumb breadcrumb-white">
-	                    <li class="breadcrumb-item">Home</li>
-	                    <li class="breadcrumb-item">SERVICE</li>
-	                    <li class="breadcrumb-item">Research Services</li>
-	                    <li class="breadcrumb-item">Single Cell(In Situ/Spatial)</li>
-	                </ol>
-	            </nav>
-	            <div class="hero-title en">Single Cell (In Situ / Spatial)</div>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
-	                <span>SERVICE</span>
-	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+			<div class="frame">
+	            <div class="font-h1 mr-10">Single Cell <br>(In Situ / Spatial)</div>
+	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
 	        </div>
-			
 		</div>
 		
 		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publ/css/business.css"/>
-	        <div class="section_business single_cell">
+	        <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/business.css"/>
+	        <div class="section_business">
+	            <!--상단 공통 s -->
 	            <div class="subject-box">
-	                <p class="font-h4 title">Drawing on years of experience with single-cell multiomics, Macrogen offers single-cell sequencing and spatial transcriptomics optimized for your research needs.</p>
-	                <p class="subject info">By providing in situ analysis as well as services in spatial transcriptomics in a wide range of areas including cancer research, immunology and neuroscience, Macrogen serves as a reliable partner contributing to research on health, as well as on the diagnosis, monitoring and treatment of diseases.</p>
+	                <p class="title font-h4">Drawing on years of experience with single-cell multiomics, Macrogen offers single-cell sequencing and spatial transcriptomics optimized for your research needs.</p>
+	                <p class="subject font-body-h img_bottom">By providing in situ analysis as well as services in spatial transcriptomics in a wide range of areas including cancer research, immunology and neuroscience, Macrogen serves as a reliable partner contributing to research on health, as well as on the diagnosis, monitoring and treatment of diseases.</p>
 	            </div>
-	            
-	            <!--탭 슬라이드-->
-	            <div class="tab-box" id="_tab-box">
-	                <p class="font-h4 title">PLATFORM</p>
-	                <div class="slide-tab-wrap">
-	                    <div class="swiper-container tab-slide-box _swiperTab">
-	                        <div class="swiper-wrapper _swiperTab">
-	                            <div class="swiper-slide active"><a href="#">GeoMx DSP</a></div>
-	                            <div class="swiper-slide "><a href="#">CosMx SMI</a></div>
-	                            <div class="swiper-slide "><a href="#">Xenium</a></div>
-	                        </div>
+	            <!--//상단 공통 e -->
+	
+	            <!-- 탭 네비 s-->
+	            <div class="select-nav-box _content-anchor" id="tab_anchor">
+	                <p class="title font-h4">PLATFORM</p>
+	                <div class="select-box">
+	                    <div class="selected-value _selected-value">
+	                        <span class="text">GeoMx DSP</span>
 	                    </div>
+	                    <ul class="select-option _select-option">
+	                        <li class="option-value active"><a href="#">GeoMx DSP</a></li>
+	                        <li class="option-value"><a href="#">CosMx SMI</a></li>
+	                        <li class="option-value"><a href="#">Xenium</a></li>
+	                    </ul>
 	                </div>
 	            </div>
-	            <!--//탭 슬라이드-->
+	            <!--// 탭 네비 e-->
 	
-	            <!-- 탭 컨텐츠 -->
+	            <!-- 탭 컨텐츠 s-->
 	            <div class="info-box-wrap tab-content">
-	                <!-- GeoMx DSP -->
+	                <!--GeoMx DSP-->
 	                <div class="info-box show">
-	                    <p class="font-h4 main-title ls0">Nanostring GeoMx® DSP</p>
-	                    <p class="subject">Discover Where Biology Happens</p>
-	                    <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
-	                    <div class="table_wrap">
-	                        <table class="table table-row">
+	                    <p class="font-h4 main-title">Nanostring GeoMx® DSP</p>
+	                    <p class="desc font-body img_bottom">Discover Where Biology Happens</p>
+	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
+	                    <div class="table-scroll">
+	                        <table class="table table-row tline">
 	                            <colgroup>
 	                                <col width="35%">
 	                                <col width="65%">
@@ -90,33 +81,36 @@
 	                            </tr>
 	                        </table>
 	                    </div>
-	                    <div class="data_wrap">
-	                        <div class="title">Data of Analysis</div>
-	                        <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell02.png" alt=""/></div>
+	                    <p class="font-h4 main-title">Data of Analysis</p>
+	                    <div class="border-gray-box mb0">
+	                        <div class="img">
+	                            <img src="/publishing/mobile-en/dist/img/business/img_single_cell02.png" alt="">
+	                            <span class="btnZoom" data-img="img_single_cell02"><i class="icon ico-zoom-white"></i></span>
+	                        </div>
 	                    </div>
-	                    <div class="btn-area">
-	                        <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-	                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+	                    <div class="btn-area pt82">
+	                        <div class="btn_wrapper flex">
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>Quotation</span></a>
+	                        </div>
 	                    </div>
-	                    <hr class="divider">
 	                    <div class="board">
-	                        <div class="navigation">
-	                            <div class="content clearfix">
-	                                <a href="#" class="item next"onclick="setTabContent(1)"><div class="title">CosMx SMI</div></a>
+	                        <div class="navigation pt-80 mb-0">
+	                            <div class="row g-0">
+	                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+	                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
 	                            </div>
 	                        </div>
 	                    </div>
-	                    
 	                </div>
 	                <!-- //GeoMx DSP -->
-	
-	                <!-- CosMx SMI -->
+	                <!--CosMx SMI-->
 	                <div class="info-box">
 	                    <p class="font-h4 main-title">Nanostring CosMx™ SMI</p>
-	                    <p class="subject">The First Fully-Integrated Single-Cell Spatial Biology Solution with the highest plex, multiomic capability and high resolution</p>
-	                    <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell03.png" alt=""/></div>
-	                    <div class="table_wrap">
-	                        <table class="table table-row">
+	                    <p class="desc font-body img_bottom">The First Fully-Integrated Single-Cell Spatial Biology Solution with the highest plex, multiomic capability and high resolution</p>
+	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell03.png" alt=""/></div>
+	                    <div class="table-scroll">
+	                        <table class="table table-row tline">
 	                            <colgroup>
 	                                <col width="35%">
 	                                <col width="65%">
@@ -149,33 +143,36 @@
 	                            </tr>
 	                        </table>
 	                    </div>
-	                    <div class="data_wrap">
-	                        <div class="title">Data of Analysis</div>
-	                        <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell04.png" alt=""/></div>
+	                    <p class="font-h4 main-title">Data of Analysis</p>
+	                    <div class="border-gray-box mb0">
+	                        <div class="img">
+	                            <img src="/publishing/mobile-en/dist/img/business/img_single_cell04.png" alt="">
+	                            <span class="btnZoom" data-img="img_single_cell04"><i class="icon ico-zoom-white"></i></span>
+	                        </div>
 	                    </div>
-	                    <div class="btn-area">
-	                        <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-	                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+	                    <div class="btn-area pt82">
+	                        <div class="btn_wrapper flex">
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>Quotation</span></a>
+	                        </div>
 	                    </div>
-	                    <hr class="divider">
 	                    <div class="board">
-	                        <div class="navigation">
-	                            <div class="content clearfix">
-	                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">GeoMx DSP</div></a>
-	                                <a href="#" class="item next"onclick="setTabContent(2)"><div class="title">Xenium</div></a>
+	                        <div class="navigation pt-80 mb-0">
+	                            <div class="row g-0">
+	                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+	                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
 	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
-	                <!-- //CosMx SMI -->
-	
+	                <!-- CosMx SMI -->
 	                <!-- Xenium -->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">10x Genomics Xenium In Situ</p>
-	                    <p class="subject">High-plex in situ from the single cell leader</p>
-	                    <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell05.png" alt=""/></div>
-	                    <div class="table_wrap">
-	                        <table class="table table-row">
+	                    <p class="font-h4 main-title">10x Genomics Xenium <br>In Situ</p>
+	                    <p class="desc font-body img_bottom">High-plex in situ from the single cell leader</p>
+	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell05.png" alt=""/></div>
+	                    <div class="table-scroll">
+	                        <table class="table table-row tline">
 	                            <colgroup>
 	                                <col width="35%">
 	                                <col width="65%">
@@ -202,91 +199,53 @@
 	                            </tr>
 	                        </table>
 	                    </div>
-	                    <div class="data_wrap">
-	                        <div class="title">Data of Analysis</div>
-	                        <div class="img"><img src="../../../../pc-ko/dist/img/business/img_single_cell06.png" alt="Stain nuclei with DAPI / Identify nuclear boundaries / Estimate cell perimeters"/></div>
+	                    <p class="font-h4 main-title">Data of Analysis</p>
+	                    <div class="border-gray-box mb0">
+	                        <div class="img">
+	                            <img src="/publishing/mobile-en/dist/img/business/img_single_cell06.png" alt="">
+	                            <span class="btnZoom" data-img="img_single_cell06"><i class="icon ico-zoom-white"></i></span>
+	                        </div>
 	                    </div>
-	                    <div class="btn-area">
-	                        <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
-	                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+	                    <div class="btn-area pt82">
+	                        <div class="btn_wrapper flex">
+	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>Quotation</span></a>
+	                        </div>
 	                    </div>
-	                    <hr class="divider">
 	                    <div class="board">
-	                        <div class="navigation">
-	                            <div class="content clearfix">
-	                                <a href="#" class="item prev" onclick="setTabContent(1)"><div class="title">CosMx SMI</div></a>
+	                        <div class="navigation pt-80 mb-0">
+	                            <div class="row g-0">
+	                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">Prev</span></div>
+	                                <div class="col disabled"><span class="font-body-h-b">Next</span><i class="icon ico-left-black"></i></div>
 	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
 	                <!-- //Xenium -->
-	
 	            </div>
-	            <!-- //탭 컨텐츠 -->
-	
-	            <script>
-	                var swiper = new Swiper("._swiperTab", {
-	                    slidesPerView: "auto",
-	                    spaceBetween: 0,
-	                    centeredSlides: false,
-	                    watchActiveIndex: true,
-	                    slideToClickedSlide: true,
-	                    navigation: {
-	                        nextEl: "._slideRight",
-	                        prevEl: "._slideLeft",
-	                    },
-	                });
-	                var idx = $('._swiperTab .swiper-slide').length;
-	                var sum= 0;
-	                // slide wrap width
-	                for (var j = 0; j < idx; j++) {
-	                    sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-	                }
-	                $('.swiper-wrapper').css('width',sum)
-	                // slide width
-	                for (var i = 0; i <= idx; i++) {
-	                    var target = $(".swiper-slide:eq("+"i"+")");
-	                    var idxWidth = $(".swiper-slide:eq("+"i"+")").outerWidth(true) - 40;
-	                    target.css('width',idxWidth)
-	                }
-	                function setTabContent (idx){
-	                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-	                    swiper[0].slideTo(idx);
-	                    //탭메뉴 클릭시 페이지 변경
-	                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-	                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-	                    /*페이지 변경후 상단 이동*/
-	                    fnMove();
-	                }
-	                /*탭메뉴 상단으로 이동*/
-	                function fnMove(){
-	                    var offset = $("#_tab-box").offset();
-	                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
-	                }
-	                $('._swiperTab .swiper-slide').on('click', function(){
-	                    var idx = $(this).index();
-	                    setTabContent(idx)
-	                });
-	                $('.swiper-notification').remove();
-	                // 탭모달 스크립트
-	                $("._btnMenu").on('click',function() {
-	                    $(".tab-modal").show();
-	                });
-	                $("._closebtn").on('click',function() {
-	                    $(".tab-modal").hide();
-	                });
-	                $(document).mouseup(function (e){
-	                    var LayerPopup = $(".tab-modal");
-	                    if(LayerPopup.has(e.target).length === 0){
-	                        LayerPopup.hide();
-	                    }
-	                });
-	            </script>
+	            <!--// 탭 컨텐츠 e-->
 	        </div>
+	        <!-- 2023 추가 비지니스 확대이미지 -->
+	        <div class="toast-popup">
+	            <p>You can enlarge it by clicking on the image.</p>
+	        </div>
+	        <!--modalImageViewer-->
+	        <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+	                    <div class="parent">
+	                        <div class="zoom_img"><img src="" alt=""></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--//modalImageViewer-->
+	        <!-- //2023 추가 비지니스 확대이미지 -->
+	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
+	        
 	    </div>
-		
 	</div>
-
 
 </body>
 </html>

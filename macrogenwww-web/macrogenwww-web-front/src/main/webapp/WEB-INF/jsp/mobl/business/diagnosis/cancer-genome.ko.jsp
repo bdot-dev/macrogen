@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 	<div class="wrap">
-		<div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
+		<div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/test-bg.png);">
 	        <header class="header header-white">
 			    <div class="inner">
 			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>

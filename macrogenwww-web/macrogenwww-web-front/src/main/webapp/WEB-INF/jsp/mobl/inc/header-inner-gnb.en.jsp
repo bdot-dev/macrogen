@@ -85,9 +85,9 @@
                                     </li>
                                     <li><a href="#">- Microarray</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/microarray">Expression Microarray</a></li>
-                                            <li><a href="#">Genome Microarray</a></li>
-                                            <li><a href="#">Epigenome Microarray</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/microarray#expression">Expression Microarray</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/microarray#genome">Genome Microarray</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/microarray#epigenome">Epigenome Microarray</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- Proteomics</a>
@@ -98,16 +98,16 @@
                                     <li><a href="/${rc.locale.language }/business/research/gene-synthesis">- Gene Synthesis</a></li>
                                     <li><a href="#">- Oligo</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/oligo">Gene Synthesis</a></li>
-                                            <li><a href="#">RNA Oligo Synthesis</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/oligo#dna">DNA Oligo Synthesis</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/oligo#rna">RNA Oligo Synthesis</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- GEM/CRISPR</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/research/model">CRISPR Knock-in/out</a></li>
-                                            <li><a href="#">GEM</a></li>
-                                            <li><a href="#">Mass Production</a></li>
-                                            <li><a href="#">Additional</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model#crispr">CRISPR Knock-in/out</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model#gem">GEM</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model#mass">Mass Production</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/model#additional">Additional</a></li>
                                         </ul>
                                     </li>
                                     <%-- <li><a href="/${rc.locale.language }/business/research/reagent">- Reagent &#38; LABware</a></li> --%>
@@ -117,31 +117,31 @@
                                 <ul>
                                     <li><a href="#">- Precision Medicine</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer">Cancer risk prediction</a></li>
-                                            <li><a href="#">Analysis of causes of cancer</a></li>
-                                            <li><a href="#">Cancer Occurrence Monitoring</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer risk prediction</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis of causes of cancer</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#monitoring">Cancer Occurrence Monitoring</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- Genetic testing for cancer risk</a>
                                         <ul>
-                                            <li><a href="#">Cancer Panel</a></li>
-                                            <li><a href="#">Hereditary Cancer Panel</a></li>
-                                            <li><a href="#">BRCA1/2 Cancer Panel</a></li>
-                                            <li><a href="#">Gastric Cancer Panel</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Cancer Panel</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">Hereditary Cancer Panel</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#brca">BRCA1/2 Cancer Panel</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#gastric">Gastric Cancer Panel</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- NGS-based Genetic Panel Lab</a>
                                         <ul>
-                                            <li><a href="#">Certification acquired by Macrogen in the clinical diagnosis business</a></li>
-                                            <li><a href="#">Key features and strengths of  Macrogen’s cancer panels</a></li>
-                                            <li><a href="#">Scope of projects to set up NGS-based PMG labs</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification acquired by Macrogen in the clinical diagnosis business</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key features and strengths of  Macrogen’s cancer panels</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope of projects to set up NGS-based PMG labs</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- GCLP</a>
                                         <ul>
-                                            <li><a href="#">ClinPham Seq</a></li>
-                                            <li><a href="#">Multi Omics</a></li>
-                                            <li><a href="#">Storage of samples</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage of samples</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li> -->
@@ -149,9 +149,9 @@
                             </li>
                             <li><a href="#none">Single Cell Expert Services</a>
                                 <ul>
-                                    <li><a href="#">- Single Cell Multi-omics Analysis</a></li>
-                                    <li><a href="#">- Spatial Transcriptome Analysis</a></li>
-                                    <li><a href="#">- Single Cell (In situ / Statial)</a></li>
+                                    <li><a href="/${rc.locale.language }/business/singlecell-multi">- Single Cell Multi-omics Analysis</a></li>
+                                    <li><a href="/${rc.locale.language }/business/spatital">- Spatial Transcriptome Analysis</a></li>
+                                    <li><a href="/${rc.locale.language }/business/singlecell">- Single Cell (In situ / Statial)</a></li>
                                 </ul>
                             </li>
                         </ul>
