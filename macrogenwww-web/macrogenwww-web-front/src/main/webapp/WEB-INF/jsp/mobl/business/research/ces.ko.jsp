@@ -63,11 +63,11 @@
                         <span class="text">Standard Sequencing</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Standard Sequencing</a></li>
-                        <li class="option-value"><a href="#">Identification</a></li>
-                        <li class="option-value"><a href="#">Fragment</a></li>
-                        <li class="option-value"><a href="#">Customized Sequencing</a></li>
-                        <li class="option-value"><a href="#">Human ID</a></li>
+                        <li class="option-value active" onclick="setTabContent(0)" id="standard"><a href="#">Standard Sequencing</a></li>
+                        <li class="option-value" onclick="setTabContent(1)" id="identification"><a href="#">Identification</a></li>
+                        <li class="option-value" onclick="setTabContent(2)" id="fragment"><a href="#">Fragment</a></li>
+                        <li class="option-value" onclick="setTabContent(3)" id="customized"><a href="#">Customized Sequencing</a></li>
+                        <li class="option-value" onclick="setTabContent(4)" id="human"><a href="#">Human ID</a></li>
                     </ul>
                 </div>
 
@@ -851,7 +851,29 @@
     }
 
     init()
-
+	
+    // location.hash // 20230502
+    if(location.hash) {    	
+   		//var loadtab = $('._select-option .option-value').filter(location.hash);
+   		//loadtab.click();	// tab content view
+   		//setTabContent(loadtab.index());	// scroll 이동
+   		
+   		var loadtab = $('._select-option .option-value').filter(location.hash);
+   		// option click, business.js line 22 function onClickSelectOption
+   		loadtab.addClass('active').siblings().removeClass('active')
+        var idx = loadtab.index();
+        var $info = $(".info-box-wrap > div");
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+        textChange(loadtab);
+        setInfoSectionList(loadtab.text())
+        // scroll 이동
+        setTabContent(loadtab.index());    		
+    }
+		
+    $(window).on("hashchange",function () { 
+    	location.reload();
+    });
 
 </script>
 

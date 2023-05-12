@@ -209,9 +209,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">암 유전자 검사</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">암 감수성 검사</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#brca">BRCA1/2 유전자 검사</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">암 유전자 검사</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#gastric">위암 검사 패널</a></li> 
                         </ul>
                     </div>

@@ -63,14 +63,14 @@
                         <span class="text">Whole Genome Sequencing</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Whole Genome Sequencing</a></li>
-                        <li class="option-value"><a href="#">Whole Exsome Sequencing</a></li>
-                        <li class="option-value"><a href="#">Transcriptome Sequencing</a></li>
-                        <li class="option-value"><a href="#">Epigenome Sequencing</a></li>
+                        <li class="option-value active" id="genome" onclick="setTabContent(0)"><a href="#">Whole Genome Sequencing</a></li>
+                        <li class="option-value" id="exome"  onclick="setTabContent(1)"><a href="#">Whole Exsome Sequencing</a></li>
+                        <li class="option-value" id="transcriptome"  onclick="setTabContent(2)"><a href="#">Transcriptome Sequencing</a></li>
+                        <li class="option-value" id="epigenome"  onclick="setTabContent(3)"><a href="#">Epigenome Sequencing</a></li>
                         <!-- <li class="option-value"><a href="#">Single cell Multi-omics analysis</a></li> -->
                         <!-- <li class="option-value"><a href="#">ATAC analysis</a></li> -->
                         <!-- <li class="option-value"><a href="#">Spatial Gene Expression analysis</a></li> -->
-                        <li class="option-value"><a href="#">Metagenome Sequencing</a></li>
+                        <li class="option-value" id="metagenome"  onclick="setTabContent(4)"><a href="#">Metagenome Sequencing</a></li>
                     </ul>
                 </div>
             </div>
@@ -517,7 +517,8 @@
         var offset = $("._content-anchor").offset();
         $('html, body').animate({scrollTop: offset.top - 95}, 100);
     }
-
+    
+    
     /*특정위치 show & hide*/
     function fnMousewheel() {
         var lastScroll = 0;
@@ -655,7 +656,28 @@
 
     init()
 
-
+	// location.hash // 20230502
+    if(location.hash) {    	
+   		//var loadtab = $('._select-option .option-value').filter(location.hash);
+   		//loadtab.click();	// tab content view
+   		//setTabContent(loadtab.index());	// scroll 이동
+   		
+   		var loadtab = $('._select-option .option-value').filter(location.hash);
+   		// option click, business.js line 22 function onClickSelectOption
+   		loadtab.addClass('active').siblings().removeClass('active')
+        var idx = loadtab.index();
+        var $info = $(".info-box-wrap > div");
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+        textChange(loadtab);
+        setInfoSectionList(loadtab.text())
+        // scroll 이동
+        setTabContent(loadtab.index());    		
+    }
+		
+    $(window).on("hashchange",function () { 
+    	location.reload();
+    });
 </script>
 
 <!--비즈니스 스크립트 리펙토링 e-->

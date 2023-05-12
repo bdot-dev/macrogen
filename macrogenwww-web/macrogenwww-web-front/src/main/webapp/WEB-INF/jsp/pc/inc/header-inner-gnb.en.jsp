@@ -58,7 +58,7 @@
             </ul>
         </div>
         <div class="item">
-            <div class="title"><a href="#">r&#38;d</a></div>
+            <div class="title"><a href="#">R&#38;D</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">Precision Medicine Institute</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/bioinformatics">Bioinformatics Institute</a></li>
@@ -171,9 +171,9 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <%-- <li>
                     <a href="/${rc.locale.language }/business/research/reagent">Reagent &#38; LABware</a>
-                </li>
+                </li> --%>
             </ul>
         </div>
         <div class="item menu0205">
@@ -195,9 +195,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Cancer Panel</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">Hereditary Cancer Panel</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#brca">BRCA1/2 Cancer Panel</a></li> 
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Cancer Panel</a></li> 
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#gastric">Gastric Cancer Panel</a></li> 
                         </ul>
                     </div>

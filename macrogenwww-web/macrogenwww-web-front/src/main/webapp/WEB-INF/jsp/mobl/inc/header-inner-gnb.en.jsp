@@ -21,7 +21,7 @@
                                     <li><a href="/${rc.locale.language }/company/certification">- Certification & Accreditation</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/${rc.locale.language }/company/global-network">- Global Network</a></li>
+                            <li><a href="/${rc.locale.language }/company/global-network">Global Network</a></li>
                             <!--2023-05-02::뎁스이동-->
                             <li><a href="/${rc.locale.language }/rnd/patent">Resource</a>
                                 <ul>
@@ -110,7 +110,7 @@
                                             <li><a href="#">Additional</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/${rc.locale.language }/business/research/reagent">- Reagent &#38; LABware</a></li>
+                                    <%-- <li><a href="/${rc.locale.language }/business/research/reagent">- Reagent &#38; LABware</a></li> --%>
                                 </ul>
                             </li>
                             <li><a href="#none">Clinical Services</a>
@@ -124,9 +124,9 @@
                                     </li>
                                     <li><a href="#">- Genetic testing for cancer risk</a>
                                         <ul>
+                                            <li><a href="#">Cancer Panel</a></li>
                                             <li><a href="#">Hereditary Cancer Panel</a></li>
                                             <li><a href="#">BRCA1/2 Cancer Panel</a></li>
-                                            <li><a href="#">Cancer Panel</a></li>
                                             <li><a href="#">Gastric Cancer Panel</a></li>
                                         </ul>
                                     </li>
