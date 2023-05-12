@@ -38,10 +38,10 @@
 	                        <span class="text">Cancer Panel</span>
 	                    </div>
 	                    <ul class="select-option _select-option">
-	                        <li class="option-value active" id="cancer"><a href="#">Cancer Panel</a></li>
-	                        <li class="option-value" id="hereditary"><a href="#">Hereditary Cancer Panel</a></li>
-	                        <li class="option-value" id="brca"><a href="#">BRCA 1/2 Cancer Panel</a></li>
-	                        <li class="option-value" id="gastric"><a href="#">Gastric Cancer Panel</a></li>
+	                        <li class="option-value active" id="cancer" onclick="setTabContent(0)"><a href="#">Cancer Panel</a></li>
+	                        <li class="option-value" id="hereditary" onclick="setTabContent(1)"><a href="#">Hereditary Cancer Panel</a></li>
+	                        <li class="option-value" id="brca" onclick="setTabContent(2)"><a href="#">BRCA 1/2 Cancer Panel</a></li>
+	                        <li class="option-value" id="gastric" onclick="setTabContent(3)"><a href="#">Gastric Cancer Panel</a></li>
 	                    </ul>
 	                </div>
 	            </div>

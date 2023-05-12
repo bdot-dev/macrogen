@@ -39,10 +39,10 @@
 	                        <span class="text">암 유전자 검사</span>
 	                    </div>
 	                    <ul class="select-option _select-option">
-	                        <li class="option-value active" id="cancer"><a href="#">암 유전자 검사</a></li>
-	                        <li class="option-value" id="hereditary"><a href="#">유전성 암 감수성 검사</a></li>
-	                        <li class="option-value" id="brca"><a href="#">BRCA1/2 유전자 검사</a></li>
-	                        <li class="option-value" id="gastric"><a href="#">위암검사패널</a></li>
+	                        <li class="option-value active" id="cancer" onclick="setTabContent(0)"><a href="#">암 유전자 검사</a></li>
+	                        <li class="option-value" id="hereditary" onclick="setTabContent(1)"><a href="#">유전성 암 감수성 검사</a></li>
+	                        <li class="option-value" id="brca" onclick="setTabContent(2)"><a href="#">BRCA1/2 유전자 검사</a></li>
+	                        <li class="option-value" id="gastric" onclick="setTabContent(3)"><a href="#">위암검사패널</a></li>
 	                    </ul>
 	                </div>
 	            </div>
