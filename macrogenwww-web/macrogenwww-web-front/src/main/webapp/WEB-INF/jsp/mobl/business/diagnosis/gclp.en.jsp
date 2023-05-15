@@ -275,28 +275,31 @@
 	        <!-- //2023 추가 비지니스 확대이미지 -->
 	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
 	        <script>
-		     	// location.hash // 20230502
-		        if(location.hash) {    	
-		       		//var loadtab = $('._select-option .option-value').filter(location.hash);
-		       		//loadtab.click();	// tab content view
-		       		//setTabContent(loadtab.index());	// scroll 이동
-		       		
-		       		var loadtab = $('._select-option .option-value').filter(location.hash);
-		       		// option click, business.js line 22 function onClickSelectOption
-		       		loadtab.addClass('active').siblings().removeClass('active')
-		            var idx = loadtab.index();
-		            var $info = $(".info-box-wrap > div");
-		            $info.addClass('show').siblings().removeClass('show');
-		            $info.eq(idx).addClass('show').siblings().removeClass('show');
-		            textChange(loadtab);
-		            setInfoSectionList(loadtab.text())
-		            // scroll 이동
-		            setTabContent(loadtab.index());    		
-		        }
-		    		
-		        $(window).on("hashchange",function () { 
-		        	location.reload();
-		        });	
+	     	// location.hash // 20230502
+	        if(location.hash != "#none") {    	
+	       		//var loadtab = $('._select-option .option-value').filter(location.hash);
+	       		//loadtab.click();	// tab content view
+	       		//setTabContent(loadtab.index());	// scroll 이동
+	       		
+	       		var loadtab = $('._select-option .option-value').filter(location.hash);
+	       		// option click, business.js line 22 function onClickSelectOption
+	       		loadtab.addClass('active').siblings().removeClass('active')
+	            var idx = loadtab.index();
+	            var $info = $(".info-box-wrap > div");
+	            $info.addClass('show').siblings().removeClass('show');
+	            $info.eq(idx).addClass('show').siblings().removeClass('show');
+	            textChange(loadtab);
+	            setInfoSectionList(loadtab.text())
+	            // scroll 이동
+	            setTabContent(loadtab.index());    		
+	        }
+	    		
+	        $(window).on("hashchange",function () { 
+	        	 if(location.hash != "#none"){
+	          	location.reload();
+	        	 }
+
+	        });	
 	        </script>
 	    </div>
 	</div>

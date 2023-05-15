@@ -42,8 +42,8 @@
 	                    <div class="swiper-container tab-slide-box _swiperTab">
 	                        <div class="swiper-wrapper _swiperTab">
 	                            <div class="swiper-slide active" id="certification"><a href="#">Certification acquired by Macrogen in the clinical diagnosis business</a></div>
-	                            <div class="swiper-slide " id="features"><a href="#">Key features and strengths of Macrogen’s cancer panels</a></div>
-	                            <div class="swiper-slide " id="scope""><a href="#">Scope of projects to set up NGS-based PMG labs</a></div>
+	                            <div class="swiper-slide" id="features"><a href="#">Key features and strengths of Macrogen’s cancer panels</a></div>
+	                            <div class="swiper-slide" id="scope"><a href="#">Scope of projects to set up NGS-based PMG labs</a></div>
 	                        </div>
 	                    </div>
 	                    <div class="btn-box">
@@ -251,67 +251,40 @@
 	                    <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
 	                </div>
 	            </div>
-	            <!-- //탭 컨텐츠 -->
-	
 	            <script>
-	                var swiper = new Swiper("._swiperTab", {
-	                    slidesPerView: "auto",
-	                    spaceBetween: 0,
-	                    centeredSlides: false,
-	                    watchActiveIndex: true,
-	                    slideToClickedSlide: true,
-	                    navigation: {
-	                        nextEl: "._slideRight",
-	                        prevEl: "._slideLeft",
-	                    },
-	                });
-	
-	                $(document).ready(function (){
-	                    var idx = $('._swiperTab .swiper-slide').length;
-	                    var sum= 0;
-	                    // slide wrap width
-	                    for (var j = 0; j < idx; j++) {
-	                        sum = sum + $(".swiper-slide:eq("+j+")").outerWidth(true);
-	                    }
-	                    $('.swiper-wrapper').css('width',sum)
-	                    // slide width
-	                    for (var i = 0; i <= idx; i++) {
-	                        var target = $(".swiper-slide:eq("+"i"+")");
-	                        var idxWidth = $(".swiper-slide:eq("+"i"+")").outerWidth(true) - 40;
-	                        target.css('width',idxWidth)
-	                    }
-	                })
-	
-	                function setTabContent (idx){
-	                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-	                    swiper[0].slideTo(idx);
-	                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-	                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-	                    /*페이지 변경후 상단 이동*/
-	                    fnMove();
-	                }
-	                /*탭메뉴 상단으로 이동*/
-	                function fnMove(){
-	                    var offset = $("#_tab-box").offset();
-	                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
-	                }
-	                $('._swiperTab .swiper-slide').on('click', function(){
-	                    var idx = $(this).index();
-	                    setTabContent(idx)
-	                });
-	                
-	                // location.hash // 20230502
-	                if(location.hash != "#_tab-box") {
-	                	
-	               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
-	               		loadtab.click();	// tab content view
-	               		setTabContent(loadtab.index());	// scroll 이동
-	                }
-	           		
-	                $(window).on("hashchange",function () { 
-	                	location.reload();
-	                });
-	            </script>
+				$('._swiperTab .swiper-slide').on('click', function(){
+					var idx = $(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					// <!--탭메뉴 클릭시 페이지 변경-->
+					$(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+					$(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+				});
+				function setTabContent(idx){
+					$('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+					// <!--탭메뉴 클릭시 페이지 변경-->
+					$(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+					$(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+					/*페이지 변경후 상단 이동*/
+					fnMove();
+				}
+				/*탭메뉴 상단으로 이동*/
+				function fnMove(){
+					var offset = $("#_tab-box").offset();
+					$('html, body').animate({scrollTop : offset.top - 95}, 100);
+				}
+				
+				// location.hash // 20230502
+                if(location.hash != "#_tab-box") {
+                	
+               		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+               		loadtab.click();	// tab content view
+               		setTabContent(loadtab.index());	// scroll 이동
+                }
+           		
+                $(window).on("hashchange",function () { 
+                	location.reload();
+                });
+			</script>
 	        </div>
 	    </div>
 		

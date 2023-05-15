@@ -872,7 +872,10 @@
     }
 		
     $(window).on("hashchange",function () { 
-    	location.reload();
+    	 if(location.hash != "#none"){
+      		location.reload();
+    	 }
+
     });
 
 </script>

@@ -190,8 +190,8 @@
 	        <!-- //2023 추가 비지니스 확대이미지 -->
 	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
 	        <script>
-	     	// location.hash // 20230502
-	        if(location.hash) {    	
+	     // location.hash // 20230502
+	        if(location.hash != "#none") {    	
 	       		//var loadtab = $('._select-option .option-value').filter(location.hash);
 	       		//loadtab.click();	// tab content view
 	       		//setTabContent(loadtab.index());	// scroll 이동
@@ -210,7 +210,10 @@
 	        }
 	    		
 	        $(window).on("hashchange",function () { 
-	        	location.reload();
+	        	 if(location.hash != "#none"){
+	          		location.reload();
+	        	 }
+
 	        });
 	        </script>
 	    </div>

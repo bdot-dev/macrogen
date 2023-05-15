@@ -678,7 +678,9 @@
 
     init()
 	
-    // location.hash // 20230502
+    
+
+	// location.hash // 20230502
     if(location.hash != "#none") {    	
    		//var loadtab = $('._select-option .option-value').filter(location.hash);
    		//loadtab.click();	// tab content view
@@ -698,7 +700,10 @@
     }
 		
     $(window).on("hashchange",function () { 
-    	location.reload();
+    	 if(location.hash != "#none"){
+      	location.reload();
+    	 }
+
     });
 
 </script>

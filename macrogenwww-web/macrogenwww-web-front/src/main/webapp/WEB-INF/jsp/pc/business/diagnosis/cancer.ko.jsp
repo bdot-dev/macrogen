@@ -26,12 +26,11 @@
       </a>
     </div>
   </div>
+  
   <div class="container">
     <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
 
     <div class="section_business">
-      <!--탭 링크-->
-      <div class="tab-box" id="_tab-box">
 
         <div class="subject-box">
           <p class="font-h4 title">글로벌 정밀의학 선도기업으로서 유전체정보, 의료정보 및 생활정보의 통합 빅데이터를 구축하고 질병을 예측하여 미래의학 혁신에 이바지하고 있습니다.</p>
@@ -71,56 +70,21 @@
             </div>
           </div>
         </div>
+        
+       <!--탭 링크-->
+      <div class="tab-box" id="_tab-box">
         <p class="font-h4 title">SERVICE</p>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab">
             <div class="swiper-wrapper _swiperTab">
-              <div class="swiper-slide active" id="prediction"><a href="#">암 발생 위험 예측</a></div>
+              <div class="swiper-slide active" id="prediction" ><a href="#">암 발생 위험 예측</a></div>
               <div class="swiper-slide" id="analyze"><a href="#">암 발생 원인 분석</a></div>
               <div class="swiper-slide" id="monitoring"><a href="#">암 발생 모니터링</a></div>
             </div>
           </div>
         </div>
       </div>
-      <!--탭메뉴 스크립트-->
-      <script>
-        $('._swiperTab .swiper-slide').on('click', function(){
-          var idx = $(this).index();
-
-          $(this).addClass('active').siblings().removeClass('active');
-          // <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-        });
-
-        function setTabContent(idx){
-          $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-
-          // <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-          fnMove();
-        }
-
-        /*탭메뉴 상단으로 이동*/
-        function fnMove(){
-          var offset = $("#_tab-box").offset();
-          $('html, body').animate({scrollTop : offset.top - 95}, 100);
-        }
-
-     	// location.hash // 20230502
-        if(location.hash != "#_tab-box") {
-
-       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
-       		loadtab.click();	// tab content view
-       		setTabContent(loadtab.index());	// scroll 이동
-        }
-
-        $(window).on("hashchange",function () {
-        	location.reload();
-        });
-      </script>
+      
 
       <div class="info-box-wrap tab-content">
         <!--암 발생 위험 예측-->
@@ -133,7 +97,7 @@
           <div class="board">
             <div class="navigation">
               <div class="content clearfix">
-                <a href="#" class="item next"onclick="setTabContent(1)"><div class="title">암 발생 원인 분석</div></a>
+                <a href="#" class="item next" onclick="setTabContent(1)"><div class="title">암 발생 원인 분석</div></a>
               </div>
             </div>
           </div>
@@ -191,5 +155,43 @@
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
+	<!--탭메뉴 스크립트-->
+      <script>
+        $('._swiperTab .swiper-slide').on('click', function(){
+          var idx = $(this).index();
 
+          $(this).addClass('active').siblings().removeClass('active');
+          // <!--탭메뉴 클릭시 페이지 변경-->
+          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        });
+
+        function setTabContent(idx){
+          $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+          // <!--탭메뉴 클릭시 페이지 변경-->
+          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+          fnMove();
+        }
+
+        /*탭메뉴 상단으로 이동*/
+        function fnMove(){
+          var offset = $("#_tab-box").offset();
+          $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+
+     	// location.hash // 20230502
+        if(location.hash != "#_tab-box") {
+
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
+        }
+
+        $(window).on("hashchange",function () {
+        	location.reload();
+        });
+      </script>
 </body>

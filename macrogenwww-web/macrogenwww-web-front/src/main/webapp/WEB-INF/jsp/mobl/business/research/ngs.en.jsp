@@ -790,7 +790,10 @@
 		    }
 				
 		    $(window).on("hashchange",function () { 
-		    	location.reload();
+		    	 if(location.hash != "#none"){
+		      		location.reload();
+		    	 }
+		
 		    });
 		</script>
 		<!--비즈니스 스크립트 리펙토링 e-->	

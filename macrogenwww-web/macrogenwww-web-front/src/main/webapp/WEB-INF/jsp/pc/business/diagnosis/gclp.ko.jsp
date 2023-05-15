@@ -292,33 +292,28 @@
             <!-- //탭 컨텐츠 -->
 
             <script>
-                var swiper = new Swiper("._swiperTab", {
-                    slidesPerView: "auto",
-                    spaceBetween: 0,
-                    centeredSlides: false,
-                    watchActiveIndex: true,
-                    slideToClickedSlide: true,
-                });
-                function setTabContent (idx){
-                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-                    swiper[0].slideTo(idx);
-                    //탭메뉴 클릭시 페이지 변경
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                    /*페이지 변경후 상단 이동*/
-                    fnMove();
-                }
-                /*탭메뉴 상단으로 이동*/
-                function fnMove(){
-                    var offset = $("#_tab-box").offset();
-                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                }
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-                    setTabContent(idx)
-                });
-                
-             	// location.hash // 20230502
+				$('._swiperTab .swiper-slide').on('click', function(){
+					var idx = $(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					// <!--탭메뉴 클릭시 페이지 변경-->
+					$(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+					$(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+				});
+				function setTabContent(idx){
+					$('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+					// <!--탭메뉴 클릭시 페이지 변경-->
+					$(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+					$(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+					/*페이지 변경후 상단 이동*/
+					fnMove();
+				}
+				/*탭메뉴 상단으로 이동*/
+				function fnMove(){
+					var offset = $("#_tab-box").offset();
+					$('html, body').animate({scrollTop : offset.top - 95}, 100);
+				}
+				
+				// location.hash // 20230502
                 if(location.hash != "#_tab-box") {
                 	
                		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
@@ -329,7 +324,7 @@
                 $(window).on("hashchange",function () { 
                 	location.reload();
                 });
-            </script>
+			</script>
 		</div>
 	</div>
 </body>
