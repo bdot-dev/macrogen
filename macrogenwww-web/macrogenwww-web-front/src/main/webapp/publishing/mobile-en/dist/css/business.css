@@ -51,7 +51,7 @@
 /* //비지니스 추가 스타일 공통 */
 /* 임상진단서비스_NGS기반유전자패널검사실 */
 .section_business .img_ngs_gene01 li {position: relative;}
-.section_business .img_ngs_gene01 i {display: block;position: absolute;left: 0;top: 0;width: 50px;height: 50px;border-radius: 50%;background:rgba(46, 135, 239, 0.2) url('../../../mobile-ko/dist/img/business/img_ngs_circle.png') center center no-repeat;background-size: 8px auto;}
+.section_business .img_ngs_gene01 i {display: block;position: absolute;left: 0;top: 0;width: 50px;height: 50px;border-radius: 50%;background:rgba(46, 135, 239, 0.2) url('/publishing/mobile-ko/dist/img/business/img_ngs_circle.png') center center no-repeat;background-size: 8px auto;}
 .section_business .img_ngs_gene01 ol>li {padding-left: 68px;padding-bottom: 22px;}
 .section_business .img_ngs_gene01 strong {display: block;color: #186BE8;font-size: 20px;line-height: 2.5;}
 .section_business .img_ngs_gene01 ul li {color: #186BE8;font-size: 16px;line-height: 26px;padding-left: 15px;padding-bottom: 8px;letter-spacing: -0.5px;}
@@ -60,16 +60,16 @@
 .section_business .img_ngs_gene01 ol>li:first-child:before {top: 22px;}
 .section_business .img_ngs_gene01 ol>li:last-child::before {bottom: auto;height: 24px;}
 .section_business .img_ngs_gene01 ol>li:last-child::after {display: none;}
-.section_business .img_ngs_gene01 ol>li::after {content: '';position: absolute;left: 18px;top: 60%;width: 14px;height: 9px;background:url('../../../mobile-ko/dist/img/business/img_ngs_arrow.png') center center no-repeat;background-size: 14px auto;}
+.section_business .img_ngs_gene01 ol>li::after {content: '';position: absolute;left: 18px;top: 60%;width: 14px;height: 9px;background:url('/publishing/mobile-ko/dist/img/business/img_ngs_arrow.png') center center no-repeat;background-size: 14px auto;}
 .section_business .img_ngs_gene02 {margin-top: 18px;}
-.section_business .img_ngs_gene02 .btn_down {position: relative;display: flex;align-items: center;width: 100%;padding:14px 79px 14px 62px;margin-bottom: 8px;color: #454545;font-size: 16px;line-height: 32px;letter-spacing: 0;border-radius: 5px;background: #F7F7F7 url('../img/common/ico-file-pdf.svg') left 24px center no-repeat;}
-.section_business .img_ngs_gene02 .btn_down::after {content: '';position: absolute;right: 22px;top: 50%;transform: translateY(-50%);width: 31px;height: 18px;border-left: 1px solid #e9e9e9;background: url('../img/common/ico-download-black.svg') right center no-repeat;background-size: 14px auto;}
+.section_business .img_ngs_gene02 .btn_down {position: relative;display: flex;align-items: center;width: 100%;padding:14px 79px 14px 62px;margin-bottom: 8px;color: #454545;font-size: 16px;line-height: 32px;letter-spacing: 0;border-radius: 5px;background: #F7F7F7 url('/publishing/mobile-ko/dist/img/common/ico-file-pdf.svg') left 24px center no-repeat;}
+.section_business .img_ngs_gene02 .btn_down::after {content: '';position: absolute;right: 22px;top: 50%;transform: translateY(-50%);width: 31px;height: 18px;border-left: 1px solid #e9e9e9;background: url('/publishing/mobile-ko/dist/img/common/ico-download-black.svg') right center no-repeat;background-size: 14px auto;}
 /* //임상진단서비스_NGS기반유전자패널검사실 */
 
 .section_business .subject-box.type02 {margin-bottom: 0;border-bottom: none;padding-bottom: 40px;}
-.top-bg.single_multi {background-image: url('../../../mobile-ko/dist/img/business/singlecell_img_mo.png');}
-.top-bg.spatital {background-image: url('../../../mobile-ko/dist/img/business/singlecell_img_mo.png');}
-.top-bg.personal01 {background-image: url('../../../mobile-ko/dist/img/business/bg_personal01.png');}
-.top-bg.personal02 {background-image: url('../../../mobile-ko/dist/img/business/bg_personal02.png');}
+.top-bg.single_multi {background-image: url('/publishing/mobile-ko/dist/img/business/singlecell_img_mo.png');}
+.top-bg.spatital {background-image: url('/publishing/mobile-ko/dist/img/business/singlecell_img_mo.png');}
+.top-bg.personal01 {background-image: url('/publishing/mobile-ko/dist/img/business/bg_personal01.png');}
+.top-bg.personal02 {background-image: url('/publishing/mobile-ko/dist/img/business/bg_personal02.png');}
 
 

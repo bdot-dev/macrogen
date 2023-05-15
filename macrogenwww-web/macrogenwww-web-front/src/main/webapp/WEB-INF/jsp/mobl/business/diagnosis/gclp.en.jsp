@@ -273,7 +273,7 @@
 	        </div>
 	        <!--//modalImageViewer-->
 	        <!-- //2023 추가 비지니스 확대이미지 -->
-	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
+	        <script src="/publishing/mobile-en/dist/js/business.js"></script>
 	        <script>
 	     	// location.hash // 20230502
 	        if(location.hash != "#none") {    	

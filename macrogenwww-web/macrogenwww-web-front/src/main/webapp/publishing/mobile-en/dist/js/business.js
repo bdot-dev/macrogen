@@ -203,7 +203,7 @@ $('.btn-close').on('click', function () {
 $('.btnZoom').each(function(){
     var zoomIMG = $(this).attr("data-img");
     $(this).click(function(){
-        $(".modal-image-viewer .zoom_img img").attr("src","../../img/business/"+zoomIMG+"_zoom.png");
+        $(".modal-image-viewer .zoom_img img").attr("src","/publishing/mobile-en/dist/img/business/"+zoomIMG+"_zoom.png");
         modalIMG.show();
         showToastPopup();
     })

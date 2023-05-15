@@ -646,8 +646,9 @@
     if(location.hash != "#none") {
     	
    		var loadtab = $('.select-tab-tit-box .select_tit').filter(location.hash);
-   		loadtab.click();	// tab content view
-   		setTabContent(loadtab.index());	// scroll 이동
+   		setTabContent(loadtab.index());
+   		loadtab.click();	
+
     }
 		
     $(window).on("hashchange",function () { 
