@@ -12,8 +12,9 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">MACROGEN</li>
         <li class="breadcrumb-item">R&D</li>
-        <li class="breadcrumb-item">빅데이터연구소</li>
+        <li class="breadcrumb-item">빅테이터연구소</li>
     </ol>
 </nav>
 

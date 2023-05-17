@@ -12,8 +12,8 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">연구서비스</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">연구분석서비스</li> 
         <li class="breadcrumb-item">NGS</li>
     </ol>
 </nav>
@@ -52,14 +52,14 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Whole Genome Sequencing</a></div>
-                            <div class="swiper-slide "><a href="#">Whole Exome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Transcriptome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Epigenome Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
+                            <div class="swiper-slide active" id="genome"><a href="#">Whole Genome Sequencing</a></div>
+                            <div class="swiper-slide" id="exome"><a href="#">Whole Exome Sequencing</a></div>
+                            <div class="swiper-slide" id="transcriptome"><a href="#">Transcriptome Sequencing</a></div>
+                            <div class="swiper-slide" id="epigenome"><a href="#">Epigenome Sequencing</a></div>
+                            <!-- <div class="swiper-slide"><a href="#">Single Cell Multi-omics analysis</a></div>
                             <div class="swiper-slide"><a href="#">ATAC analysis</a></div>
-                            <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div>
-                            <div class="swiper-slide"><a href="#">Metagenome Sequencing</a></div>
+                            <div class="swiper-slide"><a href="#">Spatial Gene Expression analysis</a></div> -->
+                            <div class="swiper-slide" id="metagenome"><a href="#">Metagenome Sequencing</a></div>
                         </div>
                     </div>
                     <div class="btn-box">
@@ -79,10 +79,10 @@
                             <li><a href="#" onclick="setTabContent(1)">Whole Exome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(2)">Transcriptome Sequencing</a></li>
                             <li><a href="#" onclick="setTabContent(3)">Epigenome Sequencing</a></li>
-                            <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
+                            <!-- <li><a href="#" onclick="setTabContent(4)">Single Cell Multi-omics analysis</a></li>
                             <li><a href="#" onclick="setTabContent(5)">ATAC analysis</a></li>
-                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li>
-                            <li><a href="#" onclick="setTabContent(7)">Metagenome Sequencing</a></li>
+                            <li><a href="#" onclick="setTabContent(6)">Spatial Gene Expression analysis</a></li> -->
+                            <li><a href="#" onclick="setTabContent(4)">Metagenome Sequencing</a></li>
                         </ul>
                     </div>
 
@@ -94,7 +94,7 @@
                         $("._closebtn").on('click',function() {
                             $(".tab-modal").hide();
                         });
-                        <!--10.05 스크립트 추가-->
+                        //<!--10.05 스크립트 추가-->
                         $(document).mouseup(function (e){
                             var LayerPopup = $(".tab-modal");
                             if(LayerPopup.has(e.target).length === 0){
@@ -107,7 +107,7 @@
             </div>
             <!--슬라이드 스크립트-->
             <div class="info-box-wrap tab-content">
-                <!--Genome-->
+                <!--Whole Genome Sequencing-->
                 <div class="info-box show">
                     <p class="main-title font-h4">Whole Genome Sequencing</p>
                     <p class="subject">WGS는 유전체 전체를 한 번에 읽어 유전정보를 분석하는 방법입니다.</p>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <!--Exome-->
+                <!--Whole Exome Sequencing-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Whole Exome Sequencing</p>
                     <p class="subject">WES(Whole Exsome Sequencing)는 유전자가 존재한다고 알려져 있는 Exon 영역 (Exome)만을 선택적으로 분석하는
@@ -326,9 +326,11 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
-                    <p class="desc">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지
-                        않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소<br>
-                        나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
+                    <p class="desc">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지 않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 <br>나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
+                    <hr class="divider">
+                    <p class="font-h5 sub-title">ATAC analysis</p>
+                    <p class="subject">ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.</p>
+                    <p class="desc img_bottom">마크로젠은 국내 1위 세계 5위의 차세대염기서열분석(Next generation sequencing, NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠르게 제공하며, 고객 샘플 맞춤형 실험이 가능합니다. 유전자 발현을 위해 히스톤 단백질로 응축된 DNA(closed chromatin)가 풀려있는(open chromatin) 상태를 분석함으로써 RNA 중합 효소(polymerase)의 접근 가능한 영역을 유추하거나 전사 인자(transcripton factor) 결합 부위 및 뉴클레오솜(nucleosome) 위치에 대한 정보를 얻을 수 있습니다. DNA에 저장된 유전 정보가 실제로 역할을 하기 위해서는 먼저 전사체(RNA)로 발현이 되어야 합니다. DNA 발현은 DNA 서열 자체 변화로 조절되지만, DNA 염기서열의 변화 없이 나선 구조의 변화나 주변 단백질의 변화를 통해서도 조절할 수 있습니다. DNA 염기서열의 변화 없이 구조의 변화나 주변 단백질의 변화를 통한 유전자 기능의 변화를 연구하는 학문을 후성유전학(Epigenetics)이라 합니다.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
@@ -342,132 +344,6 @@
                                     <div class="title">Transcriptome Sequencing</div>
                                 </a>
                                 <a href="#" class="item next" onclick="setTabContent(4)">
-                                    <div class="title">Single Cell Multi-Omics analysis</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Cell-->
-                <div class="info-box">
-                    <p class="font-h4 main-title">Single Cell Multi-omics analysis</p>
-                    <p class="subject">국내 최초, 최다 경험을 바탕으로 고객 맞춤형 Single cell Multi-omics analysis 서비스를 제공합니다.</p>
-                    <p class="desc img_bottom">싱글셀 유전자 분석은 생물의 기능적, 구조적 단위인 하나의 세포에서 유전자 발현량 및 유전자 변화를 분석하는 것 입니다. 싱글셀
-                        단위에서 cellular heterogeneity, rare cell population, cellular differentiation, chromatin
-                        heterogeneity, immune profile, surface protein profile 등의 확인이 가능해짐에 따라 세포 치료제 선별, 줄기세포, 암 발달 및
-                        진행 과정 등 다양한 연구 분야에 응용됩니다. 마크로젠은 국내 1위 세계 5위의 차세대염기서열분석(Next generation sequencing, NGS) 수행능력을
-                        기반으로 높은 수준의 유전자 분석 데이터를 빠르게 제공합니다. 또한 24년간 축적한 업계 1위의 유전체 분석 기술력과 빅데이터 및 미개척 분야 연구 투자를 기반으로 싱글셀
-                        분석 서비스를 다양화하며 시장을 선도하고 있습니다. </p>
-                    <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-cell.png" alt="Single Cell Multi-omics analysis소개이미지">
-                    </div>
-                    <div class="box-gray-6">
-                        <div>
-                            <p class="title">single cell RNA sequencing</p>
-                            <p class="desc">싱글셀 유전자 발현 분석</p>
-                        </div>
-                        <div>
-                            <p class="title">single nucleus RNA sequencing</p>
-                            <p class="desc">싱글셀로 진행하기 어려운 샘플에서<br> 핵을 분리한 후 유전자 발현 분석</p>
-                        </div>
-                        <div>
-                            <p class="title">single cell immune profiling</p>
-                            <p class="desc">싱글셀 TCR, BCR 발현 분석</p>
-                        </div>
-                        <div>
-                            <p class="title">single cell surface protein profiling</p>
-                            <p class="desc">싱글셀 표면에 위치하는<br> 단백질 분석
-                            </p>
-                        </div>
-                        <div>
-                            <p class="title">single cell ATAC sequencing</p>
-                            <p class="desc">단일 핵의 DNA 의 풀림 정보 분석</p>
-                        </div>
-                        <div>
-                            <p class="title">single cell Multiome sequencing</p>
-                            <p class="desc">단일 핵의 DNA 의 풀림 정보와 유전자 발현을 동시에 분석</p>
-                        </div>
-                    </div>
-                    <p class="desc">싱글셀 유전자 분석 기술의 등장으로 기존 유전자 분석에서는 알 수 없던 극미량의 세포 유전자 분석과 소량으로 발현되는 유전자 분석이 가능합니다. 이를 통해 개인의 환경, 유전, 생물학적 특성을 세밀히 이해할 수 있으며 질병 예측과 예방, 맞춤 진단이 가능한 초정밀의학 실현에 한 단계 다가가게 되었습니다. 마크로젠은 국내 싱글셀 유전자 분석 프로젝트를 가장 많이 진행했으며, 싱글셀 전사체 분석(single Cell Gene Expression)과 공간 전사체 분석(Spatial Gene Expression) 서비스의 CSP(Certified Service Provider) 동시 인증을 가진 국내 유일의 업체입니다.  또한 새로 등장하는 싱글셀 유전체 분석 신기술을 빠르게 도입함으로써 싱글셀 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
-                    </p>
-                    <div class="btn-area">
-                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(3)">
-                                    <div class="title">Epigenome Sequencing</div>
-                                </a>
-                                <a href="#" class="item next" onclick="setTabContent(5)">
-                                    <div class="title">ATAC analysis</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--ATAC-->
-                <div class="info-box">
-                    <p class="font-h4 main-title">ATAC analysis</p>
-                    <p class="subject">ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.</p>
-                    <p class="desc img_bottom">마크로젠은 국내 1위 세계 5위의 차세대염기서열분석(Next generation sequencing, NGS) 수행능력을 기반으로
-                        높은 수준의 유전자 분석 데이터를 빠르게 제공하며, 고객 샘플 맞춤형 실험이 가능합니다.
-                        유전자 발현을 위해 히스톤 단백질로 응축된 DNA(closed chromatin)가 풀려있는(open chromatin) 상태를 분석함으로써 RNA 중합
-                        효소(polymerase)의 접근 가능한 영역을 유추하거나 전사 인자(transcripton factor) 결합 부위 및 뉴클레오솜(nucleosome) 위치에 대한 정보를
-                        얻을 수 있습니다. DNA에 저장된 유전 정보가 실제로 역할을 하기 위해서는 먼저 전사체(RNA)로 발현이 되어야 합니다. DNA 발현은 DNA 서열 자체 변화로
-                        조절되지만, DNA 염기서열의 변화 없이 나선 구조의 변화나 주변 단백질의 변화를 통해서도 조절할 수 있습니다. DNA 염기서열의 변화 없이 구조의 변화나 주변 단백질의
-                        변화를 통한 유전자 기능의 변화를 연구하는 학문을 후성유전학(Epigenetics)이라 합니다.</p>
-                    <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-atac.png" alt="ATAC analysis">
-                    </div>
-                    <p class="desc">이를 분석하는 여러 방법 중 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 ATAC(Assay for Transposase-Accessible
-                        Chromatin)서비스를 제공하는국내 기업은 마크로젠이 유일합니다. ATAC 분석을 통해 응축되어 있던 DNA가 RNA 전사 과정을 위해 풀려 있는 부분의 서열을 알게
-                        됨으로써 DNA의 염기 서열이 동일할지라도 RNA로 어떻게 전사가 조절되는지 확인 가능합니다. </p>
-                    <div class="btn-area">
-                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(4)">
-                                    <div class="title">Single Cell Multi-omics analysis</div>
-                                </a>
-                                <a href="#" class="item next" onclick="setTabContent(6)">
-                                    <div class="title">Spatial Gene Expression analysis</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Spatial-->
-                <div class="info-box">
-                    <p class="main-title font-h4">Spatial Gene Expression analysis</p>
-                    <p class="subject">조직의 공간 정보와 유전체 발현 정보를 동시에 확인 할 수 있는 최신 연구 분석 방법입니다. </p>
-                    <p class="desc img_bottom">위치 기반 전사체 분석은 가장 최신의 유전자 분석 기술로, 세포들의 유전자 정보와 세포들이 어느 위치에 존재하는지를 동시에 분석하는 기술입니다.  단일 세포로의 분리나 RNA 추출 없이 조직 자체의 유전자 발현을 바로 분석할 수 있는 기술이며, 이를 통해 유전자 발현 정보뿐만 아니라 조직이 가지고 있는 세포의 고유한 위치 정보까지 같이 얻을 수 있어 조직이질성(tissue heterogeneity)을 동시에 이해 할 수 있습니다. 또한 수술로 얻은 fresh 조직과 조직을 보관하기 위해 포르말린으로 고정시켜 저장해놓은 FFPE 조직 모두에 해당 분석 방법을 적용할 수 있다는 장점이 있습니다.  유전자 정보와 조직 위치 정보를 한번에 분석함으로써 질병의 치료 방향을 설정하거나 약효 예측 등에 활용 할 수 있습니다. 예를 들어 암 환자의 면역세포와 암세포의 유전자 정보와 위치를 확인함으로써 어떤 방법으로 치료를 해야 효과적일지, 암 세포의 전이가 진행되지는 않았는지, 약물 치료 후의 예후는 어떻게 예상되는지 등에 활용될 수 있습니다.</p>
-                    <div class="img">
-                        <img src="/publishing/pc-ko/dist/img/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
-                    </div>
-                    <p class="desc">마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게 도입함으로써 공간 유전체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
-                    </p>
-                    <div class="btn-area">
-                        <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                        <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(5)">
-                                    <div class="title">ATAC analysis</div>
-                                </a>
-                                <a href="#" class="item next" onclick="setTabContent(7)">
                                     <div class="title">Metagenome Sequencing</div>
                                 </a>
                             </div>
@@ -475,6 +351,10 @@
                     </div>
                 </div>
 
+                <!-- 2023-05-05::Single Cell Multi-omics analysis 삭제 -->
+                <!-- 2023-05-05::ATAC analysis 삭제 -->
+                <!-- 2023-05-05::Spatial Gene Expression analysis 삭제 -->
+                
                 <!--Metagenome-->
                 <div class="info-box">
                     <p class="font-h4 main-title">Metagenome Sequencing</p>
@@ -515,8 +395,8 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(6)">
-                                    <div class="title">Spatial Gene Expression analysis</div>
+                                <a href="#" class="item prev" onclick="setTabContent(3)">
+                                    <div class="title">Epigenome Sequencing</div>
                                 </a>
                             </div>
                         </div>
@@ -561,7 +441,7 @@
             $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
             swiper[0].slideTo(idx);
 
-            <!--탭메뉴 클릭시 페이지 변경-->
+            //<!--탭메뉴 클릭시 페이지 변경-->
             $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
             $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
             /*페이지 변경후 상단 이동*/
@@ -573,12 +453,24 @@
             $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
 
-        $('._swiperTab .swiper-slide').on('click', function(){
+        $('._swiperTab .swiper-slide').on('click', function(){ 
             var idx = $(this).index();
-            setTabContent(idx)
+            setTabContent(idx) 
         });
 
         $('.swiper-notification').remove();
+        
+        
+     	// location.hash // 20230502
+        if(location.hash != "#_tab-box") {
+        	var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
+        }
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
     </script>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
 

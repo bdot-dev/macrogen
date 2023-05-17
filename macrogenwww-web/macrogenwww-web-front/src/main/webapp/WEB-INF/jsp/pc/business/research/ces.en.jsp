@@ -11,8 +11,8 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">Research</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">Research Services</li> 
         <li class="breadcrumb-item">CES</li>
     </ol>
 </nav>
@@ -47,48 +47,17 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-                            <div class="swiper-slide active"><a href="#">Standard Sequencing</a></div>
-                            <div class="swiper-slide "><a href="#">Identification</a></div>
-                            <div class="swiper-slide"><a href="#">Fragment</a></div>
-                            <div class="swiper-slide"><a href="#">Customized Sequencing</a></div>
-                            <div class="swiper-slide"><a href="#">Human ID</a></div>
+                            <div class="swiper-slide active" id="standard"><a href="#">Standard Sequencing</a></div>
+                            <div class="swiper-slide" id="identification"><a href="#">Identification</a></div>
+                            <div class="swiper-slide" id="fragment"><a href="#">Fragment</a></div>
+                            <div class="swiper-slide" id="customized"><a href="#">Customized Sequencing</a></div>
+                            <div class="swiper-slide" id="human"><a href="#">Human ID</a></div>
                             <!--<div class="swiper-slide"><a href="#">Gene Sythesis</a></div>-->
                             <!--09.23 3depth로 변경예정이여서 주석처리하겠습니다.-->
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--탭메뉴 스크립트-->
-            <!--10.08 앵커포인트 스크립트 완료-->
-            <script>
-                $('._swiperTab .swiper-slide').on('click', function(){
-                    var idx = $(this).index();
-
-                    $(this).addClass('active').siblings().removeClass('active');
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-                });
-
-                function setTabContent(idx){
-                    $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-
-                    <!--탭메뉴 클릭시 페이지 변경-->
-                    $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-                    $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-                    /*페이지 변경후 상단 이동*/
-                    fnMove();
-                }
-
-
-
-                /*탭메뉴 상단으로 이동*/
-                function fnMove(){
-                    var offset = $("#_tab-box").offset();
-                    $('html, body').animate({scrollTop : offset.top - 95}, 100);
-                }
-            </script>
+            </div>           
 
             <div class="info-box-wrap tab-content">
                 <!--Standard Sequencing-->
@@ -474,6 +443,49 @@
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
+    
+	<!--탭메뉴 스크립트-->
+    <!--10.08 앵커포인트 스크립트 완료-->
+    <script>
+        $('._swiperTab .swiper-slide').on('click', function(){
+            var idx = $(this).index();
 
+            $(this).addClass('active').siblings().removeClass('active');
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        });
+
+        function setTabContent(idx){
+            $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+            /*페이지 변경후 상단 이동*/
+            fnMove();
+        }
+
+
+
+        /*탭메뉴 상단으로 이동*/
+        function fnMove(){
+            var offset = $("#_tab-box").offset();
+            $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+        
+     	// location.hash // 20230502 
+        if(location.hash != "#_tab-box") {
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
+        }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
+    </script>
 
 </body>

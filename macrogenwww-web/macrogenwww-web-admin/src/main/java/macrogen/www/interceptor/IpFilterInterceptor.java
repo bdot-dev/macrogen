@@ -53,7 +53,7 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 		
 		//모바일 기기 체크
 		String userAgent = request.getHeader("User-Agent").toUpperCase();
-		
+
 		boolean devChk = false; 
 		if(userAgent.indexOf(IS_MOBILE) > -1) {
 			LOGGER.info("MOBILE");
@@ -65,38 +65,33 @@ public class IpFilterInterceptor extends HandlerInterceptorAdapter {
 		List<IpFilterVo> allowedIpList = ipFilterService.listAll();
 
 		//ip 체크
+	
 		
-
-		try {
-			
-			boolean ipChk = false;
-			
-			String clientIp = CommonStringUtil.getClientIp(request);
-			LOGGER.info("userIp : "+clientIp);
-			
-			if(allowedIpList.size()==0) {
-				ipChk = true;
-			}else if(allowedIpList.size()>0) {
-				for(int i=0;i<allowedIpList.size();i++) {
-					if(clientIp.equals(allowedIpList.get(i).getIp())) {
-						ipChk = true;
-					}
+		boolean ipChk = false;
+		
+		String clientIp = CommonStringUtil.getClientIp(request);
+		LOGGER.info("userIp : "+clientIp);
+		
+		if(allowedIpList.size()==0) {
+			ipChk = true;
+		}else if(allowedIpList.size()>0) {
+			for(int i=0;i<allowedIpList.size();i++) {
+				if(clientIp.equals(allowedIpList.get(i).getIp())) {
+					ipChk = true;
 				}
 			}
-
-			if(ipChk) {
-				return true;
-			}
-			else if(!ipChk) {
-				response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
-				response.setHeader("Location", "/accessError.jsp");
-			}
-			
-		} catch (Exception e) {
-			LOGGER.debug(e.getMessage());
 		}
 
-		
+		if(ipChk) {
+			return true;
+		}
+		else if(!ipChk) {
+			//response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
+			//response.setHeader("Location", "/accessError.jsp");
+			LOGGER.info("IP Access Error");
+			throw new Exception();
+		}
+			
 		return true;
 	}
 

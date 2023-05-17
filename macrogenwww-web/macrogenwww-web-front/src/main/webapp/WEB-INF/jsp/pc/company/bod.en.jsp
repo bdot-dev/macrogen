@@ -37,6 +37,9 @@
                     <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">
                         <span>CEO</span>
                     </a>
+                    <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">
+                        <span>Leadership Team</span>
+                    </a>
                 </div>
             </nav>
             <script>
@@ -313,6 +316,75 @@
 	                      </div>
                     </div>
                     <!-- e  인사말-->
+                </div>
+                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-tab-3">
+                    <!-- s  Leadership Team-->
+                    <div class="section-leader" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="title">
+                            <span data-aos="fade-up" data-aos-duration="600">Leadership</span>
+                            <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Team</span>
+                        </div>
+                    
+                        <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                            <li class="item"></li>   
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_01.png" alt="">
+                                    <p class="name">Management Support Center<strong>Yoo Seong-hyun</strong></p>
+                                </span>
+                            </li>     
+                            <li class="item first">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_02.png" alt="">
+                                    <p class="name">Digital Innovation Unit<strong>Joo Chang-nam</strong></p>
+                                </span>
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_03.png" alt="">
+                                    <p class="name">Genome Business Unit<strong>Lee Eung-ryoung</strong></p>
+                                </span>
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_04.png" alt="">
+                                    <p class="name">Personal Genome Business Unit<strong>Hwang Sang-joon</strong></p>
+                                </span>
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_05.png" alt="">
+                                    <p class="name">Clinical Genome Business Unit<strong>Kwon Nak-jung</strong></p>
+                                </span>
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_06.png" alt="">
+                                    <p class="name">New Business Innovation Unit<strong>Kim Jong-yoon</strong></p>
+                                </span>
+                            </li>                                
+                        </ul>
+                    </div>
+                    <script>
+                        $(document).ready(function(){                                                        
+                            var obj;
+                            $('#nav-tab-3').on('click',function (){                               
+                                if(obj == undefined){
+                                    obj = setTimeout(function() {
+                                        animate();
+                                    }, 160);
+                                }                                                                              
+                            })
+                            function animate(){
+                                $('._thumbnailGrid').gridalicious({
+                                    animate: true,
+                                    selector: '.item',
+                                    width: 535
+                                });
+                            }
+                        });
+                    </script>
+                    <!-- e  Leadership Team-->
                 </div>
             </div>
         </div>

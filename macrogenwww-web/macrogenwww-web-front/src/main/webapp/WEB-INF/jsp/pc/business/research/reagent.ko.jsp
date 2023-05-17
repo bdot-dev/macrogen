@@ -2,12 +2,12 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg business_bg reagent">
+    <div class="full-bg business_bg reagent">  
         <!--header 수정시 메인 header 같이 수정해주세요-->
 		<header class="header" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
-        <div class="frame frameB">
+        <div class="frame frameB"> 
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -59,7 +59,7 @@
                     <div class="info">
                     	<p class="title">QR코드를 스캔해주세요.</p><!--2023-04-20 문구변경-->
                     	<p class="desc">왼쪽 QR코드를 스마트폰으로 스캔하시면 Macrogen Axen™ 홈페이지로 이동할 수 있습니다.</p><!--2023-04-20 문구변경-->
-                    	<a href="https://axen.modoo.at/">자세히 보기</a>
+                    	<a href="https://axen.modoo.at/" target="_blank">자세히 보기</a>
                     </div>
                 </div>            
                 <div class="btn-area">
