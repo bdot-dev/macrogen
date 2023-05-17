@@ -70,7 +70,7 @@
         </div>
 
         <div class="item">
-            <div class="title"><a href="/${rc.locale.language }/rnd/institute/precision-medicine">R&#47;D</a></div>
+            <div class="title"><a href="/${rc.locale.language }/rnd/institute/precision-medicine">R&amp;D</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">정밀의학연구소</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/bioinformatics">생명정보학연구소</a></li>
@@ -246,7 +246,7 @@
             <ul>
                 <li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>
                 <li><a href="/${rc.locale.language }/business/spatital">Spatial Transcriptome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Statial)</a></li> <!-- 신규 추가 -->
+                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Spatial)</a></li> <!-- 신규 추가 -->
             </ul>
         </div>
         <!-- //2023-04-27 수정 -->

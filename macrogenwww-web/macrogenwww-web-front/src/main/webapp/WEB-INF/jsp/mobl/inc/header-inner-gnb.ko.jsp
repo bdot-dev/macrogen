@@ -158,7 +158,7 @@
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/singlecell-multi">- Single Cell Multi-omics Analysis</a></li>
                                     <li><a href="/${rc.locale.language }/business/spatital">- Spatial Transcriptome Analysis</a></li>
-                                    <li><a href="/${rc.locale.language }/business/singlecell">- Single Cell (In situ / Statial)</a></li>
+                                    <li><a href="/${rc.locale.language }/business/singlecell">- Single Cell (In situ / Spatial)</a></li>
                                 </ul>
                             </li>
                         </ul>

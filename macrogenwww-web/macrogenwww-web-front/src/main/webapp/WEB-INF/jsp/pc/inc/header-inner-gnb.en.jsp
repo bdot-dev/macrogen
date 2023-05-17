@@ -232,7 +232,7 @@
             <ul>
                 <li><a href="/${rc.locale.language }/business/singlecell-multi">Single Cell Multi-omics Analysis</a></li>
                 <li><a href="/${rc.locale.language }/business/spatital">Spatial Transcriptome Analysis</a></li>
-                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Statial)</a></li> <!-- 신규 추가 -->
+                <li><a href="/${rc.locale.language }/business/singlecell">Single Cell (In situ / Spatial)</a></li> <!-- 신규 추가 -->
             </ul>
         </div>
         <!-- //2023-05-02 수정 -->

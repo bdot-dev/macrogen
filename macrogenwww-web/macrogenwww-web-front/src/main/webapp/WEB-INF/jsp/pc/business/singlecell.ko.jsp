@@ -32,7 +32,7 @@
         <div class="section_business single_cell">
             <div class="subject-box">
                 <p class="font-h4 title">Single cell multiomics에 대한 다양한 경험을 바탕으로 연구자에게 <br>최적화된 단일세포 공간 전사체 분석 데이터를 제공하겠습니다.</p>
-                <p class="subject info">SinCancer Research, Immunology, Neuroscience 등 다양한 분야에서 Spatial Transcriptomics 및 In Situ 분석을 통해 건강, 질병의 진단, 모니터링, 치료 등의 연구에 기여합니다.</p>
+                <p class="subject info">Cancer Research, Immunology, Neuroscience 등 다양한 분야에서 Spatial Transcriptomics 및 In Situ 분석을 통해 건강, 질병의 진단, 모니터링, 치료 등의 연구에 기여합니다.</p>
             </div>
             
             <!--탭 슬라이드-->
@@ -196,7 +196,7 @@
                             <tr>
                                 <th scope="row">RNA & Protein Assay</th>
                                 <td>
-                                    Human Breast Gene Expression Panel (280 genes + Customize up to 100 genens)<br>
+                                    Human Breast Gene Expression Panel (280 genes + Customize up to 100 genes)<br>
                                     Extensive panel roadmap (Human Brain, Lung, Skin, Kidney, Pancreas 등)<br>
                                     <span class="point">다양한 RNA Target별 분석 가능</span>
                                 </td>
