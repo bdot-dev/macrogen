@@ -194,7 +194,7 @@
 	                            <tr>
 	                                <th scope="row">RNA & Protein Assay</th>
 	                                <td>
-	                                    Human Breast Gene Expression Panel (280 genes + Customize up to 100 genens)<br>
+	                                    Human Breast Gene Expression Panel (280 genes + Customize up to 100 genes)<br>
 	                                    Extensive panel roadmap (Human Brain, Lung, Skin, Kidney, Pancreas)<br>
 	                                    <span class="point">Various RNA targets analysis can be provided upon request</span>
 	                                </td>
