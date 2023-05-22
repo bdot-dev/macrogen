@@ -12,11 +12,11 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">연구서비스</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">연구분석서비스</li>
         <li class="breadcrumb-item">OLIGO</li>
     </ol>
-</nav>
+</nav> 
 
       <div class="hero-title">OLIGO</div>
       <a href="#_tab-box" class="btn btn-round btn-service">
@@ -48,8 +48,8 @@
       <!--탭 링크-->
       <div class="tab-box" id="_tab-box">
       	<div class="tab-tit">
-        	<p class="font-h4 title active">DNA Oligo Synthesis</p>
-        	<p class="font-h4 title">RNA Oligo Synthesis</p>
+        	<p class="font-h4 title active" id="dna">DNA Oligo Synthesis</p>
+        	<p class="font-h4 title" id="rna">RNA Oligo Synthesis</p>
       	</div>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
@@ -65,7 +65,7 @@
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
-              <div class="swiper-slide "><a href="#">Double Strand RNA</a></div>
+              <div class="swiper-slide"><a href="#">Double Strand RNA</a></div>
             </div>
           </div>
         </div>
@@ -107,6 +107,17 @@
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
         }
+          
+     	// location.hash // 20230502
+        if(location.hash != "#_tab-box") {
+        	var loadtab = $('.tab-tit .title').filter(location.hash);
+        	loadtab.click();	// tab content view
+        	setTabContent(loadtab.index());	// scroll 이동
+        }
+     	
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
       </script>
 
       <div class="info-box-wrap tab-content active">

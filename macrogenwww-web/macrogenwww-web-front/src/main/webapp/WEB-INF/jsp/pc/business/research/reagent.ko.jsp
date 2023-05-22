@@ -2,21 +2,21 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg business_bg reagent">
+    <div class="full-bg business_bg reagent">  
         <!--header 수정시 메인 header 같이 수정해주세요-->
 		<header class="header" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
-        <div class="frame frameB">
+        <div class="frame frameB"> 
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
-			        <li class="breadcrumb-item">Business</li>
-			        <li class="breadcrumb-item">연구서비스</li>
-			        <li class="breadcrumb-item">Reagent & LABware</li>
+			        <li class="breadcrumb-item">SERVICE</li><!--2023-04-20 문구변경-->
+			        <li class="breadcrumb-item">연구분석서비스</li><!--2023-04-20 문구변경-->
+			        <li class="breadcrumb-item">연구용 시약 및 소모품</li><!--2023-04-20 문구변경-->
 			    </ol>
 			</nav>
-            <div class="hero-title">Reagent & LABware</div>
+            <div class="hero-title">연구용 시약 및 소모품</div><!--2023-04-20 문구변경-->
            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>
@@ -27,7 +27,7 @@
         <div class="section_business reagent_conts">
             <!--메인 컨텐츠-->
 			<div class="subject-box">
-			    <p class="title font-h4">마크로젠은  생명과학 실험용 고품질 시약과 소모품을 자체 생산, 제공하며 METTLER TOLEDO사 협력 및 다양한 제품을 통해 자동화 프로세스를<br> 지원합니다.</p>
+			    <p class="title font-h4">마크로젠은 생명과학 실험용 고품질 시약과 소모품을 자체 생산하여 <br>제공하며, METTLER TOLEDO사와의 협력으로 더 다양한 제품과 <br>자동화 프로세스를 지원합니다.</p><!--2023-04-20 문구변경-->
 			    <p class="desc">
 				       마크로젠의 시약 전문 브랜드 Axen™은 분자생물학 실험에 사용되는 다양한 고품질 시약 라인업과 플라스틱 웨어 제품을 갖추고 있습니다.<br>
 					실험자들의 편리성과 신속성 그리고 정확한 실험결과를 위해 여러 소재와 재료들을 비교 분석하며, 철저한 품질 관리를 통해 자체 제품 생산이 이루어집니다.<br>
@@ -57,9 +57,9 @@
                         <img src="/publishing/pc-ko/dist/img/business/img-reagent-qr.png" alt="qr">
                     </div>
                     <div class="info">
-                    	<p class="title">휴대폰을 태그해주세요</p>
-                    	<p class="desc">왼쪽 QR코드를 스마트폰으로 스캔하시면 Macrogen Axen 홈페이지로 이동할 수 있습니다.</p>
-                    	<a href="https://axen.modoo.at/">자세히 보기</a>
+                    	<p class="title">QR코드를 스캔해주세요.</p><!--2023-04-20 문구변경-->
+                    	<p class="desc">왼쪽 QR코드를 스마트폰으로 스캔하시면 Macrogen Axen™ 홈페이지로 이동할 수 있습니다.</p><!--2023-04-20 문구변경-->
+                    	<a href="https://axen.modoo.at/" target="_blank">자세히 보기</a>
                     </div>
                 </div>            
                 <div class="btn-area">

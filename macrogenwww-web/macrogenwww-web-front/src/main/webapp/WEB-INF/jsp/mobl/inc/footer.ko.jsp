@@ -17,7 +17,7 @@
                     <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
                     <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
                     <option value="/${rc.locale.language }/company/sitemap">사이트맵</option>
-                    <option value="/${rc.locale.language }/company/contact-us">Contact us</option>
+                    <option value="/${rc.locale.language }/contact-us">Contact us</option>
                 </select>
             </li>
             <li>

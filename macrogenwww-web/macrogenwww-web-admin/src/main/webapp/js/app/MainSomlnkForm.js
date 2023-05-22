@@ -81,12 +81,17 @@ var MainSomlnkForm = (function($) {
 						return false;
 					}
 					if (!vm.resultVo.imageAtchId) {
-						alert('필수입력 - 대표');
+						alert('필수입력 - 대표 이미지');
 						return false;
 					}
 					if (!vm.resultVo.somlnkSj) {
 						alert('필수입력 - 제목');
 						vm.$refs.somlnkSj.focus();
+						return false;
+					}
+					if (!vm.resultVo.somlnkDt) {
+						alert('필수입력 - 내용');
+						vm.$refs.somlnkDt.focus();
 						return false;
 					}
 					if (!vm.resultVo.somlnkUrl) {

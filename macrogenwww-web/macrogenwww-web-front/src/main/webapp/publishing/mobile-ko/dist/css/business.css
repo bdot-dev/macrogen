@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.mb64 {margin-bottom: 64px;}
+.mb0 {margin-bottom: 0 !important;}
+.pt82 {padding-top: 82px !important;}
+.p_text01 {margin-top: 16px;font-size: 14px;line-height: 26px;letter-spacing: -0.5px;color: #909090;}
+.mr-10 {margin-right: -10px;}
+.tline {border-top: 1px solid #000;}
+.point {color: #2E87EF !important;}
+.section_business .btn_wrapper.flex {display: flex;align-items: flex-start;}
+.section_business .btn_wrapper.flex .btn {flex: 1;}
+.section_business .btn_wrapper.flex .btn + .btn {margin-left: 4px;margin-top: 0;}
+/* 비지니스 추가 스타일 공통 */
+.modal.modal-image-viewer .modal-dialog .modal-content .parent .zoom_img {position: relative;display: flex;align-items: center;height: 100vh;width: 100vw;max-width: 100vw;}
+.modal.modal-image-viewer .modal-dialog .modal-content .parent .zoom_img img {width: 100%;height: auto;}
+.section_business .subject-box .title {letter-spacing: -2px;}
+.section_business .subject-box .subject {letter-spacing: -0.5px;word-break: keep-all;}
+.section_business .subject-box .border-gray-box .img {margin-bottom: 0;}
+.section_business .subject-box .border-gray-box {border: 1px solid #e9e9e9;position: relative;}
+.section_business .info-box-wrap .border-gray-box.type02 {margin-bottom: 66px;}
+.section_business .btn-area02 {padding-top: 80px;border-top: 1px solid #e9e9e9;}
+.section_business .btn-area02 .btn > span {font-size: 18px;line-height: 34px;}
+.section_business .info-box-wrap .divider + .btn-area {padding-top: 16px;}
+.section_business .description {color: #909090;font-size: 14px;line-height: 26px;}
+.section_business .border-gray-box + .description {margin-top: 17px;}
+.section_business .info-box-wrap .border-gray-box.mb0 {margin-bottom: 0;}
+.section_business .img span {display: inline-block;width: 40px;height: 40px;position: absolute;bottom: 0px;right: 0px;background: rgba(144, 144, 144, 0.3);border-radius: 8px 0px 0px 0px;}
+.section_business .img span i {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.section_business .btn_wrapper .btn > span {font-size: 18px;}
+.section_business .btn_wrapper .btn.btn-primary > span {color: #fff;}
+.section_business .img + .img {margin-top: 40px;}
+.section_business .subject-box .btn.btn-white {border: 1px solid #D9D9D9;}
+.section_business .subject-box .btn.btn-sm {height: 56px;border-radius: 4px;line-height: 56px;}
+.section_business .subject-box .btn.btn-sm span {font-size: 16px;}
+.section_business .select-nav-box .desc {margin-bottom: 16px;}
+.section_business .c_000 {color: #000 !important;}
+.section_business .font-body-h + .list-area-group {margin-top: 40px;}
+.section_business .dot_list01>li {position: relative;padding-left: 15px;color: #454545;font-size: 16px;line-height: 32px;letter-spacing: -0.5px;padding-bottom: 8px;}
+.section_business .dot_list01>li::before {content: '';position: absolute;left: 0;top: 10px;width: 5px;height: 5px;border-radius: 50%;background: #454545;}
+.section_business .dot_list01>li:last-child {padding-bottom: 0;}
+.section_business .dot_list01>li.none {padding-left: 0;}
+.section_business .dot_list01>li.none::before {display: none;}
+.section_business .img + .font-body-b {margin-top: 16px;}
+.section_business .info-box-wrap .notice-text i {margin-top: 3px;}
+.section_business .info-box-wrap .info-box .img + .border-gray-box {margin-top: 42px;}
+.section_business .title,
+.section_business .desc {word-break: keep-all;}
+/* //비지니스 추가 스타일 공통 */
+/* 임상진단서비스_NGS기반유전자패널검사실 */
+.section_business .img_ngs_gene01 li {position: relative;}
+.section_business .img_ngs_gene01 i {display: block;position: absolute;left: 0;top: 0;width: 50px;height: 50px;border-radius: 50%;background:rgba(46, 135, 239, 0.2) url('../img/business/img_ngs_circle.png') center center no-repeat;background-size: 8px auto;}
+.section_business .img_ngs_gene01 ol>li {padding-left: 68px;padding-bottom: 22px;}
+.section_business .img_ngs_gene01 strong {display: block;color: #186BE8;font-size: 20px;line-height: 2.5;}
+.section_business .img_ngs_gene01 ul li {color: #186BE8;font-size: 16px;line-height: 26px;padding-left: 15px;padding-bottom: 8px;}
+.section_business .img_ngs_gene01 ul li::before {content: '';position: absolute;left: 0;top: 10px;width: 5px;height: 5px;border-radius: 50%;background: #2E87EF;}
+.section_business .img_ngs_gene01 ol>li::before {content: '';position: absolute;left: 24px;top: 0;bottom: 0;border-left: 2px dotted #2E87EF;}
+.section_business .img_ngs_gene01 ol>li:first-child:before {top: 22px;}
+.section_business .img_ngs_gene01 ol>li:last-child::before {bottom: auto;height: 24px;}
+.section_business .img_ngs_gene01 ol>li:last-child::after {display: none;}
+.section_business .img_ngs_gene01 ol>li::after {content: '';position: absolute;left: 18px;top: 60%;width: 14px;height: 9px;background:url('../img/business/img_ngs_arrow.png') center center no-repeat;background-size: 14px auto;}
+.section_business .img_ngs_gene02 {margin-top: 18px;}
+.section_business .img_ngs_gene02 .btn_down {position: relative;display: flex;align-items: center;width: 100%;padding:14px 79px 14px 62px;margin-bottom: 8px;color: #454545;font-size: 16px;line-height: 32px;letter-spacing: 0;border-radius: 5px;background: #F7F7F7 url('../img/common/ico-file-pdf.svg') left 24px center no-repeat;}
+.section_business .img_ngs_gene02 .btn_down::after {content: '';position: absolute;right: 22px;top: 50%;transform: translateY(-50%);width: 31px;height: 18px;border-left: 1px solid #e9e9e9;background: url('../img/common/ico-download-black.svg') right center no-repeat;background-size: 14px auto;}
+/* //임상진단서비스_NGS기반유전자패널검사실 */
+
+.section_business .subject-box.type02 {margin-bottom: 0;border-bottom: none;padding-bottom: 40px;}
+.top-bg.single_multi {background-image: url('../img/business/singlecell_img_mo.png');}
+.top-bg.spatital {background-image: url('../img/business/singlecell_img_mo.png');}
+.top-bg.personal01 {background-image: url('../img/business/bg_personal01.png');}
+.top-bg.personal02 {background-image: url('../img/business/bg_personal02.png');}
+

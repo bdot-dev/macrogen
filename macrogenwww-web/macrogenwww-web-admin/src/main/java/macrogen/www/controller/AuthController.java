@@ -5,7 +5,7 @@ import java.util.Map;
 
 
 import javax.annotation.Resource;
-
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,8 +51,9 @@ public class AuthController {
 	 */
 	@RequestMapping("/submit")
 	@ResponseBody
-	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo, MngrVo mngrVo) throws Exception {
+	public Map<String, Object> submit(@AuthenticationPrincipal MngrVo loginVo, MngrVo mngrVo, HttpSession session) throws Exception {
 		Map<String, Object> resultMap = new HashMap<>();
+		
 		mngrVo.setUpdusrSn(loginVo.getUserSn());
 		
 		MngrVo resultVo = new MngrVo();
@@ -61,9 +62,12 @@ public class AuthController {
 		
 		MngrVo userVo = new MngrVo();
 		userVo = mngrService.view(loginVo);
+		
 		if(loginVo.getLoginId().equals(mngrVo.getUserId())||loginVo.getLoginId()==mngrVo.getUserId()) {			
 			if(resultVo!=null&&userVo.getPasswordInputErrorCo()<5) {
-				resultMap.put("result", "success");
+				resultMap.put("result", "success"); 
+				session.setAttribute("auth", "success");
+				
 			}else if (resultVo==null&&userVo.getPasswordInputErrorCo()<5) {
 				userService.increasePasswordInputErrorCo(loginVo);
 				resultMap.put("result", "fail");

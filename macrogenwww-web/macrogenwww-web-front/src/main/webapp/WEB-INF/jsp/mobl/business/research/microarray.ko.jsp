@@ -65,9 +65,9 @@
                         <span class="text">Expression Micoarray</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">Expression Micoarray</a></li>
-                        <li class="option-value"><a href="#">Genome Microarray</a></li>
-                        <li class="option-value"><a href="#">Epigenome Microarray</a></li>
+                        <li class="option-value active" id="expression" onclick="setTabContent(0)"><a href="#">Expression Micoarray</a></li>
+                        <li class="option-value" id="genome" onclick="setTabContent(1)"><a href="#">Genome Microarray</a></li>
+                        <li class="option-value" id="epigenome" onclick="setTabContent(2)"><a href="#">Epigenome Microarray</a></li>
                     </ul>
                 </div>
 
@@ -974,7 +974,32 @@
     }
 
     init()
+	
+    // location.hash // 20230502
+    if(location.hash != "#none") {    	
+   		//var loadtab = $('._select-option .option-value').filter(location.hash);
+   		//loadtab.click();	// tab content view
+   		//setTabContent(loadtab.index());	// scroll 이동
+   		
+   		var loadtab = $('._select-option .option-value').filter(location.hash);
+   		// option click, business.js line 22 function onClickSelectOption
+   		loadtab.addClass('active').siblings().removeClass('active')
+        var idx = loadtab.index();
+        var $info = $(".info-box-wrap > div");
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+        textChange(loadtab);
+        setInfoSectionList(loadtab.text())
+        // scroll 이동
+        setTabContent(loadtab.index());    		
+    }
+		
+    $(window).on("hashchange",function () { 
+    	 if(location.hash != "#none"){
+      		location.reload();
+    	 }
 
+    });
 
 </script>
 
