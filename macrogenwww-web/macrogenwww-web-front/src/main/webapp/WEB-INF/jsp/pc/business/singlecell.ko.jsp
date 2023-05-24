@@ -41,8 +41,7 @@
                 <div class="slide-tab-wrap">
                     <div class="swiper-container tab-slide-box _swiperTab">
                         <div class="swiper-wrapper _swiperTab">
-                            <div class="swiper-slide active" ><a href="#">GeoMx DSP</a></div>
-                            <div class="swiper-slide "><a href="#">CosMx SMI</a></div>
+                            <div class="swiper-slide active"><a href="#">CosMx SMI</a></div>
                             <div class="swiper-slide "><a href="#">Xenium</a></div>
                         </div>
                     </div>
@@ -52,66 +51,9 @@
 
             <!-- 탭 컨텐츠 -->
             <div class="info-box-wrap tab-content">
-                <!-- GeoMx DSP -->
-                <div class="info-box show">
-                    <p class="font-h4 main-title ls0">Nanostring GeoMx® DSP</p>
-                    <p class="subject">Discover Where Biology Happens</p>
-                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
-                    <div class="table_wrap">
-                        <table class="table table-row">
-                            <colgroup>
-                                <col width="35%">
-                                <col width="65%">
-                            </colgroup>
-                            <tr>
-                                <th scope="row">Platform</th>
-                                <td>GeoMx® Digital Spatial Profiler</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">TAT</th>
-                                <td>ROI selection 후 5주</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">검체 타입</th>
-                                <td>
-                                    FFPE Block (보관 기한: 3년 / 35.3mm x 14.1 mm x 4-6 µm / Core Needle Biopsy 가능)<br>
-                                    Fresh Frozen Tissue (6개월 이내 Cutting, -80°C 보관 / 35.3mm x 14.1 mm x 4-6 µm )
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">RNA & Protein Assay</th>
-                                <td>
-                                    Human Whole Transcriptome Atlas (hWTA)<br>
-                                    Human Cancer Transcriptome Atlas (hCTA)<br>
-                                    Human Protein Assay<br>
-                                    그 외 Panel Assay에 대해 별도 문의 바랍니다.<br>
-                                    <span class="point">한번에 Section된 조직으로 RNA와 Protein 동시 WTA 분석이 가능합니다.</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="data_wrap">
-                        <div class="title">분석 데이터</div>
-                        <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_single_cell02.png" alt=""/></div>
-                    </div>
-                    <div class="btn-area">
-                        <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
-                        <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
-                    </div>
-                    <hr class="divider">
-                    <div class="board">
-                        <div class="navigation">
-                            <div class="content clearfix">
-                                <a href="#" class="item next"onclick="setTabContent(1)"><div class="title">CosMx SMI</div></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- //GeoMx DSP -->
 
                 <!-- CosMx SMI -->
-                <div class="info-box">
+                <div class="info-box show">
                     <p class="font-h4 main-title">Nanostring CosMx™ SMI</p>
                     <p class="subject">The First Fully-Integrated Single-Cell Spatial Biology Solution with the highest plex, multiomic capability and high resolution</p>
                     <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_single_cell03.png" alt=""/></div>
@@ -162,8 +104,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">GeoMx DSP</div></a>
-                                <a href="#" class="item next"onclick="setTabContent(2)"><div class="title">Xenium</div></a>
+                                <a href="#" class="item next"onclick="setTabContent(1)"><div class="title">Xenium</div></a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +156,7 @@
                     <div class="board">
                         <div class="navigation">
                             <div class="content clearfix">
-                                <a href="#" class="item prev" onclick="setTabContent(1)"><div class="title">CosMx SMI</div></a>
+                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">CosMx SMI</div></a>
                             </div>
                         </div>
                     </div>

@@ -13,11 +13,11 @@
                     <li class="breadcrumb-item">Home</li>
                     <li class="breadcrumb-item">SERVICE</li>
                     <li class="breadcrumb-item">임상분석서비스</li>
-                    <li class="breadcrumb-item">GCLP</li>
+                    <li class="breadcrumb-item">GCLP(임상시험검체분석)</li>
                 </ol>
             </nav>
             <div class="hero-title">GCLP</div>
-            <div class="slogan-sub">Good Clinical Laboratory Practice (임상시험검체분석)</div>
+            <div class="slogan-sub">Good Clinical Laboratory Practice</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>

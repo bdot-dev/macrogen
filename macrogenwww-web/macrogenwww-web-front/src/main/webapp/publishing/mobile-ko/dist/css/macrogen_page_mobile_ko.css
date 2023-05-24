@@ -2562,6 +2562,8 @@
     height: 1px; }
   .section_business .info-box-wrap .main-title {
     margin-bottom: 56px; }
+  .section_business .info-box-wrap .main-title.mb86 {
+  	margin-bottom: 86px; }
   .section_business .info-box-wrap .subject {
     color: #000;
     margin-bottom: 24px; }
@@ -3202,7 +3204,7 @@
       /*height: 36.9458%;*/
       height:100%;
       /*visual_01 이슈*/ }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper:before {
+      /* .main-wrap .main-bg .swiper-container .swiper-wrapper:before {
         content: '';
         background: url("../img/main/img-main_01.png") no-repeat center bottom/cover;
         opacity: 0.2;
@@ -3210,7 +3212,7 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        bottom: 0px; }
+        bottom: 0px; } */
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .visual:before, .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-duplicate-active .visual:before {
         content: '';
         display: block;
@@ -3469,12 +3471,12 @@
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet .path {
           display: none; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet:first-of-type.swiper-pagination-bullet-active .path {
-          animation: dash linear 92000ms; }
+          animation: dash linear 70000ms; }
         .main-wrap .main-bg .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active .path {
           display: inline-block !important;
           stroke-dasharray: 1000;
           stroke-dashoffset: 0;
-          animation: dash linear 42000ms;
+          animation: dash linear 68000ms;
           animation-iteration-count: unset; }
       .main-wrap .main-bg .swiper-container .swiper-pagination .fp-arc-loader {
         transform: rotate(-90deg); }

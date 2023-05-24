@@ -2538,6 +2538,8 @@
     height: 1px; }
   .section_business .info-box-wrap .main-title {
     margin-bottom: 56px; }
+  .section_business .info-box-wrap .main-title.mb86 {
+  	margin-bottom: 86px; }
   .section_business .info-box-wrap .subject {
     color: #000;
     margin-bottom: 24px; }
@@ -3076,7 +3078,7 @@
       /*height: 36.9458%;*/
       height: 100%;
       /*visual_01 이슈*/ }
-      .main-wrap .main-bg .swiper-container .swiper-wrapper:before {
+      /* .main-wrap .main-bg .swiper-container .swiper-wrapper:before {
         content: '';
         background: url("../img/main/img-main_01.png") no-repeat center bottom/cover;
         opacity: 0.2;
@@ -3084,7 +3086,7 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        bottom: 0px; }
+        bottom: 0px; } */
       .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active .visual:before, .main-wrap .main-bg .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-duplicate-active .visual:before {
         content: '';
         display: block;

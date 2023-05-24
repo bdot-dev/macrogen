@@ -144,7 +144,7 @@
                                             <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">- GCLP</a>
+                                    <li><a href="#">- GCLP(임상시험검체분석)</a>
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
