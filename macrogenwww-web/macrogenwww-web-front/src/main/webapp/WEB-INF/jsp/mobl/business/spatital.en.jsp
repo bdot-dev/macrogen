@@ -36,6 +36,51 @@
 	                    <p class="desc font-body">
 	                        As a CSP (Certified Service Provider) for spatial gene expression service, Macrogen is recognized for quick service delivery and a superior level of performance based on its NGS (Next Generation Sequencing) performance, and is ranked first in Korea and fifth in the world. We are also leading the market with diversified spatial sequencing services by rapidly introducing new spatial genome analysis techniques.
 	                    </p>
+	                    <hr class="divider" />
+	                    <p class="font-h4 main-title mb86">PLATFORM</p>
+	                    <p class="font-h4 main-title">Nanostring GeoMx® DSP</p>
+	                    <p class="desc font-body img_bottom">Discover Where Biology Happens</p>
+	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
+	                    <div class="table-scroll">
+	                        <table class="table table-row tline">
+	                            <colgroup>
+	                                <col width="35%">
+	                                <col width="65%">
+	                            </colgroup>
+	                            <tr>
+	                                <th scope="row">Platform</th>
+	                                <td>GeoMx® Digital Spatial Profiler</td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">TAT</th>
+	                                <td>5 Weeks after ROI section</td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">Sample type</th>
+	                                <td>
+	                                    FFPE Block (Storage period: 3 years / 35.3mm x 14.1 mm x 4-6 µm / Core Needle Biopsy available) <br>
+	                                    Fresh Frozen Tissue (Store at -80℃, in cutting, within 6 months/ 35.3mm x 14.1 mm x 4-6 µm )
+	                                </td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">RNA & Protein Assay</th>
+	                                <td>
+	                                    Human Whole Transcriptome Atlas (hWTA)<br>
+	                                    Human Cancer Transcriptome Atlas (hCTA)<br>
+	                                    Human Protein Assay<br>
+	                                    Please contact us for inquiries about other panel assays<br>
+	                                    <span class="point">We offer simultaneous whole transcriptome analysis (WTA) for RNA and protein from sectioned tissue.</span>
+	                                </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    <p class="font-h4 main-title">Data of Analysis</p>
+	                    <div class="border-gray-box mb0">
+	                        <div class="img">
+	                            <img src="/publishing/mobile-en/dist/img/business/img_single_cell02.png" alt="">
+	                            <span class="btnZoom" data-img="img_single_cell02"><i class="icon ico-zoom-white"></i></span>
+	                        </div>
+	                    </div>
 	                    <div class="btn-area">
 	                        <div class="btn-wrapper">
 	                            <a href="mailto:ngskr@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
@@ -50,6 +95,25 @@
 	            </div>
 	            <!--// 탭 컨텐츠 e-->
 	        </div>
+	        <!-- 2023 추가 비지니스 확대이미지 -->
+	        <div class="toast-popup">
+	            <p>You can enlarge it by clicking on the image.</p>
+	        </div>
+	        <!--modalImageViewer-->
+	        <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+	                    <div class="parent">
+	                        <div class="zoom_img"><img src="" alt=""></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--//modalImageViewer-->
+	        <!-- //2023 추가 비지니스 확대이미지 -->
+	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
+	        
 	    </div>
 	</div>
 

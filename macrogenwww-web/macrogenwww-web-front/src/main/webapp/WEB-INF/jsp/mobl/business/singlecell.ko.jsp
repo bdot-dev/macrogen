@@ -31,11 +31,10 @@
 	                <p class="title font-h4">PLATFORM</p>
 	                <div class="select-box">
 	                    <div class="selected-value _selected-value">
-	                        <span class="text">GeoMx DSP</span>
+	                        <span class="text">CosMx SMI</span>
 	                    </div>
 	                    <ul class="select-option _select-option">
-	                        <li class="option-value active"><a href="#">GeoMx DSP</a></li>
-	                        <li class="option-value"><a href="#">CosMx SMI</a></li>
+	                        <li class="option-value active"><a href="#">CosMx SMI</a></li>
 	                        <li class="option-value"><a href="#">Xenium</a></li>
 	                    </ul>
 	                </div>
@@ -44,69 +43,8 @@
 	
 	            <!-- 탭 컨텐츠 s-->
 	            <div class="info-box-wrap tab-content">
-	                <!--GeoMx DSP-->
-	                <div class="info-box show">
-	                    <p class="font-h4 main-title">Nanostring GeoMx® DSP</p>
-	                    <p class="desc font-body img_bottom">Discover Where Biology Happens</p>
-	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
-	                    <div class="table-scroll">
-	                        <table class="table table-row tline">
-	                            <colgroup>
-	                                <col width="35%">
-	                                <col width="65%">
-	                            </colgroup>
-	                            <tr>
-	                                <th scope="row">Platform</th>
-	                                <td>GeoMx® Digital Spatial Profiler</td>
-	                            </tr>
-	                            <tr>
-	                                <th scope="row">TAT</th>
-	                                <td>ROI selection 후 5주</td>
-	                            </tr>
-	                            <tr>
-	                                <th scope="row">검체 타입</th>
-	                                <td>
-	                                    FFPE Block (보관 기한: 3년 / 35.3mm x 14.1 mm x 4-6 µm / Core Needle Biopsy 가능)<br>
-	                                    Fresh Frozen Tissue (6개월 이내 Cutting, -80°C 보관 / 35.3mm x 14.1 mm x 4-6 µm )
-	                                </td>
-	                            </tr>
-	                            <tr>
-	                                <th scope="row">RNA & Protein Assay</th>
-	                                <td>
-	                                    Human Whole Transcriptome Atlas (hWTA)<br>
-	                                    Human Cancer Transcriptome Atlas (hCTA)<br>
-	                                    Human Protein Assay<br>
-	                                    그 외 Panel Assay에 대해 별도 문의 바랍니다.<br>
-	                                    <span class="point">한번에 Section된 조직으로 RNA와 Protein 동시 WTA 분석이 가능합니다.</span>
-	                                </td>
-	                            </tr>
-	                        </table>
-	                    </div>
-	                    <p class="font-h4 main-title">분석 데이터</p>
-	                    <div class="border-gray-box mb0">
-	                        <div class="img">
-	                            <img src="/publishing/mobile-ko/dist/img/business/img_single_cell02.png" alt="">
-	                            <span class="btnZoom" data-img="img_single_cell02"><i class="icon ico-zoom-white"></i></span>
-	                        </div>
-	                    </div>
-	                    <div class="btn-area pt82">
-	                        <div class="btn_wrapper flex">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
-	                            <a href="https://dna.macrogen.com/quotation/retrieveNgsQuotation.do?menuCd=QUO300" target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
-	                        </div>
-	                    </div>
-	                    <div class="board">
-	                        <div class="navigation pt-80 mb-0">
-	                            <div class="row g-0">
-	                                <div class="col disabled"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-	                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	                <!-- //GeoMx DSP -->
 	                <!--CosMx SMI-->
-	                <div class="info-box">
+	                <div class="info-box show">
 	                    <p class="font-h4 main-title">Nanostring CosMx™ SMI</p>
 	                    <p class="desc font-body img_bottom">The First Fully-Integrated Single-Cell Spatial Biology Solution with the highest plex, multiomic capability and high resolution</p>
 	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell03.png" alt=""/></div>
@@ -161,8 +99,8 @@
 	                    <div class="board">
 	                        <div class="navigation pt-80 mb-0">
 	                            <div class="row g-0">
-	                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
-	                                <div class="col" onclick="setTabContent(2)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
+	                                <div class="col disabled" ><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+	                                <div class="col" onclick="setTabContent(1)"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
 	                            </div>
 	                        </div>
 	                    </div>
@@ -217,7 +155,7 @@
 	                    <div class="board">
 	                        <div class="navigation pt-80 mb-0">
 	                            <div class="row g-0">
-	                                <div class="col" onclick="setTabContent(1)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
+	                                <div class="col" onclick="setTabContent(0)"><i class="icon ico-left-black"></i><span class="font-body-h-b">이전</span></div>
 	                                <div class="col disabled"><span class="font-body-h-b">다음</span><i class="icon ico-left-black"></i></div>
 	                            </div>
 	                        </div>

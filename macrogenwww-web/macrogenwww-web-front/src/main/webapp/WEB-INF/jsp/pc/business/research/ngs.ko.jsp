@@ -124,7 +124,7 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</li>
+                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
                             <li>NextSeq 500</li>
                         </ul>
                     </div>
@@ -134,7 +134,7 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</li>
+                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
                             <li>NextSeq 500 / MiSeq</li>
                             <li>PacBio Sequel I &#38; Sequel II</li>
                             <li>PromethION</li>
@@ -179,7 +179,7 @@
                         <div class="list-area">
                             <p class="title font-h8">Sequencing Platform</p>
                             <ul class="list-circle-dot">
-                                <li>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</li>
+                                <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
                                 <li>NextSeq 500</li>
                             </ul>
                         </div>
@@ -277,7 +277,7 @@
                     <div class="list-area margin_reset">
                         <p class="title font-h8">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>HiSeq 2500 / HiSeq 4000</li>
+                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq 4000 / HiSeq 2500</li>
                             <li>NextSeq 500</li>
                         </ul>
                     </div>
@@ -371,8 +371,8 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina Miseq / Hiseq2500 platform</li>
-                            <li>16S rRNA Full length → PacBio Sequel / Sequel2 platform </li>
+                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq4000 / HiSeq 2500 / MiSeq</li>
+                            <li>16S rRNA Full length → PacBio Revio / Sequel I &#38; Sequel II</li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -383,7 +383,7 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>Illumina Hiseq XTen / Hiseq 4000 / NovaSeq6000 platform</li>
+                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
                         </ul>
                     </div>
                     <div class="btn-area">

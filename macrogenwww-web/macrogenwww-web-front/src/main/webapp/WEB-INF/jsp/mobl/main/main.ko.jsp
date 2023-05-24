@@ -147,7 +147,7 @@
                     console.log(conCnt);
                     options = {}         
                 }else{
-                    options = {                        
+                    options = {
                         effect : 'fade', // 페이드 효과
                         loop: true, //반복
                         speed: 0,//속도
@@ -165,7 +165,6 @@
                                     'stroke-opacity="1" stroke-width="1px"></circle>' +
                                     '<circle cx="50%" cy="50%" r="4" fill="#FFF"></circle>' +
                                     '</svg></span>';
-                                //console.log('setSlider222');
                                 return bu;
                             },
                         },
@@ -183,7 +182,7 @@
                             }
                         }
                     }   
-                    $('.swiper_btn').delay(1000).fadeIn()     
+                    $('.swiper_btn').delay(1000).fadeIn()
                 }
 
                 mainSwiper = new Swiper($container, options)
