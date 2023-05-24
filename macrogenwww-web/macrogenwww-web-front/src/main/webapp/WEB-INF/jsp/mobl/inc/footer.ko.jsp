@@ -5,6 +5,7 @@
     <div class="info">
         <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
         <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
+        <p>대표자 : 김창훈</p>
         <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
     </div>
     <div class="link-list">
@@ -17,7 +18,7 @@
                     <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
                     <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
                     <option value="/${rc.locale.language }/company/sitemap">사이트맵</option>
-                    <option value="/${rc.locale.language }/company/contact-us">Contact us</option>
+                    <option value="/${rc.locale.language }/contact-us">Contact us</option>
                 </select>
             </li>
             <li>

@@ -83,10 +83,10 @@
                         <span class="text">CRISPR Knock-In/Out</span>
                     </div>
                     <ul class="select-option _select-option">
-                        <li class="option-value active"><a href="#">CRISPR Knock-In/Out</a></li>
-                        <li class="option-value"><a href="#">Genetically Engineered Mouse</a></li>
-                        <li class="option-value"><a href="#">Mass Reproduction</a></li>
-                        <li class="option-value"><a href="#">Additional</a></li>
+                        <li class="option-value active" onclick="setTabContent(0)" id="crispr"><a href="#">CRISPR Knock-In/Out</a></li>
+                        <li class="option-value" onclick="setTabContent(1)" id="gem"><a href="#">Genetically Engineered Mouse</a></li>
+                        <li class="option-value" onclick="setTabContent(2)" id="mass"><a href="#">Mass Reproduction</a></li>
+                        <li class="option-value" onclick="setTabContent(3)" id="additional"><a href="#">Additional</a></li>
                     </ul>
                 </div>
 
@@ -732,7 +732,32 @@
 
     init()
 
+	// location.hash // 20230502
+    if(location.hash != "#none") {    	
+   		//var loadtab = $('._select-option .option-value').filter(location.hash);
+   		//loadtab.click();	// tab content view
+   		//setTabContent(loadtab.index());	// scroll 이동
+   		
+   		var loadtab = $('._select-option .option-value').filter(location.hash);
+   		// option click, business.js line 22 function onClickSelectOption
+   		loadtab.addClass('active').siblings().removeClass('active')
+        var idx = loadtab.index();
+        var $info = $(".info-box-wrap > div");
+        $info.addClass('show').siblings().removeClass('show');
+        $info.eq(idx).addClass('show').siblings().removeClass('show');
+        textChange(loadtab);
+        setInfoSectionList(loadtab.text())
+        // scroll 이동
+        setTabContent(loadtab.index());    		
+    }
+		
+    $(window).on("hashchange",function () { 
+    	 if(location.hash != "#none"){
+      	location.reload();
+    	 }
 
+    });
+    
 </script>
 <!--비즈니스 스크립트 리펙토링 e-->
 

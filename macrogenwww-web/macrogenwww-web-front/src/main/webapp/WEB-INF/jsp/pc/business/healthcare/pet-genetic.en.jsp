@@ -12,9 +12,8 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">Healthcare</li>
-        <li class="breadcrumb-item">Pet DNA Test</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">Pet Healthcare</li>
     </ol>
 </nav>
 

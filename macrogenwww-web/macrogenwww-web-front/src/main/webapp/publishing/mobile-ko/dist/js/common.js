@@ -80,23 +80,25 @@ front.common = (function () {
 
     var commonHandler = function () {
         /* s Dropdown Menu */
-        var dropdown = $('.dropdown');
-
-        dropdown.on('click', function () {
-            $(this).attr('tabindex', 1).focus();
-            $(this).toggleClass('active');
-            $(this).find('.dropdown-menu').slideToggle(300);
-        });
-
-        dropdown.focusout(function () {
-            $(this).removeClass('active');
-            $(this).find('.dropdown-menu').slideUp(300);
-        });
-
-        $('.dropdown .dropdown-menu li').on('click', function () {
-            $(this).parents('.dropdown').find('span').text($(this).text());
-            $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
-        });
+        // 2023-04-17 Dropdown 수정
+        $('.dropdown').each(function(){
+            var dropdown = $(this);
+            dropdown.on('click', function () {
+                $(this).attr('tabindex', 1).focus();
+                $(this).toggleClass('active');
+                $(this).find('.dropdown-menu').slideToggle(300);
+            });
+            dropdown.focusout(function () {
+                $(this).removeClass('active');
+                $(this).find('.dropdown-menu').slideUp(300);
+            });
+            dropdown.find($('.dropdown-menu li')).on('click', function () {
+                dropdown.find(".select span").text($(this).text());
+                dropdown.find(".select span").addClass('active');
+                //$(this).parents().parents('.dropdown').find('span').text($(this).text());
+                dropdown.find('input').attr('value', $(this).attr('id'));
+            });
+        })
         /* e Dropdown Menu */
 
         /* s zoom */

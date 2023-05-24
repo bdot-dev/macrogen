@@ -108,7 +108,7 @@ public class DefaultAuthenticationSuccessHandler extends SavedRequestAwareAuthen
 				
 				Date now = new Date();
 				if (now.compareTo(expireDate.getTime()) > 0) {
-					response.sendRedirect("/myinfo/form?alert=expired");
+					response.sendRedirect("/myinfo/form?alert=expired"); // 2023.05.02
 					return;
 				}
 			}

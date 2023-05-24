@@ -6,7 +6,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import org.apache.http.HttpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
@@ -56,14 +60,54 @@ public class MyInfoController {
 	 * @throws Exception
 	 */
 	@RequestMapping("/form")
-	public String form(@AuthenticationPrincipal MngrVo loginVo, Model model) throws Exception {
+	public String form(@AuthenticationPrincipal MngrVo loginVo, Model model, HttpServletRequest request, 
+				HttpSession session, HttpServletResponse response) throws Exception {
+
 
 		MngrVo resultVo = new MngrVo();
-		resultVo.setLoginId(loginVo.getLoginId());
+		resultVo.setLoginId(loginVo.getLoginId()); 
+
 		resultVo = mngrService.viewByLoginId(resultVo);
 		resultVo.setMode("UPDATE");
 		model.addAttribute("resultVo", resultVo);
-		return "myinfo/form";
+		
+		String auth = (String)session.getAttribute("auth");
+		String alert = request.getParameter("alert");		
+		String retUrl = "";
+		
+		//auth = "fail";
+		if(auth != null && auth.equals("success")) {
+			retUrl = "/myinfo/form";
+
+		} else {
+			if(alert != null && alert.equals("expired")) {
+				retUrl = "/myinfo/form";
+
+			} else {
+				System.out.println("실패시");
+				//response.sendRedirect("/main");
+				return "redirect:/main";
+			}
+		}
+		
+		return retUrl;
+	
+		/*boolean type = false;
+		
+		if(auth.equals("success") && auth != null) {	
+			type = true;
+		}
+		
+		if(alert.equals("expired") && alert != null) {
+			type = true;
+		}
+		
+		if(type) {
+			response.sendRedirect("/myinfo/form");
+			return;
+		} else {
+			response.sendRedirect("/main");
+		}*/
 	}
 
 	/**

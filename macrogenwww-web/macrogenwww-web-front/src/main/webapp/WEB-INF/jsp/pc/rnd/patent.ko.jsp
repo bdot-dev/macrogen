@@ -9,7 +9,8 @@
         <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
-		        <li class="breadcrumb-item">R&D</li>
+		        <li class="breadcrumb-item">MACROGEN</li>
+		        <li class="breadcrumb-item">RESOURCE</li>
 		        <li class="breadcrumb-item active">특허</li>
 		    </ol>
 		</nav>

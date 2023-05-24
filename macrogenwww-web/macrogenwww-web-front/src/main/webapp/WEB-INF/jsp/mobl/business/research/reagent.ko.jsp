@@ -32,14 +32,14 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Reagent&<br>LABware</div>
+            <div class="font-h1">연구용 시약 및 <br>소모품</div><!--2023-04-20 문구변경-->
             <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>-->
         </div>
     </div>
     <div class="container">
         <div class="section_business reagent_conts">
 			<div class="subject-box">
-                <p class="title font-h4">마크로젠은  생명과학 실험용 고품질 시약과 소모품을 자체 생산, 제공하며 METTLER TOLEDO사 협력 및 다양한 제품을 통해 자동화 프로세스를 지원합니다.</p>  
+                <p class="title font-h4">마크로젠은 생명과학 실험용 고품질 시약과 소모품을 자체 생산하여 제공하며, METTLER TOLEDO사와의 협력으로 더 다양한 제품과 자동화 프로세스를 지원합니다.</p><!--2023-04-20 문구변경-->
                 <p class="subject font-body img_bottom" style="color: #454545">마크로젠의 시약 전문 브랜드 Axen™은 분자생물학 실험에 사용되는 다양한 고품질 시약 라인업과 플라스틱 웨어 제품을 갖추고 있습니다.<br>
 					실험자들의 편리성과 신속성 그리고 정확한 실험결과를 위해 여러 소재와 재료들을 비교 분석하며, 철저한 품질 관리를 통해 자체 제품 생산이 이루어집니다.<br>
 					핵산 추출, PCR, Real-time PCR 등 전반적인 분자생물학 실험에 사용되는 키트, 시약, 플라스틱 웨어 등 용도별

@@ -12,9 +12,9 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">헬스케어서비스</li>
-        <li class="breadcrumb-item">반려동물유전자분석</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">반려동물 헬스케어</li>
+        <li class="breadcrumb-item">반려동물 유전자검사</li>
     </ol>
 </nav>
 

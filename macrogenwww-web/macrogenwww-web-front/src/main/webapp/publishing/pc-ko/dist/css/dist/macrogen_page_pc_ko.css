@@ -9079,11 +9079,11 @@
 @keyframes subAnimation {
   from {
     opacity: 0;
-    background-size: 3840px 1960px;
+    background-size: 3840px 1200px;
   }
   to {
     opacity: 1;
-    background-size: 1920px 980px;
+    background-size: 1920px 600px;
   }
 }
 
