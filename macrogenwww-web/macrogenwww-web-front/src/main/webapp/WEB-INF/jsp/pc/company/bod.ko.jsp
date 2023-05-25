@@ -37,6 +37,9 @@
                     <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">
                         <span>대표이사</span>
                     </a>
+                    <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">
+                        <span>Leadership Team</span>
+                    </a>
                 </div>
             </nav>
             <script>
@@ -210,7 +213,7 @@
                     <!-- s  CEO -->
                     <div class="section-ceo-career">
                     <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                             <div class="sign">
+                            <div class="sign">
                                 <span class="font-h7">대표이사</span>
                                 <span class="font-h3">김창훈</span>
                             </div>
@@ -301,6 +304,101 @@
 	                      </div>
                     </div>
                     <!-- e  인사말-->
+                </div>
+                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-tab-3">
+                    <!-- s  Leadership Team-->
+                    <div class="section-leader" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="title">
+                            <span data-aos="fade-up" data-aos-duration="600">Leadership</span>
+                            <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Team</span>
+                        </div>
+                    
+                        <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                            <li class="item"></li>   
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_01.png" alt="">
+                                    <p class="name">경영지원총괄본부<strong>유성현 본부장</strong></p>
+                                </span>
+                                <ul class="txt">
+                                    <li>現) 마크로젠 최고재무책임자 CFO</li>
+                                    <li>前) SK종합화학 CFO</li>
+                                </ul>                                         
+                            </li>     
+                            <li class="item first">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_02.png" alt="">
+                                    <p class="name">디지털혁신본부<strong>주창남 본부장</strong></p>
+                                </span>
+                                <ul class="txt">
+                                    <li>現) 마크로젠 최고기술책임자(CTO)</li>
+                                    <li>前) 아마존 코리아 AWS 기술전문가</li>
+                                    <li>前) 삼성전자 무선사업부 전무</li>
+                                </ul>                                         
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_03.png" alt="">
+                                    <p class="name">지놈사업본부<strong>이응룡 본부장</strong></p>
+                                </span>
+                                <ul class="txt">
+                                    <li>現) 국가바이오빅데이터 시범사업 용역 총괄 책임</li>
+                                    <li>現) 한국유전학회 산학협력위원장 SCI급 연구논문 22편, 특허 11개</li>
+                                </ul>                                         
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_04.png" alt="">
+                                    <p class="name">개인지놈사업본부<strong>황상준 본부장</strong></p>
+                                </span>
+                                <ul class="txt">
+                                    <li>前) SK텔레콤 사업팀장 및 기업부설연구소장</li>
+                                    <li>前) ISO/TC212 국제표준화위원회 기술전문가위원</li>
+                                </ul>                                         
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_05.png" alt="">
+                                    <p class="name">임상지놈사업본부<strong>권낙중 본부장</strong></p>
+                                </span>
+                                <ul class="txt">                                            
+                                    <li>現) 정밀의학연구소 연구소장</li>
+                                    <li>前) 배재대학교 화학과 박사</li>
+                                </ul>                                         
+                            </li>     
+                            <li class="item">                                        
+                                <span class="img">
+                                    <img src="/publishing/pc-ko/dist/img/macrogen/img-team_06.png" alt="">
+                                    <p class="name">신성장혁신사업본부<strong>김종윤 본부장</strong></p>
+                                </span>
+                                <ul class="txt">                                            
+                                    <li>前) 어큐진 대표이사</li>
+                                    <li>前) 마크로젠 CES-Oligo사업 총괄</li>
+                                    <li>前) 마크로젠 게놈응용사업 총괄</li>
+                                </ul>                                         
+                            </li>                                
+                        </ul>
+                    </div>
+                    <script>
+                        $(document).ready(function(){
+                            var obj;
+                            $('#nav-tab-3').on('click',function (){                               
+                                if(obj == undefined){
+                                    obj = setTimeout(function() {
+                                        animate();
+                                    }, 160);
+                                }                                                                              
+                            })
+                            function animate(){
+                                $('._thumbnailGrid').gridalicious({
+                                    animate: true,
+                                    selector: '.item',
+                                    width: 535
+                                });
+                            }
+                        });
+                    </script>
+                    <!-- e  Leadership Team-->
                 </div>
             </div>
         </div>

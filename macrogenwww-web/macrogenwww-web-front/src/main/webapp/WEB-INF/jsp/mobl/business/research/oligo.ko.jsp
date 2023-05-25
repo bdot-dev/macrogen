@@ -57,8 +57,8 @@
             <!--OLigo 탭 네비 s-->
             <div class="select-nav-box _content-anchor" id="tab_anchor">
             	<div class="select-tab-tit-box">
-            		<div class="select_tit active">DNA</div>
-            		<div class="select_tit">RNA</div>
+            		<div class="select_tit active" id="dna">DNA</div>
+            		<div class="select_tit" id="rna">RNA</div>
             	</div>
                 <p class="title font-h4">Oligo Synthesis</p> 
                 <div class="select-box DNA active">
@@ -641,7 +641,21 @@
 
     init()
 
+	// location.hash // 20230502
+    if(location.hash != "#none") {
+    	
+   		var loadtab = $('.select-tab-tit-box .select_tit').filter(location.hash);
+   		setTabContent(loadtab.index());
+   		loadtab.click();	
 
+    }
+		
+    $(window).on("hashchange",function () { 
+    	if(location.hash != "#none"){
+        	location.reload(); 		
+    	}
+
+    });
 </script>
 
 <!--비즈니스 스크립트 리펙토링 e-->

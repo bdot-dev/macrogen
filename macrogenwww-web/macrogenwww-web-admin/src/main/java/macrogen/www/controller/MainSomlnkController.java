@@ -61,6 +61,8 @@ public class MainSomlnkController {
 		paginationInfo.setRecordCountPerPage(listVo.getRecordCountPerPage());
 		paginationInfo.setPageSize(listVo.getPageSize());
 
+		listVo.setBrdid("sns");
+		
 		listVo.setFirstIndex(paginationInfo.getFirstRecordIndex());
 		listVo.setLastIndex(paginationInfo.getLastRecordIndex());
 
@@ -117,6 +119,8 @@ public class MainSomlnkController {
 			@RequestBody MainSomlnkVo vo) throws Exception {
 		HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
+		vo.setBrdid("sns");
+		
 		vo.setRegisterSn(loginVo.getUserSn());
 		vo.setUpdusrSn(loginVo.getUserSn());
 		

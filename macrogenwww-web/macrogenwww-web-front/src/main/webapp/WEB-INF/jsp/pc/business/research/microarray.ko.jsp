@@ -12,9 +12,9 @@
       <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">연구서비스</li>
-        <li class="breadcrumb-item">OLIGO</li>
+        <li class="breadcrumb-item">Service</li> 
+        <li class="breadcrumb-item">연구분석서비스</li>
+        <li class="breadcrumb-item">Microarray</li>
     </ol>
 </nav>
 
@@ -48,40 +48,14 @@
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
-              <div class="swiper-slide active"><a href="#">Expression Microarray</a></div>
-              <div class="swiper-slide "><a href="#">Genome Microarray</a></div>
-              <div class="swiper-slide"><a href="#">Epigenome Microarray</a></div>
+              <div class="swiper-slide active" id="expression"><a href="#">Expression Microarray</a></div><!-- 20230502 div에 id 붙여줌. 링크 hash -->
+              <div class="swiper-slide" id="genome"><a href="#">Genome Microarray</a></div>
+              <div class="swiper-slide" id="epigenome"><a href="#">Epigenome Microarray</a></div>
             </div>
           </div>
         </div>
       </div>
-      <!--탭메뉴 스크립트-->
-      <script>
-        $('._swiperTab .swiper-slide').on('click', function(){
-          var idx = $(this).index();
-
-          $(this).addClass('active').siblings().removeClass('active');
-          <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-        });
-
-        function setTabContent(idx){
-          $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
-
-          <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
-          $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
-
-          /*페이지 변경후 상단 이동*/
-          fnMove();
-        }
-        /*탭메뉴 상단으로 이동*/
-        function fnMove(){
-          var offset = $("#_tab-box").offset();
-          $('html, body').animate({scrollTop : offset.top - 95}, 100);
-        }
-      </script>
+      
       <div class="info-box-wrap tab-content">
         <!--Expression Microarray-->
         <div class="info-box show">
@@ -654,5 +628,47 @@
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
+	<!--탭메뉴 스크립트-->
+    <!--10.08 앵커포인트 스크립트 완료-->
+    <script>
+        $('._swiperTab .swiper-slide').on('click', function(){
+            var idx = $(this).index();
 
+            $(this).addClass('active').siblings().removeClass('active');
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+        });
+
+        function setTabContent(idx){
+            $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
+
+            <!--탭메뉴 클릭시 페이지 변경-->
+            $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+            $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
+
+            /*페이지 변경후 상단 이동*/
+            fnMove();
+        }
+
+
+
+        /*탭메뉴 상단으로 이동*/
+        function fnMove(){
+            var offset = $("#_tab-box").offset();
+            $('html, body').animate({scrollTop : offset.top - 95}, 100);
+        }
+        
+     	// location.hash // 20230502 
+        if(location.hash != "#_tab-box") {
+        	
+       		var loadtab = $('._swiperTab .swiper-slide').filter(location.hash);
+       		loadtab.click();	// tab content view
+       		setTabContent(loadtab.index());	// scroll 이동
+        }
+   		
+        $(window).on("hashchange",function () { 
+        	location.reload();
+        });
+    </script>
 </body>

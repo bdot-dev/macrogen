@@ -56,7 +56,7 @@ public class DefaultController {
 		try {
 			String lang = LocaleContextHolder.getLocale().getLanguage();
 			if (!StringUtils.isEmpty(lang)) {
-				return lang;
+  				return lang;
 			} else {
 				return "ko";
 			}

@@ -16,6 +16,7 @@
 <link type="text/css" rel="stylesheet" href="/publishing/mobile-ko/dist/css/macrogen_page_mobile_ko.css?1221"/>
 <script src="/publishing/mobile-ko/dist/js/bundle.js?1221"></script>
 <script src="/publishing/mobile-ko/dist/js/common.js?1221"></script>
+<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script> 
 <![if !IE]>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"

@@ -38,6 +38,7 @@
 		<pattern>/*/main</pattern>
 		<pattern>/login</pattern>
 		<pattern>/upload/ck</pattern>
+		<pattern>/*/main-new</pattern>
 
 	</decorator>
 

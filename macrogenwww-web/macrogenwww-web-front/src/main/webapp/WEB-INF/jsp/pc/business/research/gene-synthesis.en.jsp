@@ -11,11 +11,11 @@
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">Business</li>
-        <li class="breadcrumb-item">Research</li>
+        <li class="breadcrumb-item">Service</li>
+        <li class="breadcrumb-item">Research Services</li> 
         <li class="breadcrumb-item">GENE SYNTHESIS</li>
     </ol>
-</nav>
+</nav> 
 
             <div class="hero-title">GENE SYNTHESIS</div>
         </div>

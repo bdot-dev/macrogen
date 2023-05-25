@@ -182,7 +182,7 @@ data.macrogen = {
       category: 'macrogen',
       page: '01Macrogen_06글로벌네트워크'
     },
-    <!--영문버전 제공 X-->
+    // <!--영문버전 제공 X-->
    /* {
       stateClass: 'complete',
       url: '01Macrogen_04채용_01인재상',
@@ -250,10 +250,28 @@ data.business ={
       page: '연구서비스_동물모델사업부'
     },
     {
-      stateClass: 'complete',
+      stateClass: 'waiting',
+      url: '임상진단서비스_정밀의학',
+      category: 'business',
+      page: '임상진단서비스_정밀의학'
+    },
+    {
+      stateClass: 'waiting',
       url: '임상진단서비스_암유전체검사',
       category: 'business',
       page: '임상진단서비스_암유전체검사'
+    },
+    {
+      stateClass: 'waiting',
+      url: '임상진단서비스_NGS기반유전자패널검사실',
+      category: 'business',
+      page: '임상진단서비스_NGS기반유전자패널검사실'
+    },
+    {
+      stateClass: 'waiting',
+      url: '임상진단서비스_GCLP',
+      category: 'business',
+      page: '임상진단서비스_GCLP'
     },
     {
       stateClass: 'complete',

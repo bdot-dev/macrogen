@@ -25,6 +25,8 @@
  v.0.1 주연 : 최초 작업 -- 2021.08.31
 |----------------------------------|
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');/* 2023-04-28 추가 */
 @keyframes scrollMove {
   0% {
     top: -100%; }
@@ -11293,7 +11295,7 @@ p {
   background: linear-gradient(106.65deg, #00ADA9 9.33%, #377EF9 93.88%); }
 
 .color-point-primary {
-  color: #2E87EF; }
+  color: #2E87EF !important; }
 
 .color-point-secondary {
   color: #186BE8; }
@@ -11391,23 +11393,30 @@ body {
   overflow: hidden; }
   .wrap .full-bg {
     width: 100%;
-    height: 100vh;
+    height: 360px;
     background-repeat: no-repeat;
     background-position: center center;
     animation: grow 2s;
-    background-size: 100%; }
+    background-size: cover; }
     .wrap .full-bg .frame {
       position: relative;
       display: flex;
       height: 100%;
       flex-direction: column;
-      justify-content: center;
-      padding: 0 20px; }
+      justify-content: flex-end;
+      padding: 0 20px 66px; }
       .wrap .full-bg .frame .font-h4 {
-        margin-bottom: 80px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 47px;
+        font-family: sans-serif;
+        letter-spacing: -1px;
+        /* margin-bottom: 80px; */
         color: #fff;
         word-break: keep-all; }
+      .wrap .full-bg .frame .scroll-wrap{display: none;}
       .wrap .full-bg .frame .font-slogan {
+        display: none;
         margin-bottom: 24px;
         font-size: 42px;
         line-height: 58px;
@@ -11423,7 +11432,10 @@ body {
         .wrap .full-bg .frame .font-slogan.en.ft39{
           font-size: 39px; }
       .wrap .full-bg .frame .font-h7-r {
-        margin-bottom: 24px;
+        margin-top: 17px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
         color: #fff;
         word-break: keep-all; }
   .wrap .top-bg {
@@ -11746,7 +11758,7 @@ body {
                 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li a {
                   display: flex;
                   width: 100%;
-                  height: 32px;
+                  /* height: 32px; */
                   align-items: center;
                   font-size: 16px;
                   line-height: 32px;
@@ -12131,6 +12143,8 @@ textarea::placeholder {
   .dropdown .select {
     cursor: pointer;
     display: block; }
+    .dropdown .select span {color: #d9d9d9;}
+    .dropdown .select span.active {color: #000;}
     .dropdown .select .ico-select-nor {
       position: absolute;
       width: 9px;
@@ -12700,16 +12714,14 @@ textarea::placeholder {
     cursor: pointer;
     border-radius: 0;
     border: 0; }
-    .tab-primary .nav-tabs .nav-link:first-child {
-      padding: 0 0 0 20px; }
-    .tab-primary .nav-tabs .nav-link:last-child {
-      padding: 0 20px 0 0; }
+    /* .tab-primary .nav-tabs .nav-link:first-child {padding: 0 0 0 20px; } */
+    /* .tab-primary .nav-tabs .nav-link:last-child {padding: 0 20px 0 0; } */
     .tab-primary .nav-tabs .nav-link span {
       display: inline-block;
       font-family: sans-serif;
       font-weight: bold;
       font-size: 18px;
-      line-height: 34px;
+      line-height: 24px;
       letter-spacing: -0.5px;
       color: #909090; }
     .tab-primary .nav-tabs .nav-link.active {
