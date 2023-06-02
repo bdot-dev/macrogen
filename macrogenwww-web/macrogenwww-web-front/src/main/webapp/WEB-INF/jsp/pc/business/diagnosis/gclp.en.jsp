@@ -287,7 +287,18 @@
 	                </div>
 	                <!-- //체보관 서비스 -->
 	                <div class="btn-area">
-	                    <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
+	                    <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a> -->
+			          <div class="btn-box">
+				          <div class="tit">Service Inquiry</div>
+				          <div class="email">
+				          	<span class="sub_tit">Email</span>
+				          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+				          </div>
+				          <div class="phone">
+				          	<span class="sub_tit">Phone</span>
+				          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+				          </div>
+			          </div>
 	                </div>
 	            </div>
 	            <!-- //탭 컨텐츠 -->

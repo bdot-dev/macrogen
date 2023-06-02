@@ -158,8 +158,6 @@
                     <p class="font-h4 main-title">BRCA1/2 유전자 검사 (Axen™ BRCA / Axen™ BRCA Premium)</p>
                     <p class="desc">유전성 유방암 및 난소암 등의 발병 위험도를 높이는 것으로 잘 알려진 BRCA1/2 유전자의 전 영역을 분석하거나, 혹은 BRCA1/2를 포함한 유관 유전자 총 53개를 분석합니다. 유방암 및 난소암 등에 가족력이 있어 유전적 변이에 의한 발병 위험도 예측 선별 검사의 역할을 하기도 하며, 확진받은 환자의 유관 유전자 변이에 대해 정밀한 검사를 통해 정확한 진단과 개인 맞춤 치료에도 도움을 줍니다.</p>
                     <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0201.png" alt=""/></div>
-                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0202.png" alt=""/></div>
-                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0203.png" alt=""/></div>
                     <hr class="divider">
                     <div class="board">
                         <div class="navigation">
@@ -188,7 +186,18 @@
                 </div>
                 <!-- //위암 검사 패널(Axen™ Gastric Cancer) -->
                 <div class="btn-area">
-                    <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+                    <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a> -->
+		          <div class="btn-box">
+			          <div class="tit">마크로젠 서비스 문의</div>
+			          <div class="email">
+			          	<span class="sub_tit">이메일문의</span>
+			          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+			          </div>
+			          <div class="phone">
+			          	<span class="sub_tit">전화문의</span>
+			          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+			          </div>
+		          </div>
                 </div>
             </div>
             <!-- //탭 컨텐츠 -->

@@ -132,7 +132,18 @@
 	                    <hr class="divider">
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -197,7 +208,18 @@
 	                    <hr class="divider">
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -239,7 +261,18 @@
 	                    <hr class="divider">
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
