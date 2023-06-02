@@ -156,9 +156,7 @@
 	                <div class="info-box">
 	                    <p class="font-h4 main-title">BRCA 1/2 Cancer Panel</p>
 	                    <p class="desc">Analysis can be done on the full range of the BRCA1/2 gene, well known to its association with an elevated risk for hereditary breast and ovarian cancers. <br>Alternatively, 53 relevant genes, including the BRCA1/2 can be analyzed. For those with a family history of breast cancer or ovarian cancer, selective screening can be conducted to forecast the risk of incidence caused by gene mutations. The thorough and precise analysis and testing conducted by Macrogen on gene mutations in patients diagnosed with cancer also helps in designing the best treatment program tailored to the individual’s needs.</p>
-	                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0201.png" alt=""/></div>
-	                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0202.png" alt=""/></div>
-	                    <div class="img"><img src="/publishing/pc-ko/dist/img/business/img_cancer_genome0203.png" alt=""/></div>
+	                    <div class="img"><img src="/publishing/pc-en/dist/img/business/img_cancer_genome0201.png" alt=""/></div>
 	                    <hr class="divider">
 	                    <div class="board">
 	                        <div class="navigation">
@@ -187,7 +185,18 @@
 	                </div>
 	                <!-- //위암 검사 패널(Axen™ Gastric Cancer) -->
 	                <div class="btn-area">
-	                    <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a>
+	                    <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inquiry</span></a> -->
+			          <div class="btn-box">
+				          <div class="tit">Service Inquiry</div>
+				          <div class="email">
+				          	<span class="sub_tit">Email</span>
+				          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+				          </div>
+				          <div class="phone">
+				          	<span class="sub_tit">Phone</span>
+				          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+				          </div>
+			          </div>
 	                </div>
 	            </div>
 	            <!-- //탭 컨텐츠 -->
