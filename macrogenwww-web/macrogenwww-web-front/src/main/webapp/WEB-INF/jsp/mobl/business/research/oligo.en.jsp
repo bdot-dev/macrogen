@@ -54,6 +54,7 @@
             	<div class="select-tab-tit-box">
             		<div class="select_tit active" id="dna">DNA</div>
             		<div class="select_tit" id="rna">RNA</div>
+            		<div class="select_tit" id="Peptide">Peptide</div>
             	</div>
                 <p class="title font-h4">Oligo Synthesis</p> 
                 <div class="select-box DNA active">
@@ -76,6 +77,14 @@
                     <ul class="select-option _select-option">
                         <li class="option-value active"><a href="#">Single Strand RNA</a></li>
                         <li class="option-value"><a href="#">Double Strand RNA</a></li>
+                    </ul>
+                </div>
+                <div class="select-box Peptide">
+                    <div class="selected-value _selected-value">
+                        <span class="text"></span>
+                    </div>
+                    <ul class="select-option _select-option">
+                        <li class="option-value active"></li>
                     </ul>
                 </div>
             </div>
@@ -381,6 +390,45 @@
                 </div>
             </div>
             <!-- RNA 탭 메뉴 e -->
+            <!-- Peptide 탭 메뉴 s -->
+            <div class="info-box-wrap tab-content">
+                <!--Peptide-->
+                <div class="info-box show">
+                    <p class="font-h4 main-title">Peptide Synthesis</p>
+                    <!-- <p class="subject font-body-h-b">Peptide synthesis service is provided by synthesizing a sequence designed by the customer for use in various studies.</p> -->
+                    <p class="desc font-body img_bottom">
+                    	Peptide synthesis service is provided by synthesizing a sequence designed by the customer for use in various studies.<br/><br/>
+                   		Macrogen's peptide synthesis service proceeds with synthesis using high-quality raw materials, and provides samples of desired purity through HPLC purification. In addition, we systematically manage all processes from ordering to delivery and provide high-quality peptides through MALDI-TOF mass spectrometry and HPLC analysis.<br /><br />
+						By synthesizing a wide range of peptides, it is possible to manufacture basic custom peptides, difficult modified peptides such as cyclic peptides and glyco peptides, and structure-based peptides. Sufficient consultation is conducted before the start of synthesis, and the situation is informed step by step until shipment, so that the experiment schedule can be managed smoothly.
+                   	</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img-oligo-peptide.png" alt="Peptide Synthesis">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Features</p>
+                            <ul class="list-circle-dot">
+                                <li><p>Amount : 3mg, 6mg</p></li>
+                                <li><p>Purity : &lt;85%, &lt;90%, &lt;95%</p></li>
+                                <li><p>Provide product via HPLC purification</p></li>
+                                <li><p>Provides high-quality peptides through the QC process of MALDI TOF and HPLC analysis</p></li>
+                                <li><p>Modification : Biotin, Phosphorylation, Disulfied Bond, FITC, TAMRA, CY3, CY5, Dabcyl, Dansyl, Cyclization, EDANS, K(Me), K(Me)2, K(ME)3, K(AC), Ser/Thr(Gal-GalNAc)</p></li>
+                                <li><p>If you want to synthesize more than that, please contact [oligo@macrogen.com] and inform us after confirming whether synthesis is possible</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <div class="btn-wrapper">
+                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
+                               target="_blank" class="btn btn-light"><span>Quotation</span></a></div>
+                        <div class="btn-wrapper"><a href="https://dna.macrogen.com/eng" target="_blank" class="btn btn-primary"><i
+                                class="icon ico-cart-white"></i><span>Order</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Peptide 탭 메뉴 e -->
         </div>
     </div>
     <!--v0.11 mo-ko랑 싱크 비즈니스 스크립트 추가-->
@@ -406,13 +454,26 @@
     		if($(this).text() === 'DNA') {
     			$('.select-box.DNA').addClass('active').siblings().removeClass('active');
     			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
-    			$('.select-box.DNA .option-value').eq(0).trigger('click')
+    			$('.select-box.DNA .option-value').eq(0).trigger('click');
+    			$('.select-nav-box .title.font-h4').css('display', 'block');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '56px');
     		}
     		else if ($(this).text() === 'RNA') {
     			$('.select-box.RNA').addClass('active').siblings().removeClass('active');
     			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
-    			$('.select-box.RNA .option-value').eq(0).trigger('click')
-    		}    		
+    			$('.select-box.RNA .option-value').eq(0).trigger('click');
+    			$('.select-nav-box .title.font-h4').css('display', 'block');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '56px');
+    		}
+    		else if ($(this).text() === 'Peptide') {
+    			$('.select-box.Peptide').addClass('active').siblings().removeClass('active');
+    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+    			$('.select-box.Peptide .option-value').eq(0).trigger('click');
+    			$('.select-box.Peptide').css('display', 'none');
+    			$('.select-nav-box .title.font-h4').css('display', 'none');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '26px');
+    			$('.info-box-wrap .main-title').css('margin-bottom', '20px');
+    		}
     	});
     }
 
