@@ -13,11 +13,11 @@
                     <li class="breadcrumb-item">Home</li>
                     <li class="breadcrumb-item">SERVICE</li>
                     <li class="breadcrumb-item">임상분석서비스</li>
-                    <li class="breadcrumb-item">GCLP</li>
+                    <li class="breadcrumb-item">GCLP(임상시험검체분석)</li>
                 </ol>
             </nav>
             <div class="hero-title">GCLP</div>
-            <div class="slogan-sub">Good Clinical Laboratory Practice (임상시험검체분석)</div>
+            <div class="slogan-sub">Good Clinical Laboratory Practice(임상시험검체분석)</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>
@@ -286,7 +286,18 @@
                 </div>
                 <!-- //체보관 서비스 -->
                 <div class="btn-area">
-                    <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+                    <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a> -->
+		          <div class="btn-box">
+			          <div class="tit">마크로젠 서비스 문의</div>
+			          <div class="email">
+			          	<span class="sub_tit">이메일문의</span>
+			          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+			          </div>
+			          <div class="phone">
+			          	<span class="sub_tit">전화문의</span>
+			          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+			          </div>
+		          </div>
                 </div>
             </div>
             <!-- //탭 컨텐츠 -->

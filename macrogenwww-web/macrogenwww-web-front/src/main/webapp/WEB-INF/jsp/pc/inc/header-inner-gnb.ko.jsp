@@ -228,7 +228,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/gclp#clin">GCLP</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/gclp#clin">GCLP(임상시험검체분석)</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">

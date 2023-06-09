@@ -32,6 +32,12 @@
 .section_business .tab-box .info {font-size: 17.8px;line-height: 32px;letter-spacing: -0.75px;padding: 38px 0 108px;}
 .section_business .info-box .img + .sub-title {margin-top: 67px;}
 .section_business .info-box-wrap>.btn-area {display: flex;justify-content: center;padding-top: 140px;}
+.section_business .info-box-wrap>.btn-area .btn-box {display: flex; justify-content: space-evenly; align-items: center; width: 100%; padding: 40px 0; background-color: #f7f7f7;}
+.section_business .info-box-wrap>.btn-area .btn-box .tit {font-size: 22px; font-weight: 700; font-family: 'Noto Sans KR'; line-height: 32px; letter-spacing: -0.75px; color: #2e87ef;}
+.section_business .info-box-wrap>.btn-area .btn-box .sub_tit {font-size: 16px; font-weight: 700; font-family: 'Noto Sans KR'; line-height: 32px; padding-right: 5px; position: relative;}
+.section_business .info-box-wrap>.btn-area .btn-box div:nth-child(2) .sub_tit::before {content: ''; position: absolute; top: 0; left: -30px; background: url('/publishing/pc-ko/dist/img/business/emil_icon.png') no-repeat center center; width: 20px; height: 20px;}
+.section_business .info-box-wrap>.btn-area .btn-box div:nth-child(3) .sub_tit::before {content: ''; position: absolute; top: 0; left: -30px; background: url('/publishing/pc-ko/dist/img/business/phone_icon.png') no-repeat center center; width: 20px; height: 20px;}
+.section_business .info-box-wrap>.btn-area .btn-box .num {font-size: 18px; font-weight: 400; font-family: 'Noto Sans KR'; line-height: 32px; border-bottom: 1px solid #454545; padding-bottom: 3px; color: #454545;}
 .section_business .tab-box .font-h4.title {letter-spacing: 0;}
 .section_business .subject02 {font-size: 16px;color: #454545;line-height: 30px;letter-spacing: -0.75px;}
 .section_business .info-box .desc02 {word-break: keep-all;line-height: 32px;letter-spacing: -0.75px;color: #454545;font-size: 18px;}
@@ -178,6 +184,17 @@ line-height: 22px;letter-spacing: -0.05em;
 .section_business.single_cell .data_wrap .title {margin-bottom: 19px;font-weight: 700;font-size: 22px;line-height: 27px;letter-spacing: 0.5px;}
 .section_business.single_cell {}
 /* //Single Cell */
+/* Spatital Transcriptome */
+.section_business.spatital .info-box .main-title {letter-spacing: 0;}
+.section_business.spatital .info-box .main-title.mb120 {margin-bottom: 120px;}
+.section_business.spatital table.table.table-row tbody tr th {text-align: left;}
+.section_business.spatital table.table tbody tr td {text-align: left;}
+.section_business.spatital .point {color: #2E87EF !important;}
+.section_business.spatital .table_wrap {margin-top: 63px;}
+.section_business.spatital .table_wrap p {margin-top: 10px;font-size: 14px;line-height: 20px;letter-spacing: -0.75px;}
+.section_business.spatital .data_wrap {margin-top: 73px;}
+.section_business.spatital .data_wrap .title {margin-bottom: 19px;font-weight: 700;font-size: 22px;line-height: 27px;letter-spacing: 0.5px;}
+/* Spatital Transcriptome */
 
 .business_bg.bg-singlemulti {background-image: url("../../../pc-ko/dist/img/business/bg_single_cell.png");}
 .business_bg.bg-spatital {background-image: url("../../../pc-ko/dist/img/business/bg_single_cell.png");}

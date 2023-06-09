@@ -66,7 +66,18 @@
 	                    <hr class="divider">
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">마크로젠 서비스 문의</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -101,7 +112,18 @@
 	                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">마크로젠 서비스 문의</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -135,7 +157,18 @@
 	                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>임상진단 관련 서비스 항목은 개인적으로 의뢰할 수 없으며, 서비스 이용을 위해서는 전문의료인을 통한 문의가 필요합니다.</span></p>
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">마크로젠 서비스 문의</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">

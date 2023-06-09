@@ -63,7 +63,18 @@
 	                    <hr class="divider">
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -98,7 +109,18 @@
 	                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">
@@ -132,7 +154,18 @@
 	                    <p class="notice-text"><i class="icon ico-info-blue"></i><span>Clinical diagnosis-related service items cannot be requested personally, and inquiries through professional medical personnel are required to use the service.</span></p>
 	                    <div class="btn-area">
 	                        <div class="btn_wrapper">
-	                            <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a>
+	                            <!-- <a href="mailto:ngsclinic@macrogen.com" target="_blank" class="btn btn-light"><span>Service Inquiry</span></a> -->
+					          <div class="btn-box">
+						          <div class="tit">Service Inquiry</div>
+						          <div class="email">
+						          	<i></i>
+						          	<a class="num" href="mailto:ngsclinic@macrogen.com">ngsclinic@macrogen.com</a>
+						          </div>
+						          <div class="phone">
+						          	<i></i>
+						          	<a class="num" href="tel:+82-2-2180-7222">+82-2-2180-7222</a>
+						          </div>
+					          </div>
 	                        </div>
 	                    </div>
 	                    <div class="board">

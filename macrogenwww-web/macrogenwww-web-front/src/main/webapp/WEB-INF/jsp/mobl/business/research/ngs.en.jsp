@@ -134,7 +134,7 @@
 	                        <div class="list-area">
 	                            <p class="font-body-h-b title">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</p></li>
+                                <li><p>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</p></li>
 	                                <li><p>NextSeq 500</p></li>
 	                            </ul>
 	                        </div>
@@ -147,7 +147,7 @@
 	                        <div class="list-area">
 	                            <p class="font-body-h-b title">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</p></li>
+                                <li><p>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</p></li>
 	                                <li><p>NextSeq 500 / MiSeq</p></li>
 	                                <li><p>PacBio Sequel I &#38; Sequel II</p></li>
 	                                <li><p>PromethION</p></li>
@@ -203,7 +203,7 @@
 	                        <div class="list-area">
 	                            <p class="title font-body-h-b">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>HiSeq 2500 / HiSeq 4000 / HiSeq X Ten / NovaSeq 6000</p></li>
+	                                <li><p>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</p></li>
 	                                <li><p>NextSeq 500</p></li>
 	                            </ul>
 	                        </div>
@@ -348,7 +348,7 @@
 	                        <div class="list-area">
 	                            <p class="title font-body-h-b">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>HiSeq 2500 / HiSeq 4000</p></li>
+	                                <li><p>NovaSeq X plus / NovaSeq 6000 / HiSeq 4000 / HiSeq 2500</p></li>
 	                                <li><p>NextSeq 500</p></li>
 	                            </ul>
 	                        </div>
@@ -485,10 +485,8 @@
 	                        <div class="list-area">
 	                            <p class="font-body-h-b title">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina
-	                                    Miseq /
-	                                    Hiseq2500 platform</p></li>
-	                                <li><p>16S rRNA Full length → PacBio Sequel / Sequel2 platform</p></li>
+	                                <li><p>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq4000 / HiSeq 2500 / MiSeq</p></li>
+	                                <li><p>16S rRNA Full length → PacBio Revio / Sequel I &#38; Sequel II</p></li>
 	                            </ul>
 	                        </div>
 	                    </div>
@@ -507,7 +505,7 @@
 	                        <div class="list-area">
 	                            <p class="font-body-h-b title">Sequencing Platform</p>
 	                            <ul class="list-circle-dot">
-	                                <li><p>Illumina Hiseq XTen / Hiseq 4000 / NovaSeq6000 platform</p></li>
+	                                <li><p>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</p></li>
 	                            </ul>
 	                        </div>
 	                    </div>

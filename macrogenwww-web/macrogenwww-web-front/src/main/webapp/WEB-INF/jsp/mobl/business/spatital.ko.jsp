@@ -36,6 +36,51 @@
 	                    <p class="desc font-body">
 	                        마크로젠은 공간 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공한다는 장점이 있습니다. 또한 새로 등장하는 공간 유전체 분석의 신기술을 빠르게 도입함으로써 공간 유전체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.
 	                    </p>
+	                    <hr class="divider" />
+	                    <p class="font-h4 main-title mb86">PLATFORM</p>
+	                    <p class="font-h4 main-title">Nanostring GeoMx® DSP</p>
+	                    <p class="desc font-body img_bottom">Discover Where Biology Happens</p>
+	                    <div class="img mb64"><img src="/publishing/mobile-ko/dist/img/business/img_single_cell01.png" alt=""/></div>
+	                    <div class="table-scroll">
+	                        <table class="table table-row tline">
+	                            <colgroup>
+	                                <col width="35%">
+	                                <col width="65%">
+	                            </colgroup>
+	                            <tr>
+	                                <th scope="row">Platform</th>
+	                                <td>GeoMx® Digital Spatial Profiler</td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">TAT</th>
+	                                <td>ROI selection 후 5주</td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">검체 타입</th>
+	                                <td>
+	                                    FFPE Block (보관 기한: 3년 / 35.3mm x 14.1 mm x 4-6 µm / Core Needle Biopsy 가능)<br>
+	                                    Fresh Frozen Tissue (6개월 이내 Cutting, -80°C 보관 / 35.3mm x 14.1 mm x 4-6 µm )
+	                                </td>
+	                            </tr>
+	                            <tr>
+	                                <th scope="row">RNA & Protein Assay</th>
+	                                <td>
+	                                    Human Whole Transcriptome Atlas (hWTA)<br>
+	                                    Human Cancer Transcriptome Atlas (hCTA)<br>
+	                                    Human Protein Assay<br>
+	                                    그 외 Panel Assay에 대해 별도 문의 바랍니다.<br>
+	                                    <span class="point">한번에 Section된 조직으로 RNA와 Protein 동시 WTA 분석이 가능합니다.</span>
+	                                </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                    <p class="font-h4 main-title">분석 데이터</p>
+	                    <div class="border-gray-box mb0">
+	                        <div class="img">
+	                            <img src="/publishing/mobile-ko/dist/img/business/img_single_cell02.png" alt="">
+	                            <span class="btnZoom" data-img="img_single_cell02"><i class="icon ico-zoom-white"></i></span>
+	                        </div>
+	                    </div>
 	                    <div class="btn-area">
 	                        <div class="btn-wrapper">
 	                            <a href="mailto:ngskr@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
@@ -50,6 +95,25 @@
 	            </div>
 	            <!--// 탭 컨텐츠 e-->
 	        </div>
+	        <!-- 2023 추가 비지니스 확대이미지 -->
+	        <div class="toast-popup">
+	            <p>이미지를 확대할 수 있습니다</p>
+	        </div>
+	        <!--modalImageViewer-->
+	        <div class="modal modal-image-viewer" tabindex="-1" id="modalImageViewer" data-bs-backdrop="static">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <a href="#" class="btn-close"><span class="sr-only">닫기</span></a>
+	                    <div class="parent">
+	                        <div class="zoom_img"><img src="" alt=""></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--//modalImageViewer-->
+	        <!-- //2023 추가 비지니스 확대이미지 -->
+	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
+	        
 	    </div>
 	</div>
 
