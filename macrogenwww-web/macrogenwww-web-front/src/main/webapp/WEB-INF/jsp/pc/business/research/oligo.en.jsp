@@ -96,7 +96,7 @@
           $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
 
           <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          /* $(".info-box-wrap > div").addClass('show').siblings().removeClass('show'); */
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
           /*페이지 변경후 상단 이동*/
@@ -109,13 +109,6 @@
           $('html, body').animate({scrollTop : offset.top - 95}, 100); 
         }
         
-     	// location.hash // 20230502
-        if(location.hash != "#_tab-box") {
-        	var loadtab = $('.tab-tit .title').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
-        }
-     	
         $(window).on("hashchange",function () { 
         	location.reload();
         });
@@ -468,6 +461,16 @@
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
-
+	
+	<script>
+	
+	 	// location.hash // 20230502
+	    if(location.hash != "#_tab-box") {
+	    	var loadtab = $('.tab-tit .title').filter(location.hash);
+	    	loadtab.click();	// tab content view
+	    	setTabContent(loadtab.index());	// scroll 이동
+	    }
+	 	
+	</script>
 
 </body>
