@@ -54,7 +54,7 @@
             	<div class="select-tab-tit-box">
             		<div class="select_tit active" id="dna">DNA</div>
             		<div class="select_tit" id="rna">RNA</div>
-            		<div class="select_tit" id="Peptide">Peptide</div>
+            		<div class="select_tit" id="peptide">Peptide</div>
             	</div>
                 <p class="title font-h4">Oligo Synthesis</p> 
                 <div class="select-box DNA active">
@@ -391,7 +391,7 @@
             </div>
             <!-- RNA 탭 메뉴 e -->
             <!-- Peptide 탭 메뉴 s -->
-            <div class="info-box-wrap tab-content">
+            <div class="info-box-wrap tab-content Peptide">
                 <!--Peptide-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Peptide Synthesis</p>
