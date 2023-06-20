@@ -2449,19 +2449,18 @@
       .oligo_sec .section_business .select-tab-tit-box .select_tit {
         font-size: 28px;
         color: #d9d9d9;
-        font-weight: bold; }
+        font-weight: bold;
+        position: relative }
       .oligo_sec .section_business .select-tab-tit-box .select_tit.active { 
       	color: var(--bs-point-primary); }
-      .oligo_sec .section_business .select-tab-tit-box .select_tit:first-child {
-        margin-right: 20px; }
-      .oligo_sec .section_business .select-tab-tit-box .select_tit:last-child {
-        margin-left: 20px;
-        position: relative; }
-      .oligo_sec .section_business .select-tab-tit-box .select_tit:last-child::before {
+      .oligo_sec .section_business .select-tab-tit-box .select_tit:nth-child(2) {
+        margin: 0 21px; }
+      .oligo_sec .section_business .select-tab-tit-box .select_tit:nth-child(2)::before,
+      .oligo_sec .section_business .select-tab-tit-box .select_tit:nth-child(3)::before {
         content: '';
         position: absolute;
         top: 34%;
-        left: -20px;
+        left: -11px;
         width: 2px;
         height: 18px;
         background: #d9d9d9;

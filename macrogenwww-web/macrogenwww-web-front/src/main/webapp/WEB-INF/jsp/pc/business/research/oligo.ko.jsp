@@ -50,6 +50,7 @@
       	<div class="tab-tit">
         	<p class="font-h4 title active" id="dna">DNA Oligo Synthesis</p>
         	<p class="font-h4 title" id="rna">RNA Oligo Synthesis</p>
+        	<p class="font-h4 title" id="peptide">Peptide Synthesis</p>
       	</div>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
@@ -66,6 +67,11 @@
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
               <div class="swiper-slide"><a href="#">Double Strand RNA</a></div>
+            </div>
+          </div>
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-slide active"></div>
             </div>
           </div>
         </div>
@@ -95,7 +101,7 @@
           $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
 
           <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          /* $(".info-box-wrap > div").addClass('show').siblings().removeClass('show'); */
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
           /*페이지 변경후 상단 이동*/
@@ -106,13 +112,6 @@
         function fnMove(){
           var offset = $("#_tab-box").offset();
           $('html, body').animate({scrollTop : offset.top - 95}, 100);
-        }
-          
-     	// location.hash // 20230502
-        if(location.hash != "#_tab-box") {
-        	var loadtab = $('.tab-tit .title').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
         }
      	
         $(window).on("hashchange",function () { 
@@ -438,10 +437,57 @@
           </div>
         </div>
       </div>
+      
+      <div class="info-box-wrap tab-content">
+        <!--Peptide-->
+        <div class="info-box show">
+          <p class="font-h4 main-title">Peptide</p>
+          <p class="subject">Peptide 합성서비스는 각종 연구에 사용을 위해 고객이 직접 design 한 서열로 합성하여 제공하는 서비스입니다</p>
+          <p class="desc img_bottom">
+          	마크로젠의 Peptide 합성서비스는 고품질의 원료를 사용하여 합성을 진행하고, HPLC정제를 통해 원하시는 Purity에 대한 Sample을 제공합니다. 또한, 주문부터 배송까지 모든 프로세스를 체계적으로 관리하고 MALDI-TOF mass spectrometry 및 HPLC 분석을 통해 고품질의 Peptide를 제공합니다.<br /><br />
+			넓은 범위의 Peptide 합성으로 기본 Custom Peptide부터 Cyclic Peptide, Glyco Peptide 등 까다로운 변형 Peptide 및 구조 기반 Peptide까지도 제작이 가능하며, 합성 시작 전에 충분한 상담이 이루어지고, 출하 전까지 단계별로 상황을 안내함으로써 실험 일정 관리를 원활하게 진행하실 수 있도록 서비스를 제공해드리고 있습니다.
+		  </p>
+          <div class="img">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-peptide.png" alt="Peptide">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>제공량 : 3mg, 6mg</li>
+                <li>Purity: &lt;85%, &lt;90%, &lt;95%</li>
+                <li>HPLC 정제를 통해 제품 제공</li>
+                <li>MALDI TOF 및 HPLC 분석의 QC 과정을 거쳐 고품질의 Peptide 제공</li>
+                <li>Modified 합성 가능 : Biotin, Phosphorylation, Disulfied Bond, FITC, TAMRA, CY3, CY5, Dabcyl, Dansyl, Cyclization, EDANS, K(Me), K(Me)2, K(ME)3, K(AC), Ser/Thr(Gal-GalNAc)</li>
+                <li>그 이상의 합성을 원하시는 경우 [peptide@macrogen.com]으로 문의 시 합성 진행 가능 여부 확인 후 안내</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>서비스문의</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>주문하기</span></a>
+          </div>
+          <script>
+
+          </script>
+        </div>
+      </div>
 
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
+  
+  <script>
+  
+	// location.hash // 20230502
+	if(location.hash != "#_tab-box") {
+		var loadtab = $('.tab-tit .title').filter(location.hash);
+		loadtab.click();	// tab content view
+	   	setTabContent(loadtab.index());	// scroll 이동
+	}
+	
+  </script>
 
 
 </body>

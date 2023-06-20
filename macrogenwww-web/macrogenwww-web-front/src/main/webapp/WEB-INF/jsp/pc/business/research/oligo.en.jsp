@@ -44,6 +44,7 @@
       	<div class="tab-tit">
         	<p class="font-h4 title active" id="dna">DNA Oligo Synthesis</p>
         	<p class="font-h4 title" id="rna">RNA Oligo Synthesis</p>
+        	<p class="font-h4 title" id="peptide">Peptide Synthesis</p>
       	</div>
         <div class="slide-tab-wrap">
           <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal on">
@@ -60,6 +61,11 @@
             <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
               <div class="swiper-slide active"><a href="#">Single Strand RNA</a></div>
               <div class="swiper-slide "><a href="#">Double Strand RNA</a></div>
+            </div>
+          </div>
+          <div class="swiper-container tab-slide-box _swiperTab swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper _swiperTab swiper-container-initialized swiper-container-horizontal">
+              <div class="swiper-slide active"></div>
             </div>
           </div>
         </div>
@@ -90,7 +96,7 @@
           $('._swiperTab .swiper-slide').eq(idx).addClass('active').siblings().removeClass('active');
 
           <!--탭메뉴 클릭시 페이지 변경-->
-          $(".info-box-wrap > div").addClass('show').siblings().removeClass('show');
+          /* $(".info-box-wrap > div").addClass('show').siblings().removeClass('show'); */
           $(".info-box-wrap > div").eq(idx).addClass('show').siblings().removeClass('show');
 
           /*페이지 변경후 상단 이동*/
@@ -103,13 +109,6 @@
           $('html, body').animate({scrollTop : offset.top - 95}, 100); 
         }
         
-     	// location.hash // 20230502
-        if(location.hash != "#_tab-box") {
-        	var loadtab = $('.tab-tit .title').filter(location.hash);
-        	loadtab.click();	// tab content view
-        	setTabContent(loadtab.index());	// scroll 이동
-        }
-     	
         $(window).on("hashchange",function () { 
         	location.reload();
         });
@@ -426,9 +425,52 @@
           </div>
         </div>
       </div>
+
+      <div class="info-box-wrap tab-content">
+        <!--Peptide-->
+        <div class="info-box show">
+          <p class="font-h4 main-title">Peptide</p>
+          <p class="subject">Peptide synthesis service is provided by synthesizing a sequence designed by the customer for use in various studies</p>
+          <p class="desc img_bottom">
+			Macrogen's peptide synthesis service proceeds with synthesis using high-quality raw materials, and provides samples of desired purity through HPLC purification. In addition, we systematically manage all processes from ordering to delivery and provide high-quality peptides through MALDI-TOF mass spectrometry and HPLC analysis.<br/><br/>
+			By synthesizing a wide range of peptides, it is possible to manufacture basic custom peptides, difficult modified peptides such as cyclic peptides and glyco peptides, and structure-based peptides. Sufficient consultation is conducted before the start of synthesis, and the situation is informed step by step until shipment, so that the experiment schedule can be managed smoothly.          	
+		  </p>
+          <div class="img">
+            <img src="/publishing/pc-ko/dist/img/business/img-oligo-peptide.png" alt="Peptide">
+          </div>
+          <div class="list-area-group">
+            <div class="list-area">
+              <p class="font-h8 title">Features</p>
+              <ul class="list-circle-dot">
+                <li>Amount : 3mg, 6mg</li>
+                <li>Purity: &lt;85%, &lt;90%, &lt;95%</li>
+                <li>Provide product via HPLC purification</li>
+                <li>Provides high-quality peptides through the QC process of MALDI TOF and HPLC analysis</li>
+                <li>Modification : Biotin, Phosphorylation, Disulfied Bond, FITC, TAMRA, CY3, CY5, Dabcyl, Dansyl, Cyclization, EDANS, K(Me), K(Me)2, K(ME)3, K(AC), Ser/Thr(Gal-GalNAc)</li>
+                <li>If you want to synthesize more than that, please contact [oligo@macrogen.com] and inform us after confirming whether synthesis is possible</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-white"><span>Service Inpquiry</span></a>
+            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200" target="_blank" class="btn btn-white"><span>Quotation</span></a>
+            <a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon icon-basket-white"></i><span>Order</span></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!--footer 수정시 메인 footer 같이 수정해주세요-->
-
+	
+	<script>
+	
+	 	// location.hash // 20230502
+	    if(location.hash != "#_tab-box") {
+	    	var loadtab = $('.tab-tit .title').filter(location.hash);
+	    	loadtab.click();	// tab content view
+	    	setTabContent(loadtab.index());	// scroll 이동
+	    }
+	 	
+	</script>
 
 </body>

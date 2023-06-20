@@ -59,6 +59,7 @@
             	<div class="select-tab-tit-box">
             		<div class="select_tit active" id="dna">DNA</div>
             		<div class="select_tit" id="rna">RNA</div>
+            		<div class="select_tit" id="peptide">Peptide</div>
             	</div>
                 <p class="title font-h4">Oligo Synthesis</p> 
                 <div class="select-box DNA active">
@@ -81,6 +82,14 @@
                     <ul class="select-option _select-option">
                         <li class="option-value active"><a href="#">Single Strand RNA</a></li>
                         <li class="option-value"><a href="#">Double Strand RNA</a></li>
+                    </ul>
+                </div>
+                <div class="select-box Peptide">
+                    <div class="selected-value _selected-value">
+                        <span class="text"></span>
+                    </div>
+                    <ul class="select-option _select-option">
+                        <li class="option-value active"></li>
                     </ul>
                 </div>
 
@@ -395,6 +404,46 @@
                 </div>
             </div>
             <!-- RNA 탭 메뉴 e -->
+            <!-- Peptide 탭 메뉴 s -->
+            <div class="info-box-wrap tab-content">
+                <!--Peptide-->
+                <div class="info-box show">
+                    <p class="font-h4 main-title">Peptide Synthesis</p>
+                    <!-- <p class="subject font-body-h-b">Peptide 합성서비스는 각종 연구에 사용을 위해 고객이 직접 design 한 서열로 합성하여 제공하는 서비스입니다.</p> -->
+                    <p class="desc font-body img_bottom">
+                    	Peptide 합성서비스는 각종 연구에 사용을 위해 고객이 직접 design 한 서열로 합성하여 제공하는 서비스입니다.<br/><br/>
+                   		마크로젠의 Peptide 합성서비스는 고품질의 원료를 사용하여 합성을 진행하고, HPLC정제를 통해 원하시는 Purity에 대한 Sample을 제공합니다. 또한, 주문부터 배송까지 모든 프로세스를 체계적으로 관리하고 MALDI-TOF mass spectrometry 및 HPLC 분석을 통해 고품질의 Peptide를 제공합니다.<br/><br/>
+						넓은 범위의 Peptide 합성으로 기본 Custom Peptide부터 Cyclic Peptide, Glyco Peptide 등 까다로운 변형 Peptide 및 구조 기반 Peptide까지도 제작이 가능하며, 합성 시작 전에 충분한 상담이 이루어지고, 출하 전까지 단계별로 상황을 안내함으로써 실험 일정 관리를 원활하게 진행하실 수 있도록 서비스를 제공해드리고 있습니다.
+                   	</p>
+                    <div class="img">
+                        <img src="/publishing/mobile-ko/dist/img/business/img-oligo-peptide.png" alt="Peptide Synthesis">
+                    </div>
+                    <div class="list-area-group">
+                        <div class="list-area">
+                            <p class="font-body-h-b title">Features</p>
+                            <ul class="list-circle-dot">
+                                <li><p>제공량 : 3mg, 6mg</p></li>
+                                <li><p>Purity : &lt;85%, &lt;90%, &lt;95%</p></li>
+                                <li><p>HPLC 정제를 통해 제품 제공</p></li>
+                                <li><p>MALDI TOF 및 HPLC 분석의 QC 과정을 거쳐 고품질의 Peptide 제공</p></li>
+                                <li><p>Modified 합성 가능 : Biotin, Phosphorylation, Disulfied Bond, FITC, TAMRA, CY3, CY5, Dabcyl, Dansyl, Cyclization, EDANS, K(Me), K(Me)2, K(ME)3, K(AC), Ser/Thr(Gal-GalNAc)</p></li>
+                                <li><p>그 이상의 합성을 원하시는 경우 [peptide@macrogen.com]으로 문의 시 합성 진행 가능 여부 확인 후 안내</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <div class="btn-wrapper">
+                            <a href="mailto:oligo@macrogen.com" target="_blank" class="btn btn-light"><span>서비스문의</span></a>
+                            <a href="https://dna.macrogen.com/quotation/retrieveOligoCustomQuotation.do?menuCd=QUO200"
+                               target="_blank" class="btn btn-light"><span>견적의뢰</span></a>
+                        </div>
+                        <div class="btn-wrapper">
+                         	<a href="https://dna.macrogen.com/kor" target="_blank" class="btn btn-primary"><i class="icon ico-cart-white"></i><span>주문하기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Peptide 탭 메뉴 e -->
         </div>
     </div>
 
@@ -421,11 +470,24 @@
     			$('.select-box.DNA').addClass('active').siblings().removeClass('active');
     			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
     			$('.select-box.DNA .option-value').eq(0).trigger('click');
+    			$('.select-nav-box .title.font-h4').css('display', 'block');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '56px');
     		}
     		else if ($(this).text() === 'RNA') {
     			$('.select-box.RNA').addClass('active').siblings().removeClass('active');
     			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
     			$('.select-box.RNA .option-value').eq(0).trigger('click');
+    			$('.select-nav-box .title.font-h4').css('display', 'block');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '56px');
+    		}
+    		else if ($(this).text() === 'Peptide') {
+    			$('.select-box.Peptide').addClass('active').siblings().removeClass('active');
+    			$('.info-box-wrap').eq(idx).addClass('active').siblings().removeClass('active');
+    			$('.select-box.Peptide .option-value').eq(0).trigger('click');
+    			$('.select-box.Peptide').css('display', 'none');
+    			$('.select-nav-box .title.font-h4').css('display', 'none');
+    			$('.oligo_sec .select-nav-box').css('margin-bottom', '26px');
+    			$('.info-box-wrap .main-title').css('margin-bottom', '20px');
     		}
     	});
     }

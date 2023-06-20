@@ -107,6 +107,7 @@
                                         <ul class="cards-body">
                                             <li><a href="/${rc.locale.language }/business/research/oligo#dna">DNA Oligo Synthesis</a></li>
                                             <li><a href="/${rc.locale.language }/business/research/oligo#rna">RNA Oligo Synthesis</a></li>
+                                            <li><a href="/${rc.locale.language }/business/research/oligo#peptide">Peptide Synthesis</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- 모델동물/크리스퍼</a>
