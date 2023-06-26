@@ -40,6 +40,9 @@ public class MainController extends DefaultController {
 	@Autowired
 	private MainSomlnkService mainSomlnkService;
 	
+	@Autowired
+	private PopupService popupService;
+	
 	@RequestMapping("")
 	public String main(@PathVariable LangId langId, Model model,
 			HttpServletRequest request) throws Exception {
@@ -102,9 +105,46 @@ public class MainController extends DefaultController {
 
 		List<MainSomlnkVo> mainSomlnkList = mainSomlnkService.list(somlnkVo);
 		model.addAttribute("mainSomlnkList", mainSomlnkList);
+		
+		// 메인화면 공지사항
+		PopupVo popupVo = new PopupVo();
+		popupVo.setLangCode(langId.name());
+		popupVo.setFirstIndex(-1);
+		popupVo.setExposed(true);
+		popupVo.setOrderBy("sort_asc");
 
+		List<PopupVo> popupList = popupService.list(popupVo);
+		if (null != popupList && !popupList.isEmpty()) {
+			List<Long> exceptPopupSnList = getExceptPopupSnList(request);
+			for (PopupVo popup : popupList) {
+				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
+					model.addAttribute("popupVo", popup);
+				}
+			}
+		}
+		
 		
 		return getDev() + "/main/main." + getLang();
+	}
+	
+	// 팝업  
+	private List<Long> getExceptPopupSnList(HttpServletRequest request) {
+		try {
+			List<Long> snList = new ArrayList<>();
+
+			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-sn-list");
+			if (StringUtils.isEmpty(exceptPopupSnStr)) {
+				return snList;
+			}
+
+			String[] snArr = exceptPopupSnStr.split(",");
+			for (String sn : snArr) {
+				snList.add(Long.parseLong(sn));
+			}
+			return snList;
+		} catch (Exception e) {
+			return new ArrayList<Long>();
+		}
 	}
 
 }
