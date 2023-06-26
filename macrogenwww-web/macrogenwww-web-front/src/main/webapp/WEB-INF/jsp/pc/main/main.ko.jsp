@@ -634,7 +634,7 @@
 	    });
 	</script>
 
-</div>
+</div> 
  
 <%-- 팝업 --%>
 <c:if test="${not empty popupVo  }">

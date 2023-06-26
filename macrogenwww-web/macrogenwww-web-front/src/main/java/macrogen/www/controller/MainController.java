@@ -127,7 +127,7 @@ public class MainController extends DefaultController {
 		return getDev() + "/main/main." + getLang();
 	}
 	
-	// 팝업
+	// 팝업 
 	private List<Long> getExceptPopupSnList(HttpServletRequest request) {
 		try {
 			List<Long> snList = new ArrayList<>();
