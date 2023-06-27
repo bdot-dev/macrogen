@@ -637,8 +637,11 @@
 </div>  
  
 <%-- 팝업 --%>
-<c:if test="${not empty popupVo  }">
-	<div class="modal" tabindex="-1" id="layerPopup" data-bs-backdrop="static">
+<c:if test="${not empty popupList  }">
+<c:forEach var="popup" items="${popupList}" varStatus="status">
+	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
+		<input type="hidden" value="${popupCnt}" id="popupCnt">
+		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
 	    <div class="modal-dialog modal-dialog-centered layer-modal">
 	        <div class="modal-content">
 	            <div class="modal-header">
@@ -653,19 +656,21 @@
 	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
 	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
 	                    <br>908억 원을 달성했습니다.
-	                </p>
-	                <div class="btn-area">
+	                </p> --%>
+	                <div class="data-img">
+	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+	                </div>
+	                <!-- <div class="btn-area">
 	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
 	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> --%>
+	                </div> -->
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn"
-	                    	value="${ popupVo.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn">오늘 하루 이 창 열지 않기</label>
+	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
+	                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
 	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close">
+	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
 	                    <span>Close</span>
 	                    <i class="icon ico-close-white"></i>
 	                </div>
@@ -673,32 +678,61 @@
 	        </div>
 	    </div>
 	</div>
+</c:forEach>
 	<script>
-	    var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show();
+		var popupCnt = $("#popupCnt").val();
+		
+		for(var i=0;i<popupCnt;i++){
+			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
+			var coockieChk = $("#cookieChkList"+i).val();
+			
+			if(coockieChk == 'true'){
+				layerPopupModal.hide();
+			}else if(coockieChk =='false'){
+				layerPopupModal.show();
+			}
+			
+		    //layerPopupModal.show();
+		}
+		
+	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+	    layerPopupModal.show(); */
+	    
+	    $('div.modal-backdrop:gt(0)').css("opacity", "0");
 	</script>
 	<script>
-		$(function() {
-			var $btnPopupClose = $('#layerPopup .close-box');
-			var $chkPopupSn = $('#layerPopup #popup-sn');
-			$btnPopupClose.on('click', function() {
-				if ($chkPopupSn.is(':checked')) {
-					var sn = $chkPopupSn.val();
-					if (!sn) return;
 
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+		function onclickPopupImage(url, trgtCode) {
+			if (!url) {
+				return;
+			}
+
+			if (trgtCode === 'NEW') {
+				window.open(url);
+			} else {
+				location.href = url;
+			}
+		}
+		
+		function popupClose(sn, idx) {
+			if ($('#popup-sn'+idx).is(':checked')) {
+				if (!sn) return;
+	
+				var snListStr = $.cookie('popup-sn-list');
+				if (!snListStr) {
+					snListStr = sn;
+				} else if (snListStr.indexOf(sn) < 0) {
+					snListStr += ',' + sn;
 				}
-			});
-		});
+				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+			}
+			
+			layerPopupModal.hide();
+			$('.show').parent('body').css("overflow", "hidden");
+			$('.show').parent('body').css("padding-right", "17px");
+		}
 	</script>
-
-</c:if> 
+</c:if>
  
  
 </body>
