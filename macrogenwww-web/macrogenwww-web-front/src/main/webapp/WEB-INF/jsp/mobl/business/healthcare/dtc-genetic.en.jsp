@@ -46,9 +46,9 @@
                         <!--v0.11 줄바꿈이슈-->
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">My Genomestory The Plus All-in-One 69 (73 subcategories)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">My Genomestory The Plus Skin & Care 44 (48 subcategories)</a></li>
+                            <!-- <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">My Genomestory The Plus Skin & Care 44 (48 subcategories)</a></li>
                             <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">My Genomestory The Plus 41 (43 subcategories)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">My Genomestory The Plus 12 (13 Subcategories)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">My Genomestory The Plus 12 (13 Subcategories)</a></li> -->
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -79,17 +79,17 @@
                                         <div class="btn-wrap">
                                             <div class="btn-wrapper">
                                                 <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
-                                                <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
+                                                <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a> -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <hr class="divider">
+                        <!-- <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <!--v0.11 줄바꿈이슈 // title > .sub-title-->
+                                v0.11 줄바꿈이슈 // title > .sub-title
                                 <p class="sub-title font-h5" id="target6">My Genomestory The Plus Skin & Care 44 (48 subcategories)</p>
                                 <div class="content">
                                     <div class="img">
@@ -134,7 +134,7 @@
                                             </ul>
                                         </div>
                                         <div class="btn-wrap">
-                                            <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+                                            09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)
                                             <div class="btn-wrapper">
                                                 <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
                                                 <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
@@ -170,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- //컨텐츠탭01 -->
