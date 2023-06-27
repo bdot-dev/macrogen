@@ -612,7 +612,7 @@
         $('.btn-totop').click(function(){
             $('html,body').animate( { scrollTop:0 },{duration : 100});
             $('.header').css({'display' : 'block'});
-            return false;
+            return false; 
         });
         $(window).on('scroll', function (){
             var scrollTop = $(window).scrollTop()

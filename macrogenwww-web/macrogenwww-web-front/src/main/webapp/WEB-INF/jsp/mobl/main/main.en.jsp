@@ -768,7 +768,7 @@
 				$btnPopupClose.on('click', function() {
 					var sn = $(this).data('popup-sn');
 					if (!sn) return;
-
+ 
 					var snListStr = $.cookie('popup-sn-list');
 					if (!snListStr) {
 						snListStr = sn;
