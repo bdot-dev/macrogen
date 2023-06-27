@@ -612,7 +612,7 @@
 	</div>        
 	
 	<c:import url="/inc/footer" />
-    <a href="#" class="btn btn-text btn-totop">
+    <a href="#" class="btn btn-text btn-totop"><a>
     <i class="icon icon-arrow-top-long"></i> 
     <span>TOP</span>
 	
@@ -728,8 +728,8 @@
 			}
 			
 			layerPopupModal.hide();
-			$('.show').parent('body').css("overflow", "hidden");
-			$('.show').parent('body').css("padding-right", "17px");
+			/* $('.show').parent('body').css("overflow", "hidden"); 
+			$('.show').parent('body').css("padding-right", "17px"); */
 		}
 	</script>
 </c:if>
