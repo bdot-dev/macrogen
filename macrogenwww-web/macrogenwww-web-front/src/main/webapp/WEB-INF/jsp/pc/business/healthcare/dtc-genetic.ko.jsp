@@ -63,12 +63,12 @@
 	                                    </div>
 	                                    <div class="btn-wrap">
 	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+	                                        <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a> -->
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
 	                            <div class="content">
@@ -138,7 +138,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                    </div>
 	                </div>
 	
