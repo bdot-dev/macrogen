@@ -61,12 +61,12 @@
 	                                    </div>
 	                                    <div class="btn-wrap">
 	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
+	                                        <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a> -->
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">My Genomestory The Plus Skin & Care 44 (48 subcategories)</p>
 	                            <div class="content">
@@ -136,7 +136,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                    </div>
 	                </div>
 	

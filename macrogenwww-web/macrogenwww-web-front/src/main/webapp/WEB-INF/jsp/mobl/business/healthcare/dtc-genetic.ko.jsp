@@ -38,9 +38,9 @@
 	                        </div>
 	                        <ul class="anchor-option">
 	                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">마이지놈스토리 더플러스 올인원 69</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44</a></li>
+	                            <!-- <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44</a></li>
 	                            <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">마이지놈스토리 더플러스 피트니스 41</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12</a></li>
+	                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12</a></li> -->
 	                        </ul>
 	                    </div>
 	                    <!--content-anchor e-->
@@ -69,19 +69,19 @@
 	                                        <div class="btn-wrap">
 	                                            <div class="btn-wrapper">
 	                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-	                                                <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
+	                                                <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a> -->
 	                                            </div>
 	                                        </div>
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target6">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
 	                                    </div>
@@ -110,7 +110,7 @@
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target7">마이지놈스토리 더플러스 피트니스 41</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
 	                                    </div>
@@ -125,7 +125,7 @@
 	                                            </ul>
 	                                        </div>
 	                                        <div class="btn-wrap">
-	                                            <!--09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)-->
+	                                            09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)
 	                                            <div class="btn-wrapper">
 	                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
 	                                                <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
@@ -140,7 +140,7 @@
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target8">마이지놈스토리 더플러스 11</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
 	                                    </div>
@@ -162,7 +162,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                    </div>
 	                </div>
 	                <!-- //컨텐츠탭01 -->
