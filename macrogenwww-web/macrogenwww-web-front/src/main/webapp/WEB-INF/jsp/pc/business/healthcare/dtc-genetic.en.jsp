@@ -29,7 +29,7 @@
 	        <div class="section_business">
 	            <div class="subject-box type02">
 	                <p class="font-h4 title">DTC Genetic Testing</p>
-	                <p class="subject">“My Genomestory The Plus” is a DTC (Direct-To-Customer) genetic testing service that allows clients to check their genetic characteristics or health-related wellness categories without visiting a medical institute. These categories consist of nutrients, exercise, skin/hair, diet, personal characteristics (e.g., alcohol flush reaction, nicotine dependence), and health care (e.g., obesity, blood sugar, blood pressure). Our solution analyzes genetic characteristics, based on which we provide a personalized lifestyle guide, not only helping people to lead healthier and more beautiful lives but also providing opportunity to find their true selves.</p>
+	                <p class="subject">GenTok offers DNA testing on nutrients, exercise, skin/hair, diet, personal characteristics (alcohol flush reaction, nicotine dependence), and health care (obesity, blood sugar, blood pressure). Our solution analyzes genetic characteristics, based on which we provide a personalized lifestyle guide, not only helping people to lead healthier and more beautiful lives but also providing opportunity to find their true selves.</p>
 	            </div>
 	            
 	            <!-- 탭 컨텐츠 -->

@@ -30,7 +30,7 @@
         <div class="section_business">
             <div class="subject-box type02">
                 <p class="font-h4 title">질병예측 유전자검사</p>
-                <p class="subject info">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
+                <p class="subject info">질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 유전자 검사를 제공합니다.</p>
             </div>
             
             <!-- 탭 컨텐츠 -->
@@ -42,7 +42,7 @@
                     <hr class="divider">
                     <div class="list-gallery">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 블루</p>
+                            <p class="title font-h5">젠톡 블루</p>
                             <div class="content">
                                 <div class="picture">
                                     <img src="/publishing/pc-ko/dist/img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
@@ -64,7 +64,7 @@
                         </div>
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">마이지놈스토리 그린</p>
+                            <p class="title font-h5">젠톡 그린</p>
                             <div class="content">
                                 <div class="picture">
                                     <img src="/publishing/pc-ko/dist/img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="divider">
+                        <!-- <hr class="divider">
                         <div class="list">
                             <p class="title font-h5">마이지놈스토리 골드</p>
                             <div class="content">
@@ -96,10 +96,10 @@
                                     <p class="caption black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <hr class="divider">
                         <div class="list">
-                            <p class="title font-h5">젠톡</p>
+                            <p class="title font-h5">젠톡 마스터</p>
                             <div class="content">
                                 <div class="picture">
                                     <img src="/publishing/pc-ko/dist/img/business/img_mygenomegentok.png" alt="젠톡">
