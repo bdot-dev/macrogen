@@ -97,11 +97,11 @@
 	                                </div>
 	                            </div>
 	                        </div> -->
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">GenTok Master</p>
 	                            <div class="content">
-	                                <!--10.05 이미지 경로 변경-->
+	                                10.05 이미지 경로 변경
 	                                <div class="picture">
 	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomegentok.png" alt="젠톡">
 	                                </div>
@@ -119,7 +119,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                    </div>
 	
 	                </div>
