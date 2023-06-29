@@ -173,6 +173,8 @@ padding-left: 15px;color: #186BE8;font-size: 18px;font-weight: 700;line-height: 
 .business_bg.bg-spatital {background-image: url("/publishing/pc-ko/dist/img/business/bg_single_cell.png");}
 .business_bg.bg-personal01 {background-image: url("/publishing/pc-ko/dist/img/business/bg_personal01.png");}
 .business_bg.bg-personal02 {background-image: url("/publishing/pc-ko/dist/img/business/bg_personal02.png");}
+.section_business .subject-box.type01 {margin-bottom: 0;padding-bottom: 0;}
+.section_business .subject-box.type01::after {display: none;}
 .section_business .subject-box.type02 {margin-bottom: 0;padding-bottom: 40px;}
 .section_business .subject-box.type02::after {display: none;}
 
