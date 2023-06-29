@@ -35,8 +35,7 @@
                         <ul class="anchor-option">
                             <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">GenTok Blue</a></li>
                             <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">GenTok Green</a></li>
-                            <!-- <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">My Genomestory Gold (Total Care)</a></li> -->
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">GenTok Master</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">GenTok Master</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -47,7 +46,7 @@
                                 <p class="sub-title font-h5" id="target1">GenTok Blue</p>
                                 <div class="content">
                                     <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
+                                        <img src="/publishing/mobile-en/dist/img/business/gentok_blue.png" alt="마이지놈스토리블루">
                                     </div>
                                     <div class="cont">
                                         <p class="desc font-body">As a predictive genetic testing service for diseases including major cancers and common diseases, this provides advance knowledge on genetic risks of disease to help relieve the anxiety over any disease and maintain a healthy lifestyle.</p>
@@ -71,7 +70,7 @@
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
+                                        <img src="/publishing/mobile-en/dist/img/business/gentok_green.png" alt="마이지놈스토리그린">
                                     </div>
                                     <div class="cont">
                                         <p class="desc font-body">My Genomestory Green provides genetic information for diet and nutrition in order for healthy diet and effective weight management based on the individual’s genetic information. The most effective way to prevent disease is a healthy lifestyle.</p>
@@ -88,32 +87,17 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <hr class="divider">
+                        <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target3">My Genomestory Gold (Total Care)</p>
+                                <p class="sub-title font-h5" id="target3">GenTok Master</p>
                                 <div class="content">
-                                    10.05 이미지 경로 변경
+                                    <!--10.05 이미지 경로 변경-->
                                     <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
+                                        <img src="/publishing/mobile-en/dist/img/business/gentok_master.png" alt="젠톡">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body">This is our comprehensive genetic testing service that enables inclusion of major optional items required to build a healthy life including diseases (Blue) and wellness (Green).</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <hr class="divider">
-                        <div class="section-anchor">
-                            <div class="list">
-                                <p class="sub-title font-h5" id="target4">GenTok Master</p>
-                                <div class="content">
-                                    10.05 이미지 경로 변경
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_mygenomegentok.png" alt="젠톡">
-                                    </div>
-                                    <div class="cont">
-                                        <p class="desc font-body">As the first genetic test service that combines a health survey and EMR data, the “GenTok” mobile app allows clients to check their test results and receive health information on a regular basis. It provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
+                                        <p class="desc font-body">As the first genetic test service that combines a health survey and EMR data, the “GenTok Master” mobile app allows clients to check their test results and receive health information on a regular basis. It provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
                                         <div class="list-area">
                                             <p class="font-body">Master  (Men 23 / Women 25)</p>
                                             <ul class="list-circle-dot">
@@ -127,7 +111,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <!-- //컨텐츠탭01 -->
