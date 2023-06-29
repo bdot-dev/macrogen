@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        <hr class="divider">
+                        <!-- <hr class="divider">
                         <div class="list">
                             <p class="title font-h5">젠톡 마스터</p>
                             <div class="content">
@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
