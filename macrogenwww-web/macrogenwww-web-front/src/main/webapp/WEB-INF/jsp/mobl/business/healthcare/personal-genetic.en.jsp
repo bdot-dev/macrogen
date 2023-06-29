@@ -23,20 +23,20 @@
                 <!--컨텐츠탭01-->
                 <div class="info-box show">
                     <p class="font-h4 main-title">Disease Prediction & Wellness Genetic Test</p>
-                    <p class="subject font-body-h">My Genomestory Blue (Disease Prediction), Green (Wellness), and Gold (Total Care), not only predict disease, but also provide a variety of test items required to maintain health and establish a balanced lifestyle based on nutrition and diet for various benefits, including improved skin and hair.</p>
+                    <p class="subject font-body-h">GenTok Blue, Green and Master. not only predict disease, but also provide a variety of test items required to maintain health and establish a balanced lifestyle based on nutrition and diet for various benefits, including improved skin and hair.</p>
                     <div class="img">
                         <img src="/publishing/mobile-en/dist/img/business/img_disease.png" alt="질병예측 유전자검사">
                     </div>
                     <!--content-anchor s-->
                     <div class="content-anchor">
                         <div class="selected-value _anchor-value">
-                            <span class="text">My Genomestory Blue (Disease Prediction)</span>
+                            <span class="text">GenTok Blue</span>
                         </div>
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">My Genomestory Blue (Disease Prediction)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">My Genomestory Green (Wellness)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">My Genomestory Gold (Total Care)</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">GenTok (Disease Prediction)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">GenTok Blue</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">GenTok Green</a></li>
+                            <!-- <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">My Genomestory Gold (Total Care)</a></li> -->
+                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">GenTok Master</a></li>
                         </ul>
                     </div>
                     <!--content-anchor e-->
@@ -44,7 +44,7 @@
                     <div class="list-gallery">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target1">My Genomestory Blue (Disease Prediction)</p>
+                                <p class="sub-title font-h5" id="target1">GenTok Blue</p>
                                 <div class="content">
                                     <div class="img">
                                         <img src="/publishing/mobile-en/dist/img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
@@ -67,7 +67,7 @@
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target2">My Genomestory Green (Wellness)</p>
+                                <p class="sub-title font-h5" id="target2">GenTok Green</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">
@@ -88,12 +88,12 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="divider">
+                        <!-- <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
                                 <p class="sub-title font-h5" id="target3">My Genomestory Gold (Total Care)</p>
                                 <div class="content">
-                                    <!--10.05 이미지 경로 변경-->
+                                    10.05 이미지 경로 변경
                                     <div class="img">
                                         <img src="/publishing/mobile-en/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
                                     </div>
@@ -102,11 +102,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <hr class="divider">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target4">GenTok (Disease Prediction)</p>
+                                <p class="sub-title font-h5" id="target4">GenTok Master</p>
                                 <div class="content">
                                     <!--10.05 이미지 경로 변경-->
                                     <div class="img">

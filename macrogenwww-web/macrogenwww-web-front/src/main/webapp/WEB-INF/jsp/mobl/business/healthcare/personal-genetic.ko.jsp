@@ -23,7 +23,7 @@
 	                <!--컨텐츠탭01-->
 	                <div class="info-box show">
 	                    <p class="font-h4 main-title">질병예측 유전자검사</p>
-	                    <p class="subject font-body-h">마이지놈스토리 블루와 그린, 그리고 이들을 모두 아우르는 골드는 질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 검사 항목을 제공합니다.</p>
+	                    <p class="subject font-body-h">질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 유전자 검사를 제공합니다.</p>
 	                    <!--10.05 이미지 경로 변경-->
 	                    <div class="img">
 	                        <img src="/publishing/mobile-ko/dist/img/business/img_disease.png" alt="질병예측 유전자검사">
@@ -31,13 +31,13 @@
 	                    <!--content-anchor s-->
 	                    <div class="content-anchor">
 	                        <div class="selected-value _anchor-value">
-	                            <span class="text">마이지놈스토리 블루</span>
+	                            <span class="text">젠톡 블루</span>
 	                        </div>
 	                        <ul class="anchor-option">
-	                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">마이지놈스토리 블루</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">마이지놈스토리 그린</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">마이지놈스토리 골드</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡</a></li>
+	                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">젠톡 블루</a></li>
+	                            <li class="anchor-value" onclick="TitleMove('target2')"><a href="#">젠톡 그린</a></li>
+	                            <!-- <li class="anchor-value" onclick="TitleMove('target3')"><a href="#">마이지놈스토리 골드</a></li> -->
+	                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡 마스터</a></li>
 	                        </ul>
 	                    </div>
 	                    <!--content-anchor e-->
@@ -45,7 +45,7 @@
 	                    <div class="list-gallery">
 	                        <div class="section-anchor">
 	                            <div class="list">
-	                                <p class="sub-title font-h5" id="target1">마이지놈스토리 블루</p>
+	                                <p class="sub-title font-h5" id="target1">젠톡 블루</p>
 	                                <div class="content">
 	                                    <!--10.05 이미지 경로 변경-->
 	                                    <div class="img">
@@ -70,7 +70,7 @@
 	                        <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
-	                                <p class="sub-title font-h5" id="target2">마이지놈스토리 그린</p>
+	                                <p class="sub-title font-h5" id="target2">젠톡 그린</p>
 	                                <div class="content">
 	                                    <!--10.05 이미지 경로 변경-->
 	                                    <div class="img">
@@ -92,12 +92,12 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target3">마이지놈스토리 골드</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
 	                                    </div>
@@ -107,11 +107,11 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                        <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
-	                                <p class="sub-title font-h5" id="target4">젠톡</p>
+	                                <p class="sub-title font-h5" id="target4">젠톡 마스터</p>
 	                                <div class="content">
 	                                    <!--10.05 이미지 경로 변경-->
 	                                    <div class="img">

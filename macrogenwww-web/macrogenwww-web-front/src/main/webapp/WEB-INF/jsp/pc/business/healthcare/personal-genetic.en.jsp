@@ -30,7 +30,7 @@
 	        <div class="section_business">
 	            <div class="subject-box type02">
 	                <p class="font-h4 title">Disease Prediction & Wellness Genetic Test</p>
-	                <p class="subject info">My Genomestory Blue (Disease Prediction), Green (Wellness), and Gold (Total Care), not only predict disease, but also provide a variety of test items required to maintain health and establish a balanced lifestyle based on nutrition and diet for various benefits, including improved skin and hair.</p>
+	                <p class="subject info">GenTok Blue, Green and Master. not only predict disease, but also provide a variety of test items required to maintain health and establish a balanced lifestyle based on nutrition and diet for various benefits, including improved skin and hair.</p>
 	            </div>
 	            
 	            <!-- 탭 컨텐츠 -->
@@ -42,7 +42,7 @@
 	                    <hr class="divider">
 	                    <div class="list-gallery">
 	                        <div class="list">
-	                            <p class="title font-h5">My Genomestory Blue (Disease Prediction)</p>
+	                            <p class="title font-h5">GenTok Blue</p>
 	                            <div class="content">
 	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
@@ -64,7 +64,7 @@
 	                        </div>
 	                        <hr class="divider">
 	                        <div class="list">
-	                            <p class="title font-h5">My Genomestory Green (Wellness)</p>
+	                            <p class="title font-h5">GenTok Green</p>
 	                            <div class="content">
 	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
@@ -84,11 +84,11 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">My Genomestory Gold (Total Care)</p>
 	                            <div class="content">
-	                                <!--10.05 이미지 경로 변경-->
+	                                10.05 이미지 경로 변경
 	                                <div class="picture">
 	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
 	                                </div>
@@ -96,10 +96,10 @@
 	                                    <p class="desc">This is our comprehensive genetic testing service that enables inclusion of major optional items required to build a healthy life including diseases (Blue) and wellness (Green).</p>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                        <hr class="divider">
 	                        <div class="list">
-	                            <p class="title font-h5">GenTok (Disease Prediction)</p>
+	                            <p class="title font-h5">GenTok Master</p>
 	                            <div class="content">
 	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
