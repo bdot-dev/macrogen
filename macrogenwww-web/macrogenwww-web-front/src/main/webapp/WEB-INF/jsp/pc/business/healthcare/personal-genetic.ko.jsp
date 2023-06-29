@@ -55,7 +55,7 @@
                                             <li>일반질환(고혈압, 뇌졸중, 제2형 당뇨병 등 주요 일반질환 23종)</li>
                                         </ul>
                                     </div>
-                                    <p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    <p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                     <div class="btn-wrap">
                                         <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                     </div>
@@ -77,7 +77,7 @@
                                             <li>영양(비타민, 칼슘, 오메가3 등 16개 항목)</li>
                                         </ul>
                                     </div>
-                                    <p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    <p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                     <div class="btn-wrap">
                                         <a href="https://www.my-genomestory.com/service_detail?service_code=green&selectLang=ko" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
                                     </div>
@@ -100,7 +100,7 @@
                                             <li>여성 : 주요 암 14종, 주요 질환 5종, 심뇌혈관질환 6종</li>
                                         </ul>
                                     </div>
-                                    <p class="caption txt black">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
+                                    <p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
                                     <div class="btn-wrap">
                                         <a href="mailto:gentok@macrogen.com"  class="btn btn-sm btn-white"><span>서비스 문의</span></a>
                                     </div>
