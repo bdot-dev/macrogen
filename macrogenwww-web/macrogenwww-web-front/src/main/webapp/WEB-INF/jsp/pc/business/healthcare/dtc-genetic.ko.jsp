@@ -41,6 +41,34 @@
 	                    </div>
 	                    <hr class="divider">
 	                    <div class="list-gallery">
+		                    <div class="list">
+	                            <p class="title font-h5">젠톡 GenTok</p>
+	                            <div class="content">
+	                                <div class="picture">
+	                                    <img src="/publishing/pc-ko/dist/img/business/gentok.png" alt="젠톡 GenTok">
+	                                </div>
+	
+	                                <div class="cont">
+	                                    <p class="desc">유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다. 73종 항목 중 내 맘대로 원하는 것만 고를 수 있는 나만의 유전자 검사 서비스를 제공합니다.</p>
+	                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+	                                    <div class="list-area">
+	                                        <ul class="list-circle-dot">
+	                                            <li>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</li>
+	                                            <li>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</li>
+	                                            <li>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</li>
+	                                            <li>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</li>
+	                                            <li>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</li>
+	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</li>
+	                                        </ul>
+	                                    </div>
+	                                    <div class="btn-wrap">
+	                                    	<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
+	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    	<hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 올인원 69</p>
 	                            <div class="content">

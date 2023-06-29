@@ -46,7 +46,7 @@
 	                            <div class="content">
 	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomeblue.png" alt="마이지놈스토리블루">
+	                                    <img src="/publishing/pc-ko/dist/img/business/gentok_blue.png" alt="마이지놈스토리블루">
 	                                </div>
 	                                <div class="cont">
 	                                    <p class="desc">As a predictive genetic testing service for diseases including major cancers and common diseases, this provides advance knowledge on genetic risks of disease to help relieve the anxiety over any disease and maintain a healthy lifestyle.</p>
@@ -68,7 +68,7 @@
 	                            <div class="content">
 	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomegreen.png" alt="마이지놈스토리그린">
+	                                    <img src="/publishing/pc-ko/dist/img/business/gentok_green.png" alt="마이지놈스토리그린">
 	                                </div>
 	                                <div class="cont">
 	                                    <p class="desc">My Genomestory Green provides genetic information for diet and nutrition in order for healthy diet and effective weight management based on the individual’s genetic information. The most effective way to prevent disease is a healthy lifestyle.</p>
@@ -84,29 +84,16 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <!-- <hr class="divider">
-	                        <div class="list">
-	                            <p class="title font-h5">My Genomestory Gold (Total Care)</p>
-	                            <div class="content">
-	                                10.05 이미지 경로 변경
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomegold.png" alt="마이지놈스토리골드">
-	                                </div>
-	                                <div class="cont">
-	                                    <p class="desc">This is our comprehensive genetic testing service that enables inclusion of major optional items required to build a healthy life including diseases (Blue) and wellness (Green).</p>
-	                                </div>
-	                            </div>
-	                        </div> -->
-	                        <!-- <hr class="divider">
+	                        <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">GenTok Master</p>
 	                            <div class="content">
-	                                10.05 이미지 경로 변경
+	                                <!--10.05 이미지 경로 변경-->
 	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_mygenomegentok.png" alt="젠톡">
+	                                    <img src="/publishing/pc-ko/dist/img/business/gentok_master.png" alt="젠톡">
 	                                </div>
 	                                <div class="cont">
-	                                    <p class="desc">As the first genetic test service that combines a health survey and EMR data, the “GenTok” mobile app allows clients to check their test results and receive health information on a regular basis. It provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
+	                                    <p class="desc">As the first genetic test service that combines a health survey and EMR data, the “GenTok Master” mobile app allows clients to check their test results and receive health information on a regular basis. It provides superior predictive test results by analyzing pathogenic mutations, which are strong genetic mutations related to diseases.</p>
 	                                    <div class="list-area">
 	                                        <p class="desc" style="margin-bottom:6px !important">Master  (Men 23 / Women 25)</p>
 	                                        <ul class="list-circle-dot">
@@ -119,7 +106,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div> -->
+	                        </div>
 	                    </div>
 	
 	                </div>

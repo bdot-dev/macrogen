@@ -24,7 +24,8 @@
 	                <div class="info-box show">
 	                    <p class="font-h4 main-title" id="anchor2">DTC 유전자검사</p>
 	                    <p class="subject font-body-h">
-	                        	의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다. <br>개인의 유전적 특성을 분석 후 그에 따른 생활 속 관리 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.
+							의료기관을 방문하지 않고, 소비자가 직접 개인의 특성이나 건강과 관련된 웰니스 항목을 검사할 수 있는 유전자검사 서비스입니다. 검사 항목은 영양소, 운동, 피부·모발, 식습관, 개인특성(알코올 홍조, 니코틴 의존성 등), 건강관리(비만, 혈당, 혈압 등) 등으로 구성되어 있습니다.<br>
+							개인의 유전적 특성을 분석 후 그에 따른 생활 속 관리 가이드를 제공함으로써, 지금보다 더 건강하고 아름다운 삶을 이끌어갈 수 있도록 돕는 것은 물론 자신이 미처 몰랐던 ‘나’를 발견하는 계기를 만들어 줍니다.
 	                    </p>
 	                    <!--10.05 이미지 경로 변경-->
 	                    <div class="img">
@@ -37,14 +38,44 @@
 	                            <span class="text">마이지놈스토리 더플러스 올인원 69 (세부항목 73종)</span>
 	                        </div>
 	                        <ul class="anchor-option">
+	                            <li class="anchor-value" onclick="TitleMove('target4')"><a href="#">젠톡 GenTok</a></li>
 	                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">마이지놈스토리 더플러스 올인원 69</a></li>
-	                            <!-- <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">마이지놈스토리 더플러스 스킨&케어 44</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">마이지놈스토리 더플러스 피트니스 41</a></li>
-	                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">마이지놈스토리 더플러스 12</a></li> -->
 	                        </ul>
 	                    </div>
 	                    <!--content-anchor e-->
 	                    <div class="list-gallery">
+	                        <div class="section-anchor">
+	                            <div class="list">
+	                                <p class="sub-title font-h5" id="target4">젠톡 GenTok</p>
+	                                <div class="content">
+	                                    <!--10.05 이미지 경로 변경-->
+	                                    <div class="img">
+	                                        <img src="/publishing/mobile-ko/dist/img/business/gentok.png" alt="젠톡 GenTok">
+	                                    </div>
+	                                    <div class="cont">
+	                                        <p class="desc font-body caption_bottom">유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다. 73종 항목 중 내 맘대로 원하는 것만 고를 수 있는 나만의 유전자 검사 서비스를 제공합니다.</p>
+	                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+	                                        <div class="list-area">
+	                                            <ul class="list-circle-dot">
+	                                                <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
+	                                                <li><p>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</p></li>
+	                                                <li><p>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 13개 항목</p></li>
+	                                                <li><p>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</p></li>
+	                                                <li><p>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</p></li>
+	                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
+	                                            </ul>
+	                                        </div>
+	                                        <div class="btn-wrap">
+	                                            <div class="btn-wrapper">	                                            
+	                                            	<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
+	                                                <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <hr class="divider">      
 	                        <div class="section-anchor">
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69</p>
@@ -69,7 +100,6 @@
 	                                        <div class="btn-wrap">
 	                                            <div class="btn-wrapper">
 	                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
-	                                                <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a> -->
 	                                            </div>
 	                                        </div>
 	                                    </div>
