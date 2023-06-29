@@ -27,7 +27,7 @@
 		<div class="container">
 	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
-	            <div class="subject-box type02">
+	            <div class="subject-box type01">
 	                <p class="font-h4 title">DTC Genetic Testing</p>
 	                <p class="subject">GenTok offers DNA testing on nutrients, exercise, skin/hair, diet, personal characteristics (alcohol flush reaction, nicotine dependence), and health care (obesity, blood sugar, blood pressure). Our solution analyzes genetic characteristics, based on which we provide a personalized lifestyle guide, not only helping people to lead healthier and more beautiful lives but also providing opportunity to find their true selves.</p>
 	            </div>
