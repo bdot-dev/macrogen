@@ -4736,7 +4736,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
@@ -13346,6 +13346,8 @@ table {
             opacity: 1; }
       .modal .modal-dialog .modal-content .modal-body {
         padding: 120px 20px 80px; }
+        .modal .modal-dialog .modal-content .modal-body .data-img img {
+        	width: 100%; }
   .modal.modal-image-viewer {
     display: block !important; }
     .modal.modal-image-viewer .modal-dialog .modal-content {
