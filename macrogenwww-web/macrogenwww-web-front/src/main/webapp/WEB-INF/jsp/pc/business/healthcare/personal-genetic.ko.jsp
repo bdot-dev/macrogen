@@ -119,7 +119,7 @@
 </div>
 
 <%-- 팝업 --%>
-<c:if test="${not empty popupList  }">
+<c:if test="${not empty popupList  }"> 
 <c:forEach var="popup" items="${popupList}" varStatus="status">
 	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
 		<input type="hidden" value="${popupCnt}" id="popupCnt">
