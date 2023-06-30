@@ -127,103 +127,120 @@
 	        
 	    </div>
 	</div>
+
 <%-- 팝업 --%>
-<c:if test="${not empty popupList  }">
-<c:forEach var="popup" items="${popupList}" varStatus="status">
-	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
-		<input type="hidden" value="${popupCnt}" id="popupCnt">
-		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-	    <div class="modal-dialog modal-dialog-centered layer-modal">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <div class="blue-circle">
-	                    <i class="icon icon-union"></i>
-	                </div>
-	            </div>
-	            <div class="modal-body">
-	                <%-- <p class="title">${popupVo.popupNm }</p>
-	                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
-	                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
-	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
-	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
-	                    <br>908억 원을 달성했습니다.
-	                </p> --%>
-	                <div class="data-img">
-	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-	                </div>
-	                <!-- <div class="btn-area">
-	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
-	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> -->
-	            </div>
-	            <div class="modal-footer">
-	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
-	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
-	                    <span>Close</span>
-	                    <i class="icon ico-close-white"></i>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</c:forEach>
-	<script>
-		var popupCnt = $("#popupCnt").val();
-		
-		for(var i=0;i<popupCnt;i++){
-			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
-			var coockieChk = $("#cookieChkList"+i).val();
-			
-			if(coockieChk == 'true'){
-				layerPopupModal.hide();
-			}else if(coockieChk =='false'){
-				layerPopupModal.show();
-			}
-			
-		    //layerPopupModal.show();
-		}
-		
-	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show(); */
-	    
-	    $('div.modal-backdrop:gt(0)').css("opacity", "0");
-	</script>
-	<script>
+	<c:if test="${not empty popupList  }">
+	<c:forEach var="popup" items="${popupList}" varStatus="status">
+		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
+		     aria-hidden="true">
+		    <input type="hidden" value="${popupCnt}" id="popupCnt">
+			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <div class="ico-notice icon"></div> 
+		            </div>
+		            <div class="modal-body">
+		                <div class="scroll">
+		                    <div class="data-img">
+		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
+			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
+			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+		                    </div>
+		                    <%-- <div class="btn-wrapper">
+		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
+		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
+		                    </div> --%>
+		                </div>
+		            </div>
+		            <div class="modal-footer">
+		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		</c:forEach>
+		<script>
+		    /* var modalEl = document.getElementById('modal')
+		    var modal = new bootstrap.Modal(modalEl)
 
-		function onclickPopupImage(url, trgtCode) {
-			if (!url) {
-				return;
+		    modal.show(); */
+		    
+		    var popupCnt = $("#popupCnt").val();
+			
+			for(var i=0;i<popupCnt;i++){
+				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
+				/* var modalEl = document.getElementById('modal'+i);
+				var modal = new bootstrap.Modal(modalEl);  */
+				var coockieChk = $("#cookieChkList"+i).val();
+
+				if(coockieChk == 'true'){
+					modal.hide();
+				}else if(coockieChk =='false'){
+					modal.show();
+				}
 			}
 
-			if (trgtCode === 'NEW') {
-				window.open(url);
-			} else {
-				location.href = url;
+		   /*  $(document).ready(function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
+		    })
+
+		    modalEl.addEventListener('shown.bs.modal', function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
+		    })
+
+		    modalEl.addEventListener('hide.bs.modal', function () {
+		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
+		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
+		    })  */
+		</script>
+		<script>
+			/* $(function() {
+				var $btnPopupClose = $('#modal .close-box');
+				$btnPopupClose.on('click', function() {
+					var sn = $(this).data('popup-sn');
+					if (!sn) return;
+
+					var snListStr = $.cookie('popup-sn-list');
+					if (!snListStr) {
+						snListStr = sn;
+					} else if (snListStr.indexOf(sn) < 0) {
+						snListStr += ',' + sn;
+					}
+					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
+					modal.hide();
+				});
+			});
+ */
+			function onclickPopupImage(url, trgtCode) {
+				if (!url) {
+					return;
+				}
+
+				if (trgtCode === 'NEW') {
+					window.open(url);
+				} else {
+					location.href = url;
+				}
 			}
-		}
-		
-		function popupClose(sn, idx) {
-			if ($('#popup-sn'+idx).is(':checked')) { 
+ 
+			 function popupClose(sn) {
 				if (!sn) return;
-	
+				
 				var snListStr = $.cookie('popup-business-sn-list');
-				console.log(snListStr);
 				if (!snListStr) {
 					snListStr = sn;
 				} else if (snListStr.indexOf(sn) < 0) {
 					snListStr += ',' + sn;
 				}
+
 				$.cookie('popup-business-sn-list', snListStr, { expires: 1, path: '/'});
+				modal.hide();
 			}
-			
-			layerPopupModal.hide();
-			/* $('.show').parent('body').css("overflow", "hidden"); 
-			$('.show').parent('body').css("padding-right", "17px"); */
-		}
-	</script>
-</c:if>
+		</script>
+	</c:if>
 
 </body>
