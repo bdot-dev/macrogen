@@ -106,7 +106,7 @@ public class BusinessController extends DefaultController {
 			List<Long> exceptPopupSnList = getExceptPopupBusinessSnList(request);
 			List<Boolean> cookieChkList = new ArrayList<>();
 			for (PopupVo popup : popupList) {
-				cookieChkList.add(exceptPopupSnList.contains(popup.getPopupSn()));
+				cookieChkList.add(exceptPopupSnList.contains(popup.getPopupSn())); 
 				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
 					model.addAttribute("popupVo", popup);
 					model.addAttribute("cookieChkList", cookieChkList);
