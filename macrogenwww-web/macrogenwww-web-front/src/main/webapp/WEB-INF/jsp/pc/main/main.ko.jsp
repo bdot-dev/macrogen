@@ -719,6 +719,7 @@
 				if (!sn) return;
 	
 				var snListStr = $.cookie('popup-sn-list');
+				
 				if (!snListStr) {
 					snListStr = sn;
 				} else if (snListStr.indexOf(sn) < 0) {
