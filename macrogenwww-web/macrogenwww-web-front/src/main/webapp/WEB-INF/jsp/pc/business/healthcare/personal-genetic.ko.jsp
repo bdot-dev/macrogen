@@ -197,7 +197,7 @@
 		}
 		
 		function popupClose(sn, idx) {
-			if ($('#popup-sn'+idx).is(':checked')) {
+			if ($('#popup-sn'+idx).is(':checked')) { 
 				if (!sn) return;
 	
 				var snListStr = $.cookie('popup-business-sn-list');
