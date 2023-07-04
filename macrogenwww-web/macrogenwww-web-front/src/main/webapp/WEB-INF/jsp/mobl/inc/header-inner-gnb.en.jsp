@@ -164,7 +164,7 @@
                     <li><a href="#none">NEWSROOM</a>
                         <ul>
                             <li><a href="/${rc.locale.language }/newsroom/news">News</a></li>
-                            <li><a href="/${rc.locale.language }/newsroom/media-library">Media library</a></li>
+                            <%-- <li><a href="/${rc.locale.language }/newsroom/media-library">Media library</a></li> --%>
                             <li><a href="/${rc.locale.language }/newsroom/notice">Notice</a></li>
                         </ul>
                     </li>
