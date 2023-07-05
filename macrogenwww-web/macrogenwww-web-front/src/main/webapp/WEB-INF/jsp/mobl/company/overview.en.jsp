@@ -288,7 +288,7 @@
                             <span class="title">CLINICAL<br/> DIAGNOSTICS &<br/> TREATMENTS</span>
                         </div>
                         <div class="desc">For Patients and Medical Staff</div>
-                        <div class="desc-sm">We invest and conduct R&D projects in the field of precision medicine. This includes tests for cancer genomes, prenatal genomes, and rare disease genomes, focusing on providing personalized diagnosis, treatment, and health care solutions.</div>
+                        <div class="desc-sm">We invest in and conduct R&D projects in the field of precision medicine. Macrogen offers DNA testing for cancer, ClinPharm Seq, with a focus on providing personalized diagnosis, treatment, and healthcare solutions.</div>
                     </div>
                     <div class="item item-3">
                         <div class="img">
@@ -296,7 +296,7 @@
                             <span class="title">PERSONAL <br/>HEALTHCARE</span>
                         </div>
                         <div class="desc">For the Public</div>
-                        <div class="desc-sm">As a key area of personal health care, genome services are gaining attention. Macrogen is providing more practical and effective health care solutions to improve the quality of people's lives through personal genomic analysis service "My Genome Story" and personalized healthcare solution "The Biome" based on microbiome testing and analysis.</div>
+                        <div class="desc-sm">As a key area of personal healthcare, personal genome sequencing is gaining attention. Macrogen is providing practical and effective healthcare solutions to improve the quality of people's lives through personal genomic analysis services.</div>
                     </div>
                     <div class="item item-4">
                         <div class="img">

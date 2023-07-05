@@ -52,7 +52,7 @@
 	                                        <img src="/publishing/mobile-ko/dist/img/business/gentok.png" alt="젠톡 GenTok">
 	                                    </div>
 	                                    <div class="cont">
-	                                        <p class="desc font-body caption_bottom">유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다. 73종 항목 중 내 맘대로 원하는 것만 고를 수 있는 나만의 유전자 검사 서비스를 제공합니다.</p>
+	                                        <p class="desc font-body caption_bottom">개인의 취향대로 원하는 항목만 골라 담을 수 있는 DTC 유전자검사 서비스로, 유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다.</p>
 	                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
 	                                        <div class="list-area">
 	                                            <ul class="list-circle-dot">

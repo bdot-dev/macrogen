@@ -284,7 +284,7 @@
                             <span class="title">임상진단/치료</span>
                         </div>
                         <div class="desc">환자 및 의료진 대상</div>
-                        <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체, 산전 유전체, 희귀질환 유전체 등의 검사가 포함되며 개인 맞춤형 진단과 치료, 건강관리 방법 등을 제시에 주력하고 있습니다.</div>
+                        <div class="desc-sm">정밀의학 실현을 위해 마크로젠이 적극적으로 투자와 연구개발을 추진 중인 분야입니다. 암 유전체 검사, 약물 유전체 분석, 임상시험검체분석(GCLP) 등 개인 맞춤형 진단과 치료, 건강관리 방법 제시에 주력하고 있습니다.</div>
                     </div>
                     <div class="item item-3">
                         <div class="img">
@@ -302,7 +302,7 @@
                             <span class="title">반려동물</span>
                         </div>
                         <div class="desc">반려동물 대상</div>
-                        <div class="desc-sm">반려동물을 위한 유전자 검사 서비스(myPETGENE&#8482;) 등이 진행되고 있습니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석하고 있습니다.</div>
+                        <div class="desc-sm">반려동물을 위한 유전자 검사 서비스(myPETGENE&#8482;)를 제공합니다. 이외에도 마크로젠은 Human에서 Non-human에 이르기까지 모든 생물의 유전체 정보를 분석합니다.</div>
                     </div>
                 </div>
             </div>
