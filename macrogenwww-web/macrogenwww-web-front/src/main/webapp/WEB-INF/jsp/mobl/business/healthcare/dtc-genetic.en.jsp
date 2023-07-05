@@ -24,13 +24,12 @@
                 <div class="info-box show">
                     <p class="font-h4 main-title" id="anchor2">DTC Genetic Testing</p>
                     <p class="subject font-body-h">
-                        GenTok offers DNA testing on nutrients, exercise, skin/hair, diet,
-                        personal characteristics (alcohol flush reaction, nicotine dependence),
-                        and health care (obesity, blood sugar, blood pressure).
-                        Our solution analyzes genetic characteristics,
-                        based on which we provide a personalized lifestyle guide,
-                        not only helping people to lead healthier
-                        and more beautiful lives but also providing opportunity to find their true selves.
+                        Macrogen offers DNA testing on nutrients, exercise, skin/hair, diet, 
+                        personal characteristics (alcohol flush reaction, nicotine dependence), 
+                        and healthcare (obesity, blood sugar, blood pressure). 
+                        Our solution analyzes genetic characteristics and 
+                        provides a personalized lifestyle guide, not only helping people to lead healthier 
+                        and more beautiful lives but also providing an opportunity to find their true selves.
                     </p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
