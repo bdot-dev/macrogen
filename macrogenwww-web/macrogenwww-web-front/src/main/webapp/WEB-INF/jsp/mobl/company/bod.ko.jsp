@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-
+ 
     <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-management.png);">
         <header class="header header-white">
     <div class="inner">
