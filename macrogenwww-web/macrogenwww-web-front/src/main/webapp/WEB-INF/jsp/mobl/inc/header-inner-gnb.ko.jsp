@@ -171,7 +171,7 @@
                     <li><a href="#none">NEWSROOM</a>
                         <ul>
                             <li><a href="/${rc.locale.language }/newsroom/news">뉴스</a></li>
-                            <li><a href="/${rc.locale.language }/newsroom/media-library">미디어라이브러리</a></li>
+                            <%-- <li><a href="/${rc.locale.language }/newsroom/media-library">미디어라이브러리</a></li> --%>
                             <li><a href="/${rc.locale.language }/newsroom/notice">공지사항</a></li>
                         </ul>
                     </li>

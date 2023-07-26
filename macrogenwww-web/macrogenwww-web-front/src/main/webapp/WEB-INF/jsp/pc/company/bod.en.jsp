@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
-
+ 
     <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-management.png);">
         <!--header 수정시 메인 header 같이 수정해주세요-->
 <header class="header" id="header">
@@ -327,19 +327,19 @@
                     
                         <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
                             <li class="item"></li>   
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_01.png" alt="">
                                     <p class="name">Management Support Center<strong>Yoo Seong-hyun</strong></p>
                                 </span>
-                            </li>     
-                            <li class="item first">                                        
+                            </li>      -->
+                            <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_02.png" alt="">
                                     <p class="name">Digital Innovation Unit<strong>Joo Chang-nam</strong></p>
                                 </span>
                             </li>     
-                            <li class="item">                                        
+                            <li class="item first">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_03.png" alt="">
                                     <p class="name">Genome Business Unit<strong>Lee Eung-ryoung</strong></p>

@@ -127,8 +127,8 @@
 	        
 	    </div>
 	</div>
-
-<%-- 팝업 --%>
+	
+<%-- 팝업 --%> 
 	<c:if test="${not empty popupList  }">
 	<c:forEach var="popup" items="${popupList}" varStatus="status">
 		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
@@ -162,17 +162,11 @@
 		</div>
 		</c:forEach>
 		<script>
-		    /* var modalEl = document.getElementById('modal')
-		    var modal = new bootstrap.Modal(modalEl)
-
-		    modal.show(); */
 		    
 		    var popupCnt = $("#popupCnt").val();
 			
 			for(var i=0;i<popupCnt;i++){
 				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
-				/* var modalEl = document.getElementById('modal'+i);
-				var modal = new bootstrap.Modal(modalEl);  */
 				var coockieChk = $("#cookieChkList"+i).val();
 
 				if(coockieChk == 'true'){
@@ -181,40 +175,8 @@
 					modal.show();
 				}
 			}
-
-		   /*  $(document).ready(function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('shown.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('hide.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
-		    })  */
 		</script>
 		<script>
-			/* $(function() {
-				var $btnPopupClose = $('#modal .close-box');
-				$btnPopupClose.on('click', function() {
-					var sn = $(this).data('popup-sn');
-					if (!sn) return;
-
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-					modal.hide();
-				});
-			});
- */
 			function onclickPopupImage(url, trgtCode) {
 				if (!url) {
 					return;

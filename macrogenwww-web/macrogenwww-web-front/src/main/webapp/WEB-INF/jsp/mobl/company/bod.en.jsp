@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-
+ 
     <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-management.png);">
         <header class="header header-white">
     <div class="inner">
@@ -423,12 +423,12 @@
                         </div>
                     
                         <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">                           
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_01.png" alt="">
                                     <p class="name">Management Support Center<strong>Yoo Seong-hyun</strong></p>
                                 </span>
-                            </li>     
+                            </li>      -->
                             <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_02.png" alt="">

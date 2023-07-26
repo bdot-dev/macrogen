@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
-
+ 
     <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-management.png);">
         <header class="header header-white">
     <div class="inner">
@@ -419,7 +419,7 @@
                         </div>
                     
                         <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">                           
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_01.png" alt="">
                                     <p class="name">경영지원총괄본부<strong>유성현 본부장</strong></p>
@@ -428,8 +428,8 @@
                                     <li>現) 마크로젠 최고재무책임자 CFO</li>
                                     <li>前) SK종합화학 CFO</li>
                                 </ul>                                         
-                            </li>     
-                            <li class="item first">                                        
+                            </li>      -->
+                            <li class="item">
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_02.png" alt="">
                                     <p class="name">디지털혁신본부<strong>주창남 본부장</strong></p>
