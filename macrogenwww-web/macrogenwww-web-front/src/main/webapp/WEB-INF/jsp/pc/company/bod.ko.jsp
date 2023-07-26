@@ -325,7 +325,7 @@
                                     <li>前) SK종합화학 CFO</li>
                                 </ul>                                         
                             </li>      -->
-                            <li class="item first">                                        
+                            <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_02.png" alt="">
                                     <p class="name">디지털혁신본부<strong>주창남 본부장</strong></p>
@@ -336,7 +336,7 @@
                                     <li>前) 삼성전자 무선사업부 전무</li>
                                 </ul>                                         
                             </li>     
-                            <li class="item">                                        
+                            <li class="item first">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_03.png" alt="">
                                     <p class="name">지놈사업본부<strong>이응룡 본부장</strong></p>

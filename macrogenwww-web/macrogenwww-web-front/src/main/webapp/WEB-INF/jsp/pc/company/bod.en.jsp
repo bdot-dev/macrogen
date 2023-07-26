@@ -333,13 +333,13 @@
                                     <p class="name">Management Support Center<strong>Yoo Seong-hyun</strong></p>
                                 </span>
                             </li>      -->
-                            <li class="item first">                                        
+                            <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_02.png" alt="">
                                     <p class="name">Digital Innovation Unit<strong>Joo Chang-nam</strong></p>
                                 </span>
                             </li>     
-                            <li class="item">                                        
+                            <li class="item first">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_03.png" alt="">
                                     <p class="name">Genome Business Unit<strong>Lee Eung-ryoung</strong></p>

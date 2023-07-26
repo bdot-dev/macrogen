@@ -429,7 +429,7 @@
                                     <li>前) SK종합화학 CFO</li>
                                 </ul>                                         
                             </li>      -->
-                            <li class="item first">                                        
+                            <li class="item">
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_02.png" alt="">
                                     <p class="name">디지털혁신본부<strong>주창남 본부장</strong></p>
