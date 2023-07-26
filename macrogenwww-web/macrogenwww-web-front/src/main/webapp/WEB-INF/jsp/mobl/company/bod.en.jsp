@@ -423,12 +423,12 @@
                         </div>
                     
                         <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">                           
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_01.png" alt="">
                                     <p class="name">Management Support Center<strong>Yoo Seong-hyun</strong></p>
                                 </span>
-                            </li>     
+                            </li>      -->
                             <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_02.png" alt="">

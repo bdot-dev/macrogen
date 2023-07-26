@@ -419,7 +419,7 @@
                         </div>
                     
                         <ul class="thumbnail _thumbnailGrid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">                           
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_01.png" alt="">
                                     <p class="name">경영지원총괄본부<strong>유성현 본부장</strong></p>
@@ -428,7 +428,7 @@
                                     <li>現) 마크로젠 최고재무책임자 CFO</li>
                                     <li>前) SK종합화학 CFO</li>
                                 </ul>                                         
-                            </li>     
+                            </li>      -->
                             <li class="item first">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_02.png" alt="">
