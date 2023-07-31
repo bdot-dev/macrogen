@@ -12490,6 +12490,15 @@ table {
       table.table tbody tr th {
         border-top: 1px solid #000000;
         background-color: #F7F7F7; }
+      table.table tbody tr th.bg-line {
+		font-weight: 400;
+		color: #454545;
+		border-color: #FFFFFF;
+        background-color: #F2F2F2;
+      }
+	  table.table tbody tr:first-child th.bg-line {
+		  border: 0;
+	  }
       table.table tbody tr td {
         color: #666666;
         text-align: center;

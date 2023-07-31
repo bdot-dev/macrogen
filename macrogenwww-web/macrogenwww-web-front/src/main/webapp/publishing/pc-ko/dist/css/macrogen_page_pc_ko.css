@@ -5726,6 +5726,143 @@
                       border-radius: 50%;
                       background-color: #454545;
                       vertical-align: middle; }
+.section-header .inner {
+	max-width: 1582px;
+	min-width: 1244px;
+	margin: 150px 0 150px auto;
+}
+.section-header .inner .text-lg {
+	font-weight: 700;
+	font-size: 56px;	
+}
+.section-greenhouse .inner {
+	display: flex;
+	align-items: center;
+	max-width: 1582px;
+	min-width: 1244px;
+	margin: 150px auto 150px 0;
+}
+.section-greenhouse .item:nth-child(odd) .inner {
+	justify-content: flex-end;
+	margin: 150px 0 150px auto;
+}
+.section-greenhouse .item:nth-child(odd) .cont-item {
+	padding-right: 40px;
+}
+.section-greenhouse .item:nth-child(even) .cont-item {
+	padding-left: 147px;
+}
+.section-greenhouse .item .cont-item {
+	width: 642px;
+}
+.section-greenhouse .item .cont-item .title {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 56px;
+}
+.section-greenhouse .item .cont-item .comment {
+	font-weight: 400;
+	font-size: 20px;
+	color: #454545;
+	letter-spacing: -0.75px;
+}
+.section-greenhouse .item .inner > img {
+	max-width: 940px;
+	min-width: 50%;
+}
+.section-greenhouse .item .tit-item {
+	display: flex;
+	align-items: flex-end;
+	max-width: 1582px;
+	min-width: 1244px;
+	margin: 150px 0 50px auto;
+	font-weight: 700;
+	font-size: 32px;
+}
+.section-greenhouse .inner-tbl,
+.section-greenhouse .inner-graph {
+	max-width: 1582px;
+	min-width: 1244px;
+	margin: 50px 0 120px auto;
+}
+.section-greenhouse .inner-tbl table {
+	width: 1244px;
+}
+.section-greenhouse .inner-tbl .txt-grade,
+.section-greenhouse .inner-tbl .txt-comment {
+	width: 1244px;
+	font-size: 14px;
+	color: #909090;
+	line-height: 40px;
+}
+.section-greenhouse .inner-tbl .txt-grade {
+	margin-top: -40px;
+	text-align: right;
+}
+.section-greenhouse .inner-graph .info-ksa {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	width: 1244px;
+	margin-top: 80px;
+	padding: 70px;
+	font-size: 16px;
+	color: #454545;
+	background-color: #F7F7F7;
+}
+.section-greenhouse .inner-graph .info-ksa > img {
+	flex: none;
+}
+.section-greenhouse .inner-graph .info-ksa .info {
+	display: flex;
+	flex-direction: column;
+}
+.section-greenhouse .inner-graph .info-ksa strong {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 22px;
+	color: #000000;
+}
+.section-greenhouse .inner-graph .info-ksa .btn-certification {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin: 45px 0 0;
+	font-weight: 700;
+	font-size: 18px;
+	color: #2E87EF;
+	border: 0;
+	background: none;
+}
+.section-greenhouse .inner-graph .info-ksa .btn-certification:before {
+	flex:none;
+	display: block;
+	content: '';
+	width: 41px;
+	height: 41px;
+	background: url('../img/esg/icon-view.png') no-repeat 50% 50%;
+}
+.section-greenhouse .inner-graph .info-ksa .info 
+.section-greenhouse .table {
+	width: 1244px;
+	margin: 0;
+}
+.section-greenhouse table.table tr th {
+	padding: 25px 30px;
+}
+.section-greenhouse table.table tbody tr td {
+	padding: 10px 30px;
+}
+.item .tit-item:after {
+	display: block;
+	content: '';
+	width: 50px;
+	height: 3px;
+	margin: 0 0 8px 8px;
+	background-color: #000000;
+}
   .macrogen.ethical-management .section-activity {
     padding: 150px 0 30px; }
     .macrogen.ethical-management .section-activity .main-img {
