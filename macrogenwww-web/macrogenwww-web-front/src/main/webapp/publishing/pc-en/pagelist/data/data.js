@@ -495,5 +495,11 @@ data.esg = {
       category: 'ESG',
       page: '06ESG_03사회공헌_03과학자상상세'
     },
+    {
+      stateClass: 'complete',
+      url: '06ESG_04온실가스',
+      category: 'ESG',
+      page: '06ESG_04온실가스'
+    },
   ]
 }
