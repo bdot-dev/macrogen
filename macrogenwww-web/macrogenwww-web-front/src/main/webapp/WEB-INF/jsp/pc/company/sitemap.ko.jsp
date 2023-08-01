@@ -142,7 +142,7 @@
 					<div class="title"><a href="/${rc.locale.language }/ir/investor-inquiries">투자자 문의</a></div>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section ir">
 				<div class="font-h6">ESG</div>
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></div>
@@ -152,6 +152,9 @@
 				</div>
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></div>
+				</div>
+				<div class="item">
+					<div class="title"><a href="/${rc.locale.language }/company/greenhouse-gas">온실가스</a></div>
 				</div>
 			</div>
         </div>

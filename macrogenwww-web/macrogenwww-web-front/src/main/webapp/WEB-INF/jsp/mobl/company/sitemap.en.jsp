@@ -135,6 +135,9 @@
 					<div class="item">
 						<div class="title"><a href="/${rc.locale.language }/company/social-contribution">Social Responsibility</a></div>
 					</div>
+					<div class="item">
+						<div class="title"><a href="/${rc.locale.language }/company/greenhouse-gas">Greenhouse gas emissions</a></div>
+					</div>
 				</div>
 				</div>
 		</div>
