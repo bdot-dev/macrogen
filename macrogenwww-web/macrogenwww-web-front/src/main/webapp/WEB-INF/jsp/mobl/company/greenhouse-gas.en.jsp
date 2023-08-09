@@ -167,27 +167,27 @@
 								</thead>
 								<tbody>
 									<tr>
-										<th scope="row" class="bg-line">2022</th>
+										<th scope="row" class="bg-line">2022년</th>
 										<td>430</td>
-										<td>2.493</td>
+										<td>2,493</td>
 										<td>81</td>
-										<td>3.005</td>
+										<td>3,005</td>
 										<td>58</td>
 									</tr>
 									<tr>
-										<th scope="row" class="bg-line">2021</th>
+										<th scope="row" class="bg-line">2021년</th>
 										<td>404</td>
-										<td>2.360</td>
+										<td>2,360</td>
 										<td>30</td>
-										<td>2.794</td>
+										<td>2,794</td>
 										<td>55</td>
 									</tr>
 									<tr>
-										<th scope="row" class="bg-line">2020</th>
+										<th scope="row" class="bg-line">2020년</th>
 										<td>436</td>
-										<td>2.346</td>
+										<td>2,346</td>
 										<td>78</td>
-										<td>2.860</td>
+										<td>2,860</td>
 										<td>55</td>
 									</tr>
 								</tbody>
