@@ -197,7 +197,7 @@
 								<img src="/publishing/mobile-ko/dist/img/esg/symbol-ksa.png" alt="">
 	                            <strong>검증성명서를 확인하세요</strong>
 	                            아래의 버튼을 누르시면 <br>마크로젠의 온실가스 배출량 검증성명서를 <br>확인할 수 있습니다.
-	                            <button type="button" class="btn-certification" onclick="window.open('/publishing/mobile-ko/dist/img/esg/greenhouse-gas-ko_v2.pdf')">온실가스 배출량 검증성명서 보기</button>
+	                            <button type="button" class="btn-certification" onclick="window.open('/publishing/mobile-ko/dist/img/esg/greenhouse-gas-ko.pdf')">온실가스 배출량 검증성명서 보기</button>
 							</div>
 						</div>
 					</div>
