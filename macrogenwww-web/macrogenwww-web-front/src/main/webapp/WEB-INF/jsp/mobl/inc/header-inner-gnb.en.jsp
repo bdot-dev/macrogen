@@ -188,6 +188,7 @@
                             <li><a href="/${rc.locale.language }/company/esg-management">ESG Management</a></li>
                             <li><a href="/${rc.locale.language }/company/ethical-management">Ethical Management</a></li>
                             <li><a href="/${rc.locale.language }/company/social-contribution">Social Responsibility</a></li>
+                            <li><a href="/${rc.locale.language }/company/greenhouse-gas">Greenhouse gas emissions</a></li>
                         </ul>
                     </li>
                 </ul>

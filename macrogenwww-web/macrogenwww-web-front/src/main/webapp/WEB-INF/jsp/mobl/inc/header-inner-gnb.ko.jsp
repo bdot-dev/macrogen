@@ -193,6 +193,7 @@
                             <li><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></li>
                             <li><a href="/${rc.locale.language }/company/ethical-management">윤리경영</a></li>
                             <li><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></li>
+                            <li><a href="/${rc.locale.language }/company/greenhouse-gas">온실가스</a></li>
                         </ul>
                     </li>
                 </ul>

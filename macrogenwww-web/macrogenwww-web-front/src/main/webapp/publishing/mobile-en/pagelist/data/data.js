@@ -346,5 +346,11 @@ data.etc = {
             category: 'etc',
             page: '에러페이지'
         },
+        {
+          stateClass: 'complete',
+          url: '06ESG_04온실가스',
+          category: 'ESG',
+          page: '06ESG_04온실가스'
+        },
     ]
 }

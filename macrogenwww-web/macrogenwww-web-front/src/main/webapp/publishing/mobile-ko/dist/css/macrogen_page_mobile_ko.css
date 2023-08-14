@@ -2211,7 +2211,112 @@
     padding-left: 20px; }
     .macrogen.macrogen-esg .section-management-goals .list-goals .goal .item.bg img {
       width: 100%;
-      height: auto; }
+      height: auto; }      
+.macrogen.esg-greenhouse .section-phrase {
+	margin: 0 20px 56px;
+}
+	.section-greenhouse .box{
+		margin-top: 70px;
+	}
+	.section-greenhouse > .item {
+		margin: 56px 20px;
+	}
+	.section-greenhouse .box + .item {
+		margin-top: 140px;
+	}
+	.section-greenhouse .inner-tbl {
+		white-space: nowrap;
+		margin-right: -20px;
+		overflow-x: auto;
+	}
+	.section-greenhouse .txt-grade,
+	.section-greenhouse .txt-comment {
+		font-size: 14px;
+		color: #909090;
+		line-height: 40px;
+	}
+	.section-greenhouse .txt-grade {
+		margin-top: -32px;
+		text-align: right;
+	}
+	.section-greenhouse table.table {
+		margin-bottom: 25px;
+	}
+	.section-greenhouse table.table tr th {
+		padding: 15px 24px;
+		line-height: 24px;
+	}
+	.section-greenhouse .box > * {
+		padding: 0 20px;
+	}
+	.section-greenhouse .box > .font-h4,
+	.section-greenhouse .item > .font-h4 {
+		margin-bottom: 32px;
+	}
+	.section-greenhouse .box .item.text .font-h4 {
+		margin-bottom: 16px;
+	}
+	.section-greenhouse .box .item.bg {
+		margin-bottom: 40px;
+		padding: 0 0 0 20px;
+	}
+	.section-greenhouse .box:nth-child(even) .item.bg {
+		padding: 0 20px 0 0;
+	}
+	.section-greenhouse .box .item.bg img {
+		width: 100%;
+	}
+	.section-greenhouse .box:first-child {
+		margin-top: 0;
+	}
+	.section-greenhouse .item .inner-graph img {
+		width: 100%;
+	}
+	.section-greenhouse .item .inner-graph .info-ksa {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+		padding: 40px 0 40px 20px;
+		font-size: 16px;
+		line-height: 32px;
+		color: #454545;
+		background-color: #F7F7F7;
+	}
+	.section-greenhouse .item .inner-graph .info-ksa > img {
+		flex: none;
+		width: 100px;
+		height: 100px;
+		margin-bottom: 28px;
+	}
+	.section-greenhouse .item .inner-graph .info-ksa strong {
+		display: block;
+		margin-bottom: 4px;
+		font-size: 26px;
+		line-height: 42px;
+		color: #000000;
+	}
+	.section-greenhouse .inner-graph .info-ksa .btn-certification {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		margin: 45px 0 0;
+		padding: 0;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: -0.5px;
+		color: #2E87EF;
+		text-align: left;
+		border: 0;
+		background: none;
+	}
+	.section-greenhouse .inner-graph .info-ksa .btn-certification:before {
+		flex:none;
+		display: block;
+		content: '';
+		width: 40px;
+		height: 40px;
+		background: url('../img/esg/icon-view.png') no-repeat 50% 50%;
+	}
   .macrogen .modal-dialog .modal-content .modal-body .list-of-winners > .title {
     font-family: sans-serif;
     font-weight: bold;

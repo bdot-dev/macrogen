@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+
+  <meta name="apple-mobile-web-app-title" content="macrogen" />
+  <meta name="viewport" content="width=1244"/>
+  <!-- IE 10 이하 -->
+  <link rel="shortcut icon" href="../../favicon/favicon.ico">
+  <!-- Android -->
+  <link rel="icon" type="image/png" sizes="36x36" href="../../favicon/android-icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../../favicon/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="../../favicon/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="../../favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png">
+  <!-- apple -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png">
+  <!-- 브라우저용 표준 -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+  <!-- ms -->
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-150x150.png">
+  <meta name="msapplication-TileImage" content="../../favicon/ms-icon-310x310.png">
+  <!-- manifest -->
+<!--  <link rel="manifest" href="../../favicon/manifest.json">-->
+  <!-- Windows 8.1 + IE11 이상 -->
+  <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+
+  <meta name="robots" content="ALL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="마크로젠">
+  <meta property="og:description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+<!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
+  <meta property="og:url" content="www.macrogen.co.kr">
+  <link rel="canonical" href="http://www.macrogen.co.kr">
+  <title>Macrogen</title>
+  <meta name="keywords" content="마크로젠 키워드">
+  <meta name="description" content="유전체 통합 빅데이터를 구축하여 미래의학을 혁신하는 글로벌 정밀의학 선도기업">
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_component_pc.css?"/>
+  <link type="text/css" rel="stylesheet" href="../../css/macrogen_page_pc_ko.css?"/>
+  <link type="text/css" rel="stylesheet" href="../../css/bootstrap-ie11.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
+
+  <script src="../../js/bundle.js?"></script>
+  <![if !IE]><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script><![endif]>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"><\/script>');</script>
+  <script src="../../js/common.js?"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+
+<body class="en">
+<div class="wrap">
+    <div class="full-bg macrogen" style="background-image: url(../../img/esg/bg-esg-4.png);">
+        <header class="header" id="header">
+            <div class="inner">
+                <div class="section_gnb">
+                    <h1 class="logo"><a href="#">마크로젠 로고</a></h1>
+                    <nav>
+                        <ul id="gnb">
+                            <li><span class="font-bold">macrogen</span></li> <!-- active 시, 활성화 -->
+                            <li><span class="font-bold">business</span></li>
+                            <li><span class="font-bold">r&#38;d</span></li>
+                            <li><span class="font-bold">newsroom</span></li>
+                            <li><span class="font-bold">ir</span></li>
+                            <li><span class="font-bold">esg</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="section_btn">
+                    <ul class="sns">
+                        <li><a href="#"><i class="icon icon-facebook-circle"></i></a></li>
+                        <li><a href="#"><i class="icon icon-youtube-circle"></i></a></li>
+                        <li><a href="#"><i class="icon icon-blog-circle"></i></a></li>
+                        <li><a href="#"><i class="icon icon-linkedin-circle"></i></a></li>
+                    </ul>
+                    <div class="btn_eng">
+                        <a href="#" class="btn btn-round"><i class="icon icon-earth-black"></i><span>ENG</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gnb-2depth" id="gnb2Depth">
+                <!--Macrogen-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">Company</a></div>
+                        <ul>
+                            <li><a href="#">About MACROGEN</a></li>
+                            <li><a href="#">Executive Leadership </a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Certification & Accreditation</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Global Network</a></div>
+                    </div>
+                <!--영문버전 제공 X-->
+                <!--  <div class="item">
+                        <div class="title"><a href="#">채용</a></div>
+                        <ul>
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">인사제도</a></li>
+                            <li><a href="#">채용안내</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+                <!--Business-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">Research</a></div>
+                        <ul>
+                            <li><a href="#">NGS</a></li>
+                            <li><a href="#">CES</a></li>
+                            <li><a href="#">Gene Sythesis</a></li>
+                            <li><a href="#">Oligo</a></li>
+                            <li><a href="#">Microarray</a></li>
+                            <li><a href="#">GEM</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Clinical Diagnostics</a></div>
+                        <ul>
+                            <li><a href="#">Cancer Genome Testing</a></li>
+                            <li><a href="#">Genetic Disorder</a></li>
+                            <li><a href="#">COVID-19</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Heathcare</a></div>
+                        <ul>
+                            <li><a href="#">Personal Genome Analysis</a></li>
+                            <li><a href="#">Microbiome Analysis</a></li>
+                            <li><a href="#">Pet DNA Test</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--R&D--> <!--영문에서만 줄바꿈 적용-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">Precision Medicine<br/>Institute</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Bioinformatics<br/>Institute</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">The Biome<br/>Institute </a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Sync Genes<br/>Institute</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Big Data Institute<br/>for Health</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Patents/Papers</a></div>
+                        <ul>
+                            <li><a href="#">Patents</a></li>
+                            <li><a href="#">Papers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Newsroom-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">News</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Media library</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Notice</a></div>
+                    </div>
+                </div>
+                <!--IR-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">Financial Information</a></div>
+                    </div>
+                    <!--영문버전 제공 X-->
+                <!--   <div class="item">
+                        <div class="title"><a href="#">공시정보</a></div>
+                        <ul>
+                            <li><a href="#">공고</a></li>
+                            <li><a href="#">공시정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">IR소식</a></div>
+                    </div>-->
+                    <div class="item">
+                        <div class="title"><a href="#">Investment Inquiries</a></div>
+                    </div>
+                </div>
+                <!--ESG-->
+                <div class="box clearfix">
+                    <div class="item">
+                        <div class="title"><a href="#">ESG Management</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Ethical Management</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="title"><a href="#">Social Responsibility</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            var gnb2depth = $('#gnb2Depth .box')
+            let gnbIndex = $('#gnb li')
+
+            $('#gnb li').mouseover(function () {
+                $(this).parents('#header').addClass('header-bg-white')
+                gnbIndex.removeClass('active');
+                $(this).addClass('active');
+                gnb2depth.removeClass('active');
+                let idx = $(this).index();
+                gnb2depth.eq(idx).addClass('active');
+                $('#gnb2Depth').css('border-bottom','1px solid #e9e9e9').css('border-top','1px solid #e9e9e9')
+            });
+
+            gnb2depth.mouseover(function () {
+                gnbIndex.removeClass('active');
+                let idx = $(this).index();
+                gnbIndex.eq(idx).addClass('active');
+            });
+
+            $('#header').on({
+                "mouseleave focusout" : function () {
+                    gnb2depth.removeClass('active')
+                    gnbIndex.removeClass('active')
+                    $('#header').removeClass('header-bg-white')
+                    $('#gnb2Depth').css('border','none')
+                }
+            })
+        </script>
+
+        <div class="frame">
+            <div class="hero-title">Greenhouse gas emissions</div>
+            <div class= "slogan-sub">We will participate in climate-change responses for a sustainable Earth</div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-white">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">ESG</li>
+                    <li class="breadcrumb-item">Greenhouse gas emissions</li>
+                </ol>
+            </nav>
+
+            <div class="scroll-wrap">
+                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <div class="macrogen ethical-management">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="2000">
+                <div class="inner">
+                    <div class="text-lg">
+						For a sustainable future,<br>
+                        We will continuously monitor the impact of <br>
+                        businesses on the environment
+					</div>
+                </div>
+            </div>
+
+            <div class="section-greenhouse">
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="tit-item">Build Greenhouse Gas Inventory Systems</div>
+					<div class="inner">
+						<div class="cont-item">
+							<div class="title">Environment</div>
+							<div class="comment">
+								Macrogen will continue to raise climate change<br>
+                                awareness and endeavor towards ESG management to<br>
+                                make the Earth sustainable for present and future<br>
+                                generations in the long term.
+							</div>
+						</div>
+						<img src="../../img/esg/greenhouse-1.png" alt="">
+					</div>
+				</div>
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="inner">
+						<img src="../../img/esg/greenhouse-2.png" alt="">
+						<div class="cont-item">
+							<div class="title">System</div>
+							<div class="comment">
+								Since 2020, Macrogen has established greenhouse<br>
+                                gas inventory systems in a total of four domestic<br>
+                                facilities (Seoul Gangnam HQ & Genome Center,<br>
+                                Daejeon Genome Center, and GEM Center),<br>
+                                with the aim of expanding the GHG inventory system to<br>
+                                include overseas facilities as well
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="inner">
+						<div class="cont-item">
+							<div class="title">Trust</div>
+							<div class="comment">
+								Through voluntary third-party verification<br>
+                                by the Korea Standard Association,<br>
+                                we have secured data accuracy and reliability<br>
+                                based on international calculation standards.
+							</div>
+						</div>
+						<img src="../../img/esg/greenhouse-3.png" alt="">
+					</div>
+				</div>
+
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="tit-item">Greenhouse Gas Inventory</div>
+					<div class="inner-tbl">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Scope</th>
+									<th scope="col">Category</th>
+									<th scope="col">Facility</th>
+									<th scope="col">Emission source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="3" class="bg-line">Scope 1</th>
+									<td>Stationary Combustion</td>
+									<td>Heating</td>
+									<td>LNG</td>
+								</tr>
+								<tr>
+									<td>Mobile Combustion</td>
+									<td>Company vehicles</td>
+									<td>Gasoline, diesel, etc.</td>
+								</tr>
+								<tr>
+									<td>Etc.</td>
+									<td>-</td>
+									<td>CO2, Dry Ice, etc.</td>
+								</tr>
+								<tr>
+									<th scope="row" class="bg-line">Scope 2</th>
+									<td>Indirect Emission</td>
+									<td>Electricity</td>
+									<td>Power</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="2" class="bg-line">Scope 3</th>
+									<td rowspan="2">Other Greenhouse Gases</td>
+									<td>Water</td>
+									<td>Water</td>
+								</tr>
+								<tr>
+									<td>Business Travel</td>
+									<td>Travel distance by means of transportation</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="tit-item">GHG Emissions & Energy</div>
+					<div class="inner-tbl">
+						<div class="txt-grade">(Unit: tCO2-eq)</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col"></th>
+									<th scope="col">Direct Emissions<br>(Scope 1)</th>
+									<th scope="col">Indirect Emissions<br>(Scope 2)</th>
+									<th scope="col">Indirect Emissions<br>(Scope 3)</th>
+									<th scope="col">Overall Emission</th>
+									<th scope="col">Energy Usage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" class="bg-line">2022</th>
+									<td>430</td>
+									<td>2,493</td>
+									<td>81</td>
+									<td>3,005</td>
+									<td>58</td>
+								</tr>
+								<tr>
+									<th scope="row" class="bg-line">2021</th>
+									<td>404</td>
+									<td>2,360</td>
+									<td>30</td>
+									<td>2,794</td>
+									<td>55</td>
+								</tr>
+								<tr>
+									<th scope="row" class="bg-line">2020</th>
+									<td>436</td>
+									<td>2,346</td>
+									<td>78</td>
+									<td>2,860</td>
+									<td>55</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="txt-comment">※ For the 2022 emissions, third-party verification is scheduled to be conducted.</div>
+					</div>
+				</div>
+				<div class="item" data-aos="fade-up" data-aos-duration="2000">
+					<div class="tit-item">Facility Emissions</div>
+					<div class="inner-graph">
+						<img src="../../img/esg/greenhouse-graph.png" alt="">
+						<div class="info-ksa">
+							<img src="../../img/esg/symbol-ksa.png" alt="">
+							<div class="info">
+								<strong>Please check the GHG verification statement.</strong>
+								By clicking the button below, you can find Macrogen's verification statement for greenhouse gas emissions.
+								<button type="button" class="btn-certification" onclick="window.open('../../img/esg/greenhouse-gas-en.pdf')">View GHG Verification Statement.</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    <!--footer 수정시 메인 footer 같이 수정해주세요-->
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="section_information">
+                <div class="title font-bold">
+                    <p>MACROGEN</p>
+                </div>
+                <div class="info">
+                    <ul class="text">
+                        <li>
+                            <ul class="terms clearfix">
+                                <li><span class="font-medium"><a href="#">Order site</a></span></li>
+                                <li><span class="font-medium"><a href="#">Privacy Statement</a></span></li>
+                                <li><span class="font-medium"><a href="#">Image Information Processing Policy</a></span></li>
+                                <li><span class="font-medium"><a href="#">Contact us</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span>238, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</span><span>TEL +82-2-2180-7000</span></li>
+                        <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section_familysite">
+                <div class="family-box">
+                    <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
+                    <div class="popup_box _popup_box">
+                        <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">The Biome</span></a>
+                        <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">My Genomestory</span></a>
+                        <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">myPETGENE</span></a>
+                        <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">Psomagen</span></a>
+                        <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">Macrogen Japan</span></a>
+                        <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">Macrogen Europe</span></a>
+                        <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">Macrogen APAC</span></a>
+                        <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">Genome Medicine Institute</span></a>
+                        <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">Gong-Wu Genome<br/>Information Foundation</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_sns">
+                <ul class="sns clearfix">
+                    <li class="facebook"><a href="https://www.facebook.com/macrogenkr/" target="_blank"></a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"></a></li>
+                    <li class="blog"><a href="https://blog.naver.com/macrogen_official" target="_blank"></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/company/macrogen" target="_blank"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn btn-text btn-totop">
+        <i class="icon icon-arrow-top-long"></i>
+        <span>TOP</span>
+    </a>
+
+    <script>
+        $(document).ready(function(){
+            $('.btn-totop').click(function(){
+                $('html,body').animate( { scrollTop:0 },{duration : 100});
+                $('.header').css({'display' : 'block'});
+                return false;
+            });
+            $(window).on('scroll', function (){
+                var scrollTop = $(window).scrollTop()
+                if (scrollTop > 150) {
+                    $('.btn-totop').css({'opacity' : 1})
+                } else {
+                    $('.btn-totop').css({'opacity' : 0})
+                }
+            })
+        });
+    </script>
+
+</div>
+</body>
+</html>
