@@ -64,10 +64,17 @@
 	                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</p></li>
 	                                            </ul>
 	                                        </div>
+											<div class="list_service">
+												<strong>[제휴 서비스 안내]</strong>
+												<ul>
+													<li>①	제휴사를 위한 맞춤 서비스 제작 가능</li>
+													<li>②	제휴문의를 통한 문의 요청</li>
+												</ul>
+											</div>
 	                                        <div class="btn-wrap">
 	                                            <div class="btn-wrapper">	                                            
 	                                            	<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
-	                                                <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+	                                                <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-light"><span>제휴문의</span></a>
 	                                            </div>
 	                                        </div>
 	                                    </div>
@@ -96,9 +103,17 @@
 	                                                <li><p>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</p></li>
 	                                            </ul>
 	                                        </div>
+											<div class="list_service">
+												<strong>[제휴 서비스 안내]</strong>
+												<ul>
+													<li>①	제휴사를 위한 맞춤 서비스 제작 가능</li>
+													<li>②	제휴문의를 통한 문의 요청</li>
+												</ul>
+											</div>
 	                                        <div class="btn-wrap">
 	                                            <div class="btn-wrapper">
-	                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>서비스 문의</span></a>
+													<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
+	                                                <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-light"><span>제휴문의</span></a>
 	                                            </div>
 	                                        </div>
 	                                    </div>
