@@ -81,12 +81,11 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">      
+	                        <!-- <hr class="divider">      
 	                        <div class="section-anchor">
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target5">마이지놈스토리 더플러스 올인원 69</p>
-	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                <div class="content">	                                    
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/img_allinone69.png" alt="마이지놈스토리더플러스올인원69">
 	                                    </div>
@@ -119,7 +118,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                        <!-- <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
