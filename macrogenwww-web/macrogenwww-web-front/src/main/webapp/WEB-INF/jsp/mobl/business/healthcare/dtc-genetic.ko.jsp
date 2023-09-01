@@ -113,7 +113,7 @@
 	                                        <div class="btn-wrap">
 	                                            <div class="btn-wrapper">
 													<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
-	                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>제휴문의</span></a>
+	                                                <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-light"><span>제휴문의</span></a>
 	                                            </div>
 	                                        </div>
 	                                    </div>
