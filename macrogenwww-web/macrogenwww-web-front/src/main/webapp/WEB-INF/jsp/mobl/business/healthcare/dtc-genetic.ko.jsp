@@ -53,7 +53,7 @@
 	                                    </div>
 	                                    <div class="cont">
 	                                        <p class="desc font-body caption_bottom">개인의 취향대로 원하는 항목만 골라 담을 수 있는 DTC 유전자검사 서비스로, 유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다.</p>
-	                                        <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+	                                        <p class="caption">※ 미성년자(만 18세 미만)는 검사 서비스가 불가능합니다.</p>
 	                                        <div class="list-area">
 	                                            <ul class="list-circle-dot">
 	                                                <li><p>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</p></li>
