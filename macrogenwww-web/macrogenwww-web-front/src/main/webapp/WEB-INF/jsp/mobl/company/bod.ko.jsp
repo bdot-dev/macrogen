@@ -450,7 +450,7 @@
                                     <li>現) 한국유전학회 산학협력위원장 SCI급 <br>연구논문 22편, 특허 11개</li>
                                 </ul>                                         
                             </li>     
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_04.png" alt="">
                                     <p class="name">개인지놈사업본부<strong>황상준 본부장</strong></p>
@@ -459,7 +459,7 @@
                                     <li>前) SK텔레콤 사업팀장 및 기업부설연구소장</li>
                                     <li>前) ISO/TC212 국제표준화위원회 기술전문가위원</li>
                                 </ul>                                         
-                            </li>
+                            </li> -->
                             <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_06.png" alt="">

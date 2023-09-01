@@ -2723,6 +2723,13 @@
         letter-spacing: -0.5px;
         color: #707070;
         font-weight: 400; }
+    .section_business .info-box .list-gallery .list .content .cont .list_service {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      color: #454545;
+    }
   .section_business .info-box-wrap .list-area .list-circle-dot.table_bottom {
     margin-bottom: 24px; }
   .section_business .info-box-wrap .list-area.img_bottom {
