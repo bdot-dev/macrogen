@@ -119,7 +119,40 @@ public class BusinessController extends DefaultController {
 		
 		return getDev() + "/business/healthcare/personal-genetic." + getLang();
 	}
+	
+	@RequestMapping("/healthcare/dtc-genetic")
+	public String healthcareDtcGenetic(@PathVariable LangId langId, HttpServletRequest request, Model model) throws Exception {
+			
+		// 메인화면 팝업
+		PopupVo popupVo = new PopupVo();
+		popupVo.setLangCode(langId.name());
+		popupVo.setFirstIndex(-1);
+		popupVo.setExposed(true);
+		//popupVo.setOrderBy("sort_asc");
+		popupVo.setOrderBy("sort_desc");
 
+		popupVo.setOrderBy("sort_desc");
+		popupVo.setExposedPopupCnt(popupService.count(popupVo));
+		
+		List<PopupVo> popupList = popupService.list(popupVo);
+		
+		if (null != popupList && !popupList.isEmpty()) {
+			List<Long> exceptPopupSnList = getExceptPopupBusinessDtcSnList(request);
+			List<Boolean> cookieChkList = new ArrayList<>();
+			for (PopupVo popup : popupList) {
+				cookieChkList.add(exceptPopupSnList.contains(popup.getPopupSn())); 
+				if (!exceptPopupSnList.contains(popup.getPopupSn())) {
+					model.addAttribute("popupVo", popup);
+					model.addAttribute("cookieChkList", cookieChkList);
+					model.addAttribute("popupList", popupList);
+				}
+			}
+			int popupCnt = popupList.size();
+			model.addAttribute("popupCnt", popupCnt);
+		}
+		return getDev() + "/business/healthcare/dtc-genetic." + getLang();
+	}
+	
 	@RequestMapping("/healthcare/intestinal-microbiome")
 	public String healthcareIntestinalMicrobiome(@PathVariable LangId langId) throws Exception {
 		return getDev() + "/business/healthcare/intestinal-microbiome." + getLang();
@@ -141,6 +174,26 @@ public class BusinessController extends DefaultController {
 			List<Long> snList = new ArrayList<>();
 
 			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-business-sn-list");
+			if (StringUtils.isEmpty(exceptPopupSnStr)) {
+				return snList;
+			}
+
+			String[] snArr = exceptPopupSnStr.split(",");
+			for (String sn : snArr) {
+				snList.add(Long.parseLong(sn));
+			}
+			return snList;
+		} catch (Exception e) {
+			return new ArrayList<Long>();
+		}
+	}
+	
+	// 팝업  
+	private List<Long> getExceptPopupBusinessDtcSnList(HttpServletRequest request) {
+		try {
+			List<Long> snList = new ArrayList<>();
+
+			String exceptPopupSnStr = CookieUtil.getCookie(request, "popup-businessDtc-sn-list");
 			if (StringUtils.isEmpty(exceptPopupSnStr)) {
 				return snList;
 			}

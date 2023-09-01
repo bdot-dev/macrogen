@@ -188,4 +188,104 @@
 	    </div>
 		
 	</div>
+	
+	<%-- 팝업 --%>
+	<c:if test="${not empty popupList  }"> 
+	<c:forEach var="popup" items="${popupList}" varStatus="status">
+		<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
+			<input type="hidden" value="${popupCnt}" id="popupCnt">
+			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
+		    <div class="modal-dialog modal-dialog-centered layer-modal">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <div class="blue-circle">
+		                    <i class="icon icon-union"></i>
+		                </div>
+		            </div>
+		            <div class="modal-body">
+		                <%-- <p class="title">${popupVo.popupNm }</p>
+		                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
+		                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
+		                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
+		                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
+		                    <br>908억 원을 달성했습니다.
+		                </p> --%>
+		                <div class="data-img">
+		                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+		                </div>
+		                <!-- <div class="btn-area">
+		                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
+		                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
+		                </div> -->
+		            </div>
+		            <div class="modal-footer">
+		                <div class="form-check">
+		                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
+		                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
+		                </div>
+		                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
+		                    <span>Close</span>
+		                    <i class="icon ico-close-white"></i>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</c:forEach>
+		<script>
+			var popupCnt = $("#popupCnt").val();
+			
+			for(var i=0;i<popupCnt;i++){
+				var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
+				var coockieChk = $("#cookieChkList"+i).val();
+				
+				if(coockieChk == 'true'){
+					layerPopupModal.hide();
+				}else if(coockieChk =='false'){
+					layerPopupModal.show();
+				}
+				
+			    //layerPopupModal.show();
+			}
+			
+		    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+		    layerPopupModal.show(); */
+		    
+		    $('div.modal-backdrop:gt(0)').css("opacity", "0");
+		</script>
+		<script>
+	
+			function onclickPopupImage(url, trgtCode) {
+				if (!url) {
+					return;
+				}
+	
+				if (trgtCode === 'NEW') {
+					window.open(url);
+				} else {
+					location.href = url;
+				}
+			}
+			
+			function popupClose(sn, idx) {
+				if ($('#popup-sn'+idx).is(':checked')) { 
+					if (!sn) return;
+		
+					var snListStr = $.cookie('popup-businessDtc-sn-list');
+					console.log(snListStr);
+					if (!snListStr) {
+						snListStr = sn;
+					} else if (snListStr.indexOf(sn) < 0) {
+						snListStr += ',' + sn;
+					}
+					$.cookie('popup-businessDtc-sn-list', snListStr, { expires: 1, path: '/'});
+				}
+				
+				layerPopupModal.hide();
+				/* $('.show').parent('body').css("overflow", "hidden"); 
+				$('.show').parent('body').css("padding-right", "17px"); */
+			}
+		</script>
+	</c:if>
+	
 </body>
