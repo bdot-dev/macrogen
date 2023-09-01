@@ -441,12 +441,12 @@
                                     <p class="name">Genome Business Unit<strong>Lee Eung-ryoung</strong></p>
                                 </span>
                             </li>     
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_04.png" alt="">
                                     <p class="name">Personal Genome Business Unit<strong>Hwang Sang-joon</strong></p>
                                 </span>
-                            </li>     
+                            </li>      -->
                             <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_06.png" alt="">
