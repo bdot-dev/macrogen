@@ -65,14 +65,21 @@
 	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</li>
 	                                        </ul>
 	                                    </div>
+										<div class="list_service">
+											<strong>[제휴 서비스 안내]</strong>
+											<ul>
+												<li>①	제휴사를 위한 맞춤 서비스 제작 가능</li>
+												<li>②	제휴문의를 통한 문의 요청</li>
+											</ul>
+										</div>
 	                                    <div class="btn-wrap">
 	                                    	<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
-	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
+	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>제휴문의</span></a>
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                    	<hr class="divider">
+	                    	<!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 올인원 69</p>
 	                            <div class="content">
@@ -95,11 +102,11 @@
 	                                    </div>
 	                                    <div class="btn-wrap">
 	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a> -->
+	                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
