@@ -123,8 +123,7 @@
 	            </div>
 	            <!--// 탭 컨텐츠 e-->
 	        </div>
-	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
-	        
+	        <script src="/publishing/mobile-ko/dist/js/business.js"></script>	        
 	    </div>
 	</div>
 	

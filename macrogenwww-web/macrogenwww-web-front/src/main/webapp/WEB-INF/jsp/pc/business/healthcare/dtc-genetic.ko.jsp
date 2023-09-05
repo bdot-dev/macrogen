@@ -54,7 +54,7 @@
 	
 	                                <div class="cont">
 	                                    <p class="desc">개인의 취향대로 원하는 항목만 골라 담을 수 있는 DTC 유전자검사 서비스로, 유전자 검사를 통해 각자 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 지원하는 모바일 헬스케어 플랫폼입니다.</p>
-	                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
+	                                    <p class="caption">※ 미성년자(만 18세 미만)는 검사 서비스가 불가능합니다.</p>
 	                                    <div class="list-area">
 	                                        <ul class="list-circle-dot">
 	                                            <li>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 20개 항목</li>
@@ -65,14 +65,21 @@
 	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 15개 항목</li>
 	                                        </ul>
 	                                    </div>
+										<div class="list_service">
+											<strong>[제휴 서비스 안내]</strong>
+											<ul>
+												<li>①	제휴사를 위한 맞춤 서비스 제작 가능</li>
+												<li>②	제휴문의를 통한 문의 요청</li>
+											</ul>
+										</div>
 	                                    <div class="btn-wrap">
 	                                    	<a href="http://gentok.net" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
-	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
+	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>제휴문의</span></a>
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                    	<hr class="divider">
+	                    	<!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 올인원 69</p>
 	                            <div class="content">
@@ -95,11 +102,11 @@
 	                                    </div>
 	                                    <div class="btn-wrap">
 	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a> -->
+	                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
@@ -181,4 +188,104 @@
 	    </div>
 		
 	</div>
+	
+	<%-- 팝업 --%>
+	<c:if test="${not empty popupList  }"> 
+	<c:forEach var="popup" items="${popupList}" varStatus="status">
+		<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
+			<input type="hidden" value="${popupCnt}" id="popupCnt">
+			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
+		    <div class="modal-dialog modal-dialog-centered layer-modal">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <div class="blue-circle">
+		                    <i class="icon icon-union"></i>
+		                </div>
+		            </div>
+		            <div class="modal-body">
+		                <%-- <p class="title">${popupVo.popupNm }</p>
+		                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
+		                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
+		                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
+		                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
+		                    <br>908억 원을 달성했습니다.
+		                </p> --%>
+		                <div class="data-img">
+		                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+		                </div>
+		                <!-- <div class="btn-area">
+		                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
+		                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
+		                </div> -->
+		            </div>
+		            <div class="modal-footer">
+		                <div class="form-check">
+		                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
+		                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
+		                </div>
+		                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
+		                    <span>Close</span>
+		                    <i class="icon ico-close-white"></i>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</c:forEach>
+		<script>
+			var popupCnt = $("#popupCnt").val();
+			
+			for(var i=0;i<popupCnt;i++){
+				var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
+				var coockieChk = $("#cookieChkList"+i).val();
+				
+				if(coockieChk == 'true'){
+					layerPopupModal.hide();
+				}else if(coockieChk =='false'){
+					layerPopupModal.show();
+				}
+				
+			    //layerPopupModal.show();
+			}
+			
+		    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
+		    layerPopupModal.show(); */
+		    
+		    $('div.modal-backdrop:gt(0)').css("opacity", "0");
+		</script>
+		<script>
+	
+			function onclickPopupImage(url, trgtCode) {
+				if (!url) {
+					return;
+				}
+	
+				if (trgtCode === 'NEW') {
+					window.open(url);
+				} else {
+					location.href = url;
+				}
+			}
+			
+			function popupClose(sn, idx) {
+				if ($('#popup-sn'+idx).is(':checked')) { 
+					if (!sn) return;
+		
+					var snListStr = $.cookie('popup-businessDtc-sn-list');
+					console.log(snListStr);
+					if (!snListStr) {
+						snListStr = sn;
+					} else if (snListStr.indexOf(sn) < 0) {
+						snListStr += ',' + sn;
+					}
+					$.cookie('popup-businessDtc-sn-list', snListStr, { expires: 1, path: '/'});
+				}
+				
+				layerPopupModal.hide();
+				/* $('.show').parent('body').css("overflow", "hidden"); 
+				$('.show').parent('body').css("padding-right", "17px"); */
+			}
+		</script>
+	</c:if>
+	
 </body>
