@@ -18,13 +18,17 @@ package macrogen.www.common;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 /**
 * @class CommonStringUtil
@@ -536,4 +540,99 @@ public class CommonStringUtil {
         
         return ip;
     }
+	
+	
+	// 마스킹 처리
+	public static String lastStrRepeat(String str, String type) {
+		String r = "*";
+        String rtn = "";
+        str = str.trim();
+        if (!StringUtils.isEmpty(str)) {
+            // 길이 1
+            if (str.length() == 1) {
+                rtn = str;
+            } else if (str.length() == 2) {
+                rtn = str.substring(0, 1);
+                rtn += new String(new char[1]).replace("\0", r);
+            } else {
+                // nm 한국
+                if (type.equalsIgnoreCase("nm")) {
+                    // rtn = str.substring(0, str.length()-1);
+                    // rtn += new String(new char[1]).replace("\0", r);
+                    rtn = str.substring(0, 1);
+                    rtn += new String(new char[str.length() - 2]).replace("\0", "*");
+                    rtn += str.substring(str.length() - 1, str.length());
+                }
+                
+                else if(type.equalsIgnoreCase("em")) {
+                	 rtn = str.substring(0, 2);
+                     rtn += new String(new char[str.length() - 2]).replace("\0", "*");
+                }
+                
+                // 전화번호 가운데 부분 마스킹
+                // 하이픈이 없어도 상관없음. 하이픈 있으면 하이픈 있는 상태로 돌려줌
+                // (02-123-1234 -> 02-***-1234, 010-1234-4444->010-****-4444)
+                else if (type.equalsIgnoreCase("tel")) {
+                    String regex = "(\\d{2,3})-?(\\d{3,4})-?(\\d{4})";
+                    Matcher matcher = Pattern.compile(regex).matcher(str);
+                    if (matcher.find()) {
+                        String m = matcher.group(2);
+                        char[] c = new char[m.length()];
+                        Arrays.fill(c, '*');
+
+                        return matcher.group(1) + "-" + String.valueOf(c) + "-" + matcher.group(3);
+                    }
+                }
+
+                // 이메일 아이디만 끝 3자리 마스킹
+                else if (type.equalsIgnoreCase("email")) {
+                    String regex = "\\b(\\S+)+@(\\S+.\\S+)";
+                    Matcher matcher = Pattern.compile(regex).matcher(str);
+                    if (matcher.find()) {
+                        String id = matcher.group(1); // 마스킹 처리할 부분인 userId
+                        /*
+                         * userId의 길이를 기준으로 세글자 초과인 경우 뒤 세자리를 마스킹 처리하고, 세글자인 경우 뒤 두글자만 마스킹, 세글자 미만인 경우 모두 마스킹 처리
+                         */
+                        int length = id.length();
+                        if (length < 3) {
+                            char[] c = new char[length];
+                            Arrays.fill(c, '*');
+                            return str.replace(id, String.valueOf(c));
+                        } else if (length == 3) {
+                            return str.replaceAll("\\b(\\S+)[^@][^@]+@(\\S+)", "$1**@$2");
+                        } else {
+                            return str.replaceAll("\\b(\\S+)[^@][^@][^@]+@(\\S+)", "$1***@$2");
+                        }
+                    }
+                }
+
+                // 끝 3자리
+                else {
+                    rtn = str.substring(0, str.length() - 3);
+                    rtn += new String(new char[3]).replace("\0", r);
+                }
+            }
+        }
+        return rtn;
+    }
+	
+	// test
+	/*public static boolean strUtil(String type) {
+		
+		String email="email";
+		String tel="tel";
+		
+		boolean result = true;
+		
+		if (!StringUtils.isEmpty(type)) {			
+			if(type.equals(email)) {
+				result = true;
+			} else if(type.equals(tel)) {
+				result = false;
+			}
+		}
+		System.out.println("@@@@@@@@@@@@@@@@@@" + result);
+		return result;
+	}*/
+	
 }

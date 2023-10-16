@@ -17,12 +17,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+import macrogen.www.common.CommonStringUtil;
 import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.ContactService;
 import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.ContactVo;
 import macrogen.www.vo.MngrVo;
+import macrogen.www.vo.NttVo;
 
 @Controller
 @RequestMapping("/{langId}/contact")
@@ -87,6 +89,16 @@ public class ContactController {
 		
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(contactService.count(listVo));
+			
+			for(ContactVo vo : resultList) {
+				if(vo.getLangCode().equals("ko")) {
+					vo.setNmbrWriterNm(CommonStringUtil.lastStrRepeat(vo.getNmbrWriterNm(), "nm"));
+				} else {
+					vo.setNmbrWriterNm(CommonStringUtil.lastStrRepeat(vo.getNmbrWriterNm(), "em"));
+				}
+				
+			}
+			
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
