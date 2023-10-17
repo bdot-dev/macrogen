@@ -132,7 +132,7 @@ public class NttController {
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-		
+
 		
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
