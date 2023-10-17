@@ -1,8 +1,11 @@
 package macrogen.www.controller;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -116,10 +119,21 @@ public class NttController {
 
 		if (null != resultList && resultList.size() > 0) {
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
+						
+			for(NttVo nttVo : resultList) {
+				if(nttVo.getLangCode().equals("ko")) {
+					nttVo.setNmbrWrterNm(CommonStringUtil.lastStrRepeat(nttVo.getNmbrWrterNm(), "nm"));
+				} else {
+					nttVo.setNmbrWrterNm(CommonStringUtil.lastStrRepeat(nttVo.getNmbrWrterNm(), "em"));
+				}
+				
+			}
+			
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
-
+		
+		
 		resultMap.put("paginationInfo", paginationInfo);
 		resultMap.put("resultList", resultList);
 
@@ -339,4 +353,5 @@ public class NttController {
 		resultMap.put("result", "success");
 		return resultMap;
 	}
+	
 }
