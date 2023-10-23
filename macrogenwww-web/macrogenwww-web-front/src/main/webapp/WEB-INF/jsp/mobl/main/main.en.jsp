@@ -608,6 +608,7 @@
                         <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
 	                    <a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network2#leuven'"><i></i><span>Leuven, Belgium</span></a>
 	                    <a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network2#paris'"><i></i><span>Paris, France</span></a>
+	                    <a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network2#basel'"><i></i><span>Basel, Switzerland</span></a>
 	                    <a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network2#italy'"><i></i><span>Milan, Italy</span></a>
 	                    <a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network2#poland'"><i></i><span>Szczecin, Poland</span></a>
 	                    <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>

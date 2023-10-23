@@ -199,6 +199,15 @@
 				
                 jQuery('[data-vbg]').youtube_background();
             }
+            
+           	/* function mainGenTokBannerBtn() {
+           		$('.swiper-slide .text-box .btns').find('button').each(function(i, v) {
+           			if ($(v).attr('onclick') == "location.href='https://gentok.net/intro/intro.html ' " || $(v).attr('onclick') == "location.href='https://gentok.net/market' ") {
+           				$(v).css('backgroundColor', '#dcdcdc');
+           			}
+           		});
+           	}
+           	mainGenTokBannerBtn(); */
         </script>
        	</div>
         
@@ -542,6 +551,7 @@
                         <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
                       	<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Leuven, Belgium</span></a>
                       	<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
+                      	<a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network#basel'"><i></i><span>Basel, Switzerland</span></a>
                       	<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
                       	<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
                         <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
