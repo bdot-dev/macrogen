@@ -81,15 +81,7 @@
 	                                        </div>
 	                                    </div>
 	                                </a>	                                
-	                                <a href="https://goo.gl/maps/8g2KsnrG3fvTSuib9" target="_blank" class="pin basel"><i></i>
-	                                    <div class="popup_info">
-	                                        <div class="popup_inner">
-	                                            <strong>BASEL, SWITZERLAND</strong>
-	                                            161 Rue de la Belle Etoile, 95700, Roissy-en, France
-	                                            <p><span class="ic-call"></span>+33-1-82-00-96</p>
-	                                        </div>
-	                                    </div>
-	                                </a>
+	                                <a href="javascript:void(0)"class="pin basel"><i></i></a>
 	                                <a href="https://goo.gl/maps/7hkdDHYjwme3LE2n6" target="_blank" class="pin madrid" ><i></i>
 	                                    <div class="popup_info">
 	                                        <div class="popup_inner">
