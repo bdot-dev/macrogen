@@ -81,6 +81,7 @@
 	                                        </div>
 	                                    </div>
 	                                </a>
+	                                <a href="javascript:void(0)" class="pin basel"><i></i></a>
 	                                <a href="https://goo.gl/maps/YDWcjkPGRojs7o1u6" target="_blank" class="pin madrid" ><i></i>
 	                                    <div class="popup_info">
 	                                        <div class="popup_inner">
@@ -184,7 +185,7 @@
                                 $(document).ready(function(){
                                  
                                  $('.pin ').mouseover(function(){
-                                     const mapInfoBox = ['poland','amsterdam','leuven','paris','madrid','milan','seoul'
+                                     const mapInfoBox = ['poland','amsterdam','leuven','paris','basel','madrid','milan','seoul'
                                      ,'tokyo','biopolis','boston','newyork','rockville','virginia','santiago'];
                                      
                                      for(let i=0; i < mapInfoBox.length; i++) {                        

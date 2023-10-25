@@ -37,6 +37,7 @@
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
                     <a class="pin leuven" href="#leuven"><span>Leuven&#44; Belgium</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
+                    <a class="pin basel" href="#basel"><span>Basel&#44; Switzerland</span></a>
                     <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>                    
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>

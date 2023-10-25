@@ -5047,6 +5047,9 @@
          .macrogen.global-macrogen .section-map .map .pin.paris {
           top: 150px;
           left: 69px; }
+        .macrogen.global-macrogen .section-map .map .pin.basel {
+          top: 150px;
+          left: 226px; }
         .macrogen.global-macrogen .section-map .map .pin.milan {
           top: 242px;
           left: 165px; }
@@ -6926,6 +6929,7 @@
 .section .map-wrap .map_pins .amsterdam .popup_inner {top: -161px; left:-20px;width: 441px;height: 163px;}
 .section .map-wrap .map_pins .leuven .popup_inner {top: -182px; left:-20px;width: 593px;height: 185px;}
 .section .map-wrap .map_pins .paris .popup_inner {top: -160px; left:-20px;width: 489px;height: 163px;}
+.section .map-wrap .map_pins .basel .popup_inner {top: -160px; left:-20px;width: 489px;height: 163px;}
 .section .map-wrap .map_pins .madrid .popup_inner {top: -162px; left:-20px;width: 470px;height: 163px;}
 .section .map-wrap .map_pins .milan .popup_inner {top: -161px; left:-20px;width: 395px;height: 163px;}
 .section .map-wrap .map_pins .seoul .popup_inner {top: -224px; left:22px;width: 457px;height: 400px;}
@@ -6941,8 +6945,9 @@
 .section .map-wrap .map_pins .amsterdam {top: 235px;left: 100px;}
 .section .map-wrap .map_pins .leuven {top: 255px;left: 95px;}
 .section .map-wrap .map_pins .paris {top: 268px;left: 85px;}
+.section .map-wrap .map_pins .basel {top: 268px;left: 107px;}
 .section .map-wrap .map_pins .madrid {top: 285px;left: 75px;}
-.section .map-wrap .map_pins .milan {top: 275px;left: 118px;}
+.section .map-wrap .map_pins .milan {top: 280px;left: 123px;}
 .section .map-wrap .map_pins .seoul {top: 300px;left: 495px;}
 .section .map-wrap .map_pins .tokyo {top: 297px;left: 535px;}
 .section .map-wrap .map_pins .biopolis {top: 420px;left: 410px;}
@@ -8366,11 +8371,14 @@
             top: 60px;
             left: 83px; }
           .en .main-wrap .main-page .section-map .inner .map .pin.milan {
-            top: 125px;
-            left: 215px; }
+            top: 152px;
+            left: 246px; }
           .en .main-wrap .main-page .section-map .inner .map .pin.poland {
             top: -35px;
             left: 236px; }
+          .en .main-wrap .main-page .section-map .inner .map .pin.basel {
+            top: 106px;
+            left: 180px; }
           .en .main-wrap .main-page .section-map .inner .map .pin.paris {
             top: 106px;
             left: 27px; }

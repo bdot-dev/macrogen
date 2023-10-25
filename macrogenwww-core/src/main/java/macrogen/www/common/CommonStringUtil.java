@@ -616,23 +616,5 @@ public class CommonStringUtil {
         return rtn;
     }
 	
-	// test
-	/*public static boolean strUtil(String type) {
-		
-		String email="email";
-		String tel="tel";
-		
-		boolean result = true;
-		
-		if (!StringUtils.isEmpty(type)) {			
-			if(type.equals(email)) {
-				result = true;
-			} else if(type.equals(tel)) {
-				result = false;
-			}
-		}
-		System.out.println("@@@@@@@@@@@@@@@@@@" + result);
-		return result;
-	}*/
 	
 }

@@ -5138,9 +5138,12 @@
         .macrogen.global-macrogen .section-map .map .pin.leuven {
           top: 108px;
           left: 103px; }
-         .macrogen.global-macrogen .section-map .map .pin.paris {
+       	.macrogen.global-macrogen .section-map .map .pin.paris {
           top: 150px;
           left: 69px; }
+        .macrogen.global-macrogen .section-map .map .pin.basel {
+          top: 150px;
+          left: 226px; }
         .macrogen.global-macrogen .section-map .map .pin.milan {
           top: 242px;
           left: 165px; }
@@ -8393,14 +8396,17 @@ margin-bottom: 60px; }
             top: 60px;
             left: 83px; }
           .main-wrap .main-page .section-map .inner .map .pin.milan {
-            top: 125px;
-            left: 215px; }
+            top: 152px;
+            left: 246px; }
            .main-wrap .main-page .section-map .inner .map .pin.poland {
             top: -35px;
             left: 236px; }
             .main-wrap .main-page .section-map .inner .map .pin.paris {
             top: 106px;
             left: 27px; }
+          .main-wrap .main-page .section-map .inner .map .pin.basel {
+            top: 106px;
+            left: 180px; }
           .main-wrap .main-page .section-map .inner .map .pin.madrid {
             top: 150px;
             left: -2px; }
@@ -9167,6 +9173,12 @@ margin-bottom: 60px; }
       width: 489px;
       height: 163px;
     }
+    
+    .section .map-wrap .map_pins .basel .popup_inner {
+      top: -160px; left:-20px;
+      width: 489px;
+      height: 163px; 
+    }
 
     .section .map-wrap .map_pins .madrid .popup_inner {
       top: -162px; left:-20px;
@@ -9253,12 +9265,15 @@ margin-bottom: 60px; }
     .section .map-wrap .map_pins .paris {
       top: 268px;
       left: 85px; }
+    .section .map-wrap .map_pins .basel {
+      top: 268px;
+      left: 107px; }
     .section .map-wrap .map_pins .madrid {
       top: 285px;
       left: 75px; }
     .section .map-wrap .map_pins .milan {
-      top: 275px;
-      left: 118px; }
+      top: 280px;
+      left: 123px; }
     .section .map-wrap .map_pins .seoul {
       top: 300px;
       left: 495px; }

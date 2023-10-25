@@ -80,7 +80,8 @@
 	                                            <p><span class="ic-call"></span>+33-1-82-00-96</p>
 	                                        </div>
 	                                    </div>
-	                                </a>
+	                                </a>	                                
+	                                <a href="javascript:void(0)"class="pin basel"><i></i></a>
 	                                <a href="https://goo.gl/maps/7hkdDHYjwme3LE2n6" target="_blank" class="pin madrid" ><i></i>
 	                                    <div class="popup_info">
 	                                        <div class="popup_inner">
@@ -179,7 +180,7 @@
 	                        <script>
 	                            $(document).ready(function(){
 	                                $('.pin ').mouseover(function(){
-	                                    const mapInfoBox = ['poland','amsterdam','leuven','paris','madrid','milan','seoul'
+	                                    const mapInfoBox = ['poland','amsterdam','leuven','paris','basel','madrid','milan','seoul'
 	                                    ,'tokyo','biopolis','boston','newyork','rockville','virginia','santiago'];
 	                                    for(let i=0; i < mapInfoBox.length; i++) {                        
 	                                        if( $(this).hasClass(mapInfoBox[i])){
