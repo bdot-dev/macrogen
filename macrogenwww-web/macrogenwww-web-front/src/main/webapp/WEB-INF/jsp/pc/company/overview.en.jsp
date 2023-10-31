@@ -38,11 +38,13 @@
                     <div class="title-sm">Creating a better future for humanity.</div>
                     <div class="text-box">
                         <div class="font-body-h">
-                            Macrogen was established on June 5, 1997, based in the Genomic Medicine Institute of the Seoul National University College of Medicine. In February 2000. It is the first Korean bio venture to be listed on the KOSDAQ.<br/><br/>
-
-                            Since then, Macrogen has continued to be actively engaged in R&D fields for genetic and genomic analyses. In addition to providing services to clients around the world, Macrogen contributes to the advancement of bioindustries through a wide range of CSR activities.<br/>
-                            <br/>
-                            Macrogen is committed to leading innovation in precision medicine in the 21st century by providing personalized genomic information. It is also realizing achievements in the global genome analysis market in various sectors, thanks to its superior technological expertise.
+                            Macrogen, a company specializing in precision medicine and bio-engineering,<br/>
+							offers ultra-tailored healthcare services for individual patients based on an accurate analysis of their genetic traits,<br/>
+							allowing them to live up to their fullest and healthiest potential.<br/><br/>
+							Since its establishment in 1997,<br/>
+							Macrogen has not only become the leader in genotyping in Korea, but also for international markets.<br/>
+							The goal of Macrogen is to provide everyone around the world with their own<br/>
+							‘user’s manual for the body,’ complete with a ‘Genetic blueprint.’
                         </div>
                     </div>
                 </div>
@@ -51,11 +53,11 @@
                         <div class="img">
                             <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_lg_1.png" alt="A global leader in precision medicine">
                         </div>
-                        <ul class="list" data-aos="fade-up" data-aos-duration="2000">
+                        <!-- <ul class="list" data-aos="fade-up" data-aos-duration="2000">
                             <li>A global leader in precision medicine</li>
                             <li>Human-oriented management practices</li>
                             <li>Big data-based healthcare solutions</li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -67,8 +69,10 @@
                     <div data-aos="fade-up" data-aos-duration="2000">
                         <div class="title-sm">Corporate Status</div>
                         <div class="year">EST 1997</div>
-                        <div class="desc">Macrogen has maintained sustainable growth by adapting to changes in the environment.<br/>
-                            As an industry leader with a strong influence on the bio-ecosystem, our journey to sustainable growth will continue.</div>
+                        <div class="desc">
+	                        Macrogen’s research efforts continue to make a healthier future a reality<br/> 
+							by contributing to predictive and preventive medicine.
+                        </div>
                     </div>
                     <div class="overview-list" data-aos="fade-up" data-aos-duration="2000">
                         <ul>
@@ -129,6 +133,21 @@
             <div class="section-business">
                 <div class="swiper-container _slider" data-aos="fade-up" data-aos-duration="2000">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <div class="title-sm">Business Areas</div>
+                                <div class="title">Healthcare Platform</div>
+                                <div class="desc">GentTok provides ultra-personalized healthcare services for a healthier life. Make the most of the GenTok App to check up on your genetic analysis results, receive health tips and create a healthy routine fit for your lifestyle.</div>
+                                <!-- <div class="category-list">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/ic-atom.svg" alt="NGS"></div>
+                                            <div class="tit">NGS</div>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="inner">
                                 <div class="title-sm">Business Areas</div>
@@ -251,27 +270,27 @@
             <div class="section-business-detail">
                 <div class="item item-1" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
+                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_3.png" alt="PERSONAL HEALTHCARE">
+                        <span class="title">PERSONAL <br/>HEALTHCARE</span>
+                    </div>
+                    <div class="desc">For the Public</div>
+                    <div class="desc-sm">As a key area of personal healthcare, personal genome sequencing is gaining attention. Macrogen is providing practical and effective healthcare solutions to improve the quality of people's lives through personal genomic analysis services.</div>
+                </div>
+                <div class="item item-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="img">
                         <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_1.png" alt="RESEARCH">
                         <span class="title">RESEARCH</span>
                     </div>
                     <div class="desc">Government, Universities and Research Centers</div>
                     <div class="desc-sm">Our core areas of business include sequencing (NGS, CES), Microarray, Oligo, GEM (Genetically Engineered Mouse), and Bioinformatics in the form of biotechnology and clinical research service.  </div>
                 </div>
-                <div class="item item-2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="item item-3" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">
                         <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_2.png" alt="CLINICAL DIAGNOSTICS & TREATMENTS">
                         <span class="title">CLINICAL<br/> DIAGNOSTICS &<br/> TREATMENTS</span>
                     </div>
                     <div class="desc">For Patients and Medical Staff</div>
                     <div class="desc-sm">We invest in and conduct R&D projects in the field of precision medicine. Macrogen offers DNA testing for cancer, ClinPharm Seq, with a focus on providing personalized diagnosis, treatment, and healthcare solutions.</div>
-                </div>
-                <div class="item item-3" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="img">
-                        <img src="/publishing/pc-en/dist/img/macrogen/macrogen_thumb_3.png" alt="PERSONAL HEALTHCARE">
-                        <span class="title">PERSONAL <br/>HEALTHCARE</span>
-                    </div>
-                    <div class="desc">For the Public</div>
-                    <div class="desc-sm">As a key area of personal healthcare, personal genome sequencing is gaining attention. Macrogen is providing practical and effective healthcare solutions to improve the quality of people's lives through personal genomic analysis services.</div>
                 </div>
                 <div class="item item-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="img">

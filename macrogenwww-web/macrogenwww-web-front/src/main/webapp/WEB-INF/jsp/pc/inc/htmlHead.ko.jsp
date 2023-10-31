@@ -44,12 +44,12 @@
 <meta name="robots" content="ALL">
 <meta property="og:type" content="website">
 <meta property="og:title" content="마크로젠">
-<meta property="og:description" content="유전체정보를 제공하여 개인의 잠재력과 삶의 질 향상에 기여하는 글로벌 헬스케어 기업">
+<meta property="og:description" content="내 몸 사용 설명서를 제공하여 인류의 건강한 삶을 돕는 글로벌 헬스케어 기업 마크로젠입니다">
 <!--  <meta property="og:image" content="www.macrogen.co.kr/myimage.jpg">-->
 <meta property="og:url" content="www.macrogen.co.kr">
 <link rel="canonical" href="http://www.macrogen.co.kr">
 <meta name="keywords" content="마크로젠 키워드">
-<meta name="description" content="유전체정보를 제공하여 개인의 잠재력과 삶의 질 향상에 기여하는 글로벌 헬스케어 기업">
+<meta name="description" content="내 몸 사용 설명서를 제공하여 인류의 건강한 삶을 돕는 글로벌 헬스케어 기업 마크로젠입니다">
 
 <c:set var="cssVar" value="renewal" />
 <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/macrogen_component_pc.css?${cssVar}"/>
