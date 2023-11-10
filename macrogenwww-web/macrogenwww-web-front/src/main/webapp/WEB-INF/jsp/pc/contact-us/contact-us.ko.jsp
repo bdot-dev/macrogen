@@ -390,7 +390,7 @@
                                         <div class="font-h5">개인정보 수집 · 이용 동의서</div>
                                             <div class="agreement">
                                                 <p><span class="font-bold">개인정보 수집 목적 &#58;</span> 서비스 문의 및 상담 대응 </p>
-                                                <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호</p>
+                                                <p><span class="font-bold">수집하는 개인정보 항목 &#58;</span> 이름&#44; 휴대폰번호&#44; 이메일&#44; 소속&#44; 국가</p>
                                                 <p><span class="font-bold">보유 및 이용기간 &#58;</span>  3년</p>
                                                 <p class="guidance">&#8251; 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다&#46; 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다&#46;</p>
                                             </div>

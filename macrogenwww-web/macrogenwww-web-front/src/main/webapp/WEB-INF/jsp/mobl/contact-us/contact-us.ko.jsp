@@ -187,7 +187,7 @@
 					
 					                    <div class="agreement">
 		                                    <p><span class="font-bold">개인정보 수집 목적 :</span> 서비스 문의 및 상담 대응</p>
-		                                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호</p>
+		                                    <p><span class="font-bold">수집하는 개인정보 항목 :</span> 이름, 휴대폰번호, 이메일, 소속, 국가</p>
 		                                    <p><span class="font-bold">보유 및 이용기간 :</span>  3년</p>
 		                                    <p class="guidance">※ 위와 같은 개인정보수집 이용에 대하여 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 투자 문의 및 상담 문의 서비스 이용이 제한될 수 있습니다.</p>
 		                                </div>
