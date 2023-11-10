@@ -43,7 +43,7 @@
                         </div>
                         <!--v0.11 줄바꿈이슈-->
                         <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target5')"><a href="#">My Genomestory The Plus All-in-One 69 (73 subcategories)</a></li>
+                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">GenTok</a></li>
                             <!-- <li class="anchor-value" onclick="TitleMove('target6')"><a href="#">My Genomestory The Plus Skin & Care 44 (48 subcategories)</a></li>
                             <li class="anchor-value" onclick="TitleMove('target7')"><a href="#">My Genomestory The Plus 41 (43 subcategories)</a></li>
                             <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">My Genomestory The Plus 12 (13 Subcategories)</a></li> -->
@@ -54,26 +54,33 @@
                         <div class="section-anchor">
                             <div class="list">
                                 <!--v0.11 줄바꿈이슈 // title > .sub-title-->
-                                <p class="sub-title font-h5" id="target5">My Genomestory The Plus All-in-One 69 (73 subcategories)</p>
+                                <p class="sub-title font-h5" id="target1">GenTok</p>
                                 <div class="content">
                                     <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_allinone69.png" alt="마이지놈스토리더플러스올인원69">
+                                        <img src="/publishing/mobile-en/dist/img/business/img_gentok.png" alt="젠톡 GenTok">
                                     </div>
                                     <div class="cont">
-                                        <p class="desc font-body caption_bottom">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care.</p>
-                                        <p class="caption">※ The service is not available to persons under 19 years of age.</p>
+                                        <p class="desc font-body caption_bottom">It is a DTC(Direct-To-Consumer) genetic testing service that enables you to select only the specific genetic insights you desire. Additionally, it serves as a mobile healthcare platform, assisting you in preparing for a healthier life by providing accurate information about your innate genetic characteristics.</p>
+                                        <p class="caption">※ Service is not available for minors under 18 years of age.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
-                                                <li><p>Nutrients: 20 subcategories including vitamin C concentration, vitamin D concentration, coenzyme Q10, and magnesium concentration</p>
+                                                <li><p>Nutrients : 20 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</p>
                                                 </li>
-                                                <li><p>Exercise: 8 subcategories including fitness for strength exercise, fitness for endurance exercise, and recovery after exercise.</p>
+                                                <li><p>Exercise : 8 items, including muscular exercise, endurance exercise, exercise recovery…</p>
                                                 </li>
-                                                <li><p>Skin/Hair: 13 subcategories including pigmentation, aging skin, and male pattern hair loss</p></li>
-                                                <li><p>Diet: 5 subcategories including appetite, satiety, and sensitivity to bitter taste</p></li>
-                                                <li><p>Personal Characteristics: 12 subcategories including alcohol flush, nicotine dependence, and caffeine metabolism</p></li>
-                                                <li><p>Health Care: 15 subcategories including obesity, tendency to yo-yo effect, abdominal obesity, and triglyceride concentration</p></li>
+                                                <li><p>Skin/Hair : 13 items, including male pattern baldness, skin aging, skin pigmentation…</p></li>
+                                                <li><p>Eating habits : 5 items, including appetite, satiety, bitter taste sensitivity…</p></li>
+                                                <li><p>Personal Characteristics : 12 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</p></li>
+                                                <li><p>Health Care : 15 items, obesity, weight regain, abdominal obesity…</p></li>
                                             </ul>
                                         </div>
+                                        <div class="list_service">
+												<strong>[Information of service partnership]</strong>
+												<ul>
+													<li>① Customized services can be created for affiliates</li>
+													<li>② Request for inquiry through partnership inquiry.</li>
+												</ul>
+											</div>
                                         <div class="btn-wrap">
                                             <div class="btn-wrapper">
                                                 <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
