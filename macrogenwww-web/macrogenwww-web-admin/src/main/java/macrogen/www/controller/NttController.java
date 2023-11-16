@@ -117,18 +117,15 @@ public class NttController {
 
 		List<NttVo> resultList = nttService.list(listVo);
 
-		if (null != resultList && resultList.size() > 0) {
+		if (null != resultList && resultList.size() > 0) {		
 			paginationInfo.setTotalRecordCount(nttService.count(listVo));
-						
 			for(NttVo nttVo : resultList) {
-				if(nttVo.getLangCode().equals("ko")) {
+				if(nttVo.getLangCode().equals("ko") && nttVo.getBbsId().equals("investor-inquiries")) {
 					nttVo.setNmbrWrterNm(CommonStringUtil.lastStrRepeat(nttVo.getNmbrWrterNm(), "nm"));
-				} else {
+				} else if(nttVo.getLangCode().equals("en") && nttVo.getBbsId().equals("investor-inquiries")){
 					nttVo.setNmbrWrterNm(CommonStringUtil.lastStrRepeat(nttVo.getNmbrWrterNm(), "em"));
-				}
-				
-			}
-			
+				}				
+			}									
 		} else {
 			paginationInfo.setTotalRecordCount(0);
 		}
