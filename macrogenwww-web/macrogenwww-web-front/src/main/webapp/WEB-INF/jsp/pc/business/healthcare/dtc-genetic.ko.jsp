@@ -190,7 +190,7 @@
 	</div>
 	
 	<%-- 팝업 --%>
-	<c:if test="${not empty popupList  }"> 
+	<%-- <c:if test="${not empty popupList  }"> 
 	<c:forEach var="popup" items="${popupList}" varStatus="status">
 		<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
 			<input type="hidden" value="${popupCnt}" id="popupCnt">
@@ -203,13 +203,13 @@
 		                </div>
 		            </div>
 		            <div class="modal-body">
-		                <%-- <p class="title">${popupVo.popupNm }</p>
+		                <p class="title">${popupVo.popupNm }</p>
 		                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
 		                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
 		                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
 		                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
 		                    <br>908억 원을 달성했습니다.
-		                </p> --%>
+		                </p>
 		                <div class="data-img">
 		                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 		                </div>
@@ -286,6 +286,6 @@
 				$('.show').parent('body').css("padding-right", "17px"); */
 			}
 		</script>
-	</c:if>
+	</c:if> --%>
 	
 </body>
