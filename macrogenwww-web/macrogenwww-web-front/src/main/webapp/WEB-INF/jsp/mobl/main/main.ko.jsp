@@ -690,7 +690,7 @@
     </div>
 	
 	<%-- 팝업 --%>
-	<%-- <c:if test="${not empty popupList  }">
+	<c:if test="${not empty popupList  }">
 	<c:forEach var="popup" items="${popupList}" varStatus="status">
 		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
 		     aria-hidden="true">
@@ -704,14 +704,14 @@
 		            <div class="modal-body">
 		                <div class="scroll">
 		                    <div class="data-img">
-		                        <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt="">
+		                        <!-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> -->
 			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
 			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
 		                    </div>
-		                    <div class="btn-wrapper">
+		                    <!-- <div class="btn-wrapper">
 		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
 		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
-		                    </div>
+		                    </div> -->
 		                </div>
 		            </div>
 		            <div class="modal-footer">
@@ -802,7 +802,7 @@
 				modal.hide();
 			}
 		</script>
-	</c:if> --%>
+	</c:if>
 	
 
 </body>
