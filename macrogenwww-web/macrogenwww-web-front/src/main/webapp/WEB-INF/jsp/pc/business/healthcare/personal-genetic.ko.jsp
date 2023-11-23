@@ -119,11 +119,9 @@
 </div>
 
 <%-- 팝업 --%>
-<c:if test="${not empty popupList  }"> 
-<c:forEach var="popup" items="${popupList}" varStatus="status">
-	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
-		<input type="hidden" value="${popupCnt}" id="popupCnt">
-		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
+	<div class="modal" tabindex="-1" id="layerPopup999" data-bs-backdrop="static">
+		<input type="hidden" value="1" id="popupCnt">
+		<input type="hidden" value="" id="cookieChkList999">
 	    <div class="modal-dialog modal-dialog-centered layer-modal">
 	        <div class="modal-content">
 	            <div class="modal-header">
@@ -140,7 +138,7 @@
 	                    <br>908억 원을 달성했습니다.
 	                </p> --%>
 	                <div class="data-img">
-	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+	                    <img src="/publishing/pc-ko/dist/img/business/20231123_popup_gentok.jpg" alt="" onclick="onclickPopupImage('http://gentok.net', 'NEW')">
 	                </div>
 	                <!-- <div class="btn-area">
 	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
@@ -149,10 +147,10 @@
 	            </div>
 	            <div class="modal-footer">
 	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
+	                    <input class="form-check-input" type="checkbox" id="popup-sn999" value="999" >
+	                    <label class="form-check-label" for="popup-sn999">오늘 하루 이 창 열지 않기</label>
 	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
+	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box999" onclick="popupClose('999', '999')">
 	                    <span>Close</span>
 	                    <i class="icon ico-close-white"></i>
 	                </div>
@@ -160,14 +158,19 @@
 	        </div>
 	    </div>
 	</div>
-</c:forEach>
 	<script>
 		var popupCnt = $("#popupCnt").val();
 		
+		if ($.cookie('popup-business-sn-list')) {
+			$('#cookieChkList999').val('true');
+		} else {
+			$('#cookieChkList999').val('false');
+		}
+
 		for(var i=0;i<popupCnt;i++){
-			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
-			var coockieChk = $("#cookieChkList"+i).val();
-			
+			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup999'))
+			var coockieChk = $("#cookieChkList999").val();
+
 			if(coockieChk == 'true'){
 				layerPopupModal.hide();
 			}else if(coockieChk =='false'){
@@ -215,6 +218,5 @@
 			$('.show').parent('body').css("padding-right", "17px"); */
 		}
 	</script>
-</c:if>
 
 </body>
