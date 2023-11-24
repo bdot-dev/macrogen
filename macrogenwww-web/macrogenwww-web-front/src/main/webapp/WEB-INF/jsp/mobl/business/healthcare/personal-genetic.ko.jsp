@@ -128,12 +128,10 @@
 	</div>
 	
 <%-- 팝업 --%> 
-	<%-- <c:if test="${not empty popupList  }">
-	<c:forEach var="popup" items="${popupList}" varStatus="status">
-		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
+		<div class="modal fade modal-notice" tabindex="-1" id="modal1" data-bs-backdrop="static" aria-labelledby="modal"
 		     aria-hidden="true">
-		    <input type="hidden" value="${popupCnt}" id="popupCnt">
-			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
+		    <input type="hidden" value="1" id="popupCnt">
+			<input type="hidden" value="" id="cookieChkList1">
 		    <div class="modal-dialog">
 		        <div class="modal-content">
 		            <div class="modal-header">
@@ -142,31 +140,34 @@
 		            <div class="modal-body">
 		                <div class="scroll">
 		                    <div class="data-img">
-		                        <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt="">
-			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
-			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
+		                        <!-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> -->
+			                    <img src="/publishing/mobile-ko/dist/img/business/20231123_popup_gentok.jpg" alt="" onclick="onclickPopupImage('http://gentok.net', 'NEW')">
 		                    </div>
-		                    <div class="btn-wrapper">
+		                    <!-- <div class="btn-wrapper">
 		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
 		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
-		                    </div>
+		                    </div> -->
 		                </div>
 		            </div>
 		            <div class="modal-footer">
-		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
+		                <a href="javascript:;" data-popup-sn="1" class="btn-footer close-box"  onclick="popupClose(1)" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
 		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
 		            </div>
 		        </div>
 		    </div>
 		</div>
-		</c:forEach>
 		<script>
-		    
 		    var popupCnt = $("#popupCnt").val();
+		    
+		    if ($.cookie('popup-business-sn-list')) {
+				$('#cookieChkList1').val('true');
+			} else {
+				$('#cookieChkList1').val('false');
+			}
 			
 			for(var i=0;i<popupCnt;i++){
-				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
-				var coockieChk = $("#cookieChkList"+i).val();
+				var modal = new bootstrap.Modal(document.getElementById('modal1'));
+				var coockieChk = $("#cookieChkList1").val();
 
 				if(coockieChk == 'true'){
 					modal.hide();
@@ -202,6 +203,5 @@
 				modal.hide();
 			}
 		</script>
-	</c:if> --%>
 
 </body>
