@@ -4533,7 +4533,7 @@
             letter-spacing: 1px; }
          .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             bottom: 261px;
-            left: 160px; }            
+            left: 88px; }            
           .main-wrap .main-page .section-map .inner .map .pin.leuven {
             bottom: 225px;
             left: 138px; }
@@ -4579,6 +4579,12 @@
           .main-wrap .main-page .section-map .inner .map .pin.virginia {
             bottom: 110px;
             right: 227px; }
+          .main-wrap .main-page .section-map .inner .map .pin.manchester {
+            bottom: 297px;
+            left: 88px; }
+          .main-wrap .main-page .section-map .inner .map .pin.berlin {
+            bottom: 261px;
+            left: 328px; }
           .main-wrap .main-page .section-map .inner .map .pin.santiago {
             bottom: 47px;
             right:77px; }
