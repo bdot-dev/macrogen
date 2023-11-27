@@ -77,7 +77,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
             <!-- s 임상진단 품질경영시스템 -->
             <div class="section" id="clinicalDiagnosisQualityManagementSystem" data-aos="fade-up" data-aos-duration="2000">
                 <div class="title">Quality Management System for Clinical Diagnostics</div>
-                <div class="box">
+                <!-- <div class="box">
                     <div class="left">
                         <div class="title-sm">
                             <span>GMP Accreditation</span>
@@ -95,7 +95,7 @@ enacted by the International Organization for Standardization (ISO), certifying 
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-2.png" alt="GMP Accreditation"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="box box-full">
                     <div class="left">
                         <div class="title-sm">

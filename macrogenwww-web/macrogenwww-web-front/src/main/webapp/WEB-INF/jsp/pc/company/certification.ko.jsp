@@ -79,7 +79,7 @@
             <!-- s 임상진단 품질경영시스템 -->
             <div class="section" id="clinicalDiagnosisQualityManagementSystem" data-aos="fade-up" data-aos-duration="2000">
                 <div class="title">임상진단 품질경영시스템</div>
-                <div class="box">
+                <!-- <div class="box">
                     <div class="left">
                         <div class="title-sm">
                             <span>GMP 인증</span>
@@ -97,7 +97,7 @@
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-2.png" alt="GMP 인정"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="box box-full">
                     <div class="left">
                         <div class="title-sm">
