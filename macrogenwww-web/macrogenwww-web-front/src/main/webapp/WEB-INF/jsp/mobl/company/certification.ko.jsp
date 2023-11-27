@@ -87,7 +87,7 @@
             <!-- s 임상진단 품질경영시스템 -->
             <div class="section" id="clinicalDiagnosisQualityManagementSystem" data-aos="fade-up" data-aos-duration="2000">
                 <div class="title">임상진단 품질경영시스템</div>
-                <div class="box">
+                <!-- <div class="box">
                     <div class="title-box">
                         <div class="title-sm">
                             <span>GMP 인증</span>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/GMP인정서_마크로젠_2025.08.23만료_(1).pdf" target="_blank">GMP인증서 보기</a></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="box">
                     <div class="title-box">
                         <div class="title-sm">
