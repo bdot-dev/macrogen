@@ -5134,7 +5134,7 @@
           left: 247px; }
         .macrogen.global-macrogen .section-map .map .pin.amsterdam {
           top: 63px;
-          left: 147px; }
+          left: 70px; }
         .macrogen.global-macrogen .section-map .map .pin.leuven {
           top: 108px;
           left: 103px; }
@@ -5177,6 +5177,12 @@
         .macrogen.global-macrogen .section-map .map .pin.virginia {
           top: 228.89px;
           left: 939px; }
+        .macrogen.global-macrogen .section-map .map .pin.manchester {
+          top: 18px;
+          left: 70px; }
+        .macrogen.global-macrogen .section-map .map .pin.berlin {
+          top: 63px;
+          left: 316px; }
         .macrogen.global-macrogen .section-map .map .pin.santiago {
           top: 513.35px;
           left: 995px; }
@@ -8391,7 +8397,7 @@ margin-bottom: 60px; }
             margin-left: 10px;/*(수정) 2023-04-11*/ }
           .main-wrap .main-page .section-map .inner .map .pin.amsterdam {
             top: 13px;
-            left: 126px; }
+            left: 64px; }
           .main-wrap .main-page .section-map .inner .map .pin.leuven {
             top: 60px;
             left: 83px; }
@@ -8437,7 +8443,13 @@ margin-bottom: 60px; }
           .main-wrap .main-page .section-map .inner .map .pin.virginia {
             top: 195px;
             left: 950px; }
-            .main-wrap .main-page .section-map .inner .map .pin.santiago {
+          .main-wrap .main-page .section-map .inner .map .pin.manchester {
+            top: -35px;
+            left: 64px; }
+          .main-wrap .main-page .section-map .inner .map .pin.berlin {
+            top: 13px;
+            left: 306px; }
+          .main-wrap .main-page .section-map .inner .map .pin.santiago {
             top: 276px;
             left: 1063px; }
 

@@ -294,8 +294,8 @@
                                         </div>
                                     </li>
                                     <li class="item" id="leuven">
-                                        <div class="name">Leuven Genome Center</div>
-                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Leuven Genome Center"></div>
+                                        <div class="name">Ghent Genome Center</div>
+                                        <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Leuven Genome Center"></div>
                                         <div class="info">
                                             <ul>
                                                 <li><span>Established in Aug 2021</span></li>
@@ -316,7 +316,7 @@
                                                     <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </li>
                                     <li class="item" id="italy">
                                         <div class="name">Milano Genome Center </div>
@@ -363,7 +363,27 @@
 		                                    </ul>
 		                                    <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
 		                                </div>
-		                            </li> 
+		                            </li>
+		                            <li class="item" id="manchester">
+                                        <div class="name">Manchester Genome Center</div>
+                                        <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Jul 2022</li>
+                                            </ul>
+                                            <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                          
+                                        </div> -->
+                                    </li>
+                                    <li class="item" id="berlin">
+                                        <div class="name">Berlin Genome Center</div>
+                                        <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div>
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>Established in Jul 2022</li>
+                                            </ul>
+                                            <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                          
+                                        </div> -->
+                                    </li> 
                                     <li class="item" id="santiago">
                                         <div class="name">Santiago Genome Center</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div>
