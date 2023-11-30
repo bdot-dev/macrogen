@@ -648,6 +648,17 @@
 
 </div>  
  
+<div id="modal_popup_wrap">
+	<div class="modal_popup_content">
+	<div class="all-close-wrap">
+		<div class="all-form-checkbox" onclick="allPopupChecked()">
+			<input class="all-form-checkbox-input" type="checkbox" id="all-popup-sn-0">
+			<label class="all-form-checkbox-label" for="all-popup-sn-0">오늘 하루 전체 닫기</label>
+		</div>
+		<div class="all-close-box" id="all-close-box99" onclick="allPopupClose()">
+			<i class="icon ico-close-white"></i>
+		</div>	
+	</div>
 <%-- 팝업 --%>
 <c:if test="${not empty popupList  }">
 <c:forEach var="popup" items="${popupList}" varStatus="status">
@@ -703,14 +714,9 @@
 			}else if(coockieChk =='false'){
 				layerPopupModal.show();
 			}
-			
-		    //layerPopupModal.show();
 		}
-		
-	    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-	    layerPopupModal.show(); */
 	    
-	    $('div.modal-backdrop:gt(0)').css("opacity", "0");
+	    $('div.modal-backdrop').css("opacity", "0");
 	</script>
 	<script>
 
@@ -740,12 +746,47 @@
 				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
 			}
 			
+			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup' + idx));
+			
 			layerPopupModal.hide();
-			/* $('.show').parent('body').css("overflow", "hidden"); 
-			$('.show').parent('body').css("padding-right", "17px"); */
+			
+			if ($('#modal_popup_wrap .modal').hasClass('show')) {
+				$('html body').css({'overflow' : 'hidden'});
+				return;
+			} else {
+				$('#modal_popup_wrap').css({'display' : 'none', 'opacity' : 0, 'visibility' : 'hidden'});
+			}
+		}
+		
+		function allPopupChecked() {
+			if ($('#all-popup-sn-0').is(':checked')) {
+				$('.modal .modal-footer .form-check-input:checkbox').prop('checked', true);
+			} else {
+				$('.modal .modal-footer .form-check-input:checkbox').prop('checked', false);
+			}
+		}
+		
+		function allPopupClose() {
+			if ($('#all-popup-sn-0').is(':checked')) {
+				var snLists = '';
+				
+				for (var i=0; i<popupCnt; i++) {
+					snLists += $('.modal .modal-footer .form-check .form-check-input').eq(i).val() + ',';
+				}
+				
+				$.cookie('popup-sn-list', snLists, { expires: 1, path: '/' });	
+			}
+			
+			$('#modal_popup_wrap').parent().remove();
+			$('.modal-backdrop').remove();
+			$('body').removeClass('modal-open').css({'overflow': 'auto', 'padding': '0'});
 		}
 	</script>
 </c:if>
- 
+</div>
+</div> 
+<script>
+	if ($('#modal_popup_wrap').find('.modal').length === 0) $('#modal_popup_wrap').remove();
+</script>
  
 </body>
