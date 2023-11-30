@@ -9313,7 +9313,66 @@ margin-bottom: 60px; }
 
 
     /* e contactUS 2023.04.10 */
-  
+#modal_popup_wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: 0;
+	z-index: 1055;
+	background: rgba(0,0,0,0.5);
+}
+#modal_popup_wrap .modal_popup_content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: 15px;	
+}
+#modal_popup_wrap .all-close-wrap {
+	position: absolute;
+	top: -30px;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+#modal_popup_wrap .all-form-checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 10px;
+}
+#modal_popup_wrap .all-form-checkbox input {
+	width: 24px;
+	height: 24px;
+}
+#modal_popup_wrap .all-form-checkbox label {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -0.5px;
+	line-height: 26px;
+	color: #fff;
+}
+ #modal_popup_wrap .all-close-box i {
+ 	background: url(../img/common/ico-close-white.svg) no-repeat 0 0/cover;
+ 	width: 30px;
+ 	height: 30px;
+	cursor: pointer;
+ }
+ #modal_popup_wrap .modal {
+	position: unset;
+	width: auto;
+	height: auto;
+ }
 .modal .modal-dialog.layer-modal {
   max-width: 540px; }
   .modal .modal-dialog.layer-modal .modal-content {
