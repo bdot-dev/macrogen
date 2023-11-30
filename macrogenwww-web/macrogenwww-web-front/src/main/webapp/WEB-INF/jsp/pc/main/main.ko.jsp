@@ -787,6 +787,7 @@
 </div> 
 <script>
 	if ($('#modal_popup_wrap').find('.modal').length === 0) $('#modal_popup_wrap').remove();
+	if (popupCnt <= 1) $('.all-close-wrap').css('display', 'none'); 
 </script>
  
 </body>
