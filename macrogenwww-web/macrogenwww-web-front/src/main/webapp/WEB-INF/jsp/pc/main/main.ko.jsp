@@ -798,6 +798,7 @@
 </div>
 </div> 
 <script>
+	var popupCnt = $("#popupCnt").val();
 	var cookieCnt = 0;
 	
 	for (var i=0; i<popupCnt; i++) {		
