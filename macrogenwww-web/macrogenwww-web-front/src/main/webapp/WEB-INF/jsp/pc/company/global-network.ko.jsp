@@ -35,7 +35,7 @@
                 <div class="map">
                 	<a class="pin poland" href="#poland"><span>Szczecin&#44; Poland</span></a>
                     <a class="pin amsterdam" href="#amsterdam"><span>Amsterdam&#44; Netherlands</span></a>
-                    <a class="pin leuven" href="#leuven"><span>Leuven&#44; Belgium</span></a>
+                    <a class="pin leuven" href="#leuven"><span>Ghent&#44; Belgium</span></a>
                     <a class="pin paris" href="#paris"><span>Paris&#44; France</span></a>
                     <a class="pin basel" href="#basel"><span>Basel&#44; Switzerland</span></a>
                     <a class="pin milan" href="#italy"><span>Milan&#44; Italy</span></a>                    
@@ -49,6 +49,8 @@
                     <a class="pin newyork" href="#rockville"><span>New york&#44; USA</span></a>                    
                     <a class="pin rockville" href="#rockville"><span>Rockville&#44; USA</span></a>
                     <a class="pin virginia" href="#rockville"><span>Virginia&#44; USA</span></a>
+                    <a class="pin manchester" href="#manchester"><span>Manchester&#44; UK</span></a>
+                    <a class="pin berlin" href="#berlin"><span>BERLIN&#44; GERMANY</span></a>
                     <a class="pin santiago" href="#santiago"><span>Santiago&#44; Chile</span></a>
                 </div>
             </div>
@@ -259,12 +261,12 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="leuven">
-                                <div class="name">벨기에 루벤 지놈슈퍼센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div>
+                                <div class="name">벨기에 겐트 지놈슈퍼센터</div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2021년 8월 설립</span></li>
-                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
+                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
                                     </ul>
                                     <div class="address" style="margin-bottom:0;">
                                    		<span>Sales Office&#46;</span> Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium                                   
@@ -278,7 +280,7 @@
                                         <span>WEB&#46;</span>
                                         <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                             <li class="item height_fix" id="italy">
                                 <div class="name">이탈리아 밀라노 지놈슈퍼센터</div>
@@ -322,6 +324,28 @@
                                     </ul>
                                     <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
                                 </div>
+                            </li>
+                            <li class="item height_fix" id="manchester">
+                                <div class="name">영국 맨체스터 지놈슈퍼센터</div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2022년 7월 설립</span></li>
+                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                    </ul>
+                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
+                                </div> -->
+                            </li>
+                            <li class="item height_fix" id="berlin">
+                                <div class="name">독일 베를린 지놈슈퍼센터</div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2022년 7월 설립</span></li>
+                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                    </ul>
+                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
+                                </div> -->
                             </li>  
                             <li class="item height_fix" id="santiago">
                                 <div class="name">칠레 산티아고 지놈슈퍼센터</div>
