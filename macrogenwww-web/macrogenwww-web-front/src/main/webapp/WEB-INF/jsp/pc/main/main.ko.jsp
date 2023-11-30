@@ -748,7 +748,19 @@
 			
 			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup' + idx));
 			
-			layerPopupModal.hide();
+			layerPopupModal.hide();			
+
+			var cookieCnt = 0;
+			
+			setTimeout(function() {
+				for (var i=0; i<popupCnt; i++) {	
+					if ($('#cookieChkList' + i).val() === 'false') cookieCnt++;
+				}				
+			},100);
+			
+			if (cookieCnt <= 1) {
+				$('.all-close-wrap').css('display', 'none')
+			};
 			
 			if ($('#modal_popup_wrap .modal').hasClass('show')) {
 				$('html body').css({'overflow' : 'hidden'});
@@ -786,8 +798,15 @@
 </div>
 </div> 
 <script>
+	var cookieCnt = 0;
+	
+	for (var i=0; i<popupCnt; i++) {		
+		if ($('#cookieChkList' + i).val() === 'false') cookieCnt++;
+	}
+	if (cookieCnt <= 1) $('.all-close-wrap').css('display', 'none');
+
 	if ($('#modal_popup_wrap').find('.modal').length === 0) $('#modal_popup_wrap').remove();
-	if (popupCnt <= 1) $('.all-close-wrap').css('display', 'none'); 
+	
 </script>
  
 </body>
