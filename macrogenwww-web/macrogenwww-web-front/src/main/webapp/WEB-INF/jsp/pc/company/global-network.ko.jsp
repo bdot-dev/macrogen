@@ -262,13 +262,12 @@
                             </li>
                             <li class="item height_fix" id="leuven">
                                 <div class="name">벨기에 겐트 지놈슈퍼센터</div>
-                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>2021년 8월 설립</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <li><span>2024년 1월 업데이트 예정</span></li>
                                     </ul>
-                                    <div class="address" style="margin-bottom:0;">
+                                    <!-- <div class="address" style="margin-bottom:0;">
                                    		<span>Sales Office&#46;</span> Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium                                   
                                     </div>
                                     <div class="address">                                   		
@@ -279,8 +278,8 @@
                                         <a href="tel:+31-20-333-7563">+31&#45;20&#45;333&#45;7563</a>
                                         <span>WEB&#46;</span>
                                         <a href="https://www.macrogen-europe.com/" target="_blank">www&#46;macrogen&#45;europe&#46;com&#47;</a>
-                                    </div>
-                                </div> -->
+                                    </div> -->
+                                </div>
                             </li>
                             <li class="item height_fix" id="italy">
                                 <div class="name">이탈리아 밀라노 지놈슈퍼센터</div>
@@ -327,25 +326,21 @@
                             </li>
                             <li class="item height_fix" id="manchester">
                                 <div class="name">영국 맨체스터 지놈슈퍼센터</div>
-                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>2022년 7월 설립</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <li><span>2024년 1월 업데이트 예정</span></li>
                                     </ul>
-                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
-                                </div> -->
+                                </div>
                             </li>
                             <li class="item height_fix" id="berlin">
                                 <div class="name">독일 베를린 지놈슈퍼센터</div>
-                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>2022년 7월 설립</span></li>
-                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
+                                        <li><span>2024년 1월 업데이트 예정</span></li>
                                     </ul>
-                                    <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                    
-                                </div> -->
+                                </div>
                             </li>  
                             <li class="item height_fix" id="santiago">
                                 <div class="name">칠레 산티아고 지놈슈퍼센터</div>
