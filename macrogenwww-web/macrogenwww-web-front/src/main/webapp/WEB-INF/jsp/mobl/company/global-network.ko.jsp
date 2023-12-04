@@ -294,28 +294,12 @@
                                     </li>
                                     <li class="item" id="leuven">
                                         <div class="name">벨기에 겐트 지놈슈퍼센터</div>
-                                        <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div>
+                                        <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div> -->
                                         <div class="info">
                                             <ul>
-                                                <li><span>2021년 8월 설립</span></li>
+                                                <li><span>2024년 1월 업데이트 예정</span></li>
                                             </ul>
-                                            <div class="address" style="margin-bottom:0;">
-		                                   		<span>Sales Office&#46;</span><p>Professor Roger Van Overstraetenplein 5, 3000 Leuven, Belgium</p>                               
-		                                    </div>
-		                                    <div class="address">                                   		
-		                                   		<span>Laboratory&#46;</span><p>Oxfordlaan 70, 6229 EV Maastricht, Netherlands</p>
-		                                    </div>                                           
-                                            <div class="tel">
-                                                <div>
-                                                    <span>TEL.</span>
-                                                    <a href="tel:+31-20-333-7563">+31-20-333-7563</a>
-                                                </div>
-                                                <div>
-                                                    <span>WEB.</span>
-                                                    <a href="https://www.macrogen-europe.com/" target="_blank">www.macrogen-europe.com/</a>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                        </div>
                                     </li>
                                     <li class="item" id="italy">
                                         <div class="name">이탈리아 밀라노 지놈슈퍼센터</div>
@@ -365,23 +349,21 @@
 	                            	</li>
 	                            	<li class="item" id="manchester">
                                        <div class="name">영국 맨체스터 지놈슈퍼센터</div>
-                                       <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                       <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                        <div class="info">
                                            <ul>
-                                               <li><span>2022년 7월 설립</span></li>
-                                           </ul>
-                                           <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                            
-                                       </div> -->
+                                               <li><span>2024년 1월 업데이트 예정</span></li>
+                                           </ul>                                            
+                                       </div>
                                    </li>
                                    <li class="item" id="berlin">
                                        <div class="name">독일 베를린 지놈슈퍼센터</div>
-                                       <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div>
+                                       <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                        <div class="info">
                                            <ul>
-                                               <li><span>2022년 7월 설립</span></li>
+                                               <li><span>2024년 1월 업데이트 예정</span></li>
                                            </ul>
-                                           <div class="address">Magdalena 140 Oficina 401, Las Condes Santiago, Chile</div>                                            
-                                       </div> -->
+                                       </div>
                                    </li> 
                                     <li class="item" id="santiago">
                                        <div class="name">칠레 산티아고 지놈슈퍼센터</div>
