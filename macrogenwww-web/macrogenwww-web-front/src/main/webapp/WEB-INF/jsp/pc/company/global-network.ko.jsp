@@ -324,6 +324,15 @@
                                     <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
                                 </div>
                             </li>
+                            <li class="item height_fix" id="basel">
+                                <div class="name">스위스 바젤 지놈슈퍼센터</div>
+                                <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
+                                <div class="info">
+                                    <ul>
+                                        <li><span>2024년 1월 업데이트 예정</span></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="item height_fix" id="manchester">
                                 <div class="name">영국 맨체스터 지놈슈퍼센터</div>
                                 <!-- <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->

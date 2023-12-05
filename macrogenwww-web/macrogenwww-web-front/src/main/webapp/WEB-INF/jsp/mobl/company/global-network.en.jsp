@@ -348,6 +348,15 @@
 		                                    <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                    
 		                                </div>
 		                            </li>
+		                            <li class="item" id="basel">
+                                        <div class="name">Basel Genome Center</div>
+                                        <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
+                                        <div class="info">
+                                            <ul>
+                                                <li><span>To be updated in January 2024</li>
+                                            </ul>                                          
+                                        </div>
+                                    </li>
 		                            <li class="item" id="manchester">
                                         <div class="name">Manchester Genome Center</div>
                                         <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
