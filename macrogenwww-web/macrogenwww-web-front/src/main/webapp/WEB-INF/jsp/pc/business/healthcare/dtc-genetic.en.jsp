@@ -51,12 +51,12 @@
 	                                    <p class="caption">※ Service is not available for minors under 18 years of age.</p>
 	                                    <div class="list-area">
 	                                        <ul class="list-circle-dot">
-	                                            <li>Nutrients : 20 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</li>
-	                                            <li>Exercise : 8 items, including muscular exercise, endurance exercise, exercise recovery…</li>
-	                                            <li>Skin/Hair : 13 items, including male pattern baldness, skin aging, skin pigmentation…</li>
-	                                            <li>Eating habits : 5 items, including appetite, satiety, bitter taste sensitivity…</li>
-	                                            <li>Personal Characteristics : 12 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</li>
-	                                            <li>Health Care : 15 items, obesity, weight regain, abdominal obesity…</li>
+	                                            <li>Nutrients : 23 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</li>
+	                                            <li>Exercise : 10 items, including muscular exercise, endurance exercise, exercise recovery…</li>
+	                                            <li>Skin/Hair : 14 items, including male pattern baldness, skin aging, skin pigmentation…</li>
+	                                            <li>Eating habits : 12 items, including appetite, satiety, bitter taste sensitivity…</li>
+	                                            <li>Personal Characteristics : 21 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</li>
+	                                            <li>Health Care : 22 items, obesity, weight regain, abdominal obesity…</li>
 	                                        </ul>
 	                                    </div>
 	                                    <div class="list_service">
