@@ -27,7 +27,7 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>카테고리 1<span>*</span></th>
+							<th>카테고리<span>*</span></th>
 							<td colspan="3" class="tal">
 								<select v-model="resultVo.cntntsCtgryCode" style="width:200px;" ref="cntntsCtgryCode">
 									<option :value="null">카테고리 선택</option>
