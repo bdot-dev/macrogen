@@ -64,13 +64,13 @@
                                         <p class="caption">※ Service is not available for minors under 18 years of age.</p>
                                         <div class="list-area">
                                             <ul class="list-circle-dot">
-                                                <li><p>Nutrients : 23 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</p>
+                                                <li><p>Nutrients : 35 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</p>
                                                 </li>
                                                 <li><p>Exercise : 10 items, including muscular exercise, endurance exercise, exercise recovery…</p>
                                                 </li>
-                                                <li><p>Skin/Hair : 14 items, including male pattern baldness, skin aging, skin pigmentation…</p></li>
-                                                <li><p>Eating habits : 12 items, including appetite, satiety, bitter taste sensitivity…</p></li>
-                                                <li><p>Personal Characteristics : 21 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</p></li>
+                                                <li><p>Skin/Hair : 18 items, including male pattern baldness, skin aging, skin pigmentation…</p></li>
+                                                <li><p>Eating habits : 21 items, including appetite, satiety, bitter taste sensitivity…</p></li>
+                                                <li><p>Personal Characteristics : 23 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</p></li>
                                                 <li><p>Health Care : 22 items, obesity, weight regain, abdominal obesity…</p></li>
                                             </ul>
                                         </div>
