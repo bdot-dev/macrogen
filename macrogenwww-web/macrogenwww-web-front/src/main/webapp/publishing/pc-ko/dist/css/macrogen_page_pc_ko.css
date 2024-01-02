@@ -3581,6 +3581,9 @@
     color: #000;
     font-weight: 400;
     margin-bottom: 80px; }
+  .section_business.biome .subject-box .subject > span {
+  	font-size: 16px;
+  	color: #909090; }
     .section_business .subject-box .subject.info {
       margin-bottom: 0; }
   .section_business .subject-box .desc {
@@ -3898,6 +3901,11 @@
   .section_business .info-box .list-gallery .list .content {
     display: flex;
     justify-content: space-between; }
+  .section_business.biome .info-box .list-gallery .list .content {
+  	justify-content: flex-start; }
+  	.section_business.biome .info-box .list-gallery .list .content .desc {
+  		font-size: 22px;
+  		font-weight: 700 }
     .section_business .info-box .list-gallery .list .content .picture {
       margin-right: 40px; }
     .section_business .info-box .list-gallery .list .content .cont .desc {
