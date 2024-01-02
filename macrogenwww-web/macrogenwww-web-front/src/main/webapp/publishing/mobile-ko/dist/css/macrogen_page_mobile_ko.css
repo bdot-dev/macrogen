@@ -2671,6 +2671,9 @@
   .section_business .info-box-wrap .subject {
     color: #000;
     margin-bottom: 24px; }
+  .section_business .info-box-wrap .subject > span {
+  	font-size: 18px;
+  	color: #909090; }
   .section_business .info-box-wrap .desc.img_bottom {
     margin-bottom: 40px; }
   .section_business .info-box-wrap .desc.list_bottom {
@@ -2713,7 +2716,8 @@
       font-size: 16px;
       line-height: 32px;
       margin-left: 15px;
-      display: inline-block; }
+      display: inline-block;
+      color: #707070; }
       .section_business .info-box-wrap .list-area .list-circle-dot > li span{display:block; line-height: 32px; color:#707070;}
     .section_business .info-box-wrap .list-area .list-circle-dot > li .list-hypen {
       margin-left: 15px; }
@@ -2812,6 +2816,11 @@
       height: 100%; }
   .section_business .list-gallery .list .cont .desc {
     margin-bottom: 24px; }
+  .section_business.biome .list-gallery .list .cont .desc {
+  	font-size: 18px;
+  	font-weight: 600;
+  	color: #454545;
+  	letter-spacing: -0.05em; }
     .section_business .list-gallery .list .cont .desc.caption_bottom {
       margin-bottom: 16px; }
   .section_business .list-gallery .list .cont .caption {
