@@ -164,7 +164,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">The molecular genetic testing services provided by Macrogen Headquarters maintain A-grade certification (P-grade when including items not covered by health insurance). By providing customers with reliable results, Macrogen contributes to national health and progress in the national bioscience fields.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/㈜마크로젠_제2023-010호_유전자검사기관 숙련도평가 인증서(24.01.01~24.12.31).pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-5.png" alt="Genetic Testing Accuracy Evaluation Certification"></div>

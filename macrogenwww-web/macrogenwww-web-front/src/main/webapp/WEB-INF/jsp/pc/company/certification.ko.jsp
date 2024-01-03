@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠은 본사에서 수행하는 분자유전검사 서비스와 관련하여 매년 A등급&#40;보험 미등재 항목 포함 시&#44; P등급&#41;을 획득했습니다&#46; 고객에게 더욱 신뢰할 수 있는 결과를 제공함으로써 국민건강 및 생명과학 분야의 발전에 기여합니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/㈜마크로젠_제2023-010호_유전자검사기관 숙련도평가 인증서(24.01.01~24.12.31).pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
