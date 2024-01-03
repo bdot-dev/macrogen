@@ -176,7 +176,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-5.png" alt="유전자검사 정확도평가 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/유전자검사기관 질평가인증서.pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/㈜마크로젠_제2023-010호_유전자검사기관 숙련도평가 인증서(24.01.01~24.12.31).pdf" target="_blank">유전자검사 정확도평가 인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">

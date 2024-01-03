@@ -119,7 +119,7 @@
 </div>
 
 <%-- 팝업 --%>
-	<div class="modal" tabindex="-1" id="layerPopup999" data-bs-backdrop="static">
+	<%-- <div class="modal" tabindex="-1" id="layerPopup999" data-bs-backdrop="static">
 		<input type="hidden" value="1" id="popupCnt">
 		<input type="hidden" value="" id="cookieChkList999">
 	    <div class="modal-dialog modal-dialog-centered layer-modal">
@@ -130,13 +130,13 @@
 	                </div>
 	            </div>
 	            <div class="modal-body">
-	                <%-- <p class="title">${popupVo.popupNm }</p>
+	                <p class="title">${popupVo.popupNm }</p>
 	                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
 	                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
 	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
 	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
 	                    <br>908억 원을 달성했습니다.
-	                </p> --%>
+	                </p>
 	                <div class="data-img">
 	                    <img src="/publishing/pc-ko/dist/img/business/20231123_popup_gentok.jpg" alt="" onclick="onclickPopupImage('http://gentok.net', 'NEW')">
 	                </div>
@@ -157,7 +157,7 @@
 	            </div>
 	        </div>
 	    </div>
-	</div>
+	</div> --%>
 	<script>
 		var popupCnt = $("#popupCnt").val();
 		
