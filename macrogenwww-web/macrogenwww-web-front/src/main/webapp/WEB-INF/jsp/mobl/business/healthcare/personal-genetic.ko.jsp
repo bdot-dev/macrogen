@@ -128,7 +128,7 @@
 	</div>
 	
 <%-- 팝업 --%> 
-		<div class="modal fade modal-notice" tabindex="-1" id="modal1" data-bs-backdrop="static" aria-labelledby="modal"
+		<!-- <div class="modal fade modal-notice" tabindex="-1" id="modal1" data-bs-backdrop="static" aria-labelledby="modal"
 		     aria-hidden="true">
 		    <input type="hidden" value="1" id="popupCnt">
 			<input type="hidden" value="" id="cookieChkList1">
@@ -140,13 +140,13 @@
 		            <div class="modal-body">
 		                <div class="scroll">
 		                    <div class="data-img">
-		                        <!-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> -->
+		                        <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt="">
 			                    <img src="/publishing/mobile-ko/dist/img/business/20231123_popup_gentok.jpg" alt="" onclick="onclickPopupImage('http://gentok.net', 'NEW')">
 		                    </div>
-		                    <!-- <div class="btn-wrapper">
+		                    <div class="btn-wrapper">
 		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
 		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
-		                    </div> -->
+		                    </div>
 		                </div>
 		            </div>
 		            <div class="modal-footer">
@@ -155,7 +155,7 @@
 		            </div>
 		        </div>
 		    </div>
-		</div>
+		</div> -->
 		<script>
 		    var popupCnt = $("#popupCnt").val();
 		    
