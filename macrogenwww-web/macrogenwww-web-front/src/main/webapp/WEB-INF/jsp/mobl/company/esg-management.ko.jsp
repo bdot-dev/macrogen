@@ -46,7 +46,8 @@
             <!-- s text -->
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">함께하는 미래,<br/>지속가능한 미래를 만들겠습니다</div>
+                    <div class="font-h3">ESG 외부평가에 체계적인 대응을 통해 ESG 수준을<br>지속 점검하고 발전시켜 나가겠습니다.</div>
+                    <div class="font-body-h" style="color:#000;">마크로젠은 2023년 서스틴베스트에서<br>진행하는 ESG 평가에서 2년 연속 규모등급<br>'AA등급'을 획득하였습니다.</div>
                 </div>
             </div>
             <!-- e text -->
@@ -56,6 +57,7 @@
                 <div class="list-goals">
                     <div class="goal" data-aos="fade-up" data-aos-duration="2000">
                         <div class="box">
+                        	<div class="font-h4">ESG 경영목표</div>
                             <div class="item bg"><img src="/publishing/mobile-ko/dist/img/esg/bg-esg-thumb-sm-1.png" alt="고객"></div>
                             <div class="item text">
                                 <div class="font-body-h-b">고객</div>
@@ -115,6 +117,44 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="goal" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="box">
+                        	<div class="font-h4">ESG 외부평가</div>
+                            <table class="table">
+                            	<colgroup>
+                            		<col width="50%" />
+                            		<col width="50%" />
+                            	</colgroup>
+                            	<thead>
+                            		<tr>
+                            			<th scope="col" colspan="2"><img src="/publishing/mobile-ko/dist/img/macrogen/table-bg-esg.png" alt=""></th>
+                            		</tr>
+                            	</thead>
+								<tbody>
+									<tr>
+										<th>구분</th>
+										<th>등급</th>
+									</tr>
+									<tr>
+										<td>2023년</td>
+										<td>AA</td>
+									</tr>
+									<tr>
+										<td>2022년</td>
+										<td>AA</td>
+									</tr>
+									<tr>
+										<td>2021년</td>
+										<td>BB</td>
+									</tr>
+									<tr>
+										<td>2020년</td>
+										<td>BB</td> 
+									</tr>
+								</tbody>
+							</table>
                         </div>
                     </div>
                 </div>
