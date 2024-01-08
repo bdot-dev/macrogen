@@ -7150,7 +7150,8 @@ margin-bottom: 60px; }
     padding-top: 150px;
     padding-bottom: 120px; }
     .macrogen.macrogen-esg .section-phrase .font-h3 {
-      line-height: 81px; }
+      line-height: 81px;
+      margin-bottom: 28px; }
   .macrogen.macrogen-esg .section-banner {
     padding: 0 50px; }
     .macrogen.macrogen-esg .section-banner .banner {
@@ -7183,6 +7184,8 @@ margin-bottom: 60px; }
         background-image: url(../img/macrogen/bg-esg-thumb-2.png); }
   .macrogen.macrogen-esg .section-management-goals {
     padding-top: 150px; }
+  .macrogen.macrogen-esg .section-management-goals.table .font-h6 {
+    margin-bottom: 40px; }
     .macrogen.macrogen-esg .section-management-goals .font-h6 {
       display: inline-block;
       position: relative;
@@ -7202,6 +7205,28 @@ margin-bottom: 60px; }
         width: 100%;
         margin-bottom: 150px;
         height: 600px; }
+      .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal {
+        height: 282px;  }
+        .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box {
+          padding: 0;  }
+        .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table {
+          border: 1px solid #e9e9e9;
+          margin: 0;  }
+        .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table tr th {
+          padding: 0;  }
+          .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table tr th:nth-child(2) {
+            width: 412px;
+            padding: 10px 0;  }
+          .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table tr th:nth-child(3) {
+            width: 412px;
+            padding: 10px 0;
+            border-left: 1px solid #d9d9d9;  }
+            .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table tr td {
+              padding: 0;  }
+            .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal .box .table tr td:nth-child(2) {
+              border-left: 1px solid #e9e9e9;  }
+        .macrogen.macrogen-esg .section-management-goals.table .list-goals .goal:first-child {
+          background: unset;  }
         .macrogen.macrogen-esg .section-management-goals .list-goals .goal:first-child {
           background-image: url(../img/macrogen/bg-esg-thumb-sm-1.png);
           background-size: 940px 640px;
