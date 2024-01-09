@@ -74,9 +74,9 @@
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">정밀의학연구소</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/bioinformatics">생명정보학연구소</a></li>
-                <li><a href="/${rc.locale.language }/rnd/institute/biome">더바이옴연구소</a></li>
+                <%-- <li><a href="/${rc.locale.language }/rnd/institute/biome">더바이옴연구소</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/sync-genes">싱크진연구소</a></li>
-                <li><a href="/${rc.locale.language }/rnd/institute/bigdata">빅데이터연구소</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/bigdata">빅데이터연구소</a></li> --%>
             </ul>
         </div>
         <!-- //2023-04-27 추가 -->
