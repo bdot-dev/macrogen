@@ -31,7 +31,8 @@
             <!-- s text -->
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h3">함께하는 미래&#44;<br/>지속가능한 미래를 만들겠습니다</div>
+                    <div class="font-h3">ESG 외부평가에 체계적인 대응을 통해<br/>ESG 수준을 지속 점검하고 발전시켜 나가겠습니다.</div>
+                    <div class="font-body-h" style="color:#000; font-weight: 400;">마크로젠은 2023년 서스틴베스트에서 진행하는 ESG 평가에서 2년 연속 규모등급 'AA등급'을 획득하였습니다.</div>
                 </div>
             </div>
             <!-- e text -->
@@ -64,7 +65,7 @@
             <!-- s ESG 경영목표 -->
             <div class="section-management-goals">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="font-h6">ESG경영목표</div>
+                    <div class="font-h6">ESG 경영목표</div>
                 </div>
                 <div class="list-goals">
                     <div class="goal" data-aos="fade-up" data-aos-duration="2000">
@@ -133,6 +134,44 @@
                 </div>
             </div>
             <!-- e ESG 경영목표 -->
+            <!-- s ESG 외부평가  -->
+            <div class="section-management-goals table">
+                <div class="inner" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="font-h6">ESG 외부평가</div>
+                </div>
+                <div class="list-goals">
+                    <div class="goal" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="box">
+                            <table class="table">
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="5"><img src="/publishing/pc-ko/dist/img/macrogen/table-bg-esg.png" alt=""></th>
+										<th>구분</th>
+										<th>등급</th>
+									</tr>
+									<tr>
+										<td>2023년</td>
+										<td>AA</td>
+									</tr>
+									<tr>
+										<td>2022년</td>
+										<td>AA</td>
+									</tr>
+									<tr>
+										<td>2021년</td>
+										<td>BB</td>
+									</tr>
+									<tr>
+										<td>2020년</td>
+										<td>BB</td> 
+									</tr>
+								</tbody>
+							</table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- e ESG 외부평가  -->
         </div>
     </div>
     <!--footer 수정시 메인 footer 같이 수정해주세요-->
