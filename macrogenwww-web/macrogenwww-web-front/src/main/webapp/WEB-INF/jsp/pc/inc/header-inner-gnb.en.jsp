@@ -62,9 +62,9 @@
             <ul>
                 <li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">Precision Medicine Institute</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/bioinformatics">Bioinformatics Institute</a></li>
-                <li><a href="/${rc.locale.language }/rnd/institute/biome">The Biome Institute</a></li>
+                <%-- <li><a href="/${rc.locale.language }/rnd/institute/biome">The Biome Institute</a></li>
                 <li><a href="/${rc.locale.language }/rnd/institute/sync-genes">Sync Genes Institute</a></li>
-                <li><a href="/${rc.locale.language }/rnd/institute/bigdata">Big Data Institute for Health</a></li>
+                <li><a href="/${rc.locale.language }/rnd/institute/bigdata">Big Data Institute for Health</a></li> --%>
             </ul>
         </div>
         <!-- //2023-05-02 추가 -->
