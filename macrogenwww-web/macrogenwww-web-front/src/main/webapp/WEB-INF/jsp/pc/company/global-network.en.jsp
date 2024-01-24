@@ -203,7 +203,7 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="biopolis">
-                                <div class="name">Macrogen Singapore</div>
+                                <div class="name">Macrogen APAC</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_8.png" alt="Macrogen Singapore"></div>
                                 <div class="info">
                                     <ul>
