@@ -212,7 +212,7 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="biopolis">
-                                <div class="name">싱가포르법인</div>
+                                <div class="name">마크로젠 APAC</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_8.png" alt="싱가포르법인"></div>
                                 <div class="info">
                                     <ul>
