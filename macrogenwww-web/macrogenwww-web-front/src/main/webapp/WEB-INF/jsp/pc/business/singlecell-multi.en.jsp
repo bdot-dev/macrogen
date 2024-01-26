@@ -27,10 +27,10 @@
 		
 		<div class="container">
         <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
-        <div class="section_business">
+        <div class="section_business single_cell_multi">
             <div class="subject-box type02">
                 <p class="font-h4 title">Macrogen provides personalized single cell multi-omics analysis services based on extensive experience and innovation.</p>
-                <p class="subject info">Single-cell gene sequencing is used to analyze gene expression profile and genetic changes in a single cell, which is a functional and structural unit of an organism. As it becomes possible to determine cellular heterogeneity, rare cell population, cellular differentiation, chromatin heterogeneity, immune profile, and surface protein profile in a single cell unit, this technique is applied to various fields of research including selection of cell treatments, stem cells, and cancer development and progression. Macrogen quickly provides a high level of genetic sequencing data based on its ability to perform NGS (next generation sequencing), which ranks first in Korea and fifth in the world. Furthermore, we are leading the market by diversifying single-cell sequencing services, thanks to industry-leading genome sequencing expertise accumulated over 24 years and investment in big data and unexplored areas.</p>
+                <p class="subject info">Single-cell gene sequencing is used to analyze gene expression profile and genetic changes in a single cell, which is a functional and structural unit of an organism. As it becomes possible to determine cellular heterogeneity, rare cell population, cellular differentiation, chromatin heterogeneity, immune profile, and surface protein profile in a single cell unit, this technique is applied to various fields of research including selection of cell treatments, stem cells, and cancer development and progression. Macrogen quickly provides a high level of genetic sequencing data based on its ability to perform NGS (next generation sequencing), which ranks first in Korea and fifth in the world. Furthermore, we are leading the market by diversifying single-cell sequencing services, thanks to industry-leading genome sequencing expertise accumulated over 26 years and investment in big data and unexplored areas.</p>
             </div>
 
             <!-- 탭 컨텐츠 -->
@@ -47,7 +47,7 @@
                         </div>
                         <div>
                             <p class="title">single nucleus RNA sequencing</p>
-                            <p class="desc">Analysis of gene expression after isolation of nucleus from samples that are difficult to progress to single cells</p>
+                            <p class="desc">Analysis of gene expression after isolation of nucleus from samples that are difficult to progress to cells</p>
                         </div>
                         <div>
                             <p class="title">single cell immune profiling</p>
@@ -66,6 +66,76 @@
                             <p class="desc">Simultaneous analysis of single-nucleus DNA's accessibility and gene expression </p>
                         </div>
                     </div>
+                    
+                    <hr class="divider" />
+	                <p class="font-h4 main-title mb120">Service Process</p>
+	                <div class="service-box">
+	                	<div class="box">
+	                		<div class="img_txt">
+	                			<img src="/publishing/pc-ko/dist/img/business/img-single-cell-process01.png" alt=""/>
+	                			<p>We offer a full range of services, including tissue dissociation, sample quality checks, library construction, sequencing, and data analysis.</p>
+	                		</div>
+	                		<ul class="service_list">
+	                			<li class="list">
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process02.png" alt=""/></div>
+	                				<p>Service<br>Consultation</p>
+	                			</li>
+	                			<li class="list">
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process03.png" alt=""/></div>
+	                				<p>Library<br>Construction</p>
+	                			</li>
+	                			<li class="list">
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process04.png" alt=""/></div>
+	                				<p>Sample<br>Quality Check</p>
+	                			</li>
+	                			<li class="list">
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process05.png" alt=""/></div>
+	                				<p>Sequencing</p>
+	                			</li>
+	                			<li class="list">
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process06.png" alt=""/></div>
+	                				<p>Data<br>Analysis</p>
+	                			</li>
+	                		</ul>
+	                	</div>
+	                </div>
+                    
+                    <hr class="divider" />
+	                <p class="font-h4 main-title mb120">Sample Preparation</p>
+	                <p class="font-h5 sub-title">Single Cell sample</p>
+	                <p class="font-sub desc">In Single Cell multi-omics analysis, data quality is determined by the condition of the sample. At Macrogen, we provide high-precision quality check results based on quality improvement steps and extensive analysis experience to enhance the quality of the sample.</p>
+                    <table class="table table-row">
+	                    <colgroup>
+	                        <col width="33.333%">
+	                    	<col width="33.333%">
+	                    	<col width="33.333%">
+                        </colgroup>
+	                    <tbody>
+	                    	<tr>
+	                    		<th scope="col">Sample type</th>
+	                    		<th scope="col">Cell, Nucleus</th>
+	                    		<th scope="col">Tissue</th>
+	                    	</tr>
+	                    	<tr>
+	                            <th scope="row">Cell number/weight</th>
+	                            <td>> 5X10⁵</td>
+	                            <td>200mg~500mg</td>
+	                        </tr>
+	                        <tr>
+	                            <th scope="row">Cell viabillity</th>
+	                            <td colspan="2">> 70%</td>
+	                        </tr>
+	                        <tr>
+	                        	<th scope="row">Target cell/ run</th>
+	                            <td colspan="2">1,000 ~ 20,000</td>
+	                        </tr>
+	                        <tr>
+								<th scope="row">Consideration point</th>
+                                <td colspan="2">RBC, debris, cell aggregation ratio, dead cells</td>
+	                    	</tr>
+	                	</tbody>
+	                </table>
+                    
                     <p class="desc">With the advent of the single-cell sequencing technique, it became possible to analyze trace amounts of cellular genes and those expressed in small amounts, which cannot be examined through conventional gene analysis. As a result, we are able to gain insights into individuals' environment, genetics, and biological characteristics in detail, allowing us to get one step closer to realizing ultra-precision medicine that can predict, prevent, and diagnose diseases. Macrogen has carried out the most single cell sequencing projects in Korea, and is the only CSP (Certified Service Provider) in the country for single cell gene expression and spatial gene expression services. In addition, we are leading the market by diversifying single-cell sequencing services by introducing innovative single-cell sequencing techniques.</p>
                     <div class="btn-area">
                         <a href="mailto:ngskr@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
