@@ -3974,6 +3974,7 @@
   .btn.btn-text span + .icon {
     margin-left: 12px;
   }
+  .btn.btn-primary > span {color: #fff;}
 
   .icon {
     display: inline-block;

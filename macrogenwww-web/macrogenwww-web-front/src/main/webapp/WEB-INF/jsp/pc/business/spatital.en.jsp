@@ -17,7 +17,7 @@
 	                    <li class="breadcrumb-item">Spatial Transcriptome analysis</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title en">Spatial Gene Expression analysis</div>
+	            <div class="hero-title en">Spatial Transcriptome analysis</div>
 	        </div>
 		</div>
 		

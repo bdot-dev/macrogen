@@ -81,11 +81,11 @@
 	                				<p>Service<br>Consultation</p>
 	                			</li>
 	                			<li class="list">
-	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process03.png" alt=""/></div>
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process04.png" alt=""/></div>
 	                				<p>Library<br>Construction</p>
 	                			</li>
 	                			<li class="list">
-	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process04.png" alt=""/></div>
+	                				<div class="img"><img src="/publishing/pc-ko/dist/img/business/img-single-cell-process03.png" alt=""/></div>
 	                				<p>Sample<br>Quality Check</p>
 	                			</li>
 	                			<li class="list">

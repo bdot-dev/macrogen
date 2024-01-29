@@ -10,7 +10,7 @@
 			    </div>
 			</header>		
 			<div class="frame">
-	            <div class="font-h1">Spatial Gene <br>Expression analysis</div>
+	            <div class="font-h1">Spatial<br>Transcriptome analysis</div>
 	        </div>
 		</div>
 		
@@ -39,7 +39,7 @@
 	                    </div>
 	                    <ul class="select-option _select-option">
 	                        <li class="option-value active"><a href="#">Visium CytAssist</a></li>
-	                        <li class="option-value"><a href="#">Nanostring GeoMx® DSP</a></li>
+	                        <li class="option-value"><a href="#">GeoMx® DSP</a></li>
 	                    </ul>
 	                </div>
 	            </div>
