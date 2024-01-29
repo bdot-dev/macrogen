@@ -298,7 +298,7 @@
                                         <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_11.png" alt="Leuven Genome Center"></div> -->
                                         <div class="info">
                                             <ul>
-                                                <li><span>To be updated in January 2024</span></li>
+                                                <li><span>To be updated</span></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -350,11 +350,12 @@
 		                            </li>
 		                            <li class="item" id="basel">
                                         <div class="name">Basel Genome Center</div>
-                                        <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
+                                        <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_17.jpg" alt="Basel Genome Center"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>To be updated in January 2024</li>
-                                            </ul>                                          
+                                                <li><span>Established in Feb 2024</li>
+                                            </ul>
+		                                    <div class="address">WSJ-210.14, Lichtstrasse 35, 4056 Basel, Switzerland</div>
                                         </div>
                                     </li>
 		                            <li class="item" id="manchester">
@@ -362,7 +363,7 @@
                                         <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
                                         <div class="info">
                                             <ul>
-                                                <li><span>To be updated in January 2024</li>
+                                                <li><span>To be updated</li>
                                             </ul>                                          
                                         </div>
                                     </li>
@@ -371,7 +372,7 @@
                                         <!-- <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
                                         <div class="info">
                                             <ul>
-                                                <li><span>To be updated in January 2024</li>
+                                                <li><span>To be updated</li>
                                             </ul>                                          
                                         </div>
                                     </li> 
