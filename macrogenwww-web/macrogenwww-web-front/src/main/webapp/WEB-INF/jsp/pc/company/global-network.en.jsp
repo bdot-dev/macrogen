@@ -253,7 +253,7 @@
                                 <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_11.png" alt="Leuven Genome Center"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>To be updated in January 2024</span></li>
+                                        <li><span>To be updated</span></li>
                                     </ul>
                                 </div>
                             </li>
@@ -294,16 +294,17 @@
 	                                <ul>
 	                                    <li><span>Established in Jun 2022</span></li>
 	                                </ul>
-	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>                                  
+	                                <div class="address">Teofila Firlika 19, 71-637 Szczecin, Poland</div>
 	                            </div>
 	                        </li>
 	                        <li class="item height_fix" id="basel">
                                 <div class="name">Basel Genome Center</div>
-                                <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_17.jpg" alt="Santiago Genome Center"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>To be updated in January 2024</span></li>
-                                    </ul>                                  
+                                        <li><span>Established in Feb 2024</span></li>
+                                    </ul>
+	                                <div class="address">WSJ-210.14, Lichtstrasse 35, 4056 Basel, Switzerland</div>
                                 </div>
                             </li>
 	                        <li class="item height_fix" id="manchester">
@@ -311,7 +312,7 @@
                                 <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>To be updated in January 2024</span></li>
+                                        <li><span>To be updated</span></li>
                                     </ul>                                  
                                 </div>
                             </li>
@@ -320,7 +321,7 @@
                                 <!-- <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_14.png" alt="Santiago Genome Center"></div> -->
                                 <div class="info">
                                     <ul>
-                                        <li><span>To be updated in January 2024</span></li>
+                                        <li><span>To be updated</span></li>
                                     </ul>                                  
                                 </div>
                             </li> 

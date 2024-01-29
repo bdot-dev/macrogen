@@ -297,7 +297,7 @@
                                         <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_11.png" alt="벨기에 루벤 지놈슈퍼센터"></div> -->
                                         <div class="info">
                                             <ul>
-                                                <li><span>2024년 1월 업데이트 예정</span></li>
+                                                <li><span>업데이트 예정</span></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -349,11 +349,12 @@
 	                            	</li>
 	                            	<li class="item" id="basel">
                                        <div class="name">스위스 바젤 지놈슈퍼센터</div>
-                                       <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
+                                       <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_17.jpg" alt="스위스 바젤 지놈슈퍼센터"></div>
                                        <div class="info">
                                            <ul>
-                                               <li><span>2024년 1월 업데이트 예정</span></li>
-                                           </ul>                                            
+                                               <li><span>2024년 2월 설립</span></li>
+                                           </ul>
+		                                   <div class="address">WSJ-210.14, Lichtstrasse 35, 4056 Basel, Switzerland</div>
                                        </div>
                                    </li>
 	                            	<li class="item" id="manchester">
@@ -361,7 +362,7 @@
                                        <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                        <div class="info">
                                            <ul>
-                                               <li><span>2024년 1월 업데이트 예정</span></li>
+                                               <li><span>업데이트 예정</span></li>
                                            </ul>                                            
                                        </div>
                                    </li>
@@ -370,7 +371,7 @@
                                        <!-- <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_14.png" alt="칠레 산티아고 지놈슈퍼센터"></div> -->
                                        <div class="info">
                                            <ul>
-                                               <li><span>2024년 1월 업데이트 예정</span></li>
+                                               <li><span>업데이트 예정</span></li>
                                            </ul>
                                        </div>
                                    </li> 
