@@ -78,4 +78,37 @@
 .top-bg.personal01 {background-image: url('/publishing/mobile-ko/dist/img/business/bg_personal01.png');}
 .top-bg.personal02 {background-image: url('/publishing/mobile-ko/dist/img/business/bg_personal02.png');}
 
+/* Single Cell Multi */
+.section_business.single_cell_multi .info-box .box-gray-6 {margin-bottom: 80px;}
+.section_business.single_cell_multi .main-title {margin-bottom: 40px;}
+.section_business.single_cell_multi .main-title:nth-child(4) {margin-bottom: 80px;}
+.section_business.single_cell_multi .border-gray-box {margin-bottom: 80px;}
+.section_business.single_cell_multi .font-body-h.sub-title {color: #000; font-weight: 600;}
+.section_business.single_cell_multi .desc {margin-bottom: 40px;}
+.section_business.single_cell_multi table.table tr:first-child {border-bottom-color: #D9D9D9;}
+.section_business.single_cell_multi table.table tr:last-child {border-bottom: 0;}
+.section_business.single_cell_multi table.table tr th {text-align: center;}
+.section_business.single_cell_multi table.table tr:not(:first-child) th:first-child {color: #666; font-size: 16px; font-weight: 400; letter-spacing: -0.5px;}
+.section_business.single_cell_multi table.table tr td {text-align: center;}
+.section_business.single_cell_multi table.table tr th,
+.section_business.single_cell_multi table.table tr td {border-right: 0;}
+.section_business.single_cell_multi .table-scroll {margin-bottom: 40px;}
+.section_business.single_cell_multi .btn-area {padding-top: 40px;}
+/* Single Cell Multi */
+
+/* Single Cell Spatial */
+.section_business.spatital .subject-box {padding-bottom: 80px;}
+.section_business.spatital .subject-box .desc.font-body {margin-bottom: 80px;}
+.section_business.spatital .subject-box:after {content: ''; display: inline-block; width: 100%; height: 10px; background: #f5f5f5;}
+.section_business.spatital .info-box:first-child .border-gray-box {margin-top: 0; margin-bottom: 64px;}
+.section_business.spatital .info-box:first-child .main-title:nth-child(5) {margin-bottom: 40px;}
+.section_business.spatital .info-box:first-child .table-scroll {margin-bottom: 64px;}
+.section_business.spatital .info-box:first-child table.table tbody tr th,
+.section_business.spatital .info-box:first-child table.table tbody tr td {border-right: 0; text-align: center;}
+.section_business.spatital .info-box:first-child .quality-title {font-size: 18px; line-height: 34px; letter-spacing: -0.5px; margin-bottom: 16px;}
+.section_business.spatital .info-box:first-child .quality-sub li {position: relative; padding-left: 18px; font-size: 16px; color: #454545; line-height: 32px; letter-spacing: -0.5px;}
+.section_business.spatital .info-box:first-child .quality-sub li:before {content: ''; display: inline-block; width: 5px; height: 5px; margin: 13px 0 0 -17px; background: #454545; border-radius: 50%; position: absolute;}
+.section_business.spatital .info-box:first-child .quality-desc {margin-top: 14px; font-size: 16px; line-height: 32px; letter-spacing: -0.5px; color: #909090;}
+.section_business.spatital .info-box:last-child .border-gray-box {margin-bottom: 64px;}
+/* Single Cell Spatial */
 
