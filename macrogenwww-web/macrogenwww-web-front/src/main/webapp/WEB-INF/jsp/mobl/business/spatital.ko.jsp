@@ -10,7 +10,7 @@
 			    </div>
 			</header>		
 			<div class="frame">
-	            <div class="font-h1">Spatial<br>Transcriptome analysis</div>
+	            <div class="font-h1">Spatial<br>Transcriptome Analysis</div>
 	        </div>
 		</div>
 		

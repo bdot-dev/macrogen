@@ -18,7 +18,7 @@
 	                    <li class="breadcrumb-item">Spatial Transcriptome analysis</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title en">Spatial Transcriptome analysis</div>
+	            <div class="hero-title en">Spatial Transcriptome Analysis</div>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
