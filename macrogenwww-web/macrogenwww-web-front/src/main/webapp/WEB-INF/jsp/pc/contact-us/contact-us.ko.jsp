@@ -676,6 +676,8 @@
 							if (data.message == 'invalid_captcha') {
 								alert('자동등록방지 문자열을 확인해 주세요.');
 								captchaString.focus();
+							}else{
+								alert('정상적인 등록이 아닙니다.');
 							}
 						}
 		

@@ -633,6 +633,8 @@
 						if (data.message == 'invalid_captcha') {
 							alert('Security code is required.');
 							captchaString.focus();
+						}else{
+							alert('This is not a normal registration.');
 						}
 					}
 	
