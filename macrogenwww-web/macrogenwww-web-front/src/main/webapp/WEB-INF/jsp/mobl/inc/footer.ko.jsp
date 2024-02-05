@@ -26,7 +26,7 @@
                     <option value="">Family Site</option>
                    <!-- <option value="https://thebiome.life/">더바이옴</option> -->
                     <option value="https://gentok.net/">GenTok 젠톡</option>
-                    <option value="https://www.mypetgene.com/main/main.php">마이펫진</option>
+                    <option value="https://blog.naver.com/macrogen123">마이펫진</option>
                     <option value="https://psomagen.com/">소마젠(Psomagen)</option>
                     <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
                     <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>

@@ -31,7 +31,7 @@
                 <div class="popup_box _popup_box">
                    <!-- <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">The Biome</span></a> -->
                     <a href="https://www.my-genomestory.com/" target="_blank" class="list"><span class="text">My Genomestory</span></a>
-                    <a href="https://www.mypetgene.com/main/main.php" target="_blank" class="list"><span class="text">myPETGENE</span></a>
+                    <a href="https://blog.naver.com/macrogen123" target="_blank" class="list"><span class="text">myPETGENE</span></a>
                     <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">Psomagen</span></a>
                     <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">Macrogen Japan</span></a>
                     <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">Macrogen Europe</span></a>
