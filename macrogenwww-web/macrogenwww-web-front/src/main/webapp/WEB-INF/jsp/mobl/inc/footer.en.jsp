@@ -26,7 +26,7 @@
                     <option value="">Family Site</option>
                    <!-- <option value="https://thebiome.life/">The Biome</option> -->
                     <option value="https://www.my-genomestory.com/">My Genomestory</option>
-                    <option value="https://www.mypetgene.com/main/main.php">myPETGENE</option>
+                    <option value="https://blog.naver.com/macrogen123">myPETGENE</option>
                     <option value="https://psomagen.com/">Psomagen</option>
                     <option value="https://www.macrogen-japan.co.jp/">Macrogen Japan</option>
                     <option value="https://www.macrogen-europe.com">Macrogen Europe</option>
