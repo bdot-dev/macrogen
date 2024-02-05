@@ -107,9 +107,9 @@
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/newsroom/news">News</a></div>
 				</div>
-				<div class="item">
+				<%-- <div class="item">
 					<div class="title"><a href="/${rc.locale.language }/newsroom/media-library">Media library</a></div>
-				</div>
+				</div> --%>
 				<div class="item">
 					<div class="title"><a href="/${rc.locale.language }/newsroom/notice">Notice</a></div>
 				</div>

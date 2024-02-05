@@ -126,7 +126,7 @@
                                             inherited from parents or acquired, and myPETGENE can obtain genetic disease
                                             information by identifying mutation factors inherited from parents.</p>
                                         <div class="btn-wrap">
-                                            <a href="https://www.mypetgene.com/sub/sub02_010101.php" target="_blank"
+                                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
                                         </div>
                                     </div>
@@ -162,7 +162,7 @@
                                             case
                                             of disputes of ownership for companion animals.</p>
                                         <div class="btn-wrap">
-                                            <a href="https://www.mypetgene.com/sub/sub02_02.php" target="_blank"
+                                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
                                         </div>
                                     </div>
@@ -189,7 +189,7 @@
                                             way
                                             by confirming that the genotypes match each other.</p>
                                         <div class="btn-wrap">
-                                            <a href="https://www.mypetgene.com/sub/sub02_03.php" target="_blank"
+                                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
                                         </div>
                                     </div>
@@ -225,7 +225,7 @@
                                             DNA
                                             analysis.</p>
                                         <div class="btn-wrap">
-                                            <a href="https://www.mypetgene.com/sub/sub02_04.php" target="_blank"
+                                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                                class="btn btn-sm btn-light"><span>View Detail</span></a>
                                         </div>
                                     </div>
@@ -240,9 +240,9 @@
                                     allowfullscreen></iframe>
                         </div>
                         <div class="btn-area">
-                            <a href="https://www.mypetgene.com/sub/sub01_01.php" target="_blank"
+                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                class="btn btn-light"><span>Service Inquiry</span></a>
-                            <a href="https://www.mypetgene.com/sub/sub03_01.php" target="_blank"
+                            <a href="https://blog.naver.com/macrogen123" target="_blank"
                                class="btn btn-primary"><i class="icon ico-cart-white"></i><span>Order</span></a>
                         </div>
                     </div>

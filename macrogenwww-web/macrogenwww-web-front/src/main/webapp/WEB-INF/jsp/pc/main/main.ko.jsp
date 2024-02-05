@@ -624,9 +624,14 @@
 	</div>        
 	
 	<c:import url="/inc/footer" />
-    <a href="#" class="btn btn-text btn-totop"><a>
+	
+	<a href="#" class="btn btn-text btn-totop">
+	    <i class="icon icon-arrow-top-long"></i>
+	    <span>TOP</span>
+	</a>
+    <!-- <a href="#" class="btn btn-text btn-totop"><a>
     <i class="icon icon-arrow-top-long"></i> 
-    <span>TOP</span>
+    <span>TOP</span> -->
 	
 	<script>
 	    $(document).ready(function(){
