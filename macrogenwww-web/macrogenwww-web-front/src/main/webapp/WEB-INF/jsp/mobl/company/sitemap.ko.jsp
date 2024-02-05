@@ -117,9 +117,9 @@
 						<div class="item">
 						<div class="title"><a href="/${rc.locale.language }/newsroom/news">뉴스</a></div>
 					</div>
-					<div class="item">
+					<%-- <div class="item">
 						<div class="title"><a href="/${rc.locale.language }/newsroom/media-library">미디어라이브러리</a></div>
-					</div>
+					</div> --%>
 					<div class="item">
 						<div class="title"><a href="/${rc.locale.language }/newsroom/notice">공지사항</a></div>
 					</div>			     
