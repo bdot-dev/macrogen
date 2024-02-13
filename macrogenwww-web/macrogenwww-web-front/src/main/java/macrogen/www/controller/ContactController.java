@@ -1,7 +1,6 @@
 package macrogen.www.controller;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +18,6 @@ import macrogen.www.enums.LangId;
 import macrogen.www.service.CodeService;
 import macrogen.www.service.ContactService;
 import macrogen.www.utils.CaptchaUtil;
-import macrogen.www.vo.CodeVo;
 import macrogen.www.vo.ContactVo;
 import nl.captcha.Captcha;
 
@@ -64,10 +62,22 @@ public class ContactController extends DefaultController {
  			resultMap.put("message", "invalid_captcha");
 			return resultMap;
 		}
+		
+		if(vo.getNmbrWriterNm().isEmpty() || vo.getNationCode().isEmpty() || vo.getMbtlnum().isEmpty()
+				|| vo.getEmail().isEmpty() || vo.getCompany().isEmpty() || vo.getField().isEmpty()
+				|| vo.getContactSj().isEmpty() || vo.getContactCn().isEmpty() ) {
+			
+			System.out.println("데이터가 정상적으로 넘어오지 않음.");
+			resultMap.put("result", "fail");
+ 			
+			return resultMap;
+		}
 	
 		vo.setLangCode(langId.name());
 		
 		contactService.insert(vo);
+		
+		request.getSession().removeAttribute(Captcha.NAME);
 		
 		resultMap.put("nationCodeList", codeService.listByCodeSe("CONTACT_NATION_CODE"));
 		resultMap.put("emailCodeList", codeService.listByCodeSe("CONTACT_EMAIL_CODE"));

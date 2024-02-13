@@ -649,11 +649,6 @@
 						submitting = true;
 					}
 					
-					/* // 문의분야
-					$("#field").val();
-					
-					// 국가
-					$("#nationCode").val(); */
 			
 					// 핸드폰
 					$("#mbtlnum").val(mbtlnum1.text() + '-' + mbtlnum2.val() + '-' + mbtlnum3.val());
@@ -676,6 +671,8 @@
 							if (data.message == 'invalid_captcha') {
 								alert('자동등록방지 문자열을 확인해 주세요.');
 								captchaString.focus();
+							}else{
+								alert('정상적인 등록이 아닙니다.');
 							}
 						}
 		
