@@ -63,8 +63,6 @@ public class ContactController extends DefaultController {
 			return resultMap;
 		}
 		
-		System.out.println(vo.getNmbrWriterNm().isEmpty());
-		
 		if(vo.getNmbrWriterNm().isEmpty() || vo.getNationCode().isEmpty() || vo.getMbtlnum().isEmpty()
 				|| vo.getEmail().isEmpty() || vo.getCompany().isEmpty() || vo.getField().isEmpty()
 				|| vo.getContactSj().isEmpty() || vo.getContactCn().isEmpty() ) {

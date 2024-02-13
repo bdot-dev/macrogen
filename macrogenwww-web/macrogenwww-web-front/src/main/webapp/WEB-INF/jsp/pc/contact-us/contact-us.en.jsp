@@ -608,12 +608,7 @@
 				} else {
 					submitting = true;
 				}
-				
-				/* // 문의분야
-				$("#field").val();
-				
-				// 국가
-				$("#nationCode").val(); */		
+						
 	
 				// 이메일										
 				$("#email").val(email1.val() + '@' + email2.text());
