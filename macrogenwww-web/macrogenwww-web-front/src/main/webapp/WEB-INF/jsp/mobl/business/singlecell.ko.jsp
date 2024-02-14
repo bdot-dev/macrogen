@@ -78,7 +78,7 @@
 	                                    CosMx™ Human Immuno-oncology Panel (RNA, 100 Plex)<br>
 	                                    CosMx™ Human Immuno-oncology Panel (Protein, 64 Plex)<br>
 	                                    그 외 Panel Assay에 대해 별도 문의 바랍니다. (Panel 종류는 지속적으로 Update됩니다. 주문 시 상담 바랍니다.)<br>
-	                                    <span class="point">한번에 Section된 조직으로 RNA와 Protein 동시 분석이 가능합니다. (2023년 하반기 업데이트 예정)</span>
+	                                    <span class="point">한번에 Section된 조직으로 RNA와 Protein 동시 분석이 가능합니다.</span>
 	                                </td>
 	                            </tr>
 	                        </table>

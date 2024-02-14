@@ -76,7 +76,7 @@
 	                                    CosMx™ Human Immuno-oncology Panel (RNA, 100 Plex)<br>
 	                                    CosMx™ Human Immuno-oncology Panel (Protein, 64 Plex)<br>
 	                                    Please contact us for inquiries about other panel assays<br>
-	                                    <span class="point">We offer simultaneous analysis for RNA and protein from sectioned tissue. (To be updated in late 2023)</span>
+	                                    <span class="point">We offer simultaneous analysis for RNA and protein from sectioned tissue.</span>
 	                                </td>
 	                            </tr>
 	                        </table>
