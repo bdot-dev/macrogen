@@ -16,7 +16,7 @@ import macrogen.www.vo.SchedulerErrorVo;
  */
 public interface SchedulerErrorService {
 	
-	int count(SchedulerErrorVo schedulerErrorVo) throws Exception;
+	/*int count(SchedulerErrorVo schedulerErrorVo) throws Exception;
 
 	List<SchedulerErrorVo> list(SchedulerErrorVo schedulerErrorVo) throws Exception;
 	
@@ -24,5 +24,5 @@ public interface SchedulerErrorService {
 	
 	void insert(SchedulerErrorVo schedulerErrorVo) throws Exception;
 
-	void insert(String schedulerId, String errorCn, String refrnId);
+	void insert(String schedulerId, String errorCn, String refrnId);*/
 }

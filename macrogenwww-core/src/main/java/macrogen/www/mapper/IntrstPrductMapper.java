@@ -27,7 +27,7 @@ public interface IntrstPrductMapper {
 	 *
 	 * @param intrstPrductVo
 	 * @return
-	 */
+	 *
 	List<IntrstPrductVo> list(IntrstPrductVo intrstPrductVo);
 
 	/**
@@ -39,7 +39,7 @@ public interface IntrstPrductMapper {
 	 *
 	 * @param intrstPrductVo
 	 * @return
-	 */
+	 *
 	int count(IntrstPrductVo intrstPrductVo);
 
 	/**
@@ -50,7 +50,7 @@ public interface IntrstPrductMapper {
 	 * </pre>
 	 *
 	 * @param intrstPrductVo
-	 */
+	 *
 	void insert(IntrstPrductVo intrstPrductVo);
 
 	/**
@@ -61,6 +61,7 @@ public interface IntrstPrductMapper {
 	 * </pre>
 	 *
 	 * @param intrstPrductVo
-	 */
+	 *
 	void delete(IntrstPrductVo intrstPrductVo);
+	*/
 }

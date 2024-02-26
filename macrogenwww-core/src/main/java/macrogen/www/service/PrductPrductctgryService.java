@@ -7,8 +7,8 @@ import macrogen.www.vo.PrductVo;
 
 public interface PrductPrductctgryService {
 
-	void updateList(PrductVo prductVo) throws Exception;
+	/*void updateList(PrductVo prductVo) throws Exception;
 
-	List<PrductPrductctgryVo> listByPrductSn(Long prductSn) throws Exception;
+	List<PrductPrductctgryVo> listByPrductSn(Long prductSn) throws Exception;*/
 
 }

@@ -43,7 +43,7 @@ public class PrductServiceImpl extends EgovAbstractServiceImpl implements Prduct
 	@Resource(name="storageService")
 	private StorageService storageService;
 
-	@Override
+	/*@Override
 	public List<PrductVo> list(PrductVo prductVo) throws Exception {
 		return prductMapper.list(prductVo);
 	}
@@ -107,6 +107,6 @@ public class PrductServiceImpl extends EgovAbstractServiceImpl implements Prduct
 	@Override
 	public void updateExpsrYn(PrductVo prductVo) throws Exception {
 		prductMapper.updateExpsrYn(prductVo);
-	}
+	}*/
 
 }

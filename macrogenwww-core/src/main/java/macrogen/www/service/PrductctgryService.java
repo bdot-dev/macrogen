@@ -25,7 +25,7 @@ public interface PrductctgryService {
 	 *
 	 * @param param
 	 * @return
-	 */
+	 *
 	List<PrductctgryVo> list(PrductctgryVo param);
 	/**
 	 * <pre>
@@ -36,7 +36,7 @@ public interface PrductctgryService {
 	 *
 	 * @param param
 	 * @return
-	 */
+	 *
 	PrductctgryVo view(PrductctgryVo param);
 	/**
 	 * <pre>
@@ -46,7 +46,7 @@ public interface PrductctgryService {
 	 * </pre>
 	 *
 	 * @param param
-	 */
+	 *
 	void insert(PrductctgryVo param);
 	/**
 	 * <pre>
@@ -56,7 +56,7 @@ public interface PrductctgryService {
 	 * </pre>
 	 *
 	 * @param param
-	 */
+	 *
 	void update(PrductctgryVo param);
 	/**
 	 * <pre>
@@ -66,7 +66,7 @@ public interface PrductctgryService {
 	 * </pre>
 	 *
 	 * @param param
-	 */
+	 *
 	void updateSortOrdr(PrductctgryVo param);
 	/**
 	 * <pre>
@@ -76,7 +76,7 @@ public interface PrductctgryService {
 	 * </pre>
 	 *
 	 * @param param
-	 */
+	 *
 	void delete(PrductctgryVo param);
 
 	/**
@@ -88,7 +88,7 @@ public interface PrductctgryService {
 	 *
 	 * @param param
 	 * @return
-	 */
+	 *
 	List<PrductctgryVo> tree(PrductctgryVo param);
 
 	/**
@@ -100,7 +100,8 @@ public interface PrductctgryService {
 	 *
 	 * @param ctgrySn
 	 * @return
-	 */
+	 *
 	List<PrductctgryVo> listByUpperCtgrySn(Long ctgrySn);
+	*/
 
 }

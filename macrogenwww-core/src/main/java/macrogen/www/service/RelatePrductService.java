@@ -7,8 +7,8 @@ import macrogen.www.vo.RelatePrductVo;
 
 public interface RelatePrductService {
 
-	List<RelatePrductVo> listByPrductSn(Long prductSn) throws Exception;
+	/*List<RelatePrductVo> listByPrductSn(Long prductSn) throws Exception;
 
-	void updateList(PrductVo prductVo) throws Exception;
+	void updateList(PrductVo prductVo) throws Exception;*/
 
 }

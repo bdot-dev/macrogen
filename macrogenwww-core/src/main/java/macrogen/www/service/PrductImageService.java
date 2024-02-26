@@ -17,9 +17,9 @@ import macrogen.www.vo.PrductVo;
  */
 public interface PrductImageService {
 
-	void updateList(PrductVo prductVo) throws Exception;
+	/*void updateList(PrductVo prductVo) throws Exception;
 
-	List<PrductImageVo> listByPrductSn(Long prductSn) throws Exception;
+	List<PrductImageVo> listByPrductSn(Long prductSn) throws Exception;*/
 
 
 }

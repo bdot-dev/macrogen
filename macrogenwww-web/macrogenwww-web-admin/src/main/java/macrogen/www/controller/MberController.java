@@ -42,7 +42,7 @@ public class MberController {
 	@Resource(name="codeService")
 	private CodeService codeService;
 
-	@RequestMapping("/list")
+	/*@RequestMapping("/list")
 	public String list(@ModelAttribute("listVo") MberVo listVo, Model model) throws Exception{
 		return "mber/list";
 	}
@@ -167,5 +167,5 @@ public class MberController {
 
 		resultMap.put("result", "success");
 		return resultMap;
-	}
+	}*/
 }

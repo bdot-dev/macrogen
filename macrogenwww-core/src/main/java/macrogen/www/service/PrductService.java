@@ -16,7 +16,7 @@ import macrogen.www.vo.PrductVo;
  */
 public interface PrductService {
 
-	List<PrductVo> list(PrductVo prductVo) throws Exception;
+	/*List<PrductVo> list(PrductVo prductVo) throws Exception;
 
 	int count(PrductVo prductVo) throws Exception;
 
@@ -30,6 +30,6 @@ public interface PrductService {
 
 	void updateSortOrder(PrductVo prductVo) throws Exception;
 
-	void updateExpsrYn(PrductVo prductVo) throws Exception;
+	void updateExpsrYn(PrductVo prductVo) throws Exception;*/
 
 }

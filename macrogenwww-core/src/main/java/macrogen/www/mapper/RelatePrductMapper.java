@@ -8,7 +8,7 @@ import macrogen.www.vo.RelatePrductVo;
 @Mapper
 public interface RelatePrductMapper {
 
-	int count(RelatePrductVo relatePrductVo);
+	/*int count(RelatePrductVo relatePrductVo);
 
 	List<RelatePrductVo> list(RelatePrductVo relatePrductVo);
 
@@ -18,5 +18,5 @@ public interface RelatePrductMapper {
 
 	void delete(RelatePrductVo relatePrductVo);
 
-	void deleteByPrductSn(RelatePrductVo relatePrductVo);
+	void deleteByPrductSn(RelatePrductVo relatePrductVo);*/
 }

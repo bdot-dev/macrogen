@@ -26,7 +26,7 @@ public interface IntrstPrductService {
 	 * @param intrstPrductVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	List<IntrstPrductVo> list(IntrstPrductVo intrstPrductVo) throws Exception;
 
 	/**
@@ -39,7 +39,7 @@ public interface IntrstPrductService {
 	 * @param intrstPrductVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	int count(IntrstPrductVo intrstPrductVo) throws Exception;
 
 	/**
@@ -51,7 +51,7 @@ public interface IntrstPrductService {
 	 *
 	 * @param intrstPrductVo
 	 * @throws Exception
-	 */
+	 *
 	void insert(IntrstPrductVo intrstPrductVo) throws Exception;
 
 	/**
@@ -63,6 +63,7 @@ public interface IntrstPrductService {
 	 *
 	 * @param intrstPrductVo
 	 * @throws Exception
-	 */
+	 *
 	void delete(IntrstPrductVo intrstPrductVo) throws Exception;
+	*/
 }

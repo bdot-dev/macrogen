@@ -18,7 +18,7 @@ import macrogen.www.vo.PrductVo;
 @Mapper
 public interface PrductMapper {
 
-	List<PrductVo> list(PrductVo prductVo);
+	/*List<PrductVo> list(PrductVo prductVo);
 
 	int count(PrductVo producVo);
 
@@ -34,6 +34,6 @@ public interface PrductMapper {
 
 	void updateSortOrder(PrductVo prductVo);
 
-	void updateExpsrYn(PrductVo prductVo);
+	void updateExpsrYn(PrductVo prductVo);*/
 
 }

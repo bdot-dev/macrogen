@@ -27,7 +27,7 @@ public class PrductctgryServiceImpl extends EgovAbstractServiceImpl implements P
 	@Resource(name="prductctgryMapper")
 	private PrductctgryMapper prductctgryMapper;
 
-	@Override
+	/*@Override
 	public List<PrductctgryVo> list(PrductctgryVo param) {
 		return prductctgryMapper.list(param);
 	}
@@ -85,6 +85,6 @@ public class PrductctgryServiceImpl extends EgovAbstractServiceImpl implements P
 		PrductctgryVo searchVo = new PrductctgryVo();
 		searchVo.setUpperCtgrySn(ctgrySn);
 		return prductctgryMapper.list(searchVo);
-	}
+	}*/
 
 }

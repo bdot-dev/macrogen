@@ -18,7 +18,7 @@ public class RelatePrductServiceImpl extends EgovAbstractServiceImpl implements 
 	@Resource(name="relatePrductMapper")
 	private RelatePrductMapper relatePrductMapper;
 
-	@Override
+	/*@Override
 	public List<RelatePrductVo> listByPrductSn(Long prductSn) throws Exception {
 		RelatePrductVo relatePrductVo = new RelatePrductVo();
 		relatePrductVo.setPrductSn(prductSn);
@@ -48,5 +48,5 @@ public class RelatePrductServiceImpl extends EgovAbstractServiceImpl implements 
 			}
 		}
 
-	}
+	}*/
 }

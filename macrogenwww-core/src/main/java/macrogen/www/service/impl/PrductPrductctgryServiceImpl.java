@@ -17,7 +17,7 @@ public class PrductPrductctgryServiceImpl extends EgovAbstractServiceImpl implem
 
 	@Resource(name="prductPrductctgryMapper")
 	private PrductPrductctgryMapper prductPrductctgryMapper;
-
+/*
 	@Override
 	public void updateList(PrductVo prductVo) throws Exception {
 		// delete tb_prduct_prductctgry by prductVo.prductSn
@@ -46,6 +46,6 @@ public class PrductPrductctgryServiceImpl extends EgovAbstractServiceImpl implem
 		PrductPrductctgryVo prductPrductctgryVo = new PrductPrductctgryVo();
 		prductPrductctgryVo.setPrductSn(prductSn);
 		return prductPrductctgryMapper.list(prductPrductctgryVo);
-	}
+	}*/
 
 }

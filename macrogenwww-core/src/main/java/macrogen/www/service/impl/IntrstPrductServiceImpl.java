@@ -24,7 +24,7 @@ import macrogen.www.vo.IntrstPrductVo;
 @Service("intrstPrductService")
 public class IntrstPrductServiceImpl extends EgovAbstractServiceImpl implements IntrstPrductService{
 
-	@Resource(name="intrstPrductMapper")
+	/*@Resource(name="intrstPrductMapper")
 	private IntrstPrductMapper intrstPrductMapper;
 
 	@Override
@@ -45,6 +45,6 @@ public class IntrstPrductServiceImpl extends EgovAbstractServiceImpl implements 
 	@Override
 	public void delete(IntrstPrductVo intrstPrductVo) throws Exception {
 		intrstPrductMapper.delete(intrstPrductVo);
-	}
+	}*/
 
 }

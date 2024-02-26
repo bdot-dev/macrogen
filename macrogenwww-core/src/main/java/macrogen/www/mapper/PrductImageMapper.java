@@ -18,7 +18,7 @@ import macrogen.www.vo.PrductImageVo;
 @Mapper
 public interface PrductImageMapper {
 
-	List<PrductImageVo> list(PrductImageVo prductImageVo);
+	/*List<PrductImageVo> list(PrductImageVo prductImageVo);
 
 	PrductImageVo view(PrductImageVo prductImageVo);
 
@@ -29,5 +29,5 @@ public interface PrductImageMapper {
 	void delete(PrductImageVo prductImageVo);
 
 	void deleteByPrductSn(PrductImageVo deleteVo);
-
+*/
 }

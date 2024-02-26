@@ -51,7 +51,7 @@ public class PrductctgryController {
 	 * @param model
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/list")
 	public String list(@AuthenticationPrincipal MngrVo mngrVo,
 			@ModelAttribute PrductctgryVo prductctgryVo, Model model) throws Exception {
@@ -71,7 +71,7 @@ public class PrductctgryController {
 	 * @param model
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/treeAjaxHtml")
 	public String treeAjaxHtml(@AuthenticationPrincipal MngrVo mngrVo,
 			@ModelAttribute PrductctgryVo prductctgryVo, Model model) throws Exception {
@@ -89,7 +89,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/treeData")
 	@ResponseBody
 	public Map<String, Object> treeData(@RequestBody PrductctgryVo prductctgryVo) throws Exception {
@@ -113,7 +113,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/viewData")
 	@ResponseBody
 	public Map<String, Object> viewData(PrductctgryVo prductctgryVo) throws Exception {
@@ -139,7 +139,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/insert")
 	@ResponseBody
 	public Map<String, Object> insert(@AuthenticationPrincipal MngrVo loginVo,
@@ -172,7 +172,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/move")
 	@ResponseBody
 	public Map<String, Object> move(@AuthenticationPrincipal MngrVo loginVo,
@@ -205,7 +205,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/update")
 	@ResponseBody
 	public Map<String, Object> update(@AuthenticationPrincipal MngrVo loginVo,
@@ -230,7 +230,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/delete")
 	@ResponseBody
 	public Map<String, Object> delete(@AuthenticationPrincipal MngrVo loginVo,
@@ -253,7 +253,7 @@ public class PrductctgryController {
 	 * @param prductctgryVo
 	 * @return
 	 * @throws Exception
-	 */
+	 *
 	@RequestMapping("/listByUpperCtgrySn")
 	@ResponseBody
 	public Map<String, Object> listByUpperCtgrySn(PrductctgryVo prductctgryVo) throws Exception {
@@ -264,5 +264,5 @@ public class PrductctgryController {
 
 		return resultMap;
 	}
-
+	*/
 }

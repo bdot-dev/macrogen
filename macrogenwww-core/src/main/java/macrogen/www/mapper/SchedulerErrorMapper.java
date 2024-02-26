@@ -18,12 +18,12 @@ import macrogen.www.vo.SchedulerErrorVo;
 @Mapper
 public interface SchedulerErrorMapper {
 
-	int count(SchedulerErrorVo schedulerErrorVo);
+	/*int count(SchedulerErrorVo schedulerErrorVo);
 
 	List<SchedulerErrorVo> list(SchedulerErrorVo schedulerErrorVo);
 
 	SchedulerErrorVo view(SchedulerErrorVo schedulerErrorVo);
 
-	void insert(SchedulerErrorVo schedulerErrorVo);
+	void insert(SchedulerErrorVo schedulerErrorVo);*/
 
 }

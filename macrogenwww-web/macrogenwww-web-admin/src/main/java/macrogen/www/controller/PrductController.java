@@ -37,7 +37,7 @@ public class PrductController {
 	@Resource(name="prductctgryService")
 	private PrductctgryService prductctgryService;
 
-	@RequestMapping("/list")
+	/*@RequestMapping("/list")
 	public String list(@ModelAttribute("listVo") PrductVo listVo, Model model) throws Exception {
 		return "prduct/list";
 	}
@@ -183,6 +183,6 @@ public class PrductController {
 	public String listAjaxHtml(@ModelAttribute("listVo") PrductVo listVo, Model model) throws Exception {
 		listVo.setRecordCountPerPage(1);
 		return "/prduct/listAjaxHtml";
-	}
+	}*/
 
 }

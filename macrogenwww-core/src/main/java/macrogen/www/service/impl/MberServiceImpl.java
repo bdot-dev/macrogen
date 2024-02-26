@@ -27,7 +27,7 @@ import macrogen.www.vo.UserVo;
 @Service("mberService")
 public class MberServiceImpl extends EgovAbstractServiceImpl implements MberService {
 
-	@Resource(name="userMapper")
+	/*@Resource(name="userMapper")
 	private UserMapper userMapper;
 
 	@Resource(name="mberMapper")
@@ -143,6 +143,6 @@ public class MberServiceImpl extends EgovAbstractServiceImpl implements MberServ
 		UserVo userVo = new UserVo();
 		userVo.setUserSn(mberVo.getUserSn());
 		userMapper.increaseLoginCo(userVo);
-	}
+	}*/
 
 }

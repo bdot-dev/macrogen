@@ -18,12 +18,12 @@ import macrogen.www.vo.PrductPrductctgryVo;
 @Mapper
 public interface PrductPrductctgryMapper {
 
-	List<PrductPrductctgryVo> list(PrductPrductctgryVo prductPrductctgryVo);
+	/*List<PrductPrductctgryVo> list(PrductPrductctgryVo prductPrductctgryVo);
 
 	void insert(PrductPrductctgryVo prductPrductctgryVo);
 
 	void delete(PrductPrductctgryVo prductPrductctgryVo);
 
-	void deleteByPrductSn(PrductPrductctgryVo prductPrductctgryVo);
+	void deleteByPrductSn(PrductPrductctgryVo prductPrductctgryVo);*/
 
 }

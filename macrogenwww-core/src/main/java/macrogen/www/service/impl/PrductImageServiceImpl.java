@@ -28,7 +28,7 @@ public class PrductImageServiceImpl extends EgovAbstractServiceImpl implements P
 	@Resource(name="prductImageMapper")
 	private PrductImageMapper prductImageMapper;
 
-	@Override
+	/*@Override
 	public void updateList(PrductVo prductVo) throws Exception {
 		// delete tb_prduct_image by prductVo.prductSn
 		PrductImageVo deleteVo = new PrductImageVo();
@@ -58,6 +58,6 @@ public class PrductImageServiceImpl extends EgovAbstractServiceImpl implements P
 		PrductImageVo prductImageVo = new PrductImageVo();
 		prductImageVo.setPrductSn(prductSn);
 		return prductImageMapper.list(prductImageVo);
-	}
+	}*/
 
 }

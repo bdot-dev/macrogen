@@ -27,7 +27,7 @@ public class SchedulerErrorServiceImpl extends EgovAbstractServiceImpl implement
 	@Resource(name="schedulerErrorMapper")
 	private SchedulerErrorMapper schedulerErrorMapper;
 
-	@Override
+	/*@Override
 	public int count(SchedulerErrorVo schedulerErrorVo) throws Exception {
 		return schedulerErrorMapper.count(schedulerErrorVo);
 	}
@@ -54,6 +54,6 @@ public class SchedulerErrorServiceImpl extends EgovAbstractServiceImpl implement
 		schedulerErrorVo.setErrorCn(errorCn);
 		schedulerErrorVo.setRefrnId(refrnId);
 		schedulerErrorMapper.insert(schedulerErrorVo);
-	}
+	}*/
 
 }
