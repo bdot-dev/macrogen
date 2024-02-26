@@ -26,7 +26,7 @@ public interface MberService {
 	 * @param mberVo
 	 * @return
 	 * @throws Exception
-	 *
+	 **/
 	MberVo view(MberVo mberVo) throws Exception;
 
 	/**
@@ -39,7 +39,7 @@ public interface MberService {
 	 * @param mberVo
 	 * @return
 	 * @throws Exception
-	 *
+	 **/
 	MberVo viewByLoginId(MberVo mberVo) throws Exception;
 
 	/**
@@ -52,7 +52,7 @@ public interface MberService {
 	 * @param mberVo
 	 * @return
 	 * @throws Exception
-	 *
+	 **/
 	List<MberVo> list(MberVo mberVo) throws Exception;
 
 	/**
@@ -64,7 +64,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void insert(MberVo mberVo) throws Exception;
 
 	/**
@@ -76,7 +76,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void update(MberVo mberVo) throws Exception;
 
 	/**
@@ -88,7 +88,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void delete(MberVo mberVo) throws Exception;
 
 	/**
@@ -100,7 +100,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void updateMyinfo(MberVo mberVo) throws Exception;
 
 	/**
@@ -113,7 +113,7 @@ public interface MberService {
 	 * @param mberVo
 	 * @return
 	 * @throws Exception
-	 *
+	 **/
 	int count(MberVo mberVo) throws Exception;
 
 	/**
@@ -125,7 +125,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void initPasswordInputErrorCo(MberVo mberVo) throws Exception;
 
 	/**
@@ -137,7 +137,7 @@ public interface MberService {
 	 *
 	 * @param mberVo
 	 * @throws Exception
-	 *
+	 **/
 	void increaseLoginCo(MberVo mberVo) throws Exception;
-	*/
+	
 }

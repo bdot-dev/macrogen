@@ -18,6 +18,7 @@ public interface MberMapper {
 	 * @param mberVo
 	 * @return
 	 *
+	 */
 	MberVo view(MberVo mberVo);
 
 	/**
@@ -30,6 +31,7 @@ public interface MberMapper {
 	 * @param mberVo
 	 * @return
 	 *
+	 */
 	MberVo viewByLoginId(MberVo mberVo);
 
 	/**
@@ -41,6 +43,7 @@ public interface MberMapper {
 	 *
 	 * @param mberVo
 	 *
+	 */
 	void insert(MberVo mberVo);
 
 	/**
@@ -52,6 +55,7 @@ public interface MberMapper {
 	 *
 	 * @param mberVo
 	 *
+	 */
 	void update(MberVo mberVo);
 
 	/**
@@ -63,6 +67,7 @@ public interface MberMapper {
 	 *
 	 * @param mberVo
 	 *
+	 */
 	void delete(MberVo mberVo);
 
 	/**
@@ -75,6 +80,7 @@ public interface MberMapper {
 	 * @param mberVo
 	 * @return
 	 *
+	 */
 	List<MberVo> list(MberVo mberVo);
 
 	/**
@@ -87,6 +93,9 @@ public interface MberMapper {
 	 * @param mberVo
 	 * @return
 	 *
+	 *
+	 *
+	 */
 	int count(MberVo mberVo);
-	*/
+	
 }
