@@ -66,12 +66,12 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <hr class="divider">
+	                        <!-- <hr class="divider">
 	                        <div class="section-anchor">
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target2">젠톡 그린</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/gentok_green.png" alt="마이지놈스토리그린">
 	                                    </div>
@@ -96,7 +96,7 @@
 	                            <div class="list">
 	                                <p class="sub-title font-h5" id="target3">젠톡 마스터</p>
 	                                <div class="content">
-	                                    <!--10.05 이미지 경로 변경-->
+	                                    10.05 이미지 경로 변경
 	                                    <div class="img">
 	                                        <img src="/publishing/mobile-ko/dist/img/business/gentok_master.png" alt="젠톡">
 	                                    </div>
@@ -116,7 +116,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </div>
+	                        </div> -->
 	                    </div>
 	                </div>
 	                <!-- //컨텐츠탭01 -->
