@@ -227,7 +227,7 @@
 		                                    </ul>
 		                                    <div class="name">Quote and Invoice</div>
 		                                    <ul>
-		                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7326">&#43;82&#45;2&#45;2180&#45;7236</a></li>
+		                                        <li><i class="ic-call"></i><a href="tel:+82-2-2180-7326">&#43;82&#45;2&#45;2180&#45;7326</a></li>
 		                                    </ul>
 		                                </div>
 		                            </li>
