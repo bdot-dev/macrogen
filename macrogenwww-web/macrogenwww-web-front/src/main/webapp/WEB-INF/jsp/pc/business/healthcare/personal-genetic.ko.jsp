@@ -42,7 +42,7 @@
                     <hr class="divider">
                     <div class="list-gallery">
                         <div class="list">
-                            <p class="title font-h5">젠톡 블루</p>
+                            <p class="title font-h5">마이지놈스토리 블루</p>
                             <div class="content">
                                 <div class="picture">
                                     <img src="/publishing/pc-ko/dist/img/business/gentok_blue.png" alt="마이지놈스토리블루">
@@ -56,9 +56,9 @@
                                         </ul>
                                     </div>
                                     <p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
-                                    <div class="btn-wrap">
+                                    <!-- <div class="btn-wrap">
                                         <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

@@ -43,7 +43,7 @@
                     <div class="list-gallery">
                         <div class="section-anchor">
                             <div class="list">
-                                <p class="sub-title font-h5" id="target1">GenTok Blue</p>
+                                <p class="sub-title font-h5" id="target1">My genomestory Blue</p>
                                 <div class="content">
                                     <div class="img">
                                         <img src="/publishing/mobile-en/dist/img/business/gentok_blue.png" alt="마이지놈스토리블루">
@@ -56,9 +56,9 @@
                                                 <li><p>Common diseases (23 major common diseases including hypertension, stroke, and type 2 diabetes)</p></li>
                                             </ul>
                                         </div>
-                                        <div class="btn-wrap">
+                                        <!-- <div class="btn-wrap">
                                             <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-light"><span>View Detail</span></a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
