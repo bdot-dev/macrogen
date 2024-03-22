@@ -44,7 +44,7 @@
 	                    <div class="list-gallery">
 	                        <div class="section-anchor">
 	                            <div class="list">
-	                                <p class="sub-title font-h5" id="target1">젠톡 블루</p>
+	                                <p class="sub-title font-h5" id="target1">마이지놈스토리 블루</p>
 	                                <div class="content">
 	                                    <!--10.05 이미지 경로 변경-->
 	                                    <div class="img">
@@ -59,9 +59,9 @@
 	                                            </ul>
 	                                        </div>
 	                                        <p class="caption txt">※ 본 검사는 의료기관을 통해서만 받으실 수 있습니다.</p>
-	                                        <div class="btn-wrap">
+	                                        <!-- <div class="btn-wrap">
 	                                            <a href="https://www.my-genomestory.com/service_detail?service_code=blue&selectLang=ko" target="_blank" class="btn btn-sm btn-light"><span>자세히 보기</span></a>
-	                                        </div>
+	                                        </div> -->
 	                                    </div>
 	                                </div>
 	                            </div>
