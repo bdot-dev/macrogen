@@ -84,12 +84,12 @@
                         <ul class="row">
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_1.png" alt="매출 1,300억원 규모"></span>
-                                <span class="font-h4">&#36;130M</span>
-                                <span class="font-body-h">매출 1,300억원 규모¹</span>
+                                <span class="font-h4">&#36;100M</span>
+                                <span class="font-body-h">매출 1,328억원 규모¹</span>
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_2.png" alt="해외매출 비중"></span>
-                                <span class="font-h4">50&#37;</span>
+                                <span class="font-h4">48&#37;</span>
                                 <span class="font-body-h">해외매출 비중¹</span>
                             </li>
                             <li class="item col col-6">
@@ -125,7 +125,7 @@
                         </ul>
                         <hr class="divider">
                         <div class="footnote">
-	                        1) 2021년 연결 기준<br>
+	                        1) 2023년 연결 기준<br>
 							2) 2022년 3월 기준<br>
 							3) Nature 본지/자매지, SCI급 논문  발표수 
 						</div>

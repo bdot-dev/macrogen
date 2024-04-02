@@ -113,13 +113,13 @@
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_2.png" alt="바이오벤처 최초 코스닥 상장"></span>
-                                <span class="font-h4">50&#37;</span>
+                                <span class="font-h4">48&#37;</span>
                                 <span class="font-body-h">Overseas revenue</span>
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
                                 <span class="font-h4">&#36;100M</span>
-                                <span class="font-body-h">Annual revenue<br/>(2021)</span>
+                                <span class="font-body-h">Annual revenue<br/>(2023)</span>
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_4.png" alt="SCI급 네이처지 논문 148편"></span>

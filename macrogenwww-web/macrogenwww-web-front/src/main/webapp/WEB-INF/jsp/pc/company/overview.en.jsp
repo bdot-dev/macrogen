@@ -93,13 +93,13 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_2.png" alt="Bio Ventures Listed on KOSDAQ"></span>
-                                <span class="val">50&#37;</span>
+                                <span class="val">48&#37;</span>
                                 <span class="desc">Overseas revenue</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_1.png" alt="유전체 분석 건수"></span>
                                 <span class="val">&#36;100M</span>
-                                <span class="desc">Annual revenue (2021)</span>
+                                <span class="desc">Annual revenue (2023)</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_4.png" alt="Nature Papers"></span>
