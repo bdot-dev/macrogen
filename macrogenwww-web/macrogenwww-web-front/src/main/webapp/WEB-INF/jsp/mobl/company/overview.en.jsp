@@ -129,7 +129,7 @@
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_8.png" alt="해외 매출"></span>
                                 <span class="font-h4">750&#43;</span>
-                                <span class="font-body-h">Number of<br/>employees (2023)</span>
+                                <span class="font-body-h">Number of<br/>Global employees<br/>(2023)</span>
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_7.png" alt="바이오벤처 기업 지원"></span>

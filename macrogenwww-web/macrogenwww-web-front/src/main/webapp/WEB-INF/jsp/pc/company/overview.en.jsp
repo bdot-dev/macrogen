@@ -109,7 +109,7 @@
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Overseas Revenue"></span>
                                 <span class="val">750&#43;</span>
-                                <span class="desc">Number of employees (2023)</span>
+                                <span class="desc">Number of Global employees<br/>(2023)</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_7.png" alt="Companies Assistance to Bio Venture"></span>
