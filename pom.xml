@@ -20,9 +20,9 @@
 		<core.atch.public.url>/public</core.atch.public.url>
 
 
-		<core.domain.www>http://www.macrogen.eluocnc.com:9001</core.domain.www>
+		<core.domain.www>http://macrogen.devtree.co.kr</core.domain.www>
 
-		<database.url>jdbc:mysql://211.110.58.242:23306/macrogenwww?autoReconnect=true</database.url>
+		<database.url>jdbc:mysql://210.116.118.130/macrogenwww?autoReconnect=true</database.url>
 		<database.username>macrogenwww</database.username>
 		<database.password>Macrogenwww123!@#</database.password>
 
@@ -49,7 +49,7 @@
 				<core.atch.public.path>/share/data/atch/public_macrogenwww</core.atch.public.path>
 				<core.atch.public.url>/public</core.atch.public.url>
 
-				<core.domain.www>http://www.macrogen.eluocnc.com:9001</core.domain.www>
+				<core.domain.www>https://macrogen.devtree.co.kr</core.domain.www>
 
 			</properties>
 
@@ -130,7 +130,7 @@
 		<!-- this is for mssql-jdbc -->
 		<repository>
 			<id>central.maven.org</id>
-			<url>https://repo.maven.apache.org/maven2/</url>
+			<url>https://repo1.maven.org/maven2/</url>
 			<releases>
 			</releases>
 			<snapshots>
@@ -293,11 +293,11 @@
 		</dependency>
 
 		<!--컴파일 오류로 주석 처리 2024-03-19-->
-		<!--<dependency>
+		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache-terracotta</artifactId>
 			<version>2.1.1</version>
-		</dependency>-->
+		</dependency>
 
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
