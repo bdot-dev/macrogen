@@ -99,7 +99,7 @@
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_8.png" alt="글로벌 임직원 수"></span>
-                                <span class="font-h4">600&#43;</span>
+                                <span class="font-h4">750&#43;</span>
                                 <span class="font-body-h">글로벌 임직원 수²</span>
                             </li>
                             <li class="item col col-6">
@@ -126,7 +126,7 @@
                         <hr class="divider">
                         <div class="footnote">
 	                        1) 2023년 연결 기준<br>
-							2) 2022년 3월 기준<br>
+							2) 2023년 12월 기준<br>
 							3) Nature 본지/자매지, SCI급 논문  발표수 
 						</div>
                     </div>
