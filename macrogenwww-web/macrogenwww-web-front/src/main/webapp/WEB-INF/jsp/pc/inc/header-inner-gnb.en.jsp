@@ -84,7 +84,7 @@
             <div class="title"><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Personal Healthcare</a></div>
             <ul>
                 <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">Disease Prediction<br>&#38; Wellness Genetic Test</a></li>
-                <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">DTC Genetic Testing</a></li>
+                <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">Healthcare Platform</a></li>
                 <!-- 추후 론칭(오픈 시 숨김)<li><a href="/${rc.locale.language }/business">마이크로바이옴 검사솔루션</a></li> -->
             </ul>
         </div>

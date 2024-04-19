@@ -61,7 +61,7 @@
                             <li><a href="#none">퍼스널 헬스케어</a>
                                 <ul>
                                     <li><a href="/${rc.locale.language }/business/healthcare/personal-genetic">- 질병예측 유전자검사</a></li>
-                                    <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">- DTC 유전자검사</a></li>
+                                    <li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">- 건강관리 플랫폼</a></li> <!-- 2024-04-18 추가 -->
                                     <li><a href="/${rc.locale.language }/business/healthcare/dtc-biome">- DTC 바이옴검사</a></li>
                                 </ul>
                             </li>
