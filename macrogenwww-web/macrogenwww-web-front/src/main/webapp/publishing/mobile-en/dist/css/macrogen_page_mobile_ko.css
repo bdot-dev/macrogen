@@ -2631,6 +2631,19 @@
         margin-bottom: 16px; }
       .section_business .info-box-wrap .info-box .img + .list-area-group {
         padding-top: 56px; }
+	/* 2024-04-18 추가 { */
+    .section_business .info-box-wrap .info-box .btn-store-wrap {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 8px;
+	  margin-top: 40px; }
+    .section_business .info-box-wrap .info-box .btn-store-wrap a {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  background-color: #000;
+	  height: 56px;}
+	/* } 2024-04-18 추가 */
     .section_business .info-box-wrap .info-box .caption {
       font-size: 14px;
       line-height: 26px;
@@ -2643,8 +2656,12 @@
   .section_business .info-box-wrap .divider {
     margin: 65px 0 64px;
     height: 1px; }
+  /* 2024-04-18 추가 { */
+  .section_business .info-box-wrap .divider.h10 {
+    height: 10px; }
+  /* } 2024-04-18 추가 */
   .section_business .info-box-wrap .main-title {
-    margin-bottom: 56px; }
+    margin-bottom: 24px; /* 2024-04-18 수정 */ }
   .section_business .info-box-wrap .main-title.mb86 {
   	margin-bottom: 86px; }
   .section_business .info-box-wrap .subject {
@@ -2692,6 +2709,27 @@
         letter-spacing: -0.5px;
         color: #707070;
         font-weight: 400; }
+    /* 2024-04-18 추가 { */
+	.section_business .info-box .list-gallery .list + .list {
+	  border-top: 1px solid #d9d9d9;
+	  padding-top: 64px;
+	  margin-top: 64px; }
+	.section_business .info-box .list-gallery .list .descript {
+	  color: #454545;
+      font-size: 16px;
+      line-height: 2;
+      letter-spacing: -.1em;
+      margin-bottom: 40px; }
+	.section_business .info-box .list-gallery .list .descript .footnote {
+	  color: #909090;
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: -.08em;
+	  margin-top: 24px; }
+	.section_business .info-box .list-gallery .list .content .cont .desc {
+	  font-size: 18px;
+	  margin-bottom: 16px; }
+	/* } 2024-04-18 추가 */
   .section_business .info-box-wrap .list_service {
   	margin-top: 24px;
   	font-size: 16px;
@@ -2758,6 +2796,18 @@
     margin-bottom: 40px; }
   .section_business .list-gallery .btn-wrap {
     padding-top: 40px; }
+  /* 2024-04-18 추가 { */
+  .section_business .list-gallery .btn-wrap a {
+    height: 56px;
+	color: #000;
+	font-size: 16px;
+	line-height:54px;
+	text-align: center;
+	border:1px solid #d9d9d9;
+	border-radius: 4px; }
+  .section_business .list-gallery .btn-wrap a:before {
+    content: none; :
+  /* } 2024-04-18 추가 */
   .section_business .list-gallery .youtube-container {
     position: relative;
     padding-bottom: 56.25%;

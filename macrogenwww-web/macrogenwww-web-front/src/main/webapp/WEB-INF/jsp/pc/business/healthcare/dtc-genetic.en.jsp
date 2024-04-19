@@ -13,10 +13,10 @@
 	                    <li class="breadcrumb-item">Home</li>
 	                    <li class="breadcrumb-item">SERVICE</li>
 	                    <li class="breadcrumb-item">Personal Healthcare</li>
-	                    <li class="breadcrumb-item">DTC Genetic Testing</li>
+	                    <li class="breadcrumb-item">Healthcare Platform</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title">DTC Genetic Testing</div>
+	            <div class="hero-title">Healthcare Platform</div>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
@@ -28,51 +28,90 @@
 	        <link type="text/css" rel="stylesheet" href="/publishing/pc-en/dist/css/business.css"/>
 	        <div class="section_business">
 	            <div class="subject-box type01">
-	                <p class="font-h4 title">DTC Genetic Testing</p>
-	                <p class="subject">Macrogen offers DNA testing on nutrients, exercise, skin/hair, diet, personal characteristics (alcohol flush reaction, nicotine dependence), and healthcare (obesity, blood sugar, blood pressure). Our solution analyzes genetic characteristics and provides a personalized lifestyle guide, not only helping people to lead healthier and more beautiful lives but also providing an opportunity to find their true selves.</p>
+	                <p class="font-h4 title">GenTok</p>
+	                <p class="subject">GenTok is a health management platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.</p>
 	            </div>
 	            
 	            <!-- 탭 컨텐츠 -->
 	            <div class="info-box-wrap tab-content">
 	                <div class="info-box show">
 	                    <div class="img">
-	                        <img src="/publishing/pc-ko/dist/img/business/img_healthbeauthintro.png" alt="헬스&뷰티 유전자 검사">
+	                        <img src="/publishing/pc-ko/dist/img/business/gentok_bg.png" alt="방송에 나온 그 유전자 검사! MBTI? 이젠 몸BTI 시대 궁금해 하지말고, 클릭!">
+							<div class="float-wrap">
+								<div class="txt">
+									Unlock Your Body Manual:<br/>
+									GenTok, Healthcare Platform
+								</div>
+								<div class="btn-wrap">
+									<a href="https://play.google.com/store/apps/details?id=app.macrogen.gentok&pcampaignid=web_share" target="_blank"><img src="/publishing/pc-en/dist/img/business/btn_googleplay.png" alt="Google Play" /></a>
+									<a href="https://apps.apple.com/kr/app/%EC%A0%A0%ED%86%A1-gentok/id6450289510" target="_blank"><img src="/publishing/pc-en/dist/img/business/btn_appstore.png" alt="App Store" /></a>
+								</div>
+							</div>
 	                    </div>
 	                    <hr class="divider">
 	                    <div class="list-gallery">
 	                        <div class="list">
-	                            <p class="title font-h5">GenTok</p>
+	                            <p class="title font-h5">Genetic Testing</p>
+								<div class="description">
+									GenTok offers comprehensive genetic testing covering 129 items such as obesity, hair loss, weight management, blood sugar regulation, and sleep patterns. With GenTok, discovering your genetic predispositions and receiving personalized health management tips has never been easier or more enjoyable, presented to you in convenient card formats.
+									<p class="footnote">※ Genetic testing services are not available for minors (under 18 years old).</p>
+								</div>
 	                            <div class="content">
 	                                <div class="picture">
-	                                    <img src="/publishing/pc-en/dist/img/business/img_gentok.png" alt="젠톡 GenTok">
+	                                    <img src="/publishing/pc-en/dist/img/business/img_healthbeauth_img01.png" alt="Genetic Testing">
 	                                </div>
 	                                <div class="cont">
-	                                    <p class="desc">It is a DTC(Direct-To-Consumer) genetic testing service that enables you to select only the specific genetic insights you desire. Additionally, it serves as a mobile healthcare platform, assisting you in preparing for a healthier life by providing accurate information about your innate genetic characteristics.</p>
-	                                    <p class="caption">※ Service is not available for minors under 18 years of age.</p>
 	                                    <div class="list-area">
 	                                        <ul class="list-circle-dot">
-	                                            <li>Nutrients : 35 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</li>
-	                                            <li>Exercise : 10 items, including muscular exercise, endurance exercise, exercise recovery…</li>
-	                                            <li>Skin/Hair : 18 items, including male pattern baldness, skin aging, skin pigmentation…</li>
-	                                            <li>Eating habits : 21 items, including appetite, satiety, bitter taste sensitivity…</li>
-	                                            <li>Personal Characteristics : 23 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</li>
-	                                            <li>Health Care : 22 items, obesity, weight regain, abdominal obesity…</li>
+	                                            <li>Nutrients: 35 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</li>
+	                                            <li>Exercise Metrics: 10 items, including muscular exercise, endurance exercise, exercise recovery…</li>
+	                                            <li>Skin/Hair Analysis: 18 items, including male pattern baldness, skin aging, skin pigmentation…</li>
+	                                            <li>Dietary Patterns: 21 items, including appetite, satiety, bitter taste sensitivity…</li>
+	                                            <li>Personal Traits: 23 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</li>
+	                                            <li>Healthcare Insights: 22 items, obesity, weight regain, abdominal obesity…</li>
 	                                        </ul>
 	                                    </div>
-	                                    <div class="list_service">
-											<strong>[Information of service partnership]</strong>
-											<ul>
-												<li>① Customized services can be created for affiliates</li>
-												<li>② Request for inquiry through partnership inquiry.</li>
-											</ul>
-										</div>
 	                                    <div class="btn-wrap">
-	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
-	                                        <!-- <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a> -->
+	                                    	<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white"><span>Read More</span></a>
+	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
+		                    <div class="list">
+	                            <p class="title font-h5">the Biome</p>
+								<div class="description">
+									the Biome is microbiome analysis service. Microbiome, often referred to as the "second genome," dynamically responds to factors like diet, exercise, sleep patterns, lifestyle, and stress levels. By meticulously analyzing your microbiome, you gain invaluable insights to monitor your present health status and pave the way for a more methodical approach to health management.
+								</div>
+	                            <div class="content">
+	                                <div class="picture">
+	                                    <img src="/publishing/pc-ko/dist/img/business/img_healthbeauth_img02.png" alt="the Biome">
+	                                </div>
+	
+	                                <div class="cont">
+	                                    <p class="desc"><strong>The Biome Gold (Gut Microbiome Testing)</strong></p>
+	                                    <div class="list-area">
+	                                        <ul class="list-circle-dot">
+	                                            <li>
+													Experience a comprehensive analysis of gut health and life index:<br/>
+													<p class="txt-indent">
+														- Gut Health: Constipation, flatulence, abdominal bloating, functional abdominal discomfort, and diarrhea.<br/>
+														- Wellness: Well-being with insights into happiness, fatigue, immunity, obesity, sleep quality, and aging.<br/>
+														- Nutrient Metabolism: A detailed analysis of 14 essential nutrients including dietary fiber, B vitamins, protein, and BCAAs.<br/>
+														- Probiotic Insights: The presence of 19 specific probiotics as per the standards set by the Korea Food and Drug Administration.
+
+													</p>
+												</li>
+	                                        </ul>
+	                                    </div>
+	                                    <div class="btn-wrap">
+	                                    	<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-white"><span>Read More</span></a>
+	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+
 	                        <!-- <hr class="divider">
 	                        <div class="list">
 	                            <p class="title font-h5">My Genomestory The Plus Skin & Care 44 (48 subcategories)</p>

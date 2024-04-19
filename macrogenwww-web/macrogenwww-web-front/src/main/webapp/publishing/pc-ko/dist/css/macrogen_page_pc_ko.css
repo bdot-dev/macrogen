@@ -3686,7 +3686,31 @@
 		.section_business .info-box-wrap.tab-content .info-box {
 		  display: none; }
 		  .section_business .info-box-wrap.tab-content .info-box.show {
-		    display: block; }
+			display: block; }
+		  /* 2024-04-18 추가 { */
+		  .section_business .info-box-wrap.tab-content .info-box.show .img {
+		    position: relative; }
+		  .section_business .info-box-wrap.tab-content .info-box.show .float-wrap {
+		    position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding-left: 590px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 50px; }
+		  .section_business .info-box-wrap.tab-content .info-box.show .float-wrap .txt {
+		    font-size: 36px;
+			font-weight: 700;
+			letter-spacing: -.04em; }
+		  .section_business .info-box-wrap.tab-content .info-box.show .float-wrap .btn-wrap {
+		    display: flex;
+			gap: 16px; }
+		  .section_business .info-box-wrap.tab-content .info-box.show .float-wrap .btn-wrap a {
+			width: 256px; }
+		  /* } 2024-04-18 추가 */
 .oligo_sec .section_business .slide-tab-wrap .swiper-container {
 	display: none; }
 	.oligo_sec .section_business .slide-tab-wrap .swiper-container.on {
@@ -3897,7 +3921,24 @@
 
   .section_business .info-box .list-gallery .list .title {
     line-height: 52px;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; /* 2024-04-18 수정 */ }
+  /* 2024-04-18 추가 { */
+  .section_business .info-box .list-gallery .list + .list {
+    margin-top:100px;
+	padding-top:100px;
+	border-top:1px solid #E9E9E9; }
+  .section_business .info-box .list-gallery .list .description {
+    color: #454545;
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing:-0.065em;
+	margin-bottom: 40px; }
+  .section_business .info-box .list-gallery .list .description .footnote {
+    color: #909090;
+	font-size: 14px;
+	line-height: 1.6;
+	letter-spacing:-0.065em; }
+  /* } 2024-04-18 추가 */
   .section_business .info-box .list-gallery .list .content {
     display: flex;
     justify-content: space-between; }
@@ -3908,8 +3949,17 @@
   		font-weight: 700 }
     .section_business .info-box .list-gallery .list .content .picture {
       margin-right: 40px; }
-    .section_business .info-box .list-gallery .list .content .cont .desc {
-      margin-bottom: 30px; }
+    /* 2024-04-18 추가 { */
+	.section_business .info-box .list-gallery .list .content .cont {
+	  flex: 1;
+	}
+    /* } 2024-04-18 추가 */
+	.section_business .info-box .list-gallery .list .content .cont .desc {
+      margin-bottom: 16px; /* 2024-04-18 수정 */ }
+	/* 2024-04-18 추가 { */
+	.section_business .info-box .list-gallery .list .content .cont .desc strong {
+      font-size: 18px; }
+	/* } 2024-04-18 추가 */
       .section_business .info-box .list-gallery .list .content .cont .desc + .btn-wrap {
         padding-top: 20px; }
     .section_business .info-box .list-gallery .list .content .cont .caption {
@@ -3926,6 +3976,10 @@
     .section_business .info-box .list-gallery .list .content .cont .list-circle-dot > li {
       color: #707070;
       margin-bottom: 6px; }
+	/* 2024-04-18 추가 { */
+	.section_business .info-box .list-gallery .list .content .cont .list-circle-dot > li .txt-indent {
+      padding-left:15px; }
+	/* } 2024-04-18 추가 */
       .section_business .info-box .list-gallery .list .content .cont .list-circle-dot > li:last-of-type {
         margin-bottom: 0; }
     .section_business .info-box .list-gallery .list .content .cont .btn-wrap {
