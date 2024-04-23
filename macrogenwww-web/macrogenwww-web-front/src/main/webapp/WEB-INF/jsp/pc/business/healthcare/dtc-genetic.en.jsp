@@ -29,7 +29,7 @@
 	        <div class="section_business">
 	            <div class="subject-box type01">
 	                <p class="font-h4 title">GenTok</p>
-	                <p class="subject">GenTok is a health management platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.</p>
+	                <p class="subject">GenTok is a healthcare platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.</p>
 	            </div>
 	            
 	            <!-- 탭 컨텐츠 -->
@@ -72,7 +72,7 @@
 	                                        </ul>
 	                                    </div>
 	                                    <div class="btn-wrap">
-	                                    	<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white"><span>Read More</span></a>
+	                                    	<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white"><span>Learn More</span></a>
 	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
 	                                    </div>
 	                                </div>
@@ -105,7 +105,7 @@
 	                                        </ul>
 	                                    </div>
 	                                    <div class="btn-wrap">
-	                                    	<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-white"><span>Read More</span></a>
+	                                    	<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-white"><span>Learn More</span></a>
 	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>Service Inquiry</span></a>
 	                                    </div>
 	                                </div>

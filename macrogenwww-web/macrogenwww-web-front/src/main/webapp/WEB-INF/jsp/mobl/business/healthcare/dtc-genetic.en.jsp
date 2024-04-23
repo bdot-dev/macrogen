@@ -24,7 +24,7 @@
                 <div class="info-box show">
                     <p class="font-h4 main-title" id="anchor2">GenTok</p>
                     <p class="subject font-body-h">
-                        GenTok is a health management platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.
+                        GenTok is a healthcare platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.
                     </p>
                     <!--10.05 이미지 경로 변경-->
                     <div class="img">
@@ -71,7 +71,7 @@
 											</ul>
 										</div>
 										<div class="btn-wrap">
-											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Read More</a>
+											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Learn More</a>
 											<a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white">Service Inquiry</a>
 										</div>
 									</div>
@@ -102,7 +102,7 @@
 											</ul>
 										</div>
 										<div class="btn-wrap">
-											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Read More</a>
+											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Learn More</a>
 											<a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white">Service Inquiry</a>
 										</div>
 									</div>
