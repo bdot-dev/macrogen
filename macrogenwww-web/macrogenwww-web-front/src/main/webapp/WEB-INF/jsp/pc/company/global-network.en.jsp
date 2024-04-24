@@ -130,8 +130,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="songdo">
-                                <div class="name">Macrogen Songdo Global Genome Campus</div>
-                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Genome Campus"></div>
+                                <div class="name">Macrogen Songdo Global Genome Center</div>
+                                <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Genome Center"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>Established in 2025</span></li>
