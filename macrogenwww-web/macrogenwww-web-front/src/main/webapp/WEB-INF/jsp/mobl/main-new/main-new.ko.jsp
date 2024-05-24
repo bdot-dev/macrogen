@@ -683,7 +683,10 @@
                     </li>   
                     <li>                                                
                         <a href=""><img src="/publishing/mobile-ko/dist/img/main/img-global_10.png" alt="나노포어"></a>
-                    </li>                     
+                    </li>
+                    <li>
+                        <a href=""><img src="/publishing/mobile-ko/dist/img/main/img-global_11.png" alt="울티마지노믹스"></a>
+                    </li>
                 </ul> 
             </div>
 

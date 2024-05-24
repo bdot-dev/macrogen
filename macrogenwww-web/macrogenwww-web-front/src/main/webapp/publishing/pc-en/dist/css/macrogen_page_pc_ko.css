@@ -8136,11 +8136,11 @@
     .main-wrap .main-page .section-partners .info-box .desc{margin-top: 21px; letter-spacing: -0.5px; color: #000; white-space: nowrap;}
   .main-wrap .main-page .section-partners .partners-list {
     display: flex; 
-    justify-content: center; 
+    justify-content: start;
     flex-wrap:wrap;
     width: 1244px;  
     margin:-82px auto 0; }
-  .main-wrap .main-page .section-partners .partners-list li{width: 20%; margin-top: 82px;}
+  .main-wrap .main-page .section-partners .partners-list li{width: 25%; margin-top: 82px;}
 .main-wrap .main-page .section-people .info-box{
   margin: 140px auto 57px; 
   text-align: center;}
