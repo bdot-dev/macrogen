@@ -124,8 +124,10 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500</li>
+                            <li>DNBSEQ-T7</li>
+                            <li>UG100</li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -134,9 +136,9 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500 / MiSeq</li>
-                            <li>PacBio Sequel I &#38; Sequel II</li>
+                            <li>PacBio Revio / Sequel lle</li>
                             <li>PromethION</li>
                         </ul>
                     </div>
@@ -175,14 +177,14 @@
                             <p class="title font-h8">Main Capture Kit</p>
                             <ul class="list-circle-dot">
                                 <li>Agilent SureSelect Exome Capture kit</li>
-                                <li>Truseq Exome Enrichment Kit</li>
+                                <li>Twist Human Core Exome kit</li>
                                 <li>Capture the whole exon and provide mutation analysis for SNP and InDel as well.</li>
                             </ul>
                         </div>
                         <div class="list-area">
                             <p class="title font-h8">Sequencing Platform</p>
                             <ul class="list-circle-dot">
-                                <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                                <li>NovaSeq X Plus / NovaSeq 6000</li>
                                 <li>NextSeq 500</li>
                             </ul>
                         </div>
@@ -230,30 +232,36 @@
                         <div class="list">
                             <p class="font-h8">Illumina</p>
                             <ul class="list-circle-dot">
-                                <li>TruSeq RNA</li>
-                                <li>TruSeq stranded mRNA</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/RatTruS</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Globin Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA Sample Preparation Kits with Ribo-Zero Plant</li>
+                                <li>TruSeq Stranded mRNA</li>
+                                <li>TruSeq RNA Exome</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Human/Mouse/Rat</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Gold</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Globin</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Plant</li>
+                                <li>Illumina Stranded total RNA (Ribo-Zero Plus)</li>
                                 <li>TruSeq Stranded Total RNA (NEB Microbe)</li>
-                                <li>ScriptSeq™ v2 RNA-Seq Library Preparation Kit (Epicentre)</li>
-                                <li>TruSeq RNA Access</li>
-                                <li>TruSeq Total RNA with Ribo-Zero</li>
-                                <li>TruSeq mRNA (Insert size)</li>
-                                <li>TruSeq Total RNA with Ribo-Zero (Insert size)</li>
                             </ul>
                         </div>
                         <div class="list">
                             <p class="font-h8">Others</p>
                             <ul class="list-circle-dot">
-                                <li>SMARTer Universal Low RNA library</li>
-                                <li>SMARTer Ultra Low Input RNA library</li>
-                                <li>SMARTer Stranded RNA library</li>
+                                <li>SureSelectXT RNA Direct</li>
+                                <li>SureSelect XT HS2 RNA</li>
+                                <li>SMART-Seq mRNA</li>
+                                <li>SMART-Seq Total RNA Mid Input (SMARTer Stranded RNA)</li>
+                                <li>Watchmaker mRNA</li>
+                                <li>Watchmaker total RNA with Polaris Depletion (HMR)</li>
                             </ul>
                         </div>
                     </div>
+                    <div class="list-area margin_reset">
+                        <p class="title font-h8">Sequencing Platform</p>
+                        <ul class="list-circle-dot">
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
+                            <li>NextSeq 500</li>
+                        </ul>
+                    </div>
+                    <hr class="divider">
                     <p class="font-h5 sub-title">Small RNA Sequencing</p>
                     <p class="desc">
                         In addition to mRNA from which genes are transcribed, non-coding RNA that does not contain gene information, especially small RNA, has been found to be key<br>
@@ -265,22 +273,22 @@
                         <div class="list">
                             <p class="font-h8">Illumina</p>
                             <ul class="list-circle-dot">
-                                <li>Small RNA library</li>
+                                <li>TruSeq Small RNA</li>
                             </ul>
                         </div>
                         <div class="list">
                             <p class="font-h8">Others</p>
                             <ul class="list-circle-dot">
-                                <li>SMARTer Universal Low RNA library</li>
-                                <li>QIAseq miRNA library</li>
-                                <li>NEBNext Small RNA library</li>
+                                <li>SMARTer smRNA</li>
+                                <li>NEBNext Small RNA</li>
+                                <li>QIAseq miRNA</li>
                             </ul>
                         </div>
                     </div>
                     <div class="list-area margin_reset">
                         <p class="title font-h8">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500</li>
                         </ul>
                     </div>
@@ -324,8 +332,14 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
-                    <p class="desc">WGBS (Whole Genome Bisulfite Sequencing) is a key NGS technique that can check methylation. This DNA processing technique uses sodium bisulfite, a substance that converts unmethylated cytosine to uracil, to observe the level of methylation of DNA by analyzing the nucleotide sequence afterward.</p>
-                    
+                    <p class="desc">There are two NGS methods for detecting methylation: Whole Genome Bisulfite Sequencing (WGBS) and Enzymatic Methylation Sequencing (EM-Seq). WGBS utilizes sodium bisulfite, which converts unmethylated cytosines to uracil, to treat DNA before analyzing the nucleotide sequence to observe the level of methylation. EM-Seq, on the other hand, employs enzymes such as TET2 to prevent oxidation of methylated cytosines to uracil and APOBEC to deaminate only unmethylated cytosines to uracil, thus assessing the methylation level of DNA.</p>
+                    <p class="sub-title figure_bottom font-h8">Library Construction Kit</p>
+                    <div class="list-area">
+                        <ul class="list-circle-dot">
+                            <li>EZ DNA Methylation-Gold Kit (conversion) - xGen™ Methylation-Sequencing DNA Library Preparation Kit (library preparation)</li>
+                            <li>NEBNext® Enzymatic Methyl-seq Kit</li>
+                        </ul>
+                    </div>
                     <!-- 2023-05-09::내용추가 -->
                     <hr class="divider">
                     <p class="font-h5 sub-title">ATAC analysis</p>
@@ -374,8 +388,8 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq4000 / HiSeq 2500 / MiSeq</li>
-                            <li>16S rRNA Full length → PacBio Revio / Sequel I &#38; Sequel II</li>
+                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X Plus / NovaSeq 6000 / MiSeq</li>
+                            <li>16S rRNA Full length → PacBio Revio / Sequel lle</li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -386,7 +400,8 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000 / NextSeq 500 / MiSeq</li>
+                            <li>PacBio Sequel IIe / Revio</li>
                         </ul>
                     </div>
                     <div class="btn-area">

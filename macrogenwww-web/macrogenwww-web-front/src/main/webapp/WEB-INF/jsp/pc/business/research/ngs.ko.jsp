@@ -124,8 +124,10 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500</li>
+                            <li>DNBSEQ-T7</li>
+                            <li>UG100</li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -134,9 +136,9 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500 / MiSeq</li>
-                            <li>PacBio Sequel I &#38; Sequel II</li>
+                            <li>PacBio Revio / Sequel lle</li>
                             <li>PromethION</li>
                         </ul>
                     </div>
@@ -172,14 +174,14 @@
                             <p class="title font-h8">Main Capture Kit</p>
                             <ul class="list-circle-dot">
                                 <li>Agilent SureSelect Exome Capture kit</li>
-                                <li>Truseq Exome Enrichment Kit</li>
+                                <li>Twist Human Core Exome kit</li>
                                 <li>전체 exome 부분에 대한 Capture가 가능하며 SNP 및 InDel 등의 변이 분석을 함께 제공해 드리고 있습니다.</li>
                             </ul>
                         </div>
                         <div class="list-area">
                             <p class="title font-h8">Sequencing Platform</p>
                             <ul class="list-circle-dot">
-                                <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                                <li>NovaSeq X Plus / NovaSeq 6000</li>
                                 <li>NextSeq 500</li>
                             </ul>
                         </div>
@@ -227,30 +229,36 @@
                         <div class="list">
                             <p class="font-h8">Illumina</p>
                             <ul class="list-circle-dot">
-                                <li>TruSeq RNA</li>
-                                <li>TruSeq stranded mRNA</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Gold Human/Mouse/RatTruS</li>
-                                <li>TruSeq Stranded Total RNA with Ribo-Zero Globin Human/Mouse/Rat</li>
-                                <li>TruSeq Stranded Total RNA Sample Preparation Kits with Ribo-Zero Plant</li>
+                                <li>TruSeq Stranded mRNA</li>
+                                <li>TruSeq RNA Exome</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Human/Mouse/Rat</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Gold</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Globin</li>
+                                <li>TruSeq Stranded Total RNA with RiboZero Plant</li>
+                                <li>Illumina Stranded total RNA (Ribo-Zero Plus)</li>
                                 <li>TruSeq Stranded Total RNA (NEB Microbe)</li>
-                                <li>ScriptSeq™ v2 RNA-Seq Library Preparation Kit (Epicentre)</li>
-                                <li>TruSeq RNA Access</li>
-                                <li>TruSeq Total RNA with Ribo-Zero</li>
-                                <li>TruSeq mRNA (Insert size)</li>
-                                <li>TruSeq Total RNA with Ribo-Zero (Insert size)</li>
                             </ul>
                         </div>
                         <div class="list">
                             <p class="font-h8">Others</p>
                             <ul class="list-circle-dot">
-                                <li>SMARTer Universal Low RNA library</li>
-                                <li>SMARTer Ultra Low Input RNA library</li>
-                                <li>SMARTer Stranded RNA library</li>
+                                <li>SureSelectXT RNA Direct</li>
+                                <li>SureSelect XT HS2 RNA</li>
+                                <li>SMART-Seq mRNA</li>
+                                <li>SMART-Seq Total RNA Mid Input (SMARTer Stranded RNA)</li>
+                                <li>Watchmaker mRNA</li>
+                                <li>Watchmaker total RNA with Polaris Depletion (HMR)</li>
                             </ul>
                         </div>
                     </div>
+                    <div class="list-area margin_reset">
+                        <p class="title font-h8">Sequencing Platform</p>
+                        <ul class="list-circle-dot">
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
+                            <li>NextSeq 500</li>
+                        </ul>
+                    </div>
+                    <hr class="divider">
                     <p class="font-h5 sub-title">Small RNA Sequencing</p>
                     <p class="desc">
                         유전자가 전사된 mRNA뿐 아니라 유전자 정보를 담고 있지 않은 non-coding RNA, 특히 small RNA는 유전자 발현 조절 기전의 핵심 인자로 밝혀지며 활발히
@@ -262,22 +270,22 @@
                         <div class="list">
                             <p class="font-h8">Illumina</p>
                             <ul class="list-circle-dot">
-                                <li>Small RNA library</li>
+                                <li>TruSeq Small RNA</li>
                             </ul>
                         </div>
                         <div class="list">
                             <p class="font-h8">Others</p>
                             <ul class="list-circle-dot">
-                                <li>SMARTer Universal Low RNA library</li>
-                                <li>QIAseq miRNA library</li>
-                                <li>NEBNext Small RNA library</li>
+                                <li>SMARTer smRNA</li>
+                                <li>NEBNext Small RNA</li>
+                                <li>QIAseq miRNA</li>
                             </ul>
                         </div>
                     </div>
                     <div class="list-area margin_reset">
                         <p class="title font-h8">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000</li>
                             <li>NextSeq 500</li>
                         </ul>
                     </div>
@@ -326,7 +334,19 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
-                    <p class="desc">WGBS(Whole Genome Bisulfite Sequencing)가 대표적으로 methylation을 확인할 수 있는 NGS 방법이며, 메틸화되지 않은 시토신(Cyotsine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 <br>나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.</p>
+                    <p class="desc">methylation을 확인할 수 있는 NGS 방법에는 WGBS(Whole Genome Bisulfite Sequencing와 EM-Seq(Enzymatic Methylation Sequencing)이 있습니다.
+                        WGBS는 메틸화되지 않은 시토신(Cytosine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.
+                        EM-Seq은 메틸화된 시토신(Cytosine)은 TET2로 산화시켜 우라실(Uracil)로 변환되는 것을 막고, 메틸화되지 않은 시토신(Cytosine)만 우라실(Uracil)로 변환시키는 효소인 APOBEC을 처리하는 방식으로 DNA의 메틸화 정도를 확인하는 방법입니다.
+                    </p>
+
+                    <p class="sub-title figure_bottom font-h8">Library Construction Kit</p>
+                    <div class="list-area">
+                        <ul class="list-circle-dot">
+                            <li>EZ DNA Methylation-Gold Kit (conversion) - xGen™ Methylation-Sequencing DNA Library Preparation Kit (library preparation)</li>
+                            <li>NEBNext® Enzymatic Methyl-seq Kit</li>
+                        </ul>
+                    </div>
+
                     <hr class="divider">
                     <p class="font-h5 sub-title">ATAC analysis</p>
                     <p class="subject">ATAC는 차세대염기서열분석을 통해 DNA 풀림 구조를 분석하는 방법입니다.</p>
@@ -371,8 +391,8 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq4000 / HiSeq 2500 / MiSeq</li>
-                            <li>16S rRNA Full length → PacBio Revio / Sequel I &#38; Sequel II</li>
+                            <li>16S rRNA V3-V4 Regions, 18S rRNA, ITS Regions, Customized regions → Illumina NovaSeq X Plus / NovaSeq 6000 / MiSeq</li>
+                            <li>16S rRNA Full length → PacBio Revio / Sequel lle</li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -383,7 +403,8 @@
                     <div class="list-area">
                         <p class="font-h8 title">Sequencing Platform</p>
                         <ul class="list-circle-dot">
-                            <li>NovaSeq X plus / NovaSeq 6000 / HiSeq X ten / HiSeq 4000 / HiSeq 2500</li>
+                            <li>NovaSeq X Plus / NovaSeq 6000 / NextSeq 500 / MiSeq</li>
+                            <li>PacBio Sequel IIe / Revio</li>
                         </ul>
                     </div>
                     <div class="btn-area">
