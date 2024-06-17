@@ -126,7 +126,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc">Macrogen’s headquarters, Bundang Precision Medicine Center, Psomagen (Macrogen USA) and Macrogen APAC have been awarded the CAP accreditation for clinical diagnostic sequencing using NGS technology.</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">Download</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CAP Accreditation_May 2026.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-3.png" alt="CAP Accreditation"></div>

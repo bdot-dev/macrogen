@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="desc">마크로젠 본사 및 분당 정밀의학센터와 소마젠&#40;미주법인&#41;&#44; 싱가포르법인은 NGS 기술을 이용한 임상진단 시퀀싱 분야에서 CAP 인증을 획득했습니다&#46;</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">CAP 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/CAP Accreditation_May 2026.pdf" target="_blank">CAP 인증서 보기</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>

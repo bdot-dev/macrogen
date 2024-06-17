@@ -138,7 +138,7 @@
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-3.png" alt="CAP 인증"></div>
                         </div>
-                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/Macrogen HQ-CAP Certificate of Accreditation 2022-2024.pdf" target="_blank">CAP 인증서 보기</a></div>
+                        <div class="btn-wrap"><a class="btn btn-light btn-round" href="/pdf/CAP Accreditation_May 2026.pdf" target="_blank">CAP 인증서 보기</a></div>
                     </div>
                 </div>
                 <div class="box">

@@ -334,7 +334,7 @@
                     </div>
                     <hr class="divider">
                     <p class="font-h5 sub-title">Methylation Sequencing</p>
-                    <p class="desc">methylation을 확인할 수 있는 NGS 방법에는 WGBS(Whole Genome Bisulfite Sequencing와 EM-Seq(Enzymatic Methylation Sequencing)이 있습니다.
+                    <p class="desc">methylation을 확인할 수 있는 NGS 방법에는 WGBS(Whole Genome Bisulfite Sequencing)와 EM-Seq(Enzymatic Methylation Sequencing)이 있습니다.
                         WGBS는 메틸화되지 않은 시토신(Cytosine)을 우라실(Uracil)로 변환시키는 물질인 아황산수소 나트륨(Sodium Bisulfite)를 활용하여 DNA를 처리한 후 염기서열을 분석하여 DNA의 메틸화 정도를 관찰하는 방법입니다.
                         EM-Seq은 메틸화된 시토신(Cytosine)은 TET2로 산화시켜 우라실(Uracil)로 변환되는 것을 막고, 메틸화되지 않은 시토신(Cytosine)만 우라실(Uracil)로 변환시키는 효소인 APOBEC을 처리하는 방식으로 DNA의 메틸화 정도를 확인하는 방법입니다.
                     </p>
