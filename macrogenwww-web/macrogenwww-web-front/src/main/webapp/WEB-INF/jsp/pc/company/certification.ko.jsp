@@ -280,7 +280,7 @@
                             </div>
                         </div>
                         <div class="desc with-date">마크로젠은 국제표준화기구&#40;ISO&#41;가 2019년 8월 제정한 가장 권위 있는 국제 표준 개인정보보호 인증 ISO27701&#40;국제표준 개인정보보호&#41;을 획득하여 국내&#183;국제 최고 수준의 정보보호 인증 3종을 모두 취득한 유일한 기업입니다&#46;</div>
-                        <div class="date">&#8251; 유효기간 &#58; 2021&#46;06&#46;22 &#126; 2024&#46;06&#46;21</div>
+                        <div class="date">&#8251; 유효기간 &#58; 2023.07.14 ~ 2026.07.13</div>
                         <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO27701.pdf" target="_blank">ISO27701 인증서 보기</a></div>
                     </div>
                     <div class="right">
@@ -293,7 +293,7 @@
                             <span>ISMS&#45;P &#40;정보보호 및 개인정보보호 관리체계&#41;</span>
                         </div>
                         <div class="desc with-date">마크로젠은 정밀의학에 필요한 정보의 철저한 관리 체계를 구축하기 위해 ISMS&#45;P 인증을 획득했습니다&#46;  고객 정보 및 유전체 데이터를 안전하게 보호한다는 것을 입증하는 객관적인 지표입니다&#46; 마크로젠이 업계 최초로 획득한 ISMS&#45;P는 과학기술정보통신부와 개인정보보호위원회가 공동으로 고시한 국내 최고 수준의 보안 관리 체계입니다&#46; </div>
-                        <div class="date">&#8251; 유효기간 &#58; 2021&#46;03&#46;03 &#126; 2024&#46;03&#46;02</div>
+                        <div class="date">&#8251; 유효기간 &#58; 2024.03.06 ~ 2027.03.05</div>
                         <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISMS-P 인증서.pdf" target="_blank">ISMS&#45;P 인증서 보기</a></div>
                     </div>
                     <div class="right">
@@ -313,7 +313,7 @@
                             </div>
                         </div>
                         <div class="desc with-date">마크로젠은 업계 최초 국내 개인정보보호&#40;PIMS&#41; 및 국제 정보보호&#40;ISO&#47;IEC 27001&#41; 인증을 획득했습니다&#46; </div>
-                        <div class="date">&#8251; 유효기간 &#58; 2021&#46;03&#46;03 &#126; 2024&#46;03&#46;02</div>
+                        <div class="date">&#8251; 유효기간 &#58; 2020.06.12 ~ 2026.06.11</div>
                         <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO_IEC 27001-2013 인증서.pdf" target="_blank">ISO&#47;IEC 27001&#58;2013 인증서 보기</a></div>
                     </div>
                     <div class="right">

@@ -288,7 +288,7 @@
                             </div>
                         </div>
                         <div class="desc with-date">마크로젠은 국제표준화기구(ISO)가 2019년 8월 제정한 가장 권위 있는 국제 표준 개인정보보호 인증 ISO27701(국제표준 개인정보보호)을 획득하여 국내·국제 최고 수준의 정보보호 인증 3종을 모두 취득한 유일한 기업입니다.</div>
-                        <div class="date">※ 유효기간 : 2021.06.22 ~ 2024.06.21</div>
+                        <div class="date">※ 유효기간 : 2023.07.14 ~ 2026.07.13</div>
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-13.png" alt="ISO27701 (국제표준 개인정보보호)"></div>
                         </div>
@@ -301,7 +301,7 @@
                             <span>ISMS-P (정보보호 및 개인정보보호 관리체계)</span>
                         </div>
                         <div class="desc with-date">마크로젠은 정밀의학에 필요한 정보의 철저한 관리 체계를 구축하기 위해 ISMS-P 인증을 획득했습니다.  고객 정보 및 유전체 데이터를 안전하게 보호한다는 것을 입증하는 객관적인 지표입니다. 마크로젠이 업계 최초로 획득한 ISMS-P는 과학기술정보통신부와 개인정보보호위원회가 공동으로 고시한 국내 최고 수준의 보안 관리 체계입니다. </div>
-                        <div class="date">※ 유효기간 : 2021.03.03 ~ 2024.03.02</div>
+                        <div class="date">※ 유효기간 : 2024.03.06 ~ 2027.03.05</div>
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-14.png" alt="ISMS-P (정보보호 및 개인정보보호 관리체계)"></div>
                         </div>
@@ -321,7 +321,7 @@
                             </div>
                         </div>
                         <div class="desc with-date">마크로젠은 업계 최초 국내 개인정보보호(PIMS) 및 국제 정보보호(ISO/IEC 27001) 인증을 획득했습니다. </div>
-                        <div class="date">※ 유효기간 : 2021.03.03 ~ 2024.03.02</div>
+                        <div class="date">※ 유효기간 : 2020.06.12 ~ 2026.06.11</div>
                         <div class="img-box">
                             <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-15.png" alt="ISO/IEC 27001:2013 인증"></div>
                         </div>

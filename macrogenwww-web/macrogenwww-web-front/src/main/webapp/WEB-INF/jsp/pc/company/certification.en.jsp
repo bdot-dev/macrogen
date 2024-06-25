@@ -279,7 +279,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc with-date">ISO27701 is the most prestigious international standard privacy certification established by the International Organization for Standardization (ISO) in August 2019. Macrogen is the only company in the industry that has acquired all three of the best information protection certificates in Korea and internationally.</div>
-                        <div class="date">※ Period of validity : 2021.06.22 ~ 2024.06.21</div>
+                        <div class="date">※ Period of validity : 2023.07.14 ~ 2026.07.13</div>
                         <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO27701.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
@@ -292,8 +292,8 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             <span>ISMS-P Certification</span>
                         </div>
                         <div class="desc with-date">Macrogen acquired the ISMS-P certification to establish a thorough management system of all information needed in precision medicine, an objective indicator that proves that customer information and genomic data can be secured. ISMS-P, which Macrogen acquired for the first time in the industry, is the best security management system in Korea jointly announced by the Ministry of Science and ICT and the Privacy Commission. </div>
-                        <div class="date">※ Period of validity : 2021.03.03 ~ 2024.03.02</div>
-                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISMS-P 인증서.pdf" target="_blank">Download</a></div>
+                        <div class="date">※ Period of validity : 2024.03.06 ~ 2027.03.05</div>
+                        <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISMS-P 인증서_영문.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
                         <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/img-authorization-14.png" alt="ISMS-P Certification"></div>
@@ -312,7 +312,7 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                             </div>
                         </div>
                         <div class="desc with-date">Macrogen has become the first biotechnology company to successfully achieve both Korea Personal Information Management System (PIMS) and International Information Security (ISO/IEC 27001) certification.</div>
-                        <div class="date">※ Period of validity : 2021.03.03 ~ 2024.03.02</div>
+                        <div class="date">※ Period of validity : 2020.06.12 ~ 2026.06.11</div>
                         <div class="btn-wrap"><a class="btn btn-sm btn-white" href="/pdf/ISO_IEC 27001-2013 인증서.pdf" target="_blank">Download</a></div>
                     </div>
                     <div class="right">
