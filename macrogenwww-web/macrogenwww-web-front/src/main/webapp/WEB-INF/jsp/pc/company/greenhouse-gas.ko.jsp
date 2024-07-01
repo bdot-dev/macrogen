@@ -89,8 +89,7 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">범위</th>
-										<th scope="col">구분</th>
+										<th scope="col" colspan="2">구분</th>
 										<th scope="col">시설</th>
 										<th scope="col">배출원</th>
 									</tr>
@@ -149,6 +148,14 @@
 								</thead>
 								<tbody>
 									<tr>
+										<th scope="row" class="bg-line">2023년</th>
+										<td>430</td>
+										<td>2,476</td>
+										<td>39</td>
+										<td>2,945</td>
+										<td>58</td>
+									</tr>
+									<tr>
 										<th scope="row" class="bg-line">2022년</th>
 										<td>430</td>
 										<td>2,493</td>
@@ -164,6 +171,7 @@
 										<td>2,794</td>
 										<td>55</td>
 									</tr>
+									<!--
 									<tr>
 										<th scope="row" class="bg-line">2020년</th>
 										<td>436</td>
@@ -172,9 +180,10 @@
 										<td>2,860</td>
 										<td>55</td>
 									</tr>
+									-->
 								</tbody>
 							</table>
-							<div class="txt-comment">※ '22년 배출량의 경우, 추후 제3자 검증 진행 예정</div>
+							<div class="txt-comment">※ '22년, 23년 배출량의 경우, 추후 제3자 검증 진행 예정</div>
 						</div>
 					</div>
 					<div class="item" data-aos="fade-up" data-aos-duration="2000">

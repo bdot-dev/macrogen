@@ -91,8 +91,7 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">Scope</th>
-										<th scope="col">Category</th>
+										<th scope="col" colspan="2">Category</th>
 										<th scope="col">Facility</th>
 										<th scope="col">Emission source</th>
 									</tr>
@@ -151,6 +150,14 @@
 								</thead>
 								<tbody>
 									<tr>
+										<th scope="row" class="bg-line">2023</th>
+										<td>430</td>
+										<td>2,476</td>
+										<td>39</td>
+										<td>2,945</td>
+										<td>58</td>
+									</tr>
+									<tr>
 										<th scope="row" class="bg-line">2022</th>
 										<td>430</td>
 										<td>2,493</td>
@@ -166,6 +173,7 @@
 										<td>2,794</td>
 										<td>55</td>
 									</tr>
+									<!--
 									<tr>
 										<th scope="row" class="bg-line">2020</th>
 										<td>436</td>
@@ -174,9 +182,10 @@
 										<td>2,860</td>
 										<td>55</td>
 									</tr>
+									-->
 								</tbody>
 							</table>
-							<div class="txt-comment">※ For the 2022 emissions, third-party verification is scheduled to be conducted.</div>
+							<div class="txt-comment">※ For the 2022-2023 emissions, third-party verification is scheduled to be conducted.</div>
 						</div>
 					</div>
 					<div class="item" data-aos="fade-up" data-aos-duration="2000">
