@@ -224,6 +224,7 @@
                             </div>
                         </div>
                     </div>
+                    <%--240708삭제
                     <hr class="divider">
                     <div class="section-anchor">
                         <p class="sub-title font-h5" id="rapidID">Rapid-ID</p>
@@ -244,6 +245,7 @@
                             </ul>
                         </div>
                     </div>
+                    --%>
                     <div class="btn-area">
                         <div class="btn-wrapper"><a href="mailto:sequencing@macrogen.com" class="btn btn-light"><span>서비스문의</span></a>
                             <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100"
@@ -851,13 +853,13 @@
     }
 
     init()
-	
+
     // location.hash // 20230502
-    if(location.hash != "#none") {    	
+    if(location.hash != "#none") {
    		//var loadtab = $('._select-option .option-value').filter(location.hash);
    		//loadtab.click();	// tab content view
    		//setTabContent(loadtab.index());	// scroll 이동
-   		
+
    		var loadtab = $('._select-option .option-value').filter(location.hash);
    		// option click, business.js line 22 function onClickSelectOption
    		loadtab.addClass('active').siblings().removeClass('active')
@@ -868,10 +870,10 @@
         textChange(loadtab);
         setInfoSectionList(loadtab.text())
         // scroll 이동
-        setTabContent(loadtab.index());    		
+        setTabContent(loadtab.index());
     }
-		
-    $(window).on("hashchange",function () { 
+
+    $(window).on("hashchange",function () {
     	 if(location.hash != "#none"){
       		location.reload();
     	 }

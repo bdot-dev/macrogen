@@ -243,9 +243,8 @@
 	                            </div>
 	                        </div>
 	                    </div>
+						<%--240708삭제
 	                    <hr class="divider">
-	
-	                    <!--v.0.11 mo-ko 싱크(section-anchor 추가)-->
 	                    <div class="section-anchor">
 	                        <p class="sub-title font-h5" id="rapidID">Rapid-ID</p>
 	                        <p class="desc list_bottom font-body">This is a microbial mass spectrometry identification
@@ -276,6 +275,7 @@
 	                            </ul>
 	                        </div>
 	                    </div>
+	                    --%>
 	                    <div class="btn-area">
 	                        <div class="btn-wrapper"><a href="mailto:sequencing@macrogen.com" class="btn btn-light"><span>Service Inquiry</span></a>
 	                            <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100"
@@ -650,7 +650,7 @@
 	                                        probability
 	                                        is 99.9% or more, the person can be considered as the child. </p>
 	                                </div>
-	
+
 	                            </div>
 	                        </div>
 	                        <hr class="divider">
@@ -721,22 +721,22 @@
 	                    </div>
 	                </div>
 	            </div>
-	
+
 	        </div>
 	    </div>
-		
+
 		<script>
 		    /*변수*/
 		    var selectBox = $(".select-box");
 		    var option = $(".option-value");
-		
+
 		    var contentAnchor = $(".content-anchor");
 		    var anchorOption = $(".anchor-value");
 		    var anchor = $("._anchor");
 		    var offset = anchor.offset();
 		    var infoSectionList = [];
-		
-		
+
+
 		    function onClickSelectBox() {
 		        // console.log('onClickSelectBox');
 		        /*드롭다운 클릭시 이벤트*/
@@ -746,11 +746,11 @@
 		                select.removeClass("open").children('.select-option').slideUp(200).removeClass("open");
 		            } else {
 		                select.addClass("open").children('.select-option').slideDown(200).addClass("open");
-		
+
 		            }
 		        });
 		    }
-		
+
 		    function onClickSelectOption() {
 		        // console.log('onClickSelectOption');
 		        /*클릭시 탭메뉴 변경*/
@@ -764,7 +764,7 @@
 		            setInfoSectionList($(this).text())
 		        })
 		    }
-		
+
 		    function onClickBody() {
 		        $('body').on('click', function (e) {
 		            if (selectBox.hasClass('open')) {
@@ -777,40 +777,40 @@
 		            }
 		        })
 		    }
-		
+
 		    /*클릭시 텍스트 변경*/
 		    function textChange(target) {
 		        var select = target.find('a').text();
 		        $('._selected-value').find('span').text(select);
 		    }
-		
+
 		    /*이전 다음 이동*/
 		    function setTabContent(idx) {
 		        var $Select = $('._select-option li');
 		        var $Selected = $('._selected-value');
 		        var $info = $(".info-box-wrap > div");
 		        var change = $(".option-value");
-		
+
 		        console.log(change);
 		        <!--탭메뉴 클릭시 페이지 변경-->
 		        $Selected.text($Select.eq(idx).text());
 		        $info.addClass('show').siblings().removeClass('show');
 		        $info.eq(idx).addClass('show').siblings().removeClass('show');
-		
+
 		        change.eq(idx).addClass('active').siblings().removeClass('active');
-		
+
 		        setInfoSectionList($Select.eq(idx).text())
 		        /*페이지 변경후 상단 이동*/
 		        fnMove();
-		
+
 		    }
-		
+
 		    /*탭메뉴 상단으로 이동*/
 		    function fnMove() {
 		        var offset = $("._content-anchor").offset();
 		        $('html, body').animate({scrollTop: offset.top - 95}, 100);
 		    }
-		
+
 		    /*특정위치 show & hide*/
 		    function fnMousewheel() {
 		        var lastScroll = 0;
@@ -818,7 +818,7 @@
 		        $(window).on('scroll', function (e) {
 		            let offset = $(this).scrollTop();
 		            console.log(offset);
-		
+
 		            if (offset > lastScroll){
 		                // console.log('down')
 		                if (offset > listPos) {
@@ -837,11 +837,11 @@
 		                }
 		            }
 		            lastScroll = offset;
-		
-		
-		
+
+
+
 		            /*v0.10 스크립트 변경 s*/
-		
+
 		            /*스크롤 변경시 텍스트 변경 및 칼러값 추가 */
 		            var title;
 		            for (
@@ -850,22 +850,22 @@
 		                var title = item.title
 		                writeText(title)
 		                ChangeColor(title)
-		
+
 		                if (offset > item.offset) {
 		                    // console.log(i);
 		                    title = item.title
-		
+
 		                    break
 		                }
 		            }
 		            writeText(title)
 		            ChangeColor(title)
 		        });
-		
+
 		        /*v0.10 스크립트 변경 e*/
 		    }
-		
-		
+
+
 		    /**
 		     * Anchor 글씨 쓰기
 		     * @param text
@@ -873,7 +873,7 @@
 		    function writeText(text) {
 		        $('._anchor-value .text').text(text)
 		    }
-		
+
 		    function ChangeColor(title){
 		        console.log(title);
 		        $(".anchor-value a").css({
@@ -885,17 +885,17 @@
 		            'font-weight' : 'bold'
 		        });
 		    }
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 		    function setInfoSectionList(tit) {
-		
+
 		        writeText(tit);
-		
+
 		        infoSectionList = {
 		            title: tit,
 		            list: [],
@@ -910,11 +910,11 @@
 		                offset: top,
 		                title: title
 		            })
-		
+
 		        })
 		        // console.log(infoSectionList);
 		    }
-		
+
 		    /*드롭다운 클릭시 이벤트*/
 		    function onClickFixedAnchor() {
 		        contentAnchor.on('click', function () {
@@ -923,7 +923,7 @@
 		                select.removeClass("open").children('.anchor-option').slideUp(200).removeClass("open");
 		            } else {
 		                select.addClass("open").children('.anchor-option').slideDown(200).addClass("open");
-		
+
 		            }
 		        });
 		        $('body').on('click', function (e) {
@@ -939,15 +939,15 @@
 		            writeText(select)
 		        });
 		    }
-		
+
 		    /*클릭시 페이지 이동 이동*/
 		    function TitleMove(target) {
 		        var id = $('#' + target);
 		        var offset = id.offset();
 		        $('html, body').animate({scrollTop: offset.top - 60}, 300);
 		    }
-		
-		
+
+
 		    function init() {
 		        onClickSelectBox();
 		        onClickSelectOption();
@@ -956,15 +956,15 @@
 		        fnMousewheel();
 		        setInfoSectionList($('._selected-value span').text())
 		    }
-		
+
 		    init()
-		
+
 			// location.hash // 20230502
-		    if(location.hash != "#none") {    	
+		    if(location.hash != "#none") {
 		   		//var loadtab = $('._select-option .option-value').filter(location.hash);
 		   		//loadtab.click();	// tab content view
 		   		//setTabContent(loadtab.index());	// scroll 이동
-		   		
+
 		   		var loadtab = $('._select-option .option-value').filter(location.hash);
 		   		// option click, business.js line 22 function onClickSelectOption
 		   		loadtab.addClass('active').siblings().removeClass('active')
@@ -975,19 +975,19 @@
 		        textChange(loadtab);
 		        setInfoSectionList(loadtab.text())
 		        // scroll 이동
-		        setTabContent(loadtab.index());    		
+		        setTabContent(loadtab.index());
 		    }
-				
-		    $(window).on("hashchange",function () { 
+
+		    $(window).on("hashchange",function () {
 		    	 if(location.hash != "#none"){
 		      		location.reload();
 		    	 }
-		
+
 		    });
 		</script>
 		<!--비즈니스 스크립트 리펙토링 e-->
-		
+
 	</div>
-   
+
 
 </body>

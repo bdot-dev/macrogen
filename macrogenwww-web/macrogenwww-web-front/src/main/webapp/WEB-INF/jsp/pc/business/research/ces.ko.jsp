@@ -160,6 +160,7 @@
 	                            <p class="desc">18S rRNA region의 염기서열 분석을 통해 1,600bp 이상, ITS region의 염기서열 분석을 통해 500bp 이상, 26S rRNA gene(D1/D2/D3 region)의 염기서열 분석을 통해 1,300bp 이상의 결과를 보장합니다.</p>
 	                        </div>
 	                    </div>
+						<%--240708삭제
 	                    <hr class="divider">
 	                    <p class="sub-title font-h5">Rapid-ID</p>
 	                    <p class="desc list_bottom">MALDI-TOF 단백질 분석 기술을 이용한 미생물질량분석동정 서비스로 세계 최초 FDA Clearance 획득 및 AOAC 인증된 시스템을 사용합니다. 기존 염기서열 동정서비스에 비해 소요시간이 짧으며 정확한
@@ -174,6 +175,7 @@
 	                            <li>최초 FDA Clearance 미생물동정 정확도 획득 및 미국 인증기관인 AOAC Validation 인증</li>
 	                        </ul>
 	                    </div>
+	                    --%>
 	                    <div class="btn-area">
 	                        <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>서비스문의</span></a>
 	                        <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>견적의뢰</span></a>

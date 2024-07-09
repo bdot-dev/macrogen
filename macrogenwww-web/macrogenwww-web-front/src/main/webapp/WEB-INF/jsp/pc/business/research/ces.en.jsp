@@ -159,6 +159,7 @@
                                 of the ITS region and 26S rRNA gene (D1/D2/D3 region), respectively.</p>
                         </div>
                     </div>
+                    <%--240708삭제
                     <hr class="divider">
                     <p class="sub-title font-h5">Rapid-ID</p>
                     <p class="desc list_bottom">This is a microbial mass spectrometry identification service based on the MALDI-TOF protein sequencing technique and uses the world's first FDA clearance and AOAC-certified system. It takes less time than the existing sequencing service and is suitable for clients who want more accurate identification. It identifies microorganisms and classifies species or genus. Because of its accuracy and immediate results, it is mainly used for microbial identification and contamination detection in many medical, pharmaceutical and cosmetic manufacturing industries. We provide reliable service, earning the first FDA clearance and the validation from AOAC, an American certification body.</p>
@@ -171,6 +172,7 @@
                             <li>First FDA Clearance for microbiological identification accuracy and AOAC Validation (US)</li>
                         </ul>
                     </div>
+                    --%>
                     <div class="btn-area">
                         <a href="mailto:sequencing@macrogen.com" class="btn btn-white"><span>Service Inquiry</span></a>
                         <a href="https://dna.macrogen.com/quotation/retrieveCesQuotation.do?menuCd=QUO100" target="_blank" class="btn btn-white"><span>Quotation</span></a>
