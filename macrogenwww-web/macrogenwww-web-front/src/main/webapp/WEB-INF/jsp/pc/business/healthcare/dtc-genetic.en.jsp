@@ -77,6 +77,9 @@
 	                                    </div>
 	                                </div>
 	                            </div>
+								<div class="img" style="margin-top: 45px;">
+									<img src="/publishing/pc-en/dist/img/business/img_healthbeauth_img03.jpg" alt="AI Chatbot">
+								</div>
 	                        </div>
 		                    <div class="list">
 	                            <p class="title font-h5">the Biome</p>

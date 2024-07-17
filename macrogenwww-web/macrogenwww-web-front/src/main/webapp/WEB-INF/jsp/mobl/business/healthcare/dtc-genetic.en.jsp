@@ -76,6 +76,9 @@
 										</div>
 									</div>
                                 </div>
+								<div class="img" style="margin-top:40px;">
+									<img src="/publishing/mobile-en/dist/img/business/img_healthbeauth_img03.png" alt="AI챗봇">
+								</div>
                             </div>
                             <div class="list">
                                 <p class="sub-title font-h5" id="target2">the Biome</p>
