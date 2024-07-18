@@ -78,7 +78,7 @@ public class MyInfoController {
 		//auth = "fail";
 		if(auth != null && auth.equals("success")) {
 			retUrl = "/myinfo/form";
-
+			session.setAttribute("auth","");
 		} else {
 			if(alert != null && alert.equals("expired")) {
 				retUrl = "/myinfo/form";
