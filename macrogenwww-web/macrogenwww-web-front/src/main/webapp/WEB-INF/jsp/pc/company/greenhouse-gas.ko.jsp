@@ -159,8 +159,8 @@
 										<th scope="row" class="bg-line">2022년</th>
 										<td>430</td>
 										<td>2,493</td>
-										<td>81</td>
-										<td>3,005</td>
+										<td>87</td>
+										<td>3,010</td>
 										<td>58</td>
 									</tr>
 									<tr>
@@ -183,7 +183,7 @@
 									-->
 								</tbody>
 							</table>
-							<div class="txt-comment">※ '22년, 23년 배출량의 경우, 추후 제3자 검증 진행 예정</div>
+							<%--<div class="txt-comment">※ '22년, 23년 배출량의 경우, 추후 제3자 검증 진행 예정</div>--%>
 						</div>
 					</div>
 					<div class="item" data-aos="fade-up" data-aos-duration="2000">
@@ -193,9 +193,9 @@
 							<div class="info-ksa">
 								<img src="/publishing/pc-ko/dist/img/esg/symbol-ksa.png" alt="">
 								<div class="info">
-									<strong>검증성명서를 확인하세요</strong>
-									아래의 버튼을 누르시면 마크로젠의 온실가스 배출량 검증성명서를 확인할 수 있습니다.
-									<button type="button" class="btn-certification" onclick="window.open('/publishing/pc-ko/dist/img/esg/greenhouse-gas-ko.pdf')">온실가스 배출량 검증성명서 보기</button>
+									<strong>검증서를 확인하세요</strong>
+									아래의 버튼을 누르시면 마크로젠의 온실가스 배출량 검증서를 확인할 수 있습니다.
+									<button type="button" class="btn-certification" onclick="window.open('/publishing/pc-ko/dist/img/esg/greenhouse-gas-ko.pdf')">온실가스 배출량 검증서 보기</button>
 								</div>
 							</div>
 						</div>

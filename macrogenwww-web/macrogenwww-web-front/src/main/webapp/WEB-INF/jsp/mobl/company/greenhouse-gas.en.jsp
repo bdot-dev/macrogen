@@ -177,8 +177,8 @@
 										<th scope="row" class="bg-line">2022</th>
 										<td>430</td>
 										<td>2,493</td>
-										<td>81</td>
-										<td>3,005</td>
+										<td>87</td>
+										<td>3,010</td>
 										<td>58</td>
 									</tr>
 									<tr>
@@ -201,7 +201,7 @@
 									-->
 								</tbody>
 							</table>
-							<div class="txt-comment">※ For the 2022-2023 emissions,<br>third-party verification is scheduled to be conducted</div>
+							<%--<div class="txt-comment">※ For the 2022-2023 emissions,<br>third-party verification is scheduled to be conducted</div>--%>
 						</div>
 					</div>
 					<div class="item" data-aos="fade-up" data-aos-duration="2000">
