@@ -136,8 +136,8 @@
                                 </div>
                             </li>
                             <li class="item height_fix" id="songdo">
-                                <div class="name">마크로젠 송도 글로벌 지놈센터</div>
-                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 지놈센터"></div>
+                                <div class="name">마크로젠 송도 글로벌 캠퍼스</div>
+                                <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 캠퍼스"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2025년 설립 예정</span></li>
