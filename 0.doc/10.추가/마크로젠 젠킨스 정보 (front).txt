@@ -1,0 +1,29 @@
+
+
+- jenkins 정보 (front)
+
+
+
+# upload war file to real server
+scp /home/appuser/.jenkins/workspace/macrogen_real_front_was/macrogenwww-web/macrogenwww-web-front/target/macrogenwww-web-front-real.war macrogen@211.110.34.200:/home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war
+
+# was shutdown
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_www/downcon.sh
+
+# sleep 10 second
+ssh macrogen@211.110.34.200 sleep 10
+
+# ROOT delete
+ssh macrogen@211.110.34.200 "cd /data/www_data/ROOT; rm -rf ./*"
+
+# war file backup
+ssh macrogen@211.110.34.200 "cp /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real_`date +%Y%m%d`_`date +%H%M%S`.war"
+
+# war file jar xf
+ssh macrogen@211.110.34.200 "cd /data/www_data/ROOT; /home/macrogen/java/bin/jar xf /home/macrogen/tomcat_www/backup/macrogenwww-web-front-real.war"
+
+# was startup
+ssh macrogen@211.110.34.200 /home/macrogen/tomcat_www/startcon.sh
+
+# before war file delete
+ssh macrogen@211.110.34.200 find /home/macrogen/tomcat_www/backup -type f -mtime +1 -exec "rm -f {} \;"
