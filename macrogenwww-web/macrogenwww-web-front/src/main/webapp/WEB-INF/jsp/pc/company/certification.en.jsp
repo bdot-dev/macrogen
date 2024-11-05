@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-                <div class="hero-title">Certification & Accreditation</div>
+                <h2 class="hero-title">Certification & Accreditation</h2>
                 <div class="slogan">Global standard<br/>for genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
                 <div class="slogan-sub">Our technological excellence has been recognized around the world</div>
             <nav aria-label="breadcrumb">

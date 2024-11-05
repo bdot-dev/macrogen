@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item">GCLP(임상시험검체분석)</li>
                 </ol>
             </nav>
-            <div class="hero-title">GCLP</div>
+            <h2 class="hero-title">GCLP</h2>
             <div class="slogan-sub">Good Clinical Laboratory Practice(임상시험검체분석)</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>

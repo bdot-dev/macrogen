@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">인사제도</div>
+            <h2 class="hero-title">인사제도</h2>
             <div class="slogan ko">더 나은 미래를 위해<br/>함께 성장해갑니다</div>
             <div class= "slogan-sub">직원들의 더 나은 미래를 위해 노력합니다</div>
             <nav aria-label="breadcrumb">

@@ -17,7 +17,7 @@
     </ol>
 </nav> 
 
-            <div class="hero-title">GENE SYNTHESIS</div>
+            <h2 class="hero-title">GENE SYNTHESIS</h2>
         </div>
     </div>
     <div class="container">

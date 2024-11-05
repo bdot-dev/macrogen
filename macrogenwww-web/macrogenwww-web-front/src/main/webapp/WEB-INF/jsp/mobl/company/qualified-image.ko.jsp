@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">인재상</div>
+            <h2 class="font-h4">인재상</h2>
             <div class="font-slogan">새로운 내일을<br/>당신과 함께 꿈꿉니다</div>
             <div class="font-h7-r">건강한 미래를 만들어 갈<br/> 마크로젠 구성원을 찾습니다</div>
             <div class="scroll-wrap">

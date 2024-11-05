@@ -15,7 +15,7 @@
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">News</div>
+            <h2 class="font-h1">News</h2>
             <div class="board">
 
 				<c:if test="${fn:length(upendFixingList) > 0}">

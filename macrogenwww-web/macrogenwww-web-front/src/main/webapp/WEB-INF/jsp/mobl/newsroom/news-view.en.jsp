@@ -39,7 +39,7 @@
                 <div class="board">
                     <div class="view">
                         <div class="view-header">
-                            <div class="font-h4">${resultVo.nttSj }</div>
+                            <h2 class="font-h4">${resultVo.nttSj }</h2>
                             <div class="font-date"><fmt:formatDate value="${resultVo.registDt }" pattern="yyyy.MM.dd" /></div>
                         </div>
                         <div class="view-body">

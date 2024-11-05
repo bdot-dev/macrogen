@@ -11,7 +11,7 @@
 </header>
 
         <div class="frame">
-            <div class="font-h1">재무정보</div>
+            <h2 class="font-h1">재무정보</h2>
         </div>
     </div>
     <div class="container pt-0">

@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item">NGS 유전자 패널 검사실</li>
                 </ol>
             </nav>
-            <div class="hero-title">NGS 유전자 패널 검사실</div>
+            <h2 class="hero-title">NGS 유전자 패널 검사실</h2>
             <div class="slogan-sub">Next Generation Sequencing(NGS)-based genetic panel laboratory support</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>

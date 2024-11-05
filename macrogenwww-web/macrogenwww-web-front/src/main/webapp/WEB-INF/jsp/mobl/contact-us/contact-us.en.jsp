@@ -16,7 +16,7 @@
 		        </header>
 		        
 		        <div class="frame">
-		            <div class="font-h1">CONTACT US</div>
+		            <h2 class="font-h1">CONTACT US</h2>
 		        </div>
 		    </div>	
 		    

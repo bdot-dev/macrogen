@@ -29,7 +29,7 @@
                                 <span class="font-body-h-b">${ resultVo.sportSeCodeNm }</span>
                                 <div class="badge-recruit ${ resultVo.rceptSttusCode eq 'P' ? 'ongoing' : '' }"><span class="sr-only">${ resultVo.rceptSttusCodeNm }</span></div>
                             </div>
-                            <div class="font-h4">${ resultVo.empaSj }</div>
+                            <h2 class="font-h4">${ resultVo.empaSj }</h2>
                             <div class="font-date"><fmt:formatDate value="${resultVo.rceptBeginDe }" pattern="yyyy.MM.dd" /> - <fmt:formatDate value="${resultVo.rceptEndDe }" pattern="yyyy.MM.dd" /></div>
                         </div>
                         <div class="view-body">

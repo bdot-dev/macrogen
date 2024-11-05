@@ -17,7 +17,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">Pet DNA Test</div>
+            <h2 class="hero-title">Pet DNA Test</h2>
             <div class="slogan-sub">myPETGENE</div>
         </div>
     </div>

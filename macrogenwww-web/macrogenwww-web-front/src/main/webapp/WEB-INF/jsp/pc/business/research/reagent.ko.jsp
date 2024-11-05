@@ -16,7 +16,7 @@
 			        <li class="breadcrumb-item">연구용 시약 및 소모품</li><!--2023-04-20 문구변경-->
 			    </ol>
 			</nav>
-            <div class="hero-title">연구용 시약 및 소모품</div><!--2023-04-20 문구변경-->
+            <h2 class="hero-title">연구용 시약 및 소모품</h2><!--2023-04-20 문구변경-->
            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>

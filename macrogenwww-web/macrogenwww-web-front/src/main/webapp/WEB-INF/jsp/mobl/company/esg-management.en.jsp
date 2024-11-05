@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">ESG Management</div>
+            <h2 class="font-h4">ESG Management</h2>
             <div class="font-slogan en">Creating a<br/> healthier society</div>
             <div class="font-h7-r">Promoting health and research<br/> for a better future</div>
             <div class="scroll-wrap">

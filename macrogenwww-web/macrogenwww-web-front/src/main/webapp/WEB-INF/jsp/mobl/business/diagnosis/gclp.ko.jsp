@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">GCLP</div>
+	            <h2 class="font-h1">GCLP</h2>
 	            <div class="font-body-h">Good Clinical Laboratory Practice <br>(임상시험검체분석)</div>
 	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
 	        </div>	

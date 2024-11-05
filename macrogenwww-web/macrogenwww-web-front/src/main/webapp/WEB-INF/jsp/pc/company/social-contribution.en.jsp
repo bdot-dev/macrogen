@@ -9,7 +9,7 @@
 		</header>
 
         <div class="frame">
-            <div class="hero-title">Social Responsibility</div>
+            <h2 class="hero-title">Social Responsibility</h2>
             <div class="slogan">We fulfill our social responsibility<br/> for a better world</div> <!-- 번역 변경 -- 2022.05.26 -->
             <div class= "slogan-sub">We support Korean scientists as part of our dedication to healthier living</div>
             <nav aria-label="breadcrumb">

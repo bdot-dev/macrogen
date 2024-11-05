@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">Certification & Accreditation</div>
+            <h2 class="font-h4">Certification & Accreditation</h2>
             <div class="font-slogan en">Global standard<br/>for genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
             <div class="font-h7-r">Our technological excellence has been recognized around the world.</div>
             <div class="scroll-wrap">

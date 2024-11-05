@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1 microbiome_title">Microbiome Analysis and Customized Solutions</div>
+            <h2 class="font-h1 microbiome_title">Microbiome Analysis and Customized Solutions</h2>
             <div class="font-body-h">The Biome Pro</div>
         </div>
     </div>

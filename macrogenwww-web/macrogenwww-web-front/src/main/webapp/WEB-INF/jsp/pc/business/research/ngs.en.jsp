@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">NGS</div>
+            <h2 class="hero-title">NGS</h2>
             <div class="slogan-sub">Next Generation Sequencing</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>

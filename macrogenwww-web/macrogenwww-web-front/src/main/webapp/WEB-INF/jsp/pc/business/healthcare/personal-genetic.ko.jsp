@@ -17,7 +17,7 @@
                     <li class="breadcrumb-item">질병예측 유전자검사</li>
                 </ol>
             </nav>
-            <div class="hero-title">질병예측 유전자검사</div>
+            <h2 class="hero-title">질병예측 유전자검사</h2>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>

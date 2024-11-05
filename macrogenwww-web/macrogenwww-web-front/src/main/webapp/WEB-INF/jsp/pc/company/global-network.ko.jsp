@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">글로벌 네트워크</div>
+            <h2 class="hero-title">글로벌 네트워크</h2>
             <div class="slogan">GLOBAL<br/>MACROGEN</div>
             <div class="slogan-sub">글로벌 정밀의학을 선도합니다</div>
             <nav aria-label="breadcrumb">

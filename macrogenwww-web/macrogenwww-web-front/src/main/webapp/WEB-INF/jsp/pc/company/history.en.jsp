@@ -9,7 +9,7 @@
 		</header>
 
         <div class="frame">
-                <div class="hero-title">History</div>
+                <h2 class="hero-title">History</h2>
                 <div class="slogan history_slogan">Opening new doors<br/> in the development of genomic analysis</div> <!-- 번역 변경 -- 2022.05.26 -->
                 <div class="slogan-sub">Macrogen is paving the way to a healthier and brighter future for humanity</div>
                 <nav aria-label="breadcrumb">

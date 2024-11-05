@@ -10,7 +10,7 @@
 			</div>
 		</header>
 		<div class="frame">
-			<div class="font-h1">DTC 바이옴검사</div>
+			<h2 class="font-h1">DTC 바이옴검사</h2>
 		</div>
 	</div>
 

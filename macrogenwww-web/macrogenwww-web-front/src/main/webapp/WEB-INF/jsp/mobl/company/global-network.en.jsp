@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">Global Network</div>
+            <h2 class="font-h4">Global Network</h2>
             <div class="font-slogan en">GLOBAL<br/>MACROGEN</div>
             <div class="font-h7-r">Leading global precision medicine company</div>
             <div class="scroll-wrap">

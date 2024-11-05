@@ -32,7 +32,7 @@
 			</script>
 	
 	        <div class="frame">
-	            <div class="font-h4">온실가스</div>
+	            <h2 class="font-h4">온실가스</h2>
 	            <div class="font-h7-r">지속가능한 지구를 위해 기후변화<br>대응에 동참하겠습니다</div>
 	            <div class="scroll-wrap">
 	                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>

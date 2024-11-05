@@ -14,7 +14,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">투자자 문의</div>
+            <h2 class="font-h1">투자자 문의</h2>
         </div>
     </div>
     <div class="container pt-0">

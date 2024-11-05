@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">연혁</div>
+            <h2 class="font-h4">연혁</h2>
             <div class="font-slogan">유전체 분석 기술로<br>미래를 열어갑니다</div>
             <div class="font-h7-r">마크로젠은 인류 건강의 새 역사를 <br/>만들고 있습니다</div>
             <div class="scroll-wrap">

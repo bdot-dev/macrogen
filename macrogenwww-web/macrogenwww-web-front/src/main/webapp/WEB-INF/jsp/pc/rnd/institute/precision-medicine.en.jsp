@@ -17,7 +17,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">Precision Medicine Institute</div>
+            <h2 class="hero-title">Precision Medicine Institute</h2>
 <!--            <div class="slogan-sub">Leading R&D for personalized precision medicine</div>-->
         </div>
     </div>

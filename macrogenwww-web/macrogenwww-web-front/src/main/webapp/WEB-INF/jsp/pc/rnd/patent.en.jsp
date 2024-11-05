@@ -16,7 +16,7 @@
 		</nav>
 
         <div class="section_RD">
-            <div class="font-h1">Patents</div>
+            <h2 class="font-h1">Patents</h2>
             <div class="search-wrap mb-5">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

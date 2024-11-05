@@ -16,7 +16,7 @@
 	                    <li class="breadcrumb-item">Disease Prediction & Wellness Genetic Test</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title">Disease Prediction <br>& Wellness Genetic Test</div>
+	            <h2 class="hero-title">Disease Prediction <br>& Wellness Genetic Test</h2>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>

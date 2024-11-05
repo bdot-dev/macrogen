@@ -12,7 +12,7 @@
 </nav>
 
         <div class="section_IR">
-            <div class="font-h1">공시정보</div>
+            <h2 class="font-h1">공시정보</h2>
             <div class="iframe-box">
                 <iframe
                         src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=038290"

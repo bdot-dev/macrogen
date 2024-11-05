@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-                <div class="hero-title">Executive Leadership </div>
+                <h2 class="hero-title">Executive Leadership </h2>
                 <div class="slogan">Broadly benefiting<br/>all mankind</div>
                 <div class="slogan-sub">Macrogen seeks to help everyone enjoy a long and healthy life by utilizing genomic data</div>
             <nav aria-label="breadcrumb">

@@ -31,7 +31,7 @@
 			    });
 			</script>
 			<div class="frame">
-	            <div class="font-h1">NGS</div>
+	            <h2 class="font-h1">NGS</h2>
 	            <div class="font-body-h">Next Generation Sequencing</div>
 	            <div class="btn-wrap"><a href="#_tab-box" class="btn-service"><span class="sr-only">SERVICE</span></a>
 	            </div>

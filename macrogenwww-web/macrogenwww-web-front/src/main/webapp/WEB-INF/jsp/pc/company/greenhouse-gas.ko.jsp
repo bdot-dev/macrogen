@@ -10,7 +10,7 @@
 			</header>
 			
 			<div class="frame">
-	            <div class="hero-title">온실가스</div>
+	            <h2 class="hero-title">온실가스</h2>
 	            <div class= "slogan-sub">지속가능한 지구를 위해 기후변화 대응에 동참하겠습니다</div>
 	            <nav aria-label="breadcrumb">
 					<ol class="breadcrumb breadcrumb-white">

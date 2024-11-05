@@ -8,7 +8,7 @@
 		</header>
 
         <div class="frame frameC">
-            <div class="hero-title en">Sitemap</div>
+            <h2 class="hero-title en">Sitemap</h2>
         </div>
     </div>
     <div class="container container-fluid">

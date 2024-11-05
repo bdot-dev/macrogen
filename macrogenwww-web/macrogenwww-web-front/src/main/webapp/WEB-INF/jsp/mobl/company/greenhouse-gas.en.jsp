@@ -33,7 +33,7 @@
 			</script>
 	
 	        <div class="frame">
-	            <div class="font-h4">Greenhouse<br>gas emissions</div>
+	            <h2 class="font-h4">Greenhouse<br>gas emissions</h2>
 	            <div class="font-h7-r">For a sustainable future, we will continuously monitor the impact of businesses on the environment</div>
 	            <div class="scroll-wrap">
 	                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>

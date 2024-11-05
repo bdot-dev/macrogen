@@ -7,7 +7,7 @@
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
         <div class="frame frameC">
-           <div class="hero-title en">CONTACT US</div>
+           <h2 class="hero-title en">CONTACT US</h2>
         </div>
     </div>
     <div class="container container-fluid">

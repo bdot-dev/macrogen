@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">ESG경영</div>
+            <h2 class="font-h4">ESG경영</h2>
             <div class="font-slogan">더불어 사는 건강한<br/>세상을 만들어갑니다</div>
             <div class="font-h7-r">보다 나은 세상을 만드는데 힘을 보태겠습니다.</div>
             <div class="scroll-wrap">

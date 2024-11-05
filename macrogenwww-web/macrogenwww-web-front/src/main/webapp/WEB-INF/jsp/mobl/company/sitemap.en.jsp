@@ -14,7 +14,7 @@
 	<div class="container pt-0">
 		<div class="macrogen macrogen-sitemap">
 			<div class="inner">
-				<p class="main-title font-h1">Sitemap</p>
+				<h2 class="main-title font-h1">Sitemap</h2>
 				<div class="section">
 					<div class="font-h6">MACROGEN</div>
 					<div class="item">

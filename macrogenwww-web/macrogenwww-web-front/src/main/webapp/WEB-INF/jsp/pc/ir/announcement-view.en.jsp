@@ -26,7 +26,7 @@
 		</nav>
 
         <div class="section_IR">
-            <div class="font-h1">공고</div>
+            <h2 class="font-h1">공고</h2>
             <div class="board">
                 <div class="detail">
                     <div class="heading">

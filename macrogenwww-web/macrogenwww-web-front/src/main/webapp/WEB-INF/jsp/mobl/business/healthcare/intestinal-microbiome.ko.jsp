@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">마이크로바이옴 분석 및 맞춤형 솔루션</div>
+            <h2 class="font-h1">마이크로바이옴 분석 및 맞춤형 솔루션</h2>
             <div class="font-body-h">더바이옴 프로</div>
         </div>
     </div>

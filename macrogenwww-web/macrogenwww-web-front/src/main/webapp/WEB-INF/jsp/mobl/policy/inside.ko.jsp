@@ -16,7 +16,7 @@
     </div>
     <div class="container pt-0">
         <div class="section_agreement">
-            <p class="main-title font-h1">내부정보관리규정</p>
+            <h2 class="main-title font-h1">내부정보관리규정</h2>
             <div class="dropdown_area">
                 <div class="select-box">
                     <div class="select_default _select_default">

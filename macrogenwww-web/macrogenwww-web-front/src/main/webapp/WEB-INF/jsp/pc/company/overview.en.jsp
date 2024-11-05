@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-                <div class="hero-title">About MACROGEN</div>
+                <h2 class="hero-title">About MACROGEN</h2>
                 <div class="slogan">HUMANIZING<br/> GENOMICS</div>
                 <div class="slogan-sub">Creating a better future for humanity</div>
                 <nav aria-label="breadcrumb">

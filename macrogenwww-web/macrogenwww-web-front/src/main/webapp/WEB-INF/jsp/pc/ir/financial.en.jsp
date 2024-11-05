@@ -12,7 +12,7 @@
 		</nav>
 
         <div class="section_IR">
-            <div class="font-h1">Financial Information</div>
+            <h2 class="font-h1">Financial Information</h2>
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">Consolidated Statement of Financial Position</span>

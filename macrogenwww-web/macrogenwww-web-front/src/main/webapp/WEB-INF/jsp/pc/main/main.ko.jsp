@@ -6,18 +6,18 @@
 </head>
 <body>
 
-<div class="wrap main-wrap">
+<main class="wrap main-wrap">
 
-    <div class="full-bg main-bg">
+    <section class="full-bg main-bg">
 
         <header class="header header-bg-white header-main" id="header">
 			<c:import url="/inc/header-inner-gnb" />
         </header>
 		<!-- 2023-04-27 스크립트내용 인클루드 파일로 이동 -->
-
+		<h2 class="ir">정밀의학 생명공학기업 마크로젠은 개개인이 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 돕는 초개인화 헬스케어 서비스를 제공합니다.</h2>
 
 		<!-- s intro -->
-       <!--  <div class="intro">
+		<!--  <div class="intro">
             <div class="box">
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
                 <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
@@ -26,7 +26,7 @@
         </div> -->
 		
 		<!-- s 메인비주얼 영역 -->
-       	<div class="swiper-container" id="key-swiper-container">
+		<div class="swiper-container" id="key-swiper-container">
             <div class="swiper-wrapper" id="key-swiper-wrapper">
             
                	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
@@ -40,8 +40,8 @@
 									  --> 
 									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
 					                 	<div class="text-box">
-				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
+				                        	<h3 class="slogan-sub">${result.mainNttSjPc}</h3>
+				                        	<h4 class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</h4>
 				                        	<c:choose>
 				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
 						                       		<div class="btns">
@@ -60,8 +60,8 @@
 		                		<c:otherwise>
 					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
 					            		<div class="text-box">
-				                        	<p class="slogan-sub">${result.mainNttSjPc}</p>
-				                        	<p class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</p>
+				                        	<h3 class="slogan-sub">${result.mainNttSjPc}</h3>
+				                        	<h4 class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</h4>
 				                        	<c:choose>
 				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
 						                       		<div class="btns">
@@ -98,7 +98,7 @@
                	
             </div>            
         </div> 
-             	
+
         <script>
         
             var $container = $('#key-swiper-container');
@@ -209,291 +209,291 @@
            	}
            	mainGenTokBannerBtn(); */
         </script>
-       	</div>
+    </section>
         
-		<!-- s Humanizing 영역 -->
-	    <div class="container container-fluid">
-	        <div class="main-page company-define">
-	        	<!-- s  바로가기 -->
-	            <div class="section-define">
-	                <div class="info-box">
-	                    <div class="title">
-	                        <span data-aos="fade-up" data-aos-duration="600">Humanizing</span>
-	                        <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Genomics</span>
-	                    </div>
-	                    <div class="text-box">
-	                        <div class="text">
-	                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">유전체 정보 및 데이터 분석 기술을 바탕으로
-	                            </p>
-	                            <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">인류의 건강과 행복에 이바지합니다
-	                            </p>
-	                            <!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">생명공학기업 마크로젠 입니다</p> -->
-	                        </div>
-	                        <a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
-	                           data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
-	                    </div>
-	                </div>
-	                <div class="shortcuts-box" data-aos="fade-up" data-aos-duration="500">
-	                    <ul class="btn-list clearfix">
-	                        <li>
-	                            <a href="/${rc.locale.language }/company/overview">
-	                                <p>기업개요</p>
-	                                <p class="sub-text">유전체 분석 기반 글로벌 디지털 <br> 헬스케어 기업 마크로젠입니다</p><!--  People :2023리뉴얼 -->
-	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-	                                </p>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="/${rc.locale.language }/company/global-network">
-	                                <p>글로벌 마크로젠</p>
-	                                <p class="sub-text">전세계 유전체 분석 연구를 이끄는 <br>글로벌 파트너와 함께 합니다</p><!--  People :2023리뉴얼 -->
-	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-	                                </p>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="/${rc.locale.language }/company/esg-management">
-	                                <p>ESG</p>
-	                                <p class="sub-text">지속가능한 미래를 위해 노력합니다</p><!--  People :2023리뉴얼 -->
-	                                <p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-	                                </p>
-	                            </a>
-	                        </li>
-	                    </ul>
-	                    <div class="bg_section bg0"></div>
-	
-	                    <div class="bg_section bg1 active">
-	                        <video class="video" autoplay muted loop>
-	                            <source src="/publishing/pc-ko/dist/img/video/main_기업개요.mp4" type="video/mp4">
-	                        </video>
-	                    </div>
-	                    <div class="bg_section bg2">
-	                        <video class="video" autoplay muted loop>
-	                            <source src="/publishing/pc-ko/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
-	                        </video>
-	                    </div>
-	                    <div class="bg_section bg3">
-	                        <video class="video" autoplay muted loop>
-	                            <source src="/publishing/pc-ko/dist/img/video/main_ESG.mp4" type="video/mp4">
-	                        </video>
-	                    </div>
-	                    <script>
-	                        var currentIdx = 1;
-	                        $('.shortcuts-box .btn-list li').mouseover(function () {
-	                            var index = $(this).index() + 1;
-	                            console.log(index)
-
-	                            if (index !== currentIdx) {
-	                                console.log('wun')
-	                                $('.bg_section').eq(index).addClass('active')
-	                                    .siblings().removeClass('active')
-	                                currentIdx = index
-	                            }
-	                            //
-	                            $('.bg_section .video').filter(":not(:eq("+(index-1)+"))").each(function(){
-	                            	$(this).get(0).pause();
-	                            })
-
-	                            //$('.bg_section .video').play().currentTime()
-	                            $('.bg_section .video').eq(index-1).get(0).play() //.currentTime()
-
-	                        }).mouseout(function(){
-	                        	//$('.bg_section .video').pause()
-	                        });
-	                    </script>
-	                </div>
-	            </div>
-	            <!-- e  바로가기 -->
-				<!-- s  business  slide -->
-				<div class="section-business">
-					<div class="info-box">
-						<div class="title" data-aos="fade-up" data-aos-duration="500">Our Services</div>
-						<div class="desc">
-							<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
-								<br>더 건강하고 행복한 삶을 만들어갑니다</p><!--2023-04-17::마침표삭제--> <!--  People :2023리뉴얼 -->
-						</div>
+	<!-- s Humanizing 영역 -->
+	<section class="container container-fluid">
+		<div class="main-page company-define">
+			<!-- s  바로가기 -->
+			<article class="section-define">
+				<div class="info-box">
+					<h3 class="title">
+						<span data-aos="fade-up" data-aos-duration="600">Humanizing</span>
+						<span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Genomics</span>
+					</h3>
+					<div class="text-box">
+						<h4 class="text">
+							<p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">유전체 정보 및 데이터 분석 기술을 바탕으로
+							</p>
+							<p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">인류의 건강과 행복에 이바지합니다
+							</p>
+							<!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">생명공학기업 마크로젠 입니다</p> -->
+						</h4>
+						<a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
+							data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
 					</div>
-					<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
-					<div class="slider">	
-						<div class="swiper-container _businessSlider">
-							<div class="swiper-wrapper">
-							
-								<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-									<c:if test="${result.expsrYn == 'Y'}">
-										<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
-											<div class="text-area">
-												<div class="title">
-													<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
-														<span class="btn btn-circle btn-white btn-md">
-															<i class="icon icon-arrow-right-short"></i>
-														</span>
-													</a>  
-												</div>
-												<div class="desc">
-													${fn:replace(result.mainNttCnPc, newline, "<br/>")}
-												</div>	
-											</div> 
-										</div>	  
-									</c:if>	        
-								</c:forEach>	
-				
-							</div>		
-						</div>				
+				</div>
+				<div class="shortcuts-box" data-aos="fade-up" data-aos-duration="500">
+					<ul class="btn-list clearfix">
+						<li>
+							<a href="/${rc.locale.language }/company/overview">
+								<p>기업개요</p>
+								<p class="sub-text">유전체 분석 기반 글로벌 디지털 <br> 헬스케어 기업 마크로젠입니다</p><!--  People :2023리뉴얼 -->
+								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/company/global-network">
+								<p>글로벌 마크로젠</p>
+								<p class="sub-text">전세계 유전체 분석 연구를 이끄는 <br>글로벌 파트너와 함께 합니다</p><!--  People :2023리뉴얼 -->
+								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/company/esg-management">
+								<p>ESG</p>
+								<p class="sub-text">지속가능한 미래를 위해 노력합니다</p><!--  People :2023리뉴얼 -->
+								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
+								</p>
+							</a>
+						</li>
+					</ul>
+					<div class="bg_section bg0"></div>
+
+					<div class="bg_section bg1 active">
+						<video class="video" autoplay muted loop>
+							<source src="/publishing/pc-ko/dist/img/video/main_기업개요.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="bg_section bg2">
+						<video class="video" autoplay muted loop>
+							<source src="/publishing/pc-ko/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="bg_section bg3">
+						<video class="video" autoplay muted loop>
+							<source src="/publishing/pc-ko/dist/img/video/main_ESG.mp4" type="video/mp4">
+						</video>
 					</div>
 					<script>
-						$(document).ready(function (){
-							/*slide 영역*/
-								new Swiper ("._businessSlider", {
-								slidesPerView: "auto",
-								centeredSlides: true,
-								loop: true,
-							});
-						})
-					</script>				
-				
+						var currentIdx = 1;
+						$('.shortcuts-box .btn-list li').mouseover(function () {
+							var index = $(this).index() + 1;
+							console.log(index)
+
+							if (index !== currentIdx) {
+								console.log('wun')
+								$('.bg_section').eq(index).addClass('active')
+									.siblings().removeClass('active')
+								currentIdx = index
+							}
+							//
+							$('.bg_section .video').filter(":not(:eq("+(index-1)+"))").each(function(){
+								$(this).get(0).pause();
+							})
+
+							//$('.bg_section .video').play().currentTime()
+							$('.bg_section .video').eq(index-1).get(0).play() //.currentTime()
+
+						}).mouseout(function(){
+							//$('.bg_section .video').pause()
+						});
+					</script>
 				</div>
-				
+			</article>
+			<!-- e  바로가기 -->
+			<!-- s  business  slide -->
+			<article class="section-business">
+				<div class="info-box">
+					<h3 class="title" data-aos="fade-up" data-aos-duration="500">Our Services</h3>
+					<h4 class="desc">
+						<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
+							<br>더 건강하고 행복한 삶을 만들어갑니다</p><!--2023-04-17::마침표삭제--> <!--  People :2023리뉴얼 -->
+					</h4>
 				</div>
-				<script>
-					$(document).ready(function(){
-						$('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor.cur'), auto");
-					});
-				</script>
-				<!-- e  business slide -->				
-				
-				<!-- e  business  slide -->
-				
-				<!-- s  People :2023리뉴얼 -->
-	            <div class="section-people">
-	                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
-	                    <div class="title">People</div>        
-	                    <div class="desc">
-	                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-	                            전세계 곳곳에 위치한 마크로젠 팀, 글로벌 파트너, 고객들을 만나보세요
-	                        </p>
-	                    </div>            
-	                </div>               
-
-	                <div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-	                    <div class="swiper-wrapper">
-	                   
-		                	<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
-		                		 <c:if test="${ result.viewYn == 'Y' }">
-			                        <div class="swiper-slide bg0${status.index % 5 + 1}">
-			                            <div class="flip">
-			                                <div class="front">
-			                                    <span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
-			                                    <div class="info-area">
-			                                        <span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-			                                            <strong>${ result.peopleNm }</strong><br>
-			                                                ${ result.peopleDept }
-			                                        </span>                                            
-			                                        <p href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100"><span>MORE</span><i class="icon icon-arrow-right-long"></i></p>                      
-			                                    </div>       
-			                                </div>
-			                                <div class="back">
-			                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-			                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
-			                                        <p class="txt">${ result.cnPc }</p>
-			                                    </div>
-			                                </div>
-			                            </div>                            
-			                        </div>    
-			                	 </c:if>      			               
-		                	</c:forEach>
-		                	  
-		                </div>
-		            </div>
-		        </div>
-					
-				<script>
-	                $(function(){                
-                    var pSwiper;
-                    setSlider2();
-                    function setSlider2() {      
-                        // var pSwiper;
-                        var $container = $('._peopleSlider');
-                        var $conLi = $container.find('.swiper-slide');                                
-                        var conCnt = $conLi.length;
-                        let options = {};
-
-                        if (pSwiper !== undefined) {
-                            console.log('pSwiper');
-                            return false
-                        }
-
-                        var html = $("._peopleSlider .swiper-wrapper").html();                        
-                        $("._peopleSlider .swiper-wrapper").append(html);                        
-                        
-                        if(conCnt < 4){
-                            $container.addClass("sm");                               
-                        }    
-                        options = {
-                            // observer: true,
-                            // observeParents: true,
-                            centeredSlides: true, 
-                            slidesPerView: "auto",
-                            slideToClickedSlide : true,
-                            loop:true,
-                            loopedSlides: conCnt,
-                            loopAdditionalSlides: 10,
-                            allowTouchMove : true,
-                            speed: 1000,
-                            lazy: true,
-                            on: {
-                                slideChangeTransitionStart: function () {
-                                $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
-                                },
-                                slideChangeTransitionEnd: function () {
-                                    $('.flip .back').show(0);
-                                    AOS.init();
-                                },
-                            }
-                        }       
-                        pSwiper = new Swiper($container, options)               
-                    }          
-                    
-                    $('._peopleSlider .swiper-slide').on('click',function (){                             
-                        var swiper = $(this);                        
-                        if(!swiper.hasClass('rotate') ) {
-                            swiper.addClass("rotate").siblings().removeClass("rotate");
-                        }
-                        else{
-                            swiper.removeClass("rotate");
-                        }                                                                
-                    })    
-                   
-                    //resize
-                    window.addEventListener('resize', function(){
-                        $('._peopleSlider').addClass("resize");
-                        pSwiper.update();
-                    })
-                });
-            	</script>
-            <!-- e  People :2023리뉴얼-->    	
+				<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
+				<div class="slider">	
+					<div class="swiper-container _businessSlider">
+						<div class="swiper-wrapper">
+						
+							<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
+								<c:if test="${result.expsrYn == 'Y'}">
+									<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
+										<div class="text-area">
+											<div class="title">
+												<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
+													<span class="btn btn-circle btn-white btn-md">
+														<i class="icon icon-arrow-right-short"></i>
+													</span>
+												</a>  
+											</div>
+											<div class="desc">
+												${fn:replace(result.mainNttCnPc, newline, "<br/>")}
+											</div>	
+										</div> 
+									</div>	  
+								</c:if>	        
+							</c:forEach>	
 			
-			 <!-- s  media -->
-            <div class="section-media">
-            	<div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>                    
-                </div>
-                <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-                
+						</div>		
+					</div>				
+				</div>
+				<script>
+					$(document).ready(function (){
+						/*slide 영역*/
+							new Swiper ("._businessSlider", {
+							slidesPerView: "auto",
+							centeredSlides: true,
+							loop: true,
+						});
+					})
+				</script>				
+			
+			</div>
+			
+			</article>
+			<script>
+				$(document).ready(function(){
+					$('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor.cur'), auto");
+				});
+			</script>
+			<!-- e  business slide -->				
+			
+			<!-- e  business  slide -->
+			
+			<!-- s  People :2023리뉴얼 -->
+			<article class="section-people">
+				<div class="info-box" data-aos="fade-up" data-aos-duration="500">
+					<h3 class="title">People</h3>        
+					<h4 class="desc">
+						<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+							전세계 곳곳에 위치한 마크로젠 팀, 글로벌 파트너, 고객들을 만나보세요
+						</p>
+					</h4>            
+				</div>               
+
+				<div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+					<div class="swiper-wrapper">
+					
+						<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
+								<c:if test="${ result.viewYn == 'Y' }">
+								<div class="swiper-slide bg0${status.index % 5 + 1}">
+									<div class="flip">
+										<div class="front">
+											<span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
+											<div class="info-area">
+												<span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+													<strong>${ result.peopleNm }</strong><br>
+														${ result.peopleDept }
+												</span>                                            
+												<p href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100"><span>MORE</span><i class="icon icon-arrow-right-long"></i></p>                      
+											</div>       
+										</div>
+										<div class="back">
+											<div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+												<span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
+												<p class="txt">${ result.cnPc }</p>
+											</div>
+										</div>
+									</div>                            
+								</div>    
+								</c:if>      			               
+						</c:forEach>
+							
+					</div>
+				</div>
+			</article>
+				
+			<script>
+				$(function(){                
+					var pSwiper;
+					setSlider2();
+					function setSlider2() {      
+						// var pSwiper;
+						var $container = $('._peopleSlider');
+						var $conLi = $container.find('.swiper-slide');                                
+						var conCnt = $conLi.length;
+						let options = {};
+
+						if (pSwiper !== undefined) {
+							console.log('pSwiper');
+							return false
+						}
+
+						var html = $("._peopleSlider .swiper-wrapper").html();                        
+						$("._peopleSlider .swiper-wrapper").append(html);                        
+						
+						if(conCnt < 4){
+							$container.addClass("sm");                               
+						}    
+						options = {
+							// observer: true,
+							// observeParents: true,
+							centeredSlides: true, 
+							slidesPerView: "auto",
+							slideToClickedSlide : true,
+							loop:true,
+							loopedSlides: conCnt,
+							loopAdditionalSlides: 10,
+							allowTouchMove : true,
+							speed: 1000,
+							lazy: true,
+							on: {
+								slideChangeTransitionStart: function () {
+								$('.flip .back').removeClass('aos-init').removeClass('aos-animate');
+								},
+								slideChangeTransitionEnd: function () {
+									$('.flip .back').show(0);
+									AOS.init();
+								},
+							}
+						}       
+						pSwiper = new Swiper($container, options)               
+					}          
+					
+					$('._peopleSlider .swiper-slide').on('click',function (){                             
+						var swiper = $(this);                        
+						if(!swiper.hasClass('rotate') ) {
+							swiper.addClass("rotate").siblings().removeClass("rotate");
+						}
+						else{
+							swiper.removeClass("rotate");
+						}                                                                
+					})    
+					
+					//resize
+					window.addEventListener('resize', function(){
+						$('._peopleSlider').addClass("resize");
+						pSwiper.update();
+					})
+				});
+			</script>
+			<!-- e  People :2023리뉴얼-->    	
+		
+			<!-- s  media -->
+			<article class="section-media">
+				<div class="info-box">
+					<h3 class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</h3>                    
+				</div>
+				<div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+				
 				<div class="slider"> 
 
 					<div class="slider-navigation">
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
 						<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
 					</div>
-							        
+									
 					<div class="swiper-container _mediaSlider">
 						<div class="swiper-wrapper">
-							        	
+										
 							<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
 								<div class="swiper-slide">
 									<a href="${ result.somlnkUrl }" target="_blank">
 										<div class="img">
-											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj.replaceAll('[^a-zA-Z0-9\\s]', '')}" >
 											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 										</div>
 										<div class="content">
@@ -504,7 +504,7 @@
 									</a>
 								</div>
 							</c:forEach>
-							        		
+											
 							</div>
 						</div>				        
 					</div>
@@ -523,114 +523,114 @@
 						});
 					</script>
 				</div>
-			</div>
-	
+			</article>
+
 			<!-- s  global map -->
-            <div class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="inner">
-                    <div class="info-box">
-                        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</div>
-                        <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            <!--2023-04-28::내용삭제 국내 지사를 포함하여 -->세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
-                           서비스를 더욱  신속하고 체계적으로 제공합니다
-                        </div>
-                    </div>
-                    <!-- <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-                        <a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-                        <a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
-                        <a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
-                        <a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
-                    </div> -->
-                    <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-                      	<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Ghent, Belgium</span></a>
-                      	<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
-                      	<a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network#basel'"><i></i><span>Basel, Switzerland</span></a>
-                      	<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
-                      	<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
-                        <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
-                        <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
-                        <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
-                        <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
-                        <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
-                        <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
-                        <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
-                        <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
-                        <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
-                        <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
-		                <a class="pin manchester" onClick="location.href='/${rc.locale.language}/company/global-network2#manchester'"><i></i><span>Manchester, UK</span></a>
-		                <a class="pin berlin" onClick="location.href='/${rc.locale.language}/company/global-network2#berlin'"><i></i><span>Berlin, Germany</span></a>
-                        <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
-                    </div>
-                    <script>
-                        $('.map .pin').on('click', function () {
-                            $(this).addClass('active')
-                                .siblings().removeClass('active')
-                        })
-                    </script>
-                </div>
-            </div>
-            <!-- e  global map -->
-            
-            <!-- s  People :2023리뉴얼 -->
-            <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
-                       세계적인 파트너들이 마크로젠과 함께 합니다
-                    </div>               
-                </div>
-                <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링">
-                    </li>  
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트">
-                    </li>   
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트">
-                    </li>   
-                    <li>                                                
-                        <img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어">
-                    </li>
+			<article class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+				<div class="inner">
+					<div class="info-box">
+						<h3 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</h3>
+						<h4 class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+							<!--2023-04-28::내용삭제 국내 지사를 포함하여 -->세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
+							서비스를 더욱  신속하고 체계적으로 제공합니다
+						</h4>
+					</div>
+					<!-- <div class="map">
+						<a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
+						<a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
+						<a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
+						<a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
+						<a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
+						<a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
+						<a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
+						<a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
+						<a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
+						<a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
+					</div> -->
+					<div class="map">
+						<a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
+						<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Ghent, Belgium</span></a>
+						<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
+						<a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network#basel'"><i></i><span>Basel, Switzerland</span></a>
+						<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
+						<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
+						<a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
+						<a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
+						<a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
+						<a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
+						<a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
+						<a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
+						<a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
+						<a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
+						<a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
+						<a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
+						<a class="pin manchester" onClick="location.href='/${rc.locale.language}/company/global-network2#manchester'"><i></i><span>Manchester, UK</span></a>
+						<a class="pin berlin" onClick="location.href='/${rc.locale.language}/company/global-network2#berlin'"><i></i><span>Berlin, Germany</span></a>
+						<a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
+					</div>
+					<script>
+						$('.map .pin').on('click', function () {
+							$(this).addClass('active')
+								.siblings().removeClass('active')
+						})
+					</script>
+				</div>
+			</article>
+			<!-- e  global map -->
+			
+			<!-- s  People :2023리뉴얼 -->
+			<article class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+				<div class="info-box">
+					<h3 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</h3>     
+					<h4 class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
+						세계적인 파트너들이 마크로젠과 함께 합니다
+					</h4>               
+				</div>
+				<ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트">
+					</li>                    
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링">
+					</li>  
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트">
+					</li>   
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트">
+					</li>   
+					<li>                                                
+						<img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어">
+					</li>
 					<li>
 						<img src="/publishing/pc-ko/dist/img/main/img-global_11.png" alt="울티마지노믹스">
 					</li>
-                </ul> 
-            </div>
-            <!-- e  People :2023리뉴얼--> 
+				</ul> 
+			</article>
+			<!-- e  People :2023리뉴얼--> 
 		</div>
-	</div>        
+	</section>        
 	
 	<c:import url="/inc/footer" />
 	
 	<a href="#" class="btn btn-text btn-totop">
-	    <i class="icon icon-arrow-top-long"></i>
-	    <span>TOP</span>
+		<i class="icon icon-arrow-top-long"></i>
+		<span>TOP</span>
 	</a>
     <!-- <a href="#" class="btn btn-text btn-totop"><a>
     <i class="icon icon-arrow-top-long"></i> 
@@ -654,8 +654,8 @@
 	    });
 	</script>
 
-</div>  
- 
+</main>
+
 <div id="modal_popup_wrap">
 	<div class="modal_popup_content">
 	<div class="all-close-wrap">
@@ -817,5 +817,5 @@
 	if ($('#modal_popup_wrap').find('.modal').length === 0) $('#modal_popup_wrap').remove();
 	
 </script>
- 
+
 </body>

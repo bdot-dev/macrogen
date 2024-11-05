@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">암 유전체 검사</div>
+	            <h2 class="font-h1">암 유전체 검사</h2>
 	            <div class="font-body-h">FFPE, Tissue, Liquid Biopsy(액체생검)등을 이용한 암유전체 검사</div>
 	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
 	        </div>

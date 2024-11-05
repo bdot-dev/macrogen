@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Gene Synthesis</div>
+            <h2 class="font-h1">Gene Synthesis</h2>
         </div>
     </div>
     <div class="container">

@@ -8,7 +8,7 @@
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
         <div class="frame">
-            <div class="hero-title">사회공헌</div>
+            <h2 class="hero-title">사회공헌</h2>
             <div class="slogan ko">함께하는 미래를 위해<br/>사회적 책임을 실천합니다</div>
             <div class= "slogan-sub">지구와 인류의 건강한 삶을 위해 노력합니다</div>
             <nav aria-label="breadcrumb">

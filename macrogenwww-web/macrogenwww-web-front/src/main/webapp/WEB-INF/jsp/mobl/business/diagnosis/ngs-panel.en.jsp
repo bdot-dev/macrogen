@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">NGS-based <br>Genetic Panel <br>Lab</div>
+	            <h2 class="font-h1">NGS-based <br>Genetic Panel <br>Lab</h2>
 	        </div>
 		</div>
 		

@@ -15,7 +15,7 @@
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">공지사항</div>
+            <h2 class="font-h1">공지사항</h2>
             <div class="search-wrap">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

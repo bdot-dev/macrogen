@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">COVID-19</div>
+            <h2 class="font-h1">COVID-19</h2>
             <div class="font-body-h">감염성 질환 진단을 위한 검사</div>
             <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
         </div>

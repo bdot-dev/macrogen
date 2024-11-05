@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">사회공헌</div>
+            <h2 class="font-h4">사회공헌</h2>
             <div class="font-slogan">함께하는 미래를 위해 사회적 책임을 실천합니다</div>
             <div class="font-h7-r">지구와 인류의 건강한 삶을 위해<br>노력합니다 </div>
             <div class="scroll-wrap">

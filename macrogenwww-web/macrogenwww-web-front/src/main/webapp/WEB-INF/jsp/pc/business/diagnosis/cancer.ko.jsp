@@ -18,7 +18,7 @@
         </ol>
       </nav>
 
-      <div class="hero-title">정밀의학</div>
+      <h2 class="hero-title">정밀의학</h2>
       <div class="slogan-sub">Precision Medicine</div>
       <a href="#_tab-box" class="btn btn-round btn-service">
         <span>SERVICE</span>

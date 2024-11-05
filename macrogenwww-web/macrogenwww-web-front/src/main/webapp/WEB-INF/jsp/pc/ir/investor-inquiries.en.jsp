@@ -16,7 +16,7 @@
 					    </ol>
 					</nav>
 
-                    <div class="font-h1">Investment Inquiries</div>
+                    <h2 class="font-h1">Investment Inquiries</h2>
                     <div class="font-h4">Contact us for any questions regarding investment.<br/> We will respond promptly.</div>
                     <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
                     <a href="#write" class="btn btn-white btn-round btn-round-big"><span>Write</span><i class="icon icon-arrow-bottom-short"></i></a>

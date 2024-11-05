@@ -11,7 +11,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">공고</div>
+            <h2 class="font-h1">공고</h2>
         </div>
     </div>
 

@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Precision Medicine Institute</div>
+            <h2 class="font-h1">Precision Medicine Institute</h2>
         </div>
     </div>
     <div class="container">

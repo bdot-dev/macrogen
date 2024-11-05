@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">생명정보학연구소</div>
+            <h2 class="font-h1">생명정보학연구소</h2>
             <div class="font-body-h">Bioinformatics Institute</div>
         </div>
     </div>

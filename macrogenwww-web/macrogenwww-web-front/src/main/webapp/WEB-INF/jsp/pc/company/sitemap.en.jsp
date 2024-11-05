@@ -7,7 +7,7 @@
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 		<div class="frame frameC">
-			<div class="hero-title en">Sitemap</div>
+			<h2 class="hero-title en">Sitemap</h2>
 		</div>
 	</div>
 	

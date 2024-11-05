@@ -16,7 +16,7 @@
     </div>
     <div class="container pt-0">
         <div class="section_agreement">
-            <p class="main-title font-h1">영상정보처리기기 운영&#183;관리 방침</p>
+            <h2 class="main-title font-h1">영상정보처리기기 운영&#183;관리 방침</h2>
             <div class="terms">
                 <div class="content_area">
                     <div class="dropdown_area">

@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">경영진</div>
+            <h2 class="font-h4">경영진</h2>
             <div class="font-slogan">널리 인간을<br/>이롭게 하다</div>
             <div class="font-h7-r">‘홍익인간’의 가치를 실현하기 위해<br/> 오늘도 밤을 밝힙니다</div>
             <div class="scroll-wrap">

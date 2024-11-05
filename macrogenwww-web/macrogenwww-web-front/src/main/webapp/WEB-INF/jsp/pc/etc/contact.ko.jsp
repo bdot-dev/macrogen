@@ -15,7 +15,7 @@
 
 		<div class="full-bg macrogen no-bg">
 	        <div class="frame frameC">
-	            <div class="hero-title en">CONTACT US</div>
+	            <h2 class="hero-title en">CONTACT US</h2>
 	        </div>
 	    </div>
 		

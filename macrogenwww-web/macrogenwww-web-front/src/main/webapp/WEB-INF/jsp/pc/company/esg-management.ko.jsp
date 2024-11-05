@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">ESG경영</div>
+            <h2 class="hero-title">ESG경영</h2>
             <div class="slogan ko">더불어 사는 건강한<br/>세상을 만들어갑니다</div>
             <div class= "slogan-sub">보다 나은 세상을 만드는데 힘을 보태겠습니다</div>
             <nav aria-label="breadcrumb">

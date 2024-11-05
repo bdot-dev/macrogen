@@ -15,7 +15,7 @@
 		</nav>
 
         <div class="section_IR">
-            <div class="font-h1">IR소식</div>
+            <h2 class="font-h1">IR소식</h2>
             <div class="search-wrap mb-5">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

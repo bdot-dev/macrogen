@@ -17,7 +17,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">CES</div>
+            <h2 class="hero-title">CES</h2>
             <div class="slogan-sub">Capillary Electrophoresis Sequencing</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>

@@ -17,7 +17,7 @@
 	                    <li class="breadcrumb-item">Genetic testing for cancer risk</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title">Genetic testing for cancer risk</div>
+	            <h2 class="hero-title">Genetic testing for cancer risk</h2>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>

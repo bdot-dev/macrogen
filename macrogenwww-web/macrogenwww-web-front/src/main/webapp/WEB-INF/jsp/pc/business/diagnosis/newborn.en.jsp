@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">Genetic Disorder</div>
+            <h2 class="hero-title">Genetic Disorder</h2>
             <div class="slogan-sub">Prenatal testing and early screening for rare hereditary diseases</div>
         </div>
     </div>

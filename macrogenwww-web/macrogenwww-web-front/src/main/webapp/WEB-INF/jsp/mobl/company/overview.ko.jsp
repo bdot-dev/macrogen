@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">기업개요</div>
+            <h2 class="font-h4">기업개요</h2>
             <div class="font-slogan en">HUMANIZING<br/>GENOMICS</div>
             <div class="font-h7-r">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
             <div class="scroll-wrap">

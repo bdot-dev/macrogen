@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">모델동물사업부</div>
+            <h2 class="font-h1">모델동물사업부</h2>
             <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a>
             </div>
         </div>

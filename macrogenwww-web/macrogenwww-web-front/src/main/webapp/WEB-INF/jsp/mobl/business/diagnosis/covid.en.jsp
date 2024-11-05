@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">COVID-19</div>
+            <h2 class="font-h1">COVID-19</h2>
             <div class="font-body-h">Tests for Diagnosis of Infectious Diseases</div>
             <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>
         </div>

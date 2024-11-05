@@ -32,7 +32,7 @@
 			</script>
 			
 			<div class="frame">
-	            <div class="font-h1">CES</div>
+	            <h2 class="font-h1">CES</h2>
 	            <div class="font-body-h">Capillary Electrophoresis Sequencing</div>
 	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a>
 	            </div>

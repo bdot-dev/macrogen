@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">기업개요</div>
+            <h2 class="hero-title">기업개요</h2>
             <div class="slogan">Humanizing<br/>Genomics</div>
             <div class="slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
             <nav aria-label="breadcrumb">

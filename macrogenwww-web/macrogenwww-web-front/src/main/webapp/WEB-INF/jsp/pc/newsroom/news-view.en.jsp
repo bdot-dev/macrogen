@@ -33,7 +33,7 @@
 		</nav>
 
         <div class="section_newsroom">
-            <div class="font-h1">News</div>
+            <h2 class="font-h1">News</h2>
             <div class="btn-indicator-box">
                 <a href="javascript:history.back()" class="btn btn-text"><i class="icon icon-arrow-left-long"></i><span>BACK</span></a>
             </div>

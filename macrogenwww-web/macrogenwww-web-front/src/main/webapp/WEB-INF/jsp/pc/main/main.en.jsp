@@ -479,7 +479,7 @@
 								<div class="swiper-slide">
 									<a href="${ result.somlnkUrl }" target="_blank">
 										<div class="img">
-											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
+											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj.replaceAll('[^a-zA-Z0-9\\s]', '')}" >
 											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
 										</div>
 										<div class="content">

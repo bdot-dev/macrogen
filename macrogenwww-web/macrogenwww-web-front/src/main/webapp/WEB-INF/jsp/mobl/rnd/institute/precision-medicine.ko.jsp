@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">정밀의학연구소</div>
+            <h2 class="font-h1">정밀의학연구소</h2>
             <div class="font-body-h">Precision Medicine Institute</div>
         </div>
     </div>

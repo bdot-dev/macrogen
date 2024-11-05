@@ -16,7 +16,7 @@
             <!-- s map -->
             <div class="section">
                 <div class="inner">
-                	<p class="main-title font-h1">CONTACT US</p>
+                	<h2 class="main-title font-h1">CONTACT US</h2>
                     <div class="font-h4">How can we help you?</div>
                     <div class="font-h7">
                     	Our highest priority is to provide excellent personal service to our customers.<br>

@@ -11,7 +11,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">Patents</div>
+            <h2 class="font-h1">Patents</h2>
         </div>
     </div>
 

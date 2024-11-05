@@ -9,7 +9,7 @@
 		</header>
 
         <div class="frame">
-            <div class="hero-title">Ethical Management</div>
+            <h2 class="hero-title">Ethical Management</h2>
             <div class="slogan">We promote transparent and<br/> fair business practices</div>
             <div class= "slogan-sub">We are committed to fulfilling our corporate social responsibility as a global leader</div>
             <nav aria-label="breadcrumb">

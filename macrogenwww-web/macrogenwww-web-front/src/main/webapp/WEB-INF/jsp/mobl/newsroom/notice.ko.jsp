@@ -11,7 +11,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">공지사항</div>
+            <h2 class="font-h1">공지사항</h2>
         </div>
     </div>
 

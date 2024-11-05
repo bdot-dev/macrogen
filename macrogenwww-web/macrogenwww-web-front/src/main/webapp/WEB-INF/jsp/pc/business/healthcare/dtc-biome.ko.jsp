@@ -17,7 +17,7 @@
 					<li class="breadcrumb-item">DTC 바이옴검사</li>
 				</ol>
 			</nav>
-			<div class="hero-title">DTC 바이옴검사</div>
+			<h2 class="hero-title">DTC 바이옴검사</h2>
 		</div>
 	</div>
 

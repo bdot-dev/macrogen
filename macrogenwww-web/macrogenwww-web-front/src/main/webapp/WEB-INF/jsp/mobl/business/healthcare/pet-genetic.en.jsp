@@ -31,7 +31,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Pet DNA Test</div>
+            <h2 class="font-h1">Pet DNA Test</h2>
             <div class="font-body-h">myPETGENE</div>
         </div>
     </div>

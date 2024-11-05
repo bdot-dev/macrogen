@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">Disease Prediction & Wellness Genetic Test</div>
+	            <h2 class="font-h1">Disease Prediction & Wellness Genetic Test</h2>
 	        </div>
 		</div>
 		

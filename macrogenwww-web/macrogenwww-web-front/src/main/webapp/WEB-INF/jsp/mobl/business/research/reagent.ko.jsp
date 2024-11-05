@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">연구용 시약 및 <br>소모품</div><!--2023-04-20 문구변경-->
+            <h2 class="font-h1">연구용 시약 및 <br>소모품</h2><!--2023-04-20 문구변경-->
             <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a></div>-->
         </div>
     </div>

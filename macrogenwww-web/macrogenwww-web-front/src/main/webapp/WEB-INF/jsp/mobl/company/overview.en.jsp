@@ -19,6 +19,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2);
+}
 </style>
 <script>
     $(function(){
@@ -43,7 +44,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">About MACROGEN</div>
+            <h2 class="font-h4">About MACROGEN</h2>
             <div class="font-slogan en">HUMANIZING<br/> GENOMICS</div>
             <div class="font-h7-r">Creating a better future for humanity.</div>
             <div class="scroll-wrap">

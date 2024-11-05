@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">Ethical Management</div>
+            <h2 class="font-h4">Ethical Management</h2>
             <div class="font-slogan en ft44">We promote 
 										transparent and 
 										fair business

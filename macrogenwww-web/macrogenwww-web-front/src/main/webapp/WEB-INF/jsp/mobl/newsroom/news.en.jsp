@@ -11,7 +11,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">News</div>
+            <h2 class="font-h1">News</h2>
         </div>
     </div>
 

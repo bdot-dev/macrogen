@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">History</div>
+            <h2 class="font-h4">History</h2>
             <div class="font-slogan en ft39">Opening new
 				doors in the
 				development of

@@ -17,7 +17,7 @@
 	                    <li class="breadcrumb-item">건강관리 플랫폼</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title">건강관리 플랫폼</div>
+	            <h2 class="hero-title">건강관리 플랫폼</h2>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>

@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">Genetic testing <br>for cancer risk</div>
+	            <h2 class="font-h1">Genetic testing <br>for cancer risk</div>
 	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
 	        </div>
 		</div>

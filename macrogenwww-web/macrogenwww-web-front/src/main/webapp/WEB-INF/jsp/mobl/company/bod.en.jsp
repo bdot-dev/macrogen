@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">Executive Leadership </div>
+            <h2 class="font-h4">Executive Leadership </h2>
             <div class="font-slogan en ft39">Broadly benefiting<br/> all mankind</div>
             <div class="font-h7-r">Macrogen seeks to help everyone<br/> enjoy a long and healthy life by<br/> utilizing genomic data </div>
             <div class="scroll-wrap">

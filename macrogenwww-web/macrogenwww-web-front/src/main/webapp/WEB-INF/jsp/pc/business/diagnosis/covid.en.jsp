@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">COVID-19</div>
+            <h2 class="hero-title">COVID-19</h2>
             <div class="slogan-sub">Tests for Diagnosis of Infectious Diseases</div>
         </div>
     </div>

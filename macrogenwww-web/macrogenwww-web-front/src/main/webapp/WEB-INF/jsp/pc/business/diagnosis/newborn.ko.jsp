@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">태아 및 희귀질환 검사</div>
+            <h2 class="hero-title">태아 및 희귀질환 검사</h2>
             <div class="slogan-sub">태아를 위한 산전 검사 및 유전성 희귀질환 조기 검사</div>
         </div>
     </div>

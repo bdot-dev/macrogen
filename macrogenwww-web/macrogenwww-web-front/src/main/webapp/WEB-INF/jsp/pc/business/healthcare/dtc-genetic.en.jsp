@@ -16,7 +16,7 @@
 	                    <li class="breadcrumb-item">Healthcare Platform</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title">Healthcare Platform</div>
+	            <h2 class="hero-title">Healthcare Platform</h2>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>

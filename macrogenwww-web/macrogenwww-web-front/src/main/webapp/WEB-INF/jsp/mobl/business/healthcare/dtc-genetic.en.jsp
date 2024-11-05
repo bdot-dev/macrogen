@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">Healthcare Platform</div>
+	            <h2 class="font-h1">Healthcare Platform</h2>
 	        </div>
 		</div>
 		

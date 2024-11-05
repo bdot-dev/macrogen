@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">글로벌 네트워크</div>
+            <h2 class="font-h4">글로벌 네트워크</h2>
             <div class="font-slogan en">GLOBAL<br/>MACROGEN</div>
             <div class="font-h7-r">글로벌 정밀의학을 선도합니다.</div>
             <div class="scroll-wrap">

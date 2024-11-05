@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 	    	<div class="frame">
-	            <div class="font-h1">정밀의학</div>
+	            <h2 class="font-h1">정밀의학</h2>
 	            <div class="font-body-h">Precision Medicine</div>
 	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
 	        </div>

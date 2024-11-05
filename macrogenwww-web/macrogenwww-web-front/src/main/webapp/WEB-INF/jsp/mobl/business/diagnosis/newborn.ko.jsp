@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">태아 및 희귀질환 <br>검사</div>
+            <h2 class="font-h1">태아 및 희귀질환 <br>검사</h2>
             <div class="font-body-h">태아를 위한 산전 검사 및 유전성 희귀질환 조기 <br>검사</div>
         </div>
     </div>

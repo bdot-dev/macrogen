@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Oligo</div>
+            <h2 class="font-h1">Oligo</h2>
             <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
         </div>
     </div>

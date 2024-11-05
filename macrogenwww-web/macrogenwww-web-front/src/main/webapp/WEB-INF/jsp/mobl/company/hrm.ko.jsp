@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">인사제도</div>
+            <h2 class="font-h4">인사제도</h2>
             <div class="font-slogan">더 나은 미래를 위해<br/>함께 성장해갑니다</div>
             <div class="font-h7-r">직원들의 더 나은<br/>미래를 위해 노력합니다</div>
             <div class="scroll-wrap">

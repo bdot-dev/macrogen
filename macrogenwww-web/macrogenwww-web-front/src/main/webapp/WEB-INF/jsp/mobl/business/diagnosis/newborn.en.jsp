@@ -31,7 +31,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">Genetic Disorder</div>
+            <h2 class="font-h1">Genetic Disorder</h2>
             <div class="font-body-h">Prenatal testing and early screening for rare hereditary diseases</div>
         </div>
     </div>

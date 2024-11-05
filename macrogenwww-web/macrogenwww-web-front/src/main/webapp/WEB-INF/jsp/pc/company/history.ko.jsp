@@ -9,7 +9,7 @@
 		</header>
 
         <div class="frame">
-            <div class="hero-title">연혁</div>
+            <h2 class="hero-title">연혁</h2>
             <div class="slogan ko">유전체 분석 기술로<br>미래를 열어갑니다</div>
             <div class= "slogan-sub">마크로젠은 인류 건강의 새 역사를 만들고 있습니다</div>
             <nav aria-label="breadcrumb">

@@ -11,7 +11,7 @@
 			</header>
 			
 			<div class="frame">
-	            <div class="font-h1">NGS 유전자패널 검사실</div>
+	            <h2 class="font-h1">NGS 유전자패널 검사실</h2>
 	            <div class="font-body-h">Next Generation Sequencing(NGS)-based <br>genetic panel laboratory support</div>
 	        </div>
 	        

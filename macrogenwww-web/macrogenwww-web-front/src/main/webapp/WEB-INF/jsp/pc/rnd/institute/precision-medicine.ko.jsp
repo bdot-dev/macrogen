@@ -17,7 +17,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">정밀의학연구소</div>
+            <h2 class="hero-title">정밀의학연구소</h2>
             <div class="slogan-sub">Precision Medicine Institute</div>
         </div>
     </div>

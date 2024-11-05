@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">반려동물 유전자 분석</div>
+            <h2 class="hero-title">반려동물 유전자 분석</h2>
             <div class="slogan-sub">마이펫진</div>
         </div>
     </div>

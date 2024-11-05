@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">Bioinformatics Institute</div>
+            <h2 class="hero-title">Bioinformatics Institute</h2>
         </div>
     </div>
 

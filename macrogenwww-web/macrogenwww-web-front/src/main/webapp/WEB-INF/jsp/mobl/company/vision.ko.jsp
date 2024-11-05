@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">비전</div>
+            <h2 class="font-h4">비전</h2>
             <div class="font-slogan">글로벌 정밀의학<br/>선도기업입니다</div>
             <div class="font-h7-r">질병을 예측하고 진단하며, 맞춤 치료의 방안을 제시합니다</div>
             <div class="scroll-wrap">

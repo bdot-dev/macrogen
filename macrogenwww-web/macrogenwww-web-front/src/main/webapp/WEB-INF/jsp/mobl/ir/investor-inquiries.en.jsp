@@ -13,7 +13,7 @@
 		</header>
 
         <div class="frame">
-            <div class="font-h1">Investment Inquiries</div>
+            <h2 class="font-h1">Investment Inquiries</h2>
         </div>
     </div>
     <div class="container pt-0">

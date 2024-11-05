@@ -17,7 +17,7 @@
 	                    <li class="breadcrumb-item">Proteomics</li>
 	                </ol>
 	            </nav>
-	            <div class="hero-title en">Proteomics</div>
+	            <h2 class="hero-title en">Proteomics</h2>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>

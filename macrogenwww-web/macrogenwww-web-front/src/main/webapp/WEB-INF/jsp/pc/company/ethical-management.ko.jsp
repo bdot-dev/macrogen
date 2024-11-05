@@ -9,7 +9,7 @@
 		</header>
 
         <div class="frame">
-            <div class="hero-title">윤리경영</div>
+            <h2 class="hero-title">윤리경영</h2>
             <div class="slogan ko">공정하고 투명한<br/>기업을 만들어갑니다</div>
             <div class= "slogan-sub">글로벌 선도기업으로서 사회적 책임을 다하고자 합니다</div>
             <nav aria-label="breadcrumb">

@@ -10,7 +10,7 @@
 			    </div>
 			</header>
 			<div class="frame">
-	            <div class="font-h1">질병예측 유전자검사</div>
+	            <h2 class="font-h1">질병예측 유전자검사</h2>
 	        </div>
 		</div>
 		

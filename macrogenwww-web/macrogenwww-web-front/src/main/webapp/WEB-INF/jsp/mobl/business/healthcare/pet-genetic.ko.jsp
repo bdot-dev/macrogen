@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h1">반려동물 유전자 분석</div>
+            <h2 class="font-h1">반려동물 유전자 분석</h2>
             <div class="font-body-h">마이펫진</div>
         </div>
     </div>

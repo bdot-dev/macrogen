@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h1">Image Information Processing Policy</p>
+            <h2 class="main-title font-h1">Image Information Processing Policy</h2>
             <div class="terms">
                 <div class="content_area">
                 	<c:if test="${fn:length(resultList) > 0 }">

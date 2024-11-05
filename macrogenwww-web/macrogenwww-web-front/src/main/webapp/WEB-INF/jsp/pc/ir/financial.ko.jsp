@@ -12,7 +12,7 @@
 		</nav>
 
         <div class="section_IR">
-            <div class="font-h1">재무정보</div>
+            <h2 class="font-h1">재무정보</h2>
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">연결재무상태표</span>

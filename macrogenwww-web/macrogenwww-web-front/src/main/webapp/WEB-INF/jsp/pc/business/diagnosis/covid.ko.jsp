@@ -18,7 +18,7 @@
     </ol>
 </nav>
 
-            <div class="hero-title">COVID-19</div>
+            <h2 class="hero-title">COVID-19</h2>
             <div class="slogan-sub">감염성 질환 진단을 위한 검사</div>
         </div>
     </div>

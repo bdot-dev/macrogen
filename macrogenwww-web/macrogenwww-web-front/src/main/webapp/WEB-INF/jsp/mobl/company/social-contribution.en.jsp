@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">Social Responsibility</div>
+            <h2 class="font-h4">Social Responsibility</h2>
             <div class="font-slogan en ft39">We fulfill our<br> social responsibility for a<br> better world</div> <!-- 번역 변경 -- 2021.11.23 -->
             <div class="font-h7-r">We support Korean scientists as part of our dedication to healthier living</div>
             <div class="scroll-wrap">

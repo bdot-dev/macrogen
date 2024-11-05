@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="section_agreement">
-            <p class="main-title font-h1">Privacy Statement</p>
+            <h2 class="main-title font-h1">Privacy Statement</h2>
             <c:if test="${fn:length(resultList) > 0 }">
 			<div class="dropdown_area">
 				<div class="select-box">

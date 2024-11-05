@@ -9,7 +9,7 @@
 			</header>
 			
 			<div class="frame">
-	            <div class="hero-title">Greenhouse gas emissions</div>
+	            <h2 class="hero-title">Greenhouse gas emissions</h2>
 	            <div class= "slogan-sub">We will participate in climate-change responses for a sustainable Earth</div>
 	            <nav aria-label="breadcrumb">
 	                <ol class="breadcrumb breadcrumb-white">

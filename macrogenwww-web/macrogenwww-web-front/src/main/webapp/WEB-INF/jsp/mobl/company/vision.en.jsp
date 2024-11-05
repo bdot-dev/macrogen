@@ -32,7 +32,7 @@
 </script>
 
         <div class="frame">
-            <div class="font-h4">VISION</div>
+            <h2 class="font-h4">VISION</h2>
             <div class="font-slogan en ft39">The global leader 
 										in precision
 										medicine</div> <!-- 번역 변경 -- 2022.05.26 -->

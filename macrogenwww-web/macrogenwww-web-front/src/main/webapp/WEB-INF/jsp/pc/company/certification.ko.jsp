@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">인증</div>
+            <h2 class="hero-title">인증</h2>
             <div class="slogan ko">유전체 분석의<br>글로벌 스탠다드</div>
             <div class= "slogan-sub">마크로젠의 기술은 세계에서 인정받고 있습니다</div>
             <nav aria-label="breadcrumb">

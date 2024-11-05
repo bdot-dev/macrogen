@@ -9,7 +9,7 @@
 </header>
 
         <div class="frame">
-            <div class="hero-title">ESG Management</div>
+            <h2 class="hero-title">ESG Management</h2>
             <div class="slogan">Creating a healthier<br/> society</div>
             <div class= "slogan-sub">Promoting health and research for a better future</div>
             <nav aria-label="breadcrumb">

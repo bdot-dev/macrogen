@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item">암 유전체 검사</li>
                 </ol>
             </nav>
-            <div class="hero-title">암 유전체 검사</div>
+            <h2 class="hero-title">암 유전체 검사</h2>
             <div class="slogan-sub">FFPE, Tissue, Liquid Biopsy(액체생검)등을 이용한 암유전체 검사</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
