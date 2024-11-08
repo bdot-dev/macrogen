@@ -1,0 +1,340 @@
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function () {
+  var serviceButtons = document.querySelectorAll('.main-service__button li');
+  var $topButton = document.querySelector('.top-btn button');
+  var counters = document.querySelectorAll('.counting');
+  var tl;
+  var globalSlider;
+  var initialGroupIndex = 0;
+  var groupIndex;
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+  tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.section--slogan',
+      start: '20% bottom',
+      end: '80% top',
+      // toggleActions: 'play reset restart reset',
+      once: true
+    }
+  });
+  tl.to('.main-slogan', {
+    backgroundColor: '#fff',
+    duration: 1,
+    ease: 'power2.out',
+    onStart: function onStart() {
+      // main-service__button의 모든 li 요소에서 active 클래스 제거
+      var listItems = document.querySelectorAll('.main-service__button li');
+      listItems.forEach(function (li) {
+        li.classList.remove('active'); // active 클래스 제거
+      });
+
+      // 첫 번째 li에 active 클래스 추가
+      var firstLi = listItems[0];
+      if (firstLi) {
+        firstLi.classList.add('active'); // 첫 번째 li에 active 클래스 추가
+        firstLi.click(); // 첫 번째 li를 클릭한 것처럼 처리
+      }
+    }
+  }).to('.main-slogan__text h4', {
+    y: '0%',
+    scale: 1,
+    duration: 1.5,
+    ease: 'power2.out',
+    stagger: 0
+  }, '-=0.5').to('.highlight .bg', {
+    width: '100%',
+    duration: 0.6,
+    ease: 'power2.out',
+    stagger: 0.3
+  }, '-=0.5').to('.highlight', {
+    color: '#fff',
+    duration: 0.6,
+    ease: 'power2.out',
+    stagger: 0.3
+  }, '-=0.85').to('.main-slogan__text h4', {
+    y: 100,
+    scale: 1,
+    duration: 1,
+    ease: 'power2.in',
+    stagger: 0
+  }).to('.overlay-circle', {
+    scale: 100,
+    opacity: 1,
+    duration: 1.5,
+    ease: 'power2.out',
+    stagger: 0.5,
+    onComplete: function onComplete() {
+      gsap.to('.overlay-circle', {
+        opacity: 0,
+        duration: 0
+      });
+      gsap.to('.main-slogan', {
+        backgroundColor: '#1F273B',
+        duration: 0,
+        ease: 'power2.out'
+      });
+    }
+  }).to(['.main-slogan__marquee h4', '.main-slogan__imagewrap'],
+  // 두 요소를 배열로 지정
+  {
+    opacity: 1,
+    left: '50%',
+    duration: 1.5,
+    stagger: 0
+  }).to('.main-slogan__marquee', {
+    opacity: 1,
+    // opacity를 1로 설정
+    duration: 1 // opacity 변경 시간
+  }, '-=1.5' // 첫 번째 애니메이션과 겹치도록 설정
+  ).to('.main-slogan__image--scale', {
+    width: '101vw',
+    height: '101vh',
+    borderRadius: '0%',
+    duration: 1,
+    // scale 변경 시간
+    ease: 'power2.out' // 부드러운 애니메이션
+  }, '+=0.5' // opacity 애니메이션이 끝난 후 0.5초 지연
+  ).to('.main-slogan__image--scale', {
+    opacity: 1,
+    duration: 0.65,
+    ease: 'power2.out'
+  }).to('.main-service', {
+    opacity: 1,
+    // opacity를 1로 설정
+    duration: 1,
+    onStart: function onStart() {
+      // main-service의 z-index를 설정
+      document.querySelector('.main-service').style.zIndex = '3'; // 원하는 z-index 값
+    }
+  }, '-=1' // 이전 애니메이션과 동시에 실행하려면 적절한 지점에서 설정
+  ).add(function () {
+    document.querySelector('.section--slogan').classList.toggle('animate-end'); // 원하는 클래스 이름으로 변경
+  });
+  var serviceSwiper = new Swiper('.main-service__slide', {
+    slidesPerView: 'auto',
+    loop: false,
+    speed: 600,
+    effect: 'fade',
+    parallax: true,
+    grabCursor: false,
+    on: {
+      slideChange: function slideChange() {
+        var index = this.activeIndex;
+        serviceButtons.forEach(function (btn, i) {
+          btn.classList.toggle('active', i === index);
+        });
+      }
+    }
+  });
+  serviceButtons.forEach(function (btn, index) {
+    btn.addEventListener('click', function () {
+      serviceSwiper.slideTo(index);
+      serviceButtons.forEach(function (b) {
+        return b.classList.remove('active');
+      });
+      btn.classList.add('active');
+    });
+  });
+  document.querySelector('.main-global__selecttext').addEventListener('click', function () {
+    var $selectBox = document.querySelector('.main-global__select');
+    var $option = document.querySelector('.main-global__option');
+    var scrollHeight = document.querySelector('.main-global__option').scrollHeight;
+    $selectBox.classList.toggle('active');
+    $option.classList.toggle('active');
+    if ($option.classList.contains('active')) {
+      $option.style.height = scrollHeight + 'px';
+    } else {
+      $option.style.height = 0 + 'px';
+    }
+  });
+  document.querySelectorAll('.main-global__optionlist li button').forEach(function (option) {
+    option.addEventListener('click', function () {
+      var selectedText = this.getAttribute('data-option');
+      var selectedGroup = this.getAttribute('data-group');
+      var selectText = document.querySelector('.main-global__selecttext');
+      selectText.textContent = selectedText;
+      selectText.setAttribute('data-text', selectedText);
+      selectText.setAttribute('data-group', selectedGroup);
+      document.querySelectorAll('.main-global__optionlist li button').forEach(function (button) {
+        button.classList.remove('active');
+      });
+      this.classList.add('active');
+      this.parentNode.parentNode.parentNode.classList.remove('active');
+      this.parentNode.parentNode.parentNode.style.height = 0 + 'px';
+      this.closest('.main-global__select').classList.remove('active');
+    });
+  });
+  $topButton.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
+  var getRandomInt = function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+  var generateRandomNumber = function generateRandomNumber(length) {
+    return getRandomInt(Math.pow(10, length - 1), Math.pow(10, length) - 1);
+  };
+  var countToTarget = function countToTarget(element, target, duration) {
+    var startTime = performance.now();
+    // const updateInterval = 50; // 숫자를 업데이트할 간격 (밀리초)
+    // let lastUpdateTime = 0;
+
+    var step = function step() {
+      var elapsedTime = performance.now() - startTime;
+      var progressRatio = Math.min(elapsedTime / duration, 1);
+
+      // 현재 시간
+      // const currentTime = performance.now();
+
+      // 지정된 간격마다 숫자를 업데이트
+      // if (currentTime - lastUpdateTime >= updateInterval) {
+      element.innerText = progressRatio < 1 ? generateRandomNumber(target.toString().length) : target;
+      //     lastUpdateTime = currentTime;
+      // }
+
+      if (progressRatio < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  // counters.forEach((counter) => counter.innerText === '0' && startCounting(counter));
+
+  function startCounting(counterElement) {
+    countToTarget(counterElement, parseInt(counterElement.getAttribute('data-count'), 10), 1200);
+  }
+  gsap.to('.section--info', {
+    scrollTrigger: {
+      trigger: '.section--info',
+      start: 'top center',
+      end: 'bottom top',
+      // markers: true,
+      onEnter: function onEnter() {
+        document.querySelector('.section--info').classList.add('active');
+        var counters = document.querySelectorAll('.counting'); // 카운터 요소 선택
+        counters.forEach(function (counter) {
+          if (counter.getAttribute('data-count')) {
+            startCounting(counter); // 카운팅 시작
+          }
+        });
+      },
+      once: true
+    }
+  });
+  new SimpleMarquee('.main-marquee__slide--01 ul', {
+    autoplay: true,
+    speed: 1,
+    direction: 'right'
+  });
+  new SimpleMarquee('.main-marquee__slide--02 ul', {
+    autoplay: true,
+    speed: 1,
+    direction: 'left'
+  });
+  var globalMapSlider = new Swiper('.main-global__bg', {
+    slidesPerView: 'auto',
+    loop: false,
+    speed: 600,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    allowTouchMove: false,
+    parallax: true,
+    grabCursor: false
+  });
+  var swiperOptions = {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    on: {
+      init: function init() {
+        var slides = document.querySelectorAll('.global-swiper .swiper-slide');
+        slides.forEach(function (slide, index) {
+          setTimeout(function () {
+            slide.classList.add('active');
+          }, index * 200);
+        });
+      },
+      slideChange: function slideChange() {
+        var currentSlide = this.slides[this.activeIndex];
+        var currentGroup = currentSlide.getAttribute('data-group');
+        var buttonText;
+        var lastGroup = Number(this.slides[this.slides.length - 1].getAttribute('data-group'));
+        var lastGroupSlidesCount = this.slides.filter(function (slide) {
+          return Number(slide.getAttribute('data-group')) === lastGroup;
+        }).length;
+        document.querySelectorAll('.group-button button').forEach(function (button) {
+          if (Number(button.getAttribute('data-group')) === Number(currentGroup)) {
+            buttonText = button.getAttribute('data-option');
+          }
+        });
+        var slidesPerView = this.params.slidesPerView === 'auto' ? Math.floor(this.width / this.slides[0].swiperSlideSize) : this.params.slidesPerView;
+        if (this.isEnd && lastGroupSlidesCount < slidesPerView) {
+          document.querySelectorAll('.group-button button').forEach(function (button) {
+            if (Number(button.getAttribute('data-group')) === lastGroup) {
+              buttonText = button.getAttribute('data-option');
+              currentGroup = lastGroup;
+            }
+          });
+        }
+        globalMapSlider.slideTo(currentGroup);
+        document.querySelector('.main-global__selecttext').innerText = buttonText;
+      }
+    }
+  };
+  gsap.to('.section--global', {
+    scrollTrigger: {
+      trigger: '.section--global .title',
+      start: 'center center',
+      onEnter: function onEnter() {
+        document.querySelector('.section--global').classList.add('active');
+        globalSlider = new Swiper('.global-swiper', swiperOptions);
+        if (initialGroupIndex !== null) {
+          var slides = document.querySelectorAll(".global-swiper .swiper-slide[data-group=\"".concat(initialGroupIndex, "\"]"));
+          if (slides.length > 0) {
+            var firstSlide = slides[0];
+            var allSlides = Array.from(globalSlider.slides);
+            var firstSlideIndex = allSlides.indexOf(firstSlide);
+            globalSlider.slideTo(firstSlideIndex);
+            firstSlide.classList.add('swiper-slide-active');
+            globalSlider.update();
+            globalMapSlider.update();
+          }
+        }
+      },
+      markers: false,
+      once: true
+    }
+  });
+  document.querySelectorAll('.group-button button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      groupIndex = this.dataset.group;
+      initialGroupIndex = groupIndex;
+      var slides = document.querySelectorAll(".global-swiper .swiper-slide[data-group=\"".concat(groupIndex, "\"]"));
+      var parentLi = this.closest('li');
+      var siblingButtons = parentLi.querySelectorAll('li button');
+      siblingButtons.forEach(function (siblingButton) {
+        siblingButton.classList.remove('active');
+      });
+      this.classList.add('active');
+      if (slides.length > 0) {
+        var firstSlide = slides[0];
+        var allSlides = Array.from(globalSlider.slides);
+        var firstSlideIndex = allSlides.indexOf(firstSlide);
+        var activeSlides = document.querySelectorAll('.swiper-slide-active');
+        activeSlides.forEach(function (slide) {
+          slide.classList.remove('swiper-slide-active');
+        });
+        globalSlider.slideTo(firstSlideIndex);
+        globalMapSlider.slideTo(groupIndex);
+        firstSlide.classList.add('swiper-slide-active');
+        globalSlider.update();
+        globalMapSlider.update();
+      } else {
+        console.log("\uADF8\uB8F9 ".concat(groupIndex, "\uC5D0 \uC2AC\uB77C\uC774\uB4DC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4."));
+      }
+    });
+  });
+  window.addEventListener('resize', function () {
+    globalSlider.update();
+  });
+});

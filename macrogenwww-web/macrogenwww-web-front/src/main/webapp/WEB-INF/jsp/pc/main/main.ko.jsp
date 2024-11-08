@@ -3,819 +3,850 @@
 <head>
 	<script src="/publishing/pc-ko/dist/js/lib/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
+	<link rel="stylesheet" href="/resources/library/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/resources/css/common.css" />
+    <link rel="stylesheet" href="/resources/css/main.css" />
+    <!-- <script src="/resources/library/jquery/jquery-3.7.1.min.js"></script> -->
+    <script src="/resources/library/jquery/jquery.easing.min.js"></script>
+    <script src="/resources/library/swiper/swiper-bundle.min.js"></script>
+    <script src="/resources/library/gsap/gsap.min.js"></script>
+    <script src="/resources/library/gsap/ScrollTrigger.min.js"></script>
+    <script src="/resources/library/gsap/ScrollToPlugin.min.js"></script>
+    <script src="/resources/library/marquee/marquee.js"></script>
+    <script src="/resources/script/common.js"></script>
+    <script src="/resources/script/index.js"></script>
+    <style>
+        html,
+        body {
+            scroll-behavior: auto !important;
+        }
+    </style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const $htmlEl = document.querySelector('html');
+			if ($htmlEl) {
+				document.querySelector('html').classList.add('animated');
+			}
+		});
+	</script>
 </head>
 <body>
+<div class="wrap main-wrap" id="wrap">
+            <header class="header header-main" id="header">
+				<c:import url="/inc/header-inner-gnb" />
+			</header>
+            <main class="container">
+                <h2 class="ir">정밀의학 생명공학기업 마크로젠은 개개인이 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 돕는 초개인화 헬스케어 서비스를 제공합니다.</h2>
+                <section class="section section--kv section--slide">
+                    <div class="section__inner">
+                        <h3 class="ir">마크로젠 메인 키비주얼</h3>
+                        <div class="main-full main-kv">
+                            <div class="main-kv__inner">
+                                <div class="main-board">
+                                    <div class="main-board__cont">
+                                        <div class="main-board__pc">
+                                            <ul class="main-board__list">
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image01.jpg" alt="Single Cell Multi-omics" />
+                                                        <h4 class="main-board__description">
+                                                            국내 최초 비의료기관<br />
+                                                            바이오뱅크
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image02.jpg" alt="글로벌 정밀의학 헬스케어 리더" />
+                                                        <h4 class="main-board__description main-board__description--diff">몸BTI 유전자검사 젠톡</h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="main-board__list">
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image03.jpg" alt="Single Cell Multi-omics" />
+                                                        <h4 class="main-board__description">장내미생물 검사 더바이옴</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image04.jpg" alt="글로벌 정밀의학 헬스케어 리더" />
+                                                        <h4 class="main-board__description">마크로젠 세종캠퍼스 오픈</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image05.jpg" alt="글로벌 정밀의학 헬스케어 리더" />
+                                                        <video autoplay muted playsinline loop>
+                                                            <source src="/resources/video/kv02_01.mp4" type="video/mp4" />
+                                                        </video>
+                                                        <h4 class="main-board__description">
+                                                            Single Cell Multi-omics<br />
+                                                            싱글셀 분석 서비스
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="main-board__list">
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image06.jpg" alt="Single Cell Multi-omics" />
+                                                        <h4 class="main-board__description">젠톡 유전상담 AI 챗봇</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image07.jpg" alt="글로벌 정밀의학 헬스케어 리더" />
+                                                        <h4 class="main-board__description">
+                                                            Ultima Genomics UG100™<br />
+                                                            아시아 최초 도입
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="main-board__list">
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image08.jpg" alt="Single Cell Multi-omics" />
+                                                        <video autoplay muted playsinline loop>
+                                                            <source src="/resources/video/kv02_02.mp4" type="video/mp4" />
+                                                        </video>
+                                                        <h4 class="main-board__description">
+                                                            글로벌 정밀의학<br />
+                                                            헬스케어 리더
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="main-board__image">
+                                                        <img src="/resources/images/main/kv-image09.jpg" alt="글로벌 정밀의학 헬스케어 리더" />
+                                                        <h4 class="main-board__description">인류의 건강한 미래<br />마크로젠</h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--slogan section--slide">
+                    <div class="section__inner">
+                        <h3 class="ir">마크로젠 서비스</h3>
+                        <div class="main-full main-slogan main-slogan--diff">
+                            <div class="main-slogan__wrap">
+                                <div class="main-slogan__group">
+                                    <div class="main-slogan__text">
+                                        <h4>글로벌 탑티어 유전체 분석 기술력에</h4>
+                                    </div>
+                                    <div class="main-slogan__text">
+                                        <h4>
+                                            <span class="highlight"><span class="bg"></span>빅데이터</span>와 <span class="highlight"><span class="bg"></span>AI</span>를 더해
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="overlay-circle"></div>
+                                <div class="main-slogan__marquee">
+                                    <h4>인류의 건강하고 행복한 삶을 만들어 갑니다</h4>
+                                    <div class="main-slogan__imagewrap">
+                                        <ul>
+                                            <li>
+                                                <div class="main-slogan__image">
+                                                    <img src="/resources/images/main/main-slogan_image01.jpg" alt="" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-slogan__image">
+                                                    <img src="/resources/images/main/main-slogan_image02.jpg" alt="" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-slogan__image main-slogan__image--scale">
+                                                    <!-- <img src="/resources/images/main/service-bg02.jpg" alt="" /> -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-full main-service">
+                            <div class="main-service__slide">
+                                <ul class="main-service__list swiper-wrapper">
+                                    <li class="main-service__item main-service__item--01 swiper-slide">
+                                        <div class="main-service__cont">
+                                            <div class="main-service__left">
+                                                <span class="main-service__entitle">Personal Healthcare</span>
+                                                <h3 class="main-service__kotitle">헬스케어</h3>
+                                                <p class="main-service__description">
+                                                    질병예측뿐만 아니라 영양, 다이어트에 이르기까지<br />
+                                                    건강을 유지하고 균형 잡힌 생활습관을 만들어가는데<br />
+                                                    필요한 다양한 유전자 검사를 제공합니다.
+                                                </p>
+                                                <ul class="main-service__link">
+                                                    <li>
+                                                        <a href="javascript:;">퍼스널 헬스케어</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">반려동물 헬스케어</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-service__item main-service__item--02 swiper-slide">
+                                        <div class="main-service__cont">
+                                            <div class="main-service__left">
+                                                <span class="main-service__entitle">Research and Data Analysis</span>
+                                                <h3 class="main-service__kotitle">연구분석</h3>
+                                                <p class="main-service__description">
+                                                    오랜기간 축적된 경험과 노하우, 글로벌 수준의 분석 인프라를 바탕으로<br />
+                                                    빠르고 정확하게 다양한 유전체 분석 서비스를 제공합니다.
+                                                </p>
+                                                <ul class="main-service__link main-service__link--col50">
+                                                    <li>
+                                                        <a href="javascript:;">NGS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">Proteomics</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">CES</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">Single-cell omics</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">Microarray</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-service__item main-service__item--03 swiper-slide">
+                                        <div class="main-service__cont">
+                                            <div class="main-service__left">
+                                                <span class="main-service__entitle">Clinical Diagnosis</span>
+                                                <h3 class="main-service__kotitle">임상진단</h3>
+                                                <p class="main-service__description">
+                                                    유전체정보, 의료정보 및 생활정보의 통합 빅데이터를 구축하고<br />
+                                                    질병을 예측하여 미래의학 혁신에 이바지하고 있습니다.
+                                                </p>
+                                                <ul class="main-service__link">
+                                                    <li>
+                                                        <a href="javascript:;">암 유전체 검사</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">NGS 유전자패널 검사실</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">GCLP (임상시험검체분석)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="main-service__button">
+                                    <li class="active">헬스케어</li>
+                                    <li>연구분석</li>
+                                    <li>임상진단</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 기본 스크롤 영역 -->
+                <section class="section section--scroll section--slide">
+                    <div class="scroll-area">
+                        <section class="section section--info">
+                            <div class="section__inner">
+                                <h2 class="ir">마크로젠 서비스</h2>
+                                <div class="main-full main-info">
+                                    <div class="main-info__wrap">
+                                        <h3 class="title title--white tac">
+                                            지속 성장을 이루며, 헬스케어<br />
+                                            패러다임의 변화를 이끕니다
+                                        </h3>
+                                        <div class="main-info__content">
+                                            <ul class="main-info__list">
+                                                <li>
+                                                    <strong><span class="counting" data-count="1">0</span>위</strong>
+                                                    <p>
+                                                        국내 유전체 분석<br />
+                                                        시장점유율
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <strong><span class="counting" data-count="153">0</span></strong>
+                                                    <p>
+                                                        전세계 153개국<br />
+                                                        1만 8천여 고객
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <strong>Top<span class="counting" data-count="5">0</span></strong>
+                                                    <p>
+                                                        연간 30만명 유전제 분석<br />
+                                                        CAPA Global Top5M
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <strong><span class="counting" data-count="30">0</span>PB</strong>
+                                                    <p>빅데이터 컴퓨팅 인프라</p>
+                                                </li>
+                                                <li>
+                                                    <strong><span class="counting" data-count="750">0</span>+</strong>
+                                                    <p>글로벌 임직원 수(2023)</p>
+                                                </li>
+                                                <li>
+                                                    <strong><span class="counting" data-count="156">0</span></strong>
+                                                    <p>한국인 표준 유전제 완성 등 논문 발표 수</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section section--global">
+                            <div class="section__inner">
+                                <h2 class="ir">마크로젠 글로벌 네트워크</h2>
+                                <div class="main-full main-global">
+                                    <div class="main-global__wrap">
+                                        <h3 class="title tac">
+                                            글로벌 네트워크로<br />
+                                            맞춤형 서비스를 제공합니다
+                                        </h3>
+                                        <div class="main-global__map">
+                                            <div class="main-global__btn">
+                                                <ul class="main-global__btnlist">
+													<li>
+                                                        <button type="button" class="btn btn-default btn-default--gradclick group-button white active" data-group="0">
+                                                            <span class="btn btn-default__text btn-default__text--white">All</span>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-default btn-default--gradclick group-button white" data-group="1">
+                                                            <span class="btn btn-default__text btn-default__text--white">Asia</span>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-default btn-default--gradclick group-button white" data-group="2">
+                                                            <span class="btn btn-default__text btn-default__text--white">Europe</span>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" class="btn btn-default btn-default--gradclick group-button white" data-group="3">
+                                                            <span class="btn btn-default__text btn-default__text--white">America</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="main-global__bg swiper-container">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide active" data-group="0">
+                                                        <img src="/resources/images/main/img_map_all.png" alt="" />
+                                                    </li>
+                                                    <li class="swiper-slide" data-group="1">
+                                                        <img src="/resources/images/main/img_map_01.png" alt="" />
+                                                    </li>
+                                                    <li class="swiper-slide" data-group="2">
+                                                        <img src="/resources/images/main/img_map_02.png" alt="" />
+                                                    </li>
+                                                    <li class="swiper-slide" data-group="3">
+                                                        <img src="/resources/images/main/img_map_03.png" alt="" />
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-<main class="wrap main-wrap">
+                                        <div class="global-swiper">
+                                            <div class="global-swiper__wrap swiper-wrapper">
+												<div class="global-swiper__item swiper-slide" data-group="0"></div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_korea_01.jpg" alt="마크로젠 강남 본사" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Korea</span>
+                                                        <h4>마크로젠 강남 본사</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_korea_02.jpg" alt="마크로젠 지놈센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Korea</span>
+                                                        <h4>마크로젠 지놈센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_korea_03.jpg" alt="마크로젠 송도 글로벌 캠퍼스" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Korea</span>
+                                                        <h4>마크로젠 송도 글로벌 캠퍼스</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_korea_04.jpg" alt="마크로젠 세종캠퍼스" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Korea</span>
+                                                        <h4>마크로젠 세종캠퍼스</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_japan_01.jpg" alt="일본 법인" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Japan</span>
+                                                        <h4>일본 법인</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="1">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_singapore_01.jpg" alt="마크로젠 APAC" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Singapore</span>
+                                                        <h4>마크로젠 APAC</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_netherlands_01.jpg" alt="유럽법인" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Netherlands</span>
+                                                        <h4>유럽법인</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_spain_01.jpg" alt="마드리드 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Spain</span>
+                                                        <h4>마드리드 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_italy_01.jpg" alt="밀라노 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Italy</span>
+                                                        <h4>밀라노 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_france_01.jpg" alt="파리 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description" data-group="2">
+                                                        <span>France</span>
+                                                        <h4>파리 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_poland_01.jpg" alt="슈체친 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Poland</span>
+                                                        <h4>슈체친 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="2">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_switzerland_01.jpg" alt="바젤 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Switzerland</span>
+                                                        <h4>바젤 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="3">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_usa_01.jpg" alt="소마젠 (Psomagen) " />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>USA</span>
+                                                        <h4>소마젠 (Psomagen)</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="global-swiper__item swiper-slide" data-group="3">
+                                                    <div class="global-swiper__image">
+                                                        <img src="/resources/images/main/network_chile_01.jpg" alt="산티아고 지놈슈퍼센터" />
+                                                    </div>
+                                                    <div class="global-swiper__description">
+                                                        <span>Chile</span>
+                                                        <h4>산티아고 지놈슈퍼센터</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section section--news">
+                            <div class="section__inner">
+                                <h2 class="ir">마크로젠 뉴스</h2>
+                                <div class="main-news">
+                                    <div class="main-news__wrap">
+                                        <h3 class="title">새로운 소식</h3>
+                                        <div class="main-news__partnership">
+                                            <ul class="main-news__list">
+                                                <li>
+                                                    <a href="javascript:;" class="main-news__container">
+                                                        <div class="main-news__left">
+                                                            <div class="main-news__content">
+                                                                <div class="main-news__tag">
+                                                                    <span class="main-news__category">Business</span>
+                                                                </div>
+                                                                <div class="main-news__top">
+                                                                    <h4 class="main-news__title">마크로젠, 국내 최대 규모 ‘국가 통합 바이오 빅데이터 구축 사업’ 우선협상대상자 선정</h4>
+                                                                </div>
+                                                                <div class="main-news__bottom">
+                                                                    <p class="main-news__description">
+                                                                        2024년 10월 29일 - 글로벌 유전체 분석 기업 마크로젠(대표 김창훈), 디엔에이링크, 테라젠바이오, 씨지인바이츠 공동 컨소시엄은 보건복지부, 과학기술정보통신부, 산업통상자원부, 질병관리청이 지원하고 한국생명공학연구원이 발주하는 ‘국가
+                                                                        통합 바이오 빅데이터 구축 사업’의 유전체 생산기관 용역과제 우선협상대상자로 선정됐다.
+                                                                    </p>
 
-    <section class="full-bg main-bg">
+                                                                    <time class="main-news__date">2024.10.29</time>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="main-news__right">
+                                                            <div class="main-news__image">
+                                                                <img src="/resources/images/main/news_image03.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" class="main-news__container">
+                                                        <div class="main-news__left">
+                                                            <div class="main-news__content">
+                                                                <div class="main-news__tag">
+                                                                    <span class="main-news__category">Partnership</span>
+                                                                </div>
+                                                                <div class="main-news__top">
+                                                                    <h4 class="main-news__title">“마침내 갤럭시에서 만나보는 내 유전자검사 결과” 마크로젠–삼성전자, 파트너십 MOU체결 ‘젠톡’ 유전자검사 서비스 갤럭시에 탑재된다</h4>
+                                                                </div>
+                                                                <div class="main-news__bottom">
+                                                                    <p class="main-news__description">
+                                                                        2024년 7월 24일 - 글로벌 디지털 헬스케어 기업 마크로젠(대표 김창훈)과 삼성전자가 손을 맞잡았다. 마크로젠은 삼성전자와 유전체 데이터 기반 헬스케어 서비스의 연구개발과 사업화를 목적으로 업무협약(MOU)을 체결했다고 24년 7월 24일
+                                                                        밝혔다. 2024년 7월 24일 - 글로벌 디지털 헬스케어 기업
+                                                                    </p>
 
-        <header class="header header-bg-white header-main" id="header">
-			<c:import url="/inc/header-inner-gnb" />
-        </header>
-		<!-- 2023-04-27 스크립트내용 인클루드 파일로 이동 -->
-		<h2 class="ir">정밀의학 생명공학기업 마크로젠은 개개인이 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 돕는 초개인화 헬스케어 서비스를 제공합니다.</h2>
+                                                                    <time class="main-news__date">2024.05.17</time>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="main-news__right">
+                                                            <div class="main-news__image">
+                                                                <img src="/resources/images/main/news_image01.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;" class="main-news__container">
+                                                        <div class="main-news__left">
+                                                            <div class="main-news__content">
+                                                                <div class="main-news__tag">
+                                                                    <span class="main-news__category">Business</span>
+                                                                </div>
+                                                                <div class="main-news__top">
+                                                                    <h4 class="main-news__title">마크로젠, 국내 최초 비의료기관 바이오뱅크 개설 허가</h4>
+                                                                </div>
+                                                                <div class="main-news__bottom">
+                                                                    <p class="main-news__description">
+                                                                        2024년 6월 4일 - 글로벌 디지털 헬스케어 기업 마크로젠(대표 김창훈)이 비의료기관 중 국내 최초로 바이오뱅크(인체유래물은행) 개설 허가를 받았다고 밝혔다. 마크로젠은 누적 50만 건 이상의 유전자 분석 및 27년간의 연구 유전체 데이터와
+                                                                        마크로젠의료재단 건강검진센터를 통한 의료정보에,
+                                                                    </p>
 
-		<!-- s intro -->
-		<!--  <div class="intro">
-            <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">유전체 맞춤 의학으로</p>
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
-                    <img src="../../img/main/txt-intro.png" alt="78억 인류와 세상을 향합니다."></p>
-            </div>
-        </div> -->
-		
-		<!-- s 메인비주얼 영역 -->
-		<div class="swiper-container" id="key-swiper-container">
-            <div class="swiper-wrapper" id="key-swiper-wrapper">
-            
-               	<c:forEach var="result" items="${ mainBannerList }" varStatus="status">     
-	            	<c:if test="${result.expsrYn == 'Y'}">
-		                <div class="swiper-slide">
-		                	<c:choose>
-		                		<c:when	test="${result.mediaUrlPc != null && result.mediaUrlPc != '' }">
-			                		 <!-- <iframe class="visual" frameborder="0" height="100%" width="100%" src="${result.mediaUrlPc}" 
-			                		 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>			                		 
-					                 </iframe>		
-									  --> 
-									 	<div id="ytbg" data-vbg="${result.mediaUrlPc}"></div>
-					                 	<div class="text-box">
-				                        	<h3 class="slogan-sub">${result.mainNttSjPc}</h3>
-				                        	<h4 class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</h4>
-				                        	<c:choose>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
-						                       		<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
-						                        	</div>
-				                        		</c:when>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-						                        	<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
-						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
-						                        	</div>
-				                        		</c:when>	                        
-				                        	</c:choose>
-				                    	</div>			            	
-		                		</c:when>
-		                		<c:otherwise>
-					            	<div class="visual" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover"></div>
-					            		<div class="text-box">
-				                        	<h3 class="slogan-sub">${result.mainNttSjPc}</h3>
-				                        	<h4 class="desc">${fn:replace(result.mainNttCnPc, newline, "<br/>")}</h4>
-				                        	<c:choose>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 1}">
-						                       		<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjPc1}</button>
-						                        	</div>
-				                        		</c:when>
-				                        		<c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-						                        	<div class="btns">
-						                            	<button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjPc1}</button>
-						                            	<button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjPc2}</button>
-						                        	</div>
-				                        		</c:when>	                        
-				                        	</c:choose>
-				               			</div>
-		                		</c:otherwise>
-		                	</c:choose>		                			                	
-		                   
-		                </div>               	
-	             	</c:if>
-	             	
-		           <div class="scroll-wrap">
-		               <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-		           </div>        
-		                    
-					<!-- If we need pagination -->
-		  			<div class="swiper-pagination" id="key-swiper-pagination"></div>	
-		  			        							
-					<c:if test="${ result.expsrYn == 'Y' &&  mainBannerList.size() > 1 }">
-						<!-- If we need navigation buttons -->
-		           		<div class="swiper-button-prev swiper_btn"></div>
-		            	<div class="swiper-button-next swiper_btn"></div>	  					
-					</c:if>
-               	</c:forEach>
-               	
-            </div>            
-        </div> 
-
-        <script>
-        
-            var $container = $('#key-swiper-container');
-            var $conLi = $container.find('.swiper-slide');
-            var $wrapper = $('#key-swiper-wrapper');
-            var $pagination = $('#key-swiper-pagination');
-            var delay = 5000;
-            var mainSwiper;
-            setTimeout(function () {
-                step1();
-            })
-
-            function step1() {
-               $wrapper.css({
-                   'transform': 'translateY(0)',
-                   'transition-duration': '1s'
-                })
-                $('.bg-DNA').addClass('DNA-move')
-                $wrapper.animate({
-                    height: "100%"
-                }, 1000, function () {
-                    $('.swiper-wrapper').css({'overflow': 'visible'})
-                    $pagination.show()
-                    setSlider()
-
-                    $('html').addClass('animated')
-                })
-            }
-
-            function step2() {
-                //after 기능
-                $('.header')
-                    .addClass('header-main')
-                    .removeClass('header-bg-white')
-                $wrapper.css({'overflow': 'visible'})
-                $container.css({'overflow': 'hidden'})
-                $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()                
-                $('.stock_information').delay(1500).fadeIn()
-            }
-
-            function setSlider() {                
-                var conCnt = $conLi.length;
-                let options = {};
-
-                if (mainSwiper !== undefined) {
-                    console.log('mainSwiper');
-                    return false
-                }
-                console.log('setSlider');
-                if(conCnt < 2){
-                    console.log(conCnt);
-                    options = {}         
-                }else{
-                    options = {
-                        effect : 'fade', // 페이드 효과
-                        loop: true, //반복
-                        speed: 0,//속도
-                        autoplay: {
-                            delay: 6000,
-                            waitForTransition: true,
-                            disableOnInteraction: false,
-                        },
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        pagination: {
-                            el: $pagination,
-                            clickable: true,
-
-                            renderBullet: function (index, className) {
-                                var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="50" height="50">' +
-                                '<circle class="path" cx="50%" cy="50%" r="23" fill="none"  stroke="#FFF"' +
-                                'stroke-opacity="1" stroke-width="1px"></circle>' +
-                                '<circle cx="50%" cy="50%" r="5" fill="#FFF"></circle>' +
-                                '</svg></span>';
-                            return bu;
-
-                            },
-                        },
-                        on: {
-                            slideChange: function () { 
-                                var $slides = this.slides; 
-                                $slides.children('.visual').css('animation', 'none'); 
-                                $slides.eq(this.activeIndex).children('.visual').css({ 
-                                    'animation-name': 'grow2', 
-                                    'animation-duration': '1s' 
-                                }) 
-                            }, 
-                        }
-                    }   
-                    $('.swiper_btn').delay(1000).fadeIn()     
-                }
-
-                mainSwiper = new Swiper($container, options)
-                step2()
-				
-                jQuery('[data-vbg]').youtube_background();
-            }
-            
-           	/* function mainGenTokBannerBtn() {
-           		$('.swiper-slide .text-box .btns').find('button').each(function(i, v) {
-           			if ($(v).attr('onclick') == "location.href='https://gentok.net/intro/intro.html ' " || $(v).attr('onclick') == "location.href='https://gentok.net/market' ") {
-           				$(v).css('backgroundColor', '#dcdcdc');
-           			}
-           		});
-           	}
-           	mainGenTokBannerBtn(); */
-        </script>
-    </section>
-        
-	<!-- s Humanizing 영역 -->
-	<section class="container container-fluid">
-		<div class="main-page company-define">
-			<!-- s  바로가기 -->
-			<article class="section-define">
-				<div class="info-box">
-					<h3 class="title">
-						<span data-aos="fade-up" data-aos-duration="600">Humanizing</span>
-						<span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Genomics</span>
-					</h3>
-					<div class="text-box">
-						<h4 class="text">
-							<p data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">유전체 정보 및 데이터 분석 기술을 바탕으로
-							</p>
-							<p data-aos="fade-up" data-aos-duration="600" data-aos-delay="550">인류의 건강과 행복에 이바지합니다
-							</p>
-							<!-- <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="700">생명공학기업 마크로젠 입니다</p> -->
-						</h4>
-						<a href="/${rc.locale.language }/company/overview" class="btn btn-text" data-aos="fade-up" data-aos-duration="900"
-							data-aos-delay="1000"><span>MORE</span><i class="icon icon-arrow-right-long"></i></a>
-					</div>
-				</div>
-				<div class="shortcuts-box" data-aos="fade-up" data-aos-duration="500">
-					<ul class="btn-list clearfix">
-						<li>
-							<a href="/${rc.locale.language }/company/overview">
-								<p>기업개요</p>
-								<p class="sub-text">유전체 분석 기반 글로벌 디지털 <br> 헬스케어 기업 마크로젠입니다</p><!--  People :2023리뉴얼 -->
-								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="/${rc.locale.language }/company/global-network">
-								<p>글로벌 마크로젠</p>
-								<p class="sub-text">전세계 유전체 분석 연구를 이끄는 <br>글로벌 파트너와 함께 합니다</p><!--  People :2023리뉴얼 -->
-								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="/${rc.locale.language }/company/esg-management">
-								<p>ESG</p>
-								<p class="sub-text">지속가능한 미래를 위해 노력합니다</p><!--  People :2023리뉴얼 -->
-								<p class="btn btn-circle btn-white btn-md"><i class="icon icon-arrow-right-short"></i>
-								</p>
-							</a>
-						</li>
-					</ul>
-					<div class="bg_section bg0"></div>
-
-					<div class="bg_section bg1 active">
-						<video class="video" autoplay muted loop>
-							<source src="/publishing/pc-ko/dist/img/video/main_기업개요.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="bg_section bg2">
-						<video class="video" autoplay muted loop>
-							<source src="/publishing/pc-ko/dist/img/video/main_글로벌마크로젠.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="bg_section bg3">
-						<video class="video" autoplay muted loop>
-							<source src="/publishing/pc-ko/dist/img/video/main_ESG.mp4" type="video/mp4">
-						</video>
-					</div>
-					<script>
-						var currentIdx = 1;
-						$('.shortcuts-box .btn-list li').mouseover(function () {
-							var index = $(this).index() + 1;
-							console.log(index)
-
-							if (index !== currentIdx) {
-								console.log('wun')
-								$('.bg_section').eq(index).addClass('active')
-									.siblings().removeClass('active')
-								currentIdx = index
-							}
-							//
-							$('.bg_section .video').filter(":not(:eq("+(index-1)+"))").each(function(){
-								$(this).get(0).pause();
-							})
-
-							//$('.bg_section .video').play().currentTime()
-							$('.bg_section .video').eq(index-1).get(0).play() //.currentTime()
-
-						}).mouseout(function(){
-							//$('.bg_section .video').pause()
-						});
-					</script>
-				</div>
-			</article>
-			<!-- e  바로가기 -->
-			<!-- s  business  slide -->
-			<article class="section-business">
-				<div class="info-box">
-					<h3 class="title" data-aos="fade-up" data-aos-duration="500">Our Services</h3>
-					<h4 class="desc">
-						<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">연구 분석에서 퍼스널 헬스케어까지 세계적 수준의 전문 서비스를 제공하여
-							<br>더 건강하고 행복한 삶을 만들어갑니다</p><!--2023-04-17::마침표삭제--> <!--  People :2023리뉴얼 -->
-					</h4>
-				</div>
-				<div class="business" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" >
-				<div class="slider">	
-					<div class="swiper-container _businessSlider">
-						<div class="swiper-wrapper">
-						
-							<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-								<c:if test="${result.expsrYn == 'Y'}">
-									<div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthPc}) no-repeat center center / cover">
-										<div class="text-area">
-											<div class="title">
-												<span>${ result.mainNttSjPc }</span><a href="${result.linkUrl1 }">
-													<span class="btn btn-circle btn-white btn-md">
-														<i class="icon icon-arrow-right-short"></i>
-													</span>
-												</a>  
+                                                                    <time class="main-news__date">2024.05.01</time>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="main-news__right">
+                                                            <div class="main-news__image">
+                                                                <img src="/resources/images/main/news_image03.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section section--marquee">
+                            <div class="section__inner">
+                                <h2 class="ir">마크로젠 글로벌 파트너</h2>
+                                <div class="main-marquee">
+                                    <h3 class="title tac">
+                                        글로벌 파트너와<br />
+                                        마크로젠이 함께합니다
+                                    </h3>
+                                    <div class="main-marquee__slide">
+                                        <ul>
+                                            <!-- loop1 -->
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_illumina.png" alt="Illumina" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image01.png" alt="PacBi" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image02.png" alt="ThermoFisher" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image03.png" alt="10x Genomics" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image04.png" alt="OLink" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image05.png" alt="Agilent" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image06.png" alt="Microsoft" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image07.png" alt="TWIST" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_nanopore.png" alt="NONOPORE" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_ug.png" alt="ULTIMA GENOMICS" />
+                                                </div>
+                                            </li>
+                                            <!-- // loop1 -->
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_illumina.png" alt="Illumina" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image01.png" alt="PacBi" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image02.png" alt="ThermoFisher" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image03.png" alt="10x Genomics" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image04.png" alt="OLink" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image05.png" alt="Agilent" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image06.png" alt="Microsoft" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image07.png" alt="TWIST" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_nanopore.png" alt="NONOPORE" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="main-marquee__image">
+                                                    <img src="/resources/images/main/marquee_image_ug.png" alt="ULTIMA GENOMICS" />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section section--banner">
+                            <div class="section__inner">
+                                <h2 class="ir">CONTACT US</h2>
+                                <div class="main-banner">
+                                    <h2 class="title title--white title-small tac">
+                                        도움이 필요하신가요?<br />
+                                        분야별 담당자가 안내해드릴게요
+                                    </h2>
+                                    <div class="main-banner__button">
+                                        <a href="javascript:;" class="btn btn-default btn-default--gradient">
+                                            <span class="btn btn-default__text">Contact Us</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer class="footer">
+								<div class="footer__inner">
+									<div class="footer__top">
+										<div class="footer__title">
+											<h2>
+												Humanizing genomics<br />
+												macrogen
+											</h2>
+										</div>
+										<div class="footer__list">
+											<div class="footer__menu">
+												<strong>Macrogen</strong>
+												<ul>
+													<li><a href="javascript:;">회사소개</a></li>
+													<li><a href="javascript:;">글로벌 네트워크</a></li>
+													<li><a href="javascript:;">채용</a></li>
+													<li><a href="javascript:;">Resource</a></li>
+													<li><a href="javascript:;">R&amp;D</a></li>
+												</ul>
 											</div>
-											<div class="desc">
-												${fn:replace(result.mainNttCnPc, newline, "<br/>")}
-											</div>	
-										</div> 
-									</div>	  
-								</c:if>	        
-							</c:forEach>	
-			
-						</div>		
-					</div>				
-				</div>
-				<script>
-					$(document).ready(function (){
-						/*slide 영역*/
-							new Swiper ("._businessSlider", {
-							slidesPerView: "auto",
-							centeredSlides: true,
-							loop: true,
-						});
-					})
-				</script>				
-			
-			</div>
-			
-			</article>
-			<script>
-				$(document).ready(function(){
-					$('.business').css("cursor","url('/publishing/pc-ko/dist/img/main/img-cursor.cur'), auto");
-				});
-			</script>
-			<!-- e  business slide -->				
-			
-			<!-- e  business  slide -->
-			
-			<!-- s  People :2023리뉴얼 -->
-			<article class="section-people">
-				<div class="info-box" data-aos="fade-up" data-aos-duration="500">
-					<h3 class="title">People</h3>        
-					<h4 class="desc">
-						<p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-							전세계 곳곳에 위치한 마크로젠 팀, 글로벌 파트너, 고객들을 만나보세요
-						</p>
-					</h4>            
-				</div>               
-
-				<div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-					<div class="swiper-wrapper">
-					
-						<c:forEach var="result" items="${ mainPeopleList }" varStatus="status">         
-								<c:if test="${ result.viewYn == 'Y' }">
-								<div class="swiper-slide bg0${status.index % 5 + 1}">
-									<div class="flip">
-										<div class="front">
-											<span class="img"><img src="${publicUrl}${result.imageFlpthPc}" alt="1"></span>      
-											<div class="info-area">
-												<span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-													<strong>${ result.peopleNm }</strong><br>
-														${ result.peopleDept }
-												</span>                                            
-												<p href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100"><span>MORE</span><i class="icon icon-arrow-right-long"></i></p>                      
-											</div>       
-										</div>
-										<div class="back">
-											<div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-												<span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
-												<p class="txt">${ result.cnPc }</p>
+											<div class="footer__menu">
+												<strong>Service</strong>
+												<ul>
+													<li><a href="javascript:;">퍼스널 헬스케어</a></li>
+													<li><a href="javascript:;">반려동물 헬스케어</a></li>
+													<li><a href="javascript:;">연구분석 서비스</a></li>
+													<li><a href="javascript:;">싱글셀 분석 서비스</a></li>
+													<li><a href="javascript:;">임상분석 서비스</a></li>
+												</ul>
+											</div>
+											<div class="footer__menu">
+												<strong>Newsroom</strong>
+												<ul>
+													<li><a href="javascript:;">뉴스</a></li>
+													<li><a href="javascript:;">공지사항</a></li>
+												</ul>
+											</div>
+											<div class="footer__menu">
+												<strong>IR</strong>
+												<ul>
+													<li><a href="javascript:;">재무정보</a></li>
+													<li><a href="javascript:;">공시정보</a></li>
+													<li><a href="javascript:;">IR소식</a></li>
+													<li><a href="javascript:;">투자자 문의</a></li>
+												</ul>
+											</div>
+											<div class="footer__menu">
+												<strong>ESG</strong>
+												<ul>
+													<li><a href="javascript:;">ESG경영</a></li>
+													<li><a href="javascript:;">윤리경영</a></li>
+													<li><a href="javascript:;">사회공헌</a></li>
+													<li><a href="javascript:;">온실가스</a></li>
+												</ul>
 											</div>
 										</div>
-									</div>                            
-								</div>    
-								</c:if>      			               
-						</c:forEach>
-							
-					</div>
-				</div>
-			</article>
-				
-			<script>
-				$(function(){                
-					var pSwiper;
-					setSlider2();
-					function setSlider2() {      
-						// var pSwiper;
-						var $container = $('._peopleSlider');
-						var $conLi = $container.find('.swiper-slide');                                
-						var conCnt = $conLi.length;
-						let options = {};
-
-						if (pSwiper !== undefined) {
-							console.log('pSwiper');
-							return false
-						}
-
-						var html = $("._peopleSlider .swiper-wrapper").html();                        
-						$("._peopleSlider .swiper-wrapper").append(html);                        
-						
-						if(conCnt < 4){
-							$container.addClass("sm");                               
-						}    
-						options = {
-							// observer: true,
-							// observeParents: true,
-							centeredSlides: true, 
-							slidesPerView: "auto",
-							slideToClickedSlide : true,
-							loop:true,
-							loopedSlides: conCnt,
-							loopAdditionalSlides: 10,
-							allowTouchMove : true,
-							speed: 1000,
-							lazy: true,
-							on: {
-								slideChangeTransitionStart: function () {
-								$('.flip .back').removeClass('aos-init').removeClass('aos-animate');
-								},
-								slideChangeTransitionEnd: function () {
-									$('.flip .back').show(0);
-									AOS.init();
-								},
-							}
-						}       
-						pSwiper = new Swiper($container, options)               
-					}          
-					
-					$('._peopleSlider .swiper-slide').on('click',function (){                             
-						var swiper = $(this);                        
-						if(!swiper.hasClass('rotate') ) {
-							swiper.addClass("rotate").siblings().removeClass("rotate");
-						}
-						else{
-							swiper.removeClass("rotate");
-						}                                                                
-					})    
-					
-					//resize
-					window.addEventListener('resize', function(){
-						$('._peopleSlider').addClass("resize");
-						pSwiper.update();
-					})
-				});
-			</script>
-			<!-- e  People :2023리뉴얼-->    	
-		
-			<!-- s  media -->
-			<article class="section-media">
-				<div class="info-box">
-					<h3 class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</h3>                    
-				</div>
-				<div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
-				
-				<div class="slider"> 
-
-					<div class="slider-navigation">
-						<a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-						<a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-					</div>
-									
-					<div class="swiper-container _mediaSlider">
-						<div class="swiper-wrapper">
-										
-							<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
-								<div class="swiper-slide">
-									<a href="${ result.somlnkUrl }" target="_blank">
-										<div class="img">
-											<img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj.replaceAll('[^a-zA-Z0-9\\s]', '')}" >
-											<span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
+									</div>
+									<div class="footer__bottom">
+										<div class="footer__etc">
+											<div class="footer__site">
+												<ul>
+													<li>
+														<a href="javascript">서비스 신청</a>
+													</li>
+													<li>
+														<a href="javascript">개인정보처리방침</a>
+													</li>
+													<li>
+														<a href="javascript">내부정보관리규정</a>
+													</li>
+													<li>
+														<a href="javascript">영상정보처리기기 운영.관리방침</a>
+													</li>
+													<li>
+														<a href="javascript">사이트맵</a>
+													</li>
+													<li>
+														<a href="javascript">Contact us</a>
+													</li>
+												</ul>
+											</div>
+											<div class="footer__select">
+												<button type="button" class="footer__button">Family site</button>
+												<div class="footer__toggle">
+													<div class="footer__container">
+														<ul>
+															<li><a href="javascript:;">Family site1</a></li>
+															<li><a href="javascript:;">Family site2</a></li>
+															<li><a href="javascript:;">Family site3</a></li>
+															<li><a href="javascript:;">Family site4</a></li>
+															<li><a href="javascript:;">Family site5</a></li>
+															<li><a href="javascript:;">Family site6</a></li>
+															<li><a href="javascript:;">Family site7</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="content">
-											<strong class="title">${ result.somlnkSj }</strong>
-											<p>${ result.somlnkDt }</p>
+										<div class="footer__info">
+											<p>서울특별시 강남구 테헤란로 238 (마크로젠빌딩)</p>
+											<p class="info info--tel">
+												<span>대표번호</span>
+												<span>02-2180-7000</span>
+											</p>
+											<p class="info info--exponent">
+												<span>대표자</span>
+												<span>김창훈</span>
+											</p>
 										</div>
-										<div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-									</a>
+										<div class="footer__copyright">©Macrogen, Inc. All Rights Reserved.</div>
+									</div>
 								</div>
-							</c:forEach>
-											
-							</div>
-						</div>				        
-					</div>
-					<script>
-						new Swiper("._mediaSlider", {
-							spaceBetween: 52,
-							slidesPerView: "auto",
-							slidesPerGroup: 3,
-							grabCursor: true,
-							loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-							/* loop : true, */
-							navigation: {
-								nextEl: "._btnNext",
-								prevEl: "._btnPrev",
-							},
-						});
-					</script>
-				</div>
-			</article>
-
-			<!-- s  global map -->
-			<article class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-				<div class="inner">
-					<div class="info-box">
-						<h3 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Network</h3>
-						<h4 class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-							<!--2023-04-28::내용삭제 국내 지사를 포함하여 -->세계 각지의 글로벌 네트워크를 통해<br>현지 고객의 다양한 요구에 부합하는 맞춤형 
-							서비스를 더욱  신속하고 체계적으로 제공합니다
-						</h4>
-					</div>
-					<!-- <div class="map">
-						<a class="pin amsterdam" onClick="location.href='01Macrogen_06글로벌네트워크.html#amsterdam'"><i></i><span>Amsterdam, The Netherlands</span></a>
-						<a class="pin seoul" onClick="location.href='01Macrogen_06글로벌네트워크.html#seoul'"><i></i><span>Seoul, Korea</span></a>
-						<a class="pin boston" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Boston, USA</span></a>
-						<a class="pin tokyo" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Tokyo, japan</span></a>
-						<a class="pin virginia" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Virginia, USA</span></a>
-						<a class="pin madrid" onClick="location.href='01Macrogen_06글로벌네트워크.html#madrid'"><i></i><span>Madrid, Spain</span></a>
-						<a class="pin kyoto" onClick="location.href='01Macrogen_06글로벌네트워크.html#tokyo'"><i></i><span>Kyoto, japan</span></a>
-						<a class="pin newyork" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>New york, USA</span></a>
-						<a class="pin synapse" onClick="location.href='01Macrogen_06글로벌네트워크.html#synapse'"><i></i><span>Synapse, Singapore</span></a>
-						<a class="pin rockville" onClick="location.href='01Macrogen_06글로벌네트워크.html#rockville'"><i></i><span>Rockville, USA</span></a>
-					</div> -->
-					<div class="map">
-						<a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-						<a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network#leuven'"><i></i><span>Ghent, Belgium</span></a>
-						<a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network#paris'"><i></i><span>Paris, France</span></a>
-						<a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network#basel'"><i></i><span>Basel, Switzerland</span></a>
-						<a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network#italy'"><i></i><span>Milan, Italy</span></a>
-						<a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network#poland'"><i></i><span>Szczecin, Poland</span></a>
-						<a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network#madrid'"><i></i><span>Madrid, Spain</span></a>
-						<a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
-						<a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
-						<a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
-						<a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network#tokyo'"><i></i><span>Tokyo, japan</span></a>
-						<a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
-						<a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Boston, USA</span></a>
-						<a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>New york, USA</span></a>
-						<a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Rockville, USA</span></a>
-						<a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network#rockville'"><i></i><span>Virginia, USA</span></a>
-						<a class="pin manchester" onClick="location.href='/${rc.locale.language}/company/global-network2#manchester'"><i></i><span>Manchester, UK</span></a>
-						<a class="pin berlin" onClick="location.href='/${rc.locale.language}/company/global-network2#berlin'"><i></i><span>Berlin, Germany</span></a>
-						<a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network#santiago'"><i></i><span>Santiago, Chile</span></a>
-					</div>
-					<script>
-						$('.map .pin').on('click', function () {
-							$(this).addClass('active')
-								.siblings().removeClass('active')
-						})
-					</script>
-				</div>
-			</article>
-			<!-- e  global map -->
-			
-			<!-- s  People :2023리뉴얼 -->
-			<article class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-				<div class="info-box">
-					<h3 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</h3>     
-					<h4 class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
-						세계적인 파트너들이 마크로젠과 함께 합니다
-					</h4>               
-				</div>
-				<ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_01.png" alt="일루미나">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_02.png" alt="팩바이오">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_03.png" alt="써모피셔">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_04.png" alt="지노믹스">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_05.png" alt="올링크">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_06.png" alt="애질런트">
-					</li>                    
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_07.png" alt="나노스트링">
-					</li>  
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_08.png" alt="마이크로소프트">
-					</li>   
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_09.png" alt="트위스트">
-					</li>   
-					<li>                                                
-						<img src="/publishing/pc-ko/dist/img/main/img-global_10.png" alt="나노포어">
-					</li>
-					<li>
-						<img src="/publishing/pc-ko/dist/img/main/img-global_11.png" alt="울티마지노믹스">
-					</li>
-				</ul> 
-			</article>
-			<!-- e  People :2023리뉴얼--> 
-		</div>
-	</section>        
-	
-	<c:import url="/inc/footer" />
-	
-	<a href="#" class="btn btn-text btn-totop">
-		<i class="icon icon-arrow-top-long"></i>
-		<span>TOP</span>
-	</a>
-    <!-- <a href="#" class="btn btn-text btn-totop"><a>
-    <i class="icon icon-arrow-top-long"></i> 
-    <span>TOP</span> -->
-	
-	<script>
-	    $(document).ready(function(){
-	        $('.btn-totop').click(function(){
-	            $('html,body').animate( { scrollTop:0 },{duration : 100});
-	            $('.header').css({'display' : 'block'});
-	            return false;
-	        });
-	        $(window).on('scroll', function (){
-	            var scrollTop = $(window).scrollTop()
-	            if (scrollTop > 150) {
-	                $('.btn-totop').css({'opacity' : 1})
-	            } else {
-	                $('.btn-totop').css({'opacity' : 0})
-	            }
-	        })
-	    });
-	</script>
-
-</main>
-
-<div id="modal_popup_wrap">
-	<div class="modal_popup_content">
-	<div class="all-close-wrap">
-		<div class="all-form-checkbox" onclick="allPopupChecked()">
-			<input class="all-form-checkbox-input" type="checkbox" id="all-popup-sn-0">
-			<label class="all-form-checkbox-label" for="all-popup-sn-0">오늘 하루 전체 닫기</label>
-		</div>
-		<div class="all-close-box" id="all-close-box99" onclick="allPopupClose()">
-			<i class="icon ico-close-white"></i>
-		</div>	
-	</div>
-<%-- 팝업 --%>
-<c:if test="${not empty popupList  }">
-<c:forEach var="popup" items="${popupList}" varStatus="status">
-	<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
-		<input type="hidden" value="${popupCnt}" id="popupCnt">
-		<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-	    <div class="modal-dialog modal-dialog-centered layer-modal">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <div class="blue-circle">
-	                    <i class="icon icon-union"></i>
-	                </div>
-	            </div>
-	            <div class="modal-body">
-	                <%-- <p class="title">${popupVo.popupNm }</p>
-	                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
-	                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
-	                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
-	                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
-	                    <br>908억 원을 달성했습니다.
-	                </p> --%>
-	                <div class="data-img">
-	                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-	                </div>
-	                <!-- <div class="btn-area">
-	                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
-	                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-	                </div> -->
-	            </div>
-	            <div class="modal-footer">
-	                <div class="form-check">
-	                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
-	                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
-	                </div>
-	                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
-	                    <span>Close</span>
-	                    <i class="icon ico-close-white"></i>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</c:forEach>
-	<script>
-		var popupCnt = $("#popupCnt").val();
+								<div class="top-btn">
+									<button type="button">TOP</button>
+								</div>
+							</footer>
+                    </div>
+                </section>
+            </main>
+        </div>
 		
-		for(var i=0;i<popupCnt;i++){
-			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
-			var coockieChk = $("#cookieChkList"+i).val();
-			
-			if(coockieChk == 'true'){
-				layerPopupModal.hide();
-			}else if(coockieChk =='false'){
-				layerPopupModal.show();
-			}
-		}
-	    
-	    $('div.modal-backdrop').css("opacity", "0");
-	</script>
-	<script>
-
-		function onclickPopupImage(url, trgtCode) {
-			if (!url) {
-				return;
-			}
-
-			if (trgtCode === 'NEW') {
-				window.open(url);
-			} else {
-				location.href = url;
-			}
-		}
 		
-		function popupClose(sn, idx) {
-			if ($('#popup-sn'+idx).is(':checked')) {
-				if (!sn) return;
-	
-				var snListStr = $.cookie('popup-sn-list');
-				
-				if (!snListStr) {
-					snListStr = sn;
-				} else if (snListStr.indexOf(sn) < 0) {
-					snListStr += ',' + sn;
-				}
-				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-			}
-			
-			var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup' + idx));
-			
-			layerPopupModal.hide();			
-
-			var cookieCnt = 0;
-			
-			setTimeout(function() {
-				for (var i=0; i<popupCnt; i++) {	
-					if ($('#cookieChkList' + i).val() === 'false') cookieCnt++;
-				}				
-			},100);
-			
-			if (cookieCnt <= 1) {
-				$('.all-close-wrap').css('display', 'none')
-			};
-			
-			if ($('#modal_popup_wrap .modal').hasClass('show')) {
-				$('html body').css({'overflow' : 'hidden'});
-				return;
-			} else {
-				$('#modal_popup_wrap').css({'display' : 'none', 'opacity' : 0, 'visibility' : 'hidden'});
-			}
-		}
-		
-		function allPopupChecked() {
-			if ($('#all-popup-sn-0').is(':checked')) {
-				$('.modal .modal-footer .form-check-input:checkbox').prop('checked', true);
-			} else {
-				$('.modal .modal-footer .form-check-input:checkbox').prop('checked', false);
-			}
-		}
-		
-		function allPopupClose() {
-			if ($('#all-popup-sn-0').is(':checked')) {
-				var snLists = '';
-				
-				for (var i=0; i<popupCnt; i++) {
-					snLists += $('.modal .modal-footer .form-check .form-check-input').eq(i).val() + ',';
-				}
-				
-				$.cookie('popup-sn-list', snLists, { expires: 1, path: '/' });	
-			}
-			
-			$('#modal_popup_wrap').parent().remove();
-			$('.modal-backdrop').remove();
-			$('body').removeClass('modal-open').css({'overflow': 'auto', 'padding': '0'});
-		}
-	</script>
-</c:if>
-</div>
-</div> 
-<script>
-	var popupCnt = $("#popupCnt").val();
-	var cookieCnt = 0;
-	
-	for (var i=0; i<popupCnt; i++) {		
-		if ($('#cookieChkList' + i).val() === 'false') cookieCnt++;
-	}
-	if (cookieCnt <= 1) $('.all-close-wrap').css('display', 'none');
-
-	if ($('#modal_popup_wrap').find('.modal').length === 0) $('#modal_popup_wrap').remove();
-	
-</script>
-
+ 
 </body>
