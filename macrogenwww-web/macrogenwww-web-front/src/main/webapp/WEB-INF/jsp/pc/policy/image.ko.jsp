@@ -22,9 +22,9 @@
 
 								<span class="text"><fmt:formatDate value="${resultVo.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ currentEndDe }</span>
 							</div>
-							<div class="select_dropdown _dropdown">
+							<!-- <div class="select_dropdown _dropdown">
 								<ul class="select_list _select_list">
-                                	<c:forEach  var="result" items="${resultList }" varStatus="status" >
+							                                	<c:forEach  var="result" items="${resultList }" varStatus="status" >
 										<c:choose>
 											<c:when test="${ empty result.endDe }">
 												<c:set var="endDe" value="현재" />
@@ -33,11 +33,25 @@
 												<fmt:formatDate var="endDe" value="${result.endDe }" pattern="yyyy.MM.dd" />
 											</c:otherwise>
 										</c:choose>
-
+							
 										<li><span><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</span></li>
 									</c:forEach>
 								</ul>
-							</div>
+							</div> -->
+							<ul class="select_list _select_list">
+								<c:forEach  var="result" items="${resultList }" varStatus="status" >
+									<c:choose>
+										<c:when test="${ empty result.endDe }">
+											<c:set var="endDe" value="현재" />
+										</c:when>
+										<c:otherwise>
+											<fmt:formatDate var="endDe" value="${result.endDe }" pattern="yyyy.MM.dd" />
+										</c:otherwise>
+									</c:choose>
+
+									<li><span><a href="/${rc.locale.language }/policy/image/${result.policySn}"><fmt:formatDate value="${result.applcDe }" pattern="yyyy.MM.dd" /> ~ ${ endDe }</a></span></li>
+								</c:forEach>
+							</ul>
 						</div>
 					</div>
 					</c:if>

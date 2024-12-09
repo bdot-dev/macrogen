@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
-        <header class="header header-white">
+    <div class="top-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -32,13 +32,13 @@
 </script>
 
         <div class="frame">
-            <h2 class="font-h1">모델동물사업부</h2>
-            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a>
+            <h2 class="font-h3">모델동물사업부</h2>
+            <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">service</span></a> -->
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="section_business">
+        <div class="section_business" style="padding-top: 80px;">
             <!--동물모델사업부 공통 s -->
             <div class="subject-box">
                 <p class="title font-h4">유전자 변형 마우스(GEM) 맞춤 제작과 유전자 편집을 위한 혁신기술(CRISPR)을 제공합니다

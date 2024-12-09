@@ -13,7 +13,7 @@
 
 		<div class="full-bg macrogen no-bg">
 	        <div class="frame frameC">
-	            <h2 class="hero-title en">CONTACT US</h2>
+	            <h2 class="hero-title en">Contact Us</h2>
 	        </div>
 	    </div>
 		
@@ -107,9 +107,9 @@
 	                                            Macrogen Bldg, 238, Teheran-ro, Gangnam-gu,<br>Seoul, Republic of Korea
 	                                            <p><span class="ic-call"></span>+82-2-2180-7000</p>
 	                                            <div class="border_bottom"></div>
-	                                            <strong>DAEJEON, KOREA</strong>
-	                                            Rm 323, 65, Techno 3-ro, Yuseong-gu,<br>Daejeon (Gwanpyeong-dong, Hanshin S-Meca)
-	                                            <p><span class="ic-call"></span>+82-42-336-7080</p>
+	                                            <strong>SEJONG, KOREA</strong>
+												20, Jiphyeonjungang-ro, Sejong-si
+	                                            <!-- <p><span class="ic-call"></span>+82-42-336-7080</p> -->
 	                                        </div>
 	                                    </div>
 	                                </a>

@@ -2,10 +2,10 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-authorization_v2.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -32,9 +32,9 @@
 </script>
 
         <div class="frame">
-            <h2 class="font-h4">Certification & Accreditation</h2>
+            <h2 class="font-h4" style="text-align: center">Certification & Accreditation</h2>
             <div class="font-slogan en">Global standard<br/>for genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
-            <div class="font-h7-r">Our technological excellence has been recognized around the world.</div>
+            <!-- <div class="font-h7-r">Our technological excellence has been recognized around the world.</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -236,6 +236,11 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                     <div class="title-box">
                         <div class="desc">To provide quality services that inspire customer confidence, Macrogen is a member of the CSP (Certified Service Provider) program alongside Illumina, Pacific Biosciences, Life Technologies, Thermo Fisher Scientific, Agilent Technology, and 10x Genomics. Through its in-house service quality management system and participation in the CSP program, Macrogen complies with the service quality standards established by genetic analysis platform suppliers. This allows Macrogen to not only supply high-quality services, but also to work with genetic analysis platform suppliers in joint marketing and support programs to provide customers with added benefits.</div>
                         <div class="img-wrap">
+                            <div class="img">
+                                <span class="tit">Ultima Genomics</span>
+                                <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-17.png" alt="Ultima Genomics">
+                                <a class="btn btn-light btn-round" href="javascript:alert('The file is being prepared.');">Download</a>
+                            </div>
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="/publishing/mobile-en/dist/img/macrogen/img-authorization-8.png" alt="Illumina">

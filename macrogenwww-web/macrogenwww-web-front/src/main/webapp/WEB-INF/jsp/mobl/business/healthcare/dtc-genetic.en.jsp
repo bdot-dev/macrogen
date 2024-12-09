@@ -1,210 +1,598 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<head>
+	<link rel="stylesheet" href="/resources/library/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/resources/css/mobile_common.css" />
+    <link rel="stylesheet" href="/resources/css/mobile_sub.css" />
+    <link rel="stylesheet" href="/resources/css/mobile_sub_en.css" />
+    <script src="/resources/library/swiper/swiper-bundle.min.js"></script>
+    <script src="/resources/library/gsap/gsap.min.js"></script>
+    <script src="/resources/library/gsap/ScrollTrigger.min.js"></script>
+    <script src="/resources/library/gsap/ScrollToPlugin.min.js"></script>
+    <script src="/resources/library/marquee/marquee.js"></script>
+    <!-- <script src="/resources/script/mobile_common.js"></script> -->
+    <script src="/resources/script/mobile_sub.js"></script>
+	<script>
+		$(function(){
+			var lastScroll = 0;
+			$(window).scroll(function(){
+				var st = $(this).scrollTop();
+				if (st > lastScroll){
+					// console.log('Down');
+					$('.header').show().css({'position': 'absolute','top':'0'});
+				}
+				else if (st === 0) {
+					// console.log('Top');
+					// $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+				}
+				else {
+					// console.log('Up');
+					$('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+				}
+				lastScroll = st;
+			});
+		});
+	</script>	
+</head>
+
+
 <body>
 	<div class="wrap">
-		<div class="top-bg personal02">
-			<header class="header header-white">
-			    <div class="inner">
-			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
-			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
-			    </div>
+            <header class="header">
+				<div class="inner">
+					<h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
+					<a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+				</div>
 			</header>
-			<div class="frame">
-	            <h2 class="font-h1">Healthcare Platform</h2>
-	        </div>
-		</div>
-		
-		<div class="container">
-        <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/business.css"/>
-        <div class="section_business">
-
-            <!-- 탭 컨텐츠 s-->
-            <div class="info-box-wrap tab-content">
-                <!--컨텐츠탭01-->
-                <div class="info-box show">
-                    <p class="font-h4 main-title" id="anchor2">GenTok</p>
-                    <p class="subject font-body-h">
-                        GenTok is a healthcare platform designed to cater to your individual needs. By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.
-                    </p>
-                    <!--10.05 이미지 경로 변경-->
-                    <div class="img">
-                        <img src="/publishing/mobile-en/dist/img/business/gentok_bg.png" alt="Unlock Your Body Manual: GenTok, Healthcare Platform">
+            <h2 class="ir">GenTok</h2>
+            <div class="container">
+                <article class="gentok">
+                    <div class="gentok__title">
+                        <h3>Digital Healthcare</h3>
                     </div>
-					<div class="btn-store-wrap">
-						<a href="https://play.google.com/store/apps/details?id=app.macrogen.gentok&pcampaignid=web_share" target="_blank"><img src="/publishing/mobile-en/dist/img/business/btn_googleplay.png" alt="Google Play" /></a>
-						<a href="https://apps.apple.com/kr/app/%EC%A0%A0%ED%86%A1-gentok/id6450289510" target="_blank"><img src="/publishing/mobile-en/dist/img/business/btn_appstore.png" alt="App Store" /></a>
-					</div>
-                    <hr class="divider h10">
-                    <!--content-anchor s-->
-                    <div class="content-anchor">
-                        <div class="selected-value _anchor-value">
-                            <span class="text">Healthcare Platform</span>
-                        </div>
-                        <!--v0.11 줄바꿈이슈-->
-                        <ul class="anchor-option">
-                            <li class="anchor-value" onclick="TitleMove('target1')"><a href="#">Genetic Testing</a></li>
-                            <li class="anchor-value" onclick="TitleMove('target8')"><a href="#">the Biome</a></li>
-                        </ul>
-                    </div>
-                    <!--content-anchor e-->
-                    <div class="list-gallery">
-                        <div class="section-anchor">
-                            <div class="list">
-                                <p class="sub-title font-h5" id="target1">Genetic Testing</p>
-								<div class="descript">
-									GenTok offers comprehensive genetic testing covering 129 items such as obesity, hair loss, weight management, blood sugar regulation, and sleep patterns. With GenTok, discovering your genetic predispositions and receiving personalized health management tips has never been easier or more enjoyable, presented to you in convenient card formats.
-									<p class="footnote">※ Genetic testing services are not available for minors (under 18 years old).</p>
-								</div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_healthbeauth_img01.png" alt="Genetic Testing">
-                                    </div>
-									<div class="cont">
-										<div class="list-area">
-											<ul class="list-circle-dot">
-												<li><p>Nutrients: 35 items, including vitamin C levels, vitamin D levels, coenzyme Q10 levels…</p></li>
-												<li><p>Exercise Metrics: 10 items, including muscular exercise, endurance exercise, exercise recovery…</p></li>
-												<li><p>Skin/Hair Analysis: 18 items, including male pattern baldness, skin aging, skin pigmentation…</p></li>
-												<li><p>Dietary Patterns: 21 items, including appetite, satiety, bitter taste sensitivity…</p></li>
-												<li><p>Personal Traits: 23 items, including alcohol flushing, nicotine dependence, caffeine metabolism…</p></li>
-												<li><p>Healthcare Insights: 22 items, obesity, weight regain, abdominal obesity…</p></li>
-											</ul>
-										</div>
-										<div class="btn-wrap">
-											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Learn More</a>
-											<a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white">Service Inquiry</a>
-										</div>
-									</div>
-                                </div>
-								<div class="img" style="margin-top:40px;">
-									<img src="/publishing/mobile-en/dist/img/business/img_healthbeauth_img03.png" alt="AI챗봇">
-								</div>
-                            </div>
-                            <div class="list">
-                                <p class="sub-title font-h5" id="target2">the Biome</p>
-								<div class="descript">
-									the Biome is microbiome analysis service. Microbiome, often referred to as the "second genome," dynamically responds to factors like diet, exercise, sleep patterns, lifestyle, and stress levels. By meticulously analyzing your microbiome, you gain invaluable insights to monitor your present health status and pave the way for a more methodical approach to health management.
-								</div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_healthbeauth_img02.png" alt="the Biome">
-                                    </div>
-									<div class="cont">
-										<p class="desc"><strong>The Biome Gold (Gut Microbiome Testing)</strong></p>
-										<div class="list-area">
-											<ul class="list-circle-dot">
-												<li>
-													<p>
-														Experience a comprehensive analysis of gut health and life index:<br/>
-														- Gut Health: Constipation, flatulence, abdominal bloating, functional abdominal discomfort, and diarrhea.<br/>
-														- Wellness: Well-being with insights into happiness, fatigue, immunity, obesity, sleep quality, and aging.<br/>
-														- Nutrient Metabolism: A detailed analysis of 14 essential nutrients including dietary fiber, B vitamins, protein, and BCAAs.<br/>
-														- Probiotic Insights: The presence of 19 specific probiotics as per the standards set by the Korea Food and Drug Administration.
-													</p>
-												</li>
-											</ul>
-										</div>
-										<div class="btn-wrap">
-											<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white">Learn More</a>
-											<a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white">Service Inquiry</a>
-										</div>
-									</div>
+                    <div class="gentok__kv">
+                        <div class="gentok__content">
+                            <div class="gentok__text">
+                                <h4 class="gentok__subtitle">Healthcare Platform</h4>
+                                <h3 class="gentok__kvtitle">GenTok</h3>
+                                <p class="gentok__description">By leveraging genetic testing and microbiome analysis, GenTok empowers you to gain profound insights into your innate characteristics and current health status.</p>
+                                <div class="gentok__btnwrap">
+                                    <ul>
+                                        <li>
+											<a href="https://apps.apple.com/kr/app/%EC%A0%A0%ED%86%A1-gentok/id6450289510" target="_blank" class="btn btn-default btn-default--regular btn-default--white">
+                                                <span class="btn btn-default__text btn-default__text--pl btn-default__text--apple">App Store</span>
+                                            </a>
+                                        </li>
+                                        <li>
+											<a href="https://play.google.com/store/apps/details?id=app.macrogen.gentok"  target="_blank"  class="btn btn-default btn-default--regular btn-default--white">
+                                                <span class="btn btn-default__text btn-default__text--pl btn-default__text--google">Google Play</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- <hr class="divider">
-                        <div class="section-anchor">
-                            <div class="list">
-                                v0.11 줄바꿈이슈 // title > .sub-title
-                                <p class="sub-title font-h5" id="target6">My Genomestory The Plus Skin & Care 44 (48 subcategories)</p>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
-                                    </div>
-                                    <div class="cont">
-                                        <p class="desc font-body">In addition to personal health and beauty management solutions, Macrogen helps you to get to know yourself by analyzing the genetic characteristics you want to know. The All-in-One solution covers the most areas in Korea and is a premium service that offers total health care.</p>
-                                        <p class="caption">※ The service is not available to persons under 19 years of age.</p>
-                                        <div class="list-area">
-                                            <ul class="list-circle-dot">
-                                                <li><p>Skin/Hair: 13 subcategories including pigmentation, aging skin, and male pattern hair loss</p></li>
-                                                <li><p>Nutrients: 20 subcategories including vitamin C concentration, vitamin D concentration, coenzyme Q10, and magnesium concentration</p></li>
-                                                <li><p>Health Care: 15 subcategories including obesity, tendency to yo-yo effect, abdominal obesity, and triglyceride concentration</p></li>
-                                            </ul>
+                    </div>
+                </article>
+                <article class="examine">
+                    <div class="examine__container">
+                        <div class="examine__function">
+                            <ul class="examine__list swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="examine__inner">
+                                        <div class="examine__left">
+                                            <div class="examine__num">
+                                                <span>01</span>
+                                            </div>
+                                            <div class="examine__text">
+                                                <p class="examine__name">
+                                                    129 DNA<br />
+                                                    testing items
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="btn-wrap">
-                                            <div class="btn-wrapper">
-                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
-                                                <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
+                                        <div class="examine__right">
+                                            <div class="examine__image">
+                                                <img src="/resources/images/mo/func_image01_en.png" alt="129종의 다양한 검사항목" />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="section-anchor">
-                            <div class="list">
-                                <p class="sub-title font-h5" id="target7">My Genomestory The Plus 41 (43 subcategories)</p>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
-                                    </div>
-                                    <div class="cont">
-                                        <p class="desc font-body">The analysis for nutrients and exercise patterns allows you to plan your health care.</p>
-                                        <p class="caption">※ The service is not available to persons under 19 years of age.</p>
-                                        <div class="list-area">
-                                            <ul class="list-circle-dot">
-                                                <li><p>Exercise: 8 subcategories including fitness for strength exercise, fitness for endurance exercise, and recovery after exercise</p></li>
-                                                <li><p>Nutrients: 20 subcategories including vitamin C concentration, vitamin D concentration, coenzyme Q10, and magnesium concentration</p></li>
-                                                <li><p>Health Care: 15 subcategories including obesity, tendency to yo-yo effect, abdominal obesity, and triglyceride concentration</p></li>
-                                            </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="examine__inner">
+                                        <div class="examine__left">
+                                            <div class="examine__num">
+                                                <span>02</span>
+                                            </div>
+                                            <div class="examine__text">
+                                                <p class="examine__name">
+                                                    Certified by<br />
+                                                    Health Authority
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="btn-wrap">
-                                            09.29 버튼명 변경 (자세히 보기 -> 서비스 문의)
-                                            <div class="btn-wrapper">
-                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
-                                                <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
+                                        <div class="examine__right">
+                                            <div class="examine__image">
+                                                <img src="/resources/images/mo/func_image02_en.png" alt="보건복지부 인증기관" />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="divider">
-                        <div class="section-anchor">
-                            <div class="list">
-                                <p class="sub-title font-h5" id="target8">My Genomestory The Plus 11 (13 Subcategories)</p>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/publishing/mobile-en/dist/img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
-                                    </div>
-                                    <div class="cont">
-                                        <p class="desc font-body">This is the only test solution that is available to persons under the age of 19, and consists of only the key services essential for easy and efficient health and beauty management.</p>
-                                        <div class="list-area">
-                                            <ul class="list-circle-dot">
-                                                <li><p>Health: 6 subcategories including body mass index, HDL cholesterol, LDL cholesterol, and triglyceride concentration</p></li>
-                                                <li><p>Skin: 4 subcategories including pigmentation, aging skin, and caffeine metabolism</p></li>
-                                                <li><p>Hair: 3 subcategories including male pattern hair loss and alopecia areata</p></li>
-                                            </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="examine__inner">
+                                        <div class="examine__left">
+                                            <div class="examine__num">
+                                                <span>03</span>
+                                            </div>
+                                            <div class="examine__text">
+                                                <p class="examine__name">
+                                                    AI Chatbot<br />
+                                                    Genetic <br />
+                                                    Counseling Service
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="btn-wrap">
-                                            <div class="btn-wrapper">
-                                                <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-light"><span>Service Inquiry</span></a>
-                                                <a href="https://smartstore.naver.com/mygenomestory/products/4150226329" target="_blank" class="btn btn-sm btn-primary"><span>Purchase</span></a>
+                                        <div class="examine__right">
+                                            <div class="examine__image">
+                                                <img src="/resources/images/mo/func_image03_en.png" alt="AI 챗봇 유전상담 서비스" />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div> -->
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="examine__inner">
+                                        <div class="examine__left">
+                                            <div class="examine__num">
+                                                <span>04</span>
+                                            </div>
+                                            <div class="examine__text">
+                                                <p class="examine__name">
+                                                    Personalized<br />
+                                                    Solutions Based<br />
+                                                    on Test Results
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="examine__right">
+                                            <div class="examine__image">
+                                                <img src="/resources/images/mo/func_image04_en.png" alt="검사 항목별 관리 솔루션 제공" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="examine__check">
+                            <ul class="examine__checklist">
+                                <li>
+                                    <div class="examine__checkimage">
+                                        <img src="/resources/images/mo/checklist_image01.svg" alt="" />
+                                    </div>
+                                    <div class="examine__toggle">
+                                        <div class="examine__content">
+                                            <div class="examine__title">
+                                                <p>DNA Testing</p>
+                                                <h4>GenTok</h4>
+                                            </div>
+                                            <div class="examine__desc">
+                                                <p>
+                                                    Explore 129 diverse testing items,<br />
+                                                    including obesity, hair loss, and more to<br />
+                                                    uncover unique genetic traits you<br />
+                                                    never knew about
+                                                </p>
+                                            </div>
+                                            <button type="button" class="examine__plus">Learn More</button>
+                                        </div>
+                                        <div class="examine__hidecont">
+                                            <div class="examine__hidewrap">
+                                                <div class="examine__hidetop">
+                                                    <div class="examine__hideimage">
+                                                        <img src="/resources/images/mo/checklist_hideimage01.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="examine__hidebottom">
+                                                    <ul class="examine__hidelist">
+                                                        <li>
+                                                            <div class="examine__itemname">Nutrient</div>
+                                                            <div class="examine__itemdesc">Assess levels of Vitamin C, Vitamin D, Coenzyme Q10, Magnesium, and more, with a total of 35 nutrient items..</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Exercise</div>
+                                                            <div class="examine__itemdesc">Find out your suitability for strength training, endurance activities, post-exercise recovery ability, and more, covering a total of 10 items.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Skin & Hair</div>
+                                                            <div class="examine__itemdesc">Gain insights into pigmentation, skin aging, male pattern baldness, and other characteristics, across 18 items.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Dietary Habits</div>
+                                                            <div class="examine__itemdesc">Understand your tendencies for appetite, fullness, sensitivity to bitterness, and more with 21 items in total.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Personal Traits</div>
+                                                            <div class="examine__itemdesc">Assess unique personal traits, such as alcohol flush response, nicotine dependence, caffeine metabolism, and more, in 23 items.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Health Management</div>
+                                                            <div class="examine__itemdesc">Get insights into obesity, abdominal obesity, triglyceride levels, and more across 22 health management items.</div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="examine__hidebutton">
+                                                        <a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                            <span class="btn btn-default__text">Learn More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="examine__hideclose" type="button"><span>Close</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="examine__checkimage">
+                                        <img src="/resources/images/mo/checklist_image02.svg" alt="" />
+                                    </div>
+                                    <div class="examine__toggle">
+                                        <div class="examine__content">
+                                            <div class="examine__title">
+                                                <p>Microbiome Testing</p>
+                                                <h4>the Biome</h4>
+                                            </div>
+                                            <div class="examine__desc">
+                                                <p>
+                                                    Analyze the continuously changing<br />
+                                                    microbiome within your body to monitor<br />
+                                                    your current health status.
+                                                </p>
+                                            </div>
+                                            <button type="button" class="examine__plus">Learn More</button>
+                                        </div>
+                                        <div class="examine__hidecont">
+                                            <div class="examine__hidewrap">
+                                                <div class="examine__hidetop">
+                                                    <div class="examine__hideimage">
+                                                        <img src="/resources/images/mo/checklist_hideimage02.jpg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="examine__hidebottom">
+                                                    <ul class="examine__hidelist">
+                                                        <li>
+                                                            <div class="examine__itemname">Comprehensive Gut Health and Lifestyle Index</div>
+                                                            <div class="examine__itemdesc">
+                                                                <p class="examine__piece">
+                                                                    <span class="examine__one">- Gut Health : </span>
+                                                                    <span>Constipation, Gas, Abdominal Bloating, Nervous Stomach Discomfort, Diarrhea</span>
+                                                                </p>
+                                                                <p class="examine__piece">
+                                                                    <span class="examine__two">- Wellness :</span>
+                                                                    <span>Happiness, Fatigue, Immunity, Obesity, Sleep, Aging</span>
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Nutrient Metabolism Score</div>
+                                                            <div class="examine__itemdesc">- Evaluate your ability to metabolize dietary fiber, B vitamins, proteins, BCAA, and more, across 14 categories.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">19 Probiotic Strains Approved by the Korean FDA</div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="examine__hidebutton">
+                                                        <a href="https://gentok.net/market/goods/5005" target="_blank" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                            <span class="btn btn-default__text">Learn More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="examine__hideclose" type="button"><span>Close</span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                    <div class="examine__checkimage">
+                                        <img src="/resources/images/mo/checklist_image03.svg" alt="" />
+                                    </div>
+                                    <div class="examine__toggle">
+                                        <div class="examine__content">
+                                            <div class="examine__title">
+                                                <p>Pet DNA Testing</p>
+                                                <h4>MyPetGene</h4>
+                                            </div>
+                                            <div class="examine__desc">
+                                                <p>
+                                                    Proactively identify and prevent genetic<br />
+                                                    diseases in your beloved pets for a<br />
+                                                    happier, healthier life together.
+                                                </p>
+                                            </div>
+                                            <button type="button" class="examine__plus">더보기</button>
+                                        </div>
+                                        <div class="examine__hidecont">
+                                            <div class="examine__hidewrap">
+                                                <div class="examine__hidebottom">
+                                                    <ul class="examine__hidelist">
+                                                        <li>
+                                                            <div class="examine__itemname">Disease Report</div>
+                                                            <div class="examine__itemdesc">This report supports early diagnosis, prevention, and health management for pets with genetic disease risks or hereditary symptoms.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">DNA Certification</div>
+                                                            <div class="examine__itemdesc">This test verifies identical DNA from two samples by comparing genetic loci, confirming the identity of the individual.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Relationship Verification Certificate</div>
+                                                            <div class="examine__itemdesc">This test compares unique genetic markers in pet DNA to establish biological relationships between parents and offspring.</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="examine__itemname">Gender Identification Certificate</div>
+                                                            <div class="examine__itemdesc">By analyzing DNA differences in sex chromosomes, this test enables accurate gender identification for birds.</div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="examine__hidebutton">
+                                                        <a href="javascript:;" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                            <span class="btn btn-default__text">Learn More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="examine__hideclose" type="button"><span>Close</span></button>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="slide-banner">
+                            <ul class="swiper-wrapper slide-banner__wrap">
+                     <!--            <li class="swiper-slide slide-banner__item slide-banner__item--01">
+                                    <div class="slide-banner__cont">
+                                        <span class="slide-banner__category">Samsung Health Package Promotion</span>
+                                        <div class="slide-banner__title">
+                                            <h3>
+                                                GenTok DNA Testing<br />
+                                                Services - Now Available<br />
+                                                on Samsung Galaxy
+                                            </h3>
+                                        </div>
+                                        <div class="slide-banner__btn">
+                                            <a href="javacript:;" class="btn btn-default btn-default--regular btn-default--black">
+                                                <span class="btn btn-default__text">Learn More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <li class="swiper-slide slide-banner__item slide-banner__item--02">
+                                    <div class="slide-banner__cont">
+                                        <span class="slide-banner__category">Gift a GenTok Voucher</span>
+                                        <div class="slide-banner__title">
+                                            <h3>
+                                                The perfect way to show you<br />
+                                                care - give a meaningful gift<br />
+                                                that brings lasting health<br />
+                                                insights and well-being.
+                                            </h3>
+                                        </div>
+                                        <div class="slide-banner__btn">
+                                            <a href="https://gentok.net/market/goods/100" target="_blank" class="btn btn-default btn-default--regular btn-default--black">
+                                                <span class="btn btn-default__text">Learn More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                </div>
-                <!-- //컨텐츠탭01 -->
+                </article>
+                <article class="about gray">
+                    <div class="about__inner">
+                        <div class="about__title">
+                            <h3>
+                                What Customers<br />
+                                Love About<br />
+                                GenTok
+                            </h3>
+                        </div>
+                        <div class="advantage-slide about-slide">
+                            <ul class="swiper-wrapper advantage-slide__wrap">
+                                <li class="swiper-slide">
+                                    <div class="advantage-slide__cont">
+                                        <div class="advantage-slide__top">
+                                            <div class="advantage-slide__coma"></div>
+                                            <div class="advantage-slide__description">
+                                                <p>Extremely accurate and detailed. I learned so much about myself, which allowed me to make improvements. The results were clearly explained in an engaging way, making it easy to understand. I want my whole family to try it!</p>
+                                            </div>
+                                            <div class="advantage-slide__image">
+                                                <img src="/resources/images/mo/advantage_image01.jpg" alt="" />
+                                            </div>
+                                            <div class="advantage-slide__package">
+                                                <span class="advantage-slide__tag">All-Inclusive Package - 129 test items</span>
+                                            </div>
+                                        </div>
+                                        <div class="advantage-slide__bottom">
+                                            <div class="advantage-slide__review">
+                                                <p class="advantage-slide__name">Kim<sup>**</sup></p>
+                                                <p class="advantage-slide__defaulttext">GenTok Reviews</p>
+                                            </div>
+                                            <div class="advantage-slide__star">
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="advantage-slide__cont">
+                                        <div class="advantage-slide__top">
+                                            <div class="advantage-slide__coma"></div>
+                                            <div class="advantage-slide__description">
+                                                <p>The DNA testing process was simple. I sent the testing kit back and received the results as a PDF file, which included categories like health management, exercise, nutrition, and personal traits. I appreciated the ummary list of genetic markers.</p>
+                                            </div>
+                                            <div class="advantage-slide__image">
+                                                <img src="/resources/images/mo/advantage_image02.jpg" alt="" />
+                                            </div>
+                                            <div class="advantage-slide__package">
+                                                <span class="advantage-slide__tag">All-Inclusive Package - 129 test items</span>
+                                            </div>
+                                        </div>
+                                        <div class="advantage-slide__bottom">
+                                            <div class="advantage-slide__review">
+                                                <p class="advantage-slide__name">Cho<sup>**</sup></p>
+                                                <p class="advantage-slide__defaulttext">GenTok Reviews</p>
+                                            </div>
+                                            <div class="advantage-slide__star">
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="advantage-slide__cont">
+                                        <div class="advantage-slide__top">
+                                            <div class="advantage-slide__coma"></div>
+                                            <div class="advantage-slide__description">
+                                                <p>Understanding my health, nutrients, and personal traits has been really helpful. It’s amazing and fascinating to learn things I didn’t expect to know!</p>
+                                            </div>
+                                            <div class="advantage-slide__image">
+                                                <img src="/resources/images/mo/advantage_image_default.jpg" alt="" />
+                                            </div>
+                                            <div class="advantage-slide__package">
+                                                <span class="advantage-slide__tag">All-Inclusive Package - 129 test items</span>
+                                            </div>
+                                        </div>
+                                        <div class="advantage-slide__bottom">
+                                            <div class="advantage-slide__review">
+                                                <p class="advantage-slide__name">Lee<sup>**</sup></p>
+                                                <p class="advantage-slide__defaulttext">GenTok Reviews</p>
+                                            </div>
+                                            <div class="advantage-slide__star">
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="advantage-slide__cont">
+                                        <div class="advantage-slide__top">
+                                            <div class="advantage-slide__coma"></div>
+                                            <div class="advantage-slide__description">
+                                                <p>With reasonable pricing, I received comprehensive results that allowed me to compare with my own habits and focus on areas needing attention. As a fitness enthusiast, it provided valuable insights for setting my fitness goals.</p>
+                                            </div>
+                                            <div class="advantage-slide__image">
+                                                <img src="/resources/images/mo/advantage_image03.jpg" alt="" />
+                                            </div>
+                                            <div class="advantage-slide__package">
+                                                <span class="advantage-slide__tag">All-Inclusive Package - 129 test items</span>
+                                            </div>
+                                        </div>
+                                        <div class="advantage-slide__bottom">
+                                            <div class="advantage-slide__review">
+                                                <p class="advantage-slide__name">Na<sup>**</sup></p>
+                                                <p class="advantage-slide__defaulttext">GenTok Reviews</p>
+                                            </div>
+                                            <div class="advantage-slide__star">
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                                <div class="star"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="advantage-slide__progres"></div>
+                        </div>
+                        <div class="about__btn">
+                            <a href="https://gentok.net/market/goods/5001"  target="_blank" class="btn btn-default btn-default--gradient">
+                                <span class="btn btn-default__text">View all</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="about">
+                    <div class="about__inner">
+                        <div class="about__title">
+                            <h3>
+                                Engage with<br />
+                                GenTok
+                            </h3>
+                        </div>
+                        <div class="comms-slide about-slide">
+                            <ul class="swiper-wrapper comms-slide__wrap">
+                                <li class="swiper-slide">
+                                    <a href="https://blog.naver.com/macrogen_official/223595660841" target="_blank">
+                                        <div class="comms-slide__image">
+                                            <img src="/resources/images/mo/comms_image01.jpg" alt="" />
+                                        </div>
+                                        <div class="comms-slide__sns comms-slide__sns--blog"></div>
+                                        <div class="comms-slide__description">
+                                            <p>The First DNA Testing Ambassadors- GenTalker!</p>
+                                        </div>
+                                        <div class="comms-slide__date">
+                                            <p>2024.08.19</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="https://www.instagram.com/p/C_zji3YzA2b/" target="_blank">
+                                        <div class="comms-slide__image">
+                                            <img src="/resources/images/mo/comms_image02.jpg" alt="" />
+                                        </div>
+                                        <div class="comms-slide__sns comms-slide__sns--insta"></div>
+                                        <div class="comms-slide__description">
+                                            <p>Finally understand those quirks in your siblings - It might just be gene!😮</p>
+                                        </div>
+                                        <div class="comms-slide__date">
+                                            <p>2024.08.19</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="https://blog.naver.com/macrogen_official/223539370758" target="_blank">
+                                        <div class="comms-slide__image">
+                                            <img src="/resources/images/mo/comms_image03.jpg" alt="" />
+                                        </div>
+                                        <div class="comms-slide__sns comms-slide__sns--blog"></div>
+                                        <div class="comms-slide__description">
+                                            <p>The most vivid testimonials from TheBiome Gold users</p>
+                                        </div>
+                                        <div class="comms-slide__date">
+                                            <p>2024.08.19</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="https://www.youtube.com/watch?v=uzIvec-XaQ0" target="_blank">
+                                        <div class="comms-slide__image">
+                                            <img src="/resources/images/mo/comms_image04.jpg" alt="" />
+                                        </div>
+                                        <div class="comms-slide__sns comms-slide__sns--youtube"></div>
+                                        <div class="comms-slide__description">
+                                            <p>[GenTok x One-Year Age Gap] Get Real with DNA Conversations.🗣️🧬Now, let’s talk with GenTok</p>
+                                        </div>
+                                        <div class="comms-slide__date">
+                                            <p>2024.08.19</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="comms-slide__progres"></div>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <!--// 탭 컨텐츠 e-->
+			
         </div>
-        <script src="/publishing/mobile-ko/dist/js/business.js"></script>
-    </div>
-		
-	</div>
 </body>

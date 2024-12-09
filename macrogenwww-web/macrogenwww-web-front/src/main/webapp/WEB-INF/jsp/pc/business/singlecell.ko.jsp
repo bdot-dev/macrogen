@@ -5,7 +5,7 @@
 <div class="wrap">	
   <div class="full-bg business_bg single_cell">
     <!--header 수정시 메인 header 같이 수정해주세요-->
-	<header class="header" id="header">
+	<header class="header header-bg-white" id="header">
 		<c:import url="/inc/header-inner-gnb" />  
 	</header>
 	
@@ -19,11 +19,11 @@
                 </ol>
             </nav>
             <div class="hero-title en">Single Cell</div>
-            <div class="slogan-sub en">Spatial Transcriptomics와 In situ 분석</div>
+            <!-- <div class="slogan-sub en">Spatial Transcriptomics와 In situ 분석</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>
-            </a>
+            </a> -->
         </div>
     </div>
 	

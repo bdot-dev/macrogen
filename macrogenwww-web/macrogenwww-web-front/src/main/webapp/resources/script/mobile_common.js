@@ -4,11 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var $footerMenuButton = document.querySelectorAll('.footer__menu button');
   var $familyButton = document.querySelector('.footer__button');
   var $familyToggle = document.querySelector('.footer__toggle');
+  var $topButton = document.querySelector('.top-btn button');
+  $topButton.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
   $footerMenuButton.forEach(function (menuButton) {
     menuButton.addEventListener('click', function () {
       var $toggleMenu = this.nextElementSibling;
       var toggleHeight = $toggleMenu.scrollHeight;
-      console.log($toggleMenu);
       if (!this.classList.contains('active')) {
         $footerMenuButton.forEach(function (btn) {
           btn.classList.remove('active');

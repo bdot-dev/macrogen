@@ -1,8 +1,12 @@
+html, body {
+  font-family: "NeuzeitGrotesk", sans-serif;
+}
+
 .examine__hidelist li {
   gap: 20px;
 }
 .examine__itemleft {
-  font-family: "Neuzeit Grotesk";
+  font-family: "NeuzeitGrotesk";
 }
 .examine__itemleft--small {
   flex-basis: 130px;
@@ -14,7 +18,7 @@
   flex-basis: 250px;
 }
 .examine__itemright {
-  font-family: "Neuzeit Grotesk";
+  font-family: "NeuzeitGrotesk";
 }
 .examine__itemright p {
   line-height: 20px;
@@ -36,5 +40,5 @@
 }
 
 .comms-slide__description {
-  font-family: "Neuzeit Grotesk";
+  font-family: "NeuzeitGrotesk";
 }

@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/company-overview-bg.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">기업개요</h2>
             <div class="font-slogan en">HUMANIZING<br/>GENOMICS</div>
-            <div class="font-h7-r">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
+            <!-- <div class="font-h7-r">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -99,7 +99,7 @@
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_8.png" alt="글로벌 임직원 수"></span>
-                                <span class="font-h4">750&#43;</span>
+                                <span class="font-h4">700&#43;</span>
                                 <span class="font-body-h">글로벌 임직원 수²</span>
                             </li>
                             <li class="item col col-6">
@@ -119,14 +119,14 @@
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/macrogen_circle_7.png" alt="한국인 표준 유전체 완성 등 논문 발표 수"></span>
-                                <span class="font-h4">148</span>
+                                <span class="font-h4">156</span>
                                 <span class="font-body-h">한국인 유전체<br> 완성 등 논문 발표 수³</span>
                             </li>
                         </ul>
                         <hr class="divider">
                         <div class="footnote">
 	                        1) 2023년 연결 기준<br>
-							2) 2023년 12월 기준<br>
+							2) 2024년 11월 기준<br>
 							3) Nature 본지/자매지, SCI급 논문  발표수 
 						</div>
                     </div>

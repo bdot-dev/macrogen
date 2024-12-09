@@ -11138,7 +11138,9 @@ p {
   font-weight: bold;
   font-size: 48px;
   line-height: 64px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px; 
+  margin-bottom: 0;
+  }
 
 .font-h3 {
   font-family: sans-serif;
@@ -11150,9 +11152,11 @@ p {
 .font-h4 {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 44px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px; 
+  margin-bottom: 0;
+  }
 
 .font-h5 {
   font-family: sans-serif;
@@ -11399,12 +11403,14 @@ body {
     animation: grow 2s;
     background-size: cover; }
     .wrap .full-bg .frame {
-      position: relative;
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 20px 66px; }
+          position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #dbdbdb;
+}}
       .wrap .full-bg .frame .font-h4 {
         font-weight: bold;
         font-size: 36px;
@@ -11454,13 +11460,16 @@ body {
     opacity: 1; } }
     .wrap .top-bg .frame {
       position: relative;
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 20px 56px; }
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+	  }
       .wrap .top-bg .frame .font-h1 {
-        color: #fff;
+        color: #000;
         word-break: keep-all; }
       .wrap .top-bg .frame .font-body-h {
         color: #fff;
@@ -11471,10 +11480,21 @@ body {
   .wrap .non-bg {
     width: 100%; }
     .wrap .non-bg .frame {
-      position: relative;
-      padding: 120px 20px 64px; }
+          height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 20px;
+    margin-bottom: 80px;
+	  }
+	  .wrap .non-bg .frame.non-title {
+		padding:0 0 10px 0!important;
+		height: 0;
+		border: none;
+	  }
       .wrap .non-bg .frame .font-h1 {
-        word-break: keep-all; }
+        word-break: keep-all; text-align:center; }
       .wrap .non-bg .frame .btn-wrap {
         margin-top: 16px; }
       .wrap .non-bg .frame.non-title {
@@ -11523,6 +11543,14 @@ body {
         border-left: 2px solid #ffffff;
         -webkit-animation: scrollMove 1.5s ease-in infinite;
         animation: scrollMove 1.5s ease-in infinite; }
+		/* 서브 타이틀 공통화를 위한 수정 */
+  .wrap .top-bg .frame h2, .wrap .full-bg .frame .font-h4, 
+  .wrap .non-bg .frame .font-h1{
+	  font-size: 40px;
+	  line-height:46px;
+	  font-weight:700;
+	  margin-bottom:0;
+  }
 
 @keyframes grow {
   0% {
@@ -11629,8 +11657,9 @@ body {
 /* gnb */
 .gnb.modal {
   display: block !important;
-  padding-left: 50px;
-  width: 100vw;
+      padding-left: 0;
+    margin-left: 50px;
+    width: calc(100% - 50px);
   top: 0;
   left: 100vw; }
   .gnb.modal.show {
@@ -11640,7 +11669,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100dvh;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -11716,7 +11745,7 @@ body {
               position: absolute;
               top: 50%;
               transform: translateY(-50%);
-              right: 30px;
+              right: 20px;
               width: 14px;
               height: 14px;
               background-image: url(../img/common/ico-down-black.svg);
@@ -11740,7 +11769,7 @@ body {
               letter-spacing: -0.5px;
               color: #000000;
               background-color: #fff;
-              text-transform: uppercase; }
+              /* text-transform: uppercase; */ }
               .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li > a:hover {
                 color: #000000; }
             .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul {
@@ -11764,7 +11793,7 @@ body {
                   line-height: 32px;
                   letter-spacing: -0.5px;
                   color: #666666;
-                  text-transform: uppercase; }
+                  /* text-transform: uppercase; */ }
                   .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li a:hover {
                     color: #666666; }
                 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li.noDepth a {
@@ -12699,6 +12728,7 @@ textarea::placeholder {
  v 0.7 태윤 : .anchor-option mCustomScrollbar 커스텀 & anchor-option padding값 수정 - 2021.12.05
 |----------------------------------|
 */
+.tab-primary {margin: 0 20px;}
 .tab-primary .nav-tabs {
   display: flex;
   width: 100%; }

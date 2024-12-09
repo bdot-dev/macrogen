@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-authorization_v2.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">인증</h2>
             <div class="slogan ko">유전체 분석의<br>글로벌 스탠다드</div>
-            <div class= "slogan-sub">마크로젠의 기술은 세계에서 인정받고 있습니다</div>
+            <!-- <div class= "slogan-sub">마크로젠의 기술은 세계에서 인정받고 있습니다</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -228,6 +228,11 @@
                     <div class="left">
                         <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina&#44; Pacific Biosciences&#44;Life Technologies&#44; Thermo Fisher Scientific&#44; Agilent Technology, 10x Genomics 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램&#40;CSP&#44; Certified Service Provider&#41;에 참여합니다&#46; 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다&#46; 고품질의 서비스를 제공하고&#44; 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다&#46;</div>
                         <div class="img-wrap">
+                            <div class="img">
+                                <span class="tit">Ultima Genomics</span>
+                                <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-17.png" alt="Ultima Genomics">
+                                <a class="btn btn-sm btn-white" href="javascript:alert('준비 중인 파일입니다.');">인증서 보기</a>
+                            </div>
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="/publishing/pc-ko/dist/img/macrogen/img-authorization-8.png" alt="Illumina">

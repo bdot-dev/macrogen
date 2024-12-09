@@ -3,6 +3,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   var $plusIcon = document.querySelectorAll('.examine__plus');
   var $closeButton = document.querySelectorAll('.examine__hideclose');
+  var $topButton = document.querySelector('.top-btn button');
+  $topButton.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
   var examineSwiper = new Swiper('.examine__function', {
     slidesPerView: 'auto',
     spaceBetween: 20

@@ -3,14 +3,14 @@
 <body>
 <div class="wrap">
 	<div class="top-bg personal02">
-		<header class="header header-white">
+		<header class="header">
 			<div class="inner">
 				<h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 				<a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			</div>
 		</header>
 		<div class="frame">
-			<h2 class="font-h1">DTC 바이옴검사</h2>
+			<h2 class="font-h3">DTC 바이옴검사</h2>
 		</div>
 	</div>
 
@@ -67,7 +67,7 @@
 										</div>
 										<div class="btn-wrap">
 											<div class="btn-wrapper">
-												<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
+												<a href="https://gentok.net/market/goods/5005" target="_blank" class="btn btn-sm btn-light"><span>자세히보기</span></a>
 											</div>
 										</div>
 									</div>

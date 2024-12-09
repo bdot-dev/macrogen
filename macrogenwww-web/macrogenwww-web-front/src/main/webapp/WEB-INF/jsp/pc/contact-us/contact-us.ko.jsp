@@ -15,7 +15,7 @@
 
 		<div class="full-bg macrogen no-bg">
 	        <div class="frame frameC">
-	            <h2 class="hero-title en">CONTACT US</h2>
+	            <h2 class="hero-title en">Contact Us</h2>
 	        </div>
 	    </div>
 		
@@ -108,9 +108,9 @@
 	                                            서울특별시 강남구 테헤란로 238 (마크로젠빌딩)
 	                                            <p><span class="ic-call"></span>+82-2-2180-7000</p>
 	                                            <div class="border_bottom"></div>
-	                                            <strong>DAEJEON, KOREA</strong>
-	                                            대전광역시 유성구 테크노3로 65, 323호 (관평동, 한신에스메카)
-	                                            <p><span class="ic-call"></span>+82-42-336-7080</p>
+	                                            <strong>SEJONG, KOREA</strong>
+	                                            세종특별자치시 집현중앙로 20 (집현동)
+	                                            <!-- <p><span class="ic-call"></span>+82-42-336-7080</p> -->
 	                                        </div>
 	                                        <!-- //2023-04-17::한국 송도주소 삭제 -->
 	                                    </div>

@@ -4,14 +4,14 @@
 <body>
 	<div class="wrap">
 		
-		<div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/esg/bg-esg-4.png);">
-			<header class="header" id="header">
+		<div class="full-bg macrogen">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			
 			<div class="frame">
 	            <h2 class="hero-title">온실가스</h2>
-	            <div class= "slogan-sub">지속가능한 지구를 위해 기후변화 대응에 동참하겠습니다</div>
+	            <!-- <div class= "slogan-sub">지속가능한 지구를 위해 기후변화 대응에 동참하겠습니다</div> -->
 	            <nav aria-label="breadcrumb">
 					<ol class="breadcrumb breadcrumb-white">
 						<li class="breadcrumb-item">Home</li>

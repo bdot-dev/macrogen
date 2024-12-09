@@ -1,0 +1,47 @@
+html, body {
+  font-family: "NeuzeitGrotesk", sans-serif;
+}
+
+.examine__inner {
+  height: 160px;
+}
+.examine__name {
+  line-height: 24px;
+}
+.examine__title h4 {
+  font-family: "NeuzeitGrotesk";
+  letter-spacing: 0;
+}
+.examine__one {
+  flex-basis: 92px;
+}
+.examine__two {
+  flex-basis: 77px;
+}
+.examine__itemname {
+  font-size: 20px;
+  line-height: 30px;
+}
+.examine__itemname::before {
+  top: 15px;
+}
+.examine__itemdesc {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slide-banner__title h3 {
+  font-family: "NeuzeitGrotesk";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.advantage-slide__name {
+  font-family: "NeuzeitGrotesk";
+  font-size: 14px;
+}
+
+.comms-slide__description p {
+  font-size: 20px;
+  line-height: 30px;
+}

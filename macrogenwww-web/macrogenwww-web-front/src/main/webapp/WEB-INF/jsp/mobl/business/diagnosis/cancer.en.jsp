@@ -2,18 +2,39 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 	<div class="wrap">
-		<div class="top-bg" style="background-image: url(/publishing/mobile-en/dist/img/business/test-bg.png);">
-			<header class="header header-white">
+		<div class="top-bg">
+			<header class="header">
 			    <div class="inner">
-			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+			        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			    </div>
 			</header>
 			<div class="frame">
-	            <h2 class="font-h1">Precision <br>Medicine</h2>
-	            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
+	            <h2 class="font-h4">Precision <br>Medicine</h2>
+	            <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div> -->
 	        </div>
 		</div>
+		<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
 		
 		<div class="container">
 	        <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/business.css"/>
@@ -36,11 +57,11 @@
 	                <p class="title font-h4">SERVICE</p>
 	                <div class="select-box">
 	                    <div class="selected-value _selected-value">
-	                        <span class="text">Cancer risk prediction</span>
+	                        <span class="text">Cancer Risk Prediction</span>
 	                    </div>
 	                    <ul class="select-option _select-option">
-	                        <li class="option-value active" onclick="setTabContent(0)" id="prediction"><a href="#">Cancer risk prediction</a></li>
-	                        <li class="option-value" onclick="setTabContent(1)" id="analyze"><a href="#">Analysis of causes of cancer</a></li>
+	                        <li class="option-value active" onclick="setTabContent(0)" id="prediction"><a href="#">Cancer Risk Prediction</a></li>
+	                        <li class="option-value" onclick="setTabContent(1)" id="analyze"><a href="#">Analysis Of Causes Of Cancer</a></li>
 	                        <li class="option-value" onclick="setTabContent(2)" id="monitoring"><a href="#">Cancer Occurrence Monitoring</a></li>
 	                    </ul>
 	                </div>
@@ -51,7 +72,7 @@
 	            <div class="info-box-wrap tab-content">
 	                <!--암 발생 위험 예측-->
 	                <div class="info-box show">
-	                    <p class="font-h4 main-title">Cancer risk prediction</p>
+	                    <p class="font-h4 main-title">Cancer Risk Prediction</p>
 	                    <p class="subject font-body-h-b">Cancers occur due to various causes, <br>but some cancers are caused by genetic mutations of specific inherited genes.</p>
 	                    <p class="desc font-body img_bottom">People who have such cancer-related mutations are exposed to far more risk of cancer than others. Hereditary cancers are caused by gene abnormalities inherited from parents, and the incidence of cancer in the same family is high. Thus, early detection and identification of the exact cause through gene diagnosis is required. The most commonly known hereditary cancers are breast cancer, ovarian cancer, and colon cancer. In regard to incidence of breast cancer, 5% - 10% is known to be genetically caused, and about more than half are caused by abnormalities in genes called BRCA1 and BRCA2. In addition, having genes that cause various cancers will dramatically increase the incidence of cancer.</p>
 	                    <div class="border-gray-box">
@@ -89,7 +110,7 @@
 	                <!-- //암 발생 위험 예측 -->
 	                <!--암 발생 원인 분석-->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Analysis of causes of cancer</p>
+	                    <p class="font-h4 main-title">Analysis Of Causes Of Cancer</p>
 	                    <p class="subject font-body-h-b">This service tracks the cause of cancer and provides key information for personalized treatment by analyzing mutations in the genes involved in cancer development using DNA extracted from cancer patients' tumor samples.</p>
 	                    <p class="desc font-body img_bottom">Until now, cancers were classified in a histopathological manner, but recently, gene analysis is performed on cancer tissue, and cancers are subdivided into groups. <br>This contributes to improved response (about 75% of patients exhibit different effects when the same anticancer drug is prescribed) and provides personalized treatment for cancer patients while minimizing adverse effects.</p>
 	                    <div class="border-gray-box">

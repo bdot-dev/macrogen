@@ -6,16 +6,16 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
 		        <li class="breadcrumb-item active">NEWS</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_newsroom">
-            <h2 class="font-h1">News</h2>
+            <h2 class="font-h1 ir-diff">News</h2>
             <div class="board">
 
 				<c:if test="${fn:length(upendFixingList) > 0}">

@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/@temp/macrogen/macrogen_bg_1.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
+		<header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 
         <div class="frame">
                 <h2 class="hero-title">History</h2>
                 <div class="slogan history_slogan">Opening new doors<br/> in the development of genomic analysis</div> <!-- 번역 변경 -- 2022.05.26 -->
-                <div class="slogan-sub">Macrogen is paving the way to a healthier and brighter future for humanity</div>
+                <!-- <div class="slogan-sub">Macrogen is paving the way to a healthier and brighter future for humanity</div> -->
                 <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -152,6 +152,7 @@
 	        var id = $('#'+ seq);
 	        var offset = id.offset();
 	        $('html, body').animate({scrollTop : offset.top - 95}, 400);
+			return false;
 	    }
 
 	    // 연혁 인터랙션

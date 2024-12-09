@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <div class="inner">
 	<div class="section_gnb">
-	    <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+	    <h1 class="logo"><a href="/en/">마크로젠 로고</a></h1>
 	    <nav>
 	        <ul id="gnb"> 
                 <li><span class="font-bold">macrogen</span></li>
@@ -178,21 +178,21 @@
             </ul>
         </div>
         <div class="item menu0205">
-            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">Clinical Services</a></div>
+            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Clinical Services</a></div>
             <ul>
                 <li>
                     <a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Precision Medicine</a>
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer risk prediction</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis of causes of <br>cancer</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer Risk Prediction</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis Of Causes Of <br>Cancer</a></li>
                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer#monitoring">Cancer Occurrence <br>Monitoring</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Genetic testing <br>for cancer risk</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Genetic Testing <br>For Cancer Risk</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -208,9 +208,9 @@
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification acquired by <br>Macrogen in the clinical <br>diagnosis business</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key features and strengths <br>of  Macrogen’s cancer panels</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope of projects to set up <br>NGS-based PMG labs</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification Acquired By <br>Macrogen In The Clinical <br>Diagnosis Business</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key Features And Strengths <br>Of  Macrogen’s Cancer Panels</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope Of Projects To Set Up <br>NGS-based PMG Labs</a></li>
                         </ul>
                     </div>
                 </li>
@@ -221,7 +221,7 @@
                         <ul class="cards-body">
                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
-                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage of samples</a></li>
+                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage Of Samples</a></li>
                         </ul>
                     </div>
                 </li>

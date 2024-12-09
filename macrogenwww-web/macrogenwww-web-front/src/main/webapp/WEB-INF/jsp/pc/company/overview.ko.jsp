@@ -2,28 +2,28 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-company-overview.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">기업개요</h2>
             <div class="slogan">Humanizing<br/>Genomics</div>
-            <div class="slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div>
+            <!-- <div class="slogan-sub">인류의 건강한 미래를 만드는 기업 마크로젠입니다</div> -->
             <nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-white">
-        <li class="breadcrumb-item">Home</li>
-        <li class="breadcrumb-item">MACROGEN</li>
-        <li class="breadcrumb-item">회사소개</li>
-        <li class="breadcrumb-item">기업개요</li>
-    </ol>
-</nav>
+				<ol class="breadcrumb breadcrumb-white">
+					<li class="breadcrumb-item">Home</li>
+					<li class="breadcrumb-item">MACROGEN</li>
+					<li class="breadcrumb-item">회사소개</li>
+					<li class="breadcrumb-item">기업개요</li>
+				</ol>
+			</nav>
 
             <div class="scroll-wrap">
-    <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-</div>
+				<div class="scroll"><span class="bar" style="bottom: 0"></span></div>
+			</div>
 
         </div>
     </div>
@@ -88,7 +88,7 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_8.png" alt="글로벌 임직원 수"></span>
-                                <span class="val">750&#43;</span>
+                                <span class="val">700&#43;</span>
                                 <span class="desc">글로벌 임직원 수²</span>
                             </li>
                             <li class="item">
@@ -108,14 +108,14 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-ko/dist/img/macrogen/macrogen_circle_7.png" alt="한국인 표준 유전체 완성 등 논문 발표 수"></span>
-                                <span class="val">148</span>
+                                <span class="val">156</span>
                                 <span class="desc">한국인 표준 유전체 완성 등<br> 논문 발표 수³</span>
                             </li>
                         </ul>
                         <hr class="divider">
                         <div class="footnote">
                         1) 2023년 연결 기준<br>
-						2) 2023년 12월 기준<br>
+						2) 2024년 11월 기준<br>
 						3) Nature 본지/자매지, SCI급 논문  발표수 
 						</div>
                     </div>

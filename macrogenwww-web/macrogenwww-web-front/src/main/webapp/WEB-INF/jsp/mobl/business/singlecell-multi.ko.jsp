@@ -3,7 +3,7 @@
 <body>
 	<div class="wrap">
 		<div class="top-bg single_multi">
-			<header class="header header-white">
+			<header class="header">
 			    <div class="inner">
 			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -11,9 +11,31 @@
 			</header>
 			
 			<div class="frame">
-	            <div class="font-h1">Single Cell <br>Multi-omics Analysis</div>
+	            <div class="font-h3">Single Cell <br>Multi-omics Analysis</div>
 	        </div>
 		</div>
+
+		<script>
+			$(function(){
+				var lastScroll = 0;
+				$(window).scroll(function(){
+					var st = $(this).scrollTop();
+					if (st > lastScroll){
+						// console.log('Down');
+						$('.header').show().css({'position': 'absolute','top':'0'});
+					}
+					else if (st === 0) {
+						// console.log('Top');
+						// $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+					}
+					else {
+						// console.log('Up');
+						$('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+					}
+					lastScroll = st;
+				});
+			});
+		</script>
 		
 		<div class="container">
 	        <link type="text/css" rel="stylesheet" href="/publishing/mobile-ko/dist/css/business.css"/>
@@ -34,27 +56,27 @@
 	                <div class="info-box show">
 	                    <div class="box-gray-6">
 	                        <div>
-	                            <p class="title font-body-h-b">single cell RNA sequencing</p>
+	                            <p class="title font-body-h-b">Single cell RNA sequencing</p>
 	                            <p class="desc font-body">단일세포 유전자 발현 분석</p>
 	                        </div>
 	                        <div>
-	                            <p class="title font-body-h-b">single nucleus RNA sequencing</p>
+	                            <p class="title font-body-h-b">Single nucleus RNA sequencing</p>
 	                            <p class="desc font-body">세포로 진행하기 어려운 샘플에서<br>핵을 분리한 후 유전자 발현 분석</p>
 	                        </div>
 	                        <div>
-	                            <p class="title font-body-h-b">single cell immune profiling</p>
+	                            <p class="title font-body-h-b">Single cell immune profiling</p>
 	                            <p class="desc font-body">단일세포 TCR, BCR 발현 분석</p>
 	                        </div>
 	                        <div>
-	                            <p class="title font-body-h-b">single cell surface protein profiling</p>
+	                            <p class="title font-body-h-b">Single cell surface protein profiling</p>
 	                            <p class="desc font-body">단일세포 표면에 위치하는 단백질 분석</p>
 	                        </div>
 	                        <div>
-	                            <p class="title font-body-h-b">single cell ATAC sequencing</p>
+	                            <p class="title font-body-h-b">Single cell ATAC sequencing</p>
 	                            <p class="desc font-body">단일 핵의 DNA 풀림 정보 분석</p>
 	                        </div>
 	                        <div>
-	                            <p class="title font-body-h-b">single cell Multiome sequencing</p>
+	                            <p class="title font-body-h-b">Single cell Multiome sequencing</p>
 	                            <p class="desc font-body">단일 핵의 DNA 의 풀림 정보와 유전자 발현을 동시에 분석</p>
 	                        </div>
 	                    </div>

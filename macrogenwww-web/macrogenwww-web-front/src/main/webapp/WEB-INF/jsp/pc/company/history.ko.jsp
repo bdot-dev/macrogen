@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/@temp/macrogen/macrogen_bg_1.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
+		<header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 
         <div class="frame">
             <h2 class="hero-title">연혁</h2>
             <div class="slogan ko">유전체 분석 기술로<br>미래를 열어갑니다</div>
-            <div class= "slogan-sub">마크로젠은 인류 건강의 새 역사를 만들고 있습니다</div>
+            <!-- <div class= "slogan-sub">마크로젠은 인류 건강의 새 역사를 만들고 있습니다</div> -->
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>
@@ -153,6 +153,7 @@ function fnMove(seq){
     var id = $('#'+ seq);
     var offset = id.offset();
     $('html, body').animate({scrollTop : offset.top - 95}, 400);
+	return false;
 }
 
 // 연혁 인터랙션

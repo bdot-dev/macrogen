@@ -14,6 +14,27 @@
             <h2 class="font-h1">특허</h2>
         </div>
     </div>
+	<script>
+    $(function(){
+        var lastScroll = 0;
+        $(window).scroll(function(){
+            var st = $(this).scrollTop();
+            if (st > lastScroll){
+                // console.log('Down');
+                $('.header').show().css({'position': 'absolute','top':'0'});
+            }
+            else if (st === 0) {
+                // console.log('Top');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+            }
+            else {
+                // console.log('Up');
+                $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+            }
+            lastScroll = st;
+        });
+    });
+</script>
 
 	<form id="listForm" name="listForm">
 

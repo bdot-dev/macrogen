@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-global-network.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
                 <h2 class="hero-title">Global Network</h2>
                 <div class="slogan">GLOBAL<br/>MACROGEN</div>
-                <div class="slogan-sub">Leading global precision medicine company</div>
+                <!-- <div class="slogan-sub">Leading global precision medicine company</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -43,7 +43,7 @@
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
                     <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
-                    <a class="pin daejeon" href="#daejeon"><span>Daejeon&#44; Korea</span></a>
+                    <a class="pin daejeon" href="#sejong"><span>SEJONG&#44; KOREA</span></a>
                     <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
                     <a class="pin biopolis" href="#biopolis"><span>Biopolis&#44; Singapore</span></a>
                     <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item height_fix" id="daejeon">
+                            <!-- <li class="item height_fix" id="daejeon">
                                 <div class="name">Macrogen Daejeon Genome Center</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_4.png" alt="Macrogen Daejeon Genome Center"></div>
                                 <div class="info">
@@ -128,13 +128,13 @@
                                         <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
                                     </div>
                                 </div>
-                            </li>
+                            </li -->
                             <li class="item height_fix" id="songdo">
                                 <div class="name">Macrogen Songdo Global Campus</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Campus"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in 2025</span></li>
+                                        <li><span>To be established in 2026</span></li>
                                     </ul>
                                     <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
                                     <!-- <div class="tel">
@@ -145,15 +145,15 @@
                                     </div>  -->
                                 </div>
                             </li>
-                            <li class="item height_fix">
+                            <li class="item height_fix" id="sejong">
                                 <div class="name">Macrogen Sejong Campus</div>
                                 <div class="img"><img src="/publishing/pc-en/dist/img/macrogen/global_thumb_16.png" alt="Macrogen Sejong Campus"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>Established in 2024</span></li>
+                                        <li><span>Established in Nov 2024</span></li>
                                     </ul>
-                                    <!-- <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
-                                    <div class="tel">
+                                    <div class="address">20, Jiphyeonjungang-ro, Sejong-si</div>
+                                    <!-- <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>
                                         <span>FAX&#46;</span>

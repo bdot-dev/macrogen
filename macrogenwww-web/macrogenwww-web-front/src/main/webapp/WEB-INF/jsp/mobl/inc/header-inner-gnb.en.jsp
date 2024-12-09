@@ -4,7 +4,7 @@
     <div class="modal-dialog">
         <div class="gnb-content">
             <div class="gnb-header">
-                <h2 class="logo"><a href="/">마크로젠 로고</a></h2>
+                <h2 class="logo"><a href="/en/">마크로젠 로고</a></h2>
                 <a href="#" class="btn-close-black" data-bs-dismiss="modal" aria-label="Close"><span class="sr-only">닫기</span></a>
             </div>
             <div class="gnb-body" id="menu">
@@ -118,12 +118,12 @@
                                 <ul>
                                     <li><a href="#">- Precision Medicine</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer risk prediction</a></li>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis of causes of cancer</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">Cancer Risk Predictio</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/cancer#analyze">Analysis Of Causes Of Cancer</a></li>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer#monitoring">Cancer Occurrence Monitoring</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">- Genetic testing for cancer risk</a>
+                                    <li><a href="#">- Genetic Testing For Cancer Risk</a>
                                         <ul>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">Cancer Panel</a></li>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/cancer-genome#hereditary">Hereditary Cancer Panel</a></li>
@@ -133,16 +133,16 @@
                                     </li>
                                     <li><a href="#">- NGS-based Genetic Panel Lab</a>
                                         <ul>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification acquired by Macrogen in the clinical diagnosis business</a></li>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key features and strengths of  Macrogen’s cancer panels</a></li>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope of projects to set up NGS-based PMG labs</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">Certification Acquired By Macrogen In The Clinical Diagnosis Business</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#features">Key Features And Strengths Of  Macrogen’s Cancer Panels</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/ngs-panel#scope">Scope Of Projects To Set Up NGS-based PMG Labs</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">- GCLP</a>
                                         <ul>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#clin">ClinPham Seq</a></li>
                                             <li><a href="/${rc.locale.language }/business/diagnosis/gclp#multi-omics">Multi Omics</a></li>
-                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage of samples</a></li>
+                                            <li><a href="/${rc.locale.language }/business/diagnosis/gclp#sample">Storage Of Samples</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li><a href="/${rc.locale.language }/business/diagnosis/newborn">태아 및 희귀질환 검사</a></li> -->

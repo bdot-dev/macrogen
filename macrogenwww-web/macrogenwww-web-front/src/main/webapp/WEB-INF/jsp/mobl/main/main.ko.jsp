@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-
 <head>
 	<link rel="stylesheet" href="/resources/library/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/resources/css/mobile_common.css" />
@@ -10,7 +9,7 @@
     <script src="/resources/library/gsap/ScrollTrigger.min.js"></script>
     <script src="/resources/library/gsap/ScrollToPlugin.min.js"></script>
     <script src="/resources/library/marquee/marquee.js"></script>
-    <script src="/resources/script/mobile_common.js"></script>
+    <!-- <script src="/resources/script/mobile_common.js"></script> -->
     <script src="/resources/script/mobile.js"></script>
 
 	<script>
@@ -21,11 +20,8 @@
 			}
 		});
 	</script>
-	
 </head>
-<style>
-	.footer.main {display: none;}
-</style>
+
 <body divwrapclass="main-wrap">
 	<div class="wrap main-wrap" id="wrap">
 		<header class="header">
@@ -46,69 +42,85 @@
 									<div class="main-board__mo">
 										<ul class="main-board__list">
 											<li class="main-board__row">
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image01.jpg" alt="" />
-													<h4 class="main-board__description">
-														국내 최초 비의료기관<br />
-														바이오뱅크
-													</h4>
-												</div>
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image02.jpg" alt="" />
-													<h4 class="main-board__description">몸BTI 유전자검사 젠톡</h4>
-												</div>
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image03.jpg" alt="" />
-													<h4 class="main-board__description">
-														장내미생물 검사<br />
-														더바이옴
-													</h4>
-												</div>
-												<div class="main-board__image">
+												<a href="https://www.macrogen.com/ko/newsroom/news/20000000323?pageIndex=3&searchKeyword=">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image01.jpg" alt="" />
+														<h4 class="main-board__description">
+															국내 최초 비의료기관<br />
+															바이오뱅크
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/business/healthcare/dtc-genetic">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image02.jpg" alt="" />
+														<h4 class="main-board__description">몸BTI 유전자검사 <br />젠톡</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/business/healthcare/dtc-biome">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image03.jpg" alt="" />
+														<h4 class="main-board__description">
+															장내미생물 검사<br />
+															더바이옴
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/newsroom/news/20000000356?pageIndex=1&searchKeyword=">	
+													<div class="main-board__image">
 													<img src="/resources/images/mo/kv-image04.jpg" alt="" />
 													<h4 class="main-board__description">
 														마크로젠 세종캠퍼스<br />
 														오픈
 													</h4>
 												</div>
-												<div class="main-board__image">
-													<video autoplay muted playsinline loop>
-														<source src="/resources/video/kv01_01_m.mp4" type="video/mp4" />
-													</video>
-													<h4 class="main-board__description">
-														Single Cell<br />
-														Multi-omics
-													</h4>
-												</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/business/singlecell-multi">
+													<div class="main-board__image">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv01_01_m.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+															Single Cell<br />
+															Multi-omics
+														</h4>
+													</div>
+												</a>
 											</li>
 											<li class="main-board__row">
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image05.jpg" alt="" />
-													<h4 class="main-board__description">
-														Ultima Genomics UG100™ <br />
-														아시아 최초 도입
-													</h4>
-												</div>
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image06.jpg" alt="" />
-													<h4 class="main-board__description">젠톡 유전상담 AI 챗봇</h4>
-												</div>
-												<div class="main-board__image">
-													<video autoplay muted playsinline loop>
-														<source src="/resources/video/kv02_02_m.mp4" type="video/mp4" />
-													</video>
-													<h4 class="main-board__description">
-														Single Cell<br />
-														Multi-omics
-													</h4>
-												</div>
-												<div class="main-board__image">
-													<img src="/resources/images/mo/kv-image07.jpg" alt="" />
-													<h4 class="main-board__description">
-														인류의 건강한 미래<br />
-														마크로젠
-													</h4>
-												</div>
+												<a href="https://www.macrogen.com/ko/newsroom/news/20000000357?pageIndex=1&searchKeyword=">
+													<div class="main-board__image video-length first">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv01_05.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+															국가 통합 <br />바이오 빅데이터 구축
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/company/global-network">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image06.jpg" alt="" />
+														<h4 class="main-board__description">마크로젠 <br />글로벌 네트워크</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/company/overview">
+													<div class="main-board__image video-length second">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv02_06.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+																글로벌 정밀의학 <br />
+																헬스케어 리더
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/ko/company/vision">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image07.jpg" alt="" />
+														<h4 class="main-board__description">빅데이터·AI 기반 <br />건강데이터 산업의 미래</h4>
+													</div>
+												</a>
 											</li>
 										</ul>
 									</div>
@@ -175,10 +187,10 @@
 											<p class="main-service__description">질병예측뿐만 아니라 영양, 다이어트에 이르기까지 건강을 유지하고 균형 잡힌 생활습관을 만들어가는데 필요한 다양한 유전자 검사를 제공합니다.</p>
 											<ul class="main-service__link">
 												<li>
-													<a href="javascript:;">퍼스널 헬스케어</a>
+													<a href="/ko/business/healthcare/dtc-genetic">퍼스널 헬스케어</a>
 												</li>
 												<li>
-													<a href="javascript:;">반려동물 헬스케어</a>
+													<a href="/ko/business/healthcare/pet-genetic">반려동물 헬스케어</a>
 												</li>
 											</ul>
 										</div>
@@ -192,19 +204,19 @@
 											<p class="main-service__description">오랜기간 축적된 경험과 노하우, 글로벌 수준의 분석 인프라를 바탕으로 빠르고 정확하게 다양한 유전체 분석 서비스를 제공합니다.</p>
 											<ul class="main-service__link main-service__link--col50">
 												<li>
-													<a href="javascript:;">NGS</a>
+													<a href="/ko/business/research/ngs#genome">NGS</a>
 												</li>
 												<li>
-													<a href="javascript:;">Proteomics</a>
+													<a href="/ko/business/research/proteomics">Proteomics</a>
 												</li>
 												<li>
-													<a href="javascript:;">CES</a>
+													<a href="/ko/business/research/ces#standard">CES</a>
 												</li>
 												<li>
-													<a href="javascript:;">Single-cell omics</a>
+													<a href="/ko/business/singlecell-multi">Single-cell omics</a>
 												</li>
 												<li>
-													<a href="javascript:;">Microarray</a>
+													<a href="/ko/business/research/microarray#expression">Microarray</a>
 												</li>
 											</ul>
 										</div>
@@ -218,13 +230,13 @@
 											<p class="main-service__description">유전체정보, 의료정보 및 생활정보의 통합 빅데이터를 구축하고 질병을 예측하여 미래의학 혁신에 이바지하고 있습니다.</p>
 											<ul class="main-service__link">
 												<li>
-													<a href="javascript:;">암 유전체 검사</a>
+													<a href="/ko/business/diagnosis/cancer-genome#cancer">암 유전체 검사</a>
 												</li>
 												<li>
-													<a href="javascript:;">NGS 유전자패널 검사실</a>
+													<a href="/ko/business/diagnosis/ngs-panel#certification">NGS 유전자패널 검사실</a>
 												</li>
 												<li>
-													<a href="javascript:;">GCLP (임상시험검체분석)</a>
+													<a href="/ko/business/diagnosis/gclp#clin">GCLP (임상시험검체분석)</a>
 												</li>
 											</ul>
 										</div>
@@ -270,7 +282,7 @@
 										<strong>Top<span class="counting" data-count="5">0</span></strong>
 										<p>
 											연간 30만명 유전제 분석<br />
-											CAPA Global Top5M
+											CAPA Global Top5
 										</p>
 									</li>
 									<li>
@@ -281,8 +293,8 @@
 										</p>
 									</li>
 									<li>
-										<strong><span class="counting" data-count="750">0</span>+</strong>
-										<p>글로벌 임직원 수<br />(2023)</p>
+										<strong><span class="counting" data-count="700">0</span>+</strong>
+										<p>글로벌 임직원 수<br />(2024)</p>
 									</li>
 									<li>
 										<strong><span class="counting" data-count="156">0</span></strong>
@@ -485,49 +497,23 @@
 							<div class="main-news__partnership">
 								<ul class="main-news__list">
 									<li>
-										<a href="javascript:;" class="main-news__container">
-											<div class="main-news__left">
-												<div class="main-news__content">
-													<div class="main-news__tag">
-														<span class="main-news__category">Partnership</span>
-													</div>
-													<div class="main-news__top">
-														<h4 class="main-news__title">마크로젠-엠바이오랩, 장내 미생물 검사 ‘더바이옴’ 500건 공급 계약 체결</h4>
-													</div>
-													<div class="main-news__bottom">
-														<p class="main-news__description">
-															2024년 7월 24일 - 글로벌 디지털 헬스케어 기업 마크로젠(대표 김창훈)과 삼성전자가 손을 맞잡았다. 마크로젠은 삼성전자와 유전체 데이터 기반 헬스케어 서비스의 연구개발과 사업화를 목적으로 업무협약(MOU)을 체결했다고 24년 7월 24일 밝혔다.
-															2024년 7월 24일 - 글로벌 디지털 헬스케어 기업
-														</p>
-
-														<time class="main-news__date">2024.05.17</time>
-													</div>
-												</div>
-											</div>
-											<div class="main-news__right">
-												<div class="main-news__image">
-													<img src="/resources/images/mo/news_image01.jpg" alt="" />
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="main-news__container">
+										<a href="https://www.macrogen.com/ko/newsroom/news/20000000357?pageIndex=1&searchKeyword=" class="main-news__container">
 											<div class="main-news__left">
 												<div class="main-news__content">
 													<div class="main-news__tag">
 														<span class="main-news__category">Business</span>
 													</div>
 													<div class="main-news__top">
-														<h4 class="main-news__title">마크로젠, 국내 최대 규모 ‘국가 통합 바이오 빅데이터 구축 사업’ 우선협상대상자 선정</h4>
+														<h4 class="main-news__title">
+															마크로젠, 국내 최대 규모 ‘국가 통합 바이오 빅데이터 구축 사업’ 최종 선정… “2032년까지 대한민국 100만 명 바이오 데이터 구축“
+														</h4>
 													</div>
 													<div class="main-news__bottom">
 														<p class="main-news__description">
-															2024년 10월 29일 - 글로벌 유전체 분석 기업 마크로젠(대표 김창훈), 디엔에이링크, 테라젠바이오, 씨지인바이츠 공동 컨소시엄은 보건복지부, 과학기술정보통신부, 산업통상자원부, 질병관리청이 지원하고 한국생명공학연구원이 발주하는 ‘국가 통합
-															바이오 빅데이터 구축 사업’의 유전체 생산기관 용역과제 우선협상대상자로 선정됐다.
+															2024년 12월 9일 – 글로벌 유전체 분석 기업 마크로젠(대표 김창훈), 디엔에이링크, 테라젠바이오, 씨지인바이츠 공동 컨소시엄은 보건복지부와 질병관리청이 지원하고 한국생명공학연구원이 발주하는 ‘국가 통합 바이오 빅데이터 구축 사업’의 유전체 생산기관 용역과제 사업자로 최종 선정됐다.
 														</p>
 
-														<time class="main-news__date">2024.10.29</time>
+														<time class="main-news__date">2024.12.09</time>
 													</div>
 												</div>
 											</div>
@@ -539,22 +525,51 @@
 										</a>
 									</li>
 									<li>
-										<a href="javascript:;" class="main-news__container">
+										<a href="https://www.macrogen.com/ko/newsroom/news/20000000356?pageIndex=1&searchKeyword=" class="main-news__container">
+											<div class="main-news__left">
+												<div class="main-news__content">
+													<div class="main-news__tag">
+														<span class="main-news__category">Corporate</span>
+													</div>
+													<div class="main-news__top">
+														<h4 class="main-news__title">
+															마크로젠, ‘세종캠퍼스’ 준공…미래형 종합 지놈센터로 도약
+														</h4>
+													</div>
+													<div class="main-news__bottom">
+														<p class="main-news__description">
+															2024년 12월 2일 – 글로벌 유전체 분석 기업 마크로젠(대표 김창훈)이 지난 11월 29일 세종시 세종테크밸리 내에 위치한 ‘마크로젠 세종캠퍼스’ 준공식을 개최했다고 밝혔다. 이번 준공식에는 최민호 세종시장, 정해영 국가생명연구자원정보센터장 등 주요 인사들과 관계자 70여 명이 참석했다.
+														</p>
+
+                                                         <time class="main-news__date">2024.12.02</time>
+													</div>
+												</div>
+											</div>
+											<div class="main-news__right">
+												<div class="main-news__image">
+													<img src="/resources/images/mo/news_image05.jpg" alt="" />
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.macrogen.com/ko/newsroom/news/20000000352?pageIndex=1&searchKeyword=" class="main-news__container">
 											<div class="main-news__left">
 												<div class="main-news__content">
 													<div class="main-news__tag">
 														<span class="main-news__category">Business</span>
 													</div>
 													<div class="main-news__top">
-														<h4 class="main-news__title">마크로젠, 국내 최초 비의료기관 바이오뱅크 개설 허가</h4>
+														<h4 class="main-news__title">
+															마크로젠 – 삼성전자, ‘젠톡’ 유전자검사 서비스 공식 계약 체결
+														</h4>
 													</div>
 													<div class="main-news__bottom">
 														<p class="main-news__description">
-															2024년 6월 4일 - 글로벌 디지털 헬스케어 기업 마크로젠(대표 김창훈)이 비의료기관 중 국내 최초로 바이오뱅크(인체유래물은행) 개설 허가를 받았다고 밝혔다. 마크로젠은 누적 50만 건 이상의 유전자 분석 및 27년간의 연구 유전체 데이터와
-															마크로젠의료재단 건강검진센터를 통한 의료정보에,
+															2024년 11월 18일 – 마크로젠의 유전자/미생물검사 기반 건강관리 플랫폼 ‘젠톡(GenTok)’이 삼성 헬스 앱 내에 탑재된다. 이를 통해 삼성 헬스 사용자는 일상생활 라이프로그와 유전자검사 분석 데이터에 연동된 통합적인 개인 맞춤 건강 솔루션을 제공받게 된다.
 														</p>
-
-														<time class="main-news__date">2024.05.01</time>
+									
+														<time class="main-news__date">2024.11.18</time>
 													</div>
 												</div>
 											</div>
@@ -750,7 +765,7 @@
 							분야별 담당자가 안내해드릴게요
 						</h2>
 						<div class="main-banner__button">
-							<a href="javascript:;" class="btn btn-default btn-default--gradient">
+							<a href="/ko/contact-us" class="btn btn-default btn-default--gradient">
 								<span class="btn btn-default__text btn-default__text--diff">Contact Us</span>
 							</a>
 						</div>
@@ -765,134 +780,7 @@
 					}
 				});
 			</script>
-			<footer class="footer">
-				<div class="footer__inner">
-					<div class="footer__top">
-						<div class="footer__title">
-							<h2>
-								Humanizing genomics<br />
-								macrogen
-							</h2>
-						</div>
-						<div class="footer__list">
-							<div class="footer__menu">
-								<button type="button"><strong>Macrogen</strong></button>
-								<div class="toggle__menu">
-									<ul>
-										<li><a href="javascript:;">회사소개</a></li>
-										<li><a href="javascript:;">글로벌 네트워크</a></li>
-										<li><a href="javascript:;">채용</a></li>
-										<li><a href="javascript:;">Resource</a></li>
-										<li><a href="javascript:;">R&amp;D</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="footer__menu">
-								<button type="button"><strong>Service</strong></button>
-								<div class="toggle__menu">
-									<ul>
-										<li><a href="javascript:;">퍼스널 헬스케어</a></li>
-										<li><a href="javascript:;">반려동물 헬스케어</a></li>
-										<li><a href="javascript:;">연구분석 서비스</a></li>
-										<li><a href="javascript:;">싱글셀 분석 서비스</a></li>
-										<li><a href="javascript:;">임상분석 서비스</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="footer__menu">
-								<button type="button"><strong>Newsroom</strong></button>
-								<div class="toggle__menu">
-									<ul>
-										<li><a href="javascript:;">뉴스</a></li>
-										<li><a href="javascript:;">공지사항</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="footer__menu">
-								<button type="button"><strong>IR</strong></button>
-								<div class="toggle__menu">
-									<ul>
-										<li><a href="javascript:;">재무정보</a></li>
-										<li><a href="javascript:;">공시정보</a></li>
-										<li><a href="javascript:;">IR소식</a></li>
-										<li><a href="javascript:;">투자자 문의</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="footer__menu">
-								<button type="button"><strong>ESG</strong></button>
-								<div class="toggle__menu">
-									<ul>
-										<li><a href="javascript:;">ESG경영</a></li>
-										<li><a href="javascript:;">윤리경영</a></li>
-										<li><a href="javascript:;">사회공헌</a></li>
-										<li><a href="javascript:;">온실가스</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="footer__bottom">
-						<div class="footer__etc">
-							<div class="footer__site">
-								<ul>
-									<li>
-										<a href="javascript">서비스 신청</a>
-									</li>
-									<li>
-										<a href="javascript">개인정보처리방침</a>
-									</li>
-									<li>
-										<a href="javascript">내부정보관리규정</a>
-									</li>
-									<li>
-										<a href="javascript">영상정보처리기기 운영.관리방침</a>
-									</li>
-									<li>
-										<a href="javascript">사이트맵</a>
-									</li>
-									<li>
-										<a href="javascript">Contact us</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="footer__info">
-							<p>서울특별시 강남구 테헤란로 238 (마크로젠빌딩)</p>
-							<p class="">
-								<span>대표번호</span>
-								<span>02-2180-7000</span>
-							</p>
-							<p class="">
-								<span>대표자</span>
-								<span>김창훈</span>
-							</p>
-						</div>
-						<div class="footer__copyright">
-							<p>©Macrogen, Inc. All Rights Reserved.</p>
-							<div class="footer__select">
-								<button type="button" class="footer__button">Family site</button>
-								<div class="footer__toggle">
-									<div class="footer__container">
-										<ul>
-											<li><a href="javascript:;">Family site1</a></li>
-											<li><a href="javascript:;">Family site2</a></li>
-											<li><a href="javascript:;">Family site3</a></li>
-											<li><a href="javascript:;">Family site4</a></li>
-											<li><a href="javascript:;">Family site5</a></li>
-											<li><a href="javascript:;">Family site6</a></li>
-											<li><a href="javascript:;">Family site7</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="top-btn">
-					<button type="button"><span>TOP</span></button>
-				</div>
-			</footer>
+			
 		</main>
 	</div>
 

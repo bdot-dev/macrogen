@@ -15,6 +15,9 @@
 	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
 	<meta property="og:image" content="${frontDomain }${imgUrl }" />
 </head>
+<style>
+	.font-body img {width: 100%!important; height:100%!important;}
+</style>
 <body class="en">
 
 	<!-- 검색조건 저장용 -->

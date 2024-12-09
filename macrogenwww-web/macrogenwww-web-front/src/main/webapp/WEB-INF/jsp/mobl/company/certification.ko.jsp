@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-authorization_v2.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,6 @@
         <div class="frame">
             <h2 class="font-h4">인증</h2>
             <div class="font-slogan">유전체 분석의<br/>글로벌 스탠다드</div>
-            <div class="font-h7-r">마크로젠의 기술은 세계에서<br/>인정받고 있습니다</div>
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -236,6 +235,11 @@
                     <div class="title-box">
                         <div class="desc">마크로젠은 고객들이 신뢰할 수 있는 최고품질의 서비스를 제공하기 위해 Illumina, Pacific Biosciences,Life Technologies, Thermo Fisher Scientific, Agilent Technology, 10x Genomics 등의 협력사가 제공하는 서비스 공급업체 인증 프로그램(CSP, Certified Service Provider)에 참여합니다. 자체적으로 구축한  전사 서비스 품질경영시스템과 함께 다양한 CSP인증 프로그램 참여를 통해 유전자분석 플랫폼 공급업체가 규정한 서비스 품질기준을 준수합니다. 고품질의 서비스를 제공하고, 유전자분석 플랫폼 공급업체와의 협력을 바탕으로 공동마케팅 및 지원 프로그램을 운영함으로써 고객들에게 다양한 혜택을 제공합니다.</div>
                         <div class="img-wrap">
+                            <div class="img">
+                                <span class="tit">Ultima Genomics</span>
+                                <img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-17.png" alt="Ultima Genomics">
+                                <a class="btn btn-light btn-round" href="javascript:alert('준비 중인 파일입니다.');">인증서 보기</a>
+                            </div>
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="/publishing/mobile-ko/dist/img/macrogen/img-authorization-8.png" alt="Illumina">

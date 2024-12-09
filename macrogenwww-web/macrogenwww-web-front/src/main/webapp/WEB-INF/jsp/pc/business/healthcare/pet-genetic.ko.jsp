@@ -4,7 +4,7 @@
 
     <div class="full-bg business_bg bg-type4">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -19,7 +19,7 @@
 </nav>
 
             <h2 class="hero-title">반려동물 유전자 분석</h2>
-            <div class="slogan-sub">마이펫진</div>
+            <!-- <div class="slogan-sub">마이펫진</div> -->
         </div>
     </div>
     <div class="container">

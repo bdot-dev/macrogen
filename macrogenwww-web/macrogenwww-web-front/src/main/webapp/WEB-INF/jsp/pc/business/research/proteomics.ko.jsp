@@ -5,7 +5,7 @@
 	<div class="wrap">
   		<div class="full-bg business_bg oligo">
 		    <!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>  
 			
@@ -19,10 +19,10 @@
 	                </ol>
 	            </nav>
 	            <h2 class="hero-title en">Proteomics</h2>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 			
 		</div>

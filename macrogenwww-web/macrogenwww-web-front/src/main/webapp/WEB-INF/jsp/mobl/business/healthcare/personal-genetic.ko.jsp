@@ -3,14 +3,14 @@
 <body>
 	<div class="wrap">
 		<div class="top-bg personal01">
-			<header class="header header-white">
+			<header class="header">
 			    <div class="inner">
 			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			    </div>
 			</header>
 			<div class="frame">
-	            <h2 class="font-h1">질병예측 유전자검사</h2>
+	            <h2 class="font-h3">질병예측 유전자검사</h2>
 	        </div>
 		</div>
 		

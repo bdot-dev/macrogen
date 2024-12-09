@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
-        <header class="header header-white">
+    <div class="top-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                //$('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -33,7 +33,7 @@
 
         <div class="frame">
             <h2 class="font-h1">Microarray</h2>
-            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a>
+            <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a> -->
             </div>
         </div>
     </div>
@@ -383,87 +383,81 @@
                                             <th>SNP contents</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td rowspan="16">Illumina</td>
-                                            <td rowspan="16" class="text-start table-bg">-Model Org.<br>-Non-Human</td>
-                                            <td rowspan="10">Genome Wide<br>SNP Array</td>
-                                            <td>Infinium Omni5Exome-4</td>
-                                            <td>4.5M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium Omni5-4</td>
-                                            <td>4.3M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium Omni2.5Exome-8</td>
-                                            <td>2.7M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium Omni2.5-8</td>
-                                            <td>2.5M</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium OmniExpressExome-8</td>
-                                            <td>950K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium OmniExpress-24</td>
-                                            <td>715K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium CoreExome-24</td>
-                                            <td>540K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium Core-24</td>
-                                            <td>300K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium GlobalScreeningArray</td>
-                                            <td>660K</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">ETC</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="6">Targeted Array</td>
-                                            <td>Infinium QC Array-24</td>
-                                            <td>16K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium Exome-24</td>
-                                            <td>250K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium OncoArray-500K</td>
-                                            <td>500K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium ImmunoArray-24</td>
-                                            <td>250K</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Infinium PsychArray-24</td>
-                                            <td>590K</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">ETC</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="2">Life Technologies</td>
-                                            <td class="text-start table-bg" rowspan="2">
-                                                - Pre-designed probes<br>
-                                                - Customized probes
-                                            </td>
-                                            <td rowspan="2">-</td>
-                                            <td>Openarray Customization</td>
-                                            <td>up to 240 SNPs</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Taqman genotyping</td>
-                                        </tr>
-                                        </tbody>
+										<tbody>
+											<tr>
+											  <td rowspan="12">Illumina</td>
+											  <td rowspan="14" class="text-start table-bg">- Human<br>- Model Org.<br>- Non-Human</td>
+											  <td rowspan="6">Genome Wide<br>SNP Array</td>
+											  <td>Infinium Omni5Exome-4</td>
+											  <td>4.5M</td>
+											</tr>
+											<tr>
+											  <td>Infinium Omni5-4</td>
+											  <td>4.3M</td>
+											</tr>
+											<tr>
+											  <td>Infinium OmniExpress-24</td>
+											  <td>715K</td>
+											</tr>
+											<tr>
+											  <td>Infinium Global Screening Array</td>
+											  <td>660K</td>
+											</tr>
+											<tr>
+											  <td>Infinium Global Diversity Array</td>
+											  <td>1.8M</td>
+											</tr>
+											<tr>
+											  <td colspan="2">ETC</td>
+											</tr>
+											<tr>
+											  <td rowspan="6">Targeted Array</td>
+											  <td>Infinium QC Array-24</td>
+											  <td>16K</td>
+											</tr>
+											<tr>
+											  <td>Infinium Exome-24</td>
+											  <td>250K</td>
+											</tr>
+											<tr>
+											  <td>Infinium OncoArray-500K</td>
+											  <td>500K</td>
+											</tr>
+											<tr>
+											  <td>Infinium ImmunoArray-24</td>
+											  <td>250K</td>
+											</tr>
+											<tr>
+											  <td>Infinium PsychArray-24</td>
+											  <td>590K</td>
+											</tr>
+											<tr>
+											  <td colspan="2">ETC</td>
+											</tr>
+											<tr>
+											  <td rowspan="2">Affymetrix</td>
+											  <td rowspan="2">Genome Wide<br>SNP Array</td>
+											  <td>Axiom PangenomiX Array</td>
+											  <td>800K</td>
+											</tr>
+											<tr>
+											  <td>Axiom Precision Medicine Diversity Array</td>
+											  <td>850K</td>
+											</tr>
+											<tr>
+											  <td rowspan="2">Thermofisher Scientifics</td>
+											  <td class="text-start table-bg" rowspan="2">
+												- Pre-designed probes<br>
+												- Customized probes
+											  </td>
+											  <td rowspan="2">-</td>
+											  <td>Openarray Customization</td>
+											  <td>up to 240 SNPs</td>
+											</tr>
+											<tr>
+											  <td colspan="2">Taqman genotyping</td>
+											</tr>
+										</tbody>
                                     </table>
                                 </div>
                             </div>

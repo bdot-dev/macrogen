@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var $familyButton = document.querySelector('.footer__button');
   var $familyToggle = document.querySelector('.footer__toggle');
+  var header = document.getElementById('header');
   $familyButton.addEventListener('click', function (e) {
     var $target = this.nextElementSibling;
     var menuHeight = $target.scrollHeight;
@@ -21,5 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         $familyToggle.style.height = '0px';
       }
     }
+  });
+  document.querySelector('.top-btn').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    header.style.display = 'block';
   });
 });

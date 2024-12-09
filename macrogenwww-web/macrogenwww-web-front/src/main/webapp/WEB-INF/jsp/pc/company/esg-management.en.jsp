@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-esg.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">ESG Management</h2>
             <div class="slogan">Creating a healthier<br/> society</div>
-            <div class= "slogan-sub">Promoting health and research for a better future</div>
+            <!-- <div class= "slogan-sub">Promoting health and research for a better future</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

@@ -6,7 +6,7 @@
 	<div class="wrap">
 	 	<div class="full-bg business_bg bg-singlemulti">
 		    <!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			 <div class="frame frameB">
@@ -19,10 +19,10 @@
 	                </ol>
 	            </nav>
 	            <div class="hero-title en">Single Cell Multi-omics Analysis</div>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div> 
  		
@@ -43,28 +43,28 @@
                     </div>
                     <div class="box-gray-6">
                         <div>
-                            <p class="title">single cell RNA sequencing</p>
+                            <p class="title">Single cell RNA sequencing</p>
                             <p class="desc">단일세포 유전자 발현 분석</p>
                         </div>
                         <div>
-                            <p class="title">single nucleus RNA sequencing</p>
+                            <p class="title">Single nucleus RNA sequencing</p>
                             <p class="desc">세포로 진행하기 어려운 샘플에서<br>핵을 분리한 후 유전자 발현 분석</p>
                         </div>
                         <div>
-                            <p class="title">single cell immune profiling</p>
+                            <p class="title">Single cell immune profiling</p>
                             <p class="desc">단일세포 TCR, BCR 발현 분석</p>
                         </div>
                         <div>
-                            <p class="title">single cell surface protein profiling</p>
+                            <p class="title">Single cell surface protein profiling</p>
                             <p class="desc">단일세포 표면에 위치하는 단백질 분석
                             </p>
                         </div>
                         <div>
-                            <p class="title">single cell ATAC sequencing</p>
+                            <p class="title">Single cell ATAC sequencing</p>
                             <p class="desc">단일 핵의 DNA 풀림 정보 분석</p>
                         </div>
                         <div>
-                            <p class="title">single cell Multiome sequencing</p>
+                            <p class="title">Single cell Multiome sequencing</p>
                             <p class="desc">단일 핵의 DNA 의 풀림 정보와 유전자 발현을 동시에 분석</p>
                         </div>
                     </div>

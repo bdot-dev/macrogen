@@ -5,7 +5,7 @@
 	<div class="wrap">
 		<div class="full-bg business_bg bg-type2">
 		    <!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			<div class="frame frameB">
@@ -14,14 +14,14 @@
 	                    <li class="breadcrumb-item">Home</li>
 	                    <li class="breadcrumb-item">SERVICE</li>
 	                    <li class="breadcrumb-item">Clinical Services</li>
-	                    <li class="breadcrumb-item">Genetic testing for cancer risk</li>
+	                    <li class="breadcrumb-item">Genetic Testing For Cancer Risk</li>
 	                </ol>
 	            </nav>
-	            <h2 class="hero-title">Genetic testing for cancer risk</h2>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <h2 class="hero-title">Genetic Testing For Cancer Risk</h2>
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 

@@ -3362,7 +3362,7 @@
 |----------------------------------|
 */
 .section_agreement .main-title {
-  padding: 140px 0px 130px;
+  padding: 100px 0;
   font-weight: bold; }
 
 .section_agreement .dropdown_area {
@@ -3517,16 +3517,16 @@
   transition: 2s;
   animation-name: businessAnimation;
   background-attachment: fixed;
-  background-image: url("../img/business/bg_banner_ngs.png");
+  /* background-image: url("../img/business/bg_banner_ngs.png"); */
   margin: 0 auto 140px !important;
   /*임상진단서비스*/
   /*헬스케어서비스*/ }
-  .business_bg.bg-type2 {
+  /* .business_bg.bg-type2 {
     background-image: url("../img/business/bg_banner_cancer.png"); }
-  .business_bg.bg-type3 {
-    background-image: url("../img/business/bg_banner_pet.png"); }
-  .business_bg.bg-type4 {
-    background-image: url("../img/business/bg_banner_pet_dog.png"); }
+      .business_bg.bg-type3 {
+    background-image: url("../img/business/bg_banner_pet.png"); } */
+/*   .business_bg.bg-type4 {
+    background-image: url("../img/business/bg_banner_pet_dog.png"); } */
 
 @keyframes businessAnimation {
   from {
@@ -4316,7 +4316,7 @@
     color: #FFFFFF !important; }
   .macrogen.full-bg {
     position: relative;
-    background-image: url(../img/@temp/macrogen/macrogen_bg_1.png);
+    /* background-image: url(../img/@temp/macrogen/macrogen_bg_1.png); */
     background-size: 1920px 600px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -4370,15 +4370,18 @@
     .macrogen.full-bg .frame {
       position: relative;
       height: calc(100% - 124px);
-      margin: 0 auto; padding-top: 241px; padding-bottom: 100px;}
+      margin: 0 auto;padding: 100px 0;
+	  text-align: center;
+	  }
       .macrogen.full-bg .frame .hero-title {
-        margin-bottom: 10px;
-        font-size: 64px;;
-        line-height: 93px;
-        letter-spacing: -3px; }
+        margin-bottom: 0px;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: -0.03em; }
+
         .macrogen.full-bg .frame .hero-title.en {
-          line-height: 75px;
-          letter-spacing: -0.5px;
+          /*line-height: 75px;
+          letter-spacing: -0.5px;*/
           margin-bottom: 0; }
       .macrogen.full-bg .frame .slogan.ko {
         font-size: 80px;
@@ -5043,6 +5046,7 @@
   .macrogen.macrogen-authorization .tooltip-box .text-box {
     top: 52px; }
   .macrogen.recruitment-info .section {
+  padding-top: 100px;
     padding-bottom: 100px;
     border-bottom: 1px solid #e9e9e9;
     margin-bottom: 100px; }
@@ -6992,6 +6996,7 @@
       transform: translateY(3px);
       vertical-align: middle; }
     .macrogen.macrogen-contact-us .font-h3 {
+	padding-top: 100px;
       margin-bottom: 120px;
       line-height: 81px; }
     .macrogen.macrogen-contact-us .font-h5 {
@@ -8575,8 +8580,8 @@ margin-bottom: 60px; }
   /*싱크진 연구소*/ }
   .research-wrap .research_bg {
     width: 100%;
-    height: 600px;
-    background-image: url("../img/RD/bg-visual.png");
+    /* height: 600px; */
+    /* background-image: url("../img/RD/bg-visual.png"); */
     background-size: cover; }
   .research-wrap .divider {
     margin-top: 120px; }
@@ -9294,7 +9299,7 @@ margin-bottom: 60px; }
     .section .map-wrap .map_pins .seoul .popup_inner {
       top: -224px; left:22px;
       width: 457px;
-      height: 380px;
+      /* height: 380px; */
      
      
     }
@@ -9604,7 +9609,6 @@ margin-bottom: 60px; }
 
 /* 241018 */
 .ir {overflow: hidden; position: absolute; top: -999999px; left: -999999px; width: 0; height: 0; font-size: 0; text-indent: -999999px;}
-
 
 
 

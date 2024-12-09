@@ -6,16 +6,16 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
 		        <li class="breadcrumb-item active">Notice</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_newsroom">
-            <h2 class="font-h1">Notice</h2>
+            <h2 class="font-h1 ir-diff">Notice</h2>
             <div class="search-wrap">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

@@ -1,818 +1,935 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<head>
+	<link rel="stylesheet" href="/resources/library/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/resources/css/mobile_common.css" />
+	<link rel="stylesheet" href="/resources/css/mobile.css" />
+	<link rel="stylesheet" href="/resources/css/mobile_en.css" />
+	<script src="/resources/library/swiper/swiper-bundle.min.js"></script>
+	<script src="/resources/library/gsap/gsap.min.js"></script>
+	<script src="/resources/library/gsap/ScrollTrigger.min.js"></script>
+	<script src="/resources/library/gsap/ScrollToPlugin.min.js"></script>
+	<script src="/resources/library/marquee/marquee.js"></script>
+	<!-- <script src="/resources/script/mobile_common.js"></script> -->
+	<script src="/resources/script/mobile.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const $htmlEl = document.querySelector('html');
+			if ($htmlEl) {
+				document.querySelector('html').classList.add('animated');
+			}
+		});
+	</script>
+
+	<style>
+		.footer.main, .btn-totop {display: none;}
+		
+		
+	</style>
+</head>
 <body divwrapclass="main-wrap">
-    <div class="main-bg">
-        <header class="header">
-    <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
-        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
-    </div>
-</header>
+	<div class="wrap main-wrap" id="wrap">
+		<header class="header">
+			<div class="inner">
+				<h1 class="logo"><a href="/en/">마크로젠 로고</a></h1>
+				<a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
+			</div>
+		</header>
+		<main class="container">
+			<h2 class="ir">정밀의학 생명공학기업 마크로젠은 개개인이 타고난 유전적 특성을 정확히 알고 보다 건강한 삶을 준비할 수 있도록 돕는 초개인화 헬스케어 서비스를 제공합니다.</h2>
+			<section class="section section--kv section--slide">
+				<div class="section__inner">
+					<h3 class="ir">macrogen main keyvisual</h3>
+					<div class="main-full main-kv">
+						<div class="main-kv__inner">
+							<div class="main-board">
+								<div class="main-board__cont">
+									<div class="main-board__mo">
+										<ul class="main-board__list">
+											<li class="main-board__row">
+												<a href="https://www.macrogen.com/en/newsroom/news/20000000354?pageIndex=1&searchKeyword=">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image01.jpg" alt="" />
+														<h4 class="main-board__description">
+															First Non-Medical Biobank<br />
+															in South Korea
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/newsroom/news/20000000358?pageIndex=1&searchKeyword=">
+													<div class="main-board__image video-length first">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv01_03.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+															the Korean National<br />
+															Project of Bio-Big Data
+														</h4>
+													</div>
+												</a>
+												<a href="https://dna.macrogen-singapore.com/eng/">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image03_en.jpg" alt="" />
+														<h4 class="main-board__description">
+															Meet <br />
+															Macrogen APAC team
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/newsroom/news/20000000336?pageIndex=1&searchKeyword=">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image04_en.jpg" alt="" />
+														<h4 class="main-board__description">
+															Partnering with PacBio <br />
+															for Precision Health <br />
+															in Singapore
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/business/singlecell-multi">
+													<div class="main-board__image">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv01_01_m.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+															Single-Cell Multi-<br />
+															Omics Analysi<br />
+															Services
+														</h4>
+													</div>
+												</a>
+											</li>
+											<li class="main-board__row">
+												<a href="https://www.macrogen.com/en/business/research/ngs#genome">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image05_en.jpg" alt="" />
+														<h4 class="main-board__description">
+															Next Generation<br />
+															Sequencing
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/company/global-network">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image06.jpg" alt="" />
+														<h4 class="main-board__description">Macrogen <br />Global Network</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/company/overview">
+													<div class="main-board__image video-length second">
+														<video autoplay muted playsinline loop>
+															<source src="/resources/video/kv02_06.mp4" type="video/mp4" />
+														</video>
+														<h4 class="main-board__description">
+															Global Leader <br />
+															in Precision Medicine <br />
+															Healthcare
+														</h4>
+													</div>
+												</a>
+												<a href="https://www.macrogen.com/en/company/vision">
+													<div class="main-board__image">
+														<img src="/resources/images/mo/kv-image07.jpg" alt="" />
+														<h4 class="main-board__description">Future of Digital Health <br />with Big Data and AI</h4>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--slogan section--slide">
+				<div class="section__inner">
+					<h3 class="ir">마크로젠 서비스</h3>
+					<div class="main-full main-slogan">
+						<div class="main-slogan__wrap">
+							<div class="main-slogan__group">
+								<div class="main-slogan__text">
+									<h4>Combining top-tier</h4>
+								</div>
+								<div class="main-slogan__text">
+									<h4>global genomic</h4>
+								</div>
+								<div class="main-slogan__text">
+									<h4>analysis expertise</h4>
+								</div>
+								<div class="main-slogan__text">
+									<h4>
+										with<span class="highlight"><span class="bg"></span>Big Data</span>and<span class="highlight"><span class="bg"></span>AI</span>
+									</h4>
+								</div>
+							</div>
+							<div class="overlay-circle"></div>
+							<div class="main-slogan__marquee">
+								<h4>
+									We are creating<br />
+									pathways to a<br />
+									healthier life.
+								</h4>
+								<div class="main-slogan__imagewrap">
+									<ul>
+										<li>
+											<div class="main-slogan__image">
+												<img src="/resources/images/main/main-slogan_image01.jpg" alt="" />
+											</div>
+										</li>
+										<li>
+											<div class="main-slogan__image main-slogan__image--scale"></div>
+										</li>
+										<li>
+											<div class="main-slogan__image">
+												<img src="/resources/images/main/main-slogan_image03.jpg" alt="" />
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-full main-service">
+						<div class="main-service__slide">
+							<ul class="main-service__list swiper-wrapper">
+								<li class="main-service__item main-service__item--01 swiper-slide">
+									<div class="main-service__cont">
+										<div class="main-service__left">
+											<span class="main-service__entitle">Personal Healthcare</span>
+											<h3 class="main-service__kotitle">Healthcare</h3>
+											<p class="main-service__description">We provide a wide range of genetic tests to support not only disease prediction but also nutrition, diet, and overall wellness, empowering you to maintain health and build balanced lifestyle habits.</p>
+											<ul class="main-service__link">
+												<li>
+													<a href="/en/business/healthcare/dtc-genetic">Personal Healthcare</a>
+												</li>
+												<li>
+													<a href="/en/business/healthcare/pet-genetic">Pet Healthcare</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="main-service__item main-service__item--02 swiper-slide">
+									<div class="main-service__cont">
+										<div class="main-service__left">
+											<span class="main-service__entitle">Research and Data Analysis</span>
+											<h3 class="main-service__kotitle">
+												Research and<br />
+												Data Analysis
+											</h3>
+											<p class="main-service__description">Leveraging years of accumulated expertise and global-standard analytical infrastructure, we offer fast, accurate, and comprehensive genomic analysis services.</p>
+											<ul class="main-service__link">
+												<li>
+													<a href="/en/business/research/ngs#genome">NGS</a>
+												</li>
+												<li>
+													<a href="/en/business/research/proteomics">Proteomics</a>
+												</li>
+												<li>
+													<a href="/en/business/research/ces#standard">CES</a>
+												</li>
+												<li>
+													<a href="/en/business/singlecell-multi">Single-cell omics</a>
+												</li>
+												<li>
+													<a href="/en/business/research/microarray#expression">Microarray</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="main-service__item main-service__item--03 swiper-slide">
+									<div class="main-service__cont">
+										<div class="main-service__left">
+											<span class="main-service__entitle">Clinical Diagnosis</span>
+											<h3 class="main-service__kotitle">
+												Clinical<br />
+												Diagnostics
+											</h3>
+											<p class="main-service__description">By building an integrated big data system of genomic, medical, and lifestyle information, we are advancing disease prediction and pioneering innovation in future medicine.</p>
+											<ul class="main-service__link main-service__link--large">
+												<li>
+                                                    <a href="/en/business/diagnosis/cancer-genome#cancer">Cancer Genomic Testing</a>
+												</li>
+												<li>
+                                                   <a href="/en/business/diagnosis/ngs-panel#certification">NGS Genomic Panel Laboratory</a>
+												</li>
+												<li>
+                                                    <a href="/en/business/diagnosis/gclp#clin">GCLP (Clinical Trial Sample Analysis)</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="main-service__buttonwrap">
+								<ul class="main-service__button">
+									<li class="active">Healthcare</li>
+									<li>Research and Data Analysis</li>
+									<li>Clinical Diagnostics</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--info">
+				<div class="section__inner">
+					<h2 class="ir">macrogen service</h2>
+					<div class="main-full main-info">
+						<div class="main-info__wrap">
+							<h3 class="title title--white tac">
+								Driving continuous<br />
+								growth and leading<br />
+								the paradigm<br />
+								shift in healthcare.
+							</h3>
+							<div class="main-info__content">
+								<ul class="main-info__list">
+									<li>
+										<strong>No.<span class="counting" data-count="1">0</span></strong>
+										<p>
+											Market Share<br />
+											in South Korea
+										</p>
+									</li>
+									<li>
+										<strong><span class="counting" data-count="153">0</span></strong>
+										<p>
+											18K+ Customers<br />
+											in 153 Countries
+										</p>
+									</li>
+									<li>
+										<strong>Top<span class="counting" data-count="5">0</span></strong>
+										<p>
+											Sequencing Capacity<br />
+											300K+ Genome<br />
+											per Year
+										</p>
+									</li>
+									<li>
+										<strong><span class="counting" data-count="30">0</span>PB</strong>
+										<p>
+											Big Data Computing<br />
+											Infrastructure
+										</p>
+									</li>
+									<li>
+										<strong><span class="counting" data-count="700">0</span>+</strong>
+										<p>
+											Number of Employees<br />
+											(as of 2024)
+										</p>
+									</li>
+									<li>
+										<strong><span class="counting" data-count="156">0</span></strong>
+										<p>
+											SCI-level Articles<br />
+											in Top-tier Journals
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--global">
+				<div class="section__inner">
+					<h2 class="ir">마크로젠 글로벌 네트워크</h2>
+					<div class="main-full main-global">
+						<div class="main-global__wrap">
+							<div class="main-global__title tac">
+								<h3 class="title">
+									We deliver timely,<br />
+									systematic services<br />
+									tailored to meet<br />
+									your needs,<br />
+									wherever you are
+								</h3>
+							</div>
+							<div class="main-global__btnwrap">
+								<div class="main-global__select">
+									<div class="main-global__selecttext" data-text="Asia">All</div>
+									<div class="main-global__option">
+										<ul class="main-global__optionlist">
+											<li class="group-button"><button type="button" data-option="All" data-group="0">All</button></li>
+											<li class="group-button"><button type="button" data-option="Asia" data-group="1">Asia</button></li>
+											<li class="group-button"><button type="button" data-option="Europe" data-group="2">Europe</button></li>
+											<li class="group-button"><button type="button" data-option="America" data-group="3">America</button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="main-global__map">
+								<div class="main-global__bg swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide active" data-group="0">
+											<img src="/resources/images/mo/img_map_all.png" alt="" />
+										</li>
+										<li class="swiper-slide active" data-group="1">
+											<img src="/resources/images/mo/img_map_01.png" alt="" />
+										</li>
+										<li class="swiper-slide" data-group="2">
+											<img src="/resources/images/mo/img_map_02.png" alt="" />
+										</li>
+										<li class="swiper-slide" data-group="3">
+											<img src="/resources/images/mo/img_map_03.png" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
 
-        <!-- s intro -->
-        <!-- <div class="intro">
-            <div class="box">
-                <p class="text" data-aos="fade-left" data-aos-duration="600" data-aos-delay="500">Personalized genomic medicine</p>
-                <p data-aos="fade-left" data-aos-duration="600" data-aos-delay="1000">
-                    <span class="text-gradient" >for 7.8 billion people.</span>
-                </p>
-            </div>
-        </div> -->
-        <!-- e intro -->
+							<div class="global-swiper">
+								<div class="global-swiper__wrap swiper-wrapper">
+									<div class="global-swiper__item swiper-slide" data-group="0"></div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_korea_01.jpg" alt="Macrogen Gangnam HQ" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Korea</span>
+											<h4>Macrogen Gangnam HQ</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_korea_02.jpg" alt="Macrogen Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Korea</span>
+											<h4>Macrogen Genome<br />Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_korea_03.jpg" alt="Macrogen Songdo Global Campus" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Korea</span>
+											<h4>Macrogen Songdo<br />Global Campus</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_korea_04.jpg" alt="acrogen Sejong Campu" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Korea</span>
+											<h4>Macrogen Sejong<br />Campus</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_japan_01.jpg" alt="Macrogen Japan" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Japan</span>
+											<h4>Macrogen Japan</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="1">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_singapore_01.jpg" alt="Macrogen APAC" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Singapore</span>
+											<h4>Macrogen APAC</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_netherlands_01.jpg" alt="Macrogen Europe" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Netherlands</span>
+											<h4>Macrogen Europe</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_spain_01.jpg" alt="Madrid Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Spain</span>
+											<h4>Madrid Genome Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_italy_01.jpg" alt="Milano Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Italy</span>
+											<h4>Milano Genome Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_france_01.jpg" alt="Paris Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>France</span>
+											<h4>Paris Genome Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_poland_01.jpg" alt="Szczecin Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Poland</span>
+											<h4>Szczecin Genome Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="2">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_switzerland_01.jpg" alt="Basel Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Switzerland</span>
+											<h4>Basel Genome Center</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="3">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_usa_01.jpg" alt="Psomagen" />
+										</div>
+										<div class="global-swiper__description">
+											<span>USA</span>
+											<h4>Psomagen</h4>
+										</div>
+									</div>
+									<div class="global-swiper__item swiper-slide" data-group="3">
+										<div class="global-swiper__image">
+											<img src="/resources/images/mo/network_chile_01.jpg" alt="Santiago Genome Center" />
+										</div>
+										<div class="global-swiper__description">
+											<span>Chile</span>
+											<h4>Santiago Genome Center</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--news">
+				<div class="section__inner">
+					<h2 class="ir">macrogen news</h2>
+					<div class="main-news">
+						<div class="main-news__wrap">
+							<h3 class="title">News</h3>
+							<div class="main-news__partnership">
+								<ul class="main-news__list">
+									<li>
+										<a href="https://www.macrogen.com/en/newsroom/news/20000000358?pageIndex=1&searchKeyword=" class="main-news__container">
+											<div class="main-news__left">
+												<div class="main-news__content">
+													<div class="main-news__tag">
+														<span class="main-news__category">Business</span>
+													</div>
+													<div class="main-news__top">
+														<h4 class="main-news__title">
+															Macrogen Selected as Final Contractor for Korea's Largest Bio Big Data Project
+														</h4>
+													</div>
+													<div class="main-news__bottom">
+														<p class="main-news__description">
+															December 9, 2024 –Macrogen, a global leader in genomic analysis, in partnership with DNA Link, Theragen Bio, and CG invites, has been selected as the final contractor forNational Integrated Bio Big Data Project, supported by the Ministry of Health and Welfare and the Korea Disease Control and Prevention Agency, and commissioned by the Korea Research Institute of Bioscience and Biotechnology.
+														</p>
 
+														<time class="main-news__date">2024.12.09</time>
+													</div>
+												</div>
+											</div>
+											<div class="main-news__right">
+												<div class="main-news__image">
+													<img src="/resources/images/main/news_image03.jpg" alt="" />
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.macrogen.com/en/newsroom/news/20000000353?pageIndex=1&searchKeyword= " class="main-news__container">
+											<div class="main-news__left">
+												<div class="main-news__content">
+													<div class="main-news__tag">
+														<span class="main-news__category">Business</span>
+													</div>
+													<div class="main-news__top">
+														<h4 class="main-news__title">Macrogen and Samsung Sign a Supply Agreement for ‘Gentok’ DNA Testing Service</h4>
+													</div>
+													<div class="main-news__bottom">
+														<p class="main-news__description">
+															November 18, 2024 – Macrogen, a global digital healthcare leader, announced today that it has signed a service supply agreement with Samsung Electronics. Macrogen’s digital healthcare platform, ‘Gentok,’ will be integrated into the Samsung Health app. This integration will enable Samsung Health users to access personalized health solutions tailored to their lifestyle logs and genetic data.
+														</p>
+														<time class="main-news__date">2024.11.18</time>
+													</div>
+												</div>
+											</div>
+											<div class="main-news__right">
+												<div class="main-news__image">
+													<img src="/resources/images/mo/news_image03.jpg" alt="" />
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.macrogen.com/en/newsroom/news/20000000351?pageIndex=1&searchKeyword=" class="main-news__container">
+											<div class="main-news__left">
+												<div class="main-news__content">
+													<div class="main-news__tag">
+														<span class="main-news__category">Business</span>
+													</div>
+													<div class="main-news__top">
+														<h4 class="main-news__title">Macrogen Selected as Preferred bidder for South Korea's Largest "National Integrated Bio Big Data Project"</h4>
+													</div>
+													<div class="main-news__bottom">
+														<p class="main-news__description">
+															October 29, 2024 – Macrogen, a global leader in genomic analysis, announced that its consortium with DNA Link, Theragen Bio, and CG invites has been selected as the preferred bidder for the genomic data production in the "National Integrated Bio Big Data Project." This initiative, backed by the Ministry of Health and Welfare, the Ministry of Science and ICT, the Ministry of Trade, Industry and Energy, and the Korea Disease Control and Prevention Agency, and commissioned by the Korea Research Institute of Bioscience and Biotechnology (KRIBB), aims to amass a comprehensive bio big data resource.
+														</p>
+														<time class="main-news__date">2024.10.29</time>
+													</div>
+												</div>
+											</div>
+											<div class="main-news__right">
+												<div class="main-news__image">
+													<img src="/resources/images/mo/news_image03.jpg" alt="" />
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--marquee">
+				<div class="section__inner">
+					<h2 class="ir">macrogen global partner</h2>
+					<div class="main-marquee">
+						<h3 class="title tac">
+							We collaborates<br />
+							with global partners<br />
+							to drive innovation<br />
+							together
+						</h3>
+						<div class="main-marquee__slidewrap"></div>
+						<div class="main-marquee__slide main-marquee__slide--01">
+							<ul>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image01.png" alt="PacBi" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image02.png" alt="ThermoFisher" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image03.png" alt="10x Genomics" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image04.png" alt="OLink" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image05.png" alt="Agilent" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image01.png" alt="PacBi" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image02.png" alt="ThermoFisher" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image03.png" alt="10x Genomics" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image04.png" alt="OLink" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image05.png" alt="Agilent" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image01.png" alt="PacBi" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image02.png" alt="ThermoFisher" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image03.png" alt="10x Genomics" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image04.png" alt="OLink" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image05.png" alt="Agilent" />
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="main-marquee__slide main-marquee__slide--02">
+							<ul>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image06.png" alt="Microsoft" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image07.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image08.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image09.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image10.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image06.png" alt="Microsoft" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image07.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image08.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image09.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image10.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image06.png" alt="Microsoft" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image07.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image08.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image09.png" alt="TWIST" />
+									</div>
+								</li>
+								<li>
+									<div class="main-marquee__image">
+										<img src="/resources/images/mo/marquee_image10.png" alt="TWIST" />
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--banner">
+				<div class="section__inner">
+					<h2 class="ir">CONTACT US</h2>
+					<div class="main-banner">
+						<h2 class="title title--white title--small tac">
+							Need Assistance?<br />
+							Our experts are here to help
+						</h2>
+						<div class="main-banner__button">
+							<a href="/en/contact-us" class="btn btn-default btn-default--gradient">
+								<span class="btn btn-default__text btn-default__text--diff">Contact Us</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- s 메인비주얼 영역 -->
-        <div class="swiper-container" id="key-swiper-container">
-            <div class="swiper-wrapper" id="key-swiper-wrapper">
-            	
-                <c:forEach var="result" items="${ mainBannerList }" varStatus="status">
-                    <c:if test="${result.expsrYn == 'Y'}">
-                        <div class="swiper-slide"><!--20230404 수정-->
-                            
-                            <c:choose>
-                                <c:when	test="${result.mediaUrlMo != null && result.mediaUrlMo != '' }">
-                                     <!--20230404 수정-->
-                                      <div id="ytbg" data-vbg="${result.mediaUrlMo}"></div>
-                                      <div class="text-box">
-                                          <p class="slogan-sub">${result.mainNttSjMo}</p>
-                                         <p class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</p>
-                                         <c:choose>
-                                             <c:when test="${result.btYn != 0 && result.btYn == 1}">
-                                                    <div class="btns">
-                                                     <button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
-                                                 </div>
-                                             </c:when>
-                                             <c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-                                                 <div class="btns">
-                                                     <button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
-                                                     <button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
-                                                 </div>
-                                             </c:when>	                        
-                                         </c:choose>
-                                        </div>	
-                                    
-                                </c:when>
-                                
-                                <c:otherwise>
-                                    <div class="visual" style="background: url(${publicUrl}${result.imageFlpthMobl}) 
-                                        no-repeat center center / cover">
-                                    </div>
-                                    <div class="text-box">
-                                      <p class="slogan-sub">${result.mainNttSjMo}</p>
-                                     <p class="desc">${fn:replace(result.mainNttCnMo, newline, "<br/>")}</p>
-                                     <c:choose>
-                                         <c:when test="${result.btYn != 0 && result.btYn == 1}">
-                                                <div class="btns">
-                                                 <button type="button" onclick="location.href='${result.linkUrl1}'">${result.btSjMo1}</button>
-                                             </div>
-                                         </c:when>
-                                         <c:when test="${result.btYn != 0 && result.btYn == 2}">	                        	
-                                             <div class="btns">
-                                                 <button type="button" onclick="location.href='${result.linkUrl1}' ">${result.btSjMo1}</button>
-                                                 <button type="button" onclick="location.href='${result.linkUrl2}' ">${result.btSjMo2}</button>
-                                             </div>
-                                         </c:when>	                        
-                                     </c:choose>
-                                    </div>
-                                </c:otherwise>
-                            </c:choose>
-                            
-                        </div>
-                    </c:if>
-                </c:forEach>  
-                   
-            </div>   	  	 
-			<div class="scroll-wrap">
-                <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination" id="key-swiper-pagination"></div>
-        </div>
-        
-        <script> /*2023.0404 수정*/
-            var $container = $('#key-swiper-container');
-            var $conLi = $container.find('.swiper-slide');
-            var $wrapper = $('#key-swiper-wrapper');
-            var $pagination = $('#key-swiper-pagination');
-            var delay = 5000;
-            var mainSwiper;
-            setTimeout(function () {
-                step1()
-            })
-
-            function step1() {
-                $wrapper.css({
-                    'transform': 'translateY(0)',
-                    'transition-duration': '1s'
-                })
-                $('.header').addClass('header-white')
-                $('.bg-DNA').addClass('DNA-move')
-                $wrapper.animate({
-                    height: "100%"
-                }, 1000, function () {
-                    $('.swiper-wrapper').css({'overflow': 'visible'})
-                    $pagination.show()
-                    setSlider()
-
-                    $('html').addClass('animated')
-                })
-            }
-
-            function step2() {
-                //after 기능
-                $('.header').addClass('header-white')
-                introScroll()
-
-                $wrapper.css({'overflow': 'visible'})
-                $container.css({'overflow': 'hidden'})
-                $('.text-box').fadeIn()
-                $('.scroll-wrap').delay(1000).fadeIn()
-                // $('.stock_information').delay(1500).fadeIn()
-            }
-
-
-            function setSlider() {                
-                var conCnt = $conLi.length;
-                let options = {};
-
-                if (mainSwiper !== undefined) {
-                    console.log('mainSwiper');
-                    return false
-                }
-                console.log('setSlider');
-                if(conCnt < 2){
-                    console.log(conCnt);
-                    options = {}         
-                }else{
-                    options = {                        
-                        effect : 'fade', // 페이드 효과
-                        loop: true, //반복
-                        speed: 0,//속도
-                        autoplay: {
-                            delay: 6000,
-                            waitForTransition: true,
-                            disableOnInteraction: false,
-                        },
-                        pagination: {
-                            el: $pagination,
-                            clickable: true,
-                            renderBullet: function (index, className) {
-                                var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="28" height="28">' +
-                                    '<circle class="path" cx="50%" cy="50%" r="13" fill="none"  stroke="#FFF"' +
-                                    'stroke-opacity="1" stroke-width="1px"></circle>' +
-                                    '<circle cx="50%" cy="50%" r="4" fill="#FFF"></circle>' +
-                                    '</svg></span>';
-                                //console.log('setSlider222');
-                                return bu;
-                            },
-                        },
-                        on: {
-                            slideChange: function () {
-                                !$('.swiper-slide').eq(this.activeIndex).css({
-                                    'animation-name': 'none',
-                                    'animation-duration': '0'
-                                })
-
-                                $('.swiper-slide').eq(this.activeIndex).children('.visual').css({
-                                    'animation-name': 'grow2',
-                                    'animation-duration': '1s'
-                                })
-                            }
-                        }
-                    }   
-                    $('.swiper_btn').delay(1000).fadeIn()     
-                }
-
-                mainSwiper = new Swiper($container, options)
-                step2()
-
-                jQuery('[data-vbg]').youtube_background();
-            }            
-
-            function introScroll(){
-                var lastScroll = 0;
-                $(window).scroll(function(){
-                    var st = $(this).scrollTop();
-                    if (st > lastScroll){
-                        // console.log('Down');
-                        $('.header').show().css({'position': 'absolute','top':'0'});
-                    }
-                    else if (st === 0) {
-                        // console.log('Top');
-                        $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
-                    }
-                    else {
-                        // console.log('Up');
-                        $('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
-                    }
-                    lastScroll = st;
-                });
-            }
-
-        </script>
-        <!-- e 메인비주얼 영역 -->
-    </div>
-
-    <div class="container">
-        <div class="main-page">
-        
-            <!-- s  바로가기 -->
-            <div class="section-define" data-aos="fade-up" data-aos-duration="2000">
-                <div class="info-box">
-                    <div class="title">
-                        <span>Humanizing</span>
-                        <span>Genomics</span>
-                    </div>
-                    <div class="desc">
-                        <p>We contribute to the health, happiness, and <br> well-being of humanity,<br>
-                            leveraging DNA sequencing data analysis<br> technology</p>
-                        <a href="/${rc.locale.language }/company/overview" class="btn-text">
-                            <span>MORE</span><i class="icon ico-moveLong-black"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- e  바로가기 -->
-
-            <!--s 바로가기 swiper-->
-            <div class="define-box" data-aos="fade-up" data-aos-duration="2000">
-                <div class="slider">
-                    <div class="swiper-container _shortcutsSlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <video class="video" autoplay muted loop playsinline>
-                                    <source src="/publishing/mobile-en/dist/img/video/M_main_기업개요.mp4" type="video/mp4">
-                                </video>
-                                <div class="text-area">
-                                    <div class="title">
-                                        <span>About Macrogen</span>
-                                    </div>
-                                    <div class="desc">
-                                        Macrogen is a global digital healthcare company<br>based on DNA sequencing and analysis<!--2023-04-17::마침표삭제-->
-                                    </div>
-                                    <a href="/${rc.locale.language }/company/overview">
-                                        <i class="icon-arrow-right-short"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="video" autoplay muted loop playsinline>
-                                    <source src="/publishing/mobile-en/dist/img/video/M_main_글로벌마크로젠.mp4" type="video/mp4">
-                                </video>
-                                <div class="text-area">
-                                    <div class="title">
-                                        <span>Global Network</span>
-                                    </div>
-                                    <div class="desc">
-                                        We work with global leaders in<br>
-                                        genetic analysis and research<!--2023-04-17::마침표삭제-->
-                                    </div>
-                                    <a href="/${rc.locale.language }/company/global-network">
-                                        <i class="icon-arrow-right-short"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="video" autoplay muted loop playsinline>
-                                    <source src="/publishing/mobile-en/dist/img/video/M_main_ESG.mp4" type="video/mp4">
-                                </video>
-                                <div class="text-area">
-                                    <div class="title">
-                                        <span>ESG</span>
-                                    </div>
-                                    <div class="desc">
-                                        We are committed to creating<br>
-                                        a sustainable future for human health<!--2023-04-17::마침표삭제-->
-                                    </div>
-                                    <a href="/${rc.locale.language }/company/esg-management">
-                                        <i class="icon-arrow-right-short"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <script>
-                    var swiperScrollbar = null
-
-                    $(document).ready(function (){
-                        /*slide 영역*/
-
-                        swiperScrollbar = new Swiper ("._shortcutsSlider", {
-                            effect : 'fade',
-                            speed: 1000,
-                            loop: true,
-                            autoplayDisableOnInteraction: false,
-                            slidesPerView: 1,
-                            autoplay: {
-                                delay: 3000,//animation과 시간 맞춰줘야함
-                            },
-
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: 'true',
-                                type: 'bullets',
-                                renderBullet: function (index, className) {
-                                    return '<span class="' + className + '">' + '<i></i>' + '<b></b>'  + '</span>';
-                                },
-
-                            },
-                        });
-                    })
-                </script>
-            </div>
-            <!--e swiper-->
-
-            <!-- s  비즈니스 -->
-            <div class="section-business" data-aos="fade-up" data-aos-duration="2000">
-                <div class="info-box">
-                    <div class="title">Our Services</div>
-                    <div class="desc">
-                        <p>From genomic research to personal<br> healthcare, we provide world-class<br>professional services to create a healthier
-                            <br> and happier life</p>
-                    </div>
-                </div>
-            </div>
-            <!-- e  비즈니스 -->
-
-            <!--s 비즈니스 swiper-->
-            <div class="business-box" data-aos="fade-up" data-aos-duration="2000">
-                <div class="slider">
-                    <div class="swiper-container _businessSlider">
-                       <div class="swiper-wrapper">
-                       		
-							<c:forEach var="result" items="${ mainBusinessList }" varStatus="status">
-								<c:if test="${result.expsrYn == 'Y'}">
-								
-			                       <div class="swiper-slide" style="background: url(${publicUrl}${result.imageFlpthMobl}) no-repeat center center / cover">
-			                           <div class="text-area">
-			                               <div class="font-h3">
-			                                   	<span>${result.mainNttSjMo}</span><a href="#">
-				                                   <a href="${result.linkUrl1 }">
-				                                        <i class="icon-arrow-right-short"></i>
-				                                   </a>
-				                           		</a>	        
-			                               </div>
-			                               <div class="desc">
-			                               		${fn:replace(result.mainNttCnMo, newline, "<br/>")}
-			                               </div>
-			                           </div>
-			                       </div>
-			                       
-		                    	</c:if>      
-		               		</c:forEach>
-		               		
-                       </div>                       
-                       <div class="swiper-pagination"></div>
-                	</div>
-                </div>
-                <script>
-                    var swiperScrollbar = null
-                    $(document).ready(function (){
-                        /*slide 영역*/
-                        swiperScrollbar = new Swiper ("._businessSlider", {
-                            slidesPerView: "auto",
-                            effect : 'fade', // 페이드 효과 사용
-                            centeredSlides: true,
-                            loop: true,
-
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: 'true',
-                                type: 'bullets',
-                                renderBullet: function (index, className) {
-                                    return '<span class="' + className + '">' + '<i></i>' + '</span>';
-                                },
-
-                            },
-
-                        });
-                    })
-                </script>	
-            </div>
-            <!--e 비즈니스 swiper-->
-
-            <script>
-                $(document).ready(function(){
-                    $('.business').css("cursor","url('/publishing/mobile-en/dist/img/main/img-cursor_3.cur'), auto");
-                });
-            </script>
-
-            <!-- s  People :2023리뉴얼--> 
-
-             <div class="section-people">
-                <div class="info-box" data-aos="fade-up" data-aos-duration="500">
-                    <div class="title">People</div>        
-                    <div class="desc">
-                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            Meet macrogen team, global partners, and<br> customers from all around the world<!--2023-04-17::마침표삭제-->
-                        </p>
-                    </div>            
-                </div>
-                <div class="people_swiper _peopleSlider" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-                    
-                        <c:forEach var="result" items="${ mainPeopleList }" varStatus="status">
-                        	<c:if test="${ result.viewYn == 'Y' }">
-                        		<div class="swiper-slide bg0${status.index % 5 + 1}">
-                        			 <div class="flip">
-                        			 	<div class="front">
-                        			 		<span class="img"><img src="${publicUrl}${result.imageFlpthMo}"></span>
-                        			 		<div class="info-area">
-                        			 			<span class="name" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-		                                            <strong>${ result.peopleNm }</strong><br>
-		                                                ${ result.peopleDept }
-		                                        </span> 
-		                                        <p href="#" class="btn btn-text" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-		                                        	<span>MORE</span><i class="icon icon-arrow-right-long"></i>
-		                                        </p>                      
-                        			 		</div>
-                        			 	</div>			
-                       			 		<div class="back">
-		                                    <div  data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-		                                        <span class="name"><strong>${ result.peopleNm }</strong><p>${ result.peopleDept }</p></span>
-		                                        <p class="txt">${ result.cnMo }</p>
-		                                    </div>
-		                                </div>
-                        			 </div>
-                        		</div>
-                        	</c:if>
-                        </c:forEach>
-                                               
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            
-            <script>
-	            var swiperScrollbar = null
-	            $(document).ready(function (){
-	                /*slide 영역*/
-	                
-	                var pSwiper;
-	                setSlider2();
-	                function setSlider2() {      
-	                    
-	                    var $container = $('._peopleSlider');
-	                    var $conLi = $container.find('.swiper-slide');                                
-	                    var conCnt = $conLi.length;
-	                    let options = {};
-	
-	                    if (pSwiper !== undefined) {
-	                        console.log('pSwiper');
-	                        return false
-	                    }   
-	                    options = {
-	                        centeredSlides: true, 
-	                        slidesPerView: "auto",
-	                        slideToClickedSlide : true,
-	                        loop:true,
-	                        loopedSlides: conCnt,
-	                        loopAdditionalSlides: 10,
-	                        allowTouchMove : true,
-	                        speed:1000,
-	                        lazy:true,
-	                        
-	                        on: {
-	                            slideChangeTransitionStart: function () {
-	                            $('.flip .back').removeClass('aos-init').removeClass('aos-animate');
-	                            },
-	                            slideChangeTransitionEnd: function () {
-	                                $('.flip .back').show(0);
-	                                AOS.init();
-	                            },
-	                        },
-	                        
-	                        pagination: {
-	                            el: '.swiper-pagination',
-	                            clickable: 'true',
-	                            type: 'bullets',
-	                            renderBullet: function (index, className) {
-	                            return '<span class="' + className + '">' + '<i></i>' + '</span>';
-	                        },
-	
-	                      },                      
-	                    }       
-	                    pSwiper = new Swiper($container, options)                                         
-	                }                      
-	
-	                $('._peopleSlider .swiper-slide').on('click',function (){                             
-	                    var swiper = $(this);
-	                        //var sub = setTimeout(function() {
-	                        //if(swiper.hasClass('swiper-slide-active')) {
-	                if(!swiper.hasClass('rotate') ) {
-	                    swiper.addClass("rotate").siblings().removeClass("rotate");
-	                }
-	                else{
-	                    swiper.removeClass("rotate");
-	                }    
-	      		})
-	
-	        
-	            // 리사이즈 END체크
-	           window.addEventListener('resize', function(){
-	                $('._peopleSlider').addClass("resize");
-	                pSwiper.update();
-	
-	           });
-	        
-	         ;})
-                                
-            </script>
-            <!-- e People :2023리뉴얼-->
-						
-			<!-- s  news & event-->
-            <div class="section-media">
-	        	<div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000">News &amp; Events</div>  
-                    <div class="desc">
-                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                            Keep up with our latest news as we pave<br>the way to a brighter future<!--2023-04-17::마침표삭제-->
-                        </p>
-                    </div>                    
-                </div>   
-				       
-                <div class="media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">        
-		            <div class="slider">
-		            	<div class="slider-navigation">
-	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnPrev"><i class="icon icon-arrow-left-sm"></i></a>
-	                       <a href="#" class="btn btn-circle btn-white btn-sm _btnNext"><i class="icon icon-arrow-right-sm"></i></a>
-	                   	</div>
-	                   	
-				       	<div class="swiper-container _mediaSlider">
-				       		<div class="swiper-wrapper">
-				       		
-				       			<c:forEach var="result" items="${ mainSomlnkList }" varStatus="status">
-				       				<div class="swiper-slide">
-				       					<a href="${ result.somlnkUrl }" target="_blank">
-					       					<div class="img"> 
-					                            <img src="${publicUrl}${result.imageFlpth}" alt="${result.somlnkSj }" >
-					                            <span class="sns">${result['somlnkCtgryCodeNm'.concat(lang)] }</span>
-					                        </div>
-					                        <div class="content">
-					                        	<strong class="title">${ result.somlnkSj }</strong>
-					                            <p>${ result.somlnkDt }</p> 
-					                        </div>
-					                        <div class="date"><fmt:formatDate value="${result.postDt }" pattern="yyyy.MM.dd" /></div>
-				                        </a>
-				       				</div>
-				       			</c:forEach>
-				       			
-				   			</div>
-				       		<div class="swiper-pagination"></div>
-		           		</div>
-		            </div>
-            	</div>   
-            	     
-            </div>
-            
-            <script>
-            new Swiper("._mediaSlider", {
-                spaceBetween: 1,
-                slidesPerView: "auto",
-                slidesPerGroup: 1,
-                grabCursor: true,
-                centeredSlides: true, 
-                loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 메우기(3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듦)
-                /* loop : true, */
-                navigation: {
-                    nextEl: "._btnNext",
-                    prevEl: "._btnPrev",
-                },
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: 'true',
-                    type: 'bullets',
-                    renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + '<i></i>' + '</span>';
-                },
-
-              },                      
-            });
-		    </script>
-			<!-- e  news & event-->
-			
-            <!-- s  global map -->
-            <div class="section-map" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Macrogen</div>
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        We provide personalized solutions to meet the<br> diverse needs of local customers around the world<br> in a timely manner
-                    </div>
-                </div>
-                <div class="inner">
-                    <div class="map">
-                        <a class="pin amsterdam" onClick="location.href='/${rc.locale.language}/company/global-network2#amsterdam'"><i></i><span>Amsterdam, Netherlands</span></a>
-	                    <a class="pin leuven" onClick="location.href='/${rc.locale.language}/company/global-network2#leuven'"><i></i><span>Ghent, Belgium</span></a>
-	                    <a class="pin paris" onClick="location.href='/${rc.locale.language}/company/global-network2#paris'"><i></i><span>Paris, France</span></a>
-	                    <a class="pin basel" onClick="location.href='/${rc.locale.language}/company/global-network2#basel'"><i></i><span>Basel, Switzerland</span></a>
-	                    <a class="pin milan" onClick="location.href='/${rc.locale.language}/company/global-network2#italy'"><i></i><span>Milan, Italy</span></a>
-	                    <a class="pin poland" onClick="location.href='/${rc.locale.language}/company/global-network2#poland'"><i></i><span>Szczecin, Poland</span></a>
-	                    <a class="pin madrid" onClick="location.href='/${rc.locale.language}/company/global-network2#madrid'"><i></i><span>Madrid, Spain</span></a>
-	                    <a class="pin seoul" onClick="location.href='/${rc.locale.language}/company/global-network#seoul'"><i></i><span>Seoul, Korea</span></a>
-	                    <a class="pin songdo" onClick="location.href='/${rc.locale.language}/company/global-network#songdo'"><i></i><span>Songdo, Korea</span></a>
-	                    <a class="pin daejeon" onClick="location.href='/${rc.locale.language}/company/global-network#daejeon'"><i></i><span>Daejeon, Korea</span></a>
-	                    <a class="pin tokyo" onClick="location.href='/${rc.locale.language}/company/global-network2#tokyo'"><i></i><span>Tokyo, japan</span></a>
-	                    <a class="pin biopolis" onClick="location.href='/${rc.locale.language}/company/global-network2#biopolis'"><i></i><span>Biopolis, Singapore</span></a>
-	                    <a class="pin boston" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Boston, USA</span></a>
-	                    <a class="pin newyork" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>New york, USA</span></a>
-	                    <a class="pin rockville" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Rockville, USA</span></a>
-	                    <a class="pin virginia" onClick="location.href='/${rc.locale.language}/company/global-network2#rockville'"><i></i><span>Virginia, USA</span></a>
-		                <a class="pin manchester" onClick="location.href='/${rc.locale.language}/company/global-network2#manchester'"><i></i><span>Manchester, UK</span></a>
-		                <a class="pin berlin" onClick="location.href='/${rc.locale.language}/company/global-network2#berlin'"><i></i><span>Berlin, Germany</span></a>
-	                    <a class="pin santiago" onClick="location.href='/${rc.locale.language}/company/global-network2#santiago'"><i></i><span>Santiago, Chile</span></a>
-                    </div>
-                </div>
-            </div>
-            
-            <script>
-                $('.map .pin').on('click', function () {
-                    $(this).addClass('active')
-                        .siblings().removeClass('active')
-                })
-            </script>
-
-            <script>
-                $('.section-map').ready(function(){
-                    $('.inner').scrollLeft(400);
-                });
-            </script>
-            
-            <!-- e  global map -->
-			
-			<!-- s  global partners -->
-
-            <div class="section-partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="info-box">
-                    <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Global Partners</div>     
-                    <div class="desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                        Global partners are with Macrogen<!--2023-04-17::마침표삭제-->
-                    </div>               
-                </div>
-                <ul class="partners-list"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_01.png" alt="일루미나">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_02.png" alt="팩바이오">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_03.png" alt="써모피셔">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_04.png" alt="지노믹스">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_05.png" alt="올링크">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_06.png" alt="애질런트">
-                    </li>                    
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_07.png" alt="나노스트링">
-                    </li>  
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_08.png" alt="마이크로소프트">
-                    </li>   
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_09.png" alt="트위스트">
-                    </li>   
-                    <li>                                                
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_10.png" alt="나노포어">
-                    </li>
-                    <li>
-                        <img src="/publishing/mobile-en/dist/img/main/img-global_11.png" alt="울티마지노믹스">
-                    </li>
-                </ul> 
-            </div>
-
-            <!-- e  global partners -->
-				
-            <script>
-                $('.section-map').ready(function(){
-                    $('.inner').scrollLeft(400);
-                });
-            </script>
-        </div>
-    </div>
-	
-	<%-- 팝업 --%>
-	<c:if test="${not empty popupList  }">
-	<c:forEach var="popup" items="${popupList}" varStatus="status">
-		<div class="modal fade modal-notice" tabindex="-1" id="modal${status.index }" data-bs-backdrop="static" aria-labelledby="modal"
-		     aria-hidden="true">
-		    <input type="hidden" value="${popupCnt}" id="popupCnt">
-			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-		    <div class="modal-dialog">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <div class="ico-notice icon"></div>
-		            </div>
-		            <div class="modal-body">
-		                <div class="scroll">
-		                    <div class="data-img">
-		                        <%-- <img src="/publishing/mobile-ko/dist/img/@temp/newsroom/sample-2.png" alt=""> --%>
-			                    <img src="${publicUrl}${popup.popupImageFlpth}" alt=""
-			                    	onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-		                    </div>
-		                    <%-- <div class="btn-wrapper">
-		                        <a href="#" class="btn btn-light btn-round">버튼1</a>
-		                        <a href="#" class="btn btn-light btn-round">버튼2</a>
-		                    </div> --%>
-		                </div>
-		            </div>
-		            <div class="modal-footer">
-		                <a href="javascript:;" data-popup-sn="${popup.popupSn}" class="btn-footer close-box"  onclick="popupClose('${ popup.popupSn }')" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>오늘은 그만 보기</span></a>
-		                <a href="javascript:;" class="btn-footer" data-bs-dismiss="modal" data-bs-target="#modal" aria-label="Close"><span>닫기</span></a>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-		</c:forEach>
-		<script>
-		    /* var modalEl = document.getElementById('modal')
-		    var modal = new bootstrap.Modal(modalEl)
-
-		    modal.show(); */
-		    
-		    var popupCnt = $("#popupCnt").val();
-			
-			for(var i=0;i<popupCnt;i++){
-				var modal = new bootstrap.Modal(document.getElementById('modal'+i));
-				/* var modalEl = document.getElementById('modal'+i);
-				var modal = new bootstrap.Modal(modalEl);  */
-				var coockieChk = $("#cookieChkList"+i).val();
-
-				if(coockieChk == 'true'){
-					modal.hide();
-				}else if(coockieChk =='false'){
-					modal.show();
-				}
-			}
-
-		   /*  $(document).ready(function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + 75px - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('shown.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% - ' + modalHeight + 'px)');
-		    })
-
-		    modalEl.addEventListener('hide.bs.modal', function () {
-		        var modalHeight = $('.modal-notice .modal-content').outerHeight();
-		        $('.modal-notice').css('top', 'calc(100% + ' + modalHeight + 'px)');
-		    })  */
-		</script>
-		<script>
-			/* $(function() {
-				var $btnPopupClose = $('#modal .close-box');
-				$btnPopupClose.on('click', function() {
-					var sn = $(this).data('popup-sn');
-					if (!sn) return;
- 
-					var snListStr = $.cookie('popup-sn-list');
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const $htmlEl = document.querySelector('html');
+					if ($htmlEl) {
+						document.querySelector('html').classList.add('animated');
 					}
-					$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-					modal.hide();
 				});
+			</script>
+
+			
+		</main>
+	</div>
+	<script> /*2023.0404 수정*/
+		var $container = $('#key-swiper-container');
+		var $conLi = $container.find('.swiper-slide');
+		var $wrapper = $('#key-swiper-wrapper');
+		var $pagination = $('#key-swiper-pagination');
+		var delay = 5000;
+		var mainSwiper;
+		setTimeout(function () {
+			step1()
+		})
+
+		function step1() {
+			$wrapper.css({
+				'transform': 'translateY(0)',
+				'transition-duration': '1s'
+			})
+			// $('.header').addClass('header-white')
+			$('.bg-DNA').addClass('DNA-move')
+			$wrapper.animate({
+				height: "100%"
+			}, 1000, function () {
+				$('.swiper-wrapper').css({'overflow': 'visible'})
+				$pagination.show()
+				setSlider()
+
+				$('html').addClass('animated')
+			})
+			introScroll()
+		}
+
+		function step2() {
+			//after 기능
+			// $('.header').addClass('header-white')
+			introScroll()
+
+			$wrapper.css({'overflow': 'visible'})
+			$container.css({'overflow': 'hidden'})
+			$('.text-box').fadeIn()
+			$('.scroll-wrap').delay(1000).fadeIn()
+			// $('.stock_information').delay(1500).fadeIn()
+		}
+
+
+		function setSlider() {                
+			var conCnt = $conLi.length;
+			let options = {};
+
+			if (mainSwiper !== undefined) {
+				console.log('mainSwiper');
+				return false
+			}
+			console.log('setSlider');
+			if(conCnt < 2){
+				console.log(conCnt);
+				options = {}         
+			}else{
+				options = {
+					effect : 'fade', // 페이드 효과
+					loop: true, //반복
+					speed: 0,//속도
+					autoplay: {
+						delay: 6000,
+						waitForTransition: true,
+						disableOnInteraction: false,
+					},
+					pagination: {
+						el: $pagination,
+						clickable: true,
+						renderBullet: function (index, className) {
+							var bu = '<span class="' + className + '">' + '<svg class="fp-arc-loader" width="28" height="28">' +
+								'<circle class="path" cx="50%" cy="50%" r="13" fill="none"  stroke="#FFF"' +
+								'stroke-opacity="1" stroke-width="1px"></circle>' +
+								'<circle cx="50%" cy="50%" r="4" fill="#FFF"></circle>' +
+								'</svg></span>';
+							return bu;
+						},
+					},
+					on: {
+						slideChange: function () {
+							!$('.swiper-slide').eq(this.activeIndex).css({
+								'animation-name': 'none',
+								'animation-duration': '0'
+							})
+
+							$('.swiper-slide').eq(this.activeIndex).children('.visual').css({
+								'animation-name': 'grow2',
+								'animation-duration': '1s'
+							})
+						}
+					}
+				}   
+				$('.swiper_btn').delay(1000).fadeIn()
+			}
+
+			mainSwiper = new Swiper($container, options)
+			step2()
+
+			jQuery('[data-vbg]').youtube_background();
+		}            
+
+		function introScroll(){
+			var lastScroll = 0;
+			$(window).scroll(function(){
+				var st = $(this).scrollTop();
+				if (st > lastScroll){
+					// console.log('Down');
+					$('.header').show().css({'position': 'absolute','top':'0'});
+				}
+				else if (st === 0) {
+					// console.log('Top');
+					// $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+				}
+				else {
+					// console.log('Up');
+					$('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+				}
+				lastScroll = st;
 			});
- */
-			function onclickPopupImage(url, trgtCode) {
-				if (!url) {
-					return;
-				}
-
-				if (trgtCode === 'NEW') {
-					window.open(url);
-				} else {
-					location.href = url;
-				}
-			}
- 
-			 function popupClose(sn) {
-				if (!sn) return;
-				
-				var snListStr = $.cookie('popup-sn-list');
-				if (!snListStr) {
-					snListStr = sn;
-				} else if (snListStr.indexOf(sn) < 0) {
-					snListStr += ',' + sn;
-				}
-
-				$.cookie('popup-sn-list', snListStr, { expires: 1, path: '/'});
-				modal.hide();
-			}
-		</script>
-	</c:if>
-	
+		}
+	</script>	
 	
 </body>

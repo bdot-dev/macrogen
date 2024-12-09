@@ -1,51 +1,138 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
-<footer class="footer main" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="2000"' : '' }>
-    <div class="font-h5">Macrogen</div>
-    <div class="info">
-        <p>서울특별시 강남구 역삼2동 테헤란로 238 마크로젠 빌딩</p>
-        <p>대표번호 : <a href="tel:02-2180-7000">02-2180-7000</a></p>
-        <p>대표자 : 김창훈</p>
-        <p>ⓒMacrogen, Inc. All Rights Reserved.</p>
-    </div>
-    <div class="link-list">
-        <ul>
-            <li>
-                <select class="select" title="serviceSite" onchange="openWindowInFooter(this)">
-                	<option value="">서비스 신청/약관</option>
-                    <option value="https://dna.macrogen.com/">서비스 신청</option>
-                    <option value="/${rc.locale.language }/policy/privacy">개인정보처리방침</option>
-                    <option value="/${rc.locale.language }/policy/inside">내부정보관리규정</option>
-                    <option value="/${rc.locale.language }/policy/image/">영상정보처리기기 운영.관리방침</option>
-                    <option value="/${rc.locale.language }/company/sitemap">사이트맵</option>
-                    <option value="/${rc.locale.language }/contact-us">Contact us</option>
-                </select>
-            </li>
-            <li>
-                <select class="select" title="familySite" onchange="openWindowInFooter(this)">
-                    <option value="">Family Site</option>
-                   <!-- <option value="https://thebiome.life/">더바이옴</option> -->
-                    <option value="https://gentok.net/">GenTok 젠톡</option>
-                    <option value="https://blog.naver.com/macrogen123">마이펫진</option>
-                    <option value="https://psomagen.com/">소마젠(Psomagen)</option>
-                    <option value="https://www.macrogen-japan.co.jp/">마크로젠 일본</option>
-                    <option value="https://www.macrogen-europe.com">마크로젠 유럽</option>
-                    <option value="https://macrogenclinical.com/macrogen/">마크로젠 스페인</option>
-                    <option value="https://www.macrogen-apac.com/">마크로젠 APAC</option>
-                    <option value="http://gmi.ac.kr/index.php">유전체의학연구소</option>
-                    <option value="http://www.g2if.org/">공우생명정보재단</option>
-                    <option value="http://www.genehealth.or.kr/">진헬스 건강검진센터</option>
-                </select>
-            </li>
-        </ul>
-    </div>
-    
-    <ul class="sns">
-        <li><a href="https://www.facebook.com/macrogenkr/" target="_blank"><i class="icon icon-facebook"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"><i class="icon icon-youtube"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/macrogen" target="_blank"><i class="icon icon-blog"></i></a></li>
-        <li><a href="https://blog.naver.com/macrogen_official" target="_blank"><i class="icon icon-linkedin"></i></a></li>
-    </ul>
+<head>
+	<script src="/resources/script/mobile_common.js"></script>
+</head>
+<footer class="footer">
+	<div class="footer__inner">
+		<div class="footer__top">
+			<div class="footer__title">
+				<h2>
+					Humanizing genomics<br />
+					macrogen
+				</h2>
+			</div>
+			<div class="footer__list">
+				<div class="footer__menu">
+					<button type="button"><strong>Macrogen</strong></button>
+					<div class="toggle__menu">
+						<ul>
+							<li><a href="/${rc.locale.language }/company/overview">회사소개</a></li>
+							<li><a href="/${rc.locale.language }/company/global-network">글로벌 네트워크</a></li>
+							<li><a href="/${rc.locale.language }/company/qualified-image">채용</a></li>
+							<li><a href="/${rc.locale.language }/rnd/patent">Resource</a></li>
+							<li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">R&amp;D</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<button type="button"><strong>Service</strong></button>
+					<div class="toggle__menu">
+						<ul>
+							<li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">퍼스널 헬스케어</a></li>
+							<li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">반려동물 헬스케어</a></li>
+							<li><a href="/${rc.locale.language }/business/research/ngs#genome">연구분석 서비스</a></li>
+							<li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">임상분석 서비스</a></li>
+							<li><a href="/${rc.locale.language }/business/singlecell-multi">싱글셀 분석 서비스</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<button type="button"><strong>Newsroom</strong></button>
+					<div class="toggle__menu">
+						<ul>
+							<li><a href="/${rc.locale.language }/newsroom/news">뉴스</a></li>
+							<li><a href="/${rc.locale.language }/newsroom/notice">공지사항</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<button type="button"><strong>IR</strong></button>
+					<div class="toggle__menu">
+						<ul>
+							<li><a href="/${rc.locale.language }/ir/financial">재무정보</a></li>
+							<li><a href="/${rc.locale.language }/ir/announcement">공시정보</a></li>
+							<li><a href="/${rc.locale.language }/ir/news">IR소식</a></li>
+							<li><a href="/${rc.locale.language }/ir/investor-inquiries">투자자 문의</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<button type="button"><strong>ESG</strong></button>
+					<div class="toggle__menu">
+						<ul>
+							<li><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></li>
+							<li><a href="/${rc.locale.language }/company/ethical-management">윤리경영</a></li>
+							<li><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></li>
+							<li><a href="/${rc.locale.language }/company/greenhouse-gas">온실가스</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__etc">
+				<div class="footer__site">
+					<ul>
+						<li>
+							<a href="https://dna.macrogen.com/" target="_blank">서비스 신청</a>
+						</li>
+						<li class="policy">
+							<a href="/${rc.locale.language }/policy/privacy">개인정보처리방침</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영.관리방침</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/company/sitemap">사이트맵</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/contact-us">Contact us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__info">
+				<p>서울특별시 강남구 테헤란로 238 (마크로젠빌딩)</p>
+				<p class="">
+					<span>대표번호 </span>
+					<span>02-2180-7000</span>
+				</p>
+				<p class="">
+					<span>대표자 </span>
+					<span>김창훈</span>
+				</p>
+			</div>
+			<div class="footer__copyright">
+				<p>©Macrogen, Inc. All Rights Reserved.</p>
+				<div class="footer__select">
+					<button type="button" class="footer__button">Family site</button>
+					<div class="footer__toggle">
+						<div class="footer__container">
+							<ul>
+								<li><a href="https://gentok.net/" target="_blank">GenTok 젠톡</a></li>
+								<li><a href="https://blog.naver.com/macrogen123" target="_blank">마이펫진</a></li>
+								<li><a href="https://psomagen.com/" target="_blank">소마젠&#40;Psomagen&#41;</a></li>
+								<li><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></li>
+								<li><a href="https://www.macrogen-europe.com" target="_blank">마크로젠 유럽</a></li>
+								<li><a href="https://macrogenclinical.com/macrogen/" target="_blank">마크로젠 스페인</a></li>
+								<li><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 APAC</a></li>
+								<li><a href="https://snumrc.snu.ac.kr/gmi" target="_blank">유전체의학연구소</a></li>
+								<li><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></li>
+								<li><a href="http://www.genehealth.or.kr/" target="_blank">진헬스 건강검진센터</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-btn">
+		<button type="button"><span>TOP</span></button>
+	</div>
 </footer>
 <script>
 	function openWindowInFooter(select) {

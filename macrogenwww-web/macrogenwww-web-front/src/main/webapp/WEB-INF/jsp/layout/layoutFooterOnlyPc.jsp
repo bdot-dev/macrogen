@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="${rc.locale.language}">
 <head>
-	<title><decorator:title />MACROGEN</title>
+	<%-- <title><decorator:title />MACROGEN</title> --%>
 	<c:import url="/inc/htmlHead" />
 	<decorator:head />
 	<!-- Global site tag (gtag.js) - Google Analytics -->

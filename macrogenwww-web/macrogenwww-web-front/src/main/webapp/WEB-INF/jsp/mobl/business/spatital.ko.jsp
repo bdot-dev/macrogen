@@ -3,16 +3,37 @@
 <body>
 	<div class="wrap">
 		<div class="top-bg spatital">
-	        <header class="header header-white">
+	        <header class="header">
 			    <div class="inner">
 			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			    </div>
 			</header>		
 			<div class="frame">
-	            <div class="font-h1">Spatial<br>Transcriptome Analysis</div>
+	            <div class="font-h3">Spatial<br>Transcriptome Analysis</div>
 	        </div>
 		</div>
+		<script>
+			$(function(){
+				var lastScroll = 0;
+				$(window).scroll(function(){
+					var st = $(this).scrollTop();
+					if (st > lastScroll){
+						// console.log('Down');
+						$('.header').show().css({'position': 'absolute','top':'0'});
+					}
+					else if (st === 0) {
+						// console.log('Top');
+						// $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+					}
+					else {
+						// console.log('Up');
+						$('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+					}
+					lastScroll = st;
+				});
+			});
+		</script>
 		
 		<div class="container">
 	        <link type="text/css" rel="stylesheet" href="/publishing/mobile-ko/dist/css/business.css"/>
@@ -26,7 +47,7 @@
 	                <div class="img">
 	                    <img src="/publishing/mobile-ko/dist/img/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
 	                </div>
-	                <p class="desc font-body">마크로젠은 10x Genomics 사의 위치 기반 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공해 드리고 있습니다. 또한 신기술을 빠르게 도입함으로써 위치 기반 전사체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.</p>
+	                <p class="desc font-body">마크로젠은 10x Genomics 사의 위치 기반 전사체 분석(Spatial Transcriptome analysis) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공해 드리고 있습니다. 또한 신기술을 빠르게 도입함으로써 위치 기반 전사체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.</p>
 	            </div>
 	            <!--//상단 공통 e -->
 	

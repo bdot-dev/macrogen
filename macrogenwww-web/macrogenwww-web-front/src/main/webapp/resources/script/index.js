@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(ScrollToPlugin);
+  var mainKv = document.querySelector('.main-kv');
   var moveBox = document.querySelector('.main-board__pc');
   var mainBoard = document.querySelector('.main-board');
   var header = document.querySelector('#header');
@@ -61,12 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var mouseMoveHandler = function mouseMoveHandler(e) {
     var nowX = (-1 + e.pageX / winWidth * 2).toFixed(2);
     var nowY = (1 - e.pageY / winHeight * 2).toFixed(2);
+    var minPositionY = 30;
     var movePositionX;
-    var movePositionY = nowY * ((contHeight + 20 - winHeight) / 2);
+    var movePositionY = nowY * ((contHeight + 20 - winHeight) / 2) - header.clientHeight;
     if (winWidth < contWidth) {
       movePositionX = -1 * (nowX * ((contWidth + 70 - winWidth) / 2));
     } else {
       movePositionX = nowX * ((contWidth + 70 - winWidth) / 2);
+    }
+    if (movePositionY > minPositionY) {
+      movePositionY = minPositionY;
     }
     if (!isMoving) {
       isMoving = true;
@@ -91,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     tl.to('.main-slogan', {
       backgroundColor: '#fff',
-      duration: 1,
+      duration: 0.2,
       ease: 'power2.out',
       onStart: function onStart() {
         // main-service__button의 모든 li 요소에서 active 클래스 제거
@@ -244,15 +249,21 @@ document.addEventListener('DOMContentLoaded', function () {
           section.classList.remove('active');
           if (index >= sections.length - 1) {
             counters.forEach(startCounting);
+            document.querySelector('.bg-video').play();
           } else {
             counters.forEach(function (counter) {
               return counter.innerText = '0';
             });
+            document.querySelector('.bg-video').pause();
           }
         });
         sections[index].classList.add('active');
         if (index === 0) {
-          header.classList.remove('header-sm');
+          // header.classList.remove('header-sm');
+          header.classList.add('header-sm');
+        }
+        if (index === 0 && !mainKv.classList.contains('stop')) {
+          // header.classList.remove('header-sm');
           header.style.display = 'block';
           document.querySelector('.scroll-area').scrollTop = 0;
         }
@@ -276,6 +287,18 @@ document.addEventListener('DOMContentLoaded', function () {
       goToSection(currentSectionIndex);
       document.querySelector('.scroll-area').scrollTop = 0;
     }
+    if (delta == 'down' && currentSectionIndex === 1) {
+      setTimeout(function () {
+        return header.style.display = 'none';
+      }, 300);
+      moveBox.classList.add('down');
+    }
+    if (delta == 'up' && currentSectionIndex === 0) {
+      moveBox.classList.remove('down');
+    }
+    if (delta == 'up') {
+      header.classList.add('header-sm');
+    }
   }
   var handleWindowScroll = function handleWindowScroll() {
     gsap.to(window, {
@@ -296,9 +319,28 @@ document.addEventListener('DOMContentLoaded', function () {
     updateDimensions();
     handleWindowScroll();
   }, 100));
-  [mainBoard, header].forEach(function (element) {
-    return element.addEventListener('mousemove', mouseMoveHandler);
-  });
+  var loadAfterEvt = function loadAfterEvt() {
+    // moveBox.style.paddingTop = `${moveBox.clientHeight - document.querySelectorAll('.section')[0].clientHeight + header.clientHeight + 40}px`;
+    moveBox.style.paddingTop = "".concat(header.clientHeight, "px");
+    mainKv.classList.add('stop');
+    header.classList.add('header-sm');
+    setTimeout(function () {
+      window.addEventListener('mousemove', loadmouseMove);
+    }, 1000);
+  };
+  var loadmouseMove = function loadmouseMove() {
+    if (mainKv.classList.contains('stop')) {
+      // moveBox.style.paddingTop = '0';
+      mainKv.classList.remove('stop');
+      // header.classList.remove('header-sm');
+
+      [mainBoard, header].forEach(function (element) {
+        return element.addEventListener('mousemove', mouseMoveHandler);
+      });
+      window.removeEventListener('mousemove', loadmouseMove);
+    }
+  };
+  loadAfterEvt();
   serviceButtons.forEach(function (btn, index) {
     btn.addEventListener('click', function () {
       serviceSwiper.slideTo(index);
@@ -379,7 +421,6 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
       groupIndex = this.dataset.group;
       initialGroupIndex = groupIndex;
-      console.log(groupIndex);
       var slides = document.querySelectorAll(".global-swiper .swiper-slide[data-group=\"".concat(groupIndex, "\"]"));
       var parentLi = this.closest('li');
       var siblingButtons = parentLi.parentElement.querySelectorAll('li button');
@@ -407,6 +448,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   topButton.addEventListener('click', function () {
     goToSection(0);
+    moveBox.classList.remove('down');
   });
   initAnimation();
   goToSection(currentSectionIndex);

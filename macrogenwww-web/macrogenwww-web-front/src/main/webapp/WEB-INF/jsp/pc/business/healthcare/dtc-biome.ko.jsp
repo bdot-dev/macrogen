@@ -5,7 +5,7 @@
 <div class="wrap">
 	<div class="full-bg business_bg bg-personal02">
 		<!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
+		<header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 		<div class="frame frameB">
@@ -61,7 +61,7 @@
 										</ul>
 									</div>
 									<div class="btn-wrap">
-										<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
+										<a href="https://gentok.net/market/goods/5005" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
 									</div>
 								</div>
 							</div>

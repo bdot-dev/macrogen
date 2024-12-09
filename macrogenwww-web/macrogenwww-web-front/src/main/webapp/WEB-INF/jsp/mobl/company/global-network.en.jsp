@@ -2,10 +2,10 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/bg-global-network.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">Global Network</h2>
             <div class="font-slogan en">GLOBAL<br/>MACROGEN</div>
-            <div class="font-h7-r">Leading global precision medicine company</div>
+            <!-- <div class="font-h7-r">Leading global precision medicine company</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -124,7 +124,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="daejeon">
+                                    <!-- <li class="item" id="daejeon">
                                         <div class="name">Macrogen Daejeon<br> Genome Center</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_4.png" alt="Macrogen Daejeon Genome Center"></div>
                                         <div class="info">
@@ -143,13 +143,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <li class="item" id="songdo">
                                         <div class="name">Macrogen Songdo<br> Global Campus</div>
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_10.png" alt="Macrogen Songdo Global Campus"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Established in 2025</span></li>
+                                                <li><span>To be established in 2026</span></li>
                                             </ul>
                                             <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div>
                                             <!-- <div class="tel">
@@ -169,9 +169,9 @@
                                         <div class="img"><img src="/publishing/mobile-en/dist/img/macrogen/global_thumb_16.png" alt="Macrogen Sejong Campus"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>Established in 2024</span></li>
-                                            </ul>
-                                            <!-- <div class="address">210-2, Songdo-dong, Yeonsu-gu, Incheon, Republic of Korea</div> -->
+												<li><span>Established in Nov 2024</span></li>
+											</ul>
+											<div class="address">20, Jiphyeonjungang-ro, Sejong-si</div>
                                             <!-- <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>

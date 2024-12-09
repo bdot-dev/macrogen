@@ -5,7 +5,7 @@
 <div class="wrap">
 	  <div class="full-bg business_bg bg-spatital">
 	    <!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
+		<header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 		
@@ -19,10 +19,10 @@
 	                </ol>
 	            </nav>
 	            <div class="hero-title en">Spatial Transcriptome Analysis</div>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 	 
@@ -35,7 +35,7 @@
 	                <div class="img">
 	                	<img src="/publishing/pc-ko/dist/img/business/img-ngs-spatial-gene.png" alt="Spatial Gene Expression analysis">
 	                </div>
-	                <p class="desc">마크로젠은 10x Genomics 사의 위치 기반 전사체 분석(spatial gene expression) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공해 드리고 있습니다. 또한 신기술을 빠르게 도입함으로써 위치 기반 전사체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.</p>
+	                <p class="desc">마크로젠은 10x Genomics 사의 위치 기반 전사체 분석(Spatial Transcriptome analysis) 서비스의 CSP(Certified service provider) 인증을 받았으며, 국내 1위이자 세계 5위 수준의 차세대염기서열분석(Next generation sequencing,NGS) 수행능력을 기반으로 높은 수준의 유전자 분석 데이터를 빠른 시간 내에 제공해 드리고 있습니다. 또한 신기술을 빠르게 도입함으로써 위치 기반 전사체 분석 서비스를 다양화하며 시장을 선도하고 있습니다.</p>
 	            </div>
             
 	            <!--탭 슬라이드-->

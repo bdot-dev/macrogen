@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-global-network.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">글로벌 네트워크</h2>
             <div class="font-slogan en">GLOBAL<br/>MACROGEN</div>
-            <div class="font-h7-r">글로벌 정밀의학을 선도합니다.</div>
+<!--             <div class="font-h7-r">글로벌 정밀의학을 선도합니다.</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -123,7 +123,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="item" id="daejeon">
+                                    <!-- <li class="item" id="daejeon">
                                         <div class="name">마크로젠 대전지사</div>
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_4.png" alt="마크로젠 대전지사"></div>
                                         <div class="info">
@@ -142,13 +142,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <li class="item" id="songdo">
                                         <div class="name">마크로젠 송도 글로벌 캠퍼스</div>
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 캠퍼스"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>2025년 설립 예정</span></li>
+												<li><span>2026년 설립 예정</span></li>
                                             </ul>
                                             <div class="address">인천광역시 연수구 송도동 210-2</div>
                                            <!-- <div class="tel">
@@ -168,9 +168,9 @@
                                         <div class="img"><img src="/publishing/mobile-ko/dist/img/macrogen/global_thumb_16.png" alt="마크로젠 세종캠퍼스"></div>
                                         <div class="info">
                                             <ul>
-                                                <li><span>2024년 설립 예정</span></li>
+                                                <li><span>2024년 11월 설립</span></li>
                                             </ul>
-                                            <div class="address">세종특별자치시 4-2생활권 복합4-3-1 BL</div>
+											<div class="address">세종특별자치시 집현중앙로 20 (집현동)</div>
                                            <!-- <div class="tel">
                                                 <div>
                                                     <span>TEL.</span>

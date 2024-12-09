@@ -4,7 +4,7 @@
 
     <div class="full-bg business_bg ngs">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -19,11 +19,11 @@
 </nav>
 
             <h2 class="hero-title">NGS</h2>
-            <div class="slogan-sub">Next Generation Sequencing</div>
+            <!-- <div class="slogan-sub">Next Generation Sequencing</div>
             <a href="#_tab-box" class="btn btn-round btn-service">
                 <span>SERVICE</span>
                 <i class="icon icon-arrow-bottom-short-white"></i>
-            </a>
+            </a> -->
         </div>
     </div>
     <div class="container">

@@ -2,15 +2,15 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-ethical-management-2.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-		<header class="header" id="header">
+		<header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
         <div class="frame">
             <h2 class="hero-title">사회공헌</h2>
             <div class="slogan ko">함께하는 미래를 위해<br/>사회적 책임을 실천합니다</div>
-            <div class= "slogan-sub">지구와 인류의 건강한 삶을 위해 노력합니다</div>
+            <!-- <div class= "slogan-sub">지구와 인류의 건강한 삶을 위해 노력합니다</div> -->
             <nav aria-label="breadcrumb">
 			    <ol class="breadcrumb breadcrumb-white">
 			        <li class="breadcrumb-item">Home</li>

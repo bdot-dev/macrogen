@@ -4,7 +4,7 @@
 
     <div class="full-bg research_bg">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -19,7 +19,7 @@
 </nav>
 
             <h2 class="hero-title">생명정보학연구소</h2>
-            <div class="slogan-sub">Bioinformatics Institute</div>
+            <!-- <div class="slogan-sub">Bioinformatics Institute</div> -->
         </div>
     </div>
 

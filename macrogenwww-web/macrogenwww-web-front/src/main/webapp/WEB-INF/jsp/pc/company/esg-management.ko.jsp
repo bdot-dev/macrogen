@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-esg.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">ESG경영</h2>
             <div class="slogan ko">더불어 사는 건강한<br/>세상을 만들어갑니다</div>
-            <div class= "slogan-sub">보다 나은 세상을 만드는데 힘을 보태겠습니다</div>
+            <!-- <div class= "slogan-sub">보다 나은 세상을 만드는데 힘을 보태겠습니다</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -32,7 +32,7 @@
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-h3">ESG 외부평가에 체계적인 대응을 통해<br/>ESG 수준을 지속 점검하고 발전시켜 나가겠습니다.</div>
-                    <div class="font-body-h" style="color:#000; font-weight: 400;">마크로젠은 2023년 서스틴베스트에서 진행하는 ESG 평가에서 2년 연속 규모등급 'AA등급'을 획득하였습니다.</div>
+                    <div class="font-body-h" style="color:#000; font-weight: 400;">마크로젠은 2024년 서스틴베스트에서 진행하는 ESG 평가에서 A등급을 획득하였습니다.</div>
                 </div>
             </div>
             <!-- e text -->
@@ -148,6 +148,10 @@
 										<th scope="row" rowspan="5"><img src="/publishing/pc-ko/dist/img/macrogen/table-bg-esg.png" alt=""></th>
 										<th>구분</th>
 										<th>등급</th>
+									</tr>
+									<tr>
+										<td>2024년</td>
+										<td>A</td>
 									</tr>
 									<tr>
 										<td>2023년</td>

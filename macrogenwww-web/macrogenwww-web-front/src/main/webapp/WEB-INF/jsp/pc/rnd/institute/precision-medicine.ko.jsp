@@ -3,7 +3,7 @@
 <body class="research-wrap">
 
     <div class="full-bg research_bg">
-        <header class="header" id="header">
+        <header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 
@@ -18,7 +18,7 @@
 </nav>
 
             <h2 class="hero-title">정밀의학연구소</h2>
-            <div class="slogan-sub">Precision Medicine Institute</div>
+            <!-- <div class="slogan-sub">Precision Medicine Institute</div> -->
         </div>
     </div>
 

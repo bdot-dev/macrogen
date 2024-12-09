@@ -6,16 +6,16 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
-		    <ol class="breadcrumb">
-		        <li class="breadcrumb-item">Home</li>
-		        <li class="breadcrumb-item">Newsroom</li>
-		        <li class="breadcrumb-item active">뉴스</li>
-		    </ol>
-		</nav>
+        <!-- <nav aria-label="breadcrumb">
+        		    <ol class="breadcrumb">
+        		        <li class="breadcrumb-item">Home</li>
+        		        <li class="breadcrumb-item">Newsroom</li>
+        		        <li class="breadcrumb-item active">뉴스</li>
+        		    </ol>
+        		</nav> -->
 
         <div class="section_newsroom">
-            <h2 class="font-h1">뉴스</h2>
+            <h2 class="font-h1 ir-diff">뉴스</h2>
             <div class="board">
 
 				<c:if test="${fn:length(upendFixingList) > 0}">

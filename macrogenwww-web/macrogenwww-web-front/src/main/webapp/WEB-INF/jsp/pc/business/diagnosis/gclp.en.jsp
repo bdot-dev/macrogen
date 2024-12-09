@@ -5,7 +5,7 @@
 	<div class="wrap">
 		<div class="full-bg business_bg bg-type2">
 			<!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			<div class="frame frameB">
@@ -18,10 +18,10 @@
 	                </ol>
 	            </nav>
 	            <h2 class="hero-title">GCLP</h2>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 		
@@ -43,7 +43,7 @@
 	                        <div class="swiper-wrapper _swiperTab">
 	                            <div class="swiper-slide active" id="clin"><a href="#">ClinPharm Seq</a></div>
 	                            <div class="swiper-slide " id="multi-omics"><a href="#">Multi Omics</a></div>
-	                            <div class="swiper-slide " id="sample"><a href="#">Storage of samples</a></div>
+	                            <div class="swiper-slide " id="sample"><a href="#">Storage Of Samples</a></div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -252,7 +252,7 @@
 	                        <div class="navigation">
 	                            <div class="content clearfix">
 	                                <a href="#" class="item prev" onclick="setTabContent(0)"><div class="title">ClinPharm Seq</div></a>
-	                                <a href="#" class="item next" onclick="setTabContent(2)"><div class="title">Storage of samples</div></a>
+	                                <a href="#" class="item next" onclick="setTabContent(2)"><div class="title">Storage Of Samples</div></a>
 	                            </div>
 	                        </div>
 	                    </div>
@@ -261,7 +261,7 @@
 	
 	                <!-- 검체보관 서비스 -->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Storage of samples</p>
+	                    <p class="font-h4 main-title">Storage Of Samples</p>
 	                    <div class="img_gclp05">
 	                        <p class="font-body-h title">Macrogen offers another category of services dedicated to the storage of analytical samples.</p>
 	                        <ul class="dot_list01">

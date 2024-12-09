@@ -4,7 +4,7 @@
 
   <div class="full-bg business_bg microarray">
     <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -18,11 +18,11 @@
     </ol>
 </nav>
 
-      <h2 class="hero-title">MICROARRAY</h2>
-      <a href="#_tab-box" class="btn btn-round btn-service">
+      <h2 class="hero-title">Microarray</h2>
+      <!-- <a href="#_tab-box" class="btn btn-round btn-service">
         <span>SERVICE</span>
         <i class="icon icon-arrow-bottom-short-white"></i>
-      </a>
+      </a> -->
     </div>
   </div>
   <div class="container">
@@ -289,87 +289,81 @@
                   <th>SNP contents</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                  <td rowspan="16">Illumina</td>
-                  <td rowspan="16" class="text-start table-bg">-Model Org.<br>-Non-Human</td>
-                  <td rowspan="10">Genome Wide<br>SNP Array</td>
-                  <td>Infinium Omni5Exome-4</td>
-                  <td>4.5M</td>
-                </tr>
-                <tr>
-                  <td>Infinium Omni5-4</td>
-                  <td>4.3M</td>
-                </tr>
-                <tr>
-                  <td>Infinium Omni2.5Exome-8</td>
-                  <td>2.7M</td>
-                </tr>
-                <tr>
-                  <td>Infinium Omni2.5-8</td>
-                  <td>2.5M</td>
-                </tr>
-                <tr>
-                  <td>Infinium OmniExpressExome-8</td>
-                  <td>950K</td>
-                </tr>
-                <tr>
-                  <td>Infinium OmniExpress-24</td>
-                  <td>715K</td>
-                </tr>
-                <tr>
-                  <td>Infinium CoreExome-24</td>
-                  <td>540K</td>
-                </tr>
-                <tr>
-                  <td>Infinium Core-24</td>
-                  <td>300K</td>
-                </tr>
-                <tr>
-                  <td>Infinium GlobalScreeningArray</td>
-                  <td>660K</td>
-                </tr>
-                <tr>
-                  <td colspan="2">ETC</td>
-                </tr>
-                <tr>
-                  <td rowspan="6">Targeted Array</td>
-                  <td>Infinium QC Array-24</td>
-                  <td>16K</td>
-                </tr>
-                <tr>
-                  <td>Infinium Exome-24</td>
-                  <td>250K</td>
-                </tr>
-                <tr>
-                  <td>Infinium OncoArray-500K</td>
-                  <td>500K</td>
-                </tr>
-                <tr>
-                  <td>Infinium ImmunoArray-24</td>
-                  <td>250K</td>
-                </tr>
-                <tr>
-                  <td>Infinium PsychArray-24</td>
-                  <td>590K</td>
-                </tr>
-                <tr>
-                  <td colspan="2">ETC</td>
-                </tr>
-                <tr>
-                  <td rowspan="2">Life Technologies</td>
-                  <td class="text-start table-bg" rowspan="2">
-                    - Pre-designed probes<br>
-                    - Customized probes
-                  </td>
-                  <td rowspan="2">-</td>
-                  <td>Openarray Customization</td>
-                  <td>up to 240 SNPs</td>
-                </tr>
-                <tr>
-                  <td colspan="2">Taqman genotyping</td>
-                </tr>
-                </tbody>
+				<tbody>
+					<tr>
+					  <td rowspan="12">Illumina</td>
+					  <td rowspan="14" class="text-start table-bg">- Human<br>- Model Org.<br>- Non-Human</td>
+					  <td rowspan="6">Genome Wide<br>SNP Array</td>
+					  <td>Infinium Omni5Exome-4</td>
+					  <td>4.5M</td>
+					</tr>
+					<tr>
+					  <td>Infinium Omni5-4</td>
+					  <td>4.3M</td>
+					</tr>
+					<tr>
+					  <td>Infinium OmniExpress-24</td>
+					  <td>715K</td>
+					</tr>
+					<tr>
+					  <td>Infinium Global Screening Array</td>
+					  <td>660K</td>
+					</tr>
+					<tr>
+					  <td>Infinium Global Diversity Array</td>
+					  <td>1.8M</td>
+					</tr>
+					<tr>
+					  <td colspan="2">ETC</td>
+					</tr>
+					<tr>
+					  <td rowspan="6">Targeted Array</td>
+					  <td>Infinium QC Array-24</td>
+					  <td>16K</td>
+					</tr>
+					<tr>
+					  <td>Infinium Exome-24</td>
+					  <td>250K</td>
+					</tr>
+					<tr>
+					  <td>Infinium OncoArray-500K</td>
+					  <td>500K</td>
+					</tr>
+					<tr>
+					  <td>Infinium ImmunoArray-24</td>
+					  <td>250K</td>
+					</tr>
+					<tr>
+					  <td>Infinium PsychArray-24</td>
+					  <td>590K</td>
+					</tr>
+					<tr>
+					  <td colspan="2">ETC</td>
+					</tr>
+					<tr>
+					  <td rowspan="2">Affymetrix</td>
+					  <td rowspan="2">Genome Wide<br>SNP Array</td>
+					  <td>Axiom PangenomiX Array</td>
+					  <td>800K</td>
+					</tr>
+					<tr>
+					  <td>Axiom Precision Medicine Diversity Array</td>
+					  <td>850K</td>
+					</tr>
+					<tr>
+					  <td rowspan="2">Thermofisher Scientifics</td>
+					  <td class="text-start table-bg" rowspan="2">
+						- Pre-designed probes<br>
+						- Customized probes
+					  </td>
+					  <td rowspan="2">-</td>
+					  <td>Openarray Customization</td>
+					  <td>up to 240 SNPs</td>
+					</tr>
+					<tr>
+					  <td colspan="2">Taqman genotyping</td>
+					</tr>
+				</tbody>
               </table>
             </div>
             <div class="list-area">

@@ -3,7 +3,7 @@
 <body class="research-wrap en">
 
     <div class="full-bg research_bg">
-        <header class="header" id="header">
+        <header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 		</header>
 

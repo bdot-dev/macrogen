@@ -4,7 +4,7 @@
 
   <div class="full-bg business_bg oligo">
     <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -14,15 +14,15 @@
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Service</li>
         <li class="breadcrumb-item">연구분석서비스</li>
-        <li class="breadcrumb-item">OLIGO</li>
+        <li class="breadcrumb-item">Oligo</li>
     </ol>
 </nav> 
 
-      <h2 class="hero-title">OLIGO</h2>
-      <a href="#_tab-box" class="btn btn-round btn-service">
+      <h2 class="hero-title">Oligo</h2>
+      <!-- <a href="#_tab-box" class="btn btn-round btn-service">
         <span>SERVICE</span>
         <i class="icon icon-arrow-bottom-short-white"></i>
-      </a>
+      </a> -->
     </div>
   </div>
   <div class="container oligo_sec"> 

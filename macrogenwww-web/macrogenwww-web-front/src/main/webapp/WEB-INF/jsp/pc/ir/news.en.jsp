@@ -6,16 +6,16 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">IR</li>
 		        <li class="breadcrumb-item active">IR소식</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">IR소식</h2>
+            <h2 class="font-h1 ir-diff">IR소식</h2>
             <div class="search-wrap mb-5">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

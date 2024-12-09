@@ -3,16 +3,16 @@
 <body class="en">
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">IR</li>
 		        <li class="breadcrumb-item active">Financial Information</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">Financial Information</h2>
+            <h2 class="font-h1 ir-diff">Financial Information</h2>
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">Consolidated Statement of Financial Position</span>

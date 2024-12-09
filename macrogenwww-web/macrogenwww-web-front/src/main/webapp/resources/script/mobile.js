@@ -94,7 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
     borderRadius: '0%',
     duration: 1,
     // scale 변경 시간
-    ease: 'power2.out' // 부드러운 애니메이션
+    ease: 'power2.out',
+    // 부드러운 애니메이션
+    backgroundPosition: 'left 45% top',
+    backgroundSize: 'auto 130vh'
   }, '+=0.5' // opacity 애니메이션이 끝난 후 0.5초 지연
   ).to('.main-slogan__image--scale', {
     opacity: 1,
@@ -197,8 +200,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     requestAnimationFrame(step);
   };
-  // counters.forEach((counter) => counter.innerText === '0' && startCounting(counter));
-
+  counters.forEach(function (counter) {
+    return counter.innerText === '0' && startCounting(counter);
+  });
   function startCounting(counterElement) {
     countToTarget(counterElement, parseInt(counterElement.getAttribute('data-count'), 10), 1200);
   }

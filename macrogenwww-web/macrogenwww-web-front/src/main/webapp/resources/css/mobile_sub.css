@@ -1,13 +1,18 @@
+.wrap * {
+  word-break: keep-all;
+}
 .wrap .container {
   padding: 0 0 70px 0;
 }
 
-.gentok {
-  padding-top: 70px;
-}
 .gentok__title {
-  padding: 54px 10px 50px 10px;
+  margin: 0 20px;
+  height: 360px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .gentok__title h3 {
   font-family: "NeuzeitGrotesk";
@@ -100,7 +105,7 @@
 .examine__checklist {
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
+  row-gap: 80px;
 }
 .examine__checklist > li {
   position: relative;
@@ -118,6 +123,10 @@
 }
 .examine__checklist > li:nth-child(2) .examine__hideclose {
   background-color: #4CAFDA;
+}
+.examine__checklist > li:nth-child(2) .examine__itemdesc {
+  text-indent: -10px;
+  padding-left: 20px;
 }
 .examine__checklist > li:nth-child(3) {
   background-color: #73C044;
@@ -228,7 +237,25 @@
 .examine__itemdesc {
   margin-top: 5px;
   line-height: 22px;
+  padding-left: 10px;
   letter-spacing: -0.48px;
+}
+.examine__piece {
+  display: flex;
+  gap: 5px;
+}
+.examine__piece + .examine__piece {
+  margin-top: 5px;
+}
+.examine__piece span:first-child {
+  flex-shrink: 0;
+  flex-basis: unset;
+}
+.examine__piece span:nth-child(2) {
+  text-indent: 0;
+}
+.examine__one {
+  flex-basis: 50px;
 }
 .examine__hidebutton {
   margin-top: 20px;

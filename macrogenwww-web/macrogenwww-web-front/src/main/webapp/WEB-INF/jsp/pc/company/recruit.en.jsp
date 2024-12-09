@@ -20,7 +20,7 @@
 			    </ol>
 			</nav>
 
-            <h2 class="hero-title">채용안내</h2>
+            <div class="hero-title">채용안내</div>
         </div>
     </div>
 

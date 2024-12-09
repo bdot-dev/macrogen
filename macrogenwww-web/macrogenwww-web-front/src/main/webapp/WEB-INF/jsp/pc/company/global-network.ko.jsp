@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-global-network.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">글로벌 네트워크</h2>
             <div class="slogan">GLOBAL<br/>MACROGEN</div>
-            <div class="slogan-sub">글로벌 정밀의학을 선도합니다</div>
+            <!-- <div class="slogan-sub">글로벌 정밀의학을 선도합니다</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -42,7 +42,7 @@
                     <a class="pin madrid" href="#madrid"><span>Madrid&#44; Spain</span></a>
                     <a class="pin seoul" href="#seoul"><span>Seoul&#44; Korea</span></a>
                     <a class="pin songdo" href="#songdo"><span>Songdo&#44; Korea</span></a>
-                    <a class="pin daejeon" href="#daejeon"><span>Daejeon&#44; Korea</span></a>
+                    <a class="pin daejeon" href="#sejong"><span>SEJONG&#44; KOREA</span></a>
                     <a class="pin tokyo" href="#tokyo"><span>Tokyo&#44; japan</span></a>
                     <a class="pin biopolis" href="#biopolis"><span>Biopolis&#44; Singapore</span></a>
                     <a class="pin boston" href="#rockville"><span>Boston&#44; USA</span></a>
@@ -118,13 +118,13 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item height_fix" id="daejeon">
+                <!--             <li class="item height_fix" id="daejeon">
                                 <div class="name">마크로젠 대전지사</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_4.png" alt="마크로젠 대전 지놈센터"></div>
                                 <div class="info">
                                     <ul>
                                         <li><span>2008년 2월 설립</span></li>
-                                        <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
+                                        <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li>
                                     </ul>
                                     <div class="address">대전광역시 유성구 테크노3로 65&#44; 323호 &#40;관평동&#44; 한신에스메카&#41;</div>
                                     <div class="tel">
@@ -134,13 +134,13 @@
                                         <a href="tel:+82-42-336-7180">&#43;82&#45;42&#45;336&#45;7180</a>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="item height_fix" id="songdo">
                                 <div class="name">마크로젠 송도 글로벌 캠퍼스</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_10.png" alt="마크로젠 송도 글로벌 캠퍼스"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>2025년 설립 예정</span></li>
+                                        <li><span>2026년 설립 예정</span></li>
                                         <!-- <li><span>주요사업</span><span>유전체 분석 및 임상진단 서비스</span></li> -->
                                     </ul>
                                     <div class="address">인천광역시 연수구 송도동 210-2</div>
@@ -152,14 +152,14 @@
                                     </div>  -->
                                 </div>
                             </li>
-                            <li class="item height_fix">
+                            <li class="item height_fix" id="sejong">
                                 <div class="name">마크로젠 세종캠퍼스</div>
                                 <div class="img"><img src="/publishing/pc-ko/dist/img/macrogen/global_thumb_16.png" alt="마크로젠 세종캠퍼스"></div>
                                 <div class="info">
                                     <ul>
-                                        <li><span>2024년 설립 예정</span></li>
+                                        <li><span>2024년 11월 설립</span></li>
                                     </ul>
-                                    <div class="address">세종특별자치시 4-2생활권 복합4-3-1 BL</div>
+                                    <div class="address">세종특별자치시 집현중앙로 20 (집현동)</div>
                                     <!-- <div class="tel">
                                         <span>TEL&#46;</span>
                                         <a href="tel:+82-42-336-7080">&#43;82&#45;42&#45;336&#45;7080</a>

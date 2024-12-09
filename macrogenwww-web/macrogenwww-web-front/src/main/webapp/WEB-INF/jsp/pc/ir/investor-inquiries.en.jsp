@@ -8,15 +8,15 @@
         <div class="section_IR">
             <div class="question_box">
                 <div class="text-area">
-                    <nav aria-label="breadcrumb">
+                    <!-- <nav aria-label="breadcrumb">
 					    <ol class="breadcrumb">
 					        <li class="breadcrumb-item">Home</li>
 					        <li class="breadcrumb-item">IR</li>
 					        <li class="breadcrumb-item active">Investment Inquiries</li>
 					    </ol>
-					</nav>
+					</nav> -->
 
-                    <h2 class="font-h1">Investment Inquiries</h2>
+                    <h2 class="font-h1 ir-diff">Investment Inquiries</h2>
                     <div class="font-h4">Contact us for any questions regarding investment.<br/> We will respond promptly.</div>
                     <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
                     <a href="#write" class="btn btn-white btn-round btn-round-big"><span>Write</span><i class="icon icon-arrow-bottom-short"></i></a>

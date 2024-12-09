@@ -5,7 +5,7 @@
 	<div class="wrap">
 		<div class="full-bg business_bg bg-singlemulti">
 			<!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			<div class="frame frameB">
@@ -18,10 +18,10 @@
 	                </ol>
 	            </nav>
 	            <div class="hero-title en">Single Cell Multi-omics Analysis</div>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 		
@@ -42,27 +42,27 @@
                     </div>
                     <div class="box-gray-6">
                         <div>
-                            <p class="title">single cell RNA sequencing</p>
+                            <p class="title">Single cell RNA sequencing</p>
                             <p class="desc">Single cell expression analysis</p>
                         </div>
                         <div>
-                            <p class="title">single nucleus RNA sequencing</p>
+                            <p class="title">Single nucleus RNA sequencing</p>
                             <p class="desc">Analysis of gene expression after isolation of nucleus from samples that are difficult to progress to cells</p>
                         </div>
                         <div>
-                            <p class="title">single cell immune profiling</p>
+                            <p class="title">Single cell immune profiling</p>
                             <p class="desc">Single cell TCR and BCR gene expression analysis</p>
                         </div>
                         <div>
-                            <p class="title">single cell surface protein profiling</p>
+                            <p class="title">Single cell surface protein profiling</p>
                             <p class="desc">Analysis of proteins located on the surface of single cells</p>
                         </div>
                         <div>
-                            <p class="title">single cell ATAC sequencing</p>
+                            <p class="title">Single cell ATAC sequencing</p>
                             <p class="desc">Analysis of single-nucleus DNA's accessibility</p>
                         </div>
                         <div>
-                            <p class="title">single cell Multiome sequencing</p>
+                            <p class="title">Single cell Multiome sequencing</p>
                             <p class="desc">Simultaneous analysis of single-nucleus DNA's accessibility and gene expression </p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
 	                <div class="service-box">
 	                	<div class="box">
 	                		<div class="img_txt">
-	                			<img src="/publishing/pc-ko/dist/img/business/img-single-cell-process01.png" alt=""/>
+	                			<img src="/publishing/pc-en/dist/img/business/img-single-cell-process01.png" alt=""/>
 	                			<p>We offer a full range of services, including tissue dissociation, sample quality checks, library construction, sequencing, and data analysis.</p>
 	                		</div>
 	                		<ul class="service_list">

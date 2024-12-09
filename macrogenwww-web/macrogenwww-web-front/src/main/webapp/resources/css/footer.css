@@ -1,0 +1,203 @@
+.wrap .footer {
+  position: relative;
+  background-color: #111111;
+  color: #fff;
+  min-width: auto;
+  padding: 0;
+  min-width: 1660px;
+}
+.wrap .footer::before {
+  display: none;
+}
+.wrap .footer__inner {
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 20px 62px;
+}
+.wrap .footer__top {
+  display: flex;
+  column-gap: 160px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.wrap .footer__title {
+  flex-shrink: 0;
+  flex-basis: 385px;
+}
+.wrap .footer__title h2 {
+  font-family: "NeuzeitGrotesk";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.wrap .footer__list {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.wrap .footer__menu strong {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.wrap .footer__menu li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.48px;
+}
+.wrap .footer__menu li:first-child {
+  font-family: "NeuzeitGrotesk";
+  font-size: 18px;
+  line-height: 18px;
+}
+.wrap .footer__menu li:last-child {
+  margin-bottom: 0;
+}
+.wrap .footer__menu li a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+.wrap .footer__bottom {
+  padding-top: 60px;
+}
+.wrap .footer__etc {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .footer__site {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .footer__site ul {
+  display: flex;
+  gap: 30px;
+}
+.wrap .footer__site ul li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: -0.42px;
+}
+.wrap .footer__site ul li.policy a{
+  font-weight: 700;
+}
+.wrap .footer__site ul li a {
+  color: #fff;
+}
+.wrap .footer__site ul li a:hover {
+  color: unset;
+}
+.wrap .footer__select {
+  position: relative;
+  font-size: 0;
+}
+.wrap .footer__select .footer__button {
+  position: relative;
+  display: inline-block;
+  font-family: "NeuzeitGrotesk";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  padding-right: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.wrap .footer__select .footer__button::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-top: 2px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  transform: translateY(-50%) rotate(135deg);
+  transition: 0.23s ease;
+}
+.wrap .footer__select .footer__button.active::after {
+  margin-top: -2px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.wrap .footer__container {
+  height: 380px;
+  padding: 15px;
+  overflow-y: auto;
+  border: 1px solid #4F4F4F;
+  border-radius: 10px;
+}
+.wrap .footer__container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.wrap .footer__container ul li {
+  font-size: 0;
+}
+.wrap .footer__container ul li:last-child {
+  border-bottom: none;
+}
+.wrap .footer__container ul li a {
+  display: block;
+  font-family: "NeuzeitGrotesk";
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  letter-spacing: -0.03rem;
+}
+.wrap .footer__container ul li a:hover {
+  color: #83D8FF;
+}
+.wrap .footer__toggle {
+  overflow: hidden;
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 215px;
+  height: 0;
+  background-color: #292929;
+  transition: 0.23s ease;
+  border-radius: 10px;
+}
+.wrap .footer__info {
+  display: flex;
+  gap: 20px;
+  padding-top: 40px;
+  font-size: 14px;
+}
+.wrap .footer__copyright {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 3;
+}
+.top-btn button {
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #222;
+  background-image: url(../images/common/top_arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  border: none;
+}
+
+.btn.btn-text.btn-totop {
+  display: none;
+}

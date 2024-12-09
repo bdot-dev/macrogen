@@ -3,7 +3,7 @@
 <body>
 	<div class="wrap">
 	    <div class="full-bg business_bg ces">
-	    	<header class="header" id="header">
+	    	<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 	   		<div class="frame frameB">
@@ -17,11 +17,11 @@
 	            </nav>
 	
 	            <h2 class="hero-title">CES</h2>
-	            <div class="slogan-sub">Capillary Electrophoresis Sequencing</div>
+	           <!--  <div class="slogan-sub">Capillary Electrophoresis Sequencing</div>
 	            <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 		

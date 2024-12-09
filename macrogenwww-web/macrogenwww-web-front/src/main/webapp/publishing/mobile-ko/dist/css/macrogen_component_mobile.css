@@ -4650,7 +4650,7 @@ textarea.form-control-lg {
   z-index: 1055;
   display: none;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0; }
@@ -11142,6 +11142,7 @@ p {
   font-weight: bold;
   font-size: 34px;
   line-height: 50px;
+  margin-bottom: 0;
   letter-spacing: -1px; }
 
 .font-h4 {
@@ -11397,19 +11398,21 @@ body {
     background-size: cover; }
     .wrap .full-bg .frame {
       position: relative;
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 20px 66px; }
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #dbdbdb;
+	}
       .wrap .full-bg .frame .font-h4 {
         font-weight: bold;
         font-size: 36px;
         line-height: 47px;
         font-family: sans-serif;
         letter-spacing: -1px;
-        /* margin-bottom: 80px; */
-        color: #fff;
+        margin-bottom: 0px;
+        color: #000;
         word-break: keep-all; }
       .wrap .full-bg .frame .scroll-wrap{display: none;}
       .wrap .full-bg .frame .font-slogan {
@@ -11444,14 +11447,19 @@ body {
     background-size: 100%;
     opacity: 1; } }
     .wrap .top-bg .frame {
-      position: relative;
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 20px 56px; }
+     position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+	  }
       .wrap .top-bg .frame .font-h1 {
-        color: #fff;
+        color: #000;
+		margin-bottom: 0;
         word-break: keep-all; }
       .wrap .top-bg .frame .font-body-h {
         color: #fff;
@@ -11462,8 +11470,20 @@ body {
   .wrap .non-bg {
     width: 100%; }
     .wrap .non-bg .frame {
-      position: relative;
-      padding: 120px 20px 64px; }
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 20px;
+	margin-bottom: 80px;
+	  
+	  }
+	  .wrap .non-bg .frame.non-title {
+	   height: 0;
+	   border: none;
+	   padding: 0 0 10px 0!important;
+	  }
       .wrap .non-bg .frame .font-h1 {
         word-break: keep-all; }
       .wrap .non-bg .frame .btn-wrap {
@@ -11523,6 +11543,14 @@ body {
     background-size: 100%;
     opacity: 1; } }
 
+/* 서브 타이틀 공통화를 위한 수정 */
+  .wrap .top-bg .frame h2, .wrap .full-bg .frame .font-h4, 
+  .wrap .non-bg .frame .font-h1{
+	  font-size: 40px;
+	  line-height:46px;
+	  font-weight:700;
+	  margin-bottom:0;
+  }
 /* footer */
 .footer {
   position: relative;
@@ -11620,18 +11648,21 @@ body {
 /* gnb */
 .gnb.modal {
   display: block !important;
-  padding-left: 50px;
-  width: 100vw;
+  padding-left: 0;
+  width: calc(100% - 50px);
+    margin-left: 50px;
   top: 0;
-  left: 100vw; }
+  left: 100vw; 
+  }
   .gnb.modal.show {
-    left: 0; }
+    left: 0; 
+	}
   .gnb.modal .modal-dialog .gnb-content {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100dvh;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -11707,7 +11738,7 @@ body {
               position: absolute;
               top: 50%;
               transform: translateY(-50%);
-              right: 30px;
+              right: 20px;
               width: 14px;
               height: 14px;
               background-image: url(../img/common/ico-down-black.svg);
@@ -11731,7 +11762,7 @@ body {
               letter-spacing: -0.5px;
               color: #000000;
               background-color: #fff;
-              text-transform: uppercase; }
+              /*text-transform: uppercase;*/ }
               .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li > a:hover {
                 color: #000000; }
             .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul {
@@ -11755,7 +11786,7 @@ body {
                   line-height: 32px;
                   letter-spacing: -0.5px;
                   color: #666666;
-                  text-transform: uppercase; }
+                  /*text-transform: uppercase;*/ }
                   .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li a:hover {
                     color: #666666; }
                 .gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li.noDepth a {
@@ -12698,6 +12729,7 @@ textarea::placeholder {
  v 0.7 태윤 : .anchor-option mCustomScrollbar 커스텀 & anchor-option padding값 수정 - 2021.12.05
 |----------------------------------|
 */
+.tab-primary{ margin: 0 20px; }
 .tab-primary .nav-tabs {
   display: flex;
   width: 100%; }

@@ -1,331 +1,542 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 
+<head>
+	<link rel="stylesheet" href="/resources/library/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/resources/css/common.css" />
+    <link rel="stylesheet" href="/resources/css/sub.css" />
+    <script src="/resources/library/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/resources/library/jquery/jquery.easing.min.js"></script>
+    <script src="/resources/library/swiper/swiper-bundle.min.js"></script>
+    <script src="/resources/library/gsap/gsap.min.js"></script>
+    <script src="/resources/library/gsap/ScrollTrigger.min.js"></script>
+    <script src="/resources/library/gsap/ScrollToPlugin.min.js"></script>
+    <script src="/resources/library/marquee/marquee.js"></script>
+    <!-- <script src="/resources/script/common.js"></script> -->
+    <script src="/resources/script/sub.js"></script>
+
+	
+</head>
+
 <body>
-	<div class="wrap">
-		<div class="full-bg business_bg bg-personal02">
-	    <!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
-				<c:import url="/inc/header-inner-gnb" />
-			</header>
-			<div class="frame frameB">
-	            <nav aria-label="breadcrumb">
-	                <ol class="breadcrumb breadcrumb-white">
-	                    <li class="breadcrumb-item">Home</li>
-	                    <li class="breadcrumb-item">SERVICE</li>
-	                    <li class="breadcrumb-item">퍼스널 헬스케어</li>
-	                    <li class="breadcrumb-item">건강관리 플랫폼</li>
-	                </ol>
-	            </nav>
-	            <h2 class="hero-title">건강관리 플랫폼</h2>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
-	                <span>SERVICE</span>
-	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
-	        </div>
-		</div>
-		
-		<div class="container">
-	        <link type="text/css" rel="stylesheet" href="/publishing/pc-ko/dist/css/business.css"/>
-	        <div class="section_business">
-	            <div class="subject-box type01">
-	                <p class="font-h4 title">젠톡 GenTok</p>
-	                <p class="subject">
-	                	젠톡은 유전자 분석을 통해 타고난 나의 특성을 알고, 마이크로바이옴(몸속 미생물) 분석으로 현재 건강 상태를 모니터링하며, 소비자들이 맞춤 건강 관리를 할 수 있도록 돕는 몸BTI 건강관리 플랫폼입니다.
-	                </p>
-	            </div>
-	            
-	            <!-- 탭 컨텐츠 -->
-	            <div class="info-box-wrap tab-content">
-	                <div class="info-box show">
-	                    <div class="img">
-	                        <img src="/publishing/pc-ko/dist/img/business/gentok_bg.png" alt="방송에 나온 그 유전자 검사! MBTI? 이젠 몸BTI 시대 궁금해 하지말고, 클릭!">
-							<div class="float-wrap">
-								<div class="txt">
-									내 몸 사용설명서<br/>
-									몸BTI 건강관리 플랫폼
+	<div class="wrap header-fixed header--black" id="wrap">
+    <h2 class="ir">젠톡</h2>
+	<header class="header header-bg-white" id="header">
+			<c:import url="/inc/header-inner-gnb" />
+		</header>
+    <div class="container">
+        
+        <article class="gentok">
+            <div class="gentok__title">
+                <h2>Digital Healthcare</h2>
+            </div>
+            <div class="gentok__kv">
+                <div class="gentok__content">
+                    <div class="gentok__text">
+                        <h4 class="gentok__subtitle">몸BTI 건강관리 플랫폼</h4>
+                        <h3 class="gentok__kvtitle">젠톡</h3>
+                        <p class="gentok__description">유전자 분석을 통해 타고난 나의 특성을 알고, 몸속 미생물 분석으로<br />현재 건강 상태를 모니터링하면서 건강한 삶을 만들어가요</p>
+                        <div class="gentok__btnwrap">
+                            <ul>
+                                <li>
+                                    <a href="https://apps.apple.com/kr/app/%EC%A0%A0%ED%86%A1-gentok/id6450289510" target="_blank" class="btn btn-default btn-default--regular btn-default--white">
+                                        <span class="btn btn-default__text btn-default__text--pl btn-default__text--apple">App Store</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=app.macrogen.gentok&hl=ko" target="_blank" class="btn btn-default btn-default--regular btn-default--white">
+                                        <span class="btn btn-default__text btn-default__text--pl btn-default__text--google">Google Play</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="examine">
+            <div class="examine__container">
+                <div class="examine__function">
+                    <ul class="examine__list">
+                        <li>
+                            <div class="examine__inner">
+                                <div class="examine__image">
+                                    <img src="/resources/images/sub/func_image01.svg" alt="129종의 다양한 검사항목" />
+                                </div>
+                                <div class="examine__num">
+                                    <span>01</span>
+                                </div>
+                                <div class="examine__text">
+                                    <p class="examine__name">
+                                        129종의<br />
+                                        다양한 검사항목
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="examine__inner">
+                                <div class="examine__image">
+                                    <img src="/resources/images/sub/func_image02.svg" alt="보건복지부 인증기관" />
+                                </div>
+                                <div class="examine__num">
+                                    <span>02</span>
+                                </div>
+                                <div class="examine__text">
+                                    <p class="examine__name">
+                                        보건복지부<br />
+                                        인증기관
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="examine__inner">
+                                <div class="examine__image">
+                                    <img src="/resources/images/sub/func_image03.svg" alt="AI 챗봇 유전상담 서비스" />
+                                </div>
+                                <div class="examine__num">
+                                    <span>03</span>
+                                </div>
+                                <div class="examine__text">
+                                    <p class="examine__name">
+                                        AI 챗봇<br />
+                                        유전상담 서비스
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="examine__inner">
+                                <div class="examine__image">
+                                    <img src="/resources/images/sub/func_image04.svg" alt="검사 항목별 관리 솔루션 제공" />
+                                </div>
+                                <div class="examine__num">
+                                    <span>04</span>
+                                </div>
+                                <div class="examine__text">
+                                    <p class="examine__name">
+                                        검사 항목별<br />
+                                        관리 솔루션 제공
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="examine__check">
+                    <ul class="examine__checklist">
+                        <li>
+                            <div class="examine__checkimage">
+                                <img src="/resources/images/sub/checklist_image01.png" alt="" />
+                            </div>
+                            <div class="examine__toggle">
+                                <div class="examine__content">
+                                    <div class="examine__title">
+                                        <p>유전자 검사</p>
+                                        <h4>젠톡</h4>
+                                    </div>
+                                    <div class="examine__desc">
+                                        <p>
+                                            비만, 탈모 등 총 129종 검사항목으로<br />
+                                            그동안 알지 못했던 내 몸의 유전적 특성 알아봐요
+                                        </p>
+                                    </div>
+                                    <button type="button" class="examine__plus">더보기</button>
+                                </div>
+                                <div class="examine__hidecont">
+                                    <div class="examine__hidewrap">
+                                        <div class="examine__hideleft">
+                                            <div class="examine__hideimage">
+                                                <img src="/resources/images/sub/checklist_hideimage01.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="examine__hideright">
+                                            <ul class="examine__hidelist">
+                                                <li>
+                                                    <div class="examine__itemleft">영양소</div>
+                                                    <div class="examine__itemright">비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 35개 항목</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">운동</div>
+                                                    <div class="examine__itemright">근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 10개 항목</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">피부/모발</div>
+                                                    <div class="examine__itemright">색소침착, 피부노화, 남성형 탈모 등 18개 항목</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">식습관</div>
+                                                    <div class="examine__itemright">식욕, 포만감, 쓴맛 민감도 등 총 21개 항목</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">개인특성</div>
+                                                    <div class="examine__itemright">알코올 홍조, 니코틴 의존성, 카페인 대사 등 23개 항목</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">건강관리</div>
+                                                    <div class="examine__itemright">비만, 요요 가능성, 복부비만, 중성지방농도 등 22개 항목</div>
+                                                </li>
+                                            </ul>
+                                            <div class="examine__hidebutton">
+                                                <a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                    <span class="btn btn-default__text">더 알아보기</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="examine__checkimage">
+                                <img src="/resources/images/sub/checklist_image02.png" alt="" />
+                            </div>
+                            <div class="examine__toggle">
+                                <div class="examine__content">
+                                    <div class="examine__title">
+                                        <p>마이크로바이옴 검사</p>
+                                        <h4>더바이옴</h4>
+                                    </div>
+                                    <div class="examine__desc">
+                                        <p>
+                                            지속적으로 변화하는 몸 속 미생물을 분석하여<br />
+                                            현재 건강 상태를 체크해봐요
+                                        </p>
+                                    </div>
+                                    <button type="button" class="examine__plus">더보기</button>
+                                </div>
+                                <div class="examine__hidecont">
+                                    <div class="examine__hidewrap">
+                                        <div class="examine__hideleft">
+                                            <div class="examine__hideimage">
+                                                <img src="/resources/images/sub/checklist_hideimage02.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="examine__hideright">
+                                            <ul class="examine__hidelist">
+                                                <li>
+                                                    <div class="examine__itemleft examine__itemleft--diff">장 건강 및 라이프 지수 종합 분석</div>
+                                                    <div class="examine__itemright">- 장 : 변비, 방귀, 복부 팽만감, 신경성 복부 불편감, 설사<br />- 웰니스 : 행복, 피로, 면역, 비만, 수면, 노화</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft examine__itemleft--diff">영양소 대사 점수</div>
+                                                    <div class="examine__itemright">- 식이섬유, 비타민B군, 단백질&BCAA 등 14종</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft examine__itemleft--diff">
+                                                        식약처 고시 프로바이오틱스<br />
+                                                        19종 검출 여부
+                                                    </div>
+                                                    <div class="examine__itemright"></div>
+                                                </li>
+                                            </ul>
+                                            <div class="examine__hidebutton">
+                                                <a href="https://gentok.net/market/goods/5005" target="_blank" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                    <span class="btn btn-default__text">더 알아보기</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="examine__checkimage">
+                                <img src="/resources/images/sub/checklist_image03.png" alt="" />
+                            </div>
+                            <div class="examine__toggle">
+                                <div class="examine__content">
+                                    <div class="examine__title">
+                                        <p>반려동물 유전자 검사</p>
+                                        <h4>마이펫진</h4>
+                                    </div>
+                                    <div class="examine__desc">
+                                        <p>
+                                            소중한 반려동물의 유전질환을 미리 알아보고 예방하여<br />
+                                            행복하고 건강한 삶을 함께해요
+                                        </p>
+                                    </div>
+                                    <button type="button" class="examine__plus">더보기</button>
+                                </div>
+                                <div class="examine__hidecont">
+                                    <div class="examine__hidewrap examine__hidewrap--diff">
+                                        <div class="examine__hideright">
+                                            <ul class="examine__hidelist">
+                                                <li>
+                                                    <div class="examine__itemleft">질병확인서</div>
+                                                    <div class="examine__itemright">유전질환의 가족력이 있거나 증상이 의심되는 경우 검사를 통해 조기진단 및 예방, 치료, 건강관리에 도움을 줄 수 있습니다.</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">DNA인증서</div>
+                                                    <div class="examine__itemright">2개 시료의 유전자 좌위를 비교 분석하여 동일한 개체의 DNA인지 식별하는 검사입니다.</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">혈연확인서</div>
+                                                    <div class="examine__itemright">반려동물 DNA의 고유한 유전자형을 비교 분석하여 부/모/자 간의 혈연관계를 입증하는 검사입니다.</div>
+                                                </li>
+                                                <li>
+                                                    <div class="examine__itemleft">성별확인서</div>
+                                                    <div class="examine__itemright">암수의 성염색체 차이를 DNA분석을 통해 확인함으로써 조류의 성 감별이 가능합니다.</div>
+                                                </li>
+                                            </ul>
+                                            <div class="examine__hidebutton">
+                                                <a href="javascript:;" class="btn btn-default btn-default--regular btn-default--bnw">
+                                                    <span class="btn btn-default__text">더 알아보기</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="slide-banner">
+                    <ul class="swiper-wrapper slide-banner__wrap">
+                    <!--     <li class="swiper-slide slide-banner__item--01">
+                            <div class="slide-banner__cont">
+                                <span class="slide-banner__category">삼성 헬스 유전자 패키지 프로모션</span>
+                                <h3>
+                                    마크로젠 유전자검사 서비스 젠톡,<br />
+                                    삼성 갤럭시에 탑재
+                                </h3>
+                                <div class="slide-banner__btn">
+                                    <a href="javacript:;" class="btn btn-default btn-default--regular btn-default--black">
+                                        <span class="btn btn-default__text">바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li class="swiper-slide slide-banner__item--02">
+                            <div class="slide-banner__cont">
+                                <span class="slide-banner__category">젠톡 이용권 선물하기</span>
+                                <h3>
+                                    소중한 사람에게<br />
+                                    마음을 전하는 방법!
+                                </h3>
+                                <div class="slide-banner__btn">
+                                    <a href="https://gentok.net/market/goods/100" target="_blank" class="btn btn-default btn-default--regular btn-default--black">
+                                        <span class="btn btn-default__text">바로가기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </article>
+        <article class="about gray">
+            <div class="about__inner">
+                <div class="about__title">
+                    <h3>젠톡 이런 점이 좋았어요</h3>
+                    <div class="about__btn">
+                        <a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-default btn-default--gradient">
+                            <span class="btn btn-default__text">리뷰 전체보기</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="advantage-slide about-slide">
+                    <ul class="swiper-wrapper advantage-slide__wrap">
+                        <li class="swiper-slide">
+							<div class="advantage-slide__cont">
+								<div class="advantage-slide__top">
+									<div class="advantage-slide__coma"></div>
+									<div class="advantage-slide__description">
+										<p>너무 정확하고 상세합니다. 나에 대해 더 자세히 알게 되어 보완도 할 수 있어요. 결과 설명도 자세하고 재미있게 이해할 수 있도록 쉽게 되어 있어서 만족도가 높아요~ 가족들 모두 다 해줘야겠어요.</p>
+									</div>
+									<div class="advantage-slide__image">
+										<img src="/resources/images/sub/advantage_image01.jpg" alt="" />
+									</div>
+									<div class="advantage-slide__package">
+										<span class="advantage-slide__tag">All 패키지 129종</span>
+									</div>
 								</div>
-								<div class="btn-wrap">
-									<a href="https://play.google.com/store/apps/details?id=app.macrogen.gentok&pcampaignid=web_share" target="_blank"><img src="/publishing/pc-ko/dist/img/business/btn_googleplay.png" alt="Google Play" /></a>
-									<a href="https://apps.apple.com/kr/app/%EC%A0%A0%ED%86%A1-gentok/id6450289510" target="_blank"><img src="/publishing/pc-ko/dist/img/business/btn_appstore.png" alt="App Store" /></a>
+								<div class="advantage-slide__bottom">
+									<div class="advantage-slide__review">
+										<p class="advantage-slide__name">김<sup>**</sup></p>
+										<p class="advantage-slide__defaulttext">젠톡 리뷰</p>
+									</div>
+									<div class="advantage-slide__star">
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+										<div class="star"></div>
+									</div>
 								</div>
 							</div>
-	                    </div>
-	                    <hr class="divider">
-	                    <div class="list-gallery">
-							<div class="list">
-	                            <p class="title font-h5">유전자검사</p>
-								<div class="description">
-									비만, 탈모, 체중감량효과, 혈당, 수면습관 등 국내 최다 129종 항목에 대한 유전자검사를 제공합니다. 나의 타고난 유전자 특성과 내게 필요한 건강관리 팁을 결과카드로 쉽고 재미있게 확인할 수 있습니다.
-									<p class="footnote">※  미성년자(만 18세 미만)는 검사 서비스가 불가능합니다.</p>
-								</div>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_healthbeauth_img01.png" alt="유전자검사">
-	                                </div>
-	
-	                                <div class="cont">
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 35개 항목</li>
-	                                            <li>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 10개 항목</li>
-	                                            <li>피부/모발 : 색소침착, 피부노화, 남성형 탈모 등 18개 항목</li>
-	                                            <li>식습관 : 식욕, 포만감, 쓴맛 민감도 등 총 21개 항목</li>
-	                                            <li>개인특성 : 알코올 홍조, 니코틴 의존성, 카페인 대사 등 23개 항목</li>
-	                                            <li>건강관리 : 비만, 요요 가능성, 복부비만, 중성지방농도 등 22개 항목</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                    	<a href="https://gentok.net/market/goods/5001" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
-	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>제휴문의</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-								<div class="img" style="margin-top: 45px;">
-									<img src="/publishing/pc-ko/dist/img/business/img_healthbeauth_img03.jpg" alt="AI챗봇">
-								</div>
-	                        </div>
-		                    <div class="list">
-	                            <p class="title font-h5">더바이옴</p>
-								<div class="description">
-									제2의 유전체라 불리는 마이크로바이옴 분석 서비스입니다.<br/>
-									식습관, 운동 및 수면 습관, 생활 환경, 스트레스 강도 등에 따라 지속적으로 변화하는 마이크로바이옴을 분석하여 현재 건강 상태를 모니터링함으로써 보다 체계적인 건강관리를 할 수 있습니다.
-								</div>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_healthbeauth_img02.png" alt="더바이옴">
-	                                </div>
-	
-	                                <div class="cont">
-	                                    <p class="desc"><strong>더바이옴 골드 (장내미생물 검사)</strong></p>
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>
-													장 건강 및 라이프 지수 종합 분석<br/>
-													<p class="txt-indent">
-														- 장 : 변비, 방귀, 복부 팽만감, 신경성 복부 불편감, 설사<br/>
-														- 웰니스 : 행복, 피로, 면역, 비만, 수면, 노화
-													</p>
-												</li>
-	                                            <li>영양소 대사 점수 (식이섬유, 비타민B군, 단백질&BCAA 등 14종)</li>
-	                                            <li>식약처 고시 프로바이오틱스 19종 검출 여부</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                    	<a href="https://gentok.net/market/goods/5004" target="_blank" class="btn btn-sm btn-white"><span>자세히보기</span></a>
-	                                        <a href="mailto:hello@macrogen.com" class="btn btn-sm btn-white"><span>제휴문의</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="advantage-slide__cont">
+                                <div class="advantage-slide__top">
+                                    <div class="advantage-slide__coma"></div>
+                                    <div class="advantage-slide__description">
+                                        <p>검사방법도 간단했습니다. 패키지 박스 보내고 결과물을 pdf로 받았는데 검사유형, 건강관리, 운동 영양소, 개인특성 등 있었고 이해하기 쉬웠어요. 마무리 단계에서는 유전자 분석 목록으로 한눈에 볼 수 있어서 좋았어요.</p>
+                                    </div>
+                                    <div class="advantage-slide__image">
+                                        <img src="/resources/images/sub/advantage_image02.jpg" alt="" />
+                                    </div>
+                                    <div class="advantage-slide__package">
+                                        <span class="advantage-slide__tag">All 패키지 129종</span>
+                                    </div>
+                                </div>
+                                <div class="advantage-slide__bottom">
+                                    <div class="advantage-slide__review">
+                                        <p class="advantage-slide__name">조<sup>**</sup></p>
+                                        <p class="advantage-slide__defaulttext">젠톡 리뷰</p>
+                                    </div>
+                                    <div class="advantage-slide__star">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="advantage-slide__cont">
+                                <div class="advantage-slide__top">
+                                    <div class="advantage-slide__coma"></div>
+                                    <div class="advantage-slide__description">
+                                        <p>기본적인 건강관련도 그렇고, 영양소나 개인특성 등을 알 수 있어서 관리하기 너무 좋을 것 같아요. 이런 것도 알려죠? 싶은 것들도 알려줘서 너무 신기하고 흥미롭네요!!</p>
+                                    </div>
+                                    <div class="advantage-slide__image">
+                                        <img src="/resources/images/sub/advantage_image03.jpg" alt="" />
+                                    </div>
+                                    <div class="advantage-slide__package">
+                                        <span class="advantage-slide__tag">All 패키지 129종</span>
+                                    </div>
+                                </div>
+                                <div class="advantage-slide__bottom">
+                                    <div class="advantage-slide__review">
+                                        <p class="advantage-slide__name">이<sup>**</sup></p>
+                                        <p class="advantage-slide__defaulttext">젠톡 리뷰</p>
+                                    </div>
+                                    <div class="advantage-slide__star">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="advantage-slide__cont">
+                                <div class="advantage-slide__top">
+                                    <div class="advantage-slide__coma"></div>
+                                    <div class="advantage-slide__description">
+                                        <p>합리적인 가격에 많은 검사 결과를 보고 평소 저와 비교할 수 있었고 신경써야할 부분을 보고 참고할 수 있어서 좋았어요. 운동을 즐겨하는 입장에서 참고하고 방향성을 좀 설정할 수 있어서 좋아요.</p>
+                                    </div>
+                                    <div class="advantage-slide__image">
+                                        <img src="/resources/images/sub/advantage_image04.jpg" alt="" />
+                                    </div>
+                                    <div class="advantage-slide__package">
+                                        <span class="advantage-slide__tag">All 패키지 129종</span>
+                                    </div>
+                                </div>
+                                <div class="advantage-slide__bottom">
+                                    <div class="advantage-slide__review">
+                                        <p class="advantage-slide__name">나<sup>**</sup></p>
+                                        <p class="advantage-slide__defaulttext">젠톡 리뷰</p>
+                                    </div>
+                                    <div class="advantage-slide__star">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="advantage-slide__progres"></div>
+                </div>
+            </div>
+        </article>
+        <article class="about">
+            <div class="about__inner">
+                <div class="about__title">
+                    <h3>젠톡과 함께 소통해요</h3>
+                </div>
+                <div class="comms-slide about-slide">
+                    <ul class="swiper-wrapper comms-slide__wrap">
+                        <li class="swiper-slide">
+							<a href="https://blog.naver.com/macrogen_official/223595660841" target="_blank">
+                                <div class="comms-slide__image">
+                                    <img src="/resources/images/sub/comms_image01.jpg" alt="" />
+                                </div>
+                                <div class="comms-slide__sns comms-slide__sns--blog"></div>
+                                <div class="comms-slide__description">
+                                    <p>국내 최초 유전자 서포터즈 젠토커 1기! 개인 미션 우수 활동 콘텐츠</p>
+                                </div>
+                                <div class="comms-slide__date">
+                                    <p>2024.08.19</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+							<a href="https://www.instagram.com/p/C_zji3YzA2b/" target="_blank">
+                                <div class="comms-slide__image">
+                                    <img src="/resources/images/sub/comms_image02.jpg" alt="" />
+                                </div>
+                                <div class="comms-slide__sns comms-slide__sns--insta"></div>
+                                <div class="comms-slide__description">
+                                    <p>내 형제자매의 이해 안 되는 행동들, 사실은 유전자 때문이었다고?😮</p>
+                                </div>
+                                <div class="comms-slide__date">
+                                    <p>2024.08.19</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+							<a href="https://blog.naver.com/macrogen_official/223539370758" target="_blank">
+                                <div class="comms-slide__image">
+                                    <img src="/resources/images/sub/comms_image03.jpg" alt="" />
+                                </div>
+                                <div class="comms-slide__sns comms-slide__sns--blog"></div>
+                                <div class="comms-slide__description">
+                                    <p>현존하는 더바이옴 골드 후기 중 가장 생생한 후기</p>
+                                </div>
+                                <div class="comms-slide__date">
+                                    <p>2024.08.19</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+							<a href="https://www.youtube.com/watch?v=uzIvec-XaQ0" target="_blank">
+                                <div class="comms-slide__image">
+                                    <img src="/resources/images/sub/comms_image04.jpg" alt="" />
+                                </div>
+                                <div class="comms-slide__sns comms-slide__sns--youtube"></div>
+                                <div class="comms-slide__description">
+                                    <p>[젠톡x한살차이] 젠톡찐톡! DNA로 찐해지는 토크🗣️🧬 이젠,톡으로 말해요 젠톡</p>
+                                </div>
+                                <div class="comms-slide__date">
+                                    <p>2024.08.19</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="comms-slide__progres"></div>
+                </div>
+            </div>
+        </article>
+        <div class="contact-btn">
+            <a href="https://gentok.net/" target="_blank">
+                <img src="/resources/images/sub/gentok_logo.png" />
+            </a>
+        </div>
+    </div>
+   
+</div>
 
-	                    	<!-- <hr class="divider">
-	                        <div class="list">
-	                            <p class="title font-h5">마이지놈스토리 더플러스 올인원 69</p>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_allinone69.png" alt="마이지놈스토리더플러스올인원69">
-	                                </div>
-	
-	                                <div class="cont">
-	                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
-	                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>영양소 : 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</li>
-	                                            <li>운동 : 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 총 8개 항목</li>
-	                                            <li>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 11개 항목</li>
-	                                            <li>식습관: 식욕, 포만감, 쓴맛 민감도 등 총 5개 항목</li>
-	                                            <li>개인특성: 알코올 홍조, 니코틴 의존성, 카페인 대사 등 12개 항목</li>
-	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/5372235474" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div> -->
-	                        <!-- <hr class="divider">
-	                        <div class="list">
-	                            <p class="title font-h5">마이지놈스토리 더플러스 스킨&#38;케어 44</p>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_theplus_care44.png" alt="마이지놈스토리더플러스스킨&케어44">
-	                                </div>
-	                                <div class="cont">
-	                                    <p class="desc">헬스&#38;뷰티 관리뿐 아니라 평소 궁금했던 개인의 특성 분석을 통해 ‘나’를 알아갈 수 있도록 돕습니다.  국내 최다 항목을 분석하는 올인원은 토탈 헬스케어가 가능한 프리미엄 상품입니다.</p>
-	                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>피부/모발: 색소침착, 피부노화, 남성형 탈모 등 11개 항목</li>
-	                                            <li>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</li>
-	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <hr class="divider">
-	                        <div class="list">
-	                            <p class="title font-h5">마이지놈스토리 더플러스 피트니스 41</p>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_theplus_fit41.png" alt="마이지놈스토리더플러스피트니스41">
-	                                </div>
-	                                <div class="cont">
-	                                    <p class="desc">나에게 맞는 영양소와 운동 습관 설계에 필요한 항목을 분석할 수 있어, 건강 관리를 효과적으로 계획할 수 있도록 돕습니다.</p>
-	                                    <p class="caption">※ 미성년자(만 19세 미만)는 검사 서비스가 불가능합니다.</p>
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>운동: 근력 운동 적합성, 지구력 운동 적합성, 운동 후 회복능력 등 8개 항목</li>
-	                                            <li>영양소: 비타민 C 농도, 비타민 D 농도, 코엔자임Q10, 마그네슘 농도 등 19개 항목</li>
-	                                            <li>건강관리: 비만, 요요 가능성, 복부비만, 중성지방농도 등 14개 항목</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>자세히 보기</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/4840761209" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <hr class="divider">
-	                        <div class="list">
-	                            <p class="title font-h5">마이지놈스토리 더플러스 11</p>
-	                            <div class="content">
-	                                <div class="picture">
-	                                    <img src="/publishing/pc-ko/dist/img/business/img_theplus12.png" alt="마이지놈스토리더플러스12">
-	                                </div>
-	                                <div class="cont">
-	                                    <p class="desc">성인뿐 아니라  만 19세 미만의 미성년자도 이용 가능한 유일한 검사 서비스로  헬스&#38;뷰티 관리에 꼭 필요한 핵심 항목만으로 구성되어 쉽고 효율적인 관리를 할 수 있도록 돕습니다.</p>
-	                                    <div class="list-area">
-	                                        <ul class="list-circle-dot">
-	                                            <li>헬스: 체질량지수, 콜레스테롤, 중성지방 농도 등 5개 항목</li>
-	                                            <li>스킨: 색소침착, 피부노화, 카페인 대사 등 4개 항목</li>
-	                                            <li>헤어: 남성형탈모, 모발굵기 2개 항목</li>
-	                                        </ul>
-	                                    </div>
-	                                    <div class="btn-wrap">
-	                                        <a href="mailto:mygenomestory@macrogen.com" class="btn btn-sm btn-white"><span>서비스 문의</span></a>
-	                                        <a href="https://smartstore.naver.com/mygenomestory/products/4150226329" target="_blank" class="btn btn-sm btn-primary"><span>구매하기</span></a>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div> -->
-	                    </div>
-	                </div>
-	
-	            </div>
-	            <!-- //탭 컨텐츠 -->
-	
-	        </div>
-	    </div>
-		
-	</div>
-	
-	<%-- 팝업 --%>
-	<%-- <c:if test="${not empty popupList  }"> 
-	<c:forEach var="popup" items="${popupList}" varStatus="status">
-		<div class="modal" tabindex="-1" id="layerPopup${status.index }" data-bs-backdrop="static">
-			<input type="hidden" value="${popupCnt}" id="popupCnt">
-			<input type="hidden" value="${cookieChkList[status.index]}" id="cookieChkList${status.index }">
-		    <div class="modal-dialog modal-dialog-centered layer-modal">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <div class="blue-circle">
-		                    <i class="icon icon-union"></i>
-		                </div>
-		            </div>
-		            <div class="modal-body">
-		                <p class="title">${popupVo.popupNm }</p>
-		                <p class="desc">마크로젠은 핵심 기술력과 글로벌 네트워크를 바탕으로
-		                    <br>2020년 창사 이래 최대 실적을 거뒀습니다.
-		                    ‘매출액 또는 손익구조 30% 이상 변동 공시’ 를 통해 2020년 연결
-		                    <br>재무제표 기준 매출 1,126억 원, 영업이익 72억 원, 당기순이익
-		                    <br>908억 원을 달성했습니다.
-		                </p>
-		                <div class="data-img">
-		                    <img src="${publicUrl}${popup.popupImageFlpth}" alt="" onclick="onclickPopupImage('${popup.popupLinkUrl}', '${popup.popupLinkTrgtCode}')">
-		                </div>
-		                <!-- <div class="btn-area">
-		                    <a class="btn btn-sm btn-white" href="#">버튼 1</a>
-		                    <a class="btn btn-sm btn-white" href="#">버튼 2</a>
-		                </div> -->
-		            </div>
-		            <div class="modal-footer">
-		                <div class="form-check">
-		                    <input class="form-check-input" type="checkbox" id="popup-sn${status.index }" value="${ popup.popupSn }" >
-		                    <label class="form-check-label" for="popup-sn${status.index }">오늘 하루 이 창 열지 않기</label>
-		                </div>
-		                <div class="close-box" data-bs-dismiss="modal" aria-label="Close" id="close-box${status.index }" onclick="popupClose('${ popup.popupSn }', '${status.index }')">
-		                    <span>Close</span>
-		                    <i class="icon ico-close-white"></i>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-	</c:forEach>
-		<script>
-			var popupCnt = $("#popupCnt").val();
-			
-			for(var i=0;i<popupCnt;i++){
-				var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'+i))
-				var coockieChk = $("#cookieChkList"+i).val();
-				
-				if(coockieChk == 'true'){
-					layerPopupModal.hide();
-				}else if(coockieChk =='false'){
-					layerPopupModal.show();
-				}
-				
-			    //layerPopupModal.show();
-			}
-			
-		    /* var layerPopupModal = new bootstrap.Modal(document.getElementById('layerPopup'))
-		    layerPopupModal.show(); */
-		    
-		    $('div.modal-backdrop:gt(0)').css("opacity", "0");
-		</script>
-		<script>
-	
-			function onclickPopupImage(url, trgtCode) {
-				if (!url) {
-					return;
-				}
-	
-				if (trgtCode === 'NEW') {
-					window.open(url);
-				} else {
-					location.href = url;
-				}
-			}
-			
-			function popupClose(sn, idx) {
-				if ($('#popup-sn'+idx).is(':checked')) { 
-					if (!sn) return;
-		
-					var snListStr = $.cookie('popup-businessDtc-sn-list');
-					console.log(snListStr);
-					if (!snListStr) {
-						snListStr = sn;
-					} else if (snListStr.indexOf(sn) < 0) {
-						snListStr += ',' + sn;
-					}
-					$.cookie('popup-businessDtc-sn-list', snListStr, { expires: 1, path: '/'});
-				}
-				
-				layerPopupModal.hide();
-				/* $('.show').parent('body').css("overflow", "hidden"); 
-				$('.show').parent('body').css("padding-right", "17px"); */
-			}
-		</script>
-	</c:if> --%>
-	
 </body>

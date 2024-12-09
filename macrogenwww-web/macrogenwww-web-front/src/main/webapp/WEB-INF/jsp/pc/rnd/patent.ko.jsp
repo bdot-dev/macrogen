@@ -6,17 +6,17 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">MACROGEN</li>
 		        <li class="breadcrumb-item">RESOURCE</li>
 		        <li class="breadcrumb-item active">특허</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_RD">
-            <h2 class="font-h1">특허</h2>
+            <h2 class="font-h1 ir-diff">특허</h2>
             <div class="search-wrap mb-5">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

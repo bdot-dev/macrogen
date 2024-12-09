@@ -2,17 +2,39 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 	<div class="wrap">
-		<div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/test-bg.png);">
-			<header class="header header-white">
+		<div class="top-bg" >
+			<header class="header">
 			    <div class="inner">
-			        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+			        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
 			        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
 			    </div>
 			</header>
 			<div class="frame">
-	            <h2 class="font-h1">NGS-based <br>Genetic Panel <br>Lab</h2>
+	            <h2 class="font-h4">NGS-based <br>Genetic Panel <br>Lab</h2>
 	        </div>
 		</div>
+
+		<script>
+			$(function(){
+				var lastScroll = 0;
+				$(window).scroll(function(){
+					var st = $(this).scrollTop();
+					if (st > lastScroll){
+						// console.log('Down');
+						$('.header').show().css({'position': 'absolute','top':'0'});
+					}
+					else if (st === 0) {
+						// console.log('Top');
+						// $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+					}
+					else {
+						// console.log('Up');
+						$('.header').show().css({'position': 'fixed','top':'0'}).removeClass('header-white');
+					}
+					lastScroll = st;
+				});
+			});
+		</script>
 		
 		<div class="container">
 	        <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/business.css"/>
@@ -39,9 +61,9 @@
 	                        <span class="text">Certification acquired by Macrogen</span>
 	                    </div>
 	                    <ul class="select-option _select-option">
-	                        <li class="option-value active" onclick="setTabContent(0)" id="certification"><a href="#">Certification acquired by Macrogen</a></li>
-	                        <li class="option-value" onclick="setTabContent(1)" id="features"><a href="#">Features and strengths of cancer panels</a></li>
-	                        <li class="option-value" onclick="setTabContent(2)" id="scope"><a href="#">Scope of NGS-based PMG labs</a></li>
+	                        <li class="option-value active" onclick="setTabContent(0)" id="certification"><a href="#">Certification Acquired By Macrogen In The Clinical Diagnosis Business</a></li>
+	                        <li class="option-value" onclick="setTabContent(1)" id="features"><a href="#">Key Features And Strengths Of  Macrogen’s Cancer Panels</a></li>
+	                        <li class="option-value" onclick="setTabContent(2)" id="scope"><a href="#">Scope Of NGS-based PMG Labs</a></li>
 	                    </ul>
 	                </div>
 	            </div>
@@ -51,7 +73,7 @@
 	            <div class="info-box-wrap tab-content">
 	                <!--임상진단사업 인증 현황-->
 	                <div class="info-box show">
-	                    <p class="font-h4 main-title">Certification acquired by Macrogen in the clinical diagnosis business</p>
+	                    <p class="font-h4 main-title">Certification Acquired By Macrogen In The Clinical Diagnosis Business</p>
 	                    <p class="desc font-body img_bottom">Macrogen offers clinical diagnosis services using certified and proven technology.</p>
 	                    <div class="img_ngs_gene01">
 	                        <ol>
@@ -136,7 +158,7 @@
 	                <!-- //임상진단사업 인증 현황 -->
 	                <!--마크로젠 암 진단 패널의 특징 및 경쟁력-->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Key features and strengths of Macrogen’s cancer panels</p>
+	                    <p class="font-h4 main-title">Key Features And Strengths Of  Macrogen’s Cancer Panels</p>
 	                    <p class="desc font-body img_bottom">With some of the most cutting-edge gene sequencing technologies in the world and advanced analytical capabilities developed in-house, Macrogen offers some of the highest quality services available on the market today.</p>
 	                    <div class="border-gray-box">
 	                        <div class="img">
@@ -173,7 +195,7 @@
 	                <!-- //마크로젠 암 진단 패널의 특징 및 경쟁력 -->
 	                <!-- NGS기반 유전자 패널 검사실 구축 범위 -->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Scope of projects to set up <br>NGS-based PMG labs</p>
+	                    <p class="font-h4 main-title">Scope Of Projects To Set Up <br>NGS-based PMG Labs</p>
 	                    <p class="desc font-body img_bottom">Macrogen offers services tailored to each client for optimal installation and operation of labs for genetic testing panels using next-generation sequencing techniques.</p>
 	                    <div class="border-gray-box">
 	                        <div class="img">

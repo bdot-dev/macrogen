@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/esg/bg-esg.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">ESG경영</h2>
             <div class="font-slogan">더불어 사는 건강한<br/>세상을 만들어갑니다</div>
-            <div class="font-h7-r">보다 나은 세상을 만드는데 힘을 보태겠습니다.</div>
+            <!-- <div class="font-h7-r">보다 나은 세상을 만드는데 힘을 보태겠습니다.</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -47,7 +47,7 @@
             <div class="section-phrase">
                 <div class="inner" data-aos="fade-up" data-aos-duration="2000">
                     <div class="font-h3">ESG 외부평가에 체계적인 대응을 통해 ESG 수준을<br>지속 점검하고 발전시켜 나가겠습니다.</div>
-                    <div class="font-body-h" style="color:#000;">마크로젠은 2023년 서스틴베스트에서<br>진행하는 ESG 평가에서 2년 연속 규모등급<br>'AA등급'을 획득하였습니다.</div>
+                    <div class="font-body-h" style="color:#000;">마크로젠은 2024년 서스틴베스트에서 진행하는 ESG 평가에서 A등급을 획득하였습니다.</div>
                 </div>
             </div>
             <!-- e text -->
@@ -136,6 +136,10 @@
 									<tr>
 										<th>구분</th>
 										<th>등급</th>
+									</tr>
+									<tr>
+										<td>2024년</td>
+										<td>A</td>
 									</tr>
 									<tr>
 										<td>2023년</td>

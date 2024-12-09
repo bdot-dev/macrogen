@@ -192,7 +192,7 @@
             </ul>
         </div>
         <div class="item menu0205">
-            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer">임상분석서비스</a></div>
+            <div class="title"><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">임상분석서비스</a></div>
             <ul>
                 <li>
                     <a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">정밀의학</a>
@@ -206,7 +206,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer"">암 유전체 검사</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/cancer-genome#cancer">암 유전체 검사</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">
@@ -218,7 +218,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification"">NGS 유전자패널 검사실</a> <!--신규 추가 -->
+                    <a href="/${rc.locale.language }/business/diagnosis/ngs-panel#certification">NGS 유전자패널 검사실</a> <!--신규 추가 -->
                     <div class="folding">
                         <button type="button"></button>
                         <ul class="cards-body">

@@ -1,11 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<%
+	pageContext.setAttribute("CR", "\r"); 
+	pageContext.setAttribute("LF", "\n"); 
+%>
+
+<c:set var="cleanData" value="${resultVo.nttCn.replaceAll('\\\<.*?\\\>','')}" />
+<c:set var="cleanData" value="${cleanData.replaceAll('&[^;]+;', '')}" />
+<c:set var="cleanData" value="${fn:replace(fn:replace(cleanData, LF, ''), CR, '')}" />
+
+<!-- 메타 태그 설정 -->
 <head>
-	<title><c:out value="${resultVo.nttSj }" /> - </title>
-	<meta name="description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
-	<meta property="og:title" content="<c:out value="${resultVo.nttSj }" /> - MACROGEN" />
-	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
-	<!-- <meta property="og:image" content="${frontDomain }${artfairImageUrl}" /> -->
+    <title><c:out value="${resultVo.nttSj }" /></title>
+    <meta name="description" content="<c:out value='${fn:substring(cleanData, 0, 150)}' />..." />
+    <meta property="og:title" content="<c:out value='${resultVo.nttSj }' />" />
+	<meta property="og:description" content="<c:out value='${fn:substring(cleanData, 0, 150)}' />..." />
+	<meta property="og:image" content="${frontDomain }${imgUrl }" />
 </head>
 <body>
 
@@ -16,16 +26,16 @@
 	</form:form>
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">IR</li>
 		        <li class="breadcrumb-item active">IR소식</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">IR소식</h2>
+            <h2 class="font-h1 ir-diff">IR소식</h2>
             <div class="board">
                 <div class="detail">
                     <div class="heading">

@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-vision.png);">
+    <div class="full-bg macrogen" >
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
                 <h2 class="hero-title">Vision</h2>
                 <div class="slogan">The global leader<br/>in precision medicine</div> <!-- 번역 변경 -- 2021.11.23 -->
-                <div class="slogan-sub">We predict and diagnose diseases and provides personalized solutions</div>
+                <!-- <div class="slogan-sub">We predict and diagnose diseases and provides personalized solutions</div> -->
                 <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>

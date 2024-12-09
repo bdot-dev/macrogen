@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-company-overview.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
                 <h2 class="hero-title">About MACROGEN</h2>
                 <div class="slogan">HUMANIZING<br/> GENOMICS</div>
-                <div class="slogan-sub">Creating a better future for humanity</div>
+                <!-- <div class="slogan-sub">Creating a better future for humanity</div> -->
                 <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -108,12 +108,12 @@
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_8.png" alt="Overseas Revenue"></span>
-                                <span class="val">750&#43;</span>
-                                <span class="desc">Number of Global employees<br/>(2023)</span>
+                                <span class="val">700&#43;</span>
+                                <span class="desc">Number of Global employees<br/>(2024)</span>
                             </li>
                             <li class="item">
                                 <span class="img"><img src="/publishing/pc-en/dist/img/macrogen/macrogen_circle_7.png" alt="Companies Assistance to Bio Venture"></span>
-                                <span class="val">148</span>
+                                <span class="val">156</span>
                                 <span class="desc">SCI-level articles in top-tier<br/>journals (including Nature)</span>
                             </li>
                         </ul>

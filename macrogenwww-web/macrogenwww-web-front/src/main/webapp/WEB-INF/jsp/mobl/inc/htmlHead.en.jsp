@@ -14,6 +14,7 @@
 <link rel="shortcut icon" href="/publishing/mobile-en/dist/img/favicon/favicon.ico">
 <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_component_mobile.css?1221"/>
 <link type="text/css" rel="stylesheet" href="/publishing/mobile-en/dist/css/macrogen_page_mobile_ko.css?1221"/>
+<link rel="stylesheet" href="/resources/css/mobile_footer.css" />
 <script src="/publishing/mobile-en/dist/js/bundle.js?1221"></script>
 <script src="/publishing/mobile-en/dist/js/common.js?1221"></script>
 <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
@@ -32,6 +33,34 @@
 	.loading-dimed:after {content:'';position:absolute;top:50%;left:50%;z-index:1;width:40px;height:40px;margin:-20px 0 0 -20px;background:url('/images/loading.svg') no-repeat 0 0;}
 	.loading-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:#000;}
 	.document-dimed:before {content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.8;background:#000;}
+
+	@font-face {
+	  font-family: "NeuzeitGrotesk";
+	  font-style: normal;
+	  font-weight: 300;
+	  src: local(※), url(/resources/fonts/NeuzeitGrotesk-Light.woff2) format("woff2"), url(/resources/fonts/NeuzeitGrotesk-Light.woff) format("woff");
+	  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+	}
+	@font-face {
+	  font-family: "NeuzeitGrotesk";
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local(※), url(/resources/fonts/NeuzeitGrotesk-Regular.woff2) format("woff2"), url(/resources/fonts/NeuzeitGrotesk-Regular.woff) format("woff");
+	  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+	}
+	@font-face {
+	  font-family: "NeuzeitGrotesk";
+	  font-style: normal;
+	  font-weight: 700;
+	  src: local(※), url(/resources/fonts/NeuzeitGrotesk-Bold.woff2) format("woff2"), url(/resources/fonts/NeuzeitGrotesk-Bold.woff) format("woff");
+	  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+	}
+	.gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > a, 
+	.gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li > a,
+	.gnb.modal .modal-dialog .gnb-content .gnb-body > ul > li > ul > li ul li a,
+	.wrap .frame h2, .wrap .frame .font-h4, .section_agreement > .main-title, .footer, .wrap .non-bg .frame .font-h1, .macrogen.macrogen-sitemap .main-title.font-h1 {
+		font-family: "NeuzeitGrotesk", sans-serif;
+	}
 </style>
 
 <script src="/common/js/jquery.form.min.js"></script>
@@ -50,4 +79,13 @@
 		option.locale = '${rc.locale}';
 		App.init(option);
 	});
+</script>
+<meta name="naver-site-verification" content="aaeba0b9789dc2e626a02b3d90cf622faaecff3b" />
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "62dfd455212fc4";
+if(window.wcs) {
+wcs_do();
+}
 </script>

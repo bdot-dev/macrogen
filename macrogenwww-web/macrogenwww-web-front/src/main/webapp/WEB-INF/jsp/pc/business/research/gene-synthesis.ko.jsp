@@ -3,7 +3,7 @@
 <body>
 
     <div class="full-bg business_bg ces">
-        <header class="header" id="header">
+        <header class="header header-bg-white" id="header">
 			<c:import url="/inc/header-inner-gnb" />
 </header>
 
@@ -13,11 +13,11 @@
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Service</li>
         <li class="breadcrumb-item">연구분석서비스</li>
-        <li class="breadcrumb-item">GENE SYNTHESIS</li>
+        <li class="breadcrumb-item">Gene Synthesis</li>
     </ol>
 </nav> 
 
-            <h2 class="hero-title">GENE SYNTHESIS</h2>
+            <h2 class="hero-title">Gene Synthesis</h2>
         </div>
     </div>
     <div class="container">

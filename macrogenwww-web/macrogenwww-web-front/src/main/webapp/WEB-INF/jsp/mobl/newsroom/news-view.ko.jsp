@@ -8,13 +8,26 @@
 		<c:set var="imgUrl" value="${publicUrl }${resultVo.thumbFlpth }" />
 	</c:otherwise>
 </c:choose>
+<%
+	pageContext.setAttribute("CR", "\r"); 
+	pageContext.setAttribute("LF", "\n"); 
+%>
+
+<c:set var="cleanData" value="${resultVo.nttCn.replaceAll('\\\<.*?\\\>','')}" />
+<c:set var="cleanData" value="${cleanData.replaceAll('&[^;]+;', '')}" />
+<c:set var="cleanData" value="${fn:replace(fn:replace(cleanData, LF, ''), CR, '')}" />
+
+<!-- 메타 태그 설정 -->
 <head>
-	<title><c:out value="${resultVo.nttSj }" /> - </title>
-	<meta name="description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
-	<meta property="og:title" content="<c:out value="${resultVo.nttSj }" /> - MACROGEN" />
-	<meta property="og:description" content="MACROGEN, <c:out value="${resultVo.nttSj }" />" />
+    <title><c:out value="${resultVo.nttSj }" /></title>
+    <meta name="description" content="<c:out value='${fn:substring(cleanData, 0, 150)}' />..." />
+    <meta property="og:title" content="<c:out value='${resultVo.nttSj }' />" />
+	<meta property="og:description" content="<c:out value='${fn:substring(cleanData, 0, 150)}' />..." />
 	<meta property="og:image" content="${frontDomain }${imgUrl }" />
 </head>
+<style>
+	.font-body img {width: 100%!important; height:100%!important;}
+</style>
 <body>
 
 	<!-- 검색조건 저장용 -->

@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/macrogen/bg-authorization_v2.png);">
+    <div class="full-bg macrogen" >
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
                 <h2 class="hero-title">Certification & Accreditation</h2>
                 <div class="slogan">Global standard<br/>for genomics</div> <!-- 번역 변경 -- 2021.11.23 -->
-                <div class="slogan-sub">Our technological excellence has been recognized around the world</div>
+                <!-- <div class="slogan-sub">Our technological excellence has been recognized around the world</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -227,6 +227,11 @@ Practice) is a quality standard for laboratories that analyze blood and urine sa
                     <div class="left">
                         <div class="desc">To provide quality services that inspire customer confidence, Macrogen is a member of the CSP (Certified Service Provider) program alongside Illumina, Pacific Biosciences, Life Technologies, Thermo Fisher Scientific, Agilent Technology, and 10x Genomics. Through its in-house service quality management system and participation in the CSP program, Macrogen complies with the service quality standards established by genetic analysis platform suppliers. This allows Macrogen to not only supply high-quality services, but also to work with genetic analysis platform suppliers in joint marketing and support programs to provide customers with added benefits.</div>
                         <div class="img-wrap">
+                            <div class="img">
+                                <span class="tit">Ultima Genomics</span>
+                                <img src="/publishing/pc-en/dist/img/macrogen/img-authorization-17.png" alt="Ultima Genomics">
+                                <a class="btn btn-sm btn-white" href="javascript:alert('The file is being prepared.');">Download</a>
+                            </div>
                             <div class="img">
                                 <span class="tit">Illumina</span>
                                 <img src="/publishing/pc-en/dist/img/macrogen/img-authorization-8.png" alt="Illumina">

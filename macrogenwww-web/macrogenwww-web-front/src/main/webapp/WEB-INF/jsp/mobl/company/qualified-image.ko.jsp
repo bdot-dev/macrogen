@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-macrogen-talent.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+               // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">인재상</h2>
             <div class="font-slogan">새로운 내일을<br/>당신과 함께 꿈꿉니다</div>
-            <div class="font-h7-r">건강한 미래를 만들어 갈<br/> 마크로젠 구성원을 찾습니다</div>
+            <!-- <div class="font-h7-r">건강한 미래를 만들어 갈<br/> 마크로젠 구성원을 찾습니다</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>

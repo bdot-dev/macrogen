@@ -178,7 +178,7 @@ front.common = (function () {
         var screeSize = document.documentElement.clientHeight;
         // console.log(screeSize);
 
-        if($('.full-bg').length) {
+        /* if($('.full-bg').length) {
             if($('html, body').scrollTop() === 0) {
                 // 서브 배경 애니메이션
                 var sub = setTimeout(function() {
@@ -187,7 +187,7 @@ front.common = (function () {
                     else $('html, body').animate({scrollTop: screeSize}, 300);
                 }, 2000);
             }
-        }
+        } */
         /* e full-bg 일 경우, 자동 하단으로 스크롤 */
 
         /* s tooltip */

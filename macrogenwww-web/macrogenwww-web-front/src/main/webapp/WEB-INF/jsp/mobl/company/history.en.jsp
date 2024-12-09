@@ -2,10 +2,10 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
 
-    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/macrogen-history-bg.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -37,7 +37,7 @@
 				doors in the
 				development of
 				genomic analysis</div> <!-- 번역 변경 -- 2022.05.26 -->
-            <div class="font-h7-r">Macrogen is paving the way to a healthier and brighter future for humanity.</div>
+            <!-- <div class="font-h7-r">Macrogen is paving the way to a healthier and brighter future for humanity.</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>

@@ -2,16 +2,16 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
  
-    <div class="full-bg macrogen" style="background-image: url(/publishing/pc-ko/dist/img/macrogen/bg-management.png);">
+    <div class="full-bg macrogen">
         <!--header 수정시 메인 header 같이 수정해주세요-->
-<header class="header" id="header">
+<header class="header header-bg-white" id="header">
 	<c:import url="/inc/header-inner-gnb" />
 </header>
 
         <div class="frame">
             <h2 class="hero-title">경영진</h2>
             <div class="slogan ko">널리 인간을<br/>이롭게 하다</div>
-            <div class= "slogan-sub">‘홍익인간’의 가치를 실현하기 위해 오늘도 밤을 밝힙니다</div>
+            <!-- <div class= "slogan-sub">‘홍익인간’의 가치를 실현하기 위해 오늘도 밤을 밝힙니다</div> -->
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-white">
         <li class="breadcrumb-item">Home</li>
@@ -366,7 +366,7 @@
                                     <li>前) 배재대학교 화학과 박사</li>
                                 </ul>                                         
                             </li>     
-                            <li class="item">                                        
+                            <!-- <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/pc-ko/dist/img/macrogen/img-team_06.png" alt="">
                                     <p class="name">신성장혁신사업본부<strong>김종윤 본부장</strong></p>
@@ -376,7 +376,7 @@
                                     <li>前) 마크로젠 CES-Oligo사업 총괄</li>
                                     <li>前) 마크로젠 게놈응용사업 총괄</li>
                                 </ul>                                         
-                            </li>                                
+                            </li>   -->                              
                         </ul>
                     </div>
                     <script>

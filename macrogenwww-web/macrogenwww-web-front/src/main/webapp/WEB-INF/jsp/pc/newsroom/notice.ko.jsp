@@ -6,16 +6,16 @@
 	<form:hidden path="pageIndex" />
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">Newsroom</li>
 		        <li class="breadcrumb-item active">공지사항</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_newsroom">
-            <h2 class="font-h1">공지사항</h2>
+            <h2 class="font-h1 ir-diff">공지사항</h2>
             <div class="search-wrap">
                 <div class="input-search">
                     <form:input path="searchKeyword" maxlength="100"

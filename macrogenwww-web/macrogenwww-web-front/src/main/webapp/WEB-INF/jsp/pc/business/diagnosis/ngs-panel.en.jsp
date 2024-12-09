@@ -5,7 +5,7 @@
 	<div class="wrap">
 		<div class="full-bg business_bg bg-type2">
 			<!--header 수정시 메인 header 같이 수정해주세요-->
-			<header class="header" id="header">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			<div class="frame frameB">
@@ -18,10 +18,10 @@
 	                </ol>
 	            </nav>
 	            <h2 class="hero-title">NGS-based Genetic Panel Lab</h2>
-	            <a href="#_tab-box" class="btn btn-round btn-service">
+	            <!-- <a href="#_tab-box" class="btn btn-round btn-service">
 	                <span>SERVICE</span>
 	                <i class="icon icon-arrow-bottom-short-white"></i>
-	            </a>
+	            </a> -->
 	        </div>
 		</div>
 		
@@ -41,9 +41,9 @@
 	                <div class="slide-tab-wrap">
 	                    <div class="swiper-container tab-slide-box _swiperTab">
 	                        <div class="swiper-wrapper _swiperTab">
-	                            <div class="swiper-slide active" id="certification"><a href="#">Certification acquired by Macrogen in the clinical diagnosis business</a></div>
-	                            <div class="swiper-slide" id="features"><a href="#">Key features and strengths of Macrogen’s cancer panels</a></div>
-	                            <div class="swiper-slide" id="scope"><a href="#">Scope of projects to set up NGS-based PMG labs</a></div>
+	                            <div class="swiper-slide active" id="certification"><a href="#">Certification Acquired By Macrogen In The Clinical Diagnosis Business</a></div>
+	                            <div class="swiper-slide" id="features"><a href="#">Key Features And Strengths Of  Macrogen’s Cancer Panels</a></div>
+	                            <div class="swiper-slide" id="scope"><a href="#">Scope Of Projects To Set Up NGS-based PMG Labs</a></div>
 	                        </div>
 	                    </div>
 	                    <div class="btn-box">
@@ -59,9 +59,9 @@
 	                            </div>
 	                        </div>
 	                        <ul class="tab-modal-body">
-	                            <li><a href="#" onclick="setTabContent(0)">Certification acquired by Macrogen in the clinical diagnosis business</a></li>
-	                            <li><a href="#" onclick="setTabContent(1)">Key features and strengths of Macrogen’s cancer panels</a></li>
-	                            <li><a href="#" onclick="setTabContent(2)">Scope of projects to set up NGS-based PMG labs</a></li>
+	                            <li><a href="#" onclick="setTabContent(0)">Certification Acquired By Macrogen In The Clinical Diagnosis Business</a></li>
+	                            <li><a href="#" onclick="setTabContent(1)">Key Features And Strengths Of  Macrogen’s Cancer Panels</a></li>
+	                            <li><a href="#" onclick="setTabContent(2)">Scope Of Projects To Set Up NGS-based PMG Labs</a></li>
 	                        </ul>
 	                    </div>
 	                    <!--탭모달 스크립트-->
@@ -87,7 +87,7 @@
 	            <div class="info-box-wrap tab-content">
 	                <!-- 임상진단사업 인증 현황 -->
 	                <div class="info-box show">
-	                    <p class="font-h4 main-title">Certification acquired by Macrogen <br>in the clinical diagnosis business</p>
+	                    <p class="font-h4 main-title">Certification Acquired By Macrogen <br> In The Clinical Diagnosis Business</p>
 	                    <p class="desc">Macrogen offers clinical diagnosis services using certified and proven technology.</p>
 	                    <div class="img_ngs_gene01">
 	                        <ol>
@@ -151,7 +151,7 @@
 	
 	                <!-- 마크로젠 암 진단 패널의 특징 및 경쟁력 -->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Key features and strengths of Macrogen’s cancer panels</p>
+	                    <p class="font-h4 main-title">Key Features And Strengths Of  Macrogen’s Cancer Panels</p>
 	                    <p class="desc">With some of the most cutting-edge gene sequencing technologies in the world and advanced analytical capabilities developed in-house, <br>Macrogen offers some of the highest quality services available on the market today.</p>
 	                    <div class="img_ngs_gene03">
 	                        <div class="center"><div class="txt">Macrogen’s <br>competitiveness <br>in genetic testing <br>for cancer</div></div>
@@ -191,7 +191,7 @@
 	
 	                <!-- NGS기반 유전자 패널 검사실(PMG Lab) 구축 범위 -->
 	                <div class="info-box">
-	                    <p class="font-h4 main-title">Scope of projects to set up NGS-based PMG labs</p>
+	                    <p class="font-h4 main-title">Scope Of Projects To Set Up NGS-based PMG Labs</p>
 	                    <p class="desc">Macrogen offers services tailored to each client for optimal installation and operation of labs for genetic testing panels using next-generation sequencing techniques.</p>
 	                    <div class="img_ngs_gene04">
 	                        <ul>

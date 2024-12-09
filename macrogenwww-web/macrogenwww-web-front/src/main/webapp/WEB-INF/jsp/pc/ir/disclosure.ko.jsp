@@ -2,17 +2,17 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
     <div class="container">
-        <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">IR</li>
         <li class="breadcrumb-item">공시정보</li>
         <li class="breadcrumb-item active">공시정보</li>
-    </ol>
-</nav>
+            </ol>
+        </nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">공시정보</h2>
+            <h2 class="font-h1 ir-diff">공시정보</h2>
             <div class="iframe-box">
                 <iframe
                         src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=038290"

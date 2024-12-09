@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body class="en">
-    <div class="full-bg" style="background-image: url(/publishing/mobile-en/dist/img/macrogen/company-overview-bg.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
-        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
+        <h1 class="logo"><a href="/en">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
     </div>
 </header>
@@ -18,8 +18,7 @@
     margin-bottom: 40px;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2);
-}
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,.2);}
 </style>
 <script>
     $(function(){
@@ -32,7 +31,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -46,7 +45,7 @@
         <div class="frame">
             <h2 class="font-h4">About MACROGEN</h2>
             <div class="font-slogan en">HUMANIZING<br/> GENOMICS</div>
-            <div class="font-h7-r">Creating a better future for humanity.</div>
+            <!-- <div class="font-h7-r">Creating a better future for humanity.</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -129,12 +128,12 @@
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_8.png" alt="해외 매출"></span>
-                                <span class="font-h4">750&#43;</span>
-                                <span class="font-body-h">Number of<br/>Global employees<br/>(2023)</span>
+                                <span class="font-h4">700&#43;</span>
+                                <span class="font-body-h">Number of<br/>Global employees<br/>(2024)</span>
                             </li>
                             <li class="item col col-6">
                                 <span class="img"><img src="/publishing/mobile-en/dist/img/macrogen/macrogen_circle_7.png" alt="바이오벤처 기업 지원"></span>
-                                <span class="font-h4">148</span>
+                                <span class="font-h4">156</span>
                                 <span class="font-body-h">SCI-level articles in<br/>top-tier journals<br/>(including Nature)</span>
                             </li>
                         </ul>

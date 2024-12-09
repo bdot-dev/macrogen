@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
  
-    <div class="full-bg" style="background-image: url(/publishing/mobile-ko/dist/img/macrogen/bg-management.png);">
-        <header class="header header-white">
+    <div class="full-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -34,7 +34,7 @@
         <div class="frame">
             <h2 class="font-h4">경영진</h2>
             <div class="font-slogan">널리 인간을<br/>이롭게 하다</div>
-            <div class="font-h7-r">‘홍익인간’의 가치를 실현하기 위해<br/> 오늘도 밤을 밝힙니다</div>
+            <!-- <div class="font-h7-r">‘홍익인간’의 가치를 실현하기 위해<br/> 오늘도 밤을 밝힙니다</div> -->
             <div class="scroll-wrap">
     <div class="scroll"><span class="bar" style="bottom: 0"></span></div>
 </div>
@@ -460,7 +460,7 @@
                                     <li>前) ISO/TC212 국제표준화위원회 기술전문가위원</li>
                                 </ul>                                         
                             </li> -->
-                            <li class="item">                                        
+                           <!--  <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_06.png" alt="">
                                     <p class="name">신성장혁신사업본부<strong>김종윤 본부장</strong></p>
@@ -470,7 +470,7 @@
                                     <li>前) 마크로젠 CES-Oligo사업 총괄</li>
                                     <li>前) 마크로젠 게놈응용사업 총괄</li>
                                 </ul>                                         
-                            </li>     
+                            </li>    -->  
                             <li class="item">                                        
                                 <span class="img">
                                     <img src="/publishing/mobile-ko/dist/img/macrogen/img-team_05.png" alt="">

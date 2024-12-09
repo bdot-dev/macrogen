@@ -9,15 +9,15 @@
         <div class="section_IR">
             <div class="question_box">
                 <div class="text-area">
-                    <nav aria-label="breadcrumb">
-					    <ol class="breadcrumb">
-					        <li class="breadcrumb-item">Home</li>
-					        <li class="breadcrumb-item">IR</li>
-					        <li class="breadcrumb-item active">투자자 문의</li>
-					    </ol>
-					</nav>
+                    <!-- <nav aria-label="breadcrumb">
+                    					    <ol class="breadcrumb">
+                    					        <li class="breadcrumb-item">Home</li>
+                    					        <li class="breadcrumb-item">IR</li>
+                    					        <li class="breadcrumb-item active">투자자 문의</li>
+                    					    </ol>
+                    					</nav> -->
 
-                    <h2 class="font-h1">투자자 문의</h2>
+                    <h2 class="font-h1 ir-diff">투자자 문의</h2>
                     <div class="font-h4">투자에 관해 궁금한점이 있으시면 문의해주세요<br>성심을 다해 답변 드리겠습니다</div>
                     <span class="number">Tel&#46; 02&#45;3489&#45;7570</span>
                     <a href="#write" class="btn btn-white btn-round btn-round-big"><span>문의 작성하기</span><i class="icon icon-arrow-bottom-short"></i></a>

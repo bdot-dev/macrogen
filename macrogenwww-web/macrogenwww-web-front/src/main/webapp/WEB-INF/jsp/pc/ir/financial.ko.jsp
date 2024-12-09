@@ -3,16 +3,16 @@
 <body>
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">IR</li>
 		        <li class="breadcrumb-item active">재무정보</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">재무정보</h2>
+            <h2 class="font-h1 ir-diff">재무정보</h2>
             <div class="financial_box">
                 <div class="subtitle">
                     <span class="font-h7">연결재무상태표</span>

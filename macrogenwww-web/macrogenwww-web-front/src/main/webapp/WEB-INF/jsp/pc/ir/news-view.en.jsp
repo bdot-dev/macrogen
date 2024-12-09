@@ -16,16 +16,16 @@
 	</form:form>
 
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <!-- <nav aria-label="breadcrumb">
 		    <ol class="breadcrumb">
 		        <li class="breadcrumb-item">Home</li>
 		        <li class="breadcrumb-item">IR</li>
 		        <li class="breadcrumb-item active">IR소식</li>
 		    </ol>
-		</nav>
+		</nav> -->
 
         <div class="section_IR">
-            <h2 class="font-h1">IR소식</h2>
+            <h2 class="font-h1 ir-diff">IR소식</h2>
             <div class="board">
                 <div class="detail">
                     <div class="heading">

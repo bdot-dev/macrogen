@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 <div class="wrap">
-    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
-        <header class="header header-white">
+    <div class="top-bg">
+        <header class="header">
 		    <div class="inner">
 		        <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
 		        <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -11,7 +11,7 @@
 		</header>
 		<div class="frame">
             <h2 class="font-h1">Proteomics</h2>
-            <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div>
+            <!-- <div class="btn-wrap"><a href="#tab_anchor" class="btn-service"><span class="sr-only">SERVICE</span></a></div> -->
         </div>
 		
 	</div>

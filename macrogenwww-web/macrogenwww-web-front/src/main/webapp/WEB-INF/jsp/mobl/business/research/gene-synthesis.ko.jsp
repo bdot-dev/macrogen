@@ -2,8 +2,8 @@
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
 <body>
 
-    <div class="top-bg" style="background-image: url(/publishing/mobile-ko/dist/img/business/ngs-bg.png);">
-        <header class="header header-white">
+    <div class="top-bg">
+        <header class="header">
     <div class="inner">
         <h1 class="logo"><a href="/">마크로젠 로고</a></h1>
         <a href="#" class="btn-menu" data-bs-toggle="modal" data-bs-target="#gnb"><span class="sr-only">메뉴</span></a>
@@ -20,7 +20,7 @@
             }
             else if (st === 0) {
                 // console.log('Top');
-                $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
+                // $('.header').show().css({'position': 'absolute','top':'0'}).addClass('header-white');
             }
             else {
                 // console.log('Up');
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="section_business">
+        <div class="section_business" style="padding-top: 0;">
             <!--메인 컨텐츠-->
             <div class="subject-box">
                 <p class="title font-h4" style="letter-spacing: -1.25px">유전자합성(Gene Synthesis)은 고객의 유전자 서열 주문에 따라 유전자를 합성하여 제공합니다</p>

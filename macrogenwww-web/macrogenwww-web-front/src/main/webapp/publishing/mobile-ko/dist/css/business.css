@@ -69,11 +69,11 @@
 /* //임상진단서비스_NGS기반유전자패널검사실 */
 
 .section_business .subject-box.type02 {margin-bottom: 0;border-bottom: none;padding-bottom: 40px;}
-.top-bg.single_multi {background-image: url('../img/business/singlecell_img_mo.png');}
-.top-bg.spatital {background-image: url('../img/business/singlecell_img_mo.png');}
-.top-bg.personal01 {background-image: url('../img/business/bg_personal01.png');}
-.top-bg.personal02 {background-image: url('../img/business/bg_personal02.png');}
-
+/* .top-bg.single_multi {background-image: url('../img/business/singlecell_img_mo.png');} */
+/* .top-bg.spatital {background-image: url('../img/business/singlecell_img_mo.png');} */
+/* .top-bg.personal01 {background-image: url('../img/business/bg_personal01.png');} */
+/* .top-bg.personal02 {background-image: url('../img/business/bg_personal02.png');}
+ */
 /* Single Cell Multi */
 .section_business.single_cell_multi .info-box .box-gray-6 {margin-bottom: 80px;}
 .section_business.single_cell_multi .main-title {margin-bottom: 40px;}

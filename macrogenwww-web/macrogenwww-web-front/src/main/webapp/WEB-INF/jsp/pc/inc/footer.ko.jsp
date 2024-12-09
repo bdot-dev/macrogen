@@ -1,55 +1,124 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/inc/taglib.jsp"%>
+<head>
+	<script src="/resources/script/common.js"></script>
+</head>
 <footer class="footer">
-    <div class="inner" ${ main_yn eq 'Y' ? 'data-aos="fade-up" data-aos-duration="1000"' : '' }>
-        <div class="section_information">
-            <div class="title font-bold">
-                <p>MACROGEN</p>
-            </div>
-            <div class="info">
-                <ul class="text">
-                    <li>
-                        <ul class="terms clearfix">
-                            <li><span class="font-medium"><a href="https://dna.macrogen.com/" target="_blank">서비스 신청</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/privacy">개인정보처리방침</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영&#46;관리방침</a></span></li>
-                            <li><span class="font-medium"><a href="/${rc.locale.language }/company/sitemap">사이트맵</a></span></li>
-                            <li><span class="font-bold"><a href="/${rc.locale.language }/contact-us">Contact us</a></span></li>
-                        </ul>
-                    </li>
-                    <li><span>서울특별시 강남구 테헤란로 238 &#40;마크로젠빌딩&#41;</span><span>대표번호 &#58; 02&#45;2180&#45;7000</span><span>대표자 &#58; 김창훈</span></li>
-                    <li><span>&#169;Macrogen&#44; Inc&#46; All Rights Reserved&#46;</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section_familysite">
-            <div class="family-box">
-                <a href="#" class="select_site _select_site"><span class="text">FAMILY SITE</span></a>
-                <div class="popup_box _popup_box">
-                   <!-- <a href="https://thebiome.life/" target="_blank" class="list"><span class="text">더바이옴</span></a>  -->
-                    <a href="https://gentok.net/" target="_blank" class="list"><span class="text">GenTok 젠톡</span></a>
-                    <a href="https://blog.naver.com/macrogen123" target="_blank" class="list"><span class="text">마이펫진</span></a>
-                    <a href="https://psomagen.com/" target="_blank" class="list"><span class="text">소마젠&#40;Psomagen&#41;</span></a>
-                    <a href="https://www.macrogen-japan.co.jp/" target="_blank" class="list"><span class="text">마크로젠 일본</span></a>
-                    <a href="https://www.macrogen-europe.com" target="_blank" class="list"><span class="text">마크로젠 유럽</span></a>
-                    <a href="https://macrogenclinical.com/macrogen/" target="_blank" class="list"><span class="text">마크로젠 스페인</span></a>
-                    <a href="https://www.macrogen-apac.com/" target="_blank" class="list"><span class="text">마크로젠 APAC</span></a>
-                    <a href="http://gmi.ac.kr/index.php" target="_blank" class="list"><span class="text">유전체의학연구소</span></a>
-                    <a href="http://www.g2if.org/" target="_blank" class="list"><span class="text">공우생명정보재단</span></a>
-                    <a href="http://www.genehealth.or.kr/" target="_blank" class="list"><span class="text">진헬스 건강검진센터</span></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section_sns">
-            <ul class="sns clearfix">
-                <li class="facebook"><a href="https://www.facebook.com/macrogenkr/" target="_blank"></a></li>
-                <li class="youtube"><a href="https://www.youtube.com/channel/UCT1qyaOiPM7syCEC_T8jmTw" target="_blank"></a></li>
-                <li class="blog"><a href="https://blog.naver.com/macrogen_official" target="_blank"></a></li>
-                <li class="linkedin"><a href="https://www.linkedin.com/company/macrogen" target="_blank"></a></li>
-            </ul>
-        </div>
-    </div>
+	<div class="footer__inner">
+		<div class="footer__top">
+			<div class="footer__title">
+				<h2>
+					Humanizing genomics<br />
+					macrogen
+				</h2>
+			</div>
+			<div class="footer__list">
+				<div class="footer__menu">
+					<strong>Macrogen</strong>
+					<ul>
+						<li><a href="/${rc.locale.language }/company/overview">회사소개</a></li>
+						<li><a href="/${rc.locale.language }/company/global-network">글로벌 네트워크</a></li>
+						<li><a href="/${rc.locale.language }/company/qualified-image">채용</a></li>
+						<li><a href="/${rc.locale.language }/rnd/patent">Resource</a></li>
+						<li><a href="/${rc.locale.language }/rnd/institute/precision-medicine">R&amp;D</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<strong>Service</strong>
+					<ul>
+						<li><a href="/${rc.locale.language }/business/healthcare/dtc-genetic">퍼스널 헬스케어</a></li>
+						<li><a href="/${rc.locale.language }/business/healthcare/pet-genetic">반려동물 헬스케어</a></li>
+						<li><a href="/${rc.locale.language }/business/research/ngs#genome">연구분석 서비스</a></li>
+						<li><a href="/${rc.locale.language }/business/diagnosis/cancer#prediction">임상분석 서비스</a></li>
+						<li><a href="/${rc.locale.language }/business/singlecell-multi">싱글셀 분석 서비스</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<strong>Newsroom</strong>
+					<ul>
+						<li><a href="/${rc.locale.language }/newsroom/news">뉴스</a></li>
+						<li><a href="/${rc.locale.language }/newsroom/notice">공지사항</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<strong>IR</strong>
+					<ul>
+						<li><a href="/${rc.locale.language }/ir/financial">재무정보</a></li>
+						<li><a href="/${rc.locale.language }/ir/announcement">공시정보</a></li>
+						<li><a href="/${rc.locale.language }/ir/news">IR소식</a></li>
+						<li><a href="/${rc.locale.language }/ir/investor-inquiries">투자자 문의</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu">
+					<strong>ESG</strong>
+					<ul>
+						<li><a href="/${rc.locale.language }/company/esg-management">ESG경영</a></li>
+						<li><a href="/${rc.locale.language }/company/ethical-management">윤리경영</a></li>
+						<li><a href="/${rc.locale.language }/company/social-contribution">사회공헌</a></li>
+						<li><a href="/${rc.locale.language }/company/greenhouse-gas">온실가스</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__etc">
+				<div class="footer__site">
+					<ul>
+						<li>
+							<a href="https://dna.macrogen.com/" target="_blank">서비스 신청</a>
+						</li>
+						<li class="policy">
+							<a href="/${rc.locale.language }/policy/privacy">개인정보처리방침</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/policy/inside">내부정보관리규정</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/policy/image">영상정보처리기기 운영.관리방침</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/company/sitemap">사이트맵</a>
+						</li>
+						<li>
+							<a href="/${rc.locale.language }/contact-us">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__select">
+					<button type="button" class="footer__button">Family site</button>
+					<div class="footer__toggle">
+						<div class="footer__container">
+							<ul>
+								<li><a href="https://gentok.net/" target="_blank">GenTok 젠톡</a></li>
+								<li><a href="https://blog.naver.com/macrogen123" target="_blank">마이펫진</a></li>
+								<li><a href="https://psomagen.com/" target="_blank">소마젠&#40;Psomagen&#41;</a></li>
+								<li><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></li>
+								<li><a href="https://www.macrogen-europe.com" target="_blank">마크로젠 유럽</a></li>
+								<li><a href="https://macrogenclinical.com/macrogen/" target="_blank">마크로젠 스페인</a></li>
+								<li><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 APAC</a></li>
+								<li><a href="https://snumrc.snu.ac.kr/gmi" target="_blank">유전체의학연구소</a></li>
+								<li><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></li>
+								<li><a href="http://www.genehealth.or.kr/" target="_blank">진헬스 건강검진센터</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__info">
+				<p>서울특별시 강남구 테헤란로 238 (마크로젠빌딩)</p>
+				<p class="info info--tel">
+					<span>대표번호</span>
+					<span>02-2180-7000</span>
+				</p>
+				<p class="info info--exponent">
+					<span>대표자</span>
+					<span>김창훈</span>
+				</p>
+			</div>
+			<div class="footer__copyright">©Macrogen, Inc. All Rights Reserved.</div>
+		</div>
+	</div>
+	<div class="top-btn">
+		<button type="button">TOP</button>
+	</div>
 </footer>

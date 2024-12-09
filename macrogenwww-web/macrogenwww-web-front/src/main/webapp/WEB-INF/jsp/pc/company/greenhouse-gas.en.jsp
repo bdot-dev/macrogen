@@ -3,19 +3,19 @@
 
 <body class="en">
 	<div class="wrap">
-		<div class="full-bg macrogen" style="background-image: url(/publishing/pc-en/dist/img/esg/bg-esg-4.png);">
-			<header class="header" id="header">
+		<div class="full-bg macrogen">
+			<header class="header header-bg-white" id="header">
 				<c:import url="/inc/header-inner-gnb" />
 			</header>
 			
 			<div class="frame">
-	            <h2 class="hero-title">Greenhouse gas emissions</h2>
-	            <div class= "slogan-sub">We will participate in climate-change responses for a sustainable Earth</div>
+	            <h2 class="hero-title">Greenhouse Gas Emissions</h2>
+	            <!-- <div class= "slogan-sub">We will participate in climate-change responses for a sustainable Earth</div> -->
 	            <nav aria-label="breadcrumb">
 	                <ol class="breadcrumb breadcrumb-white">
 	                    <li class="breadcrumb-item">Home</li>
 	                    <li class="breadcrumb-item">ESG</li>
-	                    <li class="breadcrumb-item">Greenhouse gas emissions</li>
+	                    <li class="breadcrumb-item">Greenhouse Gas Emissions</li>
 	                </ol>
 	            </nav>
 	
