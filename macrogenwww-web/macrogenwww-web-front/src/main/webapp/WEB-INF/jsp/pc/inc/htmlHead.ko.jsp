@@ -3,14 +3,14 @@
 
 <%-- 모든 URL에 대한 메타테그 --%>
 <c:set var="headerCurrentUrl" value="${pageContext.request.requestURL}"/>
-<c:set var="headerTitle" value="마크로젠"/>
+<c:set var="headerTitle" value="마크로젠 I Macrogen"/>
 <c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로 예방 중심의 정밀의학 실현에 앞장섭니다."/>
 <c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>
 <c:set var="canonicalUrl" value="${pageContext.request.requestURL}"/>	
 
 <%-- 메인 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/main')}">
-	<c:set var="headerTitle" value="마크로젠"/>
+	<c:set var="headerTitle" value="마크로젠 I Macrogen"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로 예방 중심의 정밀의학 실현에 앞장섭니다."/>
 	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>

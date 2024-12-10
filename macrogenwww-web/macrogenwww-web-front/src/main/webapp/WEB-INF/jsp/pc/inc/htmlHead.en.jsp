@@ -143,7 +143,7 @@
 
 <%-- 연구분석서비스 > GENE SYNTHESIS --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/gene-synthesis')}">
-	<c:set var="headerTitle" value="Macrogen I 유전자합성"/>
+	<c:set var="headerTitle" value="Macrogen I Gene Synthesis"/>
 	<c:set var="headerDescription" value="The gene synthesis service synthesizes genes according to the customer’s gene sequence order."/>
 	<c:set var="headerKeyword" value="Gene Synthesis, Mutagenesis, Cloning"/>	
 </c:if>

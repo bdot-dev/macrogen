@@ -841,7 +841,7 @@
 														<li><a href="https://www.macrogen-japan.co.jp/" target="_blank">마크로젠 일본</a></li>
 														<li><a href="https://www.macrogen-europe.com" target="_blank">마크로젠 유럽</a></li>
 														<li><a href="https://macrogenclinical.com/macrogen/" target="_blank">마크로젠 스페인</a></li>
-														<li><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 APAC</a></li>
+														<!-- <li><a href="https://www.macrogen-apac.com/" target="_blank">마크로젠 APAC</a></li> -->
 														<li><a href="http://gmi.ac.kr/index.php" target="_blank">유전체의학연구소</a></li>
 														<li><a href="http://www.g2if.org/" target="_blank">공우생명정보재단</a></li>
 														<li><a href="http://www.genehealth.or.kr/" target="_blank">진헬스 건강검진센터</a></li>
