@@ -356,7 +356,7 @@
 <meta name="Referrer" content="origin"/>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <meta name="viewport" content="width=1366,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<meta name="apple-mobile-web-app-title" content="macrogen" />
+<meta name="apple-mobile-web-app-title" content="Macrogen" />
 <meta name="viewport" content="width=1244"/>
 <meta name="naver-site-verification" content="aaeba0b9789dc2e626a02b3d90cf622faaecff3b" />
 
