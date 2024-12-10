@@ -3,84 +3,84 @@
 
 <%-- 모든 URL에 대한 메타테그 --%>
 <c:set var="headerCurrentUrl" value="${pageContext.request.requestURL}"/>
-<c:set var="headerTitle" value="macrogen"/>
+<c:set var="headerTitle" value="Macrogen"/>
 <c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
 <c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok"/>
 <c:set var="canonicalUrl" value="${pageContext.request.requestURL}"/>
 
 <%-- 메인 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/main')}">
-	<c:set var="headerTitle" value="macrogen"/>
+	<c:set var="headerTitle" value="Macrogen"/>
 	<c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok"/>
 </c:if>
 
 <%-- 회사소개 > 기업개요 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/overview')}">
-	<c:set var="headerTitle" value="macrogen I Company Overview"/>
+	<c:set var="headerTitle" value="Macrogen I Company Overview"/>
 	<c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok"/>
 </c:if>
 
 <%-- 회사소개 > 경영진 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/bod')}">
-	<c:set var="headerTitle" value="macrogen I Leadership"/>
+	<c:set var="headerTitle" value="Macrogen I Leadership"/>
 	<c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, Seo Jeongsun, Kim Changhoon, Gentok"/>	
 </c:if>
 
 <%--회사소개 > 연혁 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/history')}">
-	<c:set var="headerTitle" value="macrogen I History"/>
+	<c:set var="headerTitle" value="Macrogen I History"/>
 	<c:set var="headerDescription" value="With 27 years of expertise, Macrogen has established itself as a global leader in sequencing, shaping the future of digital healthcare and advancing precision medicine."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, Gentok"/>	
 </c:if>
 
 <%-- 회사소개 > 비전 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/vision')}">
-	<c:set var="headerTitle" value="macrogen I Vision"/>
+	<c:set var="headerTitle" value="Macrogen I Vision"/>
 	<c:set var="headerDescription" value="Macrogen drives precision medicine by leveraging Big Data genomic insights to predict, diagnose, and deliver personalized healthcare solutions."/>
 	<c:set var="headerKeyword" value="Precision medicine, Big Data, disease prediction, genomics, genetic testing, genomic information, disease diagnosis"/>	
 </c:if>
 
 <%-- 회사소개 > 인증 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/certification')}">
-	<c:set var="headerTitle" value="macrogen I Certification"/>
+	<c:set var="headerTitle" value="Macrogen I Certification"/>
 	<c:set var="headerDescription" value="Our technological excellence has been recognized around the world"/>
 	<c:set var="headerKeyword" value="Quality management, ISO 9001, KOLAS, IOC/IEC 1725, CLIA, CAP, GMP, clinical trial, genetic testing, certification, NGS clinical laboratory certification, CSP"/>	
 </c:if>
 
 <%-- 글로벌네트워크 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/global-network')}">
-	<c:set var="headerTitle" value="macrogen I Global Network"/>
+	<c:set var="headerTitle" value="Macrogen I Global Network"/>
 	<c:set var="headerDescription" value="Macrogen provides timely and systematic services tailored to the needs of customers  no matter where they are in the world."/>
 	<c:set var="headerKeyword" value="Macrogen, Songdo Global Campus, Sejong Campus, Genome Center, Macrogen Europe, Macrogen Japan, Macrogen Spain, Macrogen Swiss, Macrogen France, Macrogen Italy, Macrogen Spain, Macrogen APAC, Macrogen subsidiary, Macrogen Chile, Macrogen USA, Psomagen"/>	
 </c:if>
 
 <%-- Resource > 특허 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/rnd/patent')}">
-	<c:set var="headerTitle" value="macrogen I Patents"/>
+	<c:set var="headerTitle" value="Macrogen I Patents"/>
 	<c:set var="headerDescription" value="We are strengthening our business by securing patents quickly to support our growth and innovation"/>
 	<c:set var="headerKeyword" value="Macrogen job, Macrogen career, NGS, oligo, international sales, domestic sales, clinical sales, clinical technical services, CES, microbiome, IT, engineer, platform, service planning, web development, JAVA, research institute"/>	
 </c:if>
 
 <%-- Resource > 논문 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/rnd/thesis')}">
-	<c:set var="headerTitle" value="macrogen I Publications"/>
+	<c:set var="headerTitle" value="Macrogen I Publications"/>
 	<c:set var="headerDescription" value="Since its establishment, Macrogen has published 156 papers in SCI journals, including 19 in Nature and its sister journals,"/>
 	<c:set var="headerKeyword" value="Macrogen job, Macrogen career, NGS, oligo, international sales, domestic sales, clinical sales, clinical technical services, CES, microbiome, IT, engineer, platform, service planning, web development, JAVA, research institute"/>	
 </c:if>
 
 <%-- Resource > 정밀의학연구소 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/rnd/institute/precision-medicine')}">
-	<c:set var="headerTitle" value="macrogen I R&D"/>
+	<c:set var="headerTitle" value="Macrogen I R&D"/>
 	<c:set var="headerDescription" value="Macrogen leads precision medicine with world-class analysis infrastructure and R&D competitiveness."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, precision medicine, bioinformatics, Macrogen R&D, DNA, sequencing, genomics, single-cell analysis"/>	
 </c:if>
 
 <%-- Resource > 생명정보학연구소 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/rnd/institute/bioinformatics')}">
-	<c:set var="headerTitle" value="macrogen I R&D"/>
+	<c:set var="headerTitle" value="Macrogen I R&D"/>
 	<c:set var="headerDescription" value="Macrogen leads precision medicine with world-class analysis infrastructure and R&D competitiveness."/>
 	<c:set var="headerKeyword" value="Macrogen, healthcare, precision medicine, bioinformatics, Macrogen R&D, DNA, sequencing, genomics, single-cell analysis"/>	
 </c:if>
@@ -95,7 +95,7 @@
 <%-- 퍼스널 헬스케어 > 건강관리 플랫폼 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/healthcare/dtc-genetic')}">
 	<c:set var="headerTitle" value="GenTok I Healthcare Platform"/>
-	<c:set var="headerDescription" value="By leveraging genetic testing and microbiome analysis, macrogen empowers you to gain profound insights into your innate characteristics and current health status."/>
+	<c:set var="headerDescription" value="By leveraging genetic testing and microbiome analysis, Macrogen empowers you to gain profound insights into your innate characteristics and current health status."/>
 	<c:set var="headerKeyword" value="Gentok, Macrogen, genetic testing, DNA testing, microbiome testing, TheBiome, TheBiome Gold, body microbiome, gut microbiome, oral microbiome, vaginal microbiome"/>	
 </c:if>
 
@@ -115,56 +115,56 @@
 
 <%-- 연구분석서비스 > NGS --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/ngs')}">
-	<c:set var="headerTitle" value="macrogen I NGS"/>
+	<c:set var="headerTitle" value="Macrogen I NGS"/>
 	<c:set var="headerDescription" value="Superior NGS service with a high level of precision and speed based on world-class analytical infrastructure"/>
 	<c:set var="headerKeyword" value="Whole Genome Sequencing, Whole Exome Sequencing,Transcriptome Sequencing, Epigenome Sequencing, Metagenome Sequencing, ATAC analysis, Spatial Gene Expression analysis"/>	
 </c:if>
 
 <%-- 연구분석서비스 > CES --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/ces')}">
-	<c:set var="headerTitle" value="macrogen I CES"/>
+	<c:set var="headerTitle" value="Macrogen I CES"/>
 	<c:set var="headerDescription" value="We provide a superior quality of CES services, based on extensive experience and expertise accumulated over 20 years"/>
 	<c:set var="headerKeyword" value="Standard Sequencing, Identification, CES, Fragment , Customized Sequencing, Human ID"/>	
 </c:if>
 
 <%-- 연구분석서비스 > MICROARRAY --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/microarray')}">
-	<c:set var="headerTitle" value="macrogen I Microarray"/>
+	<c:set var="headerTitle" value="Macrogen I Microarray"/>
 	<c:set var="headerDescription" value="Provides various microarray services including mRNA, miRNA, SNP, CGH, DNA Methylation."/>
 	<c:set var="headerKeyword" value="MICROARRAY"/>	
 </c:if>
 
 <%-- 연구분석서비스 > Proteomics --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/proteomics')}">
-	<c:set var="headerTitle" value="macrogen I Proteomics"/>
+	<c:set var="headerTitle" value="Macrogen I Proteomics"/>
 	<c:set var="headerDescription" value="The latest in proteomics analysis, Macrogen offers multiplex screening with a quick turnaround for a reasonable cost."/>
 	<c:set var="headerKeyword" value="Olink, Proteomics"/>	
 </c:if>
 
 <%-- 연구분석서비스 > GENE SYNTHESIS --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/gene-synthesis')}">
-	<c:set var="headerTitle" value="macrogen I 유전자합성"/>
+	<c:set var="headerTitle" value="Macrogen I 유전자합성"/>
 	<c:set var="headerDescription" value="The gene synthesis service synthesizes genes according to the customer’s gene sequence order."/>
 	<c:set var="headerKeyword" value="Gene Synthesis, Mutagenesis, Cloning"/>	
 </c:if>
 
 <%-- 연구분석서비스 > OLIGO --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/oligo')}">
-	<c:set var="headerTitle" value="macrogen I Oligo"/>
+	<c:set var="headerTitle" value="Macrogen I Oligo"/>
 	<c:set var="headerDescription" value="Macrogen offers high-quality and quick Oligo using a state-of-the-art automated system."/>
 	<c:set var="headerKeyword" value="Premade Oligo, Plate Oligo, Modified Oligo, Standard Oligo, DNA Oligo Synthesis, RNA Oligo Synthesis, Peptide Synthesis, Single Strand RNA, Double Strand RNA, RAPD Kits, Duplex Oligo"/>	
 </c:if>
 
 <%-- 연구분석서비스 > 모델동물사업부 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/research/model')}">
-	<c:set var="headerTitle" value="macrogen I CRISPR"/>
+	<c:set var="headerTitle" value="Macrogen I CRISPR"/>
 	<c:set var="headerDescription" value="Macrogen offers high-quality and quick Oligo using a state-of-the-art automated system."/>
 	<c:set var="headerKeyword" value="CRISPR Knock-In/Out, Genetically Engineered Mouse, GEM, 모델동물, 크리스터, Crispr, 유전자변형마우스"/>	
 </c:if>
 
 <%-- 임상분석서비스 > 정밀의학 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/business/diagnosis/cancer')}">
-	<c:set var="headerTitle" value="macrogen  I Precision Medicine"/>
+	<c:set var="headerTitle" value="Macrogen  I Precision Medicine"/>
 	<c:set var="headerDescription" value="We contribute to future medical innovation by integrating Big Data of genomic, medical, and lifestyle information to predict diseases."/>
 	<c:set var="headerKeyword" value="Precision medicine, cancer risk prediction, cancer causation analysis, cancer monitoring,"/>	
 </c:if>
@@ -213,86 +213,86 @@
 
 <%-- 뉴스 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/newsroom/news')}">
-	<c:set var="headerTitle" value="macrogen I Press releases"/>
+	<c:set var="headerTitle" value="Macrogen I Press releases"/>
 	<c:set var="headerDescription" value="Get the latest updates on Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news"/>	
 </c:if>
 
 <%-- 공지사항 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/newsroom/notice')}">
-	<c:set var="headerTitle" value="macrogen I Updates"/>
+	<c:set var="headerTitle" value="Macrogen I Updates"/>
 	<c:set var="headerDescription" value="Get the latest updates on Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news"/>	
 </c:if>
 
 <%-- 재무정보 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/ir/financial')}">
-	<c:set var="headerTitle" value="macrogen I Investors"/>
+	<c:set var="headerTitle" value="Macrogen I Investors"/>
 	<c:set var="headerDescription" value="Get the latest updates on Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news, IR, disclosures, earnings"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news, IR, disclosures, earnings"/>	
 </c:if>
 
 <%-- 공시정보 > 공고 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/ir/announcement')}">
-	<c:set var="headerTitle" value="macrogen I Investors"/>
+	<c:set var="headerTitle" value="Macrogen I Investors"/>
 	<c:set var="headerDescription" value="Stay updated with the latest investor relations information from Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news, IR, disclosures, earnings"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news, IR, disclosures, earnings"/>	
 </c:if>
 
 <%-- 공시정보 > 공시정보 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/ir/disclosure')}">
-	<c:set var="headerTitle" value="macrogen I Investors"/>
+	<c:set var="headerTitle" value="Macrogen I Investors"/>
 	<c:set var="headerDescription" value="Stay updated with the latest investor relations information from Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news, IR, disclosures, earnings"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news, IR, disclosures, earnings"/>	
 </c:if>
 
 <%-- IR소식 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/ir/news')}">
-	<c:set var="headerTitle" value="macrogen I Investors"/>
+	<c:set var="headerTitle" value="Macrogen I Investors"/>
 	<c:set var="headerDescription" value="Stay updated with the latest investor relations information from Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news, IR, disclosures, earnings"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news, IR, disclosures, earnings"/>	
 </c:if>
 
 <%-- 투자자 문의 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/ir/investor-inquiries')}">
-	<c:set var="headerTitle" value="macrogen I Investors"/>
+	<c:set var="headerTitle" value="Macrogen I Investors"/>
 	<c:set var="headerDescription" value="Stay updated with the latest investor relations information from Macrogen"/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen news, IR, disclosures, earnings"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen news, IR, disclosures, earnings"/>	
 </c:if>
 
 <%-- ESG경영 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/esg-management')}">
-	<c:set var="headerTitle" value="macrogen I Sustainability"/>
+	<c:set var="headerTitle" value="Macrogen I Sustainability"/>
 	<c:set var="headerDescription" value="Creating a sustainable future together."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen ESG, sustainability"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen ESG, sustainability"/>	
 </c:if>
 
 <%-- 윤리경영 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/ethical-management')}">
-	<c:set var="headerTitle" value="macrogen I Sustainability"/>
+	<c:set var="headerTitle" value="Macrogen I Sustainability"/>
 	<c:set var="headerDescription" value="Creating a sustainable future together."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen ESG, sustainability"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen ESG, sustainability"/>	
 </c:if>
 
 <%-- 사회공헌 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/social-contribution')}">
-	<c:set var="headerTitle" value="macrogen I Sustainability"/>
+	<c:set var="headerTitle" value="Macrogen I Sustainability"/>
 	<c:set var="headerDescription" value="Creating a sustainable future together."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen ESG, sustainability"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen ESG, sustainability"/>	
 </c:if>
 
 <%-- 온실가스 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/greenhouse-gas')}">
-	<c:set var="headerTitle" value="macrogen I Sustainability"/>
+	<c:set var="headerTitle" value="Macrogen I Sustainability"/>
 	<c:set var="headerDescription" value="Creating a sustainable future together."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen ESG, sustainability"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen ESG, sustainability"/>	
 </c:if>
 
 <%-- CONTACT US --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/contact-us')}">
-	<c:set var="headerTitle" value="macrogen I Contact us"/>
+	<c:set var="headerTitle" value="Macrogen I Contact us"/>
 	<c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen Contact us"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen Contact us"/>	
 </c:if>
 
 <%-- 개인정보 처리방침 --%>
@@ -311,9 +311,9 @@
 
 <%-- Sitemap --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/en/company/sitemap')}">
-	<c:set var="headerTitle" value="macrogen I Sitemap"/>
+	<c:set var="headerTitle" value="Macrogen I Sitemap"/>
 	<c:set var="headerDescription" value="Macrogen, a global leader in digital healthcare powered by Big Data and AI, is dedicated to delivering a $100 'DNA blueprint' to advance precision medicine."/>
-	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, macrogen sitemap"/>	
+	<c:set var="headerKeyword" value="Macrogen, healthcare, genomics, DNA, genetic testing, gene, genome, sequencing, RNA, single-cell analysis, single cell, Macrogen, digital healthcare, gentok, Macrogen sitemap"/>	
 </c:if>
 
 <meta charset="UTF-8" />

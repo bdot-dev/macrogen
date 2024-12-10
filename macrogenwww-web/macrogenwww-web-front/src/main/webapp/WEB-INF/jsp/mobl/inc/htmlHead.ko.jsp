@@ -5,35 +5,35 @@
 <c:set var="headerCurrentUrl" value="${pageContext.request.requestURL}"/>
 <c:set var="headerTitle" value="마크로젠"/>
 <c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>
+<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>
 <c:set var="canonicalUrl" value="${pageContext.request.requestURL}"/>	
 
 <%-- 메인 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/main')}">
 	<c:set var="headerTitle" value="마크로젠"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 회사소개 > 기업개요 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/overview')}">
 	<c:set var="headerTitle" value="마크로젠 기업개요"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>
 </c:if>
 
 <%-- 회사소개 > 경영진 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/bod')}">
 	<c:set var="headerTitle" value="마크로젠 경영진"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 서정선, 김창훈, 젠톡"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 서정선, 김창훈, 젠톡"/>	
 </c:if>
 
 <%--회사소개 > 연혁 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/history')}">
 	<c:set var="headerTitle" value="마크로젠 연혁"/>
 	<c:set var="headerDescription" value="마크로젠은 설립 이래 27년간 글로벌 유전체 분석 리더로서 자리매김하고, 디지털 헬스케어 기업으로 도약하며 인류 건강의 새 역사를 만들고 있습니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 회사소개 > 비전 --%>
@@ -82,14 +82,14 @@
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/rnd/patent')}">
 	<c:set var="headerTitle" value="마크로젠 특허"/>
 	<c:set var="headerDescription" value="마크로젠은 국내 및 해외 특허 출원을 통해 신속하게 권리를 확보함으로써 본격 시장진출에 앞서 안정적인 사업 기반을 마련해 가고 있습니다. "/>
-	<c:set var="headerKeyword" value="특허, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어"/>	
+	<c:set var="headerKeyword" value="특허, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어"/>	
 </c:if>
 
 <%-- Resource > 논문 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/rnd/thesis')}">
 	<c:set var="headerTitle" value="마크로젠 논문"/>
 	<c:set var="headerDescription" value="마크로젠은 설립 이후 지금까지 유전체 연구분야에서 총 156편의 논문을 SCI급 학술지에 게재했으며, 그 중 19편은 네이처와 그 자매지에 발표되는 성과를 달성하였습니다."/>
-	<c:set var="headerKeyword" value="논문, 네이쳐, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, SCI급, SCI, 네이처"/>	
+	<c:set var="headerKeyword" value="논문, 네이쳐, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, SCI급, SCI, 네이처"/>	
 </c:if>
 
 <%-- Resource > 정밀의학연구소 --%>
@@ -243,112 +243,112 @@
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/newsroom/news')}">
 	<c:set var="headerTitle" value="마크로젠 뉴스"/>
 	<c:set var="headerDescription" value="인류 건강의 새 역사를 만드는 마크로젠의 새 소식을 가장 먼저 알려 드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 공지사항 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/newsroom/notice')}">
 	<c:set var="headerTitle" value="마크로젠 소식"/>
 	<c:set var="headerDescription" value="인류 건강의 새 역사를 만드는 마크로젠의 새 소식을 가장 먼저 알려 드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 재무정보 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/ir/financial')}">
 	<c:set var="headerTitle" value="마크로젠 IR"/>
 	<c:set var="headerDescription" value="마크로젠의 최신 IR 정보를 안내해드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
 </c:if>
 
 <%-- 공시정보 > 공고 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/ir/announcement')}">
 	<c:set var="headerTitle" value="마크로젠 IR"/>
 	<c:set var="headerDescription" value="마크로젠의 최신 IR 정보를 안내해드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
 </c:if>
 
 <%-- 공시정보 > 공시정보 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/ir/disclosure')}">
 	<c:set var="headerTitle" value="마크로젠 IR"/>
 	<c:set var="headerDescription" value="마크로젠의 최신 IR 정보를 안내해드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
 </c:if>
 
 <%-- IR소식 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/ir/news')}">
 	<c:set var="headerTitle" value="마크로젠 IR"/>
 	<c:set var="headerDescription" value="마크로젠의 최신 IR 정보를 안내해드립니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표"/>	
 </c:if>
 
 <%-- 투자자 문의 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/ir/investor-inquiries')}">
 	<c:set var="headerTitle" value="마크로젠 IR"/>
 	<c:set var="headerDescription" value="투자에 관해 궁금한 점이 있으시면 문의해주세요. 성심을 다해 답변 드리겠습니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표, 투자자문의"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, IR, 공시, 실적발표, 투자자문의"/>	
 </c:if>
 
 <%-- ESG경영 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/esg-management')}">
 	<c:set var="headerTitle" value="마크로젠 ESG"/>
 	<c:set var="headerDescription" value="함께하는 미래, 지속가능한 미래를 만듭니다."/>
-	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 윤리경영 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/ethical-management')}">
 	<c:set var="headerTitle" value="마크로젠 ESG"/>
 	<c:set var="headerDescription" value="함께하는 미래, 지속가능한 미래를 만듭니다."/>
-	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 사회공헌 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/social-contribution')}">
 	<c:set var="headerTitle" value="마크로젠 ESG"/>
 	<c:set var="headerDescription" value="함께하는 미래, 지속가능한 미래를 만듭니다."/>
-	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- 온실가스 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/greenhouse-gas')}">
 	<c:set var="headerTitle" value="마크로젠 ESG"/>
 	<c:set var="headerDescription" value="함께하는 미래, 지속가능한 미래를 만듭니다."/>
-	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡"/>	
+	<c:set var="headerKeyword" value="지속가능경영, ESG, 마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡"/>	
 </c:if>
 
 <%-- CONTACT US --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/contact-us')}">
 	<c:set var="headerTitle" value="마크로젠 I Contact us"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, 연락처, 유선문의, 문의번호, Contact us"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, 연락처, 유선문의, 문의번호, Contact us"/>	
 </c:if>
 
 <%-- 개인정보 처리방침 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/policy/privacy')}">
 	<c:set var="headerTitle" value="마크로젠 I 개인정보처리방침"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, 개인정보처리방침"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, 개인정보처리방침"/>	
 </c:if>
 
 <%-- 내부정보관리규정 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/policy/inside')}">
 	<c:set var="headerTitle" value="마크로젠 I 내부정보관리규정"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, 내부정보관리규정, 규정"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, 내부정보관리규정, 규정"/>	
 </c:if>
 
 <%-- 영상정보처리기기 운영·관리 방침 --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/policy/image')}">
 	<c:set var="headerTitle" value="마크로젠 I 영상정보처리기기 운영.관리방침"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, 방침, 영상정보처리기기, 방침"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, 방침, 영상정보처리기기, 방침"/>	
 </c:if>
 
 <%-- Sitemap --%>
 <c:if test="${fn:contains(headerCurrentUrl,'/ko/company/sitemap')}">
 	<c:set var="headerTitle" value="마크로젠 I 사이트맵"/>
 	<c:set var="headerDescription" value="빅데이터·AI 기반 글로벌 디지털 헬스케어 리더, 마크로젠. $100 ‘DNA 몸 설계도 제공을 목표로, 예방 중심의 정밀의학 실현에 앞장섭니다."/>
-	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, macrogen, 디지털 헬스케어, 젠톡, 사이트맵"/>	
+	<c:set var="headerKeyword" value="마크로젠, 헬스케어, 유전체분석, DNA, 유전자검사, 유전자, 유전체, 시퀀싱, RNA, 싱글셀분석, 싱글셀, Macrogen, 디지털 헬스케어, 젠톡, 사이트맵"/>	
 </c:if>
 
 
