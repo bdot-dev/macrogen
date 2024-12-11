@@ -72,8 +72,7 @@
 													<div class="main-board__image">
 														<img src="/resources/images/mo/kv-image03_en.jpg" alt="" />
 														<h4 class="main-board__description">
-															Meet <br />
-															Macrogen APAC team
+															Contact <br />Macrogen APAC
 														</h4>
 													</div>
 												</a>
