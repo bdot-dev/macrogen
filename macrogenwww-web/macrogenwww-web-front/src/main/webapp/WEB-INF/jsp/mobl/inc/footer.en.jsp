@@ -114,7 +114,7 @@
 								<li><a href="https://www.macrogen-japan.co.jp/" target="_blank">Macrogen Japan</a></li>
 								<li><a href="https://www.macrogen-europe.com" target="_blank">Macrogen Europe</a></li>
 								<li><a href="https://macrogenclinical.com/macrogen/" target="_blank">Macrogen Spain</a></li>
-								<li><a href="https://www.macrogen-apac.com/" target="_blank">Macrogen APAC</a></li>
+								<!-- <li><a href="https://www.macrogen-apac.com/" target="_blank">Macrogen APAC</a></li> -->
 								<li><a href="https://snumrc.snu.ac.kr/gmi/en" target="_blank">Genome Medicine Institute</a></li>
 								<li><a href="http://www.g2if.org/" target="_blank">Gong-Wu Genome <br />Information Foundation</a></li>
 								<li><a href="http://www.genehealth.or.kr/" target="_blank">Genehealth</a></li>

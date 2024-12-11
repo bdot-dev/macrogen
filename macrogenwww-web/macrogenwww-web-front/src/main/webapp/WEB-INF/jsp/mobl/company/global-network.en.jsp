@@ -252,7 +252,7 @@
                                                 </div>
                                                 <div>
                                                     <span>WEB.</span>
-                                                    <a href="http://www.macrogen-apac.com" target="_blank">www.macrogen-apac.com</a>
+                                                    <a href="https://dna.macrogen-singapore.com/eng/index.jsp" target="_blank">dna&#46;macrogen-singapore&#46;com&#47;</a>
                                                 </div>
                                             </div>
                                         </div>

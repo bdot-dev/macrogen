@@ -214,7 +214,7 @@
                                         <span>TEL&#46;</span>
                                         <a href="tel:+65-6339-0927">&#43;65&#45;6339&#45;0927</a>
                                         <span>WEB&#46;</span>
-                                        <a href="http://www.macrogen-apac.com" target="_blank">www&#46;macrogen&#45;apac&#46;com</a>
+                                        <a href="https://dna.macrogen-singapore.com/eng/index.jsp" target="_blank">dna&#46;macrogen-singapore&#46;com&#47;</a>
                                     </div>
                                 </div>
                             </li>
